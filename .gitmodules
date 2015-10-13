@@ -1,0 +1,24 @@
+[submodule "TYPO3.CMS"]
+	path = TYPO3.CMS
+	url = git://git.typo3.org/Packages/TYPO3.CMS.git
+[submodule "typo3conf/ext/t3kit_extension_tools"]
+	path = typo3conf/ext/t3kit_extension_tools
+	url = git@github.com:t3kit/t3kit_extension_tools.git
+[submodule "typo3conf/ext/dyncss"]
+	path = typo3conf/ext/dyncss
+	url = git@github.com:kaystrobach/TYPO3.dyncss.git
+[submodule "typo3conf/ext/dyncss_less"]
+	path = typo3conf/ext/dyncss_less
+	url = git@github.com:kaystrobach/TYPO3.dyncss_less.git
+[submodule "typo3conf/ext/yaml_parser"]
+	path = typo3conf/ext/yaml_parser
+	url = git@github.com:kaystrobach/TYPO3.yaml_parser.git
+[submodule "typo3conf/ext/themes"]
+	path = typo3conf/ext/themes
+	url = git@github.com:typo3-themes/themes.git
+[submodule "typo3conf/ext/static_info_tables"]
+	path = typo3conf/ext/static_info_tables
+	url = git://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git
+[submodule "typo3conf/ext/news"]
+	path = typo3conf/ext/news
+	url = git://git.typo3.org/TYPO3CMS/Extensions/news.git

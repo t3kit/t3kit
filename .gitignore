@@ -1,0 +1,8 @@
+typo3temp
+uploads
+
+*deprecation_*.log
+*ENABLE_INSTALL_TOOL*
+
+fileadmin/*
+!fileadmin/example_content/
