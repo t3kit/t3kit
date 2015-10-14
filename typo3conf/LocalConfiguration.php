@@ -8,11 +8,11 @@ return array(
 		'versionNumberInFilename' => '0',
 	),
 	'DB' => array(
-		'database' => 'typokit',
+		'database' => 't3kit',
 		'host' => 'localhost',
-		'password' => 'typokit1234',
+		'password' => 't3kit1234',
 		'socket' => '',
-		'username' => 'typokit',
+		'username' => 't3kit',
 	),
 	'EXT' => array(
 		'extConf' => array(
