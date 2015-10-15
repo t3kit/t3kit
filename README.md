@@ -1,5 +1,5 @@
 #t3kit
-[![Travis](https://img.shields.io/badge/t3kit-7.0.0-green.svg?style=flat-square)]() [![Travis](https://img.shields.io/badge/TYPO3-7.5.0-orange.svg?style=flat-square)]()
+[![Travis](https://img.shields.io/badge/t3kit-7.0.0.alpha-green.svg?style=flat-square)]() [![Travis](https://img.shields.io/badge/TYPO3-7.5.0-orange.svg?style=flat-square)]()
 ###Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.
 
 ### [CHANGELOG](https://github.com/t3kit/t3kit/blob/master/CHANGELOG.md)
@@ -51,7 +51,7 @@ If you have a question(feature) not covered in the documentation or want to repo
 
 * Non-trivial changes should be discussed in **t3kit team**
 * It is permited to work on master branch, but in most of cases better to create **new branch** for your changes
-* Follow [Style Guides](https://github.com/pixelant/t3kit#style-guide)
+* Follow [Style Guides](https://github.com/t3kit/t3kit#style-guide)
 * Follow [Git commit conventions](https://github.com/t3kit/t3kit#git-commit-conventions-and-output-formatting)
 * Keep in mind our [Git versioning system](https://github.com/t3kit/t3kit#versioning-system)
 
