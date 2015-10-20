@@ -25,3 +25,6 @@
 [submodule "typo3conf/ext/theme_t3kit"]
 	path = typo3conf/ext/theme_t3kit
 	url = git@github.com:t3kit/theme_t3kit.git
+[submodule "typo3conf/ext/pxa_newsletter_subscription"]
+	path = typo3conf/ext/pxa_newsletter_subscription
+	url = git@bitbucket.org:pixelant/pxa_newsletter_subscription.git
