@@ -227,6 +227,15 @@ return array (
       array (
       ),
     ),
+    'filemetadata' => 
+    array (
+      'composerName' => 'typo3/cms-filemetadata',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/filemetadata/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'fluid_styled_content' => 
     array (
       'composerName' => 'typo3/cms-fluid-styled-content',
@@ -295,6 +304,15 @@ return array (
       'composerName' => 'typo3/cms-reports',
       'state' => 'active',
       'packagePath' => 'typo3/sysext/reports/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'scheduler' => 
+    array (
+      'composerName' => 'typo3/cms-scheduler',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/scheduler/',
       'suggestions' => 
       array (
       ),
@@ -443,15 +461,6 @@ return array (
       array (
       ),
     ),
-    'compatibility6' => 
-    array (
-      'composerName' => 'typo3/cms-compatibility6',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/compatibility6/',
-      'suggestions' => 
-      array (
-      ),
-    ),
     'css_styled_content' => 
     array (
       'composerName' => 'typo3/cms-css-styled-content',
@@ -479,15 +488,6 @@ return array (
       array (
       ),
     ),
-    'filemetadata' => 
-    array (
-      'composerName' => 'typo3/cms-filemetadata',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/filemetadata/',
-      'suggestions' => 
-      array (
-      ),
-    ),
     'indexed_search' => 
     array (
       'composerName' => 'typo3/cms-indexed-search',
@@ -508,29 +508,11 @@ return array (
       array (
       ),
     ),
-    'jumpurl' => 
-    array (
-      'composerName' => 'typo3/cms-jumpurl',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/jumpurl/',
-      'suggestions' => 
-      array (
-      ),
-    ),
     'linkvalidator' => 
     array (
       'composerName' => 'typo3/cms-linkvalidator',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/linkvalidator/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'mediace' => 
-    array (
-      'composerName' => 'typo3/cms-mediace',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/mediace/',
       'suggestions' => 
       array (
       ),
@@ -544,29 +526,11 @@ return array (
       array (
       ),
     ),
-    'openid' => 
-    array (
-      'composerName' => 'typo3/cms-openid',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/openid/',
-      'suggestions' => 
-      array (
-      ),
-    ),
     'recycler' => 
     array (
       'composerName' => 'typo3/cms-recycler',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/recycler/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'scheduler' => 
-    array (
-      'composerName' => 'typo3/cms-scheduler',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/scheduler/',
       'suggestions' => 
       array (
       ),
