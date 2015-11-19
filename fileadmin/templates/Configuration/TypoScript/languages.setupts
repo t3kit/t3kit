@@ -1,0 +1,56 @@
+config {
+  uniqueLinkVars = 1
+  linkVars := addToList(L)
+
+  sys_language_uid = 0
+  #sys_language_overlay = hideNonTranslated
+  sys_language_overlay = 1
+  #sys_language_mode = strict
+  sys_language_mode = content_fallback
+
+  language = en
+  locale_all = en_GB.UTF-8
+  htmlTag_setParams = lang="en"
+
+  baseURL = http://localhost:8081/
+}
+
+# Svenska / Swedish
+[globalVar = GP:L = 1]
+    config {
+        sys_language_uid = 1
+        language = sv
+        locale_all = sv_SE.UTF-8
+        htmlTag_setParams = lang="sv"
+    }
+[global]
+
+# Deutsch / German
+[globalVar = GP:L = 2]
+    config {
+        sys_language_uid = 2
+        language = de
+        locale_all = de_DE.utf8
+        htmlTag_setParams = lang="de"
+    }
+[global]
+
+# Română / Romanian
+[globalVar = GP:L = 3]
+    config {
+        sys_language_uid = 3
+        language = ro
+        locale_all = ro_RO.UTF-8
+        htmlTag_setParams = lang="ro"
+    }
+[global]
+
+# Українська / Ukrainian
+[globalVar = GP:L = 4]
+    config {
+        sys_language_uid = 1
+        language = uk
+        locale_all = uk_UA.UTF-8
+        htmlTag_setParams = lang="uk"
+    }
+[global]
