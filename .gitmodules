@@ -28,3 +28,6 @@
 [submodule "typo3conf/ext/pxa_newsletter_subscription"]
 	path = typo3conf/ext/pxa_newsletter_subscription
 	url = git@bitbucket.org:pixelant/pxa_newsletter_subscription.git
+[submodule "typo3conf/ext/realurl"]
+	path = typo3conf/ext/realurl
+	url = https://git.typo3.org/TYPO3CMS/Extensions/realurl.git

@@ -434,6 +434,16 @@ return array (
       array (
       ),
     ),
+    'realurl' => 
+    array (
+      'composerName' => 'realurl',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/realurl/',
+      'suggestions' => 
+      array (
+        0 => 'static_info_tables',
+      ),
+    ),
     'news' => 
     array (
       'composerName' => 'georgringer/news',
