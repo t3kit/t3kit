@@ -31,3 +31,6 @@
 [submodule "typo3conf/ext/realurl"]
 	path = typo3conf/ext/realurl
 	url = https://git.typo3.org/TYPO3CMS/Extensions/realurl.git
+[submodule "typo3conf/ext/go_maps_ext"]
+	path = typo3conf/ext/go_maps_ext
+	url = git@github.com:mhirdes/go_maps_ext.git
