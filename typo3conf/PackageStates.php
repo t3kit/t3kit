@@ -444,6 +444,15 @@ return array (
         0 => 'static_info_tables',
       ),
     ),
+    'go_maps_ext' => 
+    array (
+      'composerName' => 'clickstorm/go_maps_ext',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/go_maps_ext/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'news' => 
     array (
       'composerName' => 'georgringer/news',
