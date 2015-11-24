@@ -7,3 +7,4 @@ uploads
 fileadmin/*
 !fileadmin/example_content/
 !fileadmin/templates/
+!fileadmin/custom/
