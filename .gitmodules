@@ -34,3 +34,6 @@
 [submodule "typo3conf/ext/go_maps_ext"]
 	path = typo3conf/ext/go_maps_ext
 	url = git@github.com:mhirdes/go_maps_ext.git
+[submodule "typo3conf/ext/gridelements"]
+	path = typo3conf/ext/gridelements
+	url = git@github.com:TYPO3-extensions/gridelements.git

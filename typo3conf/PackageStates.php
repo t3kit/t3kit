@@ -453,6 +453,15 @@ return array (
       array (
       ),
     ),
+    'gridelements' => 
+    array (
+      'composerName' => 'GridElementsTeam/Gridelements',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/gridelements/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'news' => 
     array (
       'composerName' => 'georgringer/news',
