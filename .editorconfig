@@ -11,19 +11,33 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-
-[*.{php,html}]
+# HTML-Files
+[*.html]
 indent_size = 4
 indent_style = tab
 
-[*.{json,yml,txt,md,sql}]
+# TMPL-Files
+[*.tmpl]
+indent_style = tab
+indent_size = 4
+
+# PHP-Files
+[*.php]
+indent_style = space
+indent_size = 4
+
+# TypoScript
+[*.{txt,ts,setupts,constantsts,pagets}]
+indent_size = 4
+indent_style = space
+
+[*.{json,yml,md,sql}]
 indent_size = 2
 indent_style = space
 
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{xml,xlf,xsd}]
+[*.{xml,xlf,xsd,sql}]
 indent_size = 2
 indent_style = tab
-
