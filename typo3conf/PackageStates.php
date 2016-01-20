@@ -382,7 +382,7 @@ return array (
     ),
     'yaml_parser' => 
     array (
-      'composerName' => 'yaml_parser',
+      'composerName' => 'typo3-ter/yaml-parser',
       'state' => 'active',
       'packagePath' => 'typo3conf/ext/yaml_parser/',
       'suggestions' => 
@@ -476,6 +476,15 @@ return array (
       'composerName' => 'pxa_newsletter_subscription',
       'state' => 'active',
       'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'solr' => 
+    array (
+      'composerName' => 'apache-solr-for-typo3/solr',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/solr/',
       'suggestions' => 
       array (
       ),

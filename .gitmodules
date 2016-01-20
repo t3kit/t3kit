@@ -37,3 +37,6 @@
 [submodule "typo3conf/ext/gridelements"]
 	path = typo3conf/ext/gridelements
 	url = git@github.com:TYPO3-extensions/gridelements.git
+[submodule "typo3conf/ext/solr"]
+	path = typo3conf/ext/solr
+	url = https://github.com/TYPO3-Solr/ext-solr.git
