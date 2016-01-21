@@ -416,6 +416,15 @@ return array (
       array (
       ),
     ),
+    'gridelements' => 
+    array (
+      'composerName' => 'GridElementsTeam/Gridelements',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/gridelements/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     't3kit_extension_tools' => 
     array (
       'composerName' => 't3kit_extension_tools',
@@ -449,15 +458,6 @@ return array (
       'composerName' => 'clickstorm/go_maps_ext',
       'state' => 'active',
       'packagePath' => 'typo3conf/ext/go_maps_ext/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'gridelements' => 
-    array (
-      'composerName' => 'GridElementsTeam/Gridelements',
-      'state' => 'active',
-      'packagePath' => 'typo3conf/ext/gridelements/',
       'suggestions' => 
       array (
       ),
