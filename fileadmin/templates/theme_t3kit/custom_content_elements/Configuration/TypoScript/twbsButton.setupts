@@ -1,0 +1,32 @@
+tt_content {
+    twbsButton =< lib.fluidContent
+    twbsButton {
+        templateName = twbsButton
+
+        dataProcessing {
+
+            10 = T3kit\T3kitExtensionTools\DataProcessing\FlexFormProcessor
+            10 {
+                fieldName = pi_flexform
+                as = settings
+            }
+            # "inherit" from lib.fluidContent
+            #365 < lib.fluidContent.dataProcessing.365
+            #1910 < lib.fluidContent.dataProcessing.1910
+
+            # extend class mapping only for this element
+            1910 {
+                classMappings {
+                    # Override the standard default
+                    0 = btn btn-default
+                    131 = btn btn-primary
+                    132 = btn btn-success
+                    133 = btn btn-info
+                    134 = btn btn-warning
+                    135 = btn btn-danger
+                    136 = btn btn-link
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z" product-name="theme_t3kit">
+        <header/>
+        <body>
+            <trans-unit id="tab.customContentElements">
+                <source>Custom elements</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.title">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.description">
+                <source>A button with twbs style</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.header_label">
+                <source>Button text</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.buttonSize">
+                <source>Button Size</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.buttonSize_default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.buttonSize_large">
+                <source>Large</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.buttonSize_small">
+                <source>Small</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.buttonSize_extraSmall">
+                <source>Extra small</source>
+            </trans-unit>
+            <trans-unit id="twbsButton.blockLevel">
+                <source>Block level button</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

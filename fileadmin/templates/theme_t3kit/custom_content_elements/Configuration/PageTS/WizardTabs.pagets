@@ -1,0 +1,5 @@
+mod.wizards.newContentElement.wizardItems {
+    customContentElements {
+        header = LLL:fileadmin/templates/theme_t3kit/custom_content_elements/Resources/Private/Language/CustomContentElements.xlf:tab.customContentElements
+    }
+}
