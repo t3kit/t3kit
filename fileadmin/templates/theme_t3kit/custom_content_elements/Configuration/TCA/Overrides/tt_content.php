@@ -10,20 +10,6 @@ call_user_func(function() {
     $cmsLanguageFilePrefix = 'LLL:EXT:cms/locallang_ttc.xlf:';
     $customContentElementIconFilePrefix = 'fileadmin/templates/theme_t3kit/custom_content_elements/Resources/Public/Backend/Images/';
 
-    //
-    // Register Icons
-    //
-    if (TYPO3_MODE === 'BE') {
-        /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
-        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-
-        // twbsButton
-        $iconRegistry->registerIcon(
-            'custom-content-elements-twbsButton',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => $customContentElementIconFilePrefix . 'twbsButton.png']
-        );
-    }
 
     //
     // CTypes
@@ -35,7 +21,7 @@ call_user_func(function() {
         [
             $customContentElementFilePrefix . 'twbsButton.title',
             'twbsButton',
-            'content-elements-accordion'
+            'custom-content-elements-twbsButton'
         ],
         'login',
         'after'

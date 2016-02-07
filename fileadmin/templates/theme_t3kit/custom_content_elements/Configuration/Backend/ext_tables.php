@@ -3,7 +3,7 @@ defined('TYPO3_MODE') or die();
 
 call_user_func(function() {
 
-    $customContentElementIconFilePrefix = 'fileadmin/templates/theme_t3kit/custom_content_elements/Resources/Public/Backend/Images/';
+    $customContentElementIconFilePrefix = 'fileadmin/templates/theme_t3kit/custom_content_elements/Resources/Public/Backend/Icons/CustomContentElements/';
 
     //
     // Register Icons
@@ -15,8 +15,9 @@ call_user_func(function() {
         // twbsButton
         $iconRegistry->registerIcon(
             'custom-content-elements-twbsButton',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => $customContentElementIconFilePrefix . 'twbsButton.png']
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => $customContentElementIconFilePrefix .  'customElement.svg']
         );
     }
+
 });

@@ -23,18 +23,20 @@ TCEFORM.tt_content.pi_flexform.twbsButton.sDEF.buttonSize {
 }
 
 # Use layout field to customize Layout select-box on twbsButton
+# extend layout select-box only for this element
 TCEFORM.tt_content.layout {
     types {
         twbsButton {
             addItems {
                 --div-- = Button layouts:
                 # add value with index 0, to set it as a default, only for this element
-                131 = Primary
-                132 = Success
-                133 = Info
-                134 = Warning
-                135 = Danger
-                136 = Link
+                0 = Default
+                11 = Primary
+                12 = Success
+                13 = Info
+                14 = Warning
+                15 = Danger
+                16 = Link
             }
         }
     }
