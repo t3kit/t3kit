@@ -1,0 +1,26 @@
+# to change wrapper/layout - title/class-name need to add changes to both files:
+# fileadmin/templates/Configuration/PageTS/FluidContent.pagets
+# fileadmin/templates/Configuration/TypoScript/lib.fluidContent.setupts
+
+# Use wrapper field to customize Wrapper select-box on tt_content
+# Add a generic wrapper title (all content based on lib.fluidContent)
+# Example to add a wrapper item for all content types
+TCEFORM.tt_content.wrapper {
+   addItems {
+       # add more wrappers. Interval from 100 to 999
+       # overwrite default example with yout wrapper name (keep key - 100 as a first item)
+    #    100 = Example generic wrapper
+   }
+}
+
+
+# Use layout field to customize Layout select-box on tt_content
+# Add a generic layout title (all content based on lib.fluidContent)
+# Example to add a layout item for all content types
+TCEFORM.tt_content.layout {
+    addItems {
+        # add more layouts. Interval from 100 to 999
+        # overwrite default example with yout layout name (keep key - 100 as a first item)
+        # 100 = Example generic layout for all content
+    }
+}

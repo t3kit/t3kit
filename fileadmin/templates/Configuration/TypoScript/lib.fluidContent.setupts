@@ -1,0 +1,47 @@
+# to change wrapper/layout - title/class-name need to add changes to both files:
+# fileadmin/templates/Configuration/PageTS/FluidContent.pagets
+# fileadmin/templates/Configuration/TypoScript/lib.fluidContent.setupts
+
+
+# Add layoutClass and wrapperClass to fluid_styled_content lib.fluidContent
+lib.fluidContent {
+    dataProcessing {
+        # will add variable wrapperClass to FLUIDTEMPLATE
+        # used in "overridden" fluid_styled_content layouts: (appended in class) {wrapperClass}
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/ContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/HeaderContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/HeaderFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/CustomContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/CustomHeaderContentFooter.html
+        365 = T3kit\T3kitExtensionTools\DataProcessing\LayoutClassProcessor
+        365 {
+            classMappings {
+                # overwrite default example with yout wrapper class (keep key - 100 as a first item)
+                # 100 = example-generic-wrapper
+            }
+        }
+
+        # will add variable layoutClass to FLUIDTEMPLATE
+        # can be overriden in the actual elements ts setup
+        # by default it appears it all elements, but can be rewritten to use inside the element
+        # used in "overridden" fluid_styled_content layouts: (appended in class) {layoutClass}
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/ContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/HeaderContentFooter.html
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/HeaderFooter.html
+
+        # inside the element. Need to use custom fluid_styled_content layouts
+        # only affective if variable is used in the fluid template file.
+        # Example:fluid_styled_content element Table has layout classes added inside.
+        # theme_t3kit/Configuration/FluidStyledContent/Table.pagets (Layout list in form)
+        # theme_t3kit/Configuration/FluidStyledContent/Table.setupts ("class mappings")
+        # theme_t3kit/Resources/Private/Templates/FluidStyledContent/Table.html (adds {layoutClass} to table tag class attribute)
+        # theme_t3kit/Resources/Private/Layouts/FluidStyledContent/CustomHeaderContentFooter.html (custom fluid_styled_content layout without {layoutClass} as a wrapper)
+        1910 = T3kit\T3kitExtensionTools\DataProcessing\LayoutClassProcessor
+        1910 {
+            classMappings {
+                # overwrite default example with yout layout class (keep key - 100 as a first item)
+                # 100 = example-generic-layout
+            }
+        }
+    }
+}
