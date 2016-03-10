@@ -295,7 +295,7 @@ return [
             'suggestions' => [],
         ],
         'theme_t3kit' => [
-            'composerName' => 'theme_t3kit',
+            'composerName' => 't3kit/theme-t3kit',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/theme_t3kit/',
             'suggestions' => [],
