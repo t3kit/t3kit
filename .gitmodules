@@ -43,3 +43,6 @@
 [submodule "typo3conf/ext/seo_basics"]
 	path = typo3conf/ext/seo_basics
 	url = git@github.com:pixelant/t3ext-seo_basics.git
+[submodule "typo3conf/ext/realurl_404_multilingual"]
+	path = typo3conf/ext/realurl_404_multilingual
+	url = git@github.com:pixelant/realurl_404_multilingual.git
