@@ -308,6 +308,12 @@ return [
                 'static_info_tables',
             ],
         ],
+        'realurl_404_multilingual' => [
+            'composerName' => 'realurl_404_multilingual',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
+            'suggestions' => [],
+        ],
         'seo_basics' => [
             'composerName' => 'b13/seo_basics',
             'state' => 'active',
