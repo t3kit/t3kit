@@ -1,5 +1,5 @@
 #t3kit
-[![Travis](https://img.shields.io/badge/t3kit-7.0.0.alpha-green.svg?style=flat-square)]() [![Travis](https://img.shields.io/badge/TYPO3-7.6.2-orange.svg?style=flat-square)]()
+[![Travis](https://img.shields.io/badge/t3kit-7.1.0-green.svg?style=flat-square)]() [![Travis](https://img.shields.io/badge/TYPO3-7.6.4-orange.svg?style=flat-square)]()
 ###Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.
 
 ### [CHANGELOG](https://github.com/t3kit/t3kit/blob/master/CHANGELOG.md)
