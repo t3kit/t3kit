@@ -56,9 +56,11 @@ return [
     'INSTALL' => [
         'wizardDone' => [
             'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
             'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
             'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
             'TYPO3\CMS\Install\Updates\LanguageIsoCodeUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateMediaToAssetsForTextMediaCe' => 1,
             'TYPO3\CMS\Install\Updates\MigrateShortcutUrlsAgainUpdate' => 1,
             'TYPO3\CMS\Install\Updates\PageShortcutParentUpdate' => 1,
             'TYPO3\CMS\Install\Updates\ProcessedFileChecksumUpdate' => 1,
