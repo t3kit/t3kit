@@ -1,5 +1,6 @@
 #t3kit
-[![Travis](https://img.shields.io/badge/t3kit-7.1.0-green.svg?style=flat-square)]() [![Travis](https://img.shields.io/badge/TYPO3-7.6.4-orange.svg?style=flat-square)]()
+[![t3kit](https://img.shields.io/badge/t3kit-7.1.0-green.svg?style=flat-square)](https://github.com/t3kit/t3kit)
+[![TYPO3](https://img.shields.io/badge/TYPO3-7.6.4-orange.svg?style=flat-square)](https://typo3.org/)
 ###Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.
 
 ### [CHANGELOG](https://github.com/t3kit/t3kit/blob/master/CHANGELOG.md)
@@ -63,28 +64,18 @@ This project uses special style guides. Those rules you can find on appropriate 
 * [editorconfig](http://editorconfig.org)
 
 ## Git commit conventions and output formatting
-Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. All commits with labels will be added in changelog, that's why it is important to use labels on your commits.
-####Git labels:
-* [FEATURE] A new feature
-* [FIX] A bug fix
-* [DOC] Documentation
-* [STYLE] Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-* [TEST] Adding missing tests
-* [CHORE] Changes to the build process or auxiliary tools, extensions and libraries
+Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. All commits with labels will be added in changelog, that's why it is **important to use predefined labels** on your commits.
 
-Examples:
-* '[CHORE] update submodules'
-* '[CHORE] add new Vagrant configuration'
-* '[CHORE] update TYPO3 to 7.5.0'
-* '[FIX] fix bug on image slider'
-* '[TEST] add test for subscribe form on start page'
-* '[TEST] implement CI tests'
-* '[DOC] update changelog'
-* '[DOC] add requirements info'
-* '[FEATURE] add google map'
-* '[FEATURE] add new content element'
-* 'fix link in documentation'
-* 'add new db path to vagrant config'
+####Git labels:
+* **[FEATURE]** A new feature
+* **[FIX]** A bug fix
+* **[REFACTOR]** A code change that neither fixes a bug or adds a feature
+* **[PERF]** A code change that improves performance.
+* **[CHORE]** Changes to the build process (grunt) or auxiliary tools and libraries such as documentation generation and linters (jshint, jscs, etc.)
+* **[DOC]** Documentation only changes
+* **[STYLE]** Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+* **[TEST]** Adding missing tests
+* **[UPDATE]** Updating git submodules, npm/bower dependencies
 
 Please ensure any pull requests of fixes **follow this closely**. If you notice existing code which doesn't follow these practices, feel free to shout and we will address this.
 
