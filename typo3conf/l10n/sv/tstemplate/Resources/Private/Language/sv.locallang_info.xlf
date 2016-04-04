@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:44:14Z" product-name="tstemplate">
+		<header/>
+		<body>
+			<trans-unit id="allowedExtensions">
+				<source>Allowed extensions:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="constants">
+				<source>Constants</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="copyResource">
+				<source>Make a copy of resource:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="delete">
+				<source>Delete:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editResource">
+				<source>Edit Resource:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editTemplateRecord">
+				<source>Edit the whole template record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editToView">
+				<source>(edit to view, %s lines)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file">
+				<source>File:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileChanged">
+				<source>File changed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filesizeExceeded">
+				<source>Filesize exceeded %s KBytes</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="includeTypoScriptFileContent">
+				<source>Include TypoScript file content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="maxFilesize">
+				<source>Max filesize:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="newTextResource">
+				<source>New text resource (enter name)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="notAllowed">
+				<source>Files larger than %s KBytes are not allowed to be edited.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resources">
+				<source>Resources</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resourceUpdated">
+				<source>Resource '%s' has been updated.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="setup">
+				<source>Setup</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sitetitle">
+				<source>Sitetitle</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="templateInformation">
+				<source>Template information</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toTop">
+				<source>To top:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="updateResourceList">
+				<source>Update resource list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="uploadResource">
+				<source>Upload resource</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

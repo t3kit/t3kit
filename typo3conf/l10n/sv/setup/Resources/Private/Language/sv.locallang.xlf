@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:17:59Z" product-name="setup">
+		<header/>
+		<body>
+			<trans-unit id="activateChanges" approved="yes">
+				<source>Notice! In order to activate most of these changes, please reload the backend (eg. logout and login again).</source>
+				<target state="translated">Observera! De flesta ändringar aktiveras först när du laddar om backend (dvs loggar ut och in på nytt).</target>
+			</trans-unit>
+			<trans-unit id="adminFunctions" approved="yes">
+				<source>Admin functions</source>
+				<target state="translated">Administrationsfunktioner</target>
+			</trans-unit>
+			<trans-unit id="beUser_avatar">
+				<source>Avatar</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="beUser_email" approved="yes">
+				<source>Your email address</source>
+				<target state="translated">Din e-postadress</target>
+			</trans-unit>
+			<trans-unit id="beUser_realName" approved="yes">
+				<source>Your name</source>
+				<target state="translated">Ditt namn</target>
+			</trans-unit>
+			<trans-unit id="condensedMode" approved="no">
+				<source>Use condensed mode in backend (for small screens)</source>
+				<target state="needs-translation">Använd komprimerad form i backend&lt;br /&gt;(för små skärmar)</target>
+			</trans-unit>
+			<trans-unit id="copyLevels" approved="no">
+				<source>Recursive Copy: Enter the number of page sublevels to include, when a page is copied</source>
+				<target state="needs-translation">&lt;b&gt;Rekursiv kopiering:&lt;/b&gt; Ange antal undernivåer som skall inkluderas då en sida kopieras</target>
+			</trans-unit>
+			<trans-unit id="debugInWindow">
+				<source>Display debug messages in a new browser window</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="default" approved="yes">
+				<source>Default</source>
+				<target state="translated">Standard</target>
+			</trans-unit>
+			<trans-unit id="disableCMlayers" approved="yes">
+				<source>Disable Popup Context Menus</source>
+				<target state="translated">Visa inte popup-menyer</target>
+			</trans-unit>
+			<trans-unit id="edit_docModuleUpload" approved="yes">
+				<source>File upload directly in Doc-module</source>
+				<target state="translated">Ladda upp filer direkt i dokument-modulen</target>
+			</trans-unit>
+			<trans-unit id="edit_functions" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Redigera</target>
+			</trans-unit>
+			<trans-unit id="editFunctionsTab">
+				<source>Edit and Advanced functions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="edit_RTE" approved="yes">
+				<source>Enable Rich Text Editor (if available)</source>
+				<target state="translated">Aktivera Rich Text Editor (om tillgänglig)</target>
+			</trans-unit>
+			<trans-unit id="edit_showFieldHelp" approved="yes">
+				<source>Context Sensitive Help mode</source>
+				<target state="translated">Visning av inbyggd hjälp (CSH)</target>
+			</trans-unit>
+			<trans-unit id="edit_showFieldHelp_icon" approved="yes">
+				<source>Display help icon only</source>
+				<target state="translated">Visa endast hjälp-ikon</target>
+			</trans-unit>
+			<trans-unit id="edit_showFieldHelp_message" approved="yes">
+				<source>Display full text message</source>
+				<target state="translated">Visa hela textmeddelandet</target>
+			</trans-unit>
+			<trans-unit id="edit_showFieldHelp_none" approved="yes">
+				<source>Display no help information</source>
+				<target state="translated">Visa ingen hjälpinformation</target>
+			</trans-unit>
+			<trans-unit id="edit_wideDocument" approved="yes">
+				<source>Wide document background</source>
+				<target state="translated">Bred dokumentbakgrund</target>
+			</trans-unit>
+			<trans-unit id="emailMeAtLogin" approved="no">
+				<source>Notify me by email when somebody logs in from my account</source>
+				<target state="needs-translation">Skicka e-post till mig då någon loggar in på mitt konto</target>
+			</trans-unit>
+			<trans-unit id="enableFlashUploader">
+				<source>Enable Flash Uploader (requires Flash 9+)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.createFile">
+				<source>Create Install Tool Enable File</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.deleteFile">
+				<source>Delete Install Tool Enable File</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.file">
+				<source>Install Tool Enable file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.fileCreate_failed">
+				<source>The Install Tool Enable file could not be created.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.fileCreate_ok">
+				<source>The Install Tool Enable file has been created.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.fileDelete_failed">
+				<source>The Install Tool Enable file could not be deleted!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.fileDelete_ok">
+				<source>The Install Tool Enable file has been deleted.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.fileHasKeep">
+				<source>The Install Tool file has the content "KEEP_FILE" and can not be deleted!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enableInstallTool.label">
+				<source>Install Tool Access</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flexibleTextareas_MaxHeight">
+				<source>Maximal Height of flexible Textareas in Pixel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="functions" approved="yes">
+				<source>Advanced functions</source>
+				<target state="translated">Avancerade funktioner</target>
+			</trans-unit>
+			<trans-unit id="helpText" approved="yes">
+				<source>Show help text when applicable</source>
+				<target state="translated">Visa hjälptexter då sådana finns</target>
+			</trans-unit>
+			<trans-unit id="lang_af">
+				<source>Afrikaans</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="lang_ar" approved="yes">
+				<source>Arabic</source>
+				<target state="translated">Arabiska</target>
+			</trans-unit>
+			<trans-unit id="lang_ba" approved="yes">
+				<source>Bosnian</source>
+				<target state="translated">Bosniska</target>
+			</trans-unit>
+			<trans-unit id="lang_bg" approved="yes">
+				<source>Bulgarian</source>
+				<target state="translated">Bulgariska</target>
+			</trans-unit>
+			<trans-unit id="lang_br" approved="yes">
+				<source>Brazilian Portuguese</source>
+				<target state="translated">Portugisiska (Brasilien)</target>
+			</trans-unit>
+			<trans-unit id="lang_bs" approved="yes">
+				<source>Bosnian</source>
+				<target state="translated">Bosniska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_ca" approved="yes">
+				<source>Catalan</source>
+				<target state="translated">Kataloniska</target>
+			</trans-unit>
+			<trans-unit id="lang_ch" approved="yes">
+				<source>Chinese (Simple)</source>
+				<target state="translated">Kinesiska</target>
+			</trans-unit>
+			<trans-unit id="lang_cs" approved="yes">
+				<source>Czech</source>
+				<target state="translated">Tjeckiska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_cz" approved="yes">
+				<source>Czech</source>
+				<target state="translated">Tjeckiska</target>
+			</trans-unit>
+			<trans-unit id="lang_da" approved="yes">
+				<source>Danish</source>
+				<target state="translated">Danska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_de" approved="yes">
+				<source>German</source>
+				<target state="translated">Tyska</target>
+			</trans-unit>
+			<trans-unit id="lang_default" approved="yes">
+				<source>English</source>
+				<target state="translated">Engelska</target>
+			</trans-unit>
+			<trans-unit id="lang_dk" approved="yes">
+				<source>Danish</source>
+				<target state="translated">Danska</target>
+			</trans-unit>
+			<trans-unit id="lang_el" approved="yes">
+				<source>Greek</source>
+				<target state="translated">Grekiska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_eo" approved="yes">
+				<source>Esperanto</source>
+				<target state="translated">Esperanto</target>
+			</trans-unit>
+			<trans-unit id="lang_es" approved="yes">
+				<source>Spanish</source>
+				<target state="translated">Spanska</target>
+			</trans-unit>
+			<trans-unit id="lang_et" approved="yes">
+				<source>Estonian</source>
+				<target state="translated">Estniska</target>
+			</trans-unit>
+			<trans-unit id="lang_eu" approved="yes">
+				<source>Basque</source>
+				<target state="translated">Baskiska</target>
+			</trans-unit>
+			<trans-unit id="lang_fa" approved="yes">
+				<source>Persian</source>
+				<target state="translated">Persiska</target>
+			</trans-unit>
+			<trans-unit id="lang_fi" approved="yes">
+				<source>Finnish</source>
+				<target state="translated">Finska</target>
+			</trans-unit>
+			<trans-unit id="lang_fo" approved="yes">
+				<source>Faroese</source>
+				<target state="translated">Färöiska</target>
+			</trans-unit>
+			<trans-unit id="lang_fr" approved="yes">
+				<source>French</source>
+				<target state="translated">Franska</target>
+			</trans-unit>
+			<trans-unit id="lang_fr_CA">
+				<source>French (Canada)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="lang_ga" approved="yes">
+				<source>Galician</source>
+				<target state="translated">Galileiska</target>
+			</trans-unit>
+			<trans-unit id="lang_ge" approved="yes">
+				<source>Georgian</source>
+				<target state="translated">Georgiska</target>
+			</trans-unit>
+			<trans-unit id="lang_gl" approved="yes">
+				<source>Galician</source>
+				<target state="translated">Grönländska</target>
+			</trans-unit>
+			<trans-unit id="lang_gr" approved="yes">
+				<source>Greek</source>
+				<target state="translated">Grekiska</target>
+			</trans-unit>
+			<trans-unit id="lang_he" approved="yes">
+				<source>Hebrew</source>
+				<target state="translated">Hebreiska</target>
+			</trans-unit>
+			<trans-unit id="lang_hi" approved="yes">
+				<source>Hindi</source>
+				<target state="translated">Hindi</target>
+			</trans-unit>
+			<trans-unit id="lang_hk" approved="yes">
+				<source>Chinese (Trad)</source>
+				<target state="translated">Kinesiska (Trad)</target>
+			</trans-unit>
+			<trans-unit id="lang_hr" approved="yes">
+				<source>Croatian</source>
+				<target state="translated">Kroatiska</target>
+			</trans-unit>
+			<trans-unit id="lang_hu" approved="yes">
+				<source>Hungarian</source>
+				<target state="translated">Ungerska</target>
+			</trans-unit>
+			<trans-unit id="lang_is" approved="yes">
+				<source>Icelandic</source>
+				<target state="translated">Isländska</target>
+			</trans-unit>
+			<trans-unit id="lang_it" approved="yes">
+				<source>Italian</source>
+				<target state="translated">Italienska</target>
+			</trans-unit>
+			<trans-unit id="lang_ja" approved="yes">
+				<source>Japanese</source>
+				<target state="translated">Japanska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_jp" approved="yes">
+				<source>Japanese</source>
+				<target state="translated">Japanska</target>
+			</trans-unit>
+			<trans-unit id="lang_ka" approved="yes">
+				<source>Georgian</source>
+				<target state="translated">Georgiska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_kl" approved="yes">
+				<source>Greenlandic</source>
+				<target state="translated">Grönländska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_km">
+				<source>Khmer</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="lang_ko" approved="yes">
+				<source>Korean</source>
+				<target state="translated">Koreanska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_kr" approved="yes">
+				<source>Korean</source>
+				<target state="translated">Koreanska</target>
+			</trans-unit>
+			<trans-unit id="lang_lt" approved="yes">
+				<source>Lithuanian</source>
+				<target state="translated">Littauiska</target>
+			</trans-unit>
+			<trans-unit id="lang_lv" approved="yes">
+				<source>Latvian</source>
+				<target state="translated">Lettiska</target>
+			</trans-unit>
+			<trans-unit id="lang_ms" approved="yes">
+				<source>Bahasa Malaysia</source>
+				<target state="translated">Bahasa malesiska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_my" approved="yes">
+				<source>Bahasa Malaysia</source>
+				<target state="translated">Bahasa malesiska</target>
+			</trans-unit>
+			<trans-unit id="lang_nl" approved="yes">
+				<source>Dutch</source>
+				<target state="translated">Holländska</target>
+			</trans-unit>
+			<trans-unit id="lang_no" approved="yes">
+				<source>Norwegian</source>
+				<target state="translated">Norska</target>
+			</trans-unit>
+			<trans-unit id="lang_pl" approved="yes">
+				<source>Polish</source>
+				<target state="translated">Polska</target>
+			</trans-unit>
+			<trans-unit id="lang_pt" approved="yes">
+				<source>Portuguese</source>
+				<target state="translated">Portugisiska</target>
+			</trans-unit>
+			<trans-unit id="lang_pt_BR" approved="yes">
+				<source>Brazilian Portuguese</source>
+				<target state="translated">Portugisiska (Brasilien)</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_qc">
+				<source>French (Canada)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="lang_ro" approved="yes">
+				<source>Romanian</source>
+				<target state="translated">Rumänska</target>
+			</trans-unit>
+			<trans-unit id="lang_ru" approved="yes">
+				<source>Russian</source>
+				<target state="translated">Ryska</target>
+			</trans-unit>
+			<trans-unit id="lang_se" approved="yes">
+				<source>Swedish</source>
+				<target state="translated">Svenska</target>
+			</trans-unit>
+			<trans-unit id="lang_si" approved="yes">
+				<source>Slovenian</source>
+				<target state="translated">Slovenska</target>
+			</trans-unit>
+			<trans-unit id="lang_sk" approved="yes">
+				<source>Slovak</source>
+				<target state="translated">Slovakiska</target>
+			</trans-unit>
+			<trans-unit id="lang_sl" approved="yes">
+				<source>Slovenian</source>
+				<target state="translated">Slovenska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_sq" approved="yes">
+				<source>Albanian</source>
+				<target state="translated">Albanska</target>
+			</trans-unit>
+			<trans-unit id="lang_sr" approved="yes">
+				<source>Serbian</source>
+				<target state="translated">Serbiska</target>
+			</trans-unit>
+			<trans-unit id="lang_sv" approved="yes">
+				<source>Swedish</source>
+				<target state="translated">Svenska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_th" approved="yes">
+				<source>Thai</source>
+				<target state="translated">Thailändska</target>
+			</trans-unit>
+			<trans-unit id="lang_tr" approved="yes">
+				<source>Turkish</source>
+				<target state="translated">Turkiska</target>
+			</trans-unit>
+			<trans-unit id="lang_ua" approved="yes">
+				<source>Ukrainian</source>
+				<target state="translated">Ukrainiska</target>
+			</trans-unit>
+			<trans-unit id="language" approved="yes">
+				<source>Language</source>
+				<target state="translated">Språk</target>
+			</trans-unit>
+			<trans-unit id="lang_uk" approved="yes">
+				<source>Ukrainian</source>
+				<target state="translated">Ukrainiska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_vi" approved="yes">
+				<source>Vietnamese</source>
+				<target state="translated">Vietnamesiska</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="lang_vn" approved="yes">
+				<source>Vietnamese</source>
+				<target state="translated">Vietnamesiska</target>
+			</trans-unit>
+			<trans-unit id="lang_zh" approved="yes">
+				<source>Chinese (Trad)</source>
+				<target state="translated">Kinesiska (Trad)</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="levels" approved="yes">
+				<source>levels</source>
+				<target state="translated">nivåer</target>
+			</trans-unit>
+			<trans-unit id="maxTitleLen" approved="yes">
+				<source>Max. Title Length</source>
+				<target state="translated">Max. längd på rubrik</target>
+			</trans-unit>
+			<trans-unit id="newPassword" approved="yes">
+				<source>New password</source>
+				<target state="translated">Nytt lösenord</target>
+			</trans-unit>
+			<trans-unit id="newPasswordAgain" approved="yes">
+				<source>New password, again</source>
+				<target state="translated">Nytt lösenord igen</target>
+			</trans-unit>
+			<trans-unit id="newPassword_failed" approved="yes">
+				<source>Password was NOT updated because you didn't enter the same password twice.</source>
+				<target state="translated">Lösenordet byttes INTE, eftersom du inte skrev samma lösenord två gånger.</target>
+			</trans-unit>
+			<trans-unit id="newPassword_ok" approved="yes">
+				<source>Password was updated.</source>
+				<target state="translated">Lösenordet bytt</target>
+			</trans-unit>
+			<trans-unit id="noMenuMode" approved="yes">
+				<source>Select navigation mode</source>
+				<target state="translated">Välj navigeringsmetod</target>
+			</trans-unit>
+			<trans-unit id="noMenuMode_def" approved="yes">
+				<source>Left frame menu (default)</source>
+				<target state="translated">Meny i vänstra ramen (standard)</target>
+			</trans-unit>
+			<trans-unit id="noMenuMode_icons" approved="yes">
+				<source>Icons in top frame</source>
+				<target state="translated">Ikoner i övre ramen</target>
+			</trans-unit>
+			<trans-unit id="noMenuMode_sel" approved="yes">
+				<source>Selectorbox in top frame</source>
+				<target state="translated">Valruta i övre ramen</target>
+			</trans-unit>
+			<trans-unit id="oldPassword_failed">
+				<source>Password was NOT updated because you didn't enter the correct current password.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="opening" approved="yes">
+				<source>Startup</source>
+				<target state="translated">Uppstart</target>
+			</trans-unit>
+			<trans-unit id="passwordCurrent">
+				<source>Current password</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="passwordHeader">
+				<source>Password</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="personal_data" approved="yes">
+				<source>Personal data</source>
+				<target state="translated">Personlig information</target>
+			</trans-unit>
+			<trans-unit id="recursiveDelete" approved="no">
+				<source>Recursive Delete(!): Allow ALL subpages to be deleted when deleting a page</source>
+				<target state="needs-translation">&lt;b&gt;Rekursiv radering(!):&lt;/b&gt; Tillåt att alla undersidor tas bort, då en sida tas bort</target>
+			</trans-unit>
+			<trans-unit id="resetConfiguration">
+				<source>Reset Configuration and Clear Temporary Data</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resetConfigurationButton">
+				<source>Reset user settings to default state</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resetSectionHeader" approved="no">
+				<source>Reset Settings</source>
+				<target state="needs-translation">Användarinställningar</target>
+				<note>78%</note>
+			</trans-unit>
+			<trans-unit id="resizeTextareas">
+				<source>Make Textareas resizable</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resizeTextareas_Flexible">
+				<source>Make Textareas flexible</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resizeTextareas_MaxHeight">
+				<source>Maximal Height of resizable Textarea in Pixel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="save" approved="yes">
+				<source>Save Configuration</source>
+				<target state="translated">Spara inställningarna</target>
+			</trans-unit>
+			<trans-unit id="settingsAreReset">
+				<source>The user settings have been reset to default values and temporary data has been cleared.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="setToStandard" approved="yes">
+				<source>Reset all Values to default</source>
+				<target state="translated">Återställ alla värden till standard</target>
+			</trans-unit>
+			<trans-unit id="setToStandardQuestion" approved="yes">
+				<source>Are you sure you want to reset all values to default?</source>
+				<target state="translated">Är du säker på att du återställa alla värden till standard?</target>
+			</trans-unit>
+			<trans-unit id="setupWasUpdated">
+				<source>User settings were updated.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showHiddenFilesAndFolders">
+				<source>Show hidden files and folders in the filelist</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showThumbs" approved="yes">
+				<source>Show Thumbnails by default</source>
+				<target state="translated">Visa miniatyrbilder som standard</target>
+			</trans-unit>
+			<trans-unit id="simulate" approved="yes">
+				<source>Simulate backend user</source>
+				<target state="translated">Simulera backend-användare</target>
+			</trans-unit>
+			<trans-unit id="startModule" approved="yes">
+				<source>Start up in the following module</source>
+				<target state="translated">Starta med följande modul</target>
+			</trans-unit>
+			<trans-unit id="startModule.firstInMenu">
+				<source>- First module in menu -</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="UserSettings" approved="yes">
+				<source>User Settings</source>
+				<target state="translated">Användarinställningar</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

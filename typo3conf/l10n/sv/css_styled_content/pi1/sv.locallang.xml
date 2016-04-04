@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="eIcon.bodytext">Ändra brödtext</label>
+			<label index="eIcon.bullets">Ändra punktlista</label>
+			<label index="eIcon.caption">Ändra bildtext</label>
+			<label index="eIcon.caption_position"/>
+			<label index="eIcon.filelist">Ändra fillista</label>
+			<label index="eIcon.form">Ändra e-postformulär</label>
+			<label index="eIcon.header">Ändra rubrik</label>
+			<label index="eIcon.html">Ändra äkta HTML-innehåll</label>
+			<label index="eIcon.images">Ändra bilder</label>
+			<label index="eIcon.login">Ändra inloggningselement</label>
+			<label index="eIcon.menuSitemap">Ändra meny / sidkarta</label>
+			<label index="eIcon.multimedia">Ändra multimediaelement</label>
+			<label index="eIcon.page">Sida:</label>
+			<label index="eIcon.plugin">Byt/konfigurera plugin</label>
+			<label index="eIcon.recordList">Ändra datalista</label>
+			<label index="eIcon.search">Ändra sökelement</label>
+			<label index="eIcon.subheader">Ändra underrubrik</label>
+			<label index="eIcon.table">Ändra tabell</label>
+			<label index="label.toTop">Upp</label>
+			<label index="login.login">Logga in</label>
+			<label index="login.logout">Logga ut</label>
+			<label index="login.password">Lösenord:</label>
+			<label index="login.username">Användarnamn:</label>
+			<label index="menu.bypassNavigation"/>
+			<label index="search.emptySearch">Beklagar, din sökning gav inga resultat!</label>
+			<label index="search.headersKeywords">Rubriker och nyckelord</label>
+			<label index="search.pageContent">Sidinnehåll</label>
+			<label index="search.resultRange">Sökresultat: ###RANGELOW###-###RANGEHIGH### av ###TOTAL###</label>
+			<label index="search.searchButton">Sök nu!</label>
+			<label index="search.searchIn">Sök i:</label>
+			<label index="search.searchResultNext">Nästa</label>
+			<label index="search.searchResultPrev">Föregående</label>
+			<label index="search.searchWord">Sökord:</label>
+			<label index="uploads.icon"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

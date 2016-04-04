@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="tx_news_domain_model_news.tabs.relations"/>
+			<label index="tx_news_domain_model_news.palettes.alternativeTitles"/>
+			<label index="tx_news_domain_model_news"/>
+			<label index="tx_news_domain_model_news.alternative_title"/>
+			<label index="tx_news_domain_model_news.teaser"/>
+			<label index="tx_news_domain_model_news.datetime"/>
+			<label index="tx_news_domain_model_news.archive"/>
+			<label index="tx_news_domain_model_news.archive.placeholder"/>
+			<label index="tx_news_domain_model_news.categories"/>
+			<label index="tx_news_domain_model_news.related"/>
+			<label index="tx_news_domain_model_news.related_from"/>
+			<label index="tx_news_domain_model_news.related_files"/>
+			<label index="tx_news_domain_model_news.fal_related_files"/>
+			<label index="tx_news_domain_model_news.fal_related_files.add"/>
+			<label index="tx_news_domain_model_news.related_links"/>
+			<label index="tx_news_domain_model_news.type.I.0"/>
+			<label index="tx_news_domain_model_news.type.I.1"/>
+			<label index="tx_news_domain_model_news.type.I.2"/>
+			<label index="tx_news_domain_model_news.media"/>
+			<label index="tx_news_domain_model_news.fal_media"/>
+			<label index="tx_news_domain_model_news.fal_media.add"/>
+			<label index="tx_news_domain_model_news.istopnews"/>
+			<label index="tx_news_domain_model_news.content_elements"/>
+			<label index="tx_news_domain_model_news.tags"/>
+			<label index="tx_news_domain_model_news.tags.add"/>
+			<label index="tx_news_domain_model_news.tags.list"/>
+			<label index="tx_news_domain_model_news.tags.edit"/>
+			<label index="tx_news_domain_model_news.keywords.placeholder"/>
+			<label index="tx_news_domain_model_category.image"/>
+			<label index="tx_news_domain_model_category.single_pid"/>
+			<label index="tx_news_domain_model_category.shortcut"/>
+			<label index="tx_news_domain_model_media"/>
+			<label index="tx_news_domain_model_media.caption"/>
+			<label index="tx_news_domain_model_media.media"/>
+			<label index="tx_news_domain_model_media.type.I.0"/>
+			<label index="tx_news_domain_model_media.type.I.1"/>
+			<label index="tx_news_domain_model_media.type.I.2"/>
+			<label index="tx_news_domain_model_media.multimedia"/>
+			<label index="tx_news_domain_model_media.show"/>
+			<label index="tx_news_domain_model_media.showinpreview"/>
+			<label index="tx_news_domain_model_media.copyright"/>
+			<label index="tx_news_domain_model_file"/>
+			<label index="tx_news_domain_model_file.title"/>
+			<label index="tx_news_domain_model_file.description"/>
+			<label index="tx_news_domain_model_file.file"/>
+			<label index="tx_news_domain_model_link"/>
+			<label index="tx_news_domain_model_link.title"/>
+			<label index="tx_news_domain_model_link.description"/>
+			<label index="tx_news_domain_model_link.uri"/>
+			<label index="tx_news_domain_model_link.uri.placeholder"/>
+			<label index="tx_news_domain_model_tag"/>
+			<label index="tx_news_domain_model_tag.title"/>
+			<label index="tx_news_domain_model_news.path_segment"/>
+			<label index="be_user.tx_news_categorymounts"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

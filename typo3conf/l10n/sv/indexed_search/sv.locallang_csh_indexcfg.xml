@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="alternative_source_pid.description"/>
+			<label index="_alternative_source_pid.seeAlso"/>
+			<label index="chashcalc.description"/>
+			<label index="_chashcalc.seeAlso"/>
+			<label index="depth.description"/>
+			<label index="depth.details"/>
+			<label index="_depth.seeAlso"/>
+			<label index=".description"/>
+			<label index="description.description"/>
+			<label index=".details"/>
+			<label index="extensions.description"/>
+			<label index="_extensions.seeAlso"/>
+			<label index="externalUrl.description"/>
+			<label index="fieldlist.description"/>
+			<label index="fieldlist.details"/>
+			<label index="_fieldlist.seeAlso"/>
+			<label index="filepath.description"/>
+			<label index="filepath.details"/>
+			<label index="get_params.description"/>
+			<label index="get_params.details"/>
+			<label index="_get_params.seeAlso"/>
+			<label index="hidden.description"/>
+			<label index="hidden.details"/>
+			<label index="_hidden.seeAlso"/>
+			<label index="indexcfgs.description"/>
+			<label index="recordsbatch.description"/>
+			<label index="_recordsbatch.seeAlso"/>
+			<label index="records_indexonchange.description"/>
+			<label index="_records_indexonchange.seeAlso"/>
+			<label index="starttime.description"/>
+			<label index="_starttime.seeAlso"/>
+			<label index="table2index.description"/>
+			<label index="timer_frequency.description"/>
+			<label index="_timer_frequency.seeAlso"/>
+			<label index="timer_next_indexing.description"/>
+			<label index="_timer_next_indexing.seeAlso"/>
+			<label index="timer_offset.description"/>
+			<label index="_timer_offset.seeAlso"/>
+			<label index="title.description"/>
+			<label index="type.description"/>
+			<label index="type.details"/>
+			<label index="url_deny.description"/>
+			<label index="url_deny.details"/>
+			<label index="_url_deny.seeAlso"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

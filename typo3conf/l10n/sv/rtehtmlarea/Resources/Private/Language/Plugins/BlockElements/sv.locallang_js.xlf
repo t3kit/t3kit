@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:21Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Blockquote-helpText">
+				<source>Makes a large quotation block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Blockquote-Tooltip" approved="yes">
+				<source>Large quotation</source>
+				<target state="translated">Stort citat</target>
+			</trans-unit>
+			<trans-unit id="FormatBlock-Tooltip" approved="yes">
+				<source>Type of block</source>
+				<target state="translated">Typ av block</target>
+			</trans-unit>
+			<trans-unit id="Indent-helpText">
+				<source>Increases text indentation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Indent-Tooltip" approved="yes">
+				<source>Increase indent</source>
+				<target state="translated">Öka indrag</target>
+			</trans-unit>
+			<trans-unit id="InsertHorizontalRule-helpText">
+				<source>Inserts an horizontal rule</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="InsertHorizontalRule-Tooltip">
+				<source>Horizontal Rule</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="InsertOrderedList-helpText">
+				<source>Makes an ordered list from the current selection</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="InsertOrderedList-Tooltip" approved="yes">
+				<source>Ordered List</source>
+				<target state="translated">Numrerad lista</target>
+			</trans-unit>
+			<trans-unit id="InsertParagraphAfter-contextMenuTitle">
+				<source>Insert paragraph after</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="InsertParagraphAfter-helpText" approved="no">
+				<source>Inserts a paragraph after the current block</source>
+				<target state="needs-translation">Infoga ett stycke efter nuvarande block</target>
+				<note>97%</note>
+			</trans-unit>
+			<trans-unit id="InsertParagraphAfter-Tooltip" approved="yes">
+				<source>Insert a paragraph after the current block</source>
+				<target state="translated">Infoga ett stycke efter nuvarande block</target>
+			</trans-unit>
+			<trans-unit id="InsertParagraphBefore-contextMenuTitle">
+				<source>Insert paragraph before</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="InsertParagraphBefore-helpText" approved="no">
+				<source>Inserts a paragraph before the current block</source>
+				<target state="needs-translation">Infoga ett stycke före nuvarande block</target>
+				<note>97%</note>
+			</trans-unit>
+			<trans-unit id="InsertParagraphBefore-Tooltip" approved="yes">
+				<source>Insert a paragraph before the current block</source>
+				<target state="translated">Infoga ett stycke före nuvarande block</target>
+			</trans-unit>
+			<trans-unit id="InsertUnorderedList-helpText">
+				<source>Makes a bulleted list from the current selection</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="InsertUnorderedList-Tooltip" approved="yes">
+				<source>Bulleted List</source>
+				<target state="translated">Punktlsta</target>
+			</trans-unit>
+			<trans-unit id="JustifyCenter-helpText">
+				<source>Centers the text</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="JustifyCenter-Tooltip" approved="yes">
+				<source>Center</source>
+				<target state="translated">Centrera</target>
+			</trans-unit>
+			<trans-unit id="JustifyFull-helpText">
+				<source>Aligns the text both to the left and the right</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="JustifyFull-Tooltip" approved="yes">
+				<source>Justify left and right</source>
+				<target state="translated">Marginaljustera</target>
+			</trans-unit>
+			<trans-unit id="JustifyLeft-helpText">
+				<source>Aligns the text to the left</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="JustifyLeft-Tooltip" approved="yes">
+				<source>Justify left</source>
+				<target state="translated">Vänsterjustera</target>
+			</trans-unit>
+			<trans-unit id="JustifyRight-helpText">
+				<source>Aligns the text to the right</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="JustifyRight-Tooltip" approved="yes">
+				<source>Justify right</source>
+				<target state="translated">Högerjustera</target>
+			</trans-unit>
+			<trans-unit id="Left-Tooltip" approved="yes">
+				<source>Left</source>
+				<target state="translated">Vänster</target>
+			</trans-unit>
+			<trans-unit id="No block" approved="yes">
+				<source>No block format</source>
+				<target state="translated">Inget blockformat</target>
+			</trans-unit>
+			<trans-unit id="Outdent-helpText">
+				<source>Reduces text indentation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Outdent-Tooltip" approved="yes">
+				<source>Reduce indent</source>
+				<target state="translated">Minska indrag</target>
+			</trans-unit>
+			<trans-unit id="Remove block" approved="yes">
+				<source>Remove block format</source>
+				<target state="translated">Ta bort blockformat</target>
+			</trans-unit>
+			<trans-unit id="Technische Universitat Ilmenau" approved="yes">
+				<source>Technische Universität Ilmenau</source>
+				<target state="translated">Technische Universität Ilmenau</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

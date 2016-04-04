@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:22Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="className">
+				<source>Class</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editElement">
+				<source>Edit element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="events">
+				<source>Events</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="general">
+				<source>General</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="id">
+				<source>Id</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="identification">
+				<source>Identification</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onclick">
+				<source>Onclick</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ondblclick">
+				<source>Ondblclick</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onkeydown">
+				<source>Onkeydown</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onkeypress">
+				<source>Onkeypress</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onkeyup">
+				<source>Onkeyup</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onmousedown">
+				<source>Onmousedown</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onmousemove">
+				<source>Onmousemove</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onmouseout">
+				<source>Onmouseout</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onmouseover">
+				<source>Onmouseover</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="onmouseup">
+				<source>Onmouseup</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

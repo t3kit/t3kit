@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:32Z" product-name="belog" target-language="sv">
+    <header/>
+    <body>
+      <trans-unit id="chLog_title" xml:space="preserve" approved="yes">
+        <source>Admin Changelog</source>
+      <target state="translated">Admin ändringslogg</target></trans-unit>
+      <trans-unit id="chLog_users_0" xml:space="preserve" approved="yes">
+        <source>All users</source>
+      <target state="translated">Alla användare</target></trans-unit>
+      <trans-unit id="chLog_users_-1" xml:space="preserve" approved="yes">
+        <source>Self</source>
+      <target state="translated">Själv</target></trans-unit>
+      <trans-unit id="chLog_time_0" xml:space="preserve" approved="yes">
+        <source>This week</source>
+      <target state="translated">Denna vecka</target></trans-unit>
+      <trans-unit id="chLog_time_1" xml:space="preserve" approved="yes">
+        <source>Last week</source>
+      <target state="translated">Senaste vecka</target></trans-unit>
+      <trans-unit id="chLog_time_2" xml:space="preserve" approved="yes">
+        <source>Last 7 days</source>
+      <target state="translated">Senaste 7 dagar</target></trans-unit>
+      <trans-unit id="chLog_time_10" xml:space="preserve" approved="yes">
+        <source>This month</source>
+      <target state="translated">Denna månad</target></trans-unit>
+      <trans-unit id="chLog_time_11" xml:space="preserve" approved="yes">
+        <source>Last month</source>
+      <target state="translated">Senaste månad</target></trans-unit>
+      <trans-unit id="chLog_time_12" xml:space="preserve" approved="yes">
+        <source>Last 31 days</source>
+      <target state="translated">Senaste 31 dagar</target></trans-unit>
+      <trans-unit id="chLog_time_20" xml:space="preserve" approved="yes">
+        <source>No limit</source>
+      <target state="translated">Utan gräns</target></trans-unit>
+      <trans-unit id="chLog_l_time" xml:space="preserve" approved="yes">
+        <source>Time</source>
+      <target state="translated">Tid</target></trans-unit>
+      <trans-unit id="chLog_l_user" xml:space="preserve" approved="yes">
+        <source>User</source>
+      <target state="translated">Användare</target></trans-unit>
+      <trans-unit id="chLog_l_error" xml:space="preserve" approved="yes">
+        <source>E</source>
+      <target state="translated">Fel</target></trans-unit>
+      <trans-unit id="chLog_l_action" xml:space="preserve" approved="yes">
+        <source>Action</source>
+      <target state="translated">Händelse</target></trans-unit>
+      <trans-unit id="chLog_l_table" xml:space="preserve" approved="yes">
+        <source>Table</source>
+      <target state="translated">Tabell</target></trans-unit>
+      <trans-unit id="chLog_l_details" xml:space="preserve" approved="yes">
+        <source>Details</source>
+      <target state="translated">Detaljer</target></trans-unit>
+      <trans-unit id="chLog_menuUsers" xml:space="preserve" approved="yes">
+        <source>Users</source>
+      <target state="translated">Användare</target></trans-unit>
+      <trans-unit id="chLog_menuDepth" xml:space="preserve" approved="yes">
+        <source>Depth</source>
+      <target state="translated">Djup</target></trans-unit>
+      <trans-unit id="chLog_menuTime" xml:space="preserve" approved="yes">
+        <source>Time</source>
+      <target state="translated">Tid</target></trans-unit>
+    </body>
+  </file>
+</xliff>

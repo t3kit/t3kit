@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="action_BEu_db_mount">Startpunkt för sidträd</label>
+			<label index="action_BEu_email">E-post</label>
+			<label index="action_BEu_hidden">Utestäng användare</label>
+			<label index="action_BEu_password">Lösenord</label>
+			<label index="action_BEu_realName">Riktigt namn</label>
+			<label index="action_BEu_usergroups">Medlem i grupper</label>
+			<label index="action_BEu_username">Inloggningsnamn</label>
+			<label index="action_Create">Skapa Backend-användare</label>
+			<label index="action_createQuery"/>
+			<label index="action_download_file">Klicka här för att ladda ner exporterat data till en fil</label>
+			<label index="action_editQuery"/>
+			<label index="action_emptyQuery"/>
+			<label index="action_error">Fel i aktivitet!</label>
+			<label index="action_error-access"/>
+			<label index="action_error-not-found"/>
+			<label index="action_lowlevelMissing"/>
+			<label index="action_not-found"/>
+			<label index="action_not-found-description"/>
+			<label index="action_notReady">Ett fel har uppstått: Den inställda aktiviteten har inte slutförts.</label>
+			<label index="action_noType">Ett fel har uppstått: Denna aktivitet var obestämd.</label>
+			<label index="action_t1_legend_configuration"/>
+			<label index="action_t1_legend_generalFields"/>
+			<label index="action_t1_listOfUsers">Lista över Backend-användare</label>
+			<label index="action_t2_result">Svar på förfrågan</label>
+			<label index="action_t4_edit">Välj vilket data som skall ändras:</label>
+			<label index="action_toolbaritem"/>
+			<label index="action_Update">Uppdatera Backend-användare</label>
+			<label index="description"/>
+			<label index="edit-sys_action"/>
+			<label index="error-password-empty"/>
+			<label index="error-username-empty"/>
+			<label index="error-wrong-email"/>
+			<label index="error-wrong-user"/>
+			<label index="new-sys_action"/>
+			<label index="success"/>
+			<label index="success-user-created"/>
+			<label index="success-user-updated"/>
+			<label index="sys_action"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

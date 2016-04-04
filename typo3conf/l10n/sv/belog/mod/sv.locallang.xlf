@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:32Z" product-name="belog" target-language="sv">
+    <header/>
+    <body>
+      <trans-unit id="adminLog" xml:space="preserve">
+        <source>Administration log</source>
+      <target/></trans-unit>
+      <trans-unit id="allUsers" xml:space="preserve">
+        <source>[All users]</source>
+      <target/></trans-unit>
+      <trans-unit id="any" xml:space="preserve">
+        <source>[Any]</source>
+      <target/></trans-unit>
+      <trans-unit id="live" xml:space="preserve">
+        <source>LIVE</source>
+      <target/></trans-unit>
+      <trans-unit id="draft" xml:space="preserve">
+        <source>Draft</source>
+      <target/></trans-unit>
+      <trans-unit id="self" xml:space="preserve">
+        <source>Self</source>
+      <target/></trans-unit>
+      <trans-unit id="userGroup" xml:space="preserve">
+        <source>Group:</source>
+      <target/></trans-unit>
+      <trans-unit id="thisWeek" xml:space="preserve">
+        <source>This week</source>
+      <target/></trans-unit>
+      <trans-unit id="lastWeek" xml:space="preserve">
+        <source>Last week</source>
+      <target/></trans-unit>
+      <trans-unit id="last7Days" xml:space="preserve">
+        <source>Last 7 days</source>
+      <target/></trans-unit>
+      <trans-unit id="thisMonth" xml:space="preserve">
+        <source>This month</source>
+      <target/></trans-unit>
+      <trans-unit id="lastMonth" xml:space="preserve">
+        <source>Last month</source>
+      <target/></trans-unit>
+      <trans-unit id="last31Days" xml:space="preserve">
+        <source>Last 31 days</source>
+      <target/></trans-unit>
+      <trans-unit id="noLimit" xml:space="preserve">
+        <source>No limit</source>
+      <target/></trans-unit>
+      <trans-unit id="userdefined" xml:space="preserve">
+        <source>User defined</source>
+      <target/></trans-unit>
+      <trans-unit id="set" xml:space="preserve">
+        <source>Set</source>
+      <target/></trans-unit>
+      <trans-unit id="20" xml:space="preserve">
+        <source>20</source>
+      <target/></trans-unit>
+      <trans-unit id="50" xml:space="preserve">
+        <source>50</source>
+      <target/></trans-unit>
+      <trans-unit id="100" xml:space="preserve">
+        <source>100</source>
+      <target/></trans-unit>
+      <trans-unit id="200" xml:space="preserve">
+        <source>200</source>
+      <target/></trans-unit>
+      <trans-unit id="500" xml:space="preserve">
+        <source>500</source>
+      <target/></trans-unit>
+      <trans-unit id="1000" xml:space="preserve">
+        <source>1000</source>
+      <target/></trans-unit>
+      <trans-unit id="actionAll" xml:space="preserve">
+        <source>All</source>
+      <target/></trans-unit>
+      <trans-unit id="actionDatabase" xml:space="preserve">
+        <source>Database</source>
+      <target/></trans-unit>
+      <trans-unit id="actionFile" xml:space="preserve">
+        <source>File</source>
+      <target/></trans-unit>
+      <trans-unit id="actionCache" xml:space="preserve">
+        <source>Cache</source>
+      <target/></trans-unit>
+      <trans-unit id="actionSettings" xml:space="preserve">
+        <source>Settings</source>
+      <target/></trans-unit>
+      <trans-unit id="actionLogin" xml:space="preserve">
+        <source>Login</source>
+      <target/></trans-unit>
+      <trans-unit id="actionErrors" xml:space="preserve">
+        <source>Errors</source>
+      <target/></trans-unit>
+      <trans-unit id="group" xml:space="preserve">
+        <source>Group:</source>
+      <target/></trans-unit>
+      <trans-unit id="user" xml:space="preserve">
+        <source>User:</source>
+      <target/></trans-unit>
+      <trans-unit id="users" xml:space="preserve">
+        <source>Users:</source>
+      <target/></trans-unit>
+      <trans-unit id="time" xml:space="preserve">
+        <source>Time:</source>
+      <target/></trans-unit>
+      <trans-unit id="max" xml:space="preserve">
+        <source>Max:</source>
+      <target/></trans-unit>
+      <trans-unit id="changesInFields" xml:space="preserve">
+        <source>Changes in fields: %s.</source>
+      <target/></trans-unit>
+      <trans-unit id="showHistory" xml:space="preserve">
+        <source>Show History</source>
+      <target/></trans-unit>
+      <trans-unit id="action" xml:space="preserve">
+        <source>Action:</source>
+      <target/></trans-unit>
+      <trans-unit id="workspace" xml:space="preserve">
+        <source>Workspace:</source>
+      <target/></trans-unit>
+      <trans-unit id="groupByPage" xml:space="preserve">
+        <source>Group by page:</source>
+      <target/></trans-unit>
+      <trans-unit id="pagenameWithUID" xml:space="preserve">
+        <source>%s" [UID: %s]</source>
+      <target/></trans-unit>
+      <trans-unit id="overview" xml:space="preserve">
+        <source>Overview</source>
+      <target/></trans-unit>
+      <trans-unit id="timeInfo" xml:space="preserve">
+        <source>These pages have log messages from %s to %s</source>
+      <target/></trans-unit>
+      <trans-unit id="forNonPageRelatedActions" xml:space="preserve">
+        <source>for NON-PAGE related actions</source>
+      <target/></trans-unit>
+      <trans-unit id="forRootLevel" xml:space="preserve">
+        <source>for ROOT LEVEL</source>
+      <target/></trans-unit>
+      <trans-unit id="forPage" xml:space="preserve">
+        <source>for PAGE "%s" (UID: %s)</source>
+      <target/></trans-unit>
+      <trans-unit id="logForNonPageRelatedActionsOrRootLevelOrPage" xml:space="preserve">
+        <source>Log %s from %s to %s</source>
+      <target/></trans-unit>
+      <trans-unit id="type_1" xml:space="preserve" approved="yes">
+        <source>DB</source>
+      <target state="translated">DB</target></trans-unit>
+      <trans-unit id="action_1_1" xml:space="preserve" approved="yes">
+        <source>Insert</source>
+      <target state="translated">Infogning</target></trans-unit>
+      <trans-unit id="action_1_2" xml:space="preserve" approved="yes">
+        <source>Update</source>
+      <target state="translated">Uppdatering</target></trans-unit>
+      <trans-unit id="action_1_3" xml:space="preserve" approved="yes">
+        <source>Delete</source>
+      <target state="translated">Radering</target></trans-unit>
+      <trans-unit id="action_1_4" xml:space="preserve" approved="yes">
+        <source>Check</source>
+      <target state="translated">Kontroll</target></trans-unit>
+      <trans-unit id="msg_1_0_1" xml:space="preserve" approved="yes">
+        <source>Referer host '%s' and server host '%s' did not match!</source>
+      <target state="translated">Refererad värd '%s' och servervärd '%s' stämmer inte överens!</target></trans-unit>
+      <trans-unit id="msg_1_1_11" xml:space="preserve" approved="yes">
+        <source>Attempt to insert record on page '%s' (%s) where this table, %s, is not allowed</source>
+      <target state="translated">Försök att lägga till ett element på sidan '%s' (%s) där tabellen '%s' finns, är inte tillåtet.</target></trans-unit>
+      <trans-unit id="msg_1_1_12" xml:space="preserve" approved="yes">
+        <source>Attempt to insert a record on page '%s' (%s) from table '%s' without permissions. Or non-existing page.</source>
+      <target state="translated">Försök att lägga till ett element på sidan '%s' (%s) från tabell '%s' utan rättigheter. Eller så finns inte sidan.</target></trans-unit>
+      <trans-unit id="msg_1_2_1" xml:space="preserve" approved="yes">
+        <source>Attempt to modify table '%s' without permission</source>
+      <target state="translated">Försök att ändra tabellen '%s' utan rättigheter.</target></trans-unit>
+      <trans-unit id="msg_1_2_2" xml:space="preserve" approved="yes">
+        <source>Attempt to modify record '%s' (%s) without permission. Or non-existing page.</source>
+      <target state="translated">Försök att ändra elementet '%s' utan rättigheter. Eller så finns inte sidan.</target></trans-unit>
+      <trans-unit id="msg_1_2_10" xml:space="preserve" approved="yes">
+        <source>Record '%s' (%s) was updated.</source>
+      <target state="translated">Element '%s' (%s) uppdaterades.</target></trans-unit>
+      <trans-unit id="msg_1_2_12" xml:space="preserve" approved="yes">
+        <source>MySQL error: '%s' (%s)</source>
+      <target state="translated">MySQL -fel: '%s' (%s)</target></trans-unit>
+      <trans-unit id="msg_1_4_1" xml:space="preserve" approved="yes">
+        <source>Attempt to move record '%s' (%s) to after a non-existing record (uid=%s)</source>
+      <target state="translated">Försök att flytta element '%s' (%s) till en plats efter ett element som inte finns (uid=%s)</target></trans-unit>
+      <trans-unit id="msg_1_4_2" xml:space="preserve" approved="yes">
+        <source>Moved record '%s' (%s) to page '%s' (%s)</source>
+      <target state="translated">Flyttat element '%s' (%s) till sida '%s' (%s)</target></trans-unit>
+      <trans-unit id="msg_1_4_3" xml:space="preserve" approved="yes">
+        <source>Moved record '%s' (%s) from page '%s' (%s)</source>
+      <target state="translated">Flyttat element '%s' (%s) från sida '%s' (%s)</target></trans-unit>
+      <trans-unit id="msg_1_4_4" xml:space="preserve" approved="yes">
+        <source>Moved record '%s' (%s) on page '%s' (%s)</source>
+      <target state="translated">Flyttat element '%s' (%s) på sida '%s' (%s)</target></trans-unit>
+      <trans-unit id="msg_1_4_10" xml:space="preserve" approved="yes">
+        <source>Attempt to move page '%s' (%s) to inside of its own rootline (at page '%s' (%s))</source>
+      <target state="translated">Försök att flytta sida '%s' (%s) till inuti sidans egen rotlinje (vid sida '%s' (%s))</target></trans-unit>
+      <trans-unit id="msg_1_4_11" xml:space="preserve" approved="yes">
+        <source>Attempt to insert record on page '%s' (%s) where this table, %s, is not allowed</source>
+      <target state="translated">Försök att infoga element på sida '%s' (%s) där tabell %s finns, är inte tillåtet.</target></trans-unit>
+      <trans-unit id="msg_1_4_12" xml:space="preserve" approved="yes">
+        <source>Attempt to insert a record on page '%s' (%s) from table '%s' without permissions. Or non-existing page.</source>
+      <target state="translated">Försök att infoga ett element på sida '%s' (%s) från tabell '%s' utan rättigheter. Eller så finns inte sidan.</target></trans-unit>
+      <trans-unit id="msg_1_4_13" xml:space="preserve" approved="yes">
+        <source>Attempt to move record '%s' (%s) to after another record, although the table has no sorting row.</source>
+      <target state="translated">Försök att flytta element '%s' (%s) till en plats efter ett annat element trots att tabellen inte har sorteringsrad.</target></trans-unit>
+      <trans-unit id="msg_1_4_14" xml:space="preserve" approved="yes">
+        <source>Attempt to move record '%s' (%s) without having permissions to do so</source>
+      <target state="translated">Försök att flytta element '%s' (%s) utan att ha rättigheter till det.</target></trans-unit>
+      <trans-unit id="msg_1_5_1" xml:space="preserve" approved="yes">
+        <source>You cannot change the 'doktype' of page '%s' to the desired value.</source>
+      <target state="translated">Det går inte att ändra 'doktype' för sida '%s' till det önskade värdet.</target></trans-unit>
+      <trans-unit id="msg_1_5_2" xml:space="preserve" approved="yes">
+        <source>'doktype' of page '%s' could not be changed because the page contains records from disallowed tables; %s</source>
+      <target state="translated">'doktyp' för sida '%s' kunde inte ändras eftersom sidan innehåller element från otillåtna tabeller; %s</target></trans-unit>
+      <trans-unit id="msg_1_5_3" xml:space="preserve" approved="yes">
+        <source>Too few items in the list of values. (%s)</source>
+      <target state="translated">För få artiklar i listan över värden. (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_10" xml:space="preserve" approved="yes">
+        <source>Could not delete file '%s' (does not exist). (%s)</source>
+      <target state="translated">Kunde inte radera fil '%s' (filen existerar inte). (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_11" xml:space="preserve" approved="yes">
+        <source>Copying file '%s' failed!: No destination file (%s) possible!. (%s)</source>
+      <target state="translated">Kopieringen av fil '%s' misslyckades! Ingen möjlig målfil (%s)! (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_12" xml:space="preserve" approved="yes">
+        <source>File extension '%s' is not allowed. (%s)</source>
+      <target state="translated">Filändelsen '%s' är inte tillåten. (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_13" xml:space="preserve" approved="yes">
+        <source>File size (%s) of file '%s' exceeds limit (%s). (%s)</source>
+      <target state="translated">Filen '%s':s filstorlek (%s) överskrider maxstorleken (%s). (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_14" xml:space="preserve" approved="yes">
+        <source>The destination (%s) or the source file (%s) does not exist. (%s)</source>
+      <target state="translated">Målfilen (%s) eller källfilen (%s) existerar inte. (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_15" xml:space="preserve" approved="yes">
+        <source>Copying to file '%s' failed! (%s)</source>
+      <target state="translated">Kopiering till fil '%s' misslyckades! (%s)</target></trans-unit>
+      <trans-unit id="msg_1_5_16" xml:space="preserve" approved="yes">
+        <source>Copying file '%s' failed!: The destination path (%s) may be write protected. Please make it write enabled!. (%s)</source>
+      <target state="translated">Kopiering av fil '%s' misslyckades! Målsökvägen (%s) kan vara skrivskyddad. Var god ändra skrivskyddet! (%s)</target></trans-unit>
+      <trans-unit id="type_2" xml:space="preserve" approved="yes">
+        <source>FILE</source>
+      <target state="translated">FIL</target></trans-unit>
+      <trans-unit id="action_2_1" xml:space="preserve" approved="yes">
+        <source>Upload</source>
+      <target state="translated">Uppladdning</target></trans-unit>
+      <trans-unit id="action_2_2" xml:space="preserve" approved="yes">
+        <source>Copy</source>
+      <target state="translated">Kopiering</target></trans-unit>
+      <trans-unit id="action_2_3" xml:space="preserve" approved="yes">
+        <source>Move</source>
+      <target state="translated">Flytt</target></trans-unit>
+      <trans-unit id="action_2_4" xml:space="preserve" approved="yes">
+        <source>Delete</source>
+      <target state="translated">Radering</target></trans-unit>
+      <trans-unit id="action_2_5" xml:space="preserve" approved="yes">
+        <source>Rename</source>
+      <target state="translated">Namnbyte</target></trans-unit>
+      <trans-unit id="action_2_6" xml:space="preserve" approved="yes">
+        <source>New</source>
+      <target state="translated">Ny</target></trans-unit>
+      <trans-unit id="action_2_7" xml:space="preserve" approved="yes">
+        <source>Unzip</source>
+      <target state="translated">Uppackning</target></trans-unit>
+      <trans-unit id="action_2_8" xml:space="preserve" approved="yes">
+        <source>New file</source>
+      <target state="translated">Ny fil</target></trans-unit>
+      <trans-unit id="action_2_9" xml:space="preserve" approved="yes">
+        <source>Edit</source>
+      <target state="translated">Redigering</target></trans-unit>
+      <trans-unit id="msg_2_9_1" xml:space="preserve" approved="yes">
+        <source>File saved to '%s', bytes: %s, MD5: %s </source>
+      <target state="translated">Fil sparad i '%s', byte: %s, MD5: %s</target></trans-unit>
+      <trans-unit id="type_3" xml:space="preserve">
+        <source>CACHE</source>
+      <target/></trans-unit>
+      <trans-unit id="action_3_1" xml:space="preserve">
+        <source>Clear Cache</source>
+      <target/></trans-unit>
+      <trans-unit id="type_254" xml:space="preserve" approved="yes">
+        <source>SETTING</source>
+      <target state="translated">INSTÄLLNING</target></trans-unit>
+      <trans-unit id="action_254_1" xml:space="preserve" approved="yes">
+        <source>Change</source>
+      <target state="translated">Ändring</target></trans-unit>
+      <trans-unit id="type_255" xml:space="preserve" approved="yes">
+        <source>LOGIN</source>
+      <target state="translated">INLOGGNING</target></trans-unit>
+      <trans-unit id="action_255_1" xml:space="preserve" approved="yes">
+        <source>LOGIN</source>
+      <target state="translated">INLOGGNING</target></trans-unit>
+      <trans-unit id="action_255_2" xml:space="preserve" approved="yes">
+        <source>LOGOUT</source>
+      <target state="translated">UTLOGGNING</target></trans-unit>
+      <trans-unit id="action_255_3" xml:space="preserve" approved="yes">
+        <source>ATTEMPT</source>
+      <target state="translated">FÖRSÖK</target></trans-unit>
+    </body>
+  </file>
+</xliff>

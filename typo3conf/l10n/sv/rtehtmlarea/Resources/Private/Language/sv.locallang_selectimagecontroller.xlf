@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:24Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="alt" approved="yes">
+				<source>Alternate text</source>
+				<target state="translated">Alternativ text</target>
+			</trans-unit>
+			<trans-unit id="border" approved="yes">
+				<source>Border</source>
+				<target state="translated">Ram</target>
+			</trans-unit>
+			<trans-unit id="bytes" approved="yes">
+				<source>bytes</source>
+				<target state="translated">byte</target>
+			</trans-unit>
+			<trans-unit id="class" approved="yes">
+				<source>Style</source>
+				<target state="translated">Stil</target>
+			</trans-unit>
+			<trans-unit id="currentImage" approved="yes">
+				<source>Current Image</source>
+				<target state="translated">Nuvarande bild</target>
+			</trans-unit>
+			<trans-unit id="dragDropImage" approved="yes">
+				<source>Drag and Drop</source>
+				<target state="translated">Drag'n'Drop</target>
+			</trans-unit>
+			<trans-unit id="float" approved="yes">
+				<source>Float</source>
+				<target state="translated">Flytande</target>
+			</trans-unit>
+			<trans-unit id="folderTree" approved="yes">
+				<source>Folder tree</source>
+				<target state="translated">Katalogträd</target>
+			</trans-unit>
+			<trans-unit id="height" approved="yes">
+				<source>Height</source>
+				<target state="translated">Höjd</target>
+			</trans-unit>
+			<trans-unit id="images" approved="yes">
+				<source>Images</source>
+				<target state="translated">Bilder</target>
+			</trans-unit>
+			<trans-unit id="left" approved="yes">
+				<source>Left</source>
+				<target state="translated">Vänster</target>
+			</trans-unit>
+			<trans-unit id="magicImage" approved="yes">
+				<source>New Magic Image</source>
+				<target state="translated">Ny Magic-bild</target>
+			</trans-unit>
+			<trans-unit id="magicImage_msg" approved="yes">
+				<source>In "Magic" mode you can select any kind of image with any dimensions. The image is automatically converted to a web image format and any adjustments you make to the size of the image is post processed in order to optimize size and quality.</source>
+				<target state="translated">Då du befinner dig i 'Magic'-läge kan du välja bilder i vilket format och vilken storlek som helst. Bilden konverteras automatiskt till webbformat och alla ändringar du gör i bildens storlek kommer att ändra bilden optimalt i fråga om både storlek och kvalitet.</target>
+			</trans-unit>
+			<trans-unit id="margin_lr" approved="yes">
+				<source>Margin left/right</source>
+				<target state="translated">Marginal vänster/höger</target>
+			</trans-unit>
+			<trans-unit id="margin_tb" approved="yes">
+				<source>Margin top/bottom</source>
+				<target state="translated">Marginal upptill/nertill</target>
+			</trans-unit>
+			<trans-unit id="nonFloating" approved="yes">
+				<source>Non-floating</source>
+				<target state="translated">Ej flytande</target>
+			</trans-unit>
+			<trans-unit id="notSet" approved="yes">
+				<source>Not set</source>
+				<target state="translated">Ej angivet</target>
+			</trans-unit>
+			<trans-unit id="padding_bottom" approved="yes">
+				<source>Bottom padding</source>
+				<target state="translated">Avstånd nertill</target>
+			</trans-unit>
+			<trans-unit id="padding_left" approved="yes">
+				<source>Left padding</source>
+				<target state="translated">Avstånd vänster</target>
+			</trans-unit>
+			<trans-unit id="padding_right" approved="yes">
+				<source>Right padding</source>
+				<target state="translated">Avstånd höger</target>
+			</trans-unit>
+			<trans-unit id="padding_top" approved="yes">
+				<source>Top padding</source>
+				<target state="translated">Avstånd upptill</target>
+			</trans-unit>
+			<trans-unit id="path" approved="yes">
+				<source>Path</source>
+				<target state="translated">Sökväg</target>
+			</trans-unit>
+			<trans-unit id="pixels" approved="yes">
+				<source>pixels</source>
+				<target state="translated">pixlar</target>
+			</trans-unit>
+			<trans-unit id="plainImage" approved="yes">
+				<source>New Plain Image</source>
+				<target state="translated">Ny Plain-bild</target>
+			</trans-unit>
+			<trans-unit id="plainImage_msg" approved="no">
+				<source>In "Plain" mode you can insert only web image formats (jpg,jpeg,gif,png) up to %1$sx%2$s pixels. This method is designed for images which are optimized for web already.</source>
+				<target state="needs-translation">Då du befinner dig i 'Plain'-läge kan du infoga endast sådana bilder som är i webbformat (jpg,jpeg,gif,png) upp till %1$sx%2$s pixlar. Denna metod används för bilder som redan är optimerade för webb-bruk.</target>
+			</trans-unit>
+			<trans-unit id="right" approved="yes">
+				<source>Right</source>
+				<target state="translated">Höger</target>
+			</trans-unit>
+			<trans-unit id="title" approved="yes">
+				<source>Title</source>
+				<target state="translated">Titel</target>
+			</trans-unit>
+			<trans-unit id="update" approved="yes">
+				<source>Update</source>
+				<target state="translated">Uppdatera</target>
+			</trans-unit>
+			<trans-unit id="uploadImage" approved="yes">
+				<source>Upload Image</source>
+				<target state="translated">Ladda upp bild</target>
+			</trans-unit>
+			<trans-unit id="width" approved="yes">
+				<source>Width</source>
+				<target state="translated">Bredd</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

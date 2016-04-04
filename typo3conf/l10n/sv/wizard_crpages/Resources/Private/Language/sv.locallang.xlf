@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:56:54Z" product-name="wizard_crpages">
+		<header/>
+		<body>
+			<trans-unit id="wiz_crMany" approved="yes">
+				<source>Create multiple pages</source>
+				<target state="translated">Skapa flera sidor</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages" approved="yes">
+				<source>Create new pages</source>
+				<target state="translated">Skapa nya sidor</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_addMoreLines" approved="yes">
+				<source>Add more lines</source>
+				<target state="translated">Lägg till fler rader</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_create" approved="yes">
+				<source>The pages were created!</source>
+				<target state="translated">Sidorna har skapats!</target>
+				<note>86%</note>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_currentMenu" approved="yes">
+				<source>New page structure</source>
+				<target state="translated">Ny sidstruktur</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_errorMsg1" approved="yes">
+				<source>You are not allowed to create new subpages to this page!</source>
+				<target state="translated">Du har inte rättighet att skapa nya undersidor till denna sida!</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_hidePages" approved="yes">
+				<source>Hide new pages</source>
+				<target state="translated">Göm nya sidor</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_hidePagesInMenus">
+				<source>Hide new pages in menus</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_lCreate" approved="yes">
+				<source>Create pages</source>
+				<target state="translated">Skapa sidor</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_lCreate_msg1" approved="yes">
+				<source>You're about to create many new pages. Are you sure you want to continue?</source>
+				<target state="translated">Du håller på att skapa många nya sidor. Är du säker på att du vill fortsätta?</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_listEnd" approved="yes">
+				<source>Place new pages after the existing subpages</source>
+				<target state="translated">Placera de nya sidorna efter befintliga undersidor</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_lReset" approved="yes">
+				<source>Clear fields</source>
+				<target state="translated">Töm fälten</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_noCreate" approved="yes">
+				<source>No pages were created!</source>
+				<target state="translated">Inga nya sidor skapades!</target>
+			</trans-unit>
+			<trans-unit id="wiz_newPages_page" approved="yes">
+				<source>Page</source>
+				<target state="translated">Sida</target>
+			</trans-unit>
+			<trans-unit id="wiz_W" approved="yes">
+				<source>W!</source>
+				<target state="translated">W!</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

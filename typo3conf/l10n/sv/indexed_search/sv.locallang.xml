@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="catdocDisabled"/>
+			<label index="catdocNotFound"/>
+			<label index="extension.CSV"/>
+			<label index="extension.DOC"/>
+			<label index="extension.HTML"/>
+			<label index="extension.images"/>
+			<label index="extension.ODP"/>
+			<label index="extension.ODS"/>
+			<label index="extension.ODT"/>
+			<label index="extension.PDF"/>
+			<label index="extension.PP"/>
+			<label index="extension.RTF"/>
+			<label index="extension.SXC"/>
+			<label index="extension.SXI"/>
+			<label index="extension.SXW"/>
+			<label index="extension.TXT"/>
+			<label index="extension.XLS"/>
+			<label index="extension.XML"/>
+			<label index="ignoreExtensions"/>
+			<label index="mod2_indexed_search">Statistik för indexerad sökning</label>
+			<label index="mod_indexed_search">Indexerad sökning</label>
+			<label index="pdfToolsDisabled"/>
+			<label index="pdfToolsFailed"/>
+			<label index="pdfToolsNotFound"/>
+			<label index="ppthtmlDisabled"/>
+			<label index="ppthtmlNotFound"/>
+			<label index="unrtfDisabled"/>
+			<label index="unrtfNotFound"/>
+			<label index="unzipDisabled"/>
+			<label index="unzipNotFound"/>
+			<label index="xlhtmlDisabled"/>
+			<label index="xlhtmlNotFound"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

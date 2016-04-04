@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+		<label index="tx_gomapsext_domain_model_address"/>
+		<label index="tx_gomapsext_domain_model_address.address"/>
+		<label index="tx_gomapsext_domain_model_address.close_by_click"/>
+		<label index="tx_gomapsext_domain_model_address.configuration_map"/>
+		<label index="tx_gomapsext_domain_model_address.image_height"/>
+		<label index="tx_gomapsext_domain_model_address.image_size"/>
+		<label index="tx_gomapsext_domain_model_address.image_width"/>
+		<label index="tx_gomapsext_domain_model_address.info_window_content"/>
+		<label index="tx_gomapsext_domain_model_address.info_window_link"/>
+		<label index="tx_gomapsext_domain_model_address.latitude"/>
+		<label index="tx_gomapsext_domain_model_address.longitude"/>
+		<label index="tx_gomapsext_domain_model_address.marker"/>
+		<label index="tx_gomapsext_domain_model_address.open_by_click"/>
+		<label index="tx_gomapsext_domain_model_address.shadow"/>
+		<label index="tx_gomapsext_domain_model_address.shadow_height"/>
+		<label index="tx_gomapsext_domain_model_address.shadow_size"/>
+		<label index="tx_gomapsext_domain_model_address.shadow_width"/>
+		<label index="tx_gomapsext_domain_model_address.title"/>
+		<label index="tx_gomapsext_domain_model_map"/>
+		<label index="tx_gomapsext_domain_model_map.addresses"/>
+		<label index="tx_gomapsext_domain_model_map.calc_route"/>
+		<label index="tx_gomapsext_domain_model_map.class"/>
+		<label index="tx_gomapsext_domain_model_map.default_type"/>
+		<label index="tx_gomapsext_domain_model_map.double_click_zoom"/>
+		<label index="tx_gomapsext_domain_model_map.draggable"/>
+		<label index="tx_gomapsext_domain_model_map.height"/>
+		<label index="tx_gomapsext_domain_model_map.kml_url"/>
+		<label index="tx_gomapsext_domain_model_map.map_type_control"/>
+		<label index="tx_gomapsext_domain_model_map.map_types"/>
+		<label index="tx_gomapsext_domain_model_map.pan_control"/>
+		<label index="tx_gomapsext_domain_model_map.scale_control"/>
+		<label index="tx_gomapsext_domain_model_map.scroll_zoom"/>
+		<label index="tx_gomapsext_domain_model_map.show_route"/>
+		<label index="tx_gomapsext_domain_model_map.streetview_control"/>
+		<label index="tx_gomapsext_domain_model_map.styled_map_code"/>
+		<label index="tx_gomapsext_domain_model_map.styled_map_name"/>
+		<label index="tx_gomapsext_domain_model_map.title"/>
+		<label index="tx_gomapsext_domain_model_map.tooltip_title"/>
+		<label index="tx_gomapsext_domain_model_map.travel_mode.0"/>
+		<label index="tx_gomapsext_domain_model_map.travel_mode.2"/>
+		<label index="tx_gomapsext_domain_model_map.travel_mode.3"/>
+		<label index="tx_gomapsext_domain_model_map.travel_mode.4"/>
+		<label index="tx_gomapsext_domain_model_map.unit_system.2"/>
+		<label index="tx_gomapsext_domain_model_map.unit_system.3"/>
+		<label index="tx_gomapsext_domain_model_map.width"/>
+		<label index="tx_gomapsext_domain_model_map.zoom"/>
+		<label index="tx_gomapsext_domain_model_map.zoom_control"/>
+		<label index="tx_gomapsext_domain_model_map.zoom_control_type"/>
+		<label index="tx_gomapsext_flexform_settings"/>
+		<label index="tx_gomapsext_flexform_settings.map"/>
+		<label index="tx_gomapsext_partials_map_assign.alert"/>
+		<label index="tx_gomapsext_partials_map_assign.infoWindowLinkText"/>
+		<label index="tx_gomapsext_partials_map_assign.noSearchResults"/>
+		<label index="tx_gomapsext_partials_map_assign.submit"/>
+		<label index="tx_gomapsext_partials_map_assign.submitSearch"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

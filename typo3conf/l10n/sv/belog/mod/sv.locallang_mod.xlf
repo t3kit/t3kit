@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:32Z" product-name="belog" target-language="sv">
+    <header/>
+    <body>
+      <trans-unit id="mlang_labels_tablabel" xml:space="preserve" approved="yes">
+        <source>Viewing log</source>
+      <target state="translated">Visa loggen</target></trans-unit>
+      <trans-unit id="mlang_labels_tabdescr" xml:space="preserve" approved="yes">
+        <source>Allows you access to the full backend changelog in TYPO3.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</source>
+      <target state="translated">Ger dig åtkomst till fullständiga ändringsloggen i TYPO3 backend.&lt;br /&gt;&lt;em&gt;Tillgänglig endast för 'admin'-användare!&lt;/em&gt;</target></trans-unit>
+      <trans-unit id="mlang_tabs_tab" xml:space="preserve" approved="yes">
+        <source>Log</source>
+      <target state="translated">Logg</target></trans-unit>
+    </body>
+  </file>
+</xliff>

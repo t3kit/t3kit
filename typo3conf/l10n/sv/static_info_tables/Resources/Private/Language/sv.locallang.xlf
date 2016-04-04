@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-05T21:51:01Z" product-name="static_info_tables" target-language="sv">
+		<header/>
+		<body>
+			<trans-unit id="title" xml:space="preserve">
+				<source>Static Info Tables Manager</source>
+			<target></target></trans-unit>
+			<trans-unit id="information" xml:space="preserve">
+				<source>Information</source>
+			<target></target></trans-unit>
+			<trans-unit id="actionList" xml:space="preserve">
+				<source/>
+			</trans-unit>
+			<trans-unit id="newLanguagePack" xml:space="preserve">
+				<source>Create/update a language pack extension</source>
+			<target></target></trans-unit>
+			<trans-unit id="createLanguagePackTitle" xml:space="preserve">
+				<source>Create or update a language pack extension for the Static Info Tables</source>
+			<target></target></trans-unit>
+			<trans-unit id="createLanguagePackDescription" xml:space="preserve">
+				<source>This action creates a language pack for a given language.
+					If the language pack is new, it is immediately installed, and fields are added to the tables to allow translation of labels into the language of the language pack.
+					The backend forms may then be used to translate the labels in the language-specific fields of the Static Info Tables.
+					When updating the localized labels is complete, this same action may be used to update the language pack with the localized data.
+				</source>
+			<target></target></trans-unit>
+			<trans-unit id="createLanguagePackSubmit" xml:space="preserve">
+				<source>Create or update the language pack</source>
+			<target></target></trans-unit>
+			<trans-unit id="language" xml:space="preserve">
+				<source>Language of the language pack</source>
+			<target></target></trans-unit>
+			<trans-unit id="version" xml:space="preserve">
+				<source>Version of the language pack</source>
+			<target></target></trans-unit>
+			<trans-unit id="author" xml:space="preserve">
+				<source>Name of extension author</source>
+			<target></target></trans-unit>
+			<trans-unit id="authorCompany" xml:space="preserve">
+				<source>Name of company of extension author</source>
+			<target></target></trans-unit>
+			<trans-unit id="authorEmail" xml:space="preserve">
+				<source>Email of extension author</source>
+			<target></target></trans-unit>
+			<trans-unit id="couldNotWriteFile" xml:space="preserve">
+				<source>The following file could not be written:</source>
+			<target></target></trans-unit>
+			<trans-unit id="languagePackCreated" xml:space="preserve">
+				<source>A language pack was created for</source>
+			<target></target></trans-unit>
+			<trans-unit id="languagePackUpdated" xml:space="preserve">
+				<source>was updated.</source>
+			<target></target></trans-unit>
+			<trans-unit id="languagePack" xml:space="preserve">
+				<source>Language pack</source>
+			<target></target></trans-unit>
+			<trans-unit id="wasInstalled" xml:space="preserve">
+				<source>was installed.</source>
+			<target></target></trans-unit>
+			<trans-unit id="testForm" xml:space="preserve">
+				<source>Display the test form</source>
+			<target></target></trans-unit>
+			<trans-unit id="testFormTitle" xml:space="preserve">
+				<source>Use the test form to check the installation of Static Info Tables.</source>
+			<target></target></trans-unit>
+			<trans-unit id="testFormDescription" xml:space="preserve">
+				<source>This action allows to test the installation of the Static Info Tables and its language packs.
+					It will display a form containing some selector boxes.
+					If an appropriate language pack is installed, all data should be localized in the current language of the backend.
+				</source>
+			<target></target></trans-unit>
+			<trans-unit id="testFormSubmit" xml:space="preserve">
+				<source>Submit the test form</source>
+			<target></target></trans-unit>
+			<trans-unit id="testFormResultTitle" xml:space="preserve">
+				<source>Results of the test form of Static Info Tables.</source>
+			<target></target></trans-unit>
+			<trans-unit id="sqlDumpNonLocalizedData" xml:space="preserve">
+				<source>SQL dump of non-localized data</source>
+			<target></target></trans-unit>
+			<trans-unit id="sqlDumpNonLocalizedDataTitle" xml:space="preserve">
+				<source>Create a SQL dump of the non-localized data of the Static Info Tables</source>
+			<target></target></trans-unit>
+			<trans-unit id="sqlDumpNonLocalizedDataDescription" xml:space="preserve">
+				<source>This action creates a SQL dump of all non-localized data. The SQL dump may then be used to create a new version of the main extension Static Info Tables (static_info_tables).</source>
+			<target></target></trans-unit>
+			<trans-unit id="sqlDumpCreated" xml:space="preserve">
+				<source>SQL dump of non-localized data was created in</source>
+			<target></target></trans-unit>
+			<trans-unit id="1238108067" xml:space="preserve">
+				<source>Please enter a string of length 1 to 255 characters.</source>
+			<target></target></trans-unit>
+			<trans-unit id="1221559976" xml:space="preserve">
+				<source>Please enter a valid email address.</source>
+			<target></target></trans-unit>
+			<trans-unit id="updateLanguageLabels" xml:space="preserve">
+				<source>The Static Info Tables were updated with language labels from language pack</source>
+			<target></target></trans-unit>
+			<trans-unit id="updateTables" xml:space="preserve">
+				<source>The Static Info Tables were re-created.</source>
+			<target></target></trans-unit>
+			<trans-unit id="nothingToDo" xml:space="preserve">
+				<source>No update was necessary as no language pack is installed.</source>
+			<target></target></trans-unit>
+			<trans-unit id="enableStaticInfoTablesManager" xml:space="preserve">
+				<source>Enable the Static Info Tables Manager: Enable the Static Info Tables Manager module in the backend.</source>
+			<target></target></trans-unit>
+			<trans-unit id="afterInstall" xml:space="preserve">
+				<source>ATTENTION!: After installing or upgrading this extension, you should execute the update script. The update script will re-create the tables and re-apply any installed language pack.</source>
+			<target></target></trans-unit>
+			<trans-unit id="update.oldLanguagePacks" xml:space="preserve">
+				<source>If language packs with versions lower than 6.0 are installed, they could not be detected and they need to be re-created. Please read the manual.</source>
+			<target></target></trans-unit>
+			<trans-unit id="selectCountry" xml:space="preserve">
+				<source>Select a country</source>
+			<target></target></trans-unit>
+			<trans-unit id="selectCountryZone" xml:space="preserve">
+				<source>Select a country subdivision</source>
+			<target></target></trans-unit>
+			<trans-unit id="selectLanguage" xml:space="preserve">
+				<source>Select a language</source>
+			<target></target></trans-unit>
+			<trans-unit id="countryLocalizedName" xml:space="preserve">
+				<source>Country localized name</source>
+			<target></target></trans-unit>
+			<trans-unit id="countryZoneLocalizedName" xml:space="preserve">
+				<source>Country subdivision localized name</source>
+			<target></target></trans-unit>
+			<trans-unit id="currencyLocalizedName" xml:space="preserve">
+				<source>Currency localized name</source>
+			<target></target></trans-unit>
+			<trans-unit id="languageLocalizedName" xml:space="preserve">
+				<source>Language localized name</source>
+			<target></target></trans-unit>
+			<trans-unit id="territoryLocalizedName" xml:space="preserve">
+				<source>Territory localized name</source>
+			<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:09Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="alttext.suggestSearching" approved="yes">
+				<source>Searching...</source>
+				<target state="translated">Söker...</target>
+			</trans-unit>
+			<trans-unit id="buttons.clear" approved="yes">
+				<source>Clear</source>
+				<target state="translated">Töm</target>
+			</trans-unit>
+			<trans-unit id="buttons.clipboard" approved="yes">
+				<source>Clipboard</source>
+				<target state="translated">Klippbord</target>
+			</trans-unit>
+			<trans-unit id="buttons.exit" approved="yes">
+				<source>Exit</source>
+				<target state="translated">Avsluta</target>
+			</trans-unit>
+			<trans-unit id="buttons.logout" approved="yes">
+				<source>Logout</source>
+				<target state="translated">Logga ut</target>
+			</trans-unit>
+			<trans-unit id="buttons.selMenu_modules" approved="yes">
+				<source>MODULES</source>
+				<target state="translated">MODULER</target>
+			</trans-unit>
+			<trans-unit id="cm.allowedFileExtensions">
+				<source>Allowed file extensions:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cm.branchActions" approved="yes">
+				<source>Branch Actions</source>
+				<target state="translated">Sidträdhantering</target>
+			</trans-unit>
+			<trans-unit id="cm.collapseBranch" approved="yes">
+				<source>Collapse Branch</source>
+				<target state="translated">Fäll ihop sidträd</target>
+			</trans-unit>
+			<trans-unit id="cm.copy" approved="yes">
+				<source>Copy</source>
+				<target state="translated">Kopiera</target>
+			</trans-unit>
+			<trans-unit id="cm.copyFolder_into" approved="yes">
+				<source>Copy folder into</source>
+				<target state="translated">Kopiera mapp in i</target>
+			</trans-unit>
+			<trans-unit id="cm.copyPage_after" approved="yes">
+				<source>Copy page after</source>
+				<target state="translated">Kopiera sida efter</target>
+			</trans-unit>
+			<trans-unit id="cm.copyPage_into" approved="yes">
+				<source>Copy page into</source>
+				<target state="translated">Kopiera sida in i</target>
+			</trans-unit>
+			<trans-unit id="cm.copyPasteActions" approved="yes">
+				<source>Page Actions</source>
+				<target state="translated">Sidhantering</target>
+			</trans-unit>
+			<trans-unit id="cm.createnew" approved="yes">
+				<source>Create new</source>
+				<target state="translated">Skapa ny</target>
+			</trans-unit>
+			<trans-unit id="cm.createnew.link" approved="yes">
+				<source>Create new %s</source>
+				<target state="translated">Skapa ny %s</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="cm.createNewRelation" approved="yes">
+				<source>Create new relation</source>
+				<target state="translated">Skapa ny relation</target>
+			</trans-unit>
+			<trans-unit id="cm.cut" approved="yes">
+				<source>Cut</source>
+				<target state="translated">Klipp ut</target>
+			</trans-unit>
+			<trans-unit id="cm.delete" approved="yes">
+				<source>Delete</source>
+				<target state="translated">Ta bort</target>
+			</trans-unit>
+			<trans-unit id="cm.deselect" approved="yes">
+				<source>Deselect</source>
+				<target state="translated">Avmarkera</target>
+			</trans-unit>
+			<trans-unit id="cm.deselectto" approved="yes">
+				<source>Deselect to</source>
+				<target state="translated">Avmarkera från</target>
+			</trans-unit>
+			<trans-unit id="cm.edit" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Ändra</target>
+			</trans-unit>
+			<trans-unit id="cm.editcontent">
+				<source>Edit content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cm.editMetadata">
+				<source>Edit Metadata of this file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cm.expandBranch" approved="yes">
+				<source>Expand Branch</source>
+				<target state="translated">Fäll ut sidträd</target>
+			</trans-unit>
+			<trans-unit id="cm.hide" approved="yes">
+				<source>Hide</source>
+				<target state="translated">Dölj</target>
+			</trans-unit>
+			<trans-unit id="cm.info" approved="yes">
+				<source>Info</source>
+				<target state="translated">Info</target>
+			</trans-unit>
+			<trans-unit id="cm.more" approved="yes">
+				<source>More options...</source>
+				<target state="translated">Fler inställningar...</target>
+			</trans-unit>
+			<trans-unit id="cm.moveFolder_into" approved="yes">
+				<source>Move folder into</source>
+				<target state="translated">Flytta mapp in i</target>
+			</trans-unit>
+			<trans-unit id="cm.movePage_after" approved="yes">
+				<source>Move page after</source>
+				<target state="translated">Flytta sida efter</target>
+			</trans-unit>
+			<trans-unit id="cm.movePage_into" approved="yes">
+				<source>Move page into</source>
+				<target state="translated">Flytta sida in i</target>
+			</trans-unit>
+			<trans-unit id="cm.new" approved="yes">
+				<source>New</source>
+				<target state="translated">Ny</target>
+			</trans-unit>
+			<trans-unit id="cm.offline" approved="yes">
+				<source>Turn offline</source>
+				<target state="translated">Slå av</target>
+			</trans-unit>
+			<trans-unit id="cm.online" approved="yes">
+				<source>Turn online</source>
+				<target state="translated">Slå på</target>
+			</trans-unit>
+			<trans-unit id="cm.open" approved="yes">
+				<source>Open</source>
+				<target state="translated">Öppna</target>
+			</trans-unit>
+			<trans-unit id="cm.pasteafter" approved="yes">
+				<source>Paste after</source>
+				<target state="translated">Klistra in efter</target>
+			</trans-unit>
+			<trans-unit id="cm.pasteinto" approved="yes">
+				<source>Paste into</source>
+				<target state="translated">Klistra in i</target>
+			</trans-unit>
+			<trans-unit id="cm.rename" approved="yes">
+				<source>Rename</source>
+				<target state="translated">Byt namn</target>
+			</trans-unit>
+			<trans-unit id="cm.replace">
+				<source>Replace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cm.save" approved="yes">
+				<source>Save</source>
+				<target state="translated">Spara</target>
+			</trans-unit>
+			<trans-unit id="cm.select" approved="yes">
+				<source>Select</source>
+				<target state="translated">Markera</target>
+			</trans-unit>
+			<trans-unit id="cm.selectto" approved="yes">
+				<source>Select to</source>
+				<target state="translated">Markera till</target>
+			</trans-unit>
+			<trans-unit id="cm.tempMountPoint" approved="yes">
+				<source>Mount as treeroot</source>
+				<target state="translated">Montera som rot</target>
+			</trans-unit>
+			<trans-unit id="cm.unhide" approved="yes">
+				<source>Unhide</source>
+				<target state="translated">Ta fram</target>
+			</trans-unit>
+			<trans-unit id="cm.unzip" approved="yes">
+				<source>Unzip</source>
+				<target state="translated">Packa upp</target>
+			</trans-unit>
+			<trans-unit id="cm.upload" approved="yes">
+				<source>Upload Files</source>
+				<target state="translated">Ladda upp filer</target>
+			</trans-unit>
+			<trans-unit id="cm.view" approved="yes">
+				<source>Show</source>
+				<target state="translated">Visa</target>
+			</trans-unit>
+			<trans-unit id="csh_tooltip_loading" approved="yes">
+				<source>Loading help...</source>
+				<target state="translated">Laddar hjälp...</target>
+			</trans-unit>
+			<trans-unit id="db_new.php.after" approved="yes">
+				<source>after</source>
+				<target state="translated">efter</target>
+			</trans-unit>
+			<trans-unit id="db_new.php.inside" approved="yes">
+				<source>inside</source>
+				<target state="translated">in i</target>
+			</trans-unit>
+			<trans-unit id="db_new.php.pagetitle" approved="yes">
+				<source>New record</source>
+				<target state="translated">Ny post</target>
+			</trans-unit>
+			<trans-unit id="donateWindow.button_disable">
+				<source>Never show again</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="donateWindow.button_donate">
+				<source>Donate now</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="donateWindow.button_postpone">
+				<source>Remind me later</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="donateWindow.message">
+				<source>&lt;b&gt;You have now used TYPO3 for more than three months.&lt;/b&gt; It would be great if you could donate. TYPO3 is Open Source and relies heavily on donations from its users and supporters.&lt;br/&gt; &lt;b&gt;Thank you&lt;/b&gt; for making this great Content Management System even better with your help!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="donateWindow.title">
+				<source>TYPO3 donation notice</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.backendUserGroupListTypeError.header">
+				<source>Possible misconfiguration detected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.backendUserGroupListTypeError.message">
+				<source>Editing of at least one plugin was enabled but editing the page content type "Insert Plugin" is still disallowed. Group members won't be able to edit plugins unless you activate editing for the content type.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.database_schema_mismatch">
+				<source>A SQL error occurred. This may indicate a schema mismatch between TCA and the database. Try running database compare in the Install Tool.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.database_schema_mismatch_title">
+				<source>Database Error</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.formProtection.tokenInvalid" approved="yes">
+				<source>Validating the security token of this form has failed. Please reload the form and submit it again.</source>
+				<target state="translated">Säkerhetsvalidering av detta formulär misslyckades. Vänligen ladda om och skicka igen.</target>
+			</trans-unit>
+			<trans-unit id="error.invalidEmail">
+				<source>"%s" is not a valid e-mail address.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.items_proc_func_error">
+				<source>An error occurred trying to process items for field "%1$s" (%2$s).</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.missingLanguageIsocode">
+				<source>Missing ISO code for language "%s" (UID %d), please edit the language record and set it.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ExtDirect.namespaceError" xml:space="preserve">
+				<source>Ext Direct error in "%s" with namespace: "%s"\n
+Try to clear the TYPO3 cache and / or use parameter no_cache=1 as parameter in URL typo3/index.php\n\n
+Check also the following points:\n
+- configuration in ext_localconf.php: registration key should be like "TYPO3.MyExtension.Sample"\n
+- URL typo3/index.php: namespace parameter should be like: "TYPO3.MyExtension"\n
+- javascript: method\'s name should be like: "TYPO3.MyExtension.Sample.myMethod"\n</source>
+			<target/></trans-unit>
+			<trans-unit id="ExtDirect.noNamespace">
+				<source>Ext Direct error in "%s": no namespace has been found.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.not.installed">
+				<source>Extension "%s" is not installed.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_clipupload.php.warning" approved="yes">
+				<source>No upload-folder is found. You should create a TEMP-folder ("_temp_") in the root of one of your mounts first!</source>
+				<target state="translated">Hittade ingen uppladdningskatalog. Skapa en TEMP-katalog ("_temp_") i roten på en av dina katalogmonteringar först!</target>
+			</trans-unit>
+			<trans-unit id="file_clipupload.php.warning_head" approved="yes">
+				<source>Upload path error</source>
+				<target state="translated">Fel i sökväg för uppladdning</target>
+			</trans-unit>
+			<trans-unit id="file_edit.php.coundNot" approved="yes">
+				<source>This filetype cannot be edited.&lt;br /&gt;The file must have an extension like:&lt;br /&gt;&lt;br /&gt; &lt;b&gt;%s&lt;/b&gt;</source>
+				<target state="translated">Denna filtyp kan inte ändras.&lt;br /&gt;Filen måste sluta på t.ex.:&lt;br /&gt;&lt;br /&gt;&lt;b&gt;%s&lt;/b&gt;</target>
+			</trans-unit>
+			<trans-unit id="file_edit.php.pagetitle" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Ändra</target>
+			</trans-unit>
+			<trans-unit id="file_edit.php.saveAndClose" approved="yes">
+				<source>Save and Close</source>
+				<target state="translated">Spara och stäng</target>
+			</trans-unit>
+			<trans-unit id="file_edit.php.submit" approved="yes">
+				<source>Save</source>
+				<target state="translated">Spara</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.folders" approved="yes">
+				<source>folders</source>
+				<target state="translated">kataloger</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.label_newfile">
+				<source>File name:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.label_newfolder">
+				<source>Folder</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.newfile" approved="yes">
+				<source>Create new textfile</source>
+				<target state="translated">Skapa ny textfil</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.newfile_submit" approved="yes">
+				<source>Create file</source>
+				<target state="translated">Skapa fil</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.newfolders" approved="no">
+				<source>Create new folders</source>
+				<target state="needs-translation">Skapa katalog</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.number_of_folders" approved="yes">
+				<source>Number of folders:</source>
+				<target state="translated">Antal mappar:</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.pagetitle" approved="yes">
+				<source>New file or folder</source>
+				<target state="translated">Ny fil eller katalog</target>
+			</trans-unit>
+			<trans-unit id="file_newfolder.php.submit" approved="yes">
+				<source>Create folders</source>
+				<target state="translated">Skapa katalog</target>
+			</trans-unit>
+			<trans-unit id="file_rename.php.pagetitle" approved="yes">
+				<source>Rename</source>
+				<target state="translated">Döp om</target>
+			</trans-unit>
+			<trans-unit id="file_rename.php.submit" approved="yes">
+				<source>Rename</source>
+				<target state="translated">Döp om</target>
+			</trans-unit>
+			<trans-unit id="file_replace.php.browse">
+				<source>Browse</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_replace.php.keepfiletitle">
+				<source>Keep the current filename?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_replace.php.pagetitle">
+				<source>Replace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_replace.php.selectfile">
+				<source>Select new file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_replace.php.submit">
+				<source>Replace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.all.empty">
+				<source>Please choose</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.all.label">
+				<source>Alternatively, choose a mass action:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.all.override">
+				<source>Overwrite all files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.all.rename">
+				<source>Rename all files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.all.skip">
+				<source>Skip all files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.all.use_existing">
+				<source>Use existing files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.override">
+				<source>Overwrite</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.rename" approved="yes">
+				<source>Rename</source>
+				<target state="translated">Döp om</target>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.skip">
+				<source>Skip the file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.actions.use_existing">
+				<source>Use existing file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.button.cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="file_upload.button.continue">
+				<source>Continue with selected actions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.dropzonehint.message">
+				<source>Drop your files here, or &lt;u&gt;click, browse &amp; choose files&lt;/u&gt;</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.dropzonehint.title">
+				<source>Drag &amp; drop to upload files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.existingfiles.description">
+				<source>Some files you wanted to upload exist already on the system. Please select what you want to do with each file.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.existingfiles.title">
+				<source>Some files exist already</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.fileExtensionExpected">
+				<source>Upload failed! A file with "{0}" extension is expected!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.fileNotAllowed" approved="yes">
+				<source>Filename "{0}" is not allowed!</source>
+				<target state="translated">Filnamn "{0}" är inte tillåtet!</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="file_upload.header.action">
+				<source>Action</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.header.originalFile">
+				<source>Original file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.header.uploadedFile" approved="no">
+				<source>Uploaded file</source>
+				<target state="needs-translation">Ladda upp filer</target>
+			</trans-unit>
+			<trans-unit id="file_upload.maxFileSizeExceeded" approved="no">
+				<source>File "{0}" exceeds maximum file size of {1}!</source>
+				<target state="needs-translation">Fil "{0}" överstiger maxstorlek {1} bytes!</target>
+				<note>85%</note>
+			</trans-unit>
+			<trans-unit id="file_upload.overwriteExistingFiles" approved="no">
+				<source>Shall existing files be overwritten?</source>
+				<target state="needs-translation">Skall existerande filer skrivas över?</target>
+			</trans-unit>
+			<trans-unit id="file_upload.php.files" approved="yes">
+				<source>files</source>
+				<target state="translated">filer</target>
+			</trans-unit>
+			<trans-unit id="file_upload.php.number_of_files" approved="yes">
+				<source>Number of files:</source>
+				<target state="translated">Antal filer:</target>
+			</trans-unit>
+			<trans-unit id="file_upload.php.pagetitle" approved="yes">
+				<source>Upload files</source>
+				<target state="translated">Ladda upp filer</target>
+			</trans-unit>
+			<trans-unit id="file_upload.php.submit" approved="yes">
+				<source>Upload files</source>
+				<target state="translated">Ladda upp filer</target>
+			</trans-unit>
+			<trans-unit id="file_upload.select-and-submit">
+				<source>Select &amp; upload files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="file_upload.uploadFailed" approved="yes">
+				<source>Upload of file "{0}" failed!</source>
+				<target state="translated">Uppladdning av fil "{0}" misslyckades!</target>
+			</trans-unit>
+			<trans-unit id="file_upload.upload-finished" approved="yes">
+				<source>Upload complete! Filelist reloading...</source>
+				<target state="translated">Uppladdning klar! Fillistan laddas om...</target>
+			</trans-unit>
+			<trans-unit id="file_upload.upload-in-progress" approved="yes">
+				<source>File upload in progress...</source>
+				<target state="translated">Uppladdning av filer pågår...</target>
+			</trans-unit>
+			<trans-unit id="file_upload.upload-progress-info" approved="yes">
+				<source>Uploading file {0} out of {1} files.</source>
+				<target state="translated">Laddar upp fil {0} av {1} filer.</target>
+			</trans-unit>
+			<trans-unit id="flushAllCachesDescription">
+				<source>Clear all caches, including frontend caches, and extension-specific caches. Compile-time caches / system caches that are needed for TYPO3 to run are not touched.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flushAllCachesTitle" approved="no">
+				<source>Flush all caches</source>
+				<target state="needs-translation">Rensa all cache</target>
+				<note>75%</note>
+			</trans-unit>
+			<trans-unit id="flushGeneralCachesDescription">
+				<source>Clear frontend and page-related caches, plus some backend-related caches.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flushGeneralCachesTitle">
+				<source>Flush general caches</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flushPageCachesDescription">
+				<source>Clear frontend and page-related caches.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flushPageCachesTitle">
+				<source>Flush frontend caches</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flushSystemCachesDescription">
+				<source>Clear all system-related caches, including the class loader, localization and extension configuration file caches. Rebuilding this cache may take some time. </source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="flushSystemCachesTitle">
+				<source>Flush system caches</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.addnew" approved="yes">
+				<source>Add new</source>
+				<target state="translated">Lägg till ny</target>
+			</trans-unit>
+			<trans-unit id="labels.allow" approved="yes">
+				<source>Allow</source>
+				<target state="translated">Tillåt</target>
+			</trans-unit>
+			<trans-unit id="labels.allTables" approved="yes">
+				<source>[All tables]</source>
+				<target state="translated">[Alla tabeller]</target>
+			</trans-unit>
+			<trans-unit id="labels.author" approved="yes">
+				<source>Author:</source>
+				<target state="translated">Skriven av:</target>
+			</trans-unit>
+			<trans-unit id="labels.automatic">
+				<source>Auto</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.beUser" approved="yes">
+				<source>BE-User</source>
+				<target state="translated">BE-användare</target>
+			</trans-unit>
+			<trans-unit id="labels.browse_db" approved="yes">
+				<source>Browse for records</source>
+				<target state="translated">Leta efter element</target>
+			</trans-unit>
+			<trans-unit id="labels.browse_file" approved="yes">
+				<source>Browse for files</source>
+				<target state="translated">Leta efter filer</target>
+			</trans-unit>
+			<trans-unit id="labels.cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="labels.category" approved="yes">
+				<source>Category:</source>
+				<target state="translated">Kategori:</target>
+			</trans-unit>
+			<trans-unit id="labels.changeInOrig" approved="yes">
+				<source>Changed in original translation</source>
+				<target state="translated">Ändrad i ursprunglig översättning</target>
+			</trans-unit>
+			<trans-unit id="labels.checkAll" approved="yes">
+				<source>Check all</source>
+				<target state="translated">Markera alla</target>
+			</trans-unit>
+			<trans-unit id="labels.clear_cache" approved="yes">
+				<source>Clear cache for this page</source>
+				<target state="translated">Töm denna sidas cache-minne</target>
+			</trans-unit>
+			<trans-unit id="labels.clipboard.clear_clipboard">
+				<source>Clear clipboard</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.clipboard.delete_elements">
+				<source>Delete elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.clipInsert_db" approved="yes">
+				<source>Insert %s record(s) from the clipboard</source>
+				<target state="translated">Klistra in %s element från klippbordet</target>
+			</trans-unit>
+			<trans-unit id="labels.clipInsert_file" approved="yes">
+				<source>Insert %s file(s) from the clipboard</source>
+				<target state="translated">Klistra in %s fil(er) från klippbordet</target>
+			</trans-unit>
+			<trans-unit id="labels.cliptabs" approved="yes">
+				<source>Clipboard #</source>
+				<target state="translated">Klippbord nr</target>
+			</trans-unit>
+			<trans-unit id="labels.cliptabs-description">
+				<source>This clipboard allows to select and edit/copy/move multiple records at once. Choose it to show a checkbox by each record.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.cliptabs-name">
+				<source>Clipboard #%s (multi-selection mode)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.close" approved="yes">
+				<source>Close</source>
+				<target state="translated">Stäng</target>
+			</trans-unit>
+			<trans-unit id="labels.collapseTable" approved="yes">
+				<source>Collapse table</source>
+				<target state="translated">Fäll ihop tabell</target>
+			</trans-unit>
+			<trans-unit id="labels._CONTROL_" approved="yes">
+				<source>Control</source>
+				<target state="translated">Kontroll</target>
+			</trans-unit>
+			<trans-unit id="labels.copymode" approved="yes">
+				<source>Copy items instead of moving them</source>
+				<target state="translated">Kopiera istället för att flytta</target>
+			</trans-unit>
+			<trans-unit id="labels.count" approved="yes">
+				<source>Quantity:</source>
+				<target state="translated">Antal:</target>
+			</trans-unit>
+			<trans-unit id="labels.createNewPage" approved="yes">
+				<source>Create new %s</source>
+				<target state="translated">Skapa ny %s</target>
+				<note>76%</note>
+			</trans-unit>
+			<trans-unit id="labels.createNewRecord" approved="yes">
+				<source>Create new %s on page "%s"</source>
+				<target state="translated">Skapa ny %s på sida "%s"</target>
+			</trans-unit>
+			<trans-unit id="labels.createNewRecordRootLevel" approved="yes">
+				<source>Create new %s on root level</source>
+				<target state="translated">Skapa ny %s på root-nivå</target>
+			</trans-unit>
+			<trans-unit id="labels.csv" approved="yes">
+				<source>Download CSV file</source>
+				<target state="translated">Ladda ner CSV-fil</target>
+			</trans-unit>
+			<trans-unit id="labels.days" approved="yes">
+				<source>days</source>
+				<target state="translated">dagar</target>
+			</trans-unit>
+			<trans-unit id="labels.deleteTitle">
+				<source>Revert to default Constant</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.deny" approved="yes">
+				<source>Deny</source>
+				<target state="translated">Förbjud</target>
+			</trans-unit>
+			<trans-unit id="labels.depth_0" approved="yes">
+				<source>This page</source>
+				<target state="translated">Denna sida</target>
+			</trans-unit>
+			<trans-unit id="labels.depth_1" approved="yes">
+				<source>1 level</source>
+				<target state="translated">1 nivå</target>
+			</trans-unit>
+			<trans-unit id="labels.depth_2" approved="yes">
+				<source>2 levels</source>
+				<target state="translated">2 nivåer</target>
+			</trans-unit>
+			<trans-unit id="labels.depth_3" approved="yes">
+				<source>3 levels</source>
+				<target state="translated">3 nivåer</target>
+			</trans-unit>
+			<trans-unit id="labels.depth_4" approved="yes">
+				<source>4 levels</source>
+				<target state="translated">4 nivåer</target>
+			</trans-unit>
+			<trans-unit id="labels.depth_infi" approved="yes">
+				<source>Infinite</source>
+				<target state="translated">Oändligt</target>
+			</trans-unit>
+			<trans-unit id="labels.disableRTE" approved="yes">
+				<source>Disable Rich Text Editor (RTE)</source>
+				<target state="translated">Inaktivera Rich Text Editor (RTE)</target>
+			</trans-unit>
+			<trans-unit id="labels.editPage" approved="yes">
+				<source>Edit %s "%s"</source>
+				<target state="translated">Redigera %s "%s"</target>
+			</trans-unit>
+			<trans-unit id="labels.editRecord" approved="yes">
+				<source>Edit %s "%s" on page "%s"</source>
+				<target state="translated">Redigera %s "%s" på sida "%s"</target>
+			</trans-unit>
+			<trans-unit id="labels.editRecordNoTitle" approved="yes">
+				<source>Edit %s on page "%s"</source>
+				<target state="translated">Redigera %s på sida "%s"</target>
+			</trans-unit>
+			<trans-unit id="labels.editRecordRootLevel" approved="yes">
+				<source>Edit %s "%s" on root level</source>
+				<target state="translated">Redigera %s "%s" på root-nivå</target>
+			</trans-unit>
+			<trans-unit id="labels.editTitle">
+				<source>Edit this Constant</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.enabled" approved="yes">
+				<source>Enabled</source>
+				<target state="translated">Aktiverad</target>
+			</trans-unit>
+			<trans-unit id="labels.endtime" approved="yes">
+				<source>End</source>
+				<target state="translated">Slut</target>
+			</trans-unit>
+			<trans-unit id="labels.enterSearchLevels" approved="yes">
+				<source>This page|1 level down|2 levels down|3 levels down|4 levels down</source>
+				<target state="translated">Denna sida|1 nivå ner|2 nivåer ner|3 nivåer ner|4 nivåer ner</target>
+			</trans-unit>
+			<trans-unit id="labels.enterSearchString" approved="no">
+				<source>Enter search term</source>
+				<target state="needs-translation">Sökord:</target>
+			</trans-unit>
+			<trans-unit id="labels.expandAll" approved="yes">
+				<source>Expand all</source>
+				<target state="translated">Expandera alla</target>
+			</trans-unit>
+			<trans-unit id="labels.expandTable" approved="no">
+				<source>Expand table</source>
+				<target state="needs-translation">Expandera alla</target>
+				<note>75%</note>
+			</trans-unit>
+			<trans-unit id="labels.feUser" approved="yes">
+				<source>FE-User</source>
+				<target state="translated">FE-användare</target>
+			</trans-unit>
+			<trans-unit id="labels.fieldsChanged" xml:space="preserve" approved="yes">
+				<source>There are unsaved changes in the form!
+Do you want to continue WITHOUT saving?</source>
+			<target state="translated">Formuläret innehåller ändringar som inte sparats.Vill du fortsätta UTAN att spara?</target></trans-unit>
+			<trans-unit id="labels.fieldsMissing" approved="no">
+				<source>The fields marked with an exclamation mark are not yet correctly filled in. Please complete them properly.</source>
+				<target state="needs-translation">Det finns fält i formuläret som ännu inte är ifyllda. Fälten är märkta med ett gult utropstecken.</target>
+			</trans-unit>
+			<trans-unit id="labels.findRecord" approved="yes">
+				<source>Find records</source>
+				<target state="translated">Hitta dokument</target>
+			</trans-unit>
+			<trans-unit id="labels.generalOptions" approved="yes">
+				<source>General options:</source>
+				<target state="translated">Grundinställningar:</target>
+			</trans-unit>
+			<trans-unit id="labels.generalOptions_more" approved="yes">
+				<source>General options (continued):</source>
+				<target state="translated">Grundinställingar (forts.):</target>
+			</trans-unit>
+			<trans-unit id="labels.generalTab" approved="yes">
+				<source>General</source>
+				<target state="translated">Allmänt</target>
+			</trans-unit>
+			<trans-unit id="labels.goBack" approved="yes">
+				<source>Go back</source>
+				<target state="translated">Gå tillbaka</target>
+			</trans-unit>
+			<trans-unit id="labels.hidden" approved="yes">
+				<source>Hidden</source>
+				<target state="translated">Gömd</target>
+			</trans-unit>
+			<trans-unit id="labels.holdDownCTRL" approved="yes">
+				<source>Important: Hold down the CTRL key while toggling elements in this list!</source>
+				<target state="translated">Viktigt: Håll ner CTRL-knappen då du väljer element i denna lista</target>
+			</trans-unit>
+			<trans-unit id="labels.items" approved="yes">
+				<source>Available Items</source>
+				<target state="translated">Objekt</target>
+			</trans-unit>
+			<trans-unit id="labels.label.limit">
+				<source>Limit</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.label.search_levels">
+				<source>Search levels</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.label.searchString">
+				<source>Search term</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels._LOCALIZATION_" approved="yes">
+				<source>Localization</source>
+				<target state="translated">Lokalisering</target>
+			</trans-unit>
+			<trans-unit id="labels.lockedRecord" approved="yes">
+				<source>The user '%s' began to edit this record %s ago.</source>
+				<target state="translated">Användaren '%s' började ändra detta element %s sedan.</target>
+			</trans-unit>
+			<trans-unit id="labels.lockedRecord_content" approved="yes">
+				<source>The user '%s' began to edit content on this page %s ago.</source>
+				<target state="translated">Användaren '%s' började ändra denna sida %s sedan.</target>
+			</trans-unit>
+			<trans-unit id="labels.lockedRecordUser" approved="no">
+				<source>The %s '%s' began to edit this record %s ago.</source>
+				<target state="needs-translation">Användaren '%s' började ändra detta element %s sedan.</target>
+				<note>93%</note>
+			</trans-unit>
+			<trans-unit id="labels.lockedRecordUser_content" approved="no">
+				<source>The %s '%s' began to edit content on this page %s ago.</source>
+				<target state="needs-translation">Användaren '%s' började ändra denna sida %s sedan.</target>
+				<note>94%</note>
+			</trans-unit>
+			<trans-unit id="labels.makeBookmark" approved="yes">
+				<source>Create a bookmark to this page</source>
+				<target state="translated">Skapa bokmärke för denna sida</target>
+			</trans-unit>
+			<trans-unit id="labels.makeShortcut" approved="yes">
+				<source>Create a shortcut to this page?</source>
+				<target state="translated">Skapa en genväg till denna sida?</target>
+			</trans-unit>
+			<trans-unit id="labels.maxItemsAllowed">
+				<source>A maximum of {0} child records are allowed.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.menu" approved="yes">
+				<source>Menu:</source>
+				<target state="translated">Meny:</target>
+			</trans-unit>
+			<trans-unit id="labels.minutesHoursDaysYears" approved="no">
+				<source> min| hrs| days| yrs| min| hour| day| year</source>
+				<target state="needs-translation">min|tim|dgr|år</target>
+			</trans-unit>
+			<trans-unit id="labels.move" approved="yes">
+				<source>Move this item</source>
+				<target state="translated">Flytta detta object</target>
+			</trans-unit>
+			<trans-unit id="labels.move_down" approved="yes">
+				<source>Move selected items downwards</source>
+				<target state="translated">Flytta valda objekt nedåt</target>
+			</trans-unit>
+			<trans-unit id="labels.move_to_bottom" approved="yes">
+				<source>Move selected items to bottom</source>
+				<target state="translated">Flytta valda objekt längst ner</target>
+			</trans-unit>
+			<trans-unit id="labels.move_to_top" approved="yes">
+				<source>Move selected items to top</source>
+				<target state="translated">Flytta valda objekt högst upp</target>
+			</trans-unit>
+			<trans-unit id="labels.move_up" approved="yes">
+				<source>Move selected items upwards</source>
+				<target state="translated">Flytta valda objekt uppåt</target>
+			</trans-unit>
+			<trans-unit id="labels.new" approved="yes">
+				<source>NEW</source>
+				<target state="translated">NY</target>
+			</trans-unit>
+			<trans-unit id="labels.new_section" approved="yes">
+				<source>Create new:</source>
+				<target state="translated">Skapa ny:</target>
+			</trans-unit>
+			<trans-unit id="labels.noEditPermission" approved="yes">
+				<source>Sorry, you didn't have proper permissions to perform this change.</source>
+				<target state="translated">Beklagar, du hade inte rättigheter att göra denna ändring.</target>
+			</trans-unit>
+			<trans-unit id="labels.noMatchingValue" approved="yes">
+				<source>INVALID VALUE ("%s")</source>
+				<target state="translated">OGILTIGT VÄRDE (%s)</target>
+			</trans-unit>
+			<trans-unit id="labels.noRecordFound" approved="yes">
+				<source>No record found</source>
+				<target state="translated">Inga dokument hittades</target>
+			</trans-unit>
+			<trans-unit id="labels.normal">
+				<source>Normal (single record mode)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.normal-description">
+				<source>"Normal" clipboard allows to copy/move one record at time.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.noRTEfound" approved="yes">
+				<source>Notice: This field can only be edited with a Rich Text Editor. No editor is currently available or enabled.</source>
+				<target state="translated">Obs: Detta fält kan endast ändras med en Rich Text Editor. En sådan redigerare finns för närvarande inte tillgänglig eller så är den avstängd.</target>
+			</trans-unit>
+			<trans-unit id="labels.note" approved="yes">
+				<source>Note:</source>
+				<target state="translated">Anteckning:</target>
+			</trans-unit>
+			<trans-unit id="labels.no_title" approved="yes">
+				<source>No title</source>
+				<target state="translated">Ingen rubrik</target>
+			</trans-unit>
+			<trans-unit id="labels.openInNewWindow" approved="yes">
+				<source>Open in new window</source>
+				<target state="translated">Öppna i nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="labels.path" approved="yes">
+				<source>Path</source>
+				<target state="translated">Sökväg</target>
+			</trans-unit>
+			<trans-unit id="labels._PATH_" approved="yes">
+				<source>Path</source>
+				<target state="translated">Sökväg</target>
+			</trans-unit>
+			<trans-unit id="labels.placeholder.override" approved="yes">
+				<source>Override "%s"?</source>
+				<target state="translated">Skriv över "%s"?</target>
+			</trans-unit>
+			<trans-unit id="labels.referencesToFile" approved="no">
+				<source>(There are %s reference(s) to this file!)</source>
+				<target state="needs-translation">(Det finns %s referens(er) till detta dokument!)</target>
+			</trans-unit>
+			<trans-unit id="labels.referencesToFolder" approved="no">
+				<source>(There are %s reference(s) to this folder!)</source>
+				<target state="needs-translation">(Det finns %s referens(er) till detta dokument!)</target>
+			</trans-unit>
+			<trans-unit id="labels.referencesToRecord" approved="yes">
+				<source>(There are %s reference(s) to this record!)</source>
+				<target state="translated">(Det finns %s referens(er) till detta dokument!)</target>
+			</trans-unit>
+			<trans-unit id="labels.refresh" approved="yes">
+				<source>Reload the tree from server</source>
+				<target state="translated">Läs om trädstrukturen</target>
+			</trans-unit>
+			<trans-unit id="labels.refreshList" approved="yes">
+				<source>Reload list from server</source>
+				<target state="translated">Läs om listan</target>
+			</trans-unit>
+			<trans-unit id="labels.reload" approved="yes">
+				<source>Reload</source>
+				<target state="translated">Ladda om</target>
+			</trans-unit>
+			<trans-unit id="labels.remainingCharacters">
+				<source>Remaining characters: {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.removeItem" approved="yes">
+				<source>Remove item</source>
+				<target state="translated">Ta bort objekt</target>
+			</trans-unit>
+			<trans-unit id="labels.remove_selected" approved="yes">
+				<source>Remove selected items</source>
+				<target state="translated">Avlägsna valda objekt</target>
+			</trans-unit>
+			<trans-unit id="labels.resetFilter" approved="yes">
+				<source>Reset Filter</source>
+				<target state="translated">Rensa filter</target>
+			</trans-unit>
+			<trans-unit id="labels.revertSelection" approved="yes">
+				<source>Revert selection</source>
+				<target state="translated">Omvänd markering</target>
+			</trans-unit>
+			<trans-unit id="labels.rootLevel" approved="yes">
+				<source>root level</source>
+				<target state="translated">root-nivå</target>
+			</trans-unit>
+			<trans-unit id="labels.search" approved="yes">
+				<source>Search</source>
+				<target state="translated">Sök</target>
+			</trans-unit>
+			<trans-unit id="labels.selected" approved="yes">
+				<source>Selected Items</source>
+				<target state="translated">Valda</target>
+			</trans-unit>
+			<trans-unit id="labels.setAllCheckboxes" approved="yes">
+				<source>Select All Checkboxes</source>
+				<target state="translated">Välj alla kryssrutor</target>
+			</trans-unit>
+			<trans-unit id="labels.setFields" approved="yes">
+				<source>Set fields</source>
+				<target state="translated">Bestäm fält</target>
+			</trans-unit>
+			<trans-unit id="labels.show" approved="yes">
+				<source>Show</source>
+				<target state="translated">Visa</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="labels.showList" approved="yes">
+				<source>Show record list</source>
+				<target state="translated">Visa elementlista</target>
+			</trans-unit>
+			<trans-unit id="labels.showPage" approved="yes">
+				<source>View webpage</source>
+				<target state="translated">Visa webbsida</target>
+			</trans-unit>
+			<trans-unit id="labels.showRecords" approved="yes">
+				<source>Show records</source>
+				<target state="translated">Visa element</target>
+			</trans-unit>
+			<trans-unit id="labels.starttime" approved="yes">
+				<source>Start</source>
+				<target state="translated">Start</target>
+			</trans-unit>
+			<trans-unit id="labels.table" approved="yes">
+				<source>Table</source>
+				<target state="translated">Tabell</target>
+			</trans-unit>
+			<trans-unit id="labels.temporaryDBmount" approved="yes">
+				<source>Cancel temporary DB mount</source>
+				<target state="translated">Avbryt temporär DB montering</target>
+			</trans-unit>
+			<trans-unit id="labels.thumbmode_clip" approved="yes">
+				<source>Show Thumbnails on ClipBoard</source>
+				<target state="translated">Visa miniatyrbilder på klippbordet</target>
+			</trans-unit>
+			<trans-unit id="labels.title.limit">
+				<source>Limit</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.title.search" approved="yes">
+				<source>Search</source>
+				<target state="translated">Sök</target>
+			</trans-unit>
+			<trans-unit id="labels.title.searchIcon">
+				<source>Toggle search toolbar</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.title.search_levels">
+				<source>Search levels</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.title.searchString">
+				<source>Search term</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="labels.toggleall" approved="yes">
+				<source>Toggle all</source>
+				<target state="translated">Växla alla</target>
+			</trans-unit>
+			<trans-unit id="labels.translationsOfRecord" approved="yes">
+				<source>(This record has %s translation(s) which will be deleted, too!)</source>
+				<target state="translated">(Detta dokument har %s översättning(ar) som också kommer att tas bort!)</target>
+			</trans-unit>
+			<trans-unit id="labels.uncheckAll" approved="yes">
+				<source>Uncheck all</source>
+				<target state="translated">Avmarkera alla</target>
+			</trans-unit>
+			<trans-unit id="labels.unknownUser" approved="yes">
+				<source>-Unknown-</source>
+				<target state="translated">-Okänd-</target>
+			</trans-unit>
+			<trans-unit id="labels.upOneLevel" approved="yes">
+				<source>Up one level</source>
+				<target state="translated">En nivå uppåt</target>
+			</trans-unit>
+			<trans-unit id="labels.user" approved="yes">
+				<source>User</source>
+				<target state="translated">Användare</target>
+			</trans-unit>
+			<trans-unit id="link.to.dblist.correctly">
+				<source>Please, do not link to this page. Use \TYPO3\CMS\Backend\Utility\BackendUtility::getListViewLink() for link generation.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="link.to.filefile.correctly">
+				<source>Please, do not link to this page.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="loadingIndicator" approved="yes">
+				<source>Loading ...</source>
+				<target state="translated">Laddar ...</target>
+			</trans-unit>
+			<trans-unit id="message.description.fileDeleted" approved="yes">
+				<source>The file "%s" was successfully deleted.</source>
+				<target state="translated">Filen "%s" togs bort.</target>
+			</trans-unit>
+			<trans-unit id="message.description.fileHasBrokenReferences">
+				<source>The file has %s broken reference(s) but it will be deleted regardless.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="message.description.fileNotDeletedHasReferences" approved="yes">
+				<source>The file cannot be deleted since it is still used at the following places:</source>
+				<target state="translated">Filen kan ej tas bort, då den används på följande ställen:</target>
+			</trans-unit>
+			<trans-unit id="message.description.fileNotFound">
+				<source>The file %s is not found, possible already removed.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="message.description.folderDeleted" approved="yes">
+				<source>The folder "%s" was successfully deleted.</source>
+				<target state="translated">Mappen "%s" togs bort.</target>
+			</trans-unit>
+			<trans-unit id="message.description.folderNotDeletedHasFiles" approved="yes">
+				<source>The folder cannot be deleted since it still contains files.</source>
+				<target state="translated">Mappen kan ej tas bort då den innehåller filer.</target>
+			</trans-unit>
+			<trans-unit id="message.description.folderNotDeletedHasFilesWithReferences" approved="no">
+				<source>The folder cannot be deleted since it still contains files in use.</source>
+				<target state="needs-translation">Mappen kan ej tas bort då den innehåller filer.</target>
+				<note>89% 100%</note>
+			</trans-unit>
+			<trans-unit id="message.header.fileDeleted" approved="yes">
+				<source>File deleted</source>
+				<target state="translated">Filen borttagen</target>
+			</trans-unit>
+			<trans-unit id="message.header.fileHasBrokenReferences">
+				<source>File has broken references</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="message.header.fileNotDeletedHasReferences" approved="yes">
+				<source>File not deleted</source>
+				<target state="translated">Filen ej borttagen</target>
+			</trans-unit>
+			<trans-unit id="message.header.fileNotFound">
+				<source>File not found</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="message.header.folderDeleted" approved="yes">
+				<source>Folder deleted</source>
+				<target state="translated">Mapp borttagen</target>
+			</trans-unit>
+			<trans-unit id="message.header.folderNotDeletedHasFiles" approved="yes">
+				<source>Folder not deleted</source>
+				<target state="translated">Mappen ej borttagen</target>
+			</trans-unit>
+			<trans-unit id="message.header.folderNotDeletedHasFilesWithReferences" approved="yes">
+				<source>Folder not deleted</source>
+				<target state="translated">Mappen ej borttagen</target>
+				<note>100% 100%</note>
+			</trans-unit>
+			<trans-unit id="mess.be_locked">
+				<source>The TYPO3 backend is currently locked for maintenance. Leave this browser window open and the backend will automatically become available again once maintenance is complete.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mess.copy_after" approved="yes">
+				<source>Copy "%s" to after "%s"?</source>
+				<target state="translated">Kopiera "%s" efter "%s"</target>
+			</trans-unit>
+			<trans-unit id="mess.copycb_after" approved="yes">
+				<source>Copy all elements (%s) from the clipboard to the position after "%s"?</source>
+				<target state="translated">Kopiera alla element (%s) från klippbordet efter "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.copycb_into" approved="yes">
+				<source>Copy all elements (%s) from the clipboard into "%s"?</source>
+				<target state="translated">Kopiera alla element (%s) från klippbordet in i "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.copy_into" approved="yes">
+				<source>Copy "%s" into "%s"?</source>
+				<target state="translated">Kopiera "%s" in i "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.copy_into_colPos">
+				<source>Copy "%1$s" into column "%3$s" on page "%2$s"?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mess.delete" approved="no">
+				<source>Are you sure you want to delete '%s'?</source>
+				<target state="needs-translation">Är du säker på att du vill ta bort "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.deleteClip" approved="no">
+				<source>Are you sure you want to delete ALL referenced elements (%s) on the clipboard?</source>
+				<target state="needs-translation">Är du säker på att du vill ta bort ALLA valda objekt (%s) på klippbordet?</target>
+			</trans-unit>
+			<trans-unit id="mess.login_about_to_expire" approved="yes">
+				<source>Your TYPO3 login is about to expire. Please confirm that you want to stay logged in.</source>
+				<target state="translated">Din TYPO3-inloggning håller på att löpa ut. Vänligen bekräfta att du vill fortsätta vara inloggad.</target>
+			</trans-unit>
+			<trans-unit id="mess.login_about_to_expire_title" approved="yes">
+				<source>TYPO3 login expiration notice</source>
+				<target state="translated">Meddelande om att du håller på att bli utloggad ur TYPO3</target>
+			</trans-unit>
+			<trans-unit id="mess.login_expired" approved="yes">
+				<source>Your TYPO3 login has expired. You need to login again if you want to continue. Otherwise you can close the current browser window.</source>
+				<target state="translated">Din inloggning har gått ut. Du måste logga in igen för att fortsätta.</target>
+			</trans-unit>
+			<trans-unit id="mess.login_refresh_about_to_expire">
+				<source>Your TYPO3 login is about to expire. Please confirm that you want to be logged out.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mess.move_after" approved="yes">
+				<source>Move "%s" to after "%s"?</source>
+				<target state="translated">Flytta "%s" efter "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.movecb_after" approved="yes">
+				<source>Move all elements (%s) from the clipboard to the position after "%s"?</source>
+				<target state="translated">Flytta alla element (%s) från klippbordet efter "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.movecb_into" approved="yes">
+				<source>Move all elements (%s) from the clipboard into "%s"?</source>
+				<target state="translated">Flytta alla element (%s) från klippbordet in i "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.move_into" approved="yes">
+				<source>Move "%s" into "%s"?</source>
+				<target state="translated">Flytta "%s" in i "%s"?</target>
+			</trans-unit>
+			<trans-unit id="mess.move_into_colPos">
+				<source>Move "%1$s" into column "%3$s" on page "%2$s"?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mess.noSelItemForEdit" approved="yes">
+				<source>Please select one or more items in the list before you can edit.</source>
+				<target state="translated">Vänligen välj ett eller flera objekt i listan före ändringar.</target>
+			</trans-unit>
+			<trans-unit id="mess.please_wait" approved="yes">
+				<source>Please wait ...</source>
+				<target state="translated">Vänligen vänta...</target>
+			</trans-unit>
+			<trans-unit id="mess.redraw" approved="yes">
+				<source>Redrawing the page will discard the current data. Do you want to continue?</source>
+				<target state="translated">Genom att ladda om sidan kommer nuvarande uppgifter att försvinna. Vill du fortsätta?</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_direct_logout_button" approved="yes">
+				<source>No, log out.</source>
+				<target state="translated">Nej, logga ut.</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_exit_button" approved="yes">
+				<source>Exit</source>
+				<target state="translated">Avsluta</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login" xml:space="preserve" approved="yes">
+				<source>Your login has probably expired.
+Do you want to refresh it now?</source>
+			<target state="translated">Din inloggningstid är antagligen slut. Vill du logga in på nytt?</target></trans-unit>
+			<trans-unit id="mess.refresh_login_button" approved="yes">
+				<source>Login</source>
+				<target state="translated">Inloggning</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_countdown" approved="yes">
+				<source>{0} seconds</source>
+				<target state="translated">{0} sekunder</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_countdown_singular" approved="yes">
+				<source>{0} second</source>
+				<target state="translated">{0} sekund</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_emptyPassword" approved="yes">
+				<source>Empty password is not allowed!</source>
+				<target state="translated">Tomt lösenord är ej tillåtet!</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_failed" approved="yes">
+				<source>Login failed</source>
+				<target state="translated">Inloggning misslyckades</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_failed_message" approved="yes">
+				<source>Password not correct.</source>
+				<target state="translated">Felaktigt lösenord.</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_logging_in" approved="yes">
+				<source>Logging in...</source>
+				<target state="translated">Loggar in...</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_logout_button">
+				<source>Log me out</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_password" approved="yes">
+				<source>Password</source>
+				<target state="translated">Lösenord</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_refresh_button" approved="yes">
+				<source>Stay logged in!</source>
+				<target state="translated">Fortsätt vara inloggad!</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_title" approved="yes">
+				<source>Refresh Login to TYPO3 (User: %s)</source>
+				<target state="translated">Ladda om Inloggning till TYPO3 (Användare: %s)</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_login_username" approved="yes">
+				<source>Username</source>
+				<target state="translated">Användarnamn</target>
+			</trans-unit>
+			<trans-unit id="mess.refresh_logout_button" approved="yes">
+				<source>Logout</source>
+				<target state="translated">Logga ut</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="mess.refreshRequired.content">
+				<source>This change will affect which fields are available in the form. Would you like to save now in order to refresh the display?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mess.refreshRequired.title">
+				<source>Refresh required</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.error.invalid_url">
+				<source>Unknown/not allowed URL</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.error.new_media.failed">
+				<source>Adding media failed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media">
+				<source>Add new media asset</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media.added">
+				<source>Added media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media.allowedProviders">
+				<source>Allowed media providers:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media.button">
+				<source>Add media by URL</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media.label">
+				<source>Url of remote source:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media.placeholder">
+				<source>Paste media url here...</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="online_media.new_media.submit">
+				<source>Add media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rm.adminFunctions" approved="yes">
+				<source>Admin functions</source>
+				<target state="translated">Admin-funktioner</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCache_all" approved="yes">
+				<source>Clear FE cache</source>
+				<target state="translated">Rensa FE-cache</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCache_allTypo3Conf" approved="yes">
+				<source>Clear cache in typo3conf/</source>
+				<target state="translated">Rensa cache i typo3conf/</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCache_clearCache" approved="yes">
+				<source>Clear cache</source>
+				<target state="translated">Töm cache-minnet</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCacheMenu_all" approved="yes">
+				<source>Clear all caches</source>
+				<target state="translated">Rensa all cache</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCacheMenu_allTypo3Conf" approved="yes">
+				<source>Clear configuration cache</source>
+				<target state="translated">Rensa konfigurationscache</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCacheMenu_pages" approved="yes">
+				<source>Clear page content cache</source>
+				<target state="translated">Rensa sidinnehållscache</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCache_pages" approved="yes">
+				<source>Clear Page Cache</source>
+				<target state="translated">Töm sidans cache-minne</target>
+			</trans-unit>
+			<trans-unit id="rm.clearCache_thisPage" approved="yes">
+				<source>This page</source>
+				<target state="translated">Denna sida</target>
+			</trans-unit>
+			<trans-unit id="rm.closeAllDocs" approved="no">
+				<source>Close all</source>
+				<target state="needs-translation">Stäng alla dokument</target>
+			</trans-unit>
+			<trans-unit id="rm.closeDoc" approved="no">
+				<source>Close</source>
+				<target state="needs-translation">Stäng dokument</target>
+			</trans-unit>
+			<trans-unit id="rm.delete" approved="yes">
+				<source>Delete</source>
+				<target state="translated">Ta bort</target>
+			</trans-unit>
+			<trans-unit id="rm.edit" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Ändra</target>
+			</trans-unit>
+			<trans-unit id="rm.export" approved="yes">
+				<source>Export</source>
+				<target state="translated">Exportera</target>
+			</trans-unit>
+			<trans-unit id="rm.menu" approved="yes">
+				<source>[menu]</source>
+				<target state="translated">[meny]</target>
+			</trans-unit>
+			<trans-unit id="rm.saveCloseAllDocs" approved="no">
+				<source>Save and close all</source>
+				<target state="needs-translation">Spara och stäng alla dokument</target>
+			</trans-unit>
+			<trans-unit id="rm.saveCloseDoc" approved="no">
+				<source>Save and close</source>
+				<target state="needs-translation">Spara och stäng dokument</target>
+			</trans-unit>
+			<trans-unit id="rm.saveDoc" approved="no">
+				<source>Save</source>
+				<target state="needs-translation">Spara dokument</target>
+			</trans-unit>
+			<trans-unit id="rm.saveDocShow" approved="no">
+				<source>Save and view page</source>
+				<target state="needs-translation">Spara dokument och visa sida</target>
+			</trans-unit>
+			<trans-unit id="rm.saveNewDoc" approved="no">
+				<source>Save and create a new one</source>
+				<target state="needs-translation">Spara dokument och skapa nytt</target>
+			</trans-unit>
+			<trans-unit id="rm.translationSaveDoc" approved="yes">
+				<source>Translation finished, save and close</source>
+				<target state="translated">Översättning klar och spara</target>
+			</trans-unit>
+			<trans-unit id="rm.translationSaveDocClear" approved="yes">
+				<source>Translation NOT finished, Save</source>
+				<target state="translated">Översättningen är EJ klar, Spara</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.cannotDisplayArchive">
+				<source>Sorry, TYPO3_CONF_VARS[BE][disable_exec_function] was set, so cannot display content of archive file.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.dimensions" approved="yes">
+				<source>Dimensions</source>
+				<target state="translated">Dimensioner</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.field" approved="yes">
+				<source>Field:</source>
+				<target state="translated">Fält:</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.file" approved="yes">
+				<source>File</source>
+				<target state="translated">Fil</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.files" approved="yes">
+				<source>files</source>
+				<target state="translated">filer</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="show_item.php.filesize" approved="yes">
+				<source>Size</source>
+				<target state="translated">Storlek</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.flexpointer">
+				<source>Flexpointer:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.ftp_area" approved="yes">
+				<source>FTP AREA</source>
+				<target state="translated">FTP-område</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.missing_record">
+				<source>Missing</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.pixels" approved="yes">
+				<source>Pixels</source>
+				<target state="translated">Pixlar</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.referencesFromThisItem" approved="yes">
+				<source>References from this item:</source>
+				<target state="translated">Referens från detta objekt:</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.referencesToThisItem" approved="yes">
+				<source>References to this item:</source>
+				<target state="translated">Referens till detta objekt:</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.refString">
+				<source>Ref String:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.refTable" approved="yes">
+				<source>Ref Table:</source>
+				<target state="translated">Ref Tabell:</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.refUid">
+				<source>Ref Uid:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.softrefKey">
+				<source>Softref Key:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.sorting" approved="yes">
+				<source>Sorting:</source>
+				<target state="translated">Sortering:</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.table" approved="no">
+				<source>Table:</source>
+				<target state="needs-translation">Tabell</target>
+				<note>83%</note>
+			</trans-unit>
+			<trans-unit id="show_item.php.title" approved="yes">
+				<source>Title:</source>
+				<target state="translated">Titel:</target>
+			</trans-unit>
+			<trans-unit id="show_item.php.uid">
+				<source>Uid:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="show_item.php.viewItem" approved="yes">
+				<source>View Item</source>
+				<target state="translated">Visa objekt</target>
+			</trans-unit>
+			<trans-unit id="sortable.dragmove">
+				<source>Drag to move</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.close" approved="yes">
+				<source>Close Tab</source>
+				<target state="translated">Stäng flik</target>
+			</trans-unit>
+			<trans-unit id="tabs.closeAll" approved="yes">
+				<source>Close All Tabs</source>
+				<target state="translated">Stäng alla flikar</target>
+			</trans-unit>
+			<trans-unit id="tabs.closeOther" approved="yes">
+				<source>Close Other Tabs</source>
+				<target state="translated">Stäng andra flikar</target>
+			</trans-unit>
+			<trans-unit id="tabs.openInBrowserWindow" approved="yes">
+				<source>Open In Browser Window</source>
+				<target state="translated">Öppna i webbläsare</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmark" approved="yes">
+				<source>Bookmark</source>
+				<target state="translated">Bokmärke</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmarks" approved="yes">
+				<source>Bookmarks</source>
+				<target state="translated">Bokmärken</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmarkSavedMessage">
+				<source>The bookmark was saved.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmarkSavedTitle">
+				<source>Bookmark saved</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmarksDelete" approved="yes">
+				<source>Delete bookmark</source>
+				<target state="translated">Ta bort bokmärke</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmarksEdit" approved="yes">
+				<source>Edit bookmark</source>
+				<target state="translated">Redigera bokmärke</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.bookmarksGroup" approved="yes">
+				<source>Bookmark group</source>
+				<target state="translated">Bokmärkesgrupp</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.confirmBookmarksDelete">
+				<source>Do you really want to remove this bookmark?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.createBookmark">
+				<source>Create bookmark</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.search" approved="yes">
+				<source>Search</source>
+				<target state="translated">Sök</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="toolbarItems.shortcut" approved="yes">
+				<source>Shortcut</source>
+				<target state="translated">Genväg</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.shortcuts" approved="yes">
+				<source>Shortcuts</source>
+				<target state="translated">Genvägar</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.shortcutsDelete" approved="yes">
+				<source>Delete Shortcut</source>
+				<target state="translated">Ta bort genväg</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.shortcutsEdit" approved="yes">
+				<source>Edit Shortcut</source>
+				<target state="translated">Redigera genväg</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.shortcutsGroup" approved="yes">
+				<source>Shortcut Group</source>
+				<target state="translated">Genvägsgrupp</target>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo">
+				<source>System Information</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.applicationcontext">
+				<source>Application Context</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.composerMode">
+				<source>Composer mode</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.database">
+				<source>Database</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.gitrevision">
+				<source>GIT Revision</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.operatingsystem">
+				<source>Operating System</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.phpversion">
+				<source>PHP Version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.sysinfo.webserver">
+				<source>Webserver</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="toolbarItems.workspace">
+				<source>Workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tree.activeFilterMode" approved="yes">
+				<source>Active Filtering Mode</source>
+				<target state="translated">Aktivt filtreringsläge</target>
+			</trans-unit>
+			<trans-unit id="tree.buttonFilter" approved="yes">
+				<source>Filter tree</source>
+				<target state="translated">Filtrera sidträdet</target>
+			</trans-unit>
+			<trans-unit id="tree.buttonNewNode" approved="yes">
+				<source>Create new pages</source>
+				<target state="translated">Skapa nya sidor</target>
+				<note>76% 75%</note>
+			</trans-unit>
+			<trans-unit id="tree.copyHint" approved="yes">
+				<source>Press Ctrl to copy.</source>
+				<target state="translated">Håll inne Ctrl för att kopiera.</target>
+			</trans-unit>
+			<trans-unit id="tree.defaultPageTitle" approved="yes">
+				<source>[Default Title]</source>
+				<target state="translated">[Standard titel]</target>
+			</trans-unit>
+			<trans-unit id="tree.dropToRemove" approved="yes">
+				<source>Drop here to delete</source>
+				<target state="translated">Släpp här för att ta bort</target>
+			</trans-unit>
+			<trans-unit id="tree.dropZoneElementRemoved" approved="yes">
+				<source>Click here to undelete</source>
+				<target state="translated">Klicka här för att ångra borttagning</target>
+			</trans-unit>
+			<trans-unit id="tree.dropZoneElementRestored" approved="yes">
+				<source>Page restored</source>
+				<target state="translated">Sidan återställd</target>
+			</trans-unit>
+			<trans-unit id="tree.searchTermInfo" approved="yes">
+				<source>Enter search term</source>
+				<target state="translated">Skriv in sökord</target>
+			</trans-unit>
+			<trans-unit id="TYPO3_Element_Browser" approved="yes">
+				<source>TYPO3 Element Browser</source>
+				<target state="translated">TYPO3 elementbläddrare</target>
+			</trans-unit>
+			<trans-unit id="ver.mgm" approved="yes">
+				<source>Version Management</source>
+				<target state="translated">Versionshantering</target>
+			</trans-unit>
+			<trans-unit id="ver.online" approved="yes">
+				<source>ONLINE</source>
+				<target state="translated">ONLINE</target>
+			</trans-unit>
+			<trans-unit id="ver.selVer" approved="yes">
+				<source>Select version:</source>
+				<target state="translated">Välj version:</target>
+			</trans-unit>
+			<trans-unit id="ver.swap" approved="yes">
+				<source>Swap/Publish</source>
+				<target state="translated">Växla/Publicera</target>
+			</trans-unit>
+			<trans-unit id="ver.swapPage" approved="yes">
+				<source>Publish this version of the page including content</source>
+				<target state="translated">Publicera denna version av sidan med innehåll</target>
+			</trans-unit>
+			<trans-unit id="warning.backend_admin">
+				<source>The default backend user "admin" with password "password" is still present. %sEdit this account%s, either deleting it completely or changing the username and password.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.backend_reference">
+				<source>The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. Please go to %sTools&gt;DB Check%s and update the reference index.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.backend_reference_index">
+				<source>The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. The Reference Index was last updated on %3$s. Please go to %sTools&gt;DB Check%s and update the reference index.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.file_deny_htaccess">
+				<source>The current value of fileDenyPattern allows to upload/create files with the name ".htaccess". If TYPO3 is running on Apache, this enables backend or frontend users to create and execute php scripts. Please reset the value of fileDenyPattern to its default.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.file_deny_pattern">
+				<source>The value of fileDenyPattern is not set to its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.file_deny_pattern_partsNotPresent">
+				<source>Security Risk! The new value of fileDenyPattern misses parts of its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.file_missing" approved="yes">
+				<source>File is missing!</source>
+				<target state="translated">Filen saknas!</target>
+			</trans-unit>
+			<trans-unit id="warning.file_missing_text" approved="yes">
+				<source>This file is marked as missing:</source>
+				<target state="translated">Denna fil är markerad som saknad:</target>
+			</trans-unit>
+			<trans-unit id="warning.header">
+				<source>Important Notice!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.header.storage_is_no_public">
+				<source>Storage is not public</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.inline_use_combination">
+				<source>This record will be modified globally.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.install_enabled">
+				<source>The Install Tool is permanently enabled. Delete the file "%s" when you have finished setting up TYPO3.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.install_enabled_cmd" approved="yes">
+				<source>Click to remove the file now!</source>
+				<target state="translated">Klicka för att ta bort filen!</target>
+			</trans-unit>
+			<trans-unit id="warning.install_encryption">
+				<source>The encryption key is not set. Set it in the %sBasic Configuration section%s of the Install Tool.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.install_password">
+				<source>The Install Tool is still using the default password "joh316". Update this within the %sAbout section%s of the Install Tool.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.installtool_default_password">
+				<source>The Install Tool is still using the default password "joh316". Update this within the %sImportant actions section%s of the Install Tool.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.install_trustedhosts">
+				<source>The trusted hosts pattern check is disabled. Please define the allowed hosts in the [SYS][trustedHostsPattern] section of the Install Tool.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.install_update">
+				<source>This installation is not configured for the TYPO3 version it is running. If you did so intentionally, this message can be safely ignored. If you are unsure, visit the Update Wizard section of the %sInstall Tool%s to see how TYPO3 would change.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.memcache_not_usable">
+				<source>Memcache is configured, but connection to memcached failed with these configuration(s):</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.message.storage_is_no_public">
+				<source>The storage has been marked to be "publicly available" but is not detected as such by the driver. The setting has been reverted.</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

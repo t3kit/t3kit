@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:24Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="CONFIRM_LINK_CLICK" approved="yes">
+				<source>Please confirm that you want to open this link</source>
+				<target state="translated">Bekräfta att du vill öppna denna länk</target>
+			</trans-unit>
+			<trans-unit id="Dictionary" approved="yes">
+				<source>Dictionary</source>
+				<target state="translated">Ordlista</target>
+			</trans-unit>
+			<trans-unit id="Document information" approved="yes">
+				<source>Document information</source>
+				<target state="translated">Dokumentinformation</target>
+			</trans-unit>
+			<trans-unit id="Finished list of mispelled words" approved="yes">
+				<source>Finished list of mispelled words</source>
+				<target state="translated">Lista med felstavade ord är avklarad.</target>
+			</trans-unit>
+			<trans-unit id="HTMLArea Spell Checker" approved="yes">
+				<source>HTMLArea Spell Checker</source>
+				<target state="translated">htmlArea Stavningskontroll</target>
+			</trans-unit>
+			<trans-unit id="Ignore" approved="yes">
+				<source>Ignore</source>
+				<target state="translated">Ignorera</target>
+			</trans-unit>
+			<trans-unit id="Ignore all" approved="yes">
+				<source>Ignore all</source>
+				<target state="translated">Ignorera alla</target>
+			</trans-unit>
+			<trans-unit id="Info">
+				<source>Info</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="I will open it in a new page." approved="yes">
+				<source>I will open it in a new page.</source>
+				<target state="translated">Jag kommer att öppna den i en ny sida.</target>
+			</trans-unit>
+			<trans-unit id="Learn" approved="yes">
+				<source>Add to dictionary</source>
+				<target state="translated">Lägg till i ordlista</target>
+			</trans-unit>
+			<trans-unit id="Misspelled words" approved="yes">
+				<source>Misspelled words</source>
+				<target state="translated">Felstavade ord</target>
+			</trans-unit>
+			<trans-unit id="NO_ERRORS" approved="yes">
+				<source>No mispelled words found with the selected dictionary.</source>
+				<target state="translated">Inga felstavade ord hittades med vald ordlista.</target>
+			</trans-unit>
+			<trans-unit id="NO_ERRORS_CLOSING" approved="no">
+				<source>Spell check complete, didn't find any mispelled words.  Closing now...</source>
+				<target state="needs-translation">Stavningskontroll färdig. Hittade inga felstavade ord. Stänger nu...</target>
+			</trans-unit>
+			<trans-unit id="No information available" approved="yes">
+				<source>No information available</source>
+				<target state="translated">Ingen information tillgänglig</target>
+			</trans-unit>
+			<trans-unit id="occurrences" approved="yes">
+				<source>occurrences</source>
+				<target state="translated">förekomster</target>
+			</trans-unit>
+			<trans-unit id="of the word" approved="yes">
+				<source>of the word</source>
+				<target state="translated">av ordet</target>
+			</trans-unit>
+			<trans-unit id="OK" approved="yes">
+				<source>OK</source>
+				<target state="translated">OK</target>
+			</trans-unit>
+			<trans-unit id="One occurrence" approved="yes">
+				<source>One occurrence</source>
+				<target state="translated">En förekomst</target>
+			</trans-unit>
+			<trans-unit id="Original word" approved="yes">
+				<source>Original word</source>
+				<target state="translated">Ursprungligt ord</target>
+			</trans-unit>
+			<trans-unit id="Please wait. Calling spell checker." approved="yes">
+				<source>Please wait. Calling spell checker.</source>
+				<target state="translated">Var god vänta. Anropar stavningskontroll.</target>
+			</trans-unit>
+			<trans-unit id="Please wait: changing dictionary to" approved="yes">
+				<source>Please wait: changing dictionary to</source>
+				<target state="translated">Var god vänta: Byter ordbok till</target>
+			</trans-unit>
+			<trans-unit id="pliz weit ;-)" approved="yes">
+				<source>Please wait...</source>
+				<target state="translated">Var god vänta...</target>
+			</trans-unit>
+			<trans-unit id="QUIT_CONFIRMATION" approved="no">
+				<source>This will drop changes and quit spell checker.  Please confirm.</source>
+				<target state="needs-translation">Detta kommer kasta ändringar och avsluta stavningskontrollen. Var god bekräfta.</target>
+			</trans-unit>
+			<trans-unit id="Re-check" approved="yes">
+				<source>Re-check</source>
+				<target state="translated">Kontrollera igen</target>
+			</trans-unit>
+			<trans-unit id="Replace" approved="yes">
+				<source>Replace</source>
+				<target state="translated">Ersätt</target>
+			</trans-unit>
+			<trans-unit id="Replace all" approved="yes">
+				<source>Replace all</source>
+				<target state="translated">Ersätt alla</target>
+			</trans-unit>
+			<trans-unit id="Replacement">
+				<source>Replacement</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Replace with" approved="yes">
+				<source>Replace with</source>
+				<target state="translated">Ersätt med</target>
+			</trans-unit>
+			<trans-unit id="Revert" approved="yes">
+				<source>Revert</source>
+				<target state="translated">Återställ</target>
+			</trans-unit>
+			<trans-unit id="SC-spell-check" approved="yes">
+				<source>Spell-check</source>
+				<target state="translated">Stavningskontroll</target>
+			</trans-unit>
+			<trans-unit id="seconds" approved="yes">
+				<source>seconds</source>
+				<target state="translated">sekunder</target>
+			</trans-unit>
+			<trans-unit id="Spell Checker" approved="yes">
+				<source>Spell Checker</source>
+				<target state="translated">Stavningskontroll</target>
+			</trans-unit>
+			<trans-unit id="Spelling checked in" approved="yes">
+				<source>Spelling checked in</source>
+				<target state="translated">Stavningskontroll tog</target>
+			</trans-unit>
+			<trans-unit id="Suggestions" approved="yes">
+				<source>Suggestions</source>
+				<target state="translated">Förslag</target>
+			</trans-unit>
+			<trans-unit id="Total suggestions" approved="yes">
+				<source>Total suggestions</source>
+				<target state="translated">Totalt antal förslag</target>
+			</trans-unit>
+			<trans-unit id="Total words" approved="yes">
+				<source>Total words</source>
+				<target state="translated">Totalt antal ord</target>
+			</trans-unit>
+			<trans-unit id="Total words suggested" approved="yes">
+				<source>Total words suggested</source>
+				<target state="translated">Totalt antal föreslagna ord</target>
+			</trans-unit>
+			<trans-unit id="Two occurrences" approved="yes">
+				<source>Two occurrences</source>
+				<target state="translated">Två förekomster</target>
+			</trans-unit>
+			<trans-unit id="was found." approved="yes">
+				<source>was found.</source>
+				<target state="translated">hittades.</target>
+			</trans-unit>
+			<trans-unit id="were found." approved="yes">
+				<source>were found.</source>
+				<target state="translated">hittades.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

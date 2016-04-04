@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:14:12Z" product-name="filemetadata">
+		<header/>
+		<body>
+			<trans-unit id="fe_groups.files">
+				<source>Allowed files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.accessibility">
+				<source>Accessibility</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.content_date">
+				<source>Content Date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.geo_location">
+				<source>Geo Location</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.gps">
+				<source>GPS</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.metrics">
+				<source>Metrics</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="palette.visibility">
+				<source>Visibility</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="placeholder.keywords">
+				<source>Keyword #1, keyword #2, ...</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.caption">
+				<source>Caption</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space">
+				<source>Color Space</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.CMY">
+				<source>CMY</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.CMYK">
+				<source>CMYK</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.grey">
+				<source>Grey</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.indx">
+				<source>Indexed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.RGB">
+				<source>RGB</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.sRGB">
+				<source>sRGB</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.color_space.YUV">
+				<source>YUV</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.content_creation_date">
+				<source>Content Creation Date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.content_modification_date">
+				<source>Content Modification Date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.copyright">
+				<source>Copyright</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.creator">
+				<source>Creator</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.creator_tool">
+				<source>Creator Tool</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.download_name">
+				<source>Download Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.duration">
+				<source>Duration (in seconds)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.fe_groups">
+				<source>Frontend Permission</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.height">
+				<source>Height</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.keywords">
+				<source>Keywords</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.language">
+				<source>File Language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.latitude">
+				<source>Latitude</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.location_city">
+				<source>City</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.location_country">
+				<source>Country</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.location_region">
+				<source>Region</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.longitude">
+				<source>Longitude</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.note">
+				<source>Note</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.pages">
+				<source>Number of Pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.publisher">
+				<source>Publisher</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.ranking">
+				<source>Ranking</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.source">
+				<source>Source</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.status">
+				<source>Status</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.status.1">
+				<source>Ok</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.status.2">
+				<source>Pending</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.status.3">
+				<source>Under review</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit">
+				<source>Unit</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.cm">
+				<source>Centimeters</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.in">
+				<source>Inches</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.m">
+				<source>Meters</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.mm">
+				<source>Millimeters</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.p">
+				<source>Picas</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.pt">
+				<source>Points</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.unit.px">
+				<source>Pixels</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.visible">
+				<source>Visible</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_file_metadata.width">
+				<source>Width</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.audio">
+				<source>Audio</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.camera">
+				<source>Camera Data</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.metadata">
+				<source>Metadata</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.video">
+				<source>Video</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

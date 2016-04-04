@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:24Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Bold-Tooltip" approved="yes">
+				<source>Bold</source>
+				<target state="translated">Fet</target>
+			</trans-unit>
+			<trans-unit id="Italic-Tooltip" approved="yes">
+				<source>Italic</source>
+				<target state="translated">Kursiv</target>
+			</trans-unit>
+			<trans-unit id="StrikeThrough-Tooltip" approved="yes">
+				<source>Strike-through</source>
+				<target state="translated">Genomstruken</target>
+			</trans-unit>
+			<trans-unit id="Subscript-Tooltip" approved="yes">
+				<source>Subscript</source>
+				<target state="translated">Nedsänkt</target>
+			</trans-unit>
+			<trans-unit id="Superscript-Tooltip" approved="yes">
+				<source>Superscript</source>
+				<target state="translated">Upphöjd</target>
+			</trans-unit>
+			<trans-unit id="Underline-Tooltip" approved="yes">
+				<source>Underline</source>
+				<target state="translated">Understruken</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

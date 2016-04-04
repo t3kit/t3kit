@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:10:49Z" product-name="felogin">
+		<header/>
+		<body>
+			<trans-unit id="change_password" approved="yes">
+				<source>Change your password</source>
+				<target state="translated">Ändra ditt lösenord</target>
+			</trans-unit>
+			<trans-unit id="cookie_warning" approved="yes">
+				<source>Warning: There is a possibility that cookies are not enabled in your web browser! If your login disappears on your next click that is the case and you should enable cookies (or accept cookies from this website) immediately!</source>
+				<target state="translated">Varning! Det är möjligt att cookies inte tillåts i din webbläsare. Ifall din inloggning försvinner när du klickar nästa gång så ska du tillåta cookies (eller acceptera cookies från denna webbplats) genast!</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_done_message" approved="yes">
+				<source>Your password has been saved. You can now login with your new password.</source>
+				<target state="translated">Ditt lösenord har sparats. Du kan nu logga in med ditt nya lösenord.</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_header" approved="yes">
+				<source>Change your password</source>
+				<target state="translated">Ändra ditt lösenord</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_message" approved="yes">
+				<source>Please enter your new password twice. Password needs a minimum length of %s chars.</source>
+				<target state="translated">Ange ditt lösenord två gånger. Lösenordet måste bestå av minst %s tecken.</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_nolinkprefix_message" approved="no">
+				<source>Error: there is no prefix for the link. Please set one of the following in your typoscript template: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRefPrefix = /</source>
+				<target state="needs-translation">Fel: det finns inget prefix för länken. Ange ett av de följande i din typoscript-template: plugin.tx_felogin_pi1.feloginBaseURL = http://yourdomain/, config.baseURL = http://yourdomain/, config.absRelPrefix = http://yourdomain/</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_notequal_message" approved="yes">
+				<source>The passwords are not equal, please enter your new password twice. Password needs a minimum length of %s chars.</source>
+				<target state="translated">Lösenorden är inte identiska, ange ditt nya lösenord två gånger. Lösenordet måste bestå av minst %s tecken.</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_notvalid_message" approved="yes">
+				<source>The link you clicked is not valid. Please repeat the forgot message procedure.</source>
+				<target state="translated">Länken du klickade på är ogiltig. Upprepa proceduren för att återställa lösenord.</target>
+			</trans-unit>
+			<trans-unit id="ll_change_password_tooshort_message" approved="yes">
+				<source>The password length is too short. Please enter your new password twice. Password needs a minimum length of %s chars.</source>
+				<target state="translated">Lösenordet är för kort. Ange ditt nya lösenord två gånger. Lösenordet måste bestå av minst %s tecken.</target>
+			</trans-unit>
+			<trans-unit id="ll_enter_your_data" approved="yes">
+				<source>Username or email address:</source>
+				<target state="translated">Användarnamn eller epostadress:</target>
+			</trans-unit>
+			<trans-unit id="ll_error_header" approved="yes">
+				<source>Login failure</source>
+				<target state="translated">Inloggningen misslyckades</target>
+			</trans-unit>
+			<trans-unit id="ll_error_message" xml:space="preserve" approved="yes">
+				<source>An error occurred during login. Most likely you didn't enter the username or password correctly.
+Be certain that you enter them precisely as they are, including upper/lower case.
+Another possibility is that cookies might be disabled in your web browser.</source>
+			<target state="translated">Ett fel uppstod vid inloggningen. Mest troligt är att du inte skrev in användarnamnet eller lösenordet rätt.
+Försäkra dig om att du skriver dem exakt så som de är, med gemener och versaler.
+En annan möjlighet är att din webbläsare inte tillåter cookies.</target></trans-unit>
+			<trans-unit id="ll_forgot_email_nopassword" xml:space="preserve" approved="yes">
+				<source>Your password
+Hi %s
+
+We couldn't find a username for this email address and so cannot send the password to you. Probably you misspelled the email address (upper/lower case makes a difference) or maybe you even didn't register yet?</source>
+			<target state="translated">Ditt lösenord Hej %s Vi kunde inte hitta ett användarnamn för denna e-postadress så vi kan inte skicka lösenordet till dig. Det är möjligt att du skrivit din e-postadress felaktigt (det är skillnad på små och stora bokstäver) eller så är du kanske inte ännu en registrerad användare?</target></trans-unit>
+			<trans-unit id="ll_forgot_email_password" xml:space="preserve" approved="yes">
+				<source>Your password
+Hi %s
+
+Your username is "%s"
+Your password is "%s"</source>
+			<target state="translated">Ditt lösenord
+Hej %s
+
+Ditt användarnamn är "%s"
+Ditt lösenord är "%s"</target></trans-unit>
+			<trans-unit id="ll_forgot_header" approved="yes">
+				<source>Forgot your password?</source>
+				<target state="translated">Har du glömt ditt lösenord?</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_header_backToLogin" approved="yes">
+				<source>Return to login form</source>
+				<target state="translated">Gå tillbaka till inloggningssidan</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_message" approved="yes">
+				<source>Please enter the email address by which you registered your user account. Then press "Send password" and your password will immediately be emailed to you. Make sure to spell your email address correctly.</source>
+				<target state="translated">Vänligen fyll i den e-postadress som du använde när du registrerade dig. Klicka sedan på "Skicka lösenord" och ditt lösenord skickas omedelbart med e-post till dig. Var noga med att skriva e-postadressen rätt.</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_message_emailSent" approved="yes">
+				<source>Your password has now been sent to the email address %s</source>
+				<target state="translated">Ditt lösenord har nu skickats till e-postadressen %s</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_reset_message" approved="yes">
+				<source>Please enter your username or email address. Instructions for resetting the password will be immediately emailed to you.</source>
+				<target state="translated">Ange ditt användarnamn eller epostadress. Instruktioner för hur du återställer ditt lösenord kommer att skickas till dig.</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_reset_message_emailSent" approved="yes">
+				<source>An email has been sent to the address stored in your account and contains a link to reset your password. If you do not receive an email, your account or email address was not found.</source>
+				<target state="translated">Ett epostmeddelande har skickats till adressen som finns lagrad på ditt konto. Det innehåller en länk för att återställa lösenordet. Om du inte får något epostmeddelande har ditt amvändarnamn eller epostadress inte hittats.</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_reset_message_error" approved="yes">
+				<source>Your account or email address does not exist.</source>
+				<target state="translated">Ditt konto eller e-postadress kunde ej hittas.</target>
+			</trans-unit>
+			<trans-unit id="ll_forgot_validate_reset_password" xml:space="preserve" approved="yes">
+				<source>Your new password
+Dear %s,
+
+This email was sent in response to your request to reset your password. Please click on the link below.
+%s
+
+For security reasons, this link is only active until %s. If you do not visit the link before then, you will need to repeat the password reset steps.</source>
+			<target state="translated">Ditt nya lösenord
+Hej %s!
+
+Det här meddelandet får du eftersom du vill återställa ditt lösenord. Klicka på nedanstående länk:
+%s
+
+Av säkerhetsskäl är den här länken endast aktiv till och med den %s. Om du inte har följt länken fram tills dess måste du upprepa stegen för att återställa lösenordet.</target></trans-unit>
+			<trans-unit id="ll_logout_header" approved="yes">
+				<source>You have logged out.</source>
+				<target state="translated">Du är utloggad.</target>
+			</trans-unit>
+			<trans-unit id="ll_logout_message" approved="yes">
+				<source>You just logged out from your user session on this website. You can login again or as another user by the form below.</source>
+				<target state="translated">Du har nyss loggat ut från din användarsession på denna webbplats. Du kan logga in igen eller som en annan användare med nedanstående formulär.</target>
+			</trans-unit>
+			<trans-unit id="ll_status_header" approved="yes">
+				<source>Current status</source>
+				<target state="translated">Nuvarande status</target>
+			</trans-unit>
+			<trans-unit id="ll_status_message" approved="yes">
+				<source>This is your current status:</source>
+				<target state="translated">Detta är din status för tillfället:</target>
+			</trans-unit>
+			<trans-unit id="ll_success_header" approved="yes">
+				<source>Login successful</source>
+				<target state="translated">Inloggningen lyckades</target>
+			</trans-unit>
+			<trans-unit id="ll_success_message" approved="yes">
+				<source>You are now logged in as '###USER###'</source>
+				<target state="translated">Du är inloggad med namnet '###USER###'</target>
+			</trans-unit>
+			<trans-unit id="ll_welcome_header" approved="yes">
+				<source>User login</source>
+				<target state="translated">Användarinloggning</target>
+			</trans-unit>
+			<trans-unit id="ll_welcome_message" approved="yes">
+				<source>Enter your username and password here in order to log in on the website:</source>
+				<target state="translated">Fyll i ditt användarnamn och lösenord för att logga in på webbplatsen:</target>
+			</trans-unit>
+			<trans-unit id="login" approved="yes">
+				<source>Login</source>
+				<target state="translated">Logga in</target>
+			</trans-unit>
+			<trans-unit id="logout" approved="yes">
+				<source>Logout</source>
+				<target state="translated">Logga ut</target>
+			</trans-unit>
+			<trans-unit id="newpassword_label1" approved="yes">
+				<source>Enter new password</source>
+				<target state="translated">Skriv ett nytt lösenord</target>
+			</trans-unit>
+			<trans-unit id="newpassword_label2" approved="yes">
+				<source>Repeat new password</source>
+				<target state="translated">Upprepa det nya lösenordet</target>
+			</trans-unit>
+			<trans-unit id="noValidRedirectUrl">
+				<source>Url "%s" for redirect was not accepted!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="password" approved="yes">
+				<source>Password:</source>
+				<target state="translated">Lösenord:</target>
+			</trans-unit>
+			<trans-unit id="permalogin" approved="yes">
+				<source>Stay logged in:</source>
+				<target state="translated">Permanent inloggning:</target>
+			</trans-unit>
+			<trans-unit id="reset_password" approved="yes">
+				<source>Reset Password</source>
+				<target state="translated">Återställ lösenord</target>
+			</trans-unit>
+			<trans-unit id="send_password" approved="yes">
+				<source>Send password</source>
+				<target state="translated">Skicka lösenord</target>
+			</trans-unit>
+			<trans-unit id="username" approved="yes">
+				<source>Username:</source>
+				<target state="translated">Användarnamn:</target>
+			</trans-unit>
+			<trans-unit id="xssAttackDetected">
+				<source>Url "%s" contained an XSS attack and was cleaned!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="your_email" approved="yes">
+				<source>Your email:</source>
+				<target state="translated">Din e-postadress:</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

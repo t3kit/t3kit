@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+      <label index="pages.tx_realurl_pathsegment"/>
+      <label index="pages.tx_realurl_exclude"/>
+      <label index="pages.tx_realurl_path_override"/>
+      <label index="pages.tx_realurl_nocache"/>
+      <label index="moduleFunction.tx_realurl_modfunc1"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

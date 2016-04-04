@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:56:04Z" product-name="lowlevel">
+		<header/>
+		<body>
+			<trans-unit id="advancedQuery">
+				<source>Advanced query</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="beingChecked">
+				<source>being checked...</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="beUser">
+				<source>$GLOBALS['BE_USER']-&gt;uc (User Settings)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkNow">
+				<source>Check now!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript">
+				<source>You can also run the check as a shell script using CLI if the processing takes longer than the PHP max_execution_time allows.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript_check_description">
+				<source>To check the reference index use</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript_check_example">
+				<source>php /path/to/your/typo3/cli_dispatch.phpsh lowlevel_refindex -c</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="checkScript_headline">
+				<source>Using the command line interface</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript_information">
+				<source>If you run these commands from the command line, make sure that a BE user with the name _cli_lowlevel exists.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript_more">
+				<source>Make sure that a BE user with the name _cli_lowlevel exists. For more details see: /path/to/your/typo3/sysext/lowlevel/HOWTO_clean_up_TYPO3_installations.txt or /path/to/your/typo3/sysext/lowlevel/README.rst (since TYPO3 7 LTS).</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="checkScript_moreDetails">
+				<source>For more details see</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript_update_description">
+				<source>To update the reference index use</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="checkScript_update_example">
+				<source>php /path/to/your/typo3/cli_dispatch.phpsh lowlevel_refindex -e</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="clickToTestRefIndex">
+				<source>Click here to test reference index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clickToUpdateRefIndex">
+				<source>Click here to update reference index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="configuration">
+				<source>Configuration</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="copyPaste">
+				<source>(Now, copy/paste this value into the configuration file where you can set it. This is all you can do from here...)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="count">
+				<source>Count</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="countResults">
+				<source>Count results</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cropLines">
+				<source>Crop lines</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="csvExport">
+				<source>CSV Export</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="databaseRelations">
+				<source>Database Relations</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="deleted_pages">
+				<source>Marked-deleted pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="directories">
+				<source>Dirs</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="directoriesTooDeep">
+				<source>ERROR: Directories deeper than the following number of levels</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="doktype">
+				<source>Document types</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="doktype_value">
+				<source>Document types (value)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="dontUseOrigValues">
+				<source>Don't use original values in brackets as prefix for labelled results</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enterRegexPattern">
+				<source>Enter regex pattern</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="enterSearchPhrase">
+				<source>Enter search phrase:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="explainQuery">
+				<source>Explain query</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="files">
+				<source>Files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filesearch">
+				<source>Search all filenames for pattern</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filesearch_description">
+				<source>Will search recursively for filenames in the PATH_site (subdirs to the website path) matching a certain regex pattern.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="files_many_ref">
+				<source>Files referenced from more than one record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="files_no_file">
+				<source>Missing files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="files_no_ref">
+				<source>Files with no references at all (delete them!)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="findFilename">
+				<source>Find filename</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fixLostRecord">
+				<source>Click to move this lost record to rootlevel (pid=0)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fullSearch">
+				<source>Full search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="group_db">
+				<source>Group fields</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="hidden_pages">
+				<source>Hidden pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="isMissing">
+				<source>is missing!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label">
+				<source>Label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="loadedExt">
+				<source>$GLOBALS['TYPO3_LOADED_EXT'] (Loaded Extensions)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="manageRefIndex">
+				<source>Manage Reference Index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="matchingFiles">
+				<source>Matching files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="menuTitle">
+				<source>Overview</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="no_files_found">
+				<source>No files found.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="notChecked">
+				<source>not checked.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pages">
+				<source>Pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pattern">
+				<source>Pattern</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rawSearch">
+				<source>Raw search in all fields</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="records">
+				<source>Records Statistics</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="records_description">
+				<source>This shows some statistics for the records in the database. This runs through the entire page-tree and therefore it will also load the server heavily!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="recordStatistics">
+				<source>Record Statistics</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="referencedFrom">
+				<source>Referenced from</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="referenceIndex_buttonCheck">
+				<source>Check reference index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="referenceIndex_buttonUpdate">
+				<source>Update reference index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="referenceIndex_description">
+				<source>TYPO3's reference index keeps track of the relations between records. As it can happen that the reference index contains outdated values, you can check and update it here.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="references">
+				<source>references</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="refindex">
+				<source>Check and update global reference index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="refindex_description">
+				<source>Allows you to maintain the reference index kept by TYPO3.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="relations">
+				<source>Relations</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="relations_description">
+				<source>This will analyse the content of the tables and check if there are 'empty' relations between records or if files are missing from their expected position.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result">
+				<source>Result</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="routes">
+				<source>Backend Routes</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="search">
+				<source>Search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchButton">
+				<source>Search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="search_description">
+				<source>This searches through all database tables and records for a text string.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchingForFilenames">
+				<source>Searching for filenames</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchOptions">
+				<source>Search options</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="search_whole_database">
+				<source>Search whole Database</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="select_db">
+				<source>Select fields</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="selectRecords">
+				<source>Select records</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showDeleted">
+				<source>Show even deleted entries (with undelete buttons)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showSQL">
+				<source>Show SQL parts</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOptions">
+				<source>Sort selectbox-options for relations by label and not by value</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="t3services">
+				<source>$GLOBALS['T3_SERVICES'] (Registered Services)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tablename">
+				<source>Table name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tables">
+				<source>Tables</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tbemodules">
+				<source>$GLOBALS['TBE_MODULES'] (BE Modules)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tbemodulesext">
+				<source>$GLOBALS['TBE_MODULES_EXT'] (BE Modules Extensions)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tbeStyles">
+				<source>$GLOBALS['TBE_STYLES'] (Skinning Styles)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tca">
+				<source>$GLOBALS['TCA'] (Table configuration array)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tcaDescr">
+				<source>$GLOBALS['TCA_DESCR'] (Table Help Description)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Database integrity check</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="total_lost">
+				<source>Records total / lost</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="total_pages">
+				<source>Total number of pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="totalPageTree">
+				<source>Total Page Tree</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tree">
+				<source>The Page Tree</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tree_description">
+				<source>This shows all pages in the system in one large tree. Beware that this will probably result in a very long document which will also take some time for the server to compute!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="typo3ConfVars">
+				<source>$GLOBALS['TYPO3_CONF_VARS'] (Global Configuration)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="updateNow">
+				<source>Update now!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="updateRefIndex">
+				<source>Update reference index</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="useFormattedStrings">
+				<source>Use formatted strings, labels and dates instead of original values for results</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="useRegExp">
+				<source>Use regular expression (phrase is surrounded by slashes automatically)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="usersettings">
+				<source>$GLOBALS['TYPO3_USER_SETTINGS'] (User Settings Configuration)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="variable">
+				<source>Variable:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="writeMessage">
+				<source>Following line was added to configuration file (%s): %s%s</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="writeMessageFailed">
+				<source>Write to configuration file failed (%s)!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="writeValue">
+				<source>Write value to configuration file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="xmlExport">
+				<source>XML Export</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

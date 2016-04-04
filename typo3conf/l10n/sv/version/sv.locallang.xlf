@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:51:05Z" product-name="version">
+		<header/>
+		<body>
+			<trans-unit id="allowPreviewOfWholeWorkspace">
+				<source>Allow preview of whole workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="approveAllToPublish">
+				<source>Approve all for Publishing</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="approveForPublishing">
+				<source>Approve for Publishing</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="approveToPublish">
+				<source>Approving %s item(s) to publishing. </source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="archive">
+				<source>Archive</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="autopublishTask.description">
+				<source>This tasks checks any workspace that has a publication date set in the past and automatically publishes it.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="autopublishTask.name">
+				<source>Workspaces auto-publication</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="branch">
+				<source> [Branch]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="change">
+				<source>change:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clickAPage_content">
+				<source>Please click a page in the pagetree frame to see the versioning module.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clickAPage_header">
+				<source>Web&gt;Versioning module</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cmdPid0">
+				<source>Page: Page + content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cmdPid1">
+				<source>Element: Just record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cmdPid100">
+				<source>Branch: All subpages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="coloredDiffView">
+				<source>Colored diff-view</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="comment">
+				<source>Comment:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="commentForPublisher">
+				<source>Comment for Publisher:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="commentForReviewer">
+				<source>Comment for Reviewer:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="completeMatch">
+				<source>Complete match on editable fields.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="controls">
+				<source>Controls:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="createNewVersion">
+				<source>Create new version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="currentOnlineVersion">
+				<source>CURRENT ONLINE VERSION!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="defaultDraft">
+				<source>[Default Draft]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="deletedElement">
+				<source>Deleted element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="diff">
+				<source>Diff</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="diffing">
+				<source>DIFFING</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="diffToLiveElement">
+				<source>Difference to live element:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="draft">
+				<source>Draft</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="draftWorkspaces">
+				<source>Draft Workspaces</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editing">
+				<source>Editing</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="element">
+				<source> [Element]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errorDiffSources">
+				<source>ERROR: You didn't select two sources for diffing!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errorRecordsNotFound">
+				<source>ERROR: Records could strangely not be found!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errors">
+				<source>Errors:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldname">
+				<source>Fieldname</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filter_all">
+				<source>All</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filter_archive">
+				<source>Archive</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filter_drafts">
+				<source>Drafts</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="goBack">
+				<source>Click here to go back</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="lifecycle">
+				<source>Lifecycle</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="live">
+				<source>LIVE</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveVersion">
+				<source>Live Version:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveWorkspace">
+				<source>[Live workspace]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tabdescr">
+				<source>The Web&gt;Versioning module provides access to versioning features for the page tree.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel">
+				<source>Page and content versioning and workspace management for pages.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab">
+				<source>Versioning</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="moveToPlaceholder">
+				<source>Move-to placeholder (destination)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="moveToPointer">
+				<source>Move-to pointer (source)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="multipleVersions">
+				<source>Multiple versions in same workspace!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="newElement">
+				<source>New element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="notAvailable">
+				<source>N/A</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="offline">
+				<source>[Offline]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="otherVersions">
+				<source>Other version(s) in workspace </source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="page">
+				<source> [Page]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="previewInstruction">
+				<source>You can preview this page from the workspace using this link for the next %s hours (does not require backend login):</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="previewLink">
+				<source>Preview Link</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="previewUrl">
+				<source>Preview Url:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="publish">
+				<source>Publish</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="publishedXTimes">
+				<source>Published %s times</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="publishPage">
+				<source>Publish Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="publishPageQuestion">
+				<source>Are you sure you want to publish all content %sfrom this page?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="publishPageQuestionStage">
+				<source>in "Publish" stage </source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="recordsMatchesCompletely">
+				<source>Records matches completely on all editable fields!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="refresh">
+				<source>Refresh</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rejected">
+				<source>Rejected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rejectExplain">
+				<source>Please explain why you reject:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="removeFromWorkspace">
+				<source>Remove from workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="resetStage">
+				<source>Reset stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="review">
+				<source>Review</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sendAllToReview">
+				<source>Send all to Review</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sendItemsToReview">
+				<source>Sending %s item(s) to review. </source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sendToReview">
+				<source>Send to Review</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showAllInformation">
+				<source>Show all information</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showDiffView">
+				<source>Show difference view</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showLog">
+				<source>Show Log</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="stage.approvedForPublish">
+				<source>approved for "Publish"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="stage.rejectedElement">
+				<source>rejected element!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="stage.resetToEdit">
+				<source>reset to "Editing"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="stage.sentToReview">
+				<source>sent element to "Review"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="stage.undefined">
+				<source>[undefined]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="subElements">
+				<source>[Sub elements]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="subElementsClick">
+				<source>[Sub elements, click for details]</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="swap">
+				<source>Swap</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="swapPage">
+				<source>Swap page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="swapPageQuestion">
+				<source>Are you sure you want to publish (swap) all content %sfrom this page?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="swapWithCurrent">
+				<source>SWAP with current</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_pid">
+				<source>Page ID</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_count">
+				<source>t3ver_count - Life cycle counter. Incremented each time element is unpublished.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_id">
+				<source>t3ver_id - Version number, incremental integer</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_label">
+				<source>Label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_oid">
+				<source>t3ver_oid - Reference to live version UID</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_stage">
+				<source>t3ver_stage - Publishing stage: Editing (0), review (1), publish (10), rejected (-1).</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_state">
+				<source>t3ver_state - Special states of a version: 1=Placeholder for "New". 2=Marked deleted.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_t3ver_wsid">
+				<source>t3ver_wsid - Workspace ID. There can be only one version of an element per ID (except ID zero).</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_title">
+				<source>Header of element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeaderDesc_uid">
+				<source>Unique ID of element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_pid">
+				<source>pid</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_count">
+				<source>count</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_id">
+				<source>id</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_label">
+				<source>Label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_oid">
+				<source>oid</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_stage">
+				<source>stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_state">
+				<source>state</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_t3ver_wsid">
+				<source>wsid</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tblHeader_uid">
+				<source>UID</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Versioning</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title_review">
+				<source>Send to review/pub</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="undefined">
+				<source>Undefined</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="userComment">
+				<source>User Comment</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionDetails">
+				<source>Details for version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionId">
+				<source>ID:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionInVersion">
+				<source>Version inside version!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionSelect.inBranch">
+				<source>Inside branch, no further versioning possible</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionSelect.label">
+				<source>Versions of this page:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionSelect.live">
+				<source>LIVE version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionSelect.publish">
+				<source>Publish page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="versionSelect.versionsFound">
+				<source>Versions found on page, no "Page" versioning possible</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="workspace">
+				<source>Workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="workspaceId">
+				<source>Workspace-Id:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="wsManagement">
+				<source>Workspace management</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="wsVersions">
+				<source>Workspace Versions:</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

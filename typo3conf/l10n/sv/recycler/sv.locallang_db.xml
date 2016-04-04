@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="moduleFunction.tx_recycler_modfunc1"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

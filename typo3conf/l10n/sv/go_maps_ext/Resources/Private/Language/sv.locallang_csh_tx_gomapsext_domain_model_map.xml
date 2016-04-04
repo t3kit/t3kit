@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+		<label index="addresses.description"/>
+		<label index="calc_route.description"/>
+		<label index="class.description"/>
+		<label index="default_type.description"/>
+		<label index="double_click_zoom.description"/>
+		<label index="draggable.description"/>
+		<label index="height.description"/>
+		<label index="kml_local.description"/>
+		<label index="kml_preserve_viewport.description"/>
+		<label index="kml_url.description"/>
+		<label index="map_type_control.description"/>
+		<label index="map_types.description"/>
+		<label index="marker_cluster.description"/>
+		<label index="marker_cluster_size.description"/>
+		<label index="marker_cluster_zoom.description"/>
+		<label index="marker_search.description"/>
+		<label index="pan_control.description"/>
+		<label index="scale_control.description"/>
+		<label index="scroll_zoom.description"/>
+		<label index="show_route.description"/>
+		<label index="streetview_control.description"/>
+		<label index="styled_map_code.description"/>
+		<label index="styled_map_name.description"/>
+		<label index="title.description"/>
+		<label index="tooltip_title.description"/>
+		<label index="travel_mode.description"/>
+		<label index="unit_system.description"/>
+		<label index="width.description"/>
+		<label index="zoom.description"/>
+		<label index="zoom_control.description"/>
+		<label index="zoom_control_type.description"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

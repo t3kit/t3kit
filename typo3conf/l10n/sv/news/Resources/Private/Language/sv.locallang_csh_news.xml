@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index=".description"/>
+			<label index=".details"/>
+			<label index="sys_language_uid.description"/>
+			<label index="starttime.description"/>
+			<label index="endtime.description"/>
+			<label index="fe_group.description"/>
+			<label index="editlock.description"/>
+			<label index="hidden.description"/>
+			<label index="title.description"/>
+			<label index="alternative_title.description"/>
+			<label index="teaser.description"/>
+			<label index="type.description"/>
+			<label index="istopnews.description"/>
+			<label index="author.description"/>
+			<label index="author_email.description"/>
+			<label index="datetime.description"/>
+			<label index="archive.description"/>
+			<label index="bodytext.description"/>
+			<label index="categories.description"/>
+			<label index="tags.description"/>
+			<label index="content_elements.description"/>
+			<label index="keywords.description"/>
+			<label index="description.description"/>
+			<label index="related.description"/>
+			<label index="related_from.description"/>
+			<label index="related_files.description"/>
+			<label index="related_links.description"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T00:04:26Z" product-name="backend">
+		<header/>
+		<body>
+			<trans-unit id="common">
+				<source>Typical page content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_bulletList_description">
+				<source>A single bullet list.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_bulletList_title">
+				<source>Bullet List</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_headerOnly_description">
+				<source>Adds a header only.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_headerOnly_title">
+				<source>Header Only</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_imagesOnly_description">
+				<source>Any number of images aligned in columns and rows with a caption.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_imagesOnly_title">
+				<source>Images Only</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_regularText_description">
+				<source>A regular text element with header and bodytext fields.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_regularText_title">
+				<source>Regular Text Element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_table_description">
+				<source>A simple table.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_table_title">
+				<source>Table</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_textImage_description">
+				<source>Any number of images wrapped right around a regular text element.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_textImage_title">
+				<source>Text &amp; Images</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_textMedia_description">
+				<source>Any number of media wrapped right around a regular text element.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="common_textMedia_title">
+				<source>Text &amp; Media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="forms">
+				<source>Form elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="forms_login_description">
+				<source>Login/logout form used to password protect pages allowing only authorised website users and groups access.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="forms_login_title">
+				<source>Login Form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="forms_mail_description">
+				<source>A mail form allowing website users to submit responses.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="forms_mail_title">
+				<source>Mail Form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="plugins">
+				<source>Plugins</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="plugins_general_description">
+				<source>Select this element type to insert a plugin which cannot be found amongst the options below.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="plugins_general_title">
+				<source>General Plugin</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sel1">
+				<source>Please select the type of page content you wish to create:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sel2">
+				<source>Now, click the position where you wish to place the element on the page:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special">
+				<source>Special elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_divider_description">
+				<source>This element inserts a visual divider, which is by default a horizontal line.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_divider_title">
+				<source>Divider</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_filelinks_description">
+				<source>Makes a list of files for download.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_filelinks_title">
+				<source>File Links</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_menus_description">
+				<source>Creates a menu of pages, sitemap or other special menus.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_menus_title">
+				<source>Special Menus</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_plainHTML_description">
+				<source>With this element you can insert raw HTML code on the page.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_plainHTML_title">
+				<source>Plain HTML</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_shortcut_description">
+				<source>With this element you can embed other content elements.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_shortcut_title">
+				<source>Insert records</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="special_sitemap_title">
+				<source>Sitemap</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

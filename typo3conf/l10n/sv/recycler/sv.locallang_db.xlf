@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:08:09Z" product-name="recycler">
+		<header/>
+		<body>
+			<trans-unit id="moduleFunction.tx_recycler_modfunc1" xml:space="preserve">
+				<source>Recycler</source>
+			<target/></trans-unit>
+		</body>
+	</file>
+</xliff>

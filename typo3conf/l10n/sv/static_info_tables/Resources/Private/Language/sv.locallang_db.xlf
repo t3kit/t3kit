@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-21T01:35:44Z" product-name="static_info_tables" target-language="sv">
+		<header/>
+		<body>
+			<trans-unit id="static_territories.title" xml:space="preserve">
+				<source>Territories</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_territories_item.tr_iso_nr" xml:space="preserve">
+				<source>ISO nr territory code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_territories_item.tr_parent_territory_uid" xml:space="preserve">
+				<source>Territory in which this one is contained:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_territories_item.tr_parent_iso_nr" xml:space="preserve">
+				<source>ISO numeric code of territory in which this one is contained:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_territories_item.tr_name_en" xml:space="preserve">
+				<source>Name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries.title" xml:space="preserve">
+				<source>Countries</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_2" xml:space="preserve">
+				<source>ISO 3166-1 A2 Country code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_3" xml:space="preserve">
+				<source>ISO 3166-1 A3 Country code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_nr" xml:space="preserve">
+				<source>ISO 3166-1 Nr Country code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_official_name_local" xml:space="preserve">
+				<source>Official name (local):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_official_name_en" xml:space="preserve">
+				<source>Official name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_parent_territory_uid" xml:space="preserve">
+				<source>Territory in which this country is located:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_parent_tr_iso_nr" xml:space="preserve">
+				<source>ISO numeric code of territory in which this country is located:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_capital" xml:space="preserve">
+				<source>Capital:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_tldomain" xml:space="preserve">
+				<source>Top level domain:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_uid" xml:space="preserve">
+				<source>Currency:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_iso_nr" xml:space="preserve">
+				<source>ISO 4217 Nr Currency code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_iso_3" xml:space="preserve">
+				<source>ISO 4217 A3 Currency code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_phone" xml:space="preserve">
+				<source>Int. phone prefix:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_uno_member" xml:space="preserve">
+				<source>UN member:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_eu_member" xml:space="preserve">
+				<source>EU member:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format" xml:space="preserve">
+				<source>Address format:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_1" xml:space="preserve">
+				<source>zip city</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_2" xml:space="preserve">
+				<source>city zip</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_3" xml:space="preserve">
+				<source>city region-code zip</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_4" xml:space="preserve">
+				<source>city (region-name) zip</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_5" xml:space="preserve">
+				<source>city/zip</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_6" xml:space="preserve">
+				<source>zip city, region-code</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_7" xml:space="preserve">
+				<source>zip city region-code</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_8" xml:space="preserve">
+				<source>zip city (region-name)</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_9" xml:space="preserve">
+				<source>city - region-code/zip</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_zone_flag" xml:space="preserve">
+				<source>Zone flag:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_short_local" xml:space="preserve">
+				<source>Short name (local):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_short_en" xml:space="preserve">
+				<source>Short name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_countries_item.cn_country_zones" xml:space="preserve">
+				<source>Country subdivisions:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_country_zones.title" xml:space="preserve">
+				<source>Country subdivisions</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_nr" xml:space="preserve">
+				<source>ISO 3166-1 Nr Country code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_2" xml:space="preserve">
+				<source>ISO 3166-1 A2 Country code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_3" xml:space="preserve">
+				<source>ISO 3166-1 A3 Country code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_code" xml:space="preserve">
+				<source>ISO 3166-2 Country Zone code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_name_en" xml:space="preserve">
+				<source>Name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages.title" xml:space="preserve">
+				<source>Languages</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages_item.lg_iso_2" xml:space="preserve">
+				<source>ISO 639-1 A2 Language code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages_item.lg_collate_locale" xml:space="preserve">
+				<source>Collating locale:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages_item.lg_name_en" xml:space="preserve">
+				<source>Name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages_item.lg_typo3" xml:space="preserve">
+				<source>Typo3 language code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages_item.lg_sacred" xml:space="preserve">
+				<source>Sacred language:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_languages_item.lg_constructed" xml:space="preserve">
+				<source>Constructed language:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies.title" xml:space="preserve">
+				<source>Currencies</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_iso_3" xml:space="preserve">
+				<source>ISO 4217 A3 Currency code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_iso_nr" xml:space="preserve">
+				<source>ISO 4217 Nr Currency code:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_name_en" xml:space="preserve">
+				<source>Name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_name_en" xml:space="preserve">
+				<source>Sub name (EN):</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_symbol_left" xml:space="preserve">
+				<source>Symbol left:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_symbol_right" xml:space="preserve">
+				<source>Symbol right:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_thousands_point" xml:space="preserve">
+				<source>Thousands point:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_decimal_point" xml:space="preserve">
+				<source>Decimal point:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_decimal_digits" xml:space="preserve">
+				<source>Decimal digits:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_divisor" xml:space="preserve">
+				<source>Divisor:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_symbol_left" xml:space="preserve">
+				<source>Sub symbol left:</source>
+			<target></target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_symbol_right" xml:space="preserve">
+				<source>Sub symbol right:</source>
+			<target></target></trans-unit>
+			<trans-unit id="deleted" xml:space="preserve">
+				<source>Deleted</source>
+			<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:34Z" product-name="lowlevel" target-language="sv">
+    <header/>
+    <body>
+      <trans-unit id="configuration" xml:space="preserve">
+        <source>Configuration</source>
+      <target></target></trans-unit>
+      <trans-unit id="typo3ConfVars" xml:space="preserve">
+        <source>$GLOBALS['TYPO3_CONF_VARS'] (Global Configuration)</source>
+      <target></target></trans-unit>
+      <trans-unit id="tca" xml:space="preserve">
+        <source>$GLOBALS['TCA'] (Table configuration array)</source>
+      <target></target></trans-unit>
+      <trans-unit id="tcaDescr" xml:space="preserve">
+        <source>$GLOBALS['TCA_DESCR'] (Table Help Description)</source>
+      <target></target></trans-unit>
+      <trans-unit id="loadedExt" xml:space="preserve">
+        <source>$GLOBALS['TYPO3_LOADED_EXT'] (Loaded Extensions)</source>
+      <target></target></trans-unit>
+      <trans-unit id="tbeStyles" xml:space="preserve">
+        <source>$GLOBALS['TBE_STYLES'] (Skinning Styles)</source>
+      <target></target></trans-unit>
+      <trans-unit id="beUser" xml:space="preserve">
+        <source>$GLOBALS['BE_USER']-&gt;uc (User Settings)</source>
+      <target></target></trans-unit>
+      <trans-unit id="usersettings" xml:space="preserve">
+        <source>$GLOBALS['TYPO3_USER_SETTINGS'] (User Settings Configuration)</source>
+      <target></target></trans-unit>
+      <trans-unit id="t3services" xml:space="preserve">
+        <source>$GLOBALS['T3_SERVICES'] (Registered Services)</source>
+      <target></target></trans-unit>
+      <trans-unit id="tbemodulesext" xml:space="preserve">
+        <source>$GLOBALS['TBE_MODULES_EXT'] (BE Modules Extensions)</source>
+      <target></target></trans-unit>
+      <trans-unit id="tbemodules" xml:space="preserve">
+        <source>$GLOBALS['TBE_MODULES'] (BE Modules)</source>
+      <target></target></trans-unit>
+      <trans-unit id="cropLines" xml:space="preserve">
+        <source>Crop lines</source>
+      <target></target></trans-unit>
+      <trans-unit id="variable" xml:space="preserve">
+        <source>Variable:</source>
+      <target></target></trans-unit>
+      <trans-unit id="copyPaste" xml:space="preserve">
+        <source>(Now, copy/paste this value into the configuration file where you can set it. This is all you can do from here...)</source>
+      <target></target></trans-unit>
+      <trans-unit id="enterSearchPhrase" xml:space="preserve">
+        <source>Enter search phrase:</source>
+      <target></target></trans-unit>
+      <trans-unit id="search" xml:space="preserve">
+        <source>Search</source>
+      <target></target></trans-unit>
+      <trans-unit id="useRegExp" xml:space="preserve">
+        <source>Use regular expression</source>
+      <target></target></trans-unit>
+      <trans-unit id="writeValue" xml:space="preserve">
+        <source>Write value to configuration file</source>
+      <target></target></trans-unit>
+      <trans-unit id="writeMessage" xml:space="preserve">
+        <source>Following line was added to configuration file (%s): %s%s</source>
+      <target></target></trans-unit>
+      <trans-unit id="writeMessageFailed" xml:space="preserve">
+        <source>Write to configuration file failed (%s)!</source>
+      <target></target></trans-unit>
+    </body>
+  </file>
+</xliff>

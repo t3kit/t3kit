@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="static_territories.title">Territorium</label>
+			<label index="static_territories_item.tr_iso_nr">ISO Nr Territoriumkod:</label>
+			<label index="static_territories_item.tr_parent_iso_nr">Moderterritoriumkod:</label>
+			<label index="static_territories_item.tr_name_en">Namn (EN):</label>
+			<label index="static_countries.title">Länder</label>
+			<label index="static_countries_item.cn_iso_2">ISO 3166-1 A2 Landskod:</label>
+			<label index="static_countries_item.cn_iso_3">ISO 3166-1 A3 Landskod:</label>
+			<label index="static_countries_item.cn_iso_nr">ISO 3166-1 Nr Landskod:</label>
+			<label index="static_countries_item.cn_official_name_local">Officiellt namn (lokalt):</label>
+			<label index="static_countries_item.cn_official_name_en">Officiellt namn (EN):</label>
+			<label index="static_countries_item.cn_capital">Huvudstad:</label>
+			<label index="static_countries_item.cn_tldomain">Huvuddomän:</label>
+			<label index="static_countries_item.cn_currency_iso_nr">ISO 4217 Nr Valutakod:</label>
+			<label index="static_countries_item.cn_currency_iso_3">ISO 4217 A3 Valutakod:</label>
+			<label index="static_countries_item.cn_phone">Int. telefonprefix:</label>
+			<label index="static_countries_item.cn_uno_member">UN-medlem:</label>
+			<label index="static_countries_item.cn_eu_member">EU-medlem:</label>
+			<label index="static_countries_item.cn_address_format">Adressformat:</label>
+			<label index="static_countries_item.cn_address_format_1">postnr stad</label>
+			<label index="static_countries_item.cn_address_format_2">stad postnr</label>
+			<label index="static_countries_item.cn_address_format_3">stad regionskod postnr</label>
+			<label index="static_countries_item.cn_address_format_4">stad (regionsnamn) postnr</label>
+			<label index="static_countries_item.cn_address_format_5">stad/postnr</label>
+			<label index="static_countries_item.cn_address_format_6">postnr stad, regionskod</label>
+			<label index="static_countries_item.cn_address_format_7">postnr stad regionskod</label>
+			<label index="static_countries_item.cn_address_format_8">postnr stad (regionsnamn)</label>
+			<label index="static_countries_item.cn_address_format_9">stad - regionskod/postnr</label>
+			<label index="static_countries_item.cn_zone_flag">Zonflagga:</label>
+			<label index="static_countries_item.cn_short_local">Kort namn (lokalt):</label>
+			<label index="static_countries_item.cn_short_en">Kort namn (EN):</label>
+			<label index="static_country_zones.title">Landsindelningar</label>
+			<label index="static_country_zones_item.zn_country_iso_nr">ISO 3166-1 Nr Landskod:</label>
+			<label index="static_country_zones_item.zn_country_iso_2">ISO 3166-1 A2 Landskod:</label>
+			<label index="static_country_zones_item.zn_country_iso_3">ISO 3166-1 A3 Landskod:</label>
+			<label index="static_country_zones_item.zn_code">ISO 3166-2 Landszonkod:</label>
+			<label index="static_country_zones_item.zn_name_en">Namn (EN):</label>
+			<label index="static_languages.title">Språk</label>
+			<label index="static_languages_item.lg_iso_2">ISO 639-1 A2 Språkkod:</label>
+			<label index="static_languages_item.lg_collate_locale">Övergripande språkinställning</label>
+			<label index="static_languages_item.lg_name_en">Namn (EN):</label>
+			<label index="static_languages_item.lg_typo3">Typo3 språkkod:</label>
+			<label index="static_languages_item.lg_sacred">Heligt språk:</label>
+			<label index="static_languages_item.lg_constructed">Konstruerat språk:</label>
+			<label index="static_currencies.title">Valutor</label>
+			<label index="static_currencies_item.cu_iso_3">ISO 4217 A3 Valutakod:</label>
+			<label index="static_currencies_item.cu_iso_nr">ISO 4217 Nr Valutakod:</label>
+			<label index="static_currencies_item.cu_name_en">Namn (EN):</label>
+			<label index="static_currencies_item.cu_sub_name_en">Undernamn (EN):</label>
+			<label index="static_currencies_item.cu_symbol_left">Symbol vänster:</label>
+			<label index="static_currencies_item.cu_symbol_right">Symbol höger:</label>
+			<label index="static_currencies_item.cu_thousands_point">Tusentalsavgränsare:</label>
+			<label index="static_currencies_item.cu_decimal_point">Decimaltecken:</label>
+			<label index="static_currencies_item.cu_decimal_digits">Decimalsiffror:</label>
+			<label index="static_currencies_item.cu_sub_divisor">Divisor:</label>
+			<label index="static_currencies_item.cu_sub_symbol_left">Undersymbol vänster:</label>
+			<label index="static_currencies_item.cu_sub_symbol_right">Undersymbol höger:</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

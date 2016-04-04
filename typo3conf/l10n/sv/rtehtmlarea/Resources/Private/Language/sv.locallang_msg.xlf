@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:22Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="ActiveX-required" approved="yes">
+				<source>Loading the editor in Internet Explorer requires the execution of ActiveX controls to be enabled.</source>
+				<target state="translated">För att ladda redigeringsverktyget i Internet Explorer krävs att ActiveX-kontrollerna får köras.</target>
+			</trans-unit>
+			<trans-unit id="Allow-Clipboard-Helper-Extension" approved="yes">
+				<source>For security reasons, unprivileged applications cannot access the clipboard. Click YES to install a component that will enable you to specify the sites or pages that will be allowed to access the clipboard and perform copy, cut and paste operations.</source>
+				<target state="translated">Av säkerhetsskäl kan opriviligierade applikationer inte använda klippbordet. Klicka på OK för att installera en komponent som gör det möjligt för dig att specificera vilka webbplatser eller sidor som ska få åtkomst till klippbordet och utföra funktionerna kopiera, klipp ut och klistra in.</target>
+			</trans-unit>
+			<trans-unit id="Allow-Clipboard-Helper-Extension-Success" approved="yes">
+				<source>The installation was successful. You need to exit and restart your browser for the change to take effect. Afterwards, use the AllowClipboard Helper from the tools menu to allow specific sites to use the clipboard.</source>
+				<target state="translated">Installationen lyckades. Du måste stänga och starta om din webbläsare för att ändringen skall träda i kraft. Efteråt kan du använda verktyget AllowClipboard Helper som finns på verktygsmenyn för att tillåta specificerade webbplatser att använda klippbordet.</target>
+			</trans-unit>
+			<trans-unit id="HTML-document-not-well-formed" approved="yes">
+				<source>The HTML document is not well-formed.</source>
+				<target state="translated">HTML-dokumentet är inte välformaterat.</target>
+			</trans-unit>
+			<trans-unit id="Moz-Clipboard" approved="yes">
+				<source>Unprivileged scripts cannot access Cut/Copy/Paste programatically for security reasons. Click YES to see a technical note at mozilla.org which shows you how to allow a script to access the clipboard.</source>
+				<target state="translated">Opriviligierade skript kan inte komma åt Klipp ut/Kopiera/Klistra in pga säkerhetsskäl. Klicka på OK för att se en teknisk beskrivning på mozilla.org, som visar hur man låter ett skript få åtkomst till klippbordet.</target>
+			</trans-unit>
+			<trans-unit id="Moz-Extension" approved="yes">
+				<source>For security reasons, unprivileged applications cannot access the clipboard. Click YES to install a component that will enable applications from this site to access the clipboard and perform copy, cut and paste operations.</source>
+				<target state="translated">Av säkerhetsskäl kan opriviligierade applikationer inte använda klippbordet. Klicka på OK för att installera en komponent som gör det möjligt för applikationer från denna webbplats att få åtkomst till klippbordet och funktionerna kopiera, klipp ut och klistra in.</target>
+			</trans-unit>
+			<trans-unit id="Moz-Extension-Failure" approved="yes">
+				<source>Sorry, Firefox Add-on AllowClipboard Helper could not be installed.</source>
+				<target state="translated">Beklagar, installationen misslyckades.</target>
+			</trans-unit>
+			<trans-unit id="Moz-Extension-Install-Not-Enabled" approved="yes">
+				<source>The installation cannot be performed. Please change your browser preferences in order to allow installation of sofware from this site.</source>
+				<target state="translated">Installationen kan inte utföras. Du måsta ändra webbläsarens inställningar för att godkänna installationer från denna webbplats.</target>
+			</trans-unit>
+			<trans-unit id="Moz-Extension-Success" approved="yes">
+				<source>The installation was successful. You need to exit and restart your browser for the change to take effect.</source>
+				<target state="translated">Installationen lyckades. Du måste stänga och starta om din webbläsare för att ändringarna skall träda i kraft.</target>
+			</trans-unit>
+			<trans-unit id="Mozilla-Org-Install-Not-Enabled" approved="yes">
+				<source>The installation cannot be performed. Please change your browser preferences in order to allow installation of sofware from https://addons.mozilla.org.</source>
+				<target state="translated">Installationen kan inte utföras. Vänligen ändra inställningarna i din webbläsare så att den godkänner programinstallationer från http://ftp.mozilla.org.</target>
+			</trans-unit>
+			<trans-unit id="Path" approved="yes">
+				<source>Path</source>
+				<target state="translated">Sökväg</target>
+			</trans-unit>
+			<trans-unit id="TEXT_MODE" approved="no">
+				<source>You are in TEXT MODE.  Use the [&lt;&gt;] button to switch back to WYSIWYG.</source>
+				<target state="needs-translation">Du är nu i TEXTLÄGE. Använd knappen [&lt;&gt;] för att växla till WYSIWYG.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

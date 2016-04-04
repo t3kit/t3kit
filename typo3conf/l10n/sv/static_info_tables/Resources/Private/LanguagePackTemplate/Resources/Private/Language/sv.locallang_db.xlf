@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-21T01:35:44Z" product-name="static_info_tables_###LANG_ISO_LOWER###" target-language="sv">
+		<header/>
+		<body>
+###LANG_TCA_LABELS###
+		</body>
+	</file>
+</xliff>

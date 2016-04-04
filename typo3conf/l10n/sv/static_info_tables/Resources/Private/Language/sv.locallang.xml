@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="title"/>
+			<label index="information"/>
+			<label index="actionList"/>
+			<label index="newLanguagePack"/>
+			<label index="createLanguagePackTitle"/>
+			<label index="createLanguagePackDescription"/>
+			<label index="createLanguagePackSubmit"/>
+			<label index="language"/>
+			<label index="version"/>
+			<label index="author"/>
+			<label index="authorCompany"/>
+			<label index="authorEmail"/>
+			<label index="couldNotWriteFile"/>
+			<label index="languagePackCreated"/>
+			<label index="languagePackUpdated"/>
+			<label index="languagePack"/>
+			<label index="wasInstalled"/>
+			<label index="testForm"/>
+			<label index="testFormTitle"/>
+			<label index="testFormDescription"/>
+			<label index="testFormSubmit"/>
+			<label index="testFormResultTitle"/>
+			<label index="sqlDumpNonLocalizedData"/>
+			<label index="sqlDumpNonLocalizedDataTitle"/>
+			<label index="sqlDumpNonLocalizedDataDescription"/>
+			<label index="sqlDumpCreated"/>
+			<label index="1238108067"/>
+			<label index="1221559976"/>
+			<label index="updateLanguageLabels"/>
+			<label index="updateTables"/>
+			<label index="nothingToDo"/>
+			<label index="enableStaticInfoTablesManager"/>
+			<label index="afterInstall"/>
+			<label index="update.oldLanguagePacks"/>
+			<label index="selectCountry"/>
+			<label index="selectCountryZone"/>
+			<label index="selectLanguage"/>
+			<label index="countryLocalizedName"/>
+			<label index="countryZoneLocalizedName"/>
+			<label index="currencyLocalizedName"/>
+			<label index="languageLocalizedName"/>
+			<label index="territoryLocalizedName"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

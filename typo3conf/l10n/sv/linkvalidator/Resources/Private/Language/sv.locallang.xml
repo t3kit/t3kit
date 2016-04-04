@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="mod_linkvalidator"/>
+			<label index="tasks.error.invalidEmailTemplateFile"/>
+			<label index="tasks.error.invalidFromEmail"/>
+			<label index="tasks.error.invalidToEmail"/>
+			<label index="tasks.error.invalidTSconfig"/>
+			<label index="tasks.error.noSubject"/>
+			<label index="tasks.validate.conf"/>
+			<label index="tasks.validate.depth"/>
+			<label index="tasks.validate.description"/>
+			<label index="tasks.validate.email"/>
+			<label index="tasks.validate.emailOnBrokenLinkOnly"/>
+			<label index="tasks.validate.emailTemplateFile"/>
+			<label index="tasks.validate.invalidDepth"/>
+			<label index="tasks.validate.invalidEmail"/>
+			<label index="tasks.validate.invalidPage"/>
+			<label index="tasks.validate.name"/>
+			<label index="tasks.validate.page"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

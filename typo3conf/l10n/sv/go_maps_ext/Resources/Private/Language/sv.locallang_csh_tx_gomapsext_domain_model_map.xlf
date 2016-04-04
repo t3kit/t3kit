@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-21T11:31:58Z" target-language="sv">
+		<header>
+			<description>Context Sensitive Help (CSH) for table tx_gomapsext_domain_model_map</description>
+			<type>CSH</type>
+			<csh_table>tx_gomapsext_domain_model_map</csh_table>
+			<authorName>Marc Hirdes</authorName>
+			<authorEmail>marc_hirdes@gmx.de</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="addresses.description" xml:space="preserve">
+			<source>You can choose, create or edit an address. New addresses will be saved on the current page.</source>
+		<target></target></trans-unit>
+		<trans-unit id="calc_route.description" xml:space="preserve">
+			<source>Only 1 address used as destination. Display an text input for enter a starting point.</source>
+		<target></target></trans-unit>
+		<trans-unit id="class.description" xml:space="preserve">
+			<source>The class of the map container</source>
+		<target></target></trans-unit>
+		<trans-unit id="default_type.description" xml:space="preserve">
+			<source>Maptype on the beginning.</source>
+		<target></target></trans-unit>
+		<trans-unit id="double_click_zoom.description" xml:space="preserve">
+			<source>A double click on the map zooms in. Draggable map has to be enabled!</source>
+		<target></target></trans-unit>
+		<trans-unit id="draggable.description" xml:space="preserve">
+			<source>Position of the map can be changed.</source>
+		<target></target></trans-unit>
+		<trans-unit id="height.description" xml:space="preserve">
+			<source>Set the height of the map. Default in px, for percentages enter %, e.g. '100%'.</source>
+		<target></target></trans-unit>
+		<trans-unit id="kml_local.description" xml:space="preserve">
+			<source>The KML file is stored on this server. The specified path is relative. Only markers appear.</source>
+		<target></target></trans-unit>
+		<trans-unit id="kml_preserve_viewport.description" xml:space="preserve">
+			<source>The viewport of the kml file will be ignored. Set zoom and at least one address to configure the viewport.</source>
+		<target></target></trans-unit>
+		<trans-unit id="kml_url.description" xml:space="preserve">
+			<source>Enter an URL of a KML file, e.g. "http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml".</source>
+		<target></target></trans-unit>
+		<trans-unit id="map_type_control.description" xml:space="preserve">
+			<source>Shows a control to change the map type.</source>
+		<target></target></trans-unit>
+		<trans-unit id="map_types.description" xml:space="preserve">
+			<source>Possible map types to choose. Map type control has to be enabled.</source>
+		<target></target></trans-unit>
+		<trans-unit id="marker_cluster.description" xml:space="preserve">
+			<source>Many markers in the same region will be summarized and appear as a cluster.</source>
+		<target></target></trans-unit>
+		<trans-unit id="marker_cluster_size.description" xml:space="preserve">
+			<source>The size of the Clusters, like a radius.</source>
+		<target></target></trans-unit>
+		<trans-unit id="marker_cluster_zoom.description" xml:space="preserve">
+			<source>Up to this zoom level the Clusters are displayed.</source>
+		<target></target></trans-unit>
+		<trans-unit id="marker_search.description" xml:space="preserve">
+			<source>Displays a form on the frontend, were the user can enter a search word. Searchs for InfoWindow content and title of a marker. The InfoWindow of the first found marker opens.</source>
+		<target></target></trans-unit>
+		<trans-unit id="pan_control.description" xml:space="preserve">
+			<source>Show arrows to change the position of the map.</source>
+		<target></target></trans-unit>
+		<trans-unit id="scale_control.description" xml:space="preserve">
+			<source>Displays a measure.</source>
+		<target></target></trans-unit>
+		<trans-unit id="scroll_zoom.description" xml:space="preserve">
+			<source>Enables zoom with scroll wheel. </source>
+		<target></target></trans-unit>
+		<trans-unit id="show_route.description" xml:space="preserve">
+			<source>2 address records needed! Shows the route between the given points.</source>
+		<target></target></trans-unit>
+		<trans-unit id="streetview_control.description" xml:space="preserve">
+			<source>Shows an icon to enable the streetview.</source>
+		<target></target></trans-unit>
+		<trans-unit id="styled_map_code.description" xml:space="preserve">
+			<source>JSON, e.g. from http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html</source>
+		<target></target></trans-unit>
+		<trans-unit id="styled_map_name.description" xml:space="preserve">
+			<source>Shown in the map type control.</source>
+		<target></target></trans-unit>
+		<trans-unit id="title.description" xml:space="preserve">
+			<source>Will be used as ID (without space character, special character!).</source>
+		<target></target></trans-unit>
+		<trans-unit id="tooltip_title.description" xml:space="preserve">
+			<source>Shown by mouse over.</source>
+		<target></target></trans-unit>
+		<trans-unit id="travel_mode.description" xml:space="preserve">
+			<source>Select a travel mode or let the frontend user select one.</source>
+		<target></target></trans-unit>
+		<trans-unit id="unit_system.description" xml:space="preserve">
+			<source>Select a unit system or let the frontend user select one.</source>
+		<target></target></trans-unit>
+		<trans-unit id="width.description" xml:space="preserve">
+			<source>Set the width of the map. Default in px, for percentages enter %, e.g. '100%'.</source>
+		<target></target></trans-unit>
+		<trans-unit id="zoom.description" xml:space="preserve">
+			<source>Only need to set if default zoom is wrong.</source>
+		<target></target></trans-unit>
+		<trans-unit id="zoom_control.description" xml:space="preserve">
+			<source>Enable buttons to change the zoom.</source>
+		<target></target></trans-unit>
+		<trans-unit id="zoom_control_type.description" xml:space="preserve">
+			<source>Choose beetween large and small.</source>
+		<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

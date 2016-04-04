@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T00:59:46Z" product-name="documentation">
+		<header/>
+		<body>
+			<trans-unit id="documentation.actions">
+				<source>Actions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="documentation.actions.download">
+				<source>Download document</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="documentationList.search">
+				<source>Search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="documentation_manager">
+				<source>Documentation Manager</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="documentation.shortcut">
+				<source>Extension key</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="documentation.title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="documentation.type">
+				<source>Type</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="downloadDocumentation">
+				<source>Download Documentation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="downloadFailed">
+				<source>Download failed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="downloadFailedDetails">
+				<source>The documentation for "%s" could not be downloaded, because of the following error: %s (%d).</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="downloadFailedNoArchive">
+				<source>No rendered documentation archive could be found on docs.typo3.org.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="downloadSucceeded">
+				<source>The rendered documentation was downloaded successfully.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTemplate.submitButton">
+				<source>Go</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="showDocumentation">
+				<source>Show Documentation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_document">
+				<source>Document</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_document.extension_key">
+				<source>Extension Key</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documentformat">
+				<source>Document Format</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documentformat.format">
+				<source>Format</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documentformat.format.title">
+				<source>Show documentation as %s</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documentformat.path">
+				<source>Path</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_document.package_key">
+				<source>Package Key</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_document.title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documenttranslation">
+				<source>Document Translation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documenttranslation.actions">
+				<source>Actions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documenttranslation.description">
+				<source>Description</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documenttranslation.language">
+				<source>Language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_document.translations">
+				<source>Translations</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_documenttranslation.title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_documentation_domain_model_document.version">
+				<source>Version</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

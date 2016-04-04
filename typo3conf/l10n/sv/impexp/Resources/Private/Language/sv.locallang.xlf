@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:41:35Z" product-name="impexp">
+		<header/>
+		<body>
+			<trans-unit id="ALL_tables" approved="yes">
+				<source>ALL tables</source>
+				<target state="translated">ALLA tabeller</target>
+			</trans-unit>
+			<trans-unit id="execlistqu_maxNumberLimit" approved="yes">
+				<source>Max number limit!</source>
+				<target state="translated">Gräns för max antal!</target>
+			</trans-unit>
+			<trans-unit id="execlistqu_structureToBeExported" approved="yes">
+				<source>Structure to be exported:</source>
+				<target state="translated">Struktur som ska exporteras:</target>
+			</trans-unit>
+			<trans-unit id="export" approved="yes">
+				<source>Export to .t3d</source>
+				<target state="translated">Exportera till .t3d</target>
+			</trans-unit>
+			<trans-unit id="exportdata_advancedOptions" approved="yes">
+				<source>Advanced Options</source>
+				<target state="translated">Avancerade alternativ</target>
+			</trans-unit>
+			<trans-unit id="exportdata_badPathS" approved="yes">
+				<source>Bad path: "%s"</source>
+				<target state="translated">Felaktig sökväg: "%s"</target>
+			</trans-unit>
+			<trans-unit id="exportdata_filePreset" approved="yes">
+				<source>File &amp; Preset</source>
+				<target state="translated">Fil &amp; förinställning</target>
+			</trans-unit>
+			<trans-unit id="exportdata_messages" approved="yes">
+				<source>Messages</source>
+				<target state="translated">Meddelanden</target>
+			</trans-unit>
+			<trans-unit id="exportdata_problemsSavingFile" approved="yes">
+				<source>Problems saving file</source>
+				<target state="translated">Problem med att spara filen</target>
+			</trans-unit>
+			<trans-unit id="exportdata_savedFile" approved="yes">
+				<source>SAVED FILE</source>
+				<target state="translated">SPARAD FIL</target>
+			</trans-unit>
+			<trans-unit id="exportdata_savedInSBytes" approved="yes">
+				<source>Saved in "%s", bytes %s</source>
+				<target state="translated">Sparad i "%s", %s byte</target>
+			</trans-unit>
+			<trans-unit id="filterpage_structureToBeImported" approved="yes">
+				<source>Structure to be imported:</source>
+				<target state="translated">Struktur som skall importeras:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_controls" approved="yes">
+				<source>Controls:</source>
+				<target state="translated">Kontroller:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_currentPath" approved="yes">
+				<source>Current Path:</source>
+				<target state="translated">Nuvarande sökväg:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_insidePagetree" approved="yes">
+				<source>Inside pagetree:</source>
+				<target state="translated">Inre sidträd:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_message" approved="yes">
+				<source>Message:</source>
+				<target state="translated">Meddelande:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_result" approved="yes">
+				<source>Result:</source>
+				<target state="translated">Resultat:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_size" approved="yes">
+				<source>Size:</source>
+				<target state="translated">Storlek:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_title" approved="yes">
+				<source>Title:</source>
+				<target state="translated">Rubrik:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_displaycon_updateMode" approved="yes">
+				<source>Update Mode:</source>
+				<target state="translated">Uppdateringsläge:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_printerror_description" approved="yes">
+				<source>Description:</source>
+				<target state="translated">Beskrivning:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_descr" approved="yes">
+				<source>Descr:</source>
+				<target state="translated">Beskr:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_exclude" approved="yes">
+				<source>Exclude</source>
+				<target state="translated">Uteslut</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_filename" approved="yes">
+				<source>Filename:</source>
+				<target state="translated">Filnamn:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_forceUidSAdmin" approved="yes">
+				<source>Force UID [%s] (Admin)</source>
+				<target state="translated">Tvinga UID [%s] (Admin)</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_ignorePid" approved="yes">
+				<source>Ignore PID</source>
+				<target state="translated">Ignorera sid-ID</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_importAsNew" approved="yes">
+				<source>Import as new</source>
+				<target state="translated">Importera som ny</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_insert" approved="yes">
+				<source>Insert</source>
+				<target state="translated">Lägg till</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_outsidePagetree" approved="yes">
+				<source>Outside pagetree:</source>
+				<target state="translated">Yttre sidträd:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_respectPid" approved="yes">
+				<source>Respect PID</source>
+				<target state="translated">Respektera sid-ID</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_softReferencesFiles" approved="yes">
+				<source>Soft References Files:</source>
+				<target state="translated">Filer för mjuka referenser:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_title" approved="yes">
+				<source>Title:</source>
+				<target state="translated">Rubrik:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_update" approved="yes">
+				<source>Update</source>
+				<target state="translated">Uppdatera</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_singlereco_value" approved="yes">
+				<source>Value:</source>
+				<target state="translated">Värde:</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_softrefsel_editable" approved="yes">
+				<source>Editable</source>
+				<target state="translated">Går att ändra</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_softrefsel_exclude" approved="yes">
+				<source>Exclude</source>
+				<target state="translated">Uteslut</target>
+			</trans-unit>
+			<trans-unit id="impexpcore_softrefsel_record" approved="yes">
+				<source>Record:</source>
+				<target state="translated">Element:</target>
+			</trans-unit>
+			<trans-unit id="import" approved="yes">
+				<source>Import from .t3d</source>
+				<target state="translated">Importera från .t3d</target>
+			</trans-unit>
+			<trans-unit id="importdata_action" approved="yes">
+				<source>Action:</source>
+				<target state="translated">Händelse:</target>
+			</trans-unit>
+			<trans-unit id="importdata_allowToWriteBanned" approved="yes">
+				<source>Allow to write banned file extensions (eg. PHP scripts), if any</source>
+				<target state="translated">Tillåtelse att skriva förbjudna filtyper (ex. PHP-skript), om sådana finns</target>
+			</trans-unit>
+			<trans-unit id="importdata_areYouSure" approved="yes">
+				<source>Are you sure?</source>
+				<target state="translated">Är du säker?</target>
+			</trans-unit>
+			<trans-unit id="importdata_browse" approved="yes">
+				<source>Browse:</source>
+				<target state="translated">Bläddra:</target>
+			</trans-unit>
+			<trans-unit id="importdata_description" approved="yes">
+				<source>Description:</source>
+				<target state="translated">Beskrivning:</target>
+			</trans-unit>
+			<trans-unit id="importdata_doNotShowDifferences" approved="yes">
+				<source>Do not show differences in records</source>
+				<target state="translated">Visa inte olikheter i element</target>
+			</trans-unit>
+			<trans-unit id="importdata_email" approved="yes">
+				<source>Email:</source>
+				<target state="translated">E-post</target>
+			</trans-unit>
+			<trans-unit id="importdata_enableLogging" approved="yes">
+				<source>Enable logging:</source>
+				<target state="translated">Aktivera logging:</target>
+			</trans-unit>
+			<trans-unit id="importdata_failureNoFileUploaded" approved="yes">
+				<source>Failure: No file uploaded - was it too big? Check system log.</source>
+				<target state="translated">Fel: Ingen fil laddades - var den för stor? Kontrollera systemloggen.</target>
+			</trans-unit>
+			<trans-unit id="importdata_file" approved="yes">
+				<source>File:</source>
+				<target state="translated">Fil:</target>
+			</trans-unit>
+			<trans-unit id="importdata_force_all_UIDS" approved="yes">
+				<source>Force ALL UIDs values</source>
+				<target state="translated">Tvinga ALLA UID-värden</target>
+			</trans-unit>
+			<trans-unit id="importdata_force_all_UIDS_descr" approved="yes">
+				<source>With this option the original UID value of all imported records are forced to be the same. BE VERY CAREFUL WITH THIS! (Admin Only).</source>
+				<target state="translated">Med detta alternativ tvingas alla ursprungliga UID-värden för importerade element att bli oförändrade. VAR MYCKET FÖRSIKTIG MED DETTA! (Endast för admin)</target>
+			</trans-unit>
+			<trans-unit id="importdata_fromPathS" approved="yes">
+				<source>(From path: %s)</source>
+				<target state="translated">(Från sökväg: %s)</target>
+			</trans-unit>
+			<trans-unit id="importdata_greenValuesAreFrom" approved="yes">
+				<source>Green values are from the import file, red values from the current database record and black values are similar in both versions.</source>
+				<target state="translated">Gröna värden är från den importerade filen, röda från den nuvarande databasen och svarta värden är lika i bägge versionerna.</target>
+			</trans-unit>
+			<trans-unit id="importdata_icon" approved="yes">
+				<source>Icon:</source>
+				<target state="translated">Ikon:</target>
+			</trans-unit>
+			<trans-unit id="importdata_ifYouSetThis" approved="yes">
+				<source>If you set this option, the position of updated elements will not be updated to match the structure of the input file.</source>
+				<target state="translated">Om du väljer detta alternativ kommer platsen för uppdaterade element inte att uppdateras så att de överensstämmer med strukturen hos input-filen.</target>
+			</trans-unit>
+			<trans-unit id="importdata_ignorePidDifferencesGlobally" approved="yes">
+				<source>Ignore PID differences globally</source>
+				<target state="translated">Ignorera PID-olikheter globalt</target>
+			</trans-unit>
+			<trans-unit id="importdata_import" approved="yes">
+				<source>Import</source>
+				<target state="translated">Importera</target>
+			</trans-unit>
+			<trans-unit id="importdata_importOptions" approved="yes">
+				<source>Import Options:</source>
+				<target state="translated">Import-alternativ:</target>
+			</trans-unit>
+			<trans-unit id="importdata_messages" approved="yes">
+				<source>Messages</source>
+				<target state="translated">Meddelanden</target>
+			</trans-unit>
+			<trans-unit id="importdata_metaData" approved="yes">
+				<source>Meta data:</source>
+				<target state="translated">Metadata:</target>
+			</trans-unit>
+			<trans-unit id="importdata_metaData_1387" approved="yes">
+				<source>Meta data</source>
+				<target state="translated">Metadata</target>
+			</trans-unit>
+			<trans-unit id="importdata_newImport" approved="yes">
+				<source>New import</source>
+				<target state="translated">Ny import</target>
+			</trans-unit>
+			<trans-unit id="importdata_no_accessible_file_mount">
+				<source>No accessible filemount</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="importdata_no_default_upload_folder">
+				<source>No default upload folder</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="importdata_noteNoDecompressorAvailable" approved="yes">
+				<source>NOTE: No decompressor available for compressed files!</source>
+				<target state="translated">Obs! Det finns inget uppackningsprogram för den packade filen.</target>
+			</trans-unit>
+			<trans-unit id="importdata_notes" approved="yes">
+				<source>Notes:</source>
+				<target state="translated">Anteckningar:</target>
+			</trans-unit>
+			<trans-unit id="importdata_options" approved="yes">
+				<source>Options:</source>
+				<target state="translated">Alternativ:</target>
+			</trans-unit>
+			<trans-unit id="importdata_packager" approved="yes">
+				<source>Packager:</source>
+				<target state="translated">Packare:</target>
+			</trans-unit>
+			<trans-unit id="importdata_preview" approved="yes">
+				<source>Preview</source>
+				<target state="translated">Förhandsgranska</target>
+			</trans-unit>
+			<trans-unit id="importdata_saveToFilename" approved="yes">
+				<source>Save to filename</source>
+				<target state="translated">Spara till filnamn</target>
+			</trans-unit>
+			<trans-unit id="importdata_selectFileToImport" approved="yes">
+				<source>Select file to import:</source>
+				<target state="translated">Välj fil som skall importeras:</target>
+			</trans-unit>
+			<trans-unit id="importdata_structureHasBeenImported" approved="yes">
+				<source>Structure has been imported, here is the result:</source>
+				<target state="translated">Strukturen har importeras, här är resultatet:</target>
+			</trans-unit>
+			<trans-unit id="importdata_success" approved="yes">
+				<source>Success:</source>
+				<target state="translated">Resultat:</target>
+			</trans-unit>
+			<trans-unit id="importdata_thisIsDisabledBy" approved="yes">
+				<source>This is disabled by default since there may be hundred of entries generated.</source>
+				<target state="translated">Detta är som standard ej aktiverat eftersom det kan genereras hundratals med händelser.</target>
+			</trans-unit>
+			<trans-unit id="importdata_thisOptionRequiresThat" approved="yes">
+				<source>This option requires that the structure you import already exists on this server and only needs to be updated with new content!</source>
+				<target state="translated">Detta alternativ kräver att strukturen som du importerar redan finns på servern och endast behöver bli uppdaterad med det nya innehållet!</target>
+			</trans-unit>
+			<trans-unit id="importdata_title" approved="yes">
+				<source>Title:</source>
+				<target state="translated">Rubrik:</target>
+			</trans-unit>
+			<trans-unit id="importdata_update" approved="yes">
+				<source>Update:</source>
+				<target state="translated">Uppdatera:</target>
+			</trans-unit>
+			<trans-unit id="importdata_update_299e" approved="yes">
+				<source>Update</source>
+				<target state="translated">Uppdatera</target>
+			</trans-unit>
+			<trans-unit id="importdata_updateRecords" approved="yes">
+				<source>Update records</source>
+				<target state="translated">Uppdatera element</target>
+			</trans-unit>
+			<trans-unit id="importdata_upload" approved="yes">
+				<source>Upload</source>
+				<target state="translated">Ladda upp</target>
+			</trans-unit>
+			<trans-unit id="importdata_uploadFileFromLocal" approved="yes">
+				<source>Upload file from local computer:</source>
+				<target state="translated">Ladda upp fil från lokal dator:</target>
+			</trans-unit>
+			<trans-unit id="importdata_uploadStatus" approved="yes">
+				<source>Upload status:</source>
+				<target state="translated">Uppladdningsstatus:</target>
+			</trans-unit>
+			<trans-unit id="importdata_writeIndividualDbActions" approved="yes">
+				<source>Write individual DB actions during import to the log</source>
+				<target state="translated">Skriv individuella DB-händelser under importen till loggen</target>
+			</trans-unit>
+			<trans-unit id="makeadvanc_excludeHtmlCssFile" approved="yes">
+				<source>Exclude HTML/CSS file resources:</source>
+				<target state="translated">Uteslut HTML/CSS filresurser:</target>
+			</trans-unit>
+			<trans-unit id="makeadvanc_extensionDependencies" approved="yes">
+				<source>Extension dependencies:</source>
+				<target state="translated">Tilläggsberoenden:</target>
+			</trans-unit>
+			<trans-unit id="makeadvanc_files" approved="no">
+				<source>Files:</source>
+				<target state="needs-translation">Fil:</target>
+			</trans-unit>
+			<trans-unit id="makeadvanc_saveFilesOutsideExportFile">
+				<source>Save files in extra folder beside the export file:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="makeadvanc_saveFilesOutsideExportFile_limit">
+				<source>(supported for "Save to filename" only)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="makeadvanc_selectExtensionsThatThe" approved="yes">
+				<source>Select extensions that the exported content depends on:</source>
+				<target state="translated">Välj de tillägg som det exporterade innehållet är beroende av:</target>
+			</trans-unit>
+			<trans-unit id="makeadvanc_softReferences" approved="yes">
+				<source>Soft References:</source>
+				<target state="translated">Mjuka referenser:</target>
+			</trans-unit>
+			<trans-unit id="makeadvanc_update" approved="yes">
+				<source>Update</source>
+				<target state="translated">Uppdatera</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_anSqlQueryReturned" approved="yes">
+				<source>An SQL query returned exactly the amount of records specified by the limit value (%s) - that could indicate an incomplete selection of records! Make sure this is on purpose.</source>
+				<target state="translated">En SQL-förfrågan gav exakt det antal element som definierats som gräns (%s) - Det kan betyda att urvalet av element inte är komplett. Försäkra dig om att detta är avsiktligt.</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_clearAllExclusions" approved="yes">
+				<source>Clear all exclusions:</source>
+				<target state="translated">Ta bort alla uteslutningar:</target>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+				<note>This label is deprecated (not used anymore) since TYPO3v8
+This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v7</note>
+			</trans-unit>
+			<trans-unit id="makeconfig_excludeElements" approved="yes">
+				<source>Exclude elements:</source>
+				<target state="translated">Uteslut element:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_expandedTree" approved="yes">
+				<source>Expanded tree</source>
+				<target state="translated">Utökat träd</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_exportPagetreeConfiguration" approved="yes">
+				<source>Export pagetree configuration:</source>
+				<target state="translated">Exportera sidträdskonfiguration:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_exportSingleRecord" approved="yes">
+				<source>Export single record:</source>
+				<target state="translated">Exportera enskilt element:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_exportTablesFromPages" approved="yes">
+				<source>Export tables from pages:</source>
+				<target state="translated">Exportera tabeller från sidorna:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_includeRelationsToTables" approved="yes">
+				<source>Include relations to tables:</source>
+				<target state="translated">Inkludera relationer till tabellen:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_includeTables" approved="yes">
+				<source>Include tables:</source>
+				<target state="translated">Inkludera tabeller:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_levels" approved="yes">
+				<source>Levels:</source>
+				<target state="translated">Nivåer:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_maxNumberOfRecords" approved="yes">
+				<source>Max number of records:</source>
+				<target state="translated">Max antal element:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_noExcludedElementsYet" approved="yes">
+				<source>No excluded elements yet. Exclude by setting checkboxes below in the element display.</source>
+				<target state="translated">Inga uteslutna element är ännu valda. Uteslut genom att kryssa för element nedan.</target>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+				<note>This label is deprecated (not used anymore) since TYPO3v8
+This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v8 This label is deprecated (not used anymore) since TYPO3v7</note>
+			</trans-unit>
+			<trans-unit id="makeconfig_noTreeExportedOnly" approved="yes">
+				<source>No tree exported - only tables on the page.</source>
+				<target state="translated">Inget träd exporterat - sidan innehållar endast tabeller.</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_pageId" approved="yes">
+				<source>Page ID:</source>
+				<target state="translated">Sidans ID:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_record" approved="yes">
+				<source>Record:</source>
+				<target state="translated">Element:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_relationsAndExclusions" approved="yes">
+				<source>Relations and Exclusions:</source>
+				<target state="translated">Relationer och uteslutningar</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_showStaticRelations" approved="yes">
+				<source>Show static relations:</source>
+				<target state="translated">Visa statiska relationer:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_tablePids" approved="yes">
+				<source>Table/Pids:</source>
+				<target state="translated">Tabeller/SidID:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_tablesOnThisPage" approved="yes">
+				<source>Tables on this page</source>
+				<target state="translated">Tabeller på denna sida</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_tree" approved="yes">
+				<source>Tree:</source>
+				<target state="translated">Träd:</target>
+			</trans-unit>
+			<trans-unit id="makeconfig_useStaticRelationsFor" approved="yes">
+				<source>Use static relations for tables:</source>
+				<target state="translated">Använd statiska relationer för tabeller:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_areYouSure" approved="yes">
+				<source>Are you sure?</source>
+				<target state="translated">Är du säker?</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_delete" approved="yes">
+				<source>Delete</source>
+				<target state="translated">Ta bort</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_description" approved="yes">
+				<source>Description:</source>
+				<target state="translated">Beskrivning:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_downloadExport" approved="yes">
+				<source>Download export</source>
+				<target state="translated">Export av nedladdning</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_fileFormat" approved="yes">
+				<source>File format:</source>
+				<target state="translated">Filformat:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_filenameSavedInS" approved="yes">
+				<source>Filename (saved in "%s"):</source>
+				<target state="translated">Filnamn (sparad i "%s"):</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_load" approved="yes">
+				<source>Load</source>
+				<target state="translated">Ladda</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_maxSizeOfFiles" approved="yes">
+				<source>Max size of files to include (kb):</source>
+				<target state="translated">Max storlek på filer som tas med (kB):</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_merge" approved="yes">
+				<source>Merge</source>
+				<target state="translated">Sammanfoga</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_metaData" approved="yes">
+				<source>Meta data:</source>
+				<target state="translated">Metadata:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_notes" approved="yes">
+				<source>Notes:</source>
+				<target state="translated">Anteckningar:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_outputOptions" approved="yes">
+				<source>Output options:</source>
+				<target state="translated">Alternativ för output:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_presets" approved="yes">
+				<source>Presets:</source>
+				<target state="translated">Förinställningar:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_public" approved="yes">
+				<source>Public:</source>
+				<target state="translated">Offentlig:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_save" approved="yes">
+				<source>Save</source>
+				<target state="translated">Spara</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_selectPreset" approved="yes">
+				<source>Select preset:</source>
+				<target state="translated">Välj förinställning:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_t3dFile" approved="yes">
+				<source>T3D file</source>
+				<target state="translated">T3D-fil</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_t3dFileCompressed" approved="yes">
+				<source>T3D file / compressed</source>
+				<target state="translated">T3D-fil / packad</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_title" approved="yes">
+				<source>Title:</source>
+				<target state="translated">Rubrik:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_titleOfNewPreset" approved="yes">
+				<source>Title of new preset:</source>
+				<target state="translated">Rubrik för ny förinställning:</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_update" approved="yes">
+				<source>Update</source>
+				<target state="translated">Uppdatera</target>
+			</trans-unit>
+			<trans-unit id="makesavefo_xml" approved="yes">
+				<source>XML</source>
+				<target state="translated">XML</target>
+			</trans-unit>
+			<trans-unit id="pleaseConfirm">
+				<source>Please confirm</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tableselec_configuration" approved="yes">
+				<source>Configuration</source>
+				<target state="translated">Konfiguration</target>
+			</trans-unit>
+			<trans-unit id="title" approved="yes">
+				<source>Import / Export</source>
+				<target state="translated">Importera / Exportera</target>
+			</trans-unit>
+			<trans-unit id="title_export">
+				<source>Export</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title_import" approved="yes">
+				<source>Import</source>
+				<target state="translated">Importera</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

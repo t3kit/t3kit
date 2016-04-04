@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="Insert Smiley" approved="yes">
+				<source>Insert Smiley</source>
+				<target state="translated">Infoga humörsymbol</target>
+			</trans-unit>
+			<trans-unit id="mozilla_cool">
+				<source>Cool</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_cry">
+				<source>Cry</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_embarassed">
+				<source>Embarassed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_footinmouth">
+				<source>Foot in mouth</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_frown">
+				<source>Frown</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_innocent">
+				<source>Innocent</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_kiss">
+				<source>Kiss</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_laughing">
+				<source>Laughing</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_moneyinmouth">
+				<source>Money Mouth</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_sealed">
+				<source>Lips are sealed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_smile" approved="no">
+				<source>Smile</source>
+				<target state="needs-translation">Humörsymbol</target>
+				<note>83%</note>
+			</trans-unit>
+			<trans-unit id="mozilla_surprised">
+				<source>Surprise</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_tongueout">
+				<source>Tongue out</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_undecided">
+				<source>Undecided</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_wink">
+				<source>Wink</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mozilla_yell">
+				<source>Yell</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Smiley" approved="yes">
+				<source>Smiley</source>
+				<target state="translated">Humörsymbol</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

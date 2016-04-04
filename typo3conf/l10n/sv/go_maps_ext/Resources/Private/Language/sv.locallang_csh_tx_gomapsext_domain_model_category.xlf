@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-25T10:08:18Z" target-language="sv">
+		<header>
+			<description>Context Sensitive Help (CSH) for table tx_gomapsext_domain_model_address</description>
+			<type>CSH</type>
+			<csh_table>tx_gomapsext_domain_model_address</csh_table>
+			<authorName>Marc Hirdes</authorName>
+			<authorEmail>marc_hirdes@gmx.de</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="name.description" xml:space="preserve">
+			<source>The name of the category.</source>
+		<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

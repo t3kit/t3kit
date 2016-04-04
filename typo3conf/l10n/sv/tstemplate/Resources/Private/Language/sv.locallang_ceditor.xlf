@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:44:14Z" product-name="tstemplate">
+		<header/>
+		<body>
+			<trans-unit id="category">
+				<source>Category</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editConstants">
+				<source>Edit constants for template</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="noConstants">
+				<source>No constants available</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="noConstantsDescription">
+				<source>There are no editable constants available for the Constant Editor.</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

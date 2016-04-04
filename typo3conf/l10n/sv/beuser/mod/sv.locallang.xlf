@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:32Z" product-name="beuser" target-language="sv">
+    <header/>
+    <body>
+      <trans-unit id="pageTitle" xml:space="preserve" approved="yes">
+        <source>Page title:</source>
+      <target state="translated">Sidtitel:</target></trans-unit>
+      <trans-unit id="path" xml:space="preserve" approved="yes">
+        <source>Path:</source>
+      <target state="translated">Sökväg:</target></trans-unit>
+      <trans-unit id="user" xml:space="preserve" approved="yes">
+        <source>User:</source>
+      <target state="translated">Användare:</target></trans-unit>
+      <trans-unit id="group" xml:space="preserve" approved="yes">
+        <source>Group:</source>
+      <target state="translated">Grupp:</target></trans-unit>
+      <trans-unit id="everybody" xml:space="preserve" approved="yes">
+        <source>Everybody:</source>
+      <target state="translated">Alla:</target></trans-unit>
+      <trans-unit id="thisUser" xml:space="preserve" approved="yes">
+        <source>This user:</source>
+      <target state="translated">Denna användare:</target></trans-unit>
+      <trans-unit id="mainGroup" xml:space="preserve" approved="yes">
+        <source>Main group:</source>
+      <target state="translated">Huvudgrupp:</target></trans-unit>
+      <trans-unit id="editLock" xml:space="preserve" approved="yes">
+        <source>Edit lock prevents all editing</source>
+      <target state="translated">Redigeringslås förhindrar all redigering</target></trans-unit>
+      <trans-unit id="noReadAccess" xml:space="preserve" approved="yes">
+        <source>The user has no read-access to these DB-mounts!</source>
+      <target state="translated">Användaren har inga läsrättigheter för dessa DB-monteringar!</target></trans-unit>
+      <trans-unit id="live" xml:space="preserve" approved="yes">
+        <source>[LIVE]</source>
+      <target state="translated">[PUBLIK]</target></trans-unit>
+      <trans-unit id="defaultDraft" xml:space="preserve" approved="yes">
+        <source>[Default Draft]</source>
+      <target state="translated">[STANDARD UTKAST]</target></trans-unit>
+      <trans-unit id="notAccessible" xml:space="preserve" approved="yes">
+        <source>WARNING: Workspace Webmount page id not accessible:</source>
+      <target state="translated">VARNING: Sid-ID för Arbetsflödets sidmontering ej tillgängligt</target></trans-unit>
+      <trans-unit id="compareUserSettings" xml:space="preserve" approved="yes">
+        <source>Compare User Settings</source>
+      <target state="translated">Jämför användarinställningar</target></trans-unit>
+      <trans-unit id="listUsersOnline" xml:space="preserve" approved="yes">
+        <source>List Users Online</source>
+      <target state="translated">Lista aktiva användare</target></trans-unit>
+      <trans-unit id="backendUserAdministration" xml:space="preserve" approved="yes">
+        <source>Backend User Administration</source>
+      <target state="translated">Backend Användaradministration</target></trans-unit>
+      <trans-unit id="filemounts" xml:space="preserve" approved="yes">
+        <source>Filemounts</source>
+      <target state="translated">Filmonteringar</target></trans-unit>
+      <trans-unit id="webmounts" xml:space="preserve" approved="yes">
+        <source>Webmounts</source>
+      <target state="translated">Sidmontering</target></trans-unit>
+      <trans-unit id="defaultUploadPath" xml:space="preserve" approved="yes">
+        <source>Default upload path</source>
+      <target state="translated">Standard sökväg för uppladdning</target></trans-unit>
+      <trans-unit id="mainUserGroup" xml:space="preserve" approved="yes">
+        <source>Main user group</source>
+      <target state="translated">Huvudanvändargrupp</target></trans-unit>
+      <trans-unit id="memberOfGroups" xml:space="preserve" approved="yes">
+        <source>Member of groups</source>
+      <target state="translated">Medlem i grupper</target></trans-unit>
+      <trans-unit id="pageTypesAccess" xml:space="preserve" approved="yes">
+        <source>Page types access</source>
+      <target state="translated">Sidtypsbehörighet</target></trans-unit>
+      <trans-unit id="selectTables" xml:space="preserve" approved="yes">
+        <source>Select tables</source>
+      <target state="translated">Välj tabeller</target></trans-unit>
+      <trans-unit id="modifyTables" xml:space="preserve" approved="yes">
+        <source>Modify tables</source>
+      <target state="translated">Modifiera tabeller</target></trans-unit>
+      <trans-unit id="nonExcludeFields" xml:space="preserve" approved="yes">
+        <source>Non-exclude fields</source>
+      <target state="translated">Icke-exkluderade fält</target></trans-unit>
+      <trans-unit id="explicitAllowDeny" xml:space="preserve" approved="yes">
+        <source>Explicit Allow/Deny</source>
+      <target state="translated">Explicit Tillåt/Neka</target></trans-unit>
+      <trans-unit id="limitToLanguages" xml:space="preserve" approved="yes">
+        <source>Limit to languages</source>
+      <target state="translated">Begränsa till språk</target></trans-unit>
+      <trans-unit id="workspacePermissions" xml:space="preserve" approved="yes">
+        <source>Workspace permissions</source>
+      <target state="translated">Arbetsflödebehörighet</target></trans-unit>
+      <trans-unit id="workspaceMembership" xml:space="preserve" approved="yes">
+        <source>Workspace membership</source>
+      <target state="translated">Arbetsflödetillhörighet</target></trans-unit>
+      <trans-unit id="customOptions" xml:space="preserve" approved="yes">
+        <source>Custom options</source>
+      <target state="translated">Anpassade alternativ</target></trans-unit>
+      <trans-unit id="modules" xml:space="preserve" approved="yes">
+        <source>Modules</source>
+      <target state="translated">Moduler</target></trans-unit>
+      <trans-unit id="tsconfig" xml:space="preserve" approved="yes">
+        <source>TSconfig</source>
+      <target state="translated">TSconfig</target></trans-unit>
+      <trans-unit id="tsconfigHL" xml:space="preserve" approved="yes">
+        <source>TSconfig HL</source>
+      <target state="translated">TSconfig HL</target></trans-unit>
+      <trans-unit id="nonMountedReadablePages" xml:space="preserve" approved="yes">
+        <source>Non-mounted readable pages:</source>
+      <target state="translated">Icke-monterade läsbara sidor:</target></trans-unit>
+      <trans-unit id="backToOverview" xml:space="preserve" approved="yes">
+        <source>&lt; Back to overview</source>
+      <target state="translated">&lt;Tillbaka till översikt</target></trans-unit>
+      <trans-unit id="userInfo" xml:space="preserve" approved="yes">
+        <source>User Info</source>
+      <target state="translated">Användarinformation</target></trans-unit>
+      <trans-unit id="groupBy" xml:space="preserve" approved="yes">
+        <source>Group by:</source>
+      <target state="translated">Gruppera via:</target></trans-unit>
+      <trans-unit id="update" xml:space="preserve" approved="yes">
+        <source>Update</source>
+      <target state="translated">Uppdatera</target></trans-unit>
+      <trans-unit id="groupAndCompareUsers" xml:space="preserve" approved="yes">
+        <source>Group and Compare Users</source>
+      <target state="translated">Gruppera och jämför Användare</target></trans-unit>
+      <trans-unit id="tooManyUsers" xml:space="preserve" approved="yes">
+        <source>There were too many users:</source>
+      <target state="translated">Det fanns för många användare:</target></trans-unit>
+      <trans-unit id="canOnlyDisplay" xml:space="preserve" approved="yes">
+        <source>This tool can only display the following number of users at a time:</source>
+      <target state="translated">Detta verktyg kan endast visa följande antal användare åt gången:</target></trans-unit>
+      <trans-unit id="newUser" xml:space="preserve" approved="yes">
+        <source>Create new user</source>
+      <target state="translated">Skapa ny användare</target></trans-unit>
+      <trans-unit id="usernames" xml:space="preserve" approved="yes">
+        <source>Usernames:</source>
+      <target state="translated">Användarnamn:</target></trans-unit>
+      <trans-unit id="switchUserTo" xml:space="preserve" approved="yes">
+        <source>Switch user to:</source>
+      <target state="translated">Byta användare till:</target></trans-unit>
+      <trans-unit id="changeToMode" xml:space="preserve" approved="yes">
+        <source>[change-to mode]</source>
+      <target state="translated">[ändra-till läge]</target></trans-unit>
+      <trans-unit id="switchBackMode" xml:space="preserve" approved="yes">
+        <source>[switch-back mode]</source>
+      <target state="translated">[ändra-tillbaka läge]</target></trans-unit>
+      <trans-unit id="cachedGrouplistsUpdated" xml:space="preserve" approved="yes">
+        <source>(All cached group-lists updated.)</source>
+      <target state="translated">(Alla cachade grupplistor uppdaterade)</target></trans-unit>
+      <trans-unit id="result" xml:space="preserve" approved="yes">
+        <source>Result</source>
+      <target state="translated">Resultat</target></trans-unit>
+      <trans-unit id="showInformation" xml:space="preserve" approved="yes">
+        <source>Show information</source>
+      <target state="translated">Visa information</target></trans-unit>
+      <trans-unit id="sureToDelete" xml:space="preserve" approved="yes">
+        <source>Are you sure you want to delete this element?</source>
+      <target state="translated">Är du säker på att du vill radera detta element?</target></trans-unit>
+      <trans-unit id="delete" xml:space="preserve" approved="yes">
+        <source>Delete(!)</source>
+      <target state="translated">Ta bort(!)</target></trans-unit>
+      <trans-unit id="timestamp" xml:space="preserve" approved="yes">
+        <source>Timestamp:</source>
+      <target state="translated">Tidstämpel:</target></trans-unit>
+      <trans-unit id="host" xml:space="preserve" approved="yes">
+        <source>Host:</source>
+      <target state="translated">Värd:</target></trans-unit>
+      <trans-unit id="username" xml:space="preserve" approved="yes">
+        <source>Username:</source>
+      <target state="translated">Användarnamn:</target></trans-unit>
+      <trans-unit id="whoIsOnline" xml:space="preserve" approved="yes">
+        <source>Who Is Online</source>
+      <target state="translated">Vem är Online</target></trans-unit>
+    </body>
+  </file>
+</xliff>

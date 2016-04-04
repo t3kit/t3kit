@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="tx_rtehtmlarea_acronym" approved="yes">
+				<source>Abbreviation</source>
+				<target state="translated">Akronym</target>
+			</trans-unit>
+			<trans-unit id="tx_rtehtmlarea_acronym.acronym" approved="yes">
+				<source>Abbreviation</source>
+				<target state="translated">Förkortad form</target>
+			</trans-unit>
+			<trans-unit id="tx_rtehtmlarea_acronym.static_lang_isocode">
+				<source>Language of the abbreviation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_rtehtmlarea_acronym.term" approved="yes">
+				<source>Term</source>
+				<target state="translated">Term</target>
+			</trans-unit>
+			<trans-unit id="tx_rtehtmlarea_acronym.type" approved="yes">
+				<source>Type</source>
+				<target state="translated">Typ</target>
+			</trans-unit>
+			<trans-unit id="tx_rtehtmlarea_acronym.type.I.0" approved="yes">
+				<source>Acronym</source>
+				<target state="translated">Akronym</target>
+			</trans-unit>
+			<trans-unit id="tx_rtehtmlarea_acronym.type.I.1" approved="yes">
+				<source>Abbreviation</source>
+				<target state="translated">Förkortning</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

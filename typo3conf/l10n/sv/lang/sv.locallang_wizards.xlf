@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:13Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="colorpicker_black" approved="yes">
+				<source>BLACK</source>
+				<target state="translated">SVART</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_colorValue" approved="yes">
+				<source>Selected Color:</source>
+				<target state="translated">Vald färg:</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_fromImage" approved="yes">
+				<source>Capture color from image (click on image):</source>
+				<target state="translated">Ta färg från bild (klicka på bilden):</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_fromList" approved="yes">
+				<source>Select HTML color name:</source>
+				<target state="translated">Välj HTML-färgnamn:</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_fromMatrix" approved="yes">
+				<source>Select color from matrix (websafe colors):</source>
+				<target state="translated">Välj färg från tabell (webbsäkra färger):</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_setClose" approved="yes">
+				<source>Save and Close</source>
+				<target state="translated">Spara och stäng</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_title" approved="yes">
+				<source>Color Picker</source>
+				<target state="translated">Färgväljare</target>
+			</trans-unit>
+			<trans-unit id="colorpicker_white" approved="yes">
+				<source>WHITE</source>
+				<target state="translated">VIT</target>
+			</trans-unit>
+			<trans-unit id="forms_autosize" approved="yes">
+				<source>Auto size</source>
+				<target state="translated">Automatisk storlek</target>
+			</trans-unit>
+			<trans-unit id="forms_checked" approved="yes">
+				<source>Checked</source>
+				<target state="translated">Förkryssad</target>
+			</trans-unit>
+			<trans-unit id="forms_cols" approved="yes">
+				<source>Columns</source>
+				<target state="translated">Kolumn</target>
+			</trans-unit>
+			<trans-unit id="forms_config" approved="yes">
+				<source>Detailed configuration</source>
+				<target state="translated">Detaljerad konfiguration</target>
+			</trans-unit>
+			<trans-unit id="forms_default" approved="yes">
+				<source>Value</source>
+				<target state="translated">Värde</target>
+			</trans-unit>
+			<trans-unit id="forms_eform_formtype_mail" approved="yes">
+				<source>Send button label</source>
+				<target state="translated">Etikett på Sänd-knapp</target>
+			</trans-unit>
+			<trans-unit id="forms_eform_html_enabled" approved="yes">
+				<source>HTML mode enabled</source>
+				<target state="translated">HTML-format aktiverat</target>
+			</trans-unit>
+			<trans-unit id="forms_eform_recipient" approved="yes">
+				<source>Recipient email</source>
+				<target state="translated">Mottagarens e-post</target>
+			</trans-unit>
+			<trans-unit id="forms_eform_subject" approved="yes">
+				<source>Subject</source>
+				<target state="translated">Ämne</target>
+			</trans-unit>
+			<trans-unit id="forms_element" approved="yes">
+				<source>Element type</source>
+				<target state="translated">Typ av element</target>
+			</trans-unit>
+			<trans-unit id="forms_extra" approved="yes">
+				<source>No Wrap</source>
+				<target state="translated">Ingen radbrytning</target>
+			</trans-unit>
+			<trans-unit id="forms_fieldName" approved="yes">
+				<source>Field</source>
+				<target state="translated">Fält</target>
+			</trans-unit>
+			<trans-unit id="forms_label" approved="yes">
+				<source>Label</source>
+				<target state="translated">Etikett</target>
+			</trans-unit>
+			<trans-unit id="forms_max" approved="yes">
+				<source>Max</source>
+				<target state="translated">Max</target>
+			</trans-unit>
+			<trans-unit id="forms_multiple" approved="yes">
+				<source>Multiple</source>
+				<target state="translated">Multipel</target>
+			</trans-unit>
+			<trans-unit id="forms_options" approved="yes">
+				<source>List options</source>
+				<target state="translated">Listalternativ</target>
+			</trans-unit>
+			<trans-unit id="forms_preview" approved="yes">
+				<source>Preview of element</source>
+				<target state="translated">Förhandsgranska element</target>
+			</trans-unit>
+			<trans-unit id="forms_refresh" approved="yes">
+				<source>Refresh without saving</source>
+				<target state="translated">Uppdatera utan att spara</target>
+			</trans-unit>
+			<trans-unit id="forms_required" approved="yes">
+				<source>Required</source>
+				<target state="translated">Obligatorisk</target>
+			</trans-unit>
+			<trans-unit id="forms_rows" approved="yes">
+				<source>Rows</source>
+				<target state="translated">Rader</target>
+			</trans-unit>
+			<trans-unit id="forms_size" approved="yes">
+				<source>Size</source>
+				<target state="translated">Storlek</target>
+			</trans-unit>
+			<trans-unit id="forms_special_eform" approved="yes">
+				<source>Special configuration for mail forms</source>
+				<target state="translated">Specialkonfiguration av e-postningsformulär</target>
+			</trans-unit>
+			<trans-unit id="forms_title" approved="yes">
+				<source>Forms wizard</source>
+				<target state="translated">Formulärguide</target>
+			</trans-unit>
+			<trans-unit id="forms_type" approved="yes">
+				<source>Type</source>
+				<target state="translated">Typ</target>
+			</trans-unit>
+			<trans-unit id="forms_type_check" approved="yes">
+				<source>Check box</source>
+				<target state="translated">Kryssruta</target>
+			</trans-unit>
+			<trans-unit id="forms_type_file" approved="yes">
+				<source>File upload</source>
+				<target state="translated">Filuppladdning</target>
+			</trans-unit>
+			<trans-unit id="forms_type_hidden" approved="yes">
+				<source>Hidden value</source>
+				<target state="translated">Dolt värde</target>
+			</trans-unit>
+			<trans-unit id="forms_type_input" approved="yes">
+				<source>Input field</source>
+				<target state="translated">Inmatningsfält</target>
+			</trans-unit>
+			<trans-unit id="forms_type_label" approved="yes">
+				<source>Label</source>
+				<target state="translated">Etikett</target>
+			</trans-unit>
+			<trans-unit id="forms_type_password" approved="yes">
+				<source>Password field</source>
+				<target state="translated">Lösenordsfält</target>
+			</trans-unit>
+			<trans-unit id="forms_type_property" approved="yes">
+				<source>Property</source>
+				<target state="translated">Egenskap</target>
+			</trans-unit>
+			<trans-unit id="forms_type_radio" approved="yes">
+				<source>Radio buttons</source>
+				<target state="translated">Alternativknapp</target>
+			</trans-unit>
+			<trans-unit id="forms_type_select" approved="yes">
+				<source>Selector box</source>
+				<target state="translated">Valruta</target>
+			</trans-unit>
+			<trans-unit id="forms_type_submit" approved="yes">
+				<source>Submit Button</source>
+				<target state="translated">Skicka-knapp</target>
+			</trans-unit>
+			<trans-unit id="forms_type_textarea" approved="yes">
+				<source>Text area</source>
+				<target state="translated">Textfält</target>
+			</trans-unit>
+			<trans-unit id="grid_addColumn">
+				<source>Add column</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_addRow">
+				<source>Add row</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_column">
+				<source>Column number</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_columnHelp">
+				<source>The column position defines in which area the content is rendered in the frontend.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_editCell">
+				<source>Edit cell</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_labelColumn">
+				<source>Column Number</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_labelName">
+				<source>Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_labelSave">
+				<source>Save to cell</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_mergeCell">
+				<source>Combine with next cell</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_name">
+				<source>Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_nameHelp">
+				<source>Enter a name for the cell.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_notSet">
+				<source>not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_removeColumn" approved="yes">
+				<source>Remove column</source>
+				<target state="translated">Ta bort kolumn</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="grid_removeRow" approved="yes">
+				<source>Remove row</source>
+				<target state="translated">Ta bort rad</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="grid_splitCell">
+				<source>Split cell</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="grid_windowTitle">
+				<source>Set cell name and column number</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.accept">
+				<source>Accept</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.aspect-ratio">
+				<source>Aspect ratio</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.cancel">
+				<source>Cancel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.crop-height">
+				<source>height:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.crop-width">
+				<source>width:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.crop-x">
+				<source>x:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.crop-y">
+				<source>y:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.image-manipulation">
+				<source>Image manipulation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.image-title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.no-image-found">
+				<source>No image found</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.no-image-found-message">
+				<source>No image found. Could also be that image is present but that the original dimensions are unknow.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.open-editor">
+				<source>Open Editor</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.original-dimensions">
+				<source>Original dimensions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.ratio.1_1">
+				<source>1:1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.ratio.16_9">
+				<source>16:9</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.ratio.4_3">
+				<source>4:3</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.ratio.free">
+				<source>Free</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.reset">
+				<source>Reset</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.selection">
+				<source>Selected Size</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.set-aspect-ratio">
+				<source>Set Aspect Ratio</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.supported-types-message">
+				<source>Image manipulation is only available for supported types:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.zoom">
+				<source>Zoom</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.zoom-in">
+				<source>Zoom in</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="imwizard.zoom-out">
+				<source>Zoom out</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rte_undoLastChange" approved="yes">
+				<source>Undo/Redo last change (%s ago)</source>
+				<target state="translated">Ångra/Gör om senaste ändring (%s sedan)</target>
+			</trans-unit>
+			<trans-unit id="table_addColumn" approved="yes">
+				<source>Add column to the right</source>
+				<target state="translated">Lägg till kolumn till höger</target>
+			</trans-unit>
+			<trans-unit id="table_addRow" approved="yes">
+				<source>Add row below</source>
+				<target state="translated">Lägg till rad nedanför</target>
+			</trans-unit>
+			<trans-unit id="table_bottom" approved="yes">
+				<source>Move to bottom</source>
+				<target state="translated">Flytt längst ner</target>
+			</trans-unit>
+			<trans-unit id="table_down" approved="yes">
+				<source>Move down</source>
+				<target state="translated">Flytta ner</target>
+			</trans-unit>
+			<trans-unit id="table_end" approved="yes">
+				<source>Move to last column</source>
+				<target state="translated">Flytta till sista kolumn</target>
+			</trans-unit>
+			<trans-unit id="table_left" approved="yes">
+				<source>Move left</source>
+				<target state="translated">Flytta till vänster</target>
+			</trans-unit>
+			<trans-unit id="table_noData" approved="yes">
+				<source>No table,field or uid given</source>
+				<target state="translated">Ingen tabell, fält eller uid angiven</target>
+			</trans-unit>
+			<trans-unit id="table_removeColumn" approved="yes">
+				<source>Remove column</source>
+				<target state="translated">Ta bort kolumn</target>
+			</trans-unit>
+			<trans-unit id="table_removeRow" approved="yes">
+				<source>Remove row</source>
+				<target state="translated">Ta bort rad</target>
+			</trans-unit>
+			<trans-unit id="table_right" approved="yes">
+				<source>Move right</source>
+				<target state="translated">Flytta till höger</target>
+			</trans-unit>
+			<trans-unit id="table_smallFields" approved="yes">
+				<source>Small fields</source>
+				<target state="translated">Små fält</target>
+			</trans-unit>
+			<trans-unit id="table_start" approved="yes">
+				<source>Move to first column</source>
+				<target state="translated">Flytta till första kolumn</target>
+			</trans-unit>
+			<trans-unit id="table_title" approved="yes">
+				<source>Table wizard</source>
+				<target state="translated">Tabellguide</target>
+			</trans-unit>
+			<trans-unit id="table_top" approved="yes">
+				<source>Move to top</source>
+				<target state="translated">Flytta högst upp</target>
+			</trans-unit>
+			<trans-unit id="table_up" approved="yes">
+				<source>Move up</source>
+				<target state="translated">Flytta upp</target>
+			</trans-unit>
+			<trans-unit id="tsprop" approved="yes">
+				<source>TypoScript property lookup</source>
+				<target state="translated">Uppslagning av TypoScript-egenskap</target>
+			</trans-unit>
+			<trans-unit id="tsprop_addToList" approved="yes">
+				<source>Add to list...</source>
+				<target state="translated">Lägg till i lista...</target>
+			</trans-unit>
+			<trans-unit id="tsprop_mixer_indent" approved="yes">
+				<source>Indent +2</source>
+				<target state="translated">Indrag +2</target>
+			</trans-unit>
+			<trans-unit id="tsprop_mixer_outdent" approved="yes">
+				<source>Outdent -2</source>
+				<target state="translated">Utdrag -2</target>
+			</trans-unit>
+			<trans-unit id="tsprop_mixer_transfer" approved="yes">
+				<source>Transfer &amp; Close</source>
+				<target state="translated">Flytta och stäng</target>
+			</trans-unit>
+			<trans-unit id="tsprop_mixer_wrap" approved="yes">
+				<source>Wrap</source>
+				<target state="translated">Radbryt</target>
+			</trans-unit>
+			<trans-unit id="tsprop_prefix" approved="yes">
+				<source>Object prefix</source>
+				<target state="translated">Objektprefix</target>
+			</trans-unit>
+			<trans-unit id="tsprop_title" approved="yes">
+				<source>Object title</source>
+				<target state="translated">Objektrubrik</target>
+			</trans-unit>
+			<trans-unit id="tsprop_tsconfig" approved="yes">
+				<source>TSconfig online</source>
+				<target state="translated">TSconfig online</target>
+			</trans-unit>
+			<trans-unit id="tsprop_TSref" approved="yes">
+				<source>TSref online</source>
+				<target state="translated">TSref online</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

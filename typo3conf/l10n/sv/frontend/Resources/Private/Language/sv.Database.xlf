@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:28:56Z" product-name="frontend">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.table_caption">
+				<source>Table caption</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_delimiter">
+				<source>Field Delimiter</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_delimiter.124">
+				<source>| (Pipe)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_delimiter.44">
+				<source>, (Comma)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_delimiter.58">
+				<source>: (Colon)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_delimiter.59">
+				<source>; (Semicolon)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_delimiter.9">
+				<source>⇥ (Tab)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_enclosure">
+				<source>Text enclosure</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_enclosure.0">
+				<source>None</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_enclosure.34">
+				<source>" (Double quotes)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_enclosure.39">
+				<source>' (Single quotes)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_header_position">
+				<source>Table header position</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_header_position.0">
+				<source>No header</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_header_position.1">
+				<source>Top</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_header_position.2">
+				<source>Left</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.table_tfoot">
+				<source>Use table footer (wrap last row with &lt;tfoot&gt; tags)</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

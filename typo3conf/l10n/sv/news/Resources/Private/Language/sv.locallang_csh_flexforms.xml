@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="switchableControllerActions.description"/>
+			<label index="switchableControllerActions.details"/>
+			<label index="settings.orderBy.description"/>
+			<label index="settings.orderDirection.description"/>
+			<label index="settings.dateField.description"/>
+			<label index="settings.categories.description"/>
+			<label index="settings.categoryConjunction.description"/>
+			<label index="settings.includeSubCategories.description"/>
+			<label index="settings.categoryConjunction.details"/>
+			<label index="settings.archiveRestriction.description"/>
+			<label index="settings.timeRestriction.description"/>
+			<label index="settings.timeRestrictionHigh.description"/>
+			<label index="settings.topNewsRestriction.description"/>
+			<label index="settings.singleNews.description"/>
+			<label index="settings.previewHiddenRecords.description"/>
+			<label index="settings.startingpoint.description"/>
+			<label index="settings.recursive.description"/>
+			<label index="settings.detailPid.description"/>
+			<label index="settings.backPid.description"/>
+			<label index="settings.listPid.description"/>
+			<label index="settings.limit.description"/>
+			<label index="settings.offset.description"/>
+			<label index="settings.topNewsFirst.description"/>
+			<label index="settings.disableOverrideDemand.description"/>
+			<label index="settings.tags.description"/>
+			<label index="settings.media.maxWidth.description"/>
+			<label index="settings.media.maxHeight.description"/>
+			<label index="settings.cropMaxCharacters.description"/>
+			<label index="settings.templateLayout.description"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

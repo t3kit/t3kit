@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:54:04Z" product-name="info_pagetsconfig">
+		<header/>
+		<body>
+			<trans-unit id="editThisColumn" approved="yes">
+				<source>Edit the field '%s' for all listed pages</source>
+				<target state="translated">Ändra fältet '%s' i alla sidor i listan</target>
+			</trans-unit>
+			<trans-unit id="editTSconfig" approved="yes">
+				<source>Edit TSconfig for this page</source>
+				<target state="translated">Ändra TSconfig för denna sida</target>
+			</trans-unit>
+			<trans-unit id="editTSconfig_all" approved="yes">
+				<source>Edit TSconfig for all shown pages</source>
+				<target state="translated">Ändra TSconfig för alla visade sidor</target>
+			</trans-unit>
+			<trans-unit id="editTSconfig_default" approved="yes">
+				<source>Default Configuration from TYPO3_CONF_VARS</source>
+				<target state="translated">Standardkonfiguration från TYPO3_CONF_VARS</target>
+			</trans-unit>
+			<trans-unit id="included_tsconfig_files">
+				<source>Included Files:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mod_pagetsconfig" approved="yes">
+				<source>Page TSconfig</source>
+				<target state="translated">Sidans TSconfig</target>
+			</trans-unit>
+			<trans-unit id="pagetitle">
+				<source>Pagetitle:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sort_alphabetic">
+				<source>Sort alphabetically</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tsconf_configFields" approved="yes">
+				<source>View TSconfig fields content</source>
+				<target state="translated">Visa TSconfig-fältens innehåll</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_0" approved="yes">
+				<source>All</source>
+				<target state="translated">Alla</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1" approved="yes">
+				<source>Module key ('mod') with overruling user settings</source>
+				<target state="translated">Modulnyckel ('mod') som ändrar användarinställningar</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1a" approved="yes">
+				<source>Module: Web&gt;Page</source>
+				<target state="translated">Modul: Webb&gt;Sida</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1b" approved="yes">
+				<source>Module: Web&gt;View</source>
+				<target state="translated">Modul: Webb&gt;Visa</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1c" approved="yes">
+				<source>Module: Web&gt;Modules</source>
+				<target state="translated">Modul: Webb&gt;Moduler</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1d" approved="yes">
+				<source>Module: Web&gt;List</source>
+				<target state="translated">Modul: Webb&gt;Lista</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1e" approved="yes">
+				<source>Module: Web&gt;Info</source>
+				<target state="translated">Modul: Webb&gt;Info</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1f" approved="yes">
+				<source>Module: Web&gt;Func</source>
+				<target state="translated">Modul: Webb&gt;Funktioner</target>
+			</trans-unit>
+			<trans-unit id="tsconf_parts_1g" approved="yes">
+				<source>Module: Web&gt;Template</source>
+				<target state="translated">Modul: Webb&gt;Template</target>
+			</trans-unit>
+			<trans-unit id="tsconf_title" approved="yes">
+				<source>Page TSconfig</source>
+				<target state="translated">Sidans TSconfig</target>
+			</trans-unit>
+			<trans-unit id="written_tsconfig_lines">
+				<source>Lines:</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

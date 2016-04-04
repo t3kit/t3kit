@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:24Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Address" approved="yes">
+				<source>Address</source>
+				<target state="translated">Adress</target>
+			</trans-unit>
+			<trans-unit id="deprecatedPropertyMessage">
+				<source>Page TSConfig property "%1$s" used on page id #%4$s is DEPRECATED and will be removed in TYPO3 %3$s. Use "%2$s" instead.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Heading 1" approved="yes">
+				<source>Heading 1</source>
+				<target state="translated">Rubrik 1</target>
+			</trans-unit>
+			<trans-unit id="Heading 2" approved="yes">
+				<source>Heading 2</source>
+				<target state="translated">Rubrik 2</target>
+			</trans-unit>
+			<trans-unit id="Heading 3" approved="yes">
+				<source>Heading 3</source>
+				<target state="translated">Rubrik 3</target>
+			</trans-unit>
+			<trans-unit id="Heading 4" approved="yes">
+				<source>Heading 4</source>
+				<target state="translated">Rubrik 4</target>
+			</trans-unit>
+			<trans-unit id="Heading 5" approved="yes">
+				<source>Heading 5</source>
+				<target state="translated">Rubrik 5</target>
+			</trans-unit>
+			<trans-unit id="Heading 6" approved="yes">
+				<source>Heading 6</source>
+				<target state="translated">Rubrik 6</target>
+			</trans-unit>
+			<trans-unit id="No font" approved="yes">
+				<source>No font</source>
+				<target state="translated">Inget teckensnitt</target>
+			</trans-unit>
+			<trans-unit id="Normal" approved="yes">
+				<source>Normal</source>
+				<target state="translated">Normal</target>
+			</trans-unit>
+			<trans-unit id="No size" approved="yes">
+				<source>No font size</source>
+				<target state="translated">Ingen teckenstorlek</target>
+			</trans-unit>
+			<trans-unit id="Please wait" approved="yes">
+				<source>The editor is being loaded. Please wait...</source>
+				<target state="translated">Redigeringsverktyget laddas. Var god vänta...</target>
+			</trans-unit>
+			<trans-unit id="Preformatted" approved="yes">
+				<source>Preformatted</source>
+				<target state="translated">Förformaterad</target>
+			</trans-unit>
+			<trans-unit id="rteHeight">
+				<source>Height of the RTE in pixels</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rteMaxHeight">
+				<source>Maximal height of resizeable RTE in pixels</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rteResize">
+				<source>Make RTE resizable</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rteSettings">
+				<source>Rich Text Editor</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rteWidth">
+				<source>Width of the RTE in pixels or percentage</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

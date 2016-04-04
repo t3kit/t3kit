@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:15Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="buttons.confirm.close_without_save.no">
+				<source>No, I will continue editing</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.close_without_save.yes">
+				<source>Yes, discard my changes</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.delete_elements.no">
+				<source>Cancel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.delete_elements.yes">
+				<source>Yes, delete these elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.delete_file.no">
+				<source>Cancel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.delete_file.yes">
+				<source>Yes, delete this file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.delete_record.no">
+				<source>Cancel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="buttons.confirm.delete_record.yes">
+				<source>Yes, delete this record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="deleteItem" approved="yes">
+				<source>Delete</source>
+				<target state="translated">Radera</target>
+			</trans-unit>
+			<trans-unit id="deleteWarning" approved="yes">
+				<source>Are you sure you want to delete this record?</source>
+				<target state="translated">Är du säker på att du vill radera detta element?</target>
+			</trans-unit>
+			<trans-unit id="editWholeRecord" approved="yes">
+				<source>Edit whole record</source>
+				<target state="translated">Ändra hela elementet</target>
+			</trans-unit>
+			<trans-unit id="label.confirm.close_without_save.content">
+				<source>You have currently unsaved changes. Are you sure that you want to discard all changes?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label.confirm.close_without_save.title">
+				<source>Do you want to quit without saving?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label.confirm.delete_record.content" approved="yes">
+				<source>Are you sure you want to delete this record?</source>
+				<target state="translated">Är du säker på att du vill radera detta element?</target>
+			</trans-unit>
+			<trans-unit id="label.confirm.delete_record.title">
+				<source>Delete this record?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="noDocuments" approved="yes">
+				<source>No open documents</source>
+				<target state="translated">Inga öppna dokument</target>
+			</trans-unit>
+			<trans-unit id="noDocuments_listmodule" approved="yes">
+				<source>the Web&gt;List module</source>
+				<target state="translated">modulen Webb&gt;Lista</target>
+			</trans-unit>
+			<trans-unit id="noDocuments_msg" approved="yes">
+				<source>There are no open documents available to edit.</source>
+				<target state="translated">Det finns inga öppna dokument att ändra.</target>
+			</trans-unit>
+			<trans-unit id="noDocuments_msg2" approved="yes">
+				<source>You can go to %s to find the page or the record you wish to edit.</source>
+				<target state="translated">Du kan gå till %s för att hitta den sida eller det element som du vill ändra.</target>
+			</trans-unit>
+			<trans-unit id="noDocuments_msg3" approved="yes">
+				<source>You can select one of your most recently edited records from this list:</source>
+				<target state="translated">Du kan välja ett av de element som du senast ändrat från denna lista:</target>
+			</trans-unit>
+			<trans-unit id="noDocuments_OR" approved="yes">
+				<source>or</source>
+				<target state="translated">eller</target>
+			</trans-unit>
+			<trans-unit id="noDocuments_pagemodule" approved="yes">
+				<source>the Web&gt;Page module</source>
+				<target state="translated">modulen Webb&gt;Sida</target>
+			</trans-unit>
+			<trans-unit id="openDocs" approved="yes">
+				<source>OPEN DOCUMENTS</source>
+				<target state="translated">ÖPPNA DOKUMENT</target>
+			</trans-unit>
+			<trans-unit id="recordHistory" approved="yes">
+				<source>View record change history</source>
+				<target state="translated">Visa elementets ändringshistoria</target>
+			</trans-unit>
+			<trans-unit id="undoLastChange" approved="yes">
+				<source>Undo/Redo last change (%s ago)</source>
+				<target state="translated">Ångra/Gör om senaste ändring (%s sedan)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

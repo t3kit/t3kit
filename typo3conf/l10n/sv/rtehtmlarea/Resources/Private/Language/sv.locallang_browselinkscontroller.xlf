@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="addToList" approved="yes">
+				<source>Add to list...</source>
+				<target state="translated">Lägg till i lista...</target>
+			</trans-unit>
+			<trans-unit id="anchor_class" approved="yes">
+				<source>Style</source>
+				<target state="translated">Stil</target>
+			</trans-unit>
+			<trans-unit id="anchor_title" approved="yes">
+				<source>Title</source>
+				<target state="translated">Titel-text</target>
+			</trans-unit>
+			<trans-unit id="clickToRedrawFullSize" approved="yes">
+				<source>Image is larger than shown here! Click to redraw with full size.</source>
+				<target state="translated">Bilden är större än den visas här! Klicka för att visa hela bilden.</target>
+			</trans-unit>
+			<trans-unit id="contentElements" approved="yes">
+				<source>Content elements</source>
+				<target state="translated">Innehållselement</target>
+			</trans-unit>
+			<trans-unit id="currentLink" approved="yes">
+				<source>Current Link</source>
+				<target state="translated">Nuvarande länk</target>
+			</trans-unit>
+			<trans-unit id="email" approved="yes">
+				<source>Email</source>
+				<target state="translated">E-post</target>
+			</trans-unit>
+			<trans-unit id="emailAddress" approved="yes">
+				<source>Email address</source>
+				<target state="translated">E-postadress</target>
+			</trans-unit>
+			<trans-unit id="extUrl" approved="yes">
+				<source>External URL</source>
+				<target state="translated">Extern webbadress (URL)</target>
+			</trans-unit>
+			<trans-unit id="file" approved="yes">
+				<source>File</source>
+				<target state="translated">Fil</target>
+			</trans-unit>
+			<trans-unit id="files" approved="yes">
+				<source>Files</source>
+				<target state="translated">Filer</target>
+			</trans-unit>
+			<trans-unit id="findDragDrop" approved="yes">
+				<source>Find your image, then click on the image and drag it into the editor in the main window!</source>
+				<target state="translated">Leta upp den bild du önskar, klicka på bilden och dra den till redigeraren i huvudfönstret!</target>
+			</trans-unit>
+			<trans-unit id="folders">
+				<source>Folders</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="folderTree" approved="yes">
+				<source>Folder Tree</source>
+				<target state="translated">Katalogträd</target>
+			</trans-unit>
+			<trans-unit id="info" approved="yes">
+				<source>Info</source>
+				<target state="translated">Info</target>
+			</trans-unit>
+			<trans-unit id="invalidChar" approved="yes">
+				<source>ERROR: Invalid character found in file path (%s). Cannot add the file!</source>
+				<target state="translated">FEL: Felaktigt tecken i sökvägen (%s). Kan inte lägga till filen!</target>
+			</trans-unit>
+			<trans-unit id="linkRelationship">
+				<source>Relationship</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="newWindow" approved="yes">
+				<source>New window</source>
+				<target state="translated">Nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="none" approved="yes">
+				<source>None - new link!</source>
+				<target state="translated">Ingen - ny länk!</target>
+			</trans-unit>
+			<trans-unit id="noWebFolder" approved="yes">
+				<source>You cannot drag images from this folder (yellow) because it is internal on the server.</source>
+				<target state="translated">Det går inte att dra bilder från denna katalog (gul) pga att den är intern på servern.</target>
+			</trans-unit>
+			<trans-unit id="page" approved="yes">
+				<source>Page</source>
+				<target state="translated">Sida</target>
+			</trans-unit>
+			<trans-unit id="page_id" approved="yes">
+				<source>Page Id</source>
+				<target state="translated">Sid-Id</target>
+			</trans-unit>
+			<trans-unit id="pageTree" approved="yes">
+				<source>Page tree</source>
+				<target state="translated">Sidträd</target>
+			</trans-unit>
+			<trans-unit id="path" approved="yes">
+				<source>Path</source>
+				<target state="translated">Sökväg</target>
+			</trans-unit>
+			<trans-unit id="query_parameters">
+				<source>Query parameters</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="removeLink" approved="yes">
+				<source>Remove link</source>
+				<target state="translated">Ta bort länk</target>
+			</trans-unit>
+			<trans-unit id="selectRecords" approved="yes">
+				<source>Select Records</source>
+				<target state="translated">Välj element</target>
+			</trans-unit>
+			<trans-unit id="setLink" approved="yes">
+				<source>Set Link</source>
+				<target state="translated">Sätt länk</target>
+			</trans-unit>
+			<trans-unit id="special" approved="yes">
+				<source>Special</source>
+				<target state="translated">Special</target>
+			</trans-unit>
+			<trans-unit id="target" approved="yes">
+				<source>Target</source>
+				<target state="translated">Mål</target>
+			</trans-unit>
+			<trans-unit id="top" approved="yes">
+				<source>Top</source>
+				<target state="translated">Topp</target>
+			</trans-unit>
+			<trans-unit id="update" approved="yes">
+				<source>Update</source>
+				<target state="translated">Uppdatera</target>
+			</trans-unit>
+			<trans-unit id="uploadImage" approved="yes">
+				<source>Upload Image</source>
+				<target state="translated">Ladda upp bild</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

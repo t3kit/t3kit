@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:41:08Z" product-name="taskcenter">
+		<header/>
+		<body>
+			<trans-unit id="mlang_labels_tabdescr" approved="yes">
+				<source>The task center provides access to your internal To-Do list, messages, Quick-note, actions etc. It also provides shortcuts to your available frontend modules and most recently edited pages. The Task Center is where you keep track of your daily tasks and workflows.</source>
+				<target state="translated">I Uppgifter kommer du till din interna Att göra-lista, meddelanden, snabbanteckningar, aktiviteter mm. Där finns också genvägar till de frontend-moduler som du kan använda och till de sidor som du senast jobbat med. I Uppgifter håller du ordning på ditt dagliga arbete och arbetsgången.</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" approved="yes">
+				<source>Task Center with overviews, messages, ToDo lists</source>
+				<target state="translated">Uppgifter med översikter, meddelanden, Att göra-listor</target>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" approved="yes">
+				<source>Task center</source>
+				<target state="translated">Uppgifter</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

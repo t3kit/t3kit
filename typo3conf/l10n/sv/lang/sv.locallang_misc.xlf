@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:14Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="1_selectType" approved="yes">
+				<source>1: Select type of content element:</source>
+				<target state="translated">1: Välj typ av innehållselement:</target>
+			</trans-unit>
+			<trans-unit id="2_selectPosition" approved="yes">
+				<source>2: Select position:</source>
+				<target state="translated">2: Välj plats:</target>
+			</trans-unit>
+			<trans-unit id="bookmark_active">
+				<source>active</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_all" approved="yes">
+				<source>All</source>
+				<target state="translated">Allt</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_close">
+				<source>Close bookmark editor</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_create" approved="yes">
+				<source>Create</source>
+				<target state="translated">Skapa</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_delAllInCat" approved="no">
+				<source>Delete all bookmarks in this group</source>
+				<target state="needs-translation">Radera alla genvägar i denna grupp?</target>
+				<note>77%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_delete">
+				<source>Remove bookmark</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmarkDescription">
+				<source>This is the bookmarks menu. You do not have any bookmarks added yet, you can do so by clicking the bookmark icon %icon%, which you can find on each page in the backend.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_edit" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Ändra</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_editID" approved="yes">
+				<source>Edit/Search</source>
+				<target state="translated">Ändra/Sök</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_FEPreview">
+				<source>Enable Frontend Preview</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_global" approved="yes">
+				<source>Global</source>
+				<target state="translated">Global</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_group" approved="yes">
+				<source>Group</source>
+				<target state="translated">Grupp</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_group_1" approved="yes">
+				<source>Pages</source>
+				<target state="translated">Sidor</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_group_2" approved="yes">
+				<source>Records</source>
+				<target state="translated">Element</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_group_3" approved="yes">
+				<source>Files</source>
+				<target state="translated">Filer</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_group_4" approved="yes">
+				<source>Tools</source>
+				<target state="translated">Verktyg</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_group_5" approved="yes">
+				<source>Miscellaneous</source>
+				<target state="translated">Blandat</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_inactive">
+				<source>inactive</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_loadEdit" approved="yes">
+				<source>Loading page</source>
+				<target state="translated">Laddar sida</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_notEditable" approved="yes">
+				<source>No editable page found!</source>
+				<target state="translated">Hittade inga sidor som går att ändra!</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_noWSfound" approved="yes">
+				<source>ERROR: No workspaces found!</source>
+				<target state="translated">FEL: Inget arbetsutrymme hittades!</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_offlineWS" approved="yes">
+				<source>Draft workspace</source>
+				<target state="translated">Utkast arbetsutrymme</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_onlineWS" approved="yes">
+				<source>LIVE workspace</source>
+				<target state="translated">LIVE arbetsutrymme</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_onlyAdmin" approved="no">
+				<source>You cannot edit a shared bookmark!</source>
+				<target state="needs-translation">Du kan inte ändra en delad genväg!</target>
+				<note>79%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_save">
+				<source>Update bookmark title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_saveClose" approved="yes">
+				<source>Update and close editor</source>
+				<target state="translated">Uppdatera och stäng redigerare</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_searchFor" approved="yes">
+				<source>Search for:</source>
+				<target state="translated">Sök efter:</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="bookmark_selSC">
+				<source>Select bookmark</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_workspace">
+				<source>Go to Workspace Module</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="bookmark_workspaceComparisonView">
+				<source>Enable comparison view</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clickForWizard" approved="yes">
+				<source>Click here for wizard!</source>
+				<target state="translated">Klicka för guide!</target>
+			</trans-unit>
+			<trans-unit id="CM_db_list" approved="yes">
+				<source>Web&gt;List module</source>
+				<target state="translated">Webb&gt;Listmodul</target>
+			</trans-unit>
+			<trans-unit id="CM_editAccess" approved="yes">
+				<source>Visibility settings</source>
+				<target state="translated">Inställningar för visning</target>
+			</trans-unit>
+			<trans-unit id="CM_editPageProperties" approved="yes">
+				<source>Edit page properties</source>
+				<target state="translated">Ändra sidans inställningar</target>
+			</trans-unit>
+			<trans-unit id="CM_history" approved="yes">
+				<source>History/Undo</source>
+				<target state="translated">Historia/Ångra</target>
+			</trans-unit>
+			<trans-unit id="CM_moveWizard" approved="yes">
+				<source>Move element</source>
+				<target state="translated">Flytta element</target>
+			</trans-unit>
+			<trans-unit id="CM_moveWizard_page" approved="yes">
+				<source>Move page</source>
+				<target state="translated">Flytta sida</target>
+			</trans-unit>
+			<trans-unit id="CM_newWizard" approved="yes">
+				<source>'Create New' wizard</source>
+				<target state="translated">Guide för att skapa nytt</target>
+			</trans-unit>
+			<trans-unit id="CM_perms" approved="yes">
+				<source>Access</source>
+				<target state="translated">Åtkomst</target>
+			</trans-unit>
+			<trans-unit id="copyElements" approved="yes">
+				<source>Copy elements</source>
+				<target state="translated">Kopiera element</target>
+			</trans-unit>
+			<trans-unit id="createNewContent">
+				<source>Create a new content element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="createNewPage" approved="yes">
+				<source>Create a new page</source>
+				<target state="translated">Skapa ny sida</target>
+			</trans-unit>
+			<trans-unit id="extDirect_timeoutHeader">
+				<source>Connection Problem</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extDirect_timeoutMessage">
+				<source>Sorry, but an error occurred while connecting to the server. Please check your network connection.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileMetaDataLocation">
+				<source>Location</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileMetaErrorInvalidRecord">
+				<source>File meta data not found</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_allError2038">
+				<source>An input/output error occurred (Error #2038). This i.e. happens with servers using a self-signed SSL certificate, which is a limitation of your browser's Flash plugin.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_allError401">
+				<source>The server returned the status code 401, which is related to a .htaccess file used for password protection on your server. Unfortunately this can not be handled by your browser's Flash plugin.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_allErrorMessageText">
+				<source>All of your uploads failed.&lt;br /&gt;&lt;br /&gt;If this problem persists, please try another browser, contact your administrator or disable this "Flash Uploader" in your User Settings.&lt;br /&gt;&lt;br /&gt;Detailed problem description:&lt;br /&gt;</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_allErrorMessageTitle">
+				<source>All uploads failed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_buttonCancelAll">
+				<source>Cancel All Uploads</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_buttonSelectFiles">
+				<source>Select Files</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorQueueFileSizeLimit">
+				<source>{0} is too big</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorQueueInvalidFiletype">
+				<source>Filetype not allowed for {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorQueueLimitExceeded">
+				<source>Too many files selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorQueueZeroByteFile">
+				<source>{0} is empty</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadFailed">
+				<source>Upload failed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadFileCancelled">
+				<source>Upload of {0} canceled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadFileIDNotFound">
+				<source>Internal error: File ID not found</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadFileValidation">
+				<source>Internal error while validating the file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadHttp">
+				<source>Too many files selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadHttpError">
+				<source>A HTTP error occurred: {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadIO">
+				<source>Internal error: Problems while reading/writing the file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadLimit">
+				<source>Upload limit exceeded</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadMissingUrl">
+				<source>Internal error: No Upload URL set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadSecurityError">
+				<source>Internal error: {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_errorUploadStopped">
+				<source>Upload of {0} stopped</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_infoComponentFileTypeLimit">
+				<source>You can upload the following file types {0}.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_infoComponentFileUploadLimit">
+				<source>You can upload a total of {0}.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_infoComponentMaxFileSize">
+				<source>You can upload files with a maximum size of {0}.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_infoComponentOverrideFiles" approved="yes">
+				<source>Overwrite existing files</source>
+				<target state="translated">Ersätt existerande filer</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="fileUpload_processRunning">
+				<source>Another process is already uploading</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_uploadProgress">
+				<source>{0}% of {1} uploaded</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_uploadStarting">
+				<source>Starting upload of {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_uploadSuccess">
+				<source>{0} was successfully uploaded!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_uploadWait">
+				<source>Waiting to start upload of {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fileUpload_windowTitle">
+				<source>File Upload Progress</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="goBack" approved="yes">
+				<source>Go back</source>
+				<target state="translated">Gå tillbaka</target>
+			</trans-unit>
+			<trans-unit id="insertNewPageHere" approved="yes">
+				<source>Insert the new page here</source>
+				<target state="translated">Infoga ny sida här</target>
+			</trans-unit>
+			<trans-unit id="insertNewRecordHere" approved="yes">
+				<source>Insert new record here</source>
+				<target state="translated">Infoga nytt element här</target>
+			</trans-unit>
+			<trans-unit id="liveSearch_emptyText">
+				<source>Enter search term</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_helpDescription">
+				<source>Search in certain tables:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_helpDescriptionPages">
+				<source>#page:Home will search for all pages with the title "Home"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_helpTitle">
+				<source>How to use advanced search tags</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_listEmptyText">
+				<source>No results found.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_loadingText">
+				<source>Searching...</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_showAllResults">
+				<source>Show All</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="liveSearch_title">
+				<source>Short result list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localize">
+				<source>Localize</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localizeAllRecords">
+				<source>Localize all records</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localize.isLocalizable">
+				<source>Record can be localized</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localizeMergeIfNotBlank">
+				<source>The value of the default language will be used if this field is left empty in the translation.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localize.wasRemovedInOriginal">
+				<source>Record was removed in original language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="makeCopy" approved="yes">
+				<source>Make copy instead of moving element</source>
+				<target state="translated">Gör kopia istället för att flytta element</target>
+			</trans-unit>
+			<trans-unit id="moveElement" approved="yes">
+				<source>Move element</source>
+				<target state="translated">Flytta element</target>
+			</trans-unit>
+			<trans-unit id="moveElements" approved="yes">
+				<source>Move elements</source>
+				<target state="translated">Flytta element</target>
+			</trans-unit>
+			<trans-unit id="movePageToHere" approved="yes">
+				<source>Move page to this position</source>
+				<target state="translated">Flytta sidan hit</target>
+			</trans-unit>
+			<trans-unit id="movingElement" approved="yes">
+				<source>Move element</source>
+				<target state="translated">Flytta element</target>
+			</trans-unit>
+			<trans-unit id="newContentElement" approved="yes">
+				<source>New content element</source>
+				<target state="translated">Nytt innehållselement</target>
+			</trans-unit>
+			<trans-unit id="noEditPage" approved="yes">
+				<source>You asked to edit page "%s" but you cannot edit this page. Now loading backend as usual.</source>
+				<target state="translated">Du önskade ändra sidan "%s" men det går inte. Nu laddas Backend upp som vanligt.</target>
+			</trans-unit>
+			<trans-unit id="overwriteExistingFiles" approved="yes">
+				<source>Overwrite existing files</source>
+				<target state="translated">Ersätt existerande filer</target>
+			</trans-unit>
+			<trans-unit id="pageSelectPosition">
+				<source>Page (select position)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pageTree_filter" approved="yes">
+				<source>Filter</source>
+				<target state="translated">Filter</target>
+			</trans-unit>
+			<trans-unit id="selectPosition" approved="yes">
+				<source>Select a position for the new page</source>
+				<target state="translated">Välj en position för den nya sidan</target>
+			</trans-unit>
+			<trans-unit id="selectPositionOfElement" approved="yes">
+				<source>Select position of the element</source>
+				<target state="translated">Välj elementets plats</target>
+			</trans-unit>
+			<trans-unit id="shortcut_active">
+				<source>active</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="shortcut_all" approved="yes">
+				<source>All</source>
+				<target state="translated">Allt</target>
+			</trans-unit>
+			<trans-unit id="shortcut_close" approved="yes">
+				<source>Close shortcut editor</source>
+				<target state="translated">Stäng genvägsredigerare</target>
+			</trans-unit>
+			<trans-unit id="shortcut_create" approved="yes">
+				<source>Create</source>
+				<target state="translated">Skapa</target>
+			</trans-unit>
+			<trans-unit id="shortcut_delAllInCat" approved="yes">
+				<source>Delete all shortcuts in this group?</source>
+				<target state="translated">Radera alla genvägar i denna grupp?</target>
+			</trans-unit>
+			<trans-unit id="shortcut_delete" approved="yes">
+				<source>Remove shortcut</source>
+				<target state="translated">Ta bort genväg</target>
+			</trans-unit>
+			<trans-unit id="shortcutDescription" approved="yes">
+				<source>This is the shortcuts menu. You do not have any shortcuts added yet, you can do so by clicking the shortcut icon %icon%, which you can find on each page in the backend.</source>
+				<target state="translated">Detta är genvägsmenyn. Du har inga genvägar ännu. Du kan lägga till genvägar genom att klicka på genvägsikonen %icon%, som du hittar på varje sida i backend.</target>
+			</trans-unit>
+			<trans-unit id="shortcut_edit" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Ändra</target>
+			</trans-unit>
+			<trans-unit id="shortcut_editID" approved="yes">
+				<source>Edit/Search</source>
+				<target state="translated">Ändra/Sök</target>
+			</trans-unit>
+			<trans-unit id="shortcut_FEPreview">
+				<source>Enable Frontend Preview</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="shortcut_global" approved="yes">
+				<source>Global</source>
+				<target state="translated">Global</target>
+			</trans-unit>
+			<trans-unit id="shortcut_group" approved="yes">
+				<source>Group</source>
+				<target state="translated">Grupp</target>
+			</trans-unit>
+			<trans-unit id="shortcut_group_1" approved="yes">
+				<source>Pages</source>
+				<target state="translated">Sidor</target>
+			</trans-unit>
+			<trans-unit id="shortcut_group_2" approved="yes">
+				<source>Records</source>
+				<target state="translated">Element</target>
+			</trans-unit>
+			<trans-unit id="shortcut_group_3" approved="yes">
+				<source>Files</source>
+				<target state="translated">Filer</target>
+			</trans-unit>
+			<trans-unit id="shortcut_group_4" approved="yes">
+				<source>Tools</source>
+				<target state="translated">Verktyg</target>
+			</trans-unit>
+			<trans-unit id="shortcut_group_5" approved="yes">
+				<source>Miscellaneous</source>
+				<target state="translated">Blandat</target>
+			</trans-unit>
+			<trans-unit id="shortcut_inactive">
+				<source>inactive</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="shortcut_loadEdit" approved="yes">
+				<source>Loading page</source>
+				<target state="translated">Laddar sida</target>
+			</trans-unit>
+			<trans-unit id="shortcut_notEditable" approved="yes">
+				<source>No editable page found!</source>
+				<target state="translated">Hittade inga sidor som går att ändra!</target>
+			</trans-unit>
+			<trans-unit id="shortcut_noWSfound" approved="yes">
+				<source>ERROR: No workspaces found!</source>
+				<target state="translated">FEL: Inget arbetsutrymme hittades!</target>
+			</trans-unit>
+			<trans-unit id="shortcut_offlineWS" approved="yes">
+				<source>Draft workspace</source>
+				<target state="translated">Utkast arbetsutrymme</target>
+			</trans-unit>
+			<trans-unit id="shortcut_onlineWS" approved="yes">
+				<source>LIVE workspace</source>
+				<target state="translated">LIVE arbetsutrymme</target>
+			</trans-unit>
+			<trans-unit id="shortcut_onlyAdmin" approved="yes">
+				<source>You cannot edit a shared shortcut!</source>
+				<target state="translated">Du kan inte ändra en delad genväg!</target>
+			</trans-unit>
+			<trans-unit id="shortcut_save" approved="yes">
+				<source>Update shortcut title</source>
+				<target state="translated">Uppdatera genvägsrubrik</target>
+			</trans-unit>
+			<trans-unit id="shortcut_saveClose" approved="yes">
+				<source>Update and close editor</source>
+				<target state="translated">Uppdatera och stäng redigerare</target>
+			</trans-unit>
+			<trans-unit id="shortcut_searchFor" approved="yes">
+				<source>Search for:</source>
+				<target state="translated">Sök efter:</target>
+			</trans-unit>
+			<trans-unit id="shortcut_selSC" approved="yes">
+				<source>Select shortcut</source>
+				<target state="translated">Välj genväg</target>
+			</trans-unit>
+			<trans-unit id="shortcut_workspace">
+				<source>Go to Workspace Module</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="switchtouser" approved="yes">
+				<source>Switch to User</source>
+				<target state="translated">Växla till användare</target>
+			</trans-unit>
+			<trans-unit id="switchtousershort">
+				<source>SU:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="synchronizeWithOriginalLanguage">
+				<source>Synchronize with original language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="system_records">
+				<source>System Records</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="uploadMultipleFilesInfo">
+				<source>Upload multiple files by holding the Shift or CTRL-file pressed while selecting your files (works on modern browsers only).</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="viewPort_tooltipDebugPanelSplitDrag">
+				<source>Drag to resize or click to collapse the Debug Panel.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="viewPort_tooltipModuleMenuSplit">
+				<source>Drag to resize the Modules Menu</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="viewPort_tooltipNavigationContainerSplitClick">
+				<source>Click to toggle the page tree area</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="viewPort_tooltipNavigationContainerSplitDrag">
+				<source>Drag to resize or double click to collapse the page tree area</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

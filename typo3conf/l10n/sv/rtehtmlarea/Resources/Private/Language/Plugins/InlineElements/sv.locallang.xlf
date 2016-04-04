@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="BiDi override">
+				<source>BiDi override</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Bold" approved="yes">
+				<source>Bold</source>
+				<target state="translated">Fet</target>
+			</trans-unit>
+			<trans-unit id="Citation" approved="yes">
+				<source>Citation</source>
+				<target state="translated">Citering</target>
+			</trans-unit>
+			<trans-unit id="Code" approved="yes">
+				<source>Code</source>
+				<target state="translated">Kod</target>
+			</trans-unit>
+			<trans-unit id="Definition" approved="yes">
+				<source>Definition</source>
+				<target state="translated">Definition</target>
+			</trans-unit>
+			<trans-unit id="Deleted text" approved="yes">
+				<source>Deleted text</source>
+				<target state="translated">Raderad text</target>
+			</trans-unit>
+			<trans-unit id="Emphasis" approved="yes">
+				<source>Emphasis</source>
+				<target state="translated">Betoning</target>
+			</trans-unit>
+			<trans-unit id="Inserted text" approved="yes">
+				<source>Inserted text</source>
+				<target state="translated">Infogad text</target>
+			</trans-unit>
+			<trans-unit id="Italic" approved="yes">
+				<source>Italic</source>
+				<target state="translated">Kursiv</target>
+			</trans-unit>
+			<trans-unit id="Keyboard" approved="yes">
+				<source>Keyboard</source>
+				<target state="translated">Tangentbord</target>
+			</trans-unit>
+			<trans-unit id="Label" approved="yes">
+				<source>Label</source>
+				<target state="translated">Etikett</target>
+			</trans-unit>
+			<trans-unit id="Large text" approved="yes">
+				<source>Large text</source>
+				<target state="translated">Stor text</target>
+			</trans-unit>
+			<trans-unit id="Monospaced text" approved="yes">
+				<source>Monospaced text</source>
+				<target state="translated">Icke-proportionell text</target>
+			</trans-unit>
+			<trans-unit id="No markup" approved="yes">
+				<source>No text format</source>
+				<target state="translated">Inget teckenformat</target>
+			</trans-unit>
+			<trans-unit id="Quotation" approved="yes">
+				<source>Quotation</source>
+				<target state="translated">Citat</target>
+			</trans-unit>
+			<trans-unit id="Sample" approved="yes">
+				<source>Sample</source>
+				<target state="translated">Exempel</target>
+			</trans-unit>
+			<trans-unit id="Small text" approved="yes">
+				<source>Small text</source>
+				<target state="translated">Liten text</target>
+			</trans-unit>
+			<trans-unit id="Strike-through" approved="yes">
+				<source>Strike-through</source>
+				<target state="translated">Genomstruken</target>
+			</trans-unit>
+			<trans-unit id="Strong emphasis" approved="yes">
+				<source>Strong emphasis</source>
+				<target state="translated">Start betoning</target>
+			</trans-unit>
+			<trans-unit id="Style container" approved="yes">
+				<source>Style container</source>
+				<target state="translated">Stilbehållare</target>
+			</trans-unit>
+			<trans-unit id="Subscript" approved="yes">
+				<source>Subscript</source>
+				<target state="translated">Nedsänkt</target>
+			</trans-unit>
+			<trans-unit id="Superscript" approved="yes">
+				<source>Superscript</source>
+				<target state="translated">Upphöjd</target>
+			</trans-unit>
+			<trans-unit id="Underline" approved="yes">
+				<source>Underline</source>
+				<target state="translated">Understruken</target>
+			</trans-unit>
+			<trans-unit id="Variable" approved="yes">
+				<source>Variable</source>
+				<target state="translated">Variabel</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

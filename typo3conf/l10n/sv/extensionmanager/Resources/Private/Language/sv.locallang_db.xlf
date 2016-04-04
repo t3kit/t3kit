@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:05:27Z" product-name="extensionmanager">
+		<header/>
+		<body>
+			<trans-unit id="tx_extensionmanager_domain_model_extension">
+				<source>Extension</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.authoremail">
+				<source>Author Email</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.authorname">
+				<source>Author Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.category">
+				<source>Category</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.description">
+				<source>Description</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.extensionkey">
+				<source>Extension Key</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.integerversion">
+				<source>Integer Version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.lastupdated">
+				<source>Last Updated</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.md5hash">
+				<source>Md5 hash</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.reviewstate">
+				<source>Review State</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.state">
+				<source>State</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.updatecomment">
+				<source>Update Comment</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_extension.version">
+				<source>Version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository">
+				<source>Repository</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository.description">
+				<source>Description</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository.extensionCount">
+				<source>Extension count</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository.lastUpdate">
+				<source>Last update</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository.mirrorListUrl">
+				<source>Mirror list URL</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository.title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_extensionmanager_domain_model_repository.wsdlUrl">
+				<source>WSDL URL</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

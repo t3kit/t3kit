@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:33:44Z" product-name="sys_note">
+		<header/>
+		<body>
+			<trans-unit id="author">
+				<source>Author:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="category.1">
+				<source>Instructions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="category.2">
+				<source>Template</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="category.3">
+				<source>Notes</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="category.4">
+				<source>To-do</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="date">
+				<source>Date:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="internal_note">
+				<source>Internal notes</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="personal">
+				<source>Personal:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="yes">
+				<source>Yes</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="choose_task"/>
+			<label index="lCancel"/>
+			<label index="lCreate"/>
+			<label index="lDelete"/>
+			<label index="lDelete_warning"/>
+			<label index="lHomedir"/>
+			<label index="listSeparator_Groups"/>
+			<label index="lNone"/>
+			<label index="lReplyAddress"/>
+			<label index="lSelf"/>
+			<label index="lSendNew"/>
+			<label index="lSendReply"/>
+			<label index="lUpdate"/>
+			<label index="mlang_tabs_tab"/>
+			<label index="taskcenter"/>
+			<label index="task_help_description"/>
+			<label index="task_help_title"/>
+			<label index="task_overview"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="index_config">Indexeringskonfiguration</label>
+			<label index="index_config.alternative_source_pid">Alternativ källsida:</label>
+			<label index="index_config.chashcalc">Beräkna cHash (tvinga till cacheminnet)?</label>
+			<label index="index_config.depth">Djup:</label>
+			<label index="index_config.depth.I.0">Ensam sida</label>
+			<label index="index_config.depth.I.1">1 nivå</label>
+			<label index="index_config.depth.I.2">2 nivåer</label>
+			<label index="index_config.depth.I.3">3 nivåer</label>
+			<label index="index_config.description">Beskrivning:</label>
+			<label index="index_config.extensions">Begränsa till följande tillägg (lista separerad med kommatecken):</label>
+			<label index="index_config.externalUrl">Yttre URL (t.ex. "http://www.domain.org/"):</label>
+			<label index="index_config.fields">Fält (först kommer rubriken):</label>
+			<label index="index_config.filepath">Filsökväg:</label>
+			<label index="index_config.get_params">GET parametersträng (med ###UID### ersättning):</label>
+			<label index="index_config.indexcfgs">Indexeringskonfiguration:</label>
+			<label index="index_config.parameterCfgs">Parameterskombinationens konfiguration ([tablename]:&amp;[param]=###UID###):</label>
+			<label index="index_config.recordsbatch">Hur många element skall indexeras varje minut (standard är 100):</label>
+			<label index="index_config.records_indexonchange">Indexera element genast då de sparas?:</label>
+			<label index="index_config.rootpage">Rotsida:</label>
+			<label index="index_config.set_id"/>
+			<label index="index_config.table2index">Tabell att indexera:</label>
+			<label index="index_config.timer_frequency">Hur ofta skall en omindexering ske?:</label>
+			<label index="index_config.timer_frequency.I.0">Varje timme</label>
+			<label index="index_config.timer_frequency.I.1">Varje dygn (24 timmar)</label>
+			<label index="index_config.timer_frequency.I.2">Varje vecka</label>
+			<label index="index_config.timer_next_indexing">Följande indexering kommer att ske (om tomt görs indexeringen genast):</label>
+			<label index="index_config.timer_offset">Tidpunkt efter midnatt:</label>
+			<label index="index_config.title">Rubrik:</label>
+			<label index="index_config.type">Typ:</label>
+			<label index="index_config.type.I.1">Databaselement</label>
+			<label index="index_config.type.I.2">Sökväg på server</label>
+			<label index="index_config.type.I.3">Yttre URL</label>
+			<label index="index_config.type.I.4">Sidträd</label>
+			<label index="index_config.type.I.5">Metakonfiguration</label>
+			<label index="index_config.url_deny">Ange sub-URL:er som inte ska bearbetas:</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

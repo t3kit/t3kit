@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T00:56:05Z" product-name="css_styled_content">
+		<header/>
+		<body>
+			<trans-unit id="cssstyledcontent.config.removePositionTypes" xml:space="preserve">
+				<source>Remove unused positioning types: This will disable the image positions that make no sense on CType=image (it leaves just "above left", "center" and "right").</source>
+			<target/></trans-unit>
+			<trans-unit id="cssstyledcontent.config.setPageTSconfig" xml:space="preserve">
+				<source>Set PageTSconfig by default: If you are going to use this extension by default in this database then set this flag. In that case you don't need to set specific PageTSconfig for each page, which you have to do otherwise!</source>
+			<target/></trans-unit>
+		</body>
+	</file>
+</xliff>

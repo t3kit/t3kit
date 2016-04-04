@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:59:32Z" product-name="wizard_sortpages">
+		<header/>
+		<body>
+			<trans-unit id="no_subpages">
+				<source>Please select a page with subpages.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder" approved="yes">
+				<source>Sort these pages by</source>
+				<target state="translated">Sortera dessa sidor enligt</target>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder_msg1" approved="yes">
+				<source>You're about to change the order of the above pages. Are you sure you want to continue?</source>
+				<target state="translated">Du håller på att ändra ordningen på ovanstående sidor. Är du säker på att du vill fortsätta?</target>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder_REVERSE" approved="yes">
+				<source>Reverse current order</source>
+				<target state="translated">Ändra till motsatt ordning</target>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder_subtitle" approved="yes">
+				<source>Subtitle</source>
+				<target state="translated">Undertitel</target>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder_tChange" approved="yes">
+				<source>Change-time</source>
+				<target state="translated">Ändrad-tid</target>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder_tCreate" approved="yes">
+				<source>Create-time</source>
+				<target state="translated">Skapad-tid</target>
+			</trans-unit>
+			<trans-unit id="wiz_changeOrder_title" approved="yes">
+				<source>Page title</source>
+				<target state="translated">Sidtitel</target>
+			</trans-unit>
+			<trans-unit id="wiz_currentPageOrder" approved="yes">
+				<source>Current page order</source>
+				<target state="translated">Nuvarande sidordning</target>
+			</trans-unit>
+			<trans-unit id="wiz_sort" approved="yes">
+				<source>Sort pages</source>
+				<target state="translated">Sortera sidorna</target>
+			</trans-unit>
+			<trans-unit id="wiz_W" approved="yes">
+				<source>W!</source>
+				<target state="translated">W!</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

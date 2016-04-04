@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:10:50Z" product-name="felogin">
+		<header/>
+		<body>
+			<trans-unit id="felogin_forgotHash">
+				<source>Forgot hash</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="felogin_redirectPid" approved="yes">
+				<source>Redirect at Login to Page (felogin)</source>
+				<target state="translated">Omdirigera vid inloggning till sida (felogin):</target>
+			</trans-unit>
+			<trans-unit id="tt_content.CType_pi1" approved="yes">
+				<source>Website User Login</source>
+				<target state="translated">Användarinloggning på webbplats</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.error_header" approved="yes">
+				<source>Login Error Header</source>
+				<target state="translated">Rubrik för misslyckad inloggning:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.error_message" approved="yes">
+				<source>Login Error Message</source>
+				<target state="translated">Meddelande för misslyckad inloggning:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field_manualOrder" approved="yes">
+				<source>Using fieldlists below:</source>
+				<target state="translated">Använder fältlistor nedan:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field_orderDetails" approved="yes">
+				<source>User Fields/details:</source>
+				<target state="translated">Användarfält/detaljer:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.field_orderList" approved="yes">
+				<source>User Fields/list:</source>
+				<target state="translated">Användarfält/lista:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.forgot_header" approved="yes">
+				<source>Forgot Password Header</source>
+				<target state="translated">Rubrik för glömt lösenord:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.forgot_message" approved="yes">
+				<source>Forgot Password Message</source>
+				<target state="translated">Meddelande för glömt lösenord:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.general_header" approved="yes">
+				<source>General Header</source>
+				<target state="translated">Generell rubrik:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.general_message" approved="yes">
+				<source>General Message</source>
+				<target state="translated">Generellt meddelande:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelection" approved="yes">
+				<source>FE group selection:</source>
+				<target state="translated">Val av FE-grupp:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelection_noGroup" approved="yes">
+				<source>no group</source>
+				<target state="translated">ingen grupp</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelectmode" approved="yes">
+				<source>FE group select mode:</source>
+				<target state="translated">Metod för val av FE-grupp:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelectmode_DontShowSelected" approved="yes">
+				<source>Dont show selected</source>
+				<target state="translated">Visa inte valda</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelectmode_FromTS" approved="yes">
+				<source>(from Typoscript)</source>
+				<target state="translated">(från TypoScript)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelectmode_showAll" approved="yes">
+				<source>Show all</source>
+				<target state="translated">Visa alla</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.groupSelectmode_showSelected" approved="yes">
+				<source>Show selected</source>
+				<target state="translated">Visa valda</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.logout_header" approved="yes">
+				<source>Logout Header</source>
+				<target state="translated">Rubrik för utloggning:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.logout_message" approved="yes">
+				<source>Logout Message</source>
+				<target state="translated">Meddelande för utloggning:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectDisable" approved="yes">
+				<source>Disable Redirect</source>
+				<target state="translated">Inaktivera omdirigering:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectFirstMethod" approved="yes">
+				<source>Use First Supported Mode from Selection</source>
+				<target state="translated">Använd första funna metoden:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirect_header" approved="yes">
+				<source>Redirect Header</source>
+				<target state="translated">Rubrik för omdirigering:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirect_message" approved="yes">
+				<source>Redirect Message</source>
+				<target state="translated">Meddelande för omdirigering:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode" approved="yes">
+				<source>Redirect Mode</source>
+				<target state="translated">Omdirigeringsmetod (du måste välja alternativ, utan definierad metod görs ingen omdirigering):</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.0" approved="yes">
+				<source>Defined by Usergroup Record</source>
+				<target state="translated">Definierat av användargrupppost</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.1" approved="yes">
+				<source>Defined by User Record</source>
+				<target state="translated">Definierat av användarpost</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.2" approved="yes">
+				<source>After Login (TS or Flexform)</source>
+				<target state="translated">Efter inloggning (TS eller Flexform)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.3" approved="yes">
+				<source>After Logout (TS or Flexform)</source>
+				<target state="translated">Efter utloggning (TS eller Flexform)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.4" approved="yes">
+				<source>After Login Error (TS or Flexform)</source>
+				<target state="translated">Efter inloggningsfel (TS eller Flexform)</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.5" approved="yes">
+				<source>Defined by GET/POST Parameters</source>
+				<target state="translated">Definierat av GET/POST-variabler</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.6" approved="yes">
+				<source>Defined by Referrer</source>
+				<target state="translated">Definierat av Referrer</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectMode.I.7" approved="yes">
+				<source>Defined by Domain Entries</source>
+				<target state="translated">Definierat av domänposter</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectPageLogin" approved="yes">
+				<source>After Successful Login Redirect to Page</source>
+				<target state="translated">Efter lyckad inloggning omdirigera till sida:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectPageLoginError" approved="yes">
+				<source>After Failed Login Redirect to Page</source>
+				<target state="translated">Efter misslyckad inloggning omdirigera till sida:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.redirectPageLogout" approved="yes">
+				<source>After Logout Redirect to Page</source>
+				<target state="translated">Efter utloggning omdirigera till sida:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.sheet_general" approved="yes">
+				<source>General</source>
+				<target state="translated">Allmänt</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.sheet_messages" approved="yes">
+				<source>Messages</source>
+				<target state="translated">Meddelanden</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.sheet_redirect" approved="yes">
+				<source>Redirects</source>
+				<target state="translated">Omdirigering</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.show_forgot_password" approved="yes">
+				<source>Display Password Recovery Link</source>
+				<target state="translated">Visa länk "Glömt lösenord?":</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.show_logoutFormAfterLogin" approved="no">
+				<source>Disable redirect after successful login, but display logout-form</source>
+				<target state="needs-translation">Visa utloggningsformulär efter lyckad inloggning</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.show_permalogin" approved="yes">
+				<source>Display Remember Login Option</source>
+				<target state="translated">Visa kryssruta "Permanent inloggning" (om aktiverad i installationen):</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.status_header" approved="yes">
+				<source>Status Display Header</source>
+				<target state="translated">Statusrubrik:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.status_message" approved="yes">
+				<source>Status Display Message</source>
+				<target state="translated">Statusmeddelande:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.success_header" approved="yes">
+				<source>Login Success Header</source>
+				<target state="translated">Rubrik för lyckad inloggning:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.success_message" approved="yes">
+				<source>Login Success Message</source>
+				<target state="translated">Meddelande för lyckad inloggning:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.template_file" approved="yes">
+				<source>Template File</source>
+				<target state="translated">Mallfil:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.user_storage" approved="yes">
+				<source>User Storage Page</source>
+				<target state="translated">Lagringsplats för Användare</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.welcome_header" approved="yes">
+				<source>Welcome Header</source>
+				<target state="translated">Välkomstrubrik:</target>
+			</trans-unit>
+			<trans-unit id="tt_content.pi_flexform.welcome_message" approved="yes">
+				<source>Welcome Message</source>
+				<target state="translated">Välkomstmeddelande:</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

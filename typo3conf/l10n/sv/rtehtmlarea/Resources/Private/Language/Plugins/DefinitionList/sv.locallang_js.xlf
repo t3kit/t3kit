@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:25Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="DefinitionItem-helpText">
+				<source>Toggles term and definition elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="DefinitionItem-Tooltip">
+				<source>Toggle term and definition</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="DefinitionList-helpText">
+				<source>Makes a definition list from the current selection</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="DefinitionList-Tooltip">
+				<source>Definition list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Indent-helpText">
+				<source>Increases text indentation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Indent-Tooltip">
+				<source>Increase indent</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="No block">
+				<source>No block format</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Outdent-helpText">
+				<source>Reduces text indentation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Outdent-Tooltip">
+				<source>Reduce indent</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Remove block">
+				<source>Remove block format</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Technische Universitat Ilmenau">
+				<source>Technische Universität Ilmenau</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

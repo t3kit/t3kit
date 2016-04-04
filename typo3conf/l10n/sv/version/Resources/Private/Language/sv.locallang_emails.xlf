@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:51:05Z" product-name="version">
+		<header/>
+		<body>
+			<trans-unit id="message" xml:space="preserve">
+				<source>At the TYPO3 site "###SITE_NAME###" (###SITE_URL###)
+in workspace "###WORKSPACE_TITLE###" (###WORKSPACE_UID###)
+the stage has changed for the element(s) "###RECORD_TITLE###" (###ELEMENT_NAME###) at location "###RECORD_PATH###" in the page tree:
+
+=&gt; ###NEXT_STAGE###
+
+User Comment:
+"###COMMENT###"
+
+State was changed by ###USER_FULLNAME### (username: ###USER_USERNAME###)</source>
+			<target/></trans-unit>
+			<trans-unit id="subject">
+				<source>TYPO3 Workspace Note: Stage Change for ###ELEMENT_NAME###</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

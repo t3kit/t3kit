@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+      <label index="checkboxes.description"/>
+      <label index="tablehead_path.description"/>
+      <label index="tablehead_element.description"/>
+      <label index="tablehead_headlink.description"/>
+      <label index="tablehead_linktarget.description"/>
+      <label index="tablehead_linkmessage.description"/>
+      <label index="tablehead_lastcheck.description"/>
+      <label index="task_page.alttitle"/>
+      <label index="task_page.description"/>
+      <label index="task_depth.alttitle"/>
+      <label index="task_depth.description"/>
+      <label index="task_configuration.alttitle"/>
+      <label index="task_configuration.description"/>
+      <label index="task_email.alttitle"/>
+      <label index="task_email.description"/>
+      <label index="task_emailonbrokenlinkonly.alttitle"/>
+      <label index="task_emailonbrokenlinkonly.description"/>
+      <label index="task_emailfile.alttitle"/>
+      <label index="task_emailfile.description"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

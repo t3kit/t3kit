@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-21T01:57:15Z" product-name="static_info_tables" target-language="sv">
+		<header/>
+		<body>
+			<trans-unit id="static_territories.title" xml:space="preserve" approved="yes">
+				<source>Territory</source>
+			<target state="translated">Territorium</target></trans-unit>
+			<trans-unit id="static_territories_item.tr_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO nr territory code:</source>
+			<target state="translated">ISO Nr Territoriumkod:</target></trans-unit>
+			<trans-unit id="static_territories_item.tr_parent_iso_nr" xml:space="preserve" approved="yes">
+				<source>Parent territory code:</source>
+			<target state="translated">Moderterritoriumkod:</target></trans-unit>
+			<trans-unit id="static_territories_item.tr_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+			<target state="translated">Namn (EN):</target></trans-unit>
+			<trans-unit id="static_countries.title" xml:space="preserve" approved="yes">
+				<source>Countries</source>
+			<target state="translated">Länder</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_2" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A2 Country code:</source>
+			<target state="translated">ISO 3166-1 A2 Landskod:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A3 Country code:</source>
+			<target state="translated">ISO 3166-1 A3 Landskod:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 Nr Country code:</source>
+			<target state="translated">ISO 3166-1 Nr Landskod:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_official_name_local" xml:space="preserve" approved="yes">
+				<source>Official name (local):</source>
+			<target state="translated">Officiellt namn (lokalt):</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_official_name_en" xml:space="preserve" approved="yes">
+				<source>Official name (EN):</source>
+			<target state="translated">Officiellt namn (EN):</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_capital" xml:space="preserve" approved="yes">
+				<source>Capital:</source>
+			<target state="translated">Huvudstad:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_tldomain" xml:space="preserve" approved="yes">
+				<source>Top level domain:</source>
+			<target state="translated">Huvuddomän:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 4217 Nr Currency code:</source>
+			<target state="translated">ISO 4217 Nr Valutakod:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 4217 A3 Currency code:</source>
+			<target state="translated">ISO 4217 A3 Valutakod:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_phone" xml:space="preserve" approved="yes">
+				<source>Int. phone prefix:</source>
+			<target state="translated">Int. telefonprefix:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_uno_member" xml:space="preserve" approved="yes">
+				<source>UN member:</source>
+			<target state="translated">UN-medlem:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_eu_member" xml:space="preserve" approved="yes">
+				<source>EU member:</source>
+			<target state="translated">EU-medlem:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format" xml:space="preserve" approved="yes">
+				<source>Address format:</source>
+			<target state="translated">Adressformat:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_1" xml:space="preserve" approved="yes">
+				<source>zip city</source>
+			<target state="translated">postnr stad</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_2" xml:space="preserve" approved="yes">
+				<source>city zip</source>
+			<target state="translated">stad postnr</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_3" xml:space="preserve" approved="yes">
+				<source>city region-code zip</source>
+			<target state="translated">stad regionskod postnr</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_4" xml:space="preserve" approved="yes">
+				<source>city (region-name) zip</source>
+			<target state="translated">stad (regionsnamn) postnr</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_5" xml:space="preserve" approved="yes">
+				<source>city/zip</source>
+			<target state="translated">stad/postnr</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_6" xml:space="preserve" approved="yes">
+				<source>zip city, region-code</source>
+			<target state="translated">postnr stad, regionskod</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_7" xml:space="preserve" approved="yes">
+				<source>zip city region-code</source>
+			<target state="translated">postnr stad regionskod</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_8" xml:space="preserve" approved="yes">
+				<source>zip city (region-name)</source>
+			<target state="translated">postnr stad (regionsnamn)</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_9" xml:space="preserve" approved="yes">
+				<source>city - region-code/zip</source>
+			<target state="translated">stad - regionskod/postnr</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_zone_flag" xml:space="preserve" approved="yes">
+				<source>Zone flag:</source>
+			<target state="translated">Zonflagga:</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_short_local" xml:space="preserve" approved="yes">
+				<source>Short name (local):</source>
+			<target state="translated">Kort namn (lokalt):</target></trans-unit>
+			<trans-unit id="static_countries_item.cn_short_en" xml:space="preserve" approved="yes">
+				<source>Short name (EN):</source>
+			<target state="translated">Kort namn (EN):</target></trans-unit>
+			<trans-unit id="static_country_zones.title" xml:space="preserve" approved="yes">
+				<source>Country subdivisions</source>
+			<target state="translated">Landsindelningar</target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 Nr Country code:</source>
+			<target state="translated">ISO 3166-1 Nr Landskod:</target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_2" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A2 Country code:</source>
+			<target state="translated">ISO 3166-1 A2 Landskod:</target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A3 Country code:</source>
+			<target state="translated">ISO 3166-1 A3 Landskod:</target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_code" xml:space="preserve" approved="yes">
+				<source>ISO 3166-2 Country Zone code:</source>
+			<target state="translated">ISO 3166-2 Landszonkod:</target></trans-unit>
+			<trans-unit id="static_country_zones_item.zn_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+			<target state="translated">Namn (EN):</target></trans-unit>
+			<trans-unit id="static_languages.title" xml:space="preserve" approved="yes">
+				<source>Languages</source>
+			<target state="translated">Språk</target></trans-unit>
+			<trans-unit id="static_languages_item.lg_iso_2" xml:space="preserve" approved="yes">
+				<source>ISO 639-1 A2 Language code:</source>
+			<target state="translated">ISO 639-1 A2 Språkkod:</target></trans-unit>
+			<trans-unit id="static_languages_item.lg_collate_locale" xml:space="preserve" approved="yes">
+				<source>Collating locale:</source>
+			<target state="translated">Övergripande språkinställning</target></trans-unit>
+			<trans-unit id="static_languages_item.lg_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+			<target state="translated">Namn (EN):</target></trans-unit>
+			<trans-unit id="static_languages_item.lg_typo3" xml:space="preserve" approved="yes">
+				<source>Typo3 language code:</source>
+			<target state="translated">Typo3 språkkod:</target></trans-unit>
+			<trans-unit id="static_languages_item.lg_sacred" xml:space="preserve" approved="yes">
+				<source>Sacred language:</source>
+			<target state="translated">Heligt språk:</target></trans-unit>
+			<trans-unit id="static_languages_item.lg_constructed" xml:space="preserve" approved="yes">
+				<source>Constructed language:</source>
+			<target state="translated">Konstruerat språk:</target></trans-unit>
+			<trans-unit id="static_currencies.title" xml:space="preserve" approved="yes">
+				<source>Currencies</source>
+			<target state="translated">Valutor</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 4217 A3 Currency code:</source>
+			<target state="translated">ISO 4217 A3 Valutakod:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 4217 Nr Currency code:</source>
+			<target state="translated">ISO 4217 Nr Valutakod:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+			<target state="translated">Namn (EN):</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_name_en" xml:space="preserve" approved="yes">
+				<source>Sub name (EN):</source>
+			<target state="translated">Undernamn (EN):</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_symbol_left" xml:space="preserve" approved="yes">
+				<source>Symbol left:</source>
+			<target state="translated">Symbol vänster:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_symbol_right" xml:space="preserve" approved="yes">
+				<source>Symbol right:</source>
+			<target state="translated">Symbol höger:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_thousands_point" xml:space="preserve" approved="yes">
+				<source>Thousands point:</source>
+			<target state="translated">Tusentalsavgränsare:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_decimal_point" xml:space="preserve" approved="yes">
+				<source>Decimal point:</source>
+			<target state="translated">Decimaltecken:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_decimal_digits" xml:space="preserve" approved="yes">
+				<source>Decimal digits:</source>
+			<target state="translated">Decimalsiffror:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_divisor" xml:space="preserve" approved="yes">
+				<source>Divisor:</source>
+			<target state="translated">Divisor:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_symbol_left" xml:space="preserve" approved="yes">
+				<source>Sub symbol left:</source>
+			<target state="translated">Undersymbol vänster:</target></trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_symbol_right" xml:space="preserve" approved="yes">
+				<source>Sub symbol right:</source>
+			<target state="translated">Undersymbol höger:</target></trans-unit>
+		</body>
+	</file>
+</xliff>

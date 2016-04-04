@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="sys_filemounts.tabs.staging"/>
+			<label index="sys_workspace.custom_stages"/>
+			<label index="sys_workspace.edit_allow_notificaton_settings"/>
+			<label index="sys_workspace.edit_notification_defaults"/>
+			<label index="sys_workspace.edit_notification_mode"/>
+			<label index="sys_workspace.notification_mode.0"/>
+			<label index="sys_workspace.notification_mode.1"/>
+			<label index="sys_workspace.notification_mode.2"/>
+			<label index="sys_workspace.publish_allow_notificaton_settings"/>
+			<label index="sys_workspace.publish_notification_defaults"/>
+			<label index="sys_workspace.publish_notification_mode"/>
+			<label index="sys_workspace_stage"/>
+			<label index="sys_workspace_stage.allow_notificaton_settings"/>
+			<label index="sys_workspace_stage.default_mailcomment"/>
+			<label index="sys_workspace_stage.notification_defaults"/>
+			<label index="sys_workspace_stage.notification_mode"/>
+			<label index="sys_workspace_stage.parentid"/>
+			<label index="sys_workspace_stage.parenttable"/>
+			<label index="sys_workspace_stage.responsible_persons"/>
+			<label index="tabs.general"/>
+			<label index="tabs.notification_settings"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

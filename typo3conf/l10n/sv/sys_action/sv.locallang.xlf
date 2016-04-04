@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:30:00Z" product-name="sys_action">
+		<header/>
+		<body>
+			<trans-unit id="action_BEu_db_mount" approved="yes">
+				<source>Pagetree starting points</source>
+				<target state="translated">Startpunkt för sidträd</target>
+			</trans-unit>
+			<trans-unit id="action_BEu_email" approved="yes">
+				<source>Email</source>
+				<target state="translated">E-post</target>
+			</trans-unit>
+			<trans-unit id="action_BEu_hidden" approved="yes">
+				<source>Disable user</source>
+				<target state="translated">Utestäng användare</target>
+			</trans-unit>
+			<trans-unit id="action_BEu_password" approved="yes">
+				<source>Password</source>
+				<target state="translated">Lösenord</target>
+			</trans-unit>
+			<trans-unit id="action_BEu_realName" approved="yes">
+				<source>Real name</source>
+				<target state="translated">Riktigt namn</target>
+			</trans-unit>
+			<trans-unit id="action_BEu_usergroups" approved="yes">
+				<source>Member of groups</source>
+				<target state="translated">Medlem i grupper</target>
+			</trans-unit>
+			<trans-unit id="action_BEu_username" approved="yes">
+				<source>Login name</source>
+				<target state="translated">Inloggningsnamn</target>
+			</trans-unit>
+			<trans-unit id="action_Create" approved="yes">
+				<source>Create Backend User</source>
+				<target state="translated">Skapa Backend-användare</target>
+			</trans-unit>
+			<trans-unit id="action_createQuery">
+				<source>Create Query</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_download_file" approved="yes">
+				<source>Click here to download the exported data in a file</source>
+				<target state="translated">Klicka här för att ladda ner exporterat data till en fil</target>
+			</trans-unit>
+			<trans-unit id="action_editQuery">
+				<source>Edit Query</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_emptyQuery">
+				<source>Query is empty, create one first!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_error" approved="yes">
+				<source>Action error!</source>
+				<target state="translated">Fel i aktivitet!</target>
+			</trans-unit>
+			<trans-unit id="action_error-access">
+				<source>You don't have sufficient rights to see the records. Please ask the administrator to set those for you.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_error-not-found">
+				<source>The action doesn't exist</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_lowlevelMissing">
+				<source>The extension 'lowlevel' must be installed in order to create a query.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_not-found">
+				<source>No actions found</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_not-found-description">
+				<source>Currently there are no actions yet defined!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_notReady" approved="yes">
+				<source>Error: The action configuration is not finished.</source>
+				<target state="translated">Ett fel har uppstått: Den inställda aktiviteten har inte slutförts.</target>
+			</trans-unit>
+			<trans-unit id="action_noType" approved="yes">
+				<source>Error: The action had no type defined.</source>
+				<target state="translated">Ett fel har uppstått: Denna aktivitet var obestämd.</target>
+			</trans-unit>
+			<trans-unit id="action_t1_legend_configuration">
+				<source>Configuration</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_t1_legend_generalFields">
+				<source>General fields</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_t1_listOfUsers" approved="yes">
+				<source>List of backend users</source>
+				<target state="translated">Lista över Backend-användare</target>
+			</trans-unit>
+			<trans-unit id="action_t2_result" approved="yes">
+				<source>Result of query</source>
+				<target state="translated">Svar på förfrågan</target>
+			</trans-unit>
+			<trans-unit id="action_t4_edit" approved="yes">
+				<source>Select record to edit:</source>
+				<target state="translated">Välj vilket data som skall ändras:</target>
+			</trans-unit>
+			<trans-unit id="action_toolbaritem">
+				<source>Open System Actions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_Update" approved="yes">
+				<source>Update Backend User</source>
+				<target state="translated">Uppdatera Backend-användare</target>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>An 'Action' is a configuration of a specific task which may be performed by assigned usergroups via the Task Center.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="edit-sys_action">
+				<source>Edit record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error-password-empty">
+				<source>The password is empty.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error-username-empty">
+				<source>The username is empty.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error-wrong-email">
+				<source>The E-mail address is wrong.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error-wrong-user">
+				<source>You are not allowed to edit this user.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="new-sys_action">
+				<source>Create a new action</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="success">
+				<source>Success</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="success-user-created">
+				<source>The user has been created.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="success-user-updated">
+				<source>The user has been updated.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_action">
+				<source>Action</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:25Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Abbreviation">
+				<source>Abbreviation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Alignment" approved="yes">
+				<source>Alignment</source>
+				<target state="translated">Justering</target>
+			</trans-unit>
+			<trans-unit id="Align on this character" approved="yes">
+				<source>Align text relative to this character</source>
+				<target state="translated">Justera text relativt detta tecken</target>
+			</trans-unit>
+			<trans-unit id="All four sides" approved="yes">
+				<source>All four sides</source>
+				<target state="translated">Alla fyra sidor</target>
+			</trans-unit>
+			<trans-unit id="Background:" approved="yes">
+				<source>Background:</source>
+				<target state="translated">Bakgrund:</target>
+			</trans-unit>
+			<trans-unit id="Background and colors" approved="yes">
+				<source>Background and colors</source>
+				<target state="translated">Bakgrund och färger</target>
+			</trans-unit>
+			<trans-unit id="Baseline" approved="yes">
+				<source>Baseline</source>
+				<target state="translated">Baslinje</target>
+			</trans-unit>
+			<trans-unit id="Border color" approved="yes">
+				<source>Border color</source>
+				<target state="translated">Kantfärg</target>
+			</trans-unit>
+			<trans-unit id="Borders" approved="yes">
+				<source>Borders</source>
+				<target state="translated">Kanter</target>
+			</trans-unit>
+			<trans-unit id="Border style" approved="yes">
+				<source>Border style</source>
+				<target state="translated">Kantstil</target>
+			</trans-unit>
+			<trans-unit id="Border style:" approved="yes">
+				<source>Border style:</source>
+				<target state="translated">Kantstil:</target>
+			</trans-unit>
+			<trans-unit id="Border width" approved="yes">
+				<source>Border width in pixels</source>
+				<target state="translated">Kantbredd</target>
+			</trans-unit>
+			<trans-unit id="Border width:" approved="yes">
+				<source>Border width:</source>
+				<target state="translated">Kantbredd:</target>
+			</trans-unit>
+			<trans-unit id="Bottom" approved="yes">
+				<source>Bottom</source>
+				<target state="translated">Nederkant</target>
+			</trans-unit>
+			<trans-unit id="Caption:" approved="yes">
+				<source>Caption:</source>
+				<target state="translated">Överskrift:</target>
+			</trans-unit>
+			<trans-unit id="captionOrSummary-required" approved="yes">
+				<source>Please enter at least one of caption or summary</source>
+				<target state="translated">Ange åtminstone en av överskrift och sammanfattning</target>
+			</trans-unit>
+			<trans-unit id="caption-required" approved="yes">
+				<source>Please enter a caption</source>
+				<target state="translated">Ange en överskrift</target>
+			</trans-unit>
+			<trans-unit id="Cell height" approved="yes">
+				<source>Cell height</source>
+				<target state="translated">Cellhöjd</target>
+			</trans-unit>
+			<trans-unit id="Cell padding:" approved="yes">
+				<source>Cell padding:</source>
+				<target state="translated">Cellpadding:</target>
+			</trans-unit>
+			<trans-unit id="Cell Properties" approved="yes">
+				<source>Cell Properties</source>
+				<target state="translated">Cellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="Cell spacing:" approved="yes">
+				<source>Cell spacing:</source>
+				<target state="translated">Cellspacing:</target>
+			</trans-unit>
+			<trans-unit id="Cell Type and Scope" approved="yes">
+				<source>Cell Type and Scope</source>
+				<target state="translated">Cells typ och omfång</target>
+			</trans-unit>
+			<trans-unit id="Cell width" approved="yes">
+				<source>Cell width</source>
+				<target state="translated">Cellbredd</target>
+			</trans-unit>
+			<trans-unit id="Center" approved="yes">
+				<source>Center</source>
+				<target state="translated">Centrera</target>
+			</trans-unit>
+			<trans-unit id="Character" approved="yes">
+				<source>Character</source>
+				<target state="translated">Tecken</target>
+			</trans-unit>
+			<trans-unit id="Class:" approved="yes">
+				<source>Classes:</source>
+				<target state="translated">Klasser:</target>
+			</trans-unit>
+			<trans-unit id="Class selector" approved="yes">
+				<source>Classes</source>
+				<target state="translated">Klasser</target>
+			</trans-unit>
+			<trans-unit id="Collapsed borders" approved="yes">
+				<source>Collapsed borders</source>
+				<target state="translated">Kollapsade kanter</target>
+			</trans-unit>
+			<trans-unit id="Color:" approved="yes">
+				<source>Color:</source>
+				<target state="translated">Färg:</target>
+			</trans-unit>
+			<trans-unit id="Column Properties" approved="yes">
+				<source>Column Cells Properties</source>
+				<target state="translated">Kolumncellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="CSS Style" approved="yes">
+				<source>Style</source>
+				<target state="translated">Stilmall</target>
+			</trans-unit>
+			<trans-unit id="Dashed" approved="yes">
+				<source>Dashed</source>
+				<target state="translated">Streckad</target>
+			</trans-unit>
+			<trans-unit id="Data cells" approved="yes">
+				<source>Data cells</source>
+				<target state="translated">Dataceller</target>
+			</trans-unit>
+			<trans-unit id="Default" approved="yes">
+				<source>Default</source>
+				<target state="translated">Standard</target>
+			</trans-unit>
+			<trans-unit id="Description" approved="yes">
+				<source>Description</source>
+				<target state="translated">Beskrivning</target>
+			</trans-unit>
+			<trans-unit id="Description of the nature of the table" approved="yes">
+				<source>Description of the nature of the table</source>
+				<target state="translated">Beskrivning av tabellen</target>
+			</trans-unit>
+			<trans-unit id="Detached borders">
+				<source>Detached borders</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Dotted" approved="yes">
+				<source>Dotted</source>
+				<target state="translated">Prickad</target>
+			</trans-unit>
+			<trans-unit id="Double" approved="yes">
+				<source>Double</source>
+				<target state="translated">Dubbel</target>
+			</trans-unit>
+			<trans-unit id="em" approved="yes">
+				<source>em</source>
+				<target state="translated">em</target>
+			</trans-unit>
+			<trans-unit id="FG Color:" approved="yes">
+				<source>Text:</source>
+				<target state="translated">Textfärg:</target>
+			</trans-unit>
+			<trans-unit id="Float:" approved="yes">
+				<source>Float:</source>
+				<target state="translated">Flytande:</target>
+			</trans-unit>
+			<trans-unit id="Frame and borders" approved="yes">
+				<source>Frame and borders</source>
+				<target state="translated">Kantlinjer</target>
+			</trans-unit>
+			<trans-unit id="Frames:" approved="yes">
+				<source>Frames:</source>
+				<target state="translated">Kontur:</target>
+			</trans-unit>
+			<trans-unit id="Groove" approved="yes">
+				<source>Groove</source>
+				<target state="translated">Fåra</target>
+			</trans-unit>
+			<trans-unit id="Header" approved="yes">
+				<source>Header cell</source>
+				<target state="translated">Huvudcell</target>
+			</trans-unit>
+			<trans-unit id="Header abbreviation">
+				<source>Header abbreviation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Header cells on left" approved="yes">
+				<source>Header cells on left</source>
+				<target state="translated">Huvudceller till vänster</target>
+			</trans-unit>
+			<trans-unit id="Header cells on top" approved="yes">
+				<source>Header cells on top</source>
+				<target state="translated">Huvudceller upptill</target>
+			</trans-unit>
+			<trans-unit id="Header cells on top and left" approved="yes">
+				<source>Header cells on top and left</source>
+				<target state="translated">Huvudceller upptill och till vänster</target>
+			</trans-unit>
+			<trans-unit id="Header for column" approved="yes">
+				<source>Header cell for column</source>
+				<target state="translated">Huvudcell för kolumn</target>
+			</trans-unit>
+			<trans-unit id="Header for row" approved="yes">
+				<source>Header cell for row</source>
+				<target state="translated">Huvudcell för rad</target>
+			</trans-unit>
+			<trans-unit id="Header for row group" approved="yes">
+				<source>Header cell for row group</source>
+				<target state="translated">Huvudcell för radgrupp</target>
+			</trans-unit>
+			<trans-unit id="Headers" approved="yes">
+				<source>Headers</source>
+				<target state="translated">Huvuden</target>
+			</trans-unit>
+			<trans-unit id="Headers:" approved="yes">
+				<source>Header cells</source>
+				<target state="translated">Huvud</target>
+			</trans-unit>
+			<trans-unit id="Headers for row groups" approved="yes">
+				<source>Headers for row groups</source>
+				<target state="translated">Huvuden för radgrupper</target>
+			</trans-unit>
+			<trans-unit id="Headers for rows" approved="yes">
+				<source>Headers for rows</source>
+				<target state="translated">Huvuden för rader</target>
+			</trans-unit>
+			<trans-unit id="Height:" approved="yes">
+				<source>Height:</source>
+				<target state="translated">Höjd:</target>
+			</trans-unit>
+			<trans-unit id="Height unit" approved="yes">
+				<source>Height unit</source>
+				<target state="translated">Höjdenhet</target>
+			</trans-unit>
+			<trans-unit id="Horizontal alignment of text within cell" approved="yes">
+				<source>Horizontal alignment of text within cell</source>
+				<target state="translated">Vågrät justering av text i cell</target>
+			</trans-unit>
+			<trans-unit id="How many columns would you like to merge?" approved="yes">
+				<source>How many columns would you like to merge?</source>
+				<target state="translated">Hur många kolumner vill du slå ihop?</target>
+			</trans-unit>
+			<trans-unit id="How many rows would you like to merge?" approved="yes">
+				<source>How many rows would you like to merge?</source>
+				<target state="translated">Hur många rader vill du slå ihop?</target>
+			</trans-unit>
+			<trans-unit id="Image URL:" approved="yes">
+				<source>Image URL:</source>
+				<target state="translated">Bild URL:</target>
+			</trans-unit>
+			<trans-unit id="Inset" approved="yes">
+				<source>Inset</source>
+				<target state="translated">Nedsänkt</target>
+			</trans-unit>
+			<trans-unit id="Justify" approved="yes">
+				<source>Justify</source>
+				<target state="translated">Justera</target>
+			</trans-unit>
+			<trans-unit id="Layout" approved="yes">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="Left" approved="yes">
+				<source>Left</source>
+				<target state="translated">Vänster</target>
+			</trans-unit>
+			<trans-unit id="Make cells data cells" approved="yes">
+				<source>Make all row cells data cells</source>
+				<target state="translated">Gör alla radceller till dataceller</target>
+			</trans-unit>
+			<trans-unit id="Make cells header cells" approved="yes">
+				<source>Make all row cells header cells</source>
+				<target state="translated">Gör alla radceller till huvudceller</target>
+			</trans-unit>
+			<trans-unit id="Margin" approved="yes">
+				<source>Margin</source>
+				<target state="translated">Marginal</target>
+			</trans-unit>
+			<trans-unit id="Middle" approved="yes">
+				<source>Middle</source>
+				<target state="translated">Mitten</target>
+			</trans-unit>
+			<trans-unit id="No border" approved="yes">
+				<source>None</source>
+				<target state="translated">Ingen</target>
+			</trans-unit>
+			<trans-unit id="No header cells" approved="yes">
+				<source>No header cells</source>
+				<target state="translated">Inga huvudceller</target>
+			</trans-unit>
+			<trans-unit id="None" approved="yes">
+				<source>None</source>
+				<target state="translated">Ingen</target>
+			</trans-unit>
+			<trans-unit id="Non-floating" approved="yes">
+				<source>Non-floating</source>
+				<target state="translated">Ej flytande</target>
+			</trans-unit>
+			<trans-unit id="Normal" approved="yes">
+				<source>Data cell</source>
+				<target state="translated">Datacell</target>
+			</trans-unit>
+			<trans-unit id="No rules" approved="yes">
+				<source>No rules</source>
+				<target state="translated">Inga kantlinjer</target>
+			</trans-unit>
+			<trans-unit id="No sides" approved="yes">
+				<source>No sides</source>
+				<target state="translated">Ingen sida</target>
+			</trans-unit>
+			<trans-unit id="not-del-last-cell" approved="yes">
+				<source>HTMLArea cowardly refuses to delete the last cell in row.</source>
+				<target state="translated">htmlArea vägrar att radera sista cellen i en rad.</target>
+			</trans-unit>
+			<trans-unit id="not-del-last-col" approved="yes">
+				<source>HTMLArea cowardly refuses to delete the last column in table.</source>
+				<target state="translated">htmlArea vägrar att radera sista kolmnen i en tabell.</target>
+			</trans-unit>
+			<trans-unit id="not-del-last-row" approved="yes">
+				<source>HTMLArea cowardly refuses to delete the last row in table.</source>
+				<target state="translated">htmlArea vägrar att radera sista raden i en tabell.</target>
+			</trans-unit>
+			<trans-unit id="Not set" approved="yes">
+				<source>Not set</source>
+				<target state="translated">Ej angivet</target>
+			</trans-unit>
+			<trans-unit id="Outset" approved="yes">
+				<source>Outset</source>
+				<target state="translated">Upphöjd</target>
+			</trans-unit>
+			<trans-unit id="percent" approved="yes">
+				<source>percent</source>
+				<target state="translated">procent</target>
+			</trans-unit>
+			<trans-unit id="pixels" approved="yes">
+				<source>pixels</source>
+				<target state="translated">pixlar</target>
+			</trans-unit>
+			<trans-unit id="Please click into some cell" approved="yes">
+				<source>Please click into some cell</source>
+				<target state="translated">Var god klicka i någon cell</target>
+			</trans-unit>
+			<trans-unit id="Ridge" approved="yes">
+				<source>Ridge</source>
+				<target state="translated">Rygg</target>
+			</trans-unit>
+			<trans-unit id="Right" approved="yes">
+				<source>Right</source>
+				<target state="translated">Höger</target>
+			</trans-unit>
+			<trans-unit id="Row group" approved="yes">
+				<source>Row group</source>
+				<target state="translated">Radgrupp</target>
+			</trans-unit>
+			<trans-unit id="Row group:" approved="yes">
+				<source>Row group:</source>
+				<target state="translated">Radgrupp:</target>
+			</trans-unit>
+			<trans-unit id="Row height" approved="yes">
+				<source>Row height</source>
+				<target state="translated">Radhöjd</target>
+			</trans-unit>
+			<trans-unit id="Row Properties" approved="yes">
+				<source>Row Properties</source>
+				<target state="translated">Radegenskaper</target>
+			</trans-unit>
+			<trans-unit id="Row width" approved="yes">
+				<source>Row width</source>
+				<target state="translated">Radbredd</target>
+			</trans-unit>
+			<trans-unit id="Rules:" approved="yes">
+				<source>Rules:</source>
+				<target state="translated">Insidan:</target>
+			</trans-unit>
+			<trans-unit id="Rules will appear between all rows and columns" approved="yes">
+				<source>Rules will appear between all rows and columns</source>
+				<target state="translated">Kantlinjer mellan alla rader och kolumner</target>
+			</trans-unit>
+			<trans-unit id="Rules will appear between columns only" approved="yes">
+				<source>Rules will appear between columns only</source>
+				<target state="translated">Kantlinjer endast mellan kolumner</target>
+			</trans-unit>
+			<trans-unit id="Rules will appear between rows only" approved="yes">
+				<source>Rules will appear between rows only</source>
+				<target state="translated">Kantlinjer endast mellan rader</target>
+			</trans-unit>
+			<trans-unit id="Scope" approved="yes">
+				<source>Scope:</source>
+				<target state="translated">Omfång:</target>
+			</trans-unit>
+			<trans-unit id="scope_column" approved="yes">
+				<source>Column</source>
+				<target state="translated">Kolumn</target>
+			</trans-unit>
+			<trans-unit id="Scope of header cell" approved="yes">
+				<source>Scope of the header</source>
+				<target state="translated">Omfång för huvudet</target>
+			</trans-unit>
+			<trans-unit id="scope_row" approved="yes">
+				<source>Row</source>
+				<target state="translated">Rad</target>
+			</trans-unit>
+			<trans-unit id="scope_rowgroup" approved="yes">
+				<source>Group of rows</source>
+				<target state="translated">Grupp av rader</target>
+			</trans-unit>
+			<trans-unit id="Size and Headers" approved="yes">
+				<source>Size and Headers</source>
+				<target state="translated">Storlek och huvuden</target>
+			</trans-unit>
+			<trans-unit id="Solid" approved="yes">
+				<source>Solid</source>
+				<target state="translated">Heldragen</target>
+			</trans-unit>
+			<trans-unit id="Space between adjacent cells" approved="yes">
+				<source>Space between adjacent cells</source>
+				<target state="translated">Avstånd mellan intilliggande celler</target>
+			</trans-unit>
+			<trans-unit id="Space between content and border in cell" approved="yes">
+				<source>Space between content and border in cell</source>
+				<target state="translated">Avstånd mellan innehåll och kant i en cell</target>
+			</trans-unit>
+			<trans-unit id="Spacing and padding" approved="yes">
+				<source>Spacing and padding</source>
+				<target state="translated">Avstånd och utfyllnad</target>
+			</trans-unit>
+			<trans-unit id="Specifies the type of cell" approved="yes">
+				<source>Specifies the type of cell</source>
+				<target state="translated">Anger typ av cell</target>
+			</trans-unit>
+			<trans-unit id="Specifies the type of cells" approved="yes">
+				<source>Specifies the type of cells of the column</source>
+				<target state="translated">Anger typen av celler i kolumnen</target>
+			</trans-unit>
+			<trans-unit id="Specifies where rules should be displayed" approved="yes">
+				<source>Specifies where rules should be displayed</source>
+				<target state="translated">Anger var kantlinjer ska visas</target>
+			</trans-unit>
+			<trans-unit id="Specifies where the table should float" approved="yes">
+				<source>Specifies where the table should float</source>
+				<target state="translated">Anger vart tabellen ska flyta</target>
+			</trans-unit>
+			<trans-unit id="Specifies which sides should have a border" approved="yes">
+				<source>Specifies which sides should have a border</source>
+				<target state="translated">Anger vilka sidor som ska ha kanter</target>
+			</trans-unit>
+			<trans-unit id="Summary:" approved="yes">
+				<source>Summary:</source>
+				<target state="translated">Sammanfattning:</target>
+			</trans-unit>
+			<trans-unit id="Summary of the table purpose and structure" approved="yes">
+				<source>Summary of the table's purpose and structure</source>
+				<target state="translated">Sammanfattning av tabellens syfte och struktur</target>
+			</trans-unit>
+			<trans-unit id="summary-required" approved="yes">
+				<source>Please enter a summary</source>
+				<target state="translated">Ange en sammanfattning</target>
+			</trans-unit>
+			<trans-unit id="Table body" approved="yes">
+				<source>Table body</source>
+				<target state="translated">Tabellkropp</target>
+			</trans-unit>
+			<trans-unit id="Table body class:" approved="yes">
+				<source>Body:</source>
+				<target state="translated">Kropp:</target>
+			</trans-unit>
+			<trans-unit id="Table body class selector" approved="yes">
+				<source>Classes of the table body</source>
+				<target state="translated">Klasser för tabellkropp (tbody)</target>
+			</trans-unit>
+			<trans-unit id="Table class:" approved="yes">
+				<source>Table:</source>
+				<target state="translated">Tabellklasser:</target>
+			</trans-unit>
+			<trans-unit id="Table class selector" approved="yes">
+				<source>Classes of the table</source>
+				<target state="translated">Klasser för tabell</target>
+			</trans-unit>
+			<trans-unit id="Table footer" approved="yes">
+				<source>Table footer</source>
+				<target state="translated">Tabellfot</target>
+			</trans-unit>
+			<trans-unit id="Table footer class:" approved="yes">
+				<source>Footer:</source>
+				<target state="translated">Fot:</target>
+			</trans-unit>
+			<trans-unit id="Table footer class selector" approved="yes">
+				<source>Classes of the table footer</source>
+				<target state="translated">Klasser för tabellfot (tfoot)</target>
+			</trans-unit>
+			<trans-unit id="Table header" approved="yes">
+				<source>Table header</source>
+				<target state="translated">Tabellhuvud</target>
+			</trans-unit>
+			<trans-unit id="Table header class:" approved="yes">
+				<source>Header:</source>
+				<target state="translated">Huvud:</target>
+			</trans-unit>
+			<trans-unit id="Table header class selector" approved="yes">
+				<source>Classes of the table header</source>
+				<target state="translated">Klasser för tabellhuvud (thead)</target>
+			</trans-unit>
+			<trans-unit id="Table headers" approved="yes">
+				<source>Table headers</source>
+				<target state="translated">Tabellhuvuden</target>
+			</trans-unit>
+			<trans-unit id="Table height" approved="yes">
+				<source>Table height</source>
+				<target state="translated">Tabellhöjd</target>
+			</trans-unit>
+			<trans-unit id="Table Properties" approved="yes">
+				<source>Table Properties</source>
+				<target state="translated">Tabellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="Table section" approved="yes">
+				<source>Table section to which the row belongs</source>
+				<target state="translated">Tabellsektion till vilken raden tillhör</target>
+			</trans-unit>
+			<trans-unit id="Table width" approved="yes">
+				<source>Table width</source>
+				<target state="translated">Tabellbredd</target>
+			</trans-unit>
+			<trans-unit id="Technische Universitat Ilmenau" approved="yes">
+				<source>Technische Universität Ilmenau</source>
+				<target state="translated">Technische Universität Ilmenau</target>
+			</trans-unit>
+			<trans-unit id="Text alignment:" approved="yes">
+				<source>Text alignment:</source>
+				<target state="translated">Vågrät justering:</target>
+			</trans-unit>
+			<trans-unit id="The bottom side only" approved="yes">
+				<source>The bottom side only</source>
+				<target state="translated">Endast nederkanten</target>
+			</trans-unit>
+			<trans-unit id="The left-hand side only" approved="yes">
+				<source>The left-hand side only</source>
+				<target state="translated">Endast vänsterkanten</target>
+			</trans-unit>
+			<trans-unit id="The right and left sides only" approved="yes">
+				<source>The right and left sides only</source>
+				<target state="translated">Endast höger- och vänsterkanten</target>
+			</trans-unit>
+			<trans-unit id="The right-hand side only" approved="yes">
+				<source>The right-hand side only</source>
+				<target state="translated">Endast högerkanten</target>
+			</trans-unit>
+			<trans-unit id="The top and bottom sides only" approved="yes">
+				<source>The top and bottom sides only</source>
+				<target state="translated">Endast över- och nederkanten</target>
+			</trans-unit>
+			<trans-unit id="The top side only" approved="yes">
+				<source>The top side only</source>
+				<target state="translated">Endast överkanten</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-delete" approved="yes">
+				<source>Delete cell</source>
+				<target state="translated">Ta bort cell</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-insert-after" approved="yes">
+				<source>Insert cell after</source>
+				<target state="translated">Infoga cell efter</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-insert-before" approved="yes">
+				<source>Insert cell before</source>
+				<target state="translated">Infoga cell före</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-merge" approved="yes">
+				<source>Merge cells</source>
+				<target state="translated">Sammanfoga celler</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-prop" approved="yes">
+				<source>Cell properties</source>
+				<target state="translated">Cellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-split" approved="yes">
+				<source>Split cell</source>
+				<target state="translated">Dela cell</target>
+			</trans-unit>
+			<trans-unit id="TO-col-delete" approved="yes">
+				<source>Delete column</source>
+				<target state="translated">Ta bort kolumn</target>
+			</trans-unit>
+			<trans-unit id="TO-col-insert-after" approved="yes">
+				<source>Insert column after</source>
+				<target state="translated">Infoga kolumn efter</target>
+			</trans-unit>
+			<trans-unit id="TO-col-insert-before" approved="yes">
+				<source>Insert column before</source>
+				<target state="translated">Infoga kolumn före</target>
+			</trans-unit>
+			<trans-unit id="TO-col-prop" approved="yes">
+				<source>Column properties</source>
+				<target state="translated">Kolumnegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-col-split" approved="yes">
+				<source>Split column</source>
+				<target state="translated">Dela kolumn</target>
+			</trans-unit>
+			<trans-unit id="Top" approved="yes">
+				<source>Top</source>
+				<target state="translated">Överkant</target>
+			</trans-unit>
+			<trans-unit id="TO-row-delete" approved="yes">
+				<source>Delete row</source>
+				<target state="translated">Ta bort rad</target>
+			</trans-unit>
+			<trans-unit id="TO-row-insert-above" approved="yes">
+				<source>Insert row before</source>
+				<target state="translated">Infoga rad före</target>
+			</trans-unit>
+			<trans-unit id="TO-row-insert-under" approved="yes">
+				<source>Insert row after</source>
+				<target state="translated">Infoga rad efter</target>
+			</trans-unit>
+			<trans-unit id="TO-row-prop" approved="yes">
+				<source>Row properties</source>
+				<target state="translated">Radegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-row-split" approved="yes">
+				<source>Split row</source>
+				<target state="translated">Dela rad</target>
+			</trans-unit>
+			<trans-unit id="TO-table-prop" approved="yes">
+				<source>Table properties</source>
+				<target state="translated">Tabellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-table-restyle" approved="yes">
+				<source>Re-apply table styles</source>
+				<target state="translated">Omapplicera tabellstilar</target>
+			</trans-unit>
+			<trans-unit id="TO-toggle-borders" approved="yes">
+				<source>Toggle borders</source>
+				<target state="translated">Visa/dölj stödlinjer</target>
+			</trans-unit>
+			<trans-unit id="Type of cell" approved="yes">
+				<source>Type of cell:</source>
+				<target state="translated">Typ av cell:</target>
+			</trans-unit>
+			<trans-unit id="Type of cells" approved="yes">
+				<source>Type of cells</source>
+				<target state="translated">Typ av celler</target>
+			</trans-unit>
+			<trans-unit id="Type of cells of the column" approved="yes">
+				<source>Type of cells of the column:</source>
+				<target state="translated">Typ av celler i kolumn:</target>
+			</trans-unit>
+			<trans-unit id="Undefined" approved="yes">
+				<source>Undefined</source>
+				<target state="translated">Odefinierat</target>
+			</trans-unit>
+			<trans-unit id="Unset color" approved="yes">
+				<source>Unset color</source>
+				<target state="translated">Ta bort färg</target>
+			</trans-unit>
+			<trans-unit id="URL of the background image" approved="yes">
+				<source>URL of the background image</source>
+				<target state="translated">URL för bakgrundsbilden</target>
+			</trans-unit>
+			<trans-unit id="Vertical alignment:" approved="yes">
+				<source>Vertical alignment:</source>
+				<target state="translated">Lodrät justering:</target>
+			</trans-unit>
+			<trans-unit id="Vertical alignment of content within cell" approved="yes">
+				<source>Vertical alignment of content within cell</source>
+				<target state="translated">Lodrät justering av innehåll i cell</target>
+			</trans-unit>
+			<trans-unit id="Width:" approved="yes">
+				<source>Width:</source>
+				<target state="translated">Bredd:</target>
+			</trans-unit>
+			<trans-unit id="Width unit" approved="yes">
+				<source>Width unit</source>
+				<target state="translated">Breddenhet</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

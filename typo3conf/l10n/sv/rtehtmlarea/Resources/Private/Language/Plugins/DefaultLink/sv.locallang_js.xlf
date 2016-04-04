@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="frame">
+				<source>Frame name:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="frame_help">
+				<source>Enter the name of the frame to be used as target</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Select some text" approved="yes">
+				<source>You need to select some text before creating a link</source>
+				<target state="translated">Du måste markera någon text innan du skapar en länk</target>
+			</trans-unit>
+			<trans-unit id="URL">
+				<source>URL</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

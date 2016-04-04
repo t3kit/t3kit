@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="allow_notificaton_settings.description"/>
+			<label index="default_mailcomment.description"/>
+			<label index=".description"/>
+			<label index="notification_defaults.description"/>
+			<label index="notification_mode.description"/>
+			<label index="responsible_persons.description"/>
+			<label index="title.description"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

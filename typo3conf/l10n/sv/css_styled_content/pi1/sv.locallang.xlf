@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T00:56:05Z" product-name="css_styled_content">
+		<header/>
+		<body>
+			<trans-unit id="eIcon.bodytext" approved="yes">
+				<source>Edit bodytext</source>
+				<target state="translated">Ändra brödtext</target>
+			</trans-unit>
+			<trans-unit id="eIcon.bullets" approved="yes">
+				<source>Edit bullet list</source>
+				<target state="translated">Ändra punktlista</target>
+			</trans-unit>
+			<trans-unit id="eIcon.caption" approved="yes">
+				<source>Edit image caption</source>
+				<target state="translated">Ändra bildtext</target>
+			</trans-unit>
+			<trans-unit id="eIcon.caption_position">
+				<source>Edit image caption alignment</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="eIcon.filelist" approved="no">
+				<source>Edit filelist</source>
+				<target state="needs-translation">Ändra fillista</target>
+			</trans-unit>
+			<trans-unit id="eIcon.form" approved="yes">
+				<source>Edit email form</source>
+				<target state="translated">Ändra e-postformulär</target>
+			</trans-unit>
+			<trans-unit id="eIcon.header" approved="yes">
+				<source>Edit header</source>
+				<target state="translated">Ändra rubrik</target>
+			</trans-unit>
+			<trans-unit id="eIcon.html" approved="yes">
+				<source>Edit pure HTML content</source>
+				<target state="translated">Ändra äkta HTML-innehåll</target>
+			</trans-unit>
+			<trans-unit id="eIcon.images" approved="yes">
+				<source>Edit images</source>
+				<target state="translated">Ändra bilder</target>
+			</trans-unit>
+			<trans-unit id="eIcon.login" approved="yes">
+				<source>Edit login element</source>
+				<target state="translated">Ändra inloggningselement</target>
+			</trans-unit>
+			<trans-unit id="eIcon.menuSitemap" approved="yes">
+				<source>Edit menu / sitemap</source>
+				<target state="translated">Ändra meny / sidkarta</target>
+			</trans-unit>
+			<trans-unit id="eIcon.multimedia" approved="yes">
+				<source>Edit multimedia element</source>
+				<target state="translated">Ändra multimediaelement</target>
+			</trans-unit>
+			<trans-unit id="eIcon.page" approved="yes">
+				<source>Page:</source>
+				<target state="translated">Sida:</target>
+			</trans-unit>
+			<trans-unit id="eIcon.plugin" approved="yes">
+				<source>Change/configure plugin</source>
+				<target state="translated">Byt/konfigurera plugin</target>
+			</trans-unit>
+			<trans-unit id="eIcon.recordList" approved="yes">
+				<source>Edit recordlist</source>
+				<target state="translated">Ändra datalista</target>
+			</trans-unit>
+			<trans-unit id="eIcon.search" approved="yes">
+				<source>Edit search element</source>
+				<target state="translated">Ändra sökelement</target>
+			</trans-unit>
+			<trans-unit id="eIcon.subheader" approved="yes">
+				<source>Edit subheader</source>
+				<target state="translated">Ändra underrubrik</target>
+			</trans-unit>
+			<trans-unit id="eIcon.table" approved="yes">
+				<source>Edit table</source>
+				<target state="translated">Ändra tabell</target>
+			</trans-unit>
+			<trans-unit id="label.toTop" approved="yes">
+				<source>To top</source>
+				<target state="translated">Upp</target>
+			</trans-unit>
+			<trans-unit id="login.login" approved="yes">
+				<source>Login</source>
+				<target state="translated">Logga in</target>
+			</trans-unit>
+			<trans-unit id="login.logout" approved="yes">
+				<source>Logout</source>
+				<target state="translated">Logga ut</target>
+			</trans-unit>
+			<trans-unit id="login.password" approved="yes">
+				<source>Password:</source>
+				<target state="translated">Lösenord:</target>
+			</trans-unit>
+			<trans-unit id="login.username" approved="yes">
+				<source>Username:</source>
+				<target state="translated">Användarnamn:</target>
+			</trans-unit>
+			<trans-unit id="menu.bypassNavigation">
+				<source>Skip navigation block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="search.emptySearch" approved="yes">
+				<source>Sorry, your search was empty!</source>
+				<target state="translated">Beklagar, din sökning gav inga resultat!</target>
+			</trans-unit>
+			<trans-unit id="search.headersKeywords" approved="yes">
+				<source>Headers and keywords</source>
+				<target state="translated">Rubriker och nyckelord</target>
+			</trans-unit>
+			<trans-unit id="search.pageContent" approved="yes">
+				<source>Page content</source>
+				<target state="translated">Sidinnehåll</target>
+			</trans-unit>
+			<trans-unit id="search.resultRange" approved="yes">
+				<source>Searchresult: ###RANGELOW###-###RANGEHIGH### of ###TOTAL###</source>
+				<target state="translated">Sökresultat: ###RANGELOW###-###RANGEHIGH### av ###TOTAL###</target>
+			</trans-unit>
+			<trans-unit id="search.searchButton" approved="yes">
+				<source>Search now!</source>
+				<target state="translated">Sök nu!</target>
+			</trans-unit>
+			<trans-unit id="search.searchIn" approved="yes">
+				<source>Search in:</source>
+				<target state="translated">Sök i:</target>
+			</trans-unit>
+			<trans-unit id="search.searchResultNext" approved="yes">
+				<source>Next</source>
+				<target state="translated">Nästa</target>
+			</trans-unit>
+			<trans-unit id="search.searchResultPrev" approved="yes">
+				<source>Prev</source>
+				<target state="translated">Föregående</target>
+			</trans-unit>
+			<trans-unit id="search.searchWord" approved="yes">
+				<source>Searchword:</source>
+				<target state="translated">Sökord:</target>
+			</trans-unit>
+			<trans-unit id="uploads.icon">
+				<source>File link icon for %s</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

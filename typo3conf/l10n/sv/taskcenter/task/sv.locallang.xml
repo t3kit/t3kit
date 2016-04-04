@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="error-access"/>
+			<label index="error_header"/>
+			<label index="error_no-instance"/>
+			<label index="lCancel">Avbryt</label>
+			<label index="lCreate">Skapa</label>
+			<label index="lDelete">Ta bort</label>
+			<label index="lDelete_warning">Är du säker på att du vill ta bort denna användare?</label>
+			<label index="lHomedir">Hemkatalog</label>
+			<label index="listSeparator_Groups">__Grupper:__</label>
+			<label index="lNone">[inget]</label>
+			<label index="lReplyAddress">Din e-postadress används som svarsadress</label>
+			<label index="lSelf">Själv</label>
+			<label index="lSendNew">Skicka meddelande</label>
+			<label index="lSendReply">Svara på meddelande</label>
+			<label index="lUpdate">Uppdatera</label>
+			<label index="mlang_tabs_tab"/>
+			<label index="no-tasks"/>
+			<label index="taskcenter-about"/>
+			<label index="taskcenter-admin"/>
+			<label index="taskcenter-adminheader"/>
+			<label index="task_description"/>
+			<label index="task_overview"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

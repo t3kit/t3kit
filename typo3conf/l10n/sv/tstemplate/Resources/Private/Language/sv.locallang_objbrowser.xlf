@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:44:13Z" product-name="tstemplate">
+		<header/>
+		<body>
+			<trans-unit id="addButton">
+				<source>Add</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="addKey">
+				<source>&lt;b&gt;Add key&lt;/b&gt;&lt;/a&gt; "%s" to Object List</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="addProperty">
+				<source>Add object property:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="all">
+				<source>All</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="back">
+				<source>Back</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="badProperty">
+				<source>Bad property!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="browse">
+				<source>Browse:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clear">
+				<source>Clear?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clearButton">
+				<source>Clear</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="clearObject">
+				<source>Clear object:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="conditions">
+				<source>Conditions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="constantRoot">
+				<source>constants root</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="constants">
+				<source>Constants</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cropLines">
+				<source>Crop lines</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="currentTemplate">
+				<source>Current template</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayComments">
+				<source>Display comments</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayConstants">
+				<source>Display constants:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayOptions">
+				<source>Display options</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="edit">
+				<source>Edit:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editProperty">
+				<source>Edit object/property value:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.1446559458">
+				<source>Error evaluating regular expression "%s".</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errorShowDetails">
+				<source>Show details</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errorsWarnings">
+				<source>Errors and warnings</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="noCurrentTemplate">
+				<source>You cannot edit properties and values, if there's no current template.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="noSpaces">
+				<source>You must enter a property with characters a-z, A-Z and 0-9, no spaces!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="nothingUpdated">
+				<source>Nothing was updated!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="objectCleared">
+				<source>Object cleared</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="objectList">
+				<source>Object List:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="plainSubstitution">
+				<source>Plain substitution (default)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="propertyAdded">
+				<source>Property added</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="regExp">
+				<source>Regular expressions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="removeKey">
+				<source>Remove key from OL</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="search">
+				<source>Search:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="setConditions">
+				<source>Set conditions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="setup">
+				<source>Setup</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="setupRoot">
+				<source>setup root</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="severity.1">
+				<source>Info</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="severity.2">
+				<source>Warning</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="severity.3">
+				<source>Error</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortAlphabetically">
+				<source>Sort alphabetically</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="substitutedGreen">
+				<source>Substituted constants in green</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="unsubstitutedGreen">
+				<source>UN-substituted constants in green</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="updateButton">
+				<source>Update</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="valueUpdated">
+				<source>Value updated</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

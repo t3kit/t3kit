@@ -38,6 +38,13 @@ return [
             'yaml_parser' => 'a:0:{}',
         ],
     ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [
+                'sv',
+            ],
+        ],
+    ],
     'FE' => [
         'debug' => false,
         'loginSecurityLevel' => 'rsa',

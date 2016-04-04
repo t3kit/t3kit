@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:50:20Z" product-name="indexed_search">
+		<header/>
+		<body>
+			<trans-unit id="catdocDisabled">
+				<source>catdoc tools (Word-files) disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="catdocNotFound">
+				<source>'catdoc' tool for reading Word-files was not found in path '%scatdoc'</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.CSV">
+				<source>Comma-Separated Values (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.DOC">
+				<source>MS Word (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.HTML">
+				<source>Webpages (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.images">
+				<source>Images (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.ODP">
+				<source>ODF Presentation (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.ODS">
+				<source>ODF Spreadsheet (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.ODT">
+				<source>ODF Text (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.PDF">
+				<source>PDF (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.PP">
+				<source>MS Powerpoint (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.RTF">
+				<source>Rich Text Format (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.SXC">
+				<source>OpenOffice.org Calc (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.SXI">
+				<source>OpenOffice.org Impress (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.SXW">
+				<source>OpenOffice.org Writer (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.TXT">
+				<source>Textfiles (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.XLS">
+				<source>MS Excel (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="extension.XML">
+				<source>Extensible Markup Language (*.%s)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ignoreExtensions">
+				<source>Extension %s was set to be ignored.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mod2_indexed_search" approved="yes">
+				<source>Indexed search statistics</source>
+				<target state="translated">Statistik för indexerad sökning</target>
+			</trans-unit>
+			<trans-unit id="mod_indexed_search" approved="yes">
+				<source>Indexed search</source>
+				<target state="translated">Indexerad sökning</target>
+			</trans-unit>
+			<trans-unit id="pdfToolsDisabled">
+				<source>PDF tools disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pdfToolsFailed">
+				<source>PDFtoText Failed on this document: '%s'. Maybe the PDF file is locked for printing or encrypted.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pdfToolsNotFound">
+				<source>PDF tools was not found in paths '%1$spdftotext' and/or '%1$spdfinfo'"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ppthtmlDisabled">
+				<source>ppthtml tools (Powerpoint-files) disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ppthtmlNotFound">
+				<source>'ppthtml' tool for reading Powerpoint-files was not found in path '%sppthtml'</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="unrtfDisabled">
+				<source>unrtf tool (RTF-files) disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="unrtfNotFound">
+				<source>'unrtf' tool for reading RTF-files was not found in path '%sunrtf'</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="unzipDisabled">
+				<source>unzip tool (OpenOffice.org-files) disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="unzipNotFound">
+				<source>'unzip' tool for reading OpenOffice.org-files was not found in path '%sunzip'</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="xlhtmlDisabled">
+				<source>xlhtml tools (Excel-files) disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="xlhtmlNotFound">
+				<source>'xlhtml' tool for reading Excel-files was not found in path '%sxlhtml'</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

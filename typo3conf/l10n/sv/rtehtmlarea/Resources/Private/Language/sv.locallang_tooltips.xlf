@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:24Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="about" approved="yes">
+				<source>About this editor</source>
+				<target state="translated">Om detta redigeringsverktyg</target>
+			</trans-unit>
+			<trans-unit id="bold" approved="yes">
+				<source>Bold</source>
+				<target state="translated">Fet</target>
+			</trans-unit>
+			<trans-unit id="copy" approved="yes">
+				<source>Copy selection</source>
+				<target state="translated">Kopiera markering</target>
+			</trans-unit>
+			<trans-unit id="createlink" approved="yes">
+				<source>Insert Web Link</source>
+				<target state="translated">Infoga hyperlänk</target>
+			</trans-unit>
+			<trans-unit id="cut" approved="yes">
+				<source>Cut selection</source>
+				<target state="translated">Klipp ut markering</target>
+			</trans-unit>
+			<trans-unit id="fontname" approved="yes">
+				<source>Font</source>
+				<target state="translated">Teckensnitt</target>
+			</trans-unit>
+			<trans-unit id="fontsize" approved="yes">
+				<source>Font size</source>
+				<target state="translated">Teckenstorlek</target>
+			</trans-unit>
+			<trans-unit id="forecolor" approved="yes">
+				<source>Font Color</source>
+				<target state="translated">Teckenfärg</target>
+			</trans-unit>
+			<trans-unit id="formatblock" approved="yes">
+				<source>Type of paragragh</source>
+				<target state="translated">Typ av stycke</target>
+			</trans-unit>
+			<trans-unit id="hilitecolor" approved="yes">
+				<source>Background Color</source>
+				<target state="translated">Bakgrundsfärg</target>
+			</trans-unit>
+			<trans-unit id="htmlmode" approved="yes">
+				<source>Toggle HTML Source</source>
+				<target state="translated">Visa HTML-källkod</target>
+			</trans-unit>
+			<trans-unit id="indent" approved="yes">
+				<source>Increase Indent</source>
+				<target state="translated">Öka indrag</target>
+			</trans-unit>
+			<trans-unit id="inserthorizontalrule" approved="yes">
+				<source>Horizontal Rule</source>
+				<target state="translated">Horisontell linje</target>
+			</trans-unit>
+			<trans-unit id="insertimage" approved="yes">
+				<source>Insert/Modify Image</source>
+				<target state="translated">Infoga/Ändra bild</target>
+			</trans-unit>
+			<trans-unit id="insertorderedlist" approved="yes">
+				<source>Ordered List</source>
+				<target state="translated">Numrerad lista</target>
+			</trans-unit>
+			<trans-unit id="inserttable" approved="yes">
+				<source>Insert Table</source>
+				<target state="translated">Infoga tabell</target>
+			</trans-unit>
+			<trans-unit id="insertunorderedlist" approved="yes">
+				<source>Bulleted List</source>
+				<target state="translated">Punktlista</target>
+			</trans-unit>
+			<trans-unit id="italic" approved="yes">
+				<source>Italic</source>
+				<target state="translated">Kursiv</target>
+			</trans-unit>
+			<trans-unit id="justifycenter" approved="yes">
+				<source>Justify Center</source>
+				<target state="translated">Centrera</target>
+			</trans-unit>
+			<trans-unit id="justifyfull" approved="yes">
+				<source>Justify Full</source>
+				<target state="translated">Marginaljustera</target>
+			</trans-unit>
+			<trans-unit id="justifyleft" approved="yes">
+				<source>Justify Left</source>
+				<target state="translated">Vänsterjustera</target>
+			</trans-unit>
+			<trans-unit id="justifyright" approved="yes">
+				<source>Justify Right</source>
+				<target state="translated">Högerjustera</target>
+			</trans-unit>
+			<trans-unit id="killword" approved="yes">
+				<source>Clear MSOffice tags</source>
+				<target state="translated">Rensa bort MSOffice-koder</target>
+			</trans-unit>
+			<trans-unit id="lefttoright" approved="yes">
+				<source>Direction left to right</source>
+				<target state="translated">Riktning vänster till höger</target>
+			</trans-unit>
+			<trans-unit id="outdent" approved="yes">
+				<source>Decrease Indent</source>
+				<target state="translated">Minska indrag</target>
+			</trans-unit>
+			<trans-unit id="paste" approved="yes">
+				<source>Paste from clipboard</source>
+				<target state="translated">Klistra in från klippbordet</target>
+			</trans-unit>
+			<trans-unit id="popupeditor" approved="yes">
+				<source>Enlarge the editor</source>
+				<target state="translated">Förstora redigeringsverktyget</target>
+			</trans-unit>
+			<trans-unit id="print" approved="yes">
+				<source>Print document</source>
+				<target state="translated">Skriv ut dokumentet</target>
+			</trans-unit>
+			<trans-unit id="redo" approved="yes">
+				<source>Redo the last action</source>
+				<target state="translated">Gör om senaste ändring</target>
+			</trans-unit>
+			<trans-unit id="removeformat" approved="yes">
+				<source>Remove formatting</source>
+				<target state="translated">Rensa bort formatering</target>
+			</trans-unit>
+			<trans-unit id="righttoleft" approved="yes">
+				<source>Direction right to left</source>
+				<target state="translated">Riktning höger till vänster</target>
+			</trans-unit>
+			<trans-unit id="strikethrough" approved="yes">
+				<source>Strikethrough</source>
+				<target state="translated">Genomstruken</target>
+			</trans-unit>
+			<trans-unit id="subscript" approved="yes">
+				<source>Subscript</source>
+				<target state="translated">Nedsänkt</target>
+			</trans-unit>
+			<trans-unit id="superscript" approved="yes">
+				<source>Superscript</source>
+				<target state="translated">Upphöjd</target>
+			</trans-unit>
+			<trans-unit id="textindicator" approved="yes">
+				<source>Current style</source>
+				<target state="translated">Nuvarande stil</target>
+			</trans-unit>
+			<trans-unit id="underline" approved="yes">
+				<source>Underline</source>
+				<target state="translated">Understruken</target>
+			</trans-unit>
+			<trans-unit id="undo" approved="yes">
+				<source>Undo the last action</source>
+				<target state="translated">Ångra senaste ändring</target>
+			</trans-unit>
+			<trans-unit id="unlink" approved="yes">
+				<source>Remove link</source>
+				<target state="translated">Ta bort länk</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="search-text"/>
+			<label index="search-start"/>
+			<label index="search-noresult"/>
+			<label index="search-subject"/>
+			<label index="search-minimumDate"/>
+			<label index="search-maximumDate"/>
+			<label index="more-link"/>
+			<label index="back-link"/>
+			<label index="related-news"/>
+			<label index="related-files"/>
+			<label index="related-links"/>
+			<label index="author"/>
+			<label index="author_simple"/>
+			<label index="paginate_overall"/>
+			<label index="paginate_next"/>
+			<label index="paginate_previous"/>
+			<label index="categories"/>
+			<label index="tags"/>
+			<label index="entry"/>
+			<label index="entries"/>
+			<label index="month.01"/>
+			<label index="month.02"/>
+			<label index="month.03"/>
+			<label index="month.04"/>
+			<label index="month.05"/>
+			<label index="month.06"/>
+			<label index="month.07"/>
+			<label index="month.08"/>
+			<label index="month.09"/>
+			<label index="month.10"/>
+			<label index="month.11"/>
+			<label index="month.12"/>
+			<label index="day.1"/>
+			<label index="day.2"/>
+			<label index="day.3"/>
+			<label index="day.4"/>
+			<label index="day.5"/>
+			<label index="day.6"/>
+			<label index="day.7"/>
+			<label index="dateFormat"/>
+			<label index="list_nonewsfound"/>
+			<label index="list_nocategoriesfound"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

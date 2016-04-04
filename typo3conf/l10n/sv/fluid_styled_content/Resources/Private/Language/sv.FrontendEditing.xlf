@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:17:43Z" product-name="fluid_styled_content">
+		<header/>
+		<body>
+			<trans-unit id="editIcon.bullets">
+				<source>Edit bullet list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.header">
+				<source>Edit header</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.html">
+				<source>Edit pure HTML content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.list">
+				<source>Change/configure plugin</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.menu">
+				<source>Edit menu/sitemap</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.shortcut">
+				<source>Edit record list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.table">
+				<source>Edit table</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.textmedia">
+				<source>Edit text &amp; media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editIcon.uploads">
+				<source>Edit file list</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

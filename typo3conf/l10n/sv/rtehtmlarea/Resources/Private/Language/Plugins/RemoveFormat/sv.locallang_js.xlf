@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:27Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="All" approved="yes">
+				<source>All</source>
+				<target state="translated">Allt</target>
+			</trans-unit>
+			<trans-unit id="All HTML:" approved="yes">
+				<source>All HTML tags:</source>
+				<target state="translated">All HTML-kod:</target>
+			</trans-unit>
+			<trans-unit id="Cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="Cleaning Area" approved="yes">
+				<source>Cleaning Area</source>
+				<target state="translated">Område att rensa</target>
+			</trans-unit>
+			<trans-unit id="Cleaning options" approved="yes">
+				<source>Type(s) of format to remove</source>
+				<target state="translated">Typ av formatering att ta bort</target>
+			</trans-unit>
+			<trans-unit id="Formatting:" approved="yes">
+				<source>HTML Format:</source>
+				<target state="translated">HTML formatering:</target>
+			</trans-unit>
+			<trans-unit id="Images:" approved="yes">
+				<source>Images:</source>
+				<target state="translated">Bilder:</target>
+			</trans-unit>
+			<trans-unit id="MS Word Formatting:" approved="yes">
+				<source>MS Word Format:</source>
+				<target state="translated">MS Word formatering:</target>
+			</trans-unit>
+			<trans-unit id="OK" approved="yes">
+				<source>OK</source>
+				<target state="translated">OK</target>
+			</trans-unit>
+			<trans-unit id="Remove formatting" approved="yes">
+				<source>Remove format</source>
+				<target state="translated">Ta bort formatering</target>
+			</trans-unit>
+			<trans-unit id="RemoveFormatTooltip" approved="yes">
+				<source>Remove format</source>
+				<target state="translated">Ta bort formatering</target>
+			</trans-unit>
+			<trans-unit id="Selection" approved="yes">
+				<source>Selected text</source>
+				<target state="translated">Markering</target>
+			</trans-unit>
+			<trans-unit id="Select the type of formatting you wish to remove." approved="yes">
+				<source>Select the type(s) of format to remove.</source>
+				<target state="translated">Välj typ av formatering att ta bort.</target>
+			</trans-unit>
+			<trans-unit id="Spaces">
+				<source>Non-breaking spaces:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Typographical punctuation:">
+				<source>Typographical punctuation:</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="all">Alla</label>
+			<label index="allpages">Statistik för alla sidor. Välj en sida med indexerat sökformulär för att se mera statistik</label>
+			<label index="justthispage">Statistik endast för denna sida</label>
+			<label index="last24hours">Senaste 24 timmar</label>
+			<label index="last30days">Senaste 30 dagar</label>
+			<label index="noresults">Inget resultat</label>
+			<label index="title">Statistik för indexerad sökning</label>
+			<label index="title2">Lista över mest sökta ord</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

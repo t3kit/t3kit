@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:15Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="mlang_labels_tabdescr" approved="yes">
+				<source>The Web&gt;Info module is focused on statistic information about pages. This includes statistics of pagehits and a changelog allowing browsing of page history changes. An overview of the number of records on each page as well as page settings presented in a classic tree structure is provided.</source>
+				<target state="translated">Modulen Webb&gt;Info fokuserar på statistisk information om sidor. Här finns statistik över hur många gånger sidorna besökts och en loggfil över hur sidan ändrats, så du kan med andra ord se sidans hela historia. Här kan du också få en överblick över mängden element på varje sida. Sidans inställningar presenteras i en klassisk trädstruktur.</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" approved="yes">
+				<source>Page related information, eg. hit statistics, change log, record counts</source>
+				<target state="translated">Sidrelaterad information, t.ex. besöksstatistik, ändringsloggar och elementräknare</target>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" approved="yes">
+				<source>Info</source>
+				<target state="translated">Info</target>
+			</trans-unit>
+			<trans-unit id="title" approved="yes">
+				<source>Page information</source>
+				<target state="translated">Sidinformation</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

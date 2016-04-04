@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T05:05:59Z" product-name="workspaces">
+		<header/>
+		<body>
+			<trans-unit id="actionSendToStage">
+				<source>Send to stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cancel">
+				<source>cancel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="chooseAction">
+				<source>choose Action</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="chooseMassAction">
+				<source>choose Mass Action</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="close">
+				<source>Close</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.actions">
+				<source>Actions</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.changeDate">
+				<source>Modification</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.difference">
+				<source>Difference</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.livePath">
+				<source>Live-Path</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.liveTitle">
+				<source>Live-Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.oid">
+				<source>Live-Id</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.stage">
+				<source>Current Stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.uid">
+				<source>WS-Id</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.workspaceName">
+				<source>Workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.wsPath">
+				<source>Path</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.wsSwapColumn">
+				<source>Swap workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="column.wsTitle">
+				<source>Changed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="comments">
+				<source>User comments for &lt;b&gt;step {0} of stage&lt;/b&gt; "{1}"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="current_step">
+				<source>&lt;b&gt;Current stage step&lt;/b&gt;: {0} (&lt;b&gt;{1}&lt;/b&gt;/{2})</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="editorInLive" xml:space="preserve">
+				<source>You are in LIVE workspace. You have to select a draft workspace before you can review and
+					publish changes.
+				</source>
+			<target/></trans-unit>
+			<trans-unit id="error.getStageTitle.stageNotFound">
+				<source>Stage not found</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.noResponse">
+				<source>The server did not send any response whether the action was successful.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.sendToNextStage.noRecordFound">
+				<source>The record element could not be found.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.sendToPrevStage.noPreviousStage">
+				<source>The record element is already in editing stage, there is no previous stage.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.stageId.integer">
+				<source>StageId is supposed to be an integer</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="error.stageId.invalid" xml:space="preserve">
+				<source>The stage to be used seems to be invalid and cannot be used. Please consider to use the update
+					wizard in the install tool to fix this.
+				</source>
+			<target/></trans-unit>
+			<trans-unit id="info.elementAlreadyModified">
+				<source>Element is in workspace stage "%s", modifications will send it back to "%s".</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="info.newpage">
+				<source>New Page!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="info.newpage.detail">
+				<source>The previewed page has been created in a workspace and has no live counterpart.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="integrity.dependsOnDefaultLanguageRecord">
+				<source>Record "%s" depends on default language record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="integrity.hasIssuesDescription">
+				<source>The integrity check discovered several issues, see status icons infront of each record for further details.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="integrity.hasIssuesQuestion">
+				<source>Do you want to continue?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="integrity.isDefaultLanguageRecord">
+				<source>Default language record for record "%s"</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="item">
+				<source>item</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="items">
+				<source>items</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_doaction_discard">
+				<source>Discard</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_doaction_generatePreviewLinks">
+				<source>Generate Workspace Preview Links</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_doaction_publish">
+				<source>Publish</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_doaction_swap">
+				<source>Swap</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="language.allLanguages">
+				<source>all languages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="language.selectLanguage">
+				<source>all languages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend.deleted">
+				<source>deleted</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend.edited">
+				<source>edited</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend.hidden">
+				<source>hidden</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend.label">
+				<source>Legend:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend.moved">
+				<source>moved</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend.new">
+				<source>created</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="live_workspace">
+				<source>Live Workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="ok">
+				<source>ok</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="path">
+				<source>&lt;b&gt;Path&lt;/b&gt;: {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="previewLink">
+				<source>Preview Link</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.listView">
+				<source>List view</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.livePreview">
+				<source>Live</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.livePreviewDetail">
+				<source>Click this element to hide the workspace version and see the live version of the page.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.modeHbox">
+				<source>Horizontal</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.modeSlider">
+				<source>Slider</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.modeVbox">
+				<source>Vertical</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.visualPreview">
+				<source>Visual preview</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.workspacePreview">
+				<source>Workspace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="preview.workspacePreviewDetail">
+				<source>Click this element to hide the live version and see the workspace version of the page.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="publish_execute_action_option">
+				<source>Publish to LIVE</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="recordsToDisplay">
+				<source>Records to display</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="reviewandpublish">
+				<source>review and publish</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rowDetails">
+				<source>Row details...</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="runMassAction.done">
+				<source>Done processing %d elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="runMassAction.init">
+				<source>init</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="stage">
+				<source>Stage {0}</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="status.error">
+				<source>Error</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="status.info">
+				<source>Information</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="status.warning">
+				<source>Warning</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Workspaces</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.affectWholeWorkspace" xml:space="preserve">
+				<source>Please note that this will affect all changes in the current workspace, which may be more than
+					you are currently seeing on your screen.
+				</source>
+			<target/></trans-unit>
+			<trans-unit id="tooltip.discardAll">
+				<source>Do you really want to discard changes from the whole workspace?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.discardSelected">
+				<source>Really discard changes of the selected elements?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.discardVersion">
+				<source>Discard workspace version of record.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.editElementAction">
+				<source>Edit element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.generatePagePreview">
+				<source>Generate page preview links</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.openPage">
+				<source>Open version of page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.publishAll">
+				<source>Really publish entire workspace?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.publishSelected">
+				<source>Really publish selected elements?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.sendToNextStage">
+				<source>Send record to next Stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.sendToPrevStage">
+				<source>Send record to previous Stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.showHistory">
+				<source>Show history of workspace version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.swap">
+				<source>Swap live and workspace versions of record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.swapAll">
+				<source>Really swap entire workspace?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.swapSelected">
+				<source>Really swap selected elements?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tooltip.viewElementAction">
+				<source>Preview element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="warning.oldStyleWorkspaceInUser" xml:space="preserve">
+				<source>It seems that you're still using old-style workspace. Please use the update scripts in the TYPO3
+					Install Tool to run the necessary updates. If you continue using this module without migrating your
+					workspace you might loose data.
+				</source>
+			<target/></trans-unit>
+			<trans-unit id="window.discardAll.message">
+				<source>Do you really want to discard all versions from page?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.discardAll.title">
+				<source>Discard all workspace version of current page.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.discard.message">
+				<source>Do you really want to discard this version from workspace?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.discard.title">
+				<source>Discard workspace version of record.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.massAction.title">
+				<source>Prepare to start mass action</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.selectionAction.title">
+				<source>Prepare to execute actions on selection</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.sendToNextStageWindow.additionalRecipients">
+				<source>Additional recipients</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.sendToNextStageWindow.comments">
+				<source>Comments</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.sendToNextStageWindow.itemsWillBeSentTo">
+				<source>The selected element(s) will be sent to</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.sendToNextStageWindow.sendMailTo">
+				<source>Send mail to</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.swap.message">
+				<source>Do you really want to swap this version?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="window.swap.title">
+				<source>Swap version</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="workspacelist">
+				<source>Workspace List</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="workspace_version">
+				<source>Workspace version</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

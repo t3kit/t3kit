@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:50:20Z" product-name="indexed_search">
+		<header/>
+		<body>
+			<trans-unit id="default_search_word_entry" approved="yes">
+				<source>Search for</source>
+				<target state="translated">Sök efter</target>
+				<note>100%</note>
+			</trans-unit>
+			<trans-unit id="form_atATime" approved="yes">
+				<source>at a time</source>
+				<target state="translated">på en gång</target>
+			</trans-unit>
+			<trans-unit id="form_extResume" approved="yes">
+				<source>Extended resume</source>
+				<target state="translated">Uttökad resumé</target>
+			</trans-unit>
+			<trans-unit id="form_freeIndexUid" approved="yes">
+				<source>Category:</source>
+				<target state="translated">Kategori:</target>
+			</trans-unit>
+			<trans-unit id="form_fromSection" approved="yes">
+				<source>From section:</source>
+				<target state="translated">Från sektion:</target>
+			</trans-unit>
+			<trans-unit id="form_legend" approved="no">
+				<source>Search form</source>
+				<target state="needs-translation">Sök efter</target>
+				<note>90%</note>
+			</trans-unit>
+			<trans-unit id="form_match" approved="yes">
+				<source>Match:</source>
+				<target state="translated">Stämma överens med:</target>
+			</trans-unit>
+			<trans-unit id="form_orderBy" approved="yes">
+				<source>Order by:</source>
+				<target state="translated">Ordna enligt:</target>
+			</trans-unit>
+			<trans-unit id="form_searchFor" approved="yes">
+				<source>Search for:</source>
+				<target state="translated">Sök efter:</target>
+			</trans-unit>
+			<trans-unit id="form_searchIn" approved="yes">
+				<source>Search in:</source>
+				<target state="translated">Sök i:</target>
+			</trans-unit>
+			<trans-unit id="form_style" approved="yes">
+				<source>Style:</source>
+				<target state="translated">Stil:</target>
+			</trans-unit>
+			<trans-unit id="inNsection" approved="yes">
+				<source>in %s section:</source>
+				<target state="translated">i sektion %s :</target>
+			</trans-unit>
+			<trans-unit id="inNsections" approved="yes">
+				<source>in %s sections:</source>
+				<target state="translated">i sektionerna %s :</target>
+			</trans-unit>
+			<trans-unit id="inSection" approved="yes">
+				<source>in the section</source>
+				<target state="translated">i sektionen</target>
+			</trans-unit>
+			<trans-unit id="link_advancedSearch" approved="yes">
+				<source>Advanced search</source>
+				<target state="translated">Utökad sökning</target>
+			</trans-unit>
+			<trans-unit id="link_regularSearch" approved="yes">
+				<source>Regular search</source>
+				<target state="translated">Vanlig sökning</target>
+			</trans-unit>
+			<trans-unit id="local_operator_AND" approved="yes">
+				<source>AND</source>
+				<target state="translated">AND</target>
+			</trans-unit>
+			<trans-unit id="local_operator_NOT" approved="yes">
+				<source>NOT</source>
+				<target state="translated">NOT</target>
+			</trans-unit>
+			<trans-unit id="local_operator_OR" approved="yes">
+				<source>OR</source>
+				<target state="translated">OR</target>
+			</trans-unit>
+			<trans-unit id="makerating_addToCurrentSearch" approved="yes">
+				<source>Add to current search words</source>
+				<target state="translated">Lägg till nuvarande sökord</target>
+			</trans-unit>
+			<trans-unit id="maketitle_matches" approved="yes">
+				<source>matches</source>
+				<target state="translated">likheter</target>
+			</trans-unit>
+			<trans-unit id="noResults" approved="yes">
+				<source>NO results found.</source>
+				<target state="translated">INGET resultat på sökningen.</target>
+			</trans-unit>
+			<trans-unit id="opt_defOp_0" approved="yes">
+				<source>All words (AND)</source>
+				<target state="translated">Alla ord (AND)</target>
+			</trans-unit>
+			<trans-unit id="opt_defOp_1" approved="yes">
+				<source>Any words (OR)</source>
+				<target state="translated">Något av orden (OR)</target>
+			</trans-unit>
+			<trans-unit id="opt_desc_0" approved="yes">
+				<source>Highest first</source>
+				<target state="translated">Högsta först</target>
+			</trans-unit>
+			<trans-unit id="opt_desc_1" approved="yes">
+				<source>Lowest first</source>
+				<target state="translated">Lägsta först</target>
+			</trans-unit>
+			<trans-unit id="opt_freeIndexUid_0" approved="yes">
+				<source>Pages</source>
+				<target state="translated">Sidor</target>
+			</trans-unit>
+			<trans-unit id="opt_freeIndexUid_-1" approved="yes">
+				<source>All, mixed</source>
+				<target state="translated">Alla, blandat</target>
+			</trans-unit>
+			<trans-unit id="opt_freeIndexUid_-2" approved="yes">
+				<source>All, categorized</source>
+				<target state="translated">Alla, enligt kategori</target>
+			</trans-unit>
+			<trans-unit id="opt_freeIndexUid_header_0" approved="yes">
+				<source>Website Pages</source>
+				<target state="translated">Webbsidor</target>
+			</trans-unit>
+			<trans-unit id="opt_freeIndexUid_header_-1" approved="yes">
+				<source>Mixed categories</source>
+				<target state="translated">Blandade kategorier</target>
+			</trans-unit>
+			<trans-unit id="opt_group_flat" approved="yes">
+				<source>Flat list</source>
+				<target state="translated">Vanlig lista</target>
+			</trans-unit>
+			<trans-unit id="opt_group_sections" approved="yes">
+				<source>Section hierarchy</source>
+				<target state="translated">Sektionens hierarki</target>
+			</trans-unit>
+			<trans-unit id="opt_lang_0" approved="yes">
+				<source>Default</source>
+				<target state="translated">Standard</target>
+			</trans-unit>
+			<trans-unit id="opt_lang_-1" approved="yes">
+				<source>All languages</source>
+				<target state="translated">Alla språk</target>
+			</trans-unit>
+			<trans-unit id="opt_media_0" approved="yes">
+				<source>Internal pages</source>
+				<target state="translated">Interna sidor</target>
+			</trans-unit>
+			<trans-unit id="opt_media_-1" approved="yes">
+				<source>All media</source>
+				<target state="translated">All media</target>
+			</trans-unit>
+			<trans-unit id="opt_media_-2" approved="yes">
+				<source>All External</source>
+				<target state="translated">Alla yttre sidor</target>
+			</trans-unit>
+			<trans-unit id="opt_order_crdate" approved="yes">
+				<source>Creation date</source>
+				<target state="translated">Skapad datum</target>
+			</trans-unit>
+			<trans-unit id="opt_order_mtime" approved="yes">
+				<source>Date Modified</source>
+				<target state="translated">Ändringsdatum</target>
+			</trans-unit>
+			<trans-unit id="opt_order_rank_count" approved="yes">
+				<source>Number of words</source>
+				<target state="translated">Antal ord</target>
+			</trans-unit>
+			<trans-unit id="opt_order_rank_first" approved="yes">
+				<source>Close to top</source>
+				<target state="translated">Nära toppen</target>
+			</trans-unit>
+			<trans-unit id="opt_order_rank_flag" approved="yes">
+				<source>Weight/Frequency</source>
+				<target state="translated">Vikt/Frekvens</target>
+			</trans-unit>
+			<trans-unit id="opt_order_rank_freq" approved="yes">
+				<source>Frequency</source>
+				<target state="translated">Frekvens</target>
+			</trans-unit>
+			<trans-unit id="opt_order_title" approved="yes">
+				<source>Document title</source>
+				<target state="translated">Dokumentets titel</target>
+			</trans-unit>
+			<trans-unit id="opt_RL1" approved="yes">
+				<source>Level 1:</source>
+				<target state="translated">Nivå 1:</target>
+			</trans-unit>
+			<trans-unit id="opt_RL1ALL" approved="yes">
+				<source>All pages on level 1</source>
+				<target state="translated">Alla sidor på nivå 1</target>
+			</trans-unit>
+			<trans-unit id="opt_RL2" approved="yes">
+				<source>- Level 2:</source>
+				<target state="translated">- Nivå 2:</target>
+			</trans-unit>
+			<trans-unit id="opt_RL2ALL" approved="yes">
+				<source>- All pages on level 2</source>
+				<target state="translated">- Alla sidor på nivå 2</target>
+			</trans-unit>
+			<trans-unit id="opt_sections_0" approved="yes">
+				<source>Whole site</source>
+				<target state="translated">Hela webbplatsen</target>
+			</trans-unit>
+			<trans-unit id="opt_sections_-1" approved="yes">
+				<source>Only this page</source>
+				<target state="translated">Endast denna sida</target>
+			</trans-unit>
+			<trans-unit id="opt_sections_-2" approved="yes">
+				<source>Top + level 1</source>
+				<target state="translated">Högsta nivå och följande</target>
+			</trans-unit>
+			<trans-unit id="opt_sections_-3" approved="yes">
+				<source>Level 2 and out</source>
+				<target state="translated">Nivå 2 och neråt</target>
+			</trans-unit>
+			<trans-unit id="opt_type_0" approved="yes">
+				<source>Distinct word</source>
+				<target state="translated">Hela ordet</target>
+			</trans-unit>
+			<trans-unit id="opt_type_1" approved="yes">
+				<source>Part of word</source>
+				<target state="translated">Del av ord</target>
+			</trans-unit>
+			<trans-unit id="opt_type_10" approved="yes">
+				<source>Sounds like</source>
+				<target state="translated">Låter som</target>
+			</trans-unit>
+			<trans-unit id="opt_type_2" approved="yes">
+				<source>First part of word</source>
+				<target state="translated">Första del av ord</target>
+			</trans-unit>
+			<trans-unit id="opt_type_20" approved="yes">
+				<source>Sentence</source>
+				<target state="translated">Mening</target>
+			</trans-unit>
+			<trans-unit id="opt_type_3" approved="yes">
+				<source>Last part of word</source>
+				<target state="translated">Slutdel av ord</target>
+			</trans-unit>
+			<trans-unit id="pi_list_browseresults_display" approved="no">
+				<source>Displaying results ###TAG_BEGIN###%1$s to %2$s###TAG_END### out of ###TAG_BEGIN###%3$s###TAG_END###</source>
+				<target state="needs-translation">Visar result ###TAG_BEGIN###%s till %s###TAG_END### av ###TAG_BEGIN###%s###TAG_END###</target>
+			</trans-unit>
+			<trans-unit id="pi_list_browseresults_next" approved="yes">
+				<source>Next &gt;</source>
+				<target state="translated">Nästa &gt;</target>
+			</trans-unit>
+			<trans-unit id="pi_list_browseresults_page" approved="yes">
+				<source>Page</source>
+				<target state="translated">Sida</target>
+			</trans-unit>
+			<trans-unit id="pi_list_browseresults_prev" approved="yes">
+				<source>&lt; Previous</source>
+				<target state="translated">&lt; Föregående</target>
+			</trans-unit>
+			<trans-unit id="pi_wizard_description">
+				<source>Search based on a database stored index.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="pi_wizard_title">
+				<source>Indexed Search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="res_created" approved="yes">
+				<source>Created:</source>
+				<target state="translated">Skapad:</target>
+			</trans-unit>
+			<trans-unit id="res_memberGroups" approved="yes">
+				<source>Require membership of group numbers %s</source>
+				<target state="translated">Medlemsskap i grupper nr %s är nödvändig</target>
+			</trans-unit>
+			<trans-unit id="res_modified" approved="yes">
+				<source>Modified:</source>
+				<target state="translated">Ändrad:</target>
+			</trans-unit>
+			<trans-unit id="res_noResume" approved="yes">
+				<source>Note: This search hit may not accurately match the content on this page. The page resume cannot be shown.</source>
+				<target state="translated">Obs! Detta sökresultat kanske inte motsvarar innehållet på sidan. Sidans sammanfattning går inte att visa.</target>
+			</trans-unit>
+			<trans-unit id="res_otherMatching" approved="yes">
+				<source>Other matching pages in the same document:</source>
+				<target state="translated">Andra liknande sidor i samma dokument:</target>
+			</trans-unit>
+			<trans-unit id="res_otherPageAsWell" approved="yes">
+				<source>INFO: There was another page indexed as well... Probably indexed with another or no usergroup.</source>
+				<target state="translated">INFO: Också en annan sida indexerades... Antagligen indexerad med en annan eller ingen användargrupp.</target>
+			</trans-unit>
+			<trans-unit id="res_path" approved="yes">
+				<source>Path:</source>
+				<target state="translated">Sökväg:</target>
+			</trans-unit>
+			<trans-unit id="res_size" approved="yes">
+				<source>Size:</source>
+				<target state="translated">Storlek:</target>
+			</trans-unit>
+			<trans-unit id="rules_header" approved="yes">
+				<source>Rules:</source>
+				<target state="translated">Regler:</target>
+			</trans-unit>
+			<trans-unit id="rules_text" xml:space="preserve" approved="yes">
+				<source>Only words with 2 or more characters are accepted
+Max 200 chars total
+Space is used to split words, "" can be used to search for a whole string (not indexed search then)
+AND, OR and NOT are prefix words, overruling the default operator
++/|/- equals AND, OR and NOT as operators.
+All search words are converted to lowercase.</source>
+			<target state="translated">Endast ord med 2 eller fler tecken accepteras. Max 200 tecken totalt. Använd mellanslag mellan ord, "" kan användas för att söka efter en hel mening (ej i indexerad sökning). AND, OR och NOT är bestämmande ord som går före standardoperationerna. +/|/- motsvarar AND, OR och NOT som operatörer. Alla sökord ändras till gemena.</target></trans-unit>
+			<trans-unit id="searchFor" approved="yes">
+				<source>Search for</source>
+				<target state="translated">Sök efter</target>
+			</trans-unit>
+			<trans-unit id="searchFor_and" approved="yes">
+				<source>and</source>
+				<target state="translated">och</target>
+			</trans-unit>
+			<trans-unit id="searchFor_butNot" approved="yes">
+				<source>but not</source>
+				<target state="translated">men inte</target>
+			</trans-unit>
+			<trans-unit id="searchFor_or" approved="yes">
+				<source>or</source>
+				<target state="translated">eller</target>
+			</trans-unit>
+			<trans-unit id="submit_button_label" approved="yes">
+				<source>Search</source>
+				<target state="translated">Sök</target>
+			</trans-unit>
+			<trans-unit id="unnamedSection" approved="yes">
+				<source>Other</source>
+				<target state="translated">Annat</target>
+			</trans-unit>
+			<trans-unit id="word_page" approved="yes">
+				<source>page</source>
+				<target state="translated">sida</target>
+			</trans-unit>
+			<trans-unit id="word_pages" approved="yes">
+				<source>pages</source>
+				<target state="translated">sidor</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

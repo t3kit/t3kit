@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2015-03-17T08:51:01Z" product-name="realurl" target-language="sv">
+    <header/>
+    <body>
+      <trans-unit id="title" xml:space="preserve">
+        <source>Speaking URL Management</source>
+      <target></target></trans-unit>
+      <trans-unit id="no_page_id" xml:space="preserve">
+        <source>Please, select a page from the page tree.</source>
+      <target></target></trans-unit>
+      <trans-unit id="depth" xml:space="preserve">
+        <source>Depth:</source>
+      <target></target></trans-unit>
+      <trans-unit id="function" xml:space="preserve">
+        <source>Show:</source>
+      <target></target></trans-unit>
+      <trans-unit id="default_language" xml:space="preserve">
+        <source>Default</source>
+      <target></target></trans-unit>
+      <trans-unit id="all_languages" xml:space="preserve">
+        <source>All</source>
+      <target></target></trans-unit>
+      <trans-unit id="language" xml:space="preserve">
+        <source>Language:</source>
+      <target></target></trans-unit>
+      <trans-unit id="search_path" xml:space="preserve">
+        <source>Path:</source>
+      <target></target></trans-unit>
+      <trans-unit id="look_up" xml:space="preserve">
+        <source>Look up</source>
+      <target></target></trans-unit>
+      <trans-unit id="show_all" xml:space="preserve">
+        <source>Show all</source>
+      <target></target></trans-unit>
+      <trans-unit id="displaying_results" xml:space="preserve">
+        <source>Results %1$d-%2$d of %3$d</source>
+      <target></target></trans-unit>
+      <trans-unit id="all_domains" xml:space="preserve">
+        <source>-- All domains --</source>
+      <target></target></trans-unit>
+    </body>
+  </file>
+</xliff>

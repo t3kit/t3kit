@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="About" approved="yes">
+				<source>About</source>
+				<target state="translated">Om</target>
+			</trans-unit>
+			<trans-unit id="About HTMLArea" approved="yes">
+				<source>About htmlArea RTE</source>
+				<target state="translated">Om htmlArea RTE</target>
+			</trans-unit>
+			<trans-unit id="Absbottom" approved="yes">
+				<source>Absbottom</source>
+				<target state="translated">Absolut botten</target>
+			</trans-unit>
+			<trans-unit id="Absmiddle" approved="yes">
+				<source>Absmiddle</source>
+				<target state="translated">Absolut mitt</target>
+			</trans-unit>
+			<trans-unit id="Alignment:" approved="yes">
+				<source>Text alignment:</source>
+				<target state="translated">Textjustering:</target>
+			</trans-unit>
+			<trans-unit id="Alignment not set" approved="yes">
+				<source>Not set</source>
+				<target state="translated">Ej angivet</target>
+			</trans-unit>
+			<trans-unit id="All rights reserved." approved="yes">
+				<source>All Rights Reserved.</source>
+				<target state="translated">Alla rättigheter förbehållna.</target>
+			</trans-unit>
+			<trans-unit id="Alternate text:" approved="yes">
+				<source>Alternate text:</source>
+				<target state="translated">Alternativ text:</target>
+			</trans-unit>
+			<trans-unit id="Baseline" approved="yes">
+				<source>Baseline</source>
+				<target state="translated">Baslinje</target>
+			</trans-unit>
+			<trans-unit id="Block style label" approved="yes">
+				<source>Block style:</source>
+				<target state="translated">Blockstil:</target>
+			</trans-unit>
+			<trans-unit id="Border" approved="yes">
+				<source>Border</source>
+				<target state="translated">Ram</target>
+			</trans-unit>
+			<trans-unit id="Border thickness:" approved="yes">
+				<source>Border thickness:</source>
+				<target state="translated">Ramens tjocklek:</target>
+			</trans-unit>
+			<trans-unit id="Bottom" approved="yes">
+				<source>Bottom</source>
+				<target state="translated">Botten</target>
+			</trans-unit>
+			<trans-unit id="Browser support">
+				<source>Browser support</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="Cell padding:" approved="yes">
+				<source>Cell padding:</source>
+				<target state="translated">Cellpadding</target>
+			</trans-unit>
+			<trans-unit id="Cell spacing:" approved="yes">
+				<source>Cell spacing:</source>
+				<target state="translated">Cellspacing:</target>
+			</trans-unit>
+			<trans-unit id="Center" approved="yes">
+				<source>Center</source>
+				<target state="translated">Centrerat</target>
+			</trans-unit>
+			<trans-unit id="Close" approved="yes">
+				<source>Close</source>
+				<target state="translated">Stäng</target>
+			</trans-unit>
+			<trans-unit id="Cols:" approved="yes">
+				<source>Cols:</source>
+				<target state="translated">Kolumner:</target>
+			</trans-unit>
+			<trans-unit id="Delete">
+				<source>Delete</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Developer" approved="yes">
+				<source>Developer</source>
+				<target state="translated">Utvecklare</target>
+			</trans-unit>
+			<trans-unit id="Dimension" approved="yes">
+				<source>Dimension</source>
+				<target state="translated">Dimensioner</target>
+			</trans-unit>
+			<trans-unit id="Em" approved="yes">
+				<source>Em</source>
+				<target state="translated">Em</target>
+			</trans-unit>
+			<trans-unit id="Enter the image URL here" approved="yes">
+				<source>Enter the image URL here</source>
+				<target state="translated">Fyll i bildens URL här</target>
+			</trans-unit>
+			<trans-unit id="Float:" approved="yes">
+				<source>Float:</source>
+				<target state="translated">Flytande:</target>
+			</trans-unit>
+			<trans-unit id="For browsers that dont support images" approved="yes">
+				<source>For browsers that don't support images</source>
+				<target state="translated">För webbläsare som inte stöder bilder</target>
+			</trans-unit>
+			<trans-unit id="free_editor" approved="yes">
+				<source>A free and open-source editor for &lt;textarea&gt; fields, featuring integration with TYPO3.</source>
+				<target state="translated">En fri redigerare med öppen källkod för &lt;textarea&gt;-fält. Integrerad med TYPO3.</target>
+			</trans-unit>
+			<trans-unit id="General">
+				<source>General</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Horizontal:" approved="yes">
+				<source>Horizontal:</source>
+				<target state="translated">Horisontell:</target>
+			</trans-unit>
+			<trans-unit id="Horizontal padding" approved="yes">
+				<source>Horizontal padding</source>
+				<target state="translated">Horisontellt mellanrum</target>
+			</trans-unit>
+			<trans-unit id="htmlArea License (based on BSD license)" approved="yes">
+				<source>htmlArea RTE License, based on BSD License</source>
+				<target state="translated">htmlArea RTE licens, baserad på BSD licens</target>
+			</trans-unit>
+			<trans-unit id="Image alignment:" approved="yes">
+				<source>Image alignment:</source>
+				<target state="translated">Bildjustering:</target>
+			</trans-unit>
+			<trans-unit id="Image Preview" approved="yes">
+				<source>Image Preview</source>
+				<target state="translated">Bildförhandsgranskning</target>
+			</trans-unit>
+			<trans-unit id="Image URL:" approved="yes">
+				<source>Image URL:</source>
+				<target state="translated">Bildens URL:</target>
+			</trans-unit>
+			<trans-unit id="image_url_first" approved="yes">
+				<source>You have to enter the image URL first</source>
+				<target state="translated">Du måste fylla i bildens URL först</target>
+			</trans-unit>
+			<trans-unit id="image_url_required" approved="yes">
+				<source>You must enter the image URL</source>
+				<target state="translated">Du måste fylla i bildens URL</target>
+			</trans-unit>
+			<trans-unit id="Insert Custom Element" approved="yes">
+				<source>Insert Custom Element</source>
+				<target state="translated">Infoga eget element</target>
+			</trans-unit>
+			<trans-unit id="Insert image">
+				<source>Insert image</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Insert Image" approved="yes">
+				<source>Insert/Modify Image</source>
+				<target state="translated">Infoga/Ändra bild</target>
+			</trans-unit>
+			<trans-unit id="Insert link">
+				<source>Insert link</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Insert/Modify Acronym" approved="yes">
+				<source>Insert/Modify Acronym or Abbreviation</source>
+				<target state="translated">Infoga/Ändra akronym eller förkortning</target>
+			</trans-unit>
+			<trans-unit id="Insert/Modify Link" approved="yes">
+				<source>Insert/Modify Link</source>
+				<target state="translated">Infoga/Ändra länk</target>
+			</trans-unit>
+			<trans-unit id="Insert Table" approved="yes">
+				<source>Insert Table</source>
+				<target state="translated">Infoga tabell</target>
+			</trans-unit>
+			<trans-unit id="Justify" approved="yes">
+				<source>Justify</source>
+				<target state="translated">Justera</target>
+			</trans-unit>
+			<trans-unit id="Language">
+				<source>Language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Language:">
+				<source>Language:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Layout" approved="yes">
+				<source>Layout</source>
+				<target state="translated">Layout</target>
+			</trans-unit>
+			<trans-unit id="Leave empty for no border" approved="yes">
+				<source>Leave empty for no border</source>
+				<target state="translated">Lämna tomt om du ej önskar ram</target>
+			</trans-unit>
+			<trans-unit id="Left" approved="yes">
+				<source>Left</source>
+				<target state="translated">Vänster</target>
+			</trans-unit>
+			<trans-unit id="LeftToRight">
+				<source>Left to right</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="License" approved="yes">
+				<source>License</source>
+				<target state="translated">Licens</target>
+			</trans-unit>
+			<trans-unit id="link_href_tooltip" approved="yes">
+				<source>Enter the link URL here</source>
+				<target state="translated">Fyll i länkens URL-adress här</target>
+			</trans-unit>
+			<trans-unit id="link_target_tooltip" approved="yes">
+				<source>Select the name of the target frame</source>
+				<target state="translated">Välj namnet på målramen</target>
+			</trans-unit>
+			<trans-unit id="link_title_tooltip" approved="yes">
+				<source>Enter the link tooltip here</source>
+				<target state="translated">Fyll i länkens verktygstips här</target>
+			</trans-unit>
+			<trans-unit id="link_url_required" approved="yes">
+				<source>Please enter the URL where this link points to</source>
+				<target state="translated">Vänligen fyll i länkens URL</target>
+			</trans-unit>
+			<trans-unit id="Middle" approved="yes">
+				<source>Middle</source>
+				<target state="translated">Mitten</target>
+			</trans-unit>
+			<trans-unit id="Modify image">
+				<source>Modify image</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Modify link">
+				<source>Modify link</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Mozilla_or_IE" approved="no">
+				<source>For Firefox 1.5+, SeaMonkey 1.0+, Safari 3.0.4+, Google Chrome 1.0+ and Opera 9.62+ on any platform, and for Internet Explorer 9.0+ on Windows.</source>
+				<target state="needs-translation">För Mozilla 1.3.1+, Firefox 0.8+, Netscape 7.1+ och Safari 3.0.4 på alla plattformar samt för Internet Explorer 5.5+ i Windows.</target>
+			</trans-unit>
+			<trans-unit id="Name" approved="yes">
+				<source>Name</source>
+				<target state="translated">Namn</target>
+			</trans-unit>
+			<trans-unit id="No language mark">
+				<source>No language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Non-floating" approved="yes">
+				<source>Non-floating</source>
+				<target state="translated">Ej flytande</target>
+			</trans-unit>
+			<trans-unit id="No plugins have been loaded." approved="yes">
+				<source>No plugins have been loaded.</source>
+				<target state="translated">Inga insticksmoduler är laddade.</target>
+			</trans-unit>
+			<trans-unit id="Not set" approved="yes">
+				<source>Not set</source>
+				<target state="translated">Ej angivet</target>
+			</trans-unit>
+			<trans-unit id="Number of columns" approved="yes">
+				<source>Number of columns</source>
+				<target state="translated">Antal kolumner</target>
+			</trans-unit>
+			<trans-unit id="Number of rows" approved="yes">
+				<source>Number of rows</source>
+				<target state="translated">Antal rader</target>
+			</trans-unit>
+			<trans-unit id="OK" approved="yes">
+				<source>OK</source>
+				<target state="translated">OK</target>
+			</trans-unit>
+			<trans-unit id="Percent" approved="yes">
+				<source>Percent</source>
+				<target state="translated">Procent</target>
+			</trans-unit>
+			<trans-unit id="Pixels" approved="yes">
+				<source>Pixels</source>
+				<target state="translated">Pixlar</target>
+			</trans-unit>
+			<trans-unit id="Plugins" approved="yes">
+				<source>Plugins</source>
+				<target state="translated">Plugin</target>
+			</trans-unit>
+			<trans-unit id="Positioning of this image" approved="yes">
+				<source>Positioning of this image relative to text</source>
+				<target state="translated">Bildens position relativt till texten</target>
+			</trans-unit>
+			<trans-unit id="Preview" approved="yes">
+				<source>Preview</source>
+				<target state="translated">Förhandsgranska</target>
+			</trans-unit>
+			<trans-unit id="Preview the image in a new window" approved="yes">
+				<source>Preview the image in a new window</source>
+				<target state="translated">Förhandsgranska bilden i ett nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="product_documentation" approved="yes">
+				<source>For more information, please visit:</source>
+				<target state="translated">För mer information, var vänlig och besök:</target>
+			</trans-unit>
+			<trans-unit id="Remove language mark">
+				<source>Remove language</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Right" approved="yes">
+				<source>Right</source>
+				<target state="translated">Höger</target>
+			</trans-unit>
+			<trans-unit id="RightToLeft">
+				<source>Right to left</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Rows:" approved="yes">
+				<source>Rows:</source>
+				<target state="translated">Rader:</target>
+			</trans-unit>
+			<trans-unit id="Select Color" approved="yes">
+				<source>Select Color</source>
+				<target state="translated">Välj färg</target>
+			</trans-unit>
+			<trans-unit id="Space between adjacent cells" approved="yes">
+				<source>Space between adjacent cells</source>
+				<target state="translated">Avstånd mellan intilliggande celler</target>
+			</trans-unit>
+			<trans-unit id="Space between content and border in cell" approved="yes">
+				<source>Space between content and border in cell</source>
+				<target state="translated">Avstånd mellan innehåll och kant i en cell</target>
+			</trans-unit>
+			<trans-unit id="Spacing and padding" approved="yes">
+				<source>Spacing and padding</source>
+				<target state="translated">Avstånd och utfyllnad</target>
+			</trans-unit>
+			<trans-unit id="Sponsored by" approved="yes">
+				<source>Sponsored by</source>
+				<target state="translated">Sponsrad av</target>
+			</trans-unit>
+			<trans-unit id="statusBarReady">
+				<source>Ready</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="statusBarStyle">
+				<source>Style</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="style" approved="yes">
+				<source>Paragraph:</source>
+				<target state="translated">Stycke:</target>
+			</trans-unit>
+			<trans-unit id="Target:" approved="yes">
+				<source>Target:</source>
+				<target state="translated">Mål:</target>
+			</trans-unit>
+			<trans-unit id="target_blank" approved="yes">
+				<source>New window (_blank)</source>
+				<target state="translated">Nytt fönster (_blank)</target>
+			</trans-unit>
+			<trans-unit id="target_none" approved="yes">
+				<source>None (use implicit)</source>
+				<target state="translated">Ingen</target>
+			</trans-unit>
+			<trans-unit id="target_other" approved="yes">
+				<source>Other frame</source>
+				<target state="translated">Annan ram</target>
+			</trans-unit>
+			<trans-unit id="target_self" approved="yes">
+				<source>Same frame (_self)</source>
+				<target state="translated">Samma ram (_self)</target>
+			</trans-unit>
+			<trans-unit id="target_top" approved="yes">
+				<source>Top frame (_top)</source>
+				<target state="translated">Toppram (_top)</target>
+			</trans-unit>
+			<trans-unit id="Text alignment" approved="yes">
+				<source>Text alignment</source>
+				<target state="translated">Textjustering</target>
+			</trans-unit>
+			<trans-unit id="Text direction">
+				<source>Text direction</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="Text direction:">
+				<source>Text direction:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="text_style" approved="yes">
+				<source>Text style:</source>
+				<target state="translated">Textstil:</target>
+			</trans-unit>
+			<trans-unit id="Texttop" approved="yes">
+				<source>Texttop</source>
+				<target state="translated">Texttopp</target>
+			</trans-unit>
+			<trans-unit id="The following plugins have been loaded." approved="yes">
+				<source>The following plugins have been loaded.</source>
+				<target state="translated">Följande insticksmoduler är laddade.</target>
+			</trans-unit>
+			<trans-unit id="Title (tooltip):" approved="yes">
+				<source>Title:</source>
+				<target state="translated">Titel:</target>
+			</trans-unit>
+			<trans-unit id="Top" approved="yes">
+				<source>Top</source>
+				<target state="translated">Topp</target>
+			</trans-unit>
+			<trans-unit id="URL:" approved="yes">
+				<source>URL:</source>
+				<target state="translated">URL:</target>
+			</trans-unit>
+			<trans-unit id="User agent reports:" approved="yes">
+				<source>User agent reports:</source>
+				<target state="translated">Användaragent:</target>
+			</trans-unit>
+			<trans-unit id="Vertical:" approved="yes">
+				<source>Vertical:</source>
+				<target state="translated">Vertikal:</target>
+			</trans-unit>
+			<trans-unit id="Vertical padding" approved="yes">
+				<source>Vertical padding</source>
+				<target state="translated">Vertikalt mellanrum</target>
+			</trans-unit>
+			<trans-unit id="Where the image should float" approved="yes">
+				<source>Specifies where the image should float</source>
+				<target state="translated">Specificerar var bilden skall flyta</target>
+			</trans-unit>
+			<trans-unit id="Where the table should float" approved="yes">
+				<source>Specifies where the table should float</source>
+				<target state="translated">Specificerar var tabellen skall flyta</target>
+			</trans-unit>
+			<trans-unit id="Width:" approved="yes">
+				<source>Width:</source>
+				<target state="translated">Bredd:</target>
+			</trans-unit>
+			<trans-unit id="Width of the table" approved="yes">
+				<source>Width of the table</source>
+				<target state="translated">Tabellens bredd</target>
+			</trans-unit>
+			<trans-unit id="Width unit" approved="yes">
+				<source>Width unit</source>
+				<target state="translated">Bredd-enhet</target>
+			</trans-unit>
+			<trans-unit id="word">
+				<source>word</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="words">
+				<source>words</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="You must enter a number of columns" approved="yes">
+				<source>You must enter a number of columns</source>
+				<target state="translated">Du måste ange antal kolumner</target>
+			</trans-unit>
+			<trans-unit id="You must enter a number of rows" approved="yes">
+				<source>You must enter a number of rows</source>
+				<target state="translated">Du måste fylla i hur många rader du vill ha</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

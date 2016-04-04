@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:50:21Z" product-name="indexed_search">
+		<header/>
+		<body>
+			<trans-unit id="defaultOperands.0">
+				<source>All words (AND)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="defaultOperands.1">
+				<source>Any words (OR)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayResults">
+				<source>Displaying results &lt;strong&gt;%1$s to %2$s&lt;/strong&gt; out of &lt;strong&gt;%3$s&lt;/strong&gt;</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayResults.next">
+				<source>Next &gt;</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayResults.page">
+				<source>Page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="displayResults.previous">
+				<source>&lt; Previous</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.addToSearch">
+				<source>Add to current search words</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.atATime">
+				<source>at a time</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.extResume">
+				<source>Extended resume</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.freeIndexUid">
+				<source>Category</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.fromSection">
+				<source>From section</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.legend">
+				<source>Search form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.linkToAdvancedSearch">
+				<source>Advanced search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.linkToRegularSearch">
+				<source>Regular search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.match">
+				<source>Match</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.orderBy">
+				<source>Order by</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.searchFor">
+				<source>Search for</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.searchIn">
+				<source>Search in</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.style">
+				<source>Style</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form.submit">
+				<source>Search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="groupBy.flat">
+				<source>Flat list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="groupBy.sections">
+				<source>Section hierarchy</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="indexingConfigurationHeader.0">
+				<source>Website Pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="indexingConfigurationHeader.-1">
+				<source>Mixed categories</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="indexingConfigurations.0">
+				<source>Pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="indexingConfigurations.-1">
+				<source>All, mixed</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="indexingConfigurations.-2">
+				<source>All, categorized</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="languageUids.0">
+				<source>Default</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="languageUids.-1">
+				<source>All languages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localizedOperandAnd">
+				<source>AND</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localizedOperandNot">
+				<source>NOT</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="localizedOperandOr">
+				<source>OR</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mediaTypes.0">
+				<source>Internal pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mediaTypes.-1">
+				<source>All media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="mediaTypes.-2">
+				<source>All External</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.created">
+				<source>Created:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.inNsection">
+				<source>in %s section:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.inNsections">
+				<source>in %s sections:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.inSection">
+				<source>in the section</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.memberGroups">
+				<source>Require membership of group numbers %s</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.modified">
+				<source>Modified:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.noResult">
+				<source>No results found.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.noResume">
+				<source>Note: This search hit may not accurately match the content on this page. The page resume cannot be shown.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.otherMatching">
+				<source>Other matching pages in the same document:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.otherPageAsWell">
+				<source>INFO: There was another page indexed as well. Probably indexed with another or no usergroup.</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.page">
+				<source>page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.pages">
+				<source>pages</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.path">
+				<source>Path:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.ratingMatches">
+				<source>matches</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.size">
+				<source>Size:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="result.unnamedSection">
+				<source>Other</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rules.headline">
+				<source>Rules</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="rules.text" xml:space="preserve">
+				<source>Only words with 2 or more characters are accepted&lt;br /&gt;
+Max 200 chars total&lt;br /&gt;
+Space is used to split words, "" can be used to search for a whole string (not indexed search then)&lt;br /&gt;
+AND, OR and NOT are prefix words, overruling the default operator&lt;br /&gt;
++/|/- equals AND, OR and NOT as operators.&lt;br /&gt;
+All search words are converted to lowercase.
+</source>
+			<target/></trans-unit>
+			<trans-unit id="searchFor">
+				<source>Search for</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchFor.and">
+				<source>and</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchFor.andnot">
+				<source>but not</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchFor.or">
+				<source>or</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTypes.0">
+				<source>Distinct word</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTypes.1">
+				<source>Part of word</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTypes.10">
+				<source>Sounds like</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTypes.2">
+				<source>First part of word</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTypes.20">
+				<source>Sentence</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="searchTypes.3">
+				<source>Last part of word</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.0">
+				<source>Whole site</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.-1">
+				<source>Only this page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.-2">
+				<source>Top + level 1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.-3">
+				<source>Level 2 and out</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.rootLevel1">
+				<source>Level 1:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.rootLevel1All">
+				<source>All pages on level 1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.rootLevel2">
+				<source>- Level 2:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sections.rootLevel2All">
+				<source>- All pages on level 2</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.ascending">
+				<source>Lowest first</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.crdate">
+				<source>Creation date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.descending">
+				<source>Highest first</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.mtime">
+				<source>Date Modified</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.rank_count">
+				<source>Number of words</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.rank_first">
+				<source>Close to top</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.rank_flag">
+				<source>Weight/Frequency</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.rank_freq">
+				<source>Frequency</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sortOrders.title">
+				<source>Document title</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

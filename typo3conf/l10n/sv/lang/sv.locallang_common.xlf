@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:11Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="about" approved="yes">
+				<source>About</source>
+				<target state="translated">Om</target>
+			</trans-unit>
+			<trans-unit id="and" approved="yes">
+				<source>and</source>
+				<target state="translated">och</target>
+			</trans-unit>
+			<trans-unit id="ascending" approved="yes">
+				<source>Ascending</source>
+				<target state="translated">Stigande</target>
+			</trans-unit>
+			<trans-unit id="back" approved="yes">
+				<source>Back</source>
+				<target state="translated">Tillbaka</target>
+			</trans-unit>
+			<trans-unit id="byteSizeUnits">
+				<source> B| KB| MB| GB</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="cancel" approved="yes">
+				<source>Cancel</source>
+				<target state="translated">Avbryt</target>
+			</trans-unit>
+			<trans-unit id="category" approved="yes">
+				<source>Category</source>
+				<target state="translated">Kategori</target>
+			</trans-unit>
+			<trans-unit id="close" approved="yes">
+				<source>Close</source>
+				<target state="translated">Stäng</target>
+			</trans-unit>
+			<trans-unit id="delete" approved="yes">
+				<source>Delete</source>
+				<target state="translated">Ta bort</target>
+			</trans-unit>
+			<trans-unit id="descending" approved="yes">
+				<source>Descending</source>
+				<target state="translated">Fallande</target>
+			</trans-unit>
+			<trans-unit id="details" approved="yes">
+				<source>Details</source>
+				<target state="translated">Detaljer</target>
+			</trans-unit>
+			<trans-unit id="disable" approved="yes">
+				<source>Disable</source>
+				<target state="translated">Inaktivera</target>
+			</trans-unit>
+			<trans-unit id="disabled" approved="yes">
+				<source>Disabled</source>
+				<target state="translated">Inaktiverad</target>
+			</trans-unit>
+			<trans-unit id="down" approved="yes">
+				<source>Down</source>
+				<target state="translated">Ned</target>
+			</trans-unit>
+			<trans-unit id="download" approved="yes">
+				<source>Download</source>
+				<target state="translated">Ladda ner</target>
+			</trans-unit>
+			<trans-unit id="edit" approved="yes">
+				<source>Edit</source>
+				<target state="translated">Redigera</target>
+			</trans-unit>
+			<trans-unit id="editField" approved="yes">
+				<source>Edit field</source>
+				<target state="translated">Redigera fält</target>
+			</trans-unit>
+			<trans-unit id="editFile" approved="yes">
+				<source>Edit file</source>
+				<target state="translated">Redigera fil</target>
+			</trans-unit>
+			<trans-unit id="enable" approved="yes">
+				<source>Enable</source>
+				<target state="translated">Aktivera</target>
+			</trans-unit>
+			<trans-unit id="enabled" approved="yes">
+				<source>Enabled</source>
+				<target state="translated">Aktiverad</target>
+			</trans-unit>
+			<trans-unit id="file" approved="yes">
+				<source>File</source>
+				<target state="translated">Fil</target>
+			</trans-unit>
+			<trans-unit id="files" approved="yes">
+				<source>Files</source>
+				<target state="translated">Filer</target>
+			</trans-unit>
+			<trans-unit id="first" approved="yes">
+				<source>First</source>
+				<target state="translated">Första</target>
+			</trans-unit>
+			<trans-unit id="folder" approved="yes">
+				<source>Folder</source>
+				<target state="translated">Mapp</target>
+			</trans-unit>
+			<trans-unit id="from" approved="yes">
+				<source>From</source>
+				<target state="translated">Från</target>
+			</trans-unit>
+			<trans-unit id="go" approved="yes">
+				<source>Go</source>
+				<target state="translated">Gå</target>
+			</trans-unit>
+			<trans-unit id="goTo" approved="yes">
+				<source>Go to</source>
+				<target state="translated">Gå till</target>
+			</trans-unit>
+			<trans-unit id="help" approved="yes">
+				<source>Help</source>
+				<target state="translated">Hjälp</target>
+			</trans-unit>
+			<trans-unit id="item" approved="yes">
+				<source>Item</source>
+				<target state="translated">Objekt</target>
+			</trans-unit>
+			<trans-unit id="items" approved="yes">
+				<source>Items</source>
+				<target state="translated">Objekt</target>
+			</trans-unit>
+			<trans-unit id="last" approved="yes">
+				<source>Last</source>
+				<target state="translated">Sista</target>
+			</trans-unit>
+			<trans-unit id="left" approved="yes">
+				<source>Left</source>
+				<target state="translated">Vänster</target>
+			</trans-unit>
+			<trans-unit id="login" approved="yes">
+				<source>Login</source>
+				<target state="translated">Inloggning</target>
+			</trans-unit>
+			<trans-unit id="logout" approved="yes">
+				<source>Logout</source>
+				<target state="translated">Utloggning</target>
+			</trans-unit>
+			<trans-unit id="more" approved="yes">
+				<source>More</source>
+				<target state="translated">Mer</target>
+			</trans-unit>
+			<trans-unit id="move" approved="yes">
+				<source>Move</source>
+				<target state="translated">Flytta</target>
+			</trans-unit>
+			<trans-unit id="new" approved="yes">
+				<source>New</source>
+				<target state="translated">Ny</target>
+			</trans-unit>
+			<trans-unit id="next" approved="yes">
+				<source>Next</source>
+				<target state="translated">Nästa</target>
+			</trans-unit>
+			<trans-unit id="no" approved="yes">
+				<source>No</source>
+				<target state="translated">Nej</target>
+			</trans-unit>
+			<trans-unit id="ok" approved="yes">
+				<source>OK</source>
+				<target state="translated">OK</target>
+			</trans-unit>
+			<trans-unit id="open" approved="yes">
+				<source>Open</source>
+				<target state="translated">Öppna</target>
+			</trans-unit>
+			<trans-unit id="page" approved="yes">
+				<source>Page</source>
+				<target state="translated">Sida</target>
+			</trans-unit>
+			<trans-unit id="pages" approved="yes">
+				<source>Pages</source>
+				<target state="translated">Sidor</target>
+			</trans-unit>
+			<trans-unit id="pleaseConfirm">
+				<source>Please confirm</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="previous" approved="yes">
+				<source>Previous</source>
+				<target state="translated">Föregående</target>
+			</trans-unit>
+			<trans-unit id="print" approved="yes">
+				<source>Print</source>
+				<target state="translated">Skriv ut</target>
+			</trans-unit>
+			<trans-unit id="reload" approved="yes">
+				<source>Reload</source>
+				<target state="translated">Läs om</target>
+			</trans-unit>
+			<trans-unit id="right" approved="yes">
+				<source>Right</source>
+				<target state="translated">Höger</target>
+			</trans-unit>
+			<trans-unit id="save" approved="yes">
+				<source>Save</source>
+				<target state="translated">Spara</target>
+			</trans-unit>
+			<trans-unit id="saveAndClose" approved="yes">
+				<source>Save and close</source>
+				<target state="translated">Spara och stäng</target>
+			</trans-unit>
+			<trans-unit id="saveAndCloseDoc" approved="yes">
+				<source>Save and close document</source>
+				<target state="translated">Spara och stäng dokumentet</target>
+			</trans-unit>
+			<trans-unit id="saveAndCreateNewDoc" approved="yes">
+				<source>Save and create new document</source>
+				<target state="translated">Spara och skapa nytt dokument</target>
+			</trans-unit>
+			<trans-unit id="saveAndViewPage" approved="yes">
+				<source>Save and view page</source>
+				<target state="translated">Spara och visa sidan</target>
+			</trans-unit>
+			<trans-unit id="search" approved="yes">
+				<source>Search</source>
+				<target state="translated">Sök</target>
+			</trans-unit>
+			<trans-unit id="send" approved="yes">
+				<source>Send</source>
+				<target state="translated">Skicka</target>
+			</trans-unit>
+			<trans-unit id="start" approved="yes">
+				<source>Start</source>
+				<target state="translated">Starta</target>
+			</trans-unit>
+			<trans-unit id="stop" approved="yes">
+				<source>Stop</source>
+				<target state="translated">Sluta</target>
+			</trans-unit>
+			<trans-unit id="submit" approved="yes">
+				<source>Submit</source>
+				<target state="translated">Skicka</target>
+			</trans-unit>
+			<trans-unit id="to" approved="yes">
+				<source>To</source>
+				<target state="translated">Till</target>
+			</trans-unit>
+			<trans-unit id="tsRef" approved="yes">
+				<source>TSref reference</source>
+				<target state="translated">TSRef-referens</target>
+			</trans-unit>
+			<trans-unit id="up" approved="yes">
+				<source>Up</source>
+				<target state="translated">Upp</target>
+			</trans-unit>
+			<trans-unit id="upload" approved="yes">
+				<source>Upload</source>
+				<target state="translated">Ladda upp</target>
+			</trans-unit>
+			<trans-unit id="user" approved="yes">
+				<source>User</source>
+				<target state="translated">Användare</target>
+			</trans-unit>
+			<trans-unit id="users" approved="yes">
+				<source>Users</source>
+				<target state="translated">Användare</target>
+			</trans-unit>
+			<trans-unit id="view" approved="yes">
+				<source>View</source>
+				<target state="translated">Visa</target>
+			</trans-unit>
+			<trans-unit id="yes" approved="yes">
+				<source>Yes</source>
+				<target state="translated">Ja</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

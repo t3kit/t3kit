@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:22Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Check Link" approved="yes">
+				<source>Chec_k Link</source>
+				<target state="translated">_Kontrollera länk...</target>
+			</trans-unit>
+			<trans-unit id="Copy" approved="yes">
+				<source>Copy</source>
+				<target state="translated">Kopiera</target>
+			</trans-unit>
+			<trans-unit id="Create a link" approved="yes">
+				<source>Create a link</source>
+				<target state="translated">Skapa en länk</target>
+			</trans-unit>
+			<trans-unit id="Current URL is" approved="yes">
+				<source>Current URL is</source>
+				<target state="translated">Nuvarande URL är</target>
+			</trans-unit>
+			<trans-unit id="Cut" approved="yes">
+				<source>Cut</source>
+				<target state="translated">Klipp ut</target>
+			</trans-unit>
+			<trans-unit id="Element" approved="yes">
+				<source>Element</source>
+				<target state="translated">element...</target>
+			</trans-unit>
+			<trans-unit id="How did you get here? (Please report!)" approved="yes">
+				<source>How did you get here? (Please report!)</source>
+				<target state="translated">Hur kom du hit? (vänligen skicka rapport!)</target>
+			</trans-unit>
+			<trans-unit id="Image Properties" approved="yes">
+				<source>_Image Properties</source>
+				<target state="translated">_Bildegenskaper...</target>
+			</trans-unit>
+			<trans-unit id="Insert a paragraph after the current node" approved="yes">
+				<source>Insert a paragraph after the current node</source>
+				<target state="translated">Infoga ett stycke efter nuvarande nod</target>
+			</trans-unit>
+			<trans-unit id="Insert a paragraph before the current node" approved="yes">
+				<source>Insert a paragraph before the current node</source>
+				<target state="translated">Infoga ett stycke för nuvarande nod</target>
+			</trans-unit>
+			<trans-unit id="Insert paragraph after" approved="yes">
+				<source>Insert paragraph after</source>
+				<target state="translated">Infoga ett stycke efter</target>
+			</trans-unit>
+			<trans-unit id="Insert paragraph before" approved="yes">
+				<source>Insert paragraph before</source>
+				<target state="translated">Infoga ett stycke före</target>
+			</trans-unit>
+			<trans-unit id="JustifyCenter-title" approved="yes">
+				<source>Justify Center</source>
+				<target state="translated">Centrera</target>
+			</trans-unit>
+			<trans-unit id="JustifyCenter-tooltip" approved="yes">
+				<source>Centers the text</source>
+				<target state="translated">Centrerar texten</target>
+			</trans-unit>
+			<trans-unit id="JustifyFull-title" approved="yes">
+				<source>Justify Full</source>
+				<target state="translated">Marginaljustera</target>
+			</trans-unit>
+			<trans-unit id="JustifyFull-tooltip" approved="yes">
+				<source>Aligns text both to the left and the right</source>
+				<target state="translated">Justerar texten både till vänster och höger</target>
+			</trans-unit>
+			<trans-unit id="JustifyLeft-title" approved="yes">
+				<source>Justify Left</source>
+				<target state="translated">Vänsterjustera</target>
+			</trans-unit>
+			<trans-unit id="JustifyLeft-tooltip" approved="yes">
+				<source>Aligns text to the left</source>
+				<target state="translated">Justerar texten till vänster</target>
+			</trans-unit>
+			<trans-unit id="JustifyRight-title" approved="yes">
+				<source>Justify Right</source>
+				<target state="translated">Högerjustera</target>
+			</trans-unit>
+			<trans-unit id="JustifyRight-tooltip" approved="yes">
+				<source>Aligns text to the right</source>
+				<target state="translated">Justerar texten till höger</target>
+			</trans-unit>
+			<trans-unit id="Link points to:" approved="yes">
+				<source>Link points to:</source>
+				<target state="translated">Länken pekar till:</target>
+			</trans-unit>
+			<trans-unit id="Make link" approved="yes">
+				<source>Make lin_k</source>
+				<target state="translated">Skapa _länk...</target>
+			</trans-unit>
+			<trans-unit id="Modify Link" approved="yes">
+				<source>_Modify Link</source>
+				<target state="translated">Ä_ndra länk...</target>
+			</trans-unit>
+			<trans-unit id="Modify URL" approved="yes">
+				<source>Modify URL</source>
+				<target state="translated">Ändra URL</target>
+			</trans-unit>
+			<trans-unit id="Opens this link in a new window" approved="yes">
+				<source>Opens this link in a new window</source>
+				<target state="translated">Öppnar länken i ett nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="Paste" approved="yes">
+				<source>Paste</source>
+				<target state="translated">Klistra in</target>
+			</trans-unit>
+			<trans-unit id="Please confirm remove" approved="yes">
+				<source>Please confirm that you want to remove this element:</source>
+				<target state="translated">Bekräfta att du vill ta bort detta element:</target>
+			</trans-unit>
+			<trans-unit id="Please confirm unlink" approved="yes">
+				<source>Please confirm that you want to unlink this element.</source>
+				<target state="translated">Bekräfta att du vill ta bort länken.</target>
+			</trans-unit>
+			<trans-unit id="Remove Link" approved="yes">
+				<source>_Remove Link</source>
+				<target state="translated">_Ta bort länk...</target>
+			</trans-unit>
+			<trans-unit id="Remove the" approved="yes">
+				<source>Remove the</source>
+				<target state="translated">Ta bort</target>
+			</trans-unit>
+			<trans-unit id="Remove this node from the document" approved="yes">
+				<source>Removes this node from the document</source>
+				<target state="translated">Ta bort denna nod från dokumentet</target>
+			</trans-unit>
+			<trans-unit id="Show the image properties dialog" approved="yes">
+				<source>Show the image properties dialog</source>
+				<target state="translated">Visa bildegenskapernas dialogruta</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-delete-title" approved="yes">
+				<source>Delete Cell</source>
+				<target state="translated">Ta bort cell</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-delete-tooltip" approved="yes">
+				<source>Deletes the current cell</source>
+				<target state="translated">Tar bort nuvarande cell</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-insert-after-title" approved="yes">
+				<source>Insert cell after</source>
+				<target state="translated">Infoga cell efter</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-insert-after-tooltip" approved="yes">
+				<source>Inserts a new cell after the current one</source>
+				<target state="translated">Infogar en ny cell efter den nuvarande</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-insert-before-title" approved="yes">
+				<source>Insert cell before</source>
+				<target state="translated">Infoga cell före</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-insert-before-tooltip" approved="yes">
+				<source>Inserts a new cell before the current one</source>
+				<target state="translated">Infogar en ny cell före den nuvarande</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-merge-title" approved="yes">
+				<source>Merge Cells</source>
+				<target state="translated">Sammanfoga celler</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-merge-tooltip" approved="yes">
+				<source>Merges the selected cells</source>
+				<target state="translated">Sammanfogar valda celler</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-prop-title" approved="yes">
+				<source>C_ell Properties</source>
+				<target state="translated">_Cellegenskaper...</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-prop-tooltip" approved="yes">
+				<source>Shows the Table Cell Properties dialogue</source>
+				<target state="translated">Visar tabellens cellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-split-title" approved="yes">
+				<source>Split Cell</source>
+				<target state="translated">Dela upp cell</target>
+			</trans-unit>
+			<trans-unit id="TO-cell-split-tooltip" approved="yes">
+				<source>Splits the current cell</source>
+				<target state="translated">Delar upp den nuvarande cellen</target>
+			</trans-unit>
+			<trans-unit id="TO-col-delete-title" approved="yes">
+				<source>De_lete Column</source>
+				<target state="translated">Ta bort kolumn</target>
+			</trans-unit>
+			<trans-unit id="TO-col-delete-tooltip" approved="yes">
+				<source>Deletes the current column</source>
+				<target state="translated">Tar bort nuvarande kolumn</target>
+			</trans-unit>
+			<trans-unit id="TO-col-insert-after-title" approved="yes">
+				<source>Insert C_olumn After</source>
+				<target state="translated">Infoga kolumn efter</target>
+			</trans-unit>
+			<trans-unit id="TO-col-insert-after-tooltip" approved="yes">
+				<source>Inserts a new column after the current one</source>
+				<target state="translated">Infogar en ny kolumn efter den nuvarande</target>
+			</trans-unit>
+			<trans-unit id="TO-col-insert-before-title" approved="yes">
+				<source>Insert _Column Before</source>
+				<target state="translated">Infoga kolumn före</target>
+			</trans-unit>
+			<trans-unit id="TO-col-insert-before-tooltip" approved="yes">
+				<source>Inserts a new column before the current one</source>
+				<target state="translated">Infogar en ny kolumn före den nuvarande</target>
+			</trans-unit>
+			<trans-unit id="TO-col-prop-title" approved="yes">
+				<source>Column Cells Properties</source>
+				<target state="translated">Kolumncellegenskaper...</target>
+			</trans-unit>
+			<trans-unit id="TO-col-prop-tooltip" approved="yes">
+				<source>Shows the Column Cells Properties dialogue</source>
+				<target state="translated">Visar kolumncellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-col-split-title" approved="yes">
+				<source>Split Column</source>
+				<target state="translated">Dela upp kolumn</target>
+			</trans-unit>
+			<trans-unit id="TO-col-split-tooltip" approved="yes">
+				<source>Splits the current column</source>
+				<target state="translated">Delar upp nuvarande kolumn</target>
+			</trans-unit>
+			<trans-unit id="TO-row-delete-title" approved="yes">
+				<source>_Delete Row</source>
+				<target state="translated">Ta bort rad</target>
+			</trans-unit>
+			<trans-unit id="TO-row-delete-tooltip" approved="yes">
+				<source>Deletes the current row</source>
+				<target state="translated">Tar bort nuvarande rad</target>
+			</trans-unit>
+			<trans-unit id="TO-row-insert-above-title" approved="yes">
+				<source>I_nsert Row Before</source>
+				<target state="translated">Infoga rad före</target>
+			</trans-unit>
+			<trans-unit id="TO-row-insert-above-tooltip" approved="yes">
+				<source>Inserts a new row before the current one</source>
+				<target state="translated">Infogar en ny rad före den nuvarande</target>
+			</trans-unit>
+			<trans-unit id="TO-row-insert-under-title" approved="yes">
+				<source>In_sert Row After</source>
+				<target state="translated">Infoga rad efter</target>
+			</trans-unit>
+			<trans-unit id="TO-row-insert-under-tooltip" approved="yes">
+				<source>Inserts a new row after the current one</source>
+				<target state="translated">Infogar en ny rad efter den nuvarande</target>
+			</trans-unit>
+			<trans-unit id="TO-row-prop-title" approved="yes">
+				<source>Ro_w Properties</source>
+				<target state="translated">_Radegenskaper...</target>
+			</trans-unit>
+			<trans-unit id="TO-row-prop-tooltip" approved="yes">
+				<source>Shows the Table Row Properties dialogue</source>
+				<target state="translated">Visar tabellens radegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-row-split-title" approved="yes">
+				<source>Split Row</source>
+				<target state="translated">Dela upp rad</target>
+			</trans-unit>
+			<trans-unit id="TO-row-split-tooltip" approved="yes">
+				<source>Splits the current row</source>
+				<target state="translated">Delar upp nuvarande rad</target>
+			</trans-unit>
+			<trans-unit id="TO-table-prop-title" approved="yes">
+				<source>_Table Properties</source>
+				<target state="translated">_Tabellegenskaper...</target>
+			</trans-unit>
+			<trans-unit id="TO-table-prop-tooltip" approved="yes">
+				<source>Shows the Table Properties dialogue</source>
+				<target state="translated">Visar tabellegenskaper</target>
+			</trans-unit>
+			<trans-unit id="TO-table-restyle-title" approved="yes">
+				<source>Re-apply table styles</source>
+				<target state="translated">Omapplicera tabellstilar</target>
+			</trans-unit>
+			<trans-unit id="TO-table-restyle-tooltip" approved="yes">
+				<source>Re-applies the odd-even styles on the table</source>
+				<target state="translated">Omapplicerar stilarna odd-even på tabellen</target>
+			</trans-unit>
+			<trans-unit id="TO-toggle-borders-title" approved="yes">
+				<source>Toggle borders</source>
+				<target state="translated">Visa/dölj _stödlinjer</target>
+			</trans-unit>
+			<trans-unit id="TO-toggle-borders-tooltip" approved="yes">
+				<source>Toggle borders</source>
+				<target state="translated">Flytta ramar</target>
+			</trans-unit>
+			<trans-unit id="Unlink the current element" approved="yes">
+				<source>Unlink the current element</source>
+				<target state="translated">Ta bort länken</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

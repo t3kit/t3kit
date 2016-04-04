@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="description"/>
+			<label index="js.label_boxLabel_undelete_recursive"/>
+			<label index="js.label_clear"/>
+			<label index="js.label_crdate"/>
+			<label index="js.label_deleteButton_text"/>
+			<label index="js.label_deleteButton_tooltip"/>
+			<label index="js.label_deletedTab"/>
+			<label index="js.label_doDelete_confirmText"/>
+			<label index="js.label_error_NoSelectedRows_msg"/>
+			<label index="js.label_error_NoSelectedRows_title"/>
+			<label index="js.label_filter"/>
+			<label index="js.label_filter_emptyText"/>
+			<label index="js.label_loadMessage"/>
+			<label index="js.label_lostandfound"/>
+			<label index="js.label_no"/>
+			<label index="js.label_noValueFound"/>
+			<label index="js.label_owner"/>
+			<label index="js.label_pagingEmpty"/>
+			<label index="js.label_pagingMessage"/>
+			<label index="js.label_records"/>
+			<label index="js.label_search"/>
+			<label index="js.label_sure"/>
+			<label index="js.label_table"/>
+			<label index="js.label_tableMenu_emptyText"/>
+			<label index="js.label_tableMenu_label"/>
+			<label index="js.label_text_delete"/>
+			<label index="js.label_text_undelete"/>
+			<label index="js.label_title_delete"/>
+			<label index="js.label_title_undelete"/>
+			<label index="js.label_tstamp"/>
+			<label index="js.label_undeleteButton_text"/>
+			<label index="js.label_undeleteButton_tooltip"/>
+			<label index="js.label_yes"/>
+			<label index="label_alltables"/>
+			<label index="title"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

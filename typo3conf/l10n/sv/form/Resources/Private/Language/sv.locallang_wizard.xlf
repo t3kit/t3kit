@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:20:29Z" product-name="form">
+		<header/>
+		<body>
+			<trans-unit id="action_load_message_failed">
+				<source>Failed to save the form</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="action_save">
+				<source>Saving form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_save_error">
+				<source>Server-side failure with status code</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_save_message_failed">
+				<source>Failed to save the form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="action_save_message_saved">
+				<source>Changes saved successfully</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_accept">
+				<source>Accept</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_acceptcharset">
+				<source>Acceptcharset</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_accesskey">
+				<source>Accesskey</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_action">
+				<source>Action</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_alt">
+				<source>Alt</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_autocomplete">
+				<source>Autocomplete</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_autocomplete_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_autocomplete_off">
+				<source>Off</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_autocomplete_on">
+				<source>On</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_autofocus">
+				<source>Autofocus</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_checked">
+				<source>Checked</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_class">
+				<source>Class</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_cols">
+				<source>Cols</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_contenteditable">
+				<source>Content editable</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_contenteditable_false">
+				<source>False</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_contenteditable_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_contenteditable_true">
+				<source>True</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_contextmenu">
+				<source>Contextmenu</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_dir">
+				<source>Dir</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_dir_ltr">
+				<source>Left to right</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_dir_rtl">
+				<source>Right to left</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_disabled">
+				<source>Disabled</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_draggable">
+				<source>Draggable</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_draggable_auto">
+				<source>Auto</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_draggable_false">
+				<source>False</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_draggable_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_draggable_true">
+				<source>True</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_dropzone">
+				<source>Dropzone</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_enctype">
+				<source>Enctype</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_enctype_1">
+				<source>Encoded</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_enctype_2">
+				<source>No encoding - File upload</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_enctype_3">
+				<source>No encoding - Spaces converted</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_height">
+				<source>Height</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_hidden">
+				<source>Hidden</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_id">
+				<source>Id</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode">
+				<source>Inputmode</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_email">
+				<source>Email</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_full-width-latin">
+				<source>Full-width-latin</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_kana">
+				<source>Kana</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_kana-name">
+				<source>Kana-name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_katakana">
+				<source>Katakana</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_latin">
+				<source>Latin</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_latin-name">
+				<source>Latin-name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_latin-prose">
+				<source>Latin-prose</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_numeric">
+				<source>Numeric</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_tel">
+				<source>Tel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_url">
+				<source>Url</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_inputmode_verbatim">
+				<source>Verbatim</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_label">
+				<source>Label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_lang">
+				<source>Lang</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_list">
+				<source>List</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_max">
+				<source>Max</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_maxlength">
+				<source>Maxlength</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_method">
+				<source>Method</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_method_get">
+				<source>Get</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_method_post">
+				<source>Post</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_min">
+				<source>Min</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_minlength">
+				<source>Minlength</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_multiple">
+				<source>Multiple</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_name">
+				<source>Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_novalidate">
+				<source>Novalidate</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_pattern">
+				<source>Pattern</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_placeholder">
+				<source>Placeholder</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_readonly">
+				<source>Readonly</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_required">
+				<source>Required</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_rows">
+				<source>Rows</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selected">
+				<source>Selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selectionDirection">
+				<source>Selection direction</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selectionDirection_backward">
+				<source>Backward</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selectionDirection_forward">
+				<source>Forward</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selectionDirection_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selectionEnd">
+				<source>Selection end</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_selectionStart">
+				<source>Selection start</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_size">
+				<source>Size</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_spellcheck">
+				<source>Spellcheck</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_spellcheck_false">
+				<source>False</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_spellcheck_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_spellcheck_true">
+				<source>True</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_src">
+				<source>Src</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_step">
+				<source>Step</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_style">
+				<source>Style</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_tabindex">
+				<source>Tabindex</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_text">
+				<source>Text</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_title">
+				<source>Title</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_translate">
+				<source>Translate</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_translate_no">
+				<source>No</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_translate_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_translate_yes">
+				<source>Yes</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type">
+				<source>Type</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_button">
+				<source>button</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_checkbox">
+				<source>checkbox</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_color">
+				<source>color</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_date">
+				<source>date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_datetime">
+				<source>datetime</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_datetime-local">
+				<source>datetime-local</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_email">
+				<source>email</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_file">
+				<source>file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_hidden">
+				<source>hidden</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_image">
+				<source>image</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_month">
+				<source>month</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_number">
+				<source>number</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_password">
+				<source>password</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_radio">
+				<source>radio</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_range">
+				<source>range</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_reset">
+				<source>reset</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_search">
+				<source>search</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_submit">
+				<source>submit</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_tel">
+				<source>tel</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_text">
+				<source>text</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_time">
+				<source>time</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_url">
+				<source>url</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_type_week">
+				<source>week</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_value">
+				<source>Value</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_width">
+				<source>Width</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_wrap">
+				<source>Wrap</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_wrap_hard">
+				<source>Hard</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_wrap_none">
+				<source>Not set</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="attributes_wrap_soft">
+				<source>Soft</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_button">
+				<source>Button</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_checkbox">
+				<source>Checkbox</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_fieldset">
+				<source>Fieldset</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_fileupload">
+				<source>Upload Field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_hidden">
+				<source>Hidden Field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_input">
+				<source>Input Field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_password">
+				<source>Password Field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_radio">
+				<source>Radio Button</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_reset">
+				<source>Reset Button</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_select">
+				<source>Drop Down</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_submit">
+				<source>Submit Button</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_textarea">
+				<source>Text Area</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="basic_textline">
+				<source>Text Field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="behaviour_confirmation_page">
+				<source>Confirmation page</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="button_remove">
+				<source>Remove</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="content_header">
+				<source>Header</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="content_textblock">
+				<source>Text block</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_button_delete">
+				<source>Delete this element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_button_edit">
+				<source>Edit this element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_confirm_delete_description">
+				<source>Are you sure you want to delete the selected element?</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_confirm_delete_title">
+				<source>Delete element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_dummy_description">
+				<source>To get started, drag an element from the left panel onto this area</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_dummy_title">
+				<source>You haven't added any elements yet!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_header_content">
+				<source>Edit this header</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label">
+				<source>Edit this label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label_email">
+				<source>Email</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label_firstname">
+				<source>First name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label_lastname">
+				<source>Last name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label_middlename">
+				<source>Middle name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label_prefix">
+				<source>Prefix</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_label_suffix">
+				<source>Suffix</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_legend">
+				<source>Edit this legend</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_legend_name">
+				<source>Full name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_option_1">
+				<source>Option 1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_option_2">
+				<source>Option 2</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_option_3">
+				<source>Option 3</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_textblock_content">
+				<source>Edit this textblock</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_value_1">
+				<source>Value 1</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_value_2">
+				<source>Value 2</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="elements_value_3">
+				<source>Value 3</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errorMessage">
+				<source>No reference to record</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="errorTitle">
+				<source>Wizard error</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_button_add">
+				<source>Add option</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_delete">
+				<source>Delete</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_emptytext">
+				<source>No options to display</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_new">
+				<source>New option</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_selected">
+				<source>Selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_text">
+				<source>Text</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="fieldoptions_value">
+				<source>Value</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_alert_description">
+				<source>The selected filter is already present</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_alert_title">
+				<source>Adding a filter</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_alphabetic">
+				<source>Alphabetic</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_alphanumeric">
+				<source>Alphanumeric</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_currency">
+				<source>Currency</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_digit">
+				<source>Digit</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_dummy_description">
+				<source>To add a filter, select one from the dropdown</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_dummy_title">
+				<source>No filter selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_emptytext">
+				<source>Add a filter</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_integer">
+				<source>Integer</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_lowercase">
+				<source>Lowercase</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_properties_allowwhitespace">
+				<source>Allow whitespace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_properties_characterlist">
+				<source>Character list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_properties_decimalpoint">
+				<source>Decimal point</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_properties_expression">
+				<source>Expression</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_properties_none">
+				<source>This filter has no configuration settings</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_properties_thousandseparator">
+				<source>Thousand separator</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_regexp">
+				<source>Regular Expression</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_removexss">
+				<source>Remove XSS</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_stripnewlines">
+				<source>Strip New Lines</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_titlecase">
+				<source>Titlecase</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_trim">
+				<source>Trim</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="filters_uppercase">
+				<source>Uppercase</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form_behaviour">
+				<source>Behaviour</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form_postprocessor">
+				<source>Post Processors</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="form_prefix">
+				<source>Prefix</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="history_redo">
+				<source>Redo</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="history_undo">
+				<source>Undo</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_label">
+				<source>Label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_layout">
+				<source>Label position</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_layout_back">
+				<source>After</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="label_layout_front">
+				<source>In front</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_elements">
+				<source>Elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_elements_basic">
+				<source>Basic form elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_elements_content">
+				<source>Content elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_elements_intro_description">
+				<source>Drag or double-click elements to add</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_elements_intro_title">
+				<source>Adding elements to the form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_elements_predefined">
+				<source>Predefined form elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_form">
+				<source>Form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="left_options">
+				<source>Options</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="legend_legend">
+				<source>Legend</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="no">
+				<source>No</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_attributes">
+				<source>Attributes Properties</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_dummy_description">
+				<source>When an element has been selected, this area will show the options for the selected element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_dummy_title">
+				<source>Please select an element on the right</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_error">
+				<source>Error</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_error_message">
+				<source>There is an error in the settings of the current element. Please check!</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_fieldoptions">
+				<source>Field options</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_filters">
+				<source>Filters</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_label">
+				<source>Label Properties</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_legend">
+				<source>Legend Properties</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_validation">
+				<source>Validation</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="options_various">
+				<source>Various Properties</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_alert_description">
+				<source>The selected post processor is already present</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_alert_title">
+				<source>Adding a Post Processor</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_dummy_description">
+				<source>To add a post processor, select one from the dropdown</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_dummy_title">
+				<source>No post processor selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_emptytext">
+				<source>Add a Post Processor</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_mail">
+				<source>Send email</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_properties_destination">
+				<source>Destination to redirect to</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_properties_recipientemail">
+				<source>Email address of the recipient</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_properties_senderemail">
+				<source>Email address of the sender</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_properties_subject">
+				<source>Subject</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="postprocessor_redirect">
+				<source>Redirect</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="predefined_checkboxgroup">
+				<source>Checkbox Group</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="predefined_email">
+				<source>Email</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="predefined_name">
+				<source>Full Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="predefined_radiogroup">
+				<source>Radio Button Group</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="prefix_prefix">
+				<source>Prefix</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="refresh">
+				<source>Refresh without saving</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="save">
+				<source>Save form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="saveAndClose">
+				<source>Save and close form</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Form Wizard</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_alert_description">
+				<source>The selected validation rule is already present</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_alert_title">
+				<source>Adding a validation rule</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_alphabetic">
+				<source>Alphabetic</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_alphanumeric">
+				<source>Alphanumeric</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_between">
+				<source>Between</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_date">
+				<source>Date</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_digit">
+				<source>Digit</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_dummy_description">
+				<source>To add a validation rule, select one from the dropdown</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_dummy_title">
+				<source>No validation rule selected</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_email">
+				<source>Email address</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_emptytext">
+				<source>Add a validation rule</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_equals">
+				<source>Equals</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_fileallowedtypes">
+				<source>Allowed mimetypes for file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_filemaximumsize">
+				<source>Maximum size for file (bytes)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_fileminimumsize">
+				<source>Minimum size for file (bytes)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_float">
+				<source>Float</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_greaterthan">
+				<source>Greater than</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_inarray">
+				<source>In array</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_integer">
+				<source>Integer</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_ip">
+				<source>Ip address</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_length">
+				<source>Length</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_lessthan">
+				<source>Less than</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_allowwhitespace">
+				<source>Allow whitespace</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_array">
+				<source>Array (Comma separated)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_error">
+				<source>Error</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_expression">
+				<source>Expression</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_field">
+				<source>Field</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_format">
+				<source>Format</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_inclusive">
+				<source>Inclusive</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_maximum">
+				<source>Maximum</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_message">
+				<source>Message</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_minimum">
+				<source>Minimum</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_showmessage">
+				<source>Show message in label</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_properties_types">
+				<source>Mime types</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_regexp">
+				<source>Regular Expression</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_required">
+				<source>Required</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="validation_uri">
+				<source>Uniform Resource Identifier</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_content">
+				<source>Content</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_headingsize">
+				<source>Heading size</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_middlename">
+				<source>Show middle name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_name">
+				<source>Name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_prefix">
+				<source>Show prefix</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_suffix">
+				<source>Show suffix</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="various_properties_text">
+				<source>Text</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="yes">
+				<source>Yes</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

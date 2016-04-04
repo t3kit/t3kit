@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="assign_to_groups.description"/>
+			<label index=".description"/>
+			<label index="description.description"/>
+			<label index=".details"/>
+			<label index="hidden.description"/>
+			<label index="hidden.details"/>
+			<label index="t1_allowed_groups.description"/>
+			<label index="t1_copy_of_user.description"/>
+			<label index="t1_copy_of_user.details"/>
+			<label index="t1_create_user_dir.description"/>
+			<label index="t1_create_user_dir.details"/>
+			<label index="t1_userprefix.description"/>
+			<label index="t3_listPid.description"/>
+			<label index="t3_tables.description"/>
+			<label index="t4_recordsToEdit.description"/>
+			<label index="title.description"/>
+			<label index="type.description"/>
+			<label index="type.details"/>
+		</languageKey>
+  </data>
+</T3locallangExt>

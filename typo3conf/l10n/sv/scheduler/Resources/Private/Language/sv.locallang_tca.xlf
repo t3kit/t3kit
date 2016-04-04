@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T04:00:26Z" product-name="scheduler">
+		<header/>
+		<body>
+			<trans-unit id="tx_scheduler_task_group">
+				<source>Scheduler task group</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_scheduler_task_group.description">
+				<source>Description</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tx_scheduler_task_group.groupName">
+				<source>Group name</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

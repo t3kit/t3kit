@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T00:04:26Z" product-name="backend">
+		<header/>
+		<body>
+			<trans-unit id="mlang_labels_tabdescr" approved="no">
+				<source>This module allows you to create and edit webpages, view page hit statistics, manage different languages and columns of content per page and access special page contents like guestbooks and shopping items.</source>
+				<target state="needs-translation">Med denna modul kan man skapa och ändra webbsidor. Här finns en snabbredigering med vilken man snabbt kommer åt det viktigaste sidinnehållet. Dessutom kan man hantera olika språk och kolumner med innehåll för varje sida. Slutligen kan man redigera speciella slag av sidinnehåll, t.ex. gästbok, diskussionsforum och produkter.</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" approved="no">
+				<source>Page content</source>
+				<target state="needs-translation">Sidinnehåll</target>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" approved="no">
+				<source>Page</source>
+				<target state="needs-translation">Sida</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

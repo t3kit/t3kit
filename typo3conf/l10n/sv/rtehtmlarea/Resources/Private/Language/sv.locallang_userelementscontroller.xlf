@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:26Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="expand" approved="yes">
+				<source>Expand category</source>
+				<target state="translated">Utöka kategori</target>
+			</trans-unit>
+			<trans-unit id="filesize" approved="yes">
+				<source>Filesize</source>
+				<target state="translated">Filstorlek</target>
+			</trans-unit>
+			<trans-unit id="noTextSelection" approved="yes">
+				<source>Error: There was no selected text to wrap.</source>
+				<target state="translated">Fel: Det fanns ingen markerad text att bearbeta.</target>
+			</trans-unit>
+			<trans-unit id="noTitle" approved="yes">
+				<source>No title</source>
+				<target state="translated">Ingen rubrik</target>
+			</trans-unit>
+			<trans-unit id="pixels" approved="yes">
+				<source>Pixels</source>
+				<target state="translated">Pixlar</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T02:13:13Z" product-name="lang">
+		<header/>
+		<body>
+			<trans-unit id="endText" approved="yes">
+				<source>Features may vary depending on your website and permissions</source>
+				<target state="translated">Tillgången till moduler kan variera beroende på din webbplats och dina rättigheter.</target>
+			</trans-unit>
+			<trans-unit id="introtext" approved="yes">
+				<source>Web Content Management System</source>
+				<target state="translated">Web Content Management System</target>
+			</trans-unit>
+			<trans-unit id="introtext2" approved="yes">
+				<source>This is a brief description of the available modules.</source>
+				<target state="translated">Detta är en kort beskrivning av de moduler som står till buds:</target>
+			</trans-unit>
+			<trans-unit id="userInfo" approved="yes">
+				<source>You're logged in as user:</source>
+				<target state="translated">Du är inloggad som:</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

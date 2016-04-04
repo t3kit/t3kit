@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="sys_action">Aktivitet</label>
+			<label index="sys_action.assign_to_groups"/>
+			<label index="sys_action.hidden"/>
+			<label index="sys_action.t1_allowed_groups"/>
+			<label index="sys_action.t1_copy_of_user"/>
+			<label index="sys_action.t1_create_user_dir"/>
+			<label index="sys_action.t1_userprefix"/>
+			<label index="sys_action.t3_listPid"/>
+			<label index="sys_action.t3_tables"/>
+			<label index="sys_action.t4_recordsToEdit"/>
+			<label index="sys_action.type.1"/>
+			<label index="sys_action.type.2"/>
+			<label index="sys_action.type.3"/>
+			<label index="sys_action.type.4"/>
+			<label index="sys_action.type.5"/>
+			<label index="tx_sys_action">Aktiviteter</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

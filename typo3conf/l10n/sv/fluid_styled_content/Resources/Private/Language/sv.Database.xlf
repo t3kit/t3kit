@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T01:17:43Z" product-name="fluid_styled_content">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.asset_references">
+				<source>Media elements</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.asset_references.addFileReference">
+				<source>Add media file</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type">
+				<source>Type of bullets</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.0">
+				<source>Unordered list (bullets)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.1">
+				<source>Ordered list (numbers)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.bullets_type.2">
+				<source>Definition list</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.CType.textmedia">
+				<source>Text &amp; Media</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.palette.gallerySettings">
+				<source>Gallery Settings</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.palette.mediaAdjustments">
+				<source>Media Adjustments</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.palette.textmedia.imageborder">
+				<source>Border around each element</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.palette.textmedia.imageheight">
+				<source>Height of each element (px)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.palette.textmedia.imagewidth">
+				<source>Width of each element (px)</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.uploads_description">
+				<source>Display description</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.uploads_type">
+				<source>Display file/icon/thumbnail</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.uploads_type.0">
+				<source>Only file name</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.uploads_type.1">
+				<source>File name and file extension icon</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tt_content.uploads_type.2">
+				<source>File name and thumbnail (if possible)</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

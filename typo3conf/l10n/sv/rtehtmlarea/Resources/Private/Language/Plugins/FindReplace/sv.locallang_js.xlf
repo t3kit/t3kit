@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:22Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="Actions" approved="yes">
+				<source>Actions</source>
+				<target state="translated">Funktioner:</target>
+			</trans-unit>
+			<trans-unit id="Case sensitive search" approved="yes">
+				<source>Case sensitive search</source>
+				<target state="translated">Matcha gemener/VERSALER</target>
+			</trans-unit>
+			<trans-unit id="Clear" approved="yes">
+				<source>Clear</source>
+				<target state="translated">Rensa</target>
+			</trans-unit>
+			<trans-unit id="Done" approved="yes">
+				<source>Done</source>
+				<target state="translated">Klart</target>
+			</trans-unit>
+			<trans-unit id="Enter the text you want to find" approved="yes">
+				<source>Enter the text you want to find</source>
+				<target state="translated">Fyll i texten som du vill hitta</target>
+			</trans-unit>
+			<trans-unit id="Find and Replace" approved="yes">
+				<source>Find And Replace</source>
+				<target state="translated">Sök och ersätt</target>
+			</trans-unit>
+			<trans-unit id="found item" approved="yes">
+				<source>item found</source>
+				<target state="translated">förekomst hittades</target>
+			</trans-unit>
+			<trans-unit id="found items" approved="yes">
+				<source>found items</source>
+				<target state="translated">hittad(e) förekomst(er)</target>
+			</trans-unit>
+			<trans-unit id="Highlight" approved="yes">
+				<source>Highlight</source>
+				<target state="translated">Markera</target>
+			</trans-unit>
+			<trans-unit id="Inform a replacement word" approved="yes">
+				<source>This will erase all occurrences.</source>
+				<target state="translated">Detta kommer att radera alla förekomster.</target>
+			</trans-unit>
+			<trans-unit id="Next" approved="yes">
+				<source>Next</source>
+				<target state="translated">Nästa</target>
+			</trans-unit>
+			<trans-unit id="not found" approved="yes">
+				<source>not found</source>
+				<target state="translated">hittades inte</target>
+			</trans-unit>
+			<trans-unit id="Options" approved="yes">
+				<source>Options</source>
+				<target state="translated">Alternativ:</target>
+			</trans-unit>
+			<trans-unit id="replaced item" approved="yes">
+				<source>item replaced</source>
+				<target state="translated">förekomst ersatt</target>
+			</trans-unit>
+			<trans-unit id="replaced items" approved="yes">
+				<source>replaced items</source>
+				<target state="translated">ersatt(a) förekomst(er)</target>
+			</trans-unit>
+			<trans-unit id="Replace with:" approved="yes">
+				<source>Replace with:</source>
+				<target state="translated">Ersätt med:</target>
+			</trans-unit>
+			<trans-unit id="Search for:" approved="yes">
+				<source>Search for:</source>
+				<target state="translated">Sök efter:</target>
+			</trans-unit>
+			<trans-unit id="Substitute all occurrences" approved="yes">
+				<source>Substitute all occurrences</source>
+				<target state="translated">Ersätt alla förekomster</target>
+			</trans-unit>
+			<trans-unit id="Substitute this occurrence?" approved="yes">
+				<source>Substitute this occurrence?</source>
+				<target state="translated">Ersätt denna förekomst?</target>
+			</trans-unit>
+			<trans-unit id="Undo" approved="yes">
+				<source>Undo</source>
+				<target state="translated">Ångra</target>
+			</trans-unit>
+			<trans-unit id="Whole words only" approved="yes">
+				<source>Whole words only</source>
+				<target state="translated">Endast hela ord</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

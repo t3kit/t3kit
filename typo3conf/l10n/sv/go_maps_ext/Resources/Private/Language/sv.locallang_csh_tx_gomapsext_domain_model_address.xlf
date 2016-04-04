@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-21T11:34:06Z" target-language="sv">
+		<header>
+			<description>Context Sensitive Help (CSH) for table tx_gomapsext_domain_model_address</description>
+			<type>CSH</type>
+			<csh_table>tx_gomapsext_domain_model_address</csh_table>
+			<authorName>Marc Hirdes</authorName>
+			<authorEmail>marc_hirdes@gmx.de</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="address.description" xml:space="preserve">
+			<source>Please enter an address or coordinates on the position field above and press update.</source>
+		<target></target></trans-unit>
+		<trans-unit id="close_by_click.description" xml:space="preserve">
+			<source>Close InfoWindow by click instead of mouse out.</source>
+		<target></target></trans-unit>
+		<trans-unit id="configuration_map.description" xml:space="preserve">
+			<source>Enter an address [street number, zip city] or coordinates [latitude,longitude] and press 'Update' or drag and drop the marker.</source>
+		<target></target></trans-unit>
+		<trans-unit id="image_height.description" xml:space="preserve">
+			<source>Costum image height in pixel.</source>
+		<target></target></trans-unit>
+		<trans-unit id="image_size.description" xml:space="preserve">
+			<source>Check if the image has a different size then default.</source>
+		<target></target></trans-unit>
+		<trans-unit id="image_width.description" xml:space="preserve">
+			<source>Costum image width in pixel.</source>
+		<target></target></trans-unit>
+		<trans-unit id="info_window_content.description" xml:space="preserve">
+			<source>This will be displayed in the InfoWindow of this marker.</source>
+		<target></target></trans-unit>
+		<trans-unit id="info_window_link.description" xml:space="preserve">
+			<source>Attachs an optional automatic generated link to calculate a route on Google Maps.</source>
+		<target></target></trans-unit>
+		<trans-unit id="latitude.description" xml:space="preserve">
+			<source>Please enter an address or coordinates on the position field above and press update.</source>
+		<target></target></trans-unit>
+		<trans-unit id="longitude.description" xml:space="preserve">
+			<source>Please enter an address or coordinates on the position field above and press update.</source>
+		<target></target></trans-unit>
+		<trans-unit id="marker.description" xml:space="preserve">
+			<source>Choose a costum image for the pin.</source>
+		<target></target></trans-unit>
+		<trans-unit id="open_by_click.description" xml:space="preserve">
+			<source>Open InfoWindow by click instead of mouse over.</source>
+		<target></target></trans-unit>
+		<trans-unit id="opened.description" xml:space="preserve">
+			<source>The InfoWindow is opened when the map appears. For each map there will be only one opened InfoWindow.</source>
+		<target></target></trans-unit>
+		<trans-unit id="shadow.description" xml:space="preserve">
+			<source>Choose a costum shadow for the pin.</source>
+		<target></target></trans-unit>
+		<trans-unit id="shadow_height.description" xml:space="preserve">
+			<source>Costum shadow height in pixel.</source>
+		<target></target></trans-unit>
+		<trans-unit id="shadow_size.description" xml:space="preserve">
+			<source>Check if the shadow has a different size then default.</source>
+		<target></target></trans-unit>
+		<trans-unit id="shadow_width.description" xml:space="preserve">
+			<source>Costum shadow width in pixel.</source>
+		<target></target></trans-unit>
+		<trans-unit id="title.description" xml:space="preserve">
+			<source>Only for internal usage.</source>
+		<target></target></trans-unit>
+		</body>
+	</file>
+</xliff>

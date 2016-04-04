@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-04T00:50:53Z" product-name="core">
+		<header/>
+		<body>
+			<trans-unit id="label1" approved="yes">
+				<source>This is my 1st label</source>
+				<target state="translated">Detta är min första etikett</target>
+			</trans-unit>
+			<trans-unit id="label2" approved="yes">
+				<source>This is my 2nd label</source>
+				<target state="translated">Detta är min andra etikett</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

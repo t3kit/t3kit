@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T03:26:27Z" product-name="rtehtmlarea">
+		<header/>
+		<body>
+			<trans-unit id="download_altText" approved="yes">
+				<source>Initiates file download</source>
+				<target state="translated">Startar nedladdning av fil</target>
+			</trans-unit>
+			<trans-unit id="download_titleText" approved="yes">
+				<source>Initiates file download</source>
+				<target state="translated">Startar nedladdning av fil</target>
+			</trans-unit>
+			<trans-unit id="external_link_altText" approved="yes">
+				<source>Opens external link in current window</source>
+				<target state="translated">Öppnar extern länk i nuvarande fönster</target>
+			</trans-unit>
+			<trans-unit id="external_link_new_window_altText" approved="yes">
+				<source>Opens external link in new window</source>
+				<target state="translated">Öppnar extern länk i nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="external_link_new_window_titleText" approved="yes">
+				<source>Opens external link in new window</source>
+				<target state="translated">Öppnar extern länk i nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="external_link_titleText" approved="yes">
+				<source>Opens external link in current window</source>
+				<target state="translated">Öppnar extern länk i nuvarande fönster</target>
+			</trans-unit>
+			<trans-unit id="internal_link_altText" approved="yes">
+				<source>Opens internal link in current window</source>
+				<target state="translated">Öppnar intern länk i nuvarande fönster</target>
+			</trans-unit>
+			<trans-unit id="internal_link_new_window_altText" approved="yes">
+				<source>Opens internal link in new window</source>
+				<target state="translated">Öppnar intern länk i nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="internal_link_new_window_titleText" approved="yes">
+				<source>Opens internal link in new window</source>
+				<target state="translated">Öppnar intern länk i nytt fönster</target>
+			</trans-unit>
+			<trans-unit id="internal_link_titleText" approved="yes">
+				<source>Opens internal link in current window</source>
+				<target state="translated">Öppnar intern länk i nuvarande fönster</target>
+			</trans-unit>
+			<trans-unit id="mail_altText" approved="yes">
+				<source>Opens window for sending email</source>
+				<target state="translated">Öppnar fönster för att skicka e-post</target>
+			</trans-unit>
+			<trans-unit id="mail_titleText" approved="yes">
+				<source>Opens window for sending email</source>
+				<target state="translated">Öppnar fönster för att skicka e-post</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

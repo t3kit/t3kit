@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="sv" datatype="plaintext" original="messages" date="2016-04-03T05:05:59Z" product-name="workspaces">
+		<header/>
+		<body>
+			<trans-unit id="sys_filemounts.tabs.staging">
+				<source>Staging</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace.custom_stages">
+				<source>Custom stages:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace.edit_allow_notificaton_settings">
+				<source>Allow notification settings during stage change back to edit stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace.edit_notification_defaults">
+				<source>Edit stage: default notification mail recipients</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace.edit_notification_mode">
+				<source>Edit stage: Recipient suggestion checkboxes</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="sys_workspace.notification_mode.0">
+				<source>All are selected per default (can be changed)</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="sys_workspace.notification_mode.1">
+				<source>Some are selected per default (defaults cannot be unchecked)</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="sys_workspace.notification_mode.2">
+				<source>All are selected per default (cannot be changed)</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="sys_workspace.publish_allow_notificaton_settings">
+				<source>Allow notification settings during stage change to ready to publish</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace.publish_notification_defaults">
+				<source>Ready to publish stage: default notification mail recipients</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace.publish_notification_mode">
+				<source>Ready to publish stage: Recipient suggestion checkboxes</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage">
+				<source>Workspace Stage</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.allow_notificaton_settings">
+				<source>Allow notification settings during stage change</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.default_mailcomment">
+				<source>Default mail comment:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.notification_defaults">
+				<source>Default notification mail recipients</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.notification_mode">
+				<source>Recipient suggestion checkboxes</source>
+				<target/>
+				<note from="developer">This label is deprecated (not used anymore) since TYPO3v8</note>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.parentid">
+				<source>UID of parent record:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.parenttable">
+				<source>Parent table:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="sys_workspace_stage.responsible_persons">
+				<source>Responsible persons:</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.general">
+				<source>General</source>
+				<target/>
+			</trans-unit>
+			<trans-unit id="tabs.notification_settings">
+				<source>Notification settings</source>
+				<target/>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

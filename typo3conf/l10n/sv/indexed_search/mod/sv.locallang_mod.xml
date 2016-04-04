@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="mlang_labels_tabdescr">Här kan du ställa in indexeringsmotorn som finns i frontend-webbplatsen. Du kan se statistik över indexerade sidor. Indexeringen måste aktiveras i TypoScript-mallen.&lt;br /&gt;&lt;em&gt;Tillgänglig endast för 'admin'-användare!&lt;/em&gt;</label>
+			<label index="mlang_labels_tablabel">Visa statistik gällande indexeringsmotorn</label>
+			<label index="mlang_tabs_tab">Indexering</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

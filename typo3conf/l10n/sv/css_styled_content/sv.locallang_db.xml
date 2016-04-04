@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="tt_content.tx_cssstyledcontent_acctables">Tillgänglighet</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_caption">Tabellrubrik (&lt;caption&gt;)</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_headerpos">Placering av tabellrubrik (&lt;th&gt;)</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_headerpos.I.0">ingen rubrik</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_headerpos.I.1">topp</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_headerpos.I.2">vänster</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_nostyles">Inga CSS stilmallar för denna tabell</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_summary">Tabellsammanfattning ("summary"-attribut i &lt;table&gt;)</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_tableclass">CSS-klass för tabellen</label>
+			<label index="tt_content.tx_cssstyledcontent_acctables_tfoot">Använd tabellfot (&lt;tfoot&gt; runt sista tabellraden)</label>
+			<label index="tt_content.tx_cssstyledcontent_section_frame.I.0"/>
+			<label index="tt_content.tx_cssstyledcontent_section_frame.I.9">Ingen ram</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing">Tabellbehandling</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_delimiter">Fältavgränsare</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_delimiter_colon">,</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_delimiter_comma">, (Komma)</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_delimiter_pipe">|</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_delimiter_semicolon">;</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_delimiter_tab">⇥ (Tab)</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_quote">Textavgränsare</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_quote_double">"</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_quote_none">ingen</label>
+			<label index="tt_content.tx_cssstyledcontent_tableparsing_quote_single">'</label>
+		</languageKey>
+  </data>
+</T3locallangExt>

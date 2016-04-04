@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="sv" type="array">
+			<label index="mlang_labels_tabdescr">I Uppgifter kommer du till din interna Att göra-lista, meddelanden, snabbanteckningar, aktiviteter mm. Där finns också genvägar till de frontend-moduler som du kan använda och till de sidor som du senast jobbat med. I Uppgifter håller du ordning på ditt dagliga arbete och arbetsgången.</label>
+			<label index="mlang_labels_tablabel">Uppgifter med översikter, meddelanden, Att göra-listor</label>
+			<label index="mlang_tabs_tab">Uppgifter</label>
+		</languageKey>
+  </data>
+</T3locallangExt>
