@@ -289,7 +289,7 @@ return [
             'suggestions' => [],
         ],
         't3kit_extension_tools' => [
-            'composerName' => 't3kit_extension_tools',
+            'composerName' => 't3kit/t3kit-extension-tools',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
             'suggestions' => [],
