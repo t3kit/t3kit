@@ -1,3 +1,9 @@
+#### v7.1.2 `2016-04-7`
+- **[UPDATE]** theme_t3kit, disable lang menu by default
+- **[REFACTOR]** change GraphicsMagick to ImageMagick
+- **[UPDATE]** add Swedish lang
+- **[FIX]** change composerName for t3kit-extension-tools
+
 #### v7.1.1 `2016-03-31`
 - **[UPDATE]** theme_t3kit, remove extra greater than sign
 - **[UPDATE]** t3kit_extension_tools, add composer.json for needed dependencies
