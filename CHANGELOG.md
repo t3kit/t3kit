@@ -1,3 +1,7 @@
+#### v7.1.3 `April 15, 2016`
+- **[UPDATE]** theme_t3kit ([5f924f7](https://github.com/t3kit/t3kit/commit/5f924f7))
+- **[UPDATE]** t3kit_extension_tools ([ea14a20](https://github.com/t3kit/t3kit/commit/ea14a20))
+
 #### v7.1.2 `2016-04-7`
 - **[UPDATE]** theme_t3kit, disable lang menu by default
 - **[REFACTOR]** change GraphicsMagick to ImageMagick
