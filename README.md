@@ -16,10 +16,6 @@
 
 The best way to start working with t3kit is to use our [t3kit_vagrant](https://github.com/t3kit/t3kit_vagrant) machine
 
-###List of tools and extensions:
-
-* TBD
-
 ***
 
 # Contributing
@@ -47,15 +43,6 @@ If you have a question(feature) not covered in the documentation or want to repo
 * Follow [Git commit conventions](https://github.com/t3kit/t3kit#git-commit-conventions-and-output-formatting)
 * Write a convincing description of your PR and why we should land it
 
-
-## Internal Fixes `t3kit team`
-
-* Non-trivial changes should be discussed in **t3kit team**
-* It is permited to work on master branch, but in most of cases better to create **new branch** for your changes
-* Follow [Style Guides](https://github.com/t3kit/t3kit#style-guide)
-* Follow [Git commit conventions](https://github.com/t3kit/t3kit#git-commit-conventions-and-output-formatting)
-* Keep in mind our [Git versioning system](https://github.com/t3kit/t3kit#versioning-system)
-
 ***
 
 ## Style Guide
@@ -64,7 +51,7 @@ This project uses special style guides. Those rules you can find on appropriate 
 * [editorconfig](http://editorconfig.org)
 
 ## Git commit conventions and output formatting
-Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. All commits with labels will be added in changelog, that's why it is **important to use predefined labels** on your commits.
+Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. All commits with labels will be added in CHANGELOG file, that's why it is **important to use predefined labels** on your commits.
 
 ####Git labels:
 * **[FEATURE]** A new feature
