@@ -1,3 +1,9 @@
+#### v7.2.0 `May 10, 2016`
+- **[UPDATE]** theme_t3kit 1.2.0 ([7a3f78a](https://github.com/t3kit/t3kit/commit/7a3f78a))
+- **[UPDATE]** t3kit_extension_tools 0.0.3 ([3df17ba](https://github.com/t3kit/t3kit/commit/3df17ba))
+- **[DOC]** delete unneeded info from README file ([dbc5673](https://github.com/t3kit/t3kit/commit/dbc5673))
+- **[CHORE]** add new environments for TYPO3 context ([519785a](https://github.com/t3kit/t3kit/commit/519785a))
+
 #### v7.1.3 `April 15, 2016`
 - **[UPDATE]** theme_t3kit ([5f924f7](https://github.com/t3kit/t3kit/commit/5f924f7))
 - **[UPDATE]** t3kit_extension_tools ([ea14a20](https://github.com/t3kit/t3kit/commit/ea14a20))
