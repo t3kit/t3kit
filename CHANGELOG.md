@@ -1,3 +1,7 @@
+#### v7.3.0 `May 13, 2016`
+- **[UPDATE]** t3kit_extension_tools 0.0.4 ([b5eb399](https://github.com/t3kit/t3kit/commit/b5eb399))
+- **[UPDATE]** theme_t3kit 1.3.0 ([d08266d](https://github.com/t3kit/t3kit/commit/d08266d))
+
 #### v7.2.0 `May 10, 2016`
 - **[UPDATE]** theme_t3kit 1.2.0 ([7a3f78a](https://github.com/t3kit/t3kit/commit/7a3f78a))
 - **[UPDATE]** t3kit_extension_tools 0.0.3 ([3df17ba](https://github.com/t3kit/t3kit/commit/3df17ba))
