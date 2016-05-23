@@ -300,6 +300,12 @@ return [
             'packagePath' => 'typo3conf/ext/theme_t3kit/',
             'suggestions' => [],
         ],
+        'theme_t3kit_bluemountain' => [
+            'composerName' => 'theme_t3kit_bluemountain',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/theme_t3kit_bluemountain/',
+            'suggestions' => [],
+        ],
         'realurl' => [
             'composerName' => 'realurl',
             'state' => 'active',
