@@ -1,3 +1,10 @@
+#### v7.4.0 `May 26, 2016`
+- **[UPDATE]** theme_t3kit 1.3.1 ([ea241a4](https://github.com/t3kit/t3kit/commit/ea241a4))
+- **[UPDATE]** TYPO3 7.6.9 ([3e8ccd1](https://github.com/t3kit/t3kit/commit/3e8ccd1))
+- **[UPDATE]** TYPO3 7.6.8 ([7dad0ac](https://github.com/t3kit/t3kit/commit/7dad0ac))
+- **[FEATURE]** add new TYPO3 Theme Blue Mountain 0.0.1 alpha ([93d5a8c](https://github.com/t3kit/t3kit/commit/93d5a8c))
+- **[UPDATE]** TYPO3 7.6.7 ([6f8473d](https://github.com/t3kit/t3kit/commit/6f8473d))
+
 #### v7.3.0 `May 13, 2016`
 - **[UPDATE]** t3kit_extension_tools 0.0.4 ([b5eb399](https://github.com/t3kit/t3kit/commit/b5eb399))
 - **[UPDATE]** theme_t3kit 1.3.0 ([d08266d](https://github.com/t3kit/t3kit/commit/d08266d))
