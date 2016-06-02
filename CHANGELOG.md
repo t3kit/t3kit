@@ -1,3 +1,8 @@
+#### v7.5.0 `June 2, 2016`
+- **[UPDATE]** theme_t3kit 1.4.1 ([48384e9](https://github.com/t3kit/t3kit/commit/48384e9))
+- **[UPDATE]** theme_t3kit_bluemountain 0.1.1 ([7e9626f](https://github.com/t3kit/t3kit/commit/7e9626f))
+- **[UPDATE]** theme_t3kit 1.4.0 ([4d14063](https://github.com/t3kit/t3kit/commit/4d14063))
+
 #### v7.4.0 `May 26, 2016`
 - **[UPDATE]** theme_t3kit 1.3.1 ([ea241a4](https://github.com/t3kit/t3kit/commit/ea241a4))
 - **[UPDATE]** TYPO3 7.6.9 ([3e8ccd1](https://github.com/t3kit/t3kit/commit/3e8ccd1))
