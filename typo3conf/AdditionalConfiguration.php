@@ -12,6 +12,14 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['errorHandlerErrors'] = 30711;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = 30709;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] = 'Vagrant :: t3kit :: TYPO3';
+		// Set systemLogLevel to 0 to enable systemLog
+		$GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = 0;
+		// Will then appear in http://localhost:28778/ (logio)
+		$GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLog'] = 'error_log';
+		// Will then appear in http://localhost:1080/ (mailcatcher) and http://localhost:28778/ (logio)
+		// Page will load noticably slow when systemLog to "mail" is enabled and a lot of errors occurs.
+		// $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLog'] = 'mail,dummy@t3kit.com;error_log';
+
 	break;
 	case 'Development':
 		// SetEnv TYPO3_CONTEXT Development
@@ -89,7 +97,9 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
         $GLOBALS['TYPO3_CONF_VARS']['FE']['disableNoCacheParameter'] = 1;
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['errorHandlerErrors'] = 30466; // Default = 30466
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['exceptionalErrors'] = 20480; // Default = 20480
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['syslogErrorReporting'] = 4437; // Default = 30711
+        // Allow errors to be logged to systemLog if enabled.
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['syslogErrorReporting'] = 30711; // Default = 30711
+        // Prevent some "simple" errors to be logged to sys_log
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['belogErrorReporting'] = 4437; // Default = 30711
     break;
 }
