@@ -16,7 +16,9 @@ call_user_func(function() {
         $iconRegistry->registerIcon(
             'custom-content-elements-twbsButton',
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => $customContentElementIconFilePrefix .  'customElement.svg']
+            [
+                'source' => $customContentElementIconFilePrefix . 'customElement.svg'
+            ]
         );
     }
 

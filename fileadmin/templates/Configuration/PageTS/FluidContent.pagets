@@ -9,7 +9,7 @@ TCEFORM.tt_content.wrapper {
    addItems {
        # add more wrappers. Interval from 100 to 999
        # overwrite default example with yout wrapper name (keep key - 100 as a first item)
-    #    100 = Example generic wrapper
+       # 100 = Example generic wrapper
    }
 }
 
