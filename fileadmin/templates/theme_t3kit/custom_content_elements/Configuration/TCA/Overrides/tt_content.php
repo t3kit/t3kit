@@ -10,7 +10,6 @@ call_user_func(function() {
     $cmsLanguageFilePrefix = 'LLL:EXT:cms/locallang_ttc.xlf:';
     $customContentElementIconFilePrefix = 'fileadmin/templates/theme_t3kit/custom_content_elements/Resources/Public/Backend/Images/';
 
-
     //
     // CTypes
     //
@@ -34,16 +33,16 @@ call_user_func(function() {
     // "twbsButton"
     $GLOBALS['TCA']['tt_content']['types']['twbsButton'] = [
         'showitem' => '
-                --palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
-                header;' . $customContentElementFilePrefix . 'twbsButton.header_label,
-                 --linebreak--, header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
-                 --linebreak--,pi_flexform;' . $contentElementLanguageFilePrefix . 'tt_content.tabs.settings,
+            --palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
+            header;' . $customContentElementFilePrefix . 'twbsButton.header_label,
+            --linebreak--, header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+            --linebreak--,pi_flexform;' . $contentElementLanguageFilePrefix . 'tt_content.tabs.settings,
             --div--;' . $frontendLanguageFilePrefix . 'tabs.appearance,
-                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
-                --palette--;' . $frontendLanguageFilePrefix . 'palette.appearanceLinks;appearanceLinks,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+            --palette--;' . $frontendLanguageFilePrefix . 'palette.appearanceLinks;appearanceLinks,
             --div--;' . $frontendLanguageFilePrefix . 'tabs.access,
-                hidden;' . $frontendLanguageFilePrefix . 'field.default.hidden,
-                --palette--;' . $frontendLanguageFilePrefix . 'palette.access;access,
+            hidden;' . $frontendLanguageFilePrefix . 'field.default.hidden,
+            --palette--;' . $frontendLanguageFilePrefix . 'palette.access;access,
             --div--;' . $frontendLanguageFilePrefix . 'tabs.extended
         '
     ];

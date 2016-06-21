@@ -5,10 +5,10 @@
 	<f:debug>{_all}</f:debug>
 
 	<f:section name="content">
-	<!-- theme_t3kit: Templates/CustomContentElements/twbsButton.html [begin] -->
-	<f:if condition="{data.header_link}">
-		<f:link.typolink parameter="{data.header_link}" class="{layoutClass}{f:if(condition: settings.buttonSize, then: ' {settings.buttonSize}')}{f:if(condition: settings.blockLevel, then: ' btn-block')}">{data.header}</f:link.typolink>
-	</f:if>
-	<!-- theme_t3kit: Templates/CustomContentElements/twbsButton.html [end] -->
+		<!-- theme_t3kit: Templates/CustomContentElements/twbsButton.html [begin] -->
+		<f:if condition="{data.header_link}">
+			<f:link.typolink parameter="{data.header_link}" class="{layoutClass}{f:if(condition: settings.buttonSize, then: ' {settings.buttonSize}')}{f:if(condition: settings.blockLevel, then: ' btn-block')}">{data.header}</f:link.typolink>
+		</f:if>
+		<!-- theme_t3kit: Templates/CustomContentElements/twbsButton.html [end] -->
 	</f:section>
 </div>
