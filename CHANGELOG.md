@@ -1,3 +1,12 @@
+
+#### v7.6.0 `June 22, 2016`
+- **[UPDATE]** theme_t3kit 1.5.0 ([a8f6964](https://github.com/t3kit/t3kit/commit/a8f6964))
+- **[UPDATE]** theme_t3kit_bluemountain 0.2.0 ([f9298c4](https://github.com/t3kit/t3kit/commit/f9298c4))
+- **[UPDATE]** t3kit_extension_tools 1.0.0 ([04aacac](https://github.com/t3kit/t3kit/commit/04aacac))
+- **[STYLE]** Fix PHPCGL issues and improve readability of the code ([0dd1505](https://github.com/t3kit/t3kit/commit/0dd1505))
+- **[FEATURE]** added production context in AdditionalConfiguration ([7993da3](https://github.com/t3kit/t3kit/commit/7993da3))
+
+***
 #### v7.5.0 `June 2, 2016`
 - **[UPDATE]** theme_t3kit 1.4.1 ([48384e9](https://github.com/t3kit/t3kit/commit/48384e9))
 - **[UPDATE]** theme_t3kit_bluemountain 0.1.1 ([7e9626f](https://github.com/t3kit/t3kit/commit/7e9626f))
