@@ -49,3 +49,6 @@
 [submodule "typo3conf/ext/theme_t3kit_bluemountain"]
 	path = typo3conf/ext/theme_t3kit_bluemountain
 	url = git@github.com:t3kit/theme_t3kit_bluemountain.git
+[submodule "typo3conf/ext/pxa_form_enhancement"]
+	path = typo3conf/ext/pxa_form_enhancement
+	url = git@github.com:pixelant/pxa_form_enhancement.git
