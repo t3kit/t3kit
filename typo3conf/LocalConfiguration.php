@@ -48,6 +48,7 @@ return [
     ],
     'FE' => [
         'debug' => false,
+        'lifetime' => '2592000',
         'loginSecurityLevel' => 'rsa',
     ],
     'GFX' => [
