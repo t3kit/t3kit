@@ -1,4 +1,13 @@
 
+#### v7.7.0 `July 8, 2016`
+- **[UPDATE]** theme_t3kit_bluemountain 0.3.0 ([843b054](https://github.com/t3kit/t3kit/commit/843b054))
+- **[UPDATE]** theme_t3kit 1.6.0 ([3d24ab4](https://github.com/t3kit/t3kit/commit/3d24ab4))
+- **[UPDATE]** t3kit_extension_tools 1.0.1 ([385f66e](https://github.com/t3kit/t3kit/commit/385f66e))
+- **[FEATURE]** extend TYPO3 standart form with new validator and recaptcha field (#73) ([2457e94](https://github.com/t3kit/t3kit/commit/2457e94))
+- **[DOC]** add license file (Podio feature_24) ([dde80d3](https://github.com/t3kit/t3kit/commit/dde80d3))
+
+***
+
 #### v7.6.0 `June 22, 2016`
 - **[UPDATE]** theme_t3kit 1.5.0 ([a8f6964](https://github.com/t3kit/t3kit/commit/a8f6964))
 - **[UPDATE]** theme_t3kit_bluemountain 0.2.0 ([f9298c4](https://github.com/t3kit/t3kit/commit/f9298c4))
