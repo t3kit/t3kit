@@ -338,6 +338,12 @@ return [
             'packagePath' => 'typo3conf/ext/news/',
             'suggestions' => [],
         ],
+        'pxa_form_enhancement' => [
+            'composerName' => 'pxa_form_enhancement',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/pxa_form_enhancement/',
+            'suggestions' => [],
+        ],
         'pxa_newsletter_subscription' => [
             'composerName' => 'pxa_newsletter_subscription',
             'state' => 'active',
