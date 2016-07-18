@@ -1,4 +1,14 @@
 
+#### v7.8.0 `July 18, 2016`
+- **[UPDATE]** theme_t3kit_bluemountain 0.4.0 ([b9280dc](https://github.com/t3kit/t3kit/commit/b9280dc))
+- **[UPDATE]** theme_t3kit 1.7.0 ([9ceafb3](https://github.com/t3kit/t3kit/commit/9ceafb3))
+- **[UPDATE]** t3kit_extension_tools 1.0.2 ([265ca88](https://github.com/t3kit/t3kit/commit/265ca88))
+- **[UPDATE]** dyncss_less 0.7.7 ([f5928fa](https://github.com/t3kit/t3kit/commit/f5928fa))
+- **[DOC]** update README file ([10f21f8](https://github.com/t3kit/t3kit/commit/10f21f8))
+- **[DOC]** add new contributing guide ([3b5e90d](https://github.com/t3kit/t3kit/commit/3b5e90d))
+
+***
+
 #### v7.7.0 `July 8, 2016`
 - **[UPDATE]** theme_t3kit_bluemountain 0.3.0 ([843b054](https://github.com/t3kit/t3kit/commit/843b054))
 - **[UPDATE]** theme_t3kit 1.6.0 ([3d24ab4](https://github.com/t3kit/t3kit/commit/3d24ab4))
