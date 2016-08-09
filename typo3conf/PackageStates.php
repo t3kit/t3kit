@@ -252,24 +252,6 @@ return [
             'packagePath' => 'typo3/sysext/viewpage/',
             'suggestions' => [],
         ],
-        'static_info_tables' => [
-            'composerName' => 'sjbr/static_info_tables',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/static_info_tables/',
-            'suggestions' => [],
-        ],
-        'yaml_parser' => [
-            'composerName' => 'typo3-ter/yaml-parser',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/yaml_parser/',
-            'suggestions' => [],
-        ],
-        'themes' => [
-            'composerName' => 'typo3-themes/themes',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/themes/',
-            'suggestions' => [],
-        ],
         'dyncss' => [
             'composerName' => 'dyncss',
             'state' => 'active',
@@ -280,6 +262,18 @@ return [
             'composerName' => 'dyncss_less',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/dyncss_less/',
+            'suggestions' => [],
+        ],
+        'static_info_tables' => [
+            'composerName' => 'sjbr/static_info_tables',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/static_info_tables/',
+            'suggestions' => [],
+        ],
+        'themes' => [
+            'composerName' => 'typo3-themes/themes',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/themes/',
             'suggestions' => [],
         ],
         'gridelements' => [
@@ -307,7 +301,7 @@ return [
             'suggestions' => [],
         ],
         'realurl' => [
-            'composerName' => 'realurl',
+            'composerName' => 'dmitryd/typo3-realurl',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/realurl/',
             'suggestions' => [
@@ -354,6 +348,12 @@ return [
             'composerName' => 'apache-solr-for-typo3/solr',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/solr/',
+            'suggestions' => [],
+        ],
+        'yaml_parser' => [
+            'composerName' => 'typo3-ter/yaml-parser',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/yaml_parser/',
             'suggestions' => [],
         ],
         'adodb' => [
