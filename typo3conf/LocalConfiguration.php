@@ -113,5 +113,6 @@ return [
         't3lib_cs_convMethod' => 'mbstring',
         't3lib_cs_utils' => 'mbstring',
         'textfile_ext' => 'txt,ts,typoscript,html,htm,css,tmpl,js,sql,xml,csv,xlf,less',
+        'trustedHostsPattern' => 'php56.t3kit.local.typo3.org',
     ],
 ];
