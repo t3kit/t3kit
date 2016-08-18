@@ -45,7 +45,7 @@
 	url = git@github.com:pixelant/t3ext-seo_basics.git
 [submodule "typo3conf/ext/realurl_404_multilingual"]
 	path = typo3conf/ext/realurl_404_multilingual
-	url = git@github.com:pixelant/realurl_404_multilingual.git
+	url = git@github.com:svewap/realurl_404_multilingual.git
 [submodule "typo3conf/ext/theme_t3kit_bluemountain"]
 	path = typo3conf/ext/theme_t3kit_bluemountain
 	url = git@github.com:t3kit/theme_t3kit_bluemountain.git
