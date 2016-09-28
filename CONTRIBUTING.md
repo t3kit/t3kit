@@ -103,11 +103,12 @@ Please use semantic labels for your messages, but if commit message is not very 
 
 * **[FEATURE]** - A new feature
 * **[BUGFIX]** - A bug fix
-* **[CLEANUP]** - A code change that neither fixes a bug or adds a feature
-* **[DOC]** - Documentation only changes
+* **[CLEANUP]** - A coding style fixes, compliance etc
+* **[TASK]** - Refactoring and similar, including performance
 * **[TEST]** - Adding missing tests
 * **[!!!]** - Breaking Changes
 * **[WIP]** - Work in progress tag, should not be present when creating pull requests
+* **[SECURITY]** - To mark important updates, when evaluating when we should update older sites
 **Important:** Commit label must be **only one**, except if it Breaking Changes, then we will need to add _"Breaking Changes"_ label `[!!!]` plus one more label.
 
 
