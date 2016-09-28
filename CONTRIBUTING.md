@@ -102,22 +102,18 @@ For example to pointing commit with bug report or feature request from Podio nee
 Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. All commits with labels will be added in CHANGELOG file, that's why it is important to use predefined labels on your commits.
 
 * **[FEATURE]** - A new feature
-* **[FIX]** - A bug fix
-* **[REFACTOR]** - A code change that neither fixes a bug or adds a feature
-* **[PERF]** - A code change that improves performance.
-* **[CHORE]** - Changes to the build process (grunt) or auxiliary tools and libraries such as documentation generation and linters (jshint, jscs, etc.)
+* **[BUGFIX]** - A bug fix
+* **[CLEANUP]** - A code change that neither fixes a bug or adds a feature
 * **[DOC]** - Documentation only changes
-* **[STYLE]** - Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 * **[TEST]** - Adding missing tests
-* **[UPDATE]** - Updating git submodules, npm/bower dependencies
 * **[!!!]** - Breaking Changes
-
+* **[WIP]** - Work in progress tag, should not be present when creating pull requests
 **Important:** Commit label must be **only one**, except if it Breaking Changes, then we will need to add _"Breaking Changes"_ label `[!!!]` plus one more label.
 
 
 For example (Breaking Changes):
 ```
-[!!!][FIX] disable custom.js in t3kit
+[!!!][BUGFIX] disable custom.js in t3kit
 ```
 
 ### Message:
