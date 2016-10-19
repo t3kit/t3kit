@@ -1,4 +1,23 @@
 
+#### v7.9.0 `October 19, 2016`
+- **[FIX]** realurl config for rootpage_id ([a338db9](https://github.com/t3kit/t3kit/commit/a338db9))
+- **[UPDATE]** t3kit_extension_tools 1.0.3 ([9dfe87e](https://github.com/t3kit/t3kit/commit/9dfe87e))
+- **[UPDATE]** theme_t3kit_bluemountain 0.5.0 ([c2b1efd](https://github.com/t3kit/t3kit/commit/c2b1efd))
+- **[UPDATE]** theme_t3kit 1.8.0 ([f499af9](https://github.com/t3kit/t3kit/commit/f499af9))
+- **[TASK]** Update realurl_404_multilingual remote repo and to version 1.0.7 ([84a824b](https://github.com/t3kit/t3kit/commit/84a824b))
+- **[BUGFIX]** removed trusted hosts pattern that got into localhost by accident ([e5a0af4](https://github.com/t3kit/t3kit/commit/e5a0af4))
+- **[BUGFIX]** Fix indentation ([e8f5a99](https://github.com/t3kit/t3kit/commit/e8f5a99))
+- **[BUGFIX]** Disable debug mode for DynCSS in Production context ([00d0b0c](https://github.com/t3kit/t3kit/commit/00d0b0c))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** TYPO3 upgraded to from 7.6.9 to 7.6.11 (#85) ([19e6894](https://github.com/t3kit/t3kit/commit/19e6894))
+- **[!!!]** **[UPDATE]** Update the submodule pointer for pxa_newsletter_subscription ([01b696b](https://github.com/t3kit/t3kit/commit/01b696b))
+- **[!!!]** **[UPDATE]** Update the submodule pointer for pxa_newsletter_subscription ([7d01dd7](https://github.com/t3kit/t3kit/commit/7d01dd7))
+- **[!!!]** **[BUGFIX]** Language menu wrong linking Realurl upgrade from 1.13 to 2.0. Need to drop table tx_realurl_pathcache and then update the database ([41029f4](https://github.com/t3kit/t3kit/commit/41029f4))
+- **[!!!]** **[BUGFIX]** Language menu wrong linking Realurl upgrade from 1.13 to 2.0. Need to drop table tx_realurl_pathcache and then update the database ([985f097](https://github.com/t3kit/t3kit/commit/985f097))
+
+***
+
 #### v7.8.0 `July 18, 2016`
 - **[UPDATE]** theme_t3kit_bluemountain 0.4.0 ([b9280dc](https://github.com/t3kit/t3kit/commit/b9280dc))
 - **[UPDATE]** theme_t3kit 1.7.0 ([9ceafb3](https://github.com/t3kit/t3kit/commit/9ceafb3))
