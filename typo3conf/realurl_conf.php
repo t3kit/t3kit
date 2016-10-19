@@ -19,7 +19,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['pagePath'] = array(
     'spaceCharacter' => '-',
     'languageGetVar' => 'L',
     'expireDays' => '90',
-    'rootpage_id' => 1,
+    // 'rootpage_id' => 1,
     'encodeTitle_userProc' => 'T3kit\T3kitExtensionTools\Hooks\URLEncode->encodeTitle'
 );
 
