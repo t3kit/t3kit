@@ -21,7 +21,7 @@
 	url = git://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git
 [submodule "typo3conf/ext/news"]
 	path = typo3conf/ext/news
-	url = git://git.typo3.org/TYPO3CMS/Extensions/news.git
+	url = git@github.com:georgringer/news.git
 [submodule "typo3conf/ext/theme_t3kit"]
 	path = typo3conf/ext/theme_t3kit
 	url = git@github.com:t3kit/theme_t3kit.git
