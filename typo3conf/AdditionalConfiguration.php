@@ -102,7 +102,9 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
         // Prevent some "simple" errors to be logged to sys_log
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['belogErrorReporting'] = 4437; // Default = 30711
         // Disable debug mode for dyncss
-        $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['dyncss']['enableDebugMode'] = FALSE;
+        if (isset($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['dyncss'])) {
+            $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['dyncss']['enableDebugMode'] = FALSE;
+        }
     break;
 }
 
