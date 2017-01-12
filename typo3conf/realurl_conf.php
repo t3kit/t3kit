@@ -15,12 +15,10 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['init'] = array(
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['pagePath'] = array(
     'type' => 'user',
-    'userFunc' => 'EXT:realurl/class.tx_realurl_advanced.php:&tx_realurl_advanced->main',
     'spaceCharacter' => '-',
     'languageGetVar' => 'L',
     'expireDays' => '90',
     // 'rootpage_id' => 1,
-    'encodeTitle_userProc' => 'T3kit\T3kitExtensionTools\Hooks\URLEncode->encodeTitle'
 );
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['preVars']['language'] = array(
@@ -57,8 +55,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
                 'useUniqueCache' => 1,
                 'useUniqueCache_conf' => array(
                     'strtolower' => 1,
-                    'spaceCharacter' => '-',
-                    'encodeTitle_userProc' => 'T3kit\T3kitExtensionTools\Hooks\URLEncode->encodeTitle'
+                    'spaceCharacter' => '-'
                 ),
                 'languageGetVar' => 'L',
                 'languageExceptionUids' => '',
@@ -82,8 +79,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
                 'useUniqueCache' => 1,
                 'useUniqueCache_conf' => array(
                     'strtolower' => 1,
-                    'spaceCharacter' => '-',
-                    'encodeTitle_userProc' => 'T3kit\T3kitExtensionTools\Hooks\URLEncode->encodeTitle'
+                    'spaceCharacter' => '-'
                 )
             )
         )
@@ -101,8 +97,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
                 'useUniqueCache' => 1,
                 'useUniqueCache_conf' => array(
                     'strtolower' => 1,
-                    'spaceCharacter' => '-',
-                    'encodeTitle_userProc' => 'T3kit\T3kitExtensionTools\Hooks\URLEncode->encodeTitle'
+                    'spaceCharacter' => '-'
                 )
             )
         )
