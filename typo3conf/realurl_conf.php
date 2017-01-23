@@ -26,8 +26,6 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['preVars']['language'] = arra
     'valueMap' => array(
         'sv' => '1',
         'de' => '2',
-        'ro' => '3',
-        'ua' => '4',
     ),
     'noMatch' => 'bypass',
 );
