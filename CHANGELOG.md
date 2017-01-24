@@ -1,4 +1,22 @@
 
+#### v7.10.0 `January 24, 2017`
+- **[UPDATE]** theme_t3kit_bluemountain 1.0.0 ([14f8a6e](https://github.com/t3kit/t3kit/commit/14f8a6e))
+- **[UPDATE]** theme_t3kit 1.9.0 ([c525593](https://github.com/t3kit/t3kit/commit/c525593))
+- **[UPDATE]** t3kit_extension_tools 1.1.0 ([cd9d8b8](https://github.com/t3kit/t3kit/commit/cd9d8b8))
+- **[FIX]** fix theme-t3kit-bluemountain composerName ([3d35536](https://github.com/t3kit/t3kit/commit/3d35536))
+- **[FEATURE]** add cookie_bar submodule, activate it (Podio feature_56) (#97) ([1783149](https://github.com/t3kit/t3kit/commit/1783149))
+- **[UPDATE]** news v4.1.0 ([c181de8](https://github.com/t3kit/t3kit/commit/c181de8))
+- **[BUGFIX]** English should be default locale (Podio bug_58) ([2e735fd](https://github.com/t3kit/t3kit/commit/2e735fd))
+- **[BUGFIX]** Fix check for dyncss settings ([e06a6ee](https://github.com/t3kit/t3kit/commit/e06a6ee))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** Remove realurl language mapping for ukrainian and romanian  (Podio bug_65) ([5da0ec6](https://github.com/t3kit/t3kit/commit/5da0ec6))
+- **[!!!]** **[FIX]** fix bug connected with old realurl hook (#88) ([83b694b](https://github.com/t3kit/t3kit/commit/83b694b))
+- **[!!!]** **[FEATURE]** change backend login logo and background (Podio feature_67) (#90) ([5123a44](https://github.com/t3kit/t3kit/commit/5123a44))
+- **[!!!]** **[UPDATE]** Change remote on News (#87) ([9e678ea](https://github.com/t3kit/t3kit/commit/9e678ea))
+
+***
+
 #### v7.9.0 `October 19, 2016`
 - **[FIX]** realurl config for rootpage_id ([a338db9](https://github.com/t3kit/t3kit/commit/a338db9))
 - **[UPDATE]** t3kit_extension_tools 1.0.3 ([9dfe87e](https://github.com/t3kit/t3kit/commit/9dfe87e))
