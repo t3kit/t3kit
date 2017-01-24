@@ -301,7 +301,7 @@ return [
             'suggestions' => [],
         ],
         'theme_t3kit_bluemountain' => [
-            'composerName' => 'theme_t3kit_bluemountain',
+            'composerName' => 't3kit/theme-t3kit-bluemountain',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/theme_t3kit_bluemountain/',
             'suggestions' => [],
