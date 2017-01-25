@@ -35,6 +35,7 @@ return [
             'seo_basics' => 'a:1:{s:10:"xmlSitemap";s:1:"1";}',
             'solr' => 'a:0:{}',
             'static_info_tables' => 'a:2:{s:13:"enableManager";s:1:"0";s:5:"dummy";s:1:"0";}',
+            't3kit_extension_tools' => 'a:3:{s:15:"additionalChars";s:0:"";s:21:"fixedPostVarsConfFile";s:91:"typo3conf/ext/t3kit_extension_tools/Configuration/Realurl/predefined_fixedPostVars_conf.php";s:25:"fixedPostVarsSaveFilePath";s:40:"typo3conf/realurl_fixedPostVars_conf.php";}',
             'theme_core' => 'a:0:{}',
             'theme_t3kit' => 'a:0:{}',
             'theme_t3kit_bluemountain' => 'a:0:{}',
