@@ -16,7 +16,7 @@ return [
     ],
     'EXT' => [
         'extConf' => [
-            'backend' => 'a:3:{s:9:"loginLogo";s:46:"/fileadmin/example_content/images/t3kit_sm.png";s:19:"loginHighlightColor";s:7:"#288FB4";s:20:"loginBackgroundImage";s:7:"#eeeeee";}',
+            'backend' => 'a:3:{s:9:"loginLogo";s:48:"/fileadmin/example_content/images/typo3-logo.png";s:19:"loginHighlightColor";s:7:"#288FB4";s:20:"loginBackgroundImage";s:7:"#eeeeee";}',
             'dyncss' => 'a:2:{s:5:"state";s:0:"";s:15:"enableDebugMode";s:0:"";}',
             'dyncss_less' => 'a:0:{}',
             'extension_tools' => 'a:0:{}',
