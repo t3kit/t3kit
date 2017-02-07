@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-23T15:21:54Z" product-name="guide">
+		<header/>
+		<body>
+			
+			<trans-unit id="tx_guide_tour.title">
+				<source>Page tree tour</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.description">
+				<source>This is a guided tour through the page tree.</source>
+			</trans-unit>
+
+			<trans-unit id="tx_guide_tour.10.title">
+				<source>Page tree</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.10.content">
+				<source>This is the page tree. In this page tree you will get an overview about all available pages and his structure.</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_guide_tour.20.title">
+				<source>Add new pages into the tree</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.20.content">
+				<source>With this button you're able to add new pages to the page tree.</source>
+			</trans-unit>
+
+			<trans-unit id="tx_guide_tour.30.title">
+				<source>Search within the page tree</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.30.content">
+				<source><![CDATA[Here you're able to active a filter field, which allows you to filter the tree.<br />
+					It's also be useful for searching pages be his unique identifiers (also known as <i>uid</i>).]]></source>
+			</trans-unit>
+
+			<trans-unit id="tx_guide_tour.40.title">
+				<source>Refresh the page tree</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.40.content">
+				<source>This button reloads the whole page tree.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

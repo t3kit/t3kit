@@ -1,0 +1,48 @@
+/**
+ * Custom styles for the guided tour
+ */
+body > .popover {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+	min-width: 300px;
+	z-index: 9999 !important;
+}
+body > .popover.fade.in {
+	opacity: 0;
+}
+body > .popover .right-align {
+	text-align: right;
+}
+body > .popover .separator {
+	display: inline-block;
+	width: 6px;
+	height: 10px;
+}
+body > .popover .dont-show-again {
+	margin-top: 8px;
+}
+body > .popover > .popover-navigation > .btn {
+	margin-top: 8px;
+}
+body > .popover button#popover-button-tour-overview {
+	float: right;
+}
+body > .popover .separator-right {
+	float: right;
+}
+body > .popover .dont-show-again label {
+	cursor: pointer;
+	font-weight: normal;
+}
+/**
+ * Backend module
+ */
+.typo3-guide-module .container-fluid {
+	padding: 0;
+}
+.typo3-guide-module .container-fluid .tour-item {
+	margin-bottom: 20px;
+	min-height: 250px;
+}
+.typo3-guide-module hr {
+	border-top: 1px solid #7a7a7a;
+}

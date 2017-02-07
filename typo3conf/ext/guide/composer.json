@@ -1,0 +1,25 @@
+{
+  "name": "typo3-ter/guide",
+  "type": "typo3-cms-extension",
+  "description": "Guides new users through the system. New guided tours can easily be configured by page typoscript.",
+  "version": "1.1.0",
+  "homepage": "https://github.com/tdeuling/typo3-guide",
+  "license": ["GPL-2.0+"],
+  "keywords": ["TYPO3 CMS", "TYPO3 Guide", "Guide"],
+  "require": {
+    "typo3/cms-core": "~7.6.0|<8.0"
+  },
+  "support": {
+    "issues": "https://github.com/tdeuling/typo3-guide/issues"
+  },
+  "autoload": {
+    "psr-4": { "Tx\\Guide\\": "Classes/"}
+  },
+  "autoload-dev": {
+    "psr-4": { "Tx\\Guide\\Tests\\": "Tests/"}
+  },
+  "replace": {
+    "guide": "self.version",
+    "typo3-ter/guide": "self.version"
+  }
+}

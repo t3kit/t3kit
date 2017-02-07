@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-09-23T15:21:54Z" product-name="guide">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_guide_label.module_menu_overview">
+				<source>Overview</source>
+				<target>Übersicht</target>
+			</trans-unit>
+			
+			<trans-unit id="tx_guide_label.headline">
+				<source>Guided tours trough TYPO3</source>
+				<target>Führungen durch TYPO3</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_label.description">
+				<source>Here you will find all available guided tours. The amount of tours depends on your access rights.</source>
+				<target>Hier finden Sie alle verfügbaren Führungen. Die Menge der Führungen hängen von Ihren Zugriffsrechten ab.</target>
+			</trans-unit>
+
+			<trans-unit id="tx_guide_label.available_core_guided_tours">
+				<source>Available guided tours</source>
+				<target>Verfügbare Touren</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_label.available_module_guided_tours">
+				<source>Available module guided tours</source>
+				<target>Verfügbare Touren durch Module</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_label.enable_tour">
+				<source>Enable tour</source>
+				<target>Tour aktivieren</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_label.disable_tour">
+				<source>Disable tour</source>
+				<target>Tour deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_label.start_tour">
+				<source>Start tour</source>
+				<target>Tour starten</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_label.resume_tour_on_step">
+				<source>Resume tour</source>
+				<target>Tour fortsetzen</target>
+			</trans-unit>
+
+			<!-- Frontend -->
+			<trans-unit id="tx_guide_tour.next">
+				<source>Next</source>
+				<target>weiter</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.previous">
+				<source>Previous</source>
+				<target>zurück</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.end_tour">
+				<source>End tour</source>
+				<target>Führung beenden</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.tour_overview">
+				<source>Tour overview</source>
+				<target>Führungsübersicht</target>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.show_again">
+				<source>Don't show again</source>
+				<target>nicht wieder anzeigen</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

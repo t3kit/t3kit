@@ -1,0 +1,47 @@
+mod.guide.tours.Menu {
+	title = LLL:EXT:guide/Resources/Private/Language/BootstrapTourMenu.xlf:tx_guide_tour.title
+	description = LLL:EXT:guide/Resources/Private/Language/BootstrapTourMenu.xlf:tx_guide_tour.description
+	moduleName = core
+	iconIdentifier = module-guide-tour-core
+	steps {
+		10 {
+			selector = #web_layout
+			title = Page module
+			content = This is the button which opens the page module.<br />You will use it for editing you content.<br />Click on <i>Next</i> for jumping into the page module.
+			placement = right
+			shown {
+				renameNextButton = Go to page module
+			}
+			next {
+				tour = PageModule
+				step = 0
+			}
+		}
+		20 {
+			selector = #web_ViewpageView
+			title = View module
+			content = This is the view module.
+			placement = right
+			shown {
+				renameNextButton = Go to page module
+			}
+			next {
+				tour = ViewModule
+				step = 0
+			}
+		}
+		30 {
+			selector = #web_func
+			title = Function module
+			content = This is the function module.
+			placement = right
+			shown {
+				renameNextButton = Go to function module
+			}
+			next {
+				tour = FunctionModule
+				step = 0
+			}
+		}
+	}
+}

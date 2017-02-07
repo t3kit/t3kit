@@ -61,3 +61,6 @@
 [submodule "typo3conf/ext/url_forwarding"]
 	path = typo3conf/ext/url_forwarding
 	url = git@github.com:patrickbroens/TYPO3.UrlForwarding.git
+[submodule "typo3conf/ext/guide"]
+	path = typo3conf/ext/guide
+	url = git@github.com:tdeuling/typo3-guide.git

@@ -1,0 +1,37 @@
+mod.guide.tours.ViewModule {
+	title = LLL:EXT:guide/Resources/Private/Language/locallang_TourViewModule.xlf:tx_guide_tour.title
+	description = LLL:EXT:guide/Resources/Private/Language/locallang_TourViewModule.xlf:tx_guide_tour.description
+	moduleName = web_ViewpageView
+	iconIdentifier = module-guide-tour-view-module
+    steps {
+		10 {
+			selector = .module-docheader:first
+			title = View module
+			content = The view module can be used for... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			placement = bottom
+			showArrow = false
+		}
+		20 {
+			selector = #width
+			title = Responsive preview
+			content = Select a device width for the preview area.
+			placement = bottom
+		}
+		30 {
+			selector = #resizeable
+			title = Webpage preview
+			content = This is the preview of you webpage.
+			placement = top
+		}
+		40 {
+			selector = .icon-actions-document-view
+			title = View webpage
+			content = Click this button for displaying the webpage in a new tab.<br /><br /><span class="text-inf">Click on <i>End tour</i> in order to get back to the guides startpage.</span>
+			placement = bottom
+			next {
+				tour = FunctionModule
+				step = 0
+			}
+		}
+    }
+}
