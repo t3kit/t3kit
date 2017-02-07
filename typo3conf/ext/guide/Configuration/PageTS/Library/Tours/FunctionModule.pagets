@@ -1,0 +1,57 @@
+mod.guide.tours.FunctionModule {
+	title = LLL:EXT:guide/Resources/Private/Language/BootstrapTourFunctionModule.xlf:tx_guide_tour.title
+	description = LLL:EXT:guide/Resources/Private/Language/BootstrapTourFunctionModule.xlf:tx_guide_tour.description
+	moduleName = web_func
+	iconIdentifier = module-guide-tour-function-module
+	steps {
+		10 {
+			selector = .module-docheader:first
+			title = Function module
+			content = The function module can be used for... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			placement = bottom
+			showArrow = false
+		}
+		20 {
+			selector = select[name=\'WebFuncJumpMenu\']:first
+			title = Module menu
+			content = In this select box you're able to switch between the different avaiable functions. Depending on your system configuration there could be more or less functions.
+			placement = right
+			shown {
+				openSelectBox {
+					selector = select[ name =\'WebFuncJumpMenu\']:first
+				}
+			}
+		}
+		30 {
+			selector = #resizeable
+			title = Webpage preview
+			content = This is the preview of you webpage.
+			placement = left
+		}
+		40 {
+			selector = .icon-actions-document-view
+			title = View webpage
+			content = Click this button for displaying the webpage in a new tab.
+			placement = bottom
+		}
+		50 {
+			selector = .typo3-docheader-pagePath
+			title = Current path path
+			content = Here you see on which page you're currently working on.
+			placement = bottom
+		}
+		60 {
+			selector = .icon-actions-system-shortcut-new
+			title = Create a shortcut
+			content = Click this button for creating a shortcut to this page.
+			placement = bottom
+		}
+		70 {
+			selector = .icon-actions-system-help-open
+			title = Show help
+			content = Click this button for showing the help for this page.
+			placement = bottom
+		}
+
+	}
+}

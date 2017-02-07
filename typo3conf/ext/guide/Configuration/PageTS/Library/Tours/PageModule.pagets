@@ -1,0 +1,19 @@
+mod.guide.tours.PageModule {
+	title = LLL:EXT:guide/Resources/Private/Language/BootstrapTourPageModule.xlf:tx_guide_tour.title
+	description = LLL:EXT:guide/Resources/Private/Language/BootstrapTourPageModule.xlf:tx_guide_tour.description
+	moduleName = web_layout
+	iconIdentifier = module-guide-tour-page-module
+	steps {
+		10 {
+			selector = .module-docheader
+			title = Page module
+			content = The view module can be used for... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			placement = bottom
+			showArrow = false
+			next {
+				tour = Tree
+				step = 0
+			}
+		}
+	}
+}

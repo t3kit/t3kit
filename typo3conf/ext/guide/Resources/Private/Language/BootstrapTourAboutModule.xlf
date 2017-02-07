@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-23T15:21:54Z" product-name="guide">
+		<header/>
+		<body>
+			<trans-unit id="tx_guide_tour.title">
+				<source>About module</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.description">
+				<source>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</source>
+			</trans-unit>
+
+			<trans-unit id="tx_guide_tour.10.title">
+				<source>Welcome to TYPO3 backend</source>
+			</trans-unit>
+			<trans-unit id="tx_guide_tour.10.content">
+				<source><![CDATA[This tour will show you the first steps within TYPO3.<br />
+			 You're starting here in the <i>about</i> module, which shows you your available modules. 
+			 This modules are related <span style="color:red">on</span> the giving user authorisation.<br />
+			 <br />
+			 Click on <i>Next</i> for an introduction of the topbar of TYPO3.<br />
+			 <br />
+			 <i>(You can restart each tour by the guided tours module.)</i>]]></source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

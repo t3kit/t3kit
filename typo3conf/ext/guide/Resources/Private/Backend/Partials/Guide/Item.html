@@ -1,0 +1,53 @@
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<div class="col-xs-12 col-sm-6">
+	<div class="tour-item media clearfix" id="{tour.id}">
+		<a href="#" data-onclick="startTour" data-tour="{tour.name}" data-step-no="0"
+		   title="{tour.title}" class="pull-left">
+			<core:icon identifier="{tour.iconIdentifier}" size="default" />
+		</a>
+		<div class="media-body">
+			<strong>{tour.title}</strong><br />
+			<small class="text-muted">
+				<f:if condition="{tour.alreadyViewed}">
+					<f:then>
+						<f:if condition="{tour.currentStepNo} == 0">
+							<f:then>Sie haben diese Tour bereits gesehen.</f:then>
+							<f:else>Sie haben diese Tour noch nicht komplett gesehen.</f:else>
+						</f:if>
+					</f:then>
+					<f:else>Sie haben diese Tour noch nicht gesehen.</f:else>
+				</f:if>
+			</small><br>
+			<p>{tour.description}</p>
+			<a href="#" data-onclick="startTour" data-tour="{tour.name}" data-step-no="0" class="btn btn-success">
+				<f:translate key="tx_guide_label.start_tour"/>
+			</a>
+			<f:if condition="{tour.currentStepNo} == 0">
+				<f:then> </f:then>
+				<f:else>
+					<a href="#" data-onclick="startTour" data-tour="{tour.name}" data-step-no="{tour.currentStepNo}" class="btn btn-default">
+						<f:translate key="tx_guide_label.resume_tour_on_step" />
+					</a>
+				</f:else>
+			</f:if>
+			<f:if condition="{tour.disabled}">
+				<f:then>
+					<a href="#" data-onclick="enableTour" data-tour="{tour.name}" class="guide-tour-enable btn btn-default">
+						<f:translate key="tx_guide_label.enable_tour"/>
+					</a>
+					<a href="#" data-onclick="disableTour" data-tour="{tour.name}" class="guide-tour-disable btn btn-default hidden">
+						<f:translate key="tx_guide_label.disable_tour"/>
+					</a>
+				</f:then>
+				<f:else>
+					<a href="#" data-onclick="enableTour" data-tour="{tour.name}" class="guide-tour-enable btn btn-default hidden">
+						<f:translate key="tx_guide_label.enable_tour"/>
+					</a>
+					<a href="#" data-onclick="disableTour" data-tour="{tour.name}" class="guide-tour-disable btn btn-default">
+						<f:translate key="tx_guide_label.disable_tour"/>
+					</a>
+				</f:else>
+			</f:if>
+		</div>
+	</div>
+</div>
