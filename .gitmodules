@@ -58,3 +58,6 @@
 [submodule "typo3conf/ext/typo3_console"]
 	path = typo3conf/ext/typo3_console
 	url = git@github.com:TYPO3-Console/typo3_console.git
+[submodule "typo3conf/ext/url_forwarding"]
+	path = typo3conf/ext/url_forwarding
+	url = git@github.com:patrickbroens/TYPO3.UrlForwarding.git
