@@ -362,6 +362,12 @@ return [
             'packagePath' => 'typo3conf/ext/solr/',
             'suggestions' => [],
         ],
+        'typo3_console' => [
+            'composerName' => 'helhum/typo3-console',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/typo3_console/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',
@@ -384,6 +390,12 @@ return [
             'composerName' => 'typo3/cms-feedit',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/feedit/',
+            'suggestions' => [],
+        ],
+        'guide' => [
+            'composerName' => 'typo3-ter/guide',
+            'state' => 'inactive',
+            'packagePath' => 'typo3conf/ext/guide/',
             'suggestions' => [],
         ],
         'indexed_search' => [
@@ -429,6 +441,12 @@ return [
             'suggestions' => [
                 'sys_action',
             ],
+        ],
+        'url_forwarding' => [
+            'composerName' => 'patrickbroens/url-forwarding',
+            'state' => 'inactive',
+            'packagePath' => 'typo3conf/ext/url_forwarding/',
+            'suggestions' => [],
         ],
         'version' => [
             'composerName' => 'typo3/cms-version',
