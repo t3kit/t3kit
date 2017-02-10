@@ -1,6 +1,8 @@
 typo3temp
 uploads
 
+typo3conf/realurl_fixedPostVars_conf.php
+
 *deprecation_*.log
 *ENABLE_INSTALL_TOOL*
 

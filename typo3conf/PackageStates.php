@@ -282,16 +282,24 @@ return [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
             'suggestions' => [],
         ],
-        'gridelements' => [
-            'composerName' => 'GridElementsTeam/Gridelements',
+        'realurl' => [
+            'composerName' => 'dmitryd/typo3-realurl',
             'state' => 'active',
-            'packagePath' => 'typo3conf/ext/gridelements/',
-            'suggestions' => [],
+            'packagePath' => 'typo3conf/ext/realurl/',
+            'suggestions' => [
+                'static_info_tables',
+            ],
         ],
         't3kit_extension_tools' => [
             'composerName' => 't3kit/t3kit-extension-tools',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
+            'suggestions' => [],
+        ],
+        'gridelements' => [
+            'composerName' => 'GridElementsTeam/Gridelements',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/gridelements/',
             'suggestions' => [],
         ],
         'theme_t3kit' => [
@@ -305,14 +313,6 @@ return [
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/theme_t3kit_bluemountain/',
             'suggestions' => [],
-        ],
-        'realurl' => [
-            'composerName' => 'dmitryd/typo3-realurl',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/realurl/',
-            'suggestions' => [
-                'static_info_tables',
-            ],
         ],
         'realurl_404_multilingual' => [
             'composerName' => 'realurl_404_multilingual',
