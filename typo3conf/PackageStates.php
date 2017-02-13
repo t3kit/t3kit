@@ -252,26 +252,8 @@ return [
             'packagePath' => 'typo3/sysext/viewpage/',
             'suggestions' => [],
         ],
-        'static_info_tables' => [
-            'composerName' => 'sjbr/static_info_tables',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/static_info_tables/',
-            'suggestions' => [],
-        ],
-        'yaml_parser' => [
-            'composerName' => 'typo3-ter/yaml-parser',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/yaml_parser/',
-            'suggestions' => [],
-        ],
-        'themes' => [
-            'composerName' => 'typo3-themes/themes',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/themes/',
-            'suggestions' => [],
-        ],
         'dyncss' => [
-            'composerName' => 'dyncss',
+            'composerName' => 'kaystrobach/dyncss',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/dyncss/',
             'suggestions' => [],
@@ -282,24 +264,28 @@ return [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
             'suggestions' => [],
         ],
-        'realurl' => [
-            'composerName' => 'dmitryd/typo3-realurl',
+        'static_info_tables' => [
+            'composerName' => 'sjbr/static_info_tables',
             'state' => 'active',
-            'packagePath' => 'typo3conf/ext/realurl/',
-            'suggestions' => [
-                'static_info_tables',
-            ],
+            'packagePath' => 'typo3conf/ext/static_info_tables/',
+            'suggestions' => [],
         ],
-        't3kit_extension_tools' => [
-            'composerName' => 't3kit/t3kit-extension-tools',
+        'themes' => [
+            'composerName' => 'typo3-themes/themes',
             'state' => 'active',
-            'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
+            'packagePath' => 'typo3conf/ext/themes/',
             'suggestions' => [],
         ],
         'gridelements' => [
             'composerName' => 'GridElementsTeam/Gridelements',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/gridelements/',
+            'suggestions' => [],
+        ],
+        't3kit_extension_tools' => [
+            'composerName' => 't3kit/t3kit-extension-tools',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
             'suggestions' => [],
         ],
         'theme_t3kit' => [
@@ -313,6 +299,14 @@ return [
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/theme_t3kit_bluemountain/',
             'suggestions' => [],
+        ],
+        'realurl' => [
+            'composerName' => 'dmitryd/typo3-realurl',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/realurl/',
+            'suggestions' => [
+                'static_info_tables',
+            ],
         ],
         'realurl_404_multilingual' => [
             'composerName' => 'realurl_404_multilingual',
@@ -330,6 +324,12 @@ return [
             'composerName' => 'clickstorm/go_maps_ext',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
+            'suggestions' => [],
+        ],
+        'guide' => [
+            'composerName' => 'typo3-ter/guide',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/guide/',
             'suggestions' => [],
         ],
         'news' => [
@@ -368,6 +368,18 @@ return [
             'packagePath' => 'typo3conf/ext/typo3_console/',
             'suggestions' => [],
         ],
+        'url_forwarding' => [
+            'composerName' => 'patrickbroens/url-forwarding',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/url_forwarding/',
+            'suggestions' => [],
+        ],
+        'yaml_parser' => [
+            'composerName' => 'typo3-ter/yaml-parser',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/yaml_parser/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',
@@ -390,12 +402,6 @@ return [
             'composerName' => 'typo3/cms-feedit',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/feedit/',
-            'suggestions' => [],
-        ],
-        'guide' => [
-            'composerName' => 'typo3-ter/guide',
-            'state' => 'inactive',
-            'packagePath' => 'typo3conf/ext/guide/',
             'suggestions' => [],
         ],
         'indexed_search' => [
@@ -441,12 +447,6 @@ return [
             'suggestions' => [
                 'sys_action',
             ],
-        ],
-        'url_forwarding' => [
-            'composerName' => 'patrickbroens/url-forwarding',
-            'state' => 'inactive',
-            'packagePath' => 'typo3conf/ext/url_forwarding/',
-            'suggestions' => [],
         ],
         'version' => [
             'composerName' => 'typo3/cms-version',
