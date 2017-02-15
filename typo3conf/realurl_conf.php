@@ -105,18 +105,10 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
     // news date configuration
     $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_date'] = [
         [
-            'GETvar' => 'tx_news_pi1[controller]',
-            'noMatch' => 'bypass',
-        ],
-        [
             'GETvar' => 'tx_news_pi1[overwriteDemand][year]'
         ],
         [
             'GETvar' => 'tx_news_pi1[overwriteDemand][month]',
-        ],
-        [
-            'GETvar' => 'tx_news_pi1[overwriteDemand][day]',
-            'noMatch' => 'bypass',
         ]
     ];
 }
