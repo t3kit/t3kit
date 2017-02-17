@@ -27,7 +27,7 @@
 	url = git@github.com:t3kit/theme_t3kit.git
 [submodule "typo3conf/ext/pxa_newsletter_subscription"]
 	path = typo3conf/ext/pxa_newsletter_subscription
-	url = git@bitbucket.org:pixelant/pxa_newsletter_subscription.git
+	url = git@github.com:pixelant/pxa_newsletter_subscription.git
 [submodule "typo3conf/ext/realurl"]
 	path = typo3conf/ext/realurl
 	url = git@github.com:dmitryd/typo3-realurl.git
