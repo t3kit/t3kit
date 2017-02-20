@@ -1,6 +1,6 @@
 #t3kit
-[![t3kit](https://img.shields.io/badge/t3kit-7.10.0-green.svg?style=flat-square)](https://github.com/t3kit/t3kit)
-[![TYPO3](https://img.shields.io/badge/TYPO3-7.6.11-orange.svg?style=flat-square)](https://typo3.org/)
+[![t3kit](https://img.shields.io/badge/t3kit-7.11.0-green.svg?style=flat-square)](https://github.com/t3kit/t3kit)
+[![TYPO3](https://img.shields.io/badge/TYPO3-7.6.15-orange.svg?style=flat-square)](https://typo3.org/)
 ###Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.
 
 ### [CHANGELOG](https://github.com/t3kit/t3kit/blob/master/CHANGELOG.md)

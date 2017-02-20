@@ -1,4 +1,37 @@
 
+#### v7.11.0 `February 20, 2017`
+- **[UPDATE]** theme_t3kit_bluemountain 1.1.0 ([f5b93d6](https://github.com/t3kit/t3kit/commit/f5b93d6))
+- **[UPDATE]** t3kit_extension_tools 1.2.0 ([144383b](https://github.com/t3kit/t3kit/commit/144383b))
+- **[UPDATE]** theme_t3kit 1.10.0 ([69dc81c](https://github.com/t3kit/t3kit/commit/69dc81c))
+- **[TASK]** Change origin for pxa_newsletter_subscription to be Github (#105) ([508a6c0](https://github.com/t3kit/t3kit/commit/508a6c0))
+- **[UPDATE]** theme_t3kit_bluemountain, add HeroImage element ([9a03ac8](https://github.com/t3kit/t3kit/commit/9a03ac8))
+- **[UPDATE]** theme_t3kit, add HeroImage element ([503eaea](https://github.com/t3kit/t3kit/commit/503eaea))
+- **[UPDATE]** theme_t3kit -> update Social Icons el, add config for Guide ext, update news templ ([fe2c4a0](https://github.com/t3kit/t3kit/commit/fe2c4a0))
+- **[UPDATE]** theme_t3kit_bluemountain, update required dependencies in composer ([6cbfc28](https://github.com/t3kit/t3kit/commit/6cbfc28))
+- **[BUGFIX]** Prevent warnings from DynCSS in production mode (#101) ([189c69e](https://github.com/t3kit/t3kit/commit/189c69e))
+- **[UPDATE]** t3kit_extension_tools, fixed post vars ([70594a2](https://github.com/t3kit/t3kit/commit/70594a2))
+- **[UPDATE]** TYPO3 to v7.6.15 ([88b244e](https://github.com/t3kit/t3kit/commit/88b244e))
+- **[UPDATE]** solr to v5.1.0 ([48d896d](https://github.com/t3kit/t3kit/commit/48d896d))
+- **[UPDATE]** news to v5.3.2 ([fc000a5](https://github.com/t3kit/t3kit/commit/fc000a5))
+- **[BUGFIX]** fix realurl postVarSets for news date configuration ([97d5b24](https://github.com/t3kit/t3kit/commit/97d5b24))
+- **[UPDATE]** realurl to v2.0.15 ([9ed1128](https://github.com/t3kit/t3kit/commit/9ed1128))
+- **[UPDATE]** pxa_form_enhancement ot v1.0.1 ([51cc71e](https://github.com/t3kit/t3kit/commit/51cc71e))
+- **[UPDATE]** go_maps_ext to v1.9.1 ([0d2dcf2](https://github.com/t3kit/t3kit/commit/0d2dcf2))
+- **[UPDATE]** update static_info_tables to v6.3.10 ([fe48bf6](https://github.com/t3kit/t3kit/commit/fe48bf6))
+- **[TASK]** guide and url_forwarding ext active by default ([265dbd1](https://github.com/t3kit/t3kit/commit/265dbd1))
+- **[UPDATE]** dyncss ext to v0.7.9 ([99f2d8b](https://github.com/t3kit/t3kit/commit/99f2d8b))
+- **[UPDATE]** themes ext to v7.0.3 ([489adf3](https://github.com/t3kit/t3kit/commit/489adf3))
+- **[BUGFIX]** not possible to change fixed post var configuration of realurl (#98) ([64e2f60](https://github.com/t3kit/t3kit/commit/64e2f60))
+- **[TASK]** add url_forwarding, Guide and typo3_console(activated by default) to PackageStates ([ed48d24](https://github.com/t3kit/t3kit/commit/ed48d24))
+- **[TASK]** add guide extension as a submodule ([06575d0](https://github.com/t3kit/t3kit/commit/06575d0))
+- **[BUGFIX]** Add missing typo3_console base commmand script (#103) ([0561ce4](https://github.com/t3kit/t3kit/commit/0561ce4))
+- **[FEATURE]** Add guide ext for first configuration tour in theme module (#102) ([b89fb9c](https://github.com/t3kit/t3kit/commit/b89fb9c))
+- **[FEATURE]** Add url_forwarding extension for editor redirect solution (Feature_62) (#99) ([7fb895c](https://github.com/t3kit/t3kit/commit/7fb895c))
+- **[FEATURE]** Add typo3-console extension to T3kit (podio feature_55) (#100) ([5bcdc26](https://github.com/t3kit/t3kit/commit/5bcdc26))
+- **[TASK]** return TYPO3 logo as a backend login logo in t3kit ([576ca10](https://github.com/t3kit/t3kit/commit/576ca10))
+
+***
+
 #### v7.10.0 `January 24, 2017`
 - **[UPDATE]** theme_t3kit_bluemountain 1.0.0 ([14f8a6e](https://github.com/t3kit/t3kit/commit/14f8a6e))
 - **[UPDATE]** theme_t3kit 1.9.0 ([c525593](https://github.com/t3kit/t3kit/commit/c525593))
