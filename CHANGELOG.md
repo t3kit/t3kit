@@ -1,4 +1,9 @@
 
+#### v7.11.1 `February 21, 2017`
+- **[UPDATE]** theme_t3kit 1.10.1 ([13b354e](https://github.com/t3kit/t3kit/commit/13b354e))
+
+***
+
 #### v7.11.0 `February 20, 2017`
 - **[UPDATE]** theme_t3kit_bluemountain 1.1.0 ([f5b93d6](https://github.com/t3kit/t3kit/commit/f5b93d6))
 - **[UPDATE]** t3kit_extension_tools 1.2.0 ([144383b](https://github.com/t3kit/t3kit/commit/144383b))
