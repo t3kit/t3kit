@@ -1,4 +1,9 @@
 
+#### v7.11.2 `February 23, 2017`
+- **[TASK]** remove typo3_console ext ([3945602](https://github.com/t3kit/t3kit/commit/3945602))
+
+***
+
 #### v7.11.1 `February 21, 2017`
 - **[UPDATE]** theme_t3kit 1.10.1 ([13b354e](https://github.com/t3kit/t3kit/commit/13b354e))
 
