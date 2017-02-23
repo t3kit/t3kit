@@ -362,12 +362,6 @@ return [
             'packagePath' => 'typo3conf/ext/solr/',
             'suggestions' => [],
         ],
-        'typo3_console' => [
-            'composerName' => 'helhum/typo3-console',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/typo3_console/',
-            'suggestions' => [],
-        ],
         'url_forwarding' => [
             'composerName' => 'patrickbroens/url-forwarding',
             'state' => 'active',
