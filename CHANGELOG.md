@@ -1,4 +1,10 @@
 
+#### v7.11.3 `February 23, 2017`
+- **[TASK]** update PackageStates ([7a639a2](https://github.com/t3kit/t3kit/commit/7a639a2))
+- **[TASK]** remove typo3_console base commmand scripts ([60b3695](https://github.com/t3kit/t3kit/commit/60b3695))
+
+***
+
 #### v7.11.2 `February 23, 2017`
 - **[TASK]** remove typo3_console ext ([3945602](https://github.com/t3kit/t3kit/commit/3945602))
 
