@@ -265,9 +265,23 @@ return [
             'suggestions' => [],
         ],
         'static_info_tables' => [
-            'composerName' => 'sjbr/static_info_tables',
+            'composerName' => 'sjbr/static-info-tables',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/static_info_tables/',
+            'suggestions' => [],
+        ],
+        'realurl' => [
+            'composerName' => 'dmitryd/typo3-realurl',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/realurl/',
+            'suggestions' => [
+                'static_info_tables',
+            ],
+        ],
+        't3kit_extension_tools' => [
+            'composerName' => 't3kit/t3kit-extension-tools',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
             'suggestions' => [],
         ],
         'themes' => [
@@ -282,12 +296,6 @@ return [
             'packagePath' => 'typo3conf/ext/gridelements/',
             'suggestions' => [],
         ],
-        't3kit_extension_tools' => [
-            'composerName' => 't3kit/t3kit-extension-tools',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
-            'suggestions' => [],
-        ],
         'theme_t3kit' => [
             'composerName' => 't3kit/theme-t3kit',
             'state' => 'active',
@@ -299,14 +307,6 @@ return [
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/theme_t3kit_bluemountain/',
             'suggestions' => [],
-        ],
-        'realurl' => [
-            'composerName' => 'dmitryd/typo3-realurl',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/realurl/',
-            'suggestions' => [
-                'static_info_tables',
-            ],
         ],
         'realurl_404_multilingual' => [
             'composerName' => 'realurl_404_multilingual',
@@ -345,13 +345,13 @@ return [
             'suggestions' => [],
         ],
         'pxa_form_enhancement' => [
-            'composerName' => 'pxa_form_enhancement',
+            'composerName' => 'pixelant/pxa-form-enhancement',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/pxa_form_enhancement/',
             'suggestions' => [],
         ],
         'pxa_newsletter_subscription' => [
-            'composerName' => 'pxa_newsletter_subscription',
+            'composerName' => 'pixelant/pxa-newsletter-subscription',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
             'suggestions' => [],
