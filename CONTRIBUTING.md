@@ -106,6 +106,7 @@ Please use semantic labels for your messages, but if commit message is not very 
 * **[CLEANUP]** - A coding style fixes, compliance etc
 * **[TASK]** - Refactoring and similar, including performance
 * **[TEST]** - Adding missing tests
+* **[DOC]** - Documentation only changes
 * **[!!!]** - Breaking Changes
 * **[WIP]** - Work in progress tag, should not be present when creating pull requests
 * **[SECURITY]** - To mark important updates, when evaluating when we should update older sites
