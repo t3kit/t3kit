@@ -1,0 +1,34 @@
+version: "2.1"
+
+services:
+
+  db:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=t3kit
+      - MYSQL_USER=t3kit
+      - MYSQL_PASSWORD=t3kit1234
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-hdb", "-uroot", "-p1234", "--silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 8
+    restart: always
+
+
+  web:
+    container_name: web
+    image: dmytroh/ubuntu16-php7-apache-t3kit:0.0.1
+    ports:
+      - "8888:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./docker_conf:/docker_conf
+      - ./t3kit_db:/t3kit_db
+      - .:/var/www/html
+    restart: always
+    command: "sh /docker_conf/run.sh"

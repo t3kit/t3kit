@@ -1,0 +1,66 @@
+version: "2.1"
+
+services:
+
+  db:
+    container_name: db
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=t3kit
+      - MYSQL_USER=t3kit
+      - MYSQL_PASSWORD=t3kit1234
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-hdb", "-uroot", "-p1234", "--silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: always
+
+
+  web:
+    container_name: web
+    image: dmytroh/ubuntu16-php7-apache-t3kit:0.0.1
+    ports:
+      - "8888:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./docker_conf:/docker_conf
+      - ./t3kit_db:/t3kit_db
+      - web-data:/var/www/html
+    restart: always
+    command: "sh /docker_conf/macos/run.sh"
+
+
+  # ============================================
+  # temporary workaround for macOS osxfs file system performance problem:
+  # https://github.com/docker/for-mac/issues/77
+  # https://docs.docker.com/docker-for-mac/osxfs/#performance-issues-solutions-and-roadmap
+  bg-sync:
+    container_name: t3kit
+    image: cweagans/bg-sync
+    volumes:
+      - web-data:/var/www/html
+      - .:/source
+    # volumes_from:
+    #   - web
+    depends_on:
+      - web
+    environment:
+      SYNC_DESTINATION: /var/www/html
+      SYNC_MAX_INOTIFY_WATCHES: 40000
+      SYNC_VERBOSE: 1
+      SYNC_EXTRA_UNISON_PROFILE_OPTS: |
+        group = true
+        owner = true
+        numericids = false
+        ignore = Path .git/*
+        ignore = Path typo3temp
+        ignore = Path t3kit_db
+    privileged: true
+    command: "sh /source/docker_conf/macos/sync.sh"
+
+volumes:
+  web-data:
