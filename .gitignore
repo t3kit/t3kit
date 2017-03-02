@@ -12,3 +12,10 @@ fileadmin/*
 !fileadmin/custom/
 
 .idea/
+
+composer.lock
+index.php
+typo3
+typo3conf/ext/*
+vendor
+typo3_src
