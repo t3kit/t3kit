@@ -6,11 +6,11 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/pixelant/pxa_form_enhancement"
+      "url": "https://github.com/t3kit/theme_t3kit"
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/t3kit_docker"
+      "url": "https://github.com/t3kit/themes"
     },
     {
       "type": "git",
@@ -18,40 +18,57 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/theme_t3kit"
+      "url": "https://github.com/t3kit/gridelements"
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/theme_t3kit_bluemountain"
+      "url": "https://github.com/b13/t3ext-seo_basics"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/svewap/realurl_404_multilingual"
     },
     {
       "type": "git",
       "url": "https://github.com/pixelant/pxa_newsletter_subscription"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/pixelant/pxa_form_enhancement"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/pixelant/pxa_cookie_bar"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/anjeylink/TYPO3.dyncss"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/TYPO3-Solr/ext-solr"
     }
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=5.5, <7.2",
-    "typo3/cms": "^7.6",
-    "typo3-ter/theme-t3kit": "1.10.1",
-    "typo3-ter/theme-t3kit-bluemountain": "1.1.0",
-    "georgringer/news": "5.3.2",
-    "clickstorm/go_maps_ext": "2.0.0",
-    "typo3-ter/realurl": "^2.0",
-    "typo3-ter/realurl-404-multilingual": "1.0.7",
-    "typo3-ter/seo-basics": "0.9.2",
-    "typo3-ter/solr": "5.1.0",
-    "pixelant/pxa-form-enhancement": "1.0.1",
-    "typo3-ter/static-info-tables": "^6.3",
-    "helhum/typo3-console": "4.1.2",
-    "patrickbroens/url-forwarding": "1.2.0",
-    "typo3-ter/guide": "1.0.0"
+    "php": "^7.0",
+    "typo3/cms": "^8.6",
+    "typo3-ter/realurl": "^2.1",
+    "b13/seo_basics": "0.9.6",
+    "t3kit/theme-t3kit": "dev-typo3_8.x_compatibility",
+    "typo3-themes/themes": "dev-typo3_8_compatibility",
+    "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
+    "gridelementsteam/gridelements": "dev-typo3_8.x_compatibility",
+    "apache-solr-for-typo3/solr": "dev-master",
+    "pixelant/pxa-newsletter-subscription": "dev-master",
+    "kaystrobach/dyncss": "dev-typo3_8.x_compatibility",
+    "typo3-ter/dyncss-less": ">=0.7.6 <=0.7.99",
+    "clickstorm/go_maps_ext": "2.2.0",
+    "typo3-ter/news": "5.3.2",
+    "typo3-ter/static-info-tables": "^6.4",
+    "pixelant/pxa-cookie-bar": "1.0.4"
   },
   "require-dev": {
-    "t3kit/theme-t3kit": "dev-master",
-    "t3kit/theme-t3kit-bluemountain": "dev-master",
-    "pixelant/pxa-form-enhancement": "^1.0",
-    "pixelant/pxa-newsletter-subscription": "dev-master"
   },
   "extra": {
     "typo3/cms": {
