@@ -14,13 +14,13 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-hdb", "-uroot", "-p1234", "--silent"]
       interval: 5s
       timeout: 5s
-      retries: 10
+      retries: 8
     restart: always
 
 
   web:
     container_name: web
-    image: dmytroh/ubuntu16-php7-apache-t3kit:0.0.1
+    image: t3kit/ubuntu16-php7-apache:0.0.1
     ports:
       - "8888:80"
     depends_on:
