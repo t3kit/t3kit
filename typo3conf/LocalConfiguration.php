@@ -8,11 +8,17 @@ return [
         'versionNumberInFilename' => '0',
     ],
     'DB' => [
-        'database' => 't3kit',
-        'host' => 'localhost',
-        'password' => 't3kit1234',
-        'socket' => '',
-        'username' => 't3kit',
+        'Connections' => [
+            'Default' => [
+                'charset' => 'utf8',
+                'dbname' => 't3kit',
+                'driver' => 'mysqli',
+                'host' => 'db',
+                'password' => 't3kit1234',
+                'unix_socket' => '',
+                'user' => 't3kit',
+            ],
+        ],
     ],
     'EXT' => [
         'extConf' => [
@@ -58,15 +64,14 @@ return [
         'loginSecurityLevel' => 'rsa',
     ],
     'GFX' => [
-        'colorspace' => 'sRGB',
-        'im' => 1,
-        'im_mask_temp_ext_gif' => 1,
-        'im_path' => '/usr/bin/',
-        'im_path_lzw' => '/usr/bin/',
-        'im_v5effects' => 1,
-        'im_version_5' => 'im6',
-        'image_processing' => 1,
         'jpg_quality' => '80',
+        'processor' => 'ImageMagick',
+        'processor_allowTemporaryMasksAsPng' => false,
+        'processor_colorspace' => 'sRGB',
+        'processor_effects' => 1,
+        'processor_enabled' => 1,
+        'processor_path' => '/usr/bin/',
+        'processor_path_lzw' => '/usr/bin/',
     ],
     'INSTALL' => [
         'wizardDone' => [
@@ -103,7 +108,6 @@ return [
                 ],
             ],
         ],
-        'clearCacheSystem' => false,
         'devIPmask' => '',
         'displayErrors' => 0,
         'enableDeprecationLog' => false,
@@ -115,8 +119,6 @@ return [
         'sqlDebug' => 0,
         'systemLocale' => 'en_US.utf8',
         'systemLogLevel' => 2,
-        't3lib_cs_convMethod' => 'mbstring',
-        't3lib_cs_utils' => 'mbstring',
         'textfile_ext' => 'txt,ts,typoscript,html,htm,css,tmpl,js,sql,xml,csv,xlf,less',
     ],
 ];
