@@ -1,4 +1,22 @@
 {
+  "name": "t3kit/t3kit",
+  "description": "Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.",
+  "type": "project",
+  "keywords": ["t3kit", "typo3", "cms", "starter"],
+  "homepage": "http://www.t3kit.com",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "t3kit Community",
+      "homepage": "https://github.com/t3kit"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/t3kit/t3kit/issues",
+    "forum": "https://typo3.slack.com/messages/t3kit",
+    "source": "https://github.com/t3kit/t3kit",
+    "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
+  },
   "repositories": [
     {
       "type": "composer",
