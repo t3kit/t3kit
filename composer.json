@@ -70,7 +70,7 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^7.0",
-    "typo3/cms": "^8.6",
+    "typo3/cms": "8.5",
     "typo3-ter/realurl": "^2.1",
     "b13/seo_basics": "0.9.6",
     "t3kit/theme-t3kit": "dev-typo3_8.x_compatibility",
@@ -87,6 +87,7 @@
     "pixelant/pxa-cookie-bar": "1.0.4"
   },
   "require-dev": {
+    "t3kit/db": "dev-master"
   },
   "extra": {
     "typo3/cms": {
