@@ -1,4 +1,4 @@
-version: "2.1"
+version: "3.1"
 
 services:
 
@@ -10,13 +10,7 @@ services:
       - MYSQL_DATABASE=t3kit
       - MYSQL_USER=t3kit
       - MYSQL_PASSWORD=t3kit1234
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-hdb", "-uroot", "-p1234", "--silent"]
-      interval: 5s
-      timeout: 5s
-      retries: 8
     restart: always
-
 
   web:
     container_name: web
@@ -24,11 +18,10 @@ services:
     ports:
       - "8888:80"
     depends_on:
-      db:
-        condition: service_healthy
+      - db
     volumes:
       - ./docker_conf:/docker_conf
-      - ./t3kit_db:/t3kit_db
+      - ./vendor/t3kit/db:/t3kit_db
       - web-data:/var/www/html
     restart: always
     command: "sh /docker_conf/macos/run.sh"
@@ -44,8 +37,6 @@ services:
     volumes:
       - web-data:/var/www/html
       - .:/source
-    # volumes_from:
-    #   - web
     depends_on:
       - web
     environment:
@@ -56,7 +47,7 @@ services:
         group = true
         owner = true
         numericids = false
-        ignore = Path .git/*
+        ignore = Path .git
         ignore = Path typo3temp
         ignore = Path t3kit_db
     privileged: true
