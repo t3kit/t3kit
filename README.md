@@ -59,11 +59,22 @@ docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh
 ```
 
-### t3kit database manipulation:
+### t3kit database manipulation - Setup/Restore/Pack:
 
 * Setup t3kit db: `docker exec -it web /t3kit_db/setupdb.sh`
 * Restore t3kit db: `docker exec -it web /t3kit_db/restoredb.sh`
 * Pack (save) t3kit db: `docker exec -it web /t3kit_db/packdb.sh`
+
+
+### phpMyAdmin
+#### Run phpMyAdmin docker container and connect it to t3kit:
+
+```
+docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOST=db phpmyadmin/phpmyadmin
+```
+
+* `t3kit_default` - default docker network name based on `t3kit` folder name.
+* `db ` - default t3kit database host name (from docker-compose).
 
 ***
 
