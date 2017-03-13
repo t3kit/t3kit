@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# stop apache
-apache2ctl stop
-
 # Moving TYPO3 temp out of shared folders to improve speed
 mkdir /typo3temp
 chown -R www-data /typo3temp

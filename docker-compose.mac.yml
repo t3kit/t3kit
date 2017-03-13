@@ -44,14 +44,10 @@ services:
       SYNC_MAX_INOTIFY_WATCHES: 40000
       SYNC_VERBOSE: 1
       SYNC_EXTRA_UNISON_PROFILE_OPTS: |
-        group = true
-        owner = true
-        numericids = false
         ignore = Path .git
         ignore = Path typo3temp
-        ignore = Path t3kit_db
+        ignore = Path uploads
     privileged: true
-    command: "sh /source/docker_conf/macos/sync.sh"
 
 volumes:
   web-data:
