@@ -135,3 +135,5 @@ Examples:
 Instead of using `docker-compose up -d` you can try to use alternative docker-compose configuration `docker-compose -f docker-compose.mac.yml up -d`
 
 Also, keep in mind after executing this script you have to wait ~5 - 8 min until all files will be synced.
+
+_Note:_ To fix issues with permission: `d exec -it web chown -R www-data /var/www/html/typo3conf`
