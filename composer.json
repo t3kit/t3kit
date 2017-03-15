@@ -24,7 +24,7 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/theme_t3kit"
+      "url": "https://github.com/t3kit/theme_t3kit.git"
     },
     {
       "type": "git",
@@ -66,10 +66,12 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^7.0",
-    "typo3/cms": "8.6",
+    "typo3/cms": "8.5",
     "typo3-ter/realurl": "^2.1",
     "b13/seo_basics": "0.9.6",
     "typo3-themes/themes": "dev-typo3_8_compatibility",
+    "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
+    "t3kit/theme-t3kit": "dev-master",
     "gridelementsteam/gridelements": "dev-master",
     "apache-solr-for-typo3/solr": "dev-master",
     "pixelant/pxa-newsletter-subscription": "dev-master",
