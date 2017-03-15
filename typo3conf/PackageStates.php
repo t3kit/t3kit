@@ -122,17 +122,20 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
+        'realurl' => [
+            'packagePath' => 'typo3conf/ext/realurl/',
+        ],
+        't3kit_extension_tools' => [
+            'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
+        ],
         'dyncss' => [
             'packagePath' => 'typo3conf/ext/dyncss/',
         ],
         'dyncss_less' => [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
-        ],
-        'realurl' => [
-            'packagePath' => 'typo3conf/ext/realurl/',
-        ],
-        'seo_basics' => [
-            'packagePath' => 'typo3conf/ext/seo_basics/',
         ],
         'static_info_tables' => [
             'packagePath' => 'typo3conf/ext/static_info_tables/',
@@ -140,11 +143,14 @@ return [
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',
         ],
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        ],
+        'seo_basics' => [
+            'packagePath' => 'typo3conf/ext/seo_basics/',
+        ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
-        ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
         ],
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
