@@ -4,6 +4,7 @@ jobs:
     working_directory: /var/www/html
     docker:
       - image: t3kit/ubuntu16-php7-apache:0.0.1
+      - container_name: web
     steps:
       - checkout
       - setup_docker_engine
