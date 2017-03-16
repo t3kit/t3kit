@@ -1,4 +1,22 @@
 {
+  "name": "t3kit/t3kit",
+  "description": "Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.",
+  "type": "project",
+  "keywords": ["t3kit", "typo3", "cms", "starter"],
+  "homepage": "http://www.t3kit.com",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "t3kit Community",
+      "homepage": "https://github.com/t3kit"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/t3kit/t3kit/issues",
+    "forum": "https://typo3.slack.com/messages/t3kit",
+    "source": "https://github.com/t3kit/t3kit",
+    "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
+  },
   "repositories": [
     {
       "type": "composer",
@@ -6,7 +24,7 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/theme_t3kit"
+      "url": "https://github.com/t3kit/theme_t3kit.git"
     },
     {
       "type": "git",
@@ -15,10 +33,6 @@
     {
       "type": "git",
       "url": "https://github.com/t3kit/t3kit_extension_tools"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/t3kit/gridelements"
     },
     {
       "type": "git",
@@ -52,29 +66,29 @@
   "minimum-stability": "dev",
   "require": {
     "php": "^7.0",
-    "typo3/cms": "^8.6",
+    "typo3/cms": "8.5",
     "typo3-ter/realurl": "^2.1",
     "b13/seo_basics": "0.9.6",
-    "t3kit/theme-t3kit": "dev-typo3_8.x_compatibility",
     "typo3-themes/themes": "dev-typo3_8_compatibility",
     "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
-    "gridelementsteam/gridelements": "dev-typo3_8.x_compatibility",
+    "t3kit/theme-t3kit": "dev-master",
+    "gridelementsteam/gridelements": "dev-master",
     "apache-solr-for-typo3/solr": "dev-master",
     "pixelant/pxa-newsletter-subscription": "dev-master",
     "kaystrobach/dyncss": "dev-typo3_8.x_compatibility",
-    "typo3-ter/dyncss-less": ">=0.7.6 <=0.7.99",
+    "typo3-ter/dyncss-less": ">=0.7.7 <=0.7.99",
     "clickstorm/go_maps_ext": "2.2.0",
     "typo3-ter/news": "5.3.2",
     "typo3-ter/static-info-tables": "^6.4",
-    "pixelant/pxa-cookie-bar": "1.0.4",
-
+    "pixelant/pxa-cookie-bar": "1.0.4"
+  },
+  "require-dev": {
+    "t3kit/db": "dev-master",
     "behat/behat": "~3.3.0",
     "behat/mink-extension": "~2.2",
     "behat/mink-goutte-driver": "~1.2.1",
     "behat/mink-selenium2-driver": "~1.3.1",
     "guzzlehttp/guzzle": "~6.2.0"
-  },
-  "require-dev": {
   },
   "extra": {
     "typo3/cms": {
