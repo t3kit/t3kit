@@ -1,0 +1,27 @@
+default:
+  autoload:
+    '': %paths.base%/context/bootstrap
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost:8082/
+      show_cmd: 'open %s'
+      default_session: goutte
+      goutte: ~
+
+  suites:
+    default:
+      paths: &featurePaths
+        - '%paths.base%/features'
+      contexts: &contexts
+        - FeatureContext
+      filters:
+        tags: ~@skip
+
+# For running test in chrome with selenium
+selenium:
+  extensions:
+    Behat\MinkExtension:
+      default_session: selenium2
+      selenium2:
+        browser: chrome
+        wd_host: http://localhost:4444/wd/hub
