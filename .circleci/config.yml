@@ -32,5 +32,5 @@ jobs:
       #      docker exec -it $DOCKER_MACHINE_NAME vendor/t3kit/db/setupdb.sh
       - run:
           name: Install Project Dependencies
-          shell: /bin/sh
-          command: /docker_conf/run.sh
+          shell: /bin/bash
+          command: docker_conf/run.sh
