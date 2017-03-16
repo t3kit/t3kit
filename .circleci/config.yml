@@ -1,9 +1,10 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/circulate
+    working_directory: ~/
     docker:
       - image: t3kit/ubuntu16-php7-apache:0.0.1
     steps:
       - checkout
+      - run: sh /docker_conf/run.sh
       - run: echo "hello world"
