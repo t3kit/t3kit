@@ -6,6 +6,7 @@ jobs:
       - image: t3kit/ubuntu16-php7-apache:0.0.1
     steps:
       - checkout
+      - setup_docker_engine
       - run:
           name: Install Composer
           command: |
