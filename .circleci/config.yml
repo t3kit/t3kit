@@ -2,6 +2,7 @@ version: 2
 jobs:
   build:
     working_directory: /var/www/html
+    executor: docker
     docker:
       - image: t3kit/ubuntu16-php7-apache:0.0.1
     steps:
