@@ -17,6 +17,11 @@ jobs:
       - run:
           name: Install Project Dependencies
           command: php composer.phar install
+      - run:
+          name: Install t3kit database
+          command: |
+            docker-compose up -d
+            docker exec -it web /t3kit_db/setupdb.sh
       #- run:
       #    name: Install Project Dependencies
       #    command: cd /var/www && sh /docker_conf/run.sh
