@@ -8,9 +8,7 @@
 - Install dependencies: `composer install`
 - Change the `base_url` in `behat.yml` to:
 
-	1 - For `vagrant` : `base_url: http://localhost:8081`
-	
-	2 - For `docker` : `base_url: http://localhost:8082`
+	1 - For `docker` : `base_url: http://localhost:8888`
 
 - Running behat testing with command: `vendor/bin/behat -c test/behaviour/behat.yml`
 - If you want to run specific feature, provide an argument `--name` : `vendor/bin/behat -c test/behaviour/behat.yml --name="Homepage"`
@@ -24,5 +22,5 @@
 
 Note:
 
-	- Above steps are for Ubuntu 14.04
+	- Above steps are for Ubuntu 14.04 and above
 	- If you use other operating system, download the Selenium server and chrome driver that are compatible to each others and support with your running operating system.

@@ -18,3 +18,5 @@ typo3
 typo3conf/ext/*
 vendor
 typo3_src
+
+composer.lock

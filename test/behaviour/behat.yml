@@ -3,7 +3,7 @@ default:
     '': %paths.base%/context/bootstrap
   extensions:
     Behat\MinkExtension:
-      base_url: http://localhost:8082/
+      base_url: http://localhost:8888/
       show_cmd: 'open %s'
       default_session: goutte
       goutte: ~
