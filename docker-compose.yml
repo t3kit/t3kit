@@ -19,9 +19,19 @@ services:
       - "8888:80"
     depends_on:
       - db
+      - t3kit_solr
     volumes:
       - ./docker_conf:/docker_conf
       - ./vendor/t3kit/db:/t3kit_db
       - .:/var/www/html
     restart: always
     command: "sh /docker_conf/run.sh"
+
+  t3kit_solr:
+    container_name: t3kit_solr
+    image: typo3solr/ext-solr:6.0.0
+    ports:
+      - "8983:8983"
+    volumes:
+      - $PWD/solrdata:/opt/solr/server/solr/data/
+    restart: always
