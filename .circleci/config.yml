@@ -4,9 +4,25 @@ jobs:
     working_directory: /var/www/html
     docker:
       - image: t3kit/ubuntu16-php7-apache:0.0.1
+        environment:
+          APP_ENV: local
+          APP_DEBUG: true
+          APP_KEY: kjcndjjksddwdwdw
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: t3kit
+          DB_USERNAME: t3kit
+          DB_PASSWORD: t3kit1234
+      - image: mariadb:5.5
+        environment:
+          MYSQL_ROOT_PASSWORD: 1234
+          MYSQL_DATABASE: t3kit
+          MYSQL_USER: t3kit
+          MYSQL_PASSWORD: t3kit1234
     steps:
       - checkout
-      #- setup_docker_engine
+      - setup_docker_engine
       - run:
           name: Install Composer
           command: |
@@ -30,7 +46,7 @@ jobs:
       #    name: Install t3kit database
       #    command: |
       #      docker ps
-      #- run:
-      #    name: Install t3kit database
-      #    command: |
-      #      docker exec -it $DOCKER_MACHINE_NAME vendor/t3kit/db/setupdb.sh
+      - run:
+          name: Install t3kit database
+          command: |
+            docker exec -it $DOCKER_MACHINE_NAME vendor/t3kit/db/setupdb.sh
