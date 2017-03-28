@@ -20,3 +20,8 @@ vendor
 typo3_src
 
 composer.lock
+
+# Solr
+solrdata/*
+# Keep the actual folder
+!solrdata/.gitkeep
