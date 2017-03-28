@@ -4,6 +4,12 @@ jobs:
     working_directory: /var/www/html
     docker:
       - image: t3kit/ubuntu16-php7-apache:0.0.1
+        ports:
+          - "8888:80"
+        volumes:
+          - ./docker_conf:/docker_conf
+          - ./vendor/t3kit/db:/t3kit_db
+          - .:/var/www/html
         environment:
           APP_ENV: local
           APP_DEBUG: true
@@ -20,6 +26,11 @@ jobs:
           MYSQL_DATABASE: t3kit
           MYSQL_USER: t3kit
           MYSQL_PASSWORD: t3kit1234
+      - image: typo3solr/ext-solr:6.0.0
+        ports:
+          - "8983:8983"
+        volumes:
+          - $PWD/solrdata:/opt/solr/server/solr/data/
     steps:
       - checkout
       #- setup_docker_engine
