@@ -14,7 +14,7 @@ jobs:
           DB_DATABASE: t3kit
           DB_USERNAME: t3kit
           DB_PASSWORD: t3kit1234
-      - image: mariadb:5.5
+      - image: mysql:5.7
         environment:
           MYSQL_ROOT_PASSWORD: 1234
           MYSQL_DATABASE: t3kit
@@ -22,7 +22,7 @@ jobs:
           MYSQL_PASSWORD: t3kit1234
     steps:
       - checkout
-      - setup_docker_engine
+      #- setup_docker_engine
       - run:
           name: Install Composer
           command: |
@@ -46,7 +46,7 @@ jobs:
       #    name: Install t3kit database
       #    command: |
       #      docker ps
-      - run:
-          name: Install t3kit database
-          command: |
-            docker exec -it $DOCKER_MACHINE_NAME vendor/t3kit/db/setupdb.sh
+      #- run:
+      #    name: Install t3kit database
+      #    command: |
+      #      docker exec -it $DOCKER_MACHINE_NAME vendor/t3kit/db/setupdb.sh
