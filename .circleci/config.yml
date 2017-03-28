@@ -33,7 +33,7 @@ jobs:
             php -r "unlink('composer-setup.php');"
       - run:
           name: Install Project Dependencies
-          command: php composer.phar install --no-dev
+          command: php composer.phar install
       #- run:
       #    name: Install Docker client
       #    command: |
