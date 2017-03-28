@@ -46,14 +46,14 @@ Start using **git**:
 ```
 git clone https://github.com/t3kit/t3kit.git
 cd t3kit
-composer install
+composer install --ignore-platform-reqs
 docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh
 ```
 
 Start using **composer**:
 ```
-composer create-project t3kit/t3kit t3kit dev-master --keep-vcs
+composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs
 cd t3kit
 docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh

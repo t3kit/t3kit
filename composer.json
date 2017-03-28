@@ -56,7 +56,7 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/anjeylink/TYPO3.dyncss"
+      "url": "https://github.com/kaystrobach/TYPO3.dyncss"
     },
     {
       "type": "git",
@@ -75,7 +75,7 @@
     "gridelementsteam/gridelements": "dev-master",
     "apache-solr-for-typo3/solr": "dev-master",
     "pixelant/pxa-newsletter-subscription": "dev-master",
-    "kaystrobach/dyncss": "dev-typo3_8.x_compatibility",
+    "kaystrobach/dyncss": "dev-master",
     "typo3-ter/dyncss-less": ">=0.7.7 <=0.7.99",
     "clickstorm/go_maps_ext": "2.2.0",
     "typo3-ter/news": "5.3.2",
