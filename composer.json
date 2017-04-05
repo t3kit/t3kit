@@ -61,13 +61,25 @@
     {
       "type": "git",
       "url": "https://github.com/TYPO3-Solr/ext-solr"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/t3kit/TYPO3.dyncss"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/t3kit/TYPO3.dyncss_less"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/t3kit/typo3-realurl"
     }
   ],
   "minimum-stability": "dev",
   "require": {
     "php": "^7.0",
-    "typo3/cms": "8.5",
-    "typo3-ter/realurl": "^2.1",
+    "typo3/cms": "8.7.0",
+    "dmitryd/typo3-realurl": "dev-typo38",
     "b13/seo_basics": "0.9.6",
     "typo3-themes/themes": "dev-typo3_8_compatibility",
     "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
@@ -75,8 +87,8 @@
     "gridelementsteam/gridelements": "dev-typo3_8.x_compatibility",
     "apache-solr-for-typo3/solr": "dev-master",
     "pixelant/pxa-newsletter-subscription": "dev-master",
-    "typo3-ter/dyncss": "0.8.0",
-    "typo3-ter/dyncss-less": ">=0.7.8 <=0.7.99",
+    "kaystrobach/dyncss": "dev-typo38",
+    "kaystrobach/dyncss-less": "dev-typo38",
     "clickstorm/go_maps_ext": "2.2.0",
     "typo3-ter/news": "5.3.2",
     "typo3-ter/static-info-tables": "^6.4",
