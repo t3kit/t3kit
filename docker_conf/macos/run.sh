@@ -1,8 +1,6 @@
 #!/bin/bash
 
-mkdir typo3temp
-mkdir typo3conf
-chown -R www-data typo3temp
-chown -R www-data typo3conf
+chown -R www-data /var/www/
 
+# start apache
 exec apache2ctl -D FOREGROUND

@@ -1,0 +1,10 @@
+version: "2"
+
+options:
+  compose-file-path: 'docker-compose.dev.yml'
+  verbose: true
+
+syncs:
+  t3kit-sync:
+    src: '.'
+    sync_excludes: ['uploads', 'typo3temp']
