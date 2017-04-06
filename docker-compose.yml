@@ -27,7 +27,9 @@ services:
       - .:/var/www/html
     restart: always
     command: "sh /docker_conf/run.sh"
-
+    environment:
+      - USERID=1001
+      - GROUPID=1001
   t3kit_solr:
     container_name: t3kit_solr
     image: typo3solr/ext-solr:6.0.0
