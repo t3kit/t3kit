@@ -11,7 +11,8 @@ services:
       - MYSQL_USER=t3kit
       - MYSQL_PASSWORD=t3kit1234
     restart: always
-
+    ports:
+      - "3307:3306"
   web:
     container_name: web
     image: t3kit/ubuntu16-php7-apache:0.0.1
