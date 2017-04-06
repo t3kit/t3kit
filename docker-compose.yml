@@ -36,5 +36,5 @@ services:
     ports:
       - "8983:8983"
     volumes:
-      - $PWD/solrdata:/opt/solr/server/solr/data/
+      - ./solrdata:/opt/solr/server/solr/data/
     restart: always
