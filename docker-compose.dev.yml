@@ -11,8 +11,7 @@ services:
       - MYSQL_USER=t3kit
       - MYSQL_PASSWORD=t3kit1234
     restart: always
-    ports:
-      - "3307:3306"
+
   web:
     container_name: web
     image: t3kit/ubuntu16-php7-apache:0.0.1
@@ -24,17 +23,19 @@ services:
     volumes:
       - ./docker_conf:/docker_conf
       - ./vendor/t3kit/db:/t3kit_db
-      - .:/var/www/html
+      - t3kit-sync:/var/www/html:rw
     restart: always
-    command: "sh /docker_conf/run.sh"
-    environment:
-      - USERID=1001
-      - GROUPID=1001
+    command: "sh /docker_conf/macos/run.sh"
+
   t3kit_solr:
     container_name: t3kit_solr
     image: typo3solr/ext-solr:6.0.0
     ports:
       - "8983:8983"
     volumes:
-      - ./solrdata:/opt/solr/server/solr/data/
+      - $PWD/solrdata:/opt/solr/server/solr/data/
     restart: always
+
+volumes:
+  t3kit-sync:
+    external: true

@@ -17,6 +17,12 @@ return [
         'fluid' => [
             'packagePath' => 'typo3/sysext/fluid/',
         ],
+        'frontend' => [
+            'packagePath' => 'typo3/sysext/frontend/',
+        ],
+        'fluid_styled_content' => [
+            'packagePath' => 'typo3/sysext/fluid_styled_content/',
+        ],
         'info' => [
             'packagePath' => 'typo3/sysext/info/',
         ],
@@ -32,8 +38,8 @@ return [
         'setup' => [
             'packagePath' => 'typo3/sysext/setup/',
         ],
-        'rtehtmlarea' => [
-            'packagePath' => 'typo3/sysext/rtehtmlarea/',
+        'rte_ckeditor' => [
+            'packagePath' => 'typo3/sysext/rte_ckeditor/',
         ],
         'rsaauth' => [
             'packagePath' => 'typo3/sysext/rsaauth/',
@@ -80,14 +86,8 @@ return [
         'filemetadata' => [
             'packagePath' => 'typo3/sysext/filemetadata/',
         ],
-        'fluid_styled_content' => [
-            'packagePath' => 'typo3/sysext/fluid_styled_content/',
-        ],
         'form' => [
             'packagePath' => 'typo3/sysext/form/',
-        ],
-        'frontend' => [
-            'packagePath' => 'typo3/sysext/frontend/',
         ],
         'impexp' => [
             'packagePath' => 'typo3/sysext/impexp/',
@@ -122,11 +122,14 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
+        'static_info_tables' => [
+            'packagePath' => 'typo3conf/ext/static_info_tables/',
         ],
         'realurl' => [
             'packagePath' => 'typo3conf/ext/realurl/',
+        ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
         ],
         't3kit_extension_tools' => [
             'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
@@ -136,9 +139,6 @@ return [
         ],
         'dyncss_less' => [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
-        ],
-        'static_info_tables' => [
-            'packagePath' => 'typo3conf/ext/static_info_tables/',
         ],
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',

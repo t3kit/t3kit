@@ -3,41 +3,58 @@
 
 root = true
 
+# Unix-style newlines with a newline ending every file
 [*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# general config
 indent_style = space
 indent_size = 4
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
 
 # HTML-Files
 [*.html]
-indent_size = 4
 indent_style = tab
+indent_size = 2
 
 # TMPL-Files
 [*.tmpl]
 indent_style = tab
 indent_size = 4
 
-# PHP-Files
-[*.php]
+# JS-Files
+[*.js]
 indent_style = space
-indent_size = 4
+indent_size = 2
+
+# ReST-Files
+[*.rst]
+indent_style = space
+indent_size = 3
 
 # TypoScript
 [*.{txt,ts,setupts,constantsts,pagets}]
-indent_size = 4
-indent_style = space
-
-[*.{json,yml,md,sql}]
 indent_size = 2
 indent_style = space
+
+[*.{json,yml,yaml,md,sql}]
+indent_size = 2
+indent_style = space
+
+
+[*.xlf]
+indent_style = tab
+indent_size = 4
+
+[*.{xml,xsd,sql}]
+indent_size = 2
+indent_style = tab
 
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{xml,xlf,xsd,sql}]
+[.stylelintrc]
 indent_size = 2
-indent_style = tab
+indent_style = space

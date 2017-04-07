@@ -24,6 +24,7 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 	case 'Development/Docker':
 		// SetEnv TYPO3_CONTEXT Development
 		$GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'db';
+		$GLOBALS['TYPO3_CONF_VARS']['DB']['port'] = '3307';
 		$GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = TRUE;
 		$GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = FALSE;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = 1;
