@@ -80,8 +80,9 @@
     "php": "^7.0",
     "typo3/cms": "8.7.0",
     "dmitryd/typo3-realurl": "dev-typo38",
-    "b13/seo_basics": "0.9.6",
+
     "typo3-themes/themes": "dev-8-0",
+
     "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
     "t3kit/theme-t3kit": "dev-master",
     "gridelementsteam/gridelements": "dev-typo3_8.x_compatibility",
@@ -90,6 +91,7 @@
     "kaystrobach/dyncss": "dev-typo38",
     "kaystrobach/dyncss-less": "dev-typo38",
     "clickstorm/go_maps_ext": "2.2.0",
+    "clickstorm/cs_seo": "^2.0",
     "typo3-ter/news": "5.3.2",
     "typo3-ter/static-info-tables": "^6.4",
     "pixelant/pxa-cookie-bar": "1.0.4"
