@@ -28,7 +28,7 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/themes"
+      "url": "https://github.com/typo3-themes/themes"
     },
     {
       "type": "git",
@@ -81,7 +81,7 @@
     "typo3/cms": "8.7.0",
     "dmitryd/typo3-realurl": "dev-typo38",
     "b13/seo_basics": "0.9.6",
-    "typo3-themes/themes": "dev-typo3_8_compatibility",
+    "typo3-themes/themes": "dev-8-0",
     "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
     "t3kit/theme-t3kit": "dev-master",
     "gridelementsteam/gridelements": "dev-typo3_8.x_compatibility",
