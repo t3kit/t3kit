@@ -1,4 +1,10 @@
 
+#### v7.11.4 `April 11, 2017`
+- **[BUGFIX]** Update news to secure version 5.3.3 (Add caseinsensitive security check for overwriteDemandObject) (#125) ([47563ab](https://github.com/t3kit/t3kit/commit/47563ab))
+- **[TASK]** Unify commit message documentation with TYPO3 coding standards (#84) ([4bdafd2](https://github.com/t3kit/t3kit/commit/4bdafd2))
+
+***
+
 #### v7.11.3 `February 23, 2017`
 - **[TASK]** update PackageStates ([7a639a2](https://github.com/t3kit/t3kit/commit/7a639a2))
 - **[TASK]** remove typo3_console base commmand scripts ([60b3695](https://github.com/t3kit/t3kit/commit/60b3695))

@@ -1,5 +1,5 @@
 #t3kit
-[![t3kit](https://img.shields.io/badge/t3kit-7.11.3-green.svg?style=flat-square)](https://github.com/t3kit/t3kit)
+[![t3kit](https://img.shields.io/badge/t3kit-7.11.4-green.svg?style=flat-square)](https://github.com/t3kit/t3kit)
 [![TYPO3](https://img.shields.io/badge/TYPO3-7.6.15-orange.svg?style=flat-square)](https://typo3.org/)
 ###Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.
 
