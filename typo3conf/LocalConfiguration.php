@@ -61,11 +61,11 @@ return [
         'processor_path_lzw' => '/usr/bin/',
     ],
     'MAIL' => [
-        'transport' => 'sendmail',
+        'transport' => 'smtp',
         'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
-        'transport_smtp_server' => '',
+        'transport_smtp_server' => 'mailhog:1025',
         'transport_smtp_username' => '',
     ],
     'SYS' => [
