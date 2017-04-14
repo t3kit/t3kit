@@ -94,7 +94,8 @@
     "clickstorm/cs_seo": "^2.0",
     "typo3-ter/news": "5.3.2",
     "typo3-ter/static-info-tables": "^6.4",
-    "pixelant/pxa-cookie-bar": "1.0.4"
+    "pixelant/pxa-cookie-bar": "1.0.4",
+    "wapplersystems/realurl-404-multilingual": "dev-master"
   },
   "require-dev": {
     "t3kit/db": "dev-master",
