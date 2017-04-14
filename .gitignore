@@ -29,3 +29,6 @@ solrdata/*
 # Docker Sync https://github.com/EugenMayer/docker-sync
 ._.DS_Store
 .docker-sync/
+
+.unison*
+._.DS_Store
