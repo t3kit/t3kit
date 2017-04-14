@@ -34,11 +34,7 @@
       "type": "git",
       "url": "https://github.com/t3kit/t3kit_extension_tools"
     },
-    {
-      "type": "git",
-      "url": "https://github.com/b13/t3ext-seo_basics"
-    },
-    {
+        {
       "type": "git",
       "url": "https://github.com/svewap/realurl_404_multilingual"
     },
@@ -56,45 +52,34 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/gridelements"
-    },
-    {
-      "type": "git",
       "url": "https://github.com/TYPO3-Solr/ext-solr"
     },
     {
       "type": "git",
       "url": "https://github.com/t3kit/TYPO3.dyncss"
-    },
+          },
     {
       "type": "git",
       "url": "https://github.com/t3kit/TYPO3.dyncss_less"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/t3kit/typo3-realurl"
     }
   ],
   "minimum-stability": "dev",
   "require": {
     "php": "^7.0",
     "typo3/cms": "8.7.0",
-    "dmitryd/typo3-realurl": "dev-typo38",
-
+    "typo3-ter/realurl": "2.2.0",
     "typo3-themes/themes": "dev-8-0",
-
     "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
     "t3kit/theme-t3kit": "dev-master",
-    "gridelementsteam/gridelements": "dev-typo3_8.x_compatibility",
-    "apache-solr-for-typo3/solr": "dev-master",
-    "pixelant/pxa-newsletter-subscription": "dev-master",
+    "gridelementsteam/gridelements": "dev-master",
+    "apache-solr-for-typo3/solr": "6.1.0",
+    "pixelant/pxa-newsletter-subscription": "4.1.0",
     "kaystrobach/dyncss": "dev-typo38",
     "kaystrobach/dyncss-less": "dev-typo38",
     "clickstorm/go_maps_ext": "2.2.0",
     "clickstorm/cs_seo": "^2.0",
-    "typo3-ter/news": "5.3.2",
-    "typo3-ter/static-info-tables": "^6.4",
-    "pixelant/pxa-cookie-bar": "1.0.4",
+    "typo3-ter/news": "5.3.3",
+    "pixelant/pxa-cookie-bar": "1.0.6",
     "wapplersystems/realurl-404-multilingual": "dev-master"
   },
   "require-dev": {
