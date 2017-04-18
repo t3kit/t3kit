@@ -56,11 +56,11 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/TYPO3.dyncss"
-          },
+      "url": "https://github.com/kaystrobach/TYPO3.dyncss"
+    },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/TYPO3.dyncss_less"
+      "url": "https://github.com/kaystrobach/TYPO3.dyncss_less"
     }
   ],
   "minimum-stability": "dev",
@@ -74,8 +74,8 @@
     "gridelementsteam/gridelements": "dev-master",
     "apache-solr-for-typo3/solr": "6.1.0",
     "pixelant/pxa-newsletter-subscription": "4.1.0",
-    "kaystrobach/dyncss": "dev-typo38",
-    "kaystrobach/dyncss-less": "dev-typo38",
+    "kaystrobach/dyncss": "dev-master",
+    "kaystrobach/dyncss-less": "dev-master",
     "clickstorm/go_maps_ext": "2.2.0",
     "clickstorm/cs_seo": "^2.0",
     "typo3-ter/news": "5.3.3",
