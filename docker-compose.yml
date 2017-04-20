@@ -38,3 +38,9 @@ services:
     volumes:
       - ./solrdata:/opt/solr/server/solr/data/
     restart: always
+  mailhog:
+    container_name: t3kit_mailhog
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+

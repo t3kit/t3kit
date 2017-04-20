@@ -32,6 +32,10 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] = 'Docker :: t3kit :: TYPO3';
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = 1;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['clearCacheSystem'] = TRUE;
+		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport'] = 'smtp';
+		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = 't3kit_mailhog:1025';
+		// Page will load noticably slow when systemLog to "mail" is enabled and a lot of errors occurs.
+		// $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLog'] = 'mail,dummy@t3kit.com;';
 	break;
 	case 'Development':
 		// SetEnv TYPO3_CONTEXT Development
