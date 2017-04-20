@@ -65,7 +65,7 @@
     "clickstorm/go_maps_ext": "2.2.0",
     "clickstorm/cs_seo": "^2.0",
     "typo3-ter/news": "5.3.3",
-    "pixelant/pxa-cookie-bar": "1.0.6",
+    "pixelant/pxa-cookie-bar": "1.0.7",
     "wapplersystems/realurl-404-multilingual": "dev-master"
   },
   "require-dev": {
