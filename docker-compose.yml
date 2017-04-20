@@ -38,3 +38,8 @@ services:
     volumes:
       - ./solrdata:/opt/solr/server/solr/data/
     restart: always
+    
+  mailhog:
+    image: yappabe/mailhog
+    environment:
+      DNSDOCK_ALIAS: mailhog.website.docker.webfolks.be
