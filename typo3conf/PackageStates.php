@@ -149,6 +149,9 @@ return [
         'pxa_cookie_bar' => [
             'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
         ],
+        'pxa_form_enhancement' => [
+            'packagePath' => 'typo3conf/ext/pxa_form_enhancement/',
+        ],
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
         ],

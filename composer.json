@@ -66,7 +66,8 @@
     "clickstorm/cs_seo": "^2.0",
     "typo3-ter/news": "5.3.3",
     "pixelant/pxa-cookie-bar": "1.0.6",
-    "wapplersystems/realurl-404-multilingual": "dev-master"
+    "wapplersystems/realurl-404-multilingual": "dev-master",
+    "pixelant/pxa-form-enhancement": "3.0.0"
   },
   "require-dev": {
     "t3kit/db": "dev-master",
