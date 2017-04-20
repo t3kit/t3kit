@@ -122,32 +122,23 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
-        'static_info_tables' => [
-            'packagePath' => 'typo3conf/ext/static_info_tables/',
-        ],
-        'realurl' => [
-            'packagePath' => 'typo3conf/ext/realurl/',
-        ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
-        ],
-        't3kit_extension_tools' => [
-            'packagePath' => 'typo3conf/ext/t3kit_extension_tools/',
-        ],
         'dyncss' => [
             'packagePath' => 'typo3conf/ext/dyncss/',
         ],
         'dyncss_less' => [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
         ],
+        'static_info_tables' => [
+            'packagePath' => 'typo3conf/ext/static_info_tables/',
+        ],
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
         'theme_t3kit' => [
             'packagePath' => 'typo3conf/ext/theme_t3kit/',
-        ],
-        'seo_basics' => [
-            'packagePath' => 'typo3conf/ext/seo_basics/',
         ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
@@ -160,6 +151,9 @@ return [
         ],
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
+        ],
+        'realurl' => [
+            'packagePath' => 'typo3conf/ext/realurl/',
         ],
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
