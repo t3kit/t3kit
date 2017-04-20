@@ -63,11 +63,11 @@
     "pixelant/pxa-newsletter-subscription": "4.1.0",
     "typo3-ter/dyncss-less": "0.7.9",
     "clickstorm/go_maps_ext": "2.2.0",
-    "clickstorm/cs_seo": "^2.0",
+    "b13/seo_basics": "0.9.6",
     "typo3-ter/news": "5.3.3",
-    "pixelant/pxa-cookie-bar": "1.0.6",
-    "wapplersystems/realurl-404-multilingual": "dev-master",
     "pixelant/pxa-form-enhancement": "3.0.0"
+    "pixelant/pxa-cookie-bar": "1.0.7",
+    "wapplersystems/realurl-404-multilingual": "dev-master"
   },
   "require-dev": {
     "t3kit/db": "dev-master",

@@ -8,7 +8,7 @@ typo3conf/realurl_fixedPostVars_conf.php
 
 fileadmin/*
 !fileadmin/example_content/
-!fileadmin/templates/
+!fileadmin/Configuration/
 !fileadmin/custom/
 
 .idea/
