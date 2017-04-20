@@ -32,10 +32,6 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/t3kit_extension_tools"
-    },
-        {
-      "type": "git",
       "url": "https://github.com/svewap/realurl_404_multilingual"
     },
     {
@@ -53,29 +49,19 @@
     {
       "type": "git",
       "url": "https://github.com/TYPO3-Solr/ext-solr"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/kaystrobach/TYPO3.dyncss"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/kaystrobach/TYPO3.dyncss_less"
     }
   ],
   "minimum-stability": "dev",
   "require": {
     "php": "^7.0",
-    "typo3/cms": "8.7.0",
+    "typo3/cms": "8.7.1",
     "typo3-ter/realurl": "2.2.0",
     "typo3-themes/themes": "dev-8-0",
-    "t3kit/t3kit-extension-tools": "dev-typo3_8.x_compatibility",
     "t3kit/theme-t3kit": "dev-master",
     "gridelementsteam/gridelements": "dev-master",
     "apache-solr-for-typo3/solr": "6.1.0",
     "pixelant/pxa-newsletter-subscription": "4.1.0",
-    "kaystrobach/dyncss": "dev-master",
-    "kaystrobach/dyncss-less": "dev-master",
+    "typo3-ter/dyncss-less": "0.7.9",
     "clickstorm/go_maps_ext": "2.2.0",
     "clickstorm/cs_seo": "^2.0",
     "typo3-ter/news": "5.3.3",
