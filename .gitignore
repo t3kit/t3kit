@@ -16,6 +16,7 @@ fileadmin/*
 index.php
 typo3
 typo3conf/ext/*
+typo3conf/l10n/*
 vendor
 typo3_src
 
@@ -32,3 +33,4 @@ solrdata/*
 
 .unison*
 ._.DS_Store
+.vscode/
