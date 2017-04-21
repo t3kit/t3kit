@@ -124,16 +124,29 @@ Examples:
 
 ***
 
+
 # Docker-compose for mac users:
 
 ### Native docker has some performance issues on mac:
 * https://github.com/docker/for-mac/issues/77
 * https://docs.docker.com/docker-for-mac/osxfs/#performance-issues-solutions-and-roadmap
 
-### We found some temporary workaround how to fix it partly:
+### We suggest to use [docker-sync](http://docker-sync.io) as a temporary solution.
 
-Instead of using `docker-compose up -d` you can try to use alternative docker-compose configuration `docker-compose -f docker-compose.mac.yml up -d`
+Instead of using `docker-compose.yml` you can try to use alternative docker-compose configuration `docker-compose.mac.yml + docker-sync.yml`
 
-Also, keep in mind after executing this script you have to wait ~5 - 8 min until all files will be synced.
+Start comtainers:
+```
+cd t3kit
+docker-sync start -d
+docker-compose -f docker-compose.mac.yml up -d
+```
+
+Stop comtainers:
+```
+docker-sync clean
+docker-compose stop
+```
 
 _Note:_ To fix issues with permission: `docker exec -it web chown -R www-data /var/www/html/typo3conf`
+

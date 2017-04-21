@@ -11,7 +11,8 @@ services:
       - MYSQL_USER=t3kit
       - MYSQL_PASSWORD=t3kit1234
     restart: always
-
+    ports:
+      - "3307:3306"
   web:
     container_name: web
     image: t3kit/ubuntu16-php7-apache:0.0.1
@@ -19,35 +20,28 @@ services:
       - "8888:80"
     depends_on:
       - db
+      - t3kit_solr
     volumes:
       - ./docker_conf:/docker_conf
       - ./vendor/t3kit/db:/t3kit_db
-      - web-data:/var/www/html
+      - t3kit-sync:/var/www/html:rw
     restart: always
     command: "sh /docker_conf/macos/run.sh"
 
-
-  # ============================================
-  # temporary workaround for macOS osxfs file system performance problem:
-  # https://github.com/docker/for-mac/issues/77
-  # https://docs.docker.com/docker-for-mac/osxfs/#performance-issues-solutions-and-roadmap
-  bg-sync:
-    container_name: t3kit
-    image: cweagans/bg-sync
+  t3kit_solr:
+    container_name: t3kit_solr
+    image: typo3solr/ext-solr:6.0.0
+    ports:
+      - "8983:8983"
     volumes:
-      - web-data:/var/www/html
-      - .:/source
-    depends_on:
-      - web
-    environment:
-      SYNC_DESTINATION: /var/www/html
-      SYNC_MAX_INOTIFY_WATCHES: 40000
-      SYNC_VERBOSE: 1
-      SYNC_EXTRA_UNISON_PROFILE_OPTS: |
-        ignore = Path .git
-        ignore = Path typo3temp
-        ignore = Path uploads
-    privileged: true
+      - ./solrdata:/opt/solr/server/solr/data/
+    restart: always
+  mailhog:
+    container_name: t3kit_mailhog
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
 
 volumes:
-  web-data:
+  t3kit-sync:
+    external: true
