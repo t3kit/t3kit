@@ -113,9 +113,13 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
     ];
 }
 
-// Fixed pages, (shorter url)
-if (file_exists(PATH_site . 'typo3conf/realurl_fixedPostVars_conf.php')) {
-    \TYPO3\CMS\Core\Utility\GeneralUtility::requireOnce(PATH_site . 'typo3conf/realurl_fixedPostVars_conf.php');
+// Fixed pages, dynamically created (shorter url)
+$fixedPostVarsConfigurationUtility = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \T3kit\themeT3kit\Utility\FixedPostVarsConfigurationUtility::class
+);
+$fixedPostVarsFile = $fixedPostVarsConfigurationUtility->getSaveFilePath();
+if (file_exists($fixedPostVarsFile)) {
+    \TYPO3\CMS\Core\Utility\GeneralUtility::requireOnce($fixedPostVarsFile);
 }
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['robots.txt']['keyValues']['type'] = 777;
