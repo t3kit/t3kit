@@ -13,7 +13,7 @@ _this message will be here until stable version of **t3kit v8**_
 
 ***
 
-# t3kit v8  (BETA) [![t3kit](https://img.shields.io/badge/t3kit-8.0.0-green.svg?style=flat-square)](https://github.com/t3kit/t3kit) [![TYPO3](https://img.shields.io/badge/TYPO3-8.5.0-orange.svg?style=flat-square)](https://typo3.org/)
+# t3kit v8  (BETA) [![t3kit](https://img.shields.io/badge/t3kit-8.0.0beta.1-blue.svg?style=flat-square)](https://github.com/t3kit/t3kit) [![TYPO3](https://img.shields.io/badge/TYPO3-8.7.1-orange.svg?style=flat-square)](https://typo3.org/)
 
 ## [Starter kit](http://t3kit.com/) for TYPO3 CMS. Tools, extensions, configurations and templates.
 
