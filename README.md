@@ -148,5 +148,5 @@ docker-sync clean
 docker-compose stop
 ```
 
-_Note:_ To fix issues with permission: `docker exec -it web chown -R www-data /var/www/html/typo3conf`
+_Note:_ To fix issues with permission: `docker exec -it web chown -R www-data /var/www/html`
 
