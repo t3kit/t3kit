@@ -137,9 +137,6 @@ return [
         'gridelements' => [
             'packagePath' => 'typo3conf/ext/gridelements/',
         ],
-        'theme_t3kit' => [
-            'packagePath' => 'typo3conf/ext/theme_t3kit/',
-        ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
         ],
@@ -157,6 +154,9 @@ return [
         ],
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
+        ],
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
         ],
     ],
     'version' => 5,
