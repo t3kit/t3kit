@@ -94,5 +94,6 @@ return [
         'sitename' => 'Docker :: t3kit :: TYPO3',
         'sqlDebug' => 1,
         'systemLogLevel' => 0,
+        'textfile_ext' => 'txt,ts,typoscript,html,htm,css,tmpl,js,sql,xml,csv,xlf,yaml,yml,less',
     ],
 ];
