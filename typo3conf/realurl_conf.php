@@ -124,3 +124,9 @@ if (file_exists($fixedPostVarsFile)) {
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['robots.txt']['keyValues']['type'] = 777;
 
+$TYPO3_CONF_VARS['EXTCONF']['realurl_404_multilingual'] = array(
+    '_DEFAULT' => array(
+         'errorPage' => '404/',
+         'unauthorizedPage' => 'login/'
+    ),
+);
