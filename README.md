@@ -47,6 +47,7 @@ Start using **git**:
 git clone https://github.com/t3kit/t3kit.git
 cd t3kit
 composer install --ignore-platform-reqs
+# Note for MAC users there a specific commands further down in the documentation
 docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh
 ```
@@ -135,14 +136,14 @@ Examples:
 
 Instead of using `docker-compose.yml` you can try to use alternative docker-compose configuration `docker-compose.mac.yml + docker-sync.yml`
 
-Start comtainers:
+Start containers:
 ```
 cd t3kit
 docker-sync start -d
 docker-compose -f docker-compose.mac.yml up -d
 ```
 
-Stop comtainers:
+Stop containers:
 ```
 docker-sync clean
 docker-compose stop
