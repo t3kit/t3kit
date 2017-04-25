@@ -7,4 +7,5 @@ options:
 syncs:
   t3kit-sync:
     src: '.'
+    sync_userid: '501'
     sync_excludes: ['uploads', 'typo3temp']

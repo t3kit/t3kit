@@ -27,6 +27,9 @@ services:
       - t3kit-sync:/var/www/html:rw
     restart: always
     command: "sh /docker_conf/macos/run.sh"
+    environment:
+      - USERID=501
+      - GROUPID=20
 
   t3kit_solr:
     container_name: t3kit_solr
