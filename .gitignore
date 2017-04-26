@@ -10,6 +10,7 @@ fileadmin/*
 !fileadmin/example_content/
 !fileadmin/Configuration/
 !fileadmin/custom/
+!fileadmin/forms/
 
 .idea/
 

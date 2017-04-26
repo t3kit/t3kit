@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => true,
+        'debug' => false,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$pbkdf2-sha256$25000$VWvddMstBQNUc5PCZtfxFg$HduEyn4hcpIS5UV6T45OiHq3st5VHCMwmRrC/JH2/40',
         'loginSecurityLevel' => 'rsa',
@@ -12,9 +12,8 @@ return [
                 'charset' => 'utf8',
                 'dbname' => 't3kit',
                 'driver' => 'mysqli',
-                'host' => 'db',
+                'host' => 'localhost',
                 'password' => 't3kit1234',
-                'port' => 3306,
                 'user' => 't3kit',
             ],
         ],
@@ -48,7 +47,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => true,
+        'debug' => false,
         'loginSecurityLevel' => 'rsa',
     ],
     'GFX' => [
@@ -84,16 +83,16 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '*',
-        'displayErrors' => 1,
-        'enableDeprecationLog' => 'file',
+        'devIPmask' => '',
+        'displayErrors' => 0,
+        'enableDeprecationLog' => false,
         'encryptionKey' => '08034aff2437e4465b9cad897321c4da03cd2568197d23ab6a0a815837e793a2141f19d11f2e8a2a241b08e328c873db',
-        'exceptionalErrors' => 28674,
+        'exceptionalErrors' => 20480,
         'isInitialDatabaseImportDone' => true,
         'isInitialInstallationInProgress' => false,
-        'sitename' => 'Docker :: t3kit :: TYPO3',
-        'sqlDebug' => 1,
-        'systemLogLevel' => 0,
+        'sitename' => 'TYPO3 :: t3kit',
+        'sqlDebug' => 0,
+        'systemLogLevel' => 2,
         'textfile_ext' => 'txt,ts,typoscript,html,htm,css,tmpl,js,sql,xml,csv,xlf,yaml,yml,less',
     ],
 ];
