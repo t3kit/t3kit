@@ -128,20 +128,32 @@ return [
         'dyncss_less' => [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
         ],
+        'realurl' => [
+            'packagePath' => 'typo3conf/ext/realurl/',
+        ],
+        'seo_basics' => [
+            'packagePath' => 'typo3conf/ext/seo_basics/',
+        ],
         'static_info_tables' => [
             'packagePath' => 'typo3conf/ext/static_info_tables/',
         ],
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',
         ],
-        'gridelements' => [
-            'packagePath' => 'typo3conf/ext/gridelements/',
-        ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
+        ],
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        ],
+        'realurl_404_multilingual' => [
+            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
         ],
         'pxa_cookie_bar' => [
             'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
@@ -152,17 +164,8 @@ return [
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
         ],
-        'realurl' => [
-            'packagePath' => 'typo3conf/ext/realurl/',
-        ],
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
-        ],
-        'realurl_404_multilingual' => [
-            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
-        ],
-        'theme_t3kit' => [
-            'packagePath' => 'typo3conf/ext/theme_t3kit/',
         ],
     ],
     'version' => 5,
