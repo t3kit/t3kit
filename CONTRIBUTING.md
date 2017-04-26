@@ -82,11 +82,9 @@ git pull upstream master
 
 - **t3kit** project uses specific code rules and style guides. Those rules you can find in appropriate files on the root of project or in submodules:
 ```
-.jscsrc
-.jshintrc
-.htmlhintrc
-.csslintrc
+.stylelint
 .editorconfig
+[standardjs](https://standardjs.com/)
 ```
 - Also for **TYPO3** extensions keep in mind [TYPO3 CMS Coding Guidelines](https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html).
 
