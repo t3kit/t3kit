@@ -56,6 +56,7 @@ Start using **composer**:
 ```
 composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs
 cd t3kit
+# Note for MAC users there a specific commands further down in the documentation
 docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh
 ```
