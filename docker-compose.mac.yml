@@ -2,8 +2,8 @@ version: "3.1"
 
 services:
 
-  db:
-    container_name: db
+  t3kit_db:
+    container_name: t3kit_db
     image: mysql:5.7
     environment:
       - MYSQL_ROOT_PASSWORD=1234
@@ -19,7 +19,7 @@ services:
     ports:
       - "8888:80"
     depends_on:
-      - db
+      - t3kit_db
       - t3kit_solr
     volumes:
       - ./docker_conf:/docker_conf
