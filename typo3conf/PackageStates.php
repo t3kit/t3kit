@@ -149,6 +149,9 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        ],
         'realurl_404_multilingual' => [
             'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
         ],
@@ -164,11 +167,8 @@ return [
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
         ],
-        'realurl_404_multilingual' => [
-            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
-        ],
-        'theme_t3kit' => [
-            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        'url_forwarding' => [
+            'packagePath' => 'typo3conf/ext/url_forwarding/',
         ],
     ],
     'version' => 5,
