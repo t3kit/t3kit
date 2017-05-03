@@ -1,25 +1,25 @@
-typo3temp
-uploads
+web/typo3temp
+web/uploads
 
-typo3conf/realurl_fixedPostVars_conf.php
+web/typo3conf/realurl_fixedPostVars_conf.php
 
 *deprecation_*.log
 *ENABLE_INSTALL_TOOL*
 
-fileadmin/*
-!fileadmin/example_content/
-!fileadmin/Configuration/
-!fileadmin/custom/
-!fileadmin/forms/
+web/fileadmin/*
+!web/fileadmin/example_content/
+!web/fileadmin/Configuration/
+!web/fileadmin/custom/
+!web/fileadmin/forms/
 
 .idea/
 
 index.php
-typo3
-typo3conf/ext/*
-typo3conf/l10n/*
+web/typo3
+web/typo3conf/ext/*
+web/typo3conf/l10n/*
 vendor
-typo3_src
+web/typo3_src
 
 composer.lock
 
