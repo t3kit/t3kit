@@ -72,11 +72,11 @@ docker exec -it web /t3kit_db/setupdb.sh
 #### Run phpMyAdmin docker container and connect it to t3kit:
 
 ```
-docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOST=db phpmyadmin/phpmyadmin
+docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOST=t3kit_db phpmyadmin/phpmyadmin
 ```
 
 * `t3kit_default` - default docker network name based on `t3kit` folder name.
-* `db ` - default t3kit database host name (from docker-compose).
+* `t3kit_db` - default t3kit database host name (from docker-compose).
 
 ***
 
@@ -93,10 +93,23 @@ docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOS
 composer create-project t3kit/t3kit [<directory>] [<version>] --prefer-dist --no-dev
 ```
 
+***
+
 
 # t3kit structure
 
-...
+**t3kit** consist of **three** main parts plus additional [**extension**](https://github.com/t3kit/subtheme_t3kit_template) which intended to help extend functionality for base t3kit components.
+1. [**t3kit**](https://github.com/t3kit/t3kit) - main repository with (TYPO3) website root (typo3conf, fileadmin, favicons), tests, Docker configurations and CI configurations (.circleci). **t3kit** repo depend on two mentioned below composer dependencies: `theme_t3kit` and `t3kit_db`.
+2. [**theme_t3kit**](https://github.com/t3kit/theme_t3kit) - main part of t3kit conception. Theme extension based on [TYPO3 Themes](http://www.typo3-themes.org/). It consists of new content elements, Gridelements configurations, predefined BE layouts, main menu, Solr search templates, bunch of TS configurations, Theme constants (main colors, typography, show/hide elements) and independent FE part called [felayout_t3kit](https://github.com/t3kit/theme_t3kit/tree/master/felayout_t3kit) (JS, CSS, images, icons, components)
+3. [**t3kit_db**](https://github.com/t3kit/t3kit_db) default database for **t3kit** with configuration, page tree and examples of content elements. Also, it includes [scripts](#t3kit-database-manipulation---setuprestorepack) to operate with DB (setup, restore, pack)
+
+* [**subtheme_t3kit_template**](https://github.com/t3kit/subtheme_t3kit_template) - additional extension template which shows us an example how easily change t3kit configuration, modify templates and layouts and create new content elements.
+  * There two ways how to create new **t3kit subtheme** based on `subtheme_t3kit_template`:
+    - use `t3kit-cli` (_under construction_)
+    - clone `subtheme_t3kit_template` and **manually adapt** it to your needs (change name, constants, configurations, content elements, templates)
+
+
+***
 
 
 # t3kit versioning
