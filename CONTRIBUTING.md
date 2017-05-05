@@ -80,13 +80,13 @@ git pull upstream master
 
 ## General coding Rules
 
-- **t3kit** project uses specific code rules and style guides. Those rules you can find in appropriate files on the root of project or in submodules:
-```
-.stylelint
-.editorconfig
-[standardjs](https://standardjs.com/)
-```
-- Also for **TYPO3** extensions keep in mind [TYPO3 CMS Coding Guidelines](https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html).
+- **t3kit** project uses specific code rules and style guides. Those rules you can find in appropriate files on the root of projects:
+
+* `.stylelint`
+* `.editorconfig`
+* [standardjs](https://standardjs.com/)
+
+Also for **TYPO3** extensions keep in mind [TYPO3 CMS Coding Guidelines](https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html).
 
 
 ## Git commit message conventions
@@ -94,20 +94,19 @@ git pull upstream master
 Each commit message consists of a **[label](#labels)** and short **[message](#message)**.
 
 Also it is possible to use special keywords for [closing Github issues](https://help.github.com/articles/closing-issues-via-commit-messages/) or pointing to another issue tracker.
-For example to pointing commit with bug report or feature request from Podio need to add this keywords at the end of the message: **(Podio bug_21)**, **(Podio feature_12)**
 
 ### Labels:
-Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. All commits with labels will be added in CHANGELOG file, that's why it is important to use predefined labels on your commits.
+Please use semantic labels for your messages, but if commit message is not very important, you can skip labels. **All commits with labels will be added in CHANGELOG file, that's why it is important to use predefined labels on your commits.**
 
 * **[FEATURE]** - A new feature
 * **[BUGFIX]** - A bug fix
-* **[CLEANUP]** - A coding style fixes, compliance etc
-* **[TASK]** - Refactoring and similar, including performance
+* **[TASK]** - Any task, which is not a **new feature** or **bugfix**
 * **[TEST]** - Adding missing tests
 * **[DOC]** - Documentation only changes
 * **[!!!]** - Breaking Changes
 * **[WIP]** - Work in progress tag, should not be present when creating pull requests
 * **[SECURITY]** - To mark important updates, when evaluating when we should update older sites
+
 **Important:** Commit label must be **only one**, except if it Breaking Changes, then we will need to add _"Breaking Changes"_ label `[!!!]` plus one more label.
 
 
@@ -125,10 +124,10 @@ For example (Breaking Changes):
 
 ## Specific contribution rules for t3kit
 
-### t3kit Front-End Layouts:
+### theme_t3kit Front-End Layouts:
 - **Use existing less variables** for defining colors and some dimensions. Better to **avoid creating new less variables**, because it will cause changes in Theme extension. Check `customVariables.less` file.
 ```
-dev/styles/customVariables.less
+theme_t3kit/felayout_t3kit/dev/styles/customVariables.less
 ```
 - **Keep your changes easily updatable** according original code. It should be easy to update old sites with your changes.
 
