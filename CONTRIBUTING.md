@@ -80,7 +80,7 @@ git pull upstream master
 
 ## General coding Rules
 
-- **t3kit** project uses specific code rules and style guides. Those rules you can find in appropriate files on the root of projects:
+**t3kit** project uses specific code rules and style guides. Those rules you can find in appropriate files on the root of projects:
 
 * `.stylelint`
 * `.editorconfig`
