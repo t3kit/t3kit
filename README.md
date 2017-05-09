@@ -153,7 +153,7 @@ Instead of using `docker-compose.yml` you can try to use alternative docker-comp
 Start containers:
 ```
 cd t3kit
-docker-sync start -d
+docker-sync start
 docker-compose -f docker-compose.mac.yml up -d
 ```
 
