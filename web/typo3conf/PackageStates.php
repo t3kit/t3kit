@@ -149,8 +149,14 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        ],
         'realurl_404_multilingual' => [
             'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
+        ],
+        'frontend_editing' => [
+            'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
         'pxa_cookie_bar' => [
             'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
@@ -163,12 +169,6 @@ return [
         ],
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
-        ],
-        'realurl_404_multilingual' => [
-            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
-        ],
-        'theme_t3kit' => [
-            'packagePath' => 'typo3conf/ext/theme_t3kit/',
         ],
     ],
     'version' => 5,
