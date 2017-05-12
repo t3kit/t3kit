@@ -131,8 +131,8 @@ return [
         'realurl' => [
             'packagePath' => 'typo3conf/ext/realurl/',
         ],
-        'seo_basics' => [
-            'packagePath' => 'typo3conf/ext/seo_basics/',
+        'cs_seo' => [
+            'packagePath' => 'typo3conf/ext/cs_seo/',
         ],
         'static_info_tables' => [
             'packagePath' => 'typo3conf/ext/static_info_tables/',

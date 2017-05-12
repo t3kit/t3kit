@@ -122,7 +122,9 @@ if (file_exists($fixedPostVarsFile)) {
     \TYPO3\CMS\Core\Utility\GeneralUtility::requireOnce($fixedPostVarsFile);
 }
 
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['robots.txt']['keyValues']['type'] = 777;
+// cs_seo sitemap.xml and robots.txt
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['robots.txt']['keyValues']['type'] = 656;
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['sitemap.xml']['keyValues']['type'] = 655;
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl_404_multilingual'] = array(
     '_DEFAULT' => array(
