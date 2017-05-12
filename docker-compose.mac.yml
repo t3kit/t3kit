@@ -24,7 +24,7 @@ services:
     volumes:
       - ./docker_conf:/docker_conf
       - ./vendor/t3kit/db:/t3kit_db
-      - t3kit-sync:/var/www/html:rw
+      - t3kit-sync:/var/www/html:nocopy
     restart: always
     command: "sh /docker_conf/macos/run.sh"
     environment:

@@ -1,4 +1,20 @@
 
+#### v8.0.0-beta.2 `May 4, 2017`
+- **[TASK]** update composer dependencies theme-t3kit and t3kit_db ([e1dfac0](https://github.com/t3kit/t3kit/commit/e1dfac0))
+- **[TASK]** remove t3kit_extension_tools from LocalConf ([bb25a2b](https://github.com/t3kit/t3kit/commit/bb25a2b))
+- **[TASK]** Change name of db container to t3kit_db (#135) ([6d507eb](https://github.com/t3kit/t3kit/commit/6d507eb))
+- **[BUGFIX]** Add additional note for MAC users using composer ([530fd7a](https://github.com/t3kit/t3kit/commit/530fd7a))
+- **[TASK]** update CONTRIBUTING.md ([fe8afd2](https://github.com/t3kit/t3kit/commit/fe8afd2))
+- **[FIX]** update compose-file-path in docker-sync.yml (#134) ([b062844](https://github.com/t3kit/t3kit/commit/b062844))
+- **[TASK]** enable seo_basics ext. ([c4f4b0e](https://github.com/t3kit/t3kit/commit/c4f4b0e))
+- **[TASK]** set userID for docker mac configuration ([5c27b57](https://github.com/t3kit/t3kit/commit/5c27b57))
+- **[TASK]** Update README ([e8bf606](https://github.com/t3kit/t3kit/commit/e8bf606))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** use web as web-dir instead of . in composer.json (#136) ([f514c1e](https://github.com/t3kit/t3kit/commit/f514c1e))
+
+***
+
 #### v8.0.0-beta.1 `April 21, 2017`
 - **[TASK]** move all dependencies into theme_t3kit ext. ([93e75f6](https://github.com/t3kit/t3kit.git/commit/93e75f6))
 - **[TASK]** update docker conf for mac ([c833fa9](https://github.com/t3kit/t3kit.git/commit/c833fa9))

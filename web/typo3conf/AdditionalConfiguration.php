@@ -4,6 +4,9 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 	case 'Development/Docker':
 		// SetEnv TYPO3_CONTEXT Development
 		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = 't3kit_db';
+		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['dbname'] = 't3kit';
+		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = 't3kit';
+		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['password'] = 't3kit1234';
 		$GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = true;
 		$GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = false;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = 1;
