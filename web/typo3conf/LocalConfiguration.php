@@ -21,6 +21,7 @@ return [
     'EXT' => [
         'extConf' => [
             'backend' => 'a:5:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:7:"#288fb4";s:20:"loginBackgroundImage";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
+            'cs_seo' => 'a:12:{s:17:"enablePathSegment";s:1:"1";s:15:"realURLAutoConf";s:1:"1";s:11:"tsConfigPid";s:1:"1";s:8:"maxTitle";s:2:"57";s:14:"maxDescription";s:3:"156";s:11:"maxNavTitle";s:2:"50";s:12:"inPageModule";s:1:"0";s:18:"evaluationDoktypes";s:1:"1";s:10:"evaluators";s:38:"Title,Description,H1,H2,Images,Keyword";s:8:"minTitle";s:2:"40";s:14:"minDescription";s:3:"140";s:5:"maxH2";s:1:"6";}',
             'dyncss' => 'a:2:{s:5:"state";s:0:"";s:15:"enableDebugMode";s:1:"0";}',
             'dyncss_less' => 'a:0:{}',
             'filemetadata' => 'a:0:{}',
