@@ -1,4 +1,20 @@
 
+#### v8.0.0 `May 17, 2017`
+- **[TASK]** added url-forwarding (#137) ([6086f8b](https://github.com/t3kit/t3kit/commit/6086f8b))
+- **[TASK]** compress images ([5695181](https://github.com/t3kit/t3kit/commit/5695181))
+- **[TASK]** new page example, add images ([6d75858](https://github.com/t3kit/t3kit/commit/6d75858))
+- **[TASK]** enable frontend_editing in t3kit by default ([1ce0abd](https://github.com/t3kit/t3kit/commit/1ce0abd))
+- **[TASK]** update docker-sync conf ([1ae6fb0](https://github.com/t3kit/t3kit/commit/1ae6fb0))
+- **[TASK]** add more sync_excludes for docker mac configuration ([bbbd589](https://github.com/t3kit/t3kit/commit/bbbd589))
+- **[DOC]** update CONTRIBUTING guidelines ([22f0abe](https://github.com/t3kit/t3kit/commit/22f0abe))
+- **[BUGFIX]** Make sure Docker/Development always has database configuration (#138) ([a7b0a6f](https://github.com/t3kit/t3kit/commit/a7b0a6f))
+- **[DOC]** add info about t3kit structure into README file ([3ecf8fb](https://github.com/t3kit/t3kit/commit/3ecf8fb))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** replace extension seo_basics with cs_seo (#140) ([99eac7c](https://github.com/t3kit/t3kit/commit/99eac7c))
+
+***
+
 #### v8.0.0-beta.2 `May 4, 2017`
 - **[TASK]** update composer dependencies theme-t3kit and t3kit_db ([e1dfac0](https://github.com/t3kit/t3kit/commit/e1dfac0))
 - **[TASK]** remove t3kit_extension_tools from LocalConf ([bb25a2b](https://github.com/t3kit/t3kit/commit/bb25a2b))
