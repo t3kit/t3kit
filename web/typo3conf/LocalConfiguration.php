@@ -40,6 +40,7 @@ return [
             'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
             'theme_t3kit' => 'a:0:{}',
             'themes' => 'a:2:{s:16:"categoriesToShow";s:118:"theme,languages,socialmedia,forms,extension,bootstrap,colors,font,meta,metaDefaults,pages,container,menu,header,footer";s:15:"constantsToHide";s:36:"dateFormat,timeFormat,dateTimeFormat";}',
+            'url_forwarding' => 'a:0:{}',
         ],
     ],
     'EXTCONF' => [

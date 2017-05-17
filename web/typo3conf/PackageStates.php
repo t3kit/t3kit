@@ -170,6 +170,9 @@ return [
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
         ],
+        'url_forwarding' => [
+            'packagePath' => 'typo3conf/ext/url_forwarding/',
+        ],
     ],
     'version' => 5,
 ];

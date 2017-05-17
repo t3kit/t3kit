@@ -33,11 +33,16 @@
     {
       "type": "git",
       "url": "https://github.com/pixelant/pxa_newsletter_subscription"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/patrickbroens/TYPO3.UrlForwarding.git"
     }
   ],
   "minimum-stability": "dev",
   "require": {
-    "t3kit/theme-t3kit": "~2.0.0"
+    "t3kit/theme-t3kit": "~2.0.0",
+    "patrickbroens/url-forwarding": "~1.2.0"
   },
   "require-dev": {
     "t3kit/db": "~2.0.0",
