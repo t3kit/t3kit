@@ -41,7 +41,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "t3kit/theme-t3kit": "~2.1.0",
+    "t3kit/theme-t3kit": "~2.1.1",
     "patrickbroens/url-forwarding": "~1.2.0"
   },
   "require-dev": {
