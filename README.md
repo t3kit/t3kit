@@ -67,6 +67,10 @@ docker exec -it web /t3kit_db/setupdb.sh
 * Restore t3kit db: `docker exec -it web /t3kit_db/restoredb.sh`
 * Pack (save) t3kit db: `docker exec -it web /t3kit_db/packdb.sh`
 
+### Verify the installation:
+
+* Open in browser: `localhost:8888`
+
 
 ### phpMyAdmin
 #### Run phpMyAdmin docker container and connect it to t3kit:
