@@ -1,4 +1,13 @@
 
+#### v8.0.1 `May 18, 2017`
+- **[TASK]** update t3kit_db to v2.2.0 ([9cf1fcf](https://github.com/t3kit/t3kit/commit/9cf1fcf))
+- **[TASK]** add images for new page example ([f37f93e](https://github.com/t3kit/t3kit/commit/f37f93e))
+- **[TASK]** update theme_t3kit to v2.1.1 ([b390ec6](https://github.com/t3kit/t3kit/commit/b390ec6))
+- **[TASK]** update ubuntu16-php7-apache docker image to v0.1.1 ([750dbc9](https://github.com/t3kit/t3kit/commit/750dbc9))
+- **[DOC]** Add open website url step in readme (#141) ([fb5f058](https://github.com/t3kit/t3kit/commit/fb5f058))
+
+***
+
 #### v8.0.0 `May 17, 2017`
 - **[TASK]** added url-forwarding (#137) ([6086f8b](https://github.com/t3kit/t3kit/commit/6086f8b))
 - **[TASK]** compress images ([5695181](https://github.com/t3kit/t3kit/commit/5695181))
