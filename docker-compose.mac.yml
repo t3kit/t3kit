@@ -10,7 +10,6 @@ services:
       - MYSQL_DATABASE=t3kit
       - MYSQL_USER=t3kit
       - MYSQL_PASSWORD=t3kit1234
-    restart: always
     ports:
       - "3307:3306"
   web:
@@ -25,7 +24,6 @@ services:
       - ./docker_conf:/docker_conf
       - ./vendor/t3kit/db:/t3kit_db
       - t3kit-sync:/var/www/html:nocopy
-    restart: always
     command: "sh /docker_conf/macos/run.sh"
     environment:
       - USERID=501
@@ -38,7 +36,6 @@ services:
       - "8983:8983"
     volumes:
       - ./solrdata:/opt/solr/server/solr/data/
-    restart: always
   mailhog:
     container_name: t3kit_mailhog
     image: mailhog/mailhog
