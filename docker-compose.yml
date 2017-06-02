@@ -12,6 +12,8 @@ services:
       - MYSQL_PASSWORD=t3kit1234
     ports:
       - "3307:3306"
+    volumes:
+      - ./docker_conf/test/init_db/create_test_db.sql:/docker-entrypoint-initdb.d/create_test_db.sql
 
   web:
     container_name: web
