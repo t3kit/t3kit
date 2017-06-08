@@ -22,6 +22,7 @@ services:
       - t3kit_db
       - t3kit_solr
     volumes:
+      - ./web/test/config/testing.conf:/etc/apache2/sites-enabled/testing.conf:ro
       - ./docker_conf:/docker_conf
       - ./vendor/t3kit/db:/t3kit_db
       - .:/var/www/html
