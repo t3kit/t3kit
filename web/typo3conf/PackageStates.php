@@ -122,23 +122,26 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
-        'dyncss' => [
-            'packagePath' => 'typo3conf/ext/dyncss/',
-        ],
-        'dyncss_less' => [
-            'packagePath' => 'typo3conf/ext/dyncss_less/',
-        ],
         'realurl' => [
             'packagePath' => 'typo3conf/ext/realurl/',
         ],
         'cs_seo' => [
             'packagePath' => 'typo3conf/ext/cs_seo/',
         ],
+        'dyncss' => [
+            'packagePath' => 'typo3conf/ext/dyncss/',
+        ],
+        'dyncss_less' => [
+            'packagePath' => 'typo3conf/ext/dyncss_less/',
+        ],
         'static_info_tables' => [
             'packagePath' => 'typo3conf/ext/static_info_tables/',
         ],
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',
+        ],
+        'frontend_editing' => [
+            'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
@@ -155,8 +158,8 @@ return [
         'realurl_404_multilingual' => [
             'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
         ],
-        'frontend_editing' => [
-            'packagePath' => 'typo3conf/ext/frontend_editing/',
+        'dashboard' => [
+            'packagePath' => 'typo3conf/ext/dashboard/',
         ],
         'pxa_cookie_bar' => [
             'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
