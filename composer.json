@@ -32,10 +32,6 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/pixelant/pxa_newsletter_subscription"
-    },
-    {
-      "type": "git",
       "url": "https://github.com/patrickbroens/TYPO3.UrlForwarding.git"
     },
     {
