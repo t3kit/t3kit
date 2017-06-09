@@ -37,10 +37,6 @@
     {
       "type": "git",
       "url": "https://github.com/patrickbroens/TYPO3.UrlForwarding.git"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/pixelant/deployment"
     }
   ],
   "minimum-stability": "dev",
@@ -56,7 +52,7 @@
     "behat/mink-selenium2-driver": "~1.3.1",
     "guzzlehttp/guzzle": "~6.2.0",
     "helhum/typo3-console": "4.6.1",
-    "pixelant/deployment": "dev-master"
+    "deployer/deployer": "^5.0"
   },
   "extra": {
     "typo3/cms": {
