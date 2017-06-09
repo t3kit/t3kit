@@ -15,6 +15,10 @@ $hostName = '';
 $user = '';
 $deploymentPath = '';
 
+if (empty($hostName) || empty($user) || empty($deploymentPath)) {
+    throw new \Exception('Configuration are missing for deployment! Check you deploy.php file for options!');
+}
+
 // Configuration
 host($hostName)
     ->user($user)

@@ -62,5 +62,8 @@
     "helhum/typo3-console": {
       "install-extension-dummy": "0"
     }
+  },
+  "scripts": {
+    "deploy:production": "vendor/bin/dep deploy production"
   }
 }
