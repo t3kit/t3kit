@@ -1,4 +1,16 @@
 
+#### v8.1.0 `June 9, 2017`
+- **[TASK]** remove unneeded pxa_newsletter_subscription link from t3kit composer.json ([5a569f0](https://github.com/t3kit/t3kit/commit/5a569f0))
+- **[TASK]** removed unneeded images ([816dbd0](https://github.com/t3kit/t3kit/commit/816dbd0))
+- **[TASK]** add new images for example page 3 ([7b405c5](https://github.com/t3kit/t3kit/commit/7b405c5))
+- **[TASK]** Remove the option 'restart: always' for Docker (#148) ([dfc2a2a](https://github.com/t3kit/t3kit/commit/dfc2a2a))
+- **[TASK]** add image for new page ([4a2bb57](https://github.com/t3kit/t3kit/commit/4a2bb57))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[FEATURE]** add dashboard extension (#150) ([c63a68e](https://github.com/t3kit/t3kit/commit/c63a68e))
+
+***
+
 #### v8.0.1 `May 18, 2017`
 - **[TASK]** update t3kit_db to v2.2.0 ([9cf1fcf](https://github.com/t3kit/t3kit/commit/9cf1fcf))
 - **[TASK]** add images for new page example ([f37f93e](https://github.com/t3kit/t3kit/commit/f37f93e))
