@@ -3,14 +3,26 @@ namespace Deployer;
 
 require 'vendor/deployer/deployer/recipe/common.php';
 
+/**
+ * This is a base template for deployment to a server by using SSH keys, and
+ * the following options are needed:
+ *
+ * $hostName = The host name to deploy to example: domain.com
+ * $user = The SSH user to user example: root
+ * $deploymentPath = The deployment path on the server example: /var/www/domain.com
+ */
+$hostName = '';
+$user = '';
+$deploymentPath = '';
+
 // Configuration
-host('')
-    ->user('')
+host($hostName)
+    ->user($user)
     ->port(22)
     ->forwardAgent(true)
     ->multiplexing(true)
     ->stage('production')
-    ->set('deploy_path', '');
+    ->set('deploy_path', $deploymentPath);
 
 // Installation vendors through composer
 desc('Installing vendors');
