@@ -10,16 +10,23 @@ require 'vendor/deployer/deployer/recipe/common.php';
  * $hostName = The host name to deploy to example: domain.com
  * $user = The SSH user to user example: root
  * $deploymentPath = The deployment path on the server example: /var/www/domain.com
+ * $repositoryUrl = The url to GIT repository: git@bitbucket.org:organization/my_repo.git
+ * $branch = The GIT branch to deploy from: default "master"
  */
 $hostName = '';
 $user = '';
 $deploymentPath = '';
+$repositoryUrl = '';
+$branch = 'master';
 
-if (empty($hostName) || empty($user) || empty($deploymentPath)) {
+if (empty($hostName) || empty($user) || empty($deploymentPath)|| empty($repositoryUrl) || empty($branch)) {
     throw new \Exception('Configuration are missing for deployment! Check you deploy.php file for options!');
 }
 
 // Configuration
+set('repository', $repositoryUrl);
+set('branch', $branch);
+
 host($hostName)
     ->user($user)
     ->port(22)
@@ -27,6 +34,13 @@ host($hostName)
     ->multiplexing(true)
     ->stage('production')
     ->set('deploy_path', $deploymentPath);
+
+// Update the source code
+desc('deploy:update_source');
+task('deploy:update_source', function () {
+    $repository = trim(get('repository'));
+    run('cd {{deploy_path}} && {{bin/git}} pull ' . $repository);
+});
 
 // Installation vendors through composer
 desc('Installing vendors');
@@ -50,6 +64,7 @@ task('flush:cache', function () {
 task('deploy', [
     'deploy:prepare',
     'deploy:lock',
+    'deploy:update_source',
     'deploy:vendors',
     'database:migration',
     'flush:cache',

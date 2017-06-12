@@ -35,3 +35,6 @@ solrdata/*
 .unison*
 ._.DS_Store
 .vscode/
+
+# Deployer folders
+.dep/*
