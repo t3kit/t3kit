@@ -39,7 +39,7 @@ host($hostName)
 desc('deploy:update_source');
 task('deploy:update_source', function () {
     $repository = trim(get('repository'));
-    run('cd {{deploy_path}} && {{bin/git}} pull ' . $repository);
+    run('cd {{deploy_path}} && {{bin/git}} pull');
 });
 
 // Installation vendors through composer
