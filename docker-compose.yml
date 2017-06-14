@@ -15,7 +15,7 @@ services:
 
   web:
     container_name: web
-    image: t3kit/ubuntu16-php7-apache:0.1.1
+    image: t3kit/ubuntu16-php7-apache:0.1.2
     ports:
       - "8888:80"
     depends_on:
