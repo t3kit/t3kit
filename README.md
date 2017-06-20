@@ -169,3 +169,19 @@ docker-compose stop
 
 _Note:_ To fix issues with permission: `docker exec -it web chown -R www-data /var/www/html`
 
+# Deployment
+
+The t3kit distribution have an deployment script based on the PHP library deployer. 
+A file called deploy.php can be found in the root of the project. The options available are:
+
+* **$hostName** = The host name to deploy to example: domain.com
+* **$user** = The SSH user to user example: root
+* **$deploymentPath** = The deployment path on the server example: /var/www/domain.com
+* **$repositoryUrl** = The url to GIT repository: git@bitbucket.org:organization/my_repo.git
+* **$branch** = The GIT branch to deploy from: default "master"
+
+To execute the command run it through composer:
+
+```
+composer deployment:production
+```
