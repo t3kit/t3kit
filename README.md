@@ -169,3 +169,27 @@ docker-compose stop
 
 _Note:_ To fix issues with permission: `docker exec -it web chown -R www-data /var/www/html`
 
+***
+
+# Docker Toolbox
+### For those who still have performance problems with `Docker for mac` app, we would suggest a temporary solution using legacy `docker-machine` as Docker environment on Mac.
+
+Steps to install Docker Toolbox:
+* Uninstall `Docker for Mac` if you have installed it previously
+* Install Docker Toolbox: https://docs.docker.com/toolbox/toolbox_install_mac/
+* Install Docker machine NFS: https://github.com/adlogix/docker-machine-nfs
+
+Steps to use with t3kit
+* `cd t3kitProject`
+* `docker-compose -f docker-compose.mac.dmachine.yml up -d`
+* `docker exec -it web /t3kit_db/setupdb.sh`
+
+
+Command `docker-machine env` should help you if you got an error like this:
+```
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+```
+
+To open the site you have to use IP address of your Docker machine -> `docker-machine ip`. So instead of **localhost:8888** you should use **yourDockerMachineIP:8888**
+
+[Docker machine troubleshooting](https://docs.docker.com/toolbox/faqs/troubleshoot/)
