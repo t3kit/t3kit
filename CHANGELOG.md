@@ -1,4 +1,10 @@
 
+#### v8.1.1 `July 4, 2017`
+- **[TASK]** add Docker Machine configuration for Mac ([30001ee](https://github.com/t3kit/t3kit/commit/30001ee))
+- **[TASK]** Update to latest t3kit Docker image (#152) ([4e2368e](https://github.com/t3kit/t3kit/commit/4e2368e))
+
+***
+
 #### v8.1.0 `June 9, 2017`
 - **[TASK]** remove unneeded pxa_newsletter_subscription link from t3kit composer.json ([5a569f0](https://github.com/t3kit/t3kit/commit/5a569f0))
 - **[TASK]** removed unneeded images ([816dbd0](https://github.com/t3kit/t3kit/commit/816dbd0))
