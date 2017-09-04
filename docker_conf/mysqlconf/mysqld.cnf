@@ -1,0 +1,8 @@
+[mysqld]
+sql_mode = ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+query_cache_size = 0
+query_cache_type = 0
+query_cache_limit = 2097152
+innodb_log_file_size = 16M
+innodb_flush_log_at_trx_commit = 0
+innodb_flush_method = O_DIRECT
