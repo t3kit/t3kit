@@ -28,20 +28,12 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/svewap/realurl_404_multilingual"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/patrickbroens/TYPO3.UrlForwarding.git"
-    },
-    {
-      "type": "git",
       "url": "https://github.com/pixelant/dashboard"
     }
   ],
   "minimum-stability": "dev",
   "require": {
-    "t3kit/theme-t3kit": "~2.2.1",
+    "t3kit/theme-t3kit": "dev-master",
     "patrickbroens/url-forwarding": "~1.2.0",
     "pixelant/dashboard": "~8.0.0"
   },
