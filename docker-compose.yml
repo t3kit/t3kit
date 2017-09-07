@@ -12,7 +12,8 @@ services:
       - MYSQL_PASSWORD=t3kit1234
     ports:
       - "3307:3306"
-
+    volumes:
+      - ./docker_conf/mysqlconf:/etc/mysql/mysql.conf.d
   web:
     container_name: web
     image: t3kit/ubuntu16-php7-apache:0.1.2
