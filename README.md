@@ -1,19 +1,4 @@
-***
-
-# t3kit v7 on branch [t3kit7](https://github.com/t3kit/t3kit/tree/t3kit7)
-
-
-Previous version of **t3kit v7** you can find on branch [t3kit7](https://github.com/t3kit/t3kit/tree/t3kit7), or you can use git tags to chose needed version:
-```
-git checkout 7.11.3
-or
-git checkout 7.10.0
-```
-_this message will be here until stable version of **t3kit v8**_
-
-***
-
-# t3kit [![t3kit](https://img.shields.io/badge/t3kit-8.1.1-blue.svg?style=flat-square)](https://github.com/t3kit/t3kit) [![TYPO3](https://img.shields.io/badge/TYPO3-8.7.3-orange.svg?style=flat-square)](https://typo3.org/)
+# t3kit [![t3kit](https://img.shields.io/badge/t3kit-8.1.1-blue.svg?style=flat-square)](https://github.com/t3kit/t3kit) [![TYPO3](https://img.shields.io/badge/TYPO3-8.7.6-orange.svg?style=flat-square)](https://typo3.org/)
 
 ## [Starter kit](http://t3kit.com/) for TYPO3 CMS. Tools, extensions, configurations and templates.
 
@@ -28,6 +13,7 @@ _this message will be here until stable version of **t3kit v8**_
 * [t3kit versioning](#t3kit-versioning)
 * [CHANGELOG](https://github.com/t3kit/t3kit/blob/master/CHANGELOG.md)
 * [Contributing to t3kit](https://github.com/t3kit/t3kit/blob/master/CONTRIBUTING.md)
+* [t3kit v7](#t3kit-v7-on-branch-t3kit7)
 
 
 ***
@@ -109,7 +95,7 @@ composer create-project t3kit/t3kit [<directory>] [<version>] --prefer-dist --no
 
 * [**subtheme_t3kit_template**](https://github.com/t3kit/subtheme_t3kit_template) - additional extension template which shows us an example how easily change t3kit configuration, modify templates and layouts and create new content elements.
   * There two ways how to create new **t3kit subtheme** based on `subtheme_t3kit_template`:
-    - use `t3kit-cli` (_under construction_)
+    - use [t3kit-cli](https://github.com/t3kit/t3kit-cli), _t3kit command line interface which will automatically create new `t3kit subtheme` based on your needs_
     - clone `subtheme_t3kit_template` and **manually adapt** it to your needs (change name, constants, configurations, content elements, templates)
 
 
@@ -192,3 +178,18 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 To open the site you have to use IP address of your Docker machine -> `docker-machine ip`. So instead of **localhost:8888** you should use **yourDockerMachineIP:8888**
 
 [Docker machine troubleshooting](https://docs.docker.com/toolbox/faqs/troubleshoot/)
+
+
+***
+
+# t3kit v7 on branch [t3kit7](https://github.com/t3kit/t3kit/tree/t3kit7)
+
+
+Previous version of **t3kit v7** you can find on branch [t3kit7](https://github.com/t3kit/t3kit/tree/t3kit7), or you can use git tags to chose needed version:
+```
+git checkout 7.11.3
+or
+git checkout 7.10.0
+```
+
+***
