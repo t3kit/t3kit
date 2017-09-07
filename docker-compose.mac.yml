@@ -13,7 +13,8 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - ./docker_conf/mysqlconf:/etc/mysql/mysql.conf.d
+      - ./docker_conf/mysqlconf:/etc/mysql/mysql.conf.d:cached
+
   web:
     container_name: web
     image: t3kit/ubuntu16-php7-apache:0.1.2
@@ -23,10 +24,10 @@ services:
       - t3kit_db
       - t3kit_solr
     volumes:
-      - ./docker_conf:/docker_conf
-      - ./vendor/t3kit/db:/t3kit_db
-      - t3kit-sync:/var/www/html:nocopy
-    command: "sh /docker_conf/macos/run.sh"
+      - ./docker_conf:/docker_conf:cached
+      - ./vendor/t3kit/db:/t3kit_db:cached
+      - .:/var/www/html:cached
+    command: "sh /docker_conf/run.sh"
     environment:
       - USERID=501
       - GROUPID=20
@@ -37,13 +38,10 @@ services:
     ports:
       - "8983:8983"
     volumes:
-      - ./solrdata:/opt/solr/server/solr/data/
+      - ./solrdata:/opt/solr/server/solr/data/:cached
+
   mailhog:
     container_name: t3kit_mailhog
     image: mailhog/mailhog
     ports:
       - "8025:8025"
-
-volumes:
-  t3kit-sync:
-    external: true

@@ -38,7 +38,7 @@ _this message will be here until stable version of **t3kit v8**_
 
 * [Git](https://git-scm.com/)
 * [Composer](https://getcomposer.org/)
-* [Docker](https://docker.com/)
+* [Docker](https://docker.com/) >= v17.06
 
 ### Setup development environment:
 
@@ -47,7 +47,7 @@ Start using **git**:
 git clone https://github.com/t3kit/t3kit.git
 cd t3kit
 composer install --ignore-platform-reqs
-# Note for MAC users there a specific commands further down in the documentation
+# Note: for MAC users there a specific commands for Docker further down in the documentation
 docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh
 ```
@@ -56,7 +56,7 @@ Start using **composer**:
 ```
 composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs
 cd t3kit
-# Note for MAC users there a specific commands further down in the documentation
+# Note: for MAC users there a specific commands Docker further down in the documentation
 docker-compose up -d
 docker exec -it web /t3kit_db/setupdb.sh
 ```
@@ -146,28 +146,27 @@ Examples:
 
 # Docker-compose for mac users:
 
-### Native docker has some performance issues on mac:
+### Docker for Mac has some performance issues with mounted volumes:
 * https://github.com/docker/for-mac/issues/77
 * https://docs.docker.com/docker-for-mac/osxfs/#performance-issues-solutions-and-roadmap
 
-### We suggest to use [docker-sync](http://docker-sync.io) as a temporary solution.
+## Docker 17.06 CE adds support for flag `cached` that can slightly improve the performance of mounted volume access on Docker for Mac
 
-Instead of using `docker-compose.yml` you can try to use alternative docker-compose configuration `docker-compose.mac.yml + docker-sync.yml`
+So to have better performance on Mac need to:
+1. Install last version of Docker >=17.06
+2. Instead of using `docker-compose.yml` - use alternative docker-compose configuration for mac `docker-compose.mac.yml`
 
 Start containers:
 ```
 cd t3kit
-docker-sync start
 docker-compose -f docker-compose.mac.yml up -d
 ```
 
 Stop containers:
 ```
-docker-sync clean
 docker-compose stop
 ```
 
-_Note:_ To fix issues with permission: `docker exec -it web chown -R www-data /var/www/html`
 
 ***
 
