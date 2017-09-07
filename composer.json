@@ -33,7 +33,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "t3kit/theme-t3kit": "dev-master",
+    "t3kit/theme-t3kit": "~2.2.1",
     "patrickbroens/url-forwarding": "~1.2.0",
     "pixelant/dashboard": "~8.0.0"
   },
@@ -43,7 +43,7 @@
     "behat/mink-extension": "~2.2",
     "behat/mink-goutte-driver": "~1.2.1",
     "behat/mink-selenium2-driver": "~1.3.1",
-    "guzzlehttp/guzzle": "~6.2.0"
+    "guzzlehttp/guzzle": "~6.3.0"
   },
   "extra": {
     "typo3/cms": {
