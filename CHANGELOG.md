@@ -1,4 +1,19 @@
 
+#### v8.2.0 `September 14, 2017`
+- **[TASK]** update theme_t3kit to v2.3.0 and t3kit_db to v2.4.0 ([8164d90](https://github.com/t3kit/t3kit/commit/8164d90))
+- **[TASK]** remove some example images (#159) ([3c06038](https://github.com/t3kit/t3kit/commit/3c06038))
+- **[TASK]** update .htaccess, took from TYPO3 8.7.6 ([659b2a7](https://github.com/t3kit/t3kit/commit/659b2a7))
+- **[DOC]** update README, add info about t3kit-cli ([c3ee66a](https://github.com/t3kit/t3kit/commit/c3ee66a))
+- **[TASK]** use last stable version of theme-t3kit instead of master branch ([1f05435](https://github.com/t3kit/t3kit/commit/1f05435))
+- **[TASK]** include mysql configuration file to db container (#158) ([16f1b23](https://github.com/t3kit/t3kit/commit/16f1b23))
+- **[TASK]** remove unneeded repo links from composer conf ([43df247](https://github.com/t3kit/t3kit/commit/43df247))
+- **[FEATURE]** set realurl_404_multilingual to 'No redirect', closes #153 (#156) ([cee8058](https://github.com/t3kit/t3kit/commit/cee8058))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** add a new configuration for Docker for Mac, remove docker-sync ([d74f699](https://github.com/t3kit/t3kit/commit/d74f699))
+
+***
+
 #### v8.1.1 `July 4, 2017`
 - **[TASK]** add Docker Machine configuration for Mac ([30001ee](https://github.com/t3kit/t3kit/commit/30001ee))
 - **[TASK]** Update to latest t3kit Docker image (#152) ([4e2368e](https://github.com/t3kit/t3kit/commit/4e2368e))
