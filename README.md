@@ -157,12 +157,14 @@ docker-compose stop
 ***
 
 # Docker Toolbox
-### For those who still have performance problems with `Docker for mac` app, we would suggest a temporary solution using legacy `docker-machine` as Docker environment on Mac.
+### For those who still have performance problems with `Docker for mac` app, we would suggest a temporary solution using legacy `docker-machine` as a main Docker tool on Mac.
+### But also, those two Docker tools could coexist on your local environment. `Docker for mac` for a simple projects and `docker-machine` for a bigger projects where file system performance is really critical. [Using different versions of Docker tools](https://docs.docker.com/docker-for-mac/docker-toolbox/#docker-toolbox-and-docker-for-mac-coexistence)
 
 Steps to install Docker Toolbox:
-* Uninstall `Docker for Mac` if you have installed it previously
 * Install Docker Toolbox: https://docs.docker.com/toolbox/toolbox_install_mac/
 * Install Docker machine NFS: https://github.com/adlogix/docker-machine-nfs
+
+More info: http://www.cameronmaske.com/docker-on-osx/
 
 Steps to use with t3kit
 * `cd t3kitProject`
