@@ -1,4 +1,11 @@
 
+#### v8.3.0 `November 3, 2017`
+- **[TASK]** replace parallax_image.jpg with optimized image (#162) ([bda9e77](https://github.com/t3kit/t3kit/commit/bda9e77))
+- **[DOC]** update README, add more info about docker-machine ([17c3864](https://github.com/t3kit/t3kit/commit/17c3864))
+- **[BUGFIX]** disable the JS for automatic filling of the path segment, if this is empty. in cs_seo (#160) ([d97cc29](https://github.com/t3kit/t3kit/commit/d97cc29))
+
+***
+
 #### v8.2.0 `September 14, 2017`
 - **[TASK]** update theme_t3kit to v2.3.0 and t3kit_db to v2.4.0 ([8164d90](https://github.com/t3kit/t3kit/commit/8164d90))
 - **[TASK]** remove some example images (#159) ([3c06038](https://github.com/t3kit/t3kit/commit/3c06038))

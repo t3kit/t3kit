@@ -1,4 +1,4 @@
-# t3kit [![t3kit](https://img.shields.io/badge/t3kit-8.2.0-blue.svg?style=flat-square)](https://github.com/t3kit/t3kit) [![TYPO3](https://img.shields.io/badge/TYPO3-8.7.6-orange.svg?style=flat-square)](https://typo3.org/)
+# t3kit [![t3kit](https://img.shields.io/badge/t3kit-8.3.0-blue.svg?style=flat-square)](https://github.com/t3kit/t3kit) [![TYPO3](https://img.shields.io/badge/TYPO3-8.7.8-orange.svg?style=flat-square)](https://typo3.org/)
 
 ## [Starter kit](http://t3kit.com/) for TYPO3 CMS. Tools, extensions, configurations and templates.
 
