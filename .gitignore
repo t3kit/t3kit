@@ -21,8 +21,6 @@ web/typo3conf/l10n/*
 vendor
 web/typo3_src
 
-composer.lock
-
 # Solr
 solrdata/*
 # Keep the actual folder
