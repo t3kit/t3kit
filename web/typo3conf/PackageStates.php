@@ -17,6 +17,9 @@ return [
         'fluid' => [
             'packagePath' => 'typo3/sysext/fluid/',
         ],
+        'install' => [
+            'packagePath' => 'typo3/sysext/install/',
+        ],
         'frontend' => [
             'packagePath' => 'typo3/sysext/frontend/',
         ],
@@ -92,9 +95,6 @@ return [
         'impexp' => [
             'packagePath' => 'typo3/sysext/impexp/',
         ],
-        'install' => [
-            'packagePath' => 'typo3/sysext/install/',
-        ],
         'lowlevel' => [
             'packagePath' => 'typo3/sysext/lowlevel/',
         ],
@@ -161,11 +161,14 @@ return [
         'dashboard' => [
             'packagePath' => 'typo3conf/ext/dashboard/',
         ],
-        'pxa_cookie_bar' => [
-            'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
+        'html_compress' => [
+            'packagePath' => 'typo3conf/ext/html_compress/',
         ],
         'pxa_form_enhancement' => [
             'packagePath' => 'typo3conf/ext/pxa_form_enhancement/',
+        ],
+        'pxa_images_compressor' => [
+            'packagePath' => 'typo3conf/ext/pxa_images_compressor/',
         ],
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
