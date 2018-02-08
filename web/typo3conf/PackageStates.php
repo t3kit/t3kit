@@ -167,9 +167,6 @@ return [
         'pxa_form_enhancement' => [
             'packagePath' => 'typo3conf/ext/pxa_form_enhancement/',
         ],
-        'pxa_images_compressor' => [
-            'packagePath' => 'typo3conf/ext/pxa_images_compressor/',
-        ],
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
         ],
