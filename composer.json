@@ -2,7 +2,12 @@
   "name": "t3kit/t3kit",
   "description": "Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.",
   "type": "project",
-  "keywords": ["t3kit", "typo3", "cms", "starter"],
+  "keywords": [
+    "t3kit",
+    "typo3",
+    "cms",
+    "starter"
+  ],
   "homepage": "http://www.t3kit.com",
   "license": "GPL-2.0+",
   "authors": [
@@ -29,13 +34,23 @@
     {
       "type": "git",
       "url": "https://github.com/pixelant/dashboard"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/beardcoder/html_compress.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/pixelant/pxa_images_compressor.git"
     }
   ],
   "minimum-stability": "dev",
   "require": {
     "t3kit/theme-t3kit": "~2.5.0",
     "patrickbroens/url-forwarding": "~1.2.0",
-    "pixelant/dashboard": "~8.0.0"
+    "pixelant/dashboard": "~8.0.0",
+    "markussom/html-compress": "~1.1.1",
+    "pixelant/pxa-images-compressor": "~1.0.4"
   },
   "require-dev": {
     "t3kit/db": "~2.5.0",
