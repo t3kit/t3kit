@@ -1,4 +1,10 @@
 
+#### v8.4.0 `February 19, 2018`
+- **[TASK]** allow 300 characters in page meta description (#169) ([9588742](https://github.com/t3kit/t3kit/commit/9588742))
+- **[TASK]** Make sure that composer.lock always is added to repo ([8162426](https://github.com/t3kit/t3kit/commit/8162426))
+
+***
+
 #### v8.3.0 `November 3, 2017`
 - **[TASK]** replace parallax_image.jpg with optimized image (#162) ([bda9e77](https://github.com/t3kit/t3kit/commit/bda9e77))
 - **[DOC]** update README, add more info about docker-machine ([17c3864](https://github.com/t3kit/t3kit/commit/17c3864))

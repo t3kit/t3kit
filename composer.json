@@ -33,7 +33,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "t3kit/theme-t3kit": "~2.4.0",
+    "t3kit/theme-t3kit": "~2.5.0",
     "patrickbroens/url-forwarding": "~1.2.0",
     "pixelant/dashboard": "~8.0.0"
   },
