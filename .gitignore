@@ -33,3 +33,5 @@ solrdata/*
 .unison*
 ._.DS_Store
 .vscode/
+
+.env
