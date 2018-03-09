@@ -31,6 +31,10 @@ services:
     environment:
       - USERID=${WEB_USERID}
       - GROUPID=${WEB_GROUPID}
+      - WEB_CONTAINER_NAME=${WEB_CONTAINER_NAME}
+      - DB_CONTAINER_NAME=${DB_CONTAINER_NAME}
+      - SOLR_CONTAINER_NAME=${SOLR_CONTAINER_NAME}
+      - MAILHOG_CONTAINER_NAME=${MAILHOG_CONTAINER_NAME}
     command: "sh /docker_conf/run.sh"
 
   t3kit_solr:

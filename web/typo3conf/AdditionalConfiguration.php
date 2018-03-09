@@ -3,7 +3,7 @@
 switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 	case 'Development/Docker':
 		// SetEnv TYPO3_CONTEXT Development
-		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = 't3kit_db';
+		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['host'] = getenv('DB_CONTAINER_NAME');
 		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['dbname'] = 't3kit';
 		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['user'] = 't3kit';
 		$GLOBALS['TYPO3_CONF_VARS']['DB']['Connections']['Default']['password'] = 't3kit1234';
@@ -15,7 +15,7 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = 1;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['clearCacheSystem'] = true;
 		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport'] = 'smtp';
-		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = 't3kit_mailhog:1025';
+		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = getenv('MAILHOG_CONTAINER_NAME') . ':1025';
 		// Page will load noticably slow when systemLog to "mail" is enabled and a lot of errors occurs.
 		// $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLog'] = 'mail,dummy@t3kit.com;';
 	break;
