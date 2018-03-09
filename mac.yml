@@ -26,7 +26,6 @@ services:
       - t3kit_db
     volumes:
       - ./docker_conf:/docker_conf${CACHED}
-      - ./vendor/t3kit/db:/t3kit_db${CACHED}
 
       - ./composer.json:/var/www/html/composer.json${CACHED}
       - ./composer.lock:/var/www/html/composer.lock${CACHED}
@@ -41,6 +40,16 @@ services:
     environment:
       - USERID=${WEB_USERID}
       - GROUPID=${WEB_GROUPID}
+
+      - WEB_CONTAINER_NAME=${WEB_CONTAINER_NAME}
+      - SOLR_CONTAINER_NAME=${SOLR_CONTAINER_NAME}
+      - MAILHOG_CONTAINER_NAME=${MAILHOG_CONTAINER_NAME}
+
+      - DB_CONTAINER_NAME=${DB_CONTAINER_NAME}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
     command: "sh /docker_conf/macos/run.sh"
 
 volumes:
