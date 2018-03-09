@@ -1,3 +1,5 @@
+#Experimentall docker compose config for mac
+
 version: "3.1"
 
 services:
@@ -22,27 +24,24 @@ services:
       - "${WEB_PORT}:80"
     depends_on:
       - t3kit_db
-      - t3kit_solr
     volumes:
       - ./docker_conf:/docker_conf${CACHED}
       - ./vendor/t3kit/db:/t3kit_db${CACHED}
-      - .:/var/www/html${CACHED}
-      - /var/www/html/web/typo3temp
+
+      - ./composer.json:/var/www/html/composer.json${CACHED}
+      - ./composer.lock:/var/www/html/composer.lock${CACHED}
+
+      - ./web/.htaccess:/var/www/html/web/.htaccess${CACHED}
+      - ./web/favicons:/var/www/html/web/favicons${CACHED}
+      - ./web/fileadmin:/var/www/html/web/fileadmin${CACHED}
+      - ./web/typo3conf:/var/www/html/web/typo3conf${CACHED}
+
+      - vendor:/var/www/html/vendor${CACHED}
+
     environment:
       - USERID=${WEB_USERID}
       - GROUPID=${WEB_GROUPID}
-    command: "sh /docker_conf/run.sh"
+    command: "sh /docker_conf/macos/run.sh"
 
-  t3kit_solr:
-    container_name: ${SOLR_CONTAINER_NAME}
-    image: typo3solr/ext-solr:6.0.0
-    ports:
-      - "${SOLR_PORT}:8983"
-    volumes:
-      - ./solrdata:/opt/solr/server/solr/data${CACHED}
-
-  mailhog:
-    container_name: ${MAILHOG_CONTAINER_NAME}
-    image: mailhog/mailhog
-    ports:
-      - "${MAILHOG_PORT}:8025"
+volumes:
+  vendor:

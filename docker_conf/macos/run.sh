@@ -2,7 +2,7 @@
 
 LOGFILE=/tmp/docker-compose.txt
 
-chown -R www-data /var/www/html/
+groupmod -g 99 dialout
 
 # Make www-data user and group use id:s from hosts user to make shared folder writable.
 #
@@ -22,6 +22,9 @@ fi
 
 # set solrdata group to 8983 to make folder writable for solr container
 chown :8983 /var/www/html/solrdata/ -R
+
+mkdir /var/www/html/web/typo3temp
+chown -R www-data. /var/www/html/web/typo3temp
 
 # start apache
 exec apache2ctl -D FOREGROUND
