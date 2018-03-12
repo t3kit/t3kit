@@ -20,43 +20,58 @@
 
 # Development
 
-### Required dependencies:
+## Required dependencies:
 
 * [Git](https://git-scm.com/)
 * [Composer](https://getcomposer.org/)
-* [Docker](https://docker.com/) >= v17.06
+* [Docker](https://docker.com/) >= v17.12
 
-### Setup development environment:
+## Setup development environment:
 
-Start using **git**:
-```
-git clone https://github.com/t3kit/t3kit.git
-cd t3kit
-composer install --ignore-platform-reqs
-# Note: for MAC users there a specific commands for Docker further down in the documentation
-docker-compose up -d
-docker exec -it web /t3kit_db/setupdb.sh
-```
+***
 
-Start using **composer**:
-```
-composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs
-cd t3kit
-# Note: for MAC users there a specific commands Docker further down in the documentation
-docker-compose up -d
-docker exec -it web /t3kit_db/setupdb.sh
-```
+### Start using t3kit with **git**:
+
+1. `git clone https://github.com/t3kit/t3kit.git`
+
+2. `cd t3kit`
+
+3. `composer install --ignore-platform-reqs`
+
+_*Note: To continue with Docker you need to create docker environment `.env` file for your project based on an example '.env.example' or for MAC users `.env.mac.example`. All environments variables could be adapted to your specific needs._
+
+4. `cp .env.example .env`  _*or for MAC users_ `cp .env.mac.example .env`
+
+5. `docker-compose up -d`
+
+6. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
+
+***
+
+### Start using t3kit with **composer**:
+
+1. `composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs`
+
+2. `cd t3kit`
+
+_*Note: To continue with Docker you need to create docker environment `.env` file for your project based on an example '.env.example' or for MAC users `.env.mac.example`. All environments variables could be adapted to your specific needs._
+
+3. `cp .env.example .env`  _*or for MAC users_ `cp .env.mac.example .env`
+
+4. `docker-compose up -d`
+
+5. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
+
 
 ### t3kit database manipulation - Setup/Restore/Pack:
 
-* Setup t3kit db: `docker exec -it web /t3kit_db/setupdb.sh`
-* Restore t3kit db: `docker exec -it web /t3kit_db/restoredb.sh`
-* Pack (save) t3kit db: `docker exec -it web /t3kit_db/packdb.sh`
+* Setup t3kit db: `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
+* Restore t3kit db: `docker exec -it web /var/www/html/vendor/t3kit/db/restoredb.sh`
+* Pack (save) t3kit db: `docker exec -it web /var/www/html/vendor/t3kit/db/packdb.sh`
 
 ### Verify the installation:
 
-* Open in browser: `localhost:8888`
-
+* Open in browser: `localhost:8888` or `0.0.0.0:8888`
 
 ### phpMyAdmin
 #### Run phpMyAdmin docker container and connect it to t3kit:
@@ -73,11 +88,11 @@ docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOS
 
 # Production
 
-### Required dependencies:
+## Required dependencies:
 
 * [Composer](https://getcomposer.org/)
 
-### Create new project based on t3kit:
+## Create new project based on t3kit:
 
 ```
 composer create-project t3kit/t3kit [<directory>] [<version>] --prefer-dist --no-dev
@@ -126,60 +141,6 @@ When we starting new `major` version of **t3kit** previous will be moved to new 
 Examples:
 * Branch `master` => _last t3kit release_ `t3kit 8.1.3 = TYPO3 8.6.1`
 * Branch `t3kit7` => _last t3kit release_ `t3kit 7.11.3 = TYPO3 7.6.15`
-
-***
-
-
-# Docker-compose for mac users:
-
-### Docker for Mac has some performance issues with mounted volumes:
-* https://github.com/docker/for-mac/issues/77
-* https://docs.docker.com/docker-for-mac/osxfs/#performance-issues-solutions-and-roadmap
-
-## Docker 17.06 CE adds support for flag `cached` that can slightly improve the performance of mounted volume access on Docker for Mac
-
-So to have better performance on Mac need to:
-1. Install last version of Docker >=17.06
-2. Instead of using `docker-compose.yml` - use alternative docker-compose configuration for mac `docker-compose.mac.yml`
-
-Start containers:
-```
-cd t3kit
-docker-compose -f docker-compose.mac.yml up -d
-```
-
-Stop containers:
-```
-docker-compose stop
-```
-
-
-***
-
-# Docker Toolbox
-### For those who still have performance problems with `Docker for mac` app, we would suggest a temporary solution using legacy `docker-machine` as a main Docker tool on Mac.
-### But also, those two Docker tools could coexist on your local environment. `Docker for mac` for a simple projects and `docker-machine` for a bigger projects where file system performance is really critical. [Using different versions of Docker tools](https://docs.docker.com/docker-for-mac/docker-toolbox/#docker-toolbox-and-docker-for-mac-coexistence)
-
-Steps to install Docker Toolbox:
-* Install Docker Toolbox: https://docs.docker.com/toolbox/toolbox_install_mac/
-* Install Docker machine NFS: https://github.com/adlogix/docker-machine-nfs
-
-More info: http://www.cameronmaske.com/docker-on-osx/
-
-Steps to use with t3kit
-* `cd t3kitProject`
-* `docker-compose -f docker-compose.mac.dmachine.yml up -d`
-* `docker exec -it web /t3kit_db/setupdb.sh`
-
-
-Command `docker-machine env` should help you if you got an error like this:
-```
-Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
-```
-
-To open the site you have to use IP address of your Docker machine -> `docker-machine ip`. So instead of **localhost:8888** you should use **yourDockerMachineIP:8888**
-
-[Docker machine troubleshooting](https://docs.docker.com/toolbox/faqs/troubleshoot/)
 
 
 ***
