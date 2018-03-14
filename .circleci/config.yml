@@ -44,7 +44,7 @@ jobs:
             php -r "unlink('composer-setup.php');"
       - run:
           name: Install Project Dependencies
-          command: php composer.phar install
+          command: php composer.phar install --ignore-platform-reqs
       #- run:
       #    name: Install Docker client
       #    command: |
