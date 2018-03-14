@@ -1,13 +1,13 @@
 <?php
 
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['init'] = [
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['init'] = [
     'enableCHashCache' => '1',
     'appendMissingSlash' => 'ifNotFile',
     'enableUrlDecodeCache' => '1',
     'enableUrlEncodeCache' => '1'
 ];
 
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['pagePath'] = [
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['pagePath'] = [
     'type' => 'user',
     'spaceCharacter' => '-',
     'languageGetVar' => 'L',
@@ -15,7 +15,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['pagePath'] = [
     // 'rootpage_id' => 1,
 ];
 
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['preVars']['language'] = [
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['preVars']['language'] = [
     'GETvar' => 'L',
     'valueMap' => [
         'sv' => '1',
@@ -28,7 +28,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['preVars']['language'] = [
 if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
 
     // news detail configuration
-    $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article'] = [
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article'] = [
         [
             'GETvar' => 'tx_news_pi1[action]',
             'noMatch' => 'bypass'
@@ -60,7 +60,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
     ];
 
     // news categories configuration
-    $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_category'] = [
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_category'] = [
         [
             'GETvar' => 'tx_news_pi1[overwriteDemand][categories]',
             'lookUpTable' => [
@@ -78,7 +78,7 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
     ];
 
     // news tag configuration
-    $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_tag'] = [
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_tag'] = [
         [
             'GETvar' => 'tx_news_pi1[overwriteDemand][tags]',
             'lookUpTable' => [
@@ -96,14 +96,14 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('news')) {
     ];
 
     // news page configuration
-    $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['page'] = [
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['page'] = [
         [
             'GETvar' => 'tx_news_pi1[@widget_0][currentPage]',
         ],
     ];
 
     // news date configuration
-    $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_date'] = [
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['postVarSets']['_DEFAULT']['article_date'] = [
         [
             'GETvar' => 'tx_news_pi1[overwriteDemand][year]'
         ],
@@ -123,10 +123,10 @@ if (file_exists($fixedPostVarsFile)) {
 }
 
 // cs_seo sitemap.xml and robots.txt
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['robots.txt']['keyValues']['type'] = 656;
-$TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['sitemap.xml']['keyValues']['type'] = 655;
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['robots.txt']['keyValues']['type'] = 656;
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl']['_DEFAULT']['fileName']['index']['sitemap.xml']['keyValues']['type'] = 655;
 
-$TYPO3_CONF_VARS['EXTCONF']['realurl_404_multilingual'] = array(
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl_404_multilingual'] = array(
     '_DEFAULT' => array(
          'errorPage' => '404/',
          'unauthorizedPage' => 'login/'
