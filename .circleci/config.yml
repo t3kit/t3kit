@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /var/www/html
     docker:
-      - image: t3kit/ubuntu16-php7-apache:0.0.1
+      - image: t3kit/ubuntu18.04-php7.2-apache:0.1.0
         ports:
           - "8888:80"
         volumes:
@@ -44,7 +44,7 @@ jobs:
             php -r "unlink('composer-setup.php');"
       - run:
           name: Install Project Dependencies
-          command: php composer.phar install
+          command: php composer.phar install --ignore-platform-reqs
       #- run:
       #    name: Install Docker client
       #    command: |
