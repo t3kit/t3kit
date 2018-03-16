@@ -1,4 +1,23 @@
 
+#### v8.5.0 `March 16, 2018`
+- **[TASK]** update composer.lock ([f2132a8](https://github.com/t3kit/t3kit/commit/f2132a8))
+- **[TASK]** [TASK] update theme_t3kit to v2.6.0 and t3kit_db to v2.6.0 ([07d31a8](https://github.com/t3kit/t3kit/commit/07d31a8))
+- **[BUGFIX]** restore missing realurl configuration (#172) ([793d97b](https://github.com/t3kit/t3kit/commit/793d97b))
+- **[TASK]** install url-forwarding from typo3-ter ([d4387b7](https://github.com/t3kit/t3kit/commit/d4387b7))
+- **[TASK]** update realurl settings, disable automatic configuration ([32ae3b3](https://github.com/t3kit/t3kit/commit/32ae3b3))
+- **[DOC]** update README, add docker .env instructions, remove docker-toolbox doc ([770e2e3](https://github.com/t3kit/t3kit/commit/770e2e3))
+- **[TASK]** add more environment variables in AdditionalConfiguration ([c619a4a](https://github.com/t3kit/t3kit/commit/c619a4a))
+- **[TASK]** add .env variables as an environment variables in doc.-compose ([d589dd7](https://github.com/t3kit/t3kit/commit/d589dd7))
+- **[TASK]** add .env file to .gitignore ([6702710](https://github.com/t3kit/t3kit/commit/6702710))
+- **[TASK]** use environment variables in AdditionalConfiguration ([0b7e2d8](https://github.com/t3kit/t3kit/commit/0b7e2d8))
+- **[TASK]** update docker image to ubuntu18.04-php7.2-apache ([eaff457](https://github.com/t3kit/t3kit/commit/eaff457))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** add composer.lock ([2c5b75a](https://github.com/t3kit/t3kit/commit/2c5b75a))
+- **[!!!]** **[FEATURE]** update docker compose conf, add .env file ([fdcd80b](https://github.com/t3kit/t3kit/commit/fdcd80b))
+
+***
+
 #### v8.4.0 `February 19, 2018`
 - **[TASK]** allow 300 characters in page meta description (#169) ([9588742](https://github.com/t3kit/t3kit/commit/9588742))
 - **[TASK]** Make sure that composer.lock always is added to repo ([8162426](https://github.com/t3kit/t3kit/commit/8162426))
