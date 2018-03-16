@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c35b72aa412e29a9aa55011d93d2562",
+    "content-hash": "428a7b3137d726ce802c2ab7c0258303",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -72,101 +72,6 @@
                 "typo3"
             ],
             "time": "2018-02-19T08:33:59+00:00"
-        },
-        {
-            "name": "clickstorm/cs_seo",
-            "version": "2.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/clickstorm/cs_seo.git",
-                "reference": "4816e832ea018d43ba0932c2ead7dba65bda68fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/clickstorm/cs_seo/zipball/4816e832ea018d43ba0932c2ead7dba65bda68fe",
-                "reference": "4816e832ea018d43ba0932c2ead7dba65bda68fe",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": ">=7.6.0"
-            },
-            "replace": {
-                "cs_seo": "*"
-            },
-            "suggest": {
-                "typo3-ter/realurl": "*"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "Clickstorm\\CsSeo\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "[clickstorm] SEO",
-            "homepage": "http://www.clickstorm.de",
-            "keywords": [
-                "clickstorm",
-                "cms",
-                "seo",
-                "typo3"
-            ],
-            "time": "2017-07-31T07:05:02+00:00"
-        },
-        {
-            "name": "clickstorm/go_maps_ext",
-            "version": "2.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mhirdes/go_maps_ext.git",
-                "reference": "5c97cce3d6a0ce4ebf7563dfb24c8fa45aadc778"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/5c97cce3d6a0ce4ebf7563dfb24c8fa45aadc778",
-                "reference": "5c97cce3d6a0ce4ebf7563dfb24c8fa45aadc778",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "7.6.0 - 8.7.99"
-            },
-            "replace": {
-                "go_maps_ext": "*"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "Clickstorm\\GoMapsExt\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Marc Hirdes",
-                    "email": "hirdes@clickstorm.de",
-                    "homepage": "http://www.clickstorm.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Google Maps Extension. Simply insert a google map Version 3 inc. jQuery, calculate a route, images for markers, style maps, KML, categories, responsive and many more.",
-            "homepage": "http://www.clickstorm.de",
-            "keywords": [
-                "TYPO3 CMS",
-                "extbase",
-                "google",
-                "kml",
-                "map",
-                "marker",
-                "route",
-                "style"
-            ],
-            "time": "2017-09-01T14:40:33+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -369,12 +274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "9dafbaf843f2cfa8f519d11732619dd07475a05f"
+                "reference": "f489500ba873f8ab20b94e4a1873ff6457f84914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/9dafbaf843f2cfa8f519d11732619dd07475a05f",
-                "reference": "9dafbaf843f2cfa8f519d11732619dd07475a05f",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/f489500ba873f8ab20b94e4a1873ff6457f84914",
+                "reference": "f489500ba873f8ab20b94e4a1873ff6457f84914",
                 "shasum": ""
             },
             "require": {
@@ -383,7 +288,7 @@
             "require-dev": {
                 "doctrine/coding-standard": "^4.0",
                 "phpstan/phpstan-shim": "^0.9.2",
-                "phpunit/phpunit": "^6.3"
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
@@ -429,7 +334,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2018-03-05T20:17:29+00:00"
+            "time": "2018-03-14T19:31:52+00:00"
         },
         {
             "name": "doctrine/common",
@@ -752,51 +657,17 @@
             "time": "2017-07-24T09:37:08+00:00"
         },
         {
-            "name": "gridelementsteam/gridelements",
+            "name": "guzzlehttp/guzzle",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://git.typo3.org/TYPO3CMS/Extensions/gridelements.git",
-                "reference": "085ead4605661b0f321a40406110a88e09c11f8a"
-            },
-            "require": {
-                "typo3/cms-core": ">=8.7.0,<9.0"
-            },
-            "replace": {
-                "gridelements": "self.version",
-                "typo3-ter/gridelements": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "GridElementsTeam\\Gridelements\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "This extension integrates the grid layout concept also to regular content elements - the grid elements. It offers a lot of new features like advanced drag & drop or real references, that improve the usability of the page and list module to speed up the daily work with the backend.",
-            "homepage": "https://forge.typo3.org/projects/extension-gridelements2",
-            "keywords": [
-                "Gridelements",
-                "TYPO3 CMS",
-                "grids"
-            ],
-            "time": "2018-03-01T10:31:23+00:00"
-        },
-        {
-            "name": "guzzlehttp/guzzle",
-            "version": "6.3.0",
-            "source": {
-                "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+                "reference": "ba1bce30baab94dddde21c4ae93872b1762d39fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ba1bce30baab94dddde21c4ae93872b1762d39fa",
+                "reference": "ba1bce30baab94dddde21c4ae93872b1762d39fa",
                 "shasum": ""
             },
             "require": {
@@ -806,7 +677,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -815,7 +686,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2-dev"
+                    "dev-master": "6.3-dev"
                 }
             },
             "autoload": {
@@ -848,7 +719,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-06-22T18:50:49+00:00"
+            "time": "2018-03-11T15:03:34+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1231,51 +1102,6 @@
             "time": "2017-04-11T18:58:39+00:00"
         },
         {
-            "name": "svewap/realurl-404-multilingual",
-            "version": "1.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/svewap/realurl_404_multilingual.git",
-                "reference": "4b335052efd9f65f6dd1c8416e7e93566b37aedc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/svewap/realurl_404_multilingual/zipball/4b335052efd9f65f6dd1c8416e7e93566b37aedc",
-                "reference": "4b335052efd9f65f6dd1c8416e7e93566b37aedc",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms": ">=6.1.0 <=8.7.99"
-            },
-            "replace": {
-                "realurl_404_multilingual": "self.version",
-                "svewap/realurl-404-multilingual": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "WapplerSystems\\Realurl404Multilingual\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Sven Wappler",
-                    "email": "typo3YYYY@wappler.systems"
-                }
-            ],
-            "description": "RealURL 404 multilingual error page",
-            "homepage": "https://github.com/svewap/realurl_404_multilingual",
-            "keywords": [
-                "TYPO3 CMS",
-                "typo3"
-            ],
-            "time": "2017-08-29T22:41:44+00:00"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.9",
             "source": {
@@ -1622,28 +1448,28 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit",
-                "reference": "a21658d8a4c7c9133d2177a93586ab86e2c5db2d"
+                "reference": "04f7f5757ceb551e7ddd9eb585bf10dc6fb651a3"
             },
             "require": {
-                "apache-solr-for-typo3/solr": "~7.5",
-                "clickstorm/cs_seo": "~2.1.2",
-                "clickstorm/go_maps_ext": "~2.3.1",
-                "gridelementsteam/gridelements": "dev-master",
                 "php": "^7.0",
-                "svewap/realurl-404-multilingual": "~1.0.9",
+                "typo3-ter/cs-seo": "~2.3.1",
                 "typo3-ter/dyncss-less": "0.7.9",
-                "typo3-ter/frontend-editing": "^1.3",
-                "typo3-ter/news": "~6.1.0",
+                "typo3-ter/frontend-editing": "~1.3.3",
+                "typo3-ter/go-maps-ext": "~2.3.1",
+                "typo3-ter/gridelements": "~8.0.0",
+                "typo3-ter/news": "~6.3.0",
                 "typo3-ter/pxa-cookie-bar": "~1.0.7",
-                "typo3-ter/pxa-form-enhancement": "~3.0.0",
+                "typo3-ter/pxa-form-enhancement": "~3.1.1",
                 "typo3-ter/pxa-newsletter-subscription": "~5.0.2",
-                "typo3-ter/realurl": "~2.2.1",
+                "typo3-ter/realurl": "~2.3.2",
+                "typo3-ter/realurl-404-multilingual": "~1.0.9",
+                "typo3-ter/solr": "~7.5.0",
                 "typo3-themes/themes": "~8.7.0",
-                "typo3/cms": "~8.7.8"
+                "typo3/cms": "~8.7.10"
             },
             "type": "typo3-cms-extension",
             "autoload": {
@@ -1674,7 +1500,40 @@
                 "source": "https://github.com/t3kit/theme_t3kit",
                 "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
             },
-            "time": "2018-02-19T15:08:53+00:00"
+            "time": "2018-03-16T10:22:12+00:00"
+        },
+        {
+            "name": "typo3-ter/cs-seo",
+            "version": "2.3.1",
+            "dist": {
+                "type": "t3x",
+                "url": "https://extensions.typo3.org/extension/download/cs_seo/2.3.1/t3x/",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "typo3/cms-core": ">= 7.6.0, <= 8.7.99"
+            },
+            "replace": {
+                "cs_seo": "self.version",
+                "typo3-ter/cs_seo": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Clickstorm\\CsSeo\\": "Classes/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Angela Dudtkowski, Marc Hirdes, Andreas Kirilow - clickstorm GmbH",
+                    "email": "hirdes@clickstorm.de",
+                    "company": "clickstorm GmbH",
+                    "username": "clickstorm_gmbh"
+                }
+            ],
+            "description": "SEO Extension: Enables important on-page features for search engine optimization (SEO). Expands\n\t\t\t\t\t\tthe page settings and any existing records, e.g. with a preview for Google search results (SERP),\n\t\t\t\t\t\tOpen Graph, Twitter Cards and a Focus Keyword. Sitemap.xml and robots.txt handling. Support for\n\t\t\t\t\t\tSession Tracking (Google Analytics or Piwik) and href\"lang\" tags. Further features are shown in\n\t\t\t\t\t\tthe extension manual.",
+            "time": "2018-03-07T09:47:31+00:00"
         },
         {
             "name": "typo3-ter/dyncss",
@@ -1744,10 +1603,10 @@
         },
         {
             "name": "typo3-ter/frontend-editing",
-            "version": "1.3.3",
+            "version": "1.3.5",
             "dist": {
                 "type": "t3x",
-                "url": "https://extensions.typo3.org/extension/download/frontend_editing/1.3.3/t3x/",
+                "url": "https://extensions.typo3.org/extension/download/frontend_editing/1.3.5/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -1776,14 +1635,83 @@
                 }
             ],
             "description": "Enable editors to work with the content in the most intuitive way possible",
-            "time": "2018-02-12T07:55:13+00:00"
+            "time": "2018-03-13T09:41:50+00:00"
+        },
+        {
+            "name": "typo3-ter/go-maps-ext",
+            "version": "2.3.1",
+            "dist": {
+                "type": "t3x",
+                "url": "https://extensions.typo3.org/extension/download/go_maps_ext/2.3.1/t3x/",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "typo3/cms-core": "*"
+            },
+            "replace": {
+                "go_maps_ext": "self.version",
+                "typo3-ter/go_maps_ext": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Clickstorm\\GoMapsExt\\": "Classes/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Marc Hirdes",
+                    "email": "marc_hirdes@gmx.de",
+                    "company": "clickstorm GmbH",
+                    "username": "mhirdes"
+                }
+            ],
+            "description": "Google Maps Extension. Simply insert a google map Version 3 inc. jQuery, calculate a route,\r\n\t                  images for markers, style maps, KML, categories, responsive and many more.",
+            "time": "2017-09-11T08:40:27+00:00"
+        },
+        {
+            "name": "typo3-ter/gridelements",
+            "version": "8.0.0",
+            "dist": {
+                "type": "t3x",
+                "url": "https://extensions.typo3.org/extension/download/gridelements/8.0.0/t3x/",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "typo3/cms-core": ">= 8.7.0, <= 8.99.99"
+            },
+            "conflict": {
+                "typo3-ter/jfmulticontent": "*",
+                "typo3-ter/templavoila": "*"
+            },
+            "replace": {
+                "gridelements": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "GridElementsTeam\\Gridelements\\": "Classes/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Grid Elements Team",
+                    "email": "info@cybercraft.de",
+                    "company": "",
+                    "username": "cybercraft"
+                }
+            ],
+            "description": "This extension integrates the grid layout concept also to regular content elements - the grid elements.\r\nIt offers a lot of new features like advanced drag & drop or real references, that improve the usability of the page and list module to speed up the daily work with the backend.",
+            "time": "2017-12-24T12:21:33+00:00"
         },
         {
             "name": "typo3-ter/news",
-            "version": "6.1.1",
+            "version": "6.3.0",
             "dist": {
                 "type": "t3x",
-                "url": "https://extensions.typo3.org/extension/download/news/6.1.1/t3x/",
+                "url": "https://extensions.typo3.org/extension/download/news/6.3.0/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -1812,7 +1740,7 @@
                 }
             ],
             "description": "Versatile news extension, based on extbase & fluid. Editor friendly, default integration of social sharing and many other features",
-            "time": "2017-09-06T13:52:56+00:00"
+            "time": "2018-02-01T09:56:58+00:00"
         },
         {
             "name": "typo3-ter/pxa-cookie-bar",
@@ -1849,10 +1777,10 @@
         },
         {
             "name": "typo3-ter/pxa-form-enhancement",
-            "version": "3.0.0",
+            "version": "3.1.1",
             "dist": {
                 "type": "t3x",
-                "url": "https://extensions.typo3.org/extension/download/pxa_form_enhancement/3.0.0/t3x/",
+                "url": "https://extensions.typo3.org/extension/download/pxa_form_enhancement/3.1.1/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -1878,7 +1806,7 @@
                 }
             ],
             "description": "Allow to add recaptcha to TYPO3 form and save form post processor",
-            "time": "2017-04-07T14:04:33+00:00"
+            "time": "2017-10-12T10:26:45+00:00"
         },
         {
             "name": "typo3-ter/pxa-newsletter-subscription",
@@ -1915,16 +1843,16 @@
         },
         {
             "name": "typo3-ter/realurl",
-            "version": "2.2.1",
+            "version": "2.3.2",
             "dist": {
                 "type": "t3x",
-                "url": "https://extensions.typo3.org/extension/download/realurl/2.2.1/t3x/",
+                "url": "https://extensions.typo3.org/extension/download/realurl/2.3.2/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "php": ">= 5.4.0, <= 7.1.999",
-                "typo3/cms-core": ">= 6.2.0, <= 8.7.999"
+                "typo3/cms-core": ">= 6.2.0, <= 8.9.999"
             },
             "conflict": {
                 "typo3-ter/cooluri": "*",
@@ -1948,7 +1876,44 @@
                 }
             ],
             "description": "Makes TYPO3 URLs search engine friendly. Donations are welcome to dmitry.dulepov@gmail.com. They help to support the extension!",
-            "time": "2017-05-11T11:22:25+00:00"
+            "time": "2018-03-07T11:24:23+00:00"
+        },
+        {
+            "name": "typo3-ter/realurl-404-multilingual",
+            "version": "1.0.9",
+            "dist": {
+                "type": "t3x",
+                "url": "https://extensions.typo3.org/extension/download/realurl_404_multilingual/1.0.9/t3x/",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "typo3-ter/realurl": "*",
+                "typo3/cms-core": ">= 6.0.0, <= 8.7.99"
+            },
+            "conflict": {
+                "typo3-ter/error-404-handling": "*"
+            },
+            "replace": {
+                "realurl_404_multilingual": "self.version",
+                "typo3-ter/realurl_404_multilingual": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "WapplerSystems\\Realurl404Multilingual\\": "Classes/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sven Wappler",
+                    "email": "typo3YYYY@wappler.systems",
+                    "company": "WapplerSystems",
+                    "username": "svenwappler"
+                }
+            ],
+            "description": "Shows the defined error page of the given language if the requested page or file could not be found",
+            "time": "2017-10-09T17:43:51+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -2056,16 +2021,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "8.7.10",
+            "version": "v8.7.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "a33acf4e29e75f72784408ae1609bcc3406fffb0"
+                "reference": "a12fcf718b166376aec739f5159583f7725ba1c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a33acf4e29e75f72784408ae1609bcc3406fffb0",
-                "reference": "a33acf4e29e75f72784408ae1609bcc3406fffb0",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/a12fcf718b166376aec739f5159583f7725ba1c7",
+                "reference": "a12fcf718b166376aec739f5159583f7725ba1c7",
                 "shasum": ""
             },
             "require": {
@@ -2078,7 +2043,7 @@
                 "ext-xml": "*",
                 "guzzlehttp/guzzle": "^6.3.0",
                 "mso/idna-convert": "^1.1.0",
-                "php": "^7.0",
+                "php": ">=7.0.0 <=7.2.99",
                 "psr/http-message": "~1.0",
                 "psr/log": "~1.0.0",
                 "swiftmailer/swiftmailer": "~5.4.5",
@@ -2254,7 +2219,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2018-02-06T10:46:02+00:00"
+            "time": "2018-03-13T12:44:45+00:00"
         },
         {
             "name": "typo3/cms-cli",
@@ -2361,16 +2326,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.5.2",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "96828da06bd13066e21dea30ef7d91af7c11de69"
+                "reference": "c73ee75275eb5e4db7f158df03116fd594f33dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/96828da06bd13066e21dea30ef7d91af7c11de69",
-                "reference": "96828da06bd13066e21dea30ef7d91af7c11de69",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/c73ee75275eb5e4db7f158df03116fd594f33dde",
+                "reference": "c73ee75275eb5e4db7f158df03116fd594f33dde",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2361,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2018-03-07T11:36:05+00:00"
+            "time": "2018-03-08T16:24:54+00:00"
         }
     ],
     "packages-dev": [
@@ -3073,12 +3038,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "bff1e8d8bab6aa226b47c462c2ec508de5a0ecf7"
+                "reference": "fb900e84a88989c0b41f6e0d68126bcd6a6559ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/bff1e8d8bab6aa226b47c462c2ec508de5a0ecf7",
-                "reference": "bff1e8d8bab6aa226b47c462c2ec508de5a0ecf7",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/fb900e84a88989c0b41f6e0d68126bcd6a6559ee",
+                "reference": "fb900e84a88989c0b41f6e0d68126bcd6a6559ee",
                 "shasum": ""
             },
             "require": {
@@ -3122,7 +3087,7 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-19T14:52:00+00:00"
+            "time": "2018-03-15T16:55:45+00:00"
         },
         {
             "name": "symfony/class-loader",
@@ -3186,12 +3151,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "05e10567b529476a006b00746c5f538f1636810e"
+                "reference": "ba1bc8b03f457eaa76a359a16dbdc66f1fc249c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/05e10567b529476a006b00746c5f538f1636810e",
-                "reference": "05e10567b529476a006b00746c5f538f1636810e",
+                "url": "https://api.github.com/repos/symfony/config/zipball/ba1bc8b03f457eaa76a359a16dbdc66f1fc249c7",
+                "reference": "ba1bc8b03f457eaa76a359a16dbdc66f1fc249c7",
                 "shasum": ""
             },
             "require": {
@@ -3241,7 +3206,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-14T10:03:57+00:00"
+            "time": "2018-03-13T12:27:50+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -3373,12 +3338,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "fb7fcddad62ea1ded0669e77af10077f5042125d"
+                "reference": "a981e38809d06f2cfa20af16c50e3948b2c276b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/fb7fcddad62ea1ded0669e77af10077f5042125d",
-                "reference": "fb7fcddad62ea1ded0669e77af10077f5042125d",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/a981e38809d06f2cfa20af16c50e3948b2c276b9",
+                "reference": "a981e38809d06f2cfa20af16c50e3948b2c276b9",
                 "shasum": ""
             },
             "require": {
@@ -3421,7 +3386,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-22T11:40:25+00:00"
+            "time": "2018-03-16T09:50:00+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3605,16 +3570,16 @@
         },
         {
             "name": "t3kit/db",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "dd023990ac86f2e55405f429a8aa2c90ea9e358d"
+                "reference": "a5a9c447d97d2212acc2d1894d04b9433e951217"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/dd023990ac86f2e55405f429a8aa2c90ea9e358d",
-                "reference": "dd023990ac86f2e55405f429a8aa2c90ea9e358d",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/a5a9c447d97d2212acc2d1894d04b9433e951217",
+                "reference": "a5a9c447d97d2212acc2d1894d04b9433e951217",
                 "shasum": ""
             },
             "type": "library",
@@ -3636,7 +3601,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2017-11-03T15:04:03+00:00"
+            "time": "2018-03-16T10:25:35+00:00"
         }
     ],
     "aliases": [],
