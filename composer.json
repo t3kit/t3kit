@@ -32,6 +32,7 @@
     }
   ],
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "t3kit/theme-t3kit": "~2.6.0",
     "typo3-ter/url-forwarding": "~1.2.0",
