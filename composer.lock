@@ -1,11 +1,78 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79491980713092a0a0c44578212770b9",
+    "content-hash": "1635413b5dc4a6d8e54e16bc676e815c",
     "packages": [
+        {
+            "name": "apache-solr-for-typo3/solr",
+            "version": "7.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-Solr/ext-solr.git",
+                "reference": "7bf1c4701582c12add45727ad480e92f5e4515c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Solr/ext-solr/zipball/7bf1c4701582c12add45727ad480e92f5e4515c1",
+                "reference": "7bf1c4701582c12add45727ad480e92f5e4515c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "typo3/cms": ">=8.7.0"
+            },
+            "replace": {
+                "apache-solr-for-typo3/solrfluid": "*",
+                "solr": "self.version",
+                "typo3-ter/solr": "self.version"
+            },
+            "require-dev": {
+                "nimut/testing-framework": "^1.1",
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.5.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "solr",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "Resources/Private/Php/"
+                ],
+                "psr-4": {
+                    "ApacheSolrForTypo3\\Solr\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ingo Renner",
+                    "email": "ingo@typo3.org",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Apache Solr for TYPO3",
+            "homepage": "http://www.typo3-solr.com",
+            "keywords": [
+                "TYPO3 CMS",
+                "search",
+                "solr",
+                "typo3"
+            ],
+            "time": "2018-02-19T08:33:59+00:00"
+        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
@@ -1539,11 +1606,11 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit",
-                "reference": "d9811ee62ecea39a5cbc845f1c9a796015df612b"
+                "reference": "a6ae9f737e8f6350f3359b570508e7b4f501fcbb"
             },
             "require": {
                 "georgringer/news": "~6.3.0",
@@ -1591,7 +1658,7 @@
                 "source": "https://github.com/t3kit/theme_t3kit",
                 "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
             },
-            "time": "2018-05-24T13:45:10+00:00"
+            "time": "2018-06-27T14:25:57+00:00"
         },
         {
             "name": "typo3-ter/cs-seo",
@@ -1630,8 +1697,8 @@
             "name": "typo3-ter/dyncss-less",
             "version": "0.7.9",
             "dist": {
-                "type": "t3x",
-                "url": "https://extensions.typo3.org/extension/download/dyncss_less/0.7.9/t3x/",
+                "type": "zip",
+                "url": "https://extensions.typo3.org/extension/download/dyncss_less/0.7.9/zip/",
                 "reference": null,
                 "shasum": null
             },
@@ -1836,8 +1903,8 @@
             "name": "typo3-ter/pxa-newsletter-subscription",
             "version": "5.0.2",
             "dist": {
-                "type": "t3x",
-                "url": "https://extensions.typo3.org/extension/download/pxa_newsletter_subscription/5.0.2/t3x/",
+                "type": "zip",
+                "url": "https://extensions.typo3.org/extension/download/pxa_newsletter_subscription/5.0.2/zip/",
                 "reference": null,
                 "shasum": null
             },
@@ -1938,44 +2005,6 @@
             ],
             "description": "Shows the defined error page of the given language if the requested page or file could not be found",
             "time": "2017-10-09T17:43:51+00:00"
-        },
-        {
-            "name": "typo3-ter/solr",
-            "version": "7.5.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://extensions.typo3.org/extension/download/solr/7.5.2/zip/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3/cms-core": ">= 8.7.0, <= 8.99.99"
-            },
-            "replace": {
-                "solr": "self.version"
-            },
-            "suggest": {
-                "typo3-ter/devlog": "*"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    "Resources/Private/Php/"
-                ],
-                "psr-4": {
-                    "ApacheSolrForTypo3\\Solr\\": "Classes/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "Ingo Renner, Timo Hund, Markus Friedrich",
-                    "email": "ingo@typo3.org",
-                    "company": "dkd Internet Service GmbH",
-                    "username": "typo3-solr"
-                }
-            ],
-            "description": "Apache Solr for TYPO3 is the enterprise search server you were looking for with special features such as Faceted Search or Synonym Support and incredibly fast response times of results within milliseconds.",
-            "time": "2018-04-10T10:04:25+00:00"
         },
         {
             "name": "typo3-themes/themes",

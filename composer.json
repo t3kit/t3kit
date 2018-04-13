@@ -39,6 +39,14 @@
   "prefer-stable": true,
   "require": {
     "t3kit/theme-t3kit": "~2.8.0",
+    "typo3-ter/solr": "~7.5.0",
+    "typo3-ter/cs-seo": "~2.3.3",
+    "typo3-ter/news": "~6.3.0",
+    "typo3-ter/pxa-newsletter-subscription": "~5.0.2",
+    "typo3-ter/pxa-form-enhancement": "~3.1.1",
+    "typo3-ter/pxa-cookie-bar": "~2.0.1",
+    "typo3-ter/realurl-404-multilingual": "~1.0.9",
+    "typo3-ter/frontend-editing": "~1.3.7",
     "typo3-ter/url-forwarding": "^1.2.0",
     "pixelant/dashboard": "~8.0.0",
     "kaystrobach/dyncss": "dev-master as 0.8.0"
