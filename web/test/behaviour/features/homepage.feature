@@ -11,3 +11,6 @@ Feature: Homepage
 
 	Scenario: Homepage has subscription form
 		Then I should see "Subscribe to newsletter"
+
+	Scenario: Homepage has a a few "Read more" links
+		Then I should see "READ MORE"

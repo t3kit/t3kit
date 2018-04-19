@@ -7,4 +7,4 @@ Feature: Navigation
 		Given I am on the homepage
 
 	Scenario: All menu items should be accessible
-		Then I should access all pages of navigation with css selector ".header-top ul.nav li a"
+		Then I should access all pages of navigation with css selector ".main-navigation ul li a"
