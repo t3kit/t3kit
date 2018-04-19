@@ -1,9 +1,11 @@
 <?php
 
+use Behat\MinkExtension\Context\MinkContext;
+
 /**
  * Class FeatureContext
  */
-class FeatureContext extends \Behat\MinkExtension\Context\MinkContext {
+class FeatureContext extends MinkContext {
 
     /**
      * Loop menu navigation
@@ -39,6 +41,16 @@ class FeatureContext extends \Behat\MinkExtension\Context\MinkContext {
         }
 
         return $elements;
+    }
+
+    /**
+     * @Given /^I am logged in from "([^"]*)" authenticated as "([^"]*)" using "([^"]*)"$/
+     */
+    public function iAmAuthenticatedAs($url, $username, $password) {
+        $this->visit($url);
+        $this->fillField('username', $username);
+        $this->fillField('t3-password', $password);
+        $this->pressButton('Login');
     }
 }
 
