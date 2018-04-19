@@ -17,6 +17,9 @@ return [
         'fluid' => [
             'packagePath' => 'typo3/sysext/fluid/',
         ],
+        'install' => [
+            'packagePath' => 'typo3/sysext/install/',
+        ],
         'frontend' => [
             'packagePath' => 'typo3/sysext/frontend/',
         ],
@@ -46,6 +49,12 @@ return [
         ],
         'saltedpasswords' => [
             'packagePath' => 'typo3/sysext/saltedpasswords/',
+        ],
+        'taskcenter' => [
+            'packagePath' => 'typo3/sysext/taskcenter/',
+        ],
+        'sys_action' => [
+            'packagePath' => 'typo3/sysext/sys_action/',
         ],
         'func' => [
             'packagePath' => 'typo3/sysext/func/',
@@ -92,9 +101,6 @@ return [
         'impexp' => [
             'packagePath' => 'typo3/sysext/impexp/',
         ],
-        'install' => [
-            'packagePath' => 'typo3/sysext/install/',
-        ],
         'lowlevel' => [
             'packagePath' => 'typo3/sysext/lowlevel/',
         ],
@@ -134,14 +140,17 @@ return [
         'dyncss_less' => [
             'packagePath' => 'typo3conf/ext/dyncss_less/',
         ],
+        'frontend_editing' => [
+            'packagePath' => 'typo3conf/ext/frontend_editing/',
+        ],
+        'realurl_404_multilingual' => [
+            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
+        ],
         'static_info_tables' => [
             'packagePath' => 'typo3conf/ext/static_info_tables/',
         ],
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',
-        ],
-        'frontend_editing' => [
-            'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
@@ -152,11 +161,11 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
+        'solr' => [
+            'packagePath' => 'typo3conf/ext/solr/',
+        ],
         'theme_t3kit' => [
             'packagePath' => 'typo3conf/ext/theme_t3kit/',
-        ],
-        'realurl_404_multilingual' => [
-            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
         ],
         'dashboard' => [
             'packagePath' => 'typo3conf/ext/dashboard/',
@@ -169,9 +178,6 @@ return [
         ],
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
-        ],
-        'solr' => [
-            'packagePath' => 'typo3conf/ext/solr/',
         ],
         'url_forwarding' => [
             'packagePath' => 'typo3conf/ext/url_forwarding/',

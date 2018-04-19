@@ -39,6 +39,7 @@ return [
             'seo_basics' => 'a:1:{s:10:"xmlSitemap";s:1:"1";}',
             'solr' => 'a:4:{s:35:"useConfigurationFromClosestTemplate";s:1:"0";s:43:"useConfigurationTrackRecordsOutsideSiteroot";s:1:"1";s:29:"useConfigurationMonitorTables";s:0:"";s:27:"allowSelfSignedCertificates";s:1:"0";}',
             'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
+            'sys_action' => 'a:0:{}',
             'theme_t3kit' => 'a:0:{}',
             'themes' => 'a:2:{s:16:"categoriesToShow";s:118:"theme,languages,socialmedia,forms,extension,bootstrap,colors,font,meta,metaDefaults,pages,container,menu,header,footer";s:15:"constantsToHide";s:36:"dateFormat,timeFormat,dateTimeFormat";}',
             'url_forwarding' => 'a:0:{}',
