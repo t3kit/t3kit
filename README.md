@@ -73,6 +73,13 @@ _*Note: To continue with Docker you need to create docker environment `.env` fil
 
 * Open in browser: `localhost:8888` or `0.0.0.0:8888`
 
+### TYPO3 backend login
+
+The credentials for login to TYPO3´ backend are:
+
+* Username: `admin`
+* Password: `admin1234`
+
 ### phpMyAdmin
 #### Run phpMyAdmin docker container and connect it to t3kit:
 
