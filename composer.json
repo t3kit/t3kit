@@ -36,8 +36,7 @@
   "require": {
     "t3kit/theme-t3kit": "~2.6.0",
     "typo3-ter/url-forwarding": "~1.2.0",
-    "pixelant/dashboard": "~8.0.0",
-    "georgringer/gdpr": "dev-master"
+    "pixelant/dashboard": "~8.0.0"
   },
   "require-dev": {
     "t3kit/db": "~2.6.0",
