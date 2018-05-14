@@ -29,6 +29,10 @@
     {
       "type": "git",
       "url": "https://github.com/pixelant/dashboard"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:t3kit/TYPO3.dyncss.git"
     }
   ],
   "minimum-stability": "dev",
@@ -36,7 +40,8 @@
   "require": {
     "t3kit/theme-t3kit": "~2.6.0",
     "typo3-ter/url-forwarding": "~1.2.0",
-    "pixelant/dashboard": "~8.0.0"
+    "pixelant/dashboard": "~8.0.0",
+    "kaystrobach/dyncss": "dev-master as 0.8.0"
   },
   "require-dev": {
     "t3kit/db": "~2.6.0",
