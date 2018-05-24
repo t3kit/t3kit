@@ -1,4 +1,19 @@
 
+#### v8.6.0 `May 24, 2018`
+- **[TASK]** update theme_t3kit to v2.7.0 and t3kit_db to v2.7.0 ([d9d488a](https://github.com/t3kit/t3kit/commit/d9d488a))
+- **[TASK]** update dependencies/composer.lock ([03254d9](https://github.com/t3kit/t3kit/commit/03254d9))
+- **[TASK]** Use forked dyncss with php7.2 fixes while we are waiting PR to get merged on the original (#186) ([d0b6f53](https://github.com/t3kit/t3kit/commit/d0b6f53))
+- **[TASK]** update composer dependencies with prefer-stable flag ([2ff72c1](https://github.com/t3kit/t3kit/commit/2ff72c1))
+- **[TASK]** revert PR #181, it cause an error in Dyncss extension ([3842707](https://github.com/t3kit/t3kit/commit/3842707))
+- **[TASK]** Enable system extensions taskcenter and sys_action (#183) ([58dce5a](https://github.com/t3kit/t3kit/commit/58dce5a))
+- **[TASK]** Increase docker php errors severity level to correspond to TYPO3 debug configuration preset (#181) ([651974a](https://github.com/t3kit/t3kit/commit/651974a))
+- **[TASK]** prefer more stable packages over unstable ones (#176) ([f86f8bf](https://github.com/t3kit/t3kit/commit/f86f8bf))
+- **[TASK]** Add LICENSE.txt to repository ([1b15b09](https://github.com/t3kit/t3kit/commit/1b15b09))
+- **[TASK]** Add login credentials to TYPO3 backend in README ([8804c2d](https://github.com/t3kit/t3kit/commit/8804c2d))
+- **[TASK]** Add GDPR compability for TYPO3 (#174) ([f21a189](https://github.com/t3kit/t3kit/commit/f21a189))
+
+***
+
 #### v8.5.0 `March 16, 2018`
 - **[TASK]** update composer.lock ([f2132a8](https://github.com/t3kit/t3kit/commit/f2132a8))
 - **[TASK]** [TASK] update theme_t3kit to v2.6.0 and t3kit_db to v2.6.0 ([07d31a8](https://github.com/t3kit/t3kit/commit/07d31a8))
