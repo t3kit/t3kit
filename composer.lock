@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc7c948ee9fb7902c2c4dbbd1011b3fc",
+    "content-hash": "90ae8c5f6f2fdb2917dc616442a51f8a",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -1539,11 +1539,11 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "dev-master",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit",
-                "reference": "b3e7ee629eca6fa2da157c1c5fb1176f0ff28e75"
+                "reference": "d9811ee62ecea39a5cbc845f1c9a796015df612b"
             },
             "require": {
                 "georgringer/news": "~6.3.0",
@@ -1591,7 +1591,7 @@
                 "source": "https://github.com/t3kit/theme_t3kit",
                 "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
             },
-            "time": "2018-05-24T09:38:07+00:00"
+            "time": "2018-05-24T13:45:10+00:00"
         },
         {
             "name": "typo3-ter/cs-seo",
@@ -3638,16 +3638,16 @@
         },
         {
             "name": "t3kit/db",
-            "version": "dev-master",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "0a4027c850b964caea8a17370c18f7ffc2b063c8"
+                "reference": "1abd2773a767ed09fe47de05ec179ba538df8349"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/0a4027c850b964caea8a17370c18f7ffc2b063c8",
-                "reference": "0a4027c850b964caea8a17370c18f7ffc2b063c8",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/1abd2773a767ed09fe47de05ec179ba538df8349",
+                "reference": "1abd2773a767ed09fe47de05ec179ba538df8349",
                 "shasum": ""
             },
             "type": "library",
@@ -3669,7 +3669,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2018-05-09T10:09:44+00:00"
+            "time": "2018-05-24T13:35:48+00:00"
         }
     ],
     "aliases": [
@@ -3682,9 +3682,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "t3kit/theme-t3kit": 20,
-        "kaystrobach/dyncss": 20,
-        "t3kit/db": 20
+        "kaystrobach/dyncss": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
