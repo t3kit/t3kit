@@ -32,7 +32,7 @@
     },
     {
       "type": "git",
-      "url": "git@github.com:t3kit/TYPO3.dyncss.git"
+      "url": "https://github.com/t3kit/TYPO3.dyncss"
     }
   ],
   "minimum-stability": "dev",
