@@ -1,4 +1,12 @@
 
+#### v8.7.0 `June 27, 2018`
+- **[TASK]** update theme_t3kit to v2.8.0 ([38f7fad](https://github.com/t3kit/t3kit/commit/38f7fad))
+- **[TASK]** Allow minor updates of typo3-ter/url-forwarding (#189) ([7d5b655](https://github.com/t3kit/t3kit/commit/7d5b655))
+- **[TASK]** update favicons, add site.webmanifest ([7da2b3f](https://github.com/t3kit/t3kit/commit/7da2b3f))
+- **[BUGFIX]** use https url for dyncss ([4ad38f6](https://github.com/t3kit/t3kit/commit/4ad38f6))
+
+***
+
 #### v8.6.0 `May 24, 2018`
 - **[TASK]** update theme_t3kit to v2.7.0 and t3kit_db to v2.7.0 ([d9d488a](https://github.com/t3kit/t3kit/commit/d9d488a))
 - **[TASK]** update dependencies/composer.lock ([03254d9](https://github.com/t3kit/t3kit/commit/03254d9))
