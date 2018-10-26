@@ -1,4 +1,9 @@
 
+#### v8.8.0 `October 26, 2018`
+- **[TASK]** update theme_t3kit to v2.9.0 ([45f0940](https://github.com/t3kit/t3kit/commit/45f0940))
+
+***
+
 #### v8.7.0 `June 27, 2018`
 - **[TASK]** update theme_t3kit to v2.8.0 ([38f7fad](https://github.com/t3kit/t3kit/commit/38f7fad))
 - **[TASK]** Allow minor updates of typo3-ter/url-forwarding (#189) ([7d5b655](https://github.com/t3kit/t3kit/commit/7d5b655))
