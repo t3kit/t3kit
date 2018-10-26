@@ -38,7 +38,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "t3kit/theme-t3kit": "~2.8.0",
+    "t3kit/theme-t3kit": "~2.9.0",
     "typo3-ter/url-forwarding": "^1.2.0",
     "pixelant/dashboard": "~8.0.0",
     "kaystrobach/dyncss": "dev-master as 0.8.0"
