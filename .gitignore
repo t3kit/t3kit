@@ -21,6 +21,8 @@ web/typo3conf/l10n/*
 vendor
 web/typo3_src
 
+var/
+
 # Solr
 solrdata/*
 # Keep the actual folder
