@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "73007e7ac3b26817fbc31b1f55a6bb9d",
+    "content-hash": "ced25b2eeccb52cffa1f5ca2d6ebf6e3",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -826,6 +826,81 @@
                 "reflection"
             ],
             "time": "2018-06-14T14:45:07+00:00"
+        },
+        {
+            "name": "friendsoftypo3/cms-func",
+            "version": "v9.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/func.git",
+                "reference": "e3d4e7719e0077b91318ac0de0e1a9506697a3ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/func/zipball/e3d4e7719e0077b91318ac0de0e1a9506697a3ee",
+                "reference": "e3d4e7719e0077b91318ac0de0e1a9506697a3ee",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.0"
+            },
+            "replace": {
+                "func": "*"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Func\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Brings the backend Web->functions main module for extensions to hook in",
+            "homepage": "https://typo3.org",
+            "time": "2017-07-04T11:40:03+00:00"
+        },
+        {
+            "name": "friendsoftypo3/typo3db-legacy",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/typo3db_legacy.git",
+                "reference": "beb03363b7583dcac7e034266a72daa249d1f011"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/typo3db_legacy/zipball/beb03363b7583dcac7e034266a72daa249d1f011",
+                "reference": "beb03363b7583dcac7e034266a72daa249d1f011",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.4"
+            },
+            "replace": {
+                "typo3db_legacy": "*"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Typo3DbLegacy\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "TYPO3_DB compatibility layer for TYPO3 v9.x",
+            "homepage": "https://typo3.org",
+            "time": "2018-09-30T10:32:22+00:00"
         },
         {
             "name": "georgringer/news",

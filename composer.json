@@ -87,7 +87,9 @@
     "doctrine/lexer": "^1.0",
     "doctrine/common": "^2.9",
     "georgringer/news": "dev-master",
-    "t3kit/theme-t3kit": "dev-9testloc"
+    "t3kit/theme-t3kit": "dev-9testloc",
+    "friendsoftypo3/cms-func": "^9.0.1",
+    "friendsoftypo3/typo3db-legacy": "^1.1.1"
   },
   "require-dev": {
     "t3kit/db": "~2.7.0",
