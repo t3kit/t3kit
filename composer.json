@@ -2,7 +2,12 @@
   "name": "t3kit/t3kit",
   "description": "Starter kit for TYPO3 CMS. Tools, extensions, configurations and templates.",
   "type": "project",
-  "keywords": ["t3kit", "typo3", "cms", "starter"],
+  "keywords": [
+    "t3kit",
+    "typo3",
+    "cms",
+    "starter"
+  ],
   "homepage": "http://www.t3kit.com",
   "license": "GPL-2.0+",
   "authors": [
@@ -28,24 +33,65 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/pixelant/dashboard"
+      "url": "https://github.com/georgringer/news"
     },
     {
       "type": "git",
-      "url": "https://github.com/t3kit/TYPO3.dyncss"
+      "url": "https://github.com/TYPO3-Solr/ext-solr"
     }
   ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "t3kit/theme-t3kit": "~2.9.0",
-    "typo3-ter/url-forwarding": "^1.2.0",
-    "pixelant/dashboard": "~8.0.0",
-    "kaystrobach/dyncss": "dev-master as 0.8.0"
+    "php": "^7.2",
+    "typo3/cms-backend": "~9.5.1",
+    "typo3/cms-core": "~9.5.1",
+    "typo3/cms-extbase": "~9.5.1",
+    "typo3/cms-extensionmanager": "~9.5.1",
+    "typo3/cms-filelist": "~9.5.1",
+    "typo3/cms-fluid": "~9.5.1",
+    "typo3/cms-frontend": "~9.5.1",
+    "typo3/cms-install": "~9.5.1",
+    "typo3/cms-recordlist": "~9.5.1",
+    "typo3/cms-about": "~9.5.1",
+    "typo3/cms-adminpanel": "~9.5.1",
+    "typo3/cms-belog": "~9.5.1",
+    "typo3/cms-beuser": "~9.5.1",
+    "typo3/cms-fluid-styled-content": "~9.5.1",
+    "typo3/cms-form": "~9.5.1",
+    "typo3/cms-impexp": "~9.5.1",
+    "typo3/cms-info": "~9.5.1",
+    "typo3/cms-lowlevel": "~9.5.1",
+    "typo3/cms-opendocs": "~9.5.1",
+    "typo3/cms-recycler": "~9.5.1",
+    "typo3/cms-redirects": "~9.5.1",
+    "typo3/cms-reports": "~9.5.1",
+    "typo3/cms-rte-ckeditor": "~9.5.1",
+    "typo3/cms-scheduler": "~9.5.1",
+    "typo3/cms-seo": "~9.5.1",
+    "typo3/cms-setup": "~9.5.1",
+    "typo3/cms-tstemplate": "~9.5.1",
+    "typo3/cms-viewpage": "~9.5.1",
+    "typo3/cms-feedit": "~9.5.1",
+    "typo3/cms-felogin": "~9.5.1",
+    "typo3/cms-filemetadata": "~9.5.1",
+    "typo3/cms-indexed-search": "~9.5.1",
+    "typo3/cms-linkvalidator": "~9.5.1",
+    "typo3/cms-rsaauth": "~9.5.1",
+    "typo3/cms-sys-action": "~9.5.1",
+    "typo3/cms-sys-note": "~9.5.1",
+    "typo3/cms-t3editor": "~9.5.1",
+    "typo3/cms-taskcenter": "~9.5.1",
+    "typo3/cms-workspaces": "~9.5.1",
+    "helhum/typo3-console": "^5.6.0",
+    "doctrine/lexer": "^1.0",
+    "doctrine/common": "^2.9",
+    "georgringer/news": "dev-master",
+    "t3kit/theme-t3kit": "dev-9testloc"
   },
   "require-dev": {
     "t3kit/db": "~2.7.0",
-    "behat/behat": "~3.3.0",
+    "behat/behat": "^3.3.0",
     "behat/mink-extension": "~2.2",
     "behat/mink-goutte-driver": "~1.2.1",
     "behat/mink-selenium2-driver": "~1.3.1",
@@ -53,7 +99,6 @@
   },
   "extra": {
     "typo3/cms": {
-      "cms-package-dir": "{$vendor-dir}/typo3/cms",
       "web-dir": "web"
     }
   }
