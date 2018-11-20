@@ -29,11 +29,23 @@ return [
         'install' => [
             'packagePath' => 'typo3/sysext/install/',
         ],
+        'info' => [
+            'packagePath' => 'typo3/sysext/info/',
+        ],
+        'linkvalidator' => [
+            'packagePath' => 'typo3/sysext/linkvalidator/',
+        ],
         'recordlist' => [
             'packagePath' => 'typo3/sysext/recordlist/',
         ],
         'backend' => [
             'packagePath' => 'typo3/sysext/backend/',
+        ],
+        'indexed_search' => [
+            'packagePath' => 'typo3/sysext/indexed_search/',
+        ],
+        'recycler' => [
+            'packagePath' => 'typo3/sysext/recycler/',
         ],
         'reports' => [
             'packagePath' => 'typo3/sysext/reports/',
@@ -53,6 +65,9 @@ return [
         'about' => [
             'packagePath' => 'typo3/sysext/about/',
         ],
+        'adminpanel' => [
+            'packagePath' => 'typo3/sysext/adminpanel/',
+        ],
         'belog' => [
             'packagePath' => 'typo3/sysext/belog/',
         ],
@@ -61,6 +76,9 @@ return [
         ],
         'extensionmanager' => [
             'packagePath' => 'typo3/sysext/extensionmanager/',
+        ],
+        'feedit' => [
+            'packagePath' => 'typo3/sysext/feedit/',
         ],
         'felogin' => [
             'packagePath' => 'typo3/sysext/felogin/',
@@ -77,14 +95,20 @@ return [
         'impexp' => [
             'packagePath' => 'typo3/sysext/impexp/',
         ],
-        'info' => [
-            'packagePath' => 'typo3/sysext/info/',
-        ],
         'lowlevel' => [
             'packagePath' => 'typo3/sysext/lowlevel/',
         ],
+        'opendocs' => [
+            'packagePath' => 'typo3/sysext/opendocs/',
+        ],
+        'redirects' => [
+            'packagePath' => 'typo3/sysext/redirects/',
+        ],
         'rsaauth' => [
             'packagePath' => 'typo3/sysext/rsaauth/',
+        ],
+        'seo' => [
+            'packagePath' => 'typo3/sysext/seo/',
         ],
         'sys_note' => [
             'packagePath' => 'typo3/sysext/sys_note/',
@@ -98,6 +122,9 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'workspaces' => [
+            'packagePath' => 'typo3/sysext/workspaces/',
+        ],
         'gridelements' => [
             'packagePath' => 'typo3conf/ext/gridelements/',
         ],
@@ -106,6 +133,12 @@ return [
         ],
         'theme_t3kit' => [
             'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        ],
+        'func' => [
+            'packagePath' => 'typo3conf/ext/func/',
+        ],
+        'typo3db_legacy' => [
+            'packagePath' => 'typo3conf/ext/typo3db_legacy/',
         ],
     ],
     'version' => 5,
