@@ -99,6 +99,17 @@
     "behat/mink-selenium2-driver": "~1.3.1",
     "guzzlehttp/guzzle": "~6.3.0"
   },
+  "scripts": {
+    "helper:restoredb": "scripts/restoredb.sh",
+    "helper:t3fixes": "scripts/t3fixes.sh",
+    "typo3-cms-scripts": [
+      "typo3cms install:fixfolderstructure",
+      "typo3cms install:generatepackagestates"
+    ],
+    "post-autoload-dump": [
+      "@helper:t3fixes"
+    ]
+  },
   "extra": {
     "typo3/cms": {
       "web-dir": "web"
