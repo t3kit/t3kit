@@ -1,0 +1,31 @@
+rootPageId: 1
+base: /
+baseVariants: {  }
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: default
+    locale: en_US
+    iso-639-1: en
+    navigationTitle: English
+    hreflang: en-US
+    direction: ltr
+    flag: us
+  -
+    title: Svenska
+    enabled: true
+    languageId: '1'
+    base: /sv/
+    typo3Language: default
+    locale: sv_SE
+    iso-639-1: sv
+    navigationTitle: Svenska
+    hreflang: sv-SE
+    direction: ltr
+    fallbackType: strict
+    flag: se
+errorHandling: {  }
+routes: {  }
