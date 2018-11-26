@@ -36,13 +36,13 @@
 
 2. `cd t3kit`
 
-3. `composer install --ignore-platform-reqs`
-
 _*Note: To continue with Docker you need to create docker environment `.env` file for your project based on an example '.env.example' or for MAC users `.env.mac.example`. All environments variables could be adapted to your specific needs._
 
-4. `cp .env.example .env`  _*or for MAC users_ `cp .env.mac.example .env`
+3. `cp .env.example .env`  _*or for MAC users_ `cp .env.mac.example .env` 
 
-5. `docker-compose up -d`
+4. `docker-compose up -d`
+
+5. `composer install --ignore-platform-reqs`
 
 6. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
 
