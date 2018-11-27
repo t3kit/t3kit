@@ -38,6 +38,14 @@
     {
       "type": "git",
       "url": "https://github.com/TYPO3-Solr/ext-solr"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:pixelant/pxa_newsletter_subscription.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/pixelant/pxa_cookie_bar.git"
     }
   ],
   "minimum-stability": "dev",
@@ -89,7 +97,9 @@
     "georgringer/news": "dev-master",
     "t3kit/theme-t3kit": "dev-9testloc",
     "friendsoftypo3/cms-func": "^9.0.1",
-    "friendsoftypo3/typo3db-legacy": "^1.1.1"
+    "friendsoftypo3/typo3db-legacy": "^1.1.1",
+    "typo3-ter/pxa-cookie-bar": "~2.1.0",
+    "pixelant/pxa-newsletter-subscription": "dev-typo3-v9"
   },
   "require-dev": {
     "t3kit/db": "dev-t3kit8typo39",
