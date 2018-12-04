@@ -22,13 +22,18 @@ return [
         'extConf' => [
             'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'frontend_editing' => 'a:2:{s:11:"seoProvider";s:4:"none";s:29:"contentEditableWrapperTagName";s:3:"div";}',
+            'go_maps_ext' => 'a:3:{s:15:"include_library";s:1:"0";s:16:"include_manually";s:1:"0";s:8:"footerJS";s:1:"1";}',
             'gridelements' => 'a:3:{s:20:"additionalStylesheet";s:0:"";s:19:"nestingInListModule";s:1:"0";s:26:"overlayShortcutTranslation";s:1:"0";}',
             'indexed_search' => 'a:20:{s:8:"pdftools";s:9:"/usr/bin/";s:8:"pdf_mode";s:2:"20";s:5:"unzip";s:9:"/usr/bin/";s:6:"catdoc";s:9:"/usr/bin/";s:6:"xlhtml";s:9:"/usr/bin/";s:7:"ppthtml";s:9:"/usr/bin/";s:5:"unrtf";s:9:"/usr/bin/";s:18:"trackIpInStatistic";s:1:"2";s:9:"debugMode";s:1:"0";s:18:"fullTextDataLength";s:1:"0";s:23:"disableFrontendIndexing";s:1:"0";s:21:"enableMetaphoneSearch";s:1:"1";s:6:"minAge";s:2:"24";s:6:"maxAge";s:1:"0";s:16:"maxExternalFiles";s:1:"5";s:26:"useCrawlerForExternalFiles";s:1:"0";s:11:"flagBitMask";s:3:"192";s:16:"ignoreExtensions";s:0:"";s:17:"indexExternalURLs";s:1:"0";s:16:"useMysqlFulltext";s:1:"0";}',
             'news' => 'a:17:{s:13:"prependAtCopy";s:1:"1";s:6:"tagPid";s:1:"1";s:12:"rteForTeaser";s:1:"0";s:22:"contentElementRelation";s:1:"1";s:21:"contentElementPreview";s:1:"1";s:13:"manualSorting";s:1:"0";s:19:"categoryRestriction";s:0:"";s:34:"categoryBeGroupTceFormsRestriction";s:1:"0";s:19:"dateTimeNotRequired";s:1:"0";s:11:"archiveDate";s:4:"date";s:12:"mediaPreview";s:5:"false";s:20:"advancedMediaPreview";s:4:"true";s:24:"showAdministrationModule";s:1:"1";s:35:"hidePageTreeForAdministrationModule";s:1:"0";s:12:"showImporter";s:1:"0";s:18:"storageUidImporter";s:1:"1";s:22:"resourceFolderImporter";s:12:"/news_import";}',
             'pxa_newsletter_subscription' => 'a:1:{s:5:"table";s:7:"fe_user";}',
+            'realurl' => 'a:6:{s:10:"configFile";s:26:"typo3conf/realurl_conf.php";s:14:"enableAutoConf";s:1:"1";s:14:"autoConfFormat";s:1:"0";s:17:"segTitleFieldList";s:0:"";s:12:"enableDevLog";s:1:"0";s:10:"moduleIcon";s:1:"0";}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
+            'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
             'theme_t3kit' => 'a:3:{s:31:"fixedPostVarsConfigurationfFile";s:81:"typo3conf/ext/theme_t3kit/Configuration/Realurl/predefined_fixedPostVars_conf.php";s:25:"fixedPostVarsSaveFilePath";s:40:"typo3conf/realurl_fixedPostVars_conf.php";s:20:"additionalCharacters";s:0:"";}',
+            'themes' => 'a:2:{s:16:"categoriesToShow";s:118:"theme,languages,socialmedia,forms,extension,bootstrap,colors,font,meta,metaDefaults,pages,container,menu,header,footer";s:15:"constantsToHide";s:36:"dateFormat,timeFormat,dateTimeFormat";}',
         ],
     ],
     'EXTCONF' => [
@@ -48,6 +53,15 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'frontend_editing' => [
+            'contentEditableWrapperTagName' => 'div',
+            'seoProvider' => 'none',
+        ],
+        'go_maps_ext' => [
+            'footerJS' => '1',
+            'include_library' => '0',
+            'include_manually' => '0',
         ],
         'gridelements' => [
             'additionalStylesheet' => '',
@@ -98,6 +112,14 @@ return [
         'pxa_newsletter_subscription' => [
             'table' => 'fe_user',
         ],
+        'realurl' => [
+            'autoConfFormat' => '0',
+            'configFile' => 'typo3conf/realurl_conf.php',
+            'enableAutoConf' => '1',
+            'enableDevLog' => '0',
+            'moduleIcon' => '0',
+            'segTitleFieldList' => '',
+        ],
         'rsaauth' => [
             'temporaryDirectory' => '',
         ],
@@ -105,10 +127,17 @@ return [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',
         ],
+        'static_info_tables' => [
+            'enableManager' => '0',
+        ],
         'theme_t3kit' => [
             'additionalCharacters' => '',
             'fixedPostVarsConfigurationfFile' => 'typo3conf/ext/theme_t3kit/Configuration/Realurl/predefined_fixedPostVars_conf.php',
             'fixedPostVarsSaveFilePath' => 'typo3conf/realurl_fixedPostVars_conf.php',
+        ],
+        'themes' => [
+            'categoriesToShow' => 'theme,languages,socialmedia,forms,extension,bootstrap,colors,font,meta,metaDefaults,pages,container,menu,header,footer',
+            'constantsToHide' => 'dateFormat,timeFormat,dateTimeFormat',
         ],
     ],
     'FE' => [

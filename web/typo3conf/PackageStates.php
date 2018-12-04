@@ -125,26 +125,44 @@ return [
         'workspaces' => [
             'packagePath' => 'typo3/sysext/workspaces/',
         ],
+        'static_info_tables' => [
+            'packagePath' => 'typo3conf/ext/static_info_tables/',
+        ],
+        'typo3db_legacy' => [
+            'packagePath' => 'typo3conf/ext/typo3db_legacy/',
+        ],
+        'realurl' => [
+            'packagePath' => 'typo3conf/ext/realurl/',
+        ],
         'gridelements' => [
             'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
+        'themes' => [
+            'packagePath' => 'typo3conf/ext/themes/',
         ],
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
-        'theme_t3kit' => [
-            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        'frontend_editing' => [
+            'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
         'func' => [
             'packagePath' => 'typo3conf/ext/func/',
         ],
+        'go_maps_ext' => [
+            'packagePath' => 'typo3conf/ext/go_maps_ext/',
+        ],
         'pxa_cookie_bar' => [
             'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
+        ],
+        'pxa_form_enhancement' => [
+            'packagePath' => 'typo3conf/ext/pxa_form_enhancement/',
         ],
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
         ],
-        'typo3db_legacy' => [
-            'packagePath' => 'typo3conf/ext/typo3db_legacy/',
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
         ],
     ],
     'version' => 5,

@@ -4,8 +4,61 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb903bd99df2de1fc0e59c3e6112d7ee",
+    "content-hash": "1b4dcd86981ffcd6fbe163ce86d1c2ed",
     "packages": [
+        {
+            "name": "clickstorm/go_maps_ext",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mhirdes/go_maps_ext.git",
+                "reference": "989774cccd54e5744ca49c587a00873b5feb7e3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/989774cccd54e5744ca49c587a00873b5feb7e3e",
+                "reference": "989774cccd54e5744ca49c587a00873b5feb7e3e",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.5"
+            },
+            "replace": {
+                "go_maps_ext": "self.version",
+                "typo3-ter/go-maps-ext": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Clickstorm\\GoMapsExt\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Hirdes",
+                    "email": "hirdes@clickstorm.de",
+                    "homepage": "http://www.clickstorm.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Maps Extension. Simply insert a google map Version 3 inc. jQuery, calculate a route, images for markers, style maps, KML, categories, responsive and many more.",
+            "homepage": "http://www.clickstorm.de",
+            "keywords": [
+                "TYPO3 CMS",
+                "extbase",
+                "google",
+                "kml",
+                "map",
+                "marker",
+                "route",
+                "style"
+            ],
+            "time": "2018-10-17T14:38:43+00:00"
+        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
@@ -56,6 +109,84 @@
                 "text"
             ],
             "time": "2014-05-19T10:25:02+00:00"
+        },
+        {
+            "name": "dmitryd/typo3-realurl",
+            "version": "dev-typo3-v9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3kit/typo3-realurl",
+                "reference": "4269ec62d29e84003bec9cfc83e1a2f1cd35f42d"
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.0,<7.3.0",
+                "typo3/cms-core": ">=6.2.0,<10.0.0"
+            },
+            "conflict": {
+                "bednee/cooluri": ">0.0.1",
+                "helhum/realurl": ">0.0.1",
+                "typo3-ter/cooluri": ">=0.0.1",
+                "typo3-ter/simulatestatic": ">0.0.1"
+            },
+            "replace": {
+                "realurl": "self.version",
+                "typo3-ter/realurl": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.0"
+            },
+            "suggest": {
+                "friendsoftypo3/typo3db-legacy": "~1.0.0",
+                "typo3-ter/static-info-tables": ">=6.2.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DmitryDulepov\\Realurl\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DmitryDulepov\\Realurl\\Tests\\": "Tests/",
+                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "mkdir -p .Build/Web/typo3conf/ext/",
+                    "[ -L .Build/Web/typo3conf/ext/realurl ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/realurl"
+                ],
+                "test": [
+                    "export TYPO3_PATH_WEB=`pwd`/.Build/Web; export typo3DatabaseName='realurl'; export typo3DatabaseHost='127.0.0.1'; export typo3DatabaseUsername='realurl'; export typo3DatabasePassword=''; .Build/bin/phpunit --colors -c .Build/vendor/typo3/cms/typo3/sysext/core/Build/UnitTests.xml Tests/Unit/; .Build/bin/phpunit --colors -c .Build/vendor/typo3/cms/typo3/sysext/core/Build/FunctionalTests.xml Tests/Functional/"
+                ]
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Dulepov",
+                    "email": "dmitry.dulepov@gmail.com",
+                    "homepage": "http://www.dmitry-dulepov.com/"
+                }
+            ],
+            "description": "Speaking URLs for TYPO3",
+            "homepage": "https://github.com/dmitryd/typo3-realurl",
+            "keywords": [
+                "CMS",
+                "RealURL",
+                "TYPO3",
+                "realurl",
+                "typo3"
+            ],
+            "time": "2018-11-22T11:37:31+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -864,6 +995,62 @@
             "time": "2017-07-04T11:40:03+00:00"
         },
         {
+            "name": "friendsoftypo3/frontend-editing",
+            "version": "v1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/frontend_editing.git",
+                "reference": "06a92a0383f4738d5fe858dfe914acd90f9dab00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/frontend_editing/zipball/06a92a0383f4738d5fe858dfe914acd90f9dab00",
+                "reference": "06a92a0383f4738d5fe858dfe914acd90f9dab00",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "typo3/cms-core": "^8.7|| >=9.1.0 <9.6.0"
+            },
+            "replace": {
+                "frontend_editing": "self.version",
+                "typo3-ter/frontend-editing": "self.version"
+            },
+            "require-dev": {
+                "nimut/testing-framework": "^2.0",
+                "phpunit/phpunit": "^5.4",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "suggest": {
+                "clickstorm/cs_seo": "~2.1.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\FrontendEditing\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enable editors to work with the content in the most intuitive way possible",
+            "keywords": [
+                "TYPO3 CMS",
+                "frontend editing"
+            ],
+            "time": "2018-11-27T11:20:41+00:00"
+        },
+        {
             "name": "friendsoftypo3/typo3db-legacy",
             "version": "1.1.1",
             "source": {
@@ -909,8 +1096,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/georgringer/news",
+                "url": "https://github.com/georgringer/news.git",
                 "reference": "136983a4162be675f53778a5d4413d073ffa7e5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/136983a4162be675f53778a5d4413d073ffa7e5a",
+                "reference": "136983a4162be675f53778a5d4413d073ffa7e5a",
+                "shasum": ""
             },
             "require": {
                 "typo3/cms-core": "^8.7.13|| ^9.5.0"
@@ -946,34 +1139,24 @@
                     "GeorgRinger\\News\\": "Classes"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "GeorgRinger\\News\\Tests\\": "Tests"
-                }
-            },
-            "scripts": {
-                "post-autoload-dump": [
-                    "mkdir -p .Build/Web/typo3conf/ext/",
-                    "[ -L .Build/Web/typo3conf/ext/news ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/news"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Georg Ringer",
-                    "role": "Developer",
-                    "homepage": "http://montagmorgen.at"
+                    "homepage": "http://montagmorgen.at",
+                    "role": "Developer"
                 }
             ],
             "description": "Versatile news extension, based on extbase & fluid for TYPO3 CMS",
             "homepage": "http://montagmorgen.at",
             "keywords": [
-                "TYPO3",
                 "article",
                 "extension",
-                "news"
+                "news",
+                "typo3"
             ],
             "time": "2018-12-02T17:47:49+00:00"
         },
@@ -1497,12 +1680,101 @@
             "time": "2018-10-10T09:24:14+00:00"
         },
         {
+            "name": "pixelant/pxa-cookie-bar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pixelant/pxa_cookie_bar.git",
+                "reference": "d4c97d55854aadfa0bac87535e5b5b98453de359"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pixelant/pxa_cookie_bar/zipball/d4c97d55854aadfa0bac87535e5b5b98453de359",
+                "reference": "d4c97d55854aadfa0bac87535e5b5b98453de359",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "typo3/cms-core": "^8.7 || ^9.3"
+            },
+            "replace": {
+                "pxa_cookie_bar": "self.version",
+                "typo3-ter/pxa-cookie-bar": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "^3.2",
+                "typo3/testing-framework": "~1.2.2"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pixelant\\PxaCookieBar\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Text and link for page with cookie.",
+            "time": "2018-08-06T13:16:05+00:00"
+        },
+        {
+            "name": "pixelant/pxa-form-enhancement",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pixelant/pxa_form_enhancement.git",
+                "reference": "02c4e26b7f9fa765b0427961a4093ed6144b718b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pixelant/pxa_form_enhancement/zipball/02c4e26b7f9fa765b0427961a4093ed6144b718b",
+                "reference": "02c4e26b7f9fa765b0427961a4093ed6144b718b",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-form": "^8.7 || ^9.4"
+            },
+            "replace": {
+                "pxa_form_enhancement": "self.version",
+                "typo3-ter/pxa_form_enhancement": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Pixelant\\PxaFormEnhancement\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Pxa TYPO3 Form Enhancement",
+            "time": "2018-10-15T11:47:54+00:00"
+        },
+        {
             "name": "pixelant/pxa-newsletter-subscription",
             "version": "dev-typo3-v9",
             "source": {
                 "type": "git",
-                "url": "git@github.com:pixelant/pxa_newsletter_subscription.git",
+                "url": "https://github.com/pixelant/pxa_newsletter_subscription.git",
                 "reference": "dbb5ef49048e0dc8b7290c945aacfc23457273c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pixelant/pxa_newsletter_subscription/zipball/dbb5ef49048e0dc8b7290c945aacfc23457273c4",
+                "reference": "dbb5ef49048e0dc8b7290c945aacfc23457273c4",
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.2.0,<7.3.0",
@@ -1518,6 +1790,7 @@
                     "Pixelant\\PxaNewsletterSubscription\\": "Classes/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
@@ -1910,6 +2183,46 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2016-02-11T07:05:27+00:00"
+        },
+        {
+            "name": "sjbr/static-info-tables",
+            "version": "6.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git",
+                "reference": "84dc3bb63fb8fa1acfd95214a2f3ae088c6cf45d"
+            },
+            "require": {
+                "php": ">= 7.0, <7.3",
+                "typo3/cms-core": ">=8.7, <10.0"
+            },
+            "replace": {
+                "static_info_tables": "self.version",
+                "typo3-ter/static-info-tables": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "SJBR\\StaticInfoTables\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Stanislas Rolland",
+                    "homepage": "http://www.sjbr.ca",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Data and API for countries, languages and currencies for use in TYPO3 CMS.",
+            "homepage": "https://forge.typo3.org/projects/extension-static_info_tables",
+            "keywords": [
+                "typo3"
+            ],
+            "time": "2018-10-25T14:16:10+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2776,20 +3089,32 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "dev-9testloc",
+            "version": "dev-dmh",
             "source": {
                 "type": "git",
-                "url": "https://github.com/t3kit/theme_t3kit",
-                "reference": "bc112b8e2375b94b1946437ec4a1f8b01dff7b52"
+                "url": "/Users/dmh/t3kit/theme_t3kit",
+                "reference": "d0b5b8c50196da8012cda68dc807c17a660fcf34"
             },
             "require": {
+                "clickstorm/go_maps_ext": "dev-master",
+                "friendsoftypo3/frontend-editing": "~1.4.3",
                 "georgringer/news": "dev-master",
                 "gridelementsteam/gridelements": "dev-master",
                 "php": "^7.2",
-                "typo3/minimal": "^9.5"
-            },
-            "suggest": {
-                "apache-solr-for-typo3/solr": "dev-master"
+                "pixelant/pxa-cookie-bar": "dev-master",
+                "pixelant/pxa-form-enhancement": "dev-master",
+                "pixelant/pxa-newsletter-subscription": "dev-typo3-v9",
+                "typo3/cms-backend": "~9.5.1",
+                "typo3/cms-core": "~9.5.1",
+                "typo3/cms-extbase": "~9.5.1",
+                "typo3/cms-extensionmanager": "~9.5.1",
+                "typo3/cms-felogin": "~9.5.1",
+                "typo3/cms-fluid": "~9.5.1",
+                "typo3/cms-fluid-styled-content": "~9.5.1",
+                "typo3/cms-form": "~9.5.1",
+                "typo3/cms-frontend": "~9.5.1",
+                "typo3/cms-install": "~9.5.1",
+                "typo3/cms-rte-ckeditor": "~9.5.1"
             },
             "type": "typo3-cms-extension",
             "autoload": {
@@ -2820,41 +3145,56 @@
                 "source": "https://github.com/t3kit/theme_t3kit",
                 "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
             },
-            "time": "2018-11-09T08:43:11+00:00"
+            "time": "2018-12-04T14:59:52+00:00"
         },
         {
-            "name": "typo3-ter/pxa-cookie-bar",
-            "version": "2.1.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://extensions.typo3.org/extension/download/pxa_cookie_bar/2.1.0/zip/",
-                "reference": null,
-                "shasum": null
+            "name": "typo3-themes/themes",
+            "version": "dev-typo3_9.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3kit/themes",
+                "reference": "7fa1a5c42cdf53d94a6dd04b0ee32fad1c8f6e18"
             },
             "require": {
-                "typo3/cms-core": ">= 8.7.0, <= 9.9.99"
+                "gridelementsteam/gridelements": "dev-master",
+                "sjbr/static-info-tables": ">=6.4.0,<6.7.99",
+                "typo3/cms-core": ">=8.7.0,<10.0.0"
+            },
+            "conflict": {
+                "typo3-ter/yaml-parser": "*"
             },
             "replace": {
-                "pxa_cookie_bar": "self.version",
-                "typo3-ter/pxa_cookie_bar": "self.version"
+                "themes": "self.version",
+                "typo3-ter/themes": "self.version"
             },
             "type": "typo3-cms-extension",
             "autoload": {
                 "psr-4": {
-                    "Pixelant\\PxaCookieBar\\": "Classes/"
+                    "KayStrobach\\Themes\\": "Classes/"
                 }
             },
-            "authors": [
-                {
-                    "name": "Andriy Oprysko, Tony",
-                    "email": "andriy@pixelant.se",
-                    "company": "Pixelant",
-                    "username": "pixelantdeveloper"
+            "autoload-dev": {
+                "psr-4": {
+                    "KayStrobach\\Themes\\Tests\\": "tests/"
                 }
+            },
+            "license": [
+                "GPL-2.0+"
             ],
-            "description": "Text and link for page with cookie.",
-            "homepage": "https://extensions.typo3.org/extension/pxa_cookie_bar/",
-            "time": "2018-08-06T15:18:07+00:00"
+            "description": "TYPO3 THEMES",
+            "homepage": "http://typo3-themes.org",
+            "keywords": [
+                "CUSTOMIZE",
+                "FLUID",
+                "THEMES",
+                "THEMES",
+                "TYPO3 CMS",
+                "TYPO3 THEMES"
+            ],
+            "support": {
+                "issues": "https://github.com/typo3-themes/themes/issues"
+            },
+            "time": "2018-11-30T13:05:08+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -5307,56 +5647,6 @@
             "time": "2018-10-30T10:45:30+00:00"
         },
         {
-            "name": "typo3/minimal",
-            "version": "v9.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3/minimal.git",
-                "reference": "6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/minimal/zipball/6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc",
-                "reference": "6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-backend": "9.5.*@dev",
-                "typo3/cms-core": "9.5.*@dev",
-                "typo3/cms-extbase": "9.5.*@dev",
-                "typo3/cms-extensionmanager": "9.5.*@dev",
-                "typo3/cms-filelist": "9.5.*@dev",
-                "typo3/cms-fluid": "9.5.*@dev",
-                "typo3/cms-frontend": "9.5.*@dev",
-                "typo3/cms-install": "9.5.*@dev",
-                "typo3/cms-recordlist": "9.5.*@dev"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "9.5.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "The TYPO3 Community",
-                    "homepage": "https://typo3.org/community/",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "TYPO3 CMS Core Team",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Minimal required set of TYPO3 extensions",
-            "time": "2018-09-11T09:01:10+00:00"
-        },
-        {
             "name": "typo3/phar-stream-wrapper",
             "version": "v3.0.1",
             "source": {
@@ -6637,9 +6927,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "georgringer/news": 20,
+        "dmitryd/typo3-realurl": 20,
+        "typo3-themes/themes": 20,
         "t3kit/theme-t3kit": 20,
-        "pixelant/pxa-newsletter-subscription": 20,
         "t3kit/db": 20
     },
     "prefer-stable": true,
