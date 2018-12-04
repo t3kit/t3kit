@@ -137,6 +137,12 @@ return [
         'func' => [
             'packagePath' => 'typo3conf/ext/func/',
         ],
+        'pxa_cookie_bar' => [
+            'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
+        ],
+        'pxa_newsletter_subscription' => [
+            'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
+        ],
         'typo3db_legacy' => [
             'packagePath' => 'typo3conf/ext/typo3db_legacy/',
         ],
