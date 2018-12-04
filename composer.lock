@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b4dcd86981ffcd6fbe163ce86d1c2ed",
+    "content-hash": "69e332d0f03b250a872aa0ecb007bcb0",
     "packages": [
         {
             "name": "clickstorm/go_maps_ext",
@@ -3089,11 +3089,11 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "dev-dmh",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/Users/dmh/t3kit/theme_t3kit",
-                "reference": "d0b5b8c50196da8012cda68dc807c17a660fcf34"
+                "url": "https://github.com/t3kit/theme_t3kit",
+                "reference": "c737feb4f07291143e59229248b3c56e3cb9275c"
             },
             "require": {
                 "clickstorm/go_maps_ext": "dev-master",
@@ -3145,7 +3145,7 @@
                 "source": "https://github.com/t3kit/theme_t3kit",
                 "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
             },
-            "time": "2018-12-04T14:59:52+00:00"
+            "time": "2018-12-04T15:03:26+00:00"
         },
         {
             "name": "typo3-themes/themes",
