@@ -1097,12 +1097,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/georgringer/news.git",
-                "reference": "136983a4162be675f53778a5d4413d073ffa7e5a"
+                "reference": "6b97b9f06a0c6edba77ba193dd76b9e27f23e20f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/news/zipball/136983a4162be675f53778a5d4413d073ffa7e5a",
-                "reference": "136983a4162be675f53778a5d4413d073ffa7e5a",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/6b97b9f06a0c6edba77ba193dd76b9e27f23e20f",
+                "reference": "6b97b9f06a0c6edba77ba193dd76b9e27f23e20f",
                 "shasum": ""
             },
             "require": {
@@ -1158,7 +1158,7 @@
                 "news",
                 "typo3"
             ],
-            "time": "2018-12-02T17:47:49+00:00"
+            "time": "2018-12-05T08:02:17+00:00"
         },
         {
             "name": "gridelementsteam/gridelements",
@@ -1319,16 +1319,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.5.0",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "53662d6688033a5eccde987bdd5a4a98ebe2d952"
+                "reference": "9f83dded91781a01c63574e387eaa769be769115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53662d6688033a5eccde987bdd5a4a98ebe2d952",
-                "reference": "53662d6688033a5eccde987bdd5a4a98ebe2d952",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
+                "reference": "9f83dded91781a01c63574e387eaa769be769115",
                 "shasum": ""
             },
             "require": {
@@ -1382,7 +1382,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-12-03T05:07:51+00:00"
+            "time": "2018-12-04T20:46:45+00:00"
         },
         {
             "name": "helhum/config-loader",
@@ -1681,21 +1681,21 @@
         },
         {
             "name": "pixelant/pxa-cookie-bar",
-            "version": "dev-master",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelant/pxa_cookie_bar.git",
-                "reference": "d4c97d55854aadfa0bac87535e5b5b98453de359"
+                "reference": "35bb7b88c87fcd3e2fd57dcea72da8b63080e346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelant/pxa_cookie_bar/zipball/d4c97d55854aadfa0bac87535e5b5b98453de359",
-                "reference": "d4c97d55854aadfa0bac87535e5b5b98453de359",
+                "url": "https://api.github.com/repos/pixelant/pxa_cookie_bar/zipball/35bb7b88c87fcd3e2fd57dcea72da8b63080e346",
+                "reference": "35bb7b88c87fcd3e2fd57dcea72da8b63080e346",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0",
-                "typo3/cms-core": "^8.7 || ^9.3"
+                "typo3/cms-core": "^8.7.0|| ^9.5.0"
             },
             "replace": {
                 "pxa_cookie_bar": "self.version",
@@ -1726,7 +1726,7 @@
                 "GPL-2.0+"
             ],
             "description": "Text and link for page with cookie.",
-            "time": "2018-08-06T13:16:05+00:00"
+            "time": "2018-12-05T15:57:57+00:00"
         },
         {
             "name": "pixelant/pxa-form-enhancement",
@@ -1734,12 +1734,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelant/pxa_form_enhancement.git",
-                "reference": "02c4e26b7f9fa765b0427961a4093ed6144b718b"
+                "reference": "7f1fb4651b81735fe1776ebcb085f3cc9735ee05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelant/pxa_form_enhancement/zipball/02c4e26b7f9fa765b0427961a4093ed6144b718b",
-                "reference": "02c4e26b7f9fa765b0427961a4093ed6144b718b",
+                "url": "https://api.github.com/repos/pixelant/pxa_form_enhancement/zipball/7f1fb4651b81735fe1776ebcb085f3cc9735ee05",
+                "reference": "7f1fb4651b81735fe1776ebcb085f3cc9735ee05",
                 "shasum": ""
             },
             "require": {
@@ -1760,20 +1760,20 @@
                 "GPL-2.0+"
             ],
             "description": "Pxa TYPO3 Form Enhancement",
-            "time": "2018-10-15T11:47:54+00:00"
+            "time": "2018-12-05T15:37:52+00:00"
         },
         {
             "name": "pixelant/pxa-newsletter-subscription",
-            "version": "dev-typo3-v9",
+            "version": "9.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelant/pxa_newsletter_subscription.git",
-                "reference": "dbb5ef49048e0dc8b7290c945aacfc23457273c4"
+                "reference": "ac7162747ea4eb48232cd4d1caf5caa13acc49fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelant/pxa_newsletter_subscription/zipball/dbb5ef49048e0dc8b7290c945aacfc23457273c4",
-                "reference": "dbb5ef49048e0dc8b7290c945aacfc23457273c4",
+                "url": "https://api.github.com/repos/pixelant/pxa_newsletter_subscription/zipball/ac7162747ea4eb48232cd4d1caf5caa13acc49fe",
+                "reference": "ac7162747ea4eb48232cd4d1caf5caa13acc49fe",
                 "shasum": ""
             },
             "require": {
@@ -1796,7 +1796,7 @@
             ],
             "description": "Newsletter Subscription",
             "homepage": "http://www.pixelant.net/",
-            "time": "2018-11-22T12:15:07+00:00"
+            "time": "2018-12-05T15:26:35+00:00"
         },
         {
             "name": "psr/cache",
@@ -3093,7 +3093,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit",
-                "reference": "c737feb4f07291143e59229248b3c56e3cb9275c"
+                "reference": "c112243c815a6a272e16b8fe4c0ad3e912c434b1"
             },
             "require": {
                 "clickstorm/go_maps_ext": "dev-master",
@@ -3101,9 +3101,9 @@
                 "georgringer/news": "dev-master",
                 "gridelementsteam/gridelements": "dev-master",
                 "php": "^7.2",
-                "pixelant/pxa-cookie-bar": "dev-master",
+                "pixelant/pxa-cookie-bar": "~2.1.1",
                 "pixelant/pxa-form-enhancement": "dev-master",
-                "pixelant/pxa-newsletter-subscription": "dev-typo3-v9",
+                "pixelant/pxa-newsletter-subscription": "~9.0.2",
                 "typo3/cms-backend": "~9.5.1",
                 "typo3/cms-core": "~9.5.1",
                 "typo3/cms-extbase": "~9.5.1",
@@ -3145,7 +3145,7 @@
                 "source": "https://github.com/t3kit/theme_t3kit",
                 "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
             },
-            "time": "2018-12-04T15:03:26+00:00"
+            "time": "2018-12-05T16:53:36+00:00"
         },
         {
             "name": "typo3-themes/themes",
