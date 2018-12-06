@@ -24,14 +24,6 @@
   },
   "repositories": [
     {
-      "type": "composer",
-      "url": "https://composer.typo3.org/"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/t3kit/theme_t3kit"
-    },
-    {
       "type": "git",
       "url": "https://github.com/t3kit/typo3-realurl"
     },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69e332d0f03b250a872aa0ecb007bcb0",
+    "content-hash": "fb9a9e0694b322418d08f6226fe4d570",
     "packages": [
         {
             "name": "clickstorm/go_maps_ext",
@@ -2426,16 +2426,16 @@
         },
         {
             "name": "symfony/contracts",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "3edf0ab943d1985a356721952cba36ff31bd6e5f"
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/3edf0ab943d1985a356721952cba36ff31bd6e5f",
-                "reference": "3edf0ab943d1985a356721952cba36ff31bd6e5f",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
                 "shasum": ""
             },
             "require": {
@@ -2490,7 +2490,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-11-24T09:35:08+00:00"
+            "time": "2018-12-05T08:06:11+00:00"
         },
         {
             "name": "symfony/expression-language",
@@ -3092,8 +3092,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/t3kit/theme_t3kit",
-                "reference": "c112243c815a6a272e16b8fe4c0ad3e912c434b1"
+                "url": "https://github.com/t3kit/theme_t3kit.git",
+                "reference": "7c8db4e4b1eb81ac1732f40456dd43ca76a07378"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/7c8db4e4b1eb81ac1732f40456dd43ca76a07378",
+                "reference": "7c8db4e4b1eb81ac1732f40456dd43ca76a07378",
+                "shasum": ""
             },
             "require": {
                 "clickstorm/go_maps_ext": "dev-master",
@@ -3122,6 +3128,7 @@
                     "T3kit\\themeT3kit\\": "Classes/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
@@ -3139,13 +3146,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "support": {
-                "issues": "https://github.com/t3kit/theme_t3kit/issues",
-                "forum": "https://typo3.slack.com/messages/t3kit",
-                "source": "https://github.com/t3kit/theme_t3kit",
-                "docs": "https://github.com/t3kit/t3kit/blob/master/README.md"
-            },
-            "time": "2018-12-05T16:53:36+00:00"
+            "time": "2018-12-06T13:31:00+00:00"
         },
         {
             "name": "typo3-themes/themes",
