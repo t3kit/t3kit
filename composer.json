@@ -30,10 +30,6 @@
     {
       "type": "git",
       "url": "https://github.com/t3kit/themes"
-    },
-    {
-      "type": "git",
-      "url": "git@github.com:pixelant/gridelements.git"
     }
   ],
   "minimum-stability": "dev",

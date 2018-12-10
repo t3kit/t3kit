@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a82b40c8dae4dc20d271faecde9ecb7c",
+    "content-hash": "fb9a9e0694b322418d08f6226fe4d570",
     "packages": [
         {
             "name": "clickstorm/go_maps_ext",
@@ -1162,17 +1162,17 @@
         },
         {
             "name": "gridelementsteam/gridelements",
-            "version": "dev-master",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:pixelant/gridelements.git",
-                "reference": "cea5f6d78f4d83648b6b592432588ef936f10821"
+                "url": "https://git.typo3.org/TYPO3CMS/Extensions/gridelements.git",
+                "reference": "53530d181d0b55631e3a2a9441b173db8f3c10db"
             },
             "require": {
-                "typo3/cms-backend": "^9.3 || dev-master",
-                "typo3/cms-core": "^9.3 || dev-master",
-                "typo3/cms-frontend": "^9.3 || dev-master",
-                "typo3/cms-recordlist": "^9.3 || dev-master"
+                "typo3/cms-backend": "^9.5",
+                "typo3/cms-core": "^9.5",
+                "typo3/cms-frontend": "^9.5",
+                "typo3/cms-recordlist": "^9.5"
             },
             "conflict": {
                 "jfmulticontent": "*",
@@ -1188,6 +1188,7 @@
                     "GridElementsTeam\\Gridelements\\": "Classes/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1195,13 +1196,10 @@
             "homepage": "https://forge.typo3.org/projects/extension-gridelements2",
             "keywords": [
                 "Gridelements",
-                "Grids",
-                "TYPO3 CMS"
+                "TYPO3 CMS",
+                "grids"
             ],
-            "support": {
-                "issues": "https://forge.typo3.org/projects/extension-gridelements2/issues"
-            },
-            "time": "2018-12-06T12:12:21+00:00"
+            "time": "2018-12-10T19:19:01+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3209,19 +3207,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "7c8db4e4b1eb81ac1732f40456dd43ca76a07378"
+                "reference": "30023da3ba58d50c0d136ff7841cdb1e9b1d13f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/7c8db4e4b1eb81ac1732f40456dd43ca76a07378",
-                "reference": "7c8db4e4b1eb81ac1732f40456dd43ca76a07378",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/30023da3ba58d50c0d136ff7841cdb1e9b1d13f6",
+                "reference": "30023da3ba58d50c0d136ff7841cdb1e9b1d13f6",
                 "shasum": ""
             },
             "require": {
                 "clickstorm/go_maps_ext": "dev-master",
                 "friendsoftypo3/frontend-editing": "~1.4.3",
                 "georgringer/news": "dev-master",
-                "gridelementsteam/gridelements": "dev-master",
+                "gridelementsteam/gridelements": "~9.0.0",
                 "php": "^7.2",
                 "pixelant/pxa-cookie-bar": "~2.1.1",
                 "pixelant/pxa-form-enhancement": "dev-master",
@@ -3262,7 +3260,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2018-12-06T13:31:00+00:00"
+            "time": "2018-12-10T19:54:33+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -3270,10 +3268,9 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/themes",
-                "reference": "bb26d8bcde8cb5f6a4f2fec95341c9ba4d5e83f4"
+                "reference": "e167b23cd5d5cc07ad6b8aefcf6c61479d845173"
             },
             "require": {
-                "gridelementsteam/gridelements": "dev-master",
                 "sjbr/static-info-tables": ">=6.4.0,<6.7.99",
                 "typo3/cms-core": ">=8.7.0,<10.0.0"
             },
@@ -3311,7 +3308,7 @@
             "support": {
                 "issues": "https://github.com/typo3-themes/themes/issues"
             },
-            "time": "2018-12-10T09:36:42+00:00"
+            "time": "2018-12-10T19:50:17+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
