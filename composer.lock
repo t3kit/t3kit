@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "199ea99fdfa1f76592fbe6c58e6b4745",
+    "content-hash": "a82b40c8dae4dc20d271faecde9ecb7c",
     "packages": [
         {
             "name": "clickstorm/go_maps_ext",
@@ -1165,7 +1165,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pixelant/gridelements.git",
+                "url": "git@github.com:pixelant/gridelements.git",
                 "reference": "cea5f6d78f4d83648b6b592432588ef936f10821"
             },
             "require": {
@@ -3270,7 +3270,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/themes",
-                "reference": "119e2f901a7d3a83b23b0bc43571a185d85b0c07"
+                "reference": "bb26d8bcde8cb5f6a4f2fec95341c9ba4d5e83f4"
             },
             "require": {
                 "gridelementsteam/gridelements": "dev-master",
@@ -3311,7 +3311,7 @@
             "support": {
                 "issues": "https://github.com/typo3-themes/themes/issues"
             },
-            "time": "2018-12-10T08:15:40+00:00"
+            "time": "2018-12-10T09:36:42+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

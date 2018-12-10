@@ -33,7 +33,7 @@
     },
     {
       "type": "git",
-      "url": "https://github.com/pixelant/gridelements.git"
+      "url": "git@github.com:pixelant/gridelements.git"
     }
   ],
   "minimum-stability": "dev",
