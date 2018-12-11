@@ -3268,7 +3268,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/themes",
-                "reference": "e167b23cd5d5cc07ad6b8aefcf6c61479d845173"
+                "reference": "7f69719e805910510c5be6f116abcabad552e146"
             },
             "require": {
                 "sjbr/static-info-tables": ">=6.4.0,<6.7.99",
@@ -3308,7 +3308,7 @@
             "support": {
                 "issues": "https://github.com/typo3-themes/themes/issues"
             },
-            "time": "2018-12-10T19:50:17+00:00"
+            "time": "2018-12-11T13:34:46+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
