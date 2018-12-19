@@ -29,6 +29,7 @@ return [
             'news' => 'a:17:{s:13:"prependAtCopy";s:1:"1";s:6:"tagPid";s:1:"1";s:12:"rteForTeaser";s:1:"0";s:22:"contentElementRelation";s:1:"1";s:21:"contentElementPreview";s:1:"1";s:13:"manualSorting";s:1:"0";s:19:"categoryRestriction";s:0:"";s:34:"categoryBeGroupTceFormsRestriction";s:1:"0";s:19:"dateTimeNotRequired";s:1:"0";s:11:"archiveDate";s:4:"date";s:12:"mediaPreview";s:5:"false";s:20:"advancedMediaPreview";s:4:"true";s:24:"showAdministrationModule";s:1:"1";s:35:"hidePageTreeForAdministrationModule";s:1:"0";s:12:"showImporter";s:1:"0";s:18:"storageUidImporter";s:1:"1";s:22:"resourceFolderImporter";s:12:"/news_import";}',
             'pxa_newsletter_subscription' => 'a:1:{s:5:"table";s:7:"fe_user";}',
             'realurl' => 'a:6:{s:10:"configFile";s:26:"typo3conf/realurl_conf.php";s:14:"enableAutoConf";s:1:"1";s:14:"autoConfFormat";s:1:"0";s:17:"segTitleFieldList";s:0:"";s:12:"enableDevLog";s:1:"0";s:10:"moduleIcon";s:1:"0";}',
+            'realurl_404_multilingual' => 'a:1:{s:4:"mode";s:1:"1";}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
             'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
@@ -119,6 +120,9 @@ return [
             'enableDevLog' => '0',
             'moduleIcon' => '0',
             'segTitleFieldList' => '',
+        ],
+        'realurl_404_multilingual' => [
+            'mode' => '1',
         ],
         'rsaauth' => [
             'temporaryDirectory' => '',

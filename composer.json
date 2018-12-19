@@ -29,6 +29,10 @@
     },
     {
       "type": "git",
+      "url": "https://github.com/t3kit/realurl_404_multilingual"
+    },
+    {
+      "type": "git",
       "url": "https://github.com/t3kit/themes"
     }
   ],
@@ -88,6 +92,7 @@
 
     "dmitryd/typo3-realurl": "dev-typo3-v9",
     "typo3-themes/themes": "dev-typo3_9.x",
+    "svewap/realurl-404-multilingual": "dev-typo3-v9",
 
     "t3kit/theme-t3kit": "dev-master"
   },

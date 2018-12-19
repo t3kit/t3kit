@@ -143,6 +143,9 @@ return [
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
+        'realurl_404_multilingual' => [
+            'packagePath' => 'typo3conf/ext/realurl_404_multilingual/',
+        ],
         'frontend_editing' => [
             'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
