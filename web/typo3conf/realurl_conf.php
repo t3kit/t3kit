@@ -119,7 +119,7 @@ $fixedPostVarsConfigurationUtility = \TYPO3\CMS\Core\Utility\GeneralUtility::mak
 );
 $fixedPostVarsFile = $fixedPostVarsConfigurationUtility->getSaveFilePath();
 if (file_exists($fixedPostVarsFile)) {
-    \TYPO3\CMS\Core\Utility\GeneralUtility::requireOnce($fixedPostVarsFile);
+    require_once $fixedPostVarsFile;
 }
 
 // cs_seo sitemap.xml and robots.txt
