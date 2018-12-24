@@ -21,6 +21,7 @@ return [
     'EXT' => [
         'extConf' => [
             'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
+            'dyncss' => 'a:2:{s:5:"state";s:0:"";s:15:"enableDebugMode";s:0:"";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
             'frontend_editing' => 'a:2:{s:11:"seoProvider";s:4:"none";s:29:"contentEditableWrapperTagName";s:3:"div";}',
             'go_maps_ext' => 'a:3:{s:15:"include_library";s:1:"0";s:16:"include_manually";s:1:"0";s:8:"footerJS";s:1:"1";}',
@@ -50,6 +51,10 @@ return [
             'loginFootnote' => '',
             'loginHighlightColor' => '',
             'loginLogo' => '',
+        ],
+        'dyncss' => [
+            'enableDebugMode' => '',
+            'state' => '',
         ],
         'extensionmanager' => [
             'automaticInstallation' => '1',

@@ -140,6 +140,12 @@ return [
         'themes' => [
             'packagePath' => 'typo3conf/ext/themes/',
         ],
+        'dyncss' => [
+            'packagePath' => 'typo3conf/ext/dyncss/',
+        ],
+        'dyncss_less' => [
+            'packagePath' => 'typo3conf/ext/dyncss_less/',
+        ],
         'news' => [
             'packagePath' => 'typo3conf/ext/news/',
         ],
