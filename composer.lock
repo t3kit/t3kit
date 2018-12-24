@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1beaded544e580122519925ca1d10353",
+    "content-hash": "7a7fdaaf48ab8f8364c6c5a1e1fdaea3",
     "packages": [
         {
             "name": "clickstorm/go_maps_ext",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhirdes/go_maps_ext.git",
-                "reference": "989774cccd54e5744ca49c587a00873b5feb7e3e"
+                "reference": "b18d881aecff00b2dba94fa06b5f5cc09f8e64c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/989774cccd54e5744ca49c587a00873b5feb7e3e",
-                "reference": "989774cccd54e5744ca49c587a00873b5feb7e3e",
+                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/b18d881aecff00b2dba94fa06b5f5cc09f8e64c9",
+                "reference": "b18d881aecff00b2dba94fa06b5f5cc09f8e64c9",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "route",
                 "style"
             ],
-            "time": "2018-10-17T14:38:43+00:00"
+            "time": "2018-12-21T15:01:11+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -1097,12 +1097,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/georgringer/news.git",
-                "reference": "55376019b8aa6b0ee89694a5a4be03c2f1fa97b3"
+                "reference": "8e31439aabbc3baed2e31decc5ba717f28f2b7af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/news/zipball/55376019b8aa6b0ee89694a5a4be03c2f1fa97b3",
-                "reference": "55376019b8aa6b0ee89694a5a4be03c2f1fa97b3",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/8e31439aabbc3baed2e31decc5ba717f28f2b7af",
+                "reference": "8e31439aabbc3baed2e31decc5ba717f28f2b7af",
                 "shasum": ""
             },
             "require": {
@@ -1158,7 +1158,7 @@
                 "news",
                 "typo3"
             ],
-            "time": "2018-12-18T20:23:55+00:00"
+            "time": "2018-12-22T21:47:46+00:00"
         },
         {
             "name": "gridelementsteam/gridelements",
@@ -1579,6 +1579,87 @@
                 "typo3 console"
             ],
             "time": "2018-12-09T12:06:13+00:00"
+        },
+        {
+            "name": "kaystrobach/dyncss",
+            "version": "dev-typo3_9.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3kit/TYPO3.dyncss",
+                "reference": "363312903bfcbd5ddb95759eed309f16cafb5635"
+            },
+            "require": {
+                "typo3/cms-core": ">=7.6.15,<8.8 || ^9.3"
+            },
+            "replace": {
+                "dyncss": "self.version",
+                "typo3-ter/dyncss": "self.version"
+            },
+            "require-dev": {
+                "typo3/cms-core": "^8.7"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KayStrobach\\Dyncss\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Compile your CSS dynamically with DynCss Adapters.",
+            "homepage": "http://donate.kay-strobach.de/",
+            "keywords": [
+                "dyncss"
+            ],
+            "time": "2018-08-13T13:54:26+00:00"
+        },
+        {
+            "name": "kaystrobach/dyncss-less",
+            "version": "dev-typo3_9.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t3kit/TYPO3.dyncss_less",
+                "reference": "990c47b30ea43133d2009f4ed0b476f02104e7de"
+            },
+            "require": {
+                "kaystrobach/dyncss": "*",
+                "typo3/cms-core": ">=7.6.15,<8.8 || ^9.3"
+            },
+            "replace": {
+                "dyncss_less": "self.version",
+                "typo3-ter/dyncss-less": "self.version",
+                "typo3-ter/dyncss_less": "self.version"
+            },
+            "require-dev": {
+                "kaystrobach/dyncss": "^0.8.0",
+                "typo3/cms": "^8.6"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KayStrobach\\DyncssLess\\": "Classes/"
+                }
+            },
+            "description": "DynCss-Parser",
+            "homepage": "http://donate.kay-strobach.de/",
+            "keywords": [
+                "dyncss",
+                "less"
+            ],
+            "time": "2018-08-13T14:03:14+00:00"
         },
         {
             "name": "mso/idna-convert",
@@ -2187,11 +2268,11 @@
         },
         {
             "name": "sjbr/static-info-tables",
-            "version": "6.7.2",
+            "version": "6.7.3",
             "source": {
                 "type": "git",
                 "url": "https://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git",
-                "reference": "84dc3bb63fb8fa1acfd95214a2f3ae088c6cf45d"
+                "reference": "ee45f0138f9dfaac939f96198bf275e05c3d8543"
             },
             "require": {
                 "php": ">= 7.0, <7.3",
@@ -2223,7 +2304,7 @@
             "keywords": [
                 "typo3"
             ],
-            "time": "2018-10-25T14:16:10+00:00"
+            "time": "2018-12-19T18:40:46+00:00"
         },
         {
             "name": "svewap/realurl-404-multilingual",
@@ -6973,6 +7054,8 @@
         "dmitryd/typo3-realurl": 20,
         "typo3-themes/themes": 20,
         "svewap/realurl-404-multilingual": 20,
+        "kaystrobach/dyncss": 20,
+        "kaystrobach/dyncss-less": 20,
         "t3kit/theme-t3kit": 20,
         "t3kit/db": 20
     },
