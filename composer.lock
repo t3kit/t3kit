@@ -4,8 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a7fdaaf48ab8f8364c6c5a1e1fdaea3",
+    "content-hash": "e87d7d8b38bf5447619eb931bd355c95",
     "packages": [
+        {
+            "name": "clickstorm/cs_seo",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clickstorm/cs_seo.git",
+                "reference": "ec1a357277c28a17bfe68640e48c29873d12baeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clickstorm/cs_seo/zipball/ec1a357277c28a17bfe68640e48c29873d12baeb",
+                "reference": "ec1a357277c28a17bfe68640e48c29873d12baeb",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.5",
+                "typo3/cms-seo": "^9.5"
+            },
+            "replace": {
+                "cs_seo": "self.version"
+            },
+            "require-dev": {
+                "nimut/testing-framework": "*"
+            },
+            "suggest": {
+                "typo3/scheduler": "^9.5"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Clickstorm\\CsSeo\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "[clickstorm] SEO",
+            "homepage": "https://www.clickstorm.de",
+            "keywords": [
+                "clickstorm",
+                "extension",
+                "seo",
+                "typo3"
+            ],
+            "time": "2018-12-21T11:58:05+00:00"
+        },
         {
             "name": "clickstorm/go_maps_ext",
             "version": "dev-master",
@@ -109,84 +156,6 @@
                 "text"
             ],
             "time": "2014-05-19T10:25:02+00:00"
-        },
-        {
-            "name": "dmitryd/typo3-realurl",
-            "version": "dev-typo3-v9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/t3kit/typo3-realurl",
-                "reference": "4269ec62d29e84003bec9cfc83e1a2f1cd35f42d"
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.4.0,<7.3.0",
-                "typo3/cms-core": ">=6.2.0,<10.0.0"
-            },
-            "conflict": {
-                "bednee/cooluri": ">0.0.1",
-                "helhum/realurl": ">0.0.1",
-                "typo3-ter/cooluri": ">=0.0.1",
-                "typo3-ter/simulatestatic": ">0.0.1"
-            },
-            "replace": {
-                "realurl": "self.version",
-                "typo3-ter/realurl": "self.version"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8.0"
-            },
-            "suggest": {
-                "friendsoftypo3/typo3db-legacy": "~1.0.0",
-                "typo3-ter/static-info-tables": ">=6.2.0"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                    "web-dir": ".Build/Web"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DmitryDulepov\\Realurl\\": "Classes"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "DmitryDulepov\\Realurl\\Tests\\": "Tests/",
-                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
-                }
-            },
-            "scripts": {
-                "post-autoload-dump": [
-                    "mkdir -p .Build/Web/typo3conf/ext/",
-                    "[ -L .Build/Web/typo3conf/ext/realurl ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/realurl"
-                ],
-                "test": [
-                    "export TYPO3_PATH_WEB=`pwd`/.Build/Web; export typo3DatabaseName='realurl'; export typo3DatabaseHost='127.0.0.1'; export typo3DatabaseUsername='realurl'; export typo3DatabasePassword=''; .Build/bin/phpunit --colors -c .Build/vendor/typo3/cms/typo3/sysext/core/Build/UnitTests.xml Tests/Unit/; .Build/bin/phpunit --colors -c .Build/vendor/typo3/cms/typo3/sysext/core/Build/FunctionalTests.xml Tests/Functional/"
-                ]
-            },
-            "license": [
-                "GPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Dmitry Dulepov",
-                    "email": "dmitry.dulepov@gmail.com",
-                    "homepage": "http://www.dmitry-dulepov.com/"
-                }
-            ],
-            "description": "Speaking URLs for TYPO3",
-            "homepage": "https://github.com/dmitryd/typo3-realurl",
-            "keywords": [
-                "CMS",
-                "RealURL",
-                "TYPO3",
-                "realurl",
-                "typo3"
-            ],
-            "time": "2018-11-22T11:37:31+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1712,16 +1681,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
+                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
-                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
                 "shasum": ""
             },
             "require": {
@@ -1759,7 +1728,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-10-10T09:24:14+00:00"
+            "time": "2018-12-26T11:32:39+00:00"
         },
         {
             "name": "pixelant/pxa-cookie-bar",
@@ -2305,48 +2274,6 @@
                 "typo3"
             ],
             "time": "2018-12-19T18:40:46+00:00"
-        },
-        {
-            "name": "svewap/realurl-404-multilingual",
-            "version": "dev-typo3-v9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/t3kit/realurl_404_multilingual",
-                "reference": "55bb385e8dbebe7d86b0ee4da309ab4a77f6e80d"
-            },
-            "require": {
-                "typo3/cms-core": ">=8.7.0 <=9.5.99"
-            },
-            "replace": {
-                "realurl_404_multilingual": "self.version",
-                "svewap/realurl-404-multilingual": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "WapplerSystems\\Realurl404Multilingual\\": "Classes/"
-                }
-            },
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Sven Wappler",
-                    "email": "typo3YYYY@wappler.systems"
-                }
-            ],
-            "description": "RealURL 404 multilingual error page",
-            "homepage": "https://github.com/svewap/realurl_404_multilingual",
-            "keywords": [
-                "TYPO3 CMS",
-                "typo3"
-            ],
-            "support": {
-                "issues": "https://github.com/svewap/realurl_404_multilingual/issues",
-                "source": "https://github.com/svewap/realurl_404_multilingual"
-            },
-            "time": "2018-12-18T12:49:28+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3330,15 +3257,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "dfe0bc467bf288c5dc1120e72840a7ba8f601dc5"
+                "reference": "140062b23f530f8fb1f32362ee3b17a4c6741db0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/dfe0bc467bf288c5dc1120e72840a7ba8f601dc5",
-                "reference": "dfe0bc467bf288c5dc1120e72840a7ba8f601dc5",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/140062b23f530f8fb1f32362ee3b17a4c6741db0",
+                "reference": "140062b23f530f8fb1f32362ee3b17a4c6741db0",
                 "shasum": ""
             },
             "require": {
+                "clickstorm/cs_seo": "~4.0.0",
                 "clickstorm/go_maps_ext": "dev-master",
                 "friendsoftypo3/frontend-editing": "~1.4.3",
                 "georgringer/news": "dev-master",
@@ -3383,7 +3311,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2018-12-19T12:52:15+00:00"
+            "time": "2018-12-24T14:36:46+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -7018,12 +6946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "83c60bc100e6f7f0a2bfd73a1681384475ae49f8"
+                "reference": "d58aa597b5acd0e5b626641d88539315bcd51a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/83c60bc100e6f7f0a2bfd73a1681384475ae49f8",
-                "reference": "83c60bc100e6f7f0a2bfd73a1681384475ae49f8",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/d58aa597b5acd0e5b626641d88539315bcd51a1b",
+                "reference": "d58aa597b5acd0e5b626641d88539315bcd51a1b",
                 "shasum": ""
             },
             "type": "library",
@@ -7045,15 +6973,13 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2018-12-15T11:41:50+00:00"
+            "time": "2018-12-24T13:45:41+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dmitryd/typo3-realurl": 20,
         "typo3-themes/themes": 20,
-        "svewap/realurl-404-multilingual": 20,
         "kaystrobach/dyncss": 20,
         "kaystrobach/dyncss-less": 20,
         "t3kit/theme-t3kit": 20,
