@@ -1,4 +1,28 @@
 
+#### v8.9.0-alpha `January 4, 2019`
+
+- **[TASK]** add dyncss and dyncss_less ext. ([a2f5ed1](https://github.com/t3kit/t3kit/commit/a2f5ed1))
+- **[TASK]** add realurl-404-multilingual ([de198db](https://github.com/t3kit/t3kit/commit/de198db))
+- **[BUGFIX]** replace non-existing function when include realurl configuration (#194) ([d094313](https://github.com/t3kit/t3kit/commit/d094313))
+- **[TASK]** update composer.lock with new Gridelements v9 ([04bd7d5](https://github.com/t3kit/t3kit/commit/04bd7d5))
+- **[TASK]** update gridelements ext. with TYPO3 v9.5 (#193) ([3a43a3c](https://github.com/t3kit/t3kit/commit/3a43a3c))
+- **[TASK]** install pxa-cookie-bar and pxa-newsletter-subscription, update composer ([00afe7c](https://github.com/t3kit/t3kit/commit/00afe7c))
+- **[TASK]** update instruction for start using t3kit with git ([d6e4092](https://github.com/t3kit/t3kit/commit/d6e4092))
+- **[TASK]** update t3kit/t3kit_db ([df348e6](https://github.com/t3kit/t3kit/commit/df348e6))
+- **[TASK]** rename contactForm.yaml to contactForm.form.yaml ([d7da51a](https://github.com/t3kit/t3kit/commit/d7da51a))
+- **[TASK]** add PackageStates.php and LocalConfiguration.php ([2ffbcf6](https://github.com/t3kit/t3kit/commit/2ffbcf6))
+- **[TASK]** add scripts, include mysql updates ([b11d734](https://github.com/t3kit/t3kit/commit/b11d734))
+- **[TASK]** install cms-func and typo3db-legacy required by upgrade wizard ([b7583a3](https://github.com/t3kit/t3kit/commit/b7583a3))
+- **[TASK]** add var directory to gitignore ([9ba1000](https://github.com/t3kit/t3kit/commit/9ba1000))
+- **[TASK]** revert changes ([2699ebb](https://github.com/t3kit/t3kit/commit/2699ebb))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** update theme_t3kit to v2.10.0-alpha, t3kit_db to v2.8.0 ([f767843](https://github.com/t3kit/t3kit/commit/f767843))
+- **[!!!]** **[FEATURE]** TYPO3 v9 site configuration with no realurl (#195) ([cdf3df7](https://github.com/t3kit/t3kit/commit/cdf3df7))
+- **[!!!]** **[TASK]** use TYPO3 version 9.5.1 and theme_t3kit with typo3/minimal ^9.5 ([fa0dc93](https://github.com/t3kit/t3kit/commit/fa0dc93))
+
+***
+
 #### v8.8.0 `October 26, 2018`
 - **[TASK]** update theme_t3kit to v2.9.0 ([45f0940](https://github.com/t3kit/t3kit/commit/45f0940))
 
