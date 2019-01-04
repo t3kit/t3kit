@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e87d7d8b38bf5447619eb931bd355c95",
+    "content-hash": "5f5955314d16d2242d5d88b911649ab1",
     "packages": [
         {
             "name": "clickstorm/cs_seo",
@@ -965,16 +965,16 @@
         },
         {
             "name": "friendsoftypo3/frontend-editing",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/frontend_editing.git",
-                "reference": "06a92a0383f4738d5fe858dfe914acd90f9dab00"
+                "reference": "57c960f2e49fcc11aef6f430c17710c18801950f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/frontend_editing/zipball/06a92a0383f4738d5fe858dfe914acd90f9dab00",
-                "reference": "06a92a0383f4738d5fe858dfe914acd90f9dab00",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/frontend_editing/zipball/57c960f2e49fcc11aef6f430c17710c18801950f",
+                "reference": "57c960f2e49fcc11aef6f430c17710c18801950f",
                 "shasum": ""
             },
             "require": {
@@ -1017,7 +1017,7 @@
                 "TYPO3 CMS",
                 "frontend editing"
             ],
-            "time": "2018-11-27T11:20:41+00:00"
+            "time": "2019-01-04T06:38:56+00:00"
         },
         {
             "name": "friendsoftypo3/typo3db-legacy",
@@ -3253,16 +3253,16 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "dev-master",
+            "version": "2.10.0-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "140062b23f530f8fb1f32362ee3b17a4c6741db0"
+                "reference": "377d76354d2b7ed778043d90dc86b5219a2c0a01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/140062b23f530f8fb1f32362ee3b17a4c6741db0",
-                "reference": "140062b23f530f8fb1f32362ee3b17a4c6741db0",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/377d76354d2b7ed778043d90dc86b5219a2c0a01",
+                "reference": "377d76354d2b7ed778043d90dc86b5219a2c0a01",
                 "shasum": ""
             },
             "require": {
@@ -3311,7 +3311,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2018-12-24T14:36:46+00:00"
+            "time": "2019-01-04T10:42:37+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -6942,16 +6942,16 @@
         },
         {
             "name": "t3kit/db",
-            "version": "dev-master",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "d58aa597b5acd0e5b626641d88539315bcd51a1b"
+                "reference": "fc0387cefaff9f4daa4b709adf23b565057bb77b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/d58aa597b5acd0e5b626641d88539315bcd51a1b",
-                "reference": "d58aa597b5acd0e5b626641d88539315bcd51a1b",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/fc0387cefaff9f4daa4b709adf23b565057bb77b",
+                "reference": "fc0387cefaff9f4daa4b709adf23b565057bb77b",
                 "shasum": ""
             },
             "type": "library",
@@ -6973,7 +6973,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2018-12-24T13:45:41+00:00"
+            "time": "2019-01-04T09:17:25+00:00"
         }
     ],
     "aliases": [],
@@ -6981,9 +6981,7 @@
     "stability-flags": {
         "typo3-themes/themes": 20,
         "kaystrobach/dyncss": 20,
-        "kaystrobach/dyncss-less": 20,
-        "t3kit/theme-t3kit": 20,
-        "t3kit/db": 20
+        "kaystrobach/dyncss-less": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
