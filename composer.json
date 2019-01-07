@@ -110,9 +110,6 @@
     "typo3-cms-scripts": [
       "typo3cms install:fixfolderstructure",
       "typo3cms install:generatepackagestates"
-    ],
-    "post-autoload-dump": [
-      "@helper:t3fixes"
     ]
   },
   "extra": {
