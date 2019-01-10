@@ -1137,6 +1137,12 @@
                 "url": "https://gitlab.com/coderscare/gridelements.git",
                 "reference": "53530d181d0b55631e3a2a9441b173db8f3c10db"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=53530d181d0b55631e3a2a9441b173db8f3c10db",
+                "reference": "53530d181d0b55631e3a2a9441b173db8f3c10db",
+                "shasum": ""
+            },
             "require": {
                 "typo3/cms-backend": "^9.5",
                 "typo3/cms-core": "^9.5",
