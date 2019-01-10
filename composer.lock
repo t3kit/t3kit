@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75c53a0782d1fd07d35d755cb9213d4d",
+    "content-hash": "4e8098f9b2ec6278ea78bbcef2ef971b",
     "packages": [
         {
             "name": "clickstorm/cs_seo",
@@ -3257,16 +3257,16 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "2.10.0-alpha",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "377d76354d2b7ed778043d90dc86b5219a2c0a01"
+                "reference": "83c08d0811dfe1b74c619dee7a7b6d746b14a9af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/377d76354d2b7ed778043d90dc86b5219a2c0a01",
-                "reference": "377d76354d2b7ed778043d90dc86b5219a2c0a01",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/83c08d0811dfe1b74c619dee7a7b6d746b14a9af",
+                "reference": "83c08d0811dfe1b74c619dee7a7b6d746b14a9af",
                 "shasum": ""
             },
             "require": {
@@ -3315,7 +3315,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-01-04T10:42:37+00:00"
+            "time": "2019-01-10T13:57:54+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -6985,7 +6985,8 @@
     "stability-flags": {
         "typo3-themes/themes": 20,
         "kaystrobach/dyncss": 20,
-        "kaystrobach/dyncss-less": 20
+        "kaystrobach/dyncss-less": 20,
+        "t3kit/theme-t3kit": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

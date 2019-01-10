@@ -94,7 +94,7 @@
     "kaystrobach/dyncss": "dev-typo3_9.x",
     "kaystrobach/dyncss-less": "dev-typo3_9.x",
 
-    "t3kit/theme-t3kit": "~2.10.0-alpha"
+    "t3kit/theme-t3kit": "dev-master"
   },
   "require-dev": {
     "t3kit/db": "~2.8.0",
