@@ -10,41 +10,44 @@
 * [t3kit versioning](#t3kit-versioning)
 * [CHANGELOG](https://github.com/t3kit/t3kit/blob/master/CHANGELOG.md)
 * [Contributing to t3kit](https://github.com/t3kit/t3kit/blob/master/CONTRIBUTING.md)
+* [t3kit v9](#t3kit-v9)
 * [t3kit v7](#t3kit-v7-on-branch-t3kit7)
 
 ***
 
 ## Development
 
-### Required dependencies
+### Setup development environment with Docker
+
+#### Required dependencies
 
 * [Git](https://git-scm.com/)
 * [Composer](https://getcomposer.org/)
-* [Docker](https://docker.com/) >= v17.12
-
-### Setup development environment
+* [Docker](https://docker.com/) >= v18.09
 
 ***
 
-#### Start using t3kit with **git**
+#### Start with **git**
 
 1. `git clone https://github.com/t3kit/t3kit.git`
 
 2. `cd t3kit`
 
+3. `composer install --ignore-platform-reqs`
+
    _*Note: To continue with Docker you need to create docker environment `.env` file for your project based on an example '.env.example' or for MAC users `.env.mac.example`. All environments variables could be adapted to your specific needs._
 
-3. `cp .env.example .env`  _*or for MAC users_ `cp .env.mac.example .env`
+4. `cp .env.example .env`  _*or for MAC users_ `cp .env.mac.example .env`
 
-4. `docker-compose up -d`
+5. `docker-compose up -d`
 
-5. `composer install --ignore-platform-reqs`
+6. `sh scripts/t3fixes.sh`
 
-6. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
+7. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
 
 ***
 
-#### Start using t3kit with **composer**
+#### Start with **composer**
 
 1. `composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs`
 
@@ -56,7 +59,11 @@
 
 4. `docker-compose up -d`
 
-5. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
+5. `sh scripts/t3fixes.sh`
+
+6. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
+
+***
 
 ### t3kit database manipulation - Setup/Restore/Pack
 
@@ -94,6 +101,10 @@ docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOS
 
 ```shell
 composer create-project t3kit/t3kit [<directory>] [<version>] --prefer-dist --no-dev
+
+"if t3kit >= 8.9"
+vendor/helhum/typo3-console/typo3cms install:fixfolderstructure
+vendor/helhum/typo3-console/typo3cms install:generatepackagestates
 ```
 
 ***
@@ -139,6 +150,14 @@ Examples:
 
 * Branch `master` => _last t3kit release_ `t3kit 8.1.3 = TYPO3 8.6.1`
 * Branch `t3kit7` => _last t3kit release_ `t3kit 7.11.3 = TYPO3 7.6.15`
+
+***
+
+## t3kit v9
+
+### Roadmap
+
+soon
 
 ***
 
