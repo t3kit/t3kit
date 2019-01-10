@@ -14,6 +14,7 @@ switch (\TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()) {
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] = 'Docker :: t3kit :: TYPO3';
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = 1;
 		$GLOBALS['TYPO3_CONF_VARS']['SYS']['clearCacheSystem'] = true;
+		$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = '.*';
 		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport'] = 'smtp';
 		$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = getenv('MAILHOG_CONTAINER_NAME') . ':1025';
         // $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = 0;
