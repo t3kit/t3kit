@@ -65,6 +65,51 @@
 
 ***
 
+### Setup development environment with [ddev](https://ddev.readthedocs.io/en/stable/)
+
+#### Required dependencies
+
+* [Git](https://git-scm.com/)
+* [Composer](https://getcomposer.org/)
+* [Docker](https://docker.com/) >= v18.09
+* [ddev](https://github.com/drud/ddev/releases) >= v1.5.2
+
+***
+
+#### Start with **git**
+
+1. `git clone https://github.com/t3kit/t3kit.git`
+
+2. `cd t3kit`
+
+3. `composer install --ignore-platform-reqs`
+
+   _*Note: To continue with Docker you need to create docker environment `.env` file for your project based on an example .env.ddev.example`. All environments variables could be adapted to your specific needs._
+
+4. `cp .env.ddev.example .env`
+
+5. `ddev start`
+
+6. `ddev import-db --src vendor/t3kit/db/t3kit8.sql`
+
+***
+
+#### Start with **composer**
+
+1. `composer create-project t3kit/t3kit t3kit dev-master --keep-vcs --ignore-platform-reqs`
+
+2. `cd t3kit`
+
+   _*Note: To continue with Docker you need to create docker environment `.env` file for your project based on an example .env.ddev.example`. All environments variables could be adapted to your specific needs._
+
+3. `cp .env.ddev.example .env`
+
+4. `ddev start`
+
+5. `ddev import-db --src vendor/t3kit/db/t3kit8.sql`
+
+***
+
 ### t3kit database manipulation - Setup/Restore/Pack
 
 * Setup t3kit db: `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
@@ -74,6 +119,8 @@
 ### Verify the installation
 
 * Open in browser: `localhost:8888` or `0.0.0.0:8888`
+
+_*Note: **ddev** uses a different approach with a dedicated proxy layer. Use `ddev describe` to get the details._
 
 ### TYPO3 backend login
 
@@ -92,6 +139,8 @@ docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOS
 
 * `t3kit_default` - default docker network name based on `t3kit` folder name.
 * `t3kit_db` - default t3kit database host name (from docker-compose).
+
+_*Note: **ddev** uses a different approach. Use `ddev describe` to get the details for phpMyAdmin._
 
 ***
 
