@@ -59,12 +59,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhirdes/go_maps_ext.git",
-                "reference": "52ada28e63a34905c1da2e450a6b1ae05332060f"
+                "reference": "fc464d2ec4838add7748b4273e7f8b2a458aad79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/52ada28e63a34905c1da2e450a6b1ae05332060f",
-                "reference": "52ada28e63a34905c1da2e450a6b1ae05332060f",
+                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/fc464d2ec4838add7748b4273e7f8b2a458aad79",
+                "reference": "fc464d2ec4838add7748b4273e7f8b2a458aad79",
                 "shasum": ""
             },
             "require": {
@@ -104,7 +104,7 @@
                 "route",
                 "style"
             ],
-            "time": "2019-01-24T12:12:35+00:00"
+            "time": "2019-01-31T16:33:22+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -965,16 +965,16 @@
         },
         {
             "name": "friendsoftypo3/frontend-editing",
-            "version": "v1.4.5",
+            "version": "v1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/frontend_editing.git",
-                "reference": "be53b63c7c0a4d8680d29f3130ca8f3bdc25ac82"
+                "reference": "4461abe0cc4e7d7de05cdef4053488f9ac8927df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/frontend_editing/zipball/be53b63c7c0a4d8680d29f3130ca8f3bdc25ac82",
-                "reference": "be53b63c7c0a4d8680d29f3130ca8f3bdc25ac82",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/frontend_editing/zipball/4461abe0cc4e7d7de05cdef4053488f9ac8927df",
+                "reference": "4461abe0cc4e7d7de05cdef4053488f9ac8927df",
                 "shasum": ""
             },
             "require": {
@@ -1017,7 +1017,7 @@
                 "TYPO3 CMS",
                 "frontend editing"
             ],
-            "time": "2019-01-28T18:48:48+00:00"
+            "time": "2019-01-31T12:24:12+00:00"
         },
         {
             "name": "friendsoftypo3/typo3db-legacy",
@@ -1133,12 +1133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/coderscare/gridelements.git",
-                "reference": "28b071dd12ba59d49f248b805f9b685dd74371fc"
+                "reference": "c5dae1fc08734c02695663e1c3fa4892e74504d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=28b071dd12ba59d49f248b805f9b685dd74371fc",
-                "reference": "28b071dd12ba59d49f248b805f9b685dd74371fc",
+                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=c5dae1fc08734c02695663e1c3fa4892e74504d6",
+                "reference": "c5dae1fc08734c02695663e1c3fa4892e74504d6",
                 "shasum": ""
             },
             "require": {
@@ -1172,7 +1172,7 @@
                 "TYPO3 CMS",
                 "grids"
             ],
-            "time": "2019-01-07T14:38:17+00:00"
+            "time": "2019-01-30T10:11:41+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3265,12 +3265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "2dce1347261fd51890a8d2ddb5daa057d7c84f28"
+                "reference": "c0089964703c95759a91e763198e2654bcf438aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/2dce1347261fd51890a8d2ddb5daa057d7c84f28",
-                "reference": "2dce1347261fd51890a8d2ddb5daa057d7c84f28",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/c0089964703c95759a91e763198e2654bcf438aa",
+                "reference": "c0089964703c95759a91e763198e2654bcf438aa",
                 "shasum": ""
             },
             "require": {
@@ -3319,7 +3319,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-01-29T13:18:25+00:00"
+            "time": "2019-01-31T14:47:41+00:00"
         },
         {
             "name": "typo3-themes/themes",
