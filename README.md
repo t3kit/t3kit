@@ -69,6 +69,7 @@
 
 #### Required dependencies
 
+<<<<<<< HEAD
 * [Git](https://git-scm.com/)
 * [Composer](https://getcomposer.org/)
 * [Docker](https://docker.com/) >= v18.09
@@ -110,6 +111,8 @@
 
 ***
 
+=======
+>>>>>>> 03b0da739128aa236d0459b70ff9c5a72dc38e1a
 ***
 
 #### Start t3kit with **[ddev](https://github.com/drud/ddev/releases)**
