@@ -122,7 +122,7 @@
 
 3. `cp .env.ddev.example .env`
 
-4. `ddev init`
+4. `ddev config`
 
    _*Note: Docroot location is `web`._
 
