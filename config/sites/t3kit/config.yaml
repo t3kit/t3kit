@@ -19,7 +19,7 @@ languages:
     enabled: true
     languageId: '1'
     base: /sv/
-    typo3Language: default
+    typo3Language: sv
     locale: sv_SE.UTF-8
     iso-639-1: sv
     navigationTitle: Svenska
@@ -32,7 +32,7 @@ languages:
     enabled: true
     languageId: '2'
     base: /de/
-    typo3Language: default
+    typo3Language: de
     locale: de_DE.UTF-8
     iso-639-1: de
     navigationTitle: Deutsch
