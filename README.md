@@ -69,7 +69,6 @@
 
 #### Required dependencies
 
-<<<<<<< HEAD
 * [Git](https://git-scm.com/)
 * [Composer](https://getcomposer.org/)
 * [Docker](https://docker.com/) >= v18.09
@@ -111,30 +110,6 @@
 
 ***
 
-=======
->>>>>>> 03b0da739128aa236d0459b70ff9c5a72dc38e1a
-***
-
-#### Start t3kit with **[ddev](https://github.com/drud/ddev/releases)**
-
-1. Choose any first step from either composer or git depending on your setup
-
-2. `cd t3kit`
-
-   _*Note: To continue with Ddev you need to create ddev environment `.env` file for your project based on an example '.env.ddev.example'. The container names need to match with what gets created by ddev._
-
-3. `cp .env.ddev.example .env`
-
-4. `ddev config`
-
-   _*Note: Docroot location is `web`._
-
-5. `ddev start`
-
-6. `ddev composer install`
-
-7. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
-   
 ### t3kit database manipulation - Setup/Restore/Pack
 
 * Setup t3kit db: `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
@@ -143,7 +118,6 @@
 
 ### Verify the installation
 
-_*Note: Ddev uses a different approach with a dedicated proxy layer. Use `ddev describe` to get the details._
 * Open in browser: `localhost:8888` or `0.0.0.0:8888`
 
 _*Note: **ddev** uses a different approach with a dedicated proxy layer. Use `ddev describe` to get the details._
@@ -158,8 +132,6 @@ The credentials for login to TYPO3´ backend are:
 ### phpMyAdmin
 
 #### Run phpMyAdmin docker container and connect it to t3kit
-
-_*Note: Ddev uses a different approach. Use `ddev describe` to get the details for phpMyAdmin._
 
 ```shell
 docker run --name phpmyadmin -dp 8889:80 --network t3kit_default --rm -e PMA_HOST=t3kit_db phpmyadmin/phpmyadmin
