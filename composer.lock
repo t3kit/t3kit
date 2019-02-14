@@ -3268,12 +3268,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "5df7c3acba694c93eca7821237bd780c45aa8739"
+                "reference": "1f6bb43cf177cdaf73e998dd8e61ca2e4ec1621b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/5df7c3acba694c93eca7821237bd780c45aa8739",
-                "reference": "5df7c3acba694c93eca7821237bd780c45aa8739",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/1f6bb43cf177cdaf73e998dd8e61ca2e4ec1621b",
+                "reference": "1f6bb43cf177cdaf73e998dd8e61ca2e4ec1621b",
                 "shasum": ""
             },
             "require": {
@@ -3322,7 +3322,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-02-13T10:26:29+00:00"
+            "time": "2019-02-14T14:54:21+00:00"
         },
         {
             "name": "typo3-themes/themes",
