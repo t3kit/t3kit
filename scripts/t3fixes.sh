@@ -17,11 +17,11 @@ fi
 #echo "WEB_CONTAINER_NAME = $WEB_CONTAINER_NAME"
 
 echo -e "\nRunning script in container:"
-echo "docker exec -i -u www-data "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:fixfolderstructure"
+echo "docker exec -i -u "$WEB_USER_WWWDATA" "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:fixfolderstructure"
 echo -e "\n"
-docker exec -i -u www-data "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:fixfolderstructure
+docker exec -i -u "$WEB_USER_WWWDATA" "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:fixfolderstructure
 
 echo -e "\nRunning script in container:"
-echo "docker exec -i -u www-data "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:generatepackagestates"
+echo "docker exec -i -u "$WEB_USER_WWWDATA" "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:generatepackagestates"
 echo -e "\n"
-docker exec -i -u www-data "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:generatepackagestates
+docker exec -i -u "$WEB_USER_WWWDATA" "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms install:generatepackagestates

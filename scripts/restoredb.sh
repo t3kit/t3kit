@@ -22,9 +22,9 @@ echo -e "\n"
 docker exec -i "$WEB_CONTAINER_NAME" /var/www/html/vendor/t3kit/db/restoredb.sh
 
 echo -e "\nRunning database compare in container:"
-echo "docker exec -i -u www-data -e TYPO3_CONTEXT=Development/Docker "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms database:updateschema"
+echo "docker exec -i -u "$WEB_USER_WWWDATA" -e TYPO3_CONTEXT=Development/Docker "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms database:updateschema"
 echo -e "\n"
-docker exec -i -u www-data -e TYPO3_CONTEXT=Development/Docker "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms database:updateschema
+docker exec -i -u "$WEB_USER_WWWDATA" -e TYPO3_CONTEXT=Development/Docker "$WEB_CONTAINER_NAME" /var/www/html/vendor/helhum/typo3-console/typo3cms database:updateschema
 
 # Temporary to set "what theme to use"
 echo -e "\nUpdate domain, add Theme - t3kit to static includes, add Theme -t3kit ro page ts config include in container"
