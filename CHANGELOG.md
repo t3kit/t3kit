@@ -1,4 +1,16 @@
 
+#### v8.9.0-beta `February 14, 2019`
+
+- **[TASK]** update theme_t3kit to v2.10.0-beta ([f9ba83d](https://github.com/t3kit/t3kit/commit/f9ba83d))
+- **[TASK]** add solr container to t3kit ddev conf (#196) ([48c774a](https://github.com/t3kit/t3kit/commit/48c774a))
+- **[TASK]** Update config.yaml, typo3Language (#198) ([4451724](https://github.com/t3kit/t3kit/commit/4451724))
+- **[DOC]** update readme with ddev instructions ([46172b1](https://github.com/t3kit/t3kit/commit/46172b1))
+- **[TASK]** add ddev support ([c4a18d2](https://github.com/t3kit/t3kit/commit/c4a18d2))
+- **[DOC]** update README ([56440ab](https://github.com/t3kit/t3kit/commit/56440ab))
+- **[TASK]** Remove unneeded post-autodump script ''t3fixes.sh'' ([12106aa](https://github.com/t3kit/t3kit/commit/12106aa))
+
+***
+
 #### v8.9.0-alpha `January 4, 2019`
 
 - **[TASK]** add dyncss and dyncss_less ext. ([a2f5ed1](https://github.com/t3kit/t3kit/commit/a2f5ed1))
