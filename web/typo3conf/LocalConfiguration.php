@@ -32,8 +32,8 @@ return [
             'pxa_newsletter_subscription' => 'a:1:{s:5:"table";s:7:"fe_user";}',
             'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
+            'solr' => 'a:4:{s:35:"useConfigurationFromClosestTemplate";s:1:"0";s:43:"useConfigurationTrackRecordsOutsideSiteroot";s:1:"1";s:29:"useConfigurationMonitorTables";s:0:"";s:27:"allowSelfSignedCertificates";s:1:"0";}',
             'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
-            'theme_t3kit' => 'a:3:{s:31:"fixedPostVarsConfigurationfFile";s:81:"typo3conf/ext/theme_t3kit/Configuration/Realurl/predefined_fixedPostVars_conf.php";s:25:"fixedPostVarsSaveFilePath";s:40:"typo3conf/realurl_fixedPostVars_conf.php";s:20:"additionalCharacters";s:0:"";}',
             'themes' => 'a:2:{s:16:"categoriesToShow";s:118:"theme,languages,socialmedia,forms,extension,bootstrap,colors,font,meta,metaDefaults,pages,container,menu,header,footer";s:15:"constantsToHide";s:36:"dateFormat,timeFormat,dateTimeFormat";}',
         ],
     ],
@@ -138,13 +138,14 @@ return [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',
         ],
+        'solr' => [
+            'allowSelfSignedCertificates' => '0',
+            'useConfigurationFromClosestTemplate' => '0',
+            'useConfigurationMonitorTables' => '',
+            'useConfigurationTrackRecordsOutsideSiteroot' => '1',
+        ],
         'static_info_tables' => [
             'enableManager' => '0',
-        ],
-        'theme_t3kit' => [
-            'additionalCharacters' => '',
-            'fixedPostVarsConfigurationfFile' => 'typo3conf/ext/theme_t3kit/Configuration/Realurl/predefined_fixedPostVars_conf.php',
-            'fixedPostVarsSaveFilePath' => 'typo3conf/realurl_fixedPostVars_conf.php',
         ],
         'themes' => [
             'categoriesToShow' => 'theme,languages,socialmedia,forms,extension,bootstrap,colors,font,meta,metaDefaults,pages,container,menu,header,footer',

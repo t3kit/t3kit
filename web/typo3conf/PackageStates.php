@@ -164,6 +164,9 @@ return [
         'pxa_newsletter_subscription' => [
             'packagePath' => 'typo3conf/ext/pxa_newsletter_subscription/',
         ],
+        'solr' => [
+            'packagePath' => 'typo3conf/ext/solr/',
+        ],
         'theme_t3kit' => [
             'packagePath' => 'typo3conf/ext/theme_t3kit/',
         ],
