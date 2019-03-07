@@ -50,3 +50,6 @@ routes:
     route: robots.txt
     type: staticText
     content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*"
+
+imports:
+  - { resource: "typo3conf/sites/global/route-enhancers-news.yaml" }
