@@ -1,5 +1,5 @@
 routeEnhancers:
-  NewsDetail:
+  NewsPlugin:
     type: Extbase
     limitToPages: [44]
     extension: News
