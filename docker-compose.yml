@@ -45,7 +45,7 @@ services:
 
   t3kit_solr:
     container_name: ${SOLR_CONTAINER_NAME}
-    image: typo3solr/ext-solr:6.0.0
+    image: typo3solr/ext-solr:9.0.0
     ports:
       - "${SOLR_PORT}:8983"
     volumes:
