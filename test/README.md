@@ -10,8 +10,8 @@
 
 	1 - For `docker` : `base_url: http://localhost:8888`
 
-- Running behat testing with command: `vendor/bin/behat -c web/test/behaviour/behat.yml`
-- If you want to run specific feature, provide an argument `--name` : `vendor/bin/behat -c web/test/behaviour/behat.yml --name="Homepage"`
+- Running behat testing with command: `vendor/bin/behat -c test/behaviour/behat.yml`
+- If you want to run specific feature, provide an argument `--name` : `vendor/bin/behat -c test/behaviour/behat.yml --name="Homepage"`
 
 ### Running automated testing wth Selenium server
 

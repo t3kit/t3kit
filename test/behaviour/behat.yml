@@ -1,6 +1,6 @@
 default:
   autoload:
-    '': %paths.base%/context/bootstrap
+    '%paths.base%/context/bootstrap'
   extensions:
     Behat\MinkExtension:
       base_url: http://localhost:8888/
