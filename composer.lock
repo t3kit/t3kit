@@ -1144,12 +1144,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/georgringer/news.git",
-                "reference": "2c8522ad508fa92ad39a5effe4301f7d872238a5"
+                "reference": "2c61711e763116dd3496760d15aa7cbac6e9696a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/news/zipball/2c8522ad508fa92ad39a5effe4301f7d872238a5",
-                "reference": "2c8522ad508fa92ad39a5effe4301f7d872238a5",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/2c61711e763116dd3496760d15aa7cbac6e9696a",
+                "reference": "2c61711e763116dd3496760d15aa7cbac6e9696a",
                 "shasum": ""
             },
             "require": {
@@ -1203,7 +1203,7 @@
                 "news",
                 "typo3"
             ],
-            "time": "2019-02-18T12:31:19+00:00"
+            "time": "2019-03-09T09:18:02+00:00"
         },
         {
             "name": "gridelementsteam/gridelements",
@@ -1211,12 +1211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/coderscare/gridelements.git",
-                "reference": "e69261c34ad5869bb34d513f67e5e2a86574e12b"
+                "reference": "c6321ed85e17fbffe0ccbe4781828f6ea4fd330d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=e69261c34ad5869bb34d513f67e5e2a86574e12b",
-                "reference": "e69261c34ad5869bb34d513f67e5e2a86574e12b",
+                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=c6321ed85e17fbffe0ccbe4781828f6ea4fd330d",
+                "reference": "c6321ed85e17fbffe0ccbe4781828f6ea4fd330d",
                 "shasum": ""
             },
             "require": {
@@ -1250,7 +1250,7 @@
                 "TYPO3 CMS",
                 "grids"
             ],
-            "time": "2019-02-08T10:15:18+00:00"
+            "time": "2019-03-10T12:37:18+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3469,12 +3469,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "5e4f8c7b4245743c1b94f323f0f6aa2188a36198"
+                "reference": "98a17e183fd2be26cae452e1b1347e030e34f2ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/5e4f8c7b4245743c1b94f323f0f6aa2188a36198",
-                "reference": "5e4f8c7b4245743c1b94f323f0f6aa2188a36198",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/98a17e183fd2be26cae452e1b1347e030e34f2ab",
+                "reference": "98a17e183fd2be26cae452e1b1347e030e34f2ab",
                 "shasum": ""
             },
             "require": {
@@ -3524,7 +3524,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-06T13:53:46+00:00"
+            "time": "2019-03-07T15:42:34+00:00"
         },
         {
             "name": "typo3-themes/themes",
