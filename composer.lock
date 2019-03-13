@@ -129,16 +129,16 @@
         },
         {
             "name": "clickstorm/go_maps_ext",
-            "version": "dev-master",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhirdes/go_maps_ext.git",
-                "reference": "fc464d2ec4838add7748b4273e7f8b2a458aad79"
+                "reference": "b6c5183d5e41e2c93700c5018ce930ad94971344"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/fc464d2ec4838add7748b4273e7f8b2a458aad79",
-                "reference": "fc464d2ec4838add7748b4273e7f8b2a458aad79",
+                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/b6c5183d5e41e2c93700c5018ce930ad94971344",
+                "reference": "b6c5183d5e41e2c93700c5018ce930ad94971344",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                 "route",
                 "style"
             ],
-            "time": "2019-01-31T16:33:22+00:00"
+            "time": "2019-01-31T16:32:25+00:00"
         },
         {
             "name": "cogpowered/finediff",
@@ -1140,16 +1140,16 @@
         },
         {
             "name": "georgringer/news",
-            "version": "dev-master",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/georgringer/news.git",
-                "reference": "2c61711e763116dd3496760d15aa7cbac6e9696a"
+                "reference": "9c5581d46ef2370739d8be882cf7660914ed9e71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/news/zipball/2c61711e763116dd3496760d15aa7cbac6e9696a",
-                "reference": "2c61711e763116dd3496760d15aa7cbac6e9696a",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/9c5581d46ef2370739d8be882cf7660914ed9e71",
+                "reference": "9c5581d46ef2370739d8be882cf7660914ed9e71",
                 "shasum": ""
             },
             "require": {
@@ -1203,27 +1203,27 @@
                 "news",
                 "typo3"
             ],
-            "time": "2019-03-09T09:18:02+00:00"
+            "time": "2019-03-07T18:27:40+00:00"
         },
         {
             "name": "gridelementsteam/gridelements",
-            "version": "dev-master",
+            "version": "9.1.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/coderscare/gridelements.git",
-                "reference": "c6321ed85e17fbffe0ccbe4781828f6ea4fd330d"
+                "reference": "46fd8b7315d8317501c4e5141367b9a027e85a94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=c6321ed85e17fbffe0ccbe4781828f6ea4fd330d",
-                "reference": "c6321ed85e17fbffe0ccbe4781828f6ea4fd330d",
+                "url": "https://gitlab.com/api/v4/projects/coderscare%2Fgridelements/repository/archive.zip?sha=46fd8b7315d8317501c4e5141367b9a027e85a94",
+                "reference": "46fd8b7315d8317501c4e5141367b9a027e85a94",
                 "shasum": ""
             },
             "require": {
-                "typo3/cms-backend": "^9.5 || dev-master",
-                "typo3/cms-core": "^9.5 || dev-master",
-                "typo3/cms-frontend": "^9.5 || dev-master",
-                "typo3/cms-recordlist": "^9.5 || dev-master"
+                "typo3/cms-backend": "^9.5",
+                "typo3/cms-core": "^9.5",
+                "typo3/cms-frontend": "^9.5",
+                "typo3/cms-recordlist": "^9.5"
             },
             "conflict": {
                 "jfmulticontent": "*",
@@ -1250,7 +1250,7 @@
                 "TYPO3 CMS",
                 "grids"
             ],
-            "time": "2019-03-10T12:37:18+00:00"
+            "time": "2019-03-13T09:00:37+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3469,21 +3469,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "98a17e183fd2be26cae452e1b1347e030e34f2ab"
+                "reference": "da42bf52684bb5abab0ac2567fb8a8ee4f15adde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/98a17e183fd2be26cae452e1b1347e030e34f2ab",
-                "reference": "98a17e183fd2be26cae452e1b1347e030e34f2ab",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/da42bf52684bb5abab0ac2567fb8a8ee4f15adde",
+                "reference": "da42bf52684bb5abab0ac2567fb8a8ee4f15adde",
                 "shasum": ""
             },
             "require": {
                 "apache-solr-for-typo3/solr": "^9.0.0",
                 "clickstorm/cs_seo": "^4.1.0",
-                "clickstorm/go_maps_ext": "dev-master",
+                "clickstorm/go_maps_ext": "~3.1.0",
                 "friendsoftypo3/frontend-editing": "~1.4.3",
-                "georgringer/news": "dev-master",
-                "gridelementsteam/gridelements": "dev-master",
+                "georgringer/news": "~7.1.0",
+                "gridelementsteam/gridelements": "~9.1.1",
                 "php": "^7.2",
                 "pixelant/pxa-cookie-bar": "~2.1.1",
                 "pixelant/pxa-form-enhancement": "dev-master",
@@ -3524,7 +3524,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-07T15:42:34+00:00"
+            "time": "2019-03-13T10:36:28+00:00"
         },
         {
             "name": "typo3-themes/themes",
