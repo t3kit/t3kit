@@ -1,7 +1,7 @@
 routeEnhancers:
   NewsPlugin:
     type: Extbase
-    limitToPages: [44]
+    limitToPages: [44,100,104,108]
     extension: News
     plugin: Pi1
     routes:

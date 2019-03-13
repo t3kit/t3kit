@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e8098f9b2ec6278ea78bbcef2ef971b",
+    "content-hash": "57886b3ac9351f0900e7fa964e6d0b30",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -1864,16 +1864,16 @@
         },
         {
             "name": "pixelant/pxa-form-enhancement",
-            "version": "dev-master",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelant/pxa_form_enhancement.git",
-                "reference": "7f1fb4651b81735fe1776ebcb085f3cc9735ee05"
+                "reference": "eabdaff3b11290f478d9722dadee06f81c89efa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelant/pxa_form_enhancement/zipball/7f1fb4651b81735fe1776ebcb085f3cc9735ee05",
-                "reference": "7f1fb4651b81735fe1776ebcb085f3cc9735ee05",
+                "url": "https://api.github.com/repos/pixelant/pxa_form_enhancement/zipball/eabdaff3b11290f478d9722dadee06f81c89efa2",
+                "reference": "eabdaff3b11290f478d9722dadee06f81c89efa2",
                 "shasum": ""
             },
             "require": {
@@ -1894,7 +1894,7 @@
                 "GPL-2.0+"
             ],
             "description": "Pxa TYPO3 Form Enhancement",
-            "time": "2018-12-05T15:37:52+00:00"
+            "time": "2019-03-13T12:59:02+00:00"
         },
         {
             "name": "pixelant/pxa-newsletter-subscription",
@@ -3469,24 +3469,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "da42bf52684bb5abab0ac2567fb8a8ee4f15adde"
+                "reference": "6bdebe8694b100f9a274012e724e0b9c6b35f5f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/da42bf52684bb5abab0ac2567fb8a8ee4f15adde",
-                "reference": "da42bf52684bb5abab0ac2567fb8a8ee4f15adde",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/6bdebe8694b100f9a274012e724e0b9c6b35f5f5",
+                "reference": "6bdebe8694b100f9a274012e724e0b9c6b35f5f5",
                 "shasum": ""
             },
             "require": {
-                "apache-solr-for-typo3/solr": "^9.0.0",
-                "clickstorm/cs_seo": "^4.1.0",
+                "apache-solr-for-typo3/solr": "~9.0.0",
+                "clickstorm/cs_seo": "~4.1.0",
                 "clickstorm/go_maps_ext": "~3.1.0",
                 "friendsoftypo3/frontend-editing": "~1.4.3",
                 "georgringer/news": "~7.1.0",
                 "gridelementsteam/gridelements": "~9.1.1",
                 "php": "^7.2",
                 "pixelant/pxa-cookie-bar": "~2.1.1",
-                "pixelant/pxa-form-enhancement": "dev-master",
+                "pixelant/pxa-form-enhancement": "~3.2.5",
                 "pixelant/pxa-newsletter-subscription": "~9.0.2",
                 "typo3/cms-backend": "~9.5.1",
                 "typo3/cms-core": "~9.5.1",
@@ -3524,7 +3524,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-13T10:36:28+00:00"
+            "time": "2019-03-13T14:22:47+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -6976,16 +6976,16 @@
         },
         {
             "name": "t3kit/db",
-            "version": "2.8.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "fc0387cefaff9f4daa4b709adf23b565057bb77b"
+                "reference": "78e30b08c3bdc1552af65c4a850325d06567009c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/fc0387cefaff9f4daa4b709adf23b565057bb77b",
-                "reference": "fc0387cefaff9f4daa4b709adf23b565057bb77b",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/78e30b08c3bdc1552af65c4a850325d06567009c",
+                "reference": "78e30b08c3bdc1552af65c4a850325d06567009c",
                 "shasum": ""
             },
             "type": "library",
@@ -7007,7 +7007,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-01-04T09:17:25+00:00"
+            "time": "2019-03-13T16:02:42+00:00"
         }
     ],
     "aliases": [],
@@ -7016,7 +7016,8 @@
         "typo3-themes/themes": 20,
         "kaystrobach/dyncss": 20,
         "kaystrobach/dyncss-less": 20,
-        "t3kit/theme-t3kit": 20
+        "t3kit/theme-t3kit": 20,
+        "t3kit/db": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

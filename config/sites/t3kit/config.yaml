@@ -1,5 +1,5 @@
 rootPageId: 1
-base: /
+base: 'http://localhost/'
 baseVariants: {  }
 languages:
   -
@@ -51,5 +51,5 @@ routes:
     type: staticText
     content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*"
 
-imports:
+    imports:
   - { resource: "typo3conf/sites/global/route-enhancers-news.yaml" }
