@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57886b3ac9351f0900e7fa964e6d0b30",
+    "content-hash": "bf56495af7ccc920d9b6fd5a65b50a83",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -1096,47 +1096,6 @@
                 "frontend editing"
             ],
             "time": "2019-01-31T12:24:12+00:00"
-        },
-        {
-            "name": "friendsoftypo3/typo3db-legacy",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfTYPO3/typo3db_legacy.git",
-                "reference": "beb03363b7583dcac7e034266a72daa249d1f011"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/typo3db_legacy/zipball/beb03363b7583dcac7e034266a72daa249d1f011",
-                "reference": "beb03363b7583dcac7e034266a72daa249d1f011",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "^9.4"
-            },
-            "replace": {
-                "typo3db_legacy": "*"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/class-alias-loader": {
-                    "class-alias-maps": [
-                        "Migrations/Code/ClassAliasMap.php"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Typo3DbLegacy\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "TYPO3_DB compatibility layer for TYPO3 v9.x",
-            "homepage": "https://typo3.org",
-            "time": "2018-09-30T10:32:22+00:00"
         },
         {
             "name": "georgringer/news",
@@ -3469,12 +3428,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "6bdebe8694b100f9a274012e724e0b9c6b35f5f5"
+                "reference": "edff67e02f54b83fb60b867d3357348a33e3fe9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/6bdebe8694b100f9a274012e724e0b9c6b35f5f5",
-                "reference": "6bdebe8694b100f9a274012e724e0b9c6b35f5f5",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/edff67e02f54b83fb60b867d3357348a33e3fe9a",
+                "reference": "edff67e02f54b83fb60b867d3357348a33e3fe9a",
                 "shasum": ""
             },
             "require": {
@@ -3524,7 +3483,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-13T14:22:47+00:00"
+            "time": "2019-03-14T14:33:05+00:00"
         },
         {
             "name": "typo3-themes/themes",
