@@ -146,14 +146,17 @@ return [
         'frontend_editing' => [
             'packagePath' => 'typo3conf/ext/frontend_editing/',
         ],
+        'news' => [
+            'packagePath' => 'typo3conf/ext/news/',
+        ],
+        'theme_t3kit' => [
+            'packagePath' => 'typo3conf/ext/theme_t3kit/',
+        ],
         'func' => [
             'packagePath' => 'typo3conf/ext/func/',
         ],
         'go_maps_ext' => [
             'packagePath' => 'typo3conf/ext/go_maps_ext/',
-        ],
-        'news' => [
-            'packagePath' => 'typo3conf/ext/news/',
         ],
         'pxa_cookie_bar' => [
             'packagePath' => 'typo3conf/ext/pxa_cookie_bar/',
@@ -166,9 +169,6 @@ return [
         ],
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
-        ],
-        'theme_t3kit' => [
-            'packagePath' => 'typo3conf/ext/theme_t3kit/',
         ],
         'typo3db_legacy' => [
             'packagePath' => 'typo3conf/ext/typo3db_legacy/',
