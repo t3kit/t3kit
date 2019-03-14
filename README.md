@@ -41,7 +41,7 @@
 
 5. `docker-compose up -d`
 
-6. `sh scripts/t3fixes.sh`
+6. `./scripts/t3fixes.sh`
 
 7. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
 
@@ -59,7 +59,7 @@
 
 4. `docker-compose up -d`
 
-5. `sh scripts/t3fixes.sh`
+5. `./scripts/t3fixes.sh`
 
 6. `docker exec -it web /var/www/html/vendor/t3kit/db/setupdb.sh`
 
