@@ -170,9 +170,6 @@ return [
         'solr' => [
             'packagePath' => 'typo3conf/ext/solr/',
         ],
-        'typo3db_legacy' => [
-            'packagePath' => 'typo3conf/ext/typo3db_legacy/',
-        ],
     ],
     'version' => 5,
 ];
