@@ -3428,12 +3428,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "edff67e02f54b83fb60b867d3357348a33e3fe9a"
+                "reference": "50b9e8f924f2db7f5c1caaa48a6f18c3428eef05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/edff67e02f54b83fb60b867d3357348a33e3fe9a",
-                "reference": "edff67e02f54b83fb60b867d3357348a33e3fe9a",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/50b9e8f924f2db7f5c1caaa48a6f18c3428eef05",
+                "reference": "50b9e8f924f2db7f5c1caaa48a6f18c3428eef05",
                 "shasum": ""
             },
             "require": {
@@ -3483,7 +3483,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-14T14:33:05+00:00"
+            "time": "2019-03-15T15:44:44+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -6939,12 +6939,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "78e30b08c3bdc1552af65c4a850325d06567009c"
+                "reference": "cbf8a98fd78853ebbd1480118fb718873474a508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/78e30b08c3bdc1552af65c4a850325d06567009c",
-                "reference": "78e30b08c3bdc1552af65c4a850325d06567009c",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/cbf8a98fd78853ebbd1480118fb718873474a508",
+                "reference": "cbf8a98fd78853ebbd1480118fb718873474a508",
                 "shasum": ""
             },
             "type": "library",
@@ -6966,7 +6966,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-13T16:02:42+00:00"
+            "time": "2019-03-15T15:49:17+00:00"
         }
     ],
     "aliases": [],
