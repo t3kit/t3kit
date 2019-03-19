@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf56495af7ccc920d9b6fd5a65b50a83",
+    "content-hash": "e0588305199c514b8c9d74443cdf84f3",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -3424,16 +3424,16 @@
         },
         {
             "name": "t3kit/theme-t3kit",
-            "version": "dev-master",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/theme_t3kit.git",
-                "reference": "50b9e8f924f2db7f5c1caaa48a6f18c3428eef05"
+                "reference": "ec085dbe6aa2d135769a1915dc3aa075163bb5a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/50b9e8f924f2db7f5c1caaa48a6f18c3428eef05",
-                "reference": "50b9e8f924f2db7f5c1caaa48a6f18c3428eef05",
+                "url": "https://api.github.com/repos/t3kit/theme_t3kit/zipball/ec085dbe6aa2d135769a1915dc3aa075163bb5a8",
+                "reference": "ec085dbe6aa2d135769a1915dc3aa075163bb5a8",
                 "shasum": ""
             },
             "require": {
@@ -3483,7 +3483,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-15T15:44:44+00:00"
+            "time": "2019-03-19T12:28:51+00:00"
         },
         {
             "name": "typo3-themes/themes",
@@ -6935,16 +6935,16 @@
         },
         {
             "name": "t3kit/db",
-            "version": "dev-master",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t3kit/t3kit_db.git",
-                "reference": "cbf8a98fd78853ebbd1480118fb718873474a508"
+                "reference": "b74bd300c0f81fcdf2aca2a923356db5a1274e95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/cbf8a98fd78853ebbd1480118fb718873474a508",
-                "reference": "cbf8a98fd78853ebbd1480118fb718873474a508",
+                "url": "https://api.github.com/repos/t3kit/t3kit_db/zipball/b74bd300c0f81fcdf2aca2a923356db5a1274e95",
+                "reference": "b74bd300c0f81fcdf2aca2a923356db5a1274e95",
                 "shasum": ""
             },
             "type": "library",
@@ -6966,7 +6966,7 @@
                 "t3kit",
                 "typo3"
             ],
-            "time": "2019-03-15T15:49:17+00:00"
+            "time": "2019-03-19T12:11:28+00:00"
         }
     ],
     "aliases": [],
@@ -6974,9 +6974,7 @@
     "stability-flags": {
         "typo3-themes/themes": 20,
         "kaystrobach/dyncss": 20,
-        "kaystrobach/dyncss-less": 20,
-        "t3kit/theme-t3kit": 20,
-        "t3kit/db": 20
+        "kaystrobach/dyncss-less": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
