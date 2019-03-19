@@ -1,4 +1,19 @@
 
+#### v8.9.0 `March 19, 2019`
+
+- **[TASK]** remove unneeded ext. typo3db-legacy ([642ffcd](https://github.com/t3kit/t3kit/commit/642ffcd))
+- **[TASK]** theme_t3kit should go after news in PackageStates.php (#201) ([5506000](https://github.com/t3kit/t3kit/commit/5506000))
+- **[DOC]** Change shell commands from sh to ./ (#200) ([87d5c34](https://github.com/t3kit/t3kit/commit/87d5c34))
+- **[TASK]** remove tests from public dir ([b6d89f9](https://github.com/t3kit/t3kit/commit/b6d89f9))
+- **[TASK]** add route configuration for news extension (#199) ([24b08de](https://github.com/t3kit/t3kit/commit/24b08de))
+- **[TASK]** update Solr docker image to v9.0.0 ([329d84f](https://github.com/t3kit/t3kit/commit/329d84f))
+- **[TASK]** enable Solr ext. ([a6d0410](https://github.com/t3kit/t3kit/commit/a6d0410))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** update theme_t3kit to v2.10.0, t3kit_db to v2.9.0 ([236b30e](https://github.com/t3kit/t3kit/commit/236b30e))
+
+***
+
 #### v8.9.0-beta `February 14, 2019`
 
 - **[TASK]** update theme_t3kit to v2.10.0-beta ([f9ba83d](https://github.com/t3kit/t3kit/commit/f9ba83d))
