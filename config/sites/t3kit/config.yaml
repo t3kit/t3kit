@@ -51,5 +51,11 @@ routes:
     type: staticText
     content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*"
 
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    map:
+      sitemap.xml: 1533906435
+
 imports:
   - { resource: "typo3conf/sites/global/route-enhancers-news.yaml" }
