@@ -49,7 +49,7 @@ routes:
   -
     route: robots.txt
     type: staticText
-    content: "User-agent: *\r\nDisallow: /typo3/\r\nDisallow: /typo3_src/\r\nAllow: /typo3/sysext/frontend/Resources/Public/*"
+    content: "User-agent: *\r\n\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nAllow: /typo3conf/ext/\r\n\r\n# sitemap\r\nSitemap: https://BASE_DOMAIN/sitemap.xml"
 
 routeEnhancers:
   PageTypeSuffix:
