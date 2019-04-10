@@ -4,7 +4,7 @@ return [
         'debug' => false,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$pbkdf2-sha256$25000$VWvddMstBQNUc5PCZtfxFg$HduEyn4hcpIS5UV6T45OiHq3st5VHCMwmRrC/JH2/40',
-        'loginSecurityLevel' => 'rsa',
+        'loginSecurityLevel' => 'normal',
     ],
     'DB' => [
         'Connections' => [
@@ -30,7 +30,6 @@ return [
             'indexed_search' => 'a:20:{s:8:"pdftools";s:9:"/usr/bin/";s:8:"pdf_mode";s:2:"20";s:5:"unzip";s:9:"/usr/bin/";s:6:"catdoc";s:9:"/usr/bin/";s:6:"xlhtml";s:9:"/usr/bin/";s:7:"ppthtml";s:9:"/usr/bin/";s:5:"unrtf";s:9:"/usr/bin/";s:18:"trackIpInStatistic";s:1:"2";s:9:"debugMode";s:1:"0";s:18:"fullTextDataLength";s:1:"0";s:23:"disableFrontendIndexing";s:1:"0";s:21:"enableMetaphoneSearch";s:1:"1";s:6:"minAge";s:2:"24";s:6:"maxAge";s:1:"0";s:16:"maxExternalFiles";s:1:"5";s:26:"useCrawlerForExternalFiles";s:1:"0";s:11:"flagBitMask";s:3:"192";s:16:"ignoreExtensions";s:0:"";s:17:"indexExternalURLs";s:1:"0";s:16:"useMysqlFulltext";s:1:"0";}',
             'news' => 'a:17:{s:13:"prependAtCopy";s:1:"1";s:6:"tagPid";s:1:"1";s:12:"rteForTeaser";s:1:"0";s:22:"contentElementRelation";s:1:"1";s:21:"contentElementPreview";s:1:"1";s:13:"manualSorting";s:1:"0";s:19:"categoryRestriction";s:0:"";s:34:"categoryBeGroupTceFormsRestriction";s:1:"0";s:19:"dateTimeNotRequired";s:1:"0";s:11:"archiveDate";s:4:"date";s:12:"mediaPreview";s:5:"false";s:20:"advancedMediaPreview";s:4:"true";s:24:"showAdministrationModule";s:1:"1";s:35:"hidePageTreeForAdministrationModule";s:1:"0";s:12:"showImporter";s:1:"0";s:18:"storageUidImporter";s:1:"1";s:22:"resourceFolderImporter";s:12:"/news_import";}',
             'pxa_newsletter_subscription' => 'a:1:{s:5:"table";s:7:"fe_user";}',
-            'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
             'solr' => 'a:4:{s:35:"useConfigurationFromClosestTemplate";s:1:"0";s:43:"useConfigurationTrackRecordsOutsideSiteroot";s:1:"1";s:29:"useConfigurationMonitorTables";s:0:"";s:27:"allowSelfSignedCertificates";s:1:"0";}',
             'static_info_tables' => 'a:1:{s:13:"enableManager";s:1:"0";}',
@@ -131,9 +130,6 @@ return [
         'pxa_newsletter_subscription' => [
             'table' => 'fe_user',
         ],
-        'rsaauth' => [
-            'temporaryDirectory' => '',
-        ],
         'scheduler' => [
             'maxLifetime' => '1440',
             'showSampleTasks' => '1',
@@ -154,7 +150,7 @@ return [
     ],
     'FE' => [
         'debug' => false,
-        'loginSecurityLevel' => 'rsa',
+        'loginSecurityLevel' => 'normal',
     ],
     'GFX' => [
         'jpg_quality' => '80',

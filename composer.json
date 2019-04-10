@@ -69,7 +69,6 @@
     "typo3/cms-setup": "~9.5.1",
     "typo3/cms-tstemplate": "~9.5.1",
     "typo3/cms-viewpage": "~9.5.1",
-    "typo3/cms-rsaauth": "~9.5.1",
 
     "typo3/cms-t3editor": "~9.5.1",
     "typo3/cms-felogin": "~9.5.1",

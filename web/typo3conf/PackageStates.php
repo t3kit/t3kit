@@ -104,9 +104,6 @@ return [
         'redirects' => [
             'packagePath' => 'typo3/sysext/redirects/',
         ],
-        'rsaauth' => [
-            'packagePath' => 'typo3/sysext/rsaauth/',
-        ],
         'seo' => [
             'packagePath' => 'typo3/sysext/seo/',
         ],
