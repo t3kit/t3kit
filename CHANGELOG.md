@@ -1,4 +1,13 @@
 
+#### v8.9.1 `April 17, 2019`
+
+- **[TASK]** update t3kit_db to v2.10.0 ([18bdf24](https://github.com/t3kit/t3kit/commit/18bdf24))
+- **[TASK]** update robots.txt configuration ([cef37df](https://github.com/t3kit/t3kit/commit/cef37df))
+- **[TASK]** remove rsaauth ext. ([53b9f0d](https://github.com/t3kit/t3kit/commit/53b9f0d))
+- **[TASK]** map Page Type to /sitemap.xml with a routeEnhancer ([5c2e0d8](https://github.com/t3kit/t3kit/commit/5c2e0d8))
+
+***
+
 #### v8.9.0 `March 19, 2019`
 
 - **[TASK]** remove unneeded ext. typo3db-legacy ([642ffcd](https://github.com/t3kit/t3kit/commit/642ffcd))
