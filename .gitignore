@@ -1,0 +1,6 @@
+# IDE specific
+.idea/
+.vscode/
+
+# others
+.DS_Store
