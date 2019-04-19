@@ -37,6 +37,7 @@
 	},
 	"require-dev": {},
 	"suggest": {},
+	"autoload": {},
 	"prefer-stable": true,
 	"config": {
 		"platform": {
