@@ -1,0 +1,3 @@
+@import 'EXT:t3kit/Configuration/TypoScript/Page'
+@import 'EXT:t3kit/Configuration/TypoScript/Config'
+@import 'EXT:t3kit/Configuration/TypoScript/Lib'

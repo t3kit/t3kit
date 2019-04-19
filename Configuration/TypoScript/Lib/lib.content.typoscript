@@ -1,0 +1,19 @@
+lib.content {
+    render = CONTENT
+    render {
+        table = tt_content
+        select {
+            orderBy = sorting
+            where.cObject = COA
+            where.cObject {
+                10 = TEXT
+                10 {
+                    field = colPos
+                    intval = 1
+                    ifEmpty = 0
+                    noTrimWrap = | AND colPos=||
+                }
+            }
+        }
+    }
+}
