@@ -1,3 +1,5 @@
+composer.lock
+
 # IDE specific
 .idea/
 .vscode/
