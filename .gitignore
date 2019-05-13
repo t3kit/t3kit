@@ -1,8 +1,7 @@
 composer.lock
-
-# IDE specific
+node_modules
+.tmp
+temp
 .idea/
 .vscode/
-
-# others
 .DS_Store
