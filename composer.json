@@ -1,14 +1,14 @@
 {
 	"name": "t3kit/t3kit",
 	"description": "t3kit project. A TYPO3 website starterkit.",
-    "type": "typo3-cms-extension",
+	"type": "typo3-cms-extension",
 	"keywords": [
 		"t3kit",
 		"typo3",
 		"cms",
 		"starter",
 		"t3kit9"
-    ],
+	],
 	"homepage": "http://t3kit.com",
 	"license": "GPL-2.0-or-later",
 	"authors": [
@@ -26,18 +26,21 @@
 	"require": {
 		"typo3/minimal": "^9.5",
 
-        "typo3/cms-fluid-styled-content": "^9.5",
-        "typo3/cms-form": "^9.5",
-        "typo3/cms-rte-ckeditor": "^9.5",
-        "typo3/cms-seo": "^9.5",
-        "typo3/cms-tstemplate": "^9.5",
-        "typo3/cms-felogin": "^9.5",
-        "typo3/cms-indexed-search": "^9.5"
-
+		"typo3/cms-fluid-styled-content": "^9.5",
+		"typo3/cms-form": "^9.5",
+		"typo3/cms-rte-ckeditor": "^9.5",
+		"typo3/cms-seo": "^9.5",
+		"typo3/cms-tstemplate": "^9.5",
+		"typo3/cms-felogin": "^9.5",
+		"typo3/cms-indexed-search": "^9.5"
 	},
 	"require-dev": {},
 	"suggest": {},
-	"autoload": {},
+	"autoload": {
+		"psr-4": {
+			"T3k\\t3kit\\": "Classes"
+		}
+	},
 	"prefer-stable": true,
 	"config": {
 		"platform": {
