@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="IconTextButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="-6 -42 100 100" style="enable-background:new -6 -42 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D3D3D3;}
+	.st1{fill:#999999;}
+	.st2{fill:#FFFFFF;stroke:#F85B30;stroke-width:2.8346;stroke-miterlimit:10;}
+	.st3{fill:#58595B;}
+	.st4{fill:#4BB4DA;}
+</style>
+<path class="st0" d="M-6-42H94V58H-6V-42z"/>
+<polygon class="st1" points="94,-5.7 82,-18 81,29 14.3,28.2 7,30 30.8,58 94,58 "/>
+<path class="st2" d="M11-19H77c2.2,0,4,1.2,4,2.6v43.8c0,1.4-1.8,2.6-4,2.6H11c-2.2,0-4-1.2-4-2.6v-43.8C7-17.8,8.8-19,11-19z"/>
+<rect x="44" y="-7.4" class="st3" width="30" height="5.9"/>
+<rect x="44" y="4.3" class="st3" width="30" height="3"/>
+<rect x="44" y="11.1" class="st3" width="30" height="3"/>
+<rect x="44" y="17.9" class="st3" width="30" height="3"/>
+<path class="st4" d="M27.3,5.7c2.7,0,5.6,0.8,8.6,2.4c3,1.6,4.4,3.7,4.4,6.3v6.4h-26v-6.4c0-2.6,1.5-4.7,4.4-6.3
+	C21.7,6.5,24.6,5.7,27.3,5.7L27.3,5.7z M27.7,5.8c-2.3,0-4.4-0.8-6-2.4s-2.5-3.5-2.5-5.8s0.8-4.2,2.5-5.8s3.7-2.5,6-2.5
+	s4.4,0.8,6,2.5s2.5,3.6,2.5,5.8s-0.8,4.2-2.5,5.8S30.1,5.8,27.7,5.8z"/>
+</svg>

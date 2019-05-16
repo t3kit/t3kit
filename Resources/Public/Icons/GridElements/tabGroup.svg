@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="TabsConteiner" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D3D3D3;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{fill:#F85B30;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#999999;}
+	.st4{fill:#4BB4DA;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#58595B;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#939598;}
+	.st7{opacity:0.1;fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M0,0h16v16H0V0z"/>
+	<g>
+		<rect x="1.5" y="1.5" class="st1" width="13" height="13"/>
+		<path class="st2" d="M14,2v12H2V2H14 M15,1H1v14h14V1L15,1z"/>
+	</g>
+	<g>
+		<polygon class="st3" points="15,15 1,15 2,16 16,16 		"/>
+	</g>
+	<g>
+		<polygon class="st3" points="15,15 15,1 16,2 16,16 		"/>
+	</g>
+	<g>
+		<g>
+			<rect x="7.3" y="4" class="st1" width="1.7" height="2"/>
+			<path class="st2" d="M8.5,4.5v1H7.8v-1H8.5 M9.5,3.5H6.8v3h2.7V3.5L9.5,3.5z"/>
+		</g>
+		<g>
+			<rect x="10.8" y="4" class="st1" width="1.7" height="2"/>
+			<path class="st2" d="M12,4.5v1h-0.7v-1H12 M13,3.5h-2.7v3H13V3.5L13,3.5z"/>
+		</g>
+		<g>
+			<polygon class="st1" points="3.5,12.5 3.5,3.5 5.5,3.5 5.5,5.5 12.5,5.5 12.5,12.5 			"/>
+			<path class="st4" d="M5,4v1v1h1h6v6H4V4H5 M6,3H3v10h10V5H6V3L6,3z"/>
+		</g>
+		<rect x="5" y="7" class="st5" width="6" height="1"/>
+		<rect x="5" y="8.5" class="st6" width="6" height="1"/>
+		<rect x="5" y="10" class="st6" width="6" height="1"/>
+	</g>
+	<rect x="2" y="2" class="st7" width="12" height="12"/>
+</g>
+</svg>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="menu-content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 100 150" style="enable-background:new 0 0 100 150;" xml:space="preserve" width="50px">
+<style type="text/css">
+	.st0{fill:#E6E6E6;}
+	.st1{fill:#F7B685;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#898989;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g id="header-footer_12_">
+	<g>
+		<path class="st0" d="M0,0v15h100V0H0z M0,150h100v-13H0V150z"/>
+	</g>
+</g>
+<g id="menu_copy_4">
+	<g id="Rectangle_3_copy_8_">
+		<g>
+			<rect x="4" y="19" class="st1" width="23" height="114"/>
+		</g>
+	</g>
+	<g id="Rectangle_4_copy_2_8_">
+		<g>
+			<path class="st2" d="M13,23v2h10v-2H13z M11,23H8v2h3V23z M13,31h10v-2H13V31z M8,31h3v-2H8V31z M13,37h10v-2H13V37z M8,37h3v-2
+				H8V37z M13,43h10v-2H13V43z M8,43h3v-2H8V43z M13,49h10v-2H13V49z M8,49h3v-2H8V49z"/>
+		</g>
+	</g>
+</g>
+<g id="content_copy_6">
+	<g id="text_rows_12_">
+		<g>
+			<path class="st3" d="M95.9,60h-65v2h65V60z M30.9,92H96v-2H30.9V92z M95.9,66h-65v2h65V66z M95.9,72h-65v2h65V72z M30.9,80H96v-2
+				H30.9V80z M30.9,86H96v-2H30.9V86z M30.9,24v2H96v-2H30.9z M30.9,98H96v-2H30.9V98z M30.9,104H96v-2H30.9V104z M30.9,38H96v-2
+				H30.9V38z M30.9,44H96v-2H30.9V44z M95.9,48h-65v2h65V48z M95.9,54h-65v2h65V54z M30.9,32H96v-2H30.9V32z M30.9,110H96v-2H30.9
+				V110z M30.9,116H96v-2H30.9V116z M30.9,122H96v-2H30.9V122z M30.9,128H96v-2H30.9V128z"/>
+		</g>
+	</g>
+	<rect x="55.9" y="66" class="st4" width="40" height="26"/>
+	<rect x="31" y="29" class="st4" width="21" height="23"/>
+	<g id="picture_small_12_">
+		<g>
+			<path class="st3" d="M31,30v20h19V30H31z M36,48l6-7l6,7H36z M48,45.6l-6.3-7.4l-3.3,4.1L37,41l-4,5.3V32h15V45.6z"/>
+		</g>
+	</g>
+	<g id="picture_big_12_">
+		<g>
+			<path class="st3" d="M57.9,66v26h38V66H57.9z M61.8,90l6.8-10l2.9,3l-4.9,7H61.8z M69.6,90l10.7-15L92,90H69.6z M94,89.5L80.3,72
+				l-7.2,9.6L68.7,77l-8.8,12.3V68H94V89.5z"/>
+		</g>
+	</g>
+</g>
+</svg>

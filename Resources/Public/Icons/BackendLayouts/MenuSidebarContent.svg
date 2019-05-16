@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="menu-sidebar-content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 100 150" style="enable-background:new 0 0 100 150;" xml:space="preserve" width="50px">
+<style type="text/css">
+	.st0{fill:#E6E6E6;}
+	.st1{fill:#7FB585;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#F7B685;}
+	.st4{fill:#898989;}
+</style>
+<g id="header-footer_16_">
+	<g>
+		<path class="st0" d="M0,0v15h100V0H0z M0,150h100v-13H0V150z"/>
+	</g>
+</g>
+<g id="sidebar_copy_5">
+	<g id="Rectangle_3_copy_2_10_">
+		<g>
+			<rect x="31" y="19" class="st1" width="23" height="114"/>
+		</g>
+	</g>
+	<g id="frame_4_10_">
+		<g>
+			<path class="st2" d="M50,104.9L50,104.9l0-1.9H35v26h15L50,104.9L50,104.9z M37,105h10.7l-5.4,9.1L37,105L37,105z M37,108.8
+				l4.2,7.2l-4.2,7.2V108.8z M37,127L37,127l5.3-9.1l5.4,9.1H37z M48,123.7l-4.5-7.7l4.5-7.7V123.7z"/>
+		</g>
+	</g>
+	<g id="frame_3_10_">
+		<g>
+			<path class="st2" d="M36.5,65L36.5,65L36.5,65H35v34h15V65H36.5z M48,92.9l-4.5-10.9l4.5-11V92.9z M47.9,67l-5.3,12.9L37.3,67
+				H47.9z M37,70.6l4.7,11.5L37,93.8V70.6z M42.6,84.3L47.9,97H37.5L42.6,84.3z"/>
+		</g>
+	</g>
+	<g id="frame_2_10_">
+		<g>
+			<path class="st2" d="M50,47.1L50,47.1l0-1.1H35v15h15L50,47.1L50,47.1z M46.8,48l-4.5,4.4L37.8,48H46.8z M37,49.4l4.2,4.1
+				L37,57.6V49.4z M37.8,59l4.5-4.4l4.5,4.4H37.8z M48,57.9l-4.5-4.4l4.5-4.4V57.9z"/>
+		</g>
+	</g>
+	<g id="frame_1_10_">
+		<g>
+			<path class="st2" d="M50,24.4L50,24.4l0-1.4H35v19h13.8l0,0.1l0-0.1H50L50,24.4L50,24.4z M47.3,25l-4.9,6.1L37.4,25H47.3z
+				 M37,27.3l4.2,5.2L37,37.8V27.3z M37.5,40l4.9-6.1l4.9,6.1H37.5z M48,38.2l-4.5-5.6l4.5-5.6V38.2z"/>
+		</g>
+	</g>
+</g>
+<g id="menu_copy_6">
+	<g id="Rectangle_3_copy_14_">
+		<g>
+			<rect x="4" y="19" class="st3" width="23" height="114"/>
+		</g>
+	</g>
+	<g id="Rectangle_4_copy_2_14_">
+		<g>
+			<path class="st2" d="M13,23v2h10v-2H13z M11,23H8v2h3V23z M13,31h10v-2H13V31z M8,31h3v-2H8V31z M13,37h10v-2H13V37z M8,37h3v-2
+				H8V37z M13,43h10v-2H13V43z M8,43h3v-2H8V43z M13,49h10v-2H13V49z M8,49h3v-2H8V49z"/>
+		</g>
+	</g>
+</g>
+<g id="content_copy_8">
+	<g id="text_rows_16_">
+		<g>
+			<path class="st4" d="M79,104h17v-2H79V104z M79,110h17v-2H79V110z M58,128h38v-2H58V128z M58,92h38v-2H58V92z M79,116h17v-2H79
+				V116z M58,122h38v-2H58V122z M58,96h21v2h17v-2L58,96L58,96z M58,32h38v-2H58V32z M58,38h38v-2H58V38z M58,24v2h38v-2H58z M58,86
+				h38v-2H58V86z M58,44h38v-2H58V44z M58,80h38v-2H58V80z"/>
+		</g>
+	</g>
+	<g id="picture_small_16_">
+		<g>
+			<path class="st4" d="M58,96v20h19V96H58z M63,114l6-7l6,7H63z M75,111.6l-6.3-7.4l-3.3,4.1L64,107l-4,5.3V98h15V111.6z"/>
+		</g>
+	</g>
+	<g id="picture_big_16_">
+		<g>
+			<path class="st4" d="M58,48v27h38V48H58z M61.9,73l6.8-10l2.9,3l-4.9,7H61.9z M69.7,73l10.7-15l11.7,15H69.7z M94,72.5L80.4,55
+				l-7.2,9.6L68.7,60L60,72.3V50H94V72.5z"/>
+		</g>
+	</g>
+</g>
+</svg>

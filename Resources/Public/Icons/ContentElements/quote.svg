@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Quote" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D3D3D3;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#999999;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{fill:#F85B30;}
+	.st4{fill:#4BB4DA;}
+	.st5{clip-path:url(#SVGID_2_);}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#58595B;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#939598;}
+</style>
+<g>
+	<path class="st0" d="M0,0h16v16H0V0z"/>
+	<polygon class="st1" points="15.7,16 16,16 16,5 14,3 11.8,4.6 2,12 6.1,16 	"/>
+	<g>
+		<polygon class="st2" points="11.2,11.5 2.5,11.5 2.5,3.5 13.5,3.5 13.5,11.5 12.5,11.5 12.5,12.8 		"/>
+		<path class="st3" d="M13,4v7h-1v0.6l-0.3-0.3L11.4,11H11H3V4H13 M14,3H2v9h9l2,2v-2h1V3L14,3z"/>
+	</g>
+	<g>
+		<path class="st4" d="M4,5.6l0.6,0c0,0.2,0,0.3-0.1,0.4C4.3,6.2,4.2,6.3,4,6.3l0.2,0.4c0.2-0.1,0.4-0.2,0.5-0.3
+			C4.8,6.3,4.9,6.1,5,6c0-0.2,0.1-0.4,0.1-0.6V4.7H4V5.6z"/>
+	</g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M12.8,10.7V3.8L7,4v3H3l0.2,3.7H12.8z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st5">
+			<path class="st6" d="M4,5h8v1H4V5z"/>
+			<g>
+				<path class="st7" d="M4,7h8v1H4V7z"/>
+			</g>
+			<g>
+				<path class="st7" d="M4,9h8v1H4V9z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path class="st4" d="M5.5,5.6l0.6,0C6,5.8,6,6,5.9,6.1C5.8,6.2,5.7,6.3,5.5,6.3l0.2,0.4C5.9,6.6,6,6.5,6.2,6.4
+			C6.3,6.3,6.4,6.1,6.5,6c0-0.2,0.1-0.4,0.1-0.6V4.7H5.5V5.6z"/>
+	</g>
+</g>
+</svg>

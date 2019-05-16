@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="start_page" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 150" style="enable-background:new 0 0 100 150;" xml:space="preserve" width="50px">
+<style type="text/css">
+	.st0{fill:#F4D0CE;}
+	.st1{fill:#E6E6E6;}
+	.st2{fill:#F7B685;}
+	.st3{fill:#898989;}
+	.st4{fill:none;stroke:#898989;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#898989;}
+</style>
+<rect x="12" y="31" class="st0" width="76" height="31"/>
+<g id="header-footer_36_">
+	<g>
+		<path class="st1" d="M0,0v15h100V0H0z M0,150h100v-13H0V150z"/>
+	</g>
+</g>
+<g id="content_copy_19">
+</g>
+<g id="Rectangle_3_copy_25_">
+	<g>
+		<rect x="4" y="19" class="st2" width="17" height="8"/>
+	</g>
+</g>
+<g id="Rectangle_3_copy_27_">
+	<g>
+		<rect x="23" y="19" class="st2" width="17" height="8"/>
+	</g>
+</g>
+<g id="Rectangle_3_copy_31_">
+	<g>
+		<rect x="42" y="19" class="st2" width="16" height="8"/>
+	</g>
+</g>
+<g id="Rectangle_3_copy_29_">
+	<g>
+		<rect x="60" y="19" class="st2" width="17" height="8"/>
+	</g>
+</g>
+<g id="Rectangle_3_copy_33_">
+	<g>
+		<rect x="79" y="19" class="st2" width="17" height="8"/>
+	</g>
+</g>
+<g id="picture_big_48_">
+	<g>
+		<path class="st3" d="M16,35v23h68V35H16z M21.3,56.1l5.9-9.5l2.7,2.9l-4.5,6.6H21.3z M27.4,56.4l9.5-14.3l10.1,14.3H27.4z M82,56
+			H48.6L36.9,39.3l-6.1,8.9L27,44l-7.7,12H18V37h64V56z"/>
+	</g>
+</g>
+<g>
+	<line class="st4" x1="91" y1="41" x2="96" y2="46"/>
+	<line class="st4" x1="91" y1="51" x2="96" y2="46"/>
+</g>
+<g>
+	<line class="st4" x1="9" y1="41" x2="4" y2="46"/>
+	<line class="st4" x1="9" y1="51" x2="4" y2="46"/>
+</g>
+<circle class="st2" cx="41" cy="68" r="3"/>
+<g>
+	<circle class="st1" cx="50" cy="68" r="3"/>
+</g>
+<g>
+	<circle class="st1" cx="59" cy="68" r="3"/>
+</g>
+<rect x="52" y="39" class="st3" width="26" height="4"/>
+<rect x="52" y="46" class="st3" width="16" height="2"/>
+<rect x="52" y="51" class="st3" width="16" height="2"/>
+<g id="text_rows_36_">
+	<g>
+		<path class="st3" d="M4,93h44v-2H4V93z M52,73v2h44v-2H52z M4,99h44v-2H4V99z M52,81h44v-2H52V81z M52,87h44v-2H52V87z M4,75h44
+			v-2H4V75z M4,81h44v-2H4V81z M4,87h44v-2H4V87z M52,93h44v-2H52V93z M52,99h44v-2H52V99z"/>
+	</g>
+</g>
+<rect x="2" y="73" class="st5" width="23" height="20"/>
+<g>
+	<rect x="4" y="107" class="st6" width="28" height="2"/>
+	<rect x="4" y="113" class="st6" width="28" height="2"/>
+	<rect x="4" y="119" class="st6" width="28" height="2"/>
+	<rect x="4" y="125" class="st6" width="28" height="2"/>
+	<rect x="4" y="131" class="st6" width="28" height="2"/>
+</g>
+<g>
+	<rect x="36" y="107" class="st6" width="28" height="2"/>
+	<rect x="36" y="113" class="st6" width="28" height="2"/>
+	<rect x="36" y="119" class="st6" width="28" height="2"/>
+	<rect x="36" y="125" class="st6" width="28" height="2"/>
+	<rect x="36" y="131" class="st6" width="28" height="2"/>
+</g>
+<g>
+	<rect x="68" y="107" class="st6" width="28" height="2"/>
+	<rect x="68" y="113" class="st6" width="28" height="2"/>
+	<rect x="68" y="119" class="st6" width="28" height="2"/>
+	<rect x="68" y="125" class="st6" width="28" height="2"/>
+	<rect x="68" y="131" class="st6" width="28" height="2"/>
+</g>
+<g id="picture_small_32_">
+	<g>
+		<path class="st3" d="M4,73v20h19V73H4z M9,91l6-7l6,7H9z M21,88.6l-6.3-7.4l-3.3,4.1L10,84l-4,5.3V75h15V88.6z"/>
+	</g>
+</g>
+</svg>

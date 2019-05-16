@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="content-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 100 150" style="enable-background:new 0 0 100 150;" xml:space="preserve" width="50px">
+<style type="text/css">
+	.st0{fill:#E6E6E6;}
+	.st1{fill:#F7B685;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#898989;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g id="header-footer_6_">
+	<g>
+		<path class="st0" d="M0,0v15h100V0H0z M0,150h100v-13H0V150z"/>
+	</g>
+</g>
+<g id="menu_copy_2">
+	<g id="Rectangle_3_copy_4_">
+		<g>
+			<rect x="73" y="19" class="st1" width="23" height="114"/>
+		</g>
+	</g>
+	<g id="Rectangle_4_copy_2_4_">
+		<g>
+			<path class="st2" d="M82,23v2h10v-2H82z M80,23h-3v2h3V23z M82,31h10v-2H82V31z M77,31h3v-2h-3V31z M82,37h10v-2H82V37z M77,37h3
+				v-2h-3V37z M82,43h10v-2H82V43z M77,43h3v-2h-3V43z M82,49h10v-2H82V49z M77,49h3v-2h-3V49z"/>
+		</g>
+	</g>
+</g>
+<g id="content_copy_3">
+	<g id="text_rows_6_">
+		<g>
+			<path class="st3" d="M69,60H4v2h65V60z M4,92h65.1v-2H4V92z M69,66H4v2h65V66z M69,72H4v2h65V72z M4,80h65.1v-2H4V80z M4,86h65.1
+				v-2H4V86z M4,24v2h65.1v-2H4z M4,98h65.1v-2H4V98z M4,104h65.1v-2H4V104z M4,38h65.1v-2H4V38z M4,44h65.1v-2H4V44z M69,48H4v2h65
+				V48z M69,54H4v2h65V54z M4,32h65.1v-2H4V32z M4,110h65.1v-2H4V110z M4,116h65.1v-2H4V116z M4,122h65.1v-2H4V122z M4,128h65.1v-2
+				H4V128z"/>
+		</g>
+	</g>
+	<rect x="29" y="66" class="st4" width="40" height="26"/>
+	<rect x="4" y="29" class="st4" width="21" height="23"/>
+	<g id="picture_small_6_">
+		<g>
+			<path class="st3" d="M4,30v20h19V30H4z M9,48l6-7l6,7H9z M21,45.6l-6.3-7.4l-3.3,4.1L10,41l-4,5.3V32h15V45.6z"/>
+		</g>
+	</g>
+	<g id="picture_big_6_">
+		<g>
+			<path class="st3" d="M31,66v26h38V66H31z M34.9,90l6.8-10l2.9,3l-4.9,7H34.9z M42.7,90l10.7-15l11.7,15H42.7z M67,89.5L53.4,72
+				l-7.2,9.6L41.7,77L33,89.3V68H67V89.5z"/>
+		</g>
+	</g>
+</g>
+</svg>
