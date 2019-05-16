@@ -8,3 +8,14 @@ plugin.t3kit {
     production = 0
   }
 }
+
+page.meta {
+  # cat=t3kit: meta data; type=string; label=Description Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.
+  description =
+  # cat=t3kit: meta data; type=string; label=Author Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.
+  author =
+  # cat=t3kit: meta data; type=string; label=Keywords Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.
+  keywords =
+  # cat=t3kit: meta data; type=string; label=Viewport:
+  viewport = width=device-width, initial-scale=1, shrink-to-fit=no
+}

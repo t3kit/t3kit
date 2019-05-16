@@ -32,7 +32,7 @@ config {
 }
 
 // If [Development]
-// TYPO3 Development context and every subcontext
+// TYPO3 Development context and every its subcontext
 [applicationContext = Development*]
 config {
     admPanel=1
