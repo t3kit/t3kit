@@ -92,10 +92,10 @@
     "kaystrobach/dyncss": "dev-typo3_9.x",
     "kaystrobach/dyncss-less": "dev-typo3_9.x",
 
-    "t3kit/theme-t3kit": "~2.10.0"
+    "t3kit/theme-t3kit": "~2.10.2"
   },
   "require-dev": {
-    "t3kit/db": "~2.10.0",
+    "t3kit/db": "~2.10.2",
     "behat/behat": "^3.3.0",
     "behat/mink-extension": "~2.2",
     "behat/mink-goutte-driver": "~1.2.1",
