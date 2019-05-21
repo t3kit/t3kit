@@ -1,4 +1,11 @@
 
+#### v8.9.2 `May 21, 2019`
+
+- **[TASK]** update theme_t3kit to v2.10.2, t3kit_db to v2.10.2 ([e6194cf](https://github.com/t3kit/t3kit/commit/e6194cf))
+- **[TASK]** update TYPO3 context configs, remove deprecated and unneeded parts, disable deprecation log for production ([ebdd28d](https://github.com/t3kit/t3kit/commit/ebdd28d))
+
+***
+
 #### v8.9.1 `April 17, 2019`
 
 - **[TASK]** update t3kit_db to v2.10.0 ([18bdf24](https://github.com/t3kit/t3kit/commit/18bdf24))
