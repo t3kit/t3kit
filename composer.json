@@ -39,8 +39,6 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": "^7.2",
-
     "typo3/cms-backend": "~9.5.1",
     "typo3/cms-core": "~9.5.1",
     "typo3/cms-extbase": "~9.5.1",
@@ -88,11 +86,7 @@
     "doctrine/common": "^2.9",
     "friendsoftypo3/cms-func": "^9.0.1",
 
-    "typo3-themes/themes": "dev-typo3_9.x",
-    "kaystrobach/dyncss": "dev-typo3_9.x",
-    "kaystrobach/dyncss-less": "dev-typo3_9.x",
-
-    "t3kit/theme-t3kit": "~2.10.2"
+    "t3kit/theme-t3kit": "dev-master"
   },
   "require-dev": {
     "t3kit/db": "~2.10.2",
@@ -101,6 +95,11 @@
     "behat/mink-goutte-driver": "~1.2.1",
     "behat/mink-selenium2-driver": "~1.3.1",
     "guzzlehttp/guzzle": "~6.3.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2"
+    }
   },
   "scripts": {
     "helper:restoredb": "scripts/restoredb.sh",
