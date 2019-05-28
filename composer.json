@@ -86,7 +86,7 @@
     "doctrine/common": "^2.9",
     "friendsoftypo3/cms-func": "^9.0.1",
 
-    "t3kit/theme-t3kit": "dev-master"
+    "t3kit/theme-t3kit": "~2.10.3"
   },
   "require-dev": {
     "t3kit/db": "~2.10.2",
