@@ -1,4 +1,11 @@
 
+#### v8.9.3 `May 28, 2019`
+
+- **[TASK]** update theme_t3kit to v2.10.3 ([f117966](https://github.com/t3kit/t3kit/commit/f117966))
+- **[TASK]** remove unneeded dependencies ([c55fd50](https://github.com/t3kit/t3kit/commit/c55fd50))
+
+***
+
 #### v8.9.2 `May 21, 2019`
 
 - **[TASK]** update theme_t3kit to v2.10.2, t3kit_db to v2.10.2 ([e6194cf](https://github.com/t3kit/t3kit/commit/e6194cf))
