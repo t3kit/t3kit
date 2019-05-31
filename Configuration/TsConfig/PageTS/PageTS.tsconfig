@@ -3,6 +3,8 @@
 
 # mod/web_layout/BackendLayouts
 @import 'EXT:t3kit/Configuration/TsConfig/PageTS/Mod/WebLayout/BackendLayouts'
+# mod/web_layout/Preview
+@import 'EXT:t3kit/Configuration/TsConfig/PageTS/Mod/WebLayout/Preview.tsconfig'
 
 # RTE
 @import 'EXT:t3kit/Configuration/TsConfig/PageTS/RTE.tsconfig'
