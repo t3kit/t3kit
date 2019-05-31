@@ -1,3 +1,7 @@
+# TYPO3 TypoScript Reference
+# https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Index.html
+
+
 @import 'EXT:t3kit/Configuration/TypoScript/Page'
 @import 'EXT:t3kit/Configuration/TypoScript/Config'
 @import 'EXT:t3kit/Configuration/TypoScript/Lib'

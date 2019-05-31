@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="title.1column">
+				<source>1 Column |</source>
+			</trans-unit>
+			<trans-unit id="title.1column_sidenav">
+				<source>1 Column -> Side Navigation |</source>
+			</trans-unit>
+			<trans-unit id="title.sidenav_1column">
+				<source>Side Navigation -> 1 Column |</source>
+			</trans-unit>
+
+			<trans-unit id="title.2columns">
+				<source>2 Columns |</source>
+			</trans-unit>
+			<trans-unit id="title.2columns_sidenav">
+				<source>2 Columns -> Side Navigation |</source>
+			</trans-unit>
+			<trans-unit id="title.sidenav_2columns">
+				<source>Side Navigation -> 2 Columns |</source>
+			</trans-unit>
+			<trans-unit id="title.2columns25_75">
+				<source>2 Columns 25%>75% |</source>
+			</trans-unit>
+			<trans-unit id="title.2columns75_25">
+				<source>2 Columns 75%>25% |</source>
+			</trans-unit>
+			<trans-unit id="title.sidenav25_2columns50_25">
+				<source>Side Navigation 25% -> 2 Columns 50%>25% |</source>
+			</trans-unit>
+			<trans-unit id="title.2columns50_25_sidenav25">
+				<source>2 Columns 50%>25% -> Side Navigation 25% |</source>
+			</trans-unit>
+
+			<trans-unit id="title.3columns">
+				<source>3 Columns |</source>
+			</trans-unit>
+			<trans-unit id="title.3columns_sidenav">
+				<source>3 Columns -> Side Navigation |</source>
+			</trans-unit>
+			<trans-unit id="title.sidenav_3columns">
+				<source>Side Navigation -> 3 Columns |</source>
+			</trans-unit>
+			<trans-unit id="title.3columns25_50_25">
+				<source>3 Columns 25%>50%>25% |</source>
+			</trans-unit>
+
+			<trans-unit id="title.4columns">
+				<source>4 Columns |</source>
+			</trans-unit>
+
+			<trans-unit id="title.empty">
+				<source>Empty |</source>
+			</trans-unit>
+			<trans-unit id="title.default">
+				<source>Default |</source>
+			</trans-unit>
+
+			<trans-unit id="title.startpage1">
+				<source>Start Page #1 |</source>
+			</trans-unit>
+			<trans-unit id="title.startpage2">
+				<source>Start Page #2 |</source>
+			</trans-unit>
+			<trans-unit id="title.startpage3">
+				<source>Start Page #3 |</source>
+			</trans-unit>
+			<trans-unit id="title.startpage4">
+				<source>Start Page #4 |</source>
+			</trans-unit>
+			<trans-unit id="title.startpage5">
+				<source>Start Page #5 |</source>
+			</trans-unit>
+
+
+
+			<trans-unit id="columns.header">
+				<source>Site header</source>
+			</trans-unit>
+			<trans-unit id="columns.footer">
+				<source>Site footer</source>
+			</trans-unit>
+			<trans-unit id="columns.breadcrumbs">
+				<source>Breadcrumbs</source>
+			</trans-unit>
+			<trans-unit id="columns.sidenav">
+				<source>Side Navigation</source>
+			</trans-unit>
+
+			<trans-unit id="columns.top">
+				<source>Top content (after site header/before breadcrumbs)</source>
+			</trans-unit>
+			<trans-unit id="columns.before_content">
+				<source>Additional content (after breadcrumbs/before main content)</source>
+			</trans-unit>
+			<trans-unit id="columns.after_content">
+				<source>Additional content (after main content/before site footer)</source>
+			</trans-unit>
+
+			<trans-unit id="columns.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="columns.1.content">
+				<source>Content [Column 1]</source>
+			</trans-unit>
+			<trans-unit id="columns.2.content">
+				<source>Content [Column 2]</source>
+			</trans-unit>
+			<trans-unit id="columns.3.content">
+				<source>Content [Column 3]</source>
+			</trans-unit>
+			<trans-unit id="columns.4.content">
+				<source>Content [Column 4]</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
