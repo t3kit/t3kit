@@ -1,0 +1,17 @@
+# ###########################
+# Insert records
+#
+# CType: shortcut
+# ===========================
+
+tt_content.shortcut =< lib.contentElement
+tt_content.shortcut {
+
+  templateName = Shortcut
+
+  variables.shortcuts = RECORDS
+  variables.shortcuts {
+    source.field = records
+    tables = tt_content
+  }
+}

@@ -1,0 +1,12 @@
+# ###########################
+# Plain HTML
+#
+# CType: html
+# ===========================
+
+tt_content.html =< lib.contentElement
+tt_content.html {
+
+  templateName = Html
+
+}
