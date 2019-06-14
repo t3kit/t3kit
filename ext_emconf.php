@@ -10,6 +10,8 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '9.5.0-9.5.99',
         ],
         'conflicts' => [
+            'css_styled_content' => '*',
+            'fluid_styled_content' => '*',
         ],
     ],
     'state' => 'alpha',
@@ -21,6 +23,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 't3kit',
     'autoload' => [
         'psr-4' => [
+            'T3k\\t3kit\\' => 'Classes'
         ],
     ],
 ];

@@ -26,7 +26,6 @@
 	"require": {
 		"typo3/minimal": "^9.5",
 
-		"typo3/cms-fluid-styled-content": "^9.5",
 		"typo3/cms-form": "^9.5",
 		"typo3/cms-rte-ckeditor": "^9.5",
 		"typo3/cms-seo": "^9.5",
