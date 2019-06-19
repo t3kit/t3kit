@@ -1,17 +1,17 @@
-# Default configuration for content elements which are using FLUIDTEMPLATE directly
+# Default FLUIDTEMPLATE configuration for content elements
 lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
   templateName = Default
   templateRootPaths {
-    0 = EXT:t3kit/Resources/Private/Templates/Content
+    0 = EXT:t3kit/Resources/Private/Templates/ContentElement
     10 = {$plugin.t3kit.lib.contentElement.templateRootPath}
   }
   partialRootPaths {
-    0 = EXT:t3kit/Resources/Private/Partials/Content
+    0 = EXT:t3kit/Resources/Private/Partials/ContentElement
     10 = {$plugin.t3kit.lib.contentElement.partialRootPath}
   }
   layoutRootPaths {
-    0 = EXT:t3kit/Resources/Private/Layouts/Content
+    0 = EXT:t3kit/Resources/Private/Layouts/ContentElement
     10 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
   }
 }

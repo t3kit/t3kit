@@ -1,16 +1,20 @@
 # TYPO3 TSconfig Reference
 # https://docs.typo3.org/m/typo3/reference-tsconfig/master/en-us/Index.html
 
-# mod/web_layout/BackendLayouts
-@import 'EXT:t3kit/Configuration/TsConfig/PageTS/Mod/WebLayout/BackendLayouts'
-# mod/web_layout/Preview
-@import 'EXT:t3kit/Configuration/TsConfig/PageTS/Mod/WebLayout/Preview.tsconfig'
+# BackendLayouts
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts'
+
+# ContentElement
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElement'
+
+# Preview
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/WebLayout/Preview.tsconfig'
 
 # RTE
-@import 'EXT:t3kit/Configuration/TsConfig/PageTS/RTE.tsconfig'
+@import 'EXT:t3kit/Configuration/TsConfig/Page/RTE.tsconfig'
 
 # TCEFORM
-@import 'EXT:t3kit/Configuration/TsConfig/PageTS/TCEFORM.tsconfig'
+@import 'EXT:t3kit/Configuration/TsConfig/Page/TCEFORM.tsconfig'
 
 # TCEMAIN
-@import 'EXT:t3kit/Configuration/TsConfig/PageTS/TCEMAIN.tsconfig'
+@import 'EXT:t3kit/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
