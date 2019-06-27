@@ -50,12 +50,10 @@ routes:
     route: robots.txt
     type: staticText
     content: "User-agent: *\r\n\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nAllow: /typo3conf/ext/\r\n\r\n# sitemap\r\nSitemap: https://BASE_DOMAIN/sitemap.xml"
-
-routeEnhancers:
-  PageTypeSuffix:
-    type: PageType
-    map:
-      sitemap.xml: 1533906435
+  -
+    route: sitemap.xml
+    type: uri
+    source: 't3://page?uid=1 - - - &type=1533906435'
 
 imports:
   - { resource: "typo3conf/sites/global/route-enhancers-news.yaml" }
