@@ -10,7 +10,7 @@ call_user_func(function()
     */
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         't3kit',
-        'Configuration/TsConfig/Page/PageTS.tsconfig',
+        'Configuration/TsConfig/Page/Import.tsconfig',
         't3kit'
     );
 });

@@ -1,0 +1,40 @@
+# ###########################
+# Groups of Content elements
+# ===========================
+
+# Remove default TYPO3 CE groups
+mod.wizards.newContentElement.wizardItems.common >
+
+# t3kit CE groups
+mod.wizards.newContentElement.wizardItems {
+  static.header = LLL:EXT:t3kit/Resources/Private/Language/locallang_db_new_content_el.xlf:static
+  static.before = dynamic
+
+  dynamic.header = LLL:EXT:t3kit/Resources/Private/Language/locallang_db_new_content_el.xlf:dynamic
+  dynamic.before = separator
+
+  separator.header = LLL:EXT:t3kit/Resources/Private/Language/locallang_db_new_content_el.xlf:separator
+  separator.before = forms
+}
+# ___________________________
+
+
+
+# ###########################
+# Remove default TYPO3 config for content elements
+# ===========================
+mod.wizards.newContentElement.wizardItems.special.elements.html >
+mod.wizards.newContentElement.wizardItems.special.elements.div >
+mod.wizards.newContentElement.wizardItems.special.elements.shortcut >
+# ___________________________
+
+
+
+# ###########################
+# Import configurations for all Content elements
+# ===========================
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Static/'
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Dynamic/'
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Separator/'
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Special/'
+# ___________________________

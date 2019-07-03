@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="static">
+				<source>Static content</source>
+			</trans-unit>
+			<trans-unit id="dynamic">
+				<source>Dynamic content</source>
+			</trans-unit>
+			<trans-unit id="separator">
+				<source>Content separator</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

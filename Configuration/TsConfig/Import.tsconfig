@@ -4,8 +4,8 @@
 # BackendLayouts
 @import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts'
 
-# ContentElement
-@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElement'
+# Content elements
+@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements.tsconfig'
 
 # Preview
 @import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/WebLayout/Preview.tsconfig'

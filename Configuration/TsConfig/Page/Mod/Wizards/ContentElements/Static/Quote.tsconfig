@@ -1,0 +1,20 @@
+# ###########################
+# quote Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static {
+  elements {
+    quote {
+      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:quote.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:quote.description
+      iconIdentifier = ce-quote
+    }
+  }
+  show := addToList(quote)
+}
+
+TCEFORM.tt_content.pi_flexform.quote.sDEF.iconClass {
+  addItems {
+    0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:quote.flexform.iconClass_none
+  }
+}
+
