@@ -3,7 +3,6 @@
 #
 # CType: textpic
 # ===========================
-
 tt_content.textpic =< lib.contentElement
 tt_content.textpic {
 

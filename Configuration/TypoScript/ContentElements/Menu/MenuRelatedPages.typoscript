@@ -1,9 +1,8 @@
 # ###########################
-# Related pages (based on keywords):
+# Related pages (based on keywords)
 #
 # CType: menu_related_pages
 # ===========================
-
 tt_content.menu_related_pages =< lib.contentElement
 tt_content.menu_related_pages {
   templateName = MenuRelatedPages

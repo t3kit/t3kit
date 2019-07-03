@@ -1,14 +1,11 @@
 # ###########################
-# Section index (page content marked for section menus):
+# Section index (page content marked for section menus)
 #
 # CType: menu_section
 # ===========================
-
 tt_content.menu_section =< lib.contentElement
 tt_content.menu_section {
-
   templateName = MenuSection
-
   dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     10 {
@@ -17,14 +14,14 @@ tt_content.menu_section {
         value {
           field = pages
           override {
-          data = page:uid
-          if {
-            isFalse.field = pages
+            data = page:uid
+            if {
+              isFalse.field = pages
+            }
           }
         }
       }
-    }
-    dataProcessing {
+      dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         10 {
           references.fieldName = media

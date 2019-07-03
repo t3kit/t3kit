@@ -1,20 +1,16 @@
 # ###########################
-# Sitemaps of selected pages:
+# Menu of subpages of selected pages including abstracts
 #
-# CType: menu_sitemap_pages
+# CType: menu_abstract
 # ===========================
-
-tt_content.menu_sitemap_pages =< lib.contentElement
-tt_content.menu_sitemap_pages {
-
-  templateName = MenuSitemapPages
-
+tt_content.menu_abstract =< lib.contentElement
+tt_content.menu_abstract {
+  templateName = MenuAbstract
   dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     10 {
       special = directory
       special.value.field = pages
-      levels = 7
       dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         10 {

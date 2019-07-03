@@ -1,12 +1,11 @@
 # ###########################
-# Insert records
+# Insert records:
+# This element embeds other content elements.
 #
 # CType: shortcut
 # ===========================
-
 tt_content.shortcut =< lib.contentElement
 tt_content.shortcut {
-
   templateName = Shortcut
 
   variables.shortcuts = RECORDS

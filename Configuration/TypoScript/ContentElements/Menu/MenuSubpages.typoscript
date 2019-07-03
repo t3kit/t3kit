@@ -1,18 +1,16 @@
 # ###########################
-# Sitemap
+# Menu of subpages of selected pages
 #
-# CType: menu_sitemap
+# CType: menu_subpages
 # ===========================
-
-tt_content.menu_sitemap =< lib.contentElement
-tt_content.menu_sitemap {
-
-  templateName = MenuSitemap
-
+tt_content.menu_subpages =< lib.contentElement
+tt_content.menu_subpages {
+  templateName = MenuSubpages
   dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     10 {
-      levels = 7
+      special = directory
+      special.value.field = pages
       dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         10 {

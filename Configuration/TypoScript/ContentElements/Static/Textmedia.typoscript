@@ -1,18 +1,17 @@
 # ###########################
-# Image
+# Text & Media
 #
-# CType: image
+# CType: textmedia
 # ===========================
+tt_content.textmedia =< lib.contentElement
+tt_content.textmedia {
 
-tt_content.image =< lib.contentElement
-tt_content.image {
-
-  templateName = Image
+  templateName = Textmedia
 
   dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     10 {
-      references.fieldName = image
+      references.fieldName = assets
     }
     20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
     20 {

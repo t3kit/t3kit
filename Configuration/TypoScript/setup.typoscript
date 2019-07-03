@@ -2,9 +2,10 @@
 # https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Index.html
 
 
+@import 'EXT:t3kit/Configuration/TypoScript/Lib'
+@import 'EXT:t3kit/Configuration/TypoScript/ContentElements'
 @import 'EXT:t3kit/Configuration/TypoScript/Page'
 @import 'EXT:t3kit/Configuration/TypoScript/Config'
-@import 'EXT:t3kit/Configuration/TypoScript/Lib'
 
 
 plugin.tx_t3kit {
