@@ -1,0 +1,22 @@
+tt_content {
+  quote =< lib.contentElement
+  quote {
+    templateName = Quote
+    dataProcessing {
+      10 = T3kit\themeT3kit\DataProcessing\FlexFormProcessor
+      10 {
+        fieldName = pi_flexform
+        as = settings
+      }
+      30 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
+      30 {
+        fieldName = header
+        delimiter = ,
+        as = headers
+      }
+      # "inherit" from lib.fluidContent
+      800 < lib.contentElement.dataProcessing.800
+      830 < lib.contentElement.dataProcessing.830
+    }
+  }
+}

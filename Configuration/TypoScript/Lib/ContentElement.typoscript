@@ -14,4 +14,7 @@ lib.contentElement {
     0 = EXT:t3kit/Resources/Private/Layouts/ContentElement
     10 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
   }
+  stdWrap {
+    editIcons = tt_content
+  }
 }
