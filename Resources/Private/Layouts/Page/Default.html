@@ -1,9 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:spaceless>
 
-	<f:render partial="Page/Header/Header" section="Default" arguments="{_all}" />
+	<f:comment>
+		<f:render partial="Header/Header" arguments="{_all}" />
+	</f:comment>
+
 	<f:render section="Main" />
-	<f:render partial="Page/Footer/Footer" section="Default" arguments="{_all}" />
+
+	<f:comment>
+		<f:render partial="Footer/Footer" arguments="{_all}" />
+	</f:comment>
 
 </f:spaceless>
 </html>

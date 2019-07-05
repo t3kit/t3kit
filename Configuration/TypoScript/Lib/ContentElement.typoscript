@@ -3,16 +3,23 @@ lib.contentElement = FLUIDTEMPLATE
 lib.contentElement {
   templateName = Default
   templateRootPaths {
-    0 = EXT:t3kit/Resources/Private/Templates/ContentElement
-    10 = {$plugin.t3kit.lib.contentElement.templateRootPath}
+    0 = EXT:t3kit/Resources/Private/Templates/ContentElements
+    11 = EXT:t3kit/Resources/Private/Templates/ContentElements/Static
+    12 = EXT:t3kit/Resources/Private/Templates/ContentElements/Dynamic
+    13 = EXT:t3kit/Resources/Private/Templates/ContentElements/Separator
+    14 = EXT:t3kit/Resources/Private/Templates/ContentElements/Forms
+    15 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
+    16 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugins
+    17 = EXT:t3kit/Resources/Private/Templates/ContentElements/Special
+    20 = {$plugin.t3kit.lib.contentElement.templateRootPath}
   }
   partialRootPaths {
-    0 = EXT:t3kit/Resources/Private/Partials/ContentElement
-    10 = {$plugin.t3kit.lib.contentElement.partialRootPath}
+    0 = EXT:t3kit/Resources/Private/Partials/ContentElements
+    20 = {$plugin.t3kit.lib.contentElement.partialRootPath}
   }
   layoutRootPaths {
-    0 = EXT:t3kit/Resources/Private/Layouts/ContentElement
-    10 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
+    0 = EXT:t3kit/Resources/Private/Layouts/ContentElements
+    20 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
   }
   stdWrap {
     editIcons = tt_content
