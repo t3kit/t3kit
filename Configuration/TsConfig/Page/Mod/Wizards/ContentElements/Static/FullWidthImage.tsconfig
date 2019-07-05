@@ -4,8 +4,8 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     fullWidthImage {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:fullWidthImage.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:fullWidthImage.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:fullWidthImage.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:fullWidthImage.description
       iconIdentifier = ce-fullWidthImage
     }
   }

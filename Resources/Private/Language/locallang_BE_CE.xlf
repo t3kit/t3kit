@@ -3,13 +3,13 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
-			<trans-unit id="static">
+			<trans-unit id="group.static">
 				<source>Static content</source>
 			</trans-unit>
-			<trans-unit id="dynamic">
+			<trans-unit id="group.dynamic">
 				<source>Dynamic content</source>
 			</trans-unit>
-			<trans-unit id="separator">
+			<trans-unit id="group.separator">
 				<source>Content separator</source>
 			</trans-unit>
 		</body>

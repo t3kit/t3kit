@@ -4,8 +4,8 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     quote {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:quote.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:quote.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.description
       iconIdentifier = ce-quote
     }
   }
@@ -14,7 +14,7 @@ mod.wizards.newContentElement.wizardItems.static {
 
 TCEFORM.tt_content.pi_flexform.quote.sDEF.iconClass {
   addItems {
-    0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:quote.flexform.iconClass_none
+    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.flexform.iconClass_none
   }
 }
 

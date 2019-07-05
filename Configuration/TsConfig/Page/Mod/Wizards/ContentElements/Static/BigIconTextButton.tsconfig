@@ -4,8 +4,8 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     bigIconTextButton {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:bigIconTextButton.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:bigIconTextButton.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.description
       iconIdentifier = ce-bigIconTextButton
     }
   }
@@ -14,7 +14,7 @@ mod.wizards.newContentElement.wizardItems.static {
 
 TCEFORM.tt_content.pi_flexform.bigIconTextButton.sDEF.iconClass {
   addItems {
-    0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:icon.flexform.iconClass_none
+    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:icon.flexform.iconClass_none
   }
 }
 

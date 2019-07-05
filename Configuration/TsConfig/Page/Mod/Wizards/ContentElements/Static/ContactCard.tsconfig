@@ -4,8 +4,8 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     contactsCard {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:contactsCard.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:contactsCard.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.description
       iconIdentifier = ce-contactsCard
     }
   }
@@ -14,7 +14,7 @@ mod.wizards.newContentElement.wizardItems.static {
 
 TCEFORM.tt_content.pi_flexform.contactsCard.sDEF.imgAsBg {
   addItems {
-    0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:contactsCard.flexform.imgAsBg_None
-    1 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:contactsCard.flexform.imgAsBg_One
+    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.imgAsBg_None
+    1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.imgAsBg_One
   }
 }

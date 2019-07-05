@@ -11,7 +11,7 @@
 
 mod.web_layout.BackendLayouts.2columns25_75 {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/2columns25_75.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/belayouts.xlf:title.2columns25_75
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.2columns25_75
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -20,7 +20,7 @@ mod.web_layout.BackendLayouts.2columns25_75 {
 
     # Top content (after site header/before breadcrumbs)
     rows.1.columns.1 {
-      name = LLL:EXT:t3kit/Resources/Private/Language/belayouts.xlf:columns.top
+      name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.top
       colspan = 12
       colPos = 50
     }
@@ -29,7 +29,7 @@ mod.web_layout.BackendLayouts.2columns25_75 {
 
     # Additional content (after breadcrumbs/before main content)
     rows.2.columns.1 {
-      name = LLL:EXT:t3kit/Resources/Private/Language/belayouts.xlf:columns.before_content
+      name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.before_content
       colspan = 12
       colPos = 60
     }
@@ -38,12 +38,12 @@ mod.web_layout.BackendLayouts.2columns25_75 {
     # All Content
     rows.3.columns {
       1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/belayouts.xlf:columns.1.content
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
         colspan = 4
         colPos = 101
       }
       2 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/belayouts.xlf:columns.2.content
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
         colspan = 8
         colPos = 102
       }
@@ -52,7 +52,7 @@ mod.web_layout.BackendLayouts.2columns25_75 {
 
     # Additional content (after main content/before site footer)
     rows.4.columns.1 {
-      name = LLL:EXT:t3kit/Resources/Private/Language/belayouts.xlf:columns.after_content
+      name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.after_content
       colspan = 12
       colPos = 90
     }

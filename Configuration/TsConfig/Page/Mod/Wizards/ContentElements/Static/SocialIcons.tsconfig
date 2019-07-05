@@ -4,8 +4,8 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     socialIcons {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:socialIcons.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements.xlf:socialIcons.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.description
       iconIdentifier = ce-socialIcons
     }
   }
