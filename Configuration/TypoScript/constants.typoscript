@@ -1,10 +1,10 @@
 plugin.t3kit {
   settings {
-    # customcategory=goingLive=LLL:EXT:t3kit/Resources/Private/Language/constants.xlf:category.goingLive
+    # customcategory=goingLive=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.goingLive
 
-    # customsubcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/constants.xlf:subcategory.t3kit
+    # customsubcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.t3kit
 
-    # cat=goingLive/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/constants.xlf:settings.production
+    # cat=goingLive/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.production
     production = 0
   }
 }
