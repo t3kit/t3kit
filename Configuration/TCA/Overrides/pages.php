@@ -22,7 +22,7 @@ call_user_func(function()
         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
         // 'displayCond' => 'FIELD:add_background:!=:0',
         'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'background', [
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'nav_icon', [
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
             ],
@@ -80,7 +80,7 @@ call_user_func(function()
         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
         // 'displayCond' => 'FIELD:add_background:!=:0',
         'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'background', [
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'nav_image', [
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
             ],
@@ -131,5 +131,16 @@ call_user_func(function()
     ],
 ]);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'nav_icon', '', 'after:subtitle');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'nav_image', '', 'after:backend_layout_next_level');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'title',
+    '--linebreak--, nav_icon',
+    'after:subtitle'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'layout',
+    '--linebreak--, nav_image',
+    'after:backend_layout_next_level'
+);

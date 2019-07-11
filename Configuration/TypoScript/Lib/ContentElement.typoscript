@@ -24,4 +24,12 @@ lib.contentElement {
   stdWrap {
     editIcons = tt_content
   }
+  dataProcessing {
+    100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    100 {
+      references.fieldName = background
+      as = background
+    }
+  }
+
 }
