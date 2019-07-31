@@ -7,3 +7,4 @@
 # Special CE
 mod.wizards.newContentElement.wizardItems.special.elements.shortcut.tt_content_defValues.CType = shortcut
 mod.wizards.newContentElement.wizardItems.special.elements.html.tt_content_defValues.CType = html
+mod.wizards.newContentElement.wizardItems.special.elements.siteHeader.tt_content_defValues.CType = siteHeader

@@ -3,6 +3,95 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
+
+			<!--SiteHeader Element-->
+			<trans-unit id="siteHeader.title">
+				<source>Site Header</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.description">
+				<source>Main header of the site. Will be copied to all subpages.</source>
+			</trans-unit>
+
+			<!--SiteHeader Element TCA Overrides-->
+			<trans-unit id="siteHeader.TCA.tab">
+				<source>Site Header Settings </source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.CType">
+				<source>Site Header ||| (Main header of the site. Will be copied to all subpages)</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.palette.headerTop">
+				<source>Site Header Top</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.palette.headerMiddle">
+				<source>Site Header Middle</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.palette.mainNavigation">
+				<source>Main Navigation</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.palette.accessibility">
+				<source>Accessibility</source>
+			</trans-unit>
+
+
+			<trans-unit id="siteHeader.TCA.accessibility.skipLinks_mainNavigation">
+				<source>Accessibility SkipLinks - MainNavigation</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.accessibility.skipLinks_mainContent">
+				<source>Accessibility SkipLinks MainContent</source>
+			</trans-unit>
+
+
+			<trans-unit id="siteHeader.TCA.headerTop">
+				<source>Show Site Header Top section</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerMiddle">
+				<source>Show Site Header Middle section</source>
+			</trans-unit>
+
+			<trans-unit id="siteHeader.TCA.headerTopContacts">
+				<source>Show Site Header Top Contacts</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopNavigation">
+				<source>Site Header Top Navigation</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopLangMenu">
+				<source>Site Header Top Language Menu</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopSearch">
+				<source>Site Header Top Search</source>
+			</trans-unit>
+
+
+
+			<trans-unit id="siteHeader.TCA.headerTopContacts.email_address">
+				<source>Email address</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.email_title">
+				<source>Email title</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.email_icon">
+				<source>Show Email icon</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.email_show_title">
+				<source>Show Email title</source>
+			</trans-unit>
+
+			<trans-unit id="siteHeader.TCA.headerTopContacts.phone_link">
+				<source>Phone number link</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.phone_text">
+				<source>Phone number text</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.phone_title">
+				<source>Phone number title</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.phone_icon">
+				<source>Show Phone icon</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.TCA.headerTopContacts.phone_show_title">
+				<source>Show Phone title</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
