@@ -23,12 +23,14 @@ config {
 
   // The default JavaScript is the decryption function for email addresses.
   // Special case: If the value is "external", then the default JavaScript is written to a temporary file and included from that file. See inlineStyle2TempFile.
-  removeDefaultJS = 1
+  removeDefaultJS = external
 
   sendCacheHeaders = 1
 
   // if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
-  spamProtectEmailAddresses = ascii
+  spamProtectEmailAddresses = -2
+  spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
+  spamProtectEmailAddresses_lastDotSubst = .<span style="display:none;">remove-this.</span>
 }
 
 // If [Development]
