@@ -17,3 +17,20 @@ lib.content {
     }
   }
 }
+
+
+// Render config for Site Header and Footer elements
+// Check StartPage BE Layout
+lib.content.siteHeader = COA
+lib.content.siteHeader {
+    10 < styles.content.get
+    10.select.where = {#colPos}=1
+    10.slide = -1
+}
+
+lib.content.siteFooter = COA
+lib.content.siteFooter {
+    10 < styles.content.get
+    10.select.where = {#colPos}=11
+    10.slide = -1
+}

@@ -7,7 +7,7 @@
 # [11-20]    -> Footer
 # [30-40]    -> Navigation/Breadcrumbs
 # [50-90]   -> Additional content
-# [100-200]  -> All Content
+# [100-900]  -> All Content
 
 mod.web_layout.BackendLayouts.Default {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/Default.svg
