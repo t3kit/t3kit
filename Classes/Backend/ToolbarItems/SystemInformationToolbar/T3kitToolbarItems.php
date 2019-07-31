@@ -1,9 +1,8 @@
 <?php
-
 namespace T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar;
 
 /*
- * This file is part of the TYPO3 CMS project.
+ * This file is part of the t3kit project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -12,6 +11,7 @@ namespace T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
+ * The t3kit project
  * The TYPO3 project - inspiring people to share!
  */
 
