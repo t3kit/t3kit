@@ -10,8 +10,10 @@
     "prod": "npm-run-all css-lint js-lint css-compile css-prefix css-minify",
     "css-compile": "node-sass --output-style=expanded --source-map=true dev/styles/bootstrap.scss  ../Resources/Public/CSS/bootstrap.css",
     "css-lint": "stylelint \"dev/styles/**/*.scss\"",
-    "css- ": "cleancss --level=1 --source-map --source-map-inline-sources --output ../Resources/Public/CSS/bootstrap.css ../Resources/Public/CSS/bootstrap.css",
+    "css-minify": "cleancss --level=1 --source-map --source-map-inline-sources --output ../Resources/Public/CSS/bootstrap.css ../Resources/Public/CSS/bootstrap.css",
     "css-prefix": "postcss ../Resources/Public/CSS/bootstrap.css --use=autoprefixer --map=false --output=../Resources/Public/CSS/bootstrap.css",
+    "js-minify": "npm-run-all --parallel js-minify-bundle",
+    "js-minify-bundle": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --output ../Resources/Public/JavaScript/bundle.min.js ../Resources/Public/JavaScript/bundle.js",
     "js-lint": "standard \"dev/js/main/**/*.js\"",
     "js-lint-fix": "standard --fix \"dev/js/main/**/*.js\"",
     "watch-css": "nodemon -e scss -x \"npm run css-compile\" --cache --cache-location .cache/.stylelintcache",
@@ -43,7 +45,8 @@
     "standard": "11.0.1",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
-    "terser": "^3.17.0"
+    "terser": "^3.17.0",
+    "uglify-js": "^3.4.9"
   },
   "peerDependencies": {},
   "engines": {
