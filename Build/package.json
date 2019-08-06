@@ -10,11 +10,12 @@
     "prod": "npm-run-all css-lint js-lint css-compile css-prefix css-minify",
     "css-compile": "node-sass --output-style=expanded --source-map=true dev/styles/bootstrap.scss  ../Resources/Public/CSS/bootstrap.css",
     "css-lint": "stylelint \"dev/styles/**/*.scss\"",
-    "css-minify": "cleancss --level=1 --source-map --source-map-inline-sources --output ../Resources/Public/CSS/bootstrap.css ../Resources/Public/CSS/bootstrap.css",
+    "css- ": "cleancss --level=1 --source-map --source-map-inline-sources --output ../Resources/Public/CSS/bootstrap.css ../Resources/Public/CSS/bootstrap.css",
     "css-prefix": "postcss ../Resources/Public/CSS/bootstrap.css --use=autoprefixer --map=false --output=../Resources/Public/CSS/bootstrap.css",
     "js-lint": "standard \"dev/js/main/**/*.js\"",
     "js-lint-fix": "standard --fix \"dev/js/main/**/*.js\"",
-    "watch-css": "nodemon -e scss -x \"npm run css-compile\" --cache --cache-location .cache/.stylelintcache"
+    "watch-css": "nodemon -e scss -x \"npm run css-compile\" --cache --cache-location .cache/.stylelintcache",
+    "rollup": " rollup -c"
   },
   "browserslist": [
     "last 2 versions"
