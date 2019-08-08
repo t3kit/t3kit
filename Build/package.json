@@ -14,7 +14,7 @@
     "css-prefix": "postcss ../Resources/Public/CSS/bootstrap.css --use=autoprefixer --map=false --output=../Resources/Public/CSS/bootstrap.css",
     "js-compile": "rollup --environment BUNDLE:false --config rollup.config.js --sourcemap",
     "js-minify": "npm-run-all --parallel js-minify-bundle",
-    "js-minify-bundle": "terser --compress typeofs=false --mangle --comments \"/^!/\" --source-map=\"url=bootstrap.min.js.map\" --output ../Resources/Public/JavaScript/bootstrap.min.js ../Resources/Public/JavaScript/bootstrap.js",
+    "js-minify-bundle": "terser --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content='../Resources/Public/JavaScript/bootstrap.js.map',includeSources,url=bootstrap.min.js.map\" --output ../Resources/Public/JavaScript/bootstrap.min.js ../Resources/Public/JavaScript/bootstrap.js",
     "js-lint": "standard \"dev/js/main/**/*.js\"",
     "js-lint-fix": "standard --fix \"dev/js/main/**/*.js\"",
     "watch-css": "nodemon -e scss -x \"npm run css-compile\" --cache --cache-location .cache/.stylelintcache"
@@ -46,7 +46,7 @@
     "standard": "11.0.1",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
-    "terser": "^3.17.0"
+    "terser": "^4.1.2"
   },
   "peerDependencies": {},
   "engines": {
