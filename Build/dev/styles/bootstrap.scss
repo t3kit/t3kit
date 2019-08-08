@@ -1,10 +1,11 @@
 @import "../../node_modules/bootstrap/scss/functions.scss";
-@import "../../node_modules/bootstrap/scss/variables.scss";
 @import "customVariables.scss";
+@import "../../node_modules/bootstrap/scss/variables.scss";
 @import "../../node_modules/bootstrap/scss/mixins.scss";
 
 // Reset
-@import "../../node_modules/bootstrap/scss/print.scss";
+@import "../../node_modules/bootstrap/scss/root.scss";
+@import "../../node_modules/bootstrap/scss/reboot.scss";
 
 // Core CSS
 @import "../../node_modules/bootstrap/scss/type.scss";
@@ -24,13 +25,15 @@
 // @import "../../node_modules/bootstrap/scss/breadcrumbs.scss";
 @import "../../node_modules/bootstrap/scss/pagination.scss";
 // @import "../../node_modules/bootstrap/scss/pager.scss";
-// @import "../../node_modules/bootstrap/scss/badges.scss";
+@import "../../node_modules/bootstrap/scss/badge.scss";
 // @import "../../node_modules/bootstrap/scss/jumbotron.scss";
 // @import "../../node_modules/bootstrap/scss/thumbnails.scss";
 @import "../../node_modules/bootstrap/scss/alert.scss";
 @import "../../node_modules/bootstrap/scss/progress.scss";
 // @import "../../node_modules/bootstrap/scss/media.scss";
 @import "../../node_modules/bootstrap/scss/list-group.scss";
+@import "../../node_modules/bootstrap/scss/card.scss";
+
 // @import "../../node_modules/bootstrap/scss/wells.scss";
 @import "../../node_modules/bootstrap/scss/close.scss";
 
@@ -42,3 +45,4 @@
 
 // Utility classes
 @import "../../node_modules/bootstrap/scss/utilities.scss";
+@import "../../node_modules/bootstrap/scss/print.scss";

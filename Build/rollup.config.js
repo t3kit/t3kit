@@ -43,9 +43,7 @@ export default [
                   'objectSpread'
                 ]
             }),
-            commonjs({
-                extensions: [ '.js' ],
-            }),
+            commonjs(),
             resolve()
         ]
     }

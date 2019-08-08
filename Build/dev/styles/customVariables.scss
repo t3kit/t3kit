@@ -107,16 +107,16 @@ $font-family-serif:             Garamond, "Crimson Text", "Times New Roman", ser
 $font-family-monospace:         Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:              $font-family-sans-serif;
 
-$font-size-base:          17px;
-$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+//$font-size-base:          17px;
+//$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+//$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2.4)); // ~38px
-$font-size-h2:            floor(($font-size-base * 2.1)); // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.5)); // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)); // ~20px
-$font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+//$font-size-h1:            floor(($font-size-base * 2.4)); // ~38px
+//$font-size-h2:            floor(($font-size-base * 2.1)); // ~30px
+//$font-size-h3:            ceil(($font-size-base * 1.5)); // ~24px
+//$font-size-h4:            ceil(($font-size-base * 1.25)); // ~20px
+//$font-size-h5:            $font-size-base;
+//$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
 
 $line-height-base:              1.52941176; // 1.428571429 (bootstrap default)
 
