@@ -6,7 +6,7 @@
   "authors": "t3kit Community",
   "repository": "t3kit/t3kit",
   "scripts": {
-    "dev": "npm-run-all -p css-lint css-compile",
+    "dev": "npm-run-all -p css-lint js-lint css-compile js-compile",
     "prod": "npm-run-all -p css-lint js-lint -s css-compile css-prefix css-minify js-compile js-minify",
     "css-compile": "node-sass --output-style=expanded --source-map=true dev/styles/bootstrap.scss  ../Resources/Public/CSS/bootstrap.css",
     "css-lint": "stylelint \"dev/styles/**/*.scss\"",
