@@ -51,12 +51,14 @@
         }
 
         // ie11 and edge fix for underline on icon - text-decoration has to be styled before it can be unstyled
-        & > .icons:before when not ($link-hover-decoration = none) {
-            text-decoration: $link-hover-decoration;
-        }
+        @if ($link-hover-decoration != none) {
+            & > .icons:before {
+                text-decoration: $link-hover-decoration;
+            }
 
-        & > .icons:before when not ($link-hover-decoration = none) {
-            text-decoration: none;
+            & > .icons:before {
+                text-decoration: none;
+            }
         }
         // end fix
     }

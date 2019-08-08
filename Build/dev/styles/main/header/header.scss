@@ -308,7 +308,7 @@
 .header-middle {
     margin: 0 auto;
 
-    @mixin clearfix();
+    @include clearfix();
     // padding: 10px 0;
     height: 100%;
 }
@@ -743,7 +743,7 @@
         margin: 0 auto;
         display: block;
 
-        @mixin clearfix();
+        @include clearfix();
 
         position: relative;
     }
@@ -755,7 +755,7 @@
     }
 
     .main-navigation__items-list {
-        @mixin clearfix();
+        @include clearfix();
     }
 
     .main-navigation__items-list._right-pos {

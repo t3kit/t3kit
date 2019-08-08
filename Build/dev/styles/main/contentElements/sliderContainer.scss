@@ -101,7 +101,7 @@
         display: block;
         background: none;
 
-        @mixin icons();
+        @include icons();
 
         color: $main-color;
         -moz-osx-font-smoothing: grayscale;

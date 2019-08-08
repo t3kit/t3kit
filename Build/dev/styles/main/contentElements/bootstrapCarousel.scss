@@ -159,7 +159,7 @@
         color: $carousel-control-color;
         text-decoration: none;
 
-        @mixin opacity(0.9);
+        @include opacity(0.9);
     }
 
     > .icons {

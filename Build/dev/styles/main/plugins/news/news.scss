@@ -208,7 +208,7 @@
             text-align: right;
             padding: 0 25px 0 15px;
 
-            @mixin link-arrow--circle($position: right);
+            @include link-arrow--circle($position: right);
 
             &:after {
                 right: 0;
@@ -219,7 +219,7 @@
             float: left;
             padding: 0 15px 0 25px;
 
-            @mixin link-arrow--circle();
+            @include link-arrow--circle();
 
             &:before {
                 left: 0;
@@ -251,7 +251,7 @@
     float: left;
     margin-bottom: 20px;
 
-    @mixin link-arrow--circle();
+    @include link-arrow--circle();
 }
 
 @media (max-width: 580px) {

@@ -85,17 +85,17 @@
         color: $color;
         display: inline-block;
 
-        @mixin icons();
+        @include icons();
     }
 
-    & when ($position = left) {
+    @if ($position = left) {
         &:before {
             content: "\e91a";
             margin-right: 3px;
         }
     }
 
-    & when ($position = right) {
+    @if ($position = right) {
         &:after {
             content: "\e91c";
             margin-left: 3px;

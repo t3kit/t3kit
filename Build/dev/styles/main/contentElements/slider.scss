@@ -121,7 +121,7 @@
         transform: translateY(-50%);
 
         &:before {
-            @mixin icons();
+            @include icons();
 
             color: $carousel-control-color;
             font-size: $carousel-control-font-size;
