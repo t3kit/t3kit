@@ -1,0 +1,151 @@
+// layout wrappers for gridelements
+.mosaic-main-color-odd {
+    & > .row {
+        & > div {
+            &:nth-child(odd) {
+                background-color: $main-color;
+
+                a {
+                    color: tint($main-text-color, 100%);
+
+                    &.active,
+                    &:active {
+                        &.focus,
+                        &:focus {
+                            color: tint($main-text-color, 100%);
+                            border-color: tint($main-color, 50%);
+                        }
+                    }
+
+                    &.focus,
+                    &:focus,
+                    &:hover {
+                        color: tint($main-text-color, 100%);
+                        border-color: tint($main-color, 50%);
+                    }
+                }
+
+                p {
+                    color: tint($main-text-color, 90%);
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5 {
+                    color: tint($main-text-color, 100%);
+                    -webkit-font-smoothing: antialiased;
+                }
+
+                .icons {
+                    color: tint($main-color, 90%);
+                    border-color: tint($main-color, 50%);
+                }
+
+                .big-icon-text-btn__sham-link {
+                    color: tint($main-color, 90%);
+                }
+
+                .icon-text-btn__sham-link {
+                    color: tint($main-color, 90%);
+                }
+
+                .img-text-link__sham-link {
+                    color: tint($main-color, 90%);
+                }
+            }
+
+            &:nth-child(even) {
+                background-color: $main-body-bg;
+            }
+        }
+    }
+}
+
+.mosaic-main-color-even {
+    & > .row {
+        & > div {
+            &:nth-child(odd) {
+                background-color: $main-body-bg;
+            }
+
+            &:nth-child(even) {
+                background-color: $main-color;
+
+                a {
+                    color: tint($main-text-color, 100%);
+
+                    &.active,
+                    &:active {
+                        &.focus,
+                        &:focus {
+                            color: tint($main-text-color, 100%);
+                            border-color: tint($main-color, 50%);
+                        }
+                    }
+
+                    &.focus,
+                    &:focus,
+                    &:hover {
+                        color: tint($main-text-color, 100%);
+                        border-color: tint($main-color, 50%);
+                    }
+                }
+
+                p {
+                    color: tint($main-text-color, 90%);
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5 {
+                    color: tint($main-text-color, 100%);
+                    -webkit-font-smoothing: antialiased;
+                }
+
+                .icons {
+                    color: tint($main-color, 90%);
+                    border-color: tint($main-color, 50%);
+                }
+
+                .big-icon-text-btn__sham-link {
+                    color: tint($main-color, 90%);
+                }
+
+                .icon-text-btn__sham-link {
+                    color: tint($main-color, 90%);
+                }
+
+                .img-text-link__sham-link {
+                    color: tint($main-color, 90%);
+                }
+            }
+        }
+    }
+}
+
+.mosaic-main-color-even .row > div,
+.mosaic-main-color-odd .row > div {
+    padding: 0 30px;
+}
+
+.mosaic-main-color-even .row > div .big-icon-text-btn__wrp,
+.mosaic-main-color-odd .row > div .big-icon-text-btn__wrp {
+    margin: 0 -30px;
+    padding: 0 30px;
+}
+
+.mosaic-main-color-even .row > div .icon-text-btn__wrp,
+.mosaic-main-color-odd .row > div .icon-text-btn__wrp {
+    margin: 0 -30px;
+    padding: 0 30px;
+}
+
+.mosaic-main-color-even .row > div .img-text-link__wrp,
+.mosaic-main-color-odd .row > div .img-text-link__wrp {
+    margin: 0 -30px;
+    padding: 0 30px;
+}

@@ -1,0 +1,33 @@
+// layout wrappers for gridelements
+.mosaic-gray-odd {
+    & > .row {
+        & > div {
+            &:nth-child(odd) {
+                background-color: tint($main-text-color, 90%);
+            }
+
+            &:nth-child(even) {
+                background-color: $main-body-bg;
+            }
+        }
+    }
+}
+
+.mosaic-gray-even {
+    & > .row {
+        & > div {
+            &:nth-child(odd) {
+                background-color: $main-body-bg;
+            }
+
+            &:nth-child(even) {
+                background-color: tint($main-text-color, 90%);
+            }
+        }
+    }
+}
+
+.mosaic-gray-even .row > div,
+.mosaic-gray-odd .row > div {
+    padding: 0 30px;
+}

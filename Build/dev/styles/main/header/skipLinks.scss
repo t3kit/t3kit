@@ -1,0 +1,11 @@
+.skip-links {
+    text-align: center;
+    background-color: $nav-background-color;
+    line-height: $nav-height;
+}
+
+.skip-links__item {
+    &:focus {
+        color: $nav-link-color;
+    }
+}

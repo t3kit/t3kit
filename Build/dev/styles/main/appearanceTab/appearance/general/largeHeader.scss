@@ -1,0 +1,17 @@
+// =================================
+// General appearance wrappers
+// =================================
+
+.large-header {
+    h2 {
+        font-size: 48px;
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .large-header .hero-image__caption-header {
+        font-size: $font-size-h2 * 0.86;
+    }
+}
