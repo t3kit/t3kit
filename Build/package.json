@@ -9,15 +9,19 @@
     "dev": "npm-run-all -p css-lint js-lint css-compile js-compile",
     "prod": "npm-run-all -p css-lint js-lint -s css-compile css-prefix css-minify js-compile js-minify",
     "css-compile": "node-sass --output-style=expanded --source-map=true dev/styles/bootstrap.scss  ../Resources/Public/CSS/bootstrap.css",
-    "css-lint": "stylelint \"dev/styles/**/*.scss\"",
+    "css-lint": "stylelint \"dev/styles/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+    "css-main": "npm-run-all css-lint css-compile css-prefix css-minify",
     "css-minify": "cleancss --level=1 --source-map --source-map-inline-sources --output ../Resources/Public/CSS/bootstrap.css ../Resources/Public/CSS/bootstrap.css",
     "css-prefix": "postcss ../Resources/Public/CSS/bootstrap.css --use=autoprefixer --map=false --output=../Resources/Public/CSS/bootstrap.css",
     "js-compile": "rollup --environment BUNDLE:false --config rollup.config.js --sourcemap",
-    "js-minify": "npm-run-all --parallel js-minify-bundle",
-    "js-minify-bundle": "terser --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content='../Resources/Public/JavaScript/bootstrap.js.map',includeSources,url=bootstrap.min.js.map\" --output ../Resources/Public/JavaScript/bootstrap.min.js ../Resources/Public/JavaScript/bootstrap.js",
     "js-lint": "standard \"dev/js/main/**/*.js\"",
     "js-lint-fix": "standard --fix \"dev/js/main/**/*.js\"",
-    "watch-css": "nodemon -e scss -x \"npm run css-compile\" --cache --cache-location .cache/.stylelintcache"
+    "js-minify": "npm-run-all --parallel js-minify-bundle",
+    "js-minify-bundle": "terser --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content='../Resources/Public/JavaScript/bootstrap.js.map',includeSources,url=bootstrap.min.js.map\" --output ../Resources/Public/JavaScript/bootstrap.min.js ../Resources/Public/JavaScript/bootstrap.js",
+    "js-main": "npm-run-all js-lint js-compile js-minify",
+    "watch": "npm-run-all -p watch-*",
+    "watch-css": "nodemon --watch dev/styles/ --ext scss --exec \"npm run css-main\"",
+    "watch-js": "nodemon --watch dev/js/ --ext js --exec \"npm run js-main\""
   },
   "browserslist": [
     "last 2 versions"
