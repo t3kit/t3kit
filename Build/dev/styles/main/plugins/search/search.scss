@@ -40,7 +40,8 @@
     user-select: none;
 }
 
-@media (max-width: $screen-xs-max) {
+// @media (max-width: $screen-xs-max) {
+@include media-breakpoint-down(sm) {
     .tx-solr-search-form .tx-solr-submit {
         margin-top: 10px;
     }

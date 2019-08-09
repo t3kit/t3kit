@@ -89,13 +89,15 @@
     margin: 0 5px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     ._arrows-outside {
         padding: 0 40px;
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .slider-container__button-next,
     .slider-container__button-prev {
         display: block;
@@ -115,7 +117,8 @@
     }
 }
 
-@media (min-width: $screen-lg-min) {
+// @media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
     .slider-container-effect {
         margin: 0 auto;
     }

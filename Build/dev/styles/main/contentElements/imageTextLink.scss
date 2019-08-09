@@ -13,7 +13,8 @@
     margin: 25px 0 20px;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link {
         margin: 50px 0 40px;
     }
@@ -134,7 +135,8 @@
     display: none;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-1:after {
         opacity: 0;
         -webkit-transform: translate3d(0, 80%, 0);
@@ -157,7 +159,8 @@
     transform: translate3d(0, -90%, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-1 .img-text-link__header {
         color: $main-color;
         -webkit-transform: translate3d(0, -50%, 0);
@@ -177,7 +180,8 @@
     transform: translate3d(0, -20%, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-1 .img-text-link__p {
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
@@ -241,7 +245,8 @@
     transform: translate3d(0, -70px, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-2 .img-text-link__img {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -262,7 +267,8 @@
     transform: translate3d(0, -70px, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-2 .img-text-link__header {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -287,7 +293,8 @@
     border-bottom: 4px solid $main-color;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-2 .img-text-link__p {
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
@@ -365,7 +372,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-3:before {
         background: fade($main-color, 20%);
     }
@@ -384,7 +392,8 @@
     transition: all 0.3s ease;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-3 .img-text-link__img {
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
@@ -415,7 +424,8 @@
     z-index: 3;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-3 .img-text-link__p {
         opacity: 0;
     }
@@ -486,7 +496,8 @@
     transition: all 0.2s;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-4:after {
         opacity: 0;
         -webkit-transform: translate3d(0, 80%, 0);
@@ -509,7 +520,8 @@
     transform: translate3d(0, -70%, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-4 .img-text-link__header {
         color: $main-body-bg;
         -webkit-transform: translate3d(0, -60%, 0);
@@ -529,7 +541,8 @@
     transform: translate3d(0, -100%, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-4 .img-text-link__p {
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
@@ -593,7 +606,8 @@
     transform: translate3d(0, -70px, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-5 .img-text-link__img {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -614,7 +628,8 @@
     transform: translate3d(0, -70px, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-5 .img-text-link__header {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -639,7 +654,8 @@
     border-bottom: 4px solid $main-body-bg;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-5 .img-text-link__p {
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
@@ -702,7 +718,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-6:after {
         background: fade($main-color, 20%);
     }
@@ -735,7 +752,8 @@
     transform: translate3d(0, 100%, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-6 .img-text-link__p {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0) scale(0.9);
@@ -784,7 +802,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-6 .img-text-link__link:before {
         width: 0;
         left: 0;
@@ -850,7 +869,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-7:after {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
@@ -873,7 +893,8 @@
     transition: all 0.3s ease;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-7 .img-text-link__header {
         -webkit-transform: translate3d(0, -100%, 0) scale(1);
         transform: translate3d(0, -100%, 0) scale(1);
@@ -893,7 +914,8 @@
     transition: all 0.3s ease;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-7 .img-text-link__p {
         opacity: 0;
         -webkit-transform: scale(1.5);
@@ -948,7 +970,8 @@
     box-shadow: 0 3px 30px $main-text-color;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-8 {
         box-shadow: 0 3px 30px fade($main-text-color, 0%);
     }
@@ -986,7 +1009,8 @@
     transform: translate3d(0, 100%, 0);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-8 .img-text-link__p {
         -webkit-transform: translate3d(0, 100%, 0) scale3d(0.7, 0.7, 1);
         transform: translate3d(0, 100%, 0) scale3d(0.7, 0.7, 1);
@@ -1016,7 +1040,8 @@
     box-shadow: 0 3px 30px $main-text-color;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-8:hover .img-text-link__img {
         -webkit-transform: scale3d(1.05, 1.05, 1);
         transform: scale3d(1.05, 1.05, 1);
@@ -1083,7 +1108,8 @@
     z-index: 5;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-9 .img-text-link__p {
         -webkit-transform: translate3d(-10px, 100%, 0);
         transform: translate3d(-10px, 100%, 0);
@@ -1100,7 +1126,8 @@
     max-width: none;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-9 .img-text-link__img {
         width: calc("100% + 30px");
         -webkit-transform: translateX(-30px);
@@ -1157,7 +1184,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-text-link._hover-9 .img-text-link__link:after {
         -webkit-transform: translateX(-20px);
         transform: translateX(-20px);

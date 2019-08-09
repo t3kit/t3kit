@@ -1,10 +1,12 @@
 // Mixins
 @import "../../node_modules/bootstrap/scss/_mixins.scss";
-@import "../../node_modules/bootstrap/scss/_variables.scss";
+//@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "main/mixins.scss";
 
 // Custom Variables
 @import "customVariables.scss";
+@import "../../node_modules/bootstrap/scss/_functions.scss";        // needed for _variables - -assert-ascending
+@import "../../node_modules/bootstrap/scss/_variables.scss";
 
 // ICONFONT
 @import "main/iconFont.scss";

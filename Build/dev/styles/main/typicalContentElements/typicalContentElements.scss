@@ -33,7 +33,8 @@
     max-width: calc("100vw - 30px");
 }
 
-@media (max-width: $screen-xs-max) {
+// @media (max-width: $screen-xs-max) {
+@include media-breakpoint-down(sm) {
     .ce-right.ce-nowrap .ce-gallery {
         float: none;
         margin: 40px 0 0;
@@ -122,7 +123,8 @@
     }
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     [class*="lightbox__wrp-"] {
         a {
             &:before {
@@ -134,7 +136,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     [class*="lightbox__wrp-"] {
         a {
             &:before {

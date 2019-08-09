@@ -233,7 +233,8 @@
 
         &__date {
             display: block;
-            font-size: $font-size-small;
+            // font-size: $font-size-small;
+            font-size: 0.85rem;
             margin-top: 5px;
         }
     }

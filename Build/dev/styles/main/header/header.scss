@@ -16,7 +16,9 @@
     border-bottom: 2px solid $header-border-color;
 }
 
-@media (min-width: $screen-md-min) {
+
+//@media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .header-top-wrp {
         z-index: 5000;
         background: $header-top-bg-color;
@@ -38,7 +40,8 @@
     height: $header-top-height;
 }
 
-@media (min-width: $screen-md-min) {
+//@media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .header-top-wrp {
         padding-bottom: 0;
     }
@@ -46,13 +49,16 @@
     .header-top {
         position: relative;
         box-shadow: none;
-        max-width: $container-md;
+        //max-width: $container-md;
+        max-width: 992px;
     }
 }
 
-@media (min-width: $screen-lg-min) {
+//@media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
     .header-top {
-        max-width: $container-lg;
+        // max-width: $container-lg;
+        max-width: 1200px;
     }
 }
 
@@ -117,7 +123,8 @@
     padding-right: 10px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .header-top .nav {
         display: block;
     }
@@ -150,12 +157,14 @@
     transition: opacity 0.3s 0s, visibility 0s 0.3s;
     border-bottom: 1px solid $border-color;
 
-    @media (min-width: $screen-md-min) {
+    //@media (min-width: $screen-md-min) {
+    @include media-breakpoint-up(sm) {
         left: calc("(100% - 970px) / 2");
         right: calc("(100% - 970px) / 2");
     }
 
-    @media (min-width: $screen-lg-min) {
+    //@media (min-width: $screen-lg-min) {
+    @include media-breakpoint-up(md) {
         left: calc("(100% - 1170px) / 2");
         right: calc("(100% - 1170px) / 2");
     }
@@ -209,7 +218,8 @@
     transition: opacity 0.3s 0s, visibility 0s 0.3s;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .header-top__language-menu-overlay {
         z-index: 1999;
     }
@@ -264,7 +274,8 @@
     color: $main-link-hover-color;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .header-top__contact {
         display: block;
     }
@@ -298,7 +309,8 @@
     padding: 20px 0;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .header-middle-wrp {
         height: $header-middle-height;
         padding: 0;
@@ -313,19 +325,24 @@
     height: 100%;
 }
 
-@media (min-width: $screen-md-min) {
+//@media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .header-middle-wrp {
         z-index: 2500;
     }
 
     .header-middle {
-        max-width: $container-md;
+        //max-width: $container-md;
+        max-width: 992px;
+
     }
 }
 
-@media (min-width: $screen-lg-min) {
+// @media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
     .header-middle {
-        max-width: $container-lg;
+        // max-width: $container-lg;
+        max-width: 1200px;
     }
 }
 // =================================
@@ -355,7 +372,8 @@
     // padding-left: 20px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .header-middle__logo {
         float: left;
         width: auto;
@@ -466,7 +484,8 @@
     transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .main-navigation-mobile__language-menu .header-top__language-menu {
         display: none;
     }
@@ -491,7 +510,8 @@
 // ============================================================
 // Main navigation
 // ============================================================
-@media (max-width: $screen-sm-max) {
+//@media (max-width: $screen-sm-max) {
+@include media-breakpoint-down(md) {
     .mobile-menu-opened,
     .mobile-menu-opened body {
         overflow: hidden;
@@ -512,7 +532,8 @@
     min-height: 0;
 }
 
-@media (max-width: $screen-sm-max) {
+//@media (max-width: $screen-sm-max) {
+@include media-breakpoint-down(md) {
     .mobile-menu-opened .main-navigation {
         // position: absolute;
         position: fixed;
@@ -669,7 +690,8 @@
     transition: transform 0.2s linear, opacity 0.2s linear, visibility 0.2s linear, max-height 0.2s linear;
 }
 
-@media (max-width: $screen-sm-max) {
+// @media (max-width: $screen-sm-max) {
+@include media-breakpoint-down(md) {
     ._open-mobile-dropdown > .main-navigation__sub-item-list {
         -webkit-transform: scale(1, 1);
         transform: scale(1, 1);
@@ -711,7 +733,8 @@
     padding-left: 90px;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .main-navigation {
         position: relative;
         top: 0;
@@ -739,7 +762,8 @@
     }
 
     .main-navigation__items-wrp {
-        max-width: $container-md;
+        //max-width: $container-md;
+        max-width: 992px;
         margin: 0 auto;
         display: block;
 
@@ -748,9 +772,11 @@
         position: relative;
     }
 
-    @media (min-width: $screen-lg-min) {
+    // @media (min-width: $screen-lg-min) {
+    @include media-breakpoint-up(xl) {
         .main-navigation__items-wrp {
-            max-width: $container-lg;
+            // max-width: $container-lg;
+            max-width: 1200px;
         }
     }
 
@@ -761,7 +787,8 @@
     .main-navigation__items-list._right-pos {
         text-align: right;
 
-        @media (min-width: $screen-md-min) {
+        // @media (min-width: $screen-md-min) {
+        @include media-breakpoint-up(lg) {
             .main-navigation__item {
                 float: none;
                 text-align: left;
@@ -811,7 +838,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     // Submenu by hover (devices without touch screen)
     .no-touch .main-navigation__item._sub:hover > .main-navigation__sub-item-list,
     .no-touch .main-navigation__sub-item._sub:hover > .main-navigation__sub-item-list {
@@ -917,7 +945,8 @@
     float: right;
 }
 
-@media (max-width: $screen-sm-max) {
+// @media (max-width: $screen-sm-max) {
+@include media-breakpoint-down(md) {
     // removes relative position to make header-top searchbox full width
     .header-top-wrp .tx-solr-searchbox {
         position: initial;
@@ -946,7 +975,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+//@media (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
     .main-navigation__search-btn-wrp {
         display: block;
     }
@@ -999,7 +1029,8 @@
     margin-left: 1px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .main-navigation__search-btn {
         width: 100%;
     }
@@ -1064,7 +1095,8 @@
     transition: opacity 0.3s, transform 0.3s;
 }
 
-@media (min-width: $screen-sm-min) {
+//@media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .main-navigation__search-btn span:after,
     .main-navigation__search-btn span:before {
         height: 3px;
@@ -1113,7 +1145,8 @@
     background: $header-top-bg-color;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .main-navigation__search-box input {
         border: none;
         padding: 0 8%;
@@ -1131,7 +1164,8 @@
     z-index: 3000;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     // search-box in both header-top and main-navigation
     .main-navigation__search-box {
         width: 450px;
@@ -1165,7 +1199,8 @@
     transition: opacity 0.3s 0s, visibility 0s 0.3s;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .main-navigation__search-box-overlay {
         z-index: 1999;
     }
@@ -1307,7 +1342,8 @@
     transition-delay: 0, 0.2s;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .main-navigation__toggle-btn {
         display: none;
     }
@@ -1326,7 +1362,8 @@
     margin: 10px auto 0;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .header-middle__search-box {
         margin-top: 0;
         float: right;
@@ -1353,7 +1390,8 @@
     outline: none;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .header-middle__search-input {
         margin-top: ($header-middle-height - $header-middle-search-height) / 2;
     }
@@ -1374,7 +1412,8 @@
     padding: 0;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .header-middle__search-submit {
         margin-top: ($header-middle-height - $header-middle-search-height) / 2;
     }

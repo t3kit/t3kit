@@ -6,7 +6,8 @@
     margin-top: 10px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .forgot-pass-link,
     .return-to-login {
         text-align: right;

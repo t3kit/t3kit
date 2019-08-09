@@ -27,7 +27,8 @@
     color: $sl-navigation-color;
 }
 
-@media (max-width: $screen-xs-max) {
+// @media (max-width: $screen-xs-max) {
+@include media-breakpoint-down(sm) {
     .sl-wrapper .sl-navigation button {
         display: none;
     }

@@ -3,15 +3,21 @@
     margin: 40px 0 20px;
 }
 
-@media (min-width: $screen-md-min) and (max-width: $screen-md--custom) {
-    .news-carousel {
-        padding: 0 30px;
+//@media (min-width: $screen-md-min) and (max-width: $screen-md--custom) {
+@include media-breakpoint-up(lg) {
+    @media (max-width: $screen-md--custom) {
+        .news-carousel {
+            padding: 0 30px;
+        }
     }
 }
 
-@media (min-width: $screen-lg-min) and (max-width: $screen-lg--custom) {
-    .news-carousel {
-        padding: 0 30px;
+// @media (min-width: $screen-lg-min) and (max-width: $screen-lg--custom) {
+@include media-breakpoint-up(xl) {
+    @media (max-width: $screen-lg--custom) {
+        .news-carousel {
+            padding: 0 30px;
+        }
     }
 }
 
@@ -96,7 +102,8 @@
     border: none;
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .news-carousel__btn-next,
     .news-carousel__btn-prev {
         display: block;
@@ -121,23 +128,29 @@
     left: -50px;
 }
 
-@media (min-width: $screen-md-min) and (max-width: $screen-md--custom) {
-    .news-carousel__btn-next {
-        right: -12px;
-    }
+//@media (min-width: $screen-md-min) and (max-width: $screen-md--custom) {
+@include media-breakpoint-up(lg) {
+    @media (max-width: $screen-md--custom) {
+        .news-carousel__btn-next {
+            right: -12px;
+        }
 
-    .news-carousel__btn-prev {
-        left: -12px;
+        .news-carousel__btn-prev {
+            left: -12px;
+        }
     }
 }
 
-@media (min-width: $screen-lg-min) and (max-width: $screen-lg--custom) {
-    .news-carousel__btn-next {
-        right: -16px;
-    }
+// @media (min-width: $screen-lg-min) and (max-width: $screen-lg--custom) {
+@include media-breakpoint-up(xl) {
+    @media (max-width: $screen-lg--custom) {
+        .news-carousel__btn-next {
+            right: -16px;
+        }
 
-    .news-carousel__btn-prev {
-        left: -16px;
+        .news-carousel__btn-prev {
+            left: -16px;
+        }
     }
 }
 

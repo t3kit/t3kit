@@ -38,7 +38,8 @@
     color: fade($nav-link-hover-color, 60%);
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     ._dropdown-menu-with-columns .main-navigation__sub-item-list {
         border-top: 2px solid $header-border-color;
         padding-bottom: 30px;
@@ -109,7 +110,8 @@
     }
 }
 
-@media (max-width: $screen-sm-max) {
+// @media (max-width: $screen-sm-max) {
+@include media-breakpoint-down(md) {
     ._dropdown-menu-with-columns .main-navigation__sub-item-list {
         background: darken($nav-background-color, 3%);
     }

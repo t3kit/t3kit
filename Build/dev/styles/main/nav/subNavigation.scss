@@ -35,7 +35,8 @@
     word-wrap: break-word;
 }
 
-@media (min-width: $screen-lg-min) {
+// @media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
     .sub-navigation__link {
         font-size: 16px;
     }

@@ -109,7 +109,8 @@
 // === Footer Social-icons==========
 // =================================
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .footer .social-icons {
         padding: 0;
         text-align: right;

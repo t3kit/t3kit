@@ -48,7 +48,8 @@
     font-size: 42px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .quote__body-p {
         font-size: 17px;
     }

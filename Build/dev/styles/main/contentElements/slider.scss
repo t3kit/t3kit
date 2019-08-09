@@ -102,7 +102,9 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
+
     .img-slider__caption {
         padding: 30px 50px;
         width: 100%;
@@ -164,7 +166,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .img-slider__caption {
         padding: 20px 60px;
         width: 100%;

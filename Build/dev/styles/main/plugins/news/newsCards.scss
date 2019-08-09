@@ -30,7 +30,8 @@
     font-size: 22px;
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .news-cards__item {
         height: 475px;
     }

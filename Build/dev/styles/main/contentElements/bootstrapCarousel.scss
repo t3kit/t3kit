@@ -21,22 +21,29 @@
 
         // WebKit CSS3 transforms for supported devices
         @media all and (-webkit-transform-3d) {
-            @include transition-transform('0.6s ease-in-out');
-            @include backface-visibility('hidden');
-            @include perspective(1000px);
+            //@include transition-transform('0.6s ease-in-out');
+            transition: transform 0.6s ease-in-out;
+
+            //@include backface-visibility('hidden');
+            backface-visibility: hidden;
+
+            //@include perspective(1000px);
+            perspective: 1000px;
 
             &.next,
             &.active.right {
                 left: 0;
 
-                @include translate3d(100%, 0, 0);
+                //@include translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0);
             }
 
             &.prev,
             &.active.left {
                 left: 0;
 
-                @include translate3d(-100%, 0, 0);
+                // @include translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
             }
 
             &.next.left,
@@ -44,7 +51,8 @@
             &.active {
                 left: 0;
 
-                @include translate3d(0, 0, 0);
+                // @include translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
             }
         }
     }
@@ -58,7 +66,8 @@
         position: relative;
         width: auto;
 
-        @include translate(-50%, 0);
+        // @include translate(-50%, 0);
+        transform: translate(-50%, 0);
     }
 
     > .active,
@@ -147,7 +156,8 @@
     text-align: center;
     text-shadow: $carousel-text-shadow;
 
-    @include opacity($carousel-control-opacity);
+    // @include opacity($carousel-control-opacity);
+    opacity: $carousel-control-opacity;
 
     &.right {
         left: auto;
@@ -159,7 +169,8 @@
         color: $carousel-control-color;
         text-decoration: none;
 
-        @include opacity(0.9);
+        // @include opacity(0.9);
+        opacity: 0.9;
     }
 
     > .icons {
@@ -215,7 +226,8 @@
     }
 }
 
-@media (min-width: $screen-sm-min) {
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
     .carousel-inner {
         > .item {
             height: auto;
@@ -242,7 +254,8 @@
     }
 }
 
-@media (min-width: $screen-md-min) {
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
     .carousel-caption {
         bottom: 30px;
         padding-left: 15px;
@@ -259,7 +272,8 @@
     // Align caption with content
     .top-content {
         .carousel-caption {
-            left: calc('(100% - (#{$container-large-desktop} - #{$grid-gutter-width})) / 2');
+            // left: calc('(100% - (#{$container-large-desktop} - #{$grid-gutter-width})) / 2');
+            left: calc('(100% - (1200px - #{$grid-gutter-width})) / 2');
             width: 45%;
         }
     }
