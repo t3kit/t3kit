@@ -104,7 +104,6 @@
 
 // @media (min-width: $screen-sm-min) {
 @include media-breakpoint-up(md) {
-
     .img-slider__caption {
         padding: 30px 50px;
         width: 100%;

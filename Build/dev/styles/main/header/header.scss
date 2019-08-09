@@ -16,7 +16,6 @@
     border-bottom: 2px solid $header-border-color;
 }
 
-
 //@media (min-width: $screen-md-min) {
 @include media-breakpoint-up(lg) {
     .header-top-wrp {
@@ -334,7 +333,6 @@
     .header-middle {
         //max-width: $container-md;
         max-width: 992px;
-
     }
 }
 
