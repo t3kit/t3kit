@@ -33,8 +33,8 @@ mod.wizards.newContentElement.wizardItems.special.elements.shortcut >
 # ###########################
 # Import configurations for all Content elements
 # ===========================
-@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Static/'
-@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Dynamic/'
-@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Separator/'
-@import 'EXT:t3kit/Configuration/TsConfig/Page/Mod/Wizards/ContentElements/Special/'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Separator/'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/'
 # ___________________________
