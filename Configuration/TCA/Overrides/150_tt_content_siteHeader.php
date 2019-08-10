@@ -14,9 +14,9 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.CType',
         'siteHeader',
-        'content-elements-siteHeader'
+        'ce-siteHeader'
     ],
-    'form',
+    'html',
     'after'
 );
 
@@ -27,7 +27,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteHeader'] = 'content-elements-siteHeader';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteHeader'] = 'ce-siteHeader';
 
 
 
