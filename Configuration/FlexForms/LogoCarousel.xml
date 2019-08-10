@@ -1,0 +1,27 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.sheetGeneral</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<interval>
+						<TCEforms>
+							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:logoCarousel.flexform.interval</label>
+							<config>
+								<type>input</type>
+								<rows>1</rows>
+								<default>2500</default>
+							</config>
+						</TCEforms>
+					</interval>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
