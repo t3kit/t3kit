@@ -12,6 +12,14 @@
 			<trans-unit id="group.separator">
 				<source>Content separator</source>
 			</trans-unit>
+
+			<trans-unit id="tabs.settings">
+				<source>Settings</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.sheetTitle">
+				<source>Additional settings</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
