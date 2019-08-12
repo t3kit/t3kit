@@ -36,7 +36,7 @@ tt_content.siteHeader {
       languages = auto
     }
 
-    # Language Navigation
+
     70 = T3k\t3kit\DataProcessing\FlexFormProcessor
     70 {
       fieldName = pi_flexform

@@ -12,7 +12,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.CType',
+        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.CType',
         'siteHeader',
         'ce-siteHeader'
     ],
@@ -41,7 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.tab,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.tabs.settings,
             --palette--;;headerTop,
             --palette--;;headerMiddle,
             --palette--;;mainNavigation,
@@ -70,14 +70,14 @@ $GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
  * ===========================
  */
 $GLOBALS['TCA']['tt_content']['palettes']['accessibility'] = array(
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.palette.accessibility',
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.accessibility',
     'showitem' => '
         skipLinks_mainNavigation, skipLinks_mainContent, --linebreak--,
     ',
 );
 
 $GLOBALS['TCA']['tt_content']['palettes']['headerTop'] = array(
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.palette.headerTop',
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.headerTop',
     'showitem' => '
         headerTop, --linebreak--,
         headerTopContacts, --linebreak--,
@@ -91,14 +91,14 @@ $GLOBALS['TCA']['tt_content']['palettes']['headerTop'] = array(
     );
 
     $GLOBALS['TCA']['tt_content']['palettes']['headerMiddle'] = array(
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.palette.headerMiddle',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.headerMiddle',
         'showitem' => '
             headerMiddle, --linebreak--,
     ',
   );
 
 $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.palette.mainNavigation',
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.mainNavigation',
     'showitem' => '
         --linebreak--,
     ',
@@ -112,35 +112,9 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
  * ===========================
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'skipLinks_mainNavigation' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.accessibility.skipLinks_mainNavigation',
-        'config' => [
-            'type' => 'input',
-            'size' => 50,
-            'max' => 255,
-            'eval' => 'trim',
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'skipLinks_mainContent' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.accessibility.skipLinks_mainContent',
-        'config' => [
-            'type' => 'input',
-            'size' => 50,
-            'max' => 255,
-            'eval' => 'trim',
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTop' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTop',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.showHeaderTop',
         'onChange' => 'reload',
         'config' => [
             'type' => 'check',
@@ -161,7 +135,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerMiddle' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerMiddle',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.showHeaderMiddle',
         'onChange' => 'reload',
         'config' => [
             'type' => 'check',
@@ -182,7 +156,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTopContacts' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts',
         'displayCond' => 'FIELD:headerTop:!=:0',
         'onChange' => 'reload',
         'config' => [
@@ -196,7 +170,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTopLangMenu' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopLangMenu',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopLangMenu',
         'displayCond' => 'FIELD:headerTop:!=:0',
         'onChange' => 'reload',
         'config' => [
@@ -210,7 +184,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTopSearch' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopSearch',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopSearch',
         'displayCond' => 'FIELD:headerTop:!=:0',
         'onChange' => 'reload',
         'config' => [
@@ -224,7 +198,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTopNavigation' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopNavigation',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopNavigation',
         'displayCond' => 'FIELD:headerTop:!=:0',
         'onChange' => 'reload',
         'config' => [
@@ -238,7 +212,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'email_address' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.email_address',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.email_address',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -258,7 +232,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'email_title' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.email_title',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.email_title',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -277,7 +251,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'email_icon' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.email_icon',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.email_icon',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -294,7 +268,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'email_show_title' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.email_show_title',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.email_show_title',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -311,7 +285,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'phone_link' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.phone_link',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.phone_link',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -331,7 +305,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'phone_text' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.phone_text',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.phone_text',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -350,7 +324,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'phone_title' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.phone_title',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.phone_title',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -369,7 +343,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'phone_icon' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.phone_icon',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.phone_icon',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -386,7 +360,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'phone_show_title' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.TCA.headerTopContacts.phone_show_title',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts.phone_show_title',
         'displayCond' => [
             'AND' => [
                 'FIELD:headerTop:!=:0',
@@ -396,6 +370,32 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'skipLinks_mainNavigation' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.accessibility.skipLinks_mainNavigation',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+            'eval' => 'trim',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'skipLinks_mainContent' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.accessibility.skipLinks_mainContent',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+            'eval' => 'trim',
         ]
     ],
 ]);

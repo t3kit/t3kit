@@ -12,7 +12,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:quote.TCA.CType',
+        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.title',
         'quote',
         'ce-quote'
     ],
@@ -41,6 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:tabs.settings,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
