@@ -6,13 +6,14 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.sheetGeneral</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
+
 					<iconClass>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:icon.flexform.iconClass</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:icon.flexform.iconClass</label>
 							<config>
 								<type>user</type>
 								<userFunc>T3kit\themeT3kit\UserFunction\IconFontSelector->renderField</userFunc>
@@ -21,6 +22,7 @@
 							</config>
 						</TCEforms>
 					</iconClass>
+
 				</el>
 			</ROOT>
 		</sDEF>

@@ -1,4 +1,3 @@
-
 <T3DataStructure>
 	<meta>
 		<langDisable>1</langDisable>
@@ -7,14 +6,14 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-						<sheetTitle>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.sheetGeneral</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 
 					<elementText>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:heroImage.flexform.elementText</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.elementText</label>
 							<config>
 								<type>text</type>
 							</config>
@@ -22,19 +21,19 @@
 					</elementText>
 
 					<elementHeight>
-							<TCEforms>
-								<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:heroImage.flexform.elementHeight</label>
-								<config>
-									<type>input</type>
-									<rows>1</rows>
-									<default>320</default>
-								</config>
-							</TCEforms>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.elementHeight</label>
+							<config>
+								<type>input</type>
+								<rows>1</rows>
+								<default>320</default>
+							</config>
+						</TCEforms>
 					</elementHeight>
 
 					<linkAsBtn>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.linkAsBtn</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.linkAsBtn</label>
 							<config>
 								<type>check</type>
 							</config>
@@ -42,18 +41,18 @@
 					</linkAsBtn>
 
 					<transparentLayer>
-            <TCEforms>
-              <label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:heroImage.flexform.transparentLayer</label>
-              <config>
-                <type>input</type>
-                <rows>1</rows>
-              </config>
-            </TCEforms>
-          </transparentLayer>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer</label>
+							<config>
+								<type>input</type>
+								<rows>1</rows>
+							</config>
+						</TCEforms>
+					</transparentLayer>
 
 					<horizontalAlignment>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:heroImage.flexform.horizontalAlignment</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment</label>
 							<config>
 								<type>select</type>
 								<items>
@@ -64,20 +63,20 @@
 					</horizontalAlignment>
 
 					<verticalAlignment>
-            <TCEforms>
-              <label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:heroImage.flexform.verticalAlignment</label>
-                <config>
-                  <type>select</type>
-                  <items>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment</label>
+							<config>
+								<type>select</type>
+								<items>
 
-                  </items>
-                </config>
-            </TCEforms>
-          </verticalAlignment>
+								</items>
+							</config>
+						</TCEforms>
+					</verticalAlignment>
 
 					<animationStyle>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:heroImage.flexform.animationStyle</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle</label>
 							<config>
 								<type>select</type>
 								<items>

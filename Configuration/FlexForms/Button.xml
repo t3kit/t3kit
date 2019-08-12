@@ -6,38 +6,42 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.sheetGeneral</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
+
 					<buttonSize>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:button.buttonSize</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize</label>
 							<config>
 								<type>select</type>
-									<items>
-									</items>
+								<items>
+								</items>
 							</config>
 						</TCEforms>
 					</buttonSize>
+
 					<buttonStyle>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:button.buttonStyle</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonStyle</label>
 							<config>
 								<type>select</type>
-									<items>
-									</items>
+								<items>
+								</items>
 							</config>
 						</TCEforms>
 					</buttonStyle>
+
 					<blockLevel>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:button.blockLevel</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.blockLevel</label>
 							<config>
 								<type>check</type>
 							</config>
 						</TCEforms>
 					</blockLevel>
+
 				</el>
 			</ROOT>
 		</sDEF>

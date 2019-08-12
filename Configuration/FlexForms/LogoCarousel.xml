@@ -6,13 +6,14 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.sheetGeneral</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flex.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
+
 					<interval>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:logoCarousel.flexform.interval</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:logoCarousel.flex.interval</label>
 							<config>
 								<type>input</type>
 								<rows>1</rows>
@@ -20,6 +21,7 @@
 							</config>
 						</TCEforms>
 					</interval>
+
 				</el>
 			</ROOT>
 		</sDEF>

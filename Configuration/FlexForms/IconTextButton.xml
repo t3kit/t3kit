@@ -6,13 +6,14 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.sheetGeneral</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
+
 					<disableWholeAreaLink>
 						<TCEforms>
-						<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.disableWholeAreaLink</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:iconTextButton.flexform.disableWholeAreaLink</label>
 							<config>
 								<type>check</type>
 							</config>
@@ -21,15 +22,16 @@
 
 					<btnAsLink>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:elem.flexform.btnAsLink</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:iconTextButton.flexform.btnAsLink</label>
 							<config>
 								<type>check</type>
 							</config>
 						</TCEforms>
 					</btnAsLink>
+
 					<iconClass>
 						<TCEforms>
-							<label>LLL:EXT:theme_t3kit/Resources/Private/Language/ContentElements.xlf:icon.flexform.iconClass</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:iconTextButton.flexform.icon</label>
 							<config>
 								<type>user</type>
 								<userFunc>T3kit\themeT3kit\UserFunction\IconFontSelector->renderField</userFunc>
@@ -38,6 +40,7 @@
 							</config>
 						</TCEforms>
 					</iconClass>
+
 				</el>
 			</ROOT>
 		</sDEF>
