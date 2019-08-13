@@ -30,7 +30,7 @@
 				</f:if>
 				<tr>
 					<f:for each="{row}" as="cell" iteration="columnIterator">
-						<f:render partial="Table/Columns" arguments="{_all}" />
+						<f:render section="Columns" arguments="{_all}" />
 					</f:for>
 				</tr>
 				<f:if condition="{rowIterator.isFirst}">
@@ -58,4 +58,109 @@
 	</f:if>
 
 </f:section>
+
+
+<f:section name="Columns">
+
+	<f:if condition="{rowIterator.isFirst}">
+		<f:then>
+			<f:if condition="{data.table_header_position} == 1">
+				<f:then>
+					<th>
+				</f:then>
+				<f:else>
+					<f:if condition="{columnIterator.isFirst}">
+						<f:then>
+							<f:if condition="{data.table_header_position} == 2">
+								<f:then>
+									<th>
+								</f:then>
+								<f:else>
+									<td>
+								</f:else>
+							</f:if>
+						</f:then>
+						<f:else>
+							<td>
+						</f:else>
+					</f:if>
+				</f:else>
+			</f:if>
+		</f:then>
+		<f:else>
+			<f:if condition="{columnIterator.isFirst}">
+				<f:then>
+					<f:if condition="{data.table_header_position} == 2">
+						<f:then>
+							<th>
+						</f:then>
+						<f:else>
+							<td>
+						</f:else>
+					</f:if>
+				</f:then>
+				<f:else>
+					<td>
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+
+	<f:if condition="{cell}">
+		<f:then>
+			<f:format.nl2br>{cell}</f:format.nl2br>
+		</f:then>
+		<f:else>
+			&nbsp;
+		</f:else>
+	</f:if>
+
+	<f:if condition="{rowIterator.isFirst}">
+		<f:then>
+			<f:if condition="{data.table_header_position} == 1">
+				<f:then>
+					</th>
+				</f:then>
+				<f:else>
+					<f:if condition="{columnIterator.isFirst}">
+						<f:then>
+							<f:if condition="{data.table_header_position} == 2">
+								<f:then>
+									</th>
+								</f:then>
+								<f:else>
+									</td>
+								</f:else>
+							</f:if>
+						</f:then>
+						<f:else>
+							</td>
+						</f:else>
+					</f:if>
+				</f:else>
+			</f:if>
+		</f:then>
+		<f:else>
+			<f:if condition="{columnIterator.isFirst}">
+				<f:then>
+					<f:if condition="{data.table_header_position} == 2">
+						<f:then>
+							</th>
+						</f:then>
+						<f:else>
+							</td>
+						</f:else>
+					</f:if>
+				</f:then>
+				<f:else>
+					</td>
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+
+</f:section>
+
+
+
 </html>
