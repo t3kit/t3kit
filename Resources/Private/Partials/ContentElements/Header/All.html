@@ -6,13 +6,11 @@
 				header: data.header,
 				layout: data.header_layout,
 				positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
-				link: data.header_link,
-				default: settings.defaultHeaderType}" />
+				link: data.header_link}" />
 			<f:render partial="Header/SubHeader" arguments="{
 				subheader: data.subheader,
 				layout: data.header_layout,
-				positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
-				default: settings.defaultHeaderType}" />
+				positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}'}" />
 			<f:render partial="Header/Date" arguments="{
 				date: data.date,
 				positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}'}" />
