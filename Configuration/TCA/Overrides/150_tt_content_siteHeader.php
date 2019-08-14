@@ -154,6 +154,27 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigation' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxLabeledToggle',
+            'items' => [
+                [
+                   0 => '',
+                   1 => '',
+                   'labelChecked' => 'Enabled',
+                   'labelUnchecked' => 'Disabled',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTopContacts' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.headerTopContacts',
