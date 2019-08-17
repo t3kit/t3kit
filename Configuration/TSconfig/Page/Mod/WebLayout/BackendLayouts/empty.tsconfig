@@ -1,5 +1,5 @@
 # ###################################
-# Default | Page Backend Layout
+# Empty | Page Backend Layout
 # ==================================
 
 # Columns pattern
@@ -9,15 +9,12 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.Default {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/Default.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.default
+mod.web_layout.BackendLayouts.empty {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/Empty.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.empty
   config.backend_layout {
     colCount = 12
     rowCount = 1
-
-    # Site Header (inherited from start page layout)
-
 
     # All Content
     rows.1.columns {
@@ -27,9 +24,6 @@ mod.web_layout.BackendLayouts.Default {
         colPos = 101
       }
     }
-
-
-    # Site Footer (inherited from start page layout)
 
   }
 }

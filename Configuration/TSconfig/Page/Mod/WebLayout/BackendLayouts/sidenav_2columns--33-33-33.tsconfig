@@ -9,7 +9,7 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.Sidenav2columns {
+mod.web_layout.BackendLayouts.sidenav_2columns--33-33-33 {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/Sidenav2columns.svg
   title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.sidenav_2columns
   config.backend_layout {

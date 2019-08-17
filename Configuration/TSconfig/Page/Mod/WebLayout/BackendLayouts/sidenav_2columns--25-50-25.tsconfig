@@ -1,5 +1,5 @@
 # ###################################
-# Start Page | Page Backend Layout
+# Side Navigation 25% -> 2 Columns 50%>25% | Page Backend Layout
 # ==================================
 
 # Columns pattern
@@ -9,22 +9,17 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.StartPage {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/StartPage.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.startpage1
+mod.web_layout.BackendLayouts.sidenav_2columns--25-50-25 {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/Sidenav25_2columns50_25.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.sidenav25_2columns50_25
   config.backend_layout {
     colCount = 12
-    rowCount = 6
+    rowCount = 4
 
     # Site Header (inherited from start page layout)
-    rows.1.columns.1 {
-      name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.header
-      colspan = 12
-      colPos = 1
-    }
 
     # Top content (after site header/before breadcrumbs)
-    rows.2.columns.1 {
+    rows.1.columns.1 {
       name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.top
       colspan = 12
       colPos = 50
@@ -33,7 +28,7 @@ mod.web_layout.BackendLayouts.StartPage {
     # Breadcrumbs
 
     # Additional content (after breadcrumbs/before main content)
-    rows.3.columns.1 {
+    rows.2.columns.1 {
       name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.before_content
       colspan = 12
       colPos = 60
@@ -41,38 +36,32 @@ mod.web_layout.BackendLayouts.StartPage {
 
 
     # All Content
-    rows.4.columns {
+    rows.3.columns {
       1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
-        colspan = 4
-        colPos = 101
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.sidenav
+        colspan = 3
       }
       2 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
-        colspan = 4
-        colPos = 102
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
+        colspan = 6
+        colPos = 101
       }
       3 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.3.content
-        colspan = 4
-        colPos = 103
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
+        colspan = 3
+        colPos = 102
       }
     }
 
 
     # Additional content (after main content/before site footer)
-    rows.5.columns.1 {
+    rows.4.columns.1 {
       name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.after_content
       colspan = 12
       colPos = 90
     }
 
     # Site Footer (inherited from start page layout)
-    rows.6.columns.1 {
-      name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.footer
-      colspan = 12
-      colPos = 11
-    }
 
   }
 }
