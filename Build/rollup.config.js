@@ -8,7 +8,7 @@ export default [
         output: {
             file: '../Resources/Public/JavaScript/bootstrap.js',
             format: 'umd',
-            name: 'bundle'
+            name: 'bootstrap'
         },
         plugins: [
             babel({
@@ -26,11 +26,11 @@ export default [
         ]
     },
     {
-        input: 'dev/js/mainNew.js',
+        input: 'dev/js/main.js',
         output: {
-            file: '../Resources/Public/JavaScript/mainNew.js',
+            file: '../Resources/Public/JavaScript/main.js',
             format: 'iife',
-            name: 'bundle'
+            name: 'main'
         },
         plugins: [
             babel({
@@ -43,8 +43,7 @@ export default [
                   'objectSpread'
                 ]
             }),
-            commonjs(),
-            resolve()
+            resolve(),
         ]
     }
 ]
