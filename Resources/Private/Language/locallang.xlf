@@ -3,6 +3,11 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
+
+			<trans-unit id="scrollToTop">
+				<source>Scroll to top</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

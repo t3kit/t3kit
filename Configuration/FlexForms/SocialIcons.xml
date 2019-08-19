@@ -1,0 +1,108 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<facebookLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.facebookLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</facebookLink>
+
+					<googlePlusLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.googlePlusLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</googlePlusLink>
+
+					<instagramLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.instagramLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</instagramLink>
+
+					<linkedInLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.linkedInLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</linkedInLink>
+
+					<xingLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.xingLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</xingLink>
+
+					<pinterestLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.pinterestLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</pinterestLink>
+
+					<twitterLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.twitterLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</twitterLink>
+
+					<vimeoLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.vimeoLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</vimeoLink>
+
+					<youtubeLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.youtubeLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</youtubeLink>
+
+					<mynewsdeskLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.mynewsdeskLink</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</mynewsdeskLink>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

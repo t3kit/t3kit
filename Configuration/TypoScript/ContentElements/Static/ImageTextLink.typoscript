@@ -3,24 +3,24 @@ tt_content {
   imageTextLink {
     templateName = ImageTextLink
     dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      10 {
-        references.fieldName = assets
-        as = assets
+      20 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      20 {
+        fieldName = pi_flexform
+        as = flexform
       }
-      15 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      15 {
+      30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      30 {
         references.fieldName = image
         as = image
       }
-      20 = T3kit\themeT3kit\DataProcessing\FlexFormProcessor
-      20 {
-        fieldName = pi_flexform
-        as = settings
+      40 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      40 {
+        references.fieldName = assets
+        as = assets
       }
       # "inherit" from lib.fluidContent
-      800 < lib.contentElement.dataProcessing.800
-      830 < lib.contentElement.dataProcessing.830
+      // 800 < lib.contentElement.dataProcessing.800
+      // 830 < lib.contentElement.dataProcessing.830
     }
   }
 }

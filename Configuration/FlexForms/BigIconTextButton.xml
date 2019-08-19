@@ -1,0 +1,48 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<disableWholeAreaLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.flexform.disableWholeAreaLink</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</disableWholeAreaLink>
+
+					<btnAsLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.flexform.btnAsLink</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</btnAsLink>
+
+					<iconClass>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.flexform.icon</label>
+							<config>
+								<type>user</type>
+								<userFunc>T3kit\themeT3kit\UserFunction\IconFontSelector->renderField</userFunc>
+								<cssFile>EXT:theme_t3kit/Resources/Public/IconFonts/style.css</cssFile>
+								<isIcoMoon>1</isIcoMoon>
+							</config>
+						</TCEforms>
+					</iconClass>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

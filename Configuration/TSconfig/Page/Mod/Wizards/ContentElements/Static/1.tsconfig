@@ -14,12 +14,12 @@ mod.wizards.newContentElement.wizardItems.static.elements.bullets.tt_content_def
 mod.wizards.newContentElement.wizardItems.static.elements.table.tt_content_defValues.CType = table
 mod.wizards.newContentElement.wizardItems.static.elements.uploads.tt_content_defValues.CType = uploads
 
-mod.wizards.newContentElement.wizardItems.static.elements.iconTextButton.tt_content_defValues.CType = iconTextButton
 mod.wizards.newContentElement.wizardItems.static.elements.bigIconTextButton.tt_content_defValues.CType = bigIconTextButton
+mod.wizards.newContentElement.wizardItems.static.elements.iconTextButton.tt_content_defValues.CType = iconTextButton
 mod.wizards.newContentElement.wizardItems.static.elements.imageTextLink.tt_content_defValues.CType = imageTextLink
 mod.wizards.newContentElement.wizardItems.static.elements.heroImage.tt_content_defValues.CType = heroImage
 mod.wizards.newContentElement.wizardItems.static.elements.quote.tt_content_defValues.CType = quote
-mod.wizards.newContentElement.wizardItems.static.elements.button.tt_content_defValues.CType = button
 mod.wizards.newContentElement.wizardItems.static.elements.contactsCard.tt_content_defValues.CType = contactsCard
-mod.wizards.newContentElement.wizardItems.static.elements.fullWidthImage.tt_content_defValues.CType = fullWidthImage
+mod.wizards.newContentElement.wizardItems.static.elements.button.tt_content_defValues.CType = button
 mod.wizards.newContentElement.wizardItems.static.elements.socialIcons.tt_content_defValues.CType = socialIcons
+mod.wizards.newContentElement.wizardItems.static.elements.fullWidthImage.tt_content_defValues.CType = fullWidthImage

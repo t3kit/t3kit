@@ -3,19 +3,19 @@ tt_content {
   contactsCard {
     templateName = ContactsCard
     dataProcessing {
-      10 = T3kit\themeT3kit\DataProcessing\FlexFormProcessor
-      10 {
+      20 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      20 {
         fieldName = pi_flexform
-        as = settings
+        as = flexform
       }
-      15 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      15 {
+      30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      30 {
         references.fieldName = image
         as = image
       }
       # "inherit" from lib.fluidContent
-      800 < lib.contentElement.dataProcessing.800
-      830 < lib.contentElement.dataProcessing.830
+      // 800 < lib.contentElement.dataProcessing.800
+      // 830 < lib.contentElement.dataProcessing.830
     }
     settings {
       defaultImage = EXT:theme_t3kit/Resources/Public/Extensions/News/images/no_image.png
