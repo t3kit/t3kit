@@ -1,0 +1,69 @@
+// =================================
+// General appearance wrappers
+// =================================
+
+.inverse {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: tint($main-text-color, 100%);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+        color: tint($main-color, 90%);
+
+        &.active,
+        &:active {
+            &.focus,
+            &:focus {
+                color: tint($main-text-color, 100%);
+                border-color: tint($main-color, 70%);
+            }
+        }
+
+        &.focus,
+        &:focus,
+        &:hover {
+            color: tint($main-text-color, 100%);
+            border-color: tint($main-color, 70%);
+        }
+    }
+
+    p {
+        color: tint($main-text-color, 90%);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .icons {
+        color: tint($main-color, 90%);
+        border-color: tint($main-color, 70%);
+    }
+
+    .btn {
+        // background: saturate(adjust-hue($main-color, 177), 30%);
+        color: tint($main-color, 90%);
+        // border-color: transparent;
+        &.active,
+        &:active {
+            &.focus,
+            &:focus {
+                // background: saturate(adjust-hue($main-color, 177), 30%);
+                // border-color: transparent;
+            }
+        }
+
+        &.focus,
+        &:focus,
+        &:hover {
+            // background: saturate(adjust-hue($main-color, 177), 30%);
+            // border-color: transparent;
+        }
+    }
+
+    .big-icon-text-btn__sham-link {
+        color: tint($main-color, 90%);
+    }
+}

@@ -1,0 +1,51 @@
+// =================================
+// === News Letter Subscription=============
+// =================================
+
+.footer .tx-pxa-newsletter-subscription {
+    .alert {
+        width: 66%;
+        clear: both;
+    }
+
+    .form-control {
+        margin: 5px auto;
+    }
+
+    .btn,
+    .form-control {
+        height: 40px;
+    }
+
+    .btn {
+        background-color: $main-color;
+        border: none;
+        // color: #fff;
+        padding: 0 30px;
+        color: tint($main-color, 90%);
+
+        &.active,
+        &:active {
+            &.focus,
+            &:focus {
+                border: none;
+                color: tint($main-color, 90%);
+                background-color: $main-color;
+            }
+        }
+
+        &.focus,
+        &:focus,
+        &:hover {
+            border: none;
+            color: tint($main-color, 70%);
+            background-color: $main-color;
+        }
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------

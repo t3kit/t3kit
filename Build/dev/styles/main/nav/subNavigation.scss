@@ -1,0 +1,154 @@
+// =========================================================
+// === Sub Navigation ======================================
+// =========================================================
+
+.sub-navigation {
+    background: $sub-navigation-background;
+    padding-bottom: 20px;
+}
+
+.sub-navigation__wrp {
+    border: 1px solid shade($sub-navigation-border, 5%);
+    border-width: 1px 0 0;
+}
+
+.sub-navigation__item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-navigation__link {
+    display: block;
+    padding: 13px 14px 13px 20px;
+    color: $sub-navigation-link-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(120, 120, 120, 0.3);
+    letter-spacing: 0.2px;
+    transition: all 0.1s linear;
+    border: 1px solid shade($sub-navigation-border, 5%);
+    border-width: 0 0 1px;
+    font-size: 15px;
+    hyphens: auto;
+    // ie11 and edge hyphens polyfill
+    word-wrap: break-word;
+}
+
+// @media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
+    .sub-navigation__link {
+        font-size: 16px;
+    }
+}
+
+.sub-navigation__link._sub-level-2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.no-touch .sub-navigation__link:hover {
+    color: $sub-navigation-link-hover-color;
+    background: $sub-navigation-link-hover-bg;
+}
+
+.no-touch .sub-navigation__link._active:hover {
+    background-color: $sub-navigation-link-hover-bg;
+}
+
+.sub-navigation__link._sub-level-3 {
+    padding-left: 27px;
+    background-color: shade($sub-navigation-background, 6%);
+    border-color: shade($sub-navigation-border, 11%);
+    text-transform: uppercase;
+}
+
+.no-touch .sub-navigation__link._sub-level-3:hover {
+    background-color: shade($sub-navigation-link-hover-bg, 6%);
+}
+
+.sub-navigation__link._sub-level-4 {
+    padding-left: 34px;
+    background-color: shade($sub-navigation-background, 9%);
+    border-color: shade($sub-navigation-border, 14%);
+    text-transform: uppercase;
+}
+
+.no-touch .sub-navigation__link._sub-level-4:hover {
+    background-color: shade($sub-navigation-link-hover-bg, 9%);
+}
+
+.sub-navigation__link._sub-level-5 {
+    padding-left: 41px;
+    background-color: shade($sub-navigation-background, 12%);
+    border-color: shade($sub-navigation-border, 17%);
+    text-transform: uppercase;
+}
+
+.no-touch .sub-navigation__link._sub-level-5:hover {
+    background-color: shade($sub-navigation-link-hover-bg, 12%);
+}
+
+.sub-navigation__link._sub-level-6 {
+    padding-left: 45px;
+    background-color: shade($sub-navigation-background, 14%);
+    border-color: shade($sub-navigation-border, 19%);
+    text-transform: uppercase;
+}
+
+.no-touch .sub-navigation__link._sub-level-6:hover {
+    background-color: shade($sub-navigation-link-hover-bg, 14%);
+}
+
+.sub-navigation__link._sub-level-7 {
+    padding-left: 49px;
+    background-color: shade($sub-navigation-background, 16%);
+    border-color: shade($sub-navigation-border, 21%);
+    text-transform: uppercase;
+}
+
+.no-touch .sub-navigation__link._sub-level-7:hover {
+    background-color: shade($sub-navigation-link-hover-bg, 16%);
+}
+
+.sub-navigation__link._active {
+    border-left: 3px solid $sub-navigation-active-border;
+    padding-left: 17px;
+}
+
+.no-touch .sub-navigation__link._active:hover {
+    border-left-color: shade($sub-navigation-active-border, 12%);
+}
+
+.sub-navigation__link._sub-level-3._active {
+    padding-left: 24px;
+}
+
+.sub-navigation__link._sub-level-4._active {
+    padding-left: 31px;
+}
+
+.sub-navigation__link._sub-level-5._active {
+    padding-left: 38px;
+}
+
+.sub-navigation__link._sub-level-6._active {
+    padding-left: 42px;
+}
+
+.sub-navigation__link._sub-level-7._active {
+    padding-left: 46px;
+}
+
+.sub-navigation__link._curent {
+    border-left: 3px solid $sub-navigation-active-border;
+    color: $sub-navigation-link-active-color;
+    background: $sub-navigation-link-active-bg;
+}
+
+.no-touch .sub-navigation__link._curent:hover {
+    background: shade($sub-navigation-link-active-bg, 9%);
+    color: $sub-navigation-link-active-color;
+}
+// =========================================================
+// =========================================================

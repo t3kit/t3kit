@@ -1,0 +1,50 @@
+// Divider
+
+.ce-div {
+    border-top: 1px solid tint($main-text-color, 90%);
+}
+
+.divider {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider__wrp {
+    // display: inline-block;
+    position: relative;
+    line-height: 1;
+    font-size: 32px;
+}
+
+.divider__icon {
+    color: tint($main-text-color, 80%);
+    font-size: inherit;
+}
+
+.divider__wrp:after {
+    left: 0.5em;
+    margin-right: -50%;
+    background-color: tint($main-text-color, 90%);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    margin-top: -0.2em;
+    width: 50%;
+}
+
+.divider__wrp:before {
+    right: 0.5em;
+    margin-left: -50%;
+    background-color: tint($main-text-color, 90%);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    margin-top: -0.2em;
+    width: 50%;
+}
