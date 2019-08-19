@@ -1,5 +1,5 @@
 # ###################################
-# 2 Columns 25%>75% | Page Backend Layout
+# 3 Columns | Page Backend Layout
 # ==================================
 
 # Columns pattern
@@ -9,9 +9,9 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.2columns25_75 {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/2columns25_75.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.2columns25_75
+mod.web_layout.BackendLayouts.3columns--33-33-33 {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/3columns.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.3columns
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -44,8 +44,13 @@ mod.web_layout.BackendLayouts.2columns25_75 {
       }
       2 {
         name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
-        colspan = 8
+        colspan = 4
         colPos = 102
+      }
+      3 {
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.3.content
+        colspan = 4
+        colPos = 103
       }
     }
 

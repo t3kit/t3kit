@@ -5,75 +5,75 @@
 		<body>
 
 			<trans-unit id="title.1column">
-				<source>1 Column |</source>
+				<source>1 Column</source>
 			</trans-unit>
 			<trans-unit id="title.1column_sidenav">
-				<source>1 Column -> Side Navigation |</source>
+				<source>1 Column[75%] -> Side Navigation[25%]</source>
 			</trans-unit>
 			<trans-unit id="title.sidenav_1column">
-				<source>Side Navigation -> 1 Column |</source>
+				<source>Side Navigation[25%] -> 1 Column[75%]</source>
 			</trans-unit>
 
 			<trans-unit id="title.2columns">
-				<source>2 Columns |</source>
+				<source>2 Columns[50%-50%]</source>
 			</trans-unit>
 			<trans-unit id="title.2columns_sidenav">
-				<source>2 Columns -> Side Navigation |</source>
+				<source>2 Columns[33%-33%] -> Side Navigation[33%]</source>
 			</trans-unit>
 			<trans-unit id="title.sidenav_2columns">
-				<source>Side Navigation -> 2 Columns |</source>
+				<source>Side Navigation[33%] -> 2 Columns[33%-33%]</source>
 			</trans-unit>
 			<trans-unit id="title.2columns25_75">
-				<source>2 Columns 25%>75% |</source>
+				<source>2 Columns[25%-75%]</source>
 			</trans-unit>
 			<trans-unit id="title.2columns75_25">
-				<source>2 Columns 75%>25% |</source>
+				<source>2 Columns[75%-25%]</source>
 			</trans-unit>
 			<trans-unit id="title.sidenav25_2columns50_25">
-				<source>Side Navigation 25% -> 2 Columns 50%>25% |</source>
+				<source>Side Navigation[25%] -> 2 Columns[50%-25%]</source>
 			</trans-unit>
 			<trans-unit id="title.2columns50_25_sidenav25">
-				<source>2 Columns 50%>25% -> Side Navigation 25% |</source>
+				<source>2 Columns[25%-50%] -> Side Navigation[25%]</source>
 			</trans-unit>
 
 			<trans-unit id="title.3columns">
-				<source>3 Columns |</source>
+				<source>3 Columns[33%-33%-33%]</source>
 			</trans-unit>
 			<trans-unit id="title.3columns_sidenav">
-				<source>3 Columns -> Side Navigation |</source>
+				<source>3 Columns[25%-25%-25%] -> Side Navigation[25%]</source>
 			</trans-unit>
 			<trans-unit id="title.sidenav_3columns">
-				<source>Side Navigation -> 3 Columns |</source>
+				<source>Side Navigation[25%] -> 3 Columns[25%-25%-25%]</source>
 			</trans-unit>
 			<trans-unit id="title.3columns25_50_25">
-				<source>3 Columns 25%>50%>25% |</source>
+				<source>3 Columns[25%-50%-25%]</source>
 			</trans-unit>
 
 			<trans-unit id="title.4columns">
-				<source>4 Columns |</source>
+				<source>4 Columns[25%-25%-25%-25%]</source>
 			</trans-unit>
 
 			<trans-unit id="title.empty">
-				<source>Empty |</source>
+				<source>Empty</source>
 			</trans-unit>
 			<trans-unit id="title.default">
-				<source>Default |</source>
+				<source>Default</source>
 			</trans-unit>
 
 			<trans-unit id="title.startpage1">
-				<source>Start Page #1 |</source>
+				<source>Start Page #1</source>
 			</trans-unit>
 			<trans-unit id="title.startpage2">
-				<source>Start Page #2 |</source>
+				<source>Start Page #2</source>
 			</trans-unit>
 			<trans-unit id="title.startpage3">
-				<source>Start Page #3 |</source>
+				<source>Start Page #3</source>
 			</trans-unit>
 			<trans-unit id="title.startpage4">
-				<source>Start Page #4 |</source>
+				<source>Start Page #4</source>
 			</trans-unit>
 			<trans-unit id="title.startpage5">
-				<source>Start Page #5 |</source>
+				<source>Start Page #5</source>
 			</trans-unit>
 
 

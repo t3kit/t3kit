@@ -158,24 +158,6 @@ defined('TYPO3_MODE') || die();
     ]
 ]);
 
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'frame_class' => [
-        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class',
-        'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                ['LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class.default', 'default'],
-                ['LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class.none', 'none'],
-            ],
-            'default' => 'default',
-        ],
-    ],
-]);
-
 $GLOBALS['TCA']['tt_content']['columns']['layout']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
 $GLOBALS['TCA']['tt_content']['columns']['space_before_class']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
 $GLOBALS['TCA']['tt_content']['columns']['space_after_class']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';

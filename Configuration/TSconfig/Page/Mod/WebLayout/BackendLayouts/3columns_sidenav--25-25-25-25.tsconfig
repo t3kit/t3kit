@@ -1,5 +1,5 @@
 # ###################################
-# 3 Columns | Page Backend Layout
+# 3 Columns -> Side Navigation | Page Backend Layout
 # ==================================
 
 # Columns pattern
@@ -9,9 +9,9 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.3columns {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/3columns.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.3columns
+mod.web_layout.BackendLayouts.3columns_sidenav--25-25-25-25 {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/3columnsSidenav.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.3columns_sidenav
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -39,18 +39,22 @@ mod.web_layout.BackendLayouts.3columns {
     rows.3.columns {
       1 {
         name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
-        colspan = 4
+        colspan = 3
         colPos = 101
       }
       2 {
         name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
-        colspan = 4
+        colspan = 3
         colPos = 102
       }
       3 {
         name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.3.content
-        colspan = 4
+        colspan = 3
         colPos = 103
+      }
+      4 {
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.sidenav
+        colspan = 3
       }
     }
 

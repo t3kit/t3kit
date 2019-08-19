@@ -1,5 +1,5 @@
 # ###################################
-# 2 Columns 50%>25% -> Side Navigation 25% | Page Backend Layout
+# 2 Columns 75%>25% | Page Backend Layout
 # ==================================
 
 # Columns pattern
@@ -9,9 +9,9 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.2columns50_25Sidenav25 {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/2columns50_25Sidenav25.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.2columns50_25_sidenav25
+mod.web_layout.BackendLayouts.2columns--75-25 {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/2columns75_25.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.2columns75_25
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -39,17 +39,13 @@ mod.web_layout.BackendLayouts.2columns50_25Sidenav25 {
     rows.3.columns {
       1 {
         name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
-        colspan = 6
+        colspan = 8
         colPos = 101
       }
       2 {
         name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
-        colspan = 3
+        colspan = 4
         colPos = 102
-      }
-      3 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.sidenav
-        colspan = 3
       }
     }
 

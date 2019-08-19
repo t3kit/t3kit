@@ -3,6 +3,7 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
+			<!-- general groups -->
 			<trans-unit id="group.static">
 				<source>Static content</source>
 			</trans-unit>
@@ -13,10 +14,56 @@
 				<source>Content separator</source>
 			</trans-unit>
 
+			<!-- general TCS types tabs -->
 			<trans-unit id="tabs.settings">
 				<source>Settings</source>
 			</trans-unit>
 
+			<!-- general content -->
+			<trans-unit id="content.alignment">
+				<source>Content alignment</source>
+			</trans-unit>
+			<trans-unit id="header.size">
+				<source>Header size</source>
+			</trans-unit>
+			<trans-unit id="header_layout.1">
+				<source>Heading 1</source>
+			</trans-unit>
+			<trans-unit id="header_layout.2">
+				<source>Heading 2</source>
+			</trans-unit>
+			<trans-unit id="header_layout.3">
+				<source>Heading 3</source>
+			</trans-unit>
+			<trans-unit id="header_layout.4">
+				<source>Heading 4</source>
+			</trans-unit>
+			<trans-unit id="header_layout.5">
+				<source>Heading 5</source>
+			</trans-unit>
+			<trans-unit id="header_layout.6">
+				<source>Heading 6</source>
+			</trans-unit>
+			<trans-unit id="header_position.default">
+				<source>Default [Left]</source>
+			</trans-unit>
+			<trans-unit id="header_position.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="header_position.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="header_position.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="header_position.justify">
+				<source>Justify</source>
+			</trans-unit>
+
+			<!-- general flexform -->
+			<trans-unit id="flexform.title">
+				<source>Content element settings</source>
+			</trans-unit>
 			<trans-unit id="flexform.sheetTitle">
 				<source>Additional settings</source>
 			</trans-unit>

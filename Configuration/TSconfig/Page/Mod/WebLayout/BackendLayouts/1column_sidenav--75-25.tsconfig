@@ -1,5 +1,5 @@
 # ###################################
-# 3 Columns 25%>50%>25% | Page Backend Layout
+# 1 Column -> Side Navigation | Page Backend Layout
 # ==================================
 
 # Columns pattern
@@ -9,9 +9,9 @@
 # [50-90]   -> Additional content
 # [100-900]  -> All Content
 
-mod.web_layout.BackendLayouts.3columns25_50_25 {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/3columns25_50_25.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.3columns25_50_25
+mod.web_layout.BackendLayouts.1column_sidenav--75-25 {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/1columnSidenav.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.1column_sidenav
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -25,7 +25,7 @@ mod.web_layout.BackendLayouts.3columns25_50_25 {
       colPos = 50
     }
 
-    # Breadcrumbs (inherited from start page layout)
+    # Breadcrumbs
 
     # Additional content (after breadcrumbs/before main content)
     rows.2.columns.1 {
@@ -38,19 +38,13 @@ mod.web_layout.BackendLayouts.3columns25_50_25 {
     # All Content
     rows.3.columns {
       1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
-        colspan = 3
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.content
+        colspan = 8
         colPos = 101
       }
       2 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
-        colspan = 6
-        colPos = 102
-      }
-      3 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.3.content
-        colspan = 3
-        colPos = 103
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.sidenav
+        colspan = 4
       }
     }
 
