@@ -20,8 +20,14 @@
     "js-minify-bundle": "terser --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content='../Resources/Public/JavaScript/bootstrap.js.map',includeSources,url=bootstrap.min.js.map\" --output ../Resources/Public/JavaScript/bootstrap.min.js ../Resources/Public/JavaScript/bootstrap.js",
     "js-main": "npm-run-all js-lint js-compile js-minify",
     "watch": "npm-run-all -p watch-*",
-    "watch-css": "nodemon --watch dev/styles/ --ext scss --exec \"npm run css-main\"",
-    "watch-js": "nodemon --watch dev/js/ --ext js --exec \"npm run js-main\""
+    "serve": "npm-run-all -p sync watch",
+    "sync": "browser-sync start --config bs-config.js",
+    "dev-css-main": "npm-run-all css-lint dev-css-compile",
+    "dev-css-compile": "node-sass dev/styles/bootstrap.scss  ../Resources/Public/CSS/bootstrap.css",
+    "dev-js-main": "npm-run-all js-lint dev-js-compile",
+    "dev-js-compile": "rollup --config rollup.config.js",
+    "watch-css": "nodemon --watch dev/styles/ --ext scss --exec  \"npm run dev-css-main\"",
+    "watch-js": "nodemon --watch dev/js/ --ext js --exec \"npm run dev-js-main\""
   },
   "browserslist": [
     "last 2 versions"
@@ -33,7 +39,9 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
     "clean-css-cli": "^4.3.0",
+    "dotenv": "^8.0.0",
     "glob": "^7.1.3",
     "http-server": "^0.11.1",
     "jquery": "^3.4.1",
