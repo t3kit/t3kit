@@ -42,6 +42,7 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:tabs.settings,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,

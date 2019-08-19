@@ -20,8 +20,17 @@
 			</trans-unit>
 
 			<!-- general content -->
-			<trans-unit id="content.alignment">
+			<trans-unit id="header_alignment">
+				<source>Header alignment</source>
+			</trans-unit>
+			<trans-unit id="content_alignment">
 				<source>Content alignment</source>
+			</trans-unit>
+			<trans-unit id="link_title">
+				<source>Link title</source>
+			</trans-unit>
+			<trans-unit id="link">
+				<source>Link</source>
 			</trans-unit>
 			<trans-unit id="header.size">
 				<source>Header size</source>

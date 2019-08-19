@@ -158,6 +158,98 @@ defined('TYPO3_MODE') || die();
     ]
 ]);
 
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'content_alignment' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:content_alignment',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left',
+                    'left'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center',
+                    'center'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right',
+                    'right'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify',
+                    'justify'
+                ]
+            ],
+            'default' => 'left',
+        ]
+    ],
+]);
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'content_alignment_center' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:content_alignment',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center',
+                    'center'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left',
+                    'left'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right',
+                    'right'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify',
+                    'justify'
+                ]
+            ],
+            'default' => 'center',
+        ]
+    ],
+]);
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'link_title' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:link_title',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ]
+    ],
+]);
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'link' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:link',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'inputLink',
+            'size' => 50,
+            'max' => 1024,
+            'eval' => 'trim',
+            'softref' => 'typolink'
+        ]
+    ],
+]);
+
+
 $GLOBALS['TCA']['tt_content']['columns']['layout']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
 $GLOBALS['TCA']['tt_content']['columns']['space_before_class']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
 $GLOBALS['TCA']['tt_content']['columns']['space_after_class']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';

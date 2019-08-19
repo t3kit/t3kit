@@ -11,15 +11,6 @@
 				<type>array</type>
 				<el>
 
-					<elementText>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.elementText</label>
-							<config>
-								<type>text</type>
-							</config>
-						</TCEforms>
-					</elementText>
-
 					<elementHeight>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.elementHeight</label>

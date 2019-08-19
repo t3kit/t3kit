@@ -17,6 +17,10 @@ CREATE TABLE tt_content (
 	background int(11) unsigned DEFAULT '0' NOT NULL,
 	background_parallax tinyint(3) unsigned DEFAULT '0' NOT NULL,
 	full_width_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
+	content_alignment varchar(6) DEFAULT '' NOT NULL,
+	content_alignment_center varchar(6) DEFAULT '' NOT NULL,
+	link_title varchar(255) DEFAULT '' NOT NULL,
+	link varchar(1024) DEFAULT '' NOT NULL,
 
 	skipLinks_mainNavigation varchar(255) DEFAULT '' NOT NULL,
 	skipLinks_mainContent varchar(255) DEFAULT '' NOT NULL,
