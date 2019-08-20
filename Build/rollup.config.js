@@ -1,15 +1,32 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
 
 export default [
+    {
+        input: 'dev/js/jquery.js',
+        output: {
+            file: '../Resources/Public/JavaScript/jquery.js',
+            format: 'iife',
+            name: 'jquery',
+            globals: {
+                window: 'window',
+            },
+        },
+        plugins: [
+            resolve()
+        ]
+    },
     {
         input: 'dev/js/bootstrap.js',
         output: {
             file: '../Resources/Public/JavaScript/bootstrap.js',
             format: 'umd',
-            name: 'bootstrap'
+            name: 'bootstrap',
+            globals: {
+                jquery: '$'
+            },
         },
+        external: ['jquery'],
         plugins: [
             babel({
                 exclude: 'node_modules/**',
@@ -21,7 +38,6 @@ export default [
                   'objectSpread'
                 ]
             }),
-            commonjs(),
             resolve()
         ]
     },
