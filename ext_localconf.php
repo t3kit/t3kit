@@ -71,7 +71,7 @@ foreach ($contentElementIcons as $icon) {
     $iconRegistry->registerIcon(
         $icon,
         \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        ['source' => $contentElementIconFilePrefix . $icon . '.svg']
+        ['source' => $contentElementIconFilePath . $icon . '.svg']
     );
 }
 
