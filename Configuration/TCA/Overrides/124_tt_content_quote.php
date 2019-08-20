@@ -40,8 +40,7 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:tabs.settings,
+            --palette--;;quote,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -57,3 +56,23 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     '
 ];
+
+
+/*
+ * ###########################
+ * Add new palettes for a Content Element
+ * ===========================
+ */
+$GLOBALS['TCA']['tt_content']['palettes']['quote'] = array(
+    'showitem' => '
+        custom_header;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.author,
+        --linebreak--,
+        custom_subheader;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.cited_work,
+        --linebreak--,
+        bodytext;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.bodytext,
+        --linebreak--,
+        link_title,
+        --linebreak--,
+        link,
+    ',
+);

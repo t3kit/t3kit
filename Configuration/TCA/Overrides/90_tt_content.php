@@ -139,6 +139,7 @@ defined('TYPO3_MODE') || die();
         ]
     ]
 ]);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'full_width_background' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.label',
@@ -248,6 +249,27 @@ defined('TYPO3_MODE') || die();
         ]
     ],
 ]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'custom_header' => [
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'custom_subheader' => [
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ]
+    ],
+]);
+
 
 
 $GLOBALS['TCA']['tt_content']['columns']['layout']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';

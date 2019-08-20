@@ -2,7 +2,6 @@
 defined('TYPO3_MODE') || die();
 
 
-
 /*
  * ###########################
  * Add Content Element to Type list
@@ -21,14 +20,12 @@ defined('TYPO3_MODE') || die();
 );
 
 
-
 /*
  * ###########################
  * Add icon for Content Element
  * ===========================
  */
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['button'] = 'ce-button';
-
 
 
 /*
@@ -40,7 +37,7 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
+            --palette--;;button,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:tabs.settings,
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -59,6 +56,19 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
     '
 ];
 
+
+/*
+ * ###########################
+ * Add new palettes for a Content Element
+ * ===========================
+ */
+$GLOBALS['TCA']['tt_content']['palettes']['button'] = array(
+    'showitem' => '
+        link_title;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.title,
+        --linebreak--,
+        link,
+    ',
+);
 
 
 /*

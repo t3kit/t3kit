@@ -11,6 +11,72 @@
 				<type>array</type>
 				<el>
 
+					<contactPhone_1>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.contactPhone_1</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>30</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</contactPhone_1>
+
+					<contactPhone_2>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.contactPhone_2</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>30</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</contactPhone_2>
+
+					<mobilePhone>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.mobilePhone</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>30</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</mobilePhone>
+
+					<email>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.email</label>
+							<config>
+								<type>input</type>
+								<renderType></renderType>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim,email</eval>
+								<softref>email</softref>
+							</config>
+						</TCEforms>
+					</email>
+
+					<linkedInLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.linkedInLink</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</linkedInLink>
+
 					<imgAsBg>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.imgAsBg</label>
@@ -31,55 +97,6 @@
 						</TCEforms>
 					</icons>
 
-					<contactPhone_1>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.contactPhone_1</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-							</config>
-						</TCEforms>
-					</contactPhone_1>
-
-					<contactPhone_2>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.contactPhone_2</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-							</config>
-						</TCEforms>
-					</contactPhone_2>
-
-					<mobilePhone>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.mobilePhone</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-							</config>
-						</TCEforms>
-					</mobilePhone>
-
-					<email>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.email</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-							</config>
-						</TCEforms>
-					</email>
-
-					<linkedInLink>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.linkedInLink</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-							</config>
-						</TCEforms>
-					</linkedInLink>
 
 				</el>
 			</ROOT>

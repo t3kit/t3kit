@@ -11,6 +11,8 @@ CREATE TABLE pages (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
+	custom_header varchar(255) DEFAULT '' NOT NULL,
+	custom_subheader varchar(255) DEFAULT '' NOT NULL,
 	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
 	background_color_class varchar(60) DEFAULT '' NOT NULL,
 	background_color varchar(255) DEFAULT '' NOT NULL,
@@ -37,7 +39,7 @@ CREATE TABLE tt_content (
 	email_show_title int(11) unsigned DEFAULT '0' NOT NULL,
 
 	phone_link varchar(255) DEFAULT '' NOT NULL,
-	phone_text varchar(60) DEFAULT '' NOT NULL,
+	phone_text varchar(50) DEFAULT '' NOT NULL,
 	phone_title varchar(255) DEFAULT '' NOT NULL,
 	phone_icon int(11) unsigned DEFAULT '0' NOT NULL,
 	phone_show_title int(11) unsigned DEFAULT '0' NOT NULL,

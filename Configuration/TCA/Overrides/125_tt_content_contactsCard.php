@@ -2,7 +2,6 @@
 defined('TYPO3_MODE') || die();
 
 
-
 /*
  * ###########################
  * Add Content Element to Type list
@@ -21,14 +20,12 @@ defined('TYPO3_MODE') || die();
 );
 
 
-
 /*
  * ###########################
  * Add icon for Content Element
  * ===========================
  */
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactsCard'] = 'ce-contactsCard';
-
 
 
 /*
@@ -40,9 +37,8 @@ $GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:tabs.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.title,
+            --palette--;;contactsCard,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -59,6 +55,19 @@ $GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
     '
 ];
 
+
+/*
+ * ###########################
+ * Add new palettes for a Content Element
+ * ===========================
+ */
+$GLOBALS['TCA']['tt_content']['palettes']['contactsCard'] = array(
+    'showitem' => '
+        custom_header;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.name,
+        --linebreak--,
+        custom_subheader;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:contactsCard.job,
+    ',
+);
 
 
 /*

@@ -2,7 +2,6 @@
 defined('TYPO3_MODE') || die();
 
 
-
 /*
  * ###########################
  * Add Content Element to Type list
@@ -21,14 +20,12 @@ defined('TYPO3_MODE') || die();
 );
 
 
-
 /*
  * ###########################
  * Add icon for Content Element
  * ===========================
  */
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteHeader'] = 'ce-siteHeader';
-
 
 
 /*
@@ -61,7 +58,6 @@ $GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     '
 ];
-
 
 
 /*
@@ -103,7 +99,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         --linebreak--,
     ',
   );
-
 
 
 /*
@@ -315,7 +310,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         'config' => [
             'type' => 'input',
             'size' => 50,
-            'max' => 60,
+            'max' => 50,
             'eval' => 'trim',
         ]
     ],
@@ -399,7 +394,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         ]
     ],
 ]);
-
 
 
 /*
