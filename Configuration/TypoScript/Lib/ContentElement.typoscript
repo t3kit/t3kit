@@ -4,22 +4,22 @@ lib.contentElement {
   templateName = Default
   templateRootPaths {
     0 = EXT:t3kit/Resources/Private/Templates/ContentElements
-    11 = EXT:t3kit/Resources/Private/Templates/ContentElements/Static
-    12 = EXT:t3kit/Resources/Private/Templates/ContentElements/Dynamic
-    13 = EXT:t3kit/Resources/Private/Templates/ContentElements/Separator
-    14 = EXT:t3kit/Resources/Private/Templates/ContentElements/Forms
-    15 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
-    16 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugins
-    17 = EXT:t3kit/Resources/Private/Templates/ContentElements/Special
-    20 = {$plugin.t3kit.lib.contentElement.templateRootPath}
+    10 = EXT:t3kit/Resources/Private/Templates/ContentElements/Static
+    20 = EXT:t3kit/Resources/Private/Templates/ContentElements/Dynamic
+    30 = EXT:t3kit/Resources/Private/Templates/ContentElements/Separator
+    40 = EXT:t3kit/Resources/Private/Templates/ContentElements/Forms
+    50 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
+    60 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugins
+    70 = EXT:t3kit/Resources/Private/Templates/ContentElements/Special
+    200 = {$plugin.t3kit.lib.contentElement.templateRootPath}
   }
   partialRootPaths {
     0 = EXT:t3kit/Resources/Private/Partials/ContentElements
-    20 = {$plugin.t3kit.lib.contentElement.partialRootPath}
+    200 = {$plugin.t3kit.lib.contentElement.partialRootPath}
   }
   layoutRootPaths {
     0 = EXT:t3kit/Resources/Private/Layouts/ContentElements
-    20 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
+    200 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
   }
   stdWrap {
     editIcons = tt_content

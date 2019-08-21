@@ -22,15 +22,15 @@ page {
     }
     templateRootPaths {
       0 = EXT:t3kit/Resources/Private/Templates/Page
-      10 = {$page.fluidtemplate.templateRootPath}
+      200 = {$page.fluidtemplate.templateRootPath}
     }
     partialRootPaths {
       0 = EXT:t3kit/Resources/Private/Partials/Page
-      10 = {$page.fluidtemplate.partialRootPath}
+      200 = {$page.fluidtemplate.partialRootPath}
     }
     layoutRootPaths {
       0 = EXT:t3kit/Resources/Private/Layouts/Page
-      10 = {$page.fluidtemplate.layoutRootPath}
+      200 = {$page.fluidtemplate.layoutRootPath}
     }
   }
 }
