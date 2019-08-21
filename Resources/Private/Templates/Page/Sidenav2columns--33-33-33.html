@@ -1,21 +1,21 @@
-
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true"></html>
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
 
 <f:section name="Main">
-	<f:cObject typoscriptObjectPath="lib.content.siteHeader" />
 
-	<f:cObject typoscriptObjectPath="lib.content.render" data="{colPos:50}" />
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
-	<f:cObject typoscriptObjectPath="lib.content.render" data="{colPos:101}" />
-	<f:cObject typoscriptObjectPath="lib.content.render" data="{colPos:102}" />
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
 
-	<f:cObject typoscriptObjectPath="lib.content.render" data="{colPos:60}" />
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
 
-	<f:cObject typoscriptObjectPath="lib.content.render" data="{colPos:90}" />
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:101}" />
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:102}" />
 
-	<f:cObject typoscriptObjectPath="lib.content.siteFooter" />
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+
+	<f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
 
 </f:section>
 
