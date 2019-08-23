@@ -33,7 +33,12 @@
 		"typo3/cms-felogin": "^9.5",
 		"typo3/cms-indexed-search": "^9.5"
 	},
-	"require-dev": {},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.4",
+		"helmich/typo3-typoscript-lint": "^2.0",
+		"heahdude/yaml-linter": "^1.0",
+		"sclable/xml-lint": "^0.2.4"
+	},
 	"suggest": {},
 	"autoload": {
 		"psr-4": {
@@ -44,7 +49,26 @@
 	"config": {
 		"platform": {
 			"php": "7.2"
-		}
+    },
+    "vendor-dir": "build/vendor",
+    "optimize-autoloader": true
 	},
-	"scripts": {}
+  "scripts": {
+		"lint-php": "build/vendor/bin/phpcs",
+    "lint-typoscript": "build/vendor/bin/typoscript-lint",
+    "lint-yaml": "build/vendor/bin/yaml-linter typoscript-lint.yml Resources/ Configuration/ Classes/",
+    "lint-xml": "build/vendor/bin/xmllint --exclude=build/ .",
+    "lint": [
+      "@lint-php",
+      "@lint-typoscript",
+      "@lint-yaml",
+      "@lint-xml"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+        "web-dir": "build/public",
+        "app-dir": "build"
+    }
+  }
 }
