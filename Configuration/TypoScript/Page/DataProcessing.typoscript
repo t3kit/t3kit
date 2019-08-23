@@ -69,8 +69,8 @@ page.10.dataProcessing {
   # Language Navigation
   60 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
   60 {
-   as = languageNavigation
-   languages = auto
+    as = languageNavigation
+    languages = auto
   }
 
 }

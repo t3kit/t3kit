@@ -1,6 +1,6 @@
 page {
-  includeCSSLibs {
-  }
+  // includeCSSLibs {
+  // }
   includeCSS {
     bootstrap = EXT:t3kit/Resources/Public/CSS/bootstrap.css
     components = EXT:t3kit/Resources/Public/CSS/components.css

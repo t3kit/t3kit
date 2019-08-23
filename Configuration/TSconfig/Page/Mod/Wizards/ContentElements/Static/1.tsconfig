@@ -5,21 +5,25 @@
 # ===========================
 
 # Static CE
-mod.wizards.newContentElement.wizardItems.static.elements.header.tt_content_defValues.CType = header
-mod.wizards.newContentElement.wizardItems.static.elements.text.tt_content_defValues.CType = text
-mod.wizards.newContentElement.wizardItems.static.elements.textpic.tt_content_defValues.CType = textpic
-mod.wizards.newContentElement.wizardItems.static.elements.textmedia.tt_content_defValues.CType = textmedia
-mod.wizards.newContentElement.wizardItems.static.elements.image.tt_content_defValues.CType = image
-mod.wizards.newContentElement.wizardItems.static.elements.bullets.tt_content_defValues.CType = bullets
-mod.wizards.newContentElement.wizardItems.static.elements.table.tt_content_defValues.CType = table
-mod.wizards.newContentElement.wizardItems.static.elements.uploads.tt_content_defValues.CType = uploads
+mod.wizards.newContentElement.wizardItems.static.elements {
 
-mod.wizards.newContentElement.wizardItems.static.elements.bigIconTextButton.tt_content_defValues.CType = bigIconTextButton
-mod.wizards.newContentElement.wizardItems.static.elements.iconTextButton.tt_content_defValues.CType = iconTextButton
-mod.wizards.newContentElement.wizardItems.static.elements.imageTextLink.tt_content_defValues.CType = imageTextLink
-mod.wizards.newContentElement.wizardItems.static.elements.heroImage.tt_content_defValues.CType = heroImage
-mod.wizards.newContentElement.wizardItems.static.elements.quote.tt_content_defValues.CType = quote
-mod.wizards.newContentElement.wizardItems.static.elements.contactsCard.tt_content_defValues.CType = contactsCard
-mod.wizards.newContentElement.wizardItems.static.elements.button.tt_content_defValues.CType = button
-mod.wizards.newContentElement.wizardItems.static.elements.socialIcons.tt_content_defValues.CType = socialIcons
-mod.wizards.newContentElement.wizardItems.static.elements.fullWidthImage.tt_content_defValues.CType = fullWidthImage
+  header.tt_content_defValues.CType = heade
+  text.tt_content_defValues.CType = tex
+  textpic.tt_content_defValues.CType = textpi
+  textmedia.tt_content_defValues.CType = textmedi
+  image.tt_content_defValues.CType = imag
+  bullets.tt_content_defValues.CType = bullet
+  table.tt_content_defValues.CType = table
+  uploads.tt_content_defValues.CType = upload
+
+  bigIconTextButton.tt_content_defValues.CType = bigIconTextButto
+  iconTextButton.tt_content_defValues.CType = iconTextButto
+  imageTextLink.tt_content_defValues.CType = imageTextLin
+  heroImage.tt_content_defValues.CType = heroImag
+  quote.tt_content_defValues.CType = quot
+  contactsCard.tt_content_defValues.CType = contactsCar
+  button.tt_content_defValues.CType = butto
+  socialIcons.tt_content_defValues.CType = socialIcons
+  fullWidthImage.tt_content_defValues.CType = fullWidthImage
+
+}

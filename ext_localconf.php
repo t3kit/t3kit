@@ -17,24 +17,26 @@ defined('TYPO3_MODE') || die();
  * Add t3kit system info to System toolbar item
  * ===============================================
  */
-$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
-$signalSlotDispatcher->connect(
-        \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-        'getSystemInformation',
-        \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
-        'addSeparator'
+$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+    \TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class
 );
 $signalSlotDispatcher->connect(
-        \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-        'getSystemInformation',
-        \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
-        'getT3kitVersion'
+    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
+    'getSystemInformation',
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    'addSeparator'
 );
 $signalSlotDispatcher->connect(
-        \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-        'getSystemInformation',
-        \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
-        'getT3kitMode'
+    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
+    'getSystemInformation',
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    'getT3kitVersion'
+);
+$signalSlotDispatcher->connect(
+    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
+    'getSystemInformation',
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    'getT3kitMode'
 );
 
 /*
@@ -85,5 +87,5 @@ switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
     case 'Production':
         $GLOBALS['TYPO3_CONF_VARS']['FE']['compressionLevel'] = 5;
         $GLOBALS['TYPO3_CONF_VARS']['BE']['compressionLevel'] = 5;
-    break;
+        break;
 }

@@ -66,9 +66,11 @@ defined('TYPO3_MODE') || die();
         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
         'displayCond' => 'FIELD:add_background:!=:0',
         'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'background', [
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('background', [
             'appearance' => [
-                'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
+                'createNewRelationLinkTitle' => '
+                LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference
+                ',
             ],
             'overrideChildTca' => [
                 'types' => [
@@ -272,9 +274,12 @@ defined('TYPO3_MODE') || die();
 
 
 
-$GLOBALS['TCA']['tt_content']['columns']['layout']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
-$GLOBALS['TCA']['tt_content']['columns']['space_before_class']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
-$GLOBALS['TCA']['tt_content']['columns']['space_after_class']['description'] = 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
+$GLOBALS['TCA']['tt_content']['columns']['layout']['description'] =
+'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
+$GLOBALS['TCA']['tt_content']['columns']['space_before_class']['description'] =
+'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
+$GLOBALS['TCA']['tt_content']['columns']['space_after_class']['description'] =
+'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description';
 
 
 $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [

@@ -118,8 +118,6 @@ lib.parseFunc_RTE {
       nonWrappedTag = P
       innerStdWrap_all.ifBlank = &nbsp;
     }
-  }
-  nonTypoTagStdWrap {
     HTMLparser = 1
     HTMLparser {
       keepNonMatchedTags = 1

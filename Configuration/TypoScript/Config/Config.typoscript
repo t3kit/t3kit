@@ -37,16 +37,16 @@ config {
 // TYPO3 Development context and every its subcontext
 [applicationContext = Development*]
 config {
-    admPanel=1
-    debug = 1
-    headerComment =
-    no_cache = 1
+  admPanel = 1
+  debug = 1
+  headerComment =
+  no_cache = 1
 
-    // Compression and Concatenation of CSS and JS Files
-    compressJs = 0
-    compressCss = 0
-    concatenateJs = 0
-    concatenateCss = 0
+  // Compression and Concatenation of CSS and JS Files
+  compressJs = 0
+  compressCss = 0
+  concatenateJs = 0
+  concatenateCss = 0
 }
 [end]
 
@@ -54,15 +54,15 @@ config {
 // TYPO3 Production context and every its subcontext
 [applicationContext = Production*]
 config {
-    admPanel=0
-    debug = 0
-    headerComment =
-    no_cache = 0
+  admPanel = 0
+  debug = 0
+  headerComment =
+  no_cache = 0
 
-    // Compression and Concatenation of CSS and JS Files
-    compressJs = 1
-    compressCss = 1
-    concatenateJs = 1
-    concatenateCss = 1
+  // Compression and Concatenation of CSS and JS Files
+  compressJs = 1
+  compressCss = 1
+  concatenateJs = 1
+  concatenateCss = 1
 }
 [end]

@@ -1,19 +1,16 @@
 <?php
 defined('TYPO3_MODE') || die();
 
-call_user_func(function()
-{
-    /*
-    * ###########################
-    * PageTS for t3kit
-    * ===========================
-    */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        't3kit',
-        'Configuration/TSconfig/Page/Import.tsconfig',
-        't3kit'
-    );
-});
+/*
+* ###########################
+* PageTS for t3kit
+* ===========================
+*/
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Import.tsconfig',
+    't3kit'
+);
 
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
@@ -22,9 +19,10 @@ call_user_func(function()
         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
         // 'displayCond' => 'FIELD:add_background:!=:0',
         'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'nav_icon', [
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('nav_icon', [
             'appearance' => [
-                'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
+                'createNewRelationLinkTitle' =>
+                'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
             ],
             'overrideChildTca' => [
                 'types' => [
@@ -80,15 +78,16 @@ call_user_func(function()
         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
         // 'displayCond' => 'FIELD:add_background:!=:0',
         'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig( 'nav_image', [
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('nav_image', [
             'appearance' => [
-                'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
+                'createNewRelationLinkTitle' =>
+                'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
             ],
             'overrideChildTca' => [
                 'types' => [
                     '0' => [
                         'showitem' => '
-                        --palette--;;imageoverlayPalette,
+                    --palette--;;imageoverlayPalette,
                         --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [

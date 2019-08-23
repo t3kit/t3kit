@@ -23,37 +23,37 @@
 
 lib.contentRender = COA
 lib.contentRender {
-    10 = LOAD_REGISTER
-    10 {
-        colPos.cObject = TEXT
-        colPos.cObject {
-            field = colPos
-            intval = 1
-            ifEmpty = 101
-        }
-        slide.cObject = TEXT
-        slide.cObject {
-            override {
-                field = slide
-                if {
-                    isInList.field = slide
-                    value = -1, 0, 1, 2
-                }
-            }
-            intval = 1
-            ifEmpty = 1
-        }
+  10 = LOAD_REGISTER
+  10 {
+    colPos.cObject = TEXT
+    colPos.cObject {
+      field = colPos
+      intval = 1
+      ifEmpty = 101
     }
-    30 = CONTENT
-    30 {
-        table = tt_content
-        select {
-            orderBy = sorting
-            where = {#colPos}={register:colPos}
-            where.insertData = 1
+    slide.cObject = TEXT
+    slide.cObject {
+      override {
+        field = slide
+        if {
+          isInList.field = slide
+          value = -1, 0, 1, 2
         }
-        slide = {register:slide}
-        slide.insertData = 1
+      }
+      intval = 1
+      ifEmpty = 1
     }
-    110 = RESTORE_REGISTER
+  }
+  30 = CONTENT
+  30 {
+    table = tt_content
+    select {
+      orderBy = sorting
+      where = {#colPos}={register:colPos}
+      where.insertData = 1
+    }
+    slide = {register:slide}
+    slide.insertData = 1
+  }
+  110 = RESTORE_REGISTER
 }

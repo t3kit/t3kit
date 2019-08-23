@@ -45,4 +45,4 @@ TCEFORM {
 TCAdefaults.tt_content.header_layout = 1
 
 # header alignment (left by default)
-# TCAdefaults.tt_content.header_position = justify
+// TCAdefaults.tt_content.header_position = justify

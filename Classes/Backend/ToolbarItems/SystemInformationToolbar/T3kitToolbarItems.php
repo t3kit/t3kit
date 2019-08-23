@@ -20,7 +20,6 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Backend\Toolbar\Enumeration\InformationStatus;
 
-
 /**
  * Render t3kit system info to System toolbar item
  */
@@ -50,7 +49,9 @@ class T3kitToolbarItems
      */
     public function getT3kitMode(SystemInformationToolbarItem $systemInformation)
     {
-        $configurationManager = GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Configuration\\BackendConfigurationManager');
+        $configurationManager = GeneralUtility::makeInstance(
+            'TYPO3\\CMS\\Extbase\\Configuration\\BackendConfigurationManager'
+        );
         $configurationManager->getDefaultBackendStoragePid();
         $tsSetup = $configurationManager->getTypoScriptSetup();
         $isProduction = $tsSetup['plugin.']['tx_t3kit.']['settings.']['production'];
@@ -74,5 +75,4 @@ class T3kitToolbarItems
             ''
         );
     }
-
 }

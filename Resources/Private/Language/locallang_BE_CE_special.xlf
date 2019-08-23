@@ -38,7 +38,7 @@
 				<source>Show Site Header Top section</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.headerTopContacts">
-				<source>Show Site Header Top Contacts</source>
+				<source>Site Header Top Contacts</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.headerTopNavigation">
 				<source>Site Header Top Navigation</source>
@@ -50,32 +50,32 @@
 				<source>Site Header Top Search</source>
 			</trans-unit>
 
-			<trans-unit id="siteHeader.headerTopContacts.email_address">
+			<trans-unit id="siteHeader.email_address">
 				<source>Email address</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.email_title">
+			<trans-unit id="siteHeader.email_title">
 				<source>Email title</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.email_icon">
+			<trans-unit id="siteHeader.email_icon">
 				<source>Show Email icon</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.email_show_title">
+			<trans-unit id="siteHeader.email_show_title">
 				<source>Show Email title</source>
 			</trans-unit>
 
-			<trans-unit id="siteHeader.headerTopContacts.phone_link">
+			<trans-unit id="siteHeader.phone_link">
 				<source>Phone number link</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.phone_text">
+			<trans-unit id="siteHeader.phone_text">
 				<source>Phone number text</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.phone_title">
+			<trans-unit id="siteHeader.phone_title">
 				<source>Phone number title</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.phone_icon">
+			<trans-unit id="siteHeader.phone_icon">
 				<source>Show Phone icon</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts.phone_show_title">
+			<trans-unit id="siteHeader.phone_show_title">
 				<source>Show Phone title</source>
 			</trans-unit>
 
@@ -91,11 +91,11 @@
 
 
 			<!-- Accessibility -->
-			<trans-unit id="siteHeader.accessibility.skipLinks_mainNavigation">
-				<source>Accessibility SkipLinks - MainNavigation</source>
+			<trans-unit id="siteHeader.skipLinks_mainNavigation">
+				<source>Skip to main navigation text</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.accessibility.skipLinks_mainContent">
-				<source>Accessibility SkipLinks MainContent</source>
+			<trans-unit id="siteHeader.skipLinks_mainContent">
+				<source>Skip to main content text</source>
 			</trans-unit>
 
 		</body>

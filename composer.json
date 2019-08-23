@@ -54,10 +54,10 @@
     "optimize-autoloader": true
 	},
   "scripts": {
-		"lint-php": "build/vendor/bin/phpcs",
-    "lint-typoscript": "build/vendor/bin/typoscript-lint",
-    "lint-yaml": "build/vendor/bin/yaml-linter typoscript-lint.yml Resources/ Configuration/ Classes/",
-    "lint-xml": "build/vendor/bin/xmllint --exclude=build/ .",
+		"lint-php": "build/vendor/bin/phpcs --colors",
+    "lint-typoscript": "build/vendor/bin/typoscript-lint --ansi",
+    "lint-yaml": "build/vendor/bin/yaml-linter --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
+    "lint-xml": "build/vendor/bin/xmllint --ansi --exclude=build/ .",
     "lint": [
       "@lint-php",
       "@lint-typoscript",
