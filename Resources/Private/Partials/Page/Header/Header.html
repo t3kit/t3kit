@@ -3,19 +3,19 @@
 <div id="top-header"></div>
 <div class="header">
 
-	<div class="skip-links">
-		<f:link.typolink parameter="{page.uid}#main-navigation" class="skip-links__item sr-only sr-only-focusable">
-			<f:translate key="skipLinks.mainNav" extensionName="t3kit"/>
-		</f:link.typolink>
-		<f:link.typolink parameter="{page.uid}#main-content" class="skip-links__item sr-only sr-only-focusable">
-			<f:translate key="skipLinks.mainContent" extensionName="t3kit"/>
-		</f:link.typolink>
-	</div>
+  <div class="skip-links">
+    <f:link.typolink parameter="{page.uid}#main-navigation" class="skip-links__item sr-only sr-only-focusable">
+      <f:translate key="skipLinks.mainNav" extensionName="t3kit" />
+    </f:link.typolink>
+    <f:link.typolink parameter="{page.uid}#main-content" class="skip-links__item sr-only sr-only-focusable">
+      <f:translate key="skipLinks.mainContent" extensionName="t3kit" />
+    </f:link.typolink>
+  </div>
 
-	<f:render partial="Page/Nav/Meta" arguments="{_all}" />
-	<f:render partial="Page/Nav/Language" arguments="{_all}" />
-	<f:render partial="Page/Nav/Main" arguments="{_all}" />
-	<f:render partial="Page/Nav/Breadcrumb" arguments="{_all}" />
+  <f:render partial="Page/Nav/Meta" arguments="{_all}" />
+  <f:render partial="Page/Nav/Language" arguments="{_all}" />
+  <f:render partial="Page/Nav/Main" arguments="{_all}" />
+  <f:render partial="Page/Nav/Breadcrumb" arguments="{_all}" />
 
 </div>
 

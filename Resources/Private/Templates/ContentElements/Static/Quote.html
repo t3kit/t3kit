@@ -3,34 +3,49 @@
 <f:layout name="Default" />
 <f:section name="Header" />
 <f:section name="Main">
-<!-- theme_t3kit: Templates/ContentElements/Quote.html [begin] -->
-	<blockquote class="quote">
-		<div class="quote__body">
-			<core:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">
-				<p class="quote__body-p">{data.bodytext}</p>
-			</core:contentEditable>
-			<span class="quote__body-icon icons icon-t3-quoteMark" aria-hidden="true"></span>
-		</div>
-		<footer class="quote__footer">
-			<f:if condition="{headers.0}">
-				<span class="quote__footer-name">{headers.0}<f:render section="nameSuffix" arguments="{title: headers.1, link: data.header_link}" /></span>
-			</f:if>
-			<f:if condition="{headers.1}">
-				<cite class="quote__footer-title" title="{headers.1}">{headers.1}<f:render section="nameSuffix" arguments="{link: data.header_link}" />
-			</f:if>
-			<f:if condition="{data.header_link}">
-				<f:link.typolink parameter="{data.header_link}" class="quote__footer-link">{data.subheader}</f:link.typolink>
-			</f:if>
-			<f:if condition="{headers.1}">
-				</cite>
-			</f:if>
-		</footer>
-	</blockquote>
-<!-- theme_t3kit: Templates/ContentElements/Quote.html [end] -->
+  <!-- theme_t3kit: Templates/ContentElements/Quote.html [begin] -->
+  <blockquote class="quote">
+    <div class="quote__body">
+      <core:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">
+        <p class="quote__body-p">{data.bodytext}</p>
+      </core:contentEditable>
+      <span class="quote__body-icon icons icon-t3-quoteMark" aria-hidden="true"></span>
+    </div>
+    <footer class="quote__footer">
+      <f:if condition="{headers.0}">
+        <span class="quote__footer-name">{headers.0}
+          <f:render section="nameSuffix" arguments="{title: headers.1, link: data.header_link}" /></span>
+      </f:if>
+      <f:if condition="{headers.1}">
+        <cite class="quote__footer-title" title="{headers.1}">{headers.1}
+          <f:render section="nameSuffix" arguments="{link: data.header_link}" />
+      </f:if>
+      <f:if condition="{data.header_link}">
+        <f:link.typolink parameter="{data.header_link}" class="quote__footer-link">{data.subheader}</f:link.typolink>
+      </f:if>
+      <f:if condition="{headers.1}">
+        </cite>
+      </f:if>
+    </footer>
+  </blockquote>
+  <!-- theme_t3kit: Templates/ContentElements/Quote.html [end] -->
 </f:section>
 
 <!-- In one line to aviod an extra space before the comma sign-->
-<f:section name="nameSuffix"><f:if condition="{title}"><f:then>, </f:then><f:else><f:if condition="{link}"><f:then>, </f:then></f:if></f:else></f:if></f:section>
-<f:section name="titleSuffix"><f:if condition="{link}"><f:then>, </f:then></f:if></f:section>
+<f:section name="nameSuffix">
+  <f:if condition="{title}">
+    <f:then>, </f:then>
+    <f:else>
+      <f:if condition="{link}">
+        <f:then>, </f:then>
+      </f:if>
+    </f:else>
+  </f:if>
+</f:section>
+<f:section name="titleSuffix">
+  <f:if condition="{link}">
+    <f:then>, </f:then>
+  </f:if>
+</f:section>
 
 </html>
