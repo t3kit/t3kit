@@ -46,6 +46,7 @@ $GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
             --palette--;;headerMiddle,
             --palette--;;mainNavigation,
             --palette--;;accessibility,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.tabs.logo,image,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -100,7 +101,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['headerTop'] = array(
 $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.mainNavigation',
     'showitem' => '
-        --linebreak--,
+        mainNavigation, --linebreak--,
+        nav_height, --linebreak--,
+        nav_dropdownColumns,  --linebreak--,
+        nav_logo, nav_langMenu, --linebreak--,
     ',
   );
 
@@ -388,6 +392,57 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
                 'FIELD:headerTopContacts:!=:0',
             ],
         ],
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_height' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.navHeight',
+        'displayCond' => 'FIELD:mainNavigation:!=:0',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+            'eval' => 'trim',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_dropdownColumns' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.dropdownColumns',
+        'displayCond' => 'FIELD:mainNavigation:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_logo' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.enableLogo',
+        'displayCond' => 'FIELD:mainNavigation:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_langMenu' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.enableLangMenu',
+        'displayCond' => 'FIELD:mainNavigation:!=:0',
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',

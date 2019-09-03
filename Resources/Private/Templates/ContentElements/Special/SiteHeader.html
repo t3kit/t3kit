@@ -73,9 +73,9 @@
 				</div>
 			</div>
 		</f:if>
-
-		<f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation}" />
-
+		<f:if condition="{data.mainNavigation}">
+			<f:render section="MainNavigation" arguments="{_all}" />
+		</f:if>
 
 	</header>
 </f:section>
@@ -84,13 +84,37 @@
 
 
 <f:section name="MainNavigation">
-	<f:if condition="{mainNavigation}">
 	<!-- t3kit: Main menu [begin] -->
-
-		<nav id="main-navigation" class="main-navigation js__main-navigation{f:if(condition: '{theme:constant(constant:\'themes.configuration.menu.main.dropdownColumns\')} == 1', then: ' _dropdown-menu-with-columns js__dropdown-menu-with-columns')}">
+		<nav id="main-navigation" class="main-navigation js__main-navigation{f:if(condition: data.nav_dropdownColumns, then: ' _dropdown-menu-with-columns js__dropdown-menu-with-columns')}">
 			<div class="main-navigation__items-wrp js__navigation__items-wrp">
-				<ul class="main-navigation__items-list js__main-navigation__items-list ">
+				<f:if condition="{data.nav_logo}">
+					<div class="main-navigation__logo">
+						<f:debug>{image}</f:debug>
+						<f:then>
+								<f:for each="{image}" as="mediaItem" iteration="imageIteration">
+									<f:if condition="{imageIteration.isFirst}">
+											<f:if condition="{mediaItem.link}">
+										<f:then>
+											<f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
+												<f:render section="media" arguments="{_all}" />
+											</f:link.typolink>
+										</f:then>
 
+										<f:else>
+											<f:render section="media" arguments="{_all}" />
+										</f:else>
+
+									</f:if>
+									</f:if>
+								</f:for>
+							</f:then>
+					
+					</div>
+				</f:if>
+				<f:if condition="{data.nav_langMenu}">
+						<!-- "lib.menu.language.standard"  -->
+				</f:if>
+				<ul class="main-navigation__items-list js__main-navigation__items-list ">
 					<f:for each="{mainNavigation}" as="navItem">
 						<li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
 							<a href="{navItem.link}" title="{navItem.title}" class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
@@ -108,13 +132,11 @@
 
 						</li>
 					</f:for>
-
 				</ul>
 			</div>
 		</nav>
 
 	<!-- t3kit: Main menu [end] -->
-	</f:if>
 </f:section>
 
 
@@ -159,6 +181,16 @@
 	</f:if>
 </f:section>
 
+<f:section name="media">
+	<f:media
+		file="{mediaItem}"
+		width="{data.imagewidth}"
+		height="{data.imageheight}"
+		alt="{mediaItem.alternative}"
+		title="{mediaItem.title}"
+		class="img-text-link__img img-responsive"
+	/>
+</f:section>
 
 </html>
 
