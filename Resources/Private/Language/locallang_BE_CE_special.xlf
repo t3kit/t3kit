@@ -96,15 +96,6 @@
 			<trans-unit id="siteHeader.mainNavigation.navHeight">
 				<source>Navigation Height (px)</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.mobileNavToggleBtn">
-				<source>Mobile Navigation Toggle Btn Position</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.excludeUidList">
-				<source>Exclude uid list (12,13,...)</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.dropdown">
-				<source>Main Menu as a dropdown</source>
-			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.dropdownColumns">
 				<source>Main Menu Dropdown as Columns (only works if Main Menu as a dropdown)</source>
 			</trans-unit>
@@ -114,11 +105,27 @@
 			<trans-unit id="siteHeader.mainNavigation.enableLangMenu">
 				<source>Enable Language Menu in navigation menu</source>
 			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.navbarPos">
+				<source>Alignment of navbar items</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.nav_position.default">
+				<source>Default (left)</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.nav_position.right">
+				<source>Right</source>
+			</trans-unit>
+			<!-- not used Main Navigation -->
 			<trans-unit id="siteHeader.mainNavigation.showThirdNavLevel">
 				<source>Show third navigation level</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.navbarPos">
-				<source>Alignment of navbar items</source>
+			<trans-unit id="siteHeader.mainNavigation.mobileNavToggleBtn">
+				<source>Mobile Navigation Toggle Btn Position</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.excludeUidList">
+				<source>Exclude uid list (12,13,...)</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.dropdown">
+				<source>Main Menu as a dropdown</source>
 			</trans-unit>
 
 
@@ -128,6 +135,11 @@
 			</trans-unit>
 			<trans-unit id="siteHeader.accessibility.skipLinks_mainContent">
 				<source>Accessibility SkipLinks MainContent</source>
+			</trans-unit>
+
+			<!-- Logo Adjustments -->
+			<trans-unit id="siteHeader.imageWidth">
+				<source>Width of logo (px)</source>
 			</trans-unit>
 
 		</body>

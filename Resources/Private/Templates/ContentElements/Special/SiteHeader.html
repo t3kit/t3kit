@@ -89,32 +89,21 @@
 			<div class="main-navigation__items-wrp js__navigation__items-wrp">
 				<f:if condition="{data.nav_logo}">
 					<div class="main-navigation__logo">
-						<f:debug>{image}</f:debug>
-						<f:then>
+						<f:if condition="{image}">
+							<a href="/" title="Home" class="main-navigation__logo-link">
 								<f:for each="{image}" as="mediaItem" iteration="imageIteration">
-									<f:if condition="{imageIteration.isFirst}">
-											<f:if condition="{mediaItem.link}">
-										<f:then>
-											<f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
-												<f:render section="media" arguments="{_all}" />
-											</f:link.typolink>
-										</f:then>
-
-										<f:else>
+										<f:if condition="{imageIteration.isFirst}">
 											<f:render section="media" arguments="{_all}" />
-										</f:else>
-
-									</f:if>
-									</f:if>
+										</f:if>
 								</f:for>
-							</f:then>
-					
+							</a>
+						</f:if>
 					</div>
 				</f:if>
 				<f:if condition="{data.nav_langMenu}">
-						<!-- "lib.menu.language.standard"  -->
+					<f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
 				</f:if>
-				<ul class="main-navigation__items-list js__main-navigation__items-list ">
+				<ul class="main-navigation__items-list js__main-navigation__items-list {data.nav_position}">
 					<f:for each="{mainNavigation}" as="navItem">
 						<li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
 							<a href="{navItem.link}" title="{navItem.title}" class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
@@ -184,8 +173,7 @@
 <f:section name="media">
 	<f:media
 		file="{mediaItem}"
-		width="{data.imagewidth}"
-		height="{data.imageheight}"
+		width="{data.logo_width}"
 		alt="{mediaItem.alternative}"
 		title="{mediaItem.title}"
 		class="img-text-link__img img-responsive"

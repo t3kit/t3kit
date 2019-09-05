@@ -74,17 +74,11 @@ tt_content.siteHeader {
       }
     }
 
-    100 = T3k\t3kit\DataProcessing\FlexFormProcessor
-    100 {
-      fieldName = pi_flexform
-        as = flexform
-    }
+
     110 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       110 {
         references.fieldName = image
         as = image
     }
-
-
   }
 }
