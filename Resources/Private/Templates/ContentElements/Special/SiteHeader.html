@@ -77,6 +77,9 @@
 			<f:render section="MainNavigation" arguments="{_all}" />
 		</f:if>
 
+		<div class="main-navigation__search-box-overlay js__main-navigation__search-box-overlay"></div>
+		<div class="header-top__language-menu-overlay js__header-top__language-menu-overlay"></div>
+
 	</header>
 </f:section>
 
@@ -107,13 +110,15 @@
 					<f:for each="{mainNavigation}" as="navItem">
 						<li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
 							<a href="{navItem.link}" title="{navItem.title}" class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
-
+							
 							<f:if condition="{navItem.children}">
 								<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-sub-menu-link">Open</a>
 								<ul class="main-navigation__sub-item-list">
 									<f:for each="{navItem.children}" as="childItem">
 										<li class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} {childItem.data.uid} ">
 											<a href="{childItem.link}" class="main-navigation__sub-item-link">{childItem.title}</a>
+											<f:render section="subLevel" arguments="{item:childItem}" />
+
 										</li>
 									</f:for>
 								</ul>
@@ -121,6 +126,12 @@
 
 						</li>
 					</f:for>
+					<f:if condition="{theme:constant(constant:'themes.configuration.elem.status.headerTopNavigationVisibleInMobileMenu')}">
+						<!-- lib.menu.topMobile" -->
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.elem.status.showHeaderMainMenuSearch')}">
+						<!-- lib.menu.main.search  -->
+					</f:if>
 				</ul>
 			</div>
 		</nav>
@@ -128,8 +139,19 @@
 	<!-- t3kit: Main menu [end] -->
 </f:section>
 
-
-
+<f:section name="subLevel">
+		<f:debug>{item}</f:debug>
+	<f:if condition="{item.children}">
+		<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-third-menu-link">Open</a>
+		<ul class="main-navigation__sub-item-list third-navigation-level">
+			<f:for each="{item.children}" as="childChildItem">
+				<li class="main-navigation__sub-item {f:if(condition: childChildItem.active, then:' _active')} {childChildItem.data.uid} ">
+					<a href="{childChildItem.link}" class="main-navigation__sub-item-link">{childChildItem.title}</a>
+				</li>
+			</f:for>
+		</ul>
+	</f:if>
+</f:section>
 
 <f:section name="LanguageNavigation">
 

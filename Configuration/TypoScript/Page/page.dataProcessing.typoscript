@@ -5,8 +5,10 @@ page.10.dataProcessing {
   20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
   20 {
     as = mainNavigation
-    levels = 2
+    levels = 5
     includeSpacer = 1
+    expandAll = 1
+    entryLevel = 0
     dataProcessing {
       10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       10 {
