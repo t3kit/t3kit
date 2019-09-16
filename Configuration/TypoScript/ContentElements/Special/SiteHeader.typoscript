@@ -13,7 +13,7 @@ tt_content.siteHeader {
     20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     20 {
       as = mainNav
-      levels = 3
+      levels = 4
       expandAll = 1
       includeSpacer = 1
       dataProcessing {

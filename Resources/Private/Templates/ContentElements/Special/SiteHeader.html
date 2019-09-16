@@ -117,8 +117,7 @@
 									<f:for each="{navItem.children}" as="childItem">
 										<li class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} uid-{childItem.data.uid}  {f:if(condition: childItem.children, then:' _sub')} ">
 											<a href="{childItem.link}" class="main-navigation__sub-item-link">{childItem.title}</a>
-											<f:render section="subLevel" arguments="{item:childItem}" />
-
+											<f:render section="subLevel" arguments="{item:childItem, level:'third'}" />
 										</li>
 									</f:for>
 								</ul>
@@ -142,9 +141,24 @@
 <f:section name="subLevel">
 	<!-- if show third level of navigation -->	
 	<f:if condition="{item.children}">
-		<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-third-menu-link">Open</a>
-		<ul class="main-navigation__sub-item-list third-navigation-level">
+		<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-{level}-menu-link">Open</a>
+		<ul class="main-navigation__sub-item-list {level}-navigation-level">
 			<f:for each="{item.children}" as="childChildItem">
+				<li class="main-navigation__sub-item {f:if(condition: childChildItem.active, then:' _active')} uid-{childChildItem.data.uid} {f:if(condition: childChildItem.children, then:' _sub')}">
+					<a href="{childChildItem.link}" class="main-navigation__sub-item-link">{childChildItem.title}</a>
+					<f:render section="subLevel" arguments="{item:childChildItem, level:'forth'}" />
+				</li>
+			</f:for>
+		</ul>
+	</f:if>
+</f:section>
+
+<f:section name="forthSubLevel">
+	<!-- if show third level of navigation -->	
+	<f:if condition="{item.children}">
+		<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-forth-menu-link">Open</a>
+		<ul class="main-navigation__sub-item-list forth-navigation-level">
+			<f:for each="{item.children}" as="thirdChildItem">
 				<li class="main-navigation__sub-item {f:if(condition: childChildItem.active, then:' _active')} uid-{childChildItem.data.uid} ">
 					<a href="{childChildItem.link}" class="main-navigation__sub-item-link">{childChildItem.title}</a>
 				</li>
@@ -161,27 +175,27 @@
 		<div class="header-top__language-menu">
 				<f:for each="{languageNavigation}" as="language">
 						<f:if condition="{language.active}">
-								<a class="header-top__language-menu-btn js__header-top__language-menu-btn" href="#">
-										<span class="main-flag-icon flag-icon flag-icon-{language.flagIdentifier}"></span>
-										<span class="main-flag-language flag-language">{language.navigationTitle}</span>
-								</a>
+							<a class="header-top__language-menu-btn js__header-top__language-menu-btn" href="#">
+								<span class="main-flag-icon flag-icon flag-icon-{language.flagIdentifier}"></span>
+								<span class="main-flag-language flag-language">{language.navigationTitle}</span>
+							</a>
 						</f:if>
 				</f:for>
 				<div class="header-top__language-menu-box js__header-top__language-menu-box">
 						<f:for each="{languageNavigation}" as="language">
 								<f:if condition="{language.available}">
-										<f:then>
-												<a href="{language.link}"
-													title="{language.title}"
-													class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
-														<span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
-												</a>
-										</f:then>
-										<f:else>
-												<span title="{language.title}" class="header-top__language-menu-box-item">
-														<span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
-												</span>
-										</f:else>
+									<f:then>
+											<a href="{language.link}"
+												title="{language.title}"
+												class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
+												<span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
+											</a>
+									</f:then>
+									<f:else>
+										<span title="{language.title}" class="header-top__language-menu-box-item">
+												<span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
+										</span>
+									</f:else>
 								</f:if>
 						</f:for>
 						<button class="header-top__language-menu-box-close-btn js__header-top__language-menu-box-close-btn"></button>
