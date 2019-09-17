@@ -43,7 +43,10 @@ CREATE TABLE tt_content (
 
 	mainNavigation int(11) unsigned DEFAULT '0' NOT NULL,
 	nav_height varchar(255) DEFAULT '' NOT NULL,
+	nav_dropdown int(11) unsigned DEFAULT '0' NOT NULL,
 	nav_dropdownColumns int(11) unsigned DEFAULT '0' NOT NULL,
+	nav_thirdLevel int(11) unsigned DEFAULT '0' NOT NULL,
+	nav_forthLevel int(11) unsigned DEFAULT '0' NOT NULL,
 	nav_logo int(11) unsigned DEFAULT '0' NOT NULL,
 	nav_langMenu int(11) unsigned DEFAULT '0' NOT NULL,
 	nav_position varchar(255) DEFAULT '' NOT NULL,

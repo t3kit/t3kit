@@ -88,7 +88,7 @@
 
 <f:section name="MainNavigation">
 	<!-- t3kit: Main menu [begin] -->
-		<nav id="main-navigation" class="main-navigation js__main-navigation{f:if(condition: data.nav_dropdownColumns, then: ' _dropdown-menu-with-columns js__dropdown-menu-with-columns')}">
+		<nav id="main-navigation" class="main-navigation js__main-navigation {f:if(condition: data.nav_dropdownColumns, then: ' _dropdown-menu-with-columns js__dropdown-menu-with-columns')}">
 			<div class="main-navigation__items-wrp js__navigation__items-wrp">
 				<f:if condition="{data.nav_logo}">
 					<div class="main-navigation__logo">
@@ -109,22 +109,53 @@
 				<!-- main.navigation" -->
 				<ul class="main-navigation__items-list js__main-navigation__items-list {data.nav_position}">
 					<f:for each="{mainNav}" as="navItem">
-						<li class="main-navigation__item js__main-navigation__item uid-{navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
+						<li class="main-navigation__item js__main-navigation__item uid-{navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children , then:' _sub')}">
 							<a href="{navItem.link}" title="{navItem.title}" class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
+							<!-- second level -->
 							<f:if condition="{navItem.children}">
-								<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-sub-menu-link">Open</a>
-								<ul class="main-navigation__sub-item-list second-navigation-level">
-									<f:for each="{navItem.children}" as="childItem">
-										<li class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} uid-{childItem.data.uid}  {f:if(condition: childItem.children, then:' _sub')} ">
-											<a href="{childItem.link}" class="main-navigation__sub-item-link">{childItem.title}</a>
-											<f:render section="subLevel" arguments="{item:childItem, level:'third'}" />
-										</li>
-									</f:for>
-								</ul>
+								<f:if condition="{data.nav_dropdown} && {data.nav_dropdownColumns} ">
+									<f:then>
+										<div class="tablet-arrow"><a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-sub-menu-link">Open</a></div>
+										<div class="main-navigation__sub-item-list">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="main-navigation__sub-item-column-list">
+															<f:for each="{navItem.children}" as="childItem">
+																<f:if condition="{childItem.spacer}">
+																	<f:then>
+																		</ul></div><div class="col-md-3"><ul class="main-navigation__sub-item-column-list">
+																	</f:then>
+																	<f:else>
+																		<li class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} {f:if(condition: childItem.current, then:'_current')} uid-{childItem.data.uid}">
+																			<a href="{childItem.link}" class="main-navigation__sub-item-link  _sub-level-2 {f:if(condition: childItem.children, then:' _sub ')} {f:if(condition: childItem.active, then:' _active')} {f:if(condition: childItem.current, then:'_current')}">{childItem.title}</a>
+																			<f:render section="subLevelColumn" arguments="{item:childItem, level:'3'}" />
+																		</li>
+																	</f:else>
+																</f:if>
+															</f:for>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</f:then>
+									<f:else>
+										<a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-sub-menu-link">Open</a>
+										<ul class="main-navigation__sub-item-list second-navigation-level">
+											<f:for each="{navItem.children}" as="childItem">
+												<li class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} uid-{childItem.data.uid} {f:if(condition: childItem.children, then:' _sub')} ">
+													<a href="{childItem.link}" class="main-navigation__sub-item-link">{childItem.title}</a>
+													<f:render section="subLevel" arguments="{item:childItem, level:'third'}" />
+												</li>
+											</f:for>
+										</ul>
+									</f:else>
+								</f:if>
 							</f:if>
 						</li>
-
 					</f:for>
+
 					<f:if condition="{theme:constant(constant:'themes.configuration.elem.status.headerTopNavigationVisibleInMobileMenu')}">
 						<!-- lib.menu.topMobile" -->
 					</f:if>
@@ -136,6 +167,22 @@
 		</nav>
 
 	<!-- t3kit: Main menu [end] -->
+</f:section>
+
+<f:section name="subLevelColumn">
+	<!-- if show third level of navigation -->	
+	<f:if condition="{item.children}">
+		<ul class="main-navigation__sub-item-column-list">
+			<f:for each="{item.children}" as="childChildItem">
+				<f:if condition="{childChildItem.spacer}==0">
+					<li class="main-navigation__sub-item {f:if(condition: childChildItem.active, then:' _active')} {f:if(condition: childChildItem.current, then:'_current')} uid-{childChildItem.data.uid}">
+						<a href="{childChildItem.link}" class="main-navigation__sub-item-link _sub-level-{level} {f:if(condition: childChildItem.current, then:'_current')} {f:if(condition: childChildItem.active, then:' _active')}">{childChildItem.title}</a>
+						<f:render section="subLevelColumn" arguments="{item:childChildItem, level:'4'}" />
+					</li>
+				</f:if>
+			</f:for>
+		</ul>
+	</f:if>
 </f:section>
 
 <f:section name="subLevel">

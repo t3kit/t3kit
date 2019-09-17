@@ -104,9 +104,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'showitem' => '
         mainNavigation, --linebreak--,
         nav_height, --linebreak--,
-        nav_dropdownColumns,  --linebreak--,
+        nav_dropdown, nav_dropdownColumns,  --linebreak--,
         nav_logo, nav_langMenu, --linebreak--,
         nav_position, --linebreak--,
+        nav_thirdLevel, nav_forthLevel, --linebreak--,
     ',
   );
 
@@ -423,10 +424,50 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_dropdown' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.dropdown',
+        'displayCond' => 'FIELD:mainNavigation:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'nav_dropdownColumns' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.dropdownColumns',
+        'displayCond' => 'FIELD:nav_dropdown:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_thirdLevel' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.showThirdNavLevel',
         'displayCond' => 'FIELD:mainNavigation:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'nav_forthLevel' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.mainNavigation.showForthNavLevel',
+        'displayCond' => 'FIELD:nav_thirdLevel:!=:0',
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',

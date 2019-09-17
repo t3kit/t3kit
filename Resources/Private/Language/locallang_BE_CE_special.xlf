@@ -96,8 +96,17 @@
 			<trans-unit id="siteHeader.mainNavigation.navHeight">
 				<source>Navigation Height (px)</source>
 			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.dropdown">
+				<source>Main Menu as a dropdown</source>
+			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.dropdownColumns">
-				<source>Main Menu Dropdown as Columns (only works if Main Menu as a dropdown)</source>
+				<source>Main Menu Dropdown as Columns</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.showThirdNavLevel">
+				<source>Show third navigation level</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.showForthNavLevel">
+				<source>Show forth navigation level</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.enableLogo">
 				<source>Enable Logo in navigation menu</source>
@@ -115,17 +124,11 @@
 				<source>Right</source>
 			</trans-unit>
 			<!-- not used Main Navigation -->
-			<trans-unit id="siteHeader.mainNavigation.showThirdNavLevel">
-				<source>Show third navigation level</source>
-			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.mobileNavToggleBtn">
 				<source>Mobile Navigation Toggle Btn Position</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.excludeUidList">
 				<source>Exclude uid list (12,13,...)</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.dropdown">
-				<source>Main Menu as a dropdown</source>
 			</trans-unit>
 
 
