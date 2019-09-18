@@ -96,17 +96,29 @@
 			<trans-unit id="siteHeader.mainNavigation.navHeight">
 				<source>Navigation Height (px)</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.dropdown">
-				<source>Main Menu as a dropdown</source>
+			<trans-unit id="siteHeader.mainNavigation.type">
+				<source>Main Menu type</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.type.simple">
+				<source>Simple</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.type.dropdown">
+				<source>Dropdown</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.dropdownColumns">
 				<source>Main Menu Dropdown as Columns</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.showThirdNavLevel">
-				<source>Show third navigation level</source>
+			<trans-unit id="siteHeader.mainNavigation.dropdownLevel">
+				<source>Deeps of navigation</source>
 			</trans-unit>
-			<trans-unit id="siteHeader.mainNavigation.showForthNavLevel">
-				<source>Show forth navigation level</source>
+			<trans-unit id="siteHeader.mainNavigation.dropdownLevel.two">
+				<source>2 levels</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.dropdownLevel.three">
+				<source>3 levels</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.mainNavigation.dropdownLevel.four">
+				<source>4 levels</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.enableLogo">
 				<source>Enable Logo in navigation menu</source>
