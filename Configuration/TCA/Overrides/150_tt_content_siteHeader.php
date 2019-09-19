@@ -89,17 +89,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['headerTop'] = array(
 );
 
 $GLOBALS['TCA']['tt_content']['palettes']['headerMiddle'] = array(
-<<<<<<< HEAD
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.headerMiddle',
-        'showitem' => '
-            headerMiddle, --linebreak--,
-    ',
-=======
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.headerMiddle',
     'showitem' => '
         headerMiddle, --linebreak--,
-',
->>>>>>> 41e0117d5c807b299ff578c20163ed13a0298693
+    ',
 );
 
 $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
