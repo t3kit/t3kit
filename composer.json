@@ -1,50 +1,74 @@
 {
-	"name": "t3kit/t3kit",
-	"description": "t3kit project. A TYPO3 website starterkit.",
-	"type": "typo3-cms-extension",
-	"keywords": [
-		"t3kit",
-		"typo3",
-		"cms",
-		"starter",
-		"t3kit9"
-	],
-	"homepage": "http://t3kit.com",
-	"license": "GPL-2.0-or-later",
-	"authors": [
-		{
-			"name": "t3kit Community",
-			"homepage": "https://github.com/t3kit"
-		}
-	],
-	"support": {
-		"issues": "https://github.com/t3kit/t3kit/issues",
-		"forum": "https://typo3.slack.com/messages/t3kit",
-		"source": "https://github.com/t3kit/t3kit",
-		"docs": "https://github.com/t3kit/t3kit"
-	},
-	"require": {
-		"typo3/minimal": "^9.5",
+  "name": "t3kit/t3kit",
+  "description": "t3kit project. A TYPO3 website starterkit.",
+  "type": "typo3-cms-extension",
+  "keywords": [
+    "t3kit",
+    "typo3",
+    "cms",
+    "starter",
+    "t3kit9"
+  ],
+  "homepage": "http://t3kit.com",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "t3kit Community",
+      "homepage": "https://github.com/t3kit"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/t3kit/t3kit/issues",
+    "forum": "https://typo3.slack.com/messages/t3kit",
+    "source": "https://github.com/t3kit/t3kit",
+    "docs": "https://github.com/t3kit/t3kit"
+  },
+  "require": {
+    "typo3/minimal": "^9.5",
 
-		"typo3/cms-form": "^9.5",
-		"typo3/cms-rte-ckeditor": "^9.5",
-		"typo3/cms-seo": "^9.5",
-		"typo3/cms-tstemplate": "^9.5",
-		"typo3/cms-felogin": "^9.5",
-		"typo3/cms-indexed-search": "^9.5"
-	},
-	"require-dev": {},
-	"suggest": {},
-	"autoload": {
-		"psr-4": {
-			"T3k\\t3kit\\": "Classes"
-		}
-	},
-	"prefer-stable": true,
-	"config": {
-		"platform": {
-			"php": "7.2"
-		}
-	},
-	"scripts": {}
+    "typo3/cms-form": "^9.5",
+    "typo3/cms-rte-ckeditor": "^9.5",
+    "typo3/cms-seo": "^9.5",
+    "typo3/cms-tstemplate": "^9.5",
+    "typo3/cms-felogin": "^9.5",
+    "typo3/cms-indexed-search": "^9.5"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.4",
+    "helmich/typo3-typoscript-lint": "^2.0",
+    "heahdude/yaml-linter": "^1.0",
+    "sclable/xml-lint": "^0.2.4"
+  },
+  "suggest": {},
+  "autoload": {
+    "psr-4": {
+      "T3k\\t3kit\\": "Classes"
+    }
+  },
+  "prefer-stable": true,
+  "config": {
+    "platform": {
+      "php": "7.2"
+    },
+    "vendor-dir": "build/vendor",
+    "optimize-autoloader": true
+  },
+  "scripts": {
+    "lint-php": "build/vendor/bin/phpcs --colors",
+    "lint-typoscript": "build/vendor/bin/typoscript-lint --ansi",
+    "lint-yaml": "build/vendor/bin/yaml-linter --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
+    "lint-xml": "build/vendor/bin/xmllint --ansi --exclude=build/ .",
+    "lint": [
+      "@lint-php",
+      "@lint-typoscript",
+      "@lint-yaml",
+      "@lint-xml"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+        "web-dir": "build/public",
+        "app-dir": "build"
+    }
+  }
 }

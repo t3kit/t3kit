@@ -10,64 +10,30 @@ trim_trailing_whitespace = true
 # Unix-style newlines with a newline ending every file
 end_of_line = lf
 insert_final_newline = true
-# Common config (CSS-Files, SCSS/LESS-Files, PHP-Files, MD-Files )
 indent_style = space
 indent_size = 4
 
-# HTML-Files
-[*.html]
-indent_style = tab
+# TypeScript/JavaScript/JSON files
+[*.{ts,js,json}]
 indent_size = 2
 
-# TMPL-Files
-[*.tmpl]
-indent_style = tab
-indent_size = 4
-
-# TS/JS-Files
-[*.ts]
-indent_style = space
-indent_size = 2
-[*.js]
-indent_style = space
+# TypoScript/TSconfig files
+[*.{typoscript,tsconfig}]
 indent_size = 2
 
-# JSON-Files
-[*.json]
+# XLF/XML files
+[*.{xlf,xml}]
 indent_style = tab
-indent_size = 4
+
+# YAML-Files
+[*.{yaml,yml}]
+indent_size = 2
 
 # ReST-Files
 [*.rst]
-indent_style = space
 indent_size = 3
 
-# YAML-Files
-[{*.yaml,*.yml}]
-indent_style = space
-indent_size = 2
-
-# package.json
-# .travis.yml
-# .stylelintrc
-[{package.json,.travis.yml,.stylelintrc}]
-indent_style = space
-indent_size = 2
-
-# TypoScript
-[*.typoscript]
-indent_style = space
-indent_size = 2
-[*.tsconfig]
-indent_style = space
-indent_size = 2
-
-# XLF-Files
-[*.xlf]
-indent_style = tab
-indent_size = 4
-
-# SQL-Files
+# SQL files
 [*.sql]
 indent_style = tab
 indent_size = 2
@@ -75,9 +41,11 @@ indent_size = 2
 # .htaccess
 [{_.htaccess,.htaccess}]
 indent_style = tab
-indent_size = 4
 
-# XML-Files
-[*.xml]
+# HTML files
+[*.html]
 indent_size = 2
-indent_style = tab
+
+# CSS/SCSS files
+[*.{css,scss}]
+indent_size = 2

@@ -7,14 +7,20 @@ mod.wizards.newContentElement.wizardItems.common >
 
 # t3kit CE groups
 mod.wizards.newContentElement.wizardItems {
-  static.header = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:group.static
-  static.before = dynamic
+  static {
+    header = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:group.static
+    before = dynamic
+  }
 
-  dynamic.header = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:group.dynamic
-  dynamic.before = separator
+  dynamic {
+    header = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:group.dynamic
+    before = separator
+  }
 
-  separator.header = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:group.separator
-  separator.before = forms
+  separator {
+    header = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:group.separator
+    before = forms
+  }
 }
 # ___________________________
 

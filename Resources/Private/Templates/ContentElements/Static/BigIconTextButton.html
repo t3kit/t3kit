@@ -3,43 +3,52 @@
 <f:layout name="Default" />
 <f:section name="Header" />
 <f:section name="Main">
-<!-- theme_t3kit: Templates/ContentElements/BigIconTextButton.html [begin] -->
-	<div class="big-icon-text-btn__wrp">
-		<div class="big-icon-text-btn{f:if(condition: settings.disableWholeAreaLink, then: '', else: ' _whole-area-link')}">
-			<f:if condition="{settings.iconClass}">
-				<span class="big-icon-text-btn__icon icons icon-{settings.iconClass}" aria-hidden="true"></span>
-			</f:if>
-			<f:if condition="{data.header}">
-				<f:render partial="Header/Header" arguments="{
-				header: '{data.header}',
-				layout: '{data.header_layout}',
-				positionClass: 'big-icon-text-btn__header',
-				link: '',
-				uid: '{data.uid}',
-				default: 3
-				}" />
-			</f:if>
-			<f:if condition="{data.bodytext}">
-				<p class="big-icon-text-btn__p"><core:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">{data.bodytext}</core:contentEditable></p>
-			</f:if>
-			<f:if condition="{data.header_link}">
-				<f:if condition="{data.subheader}">
-					<f:then>
-						<f:link.typolink parameter="{data.header_link}" class="big-icon-text-btn__link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}">{data.subheader}</f:link.typolink>
-					</f:then>
-					<f:else>
-						<f:link.typolink parameter="{data.header_link}" class="big-icon-text-btn__link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}">{data.header}</f:link.typolink>
-					</f:else>
-				</f:if>
-			</f:if>
-			<f:if condition="{settings.disableWholeAreaLink} == 0">
-				<f:if condition="{data.subheader}">
-					<span class="big-icon-text-btn__sham-link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}" aria-hidden="true">{data.subheader}</span>
-				</f:if>
-	 		</f:if>
-		</div>
-	</div>
-<!-- theme_t3kit: Templates/ContentElements/BigIconTextButton.html [end] -->
+  <!-- t3kit: BigIconTextButton.html [begin] -->
+  <div class="big-icon-text-btn__wrp">
+    <div class="big-icon-text-btn{f:if(condition: settings.disableWholeAreaLink, then: '', else: ' _whole-area-link')}">
+      <f:if condition="{settings.iconClass}">
+        <span class="big-icon-text-btn__icon icons icon-{settings.iconClass}" aria-hidden="true"></span>
+      </f:if>
+      <f:if condition="{data.header}">
+        <f:render partial="Header/Header" arguments="{
+        header: '{data.header}',
+        layout: '{data.header_layout}',
+        positionClass: 'big-icon-text-btn__header',
+        link: '',
+        uid: '{data.uid}',
+        default: 3
+        }" />
+      </f:if>
+      <f:if condition="{data.bodytext}">
+        <p class="big-icon-text-btn__p">
+          <core:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">{data.bodytext}
+          </core:contentEditable>
+        </p>
+      </f:if>
+      <f:if condition="{data.header_link}">
+        <f:if condition="{data.subheader}">
+          <f:then>
+            <f:link.typolink parameter="{data.header_link}"
+              class="big-icon-text-btn__link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}">
+              {data.subheader}</f:link.typolink>
+          </f:then>
+          <f:else>
+            <f:link.typolink parameter="{data.header_link}"
+              class="big-icon-text-btn__link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}">
+              {data.header}</f:link.typolink>
+          </f:else>
+        </f:if>
+      </f:if>
+      <f:if condition="{settings.disableWholeAreaLink} == 0">
+        <f:if condition="{data.subheader}">
+          <span
+            class="big-icon-text-btn__sham-link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}"
+            aria-hidden="true">{data.subheader}</span>
+        </f:if>
+      </f:if>
+    </div>
+  </div>
+  <!-- t3kit: BigIconTextButton.html [end] -->
 </f:section>
 
 </html>

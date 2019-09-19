@@ -16,24 +16,23 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.facebookLink</label>
 							<config>
 								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
 							</config>
 						</TCEforms>
 					</facebookLink>
-
-					<googlePlusLink>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.googlePlusLink</label>
-							<config>
-								<type>input</type>
-							</config>
-						</TCEforms>
-					</googlePlusLink>
 
 					<instagramLink>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.instagramLink</label>
 							<config>
 								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
 							</config>
 						</TCEforms>
 					</instagramLink>
@@ -43,60 +42,88 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.linkedInLink</label>
 							<config>
 								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
 							</config>
 						</TCEforms>
 					</linkedInLink>
-
-					<xingLink>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.xingLink</label>
-							<config>
-								<type>input</type>
-							</config>
-						</TCEforms>
-					</xingLink>
-
-					<pinterestLink>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.pinterestLink</label>
-							<config>
-								<type>input</type>
-							</config>
-						</TCEforms>
-					</pinterestLink>
 
 					<twitterLink>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.twitterLink</label>
 							<config>
 								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
 							</config>
 						</TCEforms>
 					</twitterLink>
-
-					<vimeoLink>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.vimeoLink</label>
-							<config>
-								<type>input</type>
-							</config>
-						</TCEforms>
-					</vimeoLink>
 
 					<youtubeLink>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.youtubeLink</label>
 							<config>
 								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
 							</config>
 						</TCEforms>
 					</youtubeLink>
+
+					<vimeoLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.vimeoLink</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</vimeoLink>
+
+					<pinterestLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.pinterestLink</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</pinterestLink>
+
+					<xingLink>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.xingLink</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</xingLink>
 
 					<mynewsdeskLink>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.mynewsdeskLink</label>
 							<config>
 								<type>input</type>
+								<size>50</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
 							</config>
 						</TCEforms>
 					</mynewsdeskLink>

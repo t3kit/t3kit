@@ -3,30 +3,36 @@
 <f:layout name="Default" />
 <f:section name="Header" />
 <f:section name="Main">
-<!-- theme_t3kit: Templates/ContentElements/HeroImage.html [begin] -->
-	<f:if condition="{image}">
-		<div class="hero-image js__hero-image {f:cObject(typoscriptObjectPath:'lib.responsiveBackgroundImage', data:image.0.uid)}">
-			<div class="hero-image__caption-wrp {f:if(condition: '{settings.horizontalAlignment} == 0', then: '_left-align')}{f:if(condition: '{settings.horizontalAlignment} == 1', then: '_center-align')}{f:if(condition: '{settings.horizontalAlignment} == 2', then: '_right-align')}" style="height: {settings.elementHeight}px;{f:if(condition: settings.transparentLayer, then: ' background-color:{settings.transparentLayer};')}">
-				<div class="hero-image__caption {f:if(condition: '{settings.animationStyle} == 0', then: '', else: '_caption-animated-{settings.animationStyle}')} {f:if(condition: '{settings.verticalAlignment} == 0', then: '_top')}{f:if(condition: '{settings.verticalAlignment} == 2', then: '_bottom')}">
-					<f:if condition="{data.header}">
-						<h2 class="hero-image__caption-header" data-header-content='{data.header}'>{data.header}</h2>
-					</f:if>
-					<f:if condition="{data.bodytext}">
-						<h3 class="hero-image__caption-subheader" data-subheader-content='{data.bodytext}'>{data.bodytext}</h3>
-					</f:if>
-					<f:if condition="{settings.elementText}">
-						<p class="hero-image__caption-p" data-text-content='{settings.elementText}'>{settings.elementText}</p>
-					</f:if>
-					<f:if condition="{data.header_link}">
-						<div class="hero-image__caption-link-wrp">
-							<f:link.typolink parameter="{data.header_link}" title="{data.header}" class="hero-image__caption-link {f:if(condition: settings.linkAsBtn, then: 'btn btn-default', else: '')}"> {data.subheader}</f:link.typolink>
-						</div>
-					</f:if>
-				</div>
-			</div>
-		</div>
-	</f:if>
-<!-- theme_t3kit: Templates/ContentElements/HeroImage.html [end] -->
+  <!-- theme_t3kit: Templates/ContentElements/HeroImage.html [begin] -->
+  <f:if condition="{image}">
+    <div
+      class="hero-image js__hero-image {f:cObject(typoscriptObjectPath:'lib.responsiveBackgroundImage', data:image.0.uid)}">
+      <div
+        class="hero-image__caption-wrp {f:if(condition: '{settings.horizontalAlignment} == 0', then: '_left-align')}{f:if(condition: '{settings.horizontalAlignment} == 1', then: '_center-align')}{f:if(condition: '{settings.horizontalAlignment} == 2', then: '_right-align')}"
+        style="height: {settings.elementHeight}px;{f:if(condition: settings.transparentLayer, then: ' background-color:{settings.transparentLayer};')}">
+        <div
+          class="hero-image__caption {f:if(condition: '{settings.animationStyle} == 0', then: '', else: '_caption-animated-{settings.animationStyle}')} {f:if(condition: '{settings.verticalAlignment} == 0', then: '_top')}{f:if(condition: '{settings.verticalAlignment} == 2', then: '_bottom')}">
+          <f:if condition="{data.header}">
+            <h2 class="hero-image__caption-header" data-header-content='{data.header}'>{data.header}</h2>
+          </f:if>
+          <f:if condition="{data.bodytext}">
+            <h3 class="hero-image__caption-subheader" data-subheader-content='{data.bodytext}'>{data.bodytext}</h3>
+          </f:if>
+          <f:if condition="{settings.elementText}">
+            <p class="hero-image__caption-p" data-text-content='{settings.elementText}'>{settings.elementText}</p>
+          </f:if>
+          <f:if condition="{data.header_link}">
+            <div class="hero-image__caption-link-wrp">
+              <f:link.typolink parameter="{data.header_link}" title="{data.header}"
+                class="hero-image__caption-link {f:if(condition: settings.linkAsBtn, then: 'btn btn-default', else: '')}">
+                {data.subheader}</f:link.typolink>
+            </div>
+          </f:if>
+        </div>
+      </div>
+    </div>
+  </f:if>
+  <!-- theme_t3kit: Templates/ContentElements/HeroImage.html [end] -->
 </f:section>
 
 </html>

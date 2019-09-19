@@ -1,0 +1,150 @@
+// Special menus
+
+.ce-menu {
+    list-style: none;
+    padding-left: 14px;
+}
+
+.ce-menu ul {
+    list-style: none;
+    padding-left: 25px;
+}
+// ==================================================================
+// ======== Additional styling for Fluid Styled Content extension  ====
+// ==================================================================
+
+// Make link expand to same size as image to make focus visible on linked images
+.ce-textpic .image a {
+    display: inline-block;
+}
+
+.ce-gallery img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.ce-media iframe {
+    display: block;
+    max-width: 100%;
+}
+
+.ie11 .ce-gallery img {
+    max-width: calc("100vw - 30px");
+}
+
+// @media (max-width: $screen-xs-max) {
+@include media-breakpoint-down(sm) {
+    .ce-right.ce-nowrap .ce-gallery {
+        float: none;
+        margin: 40px 0 0;
+    }
+
+    .ce-left.ce-nowrap .ce-gallery {
+        float: none;
+        margin: 40px 0 0;
+    }
+}
+
+.ce-gallery figcaption {
+    color: fade($main-text-color, 50%);
+    font-size: 13px;
+}
+
+.ce-below .ce-gallery[data-ce-columns='2'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='2'] .ce-column {
+    width: calc("50% - 10px");
+}
+
+.ce-below .ce-gallery[data-ce-columns='3'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='3'] .ce-column {
+    width: calc("100% / 3 - 10px");
+}
+
+.ce-below .ce-gallery[data-ce-columns='4'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='4'] .ce-column {
+    width: calc("100% / 4 - 10px");
+}
+
+.ce-below .ce-gallery[data-ce-columns='5'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='5'] .ce-column {
+    width: calc("100% / 5 - 10px");
+}
+
+.ce-below .ce-gallery[data-ce-columns='6'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='6'] .ce-column {
+    width: calc("100% / 6 - 10px");
+}
+
+.ce-below .ce-gallery[data-ce-columns='7'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='7'] .ce-column {
+    width: calc("100% / 7 - 10px");
+}
+
+.ce-below .ce-gallery[data-ce-columns='8'] .ce-column,
+.ce-above .ce-gallery[data-ce-columns='8'] .ce-column {
+    width: calc("100% / 8 - 10px");
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// ============================
+// ======== Lightbox styles  ====
+// ============================
+[class*="lightbox__wrp-"] {
+    a {
+        position: relative;
+
+        &:before {
+            @include icons();
+
+            position: absolute;
+            bottom: 7px;
+            right: 7px;
+            font-size: 22px;
+            color: tint($main-color, 90%);
+            z-index: 110;
+            opacity: 0.7;
+            transition: opacity 0.5s ease;
+
+            // External link icon
+            content: '\e9cb';
+        }
+
+        &.lightbox:before {
+            // Lightbox zoom-in icon
+            content: '\e987';
+        }
+
+        &:hover:before {
+            opacity: 1;
+        }
+    }
+}
+
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
+    [class*="lightbox__wrp-"] {
+        a {
+            &:before {
+                bottom: 10px;
+                right: 10px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
+    [class*="lightbox__wrp-"] {
+        a {
+            &:before {
+                bottom: 14px;
+                right: 14px;
+                font-size: 34px;
+            }
+        }
+    }
+}

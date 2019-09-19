@@ -11,17 +11,7 @@
 				<type>array</type>
 				<el>
 
-					<iconClass>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:icon.flexform.iconClass</label>
-							<config>
-								<type>user</type>
-								<userFunc>T3kit\themeT3kit\UserFunction\IconFontSelector->renderField</userFunc>
-								<cssFile>EXT:theme_t3kit/Resources/Public/IconFonts/style.css</cssFile>
-								<isIcoMoon>1</isIcoMoon>
-							</config>
-						</TCEforms>
-					</iconClass>
+
 
 				</el>
 			</ROOT>

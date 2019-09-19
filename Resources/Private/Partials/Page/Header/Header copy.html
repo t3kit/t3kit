@@ -1,0 +1,145 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div id="top-header"></div>
+<header class="header">
+
+  <div class="skip-links">
+    <f:link.typolink parameter="{page.uid}#main-navigation" class="skip-links__item sr-only sr-only-focusable">
+      <f:translate key="skipLinks.mainNav" extensionName="t3kit" />
+    </f:link.typolink>
+    <f:link.typolink parameter="{page.uid}#main-content" class="skip-links__item sr-only sr-only-focusable">
+      <f:translate key="skipLinks.mainContent" extensionName="t3kit" />
+    </f:link.typolink>
+  </div>
+
+  <div class="header-top-wrp">
+    <div class="header-top">
+
+
+      <div class="header-top__main-navigation-toggle-btn">
+        <button type="button" class="main-navigation__toggle-btn js__main-navigation__toggle-btn">
+          <span>toggle menu</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+      <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+
+    </div>
+  </div>
+
+
+
+
+
+  <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation}" />
+
+</header>
+
+
+
+
+<f:section name="MainNavigation">
+
+  <f:if condition="{mainNavigation}">
+    <!-- t3kit: Main menu [begin] -->
+
+
+    <nav id="main-navigation"
+      class="main-navigation js__main-navigation{f:if(condition: '{theme:constant(constant:\'themes.configuration.menu.main.dropdownColumns\')} == 1', then: ' _dropdown-menu-with-columns js__dropdown-menu-with-columns')}">
+      <div class="main-navigation__items-wrp js__navigation__items-wrp">
+        <ul class="main-navigation__items-list js__main-navigation__items-list ">
+
+
+
+          <f:for each="{mainNavigation}" as="navItem">
+            <li
+              class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
+              <a href="{navItem.link}" title="{navItem.title}"
+                class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
+
+              <f:if condition="{navItem.children}">
+                <a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-sub-menu-link">Open</a>
+                <ul class="main-navigation__sub-item-list">
+                  <f:for each="{navItem.children}" as="childItem">
+                    <li
+                      class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} {childItem.data.uid} ">
+                      <a href="{childItem.link}" class="main-navigation__sub-item-link">{childItem.title}</a>
+                    </li>
+                  </f:for>
+                </ul>
+              </f:if>
+
+            </li>
+          </f:for>
+
+
+
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- t3kit: Main menu [end] -->
+  </f:if>
+
+</f:section>
+
+
+
+<f:section name="LanguageNavigation">
+
+  <f:if condition="{languageNavigation}">
+    <!-- t3kit: LanguageNavigation [begin] -->
+
+    <div class="header-top__language-menu">
+      <f:for each="{languageNavigation}" as="language">
+        <f:if condition="{language.active}">
+          <a class="header-top__language-menu-btn js__header-top__language-menu-btn" href="#">
+            <span class="main-flag-icon flag-icon flag-icon-{language.flagIdentifier}"></span>
+            <span class="main-flag-language flag-language">{language.navigationTitle}</span>
+          </a>
+        </f:if>
+      </f:for>
+      <div class="header-top__language-menu-box js__header-top__language-menu-box">
+        <f:for each="{languageNavigation}" as="language">
+          <f:if condition="{language.available}">
+            <f:then>
+              <a href="{language.link}" title="{language.title}"
+                class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
+                <span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
+              </a>
+            </f:then>
+            <f:else>
+              <span title="{language.title}" class="header-top__language-menu-box-item">
+                <span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
+              </span>
+            </f:else>
+          </f:if>
+        </f:for>
+        <button class="header-top__language-menu-box-close-btn js__header-top__language-menu-box-close-btn"></button>
+      </div>
+    </div>
+
+    <!-- t3kit: LanguageNavigation [end] -->
+  </f:if>
+</f:section>
+
+
+
+
+
+<f:section name="test">
+
+  <f:if condition="{test}">
+    <!-- t3kit: test [begin] -->
+    <!-- t3kit: test [end] -->
+  </f:if>
+
+</f:section>

@@ -21,7 +21,7 @@ use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
 /**
- * This data processor can be used for processing data for the content elements which have flexform contents in one field
+ * This data processor can be used for processing data for the content elem-s which have flexform contents in one field
  *
  * Example TypoScript configuration:
  * 10 = T3k\t3kit\DataProcessing\FlexFormProcessor
@@ -33,18 +33,24 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
  * whereas "flexform" can be used as a variable {flexform} inside Fluid to fetch values.
  *
  */
-class FlexFormProcessor implements DataProcessorInterface {
+class FlexFormProcessor implements DataProcessorInterface
+{
 
-	/**
-	 * Process flexform field data to an array
-	 *
-	 * @param ContentObjectRenderer $cObj The data of the content element or page
-	 * @param array $contentObjectConfiguration The configuration of Content Object
-	 * @param array $processorConfiguration The configuration of this processor
-	 * @param array $processedData Key/value store of processed data (e.g. to be passed to a Fluid View)
-	 * @return array the processed data as key/value store
-	 */
-	public function process(ContentObjectRenderer $cObj, array $contentObjectConfiguration, array $processorConfiguration, array $processedData) {
+    /**
+     * Process flexform field data to an array
+     *
+     * @param ContentObjectRenderer $cObj The data of the content element or page
+     * @param array $contentObjectConfiguration The configuration of Content Object
+     * @param array $processorConfiguration The configuration of this processor
+     * @param array $processedData Key/value store of processed data (e.g. to be passed to a Fluid View)
+     * @return array the processed data as key/value store
+     */
+    public function process(
+        ContentObjectRenderer $cObj,
+        array $contentObjectConfiguration,
+        array $processorConfiguration,
+        array $processedData
+    ) {
         if (isset($processorConfiguration['if.']) && !$cObj->checkIf($processorConfiguration['if.'])) {
             return $processedData;
         }

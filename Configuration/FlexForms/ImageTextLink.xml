@@ -21,12 +21,12 @@
 					</disableWholeAreaLink>
 
 					<linkAsBtn>
-						<TCEformsww>
+						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.linkAsBtn</label>
 							<config>
 								<type>check</type>
 							</config>
-						</TCEformsww>
+						</TCEforms>
 					</linkAsBtn>
 
 					<hoverEffect>

@@ -8,8 +8,4 @@ tt_content.header {
 
   templateName = Header
 
-  settings {
-    defaultHeaderType = 2
-  }
-
 }

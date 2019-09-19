@@ -1,0 +1,74 @@
+// =================================
+// General appearance wrappers
+// =================================
+
+.main-color-wrp {
+    background: $main-color;
+}
+
+.main-color-wrp a {
+    color: tint($main-text-color, 100%);
+
+    &.active,
+    &:active {
+        &.focus,
+        &:focus {
+            color: tint($main-text-color, 100%);
+            border-color: tint($main-color, 50%);
+        }
+    }
+
+    &.focus,
+    &:focus,
+    &:hover {
+        color: tint($main-text-color, 100%);
+        border-color: tint($main-color, 50%);
+    }
+}
+
+.main-color-wrp p {
+    color: shade($main-text-color, 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-color-wrp {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: tint($main-text-color, 100%);
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+.main-color-wrp .icons {
+    color: tint($main-color, 90%);
+    border-color: tint($main-color, 50%);
+}
+
+.main-color-wrp .big-icon-text-btn__sham-link {
+    color: tint($main-color, 90%);
+}
+
+.main-color-wrp .icon-text-btn__sham-link {
+    color: tint($main-color, 90%);
+}
+
+.main-color-wrp .img-text-link__sham-link {
+    color: tint($main-color, 90%);
+}
+
+.main-color-wrp .contacts-card__contacts {
+    a,
+    .icons {
+        color: shade($main-text-color, 100%);
+    }
+
+    &._contact-information-overlay {
+        a,
+        .icons {
+            color: #fff;
+        }
+    }
+}

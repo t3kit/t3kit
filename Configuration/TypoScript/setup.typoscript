@@ -9,7 +9,7 @@
 
 
 plugin.tx_t3kit {
-    settings {
-      production = {$plugin.t3kit.settings.production}
-    }
+  settings {
+    production = {$plugin.t3kit.settings.production}
+  }
 }

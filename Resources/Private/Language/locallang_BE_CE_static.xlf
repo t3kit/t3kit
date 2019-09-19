@@ -16,9 +16,7 @@
 			<trans-unit id="bigIconTextButton.buttonText">
 				<source>Button text</source>
 			</trans-unit>
-			<trans-unit id="bigIconTextButton.bodytext">
-				<source>Text</source>
-			</trans-unit>
+
 			<trans-unit id="bigIconTextButton.flexform.disableWholeAreaLink">
 				<source>Disable whole area link</source>
 			</trans-unit>
@@ -44,9 +42,7 @@
 			<trans-unit id="iconTextButton.buttonText">
 				<source>Button text</source>
 			</trans-unit>
-			<trans-unit id="iconTextButton.bodytext">
-				<source>Text</source>
-			</trans-unit>
+
 			<trans-unit id="iconTextButton.flexform.disableWholeAreaLink">
 				<source>Disable whole area link</source>
 			</trans-unit>
@@ -69,15 +65,6 @@
 				<source>Image or media, text and link. Will use image before media. Will only render one image or one media.</source>
 			</trans-unit>
 
-			<trans-unit id="imageTextLink.bodyText">
-				<source>Text</source>
-			</trans-unit>
-			<trans-unit id="imageTextLink.linkText">
-				<source>Link text</source>
-			</trans-unit>
-			<trans-unit id="imageTextLink.bodytext">
-				<source>Text</source>
-			</trans-unit>
 			<trans-unit id="imageTextLink.flexform.disableWholeAreaLink">
 				<source>Disable whole area link</source>
 			</trans-unit>
@@ -127,16 +114,6 @@
 				<source>Image, header, subheader, text and link. Will render only if image added</source>
 			</trans-unit>
 
-			<trans-unit id="heroImage.subheader">
-				<source>Sub Header</source>
-			</trans-unit>
-			<trans-unit id="heroImage.linkText">
-				<source>Link Text</source>
-			</trans-unit>
-
-			<trans-unit id="heroImage.flexform.elementText">
-				<source>Text</source>
-			</trans-unit>
 			<trans-unit id="heroImage.flexform.elementHeight">
 				<source>Set height of element</source>
 			</trans-unit>
@@ -204,67 +181,14 @@
 			<trans-unit id="quote.linkText">
 				<source>Link text</source>
 			</trans-unit>
-			<trans-unit id="quote.header">
-				<source>Author name, Title of cited work</source>
+			<trans-unit id="quote.author">
+				<source>Author name</source>
+			</trans-unit>
+			<trans-unit id="quote.cited_work">
+				<source>Title of cited work</source>
 			</trans-unit>
 			<trans-unit id="quote.bodytext">
 				<source>Quote</source>
-			</trans-unit>
-
-
-			<!--FullWidthImage Element-->
-			<trans-unit id="fullWidthImage.title">
-				<source>Full Width Image</source>
-			</trans-unit>
-			<trans-unit id="fullWidthImage.description">
-				<source>Full Width Image element</source>
-			</trans-unit>
-
-			<trans-unit id="fullWidthImage.tabs.image">
-				<source>Image</source>
-			</trans-unit>
-			<trans-unit id="fullWidthImage.flexform.includeDoubleDensityImages">
-				<source>Include 2x images in sources</source>
-			</trans-unit>
-
-
-			<!--SocialIcons Element-->
-			<trans-unit id="socialIcons.title">
-				<source>Social Icons</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.description">
-				<source>Social Icons element</source>
-			</trans-unit>
-
-			<trans-unit id="socialIcons.flexform.facebookLink">
-				<source>Facebook: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.googlePlusLink">
-				<source>Google+: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.instagramLink">
-				<source>Instagram: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.linkedInLink">
-				<source>LinkedIn: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.xingLink">
-				<source>XING: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.pinterestLink">
-				<source>Pinterest: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.twitterLink">
-				<source>Twitter: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.vimeoLink">
-				<source>Vimeo: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.youtubeLink">
-				<source>Youtube: Pagelink</source>
-			</trans-unit>
-			<trans-unit id="socialIcons.flexform.mynewsdeskLink">
-				<source>Mynewsdesk: Pagelink</source>
 			</trans-unit>
 
 
@@ -281,6 +205,9 @@
 			</trans-unit>
 			<trans-unit id="contactsCard.job">
 				<source>Job Description</source>
+			</trans-unit>
+			<trans-unit id="contactsCard.flexform.title">
+				<source>Contacts:</source>
 			</trans-unit>
 			<trans-unit id="contactsCard.flexform.contactPhone_1">
 				<source>Contact Phone 1</source>
@@ -319,8 +246,8 @@
 				<source>A button with twbs style</source>
 			</trans-unit>
 
-			<trans-unit id="button.header_label">
-				<source>Button text</source>
+			<trans-unit id="button.title">
+				<source>Button title</source>
 			</trans-unit>
 
 			<trans-unit id="button.flexform.buttonStyle">
@@ -344,6 +271,63 @@
 			<trans-unit id="button.flexform.blockLevel">
 				<source>Block level button</source>
 			</trans-unit>
+
+
+			<!--SocialIcons Element-->
+			<trans-unit id="socialIcons.title">
+				<source>Social Icons</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.description">
+				<source>Social Icons element</source>
+			</trans-unit>
+
+			<trans-unit id="socialIcons.flexform.title">
+				<source>Social page links</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.facebookLink">
+				<source>Facebook:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.instagramLink">
+				<source>Instagram:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.linkedInLink">
+				<source>LinkedIn:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.xingLink">
+				<source>XING:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.pinterestLink">
+				<source>Pinterest:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.twitterLink">
+				<source>Twitter:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.vimeoLink">
+				<source>Vimeo:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.youtubeLink">
+				<source>Youtube:</source>
+			</trans-unit>
+			<trans-unit id="socialIcons.flexform.mynewsdeskLink">
+				<source>Mynewsdesk:</source>
+			</trans-unit>
+
+
+			<!--FullWidthImage Element-->
+			<trans-unit id="fullWidthImage.title">
+				<source>Full Width Image</source>
+			</trans-unit>
+			<trans-unit id="fullWidthImage.description">
+				<source>Full Width Image element</source>
+			</trans-unit>
+
+			<trans-unit id="fullWidthImage.tabs.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="fullWidthImage.flexform.includeDoubleDensityImages">
+				<source>Include 2x images in sources</source>
+			</trans-unit>
+
 
 		</body>
 	</file>

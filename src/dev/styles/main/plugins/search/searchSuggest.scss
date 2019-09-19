@@ -1,0 +1,65 @@
+// ==============================================
+// ======== Awesomplete plugin fixes  ====
+// ==============================================
+
+div.awesomplete {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+}
+
+div.awesomplete > ul {
+    min-width: 200px;
+    border: 1px solid $border-color;
+    border-radius: 0;
+    background: $main-body-bg;
+    margin: 0.4em 0 0;
+    box-shadow: 0.05em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation__search-box .awesomplete > ul {
+    left: 5%;
+}
+
+.main-navigation__search-box._header-top-search-btn .awesomplete > ul {
+    left: 5%;
+}
+
+div.awesomplete > ul:before {
+    // content: "";
+    border-color: darken($border-color, 12%);
+}
+
+div.awesomplete > ul > li {
+    padding: 0.5em 0.6em;
+}
+
+div.awesomplete > ul > li[aria-selected="true"],
+div.awesomplete > ul > li[aria-selected="true"]:hover {
+    background: $main-color;
+    color: white;
+}
+
+div.awesomplete > ul > li:hover {
+    background: $nav-link-hover-background;
+    color: inherit;
+}
+
+div.awesomplete mark {
+    background: tint($main-color, 70%);
+}
+
+div.awesomplete li:hover mark {
+    background: tint($main-color, 70%);
+}
+
+div.awesomplete li[aria-selected="true"] mark {
+    background: tint($main-color, 45%);
+}
+
+div.awesomplete li[aria-selected="true"] mark {
+    background: tint($main-color, 45%);
+}
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
