@@ -136,12 +136,12 @@
 				<source>Right</source>
 			</trans-unit>
 			<!-- not used Main Navigation -->
-			<trans-unit id="siteHeader.mainNavigation.mobileNavToggleBtn">
+			<!-- <trans-unit id="siteHeader.mainNavigation.mobileNavToggleBtn">
 				<source>Mobile Navigation Toggle Btn Position</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.mainNavigation.excludeUidList">
 				<source>Exclude uid list (12,13,...)</source>
-			</trans-unit>
+			</trans-unit> -->
 
 
 			<!-- Accessibility -->
