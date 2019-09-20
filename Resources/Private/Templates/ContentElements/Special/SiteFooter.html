@@ -1,0 +1,70 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Empty" />
+
+<f:section name="Main">
+
+  <footer class="footer">
+      <div class="container">
+        <!-- here should be list of pages, subscribe form, additional text -->
+        <div class="row">
+            <!-- List of menus -->
+            <div class="col">
+
+            </div>
+            <!-- Sibscribe form & RTE text-->
+            <div class="col">
+
+            </div>
+
+            <!-- Force next columns to break to new line at md breakpoint and up -->
+            <div class="w-100 d-none d-md-bloc"></div>
+
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col">
+              <!-- Logo -->
+              <f:if condition="{data.nav_logo}">
+                <div class="footer__logo">
+                  <f:if condition="{image}">
+                    <a href="/" title="Home" class="footer__logo-link">
+                      <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                        <f:if condition="{imageIteration.isFirst}">
+                          <f:render section="media" arguments="{_all}" />
+                        </f:if>
+                      </f:for>
+                    </a>
+                  </f:if>
+                </div>
+              </f:if>
+            </div>
+            <div class="col">
+              <!-- Text -->
+            </div>
+            <div class="col">
+              <!-- Social Icon -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col align-self-start">
+              <!-- All rights reserved -->
+            </div>
+            <div class="col align-self-end">
+              <!-- Additional Links -->
+            </div>
+          </div>
+      </div>
+  </footer>
+
+  <f:section name="media">
+	<f:media
+		file="{mediaItem}"
+		width="{data.logo_width}"
+		alt="{mediaItem.alternative}"
+		title="{mediaItem.title}"
+		class="img-text-link__img img-responsive"
+	/>
+</f:section>
+
+</html>

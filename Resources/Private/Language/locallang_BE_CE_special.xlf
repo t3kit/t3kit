@@ -98,6 +98,34 @@
 				<source>Skip to main content text</source>
 			</trans-unit>
 
+			<!-- SiteFooter Element -->
+			<trans-unit id="siteFooter.title">
+				<source>Site Header</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.description">
+				<source>Main footer of the site. Will be copied to all subpages.</source>
+			</trans-unit>
+
+			<!--SiteFooter Element TCA Overrides-->
+			<trans-unit id="siteFooter.CType">
+				<source>Site Footer | (Footer of the site. Will be copied to all subpages)</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.tabs.settings">
+				<source>Site Footer Settings </source>
+			</trans-unit>
+
+
+			<trans-unit id="siteFooter.palette.headerTop">
+				<source>Site Footer Top</source>
+			</trans-unit>
+
+			<trans-unit id="siteFooter.palette.headerMiddle">
+				<source>Site Footer Middle</source>
+			</trans-unit>
+
+			<trans-unit id="siteFooter.palette.headerBottom">
+				<source>Site Footer Bottom</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
