@@ -4,7 +4,7 @@
     </a>
 </p>
 
-<h3 align="center">TYPO3 website starter kit</h3>
+<h2 align="center">TYPO3 website starter kit</h2>
 <p align="center"><a href="https://t3kit.gitbook.io/doc/"><strong>t3kit documentation</strong></a></p>
 
 ## Table of contents
@@ -54,13 +54,13 @@ It includes:
 
 ## t3kit Roadmap
 
-|t3kit |TYPO3|Development|Release|Support & Maintenance|End of support|
-|------|-----|-----------|-------|---------------------|--------------|
-|v7    |v7   |❌         |02.2017|❌                   |02.2017       |
-|v8-8.8|v8   |❌         |02.2017|❌                   |02.2019       |
-|8.9   |v9   |❌         |01.2019|✅                   |04.2020       |
-|10    |v10  |✅         |❗**02.2020**|               |              |
-|11    |v11  |:x:        |_~08.2021_|                  |              |
+|t3kit |Development|Release|Support & Maintenance|End of support|TYPO3|
+|------|-----------|-------|---------------------|--------------|-----|
+|v7    |❌         |02.2017|❌                   |02.2017       |v7   |
+|v8-8.8|❌         |02.2017|❌                   |02.2019       |v8   |
+|8.9   |❌         |01.2019|✅                   |04.2020       |v9   |
+|10    |✅         |**02.2020**|                 |              |v10  |
+|11    |❌         |_~08.2021_|                  |              |v11  |
 
 ## Versioning
 
