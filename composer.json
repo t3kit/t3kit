@@ -7,7 +7,7 @@
     "typo3",
     "cms",
     "starter",
-    "t3kit9"
+    "t3kit10"
   ],
   "homepage": "http://t3kit.com",
   "license": "GPL-2.0-or-later",
@@ -24,14 +24,14 @@
     "docs": "https://github.com/t3kit/t3kit"
   },
   "require": {
-    "typo3/minimal": "^9.5",
+    "typo3/minimal": "^10.1.0",
 
-    "typo3/cms-form": "^9.5",
-    "typo3/cms-rte-ckeditor": "^9.5",
-    "typo3/cms-seo": "^9.5",
-    "typo3/cms-tstemplate": "^9.5",
-    "typo3/cms-felogin": "^9.5",
-    "typo3/cms-indexed-search": "^9.5"
+    "typo3/cms-form": "^10.1.0",
+    "typo3/cms-rte-ckeditor": "^10.1.0",
+    "typo3/cms-seo": "^10.1.0",
+    "typo3/cms-tstemplate": "^10.1.0",
+    "typo3/cms-felogin": "^10.1.0",
+    "typo3/cms-indexed-search": "^10.1.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4",
@@ -51,7 +51,8 @@
       "php": "7.2"
     },
     "vendor-dir": "build/vendor",
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "sort-packages": true
   },
   "scripts": {
     "lint-php": "build/vendor/bin/phpcs --colors",
@@ -60,7 +61,6 @@
     "lint-xml": "build/vendor/bin/xmllint --ansi --exclude=build/ .",
     "lint": [
       "@lint-php",
-      "@lint-typoscript",
       "@lint-yaml",
       "@lint-xml"
     ]
