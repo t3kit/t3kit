@@ -1,0 +1,29 @@
+name: Code Guidelines
+# https://github.com/t3kit/.github/blob/master/CONTRIBUTING.md#coding-rules
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    name: Lint code
+
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - run: npm install eclint
+
+      - name: EditorConfig check
+        run: node_modules/eclint/bin/eclint.js check "**/*.{sh,yml,yaml,json,xml,xlf,html}"
+
+      - name: Install t3kit Composer dependencies
+        uses: docker://composer:1.9
+        with:
+          args: "install"
+
+      - name: Run composer lint
+        uses: docker://composer:1.9
+        with:
+          args: "run-script lint"

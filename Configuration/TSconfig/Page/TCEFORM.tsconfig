@@ -27,7 +27,7 @@ TCEFORM {
     header_position {
       removeItems = left
       addItems.justify = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify
-      altLabels.. = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left
+      // altLabels.. = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left
       altLabels.center = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center
       altLabels.right = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right
 
