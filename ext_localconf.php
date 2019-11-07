@@ -23,20 +23,14 @@ $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
 $signalSlotDispatcher->connect(
     \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
     'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem\T3kitToolbarItems::class,
     'addSeparator'
 );
 $signalSlotDispatcher->connect(
     \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
     'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem\T3kitToolbarItems::class,
     'getT3kitVersion'
-);
-$signalSlotDispatcher->connect(
-    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-    'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
-    'getT3kitMode'
 );
 
 /*
