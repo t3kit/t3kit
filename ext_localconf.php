@@ -43,7 +43,7 @@ $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\
 $iconRegistry->registerIcon(
     'systeminformation-t3kit',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => 'EXT:t3kit/Resources/Public/Icons/bmp.svg']
+    ['source' => 'EXT:t3kit/Resources/Public/Icons/t3kit.svg']
 );
 // Content Elements icons
 $contentElementIconFilePath = 'EXT:t3kit/Resources/Public/Icons/ContentElements/';

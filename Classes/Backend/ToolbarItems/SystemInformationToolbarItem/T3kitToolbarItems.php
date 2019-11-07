@@ -15,15 +15,15 @@ namespace T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem;
  * The TYPO3 project - inspiring people to share!
  */
 
+ /*
+ * The t3kit project
+ * https://github.com/t3kit
+ */
+
 use TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Backend\Toolbar\Enumeration\InformationStatus;
-
-/*
- * The t3kit project
- * https://github.com/t3kit
- */
 
 /**
  * Render t3kit system info to System toolbar item

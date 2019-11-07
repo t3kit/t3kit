@@ -2,7 +2,7 @@
 namespace T3k\t3kit\DataProcessing;
 
 /*
- * This file is part of the t3kit project.
+ * This file is part of the TYPO3 CMS project.
  *
  * It is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License, either version 2
@@ -11,8 +11,12 @@ namespace T3k\t3kit\DataProcessing;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * The t3kit project
  * The TYPO3 project - inspiring people to share!
+ */
+
+ /*
+ * The t3kit project
+ * https://github.com/t3kit
  */
 
 use TYPO3\CMS\Core\Service\FlexFormService;
