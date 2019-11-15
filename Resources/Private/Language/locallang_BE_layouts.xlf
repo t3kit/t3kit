@@ -7,10 +7,10 @@
 			<trans-unit id="title.1column">
 				<source>1 Column</source>
 			</trans-unit>
-			<trans-unit id="title.1column_sidenav">
+			<trans-unit id="title.1column75_sidenav25">
 				<source>1 Column[75%] -> Side Navigation[25%]</source>
 			</trans-unit>
-			<trans-unit id="title.sidenav_1column">
+			<trans-unit id="title.sidenav25_1column75">
 				<source>Side Navigation[25%] -> 1 Column[75%]</source>
 			</trans-unit>
 
@@ -32,7 +32,7 @@
 			<trans-unit id="title.sidenav25_2columns50_25">
 				<source>Side Navigation[25%] -> 2 Columns[50%-25%]</source>
 			</trans-unit>
-			<trans-unit id="title.2columns50_25_sidenav25">
+			<trans-unit id="title.2columns25_50_sidenav25">
 				<source>2 Columns[25%-50%] -> Side Navigation[25%]</source>
 			</trans-unit>
 
@@ -60,20 +60,8 @@
 				<source>Default</source>
 			</trans-unit>
 
-			<trans-unit id="title.startpage1">
-				<source>Start Page #1</source>
-			</trans-unit>
-			<trans-unit id="title.startpage2">
-				<source>Start Page #2</source>
-			</trans-unit>
-			<trans-unit id="title.startpage3">
-				<source>Start Page #3</source>
-			</trans-unit>
-			<trans-unit id="title.startpage4">
-				<source>Start Page #4</source>
-			</trans-unit>
-			<trans-unit id="title.startpage5">
-				<source>Start Page #5</source>
+			<trans-unit id="title.start_page">
+				<source>Start Page</source>
 			</trans-unit>
 
 

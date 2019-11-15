@@ -13,7 +13,7 @@ width="80"
    data-name="Lager 1"
    viewBox="0 0 50 75"
    version="1.1"
-   sodipodi:docname="Empty.svg"
+   sodipodi:docname="Default.svg"
    inkscape:version="1.0beta1 (32d4812, 2019-09-19)">
   <metadata
      id="metadata582">
@@ -68,11 +68,49 @@ width="80"
      id="layer3"
      inkscape:label="Layer 1">
     <rect
-       style="fill:#cccccc;stroke-width:1.51338"
+       class="cls-1"
+       x="2"
+       y="2"
+       width="46"
+       height="5"
+       id="rect523"
+       style="fill:#808080" />
+    <rect
+       id="rect523-2"
+       height="5"
+       width="46"
+       y="68"
+       x="2"
+       class="cls-1"
+       style="fill:#808080" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.24561999999999973px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.10614"
+       x="2.693239"
+       y="6.0278835"
+       id="text627"><tspan
+         sodipodi:role="line"
+         id="tspan625"
+         x="2.693239"
+         y="6.0278835"
+         style="stroke-width:0.10614;fill:#ffffff;">HEADER</tspan></text>
+    <text
+       id="text627-3"
+       y="71.987831"
+       x="2.6999004"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.16120999999999963px;line-height:1.25;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.10403"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.10403"
+         y="71.987831"
+         x="2.6999004"
+         id="tspan625-4"
+         sodipodi:role="line">FOOTER</tspan></text>
+    <rect
+       style="fill:#cccccc;stroke-width:1.33199"
        id="rect1549-7-5"
        width="46"
-       height="71"
+       height="55"
        x="2"
-       y="2" />
+       y="10" />
   </g>
 </svg>
