@@ -10,7 +10,7 @@
 # [100-900]  -> All Content
 
 mod.web_layout.BackendLayouts.default {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/Default.svg
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/default.svg
   title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.default
   config.backend_layout {
     colCount = 12

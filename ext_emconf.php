@@ -3,11 +3,11 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 't3kit',
     'description' => 't3kit project. A TYPO3 website starterkit.',
-    'version' => '9.0.0',
+    'version' => '10.0.0',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-9.5.99',
+            'typo3' => '10.1.0-10.2.99',
         ],
         'conflicts' => [
             'css_styled_content' => '*',

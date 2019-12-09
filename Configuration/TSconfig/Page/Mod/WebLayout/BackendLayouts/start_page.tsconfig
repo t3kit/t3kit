@@ -10,8 +10,8 @@
 # [100-900]  -> All Content
 
 mod.web_layout.BackendLayouts.start_page {
-  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/StartPage.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.startpage1
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/start_page.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.start_page
   config.backend_layout {
     colCount = 12
     rowCount = 6

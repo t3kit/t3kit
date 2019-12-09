@@ -23,20 +23,14 @@ $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
 $signalSlotDispatcher->connect(
     \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
     'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem\T3kitToolbarItems::class,
     'addSeparator'
 );
 $signalSlotDispatcher->connect(
     \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
     'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
+    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem\T3kitToolbarItems::class,
     'getT3kitVersion'
-);
-$signalSlotDispatcher->connect(
-    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-    'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbar\T3kitToolbarItems::class,
-    'getT3kitMode'
 );
 
 /*
@@ -49,7 +43,7 @@ $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\
 $iconRegistry->registerIcon(
     'systeminformation-t3kit',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => 'EXT:t3kit/Resources/Public/Icons/bmp.svg']
+    ['source' => 'EXT:t3kit/Resources/Public/Icons/t3kit.svg']
 );
 // Content Elements icons
 $contentElementIconFilePath = 'EXT:t3kit/Resources/Public/Icons/ContentElements/';

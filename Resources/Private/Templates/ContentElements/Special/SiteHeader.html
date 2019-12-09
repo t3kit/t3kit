@@ -3,6 +3,8 @@
 
 <f:section name="Main">
 
+
+
   <div id="top-header"></div>
   <header class="header">
 
@@ -36,7 +38,7 @@
                 </f:if>
                 <f:link.typolink class="header-top__contact-tel-link" title="{data.phone_title}"
                   additionalAttributes="{aria-label: '{data.phone_title}'}" parameter="{data.phone_link}">
-                  {data.phone_text}</f:link.typolink>
+                  </f:link.typolink>
               </div>
               <div class="header-top__contact-email">
                 <f:if condition="{data.email_icon}">
@@ -91,7 +93,7 @@
     <!-- t3kit: Main menu [begin] -->
 
     <nav id="main-navigation"
-      class="main-navigation js__main-navigation{f:if(condition: '{theme:constant(constant:\'themes.configuration.menu.main.dropdownColumns\')} == 1', then: ' _dropdown-menu-with-columns js__dropdown-menu-with-columns')}">
+      class="main-navigation js__main-navigation">
       <div class="main-navigation__items-wrp js__navigation__items-wrp">
         <ul class="main-navigation__items-list js__main-navigation__items-list ">
 
