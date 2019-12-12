@@ -100,7 +100,7 @@
 
 			<!-- SiteFooter Element -->
 			<trans-unit id="siteFooter.title">
-				<source>Site Header</source>
+				<source>Site Footer</source>
 			</trans-unit>
 			<trans-unit id="siteFooter.description">
 				<source>Main footer of the site. Will be copied to all subpages.</source>
