@@ -6,6 +6,9 @@ plugin.t3kit {
 
     # cat=goingLive/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.production
     production = 0
+
+    # cat=goingLive/t3kit; type=string; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.production
+    theme = t3kit
   }
 }
 

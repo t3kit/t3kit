@@ -73,7 +73,13 @@ page.10.dataProcessing {
     languages = auto
   }
 
-}
 
+  # Site Processor
+  110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+  110 {
+    as = site
+  }
+
+}
 
 
