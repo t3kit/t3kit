@@ -65,6 +65,7 @@ $GLOBALS['TCA']['tt_content']['types']['bigIconTextButton'] = [
 $GLOBALS['TCA']['tt_content']['palettes']['bigIconTextButton'] = array(
     'showitem' => '
         header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
         --linebreak--,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --linebreak--,

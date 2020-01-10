@@ -7,22 +7,22 @@
 # Static CE
 mod.wizards.newContentElement.wizardItems.static.elements {
 
-  header.tt_content_defValues.CType = heade
-  text.tt_content_defValues.CType = tex
-  textpic.tt_content_defValues.CType = textpi
-  textmedia.tt_content_defValues.CType = textmedi
-  image.tt_content_defValues.CType = imag
-  bullets.tt_content_defValues.CType = bullet
+  header.tt_content_defValues.CType = header
+  text.tt_content_defValues.CType = text
+  textpic.tt_content_defValues.CType = textpic
+  textmedia.tt_content_defValues.CType = textmedia
+  image.tt_content_defValues.CType = image
+  bullets.tt_content_defValues.CType = bullets
   table.tt_content_defValues.CType = table
-  uploads.tt_content_defValues.CType = upload
+  uploads.tt_content_defValues.CType = uploads
 
-  bigIconTextButton.tt_content_defValues.CType = bigIconTextButto
-  iconTextButton.tt_content_defValues.CType = iconTextButto
-  imageTextLink.tt_content_defValues.CType = imageTextLin
-  heroImage.tt_content_defValues.CType = heroImag
-  quote.tt_content_defValues.CType = quot
-  contactsCard.tt_content_defValues.CType = contactsCar
-  button.tt_content_defValues.CType = butto
+  bigIconTextButton.tt_content_defValues.CType = bigIconTextButton
+  iconTextButton.tt_content_defValues.CType = iconTextButton
+  imageTextLink.tt_content_defValues.CType = imageTextLink
+  heroImage.tt_content_defValues.CType = heroImage
+  quote.tt_content_defValues.CType = quote
+  contactsCard.tt_content_defValues.CType = contactsCard
+  button.tt_content_defValues.CType = button
   socialIcons.tt_content_defValues.CType = socialIcons
   fullWidthImage.tt_content_defValues.CType = fullWidthImage
 

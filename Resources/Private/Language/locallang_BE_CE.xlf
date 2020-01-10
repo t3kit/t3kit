@@ -68,6 +68,30 @@
 			<trans-unit id="header_position.justify">
 				<source>Justify</source>
 			</trans-unit>
+			<trans-unit id="table_class.table">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-dark">
+				<source>Dark</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-striped">
+				<source>Striped rows</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-bordered">
+				<source>Bordered table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-borderless">
+				<source>Borderless table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-hover">
+				<source>Hoverable rows</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-sm">
+				<source>Small table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table-responsive">
+				<source>Responsive tables</source>
+			</trans-unit>
 
 			<!-- general flexform -->
 			<trans-unit id="flexform.title">

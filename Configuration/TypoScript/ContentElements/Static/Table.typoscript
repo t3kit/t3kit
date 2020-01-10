@@ -23,5 +23,15 @@ tt_content.table {
       maximumColumns.field = cols
       as = table
     }
+    # Use table_class, but split classes by , since we changed it to multiple
+    20 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
+    20 {
+      if.isTrue.field = table_class
+      delimiter = ,
+      fieldName = table_class
+      removeEmptyEntries = 1
+      filterUnique = 1
+      as = tableClass
+    }
   }
 }
