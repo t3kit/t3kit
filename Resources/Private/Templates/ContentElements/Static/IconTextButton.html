@@ -1,57 +1,53 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
-<f:section name="Header" />
-<f:section name="Main">
-  <!-- theme_t3kit: Templates/ContentElements/IconTextButton.html [begin] -->
-  <f:comment>
-    <!--
-      Use a variable to set anchor class.
-      Leave empty if both disableWholeAreaLink and btnAsLink aren't set
-      Don't want classes btn btn-default when link is on "whole area"
-    -->
-  </f:comment>
-  <f:variable name="anchorClass">{f:if(condition: '{settings.disableWholeAreaLink} == 1 && {settings.btnAsLink} != 1' ,
-    then: ' btn btn-default', else: '')}</f:variable>
 
+<f:section name="Header" />
+
+<f:section name="Main">
+  <f:if condition="{flexform.disableWholeAreaLink} == 1">
+    <f:then>
+      <f:render section="Content" arguments="{_all}" />
+    </f:then>
+    <f:else>
+      <f:link.typolink parameter="{data.link}">
+        <f:render section="Content" arguments="{_all}" />
+      </f:link.typolink>
+    </f:else>
+  </f:if>
+</f:section>
+
+<f:section name="Content">
   <div class="icon-text-btn__wrp">
-    <div class="icon-text-btn{f:if(condition: settings.disableWholeAreaLink, then: '', else: ' _whole-area-link')}">
+    <div class="icon-text-btn">
       <h3 class="icon-text-btn__header">
-        <f:if condition="{settings.iconClass}">
-          <span class="icon-text-btn__icon icons icon-{settings.iconClass}" aria-hidden="true"></span>
+        <f:if condition="{flexform.iconClass}">
+          <span class="icon-text-btn__icon icons icon-{flexform.iconClass}" aria-hidden="true"></span>
         </f:if>
-        <f:if condition="{data.header}">
-          <core:contentEditable table="tt_content" field="header" uid="{data.uid}">{data.header}</core:contentEditable>
-        </f:if>
+        <f:if condition="{data.header}">{data.header}</f:if>
       </h3>
+
       <f:if condition="{data.bodytext}">
-        <p class="icon-text-btn__p">
-          <core:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">{data.bodytext}
-          </core:contentEditable>
-        </p>
+        <p class="icon-text-btn__p"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
       </f:if>
-      <f:if condition="{data.header_link}">
-        <f:if condition="{data.subheader}">
-          <f:then>
-            <f:link.typolink parameter="{data.header_link}" class="icon-text-btn__link{anchorClass}">{data.subheader}
-            </f:link.typolink>
-          </f:then>
-          <f:else>
-            <f:link.typolink parameter="{data.header_link}" class="icon-text-btn__link{anchorClass}">{data.header}
-            </f:link.typolink>
-          </f:else>
-        </f:if>
+
+      <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">
+        <f:link.typolink
+          parameter="{data.link}"
+          class="icon-text-btn__link{f:if(condition: flexform.btnAsLink, then: '', else: ' btn btn-default')}">
+            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
+        </f:link.typolink>
       </f:if>
-      <f:if condition="{settings.disableWholeAreaLink} == 0">
-        <f:if condition="{data.subheader}">
-          <span
-            class="icon-text-btn__sham-link {f:if(condition: settings.btnAsLink, then: '', else: 'btn btn-default')}"
-            aria-hidden="true">{data.subheader}</span>
-        </f:if>
+
+      <f:if condition="{flexform.disableWholeAreaLink} == 0">
+        <span
+          class="big-icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: '', else: 'btn btn-default')}"
+          aria-hidden="true">
+            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
+        </span>
       </f:if>
     </div>
   </div>
-  <!-- theme_t3kit: Templates/ContentElements/IconTextButton.html [end] -->
 </f:section>
 
 </html>
