@@ -11,6 +11,8 @@ CREATE TABLE pages (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
+	table_class varchar(255) DEFAULT '' NOT NULL,
+
 	custom_header varchar(255) DEFAULT '' NOT NULL,
 	custom_subheader varchar(255) DEFAULT '' NOT NULL,
 	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
