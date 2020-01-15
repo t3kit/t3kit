@@ -70,8 +70,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerTop'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.palette.footerTop',
     'showitem' => '
         footerTop, --linebreak--,
-        footerMiddleLogo, --linebreak--,
-        footerMiddleText, --linebreak--,
         phone_title, phone_icon, phone_show_title, --linebreak--,
         email_address, email_title, email_icon, email_show_title, --linebreak--,
         footerTopNavigation, --linebreak--,
@@ -83,6 +81,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerMiddle'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.palette.footerMiddle',
     'showitem' => '
       footerMiddle, --linebreak--,
+      footerMiddleLogo, --linebreak--,
       footerMiddleText, --linebreak--,
 ',
 );
@@ -172,10 +171,8 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
         'displayCond' => 'FIELD:footerMiddle:!=:0',
         'onChange' => 'reload',
         'config' => [
-            'type' => 'input',
-            'size' => 50,
-            'max' => 255,
-            'eval' => 'trim',
+            'type' => 'text',
+            'enableRichtext' => true,
         ]
     ],
 ]);

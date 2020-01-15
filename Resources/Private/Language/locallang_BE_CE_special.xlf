@@ -114,16 +114,15 @@
 				<source>Site Footer Settings </source>
 			</trans-unit>
 
-
-			<trans-unit id="siteFooter.palette.headerTop">
+			<trans-unit id="siteFooter.palette.footerTop">
 				<source>Site Footer Top</source>
 			</trans-unit>
 
-			<trans-unit id="siteFooter.palette.headerMiddle">
+			<trans-unit id="siteFooter.palette.footerMiddle">
 				<source>Site Footer Middle</source>
 			</trans-unit>
 
-			<trans-unit id="siteFooter.palette.headerBottom">
+			<trans-unit id="siteFooter.palette.footerBottom">
 				<source>Site Footer Bottom</source>
 			</trans-unit>
 		</body>

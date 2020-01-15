@@ -6,7 +6,7 @@
 # ===========================
 tt_content.siteFooter =< lib.contentElement
 tt_content.siteFooter {
-  templateName = siteFooter
+  templateName = SiteFooter
   dataProcessing {
 
     # Main menu

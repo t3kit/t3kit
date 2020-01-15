@@ -39,6 +39,8 @@ CREATE TABLE tt_content (
 	footerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
 	footerBottom int(11) unsigned DEFAULT '0' NOT NULL,
 
+	footerMiddleText varchar(255) DEFAULT '' NOT NULL,
+
 	email_address varchar(255) DEFAULT '' NOT NULL,
 	email_title varchar(255) DEFAULT '' NOT NULL,
 	email_icon int(11) unsigned DEFAULT '0' NOT NULL,
