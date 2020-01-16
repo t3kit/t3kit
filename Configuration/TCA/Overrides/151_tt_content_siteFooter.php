@@ -42,6 +42,8 @@ $GLOBALS['TCA']['tt_content']['types']['siteFooter'] = [
             --palette--;;footerTop,
             --palette--;;footerMiddle,
             --palette--;;footerBottom,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+            image,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -82,7 +84,9 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerMiddle'] = array(
     'showitem' => '
       footerMiddle, --linebreak--,
       footerMiddleLogo, --linebreak--,
-      footerMiddleText, --linebreak--,
+      footerMiddleTextFirst, --linebreak--,
+      footerMiddleTextSecond, --linebreak--,
+      footerMiddleTextThird, --linebreak--,
 ',
 );
 
@@ -165,9 +169,35 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'footerMiddleText' => [
+    'footerMiddleTextFirst' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.footerMiddleText',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleTextFirst',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'text',
+            'enableRichtext' => true,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleTextSecond' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleTextSecond',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'text',
+            'enableRichtext' => true,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleTextThird' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleTextThird',
         'displayCond' => 'FIELD:footerMiddle:!=:0',
         'onChange' => 'reload',
         'config' => [

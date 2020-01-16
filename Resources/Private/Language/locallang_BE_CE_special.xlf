@@ -121,7 +121,15 @@
 			<trans-unit id="siteFooter.palette.footerMiddle">
 				<source>Site Footer Middle</source>
 			</trans-unit>
-
+			<trans-unit id="siteFooter.palette.middleTextFirst">
+				<source>First text block</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.palette.middleTextSecond">
+				<source>Second text block</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.palette.middleTextThird">
+				<source>Third text block</source>
+			</trans-unit>
 			<trans-unit id="siteFooter.palette.footerBottom">
 				<source>Site Footer Bottom</source>
 			</trans-unit>

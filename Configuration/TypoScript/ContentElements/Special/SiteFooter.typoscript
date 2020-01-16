@@ -29,6 +29,12 @@ tt_content.siteFooter {
       }
     }
 
+    30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    30 {
+      references.fieldName = image
+      as = image
+    }
+
     70 = T3k\t3kit\DataProcessing\FlexFormProcessor
     70 {
       fieldName = pi_flexform

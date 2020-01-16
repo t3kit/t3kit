@@ -25,24 +25,36 @@
         <f:if condition="{data.footerMiddle}">
           <div class="row align-items-center">
               <div class="col">
-                <!-- Logo -->
-                <f:if condition="{data.nav_logo}">
-                  <div class="footer__logo">
                     <f:if condition="{image}">
-                      <a href="/" title="Home" class="footer__logo-link">
-                        <f:for each="{image}" as="mediaItem" iteration="imageIteration">
-                          <f:if condition="{imageIteration.isFirst}">
-                            <f:render section="media" arguments="{_all}" />
-                          </f:if>
-                        </f:for>
-                      </a>
+                      <!-- Logo -->
+                      <div class="footer__logo">
+                        <f:then>
+                          <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                            <f:if condition="{imageIteration.isFirst}">
+                              <f:render section="imageType" arguments="{_all}" />
+                            </f:if>
+                          </f:for>
+                        </f:then>
+                      </div>
                     </f:if>
-                  </div>
+                <f:if condition="{data.footerMiddleTextFirst}">
+                    <!-- Text -->
+                    <f:format.html>{data.footerMiddleTextFirst}</f:format.html>
                 </f:if>
               </div>
-              <div class="col">
-                <!-- Text -->
-              </div>
+
+              <f:if condition="{data.footerMiddleTextSecond}">
+                  <div class="col">
+                    <!-- Text -->
+                    <f:format.html>{data.footerMiddleTextSecond}</f:format.html>
+                  </div>
+              </f:if>
+              <f:if condition="{data.footerMiddleTextThird}">
+                  <div class="col">
+                    <!-- Text -->
+                    <f:format.html>{data.footerMiddleTextThird}</f:format.html>
+                  </div>
+              </f:if>
               <div class="col">
                 <!-- Social Icon -->
               </div>
@@ -63,14 +75,24 @@
   </footer>
 </f:section>
 
-  <f:section name="media">
-    <f:media
-    file="{mediaItem}"
-    width="{data.logo_width}"
-    alt="{mediaItem.alternative}"
-    title="{mediaItem.title}"
-    class="img-text-link__img img-responsive"
-    />
-  </f:section>
+<f:section name="imageType">
+  <f:if condition="{mediaItem.link}">
+    <f:then>
+      <f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
+        <f:render section="media" arguments="{_all}" />
+      </f:link.typolink>
+    </f:then>
+
+    <f:else>
+      <f:render section="media" arguments="{_all}" />
+    </f:else>
+
+  </f:if>
+</f:section>
+
+<f:section name="media">
+  <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
+    title="{mediaItem.title}" class="img-text-link__img img-responsive" />
+</f:section>
 
 </html>
