@@ -42,7 +42,7 @@ $GLOBALS['TCA']['tt_content']['types']['siteFooter'] = [
             --palette--;;footerTop,
             --palette--;;footerMiddle,
             --palette--;;footerBottom,
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.logo,
             image,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
@@ -83,7 +83,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerMiddle'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.palette.footerMiddle',
     'showitem' => '
       footerMiddle, --linebreak--,
-      footerMiddleLogo, --linebreak--,
       footerMiddleTextFirst, --linebreak--,
       footerMiddleTextSecond, --linebreak--,
       footerMiddleTextThird, --linebreak--,
