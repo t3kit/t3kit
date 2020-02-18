@@ -26,6 +26,7 @@ page {
     }
     partialRootPaths {
       0 = EXT:t3kit/Resources/Private/Partials/Page
+      20 = EXT:t3kit/Resources/Public/assets/production
       200 = {$page.fluidtemplate.partialRootPath}
     }
     layoutRootPaths {
@@ -36,3 +37,8 @@ page {
 }
 
 
+[applicationContext matches "#^Development#"]
+  page.10.partialRootPaths{
+    20 = EXT:t3kit/Resources/Public/assets/development
+  }
+[end]

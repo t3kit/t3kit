@@ -17,6 +17,6 @@ page.meta {
 
 // If [Development]
 // TYPO3 Development context and every its subcontext
-[applicationContext = Development*]
+[applicationContext matches "#^Development#"]
   page.meta.robots = noindex,nofollow
 [end]
