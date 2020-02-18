@@ -8,7 +8,7 @@ defined('TYPO3_MODE') || die();
 */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
-    'Configuration/TSconfig/Page/Import.tsconfig',
+    'Configuration/TSconfig/Import.tsconfig',
     't3kit'
 );
 
