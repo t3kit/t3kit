@@ -73,7 +73,7 @@
 				<source>Phone number title</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.phone_icon">
-				<source>Show Phone icon</source>
+				<source>topShow Phone icon</source>
 			</trans-unit>
 			<trans-unit id="siteHeader.phone_show_title">
 				<source>Show Phone title</source>
@@ -98,6 +98,54 @@
 				<source>Skip to main content text</source>
 			</trans-unit>
 
+			<!-- SiteFooter Element -->
+			<trans-unit id="siteFooter.title">
+				<source>Site Footer</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.description">
+				<source>Main footer of the site. Will be copied to all subpages.</source>
+			</trans-unit>
+
+			<!--SiteFooter Element TCA Overrides-->
+			siteFooter.showFooterMiddle
+			<trans-unit id="siteFooter.CType">
+				<source>Site Footer | (Footer of the site. Will be copied to all subpages)</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.tabs.settings">
+				<source>Site Footer Settings </source>
+			</trans-unit>
+			<trans-unit id="siteFooter.showFooterTop">
+				<source>Show footer top part section</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.palette.footerTop">
+				<source>Site Footer Top</source>
+			</trans-unit>
+
+			<trans-unit id="siteFooter.palette.footerMiddle">
+				<source>Site Footer Middle</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.showFooterMiddle">
+				<source>Show footer middle part section</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.middleTextFirst">
+				<source>First text block</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.middleTextSecond">
+				<source>Second text block</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.middleTextThird">
+				<source>Third text block</source>
+			</trans-unit>
+
+			<trans-unit id="siteFooter.palette.footerBottom">
+				<source>Site Footer Bottom</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.showFooterBottom">
+				<source>Show footer bottom part section</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

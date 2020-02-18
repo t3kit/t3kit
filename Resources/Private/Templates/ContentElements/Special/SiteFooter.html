@@ -1,0 +1,98 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Empty" />
+
+<f:section name="Main">
+
+  <footer class="footer">
+      <div class="container">
+        <!-- here should be list of pages, subscribe form, additional text -->
+        <f:if condition="{data.footerTop}">
+          <div class="row">
+              <!-- List of menus -->
+              <div class="col">
+
+              </div>
+              <!-- Sibscribe form & RTE text-->
+              <div class="col">
+
+              </div>
+
+              <!-- Force next columns to break to new line at md breakpoint and up -->
+              <div class="w-100 d-none d-md-bloc"></div>
+          </div>
+        </f:if>
+
+        <f:if condition="{data.footerMiddle}">
+          <div class="row align-items-center">
+              <div class="col">
+                    <f:if condition="{image}">
+                      <!-- Logo -->
+                      <div class="footer__logo">
+                        <f:then>
+                          <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                            <f:if condition="{imageIteration.isFirst}">
+                              <f:render section="imageType" arguments="{_all}" />
+                            </f:if>
+                          </f:for>
+                        </f:then>
+                      </div>
+                    </f:if>
+                <f:if condition="{data.footerMiddleTextFirst}">
+                    <!-- Text -->
+                    <f:format.html>{data.footerMiddleTextFirst}</f:format.html>
+                </f:if>
+              </div>
+
+              <f:if condition="{data.footerMiddleTextSecond}">
+                  <div class="col">
+                    <!-- Text -->
+                    <f:format.html>{data.footerMiddleTextSecond}</f:format.html>
+                  </div>
+              </f:if>
+              <f:if condition="{data.footerMiddleTextThird}">
+                  <div class="col">
+                    <!-- Text -->
+                    <f:format.html>{data.footerMiddleTextThird}</f:format.html>
+                  </div>
+              </f:if>
+              <div class="col">
+                <!-- Social Icon -->
+              </div>
+          </div>
+        </f:if>
+
+        <f:if condition="{data.footerBottom}">
+          <div class="row">
+              <div class="col align-self-start">
+                <!-- All rights reserved -->
+              </div>
+              <div class="col align-self-end">
+                <!-- Additional Links -->
+              </div>
+          </div>
+        </f:if>
+      </div>
+  </footer>
+</f:section>
+
+<f:section name="imageType">
+  <f:if condition="{mediaItem.link}">
+    <f:then>
+      <f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
+        <f:render section="media" arguments="{_all}" />
+      </f:link.typolink>
+    </f:then>
+
+    <f:else>
+      <f:render section="media" arguments="{_all}" />
+    </f:else>
+
+  </f:if>
+</f:section>
+
+<f:section name="media">
+  <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
+    title="{mediaItem.title}" class="img-text-link__img img-responsive" />
+</f:section>
+
+</html>

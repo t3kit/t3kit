@@ -1,0 +1,77 @@
+# ###########################
+# Insert records:
+# This element embeds other content elements.
+#
+# CType: siteHeader
+# ===========================
+tt_content.siteFooter =< lib.contentElement
+tt_content.siteFooter {
+  templateName = SiteFooter
+  dataProcessing {
+
+    # Main menu
+    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    20 {
+      as = mainNavigation
+      levels = 2
+      includeSpacer = 1
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_icon
+          as = nav_icon
+        }
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+          references.fieldName = nav_image
+          as = nav_image
+        }
+      }
+    }
+
+    30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    30 {
+      references.fieldName = image
+      as = image
+    }
+
+    70 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    70 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+
+
+    80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    80 {
+      as = site
+    }
+
+    90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    90 {
+      special = directory
+      special.value.field = pages
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = media
+        }
+        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        20 {
+          table = tt_content
+          pidInList.field = uid
+          orderBy = sorting
+          as = content
+          dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+              references.fieldName = image
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
