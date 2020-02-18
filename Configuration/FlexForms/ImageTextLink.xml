@@ -34,6 +34,7 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
 								</items>
 							</config>

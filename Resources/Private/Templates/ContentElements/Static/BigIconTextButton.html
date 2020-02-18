@@ -34,7 +34,7 @@
       </f:if>
 
       <f:if condition="{data.bodytext}">
-        <p class="big-icon-text-btn__p">{data.bodytext}</p>
+        <p class="big-icon-text-btn__p"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
       </f:if>
 
       <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">

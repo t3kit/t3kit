@@ -1,103 +1,84 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
-<f:section name="Header" />
-<f:section name="Main">
-  <!-- theme_t3kit: Templates/ContentElements/ImageTextLink.html [begin] -->
-  <div class="img-text-link__wrp">
-    <div
-      class="img-text-link {f:if(condition: settings.disableWholeAreaLink, then: '', else: '_whole-area-link')} {f:if(condition: '{settings.hoverEffect} == 0', then: '', else: '_hover-{settings.hoverEffect}')}">
-      <f:if condition="{image}">
-        <f:then>
-          <f:for each="{image}" as="mediaItem" iteration="imageIteration">
-            <f:if condition="{imageIteration.isFirst}">
-              <f:render section="imageType" arguments="{_all}" />
-            </f:if>
-          </f:for>
-        </f:then>
 
-        <f:else>
-          <f:if condition="{assets}">
-            <f:for each="{assets}" as="mediaItem" iteration="mediaIteration">
-              <f:if condition="{mediaIteration.isFirst}">
-                <f:render section="media" arguments="{_all}" />
-              </f:if>
-            </f:for>
-          </f:if>
-        </f:else>
+<f:section name="Header" />
+
+<f:section name="Main">
+  <f:if condition="{flexform.disableWholeAreaLink} == 1">
+    <f:then>
+      <f:render section="Content" arguments="{_all}" />
+    </f:then>
+    <f:else>
+      <f:link.typolink parameter="{data.link}">
+        <f:render section="Content" arguments="{_all}" />
+      </f:link.typolink>
+    </f:else>
+  </f:if>
+</f:section>
+
+<f:section name="Content">
+  <div class="img-text-link__wrp">
+    <div class="img-text-link{f:if(condition: '{flexform.hoverEffect} == 0', then: '', else: ' _hover-{flexform.hoverEffect}')}">
+      <f:if condition="{image}">
+        <f:comment><!-- don't link image if whole CE is linked --></f:comment>
+        <f:if condition="{image.0.link} && {flexform.disableWholeAreaLink} == 1">
+          <f:then>
+            <f:link.typolink title="{image.0.title}" class="img-text-link__img-link" parameter="{image.0.link}">
+              <f:render section="media" arguments="{_all}" />
+            </f:link.typolink>
+          </f:then>
+          <f:else>
+            <f:render section="media" arguments="{_all}" />
+          </f:else>
+        </f:if>
       </f:if>
+
       <f:if condition="{data.header}">
         <f:render partial="Header/Header" arguments="{
-        header: '{data.header}',
-        layout: '{data.header_layout}',
-        positionClass: 'img-text-link__header',
-        link: '',
-        uid: '{data.uid}',
-        default: 3
+          header: '{data.header}',
+          layout: '{data.header_layout}',
+          positionClass: 'img-text-link__header',
+          link: ''
         }" />
       </f:if>
+
       <f:if condition="{data.bodytext}">
-        <f:if condition="{settings.hoverEffect}">
+        <f:if condition="{flexform.hoverEffect}">
           <f:then>
             <f:comment>
               <!-- can't allow frontend-editing since js crops the text -->
             </f:comment>
-            <p class="img-text-link__p js__img-text-link">{data.bodytext}</p>
+            <p class="img-text-link__p js__img-text-link"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
           </f:then>
           <f:else>
-            <p class="img-text-link__p">
-              <core:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">{data.bodytext}
-              </core:contentEditable>
-            </p>
+            <p class="img-text-link__p"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
           </f:else>
         </f:if>
       </f:if>
-      <f:if condition="{data.header_link}">
-        <f:if condition="{data.subheader}">
-          <f:then>
-            <f:link.typolink parameter="{data.header_link}" title="{data.subheader}"
-              class="img-text-link__link {f:if(condition: settings.linkAsBtn, then: 'btn btn-default', else: '')}">
-              {data.subheader}</f:link.typolink>
-          </f:then>
-          <f:else>
-            <f:link.typolink parameter="{data.header_link}" title="{data.header}"
-              class="img-text-link__link {f:if(condition: settings.linkAsBtn, then: 'btn btn-default', else: '')}">
-              {data.header}</f:link.typolink>
-          </f:else>
-        </f:if>
+
+      <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">
+        <f:link.typolink
+          parameter="{data.link}"
+          class="icon-text-btn__link{f:if(condition: flexform.linkAsBtn, then: ' btn btn-default', else: '')}">
+            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
+        </f:link.typolink>
       </f:if>
-      <f:if condition="{settings.disableWholeAreaLink} == 0">
-        <f:if condition="{settings.hoverEffect} == 0">
-          <f:if condition="{data.subheader}">
-            <span
-              class="img-text-link__sham-link {f:if(condition: settings.linkAsBtn, then: 'btn btn-default', else: '')}"
-              aria-hidden="true">{data.subheader}</span>
-          </f:if>
-        </f:if>
+
+      <f:if condition="{flexform.disableWholeAreaLink} == 0 && flexform.hoverEffect} == 0">
+        <span
+          class="img-text-link__sham-link{f:if(condition: flexform.linkAsBtn, then: ' btn btn-default', else: '')}"
+          aria-hidden="true">
+            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
+        </span>
       </f:if>
     </div>
   </div>
-  <!-- theme_t3kit: Templates/ContentElements/ImageTextLink.html [end] -->
-</f:section>
-
-<f:section name="imageType">
-  <f:if condition="{mediaItem.link}">
-    <f:then>
-      <f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
-        <f:render section="media" arguments="{_all}" />
-      </f:link.typolink>
-    </f:then>
-
-    <f:else>
-      <f:render section="media" arguments="{_all}" />
-    </f:else>
-
-  </f:if>
 </f:section>
 
 <f:section name="media">
-  <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
-    title="{mediaItem.title}" class="img-text-link__img img-responsive" />
+  <f:media file="{image.0}" width="{data.imagewidth}" height="{data.imageheight}" alt="{image.0.alternative}"
+    title="{image.0.title}" class="img-text-link__img img-responsive" />
 </f:section>
 
 </html>
