@@ -1,0 +1,84 @@
+@use '../../variables' as v;
+
+.icon-text-btn__wrp {
+    position: relative;
+    overflow: auto;
+    padding: 0 15px;
+    margin: 0 -15px;
+}
+
+.icon-text-btn__icon {
+    padding: 10px;
+    border: 2px solid tint($main-color, 70%);
+    border-radius: 50%;
+    color: $main-color;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.icon-right .icon-text-btn__icon {
+    float: right;
+}
+
+.icon-text-btn {
+    padding: 20px 0 40px;
+}
+
+.icon-text-btn__link {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+        @include icons();
+
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 8px;
+        padding: 0 3px;
+        top: 1px;
+    }
+}
+
+.icon-text-btn__p {
+    margin-bottom: 18px;
+}
+
+.icon-text-btn__sham-link {
+    color: $main-color;
+
+    &:after {
+        @include icons();
+
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 8px;
+        padding: 0 3px;
+        top: 1px;
+    }
+}
+
+.icon-text-btn._whole-area-link .icon-text-btn__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 0;
+    text-indent: -9999px;
+    background: transparent;
+    border: none;
+    z-index: 2;
+}
+
+.frontend_editing .icon-text-btn._whole-area-link .icon-text-btn__link {
+    z-index: -1;
+}
+
+.icon-text-btn._whole-area-link:hover .icon-text-btn__link {
+    background-color: fade(#fff, 10%);
+}
+// =========================================================
+// =========================================================

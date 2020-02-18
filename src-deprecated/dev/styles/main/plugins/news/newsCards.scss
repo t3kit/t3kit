@@ -1,0 +1,49 @@
+// Cards
+
+.news-cards__item {
+    position: relative;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid $border-color;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+.news-cards__media-preview {
+    margin-bottom: 20px;
+}
+
+.news-cards__text {
+    padding: 0 15px;
+    color: $main-text-color;
+}
+
+.news-cards__author {
+    padding: 10px 15px;
+    background-color: darken($main-body-bg, 10%);
+}
+
+.news-cards__more-link {
+    padding: 12px 15px;
+}
+
+.news-cards__header h3 {
+    font-size: 22px;
+}
+
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
+    .news-cards__item {
+        height: 475px;
+    }
+
+    .news-cards__text {
+        height: 188px;
+        overflow: hidden;
+    }
+
+    .news-cards__author {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

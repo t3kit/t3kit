@@ -1,0 +1,56 @@
+@use '../../variables' as v;
+
+.logo-carousel {
+    height: 80px;
+    padding: 0 30px;
+}
+
+.logo-carousel__slide {
+    padding: 10px 30px;
+}
+
+.logo-carousel__img-wrp,
+.logo-carousel__link {
+    height: 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-carousel__img {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.logo-carousel__btn-next,
+.logo-carousel__btn-prev {
+    background: none;
+
+    @include icons();
+
+    color: $logo-carousel-control-color;
+    -moz-osx-font-smoothing: grayscale;
+    height: auto;
+    margin-top: -15px;
+    font-size: 30px;
+}

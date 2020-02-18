@@ -1,0 +1,89 @@
+@use '../../variables' as v;
+
+.social-icons {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 30px 0 20px;
+}
+
+.social-icons__item {
+    position: relative;
+    display: inline-block;
+    color: $social-icons-bg-color;
+    padding: 0 8px;
+    margin: 6px 10px;
+    transition: color 0.2s;
+
+    & > .icons {
+        position: relative;
+        font-size: 16px;
+        padding: 8px;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            // ios8 safari fix - only works in this order
+        }
+
+        &:after {
+            transition: border-color 0.2s;
+            content: '';
+            position: absolute;
+            height: 36px;
+            width: 36px;
+            border: 2px solid fade($social-icons-bg-color, 30%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            // ios8 safari fix - only works in this order
+        }
+    }
+
+    &:hover {
+        color: $social-icons-hover-color;
+
+        & > .icons:after {
+            border-color: fade($social-icons-hover-color, 50%);
+        }
+
+        // ie11 and edge fix for underline on icon - text-decoration has to be styled before it can be unstyled
+        @if ($link-hover-decoration != none) {
+            & > .icons:before {
+                text-decoration: $link-hover-decoration;
+            }
+
+            & > .icons:before {
+                text-decoration: none;
+            }
+        }
+        // end fix
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .social-icons__item {
+        margin: 0 8px 0 0;
+    }
+}
+
+.header-middle__social-icon .social-icons {
+    padding: 10px 0;
+}
+
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
+    .header-middle__social-icon .social-icons {
+        float: right;
+        width: auto;
+        text-align: right;
+        padding: 0 10px 0 0;
+        height: $header-middle-height;
+        line-height: $header-middle-height;
+    }
+}

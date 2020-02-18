@@ -1,0 +1,70 @@
+{
+  "name": "t3kit",
+  "version": "10.0.0",
+  "description": "Base theme for t3kit project. A TYPO3 website starterkit.",
+  "license": "GPL-2.0",
+  "authors": "t3kit Community",
+  "repository": "t3kit/t3kit",
+  "scripts": {
+    "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
+    "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
+    "lint-css": "stylelint 'theme/src/styles/**/*.{css,scss}' --cache --cache-location .cache/.stylelintcache",
+    "lint-all": "npm-run-all --parallel lint-config",
+    "test": "lint-all",
+    "dev": "gulp -f theme/config/gulpfile.js build",
+    "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
+    "build": "npm-run-all --parallel dev prod",
+    "start": "gulp -f theme/config/gulpfile.js"
+  },
+  "dependencies": {
+    "bootstrap": "4.4.1",
+    "jquery": "3.4.1",
+    "popper.js": "1.16.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "app-root-path": "^3.0.0",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "browserslist": "^4.8.6",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "dotenv": "^8.0.0",
+    "fibers": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-brotli": "^2.0.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.19.3",
+    "rollup-plugin-filesize": "^6.2.1",
+    "rollup-plugin-sizes": "^1.0.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "sass": "^1.25.0",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.1",
+    "stylelint": "^13.1.0",
+    "stylelint-config-sass-guidelines": "^7.0.0"
+  },
+  "peerDependencies": {},
+  "browserslist": [
+    "> 1.6% and last 2 versions",
+    "IOS >= 12 and > 0.5%"
+  ],
+  "standard": {
+    "ignore": [
+      "dist/",
+      "Resources/Public/"
+    ]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-sass-guidelines"
+  }
+}

@@ -27,41 +27,42 @@
     "dev-js-main": "npm-run-all js-lint dev-js-compile",
     "dev-js-compile": "rollup --config rollup.config.js",
     "watch-css": "nodemon --watch dev/styles/ --ext scss --exec  \"npm run dev-css-main\"",
-    "watch-js": "nodemon --watch dev/js/ --ext js --exec \"npm run dev-js-main\""
+    "watch-js": "nodemon --watch dev/js/ --ext js --exec \"npm run dev-js-main\"",
+    "done": "rollup --config",
+    "done2": "browser-sync start --server 'output'"
   },
   "browserslist": [
     "last 2 versions"
   ],
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1"
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "the-answer": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@rollup/plugin-inject": "^4.0.0",
+    "@rollup/plugin-node-resolve": "^6.0.0",
     "autoprefixer": "^9.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.26.7",
     "clean-css-cli": "^4.3.0",
     "dotenv": "^8.0.0",
     "glob": "^7.1.3",
     "http-server": "^0.11.1",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.0",
+    "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.3",
     "rollup": "^1.19.3",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "shelljs": "^0.8.3",
     "shx": "^0.3.2",
-    "standard": "11.0.1",
-    "stylelint": "^10.0.1",
-    "stylelint-config-standard": "^18.3.0",
-    "terser": "^4.1.2"
+    "standard": "^14.3.1",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "terser": "^4.4.3"
   },
-  "peerDependencies": {},
-  "engines": {
-    "node": ">=0.10.3 <0.12"
-  }
+  "peerDependencies": {}
 }

@@ -46,3 +46,9 @@ It includes:
 - [Composer](https://getcomposer.org/) >= v1.8.6
 
 ## Quick start
+
+
+## t3kit theme
+
+`npm start`
+`npm run start`
