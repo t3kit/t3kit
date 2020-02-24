@@ -8,18 +8,18 @@
     <!-- set button classes -->
   </f:comment>
   <f:variable name="btnClass">btn</f:variable>
-  <f:if condition="{settings.buttonStyle}">
-    <f:variable name="btnClass">{btnClass} {settings.buttonStyle}</f:variable>
+  <f:if condition="{flexform.buttonStyle}">
+    <f:variable name="btnClass">{btnClass} {flexform.buttonStyle}</f:variable>
   </f:if>
-  <f:if condition="{settings.buttonSize}">
-    <f:variable name="btnClass">{btnClass} {settings.buttonSize}</f:variable>
+  <f:if condition="{flexform.buttonSize}">
+    <f:variable name="btnClass">{btnClass} {flexform.buttonSize}</f:variable>
   </f:if>
-  <f:if condition="{settings.blockLevel}">
+  <f:if condition="{flexform.blockLevel}">
     <f:variable name="btnClass">{btnClass} btn-block</f:variable>
   </f:if>
 
-  <f:if condition="{data.header_link}">
-    <f:link.typolink parameter="{data.header_link}" class="{btnClass}">{data.header}</f:link.typolink>
+  <f:if condition="{data.link_title}">
+    <f:link.typolink parameter="{data.link}" class="{btnClass}">{data.link_title}</f:link.typolink>
   </f:if>
   <!-- theme_t3kit: Templates/ContentElements/Button.html [end] -->
 </f:section>
