@@ -65,9 +65,9 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
  */
 $GLOBALS['TCA']['tt_content']['palettes']['quote'] = array(
     'showitem' => '
-        custom_header;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.author,
+        author_name;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.author,
         --linebreak--,
-        custom_subheader;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.cited_work,
+        work_title;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.cited_work,
         --linebreak--,
         bodytext;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.bodytext,
         --linebreak--,

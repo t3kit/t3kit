@@ -272,6 +272,27 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'author_name' => [
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'work_title' => [
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ]
+    ],
+]);
+
+
 
 
 $GLOBALS['TCA']['tt_content']['columns']['layout']['description'] =

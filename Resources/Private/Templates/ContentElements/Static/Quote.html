@@ -12,18 +12,16 @@
       <span class="quote__body-icon icons icon-t3-quoteMark" aria-hidden="true"></span>
     </div>
     <footer class="quote__footer">
-      <f:if condition="{headers.0}">
-        <span class="quote__footer-name">{headers.0}
-          <f:render section="nameSuffix" arguments="{title: headers.1, link: data.header_link}" /></span>
+      <f:if condition="{data.author_name}">
+        <span class="quote__footer-name">{data.author_name}<f:render section="nameSuffix" arguments="{title: data.work_title, link: data.link}" /></span>
       </f:if>
-      <f:if condition="{headers.1}">
-        <cite class="quote__footer-title" title="{headers.1}">{headers.1}
-          <f:render section="nameSuffix" arguments="{link: data.header_link}" />
+      <f:if condition="{data.work_title}">
+        <cite class="quote__footer-title" title="{data.work_title}">{data.work_title}<f:render section="nameSuffix" arguments="{link: data.link}" />
       </f:if>
-      <f:if condition="{data.header_link}">
-        <f:link.typolink parameter="{data.header_link}" class="quote__footer-link">{data.subheader}</f:link.typolink>
+      <f:if condition="{data.link}">
+        <f:link.typolink parameter="{data.link}" class="quote__footer-link">{data.link_title}</f:link.typolink>
       </f:if>
-      <f:if condition="{headers.1}">
+      <f:if condition="{data.work_title}">
         </cite>
       </f:if>
     </footer>
@@ -32,20 +30,7 @@
 </f:section>
 
 <!-- In one line to aviod an extra space before the comma sign-->
-<f:section name="nameSuffix">
-  <f:if condition="{title}">
-    <f:then>, </f:then>
-    <f:else>
-      <f:if condition="{link}">
-        <f:then>, </f:then>
-      </f:if>
-    </f:else>
-  </f:if>
-</f:section>
-<f:section name="titleSuffix">
-  <f:if condition="{link}">
-    <f:then>, </f:then>
-  </f:if>
-</f:section>
+<f:section name="nameSuffix"><f:if condition="{title}"><f:then>, </f:then><f:else><f:if condition="{link}"><f:then>, </f:then></f:if></f:else></f:if></f:section>
+<f:section name="titleSuffix"><f:if condition="{link}"><f:then>, </f:then></f:if></f:section>
 
 </html>
