@@ -14,6 +14,9 @@ namespace T3kit\themeT3kit\ViewHelpers;
  * The TYPO3 project - inspiring people to share!
  */
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\FrontendEditing\ViewHelpers\ContentEditableViewHelper
+    as FrontendEditingContentEditableViewHelper;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
@@ -89,6 +92,14 @@ class ContentEditableViewHelper extends AbstractViewHelper
      */
     public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext)
     {
+        if (ExtensionManagementUtility::isLoaded('frontend_editing')) {
+            return FrontendEditingContentEditableViewHelper::renderStatic(
+                $arguments,
+                $renderChildrenClosure,
+                $renderingContext
+            );
+        }
+
         $content = $renderChildrenClosure();
         return $content;
     }
