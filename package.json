@@ -12,6 +12,8 @@
     "lint-editorconfig": "eclint check '**/*.{sh,yml,yaml,json,xml,xlf,html}' '!Resources/Public/**/*'",
     "lint-fix": "stylelint 'theme/src/styles/**/*.{css,scss}' --fix",
     "test": "npm-run-all --parallel lint-config lint-editorconfig",
+    "composer": "composer test",
+    "githook": "npm-run-all --parallel test composer",
     "dev": "gulp -f theme/config/gulpfile.js build",
     "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
     "build": "npm-run-all --parallel dev prod",
@@ -43,6 +45,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "husky": "^4.2.3",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.19.3",
@@ -72,6 +75,12 @@
       "selector-class-pattern": null,
       "order/properties-alphabetical-order": null,
       "selector-pseudo-element-colon-notation": "single"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run githook",
+      "pre-push": "npm run githook"
     }
   }
 }
