@@ -1,4 +1,5 @@
 <?php
+
 namespace T3kit\themeT3kit\ViewHelpers;
 
 /*
@@ -90,8 +91,11 @@ class ContentEditableViewHelper extends AbstractViewHelper
      *
      * @return string Rendered email link
      */
-    public static function renderStatic(array $arguments, \Closure $renderChildrenClosure, RenderingContextInterface $renderingContext)
-    {
+    public static function renderStatic(
+        array $arguments,
+        \Closure $renderChildrenClosure,
+        RenderingContextInterface $renderingContext
+    ) {
         if (ExtensionManagementUtility::isLoaded('frontend_editing')) {
             return FrontendEditingContentEditableViewHelper::renderStatic(
                 $arguments,

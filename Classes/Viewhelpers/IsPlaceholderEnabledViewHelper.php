@@ -1,5 +1,6 @@
 <?php
-namespace T3kit\themeT3kit\ViewHelpers;;
+
+namespace T3kit\themeT3kit\ViewHelpers;
 
 /*
  * This file is part of the TYPO3 CMS project.
