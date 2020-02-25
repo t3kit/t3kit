@@ -185,7 +185,7 @@
 				<source>Author name</source>
 			</trans-unit>
 			<trans-unit id="quote.cited_work">
-				<source>Title of cited work</source>
+				<source>Work title</source>
 			</trans-unit>
 			<trans-unit id="quote.bodytext">
 				<source>Quote</source>
