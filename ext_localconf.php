@@ -10,7 +10,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['t3kit'][] = 'T3kit\\t
  * ===========================
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TSconfig/Import.tsconfig">'
+    "@import 'EXT:t3kit/Configuration/TSconfig/Import.tsconfig'"
 );
 
 
