@@ -2,6 +2,8 @@
 
 defined('TYPO3_MODE') || die();
 
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['t3kit'][] = 'T3kit\\themeT3kit\\ViewHelpers';
+
 /*
  * ###########################
  * Add t3kit PageTS config
