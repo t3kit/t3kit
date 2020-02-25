@@ -46,5 +46,8 @@ jobs:
           node -v
           npm -v
 
+      - name: Install npm dependencies
+        run: npm ci
+
       - name: Run default npm lint tests
         run: npm test
