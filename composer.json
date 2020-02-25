@@ -62,10 +62,10 @@
     "sort-packages": true
   },
   "scripts": {
-    "lint-php": "build/vendor/bin/phpcs --colors",
-    "lint-typoscript": "build/vendor/bin/typoscript-lint --ansi",
-    "lint-yaml": "build/vendor/bin/yaml-linter --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
-    "lint-xml": "build/vendor/bin/xmllint --ansi --exclude=build/ .",
+    "lint-php": "phpcs --colors",
+    "lint-typoscript": "typoscript-lint --ansi",
+    "lint-yaml": "yaml-linter --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
+    "lint-xml": "xmllint --ansi --exclude=build/ .",
     "test": [
       "@lint-php",
       "@lint-yaml",

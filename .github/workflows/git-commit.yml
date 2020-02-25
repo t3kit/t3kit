@@ -1,0 +1,24 @@
+name: Commit Message Check
+# https://github.com/t3kit/.github/blob/master/CONTRIBUTING.md#coding-rules
+
+on: [pull_request]
+
+jobs:
+
+
+  check-commit-message:
+    name: Check Commit Message
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Commit Type
+        uses: gsactions/commit-message-checker@v1
+        with:
+          pattern: '/^(|\[(!!!)\])\[(FEATURE|BUGFIX|TASK|TEST|DOC|WIP)\] .+$'
+          error: 'Your first line has to contain a commit prefix like "[FEATURE|BUGFIX|TASK|TEST|DOC|WIP]".'
+
+      - name: Check Line Length
+        uses: gsactions/commit-message-checker@v1
+        with:
+          pattern: '^[^#].{74}'
+          error: 'The maximum line length of 74 characters is exceeded.'
