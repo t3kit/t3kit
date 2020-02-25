@@ -10,6 +10,7 @@
     "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
     "lint-css": "stylelint 'theme/src/styles/**/*.{css,scss}' --cache --cache-location .cache/.stylelintcache",
     "lint-all": "npm-run-all --parallel lint-config",
+    "lint-fix": "stylelint 'theme/src/styles/**/*.{css,scss}' --fix",
     "test": "lint-all",
     "dev": "gulp -f theme/config/gulpfile.js build",
     "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
@@ -65,6 +66,11 @@
     ]
   },
   "stylelint": {
-    "extends": "stylelint-config-sass-guidelines"
+    "extends": "stylelint-config-sass-guidelines",
+    "rules": {
+      "selector-class-pattern": null,
+      "order/properties-alphabetical-order": null,
+      "selector-pseudo-element-colon-notation": "single"
+    }
   }
 }
