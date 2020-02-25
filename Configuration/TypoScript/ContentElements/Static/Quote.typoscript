@@ -8,12 +8,6 @@ tt_content {
         fieldName = pi_flexform
         as = flexform
       }
-      30 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
-      30 {
-        fieldName = header
-        delimiter = ,
-        as = headers
-      }
       # "inherit" from lib.fluidContent
       // 800 < lib.contentElement.dataProcessing.800
       // 830 < lib.contentElement.dataProcessing.830
