@@ -66,7 +66,7 @@
     "lint-typoscript": "build/vendor/bin/typoscript-lint --ansi",
     "lint-yaml": "build/vendor/bin/yaml-linter --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
     "lint-xml": "build/vendor/bin/xmllint --ansi --exclude=build/ .",
-    "lint": [
+    "test": [
       "@lint-php",
       "@lint-yaml",
       "@lint-xml"

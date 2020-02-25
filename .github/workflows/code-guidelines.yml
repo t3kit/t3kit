@@ -13,17 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - run: npm install eclint
+      - run: npm install
 
-      - name: EditorConfig check
-        run: node_modules/eclint/bin/eclint.js check "**/*.{sh,yml,yaml,json,xml,xlf,html}"
+      - name: Run default npm tests
+        run: npm test
 
       - name: Install t3kit Composer dependencies
         uses: docker://composer:1.9
         with:
           args: "install"
 
-      - name: Run composer lint
+      - name: Run default Composer tests
         uses: docker://composer:1.9
         with:
-          args: "run-script lint"
+          args: "run-script test"
