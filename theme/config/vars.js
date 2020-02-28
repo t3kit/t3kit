@@ -1,11 +1,13 @@
-const dotenvs = require('dotenv').config({ path: '../../../../.env' })
+const dotenv = require('dotenv').config({ path: '../../../../../../.env' })
 const vars = module.exports = {}
 
 // set proxy to use with Browser-Sync
-const t3kitDefaultUrl = 'http://t3kit10.t3.localhost'
-if (dotenvs.error) {
-  vars.proxy = t3kitDefaultUrl
+const t3kitDefaultHost = 't3kit10.t3.localhost'
+if (dotenv.error) {
+  console.error('.env', dotenv)
+  vars.proxy = t3kitDefaultHost
 } else {
+  console.log('.env', dotenv)
   vars.proxy = process.env.COMPOSE_PROJECT_NAME
 }
 

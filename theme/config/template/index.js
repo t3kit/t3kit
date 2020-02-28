@@ -1,4 +1,5 @@
 const fs = require('fs')
+const fse = require('fs-extra')
 const fsPromises = fs.promises
 const vars = require('../vars')
 
@@ -18,9 +19,10 @@ if (process.env.NODE_ENV === 'production') {
 async function getFileList (dir) {
   let files
   try {
+    await fse.ensureDir(dir)
     files = await fsPromises.readdir(dir)
-  } catch (err) {
-    console.error('(getFileList) Error:', err)
+  } catch (error) {
+    console.error('(getFileList) Error:', error)
   }
 
   if (files !== undefined) {
