@@ -2,7 +2,7 @@
 @import 'bootstrap';
 
 // ===== content-elements =====
-// @use 'content-elements/header';
+@import 'content-elements/header';
 // @use 'content-elements/footer';
 @import 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';

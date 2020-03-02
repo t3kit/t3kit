@@ -48,8 +48,18 @@ $link-hover-decoration:                   underline;
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+$line-height-base:            1.5 !default;
 
-
+// Navbar
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$navbar-brand-font-size:            $font-size-lg !default;
+$nav-link-padding-y:                .5rem !default;
+$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
 
 // ==============================
 // Import Bootstrap default theme
