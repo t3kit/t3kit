@@ -72,7 +72,7 @@
   width: 100%;
   border-top: 1px solid $black;
   display: block;
-  padding: 0 16px;
+  padding: 0 10px;
   line-height: $nav-link-height;
   font-size: 18px;
   font-weight: $font-weight-semibold;
@@ -241,7 +241,7 @@
     position: relative;
     top: 0;
     // border-top: 1px solid $black;
-    border-top: 2px solid $blue;
+    border-top: 2px solid $black;
     // border-bottom: 2px solid $black;
     border-bottom: none;
     -webkit-transform: translate3d(0, 0, 0);
