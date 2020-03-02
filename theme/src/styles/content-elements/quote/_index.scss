@@ -10,24 +10,24 @@
 
 .quote__footer {
   padding-left: 70px;
-  color: v.$link-color;
+  color: $link-color;
 }
 
 .quote__footer-title {
-  color: v.$gray-700;
+  color: $gray-700;
 }
 
 .quote__body-p {
   padding: 26px 10px 26px 70px;
-  background: darken(v.$body-bg, 5%);
+  background: darken($body-bg, 5%);
   position: relative;
   font-size: 15px;
 }
 
 .quote__body-p:before {
-  border-top: 10px solid darken(v.$body-bg, 5%);
+  border-top: 10px solid darken($body-bg, 5%);
   border-left: 18px solid transparent;
-  border-right: 18px solid darken(v.$body-bg, 5%);
+  border-right: 18px solid darken($body-bg, 5%);
   border-bottom: 10px solid transparent;
   position: absolute;
   bottom: -21px;
@@ -39,7 +39,7 @@
   position: absolute;
   left: 18px;
   top: 16px;
-  color: v.$link-color;
+  color: $link-color;
 }
 
 .quote__body-icon:before {
