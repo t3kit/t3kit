@@ -96,7 +96,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['headerMiddle'] = array(
 $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.mainNavigation',
     'showitem' => '
-        --linebreak--,
+        mainNavigation, --linebreak--,
+        mainNavigationLogo, --linebreak--,
+        mainNavigationLangMenu, --linebreak--,
+        mainNavigationSearch, --linebreak--,
     ',
   );
 
@@ -124,6 +127,57 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
             ],
             'default' => 0,
         ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigationLogo' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.logo',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'default' => 0,
+            'items' => [
+                ['Show in all devices', 1],
+                ['Show in desktop', 2],
+                ['Show in mobile', 3],
+                ['Do not show', 0],
+            ],
+        ],
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigationLangMenu' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.language',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'default' => 0,
+            'items' => [
+                ['Show in all devices', 1],
+                ['Show in desktop', 2],
+                ['Show in mobile', 3],
+                ['Do not show', 0],
+            ],
+        ],
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigationSearch' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.search',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'default' => 1,
+            'items' => [
+                ['Show in all devices', 1],
+                ['Show in desktop', 2],
+                ['Show in mobile', 3],
+                ['Do not show', 0],
+            ],
+        ],
     ],
 ]);
 

@@ -79,8 +79,7 @@
       </div>
     </f:if>
 
-    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation}" />
-
+    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation, data: data}" />
 
   </header>
 </f:section>
@@ -91,10 +90,15 @@
 <f:section name="MainNavigation">
   <f:if condition="{mainNavigation}">
     <!-- t3kit: Main menu [begin] -->
-
     <nav id="main-navigation"
       class="main-navigation js__main-navigation">
       <div class="main-navigation__items-wrp js__navigation__items-wrp">
+        <f:if condition="{data.mainNavigationLogo} > 0">
+          <f:variable name="mainNavigationLogo"><f:spaceless><f:render section="getClassesFromOptions" arguments="{selectedOption: data.mainNavigationLogo}" /></f:spaceless></f:variable>
+          <div class="main-navigation__logo {mainNavigationLogo}">
+            <img src="">
+          </div>
+        </f:if>
         <ul class="main-navigation__items-list js__main-navigation__items-list ">
 
           <f:for each="{mainNavigation}" as="navItem">
@@ -167,5 +171,13 @@
   </f:if>
 </f:section>
 
+<f:section name="getClassesFromOptions">
+    <f:switch expression="{selectedOption}">
+      <f:case value="1">d-block</f:case>
+      <f:case value="2">d-none d-md-block</f:case>
+      <f:case value="3">d-none d-sm-block d-md-none</f:case>
+      <f:defaultCase>d-none</f:defaultCase>
+    </f:switch>
+</f:section>
 
 </html>
