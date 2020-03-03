@@ -57,7 +57,8 @@
     "snazzy": "^8.0.0",
     "standard": "^14.3.1",
     "stylelint": "^13.1.0",
-    "stylelint-config-sass-guidelines": "^7.0.0"
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-scss": "^3.14.2"
   },
   "peerDependencies": {},
   "browserslist": [
@@ -71,10 +72,8 @@
     ]
   },
   "stylelint": {
-    "extends": "stylelint-config-sass-guidelines",
+    "extends": "stylelint-config-standard-scss",
     "rules": {
-      "selector-class-pattern": null,
-      "order/properties-alphabetical-order": null,
       "selector-pseudo-element-colon-notation": "single"
     }
   },
