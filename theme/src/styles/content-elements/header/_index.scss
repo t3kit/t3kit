@@ -428,3 +428,11 @@
     display: none;
   }
 }
+
+// @media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
+  .main-navigation__items-wrp {
+    // max-width: $container-lg;
+    max-width: 1200px;
+  }
+}

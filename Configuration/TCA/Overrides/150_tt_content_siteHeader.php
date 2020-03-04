@@ -97,9 +97,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.mainNavigation',
     'showitem' => '
         mainNavigation, --linebreak--,
-        mainNavigationLogo, --linebreak--,
-        mainNavigationLangMenu, --linebreak--,
-        mainNavigationSearch, --linebreak--,
+        mainNavigationLogo, mainNavigationLangMenu, mainNavigationSearch, --linebreak--,
     ',
   );
 
@@ -134,16 +132,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'mainNavigationLogo' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.logo',
         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
             'default' => 0,
-            'items' => [
-                ['Show in all devices', 1],
-                ['Show in desktop', 2],
-                ['Show in mobile', 3],
-                ['Do not show', 0],
-            ],
-        ],
+        ]
     ],
 ]);
 
@@ -151,16 +143,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'mainNavigationLangMenu' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.language',
         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
             'default' => 0,
-            'items' => [
-                ['Show in all devices', 1],
-                ['Show in desktop', 2],
-                ['Show in mobile', 3],
-                ['Do not show', 0],
-            ],
-        ],
+        ]
     ],
 ]);
 
@@ -168,16 +154,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'mainNavigationSearch' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.search',
         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'default' => 1,
-            'items' => [
-                ['Show in all devices', 1],
-                ['Show in desktop', 2],
-                ['Show in mobile', 3],
-                ['Do not show', 0],
-            ],
-        ],
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
     ],
 ]);
 
