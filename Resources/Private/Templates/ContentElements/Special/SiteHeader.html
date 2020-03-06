@@ -65,11 +65,6 @@
           <f:if condition="{data.headerTopNavigation}">
             ------headerTopNavigation
           </f:if>
-          <div class="header-top__logo">
-            <img src="https://img.icons8.com/ios/50/000000/search--v1.png">
-            <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-          </div>
-
         </div>
       </div>
     </f:if>
@@ -78,14 +73,12 @@
     <f:if condition="{data.headerMiddle}">
       <div class="header-middle-wrp">
         <div class="header-middle">
-          <div class="container">
-            <div class="header-middle__logo" style="display: inline-block;">
-              <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
-            </div>
-            <div class="header-middle__search_language" style="float: right;">
-              <img src="https://img.icons8.com/ios/50/000000/search--v1.png">
-              <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-            </div>
+          <div class="header-middle__logo" style="display: inline-block;">
+            <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
+          </div>
+          <div class="header-middle__search_language" style="float: right;">
+            <img src="https://img.icons8.com/ios/50/000000/search--v1.png">
+            <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
           </div>
         </div>
       </div>
@@ -106,7 +99,7 @@
       class="main-navigation js__main-navigation">
       <div class="main-navigation__items-wrp js__navigation__items-wrp">
         <f:if condition="{data.mainNavigationLogo} > 0">
-          <div class="main-navigation__logo {data.mainNavigationLogo}"  style="display: inline-block;">
+          <div class="main-navigation__logo"  style="display: inline-block;">
             <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
           </div>
         </f:if>
@@ -133,23 +126,7 @@
 
         </ul>
         <f:if condition="{data.mainNavigationLangMenu} || {data.mainNavigationSearch}">
-          <div class="wrapper" style="float: right; background-color: #fff;">
-            <f:if condition="{data.mainNavigationLangMenu} > 0">
-              <div class="main-navigation__langMenu" style="display: inline-block;">
-                <img src="https://img.icons8.com/ios/50/000000/search--v1.png">
-              </div>
-            </f:if>
-            <f:if condition="{data.mainNavigationSearch} > 0">
-              <div class="main-navigation__search" style="display: inline-block;">
-                <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-              </div>
-            </f:if>
-            <f:if condition="{data.extraSpaceLib} > 0">
-              <div class="main-navigation__lib" style="display: inline-block;">
-                <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-              </div>
-            </f:if>
-          </div>
+          <f:render section="LanguageSearch" arguments="{mainNavigation: mainNavigation, data: data}" />
         </f:if>
         </div>
       </div>
@@ -201,10 +178,30 @@
     <!-- t3kit: LanguageNavigation [end] -->
   </f:if>
 </f:section>
+
+<f:section name="LanguageSearch">
+  <div class="wrapper" style="float: right; background-color: #fff;">
+    <f:if condition="{data.mainNavigationLangMenu} > 0">
+      <div class="main-navigation__langMenu" style="display: inline-block;">
+          <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+      </div>
+    </f:if>
+    <f:if condition="{data.mainNavigationSearch} > 0">
+      <div class="main-navigation__search" style="display: inline-block;">
+        <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
+      </div>
+    </f:if>
+    <f:if condition="{data.extraSpaceLib} > 0">
+      <div class="main-navigation__lib" style="display: inline-block;">
+        <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
+      </div>
+    </f:if>
+  </div>
+</f:section>
 <f:comment>
 <f:if condition="{data.mainNavigationLogo} > 0">
   <f:variable name="mainNavigationLogo"><f:spaceless><f:render section="getClassesFromOptions" arguments="{selectedOption: data.mainNavigationLogo}" /></f:spaceless></f:variable>
-  <div class="main-navigation__logo {mainNavigationLogo}">
+  <div class="main-navigation__logo">
     <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
   </div>
 </f:if>

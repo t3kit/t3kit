@@ -324,6 +324,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         ],
         'config' => [
             'type' => 'input',
+            'renderType' => 'inputLink',
             'size' => 50,
             'max' => 255,
             'eval' => 'trim',
