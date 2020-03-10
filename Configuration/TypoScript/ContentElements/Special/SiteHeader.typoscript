@@ -29,6 +29,12 @@ tt_content.siteHeader {
       }
     }
 
+    30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    30 {
+      references.fieldName = image
+      as = image
+    }
+
     # Language Navigation
     60 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
     60 {

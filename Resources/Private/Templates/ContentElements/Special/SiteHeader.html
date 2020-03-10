@@ -38,6 +38,7 @@
                 </f:if>
                 <f:link.typolink class="header-top__contact-tel-link" title="{data.phone_title}"
                   additionalAttributes="{aria-label: '{data.phone_title}'}" parameter="{data.phone_link}">
+                  {data.phone_text}
                   </f:link.typolink>
               </div>
               <div class="header-top__contact-email">
@@ -73,18 +74,39 @@
     <f:if condition="{data.headerMiddle}">
       <div class="header-middle-wrp">
         <div class="header-middle">
-          <div class="header-middle__logo" style="display: inline-block;">
-            <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
-          </div>
-          <div class="header-middle__search_language" style="float: right;">
-            <img src="https://img.icons8.com/ios/50/000000/search--v1.png">
-            <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-          </div>
+          <!-- Logo -->
+          <f:if condition="{data.headerMiddleLogo}">
+            <f:if condition="{image}">
+              <div class="header-middle__logo">
+                <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                  <f:if condition="{imageIteration.isFirst}">
+                    <f:render section="imageType" arguments="{_all}" />
+                  </f:if>
+                </f:for>
+              </div>
+            </f:if>
+          </f:if>
+          <f:if condition="{data.headerMiddleLangMenu} || {data.headerMiddleSearch}">
+            <div class="wrapper">
+              <f:if condition="{data.mainNavigationLangMenu}">
+                <div class="main-navigation__langMenu">
+                    <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+                </div>
+              </f:if>
+              <f:if condition="{data.mainNavigationSearch} > 0">
+                  <div class="header-middle__search-wrp" >
+                    <div class="header-middle__search-box" >
+                      <f:render section="Search" arguments="{data: data}" />
+                    </div>
+                  </div>
+              </f:if>
+            </div>
+          </f:if>
         </div>
       </div>
     </f:if>
 
-    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation, data: data}" />
+    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation, data: data, image: image, languageNavigation: languageNavigation}" />
 
   </header>
 </f:section>
@@ -98,10 +120,17 @@
     <nav id="main-navigation"
       class="main-navigation js__main-navigation">
       <div class="main-navigation__items-wrp js__navigation__items-wrp">
-        <f:if condition="{data.mainNavigationLogo} > 0">
-          <div class="main-navigation__logo"  style="display: inline-block;">
-            <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
-          </div>
+        <f:if condition="{data.mainNavigationLogo}">
+          <!-- Logo -->
+          <f:if condition="{image}">
+            <div class="main-navigation__logo">
+              <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                <f:if condition="{imageIteration.isFirst}">
+                  <f:render section="imageType" arguments="{_all}" />
+                </f:if>
+              </f:for>
+            </div>
+          </f:if>
         </f:if>
         <ul class="main-navigation__items-list js__main-navigation__items-list "  style="display: inline-block;">
 
@@ -126,9 +155,19 @@
 
         </ul>
         <f:if condition="{data.mainNavigationLangMenu} || {data.mainNavigationSearch}">
-          <f:render section="LanguageSearch" arguments="{mainNavigation: mainNavigation, data: data}" />
+          <div class="wrapper">
+            <f:if condition="{data.mainNavigationLangMenu}">
+              <div class="main-navigation__langMenu">
+                  <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+              </div>
+            </f:if>
+            <f:if condition="{data.mainNavigationSearch} > 0">
+              <div class="main-navigation__search">
+                  <f:render section="Search" arguments="{data: data}" />
+              </div>
+            </f:if>
+          </div>
         </f:if>
-        </div>
       </div>
     </nav>
 
@@ -179,25 +218,34 @@
   </f:if>
 </f:section>
 
-<f:section name="LanguageSearch">
-  <div class="wrapper" style="float: right; background-color: #fff;">
-    <f:if condition="{data.mainNavigationLangMenu} > 0">
-      <div class="main-navigation__langMenu" style="display: inline-block;">
-          <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
-      </div>
-    </f:if>
-    <f:if condition="{data.mainNavigationSearch} > 0">
-      <div class="main-navigation__search" style="display: inline-block;">
-        <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-      </div>
-    </f:if>
-    <f:if condition="{data.extraSpaceLib} > 0">
-      <div class="main-navigation__lib" style="display: inline-block;">
-        <img src="https://img.icons8.com/ios/50/000000/cross-flag.png">
-      </div>
-    </f:if>
+<f:section name="Search">
+  <div class="tx_solr">
+    <div class="tx-solr-searchbox">
+        Search
+    </div>
   </div>
 </f:section>
+
+<f:section name="imageType">
+  <f:if condition="{mediaItem.link}">
+    <f:then>
+      <f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
+        <f:render section="media" arguments="{_all}" />
+      </f:link.typolink>
+    </f:then>
+
+    <f:else>
+      <f:render section="media" arguments="{_all}" />
+    </f:else>
+
+  </f:if>
+</f:section>
+
+<f:section name="media">
+  <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
+    title="{mediaItem.title}" class="img-text-link__img img-fluid" />
+</f:section>
+
 <f:comment>
 <f:if condition="{data.mainNavigationLogo} > 0">
   <f:variable name="mainNavigationLogo"><f:spaceless><f:render section="getClassesFromOptions" arguments="{selectedOption: data.mainNavigationLogo}" /></f:spaceless></f:variable>

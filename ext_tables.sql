@@ -57,6 +57,9 @@ CREATE TABLE tt_content (
 
 
 	headerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
+	headerMiddleLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
+	headerMiddleLogo int(11) unsigned DEFAULT '0' NOT NULL,
+	headerMiddleSearch int(11) unsigned DEFAULT '0' NOT NULL,
 
 	mainNavigation int(11) unsigned DEFAULT '0' NOT NULL,
 	mainNavigationLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
