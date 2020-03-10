@@ -1,12 +1,11 @@
 page.headerData {
 
   // Fonts
-  // 150 = TEXT
-  // 150.value (
-  //     <!-- Fonts -->
-  //     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-  //     <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400italic' rel='stylesheet' type='text/css'>
-  // )
+  150 = TEXT
+  150.value (
+       <!-- Fonts -->
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" rel="stylesheet">
+ )
 
   # Favicons ==> http://realfavicongenerator.net/
   ####################################

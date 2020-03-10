@@ -43,6 +43,8 @@ $GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
             --palette--;;headerMiddle,
             --palette--;;mainNavigation,
             --palette--;;accessibility,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.logo,
+        image,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -90,13 +92,15 @@ $GLOBALS['TCA']['tt_content']['palettes']['headerMiddle'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.headerMiddle',
     'showitem' => '
         headerMiddle, --linebreak--,
+        headerMiddleLogo, headerMiddleLangMenu, headerMiddleSearch, --linebreak--,
 ',
 );
 
 $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.palette.mainNavigation',
     'showitem' => '
-        --linebreak--,
+        mainNavigation, --linebreak--,
+        mainNavigationLogo, mainNavigationLangMenu, mainNavigationSearch, --linebreak--,
     ',
   );
 
@@ -128,6 +132,39 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigationLogo' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.logo',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigationLangMenu' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.language',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'mainNavigationSearch' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.search',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerMiddle' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.showHeaderMiddle',
@@ -147,6 +184,40 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         ]
     ],
 ]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'headerMiddleLogo' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.logo',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'headerMiddleLangMenu' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.language',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'headerMiddleSearch' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.search',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'default' => 0,
+        ]
+    ],
+]);
+
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'headerTopContacts' => [
@@ -217,6 +288,14 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         ],
         'config' => [
             'type' => 'input',
+            'renderType' => 'inputLink',
+            'fieldControl' => [
+                'linkPopup' => [
+                    'options' => [
+                        'blindLinkOptions' => 'page, file, folder, url',
+                    ],
+                ],
+            ],
             'size' => 50,
             'max' => 255,
             'eval' => 'trim,email',
@@ -290,6 +369,14 @@ $GLOBALS['TCA']['tt_content']['palettes']['mainNavigation'] = array(
         ],
         'config' => [
             'type' => 'input',
+            'renderType' => 'inputLink',
+            'fieldControl' => [
+                'linkPopup' => [
+                    'options' => [
+                        'blindLinkOptions' => 'page, file, folder, mail, url',
+                    ],
+                ],
+            ],
             'size' => 50,
             'max' => 255,
             'eval' => 'trim',

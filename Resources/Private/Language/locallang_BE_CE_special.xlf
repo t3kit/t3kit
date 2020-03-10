@@ -87,8 +87,30 @@
 
 
 			<!-- Main Navigation -->
-
-
+			<trans-unit id="siteHeader.showNavigationMenu">
+				<source>Show Site Nagivation section</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.language">
+				<source>Language menu</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.showInDesktop">
+				<source>Show in desktop</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.showInMobile">
+				<source>Show in mobile</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.showAllDevices">
+				<source>Show for all devices</source>
+			</trans-unit>
+			<trans-unit id="siteHeader.doNotShow">
+				<source>Do not show</source>
+			</trans-unit>
 
 			<!-- Accessibility -->
 			<trans-unit id="siteHeader.skipLinks_mainNavigation">
