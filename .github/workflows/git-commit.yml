@@ -17,11 +17,3 @@ jobs:
           pattern: '^(|\[(!!!)\])\[(FEATURE|BUGFIX|TASK|TEST|DOC|WIP)\] .+$'
           flags: 'gm'
           error: 'Your first line has to contain a commit prefix like "[FEATURE|BUGFIX|TASK|TEST|DOC|WIP]".'
-
-
-      - name: Check Line Length
-        uses: gsactions/commit-message-checker@v1
-        with:
-          pattern: '^[^#].{74}'
-          flags: 'gm'
-          error: 'The maximum line length of 74 characters is exceeded.'
