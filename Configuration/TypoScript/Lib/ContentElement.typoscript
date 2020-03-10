@@ -31,5 +31,16 @@ lib.contentElement {
       as = background
     }
   }
+  variables {
+    backendlayout = TEXT
+    backendlayout {
+      data = pagelayout
+      replacement.10 {
+        search = pagets__
+        replace =
+      }
+      ifEmpty = default
+    }
+  }
 
 }

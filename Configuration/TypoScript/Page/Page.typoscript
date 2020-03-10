@@ -4,7 +4,7 @@ page {
   typeNum = 0
   10 = FLUIDTEMPLATE
   10 {
-    # this config borrowed from bootstrap_package (https://github.com/benjaminkott/bootstrap_package)
+    ### start ### this config borrowed from bootstrap_package (https://github.com/benjaminkott/bootstrap_package)
     templateName = TEXT
     templateName {
       cObject = TEXT
@@ -20,6 +20,7 @@ page {
       }
       ifEmpty = Default
     }
+    ### end
     templateRootPaths {
       0 = EXT:t3kit/Resources/Private/Templates/Page
       200 = {$page.fluidtemplate.templateRootPath}
@@ -33,6 +34,10 @@ page {
       0 = EXT:t3kit/Resources/Private/Layouts/Page
       200 = {$page.fluidtemplate.layoutRootPath}
     }
+    variables {
+      applicationcontext = TEXT
+      applicationcontext.value = production
+    }
   }
 }
 
@@ -41,4 +46,5 @@ page {
   page.10.partialRootPaths{
     20 = EXT:t3kit/Resources/Public/assets/development
   }
+  page.10.variables.applicationcontext.value = development
 [end]

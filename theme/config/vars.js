@@ -23,13 +23,18 @@ if (process.env.NODE_ENV === 'production') {
   vars.DIST = `${vars.DIST_ROOT}development/`
 }
 
-vars.JS_DIST = 'js/'
-vars.CSS_DIST = 'css/'
-vars.FONTS_DIST = 'fonts/'
-vars.FAVICONS_DIST = 'favicons/'
-vars.ICONS_DIST = 'icons/'
+vars.JS_DIST = 'Js/'
+vars.CSS_DIST = 'Css/'
+vars.FONTS_DIST = 'Fonts/'
+vars.FAVICONS_DIST = 'Favicons/'
+vars.ICONS_DIST = 'Icons/'
 
-vars.JS_LINK_DEV = '<script src="{f:uri.resource(path:"assets/development/js/%_file_%", extensionName: "{site.identifier}")}"></script>'
-vars.CSS_LINK_DEV = '<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:"assets/development/css/%_file_%", extensionName: "{site.identifier}")}"></link>'
-vars.JS_LINK_PROD = '<script src="{f:uri.resource(path:"assets/production/js/%_file_%", extensionName: "{site.identifier}")}"></script>'
-vars.CSS_LINK_PROD = '<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:"assets/production/css/%_file_%", extensionName: "{site.identifier}")}"></link>'
+// vars.JS_LINK_DEV = '<script src="{f:uri.resource(path:"assets/development/js/%_file_%", extensionName: "{site.identifier}")}"></script>'
+// vars.CSS_LINK_DEV = '<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:"assets/development/css/%_file_%", extensionName: "{site.identifier}")}"></link>'
+// vars.JS_LINK_PROD = '<script src="{f:uri.resource(path:"assets/production/js/%_file_%", extensionName: "{site.identifier}")}"></script>'
+// vars.CSS_LINK_PROD = '<link rel="stylesheet" type="text/css" href="{f:uri.resource(path:"assets/production/css/%_file_%", extensionName: "{site.identifier}")}"></link>'
+
+vars.JS_LINK_DEV = '<f:asset.script identifier="%_id_%" src="EXT:{site.configuration.theme}/Resources/Public/assets/development/js/%_file_%" />'
+vars.CSS_LINK_DEV = '<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/development/css/%_file_%" />'
+vars.JS_LINK_PROD = '<f:asset.script identifier="%_id_%" src="EXT:{site.configuration.theme}/Resources/Public/assets/production/js/%_file_%" />'
+vars.CSS_LINK_PROD = '<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/production/css/%_file_%" />'
