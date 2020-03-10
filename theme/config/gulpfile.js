@@ -1,3 +1,5 @@
+
+require('./check-node').checkNode()
 const { series, parallel } = require('gulp')
 const { clean } = require('./clean')
 const { compileCss, compileCssWatch } = require('./sass')

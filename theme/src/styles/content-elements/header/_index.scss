@@ -1,4 +1,25 @@
-@use '../../variables' as v;
+// =========================================================
+// !!! include media query inside the selector==============
+// =========================================================
+// Example:
+// @use '../../bootstrap/mixins' as mixin;
+// header {
+//   width: 200px;
+
+//   @include mixin.media-breakpoint-up(md) {
+//     width: 100px;
+//   }
+// }
+// =========================================================
+// =========================================================
+
+// use t3kit variables based on bootstrap variables
+// check "theme/src/styles/_variables.scss"
+@use '../../variables' as var;
+// use bootstrap mixins based on t3kit variable overrides
+// check "theme/src/styles/bootstrap/mixins/_index.scss"
+@use '../../bootstrap/mixins' as mixin;
+
 // ============================================================
 // Header top
 // ============================================================
@@ -13,24 +34,23 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 50px;
-  border-bottom: 2px solid $black;
+  border-bottom: 2px solid var.$black;
 }
 
-//@media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
-  .header-top-wrp {
-    z-index: 5000;
-    background: $white;
-  }
+.header-top-wrp {
+  @include mixin.media-breakpoint-up(lg) {
+      z-index: 5000;
+      background: var.$white;
+    }
 }
 
 .header-top {
-  background: $white;
+  background: var.$white;
   position: fixed;
   z-index: 5001;
   margin: 0 auto;
 
-  @include clearfix();
+  @include mixin.clearfix();
 
   font-size: 14px;
   width: 100%;
@@ -40,7 +60,7 @@
 }
 
 //@media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .header-top-wrp {
     padding-bottom: 0;
   }
@@ -54,7 +74,7 @@
 }
 
 //@media (min-width: $screen-lg-min) {
-@include media-breakpoint-up(xl) {
+@include mixin.media-breakpoint-up(xl) {
   .header-top {
     // max-width: $container-lg;
     max-width: 1200px;
@@ -64,7 +84,7 @@
 .header-top__contact {
   float: left;
   display: none;
-  color: $black;
+  color: var.$black;
 }
 
 .header-top__contact-tel {
@@ -74,7 +94,7 @@
 }
 
 .header-top__contact-tel-link {
-  color: lighten($blue, 15%);
+  color: lighten(var.$blue, 15%);
   padding-left: 2px;
 }
 
@@ -86,7 +106,7 @@
 }
 
 .header-top__contact-email-link {
-  color: lighten($blue, 15%);
+  color: lighten(var.$blue, 15%);
   padding-left: 2px;
 }
 
@@ -106,16 +126,16 @@
   display: inline-block;
   // line-height: 50px;
   line-height: 50;
-  color: $black; //$black;
+  color: var.$black; //var.$black;
 }
 
 .no-touch .header-top .nav > li > a:hover {
-  color: $gray-900;
+  color: var.$gray-900;
   background: transparent;
 }
 
 .header-top .nav li > a .icons {
-  color: lighten($blue, 15%);
+  color: lighten(var.$blue, 15%);
   font-size: 14px;
   position: relative;
   // top: 1px;
@@ -123,7 +143,7 @@
 }
 
 // @media (min-width: $screen-sm-min) {
-@include media-breakpoint-up(md) {
+@include mixin.media-breakpoint-up(md) {
   .header-top .nav {
     display: block;
   }
@@ -212,7 +232,7 @@
 }
 
 .main-navigation__toggle-btn {
-  background-color: $white;
+  background-color: var.$white;
 }
 
 .main-navigation__toggle-btn span {
@@ -236,7 +256,7 @@
 }
 
 .mobile-menu-opened .main-navigation__toggle-btn {
-  background-color: $white;
+  background-color: var.$white;
 }
 
 .mobile-menu-opened .main-navigation__toggle-btn span {
@@ -261,13 +281,13 @@
 }
 
 // @media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .main-navigation__toggle-btn {
       display: none;
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .header-top__contact {
     display: block;
   }
@@ -290,7 +310,7 @@
   padding: 0;
   position: absolute;
   top: 0;
-  background: $white;
+  background: var.$white;
   left: 0;
   right: 0;
   z-index: 4000;
@@ -299,16 +319,16 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid var.$black;
 
   //@media (min-width: $screen-md-min) {
-  @include media-breakpoint-up(sm) {
+  @include mixin.media-breakpoint-up(sm) {
     left: calc((100% - 970px) / 2);
     right: calc((100% - 970px) / 2);
   }
 
   //@media (min-width: $screen-lg-min) {
-  @include media-breakpoint-up(md) {
+  @include mixin.media-breakpoint-up(md) {
     left: calc((100% - 1170px) / 2);
     right: calc((100% - 1170px) / 2);
   }
@@ -325,7 +345,7 @@
   margin-top: -1px;
   right: 15px;
   margin-left: -11px;
-  background: $blue;
+  background: var.$blue;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -363,7 +383,7 @@
 }
 
 // @media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .header-top__language-menu-overlay {
     z-index: 1999;
   }
@@ -379,13 +399,13 @@
   display: inline-block;
   // line-height: 50px;
   line-height: 50px;
-  color: $black;
+  color: var.$black;
   font-size: 14px;
   padding: 0 15px;
 }
 
 .no-touch .header-top__language-menu-btn:hover {
-  color: fade($black, 50%);
+  color: fade(var.$black, 50%);
 }
 
 .header-top__language-menu-box-close-btn {
@@ -401,7 +421,7 @@
 }
 
 .header-top__language-menu-box-item {
-  color: fadein($black, 90%);
+  color: fadein(var.$black, 90%);
   font-size: 12px;
   padding: 8px 14px;
   display: block;
@@ -410,14 +430,14 @@
 
 .main-flag-language.flag-language {
   padding-left: 5px;
-  color: $blue;
+  color: var.$blue;
 }
 
 .no-touch .header-top__language-menu-box-item:hover {
-  color: $gray-900;
+  color: var.$gray-900;
 }
 
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .header-top__language-menu-box-item {
     display: inline-block;
     padding: 0 14px;
@@ -438,14 +458,14 @@
   position: relative;
   z-index: 2000;
   margin: 0 auto;
-  background: $white;
+  background: var.$white;
   width: 100%;
   height: auto;
   padding: 20px 0;
 }
 
 // @media (min-width: $screen-sm-min) {
-@include media-breakpoint-up(md) {
+@include mixin.media-breakpoint-up(md) {
   .header-middle-wrp {
       height: 130px;
       padding: 0;
@@ -455,13 +475,13 @@
 .header-middle {
   margin: 0 auto;
 
-  @include clearfix();
+  @include mixin.clearfix();
   // padding: 10px 0;
   height: 100%;
 }
 
 //@media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .header-middle-wrp {
       z-index: 2500;
   }
@@ -473,7 +493,7 @@
 }
 
 // @media (min-width: $screen-lg-min) {
-@include media-breakpoint-up(xl) {
+@include mixin.media-breakpoint-up(xl) {
   .header-middle {
       // max-width: $container-lg;
       max-width: 1200px;
@@ -503,7 +523,7 @@
 }
 
 // @media (min-width: $screen-sm-min) {
-@include media-breakpoint-up(md) {
+@include mixin.media-breakpoint-up(md) {
   .header-middle__logo {
     float: left;
     width: auto;
@@ -531,7 +551,7 @@
 .main-navigation-mobile__language-menu .header-top__language-menu .header-top__language-menu-box {
   width: auto;
   min-width: 150px;
-  background: $black;
+  background: var.$black;
   top: 1px;
 }
 
@@ -545,11 +565,11 @@
 
 .main-navigation .header-top__language-menu-box {
   height: 100%;
-  background-color: $white;
+  background-color: var.$white;
 }
 
 .main-navigation .header-top__language-menu-box .header-top__language-menu-box-item {
-  color: $black;
+  color: var.$black;
   line-height: 50px;
 }
 
@@ -558,7 +578,7 @@
 }
 
 .main-navigation__search-btn-wrp._header-top-search-btn {
-  background: $black;
+  background: var.$black;
   display: block;
 }
 
@@ -570,7 +590,7 @@
 ._header-top-search-btn .main-navigation__search-btn:before {
   width: 14px;
   height: 14px;
-  border: 2px solid $black; //$header-top-color;
+  border: 2px solid var.$black; //$header-top-color;
   margin-top: -8px;
   margin-left: -8px;
 }
@@ -580,7 +600,7 @@
   width: 6px;
   margin-top: 5px;
   margin-left: 3px;
-  background: $black; //$header-top-color;
+  background: var.$black; //$header-top-color;
 }
 
 ._header-top-search-btn .main-navigation__search-btn span:after,
@@ -588,13 +608,13 @@
   height: 2px;
   width: 20px;
   // margin-top: -2px;
-  background: $black; //$header-top-color;
+  background: var.$black; //$header-top-color;
 }
 
 ._header-top-search-btn.main-navigation__search-box {
   right: 0;
   box-shadow: inset 0 1px 0 #e2e3df, 0 2px 3px -1px rgba(0, 0, 0, 0.3);
-  border-top: 1px solid $black;
+  border-top: 1px solid var.$black;
   top: 50px;
   position: absolute;
   opacity: 0;
@@ -609,7 +629,7 @@
 }
 
 // @media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .main-navigation-mobile__language-menu .header-top__language-menu {
     display: none;
   }
@@ -636,12 +656,12 @@
 // Main navigation
 // ============================================================
 //@media (max-width: $screen-sm-max) {
-@include media-breakpoint-down(md) {
+@include mixin.media-breakpoint-down(md) {
   .mobile-menu-opened,
   .mobile-menu-opened body {
     overflow: hidden;
     // height: 100%;
-    background: $black;
+    background: var.$black;
   }
 }
 
@@ -651,14 +671,14 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: $black;
+  background: var.$black;
   z-index: 2000;
   max-height: 100%;
   min-height: 0;
 }
 
 //@media (max-width: $screen-sm-max) {
-@include media-breakpoint-down(md) {
+@include mixin.media-breakpoint-down(md) {
   .mobile-menu-opened .main-navigation {
     // position: absolute;
     position: fixed;
@@ -700,28 +720,28 @@
 }
 
 .main-navigation__item-link {
-  color: $white;
+  color: var.$white;
   width: 100%;
-  border-top: 1px solid $black;
+  border-top: 1px solid var.$black;
   display: block;
   padding: 0 10px;
-  line-height: $nav-link-height;
+  line-height: var.$nav-link-height;
   font-size: 18px;
-  font-weight: $font-weight-semibold;
+  font-weight: var.$font-weight-semibold;
   text-transform: uppercase;
 }
 
 .no-touch .main-navigation__item-link:hover {
-  background: $gray-900;
-  color: $white;
+  background: var.$gray-900;
+  color: var.$white;
 }
 
 ._active > .main-navigation__item-link {
-  color: $white;
+  color: var.$white;
 }
 
 .no-touch ._active > .main-navigation__item-link:hover {
-  color: $white;
+  color: var.$white;
 }
 
 .main-navigation__open-sub-menu-link {
@@ -734,10 +754,10 @@
   z-index: 2000;
   text-align: center;
   background: transparent;
-  border-top: 1px solid $black;
+  border-top: 1px solid var.$black;
   padding: 0;
   color: rgba(0, 0, 0, 0) !important;
-  line-height: $nav-link-height;
+  line-height: var.$nav-link-height;
   display: block;
   white-space: nowrap;
   margin: 0 auto;
@@ -745,7 +765,7 @@
 }
 
 .no-touch .main-navigation__open-sub-menu-link:hover {
-  background: $gray-900;
+  background: var.$gray-900;
 }
 
 .main-navigation__open-sub-menu-link:after,
@@ -758,7 +778,7 @@
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: $black;
+  background: var.$black;
   height: 2px;
   width: 16px;
   top: 50%;
@@ -793,7 +813,7 @@
   .main-navigation__item-link,
   .main-navigation__sub-item-link {
     &:focus {
-      color: $white;
+      color: var.$white;
     }
   }
 }
@@ -816,7 +836,7 @@
 }
 
 // @media (max-width: $screen-sm-max) {
-@include media-breakpoint-down(md) {
+@include mixin.media-breakpoint-down(md) {
   ._open-mobile-dropdown > .main-navigation__sub-item-list {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
@@ -826,7 +846,7 @@
   }
   //Set border-top for links on second navigation level if third navigation level is enabled
   .second-navigation-level ._sub > .main-navigation__sub-item-link {
-    border-top: 1px solid $black;
+    border-top: 1px solid var.$black;
   }
 }
 
@@ -838,20 +858,20 @@
   padding: 10px 30px 10px 60px;
   display: block;
   // color: lighten($white, 20%);
-  color: fade($white, 60%);
+  color: fade(var.$white, 60%);
 }
 
 .no-touch .main-navigation__sub-item-link:hover {
-  background: $gray-900;
-  color: fade($white, 60%);
+  background: var.$gray-900;
+  color: fade(var.$white, 60%);
 }
 
 ._active > .main-navigation__sub-item-link {
-  color: $white;
+  color: var.$white;
 }
 
 .no-touch ._active > .main-navigation__sub-item-link:hover {
-  color: $white;
+  color: var.$white;
 }
 // More padding for third level links
 .third-navigation-level .main-navigation__sub-item-link {
@@ -859,11 +879,11 @@
 }
 
 // @media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   .main-navigation {
     position: relative;
     top: 0;
-    border-top: 2px solid $black;
+    border-top: 2px solid var.$black;
     border-bottom: none;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -881,12 +901,12 @@
   }
 
   .main-navigation-fixed .header {
-    padding-bottom: $nav-link-height;
+    padding-bottom: var.$nav-link-height;
   }
 
   .main-navigation__items-wrp {
 
-    @include clearfix();
+    @include mixin.clearfix();
     //max-width: $container-md;
     max-width: 992px;
     margin: 0 auto;
@@ -895,21 +915,21 @@
     position: relative;
   }
 
-  @include media-breakpoint-up(xl) {
+  @include mixin.media-breakpoint-up(xl) {
     .main-navigation__items-wrp {
       max-width: 1200px;
     }
   }
 
   .main-navigation__items-list {
-    @include clearfix();
+    @include mixin.clearfix();
   }
 
   .main-navigation__items-list._right-pos {
     text-align: right;
 
     // @media (min-width: $screen-md-min) {
-    @include media-breakpoint-up(lg) {
+    @include mixin.media-breakpoint-up(lg) {
       .main-navigation__item {
         float: none;
         text-align: left;
@@ -937,10 +957,10 @@
     overflow: visible;
     top: 100%;
     left: 0;
-    background: $black;
+    background: var.$black;
     min-width: 200px;
     max-height: inherit;
-    border-top: 3px solid $white;
+    border-top: 3px solid var.$white;
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
   }
 
@@ -960,7 +980,7 @@
 }
 
 // @media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
+@include mixin.media-breakpoint-up(lg) {
   // Submenu by hover (devices without touch screen)
   .no-touch .main-navigation__item._sub:hover > .main-navigation__sub-item-list,
   .no-touch .main-navigation__sub-item._sub:hover > .main-navigation__sub-item-list {
@@ -978,14 +998,14 @@
     position: relative;
     font-size: 15px;
     top: 2px;
-    color: $gray-900;
+    color: var.$gray-900;
   }
   // Third menu arrow right
   .no-touch ._sub > .main-navigation__sub-item-link:after {
     //@include icons();
 
     content: '\e675';
-    color: $gray-900;
+    color: var.$gray-900;
     font-size: 15px;
     line-height: inherit;
     padding-left: 3px;
@@ -1019,10 +1039,10 @@
   .touch .main-navigation__item._sub .main-navigation__open-sub-menu-link:before {
     //@include icons();
     // content: "\e10f";
-    color: $gray-900;
+    color: var.$gray-900;
     position: relative;
     font-size: 30px;
-    line-height: $nav-link-height;
+    line-height: var.$nav-link-height;
     top: auto;
     left: auto;
     margin: 0;

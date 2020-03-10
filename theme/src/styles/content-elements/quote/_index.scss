@@ -1,4 +1,24 @@
-@use '../../variables' as v;
+// =========================================================
+// !!! include media query inside the selector==============
+// =========================================================
+// Example:
+// @use '../../bootstrap/mixins' as mixin;
+// header {
+//   width: 200px;
+
+//   @include mixin.media-breakpoint-up(md) {
+//     width: 100px;
+//   }
+// }
+// =========================================================
+// =========================================================
+
+// use t3kit variables based on bootstrap variables
+// check "theme/src/styles/_variables.scss"
+@use '../../variables' as var;
+// use bootstrap mixins based on t3kit variable overrides
+// check "theme/src/styles/bootstrap/mixins/_index.scss"
+@use '../../bootstrap/mixins' as mixin;
 
 .quote {
   padding: 0;
@@ -10,24 +30,28 @@
 
 .quote__footer {
   padding-left: 70px;
-  color: $link-color;
+  color: var.$link-color;
 }
 
 .quote__footer-title {
-  color: $gray-700;
+  color: var.$gray-700;
 }
 
 .quote__body-p {
   padding: 26px 10px 26px 70px;
-  background: darken($body-bg, 5%);
+  background: darken(var.$body-bg, 5%);
   position: relative;
   font-size: 15px;
+
+  @include mixin.media-breakpoint-up(md) {
+    font-size: 17px;
+  }
 }
 
 .quote__body-p:before {
-  border-top: 10px solid darken($body-bg, 5%);
+  border-top: 10px solid darken(var.$body-bg, 5%);
   border-left: 18px solid transparent;
-  border-right: 18px solid darken($body-bg, 5%);
+  border-right: 18px solid darken(var.$body-bg, 5%);
   border-bottom: 10px solid transparent;
   position: absolute;
   bottom: -21px;
@@ -39,16 +63,9 @@
   position: absolute;
   left: 18px;
   top: 16px;
-  color: $link-color;
+  color: var.$link-color;
 }
 
 .quote__body-icon:before {
   font-size: 42px;
-}
-
-// @media (min-width: $screen-sm-min) {
-@include media-breakpoint-up(md) {
-  .quote__body-p {
-    font-size: 17px;
-  }
 }

@@ -1,10 +1,13 @@
 // ===== bootstrap =====
-@import 'bootstrap';
+@use 'bootstrap';
+
+// ===== global =====
+@use 'global';
 
 // ===== content-elements =====
-@import 'content-elements/header';
+// @use 'content-elements/header';
 // @use 'content-elements/footer';
-@import 'content-elements/big-icon-text-button';
+@use 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';
 // @use 'content-elements/contacts-card';
 // @use 'content-elements/hero-image';
@@ -12,10 +15,9 @@
 // @use 'content-elements/image-text-link';
 // @use 'content-elements/logo-carousel';
 // @use 'content-elements/parallax';
-@import 'content-elements/quote';
+@use 'content-elements/quote';
 // @use 'content-elements/slider';
 // @use 'content-elements/social-icons';
-
 
 // ===== plugins =====
 // @use 'plugins/news/';
