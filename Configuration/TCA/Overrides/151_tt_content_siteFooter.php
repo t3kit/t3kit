@@ -82,13 +82,13 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerTop'] = array(
 $GLOBALS['TCA']['tt_content']['palettes']['footerMiddle'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.palette.footerMiddle',
     'showitem' => '
-      footerMiddle, --linebreak--,
-      footerMiddleFirstHeader, footerMiddleFirstLogo, --linebreak--,
-      footerMiddleFirstText, --linebreak--,
-      footerMiddleSecondHeader, footerMiddleThirdHeader, --linebreak--,
-      footerMiddleSecondLinks, footerMiddleThirdLinks, --linebreak--,
-      footerMiddleFourthHeader, footerMiddleFourthForm, --linebreak--,
-',
+        footerMiddle, --linebreak--,
+        footerMiddleFirstHeader, footerMiddleFirstLogo, --linebreak--,
+        footerMiddleFirstText, --linebreak--,
+        footerMiddleSecondHeader, footerMiddleThirdHeader, --linebreak--,
+        footerMiddleSecondLinks, footerMiddleThirdLinks, --linebreak--,
+        footerMiddleFourthHeader, footerMiddleFourthForm, --linebreak--,
+    ',
 );
 
 $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
