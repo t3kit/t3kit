@@ -4,6 +4,7 @@
 <f:section name="Main">
 
   <footer class="footer">
+      <f:debug>{_all}</f:debug>
       <div class="container">
         <!-- here should be list of pages, subscribe form, additional text -->
         <f:if condition="{data.footerTop}">
@@ -23,9 +24,9 @@
         </f:if>
 
         <f:if condition="{data.footerMiddle}">
-          <div class="row align-items-center">
-              <div class="col">
-                    <f:if condition="{image}">
+          <div class="row">
+              <div class="col col-sm-6 col-xl-4">
+                    <f:if condition="{image} && {data.footerMiddleFirstLogo}">
                       <!-- Logo -->
                       <div class="footer__logo">
                         <f:then>
@@ -37,27 +38,36 @@
                         </f:then>
                       </div>
                     </f:if>
-                <f:if condition="{data.footerMiddleTextFirst}">
-                    <!-- Text -->
-                    <f:format.html>{data.footerMiddleTextFirst}</f:format.html>
+                    <f:if condition="{data.footerMiddleFirstHeader}">
+                        <!--  -->
+                        <f:format.html>{data.footerMiddleFirstHeader}</f:format.html>
+                    </f:if>
+                    <f:if condition="{data.footerMiddleFirstText}">
+                        <!--  -->
+                        <f:format.html>{data.footerMiddleFirstText}</f:format.html>
+                    </f:if>
+              </div>
+              <div class="col col-sm-6 col-xl-4">
+                  <f:if condition="{data.footerMiddleSecondHeader}">
+                      <!-- Shourt cuts 1 -->
+                      <f:format.html>{data.footerMiddleSecondHeader}</f:format.html>
+                  </f:if>
+                <f:if condition="{data.footerMiddleSecondLinks}">
+                    <!-- Shourt cuts 1 -->
+                    <f:format.html>{data.footerMiddleSecondLinks}</f:format.html>
                 </f:if>
               </div>
-
-              <f:if condition="{data.footerMiddleTextSecond}">
-                  <div class="col">
-                    <!-- Text -->
-                    <f:format.html>{data.footerMiddleTextSecond}</f:format.html>
-                  </div>
-              </f:if>
               <f:if condition="{data.footerMiddleTextThird}">
-                  <div class="col">
-                    <!-- Text -->
+                  <div class="col col-sm-6 col-xl-4">
+                    <!-- Shourt cuts 2 -->
                     <f:format.html>{data.footerMiddleTextThird}</f:format.html>
                   </div>
               </f:if>
-              <div class="col">
-                <!-- Social Icon -->
-              </div>
+              <f:if condition="{data.subscribeForm}">
+                <div class="col col-sm-6 col-xl-4">
+                  <!-- Sibscribe form -->
+                </div>
+            </f:if>
           </div>
         </f:if>
 
@@ -69,6 +79,11 @@
               <div class="col align-self-end">
                 <!-- Additional Links -->
               </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4">
+              <!-- Social Icon -->
+            </div>
           </div>
         </f:if>
       </div>
@@ -92,7 +107,7 @@
 
 <f:section name="media">
   <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
-    title="{mediaItem.title}" class="img-text-link__img img-responsive" />
+    title="{mediaItem.title}" class="img-fluid" />
 </f:section>
 
 </html>

@@ -9,26 +9,6 @@ tt_content.siteFooter {
   templateName = SiteFooter
   dataProcessing {
 
-    # Main menu
-    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    20 {
-      as = mainNavigation
-      levels = 2
-      includeSpacer = 1
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
-          references.fieldName = nav_icon
-          as = nav_icon
-        }
-        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        20 {
-          references.fieldName = nav_image
-          as = nav_image
-        }
-      }
-    }
-
     30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     30 {
       references.fieldName = image
@@ -49,29 +29,17 @@ tt_content.siteFooter {
 
     90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     90 {
-      special = directory
+      special = list
       special.value.field = pages
+      levels = 7
+      entryLevel = 4
+      as = menu
       dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         10 {
           references.fieldName = media
         }
-        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-        20 {
-          table = tt_content
-          pidInList.field = uid
-          orderBy = sorting
-          as = content
-          dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-              references.fieldName = image
-            }
-          }
-        }
       }
     }
-
-
   }
 }

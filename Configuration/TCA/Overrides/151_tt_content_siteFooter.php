@@ -83,9 +83,11 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerMiddle'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.palette.footerMiddle',
     'showitem' => '
       footerMiddle, --linebreak--,
-      footerMiddleTextFirst, --linebreak--,
-      footerMiddleTextSecond, --linebreak--,
-      footerMiddleTextThird, --linebreak--,
+      footerMiddleFirstHeader, footerMiddleFirstLogo, --linebreak--,
+      footerMiddleFirstText, --linebreak--,
+      footerMiddleSecondHeader, footerMiddleThirdHeader, --linebreak--,
+      footerMiddleSecondLinks, footerMiddleThirdLinks, --linebreak--,
+      footerMiddleFourthHeader, footerMiddleFourthForm, --linebreak--,
 ',
 );
 
@@ -167,10 +169,40 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
     ],
 ]);
 
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'footerMiddleTextFirst' => [
+    'footerMiddleFirstHeader' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleTextFirst',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleFirstHeader',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 50,
+            'eval' => 'trim',
+        ]
+    ],
+]);
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleFirstLogo' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleFirstLogo',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleFirstText' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleFirstText',
         'displayCond' => 'FIELD:footerMiddle:!=:0',
         'onChange' => 'reload',
         'config' => [
@@ -181,27 +213,91 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'footerMiddleTextSecond' => [
+    'footerMiddleSecondHeader' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleTextSecond',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleSecondHeader',
         'displayCond' => 'FIELD:footerMiddle:!=:0',
         'onChange' => 'reload',
         'config' => [
-            'type' => 'text',
-            'enableRichtext' => true,
+            'type' => 'input',
+            'size' => 50,
+            'max' => 50,
+            'eval' => 'trim',
         ]
     ],
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'footerMiddleTextThird' => [
+    'footerMiddleSecondLinks' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleTextThird',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleSecondLinks',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'pages',
+            'size' => 3,
+            'maxitems' => 50,
+            'minitems' => 0
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleThirdHeader' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleThirdHeader',
         'displayCond' => 'FIELD:footerMiddle:!=:0',
         'onChange' => 'reload',
         'config' => [
-            'type' => 'text',
-            'enableRichtext' => true,
+            'type' => 'input',
+            'size' => 50,
+            'max' => 50,
+            'eval' => 'trim',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleThirdLinks' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleThirdLinks',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'pages',
+            'size' => 3,
+            'maxitems' => 50,
+            'minitems' => 0
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleFourthHeader' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleFourthHeader',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 50,
+            'eval' => 'trim',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerMiddleFourthForm' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.middleFourthForm',
+        'displayCond' => 'FIELD:footerMiddle:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
         ]
     ],
 ]);
