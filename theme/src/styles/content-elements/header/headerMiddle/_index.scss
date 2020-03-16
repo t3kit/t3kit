@@ -1,0 +1,89 @@
+// =========================================================
+// !!! include media query inside the selector==============
+// =========================================================
+// Example:
+// @use '../../bootstrap/mixins' as mixin;
+// header {
+//   width: 200px;
+
+//   @include mixin.media-breakpoint-up(md) {
+//     width: 100px;
+//   }
+// }
+// =========================================================
+// =========================================================
+
+// use t3kit variables based on bootstrap variables
+// check "theme/src/styles/_variables.scss"
+@use '../../../variables' as var;
+// use bootstrap mixins based on t3kit variable overrides
+// check "theme/src/styles/bootstrap/mixins/_index.scss"
+@use '../../../bootstrap/mixins' as mixin;
+// ============================================================
+// Header middle
+// ============================================================
+.header-middle-wrp {
+  position: relative;
+  z-index: 2000;
+  margin: 0 auto;
+  background: var.$white;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+
+  @include mixin.media-breakpoint-up(md) {
+    height: 130px;
+    padding: 0;
+  }
+
+  @include mixin.media-breakpoint-up(lg) {
+    z-index: 2500;
+  }
+}
+
+.header-middle {
+  margin: 0 auto;
+
+  @include mixin.clearfix();
+  // padding: 10px 0;
+  height: 100%;
+
+  @include mixin.media-breakpoint-up(lg) {
+    max-width: 992px;
+  }
+
+  @include mixin.media-breakpoint-up(xl) {
+    max-width: 1200px;
+  }
+}
+
+// =================================
+// Logo
+
+.header-middle__logo {
+  // float: left;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: block;
+  // height: $header-middle-height;
+
+  @include mixin.media-breakpoint-up(md) {
+    float: left;
+    width: auto;
+    text-align: left;
+  }
+}
+
+.header-middle__logo-link {
+  width: auto;
+  display: inline-block;
+  padding-top: 10px;
+
+  @include mixin.media-breakpoint-up(md) {
+    padding-top: 0;
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+}
