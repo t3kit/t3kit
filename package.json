@@ -14,6 +14,7 @@
     "test": "npm-run-all --parallel lint-config lint-editorconfig",
     "composer": "composer test",
     "githook": "npm-run-all --parallel test composer",
+    "favicons": "gulp -f theme/config/gulpfile.js favicons",
     "dev": "gulp -f theme/config/gulpfile.js build",
     "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
     "build": "npm-run-all --parallel dev prod",
@@ -31,23 +32,27 @@
     "boxen": "^4.2.0",
     "browser-sync": "^2.26.7",
     "browserslist": "^4.8.6",
+    "chalk": "^3.0.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "dotenv": "^8.2.0",
     "eclint": "^2.8.1",
     "fibers": "^4.0.2",
     "fs-extra": "^8.1.0",
+    "git-rev-sync": "^2.0.0",
     "gulp": "^4.0.2",
     "gulp-brotli": "^2.0.2",
     "gulp-gzip": "^1.4.2",
     "gulp-if": "^3.0.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-real-favicon": "^0.3.2",
     "gulp-rev": "^9.0.0",
     "gulp-rev-delete-original": "^0.2.3",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "husky": "^4.2.3",
+    "js-yaml": "^3.13.1",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.19.3",
@@ -87,5 +92,11 @@
       "pre-commit": "npm run githook",
       "pre-push": "npm run githook"
     }
+  },
+  "t3kit": {
+    "theme-name": "t3kit",
+    "typo3-site-config-dir": "t3kit",
+    "favicon-master-picture": "favicon.svg",
+    "proxy-host": "t3kit10.t3.localhost"
   }
 }

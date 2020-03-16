@@ -3,10 +3,10 @@ const rollup = require('rollup')
 const { terser } = require('rollup-plugin-terser')
 const sizes = require('rollup-plugin-sizes')
 const resolve = require('@rollup/plugin-node-resolve')
-const vars = require('../vars')
+const conf = require('../conf')
 
-const SRC = vars.JS_SRC
-const DIST = `${vars.DIST}${vars.JS_DIST}`
+const SRC = conf.JS_SRC
+const DIST = conf.JS_DIST
 
 // compile jQuery
 const jQueryInputOptions = {

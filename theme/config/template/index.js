@@ -1,19 +1,19 @@
 const fs = require('fs')
 const fse = require('fs-extra')
 const fsPromises = fs.promises
-const vars = require('../vars')
+const conf = require('../conf')
 
-const CSS_DIST = `${vars.DIST}${vars.CSS_DIST}`
-const JS_DIST = `${vars.DIST}${vars.JS_DIST}`
+const CSS_DIST = conf.CSS_DIST
+const JS_DIST = conf.JS_DIST
 
 let JS_LINK
 let CSS_LINK
 if (process.env.NODE_ENV === 'production') {
-  JS_LINK = vars.JS_LINK_PROD
-  CSS_LINK = vars.CSS_LINK_PROD
+  JS_LINK = conf.JS_LINK_PROD
+  CSS_LINK = conf.CSS_LINK_PROD
 } else {
-  JS_LINK = vars.JS_LINK_DEV
-  CSS_LINK = vars.CSS_LINK_DEV
+  JS_LINK = conf.JS_LINK_DEV
+  CSS_LINK = conf.CSS_LINK_DEV
 }
 
 async function getFileList (dir) {
