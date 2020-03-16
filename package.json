@@ -9,7 +9,7 @@
     "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
     "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
     "lint-css": "stylelint 'theme/src/styles/**/*.{css,scss}' --cache --cache-location .cache/.stylelintcache",
-    "lint-editorconfig": "eclint check '**/*.{sh,yml,yaml,json,xml,xlf,html}' '!Resources/Public/**/*'",
+    "lint-editorconfig": "eclint check '**/*.{sh,yml,yaml,json,xml,xlf,html}' '!Resources/Public/**/*' '!theme/.tmp/**/*'",
     "lint-fix": "stylelint 'theme/src/styles/**/*.{css,scss}' --fix",
     "test": "npm-run-all --parallel lint-config lint-editorconfig",
     "composer": "composer test",
@@ -89,8 +89,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run githook",
-      "pre-push": "npm run githook"
+      "pre-commit": "npm run githook"
     }
   },
   "t3kit": {

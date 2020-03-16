@@ -8,6 +8,8 @@ page.headerData {
  )
 
   # Favicons ==> http://realfavicongenerator.net/
+  # add imege theme/src/favicon/favicon.svg
+  # npm run favicons
   ####################################
   180 = FLUIDTEMPLATE
   180 {
@@ -16,7 +18,7 @@ page.headerData {
     file.stdWrap {
       data = site:identifier
       // debugFunc = 2
-      wrap = EXT: | /Resources/Private/Templates/Favicons.html
+      wrap = EXT: | /Resources/Public/assets/Favicons/Favicons.html
     }
     dataProcessing {
       110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
