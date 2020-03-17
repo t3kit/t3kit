@@ -4,107 +4,122 @@
 <f:section name="Main">
 
   <footer class="footer">
-      <f:debug>{_all}</f:debug>
-      <div class="container">
-        <!-- here should be list of pages, subscribe form, additional text -->
-        <f:if condition="{data.footerTop}">
-          <div class="row">
-              <!-- List of menus -->
-              <div class="col">
+    <div class="container">
+      <f:if condition="{data.footerTop}">
+        <div class="row">
+          <!-- List of menus -->
+          <div class="col">
 
-              </div>
-              <!-- Sibscribe form & RTE text-->
-              <div class="col">
-
-              </div>
-
-              <!-- Force next columns to break to new line at md breakpoint and up -->
-              <div class="w-100 d-none d-md-bloc"></div>
           </div>
-        </f:if>
+          <!-- Sibscribe form & RTE text-->
+          <div class="col">
 
-        <f:if condition="{data.footerMiddle}">
-          <div class="row">
-              <div class="col col-sm-6 col-xl-4">
-                    <f:if condition="{image} && {data.footerMiddleFirstLogo}">
-                      <!-- Logo -->
-                      <div class="footer__logo">
-                        <f:then>
-                          <f:for each="{image}" as="mediaItem" iteration="imageIteration">
-                            <f:if condition="{imageIteration.isFirst}">
-                              <f:render section="imageType" arguments="{_all}" />
-                            </f:if>
-                          </f:for>
-                        </f:then>
-                      </div>
-                    </f:if>
-                    <f:if condition="{data.footerMiddleFirstHeader}">
-                        <!--  -->
-                        <f:format.html>{data.footerMiddleFirstHeader}</f:format.html>
-                    </f:if>
-                    <f:if condition="{data.footerMiddleFirstText}">
-                        <!--  -->
-                        <f:format.html>{data.footerMiddleFirstText}</f:format.html>
-                    </f:if>
-              </div>
-              <div class="col col-sm-6 col-xl-4">
-                <!-- Shourt cuts 1 -->
-                <f:if condition="{data.footerMiddleSecondHeader}">
-                    <f:format.html>{data.footerMiddleSecondHeader}</f:format.html>
-                </f:if>
-                <f:if condition="{data.footerMiddleSecondLinks}">
-                    <f:if condition="{specialPages}">
-                      <ul>
-                        <f:for each="{specialPages.pages}" as="page">
-                          <li>
-                            <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )} title="{page.title}">
-                              <span>{page.title}</span>
-                            </a>
-                          </li>
-                        </f:for>
-                      </ul>
-                    </f:if>
-                    <f:format.html>{data.footerMiddleSecondLinks}</f:format.html> -->
-                </f:if>
-              </div>
-              <div class="col col-sm-6 col-xl-4">
-                <!-- Shourt cuts 2 -->
-                <f:if condition="{data.footerMiddleThirdHeader}">
-                  <f:format.html>{data.footerMiddleThirdHeader}</f:format.html>
-                </f:if>
-                <f:if condition="{data.footerMiddleThirdLinks}">
-                  <f:format.html>{data.footerMiddleThirdLinks}</f:format.html>
-                </f:if>
-              </div>
-              <div class="col col-sm-6 col-xl-4">
-                <f:if condition="{data.footerMiddleFourthHeader}">
-                  <!-- Sibscribe form -->
-                  <f:format.html>{footerMiddleFourthForm}</f:format.html>
-                </f:if>
-                <f:if condition="{data.footerMiddleFourthForm}">
-                  <!-- Sibscribe form -->
-                  <!-- <f:format.html>{data.footerMiddleFourthForm}</f:format.html> -->
-                </f:if>
-              </div>
           </div>
-        </f:if>
 
-        <f:if condition="{data.footerBottom}">
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-bloc"></div>
+        </div>
+      </f:if>
+
+      <f:if condition="{data.footerMiddle}">
+        <div class="footer-middle">
           <div class="row">
-              <div class="col align-self-start">
-                <!-- All rights reserved -->
-              </div>
-              <div class="col align-self-end">
-                <!-- Additional Links -->
-              </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-4">
-              <!-- Social Icon -->
+            <div class="col col-sm-6 col-xl-3">
+              <f:if condition="{image} && {data.footerMiddleFirstLogo}">
+                <!-- Logo -->
+                <div class="footer__logo">
+                  <f:then>
+                    <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                      <f:if condition="{imageIteration.isFirst}">
+                        <f:render section="imageType" arguments="{_all}" />
+                      </f:if>
+                    </f:for>
+                  </f:then>
+                </div>
+              </f:if>
+              <f:if condition="{data.footerMiddleFirstHeader}">
+                <!--  -->
+                <f:format.html>{data.footerMiddleFirstHeader}</f:format.html>
+              </f:if>
+              <f:if condition="{data.footerMiddleFirstText}">
+                <!--  -->
+                <f:format.html>{data.footerMiddleFirstText}</f:format.html>
+              </f:if>
+            </div>
+            <div class="col col-sm-6 col-xl-3">
+              <!-- Shourt cuts 1 -->
+              <f:if condition="{data.footerMiddleSecondHeader}">
+                <f:format.html>{data.footerMiddleSecondHeader}</f:format.html>
+              </f:if>
+              <f:if condition="{data.footerMiddleSecondLinks}">
+                <f:if condition="{menu}">
+                  <ul>
+                    <f:for each="{menu}" as="page">
+                      <li>
+                        <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
+                          title="{page.title}">
+                          <span>{page.title}</span>
+                        </a>
+                      </li>
+                    </f:for>
+                  </ul>
+                </f:if>
+                <f:format.html>{data.footerMiddleSecondLinks}</f:format.html>
+              </f:if>
+            </div>
+            <div class="col col-sm-6 col-xl-3">
+              <!-- Shourt cuts 2 -->
+              <f:if condition="{data.footerMiddleThirdHeader}">
+                <f:format.html>{data.footerMiddleThirdHeader}</f:format.html>
+              </f:if>
+              <f:if condition="{data.footerMiddleThirdLinks}">
+                <f:format.html>{data.footerMiddleThirdLinks}</f:format.html>
+              </f:if>
+            </div>
+            <div class="col col-sm-6 col-xl-3">
+              <f:if condition="{data.footerMiddleFourthHeader}">
+                <!-- Sibscribe form -->
+                <f:format.html>{footerMiddleFourthForm}</f:format.html>
+              </f:if>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="E-mail">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <f:if condition="{data.footerMiddleFourthForm}">
+                <!-- Sibscribe form -->
+                <!-- <f:format.html>{data.footerMiddleFourthForm}</f:format.html> -->
+              </f:if>
             </div>
           </div>
-        </f:if>
-      </div>
+        </div>
+      </f:if><!-- // end of footer-middle -->
+
+      <f:if condition="{data.footerBottom}">
+        <div class="footer-bottom">
+          <div class="link_wrap">
+            <!-- All rights reserved -->
+            <p>All rights reserved @ PIXELANT AB</p>
+            <!-- Additional Links -->
+            <a href="javascript:void(0)">PRIVACY POLICY</a>
+            <a href="javascript:void(0)">TERMS OF USE</a>
+            <a href="javascript:void(0)">COOKIES</a>
+          </div>
+          <div class="social-icon">
+            <!-- Social Icon -->
+            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+          </div>
+        </div>
+      </f:if>
+    </div>
   </footer>
 </f:section>
 

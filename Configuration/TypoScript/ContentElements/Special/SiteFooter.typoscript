@@ -28,9 +28,9 @@ tt_content.siteFooter {
 
     90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     90 {
-      as = specialPages
       levels = 4
       special = list
+      special.value = 123
       special.value.field = pages
       dataProcessing {
         90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
