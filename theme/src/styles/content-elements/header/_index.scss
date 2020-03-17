@@ -174,8 +174,12 @@
 }
 
 .main-navigation__search-btn-wrp._header-top-search-btn {
-  background: var.$black;
+  background: var.$white;
   display: block;
+
+  &:before {
+    border: 2px solid rgba(var.$black, 0.4);
+  }
 }
 
 ._header-top-search-btn .main-navigation__search-btn {
@@ -256,7 +260,7 @@
     position: absolute;
     height: 38px;
     width: 38px;
-    border: 2px solid fade(var.$black, 40%);
+    border: 2px solid rgba(var.$white, 0.4);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -298,7 +302,7 @@
 
 .main-navigation__search-btn:before {
   border-radius: 50%;
-  border: 2px solid var.$black;
+  border: 2px solid var.$white;
   width: 14px;
   height: 14px;
   top: 50%;
@@ -309,7 +313,7 @@
   @include mixin.media-breakpoint-up(md) {
     width: 14px;
     height: 14px;
-    border: 2px solid var.$black;
+    border: 2px solid var.$white;
     top: 50%;
     left: 50%;
     margin-top: -8px;
@@ -318,7 +322,7 @@
 }
 
 .main-navigation__search-btn:after {
-  background: var.$black;
+  background: var.$white;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   height: 2px;
@@ -335,7 +339,7 @@
     left: 50%;
     margin-top: 5px;
     margin-left: 3px;
-    background-color: var.$black;
+    background-color: var.$white;
   }
 }
 
@@ -504,8 +508,8 @@
 
 .header-middle__search-input {
   border-radius: 0;
-  border: 1px solid var.$gray-900;
-  background: var.$blue;
+  border: 1px solid rgba(var.$blue, 0.6);
+  background: var.$white;
   height: 44px;
   width: 100%;
   padding: 0 44px + 20px 0 20px;
@@ -551,4 +555,12 @@
   line-height: 44px;
   margin-left: 2px;
   display: block;
+}
+
+// header components
+.header-components,
+.header-middle__search,
+.main-navigation__langMenu,
+.main-navigation__search {
+  float: right;
 }
