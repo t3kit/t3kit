@@ -2,7 +2,18 @@
 
 <f:layout name="Default" />
 
+
+
 <f:section name="Main">
+
+
+  <f:comment>
+    <!-- Add additional page-specific JS and CSS assets if needed -->
+    <f:render partial="Css/Plugin1" arguments="{_all}" />
+    <f:render partial="Js/Plugin1" arguments="{_all}" />
+    <f:render partial="Js/Plugin2" arguments="{_all}" />
+  </f:comment>
+
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
@@ -18,8 +29,6 @@
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
 
-
-  <f:render partial="js/mainjs" arguments="{_all}" />
 </f:section>
 
 </html>

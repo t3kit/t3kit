@@ -8,11 +8,11 @@ const cssnano = require('cssnano')
 const gulpif = require('gulp-if')
 const rev = require('gulp-rev')
 const size = require('gulp-size')
-const vars = require('../vars')
+const conf = require('../conf')
 
 sass.compiler = require('sass')
-const SRC = vars.CSS_SRC
-const DIST = `${vars.DIST}${vars.CSS_DIST}`
+const SRC = conf.CSS_SRC
+const DIST = conf.CSS_DIST
 
 const postCssPlugins = [
   autoprefixer()

@@ -8,6 +8,8 @@ page.headerData {
  )
 
   # Favicons ==> http://realfavicongenerator.net/
+  # add imege theme/src/favicon/favicon.svg
+  # npm run favicons
   ####################################
   180 = FLUIDTEMPLATE
   180 {
@@ -16,7 +18,7 @@ page.headerData {
     file.stdWrap {
       data = site:identifier
       // debugFunc = 2
-      wrap = EXT: | /Resources/Private/Templates/Favicons.html
+      wrap = EXT: | /Resources/Public/assets/Favicons/Favicons.html
     }
     dataProcessing {
       110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
@@ -28,28 +30,28 @@ page.headerData {
 
   // # CSS
   ####################################
-  250 = FLUIDTEMPLATE
-  250 {
-    // file = EXT:t3kit/Resources/Private/Templates/Favicons.html
-    file = TEXT
-    file.stdWrap {
-      data = site:identifier
-      wrap = EXT: | /Resources/Public/assets/production/css/maincss.html
-    }
-    dataProcessing {
-      110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
-      110 {
-        as = site
-      }
-    }
-  }
+  // 250 = FLUIDTEMPLATE
+  // 250 {
+  //   // file = EXT:t3kit/Resources/Private/Templates/Favicons.html
+  //   file = TEXT
+  //   file.stdWrap {
+  //     data = site:identifier
+  //     wrap = EXT: | /Resources/Public/assets/production/css/maincss.html
+  //   }
+  //   dataProcessing {
+  //     110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+  //     110 {
+  //       as = site
+  //     }
+  //   }
+  // }
 }
 
 
 // If [Development]
 // TYPO3 Development context and every its subcontext
-[applicationContext matches "#^Development#"]
-  page.headerData.250.file.stdWrap {
-    wrap = EXT: | /Resources/Public/assets/development/css/maincss.html
-  }
-[end]
+// [applicationContext matches "#^Development#"]
+//   page.headerData.250.file.stdWrap {
+//     wrap = EXT: | /Resources/Public/assets/development/css/maincss.html
+//   }
+// [end]

@@ -1,7 +1,5 @@
 const bs = require('browser-sync').create()
-const vars = require('../vars')
-
-const DIST = `${vars.DIST}`
+const conf = require('../conf')
 
 function serve (cb) {
   bs.init({
@@ -10,12 +8,12 @@ function serve (cb) {
       target: 'localhost',
       reqHeaders: function () {
         return {
-          host: vars.proxy
+          host: conf.PROXY
         }
       }
     },
-    files: [DIST],
-    serveStatic: [DIST],
+    files: [conf.DIST],
+    serveStatic: [conf.DIST],
     port: 9001,
     ghostMode: false,
     open: false

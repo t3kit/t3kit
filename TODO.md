@@ -1,5 +1,5 @@
 # TODO
 
--
-- rename styles to scss
+- enable typoscript lint
+- rename styles folder to scss folder
 - remove TODO.md

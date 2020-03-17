@@ -1,19 +1,19 @@
 const fs = require('fs')
 const fse = require('fs-extra')
 const fsPromises = fs.promises
-const vars = require('../vars')
+const conf = require('../conf')
 
-const CSS_DIST = `${vars.DIST}${vars.CSS_DIST}`
-const JS_DIST = `${vars.DIST}${vars.JS_DIST}`
+const CSS_DIST = conf.CSS_DIST
+const JS_DIST = conf.JS_DIST
 
 let JS_LINK
 let CSS_LINK
 if (process.env.NODE_ENV === 'production') {
-  JS_LINK = vars.JS_LINK_PROD
-  CSS_LINK = vars.CSS_LINK_PROD
+  JS_LINK = conf.JS_LINK_PROD
+  CSS_LINK = conf.CSS_LINK_PROD
 } else {
-  JS_LINK = vars.JS_LINK_DEV
-  CSS_LINK = vars.CSS_LINK_DEV
+  JS_LINK = conf.JS_LINK_DEV
+  CSS_LINK = conf.CSS_LINK_DEV
 }
 
 async function getFileList (dir) {
@@ -38,9 +38,12 @@ async function addJsTemplate () {
     const files = await getFileList(JS_DIST)
     let link = ''
     files.forEach(async (fileName) => {
-      if (fileName.includes('jquery') || fileName.includes('main')) {
-        link += JS_LINK.replace('%_file_%', fileName) + '\n'
-        await fsPromises.writeFile(`${JS_DIST}mainjs.html`, link)
+      if (fileName.includes('jquery')) {
+        link = JS_LINK.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -3))
+        await fsPromises.writeFile(`${JS_DIST}Jquery.html`, link)
+      } else if (fileName.includes('main')) {
+        link = JS_LINK.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -3))
+        await fsPromises.writeFile(`${JS_DIST}Mainjs.html`, link)
       } else {
         let tmplName
         if (fileName.includes('-')) {
@@ -48,7 +51,8 @@ async function addJsTemplate () {
         } else {
           tmplName = fileName.split('.')[0]
         }
-        link = JS_LINK.replace('%_file_%', fileName)
+        tmplName = tmplName.charAt(0).toUpperCase() + tmplName.slice(1)
+        link = JS_LINK.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -3))
         await fsPromises.writeFile(`${JS_DIST}${tmplName}.html`, link)
       }
     })
@@ -63,8 +67,8 @@ async function addCssTemplate () {
     let link = ''
     files.forEach(async (fileName) => {
       if (fileName.includes('main')) {
-        link += CSS_LINK.replace('%_file_%', fileName) + '\n'
-        await fsPromises.writeFile(`${CSS_DIST}maincss.html`, link)
+        link = CSS_LINK.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -4))
+        await fsPromises.writeFile(`${CSS_DIST}Maincss.html`, link)
       } else {
         let tmplName
         if (fileName.includes('-')) {
@@ -72,7 +76,8 @@ async function addCssTemplate () {
         } else {
           tmplName = fileName.split('.')[0]
         }
-        link = CSS_LINK.replace('%_file_%', fileName)
+        tmplName = tmplName.charAt(0).toUpperCase() + tmplName.slice(1)
+        link = CSS_LINK.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -4))
         await fsPromises.writeFile(`${CSS_DIST}${tmplName}.html`, link)
       }
     })
@@ -80,6 +85,5 @@ async function addCssTemplate () {
     console.error('(addCssTemplate) Error:', error)
   }
 }
-
 exports.addJsTemplate = addJsTemplate
 exports.addCssTemplate = addCssTemplate
