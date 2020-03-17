@@ -24,36 +24,38 @@
       <f:if condition="{data.footerMiddle}">
         <div class="footer-middle">
           <div class="row">
-            <div class="col col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-lg-3">
               <f:if condition="{image} && {data.footerMiddleFirstLogo}">
                 <!-- Logo -->
-                <div class="footer__logo">
                   <f:then>
+                  <div class="footer__logo">
                     <f:for each="{image}" as="mediaItem" iteration="imageIteration">
                       <f:if condition="{imageIteration.isFirst}">
                         <f:render section="imageType" arguments="{_all}" />
                       </f:if>
                     </f:for>
+                  </div>
                   </f:then>
-                </div>
               </f:if>
               <f:if condition="{data.footerMiddleFirstHeader}">
                 <!--  -->
-                <f:format.html>{data.footerMiddleFirstHeader}</f:format.html>
+              <h4>{data.footerMiddleFirstHeader}</h4>
               </f:if>
               <f:if condition="{data.footerMiddleFirstText}">
                 <!--  -->
-                <f:format.html>{data.footerMiddleFirstText}</f:format.html>
+                <div class="footer__contacts">
+                  <f:format.html>{data.footerMiddleFirstText}</f:format.html>
+                </div>
               </f:if>
             </div>
-            <div class="col col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-lg-3">
               <!-- Shourt cuts 1 -->
               <f:if condition="{data.footerMiddleSecondHeader}">
-                <f:format.html>{data.footerMiddleSecondHeader}</f:format.html>
+                <h4>{data.footerMiddleSecondHeader}</h4>
               </f:if>
               <f:if condition="{data.footerMiddleSecondLinks}">
                 <f:if condition="{menu}">
-                  <ul>
+                  <ul class="footer__links">
                     <f:for each="{menu}" as="page">
                       <li>
                         <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
@@ -67,19 +69,26 @@
                 <f:format.html>{data.footerMiddleSecondLinks}</f:format.html>
               </f:if>
             </div>
-            <div class="col col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-lg-3">
               <!-- Shourt cuts 2 -->
               <f:if condition="{data.footerMiddleThirdHeader}">
-                <f:format.html>{data.footerMiddleThirdHeader}</f:format.html>
+                <h4>{data.footerMiddleThirdHeader}</h4>
               </f:if>
+              <ul class="footer__links">
+                <li>PRODUCTS</li>
+                <li>LOREM IPSUM DOLOR</li>
+                <li>SUPPORT</li>
+                <li>ABOUT US</li>
+                <li>LOREM IPSUM DOLOR</li>
+              </ul>
               <f:if condition="{data.footerMiddleThirdLinks}">
                 <f:format.html>{data.footerMiddleThirdLinks}</f:format.html>
               </f:if>
             </div>
-            <div class="col col-sm-6 col-xl-3">
+            <div class="col-sm-6 col-lg-3">
               <f:if condition="{data.footerMiddleFourthHeader}">
                 <!-- Sibscribe form -->
-                <f:format.html>{footerMiddleFourthForm}</f:format.html>
+                <h4>{footerMiddleFourthForm}</h4>
               </f:if>
               <form>
                 <div class="form-group">
@@ -102,7 +111,7 @@
 
       <f:if condition="{data.footerBottom}">
         <div class="footer-bottom">
-          <div class="link_wrap">
+          <div class="footer-bottom__links">
             <!-- All rights reserved -->
             <p>All rights reserved @ PIXELANT AB</p>
             <!-- Additional Links -->
@@ -110,12 +119,12 @@
             <a href="javascript:void(0)">TERMS OF USE</a>
             <a href="javascript:void(0)">COOKIES</a>
           </div>
-          <div class="social-icon">
+          <div class="social-icons">
             <!-- Social Icon -->
-            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="social-icons__item" href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="social-icons__item" href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="social-icons__item" href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="social-icons__item" href="javascript:void(0)"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
           </div>
         </div>
       </f:if>
