@@ -2,13 +2,12 @@
 # Insert records:
 # This element embeds other content elements.
 #
-# CType: siteHeader
+# CType: siteFooter
 # ===========================
 tt_content.siteFooter =< lib.contentElement
 tt_content.siteFooter {
   templateName = SiteFooter
   dataProcessing {
-
     30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     30 {
       references.fieldName = image
@@ -29,14 +28,13 @@ tt_content.siteFooter {
 
     90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     90 {
+      as = specialPages
+      levels = 4
       special = list
       special.value.field = pages
-      levels = 7
-      entryLevel = 4
-      as = menu
       dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
+        90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        90 {
           references.fieldName = media
         }
       }

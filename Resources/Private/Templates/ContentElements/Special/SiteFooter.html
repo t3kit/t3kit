@@ -48,26 +48,44 @@
                     </f:if>
               </div>
               <div class="col col-sm-6 col-xl-4">
-                  <f:if condition="{data.footerMiddleSecondHeader}">
-                      <!-- Shourt cuts 1 -->
-                      <f:format.html>{data.footerMiddleSecondHeader}</f:format.html>
-                  </f:if>
+                <!-- Shourt cuts 1 -->
+                <f:if condition="{data.footerMiddleSecondHeader}">
+                    <f:format.html>{data.footerMiddleSecondHeader}</f:format.html>
+                </f:if>
                 <f:if condition="{data.footerMiddleSecondLinks}">
-                    <!-- Shourt cuts 1 -->
-                    <f:format.html>{data.footerMiddleSecondLinks}</f:format.html>
+                    <f:if condition="{specialPages}">
+                      <ul>
+                        <f:for each="{specialPages.pages}" as="page">
+                          <li>
+                            <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )} title="{page.title}">
+                              <span>{page.title}</span>
+                            </a>
+                          </li>
+                        </f:for>
+                      </ul>
+                    </f:if>
+                    <f:format.html>{data.footerMiddleSecondLinks}</f:format.html> -->
                 </f:if>
               </div>
-              <f:if condition="{data.footerMiddleTextThird}">
-                  <div class="col col-sm-6 col-xl-4">
-                    <!-- Shourt cuts 2 -->
-                    <f:format.html>{data.footerMiddleTextThird}</f:format.html>
-                  </div>
-              </f:if>
-              <f:if condition="{data.subscribeForm}">
-                <div class="col col-sm-6 col-xl-4">
+              <div class="col col-sm-6 col-xl-4">
+                <!-- Shourt cuts 2 -->
+                <f:if condition="{data.footerMiddleThirdHeader}">
+                  <f:format.html>{data.footerMiddleThirdHeader}</f:format.html>
+                </f:if>
+                <f:if condition="{data.footerMiddleThirdLinks}">
+                  <f:format.html>{data.footerMiddleThirdLinks}</f:format.html>
+                </f:if>
+              </div>
+              <div class="col col-sm-6 col-xl-4">
+                <f:if condition="{data.footerMiddleFourthHeader}">
                   <!-- Sibscribe form -->
-                </div>
-            </f:if>
+                  <f:format.html>{footerMiddleFourthForm}</f:format.html>
+                </f:if>
+                <f:if condition="{data.footerMiddleFourthForm}">
+                  <!-- Sibscribe form -->
+                  <!-- <f:format.html>{data.footerMiddleFourthForm}</f:format.html> -->
+                </f:if>
+              </div>
           </div>
         </f:if>
 
