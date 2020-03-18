@@ -27,11 +27,28 @@ TCEFORM {
     header_position {
       removeItems = left
       addItems.justify = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify
-      // altLabels.. = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left
+      altLabels.. = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left
       altLabels.center = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center
       altLabels.right = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right
-
-
+    }
+    imageborder.disabled = 1
+    imageheight.disabled = 1
+    imagewidth.disabled = 1
+    imagecols.types {
+      image {
+        disabled = 1
+      }
+      media {
+        disabled = 1
+      }
+    }
+    imageorient.types {
+      image {
+        disabled = 1
+      }
+      media {
+        disabled = 1
+      }
     }
   }
 }
@@ -46,3 +63,65 @@ TCAdefaults.tt_content.header_layout = 1
 
 # header alignment (left by default)
 // TCAdefaults.tt_content.header_position = justify
+
+# ###################################
+# add cropVariants for images
+# ==================================
+TCEFORM.sys_file_reference.crop.config.cropVariants {
+  default {
+    title = Desktop
+    selectedRatio = NaN
+    allowedAspectRatios {
+      16:9 {
+        title = 16:9
+        value = 1.7777777778
+      }
+      4:3 {
+        title = 4:3
+        value = 1.3333333333
+      }
+      1:1 {
+        title = 1:1
+        value = 1.0
+      }
+      NaN {
+        title = Free
+        value = 0.0
+      }
+    }
+    cropArea {
+      x = 0
+      y = 0
+      width = 1
+      height = 1
+    }
+  }
+  mobile {
+    title = Mobile
+    selectedRatio = NaN
+    allowedAspectRatios {
+      16:9 {
+        title = 16:9
+        value = 1.7777777778
+      }
+      4:3 {
+        title = 4:3
+        value = 1.3333333333
+      }
+      1:1 {
+        title = 1:1
+        value = 1
+      }
+      NaN {
+        title = Free
+        value = 0.0
+      }
+    }
+    cropArea {
+      x = 0
+      y = 0
+      width = 1
+      height = 1
+    }
+  }
+}
