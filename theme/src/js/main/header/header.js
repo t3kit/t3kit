@@ -85,10 +85,15 @@ jQuery(function ($) {
     if (mobileMenuAnimationComplete) {
       mobileMenuAnimationComplete = false
       $html.toggleClass('mobile-menu-opened')
+    } else {
+      mobileMenuAnimationComplete = true;
+      $html.toggleClass('mobile-menu-opened')
     }
+    /* 
     $('.js__navigation__items-wrp').not(':animated').slideToggle(300, function () {
       mobileMenuAnimationComplete = true
     })
+    */
   })
 
   // detect if we cross 992px window width.
