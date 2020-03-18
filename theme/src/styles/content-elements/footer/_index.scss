@@ -25,7 +25,7 @@
 // =========================================================
 .footer {
   background: var.$blacklight;
-  padding-top: 140px;
+  padding: 140px 0 60px;
   font-family: var.$font-family-sans-serif;
   font-weight: var.$font-weight-medium;
   font-size: 14px;
@@ -51,7 +51,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-
 .footer h4 {
   font-size: 14px;
   text-transform: uppercase;
@@ -64,6 +63,7 @@
   &:hover,
   &:focus {
     color: var.$gray-500;
+    text-decoration: none;
   }
 }
 
@@ -71,16 +71,61 @@
   color: var.$gray-500;
 }
 
+@include mixin.media-breakpoint-down(md) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer p {
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+}
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 
-// === Footer Quick Links===========
+// =================================
+// === Footer Middle ===============
+// =================================
+
+.footer-middle {
+  border-bottom: 1px solid rgba(var.$white, 0.1);
+  margin-bottom: 40px;
+}
+
+@include mixin.media-breakpoint-down(md) {
+  .footer-middle .row > * {
+    margin-bottom: 67px;
+  }
+}
+
+@include mixin.media-breakpoint-between(sm, lg) {
+  .footer-middle .row > *:nth-child(1),
+  .footer-middle .row > *:nth-child(2) {
+    margin-bottom: 120px;
+  }
+}
+
+@include mixin.media-breakpoint-up(lg) {
+  .footer-middle {
+    margin-bottom: 50px;
+    padding-bottom: 83px;
+  }
+}
+
+// === Footer Logo===========
 // =================================
 
 .footer__logo {
   margin-bottom: 34px;
+
+  img {
+    max-width: 175px;
+  }
 }
 
+// === Footer Quick Links===========
+// =================================
 footer ul {
   list-style: none;
   padding-left: 0;
@@ -94,24 +139,81 @@ footer ul {
 // -----------------------------------------------------------------------------
 
 // =================================
-// === Footer Social-icons==========
+// === Footer Bottom ===============
 // =================================
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-// @media (min-width: $screen-md-min) {
-@include mixin.media-breakpoint-up(lg) {
-  .footer .social-icons {
-    padding: 0;
-    text-align: right;
+  .social-icons {
+    .social-icons__item {
+      color: var.$white;
+      margin-left: 50px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include mixin.media-breakpoint-down(lg) {
+    flex-direction: column;
+  }
+
+  @include mixin.media-breakpoint-up(lg) {
+    .social-icons {
+      padding: 0;
+      text-align: right;
+      flex-direction: column;
+    }
   }
 }
 
-.footer .social-icons {
-  .social-icons__item {
-    color: var.$white;
+.footer-bottom__links {
+  a {
+    position: relative;
+    margin-left: 20px;
+
+    &:after {
+      content: "";
+      background-color: #fff;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+
+  }
+
+  @include mixin.media-breakpoint-up(sm) {
+    & > * {
+      display: inline-block;
+    }
+  }
+
+  @include mixin.media-breakpoint-down(xs) {
+    a {
+      margin-left: 10px;
+      margin-right: 10px;
+      &:last-child:after {
+        display: none;
+      }
+
+      &:after {
+        left: auto;
+        right: -10px;
+      }
+    }
+  }
+
+  @include mixin.media-breakpoint-down(lg){
+    margin-bottom: 50px;
   }
 }
 
-.no-touch .footer .social-icons__item {
+.no-touch .footer-bottom .social-icons__item {
   &:hover {
     color: var.$gray-500;
 
@@ -125,72 +227,11 @@ footer ul {
 // -----------------------------------------------------------------------------
 
 // =================================
-// === Footer Bottom ===============
-// =================================
-.footer {
-  .footer-bottom__links a{
-    position: relative;
-    margin-left: 20px;
-
-    &:before {
-      content: '';
-      background-color: #fff;
-      width: 1px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: -10px;
-    }
-  }
-}
-
-
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// =================================
-// === Media =======================
-// =================================
-
-@include mixin.media-breakpoint-between(sm, lg) {
-  .footer-middle .row > *:nth-child(1),.footer-middle .row > *:nth-child(2) {
-    margin-bottom: 120px;
-  }
-}
-
-@include mixin.media-breakpoint-down(md) {
-  .footer {
-    text-align: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
-
-  .footer-middle .row > * {
-    margin-bottom: 67px;
-  }
-
-  .footer p {
-    line-height: 50px;
-    margin-bottom: 0;
-  }
-}
-
-@include mixin.media-breakpoint-up(lg) {
-  .footer-middle {
-    margin-bottom: 86px;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// =================================
 // === *Footer Form ===============
 // =================================
 .footer {
-  .form-control:focus, .form-control {
+  .form-control:focus,
+  .form-control {
     height: 56px;
     outline: none;
     border: none;
@@ -201,20 +242,24 @@ footer ul {
     padding: 17px 19px;
   }
 
-  .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: rgba(var.$white, .5);
+  .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(var.$white, 0.5);
   }
 
-  .form-control::-moz-placeholder { /* Firefox 19+ */
-    color: rgba(var.$white, .5);
+  .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(var.$white, 0.5);
   }
 
-  .form-control:-ms-input-placeholder { /* IE 10+ */
-    color: rgba(var.$white, .5);
+  .form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(var.$white, 0.5);
   }
 
-  .form-control:-moz-placeholder { /* Firefox 18- */
-    color: rgba(var.$white, .5);
+  .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(var.$white, 0.5);
   }
 
   .btn-primary {
