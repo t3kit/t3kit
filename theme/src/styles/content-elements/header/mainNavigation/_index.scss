@@ -37,6 +37,7 @@
     float: left;
     margin-right: 20px;
     width: auto;
+    line-height: var.$nav-link-height;
   }
 }
 
@@ -83,7 +84,7 @@
 .mobile-menu-opened .main-navigation {
   @include mixin.media-breakpoint-down(md) {
     position: fixed;
-    //top: 50px - 1px;
+    top: 50px - 1px;
     left: 0;
     right: 0;
     -webkit-overflow-scrolling: touch;
@@ -97,6 +98,7 @@
   @include mixin.media-breakpoint-down(md) {
     padding-bottom: 150px !important;
     overflow-y: auto;
+    display: block;
   }
 }
 
@@ -131,9 +133,14 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  float: left;
 
   @include mixin.media-breakpoint-up(lg) {
     @include mixin.clearfix();
+  }
+
+  @include mixin.media-breakpoint-down(md) {
+    float: none;
   }
 }
 

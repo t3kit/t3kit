@@ -155,7 +155,7 @@
             </div>
           </f:if>
         </f:if>
-        <ul class="main-navigation__items-list js__main-navigation__items-list "  style="display: inline-block;">
+        <ul class="main-navigation__items-list js__main-navigation__items-list ">
 
           <f:for each="{mainNavigation}" as="navItem">
             <li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
