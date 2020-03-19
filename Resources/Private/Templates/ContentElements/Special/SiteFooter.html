@@ -22,9 +22,9 @@
       </f:if>
 
       <f:if condition="{data.footerMiddle}">
-        <div class="footer-middle">
+        <div class="footer__middle">
           <div class="row">
-            <div class="col-sm-6 col-lg-3">
+            <div class="footer__middle-column col-sm-6 col-lg-3">
               <f:if condition="{image} && {data.footerMiddleFirstLogo}">
                 <!-- Logo -->
                   <f:then>
@@ -39,7 +39,7 @@
               </f:if>
               <f:if condition="{data.footerMiddleFirstHeader}">
                 <!--  -->
-              <h4>{data.footerMiddleFirstHeader}</h4>
+              <h4 class="footer__header">{data.footerMiddleFirstHeader}</h4>
               </f:if>
               <f:if condition="{data.footerMiddleFirstText}">
                 <!--  -->
@@ -48,16 +48,16 @@
                 </div>
               </f:if>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="footer__middle-column col-sm-6 col-lg-3">
               <!-- Shourt cuts 1 -->
               <f:if condition="{data.footerMiddleSecondHeader}">
-                <h4>{data.footerMiddleSecondHeader}</h4>
+                <h4 class="footer__header">{data.footerMiddleSecondHeader}</h4>
               </f:if>
               <f:if condition="{data.footerMiddleSecondLinks}">
                 <f:if condition="{menu}">
-                  <ul class="footer__links">
+                  <ul class="footer__links-list">
                     <f:for each="{menu}" as="page">
-                      <li>
+                      <li class="footer__links-item">
                         <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
                           title="{page.title}">
                           <span>{page.title}</span>
@@ -69,26 +69,26 @@
                 <f:format.html>{data.footerMiddleSecondLinks}</f:format.html>
               </f:if>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="footer__middle-column col-sm-6 col-lg-3">
               <!-- Shourt cuts 2 -->
               <f:if condition="{data.footerMiddleThirdHeader}">
-                <h4>{data.footerMiddleThirdHeader}</h4>
+                <h4 class="footer__header">{data.footerMiddleThirdHeader}</h4>
               </f:if>
-              <ul class="footer__links">
-                <li>PRODUCTS</li>
-                <li>LOREM IPSUM DOLOR</li>
-                <li>SUPPORT</li>
-                <li>ABOUT US</li>
-                <li>LOREM IPSUM DOLOR</li>
+              <ul class="footer__links-list">
+                <li class="footer__links-item">PRODUCTS</li>
+                <li class="footer__links-item">LOREM IPSUM DOLOR</li>
+                <li class="footer__links-item">SUPPORT</li>
+                <li class="footer__links-item">ABOUT US</li>
+                <li class="footer__links-item">LOREM IPSUM DOLOR</li>
               </ul>
               <f:if condition="{data.footerMiddleThirdLinks}">
                 <f:format.html>{data.footerMiddleThirdLinks}</f:format.html>
               </f:if>
             </div>
-            <div class="col-sm-6 col-lg-3">
+            <div class="footer__middle-column col-sm-6 col-lg-3">
               <f:if condition="{data.footerMiddleFourthHeader}">
                 <!-- Sibscribe form -->
-                <h4>{footerMiddleFourthForm}</h4>
+                <h4 class="footer__header">{footerMiddleFourthForm}</h4>
               </f:if>
               <form>
                 <div class="form-group">
@@ -139,7 +139,7 @@
 <f:section name="imageType">
   <f:if condition="{mediaItem.link}">
     <f:then>
-      <f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
+      <f:link.typolink title="{mediaItem.title}" class="footer__logo-link" parameter="{mediaItem.link}">
         <f:render section="media" arguments="{_all}" />
       </f:link.typolink>
     </f:then>
@@ -153,7 +153,7 @@
 
 <f:section name="media">
   <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
-    title="{mediaItem.title}" class="img-fluid" />
+    title="{mediaItem.title}" class="footer__logo-image img-fluid" />
 </f:section>
 
 </html>

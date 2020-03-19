@@ -20,9 +20,10 @@
 // check "theme/src/styles/bootstrap/mixins/_index.scss"
 @use '../../bootstrap/mixins' as mixin;
 
-// =========================================================
-// === Footer ==============================================
-// =========================================================
+
+// =================================
+// === Footer  =====================
+// =================================
 .footer {
   background: var.$blacklight;
   padding: 140px 0 60px;
@@ -32,111 +33,108 @@
   color: var.$white;
   -webkit-font-smoothing: antialiased;
   text-transform: uppercase;
-}
 
-.footer p {
-  line-height: 30px;
-  margin-bottom: 0;
-}
-
-.footer h1,
-.footer h2,
-.footer h3,
-.footer h4,
-.footer h5,
-.footer h6 {
-  color: var.$white;
-  font-weight: var.$font-weight-bolder;
-  letter-spacing: 0.2px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.footer h4 {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-.footer a {
-  transition: color 0.2s ease;
-  color: var.$white;
-
-  &:hover,
-  &:focus {
-    color: var.$gray-500;
-    text-decoration: none;
+  & p {
+    line-height: 30px;
+    margin-bottom: 0;
   }
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    color: var.$white;
+    font-weight: var.$font-weight-bolder;
+    letter-spacing: 0.2px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  & a {
+    transition: color 0.2s ease;
+    color: var.$white;
+
+    &:hover,
+    &:focus {
+      color: var.$gray-500;
+      text-decoration: none;
+    }
+  }
+
+  @include mixin.media-breakpoint-down(md) {
+    text-align: center;
+
+    & p {
+      line-height: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  // -----------------------------------------------------------------------------
+  // -----------------------------------------------------------------------------
+
+  // =================================
+  // === Footer Middle ===============
+  // =================================
+  &__middle {
+    border-bottom: 1px solid rgba(var.$white, 0.1);
+    margin-bottom: 40px;
+
+    &-column {
+      @include mixin.media-breakpoint-down(md) {
+        margin-bottom: 67px;
+      }
+
+      @include mixin.media-breakpoint-between(sm, lg) {
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-bottom: 120px;
+        }
+      }
+    }
+
+    @include mixin.media-breakpoint-up(lg) {
+      margin-bottom: 50px;
+      padding-bottom: 83px;
+    }
+  }
+
+  // === Footer Logo===========
+  // =================================
+
+  &__logo {
+    margin-bottom: 34px;
+
+    &-image {
+      max-width: 175px;
+    }
+  }
+
+  // === Footer Links===========
+  // =================================
+  &__links {
+    &-list {
+      list-style: none;
+      padding-left: 0;
+
+      &-item {
+        line-height: 50px;
+      }
+    }
+  }
+  // -----------------------------------------------------------------------------
+  // -----------------------------------------------------------------------------
 }
+
 
 .no-touch .footer a:hover {
   color: var.$gray-500;
 }
-
-@include mixin.media-breakpoint-down(md) {
-  .footer {
-    text-align: center;
-  }
-
-  .footer p {
-    line-height: 50px;
-    margin-bottom: 0;
-  }
-}
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// =================================
-// === Footer Middle ===============
-// =================================
-
-.footer-middle {
-  border-bottom: 1px solid rgba(var.$white, 0.1);
-  margin-bottom: 40px;
-}
-
-@include mixin.media-breakpoint-down(md) {
-  .footer-middle .row > * {
-    margin-bottom: 67px;
-  }
-}
-
-@include mixin.media-breakpoint-between(sm, lg) {
-  .footer-middle .row > *:nth-child(1),
-  .footer-middle .row > *:nth-child(2) {
-    margin-bottom: 120px;
-  }
-}
-
-@include mixin.media-breakpoint-up(lg) {
-  .footer-middle {
-    margin-bottom: 50px;
-    padding-bottom: 83px;
-  }
-}
-
-// === Footer Logo===========
-// =================================
-
-.footer__logo {
-  margin-bottom: 34px;
-
-  img {
-    max-width: 175px;
-  }
-}
-
-// === Footer Quick Links===========
-// =================================
-footer ul {
-  list-style: none;
-  padding-left: 0;
-
-  li {
-    line-height: 50px;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
 
 // =================================
 // === Footer Bottom ===============
