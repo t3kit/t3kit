@@ -26,12 +26,24 @@ tt_content.siteFooter {
       as = site
     }
 
-    90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    90 {
-      levels = 4
+    190 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    190 {
       special = list
-      special.value = 123
-      special.value.field = pages
+      special.value.field = footerMiddleSecondLinks
+      as = footerMiddleSecondLinks
+      dataProcessing {
+        90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        90 {
+          references.fieldName = media
+        }
+      }
+    }
+
+    193 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    193 {
+      special = list
+      special.value.field = footerMiddleThirdLinks
+      as = footerMiddleThirdLinks
       dataProcessing {
         90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
         90 {
