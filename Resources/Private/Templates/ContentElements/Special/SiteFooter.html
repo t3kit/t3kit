@@ -2,7 +2,7 @@
 <f:layout name="Empty" />
 
 <f:section name="Main">
-
+    <f:debug>{_all}</f:debug>
   <footer class="footer">
     <div class="container">
       <f:if condition="{data.footerTop}">
@@ -53,20 +53,17 @@
               <f:if condition="{data.footerMiddleSecondHeader}">
                 <h4 class="footer__header">{data.footerMiddleSecondHeader}</h4>
               </f:if>
-              <f:if condition="{data.footerMiddleSecondLinks}">
-                <f:if condition="{menu}">
-                  <ul class="footer__links-list">
-                    <f:for each="{menu}" as="page">
-                      <li class="footer__links-item">
-                        <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
+              <f:if condition="{footerMiddleSecondLinks}">
+                <ul class="footer__links-list">
+                  <f:for each="{footerMiddleSecondLinks}" as="page">
+                    <li class="footer__links-item">
+                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
                           title="{page.title}">
-                          <span>{page.title}</span>
-                        </a>
-                      </li>
-                    </f:for>
-                  </ul>
-                </f:if>
-                <f:format.html>{data.footerMiddleSecondLinks}</f:format.html>
+                        <span>{page.title}</span>
+                      </a>
+                    </li>
+                  </f:for>
+                </ul>
               </f:if>
             </div>
             <div class="footer__middle-column col-sm-6 col-lg-3">
@@ -90,15 +87,15 @@
                 <!-- Sibscribe form -->
                 <h4 class="footer__header">{footerMiddleFourthForm}</h4>
               </f:if>
-              <form>
+              <form class="footer__form">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                  <input type="text" class="foooter__form-input form-control" id="exampleInputPassword1" placeholder="Name">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <input type="email" class="foooter__form-input form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="E-mail">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="footer__btn btn btn-primary">Submit</button>
               </form>
               <f:if condition="{data.footerMiddleFourthForm}">
                 <!-- Sibscribe form -->
@@ -110,25 +107,27 @@
       </f:if><!-- // end of footer-middle -->
 
       <f:if condition="{data.footerBottom}">
-        <div class="footer-bottom">
-          <div class="footer-bottom__links">
+        <div class="footer__bottom">
+          <div class="footer__bottom-wrap">
             <!-- All rights reserved -->
-            <p>All rights reserved @ PIXELANT AB</p>
+            <p class="footer__bottom-copyright">All rights reserved @ PIXELANT AB</p>
             <!-- Additional Links -->
-            <a href="javascript:void(0)">PRIVACY POLICY</a>
-            <a href="javascript:void(0)">TERMS OF USE</a>
-            <a href="javascript:void(0)">COOKIES</a>
+            <ul class="footer__links-list footer__bottom-links">
+              <li class="footer__links-item footer__bottom-item"><a class="footer__bottom-link" href="javascript:void(0)">PRIVACY POLICY</a></li>
+              <li class="footer__links-item footer__bottom-item"><a class="footer__bottom-link" href="javascript:void(0)">TERMS OF USE</a></li>
+              <li class="footer__links-item footer__bottom-item"><a class="footer__bottom-link" href="javascript:void(0)">COOKIES</a></li>
+            </ul>
           </div>
-          <div class="social-icons">
+          <div class="footer__social-list">
             <!-- Social Icon -->
             <!-- <a class="social-icons__item" href="https://twitter.com/typo3" target="_blank" title="Twitter"><span class="icons icon-t3-twitter"></span></a>
             <a class="social-icons__item" href="https://www.linkedin.com/company/typo3-association" target="_blank" title="LinkedIn"><span class="icons icon-t3-linkedin"></span></a>
             <a class="social-icons__item" href="https://instagram.com/explore/tags/typo3/" target="_blank" title="Instagram"><span class="icons icon-t3-instagram"></span></a>
             <a class="social-icons__item" href="https://www.facebook.com/typo3" target="_blank" title="Facebook"><span class="icons icon-t3-facebook"></span></a> -->
-            <a class="social-icons__item" href="https://twitter.com/typo3" target="_blank" title="Twitter"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="social-icons__item" href="https://www.linkedin.com/company/typo3-association" target="_blank" title="LinkedIn"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="social-icons__item" href="https://instagram.com/explore/tags/typo3/" target="_blank" title="Instagram"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="social-icons__item" href="https://www.facebook.com/typo3" target="_blank" title="Facebook"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://twitter.com/typo3" target="_blank" title="Twitter"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://www.linkedin.com/company/typo3-association" target="_blank" title="LinkedIn"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://instagram.com/explore/tags/typo3/" target="_blank" title="Instagram"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://www.facebook.com/typo3" target="_blank" title="Facebook"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
           </div>
         </div>
       </f:if>
