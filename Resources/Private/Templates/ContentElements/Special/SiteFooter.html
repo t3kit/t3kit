@@ -71,28 +71,30 @@
               <f:if condition="{data.footerMiddleThirdHeader}">
                 <h4 class="footer__header">{data.footerMiddleThirdHeader}</h4>
               </f:if>
-              <ul class="footer__links-list">
-                <li class="footer__links-item">PRODUCTS</li>
-                <li class="footer__links-item">LOREM IPSUM DOLOR</li>
-                <li class="footer__links-item">SUPPORT</li>
-                <li class="footer__links-item">ABOUT US</li>
-                <li class="footer__links-item">LOREM IPSUM DOLOR</li>
-              </ul>
-              <f:if condition="{data.footerMiddleThirdLinks}">
-                <f:format.html>{data.footerMiddleThirdLinks}</f:format.html>
+              <f:if condition="{footerMiddleThirdLinks}">
+                <ul class="footer__links-list">
+                  <f:for each="{footerMiddleThirdLinks}" as="page">
+                    <li class="footer__links-item">
+                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
+                          title="{page.title}">
+                        <span>{page.title}</span>
+                      </a>
+                    </li>
+                  </f:for>
+                </ul>
               </f:if>
             </div>
             <div class="footer__middle-column col-sm-6 col-lg-3">
               <f:if condition="{data.footerMiddleFourthHeader}">
                 <!-- Sibscribe form -->
-                <h4 class="footer__header">{footerMiddleFourthForm}</h4>
+                <h4 class="footer__header">{data.footerMiddleFourthHeader}</h4>
               </f:if>
               <form class="footer__form">
                 <div class="form-group">
-                  <input type="text" class="foooter__form-input form-control" id="exampleInputPassword1" placeholder="Name">
+                  <input type="text" class="footer__form-input form-control" id="exampleInputPassword1" placeholder="Name">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="foooter__form-input form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <input type="email" class="footer__form-input form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="E-mail">
                 </div>
                 <button type="submit" class="footer__btn btn btn-primary">Submit</button>

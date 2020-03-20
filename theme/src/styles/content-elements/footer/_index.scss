@@ -137,7 +137,7 @@
     outline: none;
     border: none;
     border-radius: 0;
-    background-color: var.$grey;
+    background-color: rgba(var.$grey, 0.5);
     color: var.$white;
     box-shadow: none;
     padding: 17px 19px;
@@ -219,20 +219,32 @@
       @include mixin.media-breakpoint-down(md) {
         margin-bottom: 50px;
       }
+      @include mixin.media-breakpoint-down(sm) {
+        flex-wrap: wrap;
+      }
     }
 
     &-links {
       margin-bottom: 0;
+      @include mixin.media-breakpoint-down(sm) {
+        width: 100%;
+      }
     }
 
     &-copyright {
-      line-height: 50px;
+      line-height: unset;
+      margin-bottom: 0;
+      @include mixin.media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
 
-    &-link {
-      position: relative;
+    &-item {
       margin-left: 20px;
-
+      position: relative;
+      line-height: unset;
+      display: inline-block;
       &:after {
         content: "";
         background-color: #fff;
@@ -240,26 +252,13 @@
         height: 100%;
         position: absolute;
         top: 0;
-        left: -10px;
+        left: -11px;
       }
-
-      @include mixin.media-breakpoint-down(xs) {
-        margin-left: 10px;
-        margin-right: 10px;
-        &:last-child:after {
+      @include mixin.media-breakpoint-down(sm) {
+        margin: 0 10px 10px;
+        &:first-child:after {
           display: none;
         }
-
-        &:after {
-          left: auto;
-          right: -10px;
-        }
-      }
-    }
-
-    @include mixin.media-breakpoint-up(sm) {
-      &-item {
-        display: inline-block;
       }
     }
   }
