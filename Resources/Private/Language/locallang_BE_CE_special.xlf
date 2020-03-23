@@ -184,6 +184,12 @@
 			<trans-unit id="siteFooter.showFooterBottom">
 				<source>Show footer bottom part section</source>
 			</trans-unit>
+			<trans-unit id="siteFooter.bottomCopyright">
+				<source>Copyright text (notice)</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.bottomLinks">
+				<source>Navigation links</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

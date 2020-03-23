@@ -112,13 +112,20 @@
         <div class="footer__bottom">
           <div class="footer__bottom-wrap">
             <!-- All rights reserved -->
-            <p class="footer__bottom-copyright">All rights reserved @ PIXELANT AB</p>
-            <!-- Additional Links -->
-            <ul class="footer__links-list footer__bottom-links">
-              <li class="footer__links-item footer__bottom-item"><a class="footer__bottom-link" href="javascript:void(0)">PRIVACY POLICY</a></li>
-              <li class="footer__links-item footer__bottom-item"><a class="footer__bottom-link" href="javascript:void(0)">TERMS OF USE</a></li>
-              <li class="footer__links-item footer__bottom-item"><a class="footer__bottom-link" href="javascript:void(0)">COOKIES</a></li>
-            </ul>
+            <p class="footer__bottom-copyright">{data.footerBottomCopyright}</p>
+            <!-- Additional (navigation) Links -->
+            <f:if condition="{footerBottomLinks}">
+                <ul class="footer__links-list footer__bottom-links">
+                  <f:for each="{footerBottomLinks}" as="page">
+                    <li class="footer__links-item footer__bottom-item">
+                      <a href="{page.link}" class="footer__bottom-link" {f:if(condition: page.target, then: ' target="{page.target}"' )}
+                          title="{page.title}">
+                        <span>{page.title}</span>
+                      </a>
+                    </li>
+                  </f:for>
+                </ul>
+              </f:if>
           </div>
           <div class="footer__social-list">
             <!-- Social Icon -->

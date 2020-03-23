@@ -47,6 +47,8 @@ CREATE TABLE tt_content (
 	footerMiddleFourthHeader varchar (255) DEFAULT '' NOT NULL,
 	footerMiddleFourthForm int(11) unsigned DEFAULT '0' NOT NULL,
 	footerBottom int(11) unsigned DEFAULT '0' NOT NULL,
+	footerBottomCopyright varchar (255) DEFAULT '' NOT NULL,
+	footerBottomLinks varchar (255) DEFAULT '' NOT NULL,
 
 	footerMiddleText varchar(255) DEFAULT '' NOT NULL,
 
