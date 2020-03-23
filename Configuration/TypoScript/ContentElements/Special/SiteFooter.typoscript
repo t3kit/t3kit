@@ -2,33 +2,12 @@
 # Insert records:
 # This element embeds other content elements.
 #
-# CType: siteHeader
+# CType: siteFooter
 # ===========================
 tt_content.siteFooter =< lib.contentElement
 tt_content.siteFooter {
   templateName = SiteFooter
   dataProcessing {
-
-    # Main menu
-    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    20 {
-      as = mainNavigation
-      levels = 2
-      includeSpacer = 1
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
-          references.fieldName = nav_icon
-          as = nav_icon
-        }
-        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        20 {
-          references.fieldName = nav_image
-          as = nav_image
-        }
-      }
-    }
-
     30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     30 {
       references.fieldName = image
@@ -41,37 +20,43 @@ tt_content.siteFooter {
       as = flexform
     }
 
-
-    80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
-    80 {
-      as = site
-    }
-
-    90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    90 {
-      special = directory
-      special.value.field = pages
+    190 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    190 {
+      special = list
+      special.value.field = footerMiddleSecondLinks
+      as = footerMiddleSecondLinks
       dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
+        90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        90 {
           references.fieldName = media
-        }
-        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-        20 {
-          table = tt_content
-          pidInList.field = uid
-          orderBy = sorting
-          as = content
-          dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-              references.fieldName = image
-            }
-          }
         }
       }
     }
 
+    193 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    193 {
+      special = list
+      special.value.field = footerMiddleThirdLinks
+      as = footerMiddleThirdLinks
+      dataProcessing {
+        90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        90 {
+          references.fieldName = media
+        }
+      }
+    }
 
+    194 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    194 {
+      special = list
+      special.value.field = footerBottomLinks
+      as = footerBottomLinks
+      dataProcessing {
+        90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        90 {
+          references.fieldName = media
+        }
+      }
+    }
   }
 }

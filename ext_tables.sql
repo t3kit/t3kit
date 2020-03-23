@@ -38,10 +38,18 @@ CREATE TABLE tt_content (
 
 	footerTop int(11) unsigned DEFAULT '0' NOT NULL,
 	footerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
-	footerMiddleTextFirst varchar (1024) DEFAULT '' NOT NULL,
-	footerMiddleTextSecond varchar (1024) DEFAULT '' NOT NULL,
-	footerMiddleTextThird varchar (1024) DEFAULT '' NOT NULL,
+	footerMiddleFirstHeader varchar (255) DEFAULT '' NOT NULL,
+	footerMiddleFirstLogo int(11) unsigned DEFAULT '0' NOT NULL,
+	footerMiddleFirstText varchar (1024) DEFAULT '' NOT NULL,
+	footerMiddleSecondHeader varchar (255) DEFAULT '' NOT NULL,
+	footerMiddleSecondLinks text,
+	footerMiddleThirdHeader varchar (255) DEFAULT '' NOT NULL,
+	footerMiddleThirdLinks text,
+	footerMiddleFourthHeader varchar (255) DEFAULT '' NOT NULL,
+	footerMiddleFourthForm int(11) unsigned DEFAULT '0' NOT NULL,
 	footerBottom int(11) unsigned DEFAULT '0' NOT NULL,
+	footerBottomCopyright varchar (255) DEFAULT '' NOT NULL,
+	footerBottomLinks varchar (255) DEFAULT '' NOT NULL,
 
 	footerMiddleText varchar(255) DEFAULT '' NOT NULL,
 

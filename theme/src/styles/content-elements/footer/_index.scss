@@ -20,196 +20,257 @@
 // check "theme/src/styles/bootstrap/mixins/_index.scss"
 @use '../../bootstrap/mixins' as mixin;
 
-
-// =========================================================
-// === Footer ==============================================
-// =========================================================
+// =================================
+// === Footer  =====================
+// =================================
 .footer {
-  background: $footer-background;
-  border-top: 15px solid $footer-background;
-  margin-top: 50px;
+  background: var.$gray-900;
+  padding: 140px 0 60px;
+  font-family: var.$font-family-sans-serif;
+  font-weight: var.$font-weight-medium;
+  font-size: 14px;
+  color: var.$white;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+
+  & a {
+    transition: color 0.2s ease;
+    color: var.$white;
+
+    &:hover,
+    &:focus {
+      color: var.$gray-500;
+      text-decoration: none;
+    }
+  }
+
+  @include mixin.media-breakpoint-down(md) {
+    text-align: center;
+  }
 }
 
-._start-page + .footer {
-  margin: 0;
-}
-
-.footer p {
-  color: $footer-color;
-  font-weight: 400;
-}
-
-.footer h1,
-.footer h2,
-.footer h3,
-.footer h4,
-.footer h5,
-.footer h6 {
-  color: $footer-color;
-  font-weight: 400;
+.footer__header {
+  color: var.$white;
+  font-weight: var.$font-weight-bolder;
   letter-spacing: 0.2px;
-  padding-top: 20px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-.footer h4 {
-  border-bottom: 1px solid lighten($footer-background, 20%);
-  padding-bottom: 4px;
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// =================================
+// === Footer Middle ===============
+// =================================
+.footer__middle {
+  border-bottom: 1px solid rgba(var.$white, 0.1);
+  margin-bottom: 40px;
+
+  @include mixin.media-breakpoint-up(lg) {
+    margin-bottom: 50px;
+    padding-bottom: 83px;
+  }
+
+  & p {
+    line-height: 30px;
+    margin-bottom: 0;
+
+    @include mixin.media-breakpoint-down(md) {
+      line-height: 50px;
+      margin-bottom: 0;
+    }
+  }
 }
 
-.footer a {
-  transition: color 0.2s ease;
-  color: $footer-link-color;
-  font-weight: 400;
+.footer__middle-column {
+  @include mixin.media-breakpoint-down(md) {
+    margin-bottom: 67px;
+  }
 
-  &:hover,
+  @include mixin.media-breakpoint-between(sm, lg) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+// === Footer Logo===========
+// =================================
+
+.footer__logo {
+  margin-bottom: 34px;
+}
+
+.footer__logo-image {
+  max-width: 175px;
+}
+
+// === Footer Links===========
+// =================================
+.footer__links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__links-item {
+  line-height: 50px;
+}
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// === *Footer Form ===============
+// =================================
+// .footer__form-input,
+// .footer__form-input:focus {
+//   height: 56px;
+//   outline: none;
+//   border: none;
+//   border-radius: 0;
+//   background-color: rgba(var.$gray-600, 0.5);
+//   color: var.$white;
+//   box-shadow: none;
+//   padding: 17px 19px;
+// }
+
+.footer__form-input {
+  height: 56px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(var.$gray-600, 0.5);
+  color: var.$white;
+  box-shadow: none;
+  padding: 17px 19px;
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder {
+    color: rgba(var.$white, 0.5);
+  }
+
   &:focus {
-      background-color: transparent;
-      color: $footer-link-hover-color;
+    outline: none;
+    border: none;
+    background-color: rgba(var.$gray-600, 0.5);
+    color: var.$white;
+    box-shadow: none;
   }
 }
 
-.no-touch .footer a:hover {
-  color: $footer-link-hover-color;
-}
+.footer__btn {
+  border: 4px solid var.$white;
+  font-size: 16px;
+  height: 61px;
+  margin-top: 34px;
+  width: 100%;
+  font-weight: var.$font-weight-bolder;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  background-color: var.$gray-900;
 
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// === Footer Quick Links===========
-// =================================
-.footer {
-  div[class*="frame-type-menu_"] > ul {
-      list-style: none;
-      padding: 0;
-      padding-bottom: 10px;
-
-      > li {
-          padding: 8px 0;
-      }
-  }
-}
-
-@media (max-width: 460px) {
-  .footer {
-      text-align: center;
-  }
-
-  .footer h4 {
-      border: none;
-  }
-}
-
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// =================================
-// === Footer Logo + contacts=======
-// =================================
-.footer {
-  .container:nth-child(2) {
-      .ce-textpic.ce-left {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: flex-end;
-          justify-content: center;
-
-          > .ce-gallery {
-              margin-bottom: 0;
-          }
-
-          > .ce-bodytext > p {
-              margin: 20px 0 0;
-              line-height: 1;
-          }
-      }
-  }
-}
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// =================================
-// === Footer Social-icons==========
-// =================================
-
-// @media (min-width: $screen-md-min) {
-@include media-breakpoint-up(lg) {
-  .footer .social-icons {
-      padding: 0;
-      text-align: right;
-  }
-}
-
-.footer .social-icons {
-  .social-icons__item {
-      color: $social-icons-bg-color;
-  }
-}
-
-.no-touch .footer .social-icons__item {
   &:hover {
-      color: $social-icons-hover-color;
+    background-color: var.$gray-800;
+  }
+}
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// === Footer Social Links ===============
+// =================================
 
-      & > .icons:after {
-          border-color: fade($social-icons-hover-color, 50%);
-      }
+.footer__social__item {
+  color: var.$white;
+  margin-left: 50px;
+
+  &:first-child {
+    margin-left: 0;
   }
 }
 
-// -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-
-// =================================
 // === Footer Bottom ===============
 // =================================
-.footer {
-  .container:nth-child(3) {
-      border-top: 1px solid lighten($footer-background, 20%);
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-      div[class*="frame-type-menu_"] > ul {
-          padding: 0;
-          text-align: center;
-
-          > li {
-              display: inline-block;
-              padding: 0;
-
-              > a {
-                  font-weight: 400;
-                  text-transform: uppercase;
-                  transition: color 0.2s ease;
-                  padding: 0 10px;
-                  font-size: 14px;
-              }
-          }
-      }
-
-      .frame-type-copyrightText {
-          padding-top: 12px;
-          text-align: center;
-      }
+  @include mixin.media-breakpoint-down(md) {
+    flex-direction: column;
   }
 }
 
-@media (min-width: 992px) {
-  .footer {
-      .container:nth-child(2) {
-          .ce-textpic.ce-left {
-              justify-content: left;
-              margin-bottom: 15px;
-          }
-      }
+.footer__bottom-wrap {
+  display: flex;
 
-      .container:nth-child(3) {
-          div[class*="frame-type-menu_"] > ul {
-              padding-top: 12px;
-              text-align: right;
-              margin-right: -25px; // Make links align with border-top
-          }
+  @include mixin.media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
 
-          .frame-type-copyrightText {
-              margin-left: -15px;
-              text-align: left;
-          }
-      }
+  @include mixin.media-breakpoint-down(sm) {
+    flex-wrap: wrap;
   }
 }
+
+.footer__bottom-links {
+  margin-bottom: 0;
+
+  @include mixin.media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.footer__bottom-copyright {
+  line-height: unset;
+  margin-bottom: 0;
+
+  @include mixin.media-breakpoint-down(sm) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__bottom-item {
+  margin-left: 20px;
+  position: relative;
+  line-height: unset;
+  display: inline-block;
+
+  &:after {
+    content: "";
+    background-color: #fff;
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    left: -11px;
+  }
+
+  @include mixin.media-breakpoint-down(sm) {
+    margin: 0 10px 10px;
+
+    &:first-child:after {
+      display: none;
+    }
+  }
+}
+
+// .no-touch .footer a:hover {
+//   color: var.$gray-500;
+// }
+
+// .no-touch .footer-bottom .social-icons__item {
+//   &:hover {
+//     color: var.$gray-500;
+
+//     & > .icons:after {
+//       border-color: fade(var.$gray-500, 50%);
+//     }
+//   }
+// }
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
