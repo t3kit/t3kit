@@ -4,6 +4,7 @@
 
 <f:section name="Main">
 
+
   <f:for each="{image}" as="image">
 
     <figure class="figure">
@@ -12,7 +13,7 @@
 
         <f:then>
           <f:link.typolink parameter="{image.link}" title="{image.title}">
-            <f:render partial="Media/Picture" arguments="{_all}" />
+            <f:render partial="Media/Picture" arguments="{data: data, image:image}" />
           </f:link.typolink>
         </f:then>
 
@@ -24,7 +25,7 @@
             </f:then>
 
             <f:else>
-              <f:render partial="Media/Picture" arguments="{_all}" />
+              <f:render partial="Media/Picture" arguments="{data: data, image:image}" />
             </f:else>
 
           </f:if>

@@ -13,11 +13,11 @@
 				</source>
 			</trans-unit>
 
-			<trans-unit id="container_width.description">
+			<trans-unit id="section_container_width.description">
 				<source>
-					&lt;strong&gt;Container&lt;/strong&gt; - The image element inside the content with a specific width.
+					&lt;strong&gt;Container&lt;/strong&gt; - The image element inside the section with a specific width.
 					Usually, it's up to 1200px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance. &lt;br&gt;
-					&lt;strong&gt;Container-fluid&lt;/strong&gt; - The image element inside the content with a fluid/full-screen width. 100% width based on the Bootstrap grid.
+					&lt;strong&gt;Container-fluid&lt;/strong&gt; - The image element inside the section with a fluid/full-screen width. 100% width based on the Bootstrap grid.
 					Lower performance, but with the ability to design site with a full-screen layout.&lt;br&gt;
 				</source>
 			</trans-unit>

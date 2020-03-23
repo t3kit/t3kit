@@ -93,13 +93,13 @@
 				<source>Responsive tables</source>
 			</trans-unit>
 
-			<trans-unit id="container_width">
-				<source>Image container width</source>
+			<trans-unit id="section_container_width">
+				<source>Section container width</source>
 			</trans-unit>
-			<trans-unit id="container_width.container">
+			<trans-unit id="section_container_width.container">
 				<source>Fixed container width</source>
 			</trans-unit>
-			<trans-unit id="container_width.container-fluid">
+			<trans-unit id="section_container_width.container-fluid">
 				<source>Fluid container width</source>
 			</trans-unit>
 

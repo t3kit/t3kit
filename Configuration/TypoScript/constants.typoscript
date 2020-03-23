@@ -1,8 +1,13 @@
 plugin.t3kit {
   settings {
+    # customcategory=general=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.general
+
     # customcategory=goingLive=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.goingLive
 
     # customsubcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.t3kit
+
+    # cat=general/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.container_width
+    container_width = 1200
 
     # cat=goingLive/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.production
     production = 0
@@ -22,3 +27,4 @@ page.meta {
   # cat=t3kit: meta data; type=string; label=Viewport:
   viewport = width=device-width, initial-scale=1, shrink-to-fit=no
 }
+

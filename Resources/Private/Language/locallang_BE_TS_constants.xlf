@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
+			<trans-unit id="category.general">
+				<source>General</source>
+			</trans-unit>
 			<trans-unit id="category.goingLive">
 				<source>GOING LIVE</source>
 			</trans-unit>
@@ -11,6 +14,9 @@
 			</trans-unit>
 			<trans-unit id="settings.production">
 				<source>Enable t3kit Production mode: Open site for search robots + compress-concat CSS and JS files</source>
+			</trans-unit>
+			<trans-unit id="settings.container_width">
+				<source>Max page container width</source>
 			</trans-unit>
 		</body>
 	</file>

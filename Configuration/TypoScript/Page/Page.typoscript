@@ -35,8 +35,8 @@ page {
       200 = {$page.fluidtemplate.layoutRootPath}
     }
     variables {
-      applicationcontext = TEXT
-      applicationcontext.value = production
+      application_context = TEXT
+      application_context.value = production
     }
   }
 }
@@ -46,5 +46,5 @@ page {
   page.10.partialRootPaths{
     20 = EXT:t3kit/Resources/Public/assets/development
   }
-  page.10.variables.applicationcontext.value = development
+  page.10.variables.application_context.value = development
 [end]

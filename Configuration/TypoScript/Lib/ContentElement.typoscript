@@ -21,16 +21,16 @@ lib.contentElement {
     0 = EXT:t3kit/Resources/Private/Layouts/ContentElements
     200 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
   }
-  dataProcessing {
-    100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    100 {
-      references.fieldName = background
-      as = background
-    }
-  }
+  // dataProcessing {
+  //   100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+  //   100 {
+  //     references.fieldName = background
+  //     as = background
+  //   }
+  // }
   variables {
-    backendlayout = TEXT
-    backendlayout {
+    backend_layout = TEXT
+    backend_layout {
       data = pagelayout
       replacement.10 {
         search = pagets__
@@ -38,6 +38,9 @@ lib.contentElement {
       }
       ifEmpty = default
     }
+  }
+  settings {
+    container_width = {$plugin.t3kit.settings.container_width}
   }
 
 }

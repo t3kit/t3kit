@@ -8,8 +8,12 @@
 @import 'EXT:t3kit/Configuration/TypoScript/Config'
 
 
-plugin.tx_t3kit {
-  settings {
-    production = {$plugin.t3kit.settings.production}
-  }
-}
+// plugin.tx_t3kit {
+//   settings {
+//     production = {$plugin.tx_t3kit.settings.production}
+//     containerWidth = {$plugin.tx_t3kit.settings.containerWidth}
+//   }
+// }
+
+
+module.tx_backend.view.partialRootPaths.300 = EXT:t3kit/Resources/Private/BE/Partials/
