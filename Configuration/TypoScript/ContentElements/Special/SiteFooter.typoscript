@@ -20,12 +20,6 @@ tt_content.siteFooter {
       as = flexform
     }
 
-
-    80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
-    80 {
-      as = site
-    }
-
     190 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     190 {
       special = list
