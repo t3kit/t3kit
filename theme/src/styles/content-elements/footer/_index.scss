@@ -249,9 +249,9 @@
         content: "";
         background-color: #fff;
         width: 1px;
-        height: 100%;
+        height: 12px;
         position: absolute;
-        top: 0;
+        top: 4px;
         left: -11px;
       }
       @include mixin.media-breakpoint-down(sm) {
@@ -264,19 +264,19 @@
   }
 }
 
-.no-touch .footer a:hover {
-  color: var.$gray-500;
-}
+// .no-touch .footer a:hover {
+//   color: var.$gray-500;
+// }
 
-.no-touch .footer-bottom .social-icons__item {
-  &:hover {
-    color: var.$gray-500;
+// .no-touch .footer-bottom .social-icons__item {
+//   &:hover {
+//     color: var.$gray-500;
 
-    & > .icons:after {
-      border-color: fade(var.$gray-500, 50%);
-    }
-  }
-}
+//     & > .icons:after {
+//       border-color: fade(var.$gray-500, 50%);
+//     }
+//   }
+// }
 
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
