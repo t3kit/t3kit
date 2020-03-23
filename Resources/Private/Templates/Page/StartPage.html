@@ -2,10 +2,7 @@
 
 <f:layout name="Default" />
 
-
-
 <f:section name="Main">
-
 
   <f:comment>
     <!-- Add additional page-specific JS and CSS assets if needed -->
@@ -14,20 +11,54 @@
     <f:render partial="Js/Plugin2" arguments="{_all}" />
   </f:comment>
 
+  <f:comment>
+    # Columns pattern
+    # [1-10]     -> Header
+    # [11-20]    -> Footer
+    # [30-40]    -> Navigation/Breadcrumbs
+    # [50-90]    -> Additional content
+    # __________________________
+    # 100-900 -> All Content
+    # ***
+    # [100-199]  -> 100% column width (e.g., one column layout)
+    # [500-599]  -> 50% column width (e.g., two columns layout)
+    # [300-399]  -> 33% column width (e.g., three columns layout)
+    # [200-299]  -> 25% column width  (e.g., four columns layout)
+    # [700-799]  -> 75% column width
+    # __________________________
+  </f:comment>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
+  <div class="container-xl">
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+    <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+    <div class="row">
+      <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+    </div>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:101}" />
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:102}" />
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:103}" />
+    <div class="row">
+      <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+    </div>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+    <div class="row">
+      <div class="col-md">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:301}" />
+      </div>
+      <div class="col-md">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:302}" />
+      </div>
+      <div class="col-md">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:303}" />
+      </div>
+    </div>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
+    <div class="row">
+      <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+    </div>
+
+    <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
+
+  </div>
 
 </f:section>
 

@@ -21,9 +21,6 @@ lib.contentElement {
     0 = EXT:t3kit/Resources/Private/Layouts/ContentElements
     200 = {$plugin.t3kit.lib.contentElement.layoutRootPath}
   }
-  stdWrap {
-    editIcons = tt_content
-  }
   dataProcessing {
     100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     100 {

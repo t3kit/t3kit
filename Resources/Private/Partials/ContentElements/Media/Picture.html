@@ -1,0 +1,93 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+  <f:comment>
+    Viewport for mobile devices (100% viewport widht 100%)
+  </f:comment>
+  <f:variable name="small_viewport_width">100vw</f:variable>
+
+  <f:comment>
+    Set a viewport to depend on numbers of columns in BE layout
+    ***
+    # Columns pattern
+    # [1-10]     ->  Header
+    # [11-20]    -> Footer
+    # [30-40]    -> Navigation/Breadcrumbs
+    # [50-90]    -> Additional content
+    # __________________________
+    # 100-900 -> All Content
+    # ***
+    # [100-199]  -> 100% column width (e.g., one column layout)
+    # [500-599]  -> 50% column width (e.g., two columns layout)
+    # [300-399]  -> 33% column width (e.g., three columns layout)
+    # [200-299]  -> 25% column width  (e.g., four columns layout)
+    # __________________________
+  </f:comment>
+
+  <f:if condition="{data.colPos}>=200 && {data.colPos} < 300">
+    <f:then>
+      <f:variable name="medium_viewport_width">25vw</f:variable>
+      <f:variable name="container">300px</f:variable>
+    </f:then>
+
+    <f:else if="{data.colPos}>=300 && {data.colPos} < 400">
+      <f:variable name="medium_viewport_width">33vw</f:variable>
+      <f:variable name="container">400px</f:variable>
+    </f:else>
+
+    <f:else if="{data.colPos}>=500 && {data.colPos} < 600">
+      <f:variable name="medium_viewport_width">50vw</f:variable>
+      <f:variable name="container">600px</f:variable>
+    </f:else>
+
+    <f:else if="{data.colPos}>=700 && {data.colPos} < 800">
+      <f:variable name="medium_viewport_width">75vw</f:variable>
+      <f:variable name="container">900px</f:variable>
+    </f:else>
+
+    <f:else>
+      <f:variable name="medium_viewport_width">100vw</f:variable>
+      <f:variable name="container">1200px</f:variable>
+    </f:else>
+  </f:if>
+
+  <f:if condition="{data.container_width} == 'container'">
+    <f:then>
+      <f:comment>
+        The image element inside the content with a specific width.
+        Usually, it's up to 1200 px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance.
+      </f:comment>
+      <f:variable name="big_viewport_width">{container}</f:variable>
+    </f:then>
+    <f:else>
+      <f:comment>
+        The image element inside the content with a fluid/full-screen width. 100% width based on the Bootstrap grid.
+        Lower performance, but with the ability to design site with a full-screen layout.      </f:comment>
+      <f:variable name="big_viewport_width">{medium_viewport_width}</f:variable>
+    </f:else>
+  </f:if>
+
+  <picture>
+    <source
+      media="(max-width: 767px)"
+      srcset="{f:uri.image(image: image, maxWidth: '360', cropVariant: 'mobile')} 360w,
+        {f:uri.image(image: image, maxWidth: '480', cropVariant: 'mobile')} 480w,
+        {f:uri.image(image: image, maxWidth: '768', cropVariant: 'mobile')} 768w,
+        {f:uri.image(image: image, maxWidth: '1125', cropVariant: 'mobile')} 1125w"
+      sizes="{small_viewport_width}">
+
+    <source
+      media="(min-width: 768px)"
+      srcset="{f:uri.image(image: image, maxWidth: '300', cropVariant: 'default')} 300w,
+        {f:uri.image(image: image, maxWidth: '400', cropVariant: 'default')} 400w,
+        {f:uri.image(image: image, maxWidth: '600', cropVariant: 'default')} 600w,
+        {f:uri.image(image: image, maxWidth: '800', cropVariant: 'default')} 800w,
+        {f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')} 992w,
+        {f:uri.image(image: image, maxWidth: '1200', cropVariant: 'default')} 1200w,
+        {f:uri.image(image: image, maxWidth: '1440', cropVariant: 'default')} 1440w,
+        {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
+      sizes="(min-width: 1200px) {big_viewport_width}, {medium_viewport_width}">
+
+    <img class="img-fluid figure-img" loading="lazy" src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
+  </picture>
+
+</html>

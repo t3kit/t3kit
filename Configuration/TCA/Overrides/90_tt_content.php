@@ -292,7 +292,27 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
-
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'container_width' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:container_width',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:container_width.container',
+                    'container'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:container_width.container-fluid',
+                    'container-fluid'
+                ]
+            ],
+            'default' => 'container',
+        ]
+    ],
+]);
 
 
 $GLOBALS['TCA']['tt_content']['columns']['layout']['description'] =
@@ -319,6 +339,13 @@ $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
         background,
         --linebreak--,
         background_parallax,
-        full_width_background,
+        full_width_background
+    '
+];
+
+$GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
+    'showitem' => '
+        image_zoom;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_zoom_formlabel,
+        container_width
     '
 ];

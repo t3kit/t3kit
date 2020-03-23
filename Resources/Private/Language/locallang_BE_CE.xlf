@@ -19,7 +19,7 @@
 				<source>Settings</source>
 			</trans-unit>
 
-			<!-- general content -->
+			<!-- general content config fields-->
 			<trans-unit id="header_alignment">
 				<source>Header alignment</source>
 			</trans-unit>
@@ -91,6 +91,16 @@
 			</trans-unit>
 			<trans-unit id="table_class.table-responsive">
 				<source>Responsive tables</source>
+			</trans-unit>
+
+			<trans-unit id="container_width">
+				<source>Image container width</source>
+			</trans-unit>
+			<trans-unit id="container_width.container">
+				<source>Fixed container width</source>
+			</trans-unit>
+			<trans-unit id="container_width.container-fluid">
+				<source>Fluid container width</source>
 			</trans-unit>
 
 			<!-- general flexform -->

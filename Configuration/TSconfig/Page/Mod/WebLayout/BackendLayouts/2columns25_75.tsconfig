@@ -3,11 +3,19 @@
 # ==================================
 
 # Columns pattern
-# [1-10]     ->  Header
+# [1-10]     -> Header
 # [11-20]    -> Footer
 # [30-40]    -> Navigation/Breadcrumbs
-# [50-90]   -> Additional content
-# [100-900]  -> All Content
+# [50-90]    -> Additional content
+# __________________________
+# 100-900 All Content
+# ***
+# [100-199]  -> 100% column width (e.g., one column layout)
+# [500-599]  -> 50% column width (e.g., two columns layout)
+# [300-399]  -> 33% column width (e.g., three columns layout)
+# [200-299]  -> 25% column width  (e.g., four columns layout)
+# [700-799]  -> 75% column width
+# __________________________
 
 mod.web_layout.BackendLayouts.2columns25_75 {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/2columns25_75.svg
@@ -41,12 +49,12 @@ mod.web_layout.BackendLayouts.2columns25_75 {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
           colspan = 4
-          colPos = 101
+          colPos = 201
         }
         2 {
           name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
           colspan = 8
-          colPos = 102
+          colPos = 701
         }
       }
 
