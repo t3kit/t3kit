@@ -51,5 +51,18 @@ tt_content.siteFooter {
         }
       }
     }
+
+    194 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    194 {
+      special = list
+      special.value.field = footerBottomLinks
+      as = footerBottomLinks
+      dataProcessing {
+        90 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        90 {
+          references.fieldName = media
+        }
+      }
+    }
   }
 }

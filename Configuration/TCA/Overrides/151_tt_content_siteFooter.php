@@ -95,6 +95,8 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.palette.footerBottom',
     'showitem' => '
       footerBottom, --linebreak--,
+      footerBottomCopyright, --linebreak--,
+      footerBottomLinks, --linebreak--,
 ',
 );
 
@@ -298,6 +300,37 @@ $GLOBALS['TCA']['tt_content']['palettes']['footerBottom'] = array(
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerBottomCopyright' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.bottomCopyright',
+        'displayCond' => 'FIELD:footerBottom:!=:0',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 50,
+            'eval' => 'trim',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'footerBottomLinks' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.bottomLinks',
+        'displayCond' => 'FIELD:footerBottom:!=:0',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'pages',
+            'size' => 3,
+            'maxitems' => 50,
+            'minitems' => 0
         ]
     ],
 ]);
