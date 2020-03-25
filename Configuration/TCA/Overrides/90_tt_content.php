@@ -316,6 +316,71 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'icon_source' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:icon_source',
+        'exclude' => true,
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [   'None',
+                    ''
+                ],
+                [
+                    'Bootstrap',
+                    'EXT:t3kit/Resources/Public/Images/Icons/Bootstrap/'
+                ],
+            ],
+            'default' => '',
+        ]
+    ]
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'icon_class' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:icon_class',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [   'None',
+                    ''
+                ]
+            ],
+            'default' => '',
+        ]
+    ]
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'icon' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:icon',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' =>'selectSingle',
+            'fieldWizard' => [
+                'selectIcons' => [
+                    'disabled' => 0,
+                ],
+            ],
+            'itemsProcFunc' => 'T3k\t3kit\View\IconView->addIconsFromSource',
+            'items' => [
+                [   'None',
+                    ''
+                ]
+            ],
+            'maxitems' => 1,
+            'size' => '1',
+            'default' => '',
+        ]
+    ]
+]);
+
 // \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
 //     'picture_width_inside_content_element' => [
 //         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:container_width',
@@ -371,5 +436,14 @@ $GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
     'showitem' => '
         image_zoom;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_zoom_formlabel,
         section_container_width
+    '
+];
+
+$GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:icon',
+    'showitem' => '
+        icon_source, icon_class,
+        --linebreak--,
+        icon
     '
 ];

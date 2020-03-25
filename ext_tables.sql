@@ -78,4 +78,8 @@ CREATE TABLE tt_content (
 	author_name varchar(255) DEFAULT '' NOT NULL,
 	work_title varchar(255) DEFAULT '' NOT NULL,
 
+	icon_source varchar(255) DEFAULT '' NOT NULL,
+	icon_class varchar(255) DEFAULT '' NOT NULL,
+	icon varchar(255) DEFAULT '' NOT NULL,
+
 );
