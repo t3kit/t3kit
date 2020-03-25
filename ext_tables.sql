@@ -83,3 +83,14 @@ CREATE TABLE tt_content (
 	icon varchar(255) DEFAULT '' NOT NULL,
 
 );
+
+
+#
+# Table structure for table 'sys_file_reference'
+#
+CREATE TABLE sys_file_reference (
+	description_align varchar(255) DEFAULT '' NOT NULL,
+	picture_width varchar(255) DEFAULT '' NOT NULL,
+	picture_border_radius varchar(255) DEFAULT '' NOT NULL,
+	img_thumbnail tinyint(3) unsigned DEFAULT '0' NOT NULL,
+);

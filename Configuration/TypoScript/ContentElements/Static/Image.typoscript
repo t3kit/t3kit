@@ -12,7 +12,6 @@ tt_content.image {
     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
     10 {
       references.fieldName = image
-      as = image
     }
   }
 }

@@ -316,7 +316,6 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'icon_source' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:icon_source',
@@ -381,27 +380,36 @@ defined('TYPO3_MODE') || die();
     ]
 ]);
 
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'picture_width_inside_content_element' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:container_width',
-//         'exclude' => true,
-//         'config' => [
-//             'type' => 'select',
-//             'renderType' => 'selectSingle',
-//             'items' => [
-//                 [
-//                     '100% of content element',
-//                     '100'
-//                 ],
-//                 [
-//                     '50% of content element',
-//                     '50%'
-//                 ]
-//             ],
-//             'default' => '100',
-//         ]
-//     ],
-// ]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'header_position' => [
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left',
+                    'left'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center',
+                    'center'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify',
+                    'justify'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right',
+                    'right'
+                ]
+            ],
+            'default' => 'left'
+        ]
+    ],
+]);
 
 
 $GLOBALS['TCA']['tt_content']['columns']['layout']['description'] =
@@ -432,9 +440,10 @@ $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
     '
 ];
 
-$GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
+
+$GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',
     'showitem' => '
-        image_zoom;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_zoom_formlabel,
         section_container_width
     '
 ];

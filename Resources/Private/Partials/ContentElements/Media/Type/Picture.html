@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+  <div class="picture-partial">
+    <f:if condition="{file.link}">
+      <f:then>
+        <f:link.typolink class="picture-partial__link" parameter="{file.link}" title="{file.title}">
+          <f:render partial="Media/Render/Picture" arguments="{data: data, image:file}" />
+        </f:link.typolink>
+      </f:then>
+
+      <f:else>
+        <f:if condition="{data.image_zoom}">
+
+          <f:then>
+            <div class="picture-partial__zoom">
+              <f:comment>TODO: add lightbox functionality</f:comment>
+              <f:render partial="Media/Render/Picture" arguments="{data: data, image:file}" />
+            </div>
+          </f:then>
+
+          <f:else>
+            <div class="picture-partial__simple">
+              <f:render partial="Media/Render/Picture" arguments="{data: data, image:file}" />
+            </div>
+          </f:else>
+
+        </f:if>
+      </f:else>
+
+    </f:if>
+  </div>
+
+</html>

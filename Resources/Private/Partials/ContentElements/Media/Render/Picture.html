@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:variable name="container_width">{settings.container_width}</f:variable>
+  <f:variable name="container_width">{settings.container_width}</f:variable>
 
   <f:comment>
     Set a viewport to depend on numbers of columns in BE layout
@@ -91,13 +91,11 @@
   </f:if>
 
   <f:comment>
-    Use picture_column_width variable to define column width for your image inside a content element
-    e.g., <f:render partial="Media/Picture" arguments="{data: data, image:image, picture_column_width: 6}" />
-    to render the image with 6-column width inside of the content element
+    Calculate picture_width based on selector in BE to define relative image width inside a content element
   </f:comment>
-  <f:if condition="{picture_column_width}">
-    <f:variable name="fluid_viewport_width">{picture_column_width*fluid_viewport_width/12}</f:variable>
-    <f:variable name="fixed_viewport_width">{picture_column_width*fixed_viewport_width/12}</f:variable>
+  <f:if condition="{image.referenceProperties.picture_width} && {image.picture_width} != 100">
+    <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
+    <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
   </f:if>
 
   <f:comment>Viewport for mobile devices (always 100% viewport widht)</f:comment>
@@ -127,7 +125,7 @@
   </f:if>
 
 
-  <picture>
+  <picture class="picture-partial__elem">
     <source
       media="(max-width: 767px)"
       srcset="{f:uri.image(image: image, maxWidth: '360', cropVariant: 'mobile')} 360w,
@@ -148,7 +146,11 @@
         {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
       sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
-    <img class="img-fluid figure-img" loading="lazy" src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
+    <f:if condition="{image.referenceProperties.img_thumbnail}">
+      <f:variable name="img_thumbnail">img-thumbnail</f:variable>
+    </f:if>
+
+    <img class="picture-partial__elem-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}" loading="lazy" src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
   </picture>
 
 </html>

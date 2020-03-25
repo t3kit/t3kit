@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+  <f:for each="{files}" as="file">
+
+    <f:switch expression="{file.type}">
+      <f:case value="3">
+        <f:variable name="type">Audio</f:variable>
+      </f:case>
+      <f:case value="4">
+        <f:variable name="type">Video</f:variable>
+      </f:case>
+      <f:defaultCase>
+        <f:variable name="type">Picture</f:variable>
+      </f:defaultCase>
+    </f:switch>
+
+    <figure class="figure-partial figure ">
+
+      <f:render partial="Media/Type/{type}" arguments="{data: data, file:file}" optional="1"/>
+
+      <f:if condition="{file.description}">
+        <figcaption class="figure-partial__caption figure-caption {file.referenceProperties.description_align}"><f:format.nl2br>{file.description}</f:format.nl2br></figcaption>
+      </f:if>
+
+    </figure>
+  </f:for>
+
+</html>
+
+
+

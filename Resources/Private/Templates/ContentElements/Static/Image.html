@@ -4,44 +4,13 @@
 
 <f:section name="Main">
 
+  <div class="image-ce">
+    <div class="image-ce__wrp">
+      <f:render partial="Media/Figure" arguments="{_all}" />
+    </div>
+  </div>
 
-  <f:for each="{image}" as="image">
-
-    <figure class="figure">
-
-      <f:if condition="{image.link}">
-
-        <f:then>
-          <f:link.typolink parameter="{image.link}" title="{image.title}">
-            <f:render partial="Media/Picture" arguments="{data: data, image:image}" />
-          </f:link.typolink>
-        </f:then>
-
-        <f:else>
-          <f:if condition="{data.image_zoom}">
-
-            <f:then>
-              <f:comment>TODO: add lightbox functionality</f:comment>
-            </f:then>
-
-            <f:else>
-              <f:render partial="Media/Picture" arguments="{data: data, image:image}" />
-            </f:else>
-
-          </f:if>
-        </f:else>
-
-      </f:if>
-
-      <f:if condition="{image.description}">
-        <figcaption class="figure-caption"><f:format.nl2br>{image.description}</f:format.nl2br></figcaption>
-      </f:if>
-
-    </figure>
-  </f:for>
-
-
-  </f:section>
+</f:section>
 
 </html>
 

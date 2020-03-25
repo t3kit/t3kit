@@ -24,17 +24,10 @@ TCEFORM {
     frame_class {
       removeItems = ruler-before,ruler-after,indent,indent-left,indent-right
     }
-    header_position {
-      removeItems = left
-      addItems.justify = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify
-      altLabels.. = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left
-      altLabels.center = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center
-      altLabels.right = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right
-    }
-    imageborder.disabled = 1
-    imageheight.disabled = 1
-    imagewidth.disabled = 1
     imagecols.types {
+      textpic {
+        disabled = 1
+      }
       image {
         disabled = 1
       }
@@ -42,6 +35,7 @@ TCEFORM {
         disabled = 1
       }
     }
+    imageorient.removeItems = 17,18
     imageorient.types {
       image {
         disabled = 1
