@@ -105,23 +105,9 @@
                 <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
               </f:if>
               <f:if condition="{data.mainNavigationSearch} > 0">
-                <f:comment><f:render section="Search" arguments="{data: data}" /></f:comment>
                 <div class="header-middle__search">
-                  <div class="tx_solr">
-                        <div class="tx-solr-searchbox">
-                            <form method="get" id="tx-solr-search-form-pi-results" action="/search" data-suggest="/search" data-suggest-header="Top Results" accept-charset="utf-8">
-                                <div class="header-middle__search-wrp">
-                                    <div class="header-middle__search-box">
-                                        <div class="awesomplete">
-                                            <input type="text" class="tx-solr-q js-solr-q header-middle__search-input" name="tx_solr[q]" value="" placeholder="Search" data-search="searchSuggest" autocomplete="off" aria-autocomplete="list">
-                                            <ul hidden=""></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span></div>
-                                        <button class="tx-solr-submit header-middle__search-submit" type="submit" value="Search"><span class="icons icon-t3-search"></span></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                  </div>
+                  <f:cObject typoscriptObjectPath="lib.headerMiddleSearch" />
+                </div>
               </f:if>
             </div>
           </f:if>
