@@ -18,6 +18,9 @@
 			<trans-unit id="tabs.settings">
 				<source>Settings</source>
 			</trans-unit>
+			<trans-unit id="tabs.icon">
+				<source>Icon</source>
+			</trans-unit>
 
 			<!-- general content config fields-->
 			<trans-unit id="header_alignment">

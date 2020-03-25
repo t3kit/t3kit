@@ -13,7 +13,16 @@
 			<trans-unit id="columns.description">
 				<source>description</source>
 			</trans-unit>
+
+			<trans-unit id="icon_source">
+				<source>Source</source>
+			</trans-unit>
+			<trans-unit id="icon_class">
+				<source>Appearance</source>
+			</trans-unit>
+			<trans-unit id="icon">
+				<source>Icon</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
-

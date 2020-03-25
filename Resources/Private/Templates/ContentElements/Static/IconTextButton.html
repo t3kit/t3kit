@@ -20,12 +20,16 @@
 <f:section name="Content">
   <div class="icon-text-btn__wrp">
     <div class="icon-text-btn">
-      <h3 class="icon-text-btn__header">
-        <f:if condition="{flexform.iconClass}">
-          <span class="icon-text-btn__icon icons icon-{flexform.iconClass}" aria-hidden="true"></span>
+      <div class="icon-text-btn__icon-and-header">
+        <f:if condition="{data.icon}">
+          <span class="icon-text-btn__icon">
+            <t3kit:render.svg src="{data.icon}" class="{data.icon_class}" width="24px" height="24px" aria-hidden="true" />
+          </span>
         </f:if>
-        <f:if condition="{data.header}">{data.header}</f:if>
-      </h3>
+        <h3 class="icon-text-btn__header">
+          <f:if condition="{data.header}">{data.header}</f:if>
+        </h3>
+      </div>
 
       <f:if condition="{data.bodytext}">
         <p class="icon-text-btn__p"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
@@ -34,14 +38,13 @@
       <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">
         <f:link.typolink
           parameter="{data.link}"
-          class="icon-text-btn__link{f:if(condition: flexform.btnAsLink, then: '', else: ' btn btn-default')}">
+          class="icon-text-btn__link{f:if(condition: flexform.btnAsLink, then: 'btn btn-text', else: ' btn btn-primary')}">
             {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
         </f:link.typolink>
       </f:if>
-
       <f:if condition="{flexform.disableWholeAreaLink} == 0">
         <span
-          class="big-icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: '', else: 'btn btn-default')}"
+          class="big-icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: 'btn btn-text', else: 'btn btn-primary')}"
           aria-hidden="true">
             {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
         </span>
