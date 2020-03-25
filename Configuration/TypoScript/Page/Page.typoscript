@@ -43,8 +43,8 @@ page {
 
 
 [applicationContext matches "#^Development#"]
-  page.10.partialRootPaths{
-    20 = EXT:t3kit/Resources/Public/assets/development
-  }
-  page.10.variables.application_context.value = development
+page.10.partialRootPaths {
+  20 = EXT:t3kit/Resources/Public/assets/development
+}
+page.10.variables.application_context.value = development
 [end]

@@ -1,17 +1,17 @@
-page {
-  // includeJSLibs {
-  // }
-  // includeJS {
-  // }
-  // includeJSFooterlibs {
-  //   jquery = EXT:t3kit/Resources/Public/JavaScript/jquery.js
-  //   jquery {
-  //     forceOnTop = 1
-  //   }
-  //   bootstrap = EXT:t3kit/Resources/Public/JavaScript/bootstrap.js
-  //   components = EXT:t3kit/Resources/Public/JavaScript/components.js
-  // }
-  // includeJSFooter {
-  //   mainjs = EXT:t3kit/Resources/Public/JavaScript/main.js
-  // }
-}
+// page {
+// includeJSLibs {
+// }
+// includeJS {
+// }
+// includeJSFooterlibs {
+//   jquery = EXT:t3kit/Resources/Public/JavaScript/jquery.js
+//   jquery {
+//     forceOnTop = 1
+//   }
+//   bootstrap = EXT:t3kit/Resources/Public/JavaScript/bootstrap.js
+//   components = EXT:t3kit/Resources/Public/JavaScript/components.js
+// }
+// includeJSFooter {
+//   mainjs = EXT:t3kit/Resources/Public/JavaScript/main.js
+// }
+// }

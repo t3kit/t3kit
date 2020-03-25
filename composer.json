@@ -69,7 +69,8 @@
     "test": [
       "@lint-php",
       "@lint-yaml",
-      "@lint-xml"
+      "@lint-xml",
+      "@lint-typoscript"
     ]
   },
   "extra": {

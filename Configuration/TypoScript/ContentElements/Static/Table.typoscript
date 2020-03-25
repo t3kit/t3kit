@@ -16,11 +16,11 @@ tt_content.table {
       fieldDelimiter.char.cObject {
         field = table_delimiter
       }
-      fieldEnclosure.char.cObject = TEXT
-      fieldEnclosure.char.cObject {
-        field = table_enclosure
-      }
       fieldEnclosure {
+        char.cObject = TEXT
+        char.cObject {
+          field = table_enclosure
+        }
         if {
           value = 0
           equals.field = table_enclosure

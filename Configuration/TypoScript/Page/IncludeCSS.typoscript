@@ -1,9 +1,9 @@
-page {
-  // includeCSSLibs {
-  // }
-  includeCSS {
-    // bootstrap = EXT:t3kit/Resources/Public/CSS/bootstrap.css
-    // components = EXT:t3kit/Resources/Public/CSS/components.css
-    // maincss = EXT:t3kit/Resources/Public/CSS/main.css
-  }
-}
+// page {
+//   // includeCSSLibs {
+//   // }
+//   includeCSS {
+//     // bootstrap = EXT:t3kit/Resources/Public/CSS/bootstrap.css
+//     // components = EXT:t3kit/Resources/Public/CSS/components.css
+//     // maincss = EXT:t3kit/Resources/Public/CSS/main.css
+//   }
+// }
