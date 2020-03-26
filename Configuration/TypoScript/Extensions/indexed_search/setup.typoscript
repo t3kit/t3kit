@@ -20,3 +20,17 @@ lib.headerMiddleSearch.20 {
   file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/HeaderMiddleSearch.html
   settings < plugin.tx_indexedsearch.settings
 }
+
+lib.headerTopSearch = COA
+lib.headerTopSearch.20 = FLUIDTEMPLATE
+lib.headerTopSearch.20 {
+  file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/HeaderTopSearch.html
+  settings < plugin.tx_indexedsearch.settings
+}
+
+lib.mainNavigationSearch = COA
+lib.mainNavigationSearch.20 = FLUIDTEMPLATE
+lib.mainNavigationSearch.20 {
+  file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/MainNavigationSearch.html
+  settings < plugin.tx_indexedsearch.settings
+}
