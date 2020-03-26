@@ -60,7 +60,7 @@
           </f:if>
 
           <f:if condition="{data.headerTopSearch}">
-            <f:cObject typoscriptObjectPath="lib.headerTopSearch" />
+            <f:cObject typoscriptObjectPath="lib.contentObject.headerTopSearch" />
           </f:if>
 
           <f:if condition="{data.headerTopNavigation}">
@@ -93,7 +93,7 @@
               </f:if>
               <f:if condition="{data.headerMiddleSearch} > 0">
                 <div class="header-middle__search">
-                  <f:cObject typoscriptObjectPath="lib.headerMiddleSearch" />
+                  <f:cObject typoscriptObjectPath="lib.contentObject.headerMiddleSearch" />
                 </div>
               </f:if>
             </div>
@@ -159,7 +159,7 @@
             </f:if>
             <f:if condition="{data.mainNavigationSearch} > 0">
               <div class="main-navigation__search">
-                <f:cObject typoscriptObjectPath="lib.mainNavigationSearch" />
+                <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch" />
               </div>
             </f:if>
           </div>
