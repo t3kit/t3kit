@@ -74,16 +74,3 @@ foreach ($contentElementIcons as $icon) {
         ['source' => $contentElementIconFilePath . $icon . '.svg']
     );
 }
-
-/*
- * ###############################################
- * If [Production]
- * Set compressionLevel to 5 in Production environment
- * ===============================================
- */
-switch (\TYPO3\CMS\Core\Core\Environment::getContext()) {
-    case 'Production':
-        $GLOBALS['TYPO3_CONF_VARS']['FE']['compressionLevel'] = 5;
-        $GLOBALS['TYPO3_CONF_VARS']['BE']['compressionLevel'] = 5;
-        break;
-}

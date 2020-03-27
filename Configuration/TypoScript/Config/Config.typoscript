@@ -21,42 +21,19 @@ config {
 
   removeDefaultCss = 1
 
-  // The default JavaScript is the decryption function for email addresses.
-  // Special case: If the value is "external", then the default JavaScript is written to a temporary file and included from that file. See inlineStyle2TempFile.
-  removeDefaultJS = external
+  // If the value is "external", then the default JavaScript is written to a temporary file and included from that file
+  // removeDefaultJS = external
+  removeDefaultJS = 1
 
   sendCacheHeaders = 1
 
   // if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
-  spamProtectEmailAddresses = -2
-  spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
-  spamProtectEmailAddresses_lastDotSubst = .<span style="display:none;">remove-this.</span>
-}
+  spamProtectEmailAddresses = ascii
 
-// If [Development]
-// TYPO3 Development context and every its subcontext
-[applicationContext = Development*]
-config {
-  admPanel = 1
-  debug = 1
-  headerComment =
-  no_cache = 1
-
-  // Compression and Concatenation of CSS and JS Files
-  compressJs = 0
-  compressCss = 0
-  concatenateJs = 0
-  concatenateCss = 0
-}
-[end]
-
-// If [Production]
-// TYPO3 Production context and every its subcontext
-[applicationContext = Production*]
-config {
+  // TYPO3 Production context
   admPanel = 0
   debug = 0
-  headerComment =
+  headerComment = t3kit10 | t3kit.com
   no_cache = 0
 
   // Compression and Concatenation of CSS and JS Files
@@ -64,5 +41,23 @@ config {
   compressCss = 1
   concatenateJs = 1
   concatenateCss = 1
+}
+
+
+
+// If [Development]
+// TYPO3 Development context and every its subcontext
+[applicationContext matches "#^Development#"]
+config {
+  admPanel = 1
+  debug = 1
+  headerComment = t3kit10 | t3kit.com (Development)
+  no_cache = 1
+
+  // Compression and Concatenation of CSS and JS Files
+  compressJs = 0
+  compressCss = 0
+  concatenateJs = 0
+  concatenateCss = 0
 }
 [end]
