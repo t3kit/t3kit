@@ -1,0 +1,14 @@
+## Set default for lib. used in various templates
+# 10 as empty TEXT
+# 20 is actual FLUIDTEMPLATE, and if 20 isn't set an exception will be thrown in fCobject
+lib.contentObject = COA
+lib.contentObject {
+  empty = COA
+  empty {
+    10 = TEXT
+  }
+}
+
+lib.contentObject.headerMiddleSearch =< lib.contentObject.empty
+lib.contentObject.headerTopSearch =< lib.contentObject.empty
+lib.contentObject.mainNavigationSearch =< lib.contentObject.empty

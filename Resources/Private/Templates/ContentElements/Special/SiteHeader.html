@@ -60,20 +60,7 @@
           </f:if>
 
           <f:if condition="{data.headerTopSearch}">
-            <div class="tx_solr">
-                <div class="tx-solr-searchbox">
-                    <form method="get" id="tx-solr-search-form-pi-results" action="/search" data-suggest="/search" data-suggest-header="Top Results" accept-charset="utf-8">
-                        <div class="main-navigation__search-btn-wrp _header-top-search-btn">
-                            <a class="main-navigation__search-btn js__main-navigation__search-btn" href="#">Search<span></span></a>
-                        </div>
-                        <div class="main-navigation__search-box _header-top-search-btn js__main-navigation__search-box">
-                            <div class="awesomplete">
-                                <input type="search" id="inputText" class="tx-solr-q js-solr-q" name="tx_solr[q]" value="" placeholder="Search" data-search="searchSuggest" autocomplete="off" aria-autocomplete="list">
-                                <ul hidden=""></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span></div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <f:cObject typoscriptObjectPath="lib.contentObject.headerTopSearch" />
           </f:if>
 
           <f:if condition="{data.headerTopNavigation}">
@@ -104,24 +91,10 @@
               <f:if condition="{data.mainNavigationLangMenu}">
                 <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
               </f:if>
-              <f:if condition="{data.mainNavigationSearch} > 0">
-                <f:comment><f:render section="Search" arguments="{data: data}" /></f:comment>
+              <f:if condition="{data.headerMiddleSearch} > 0">
                 <div class="header-middle__search">
-                  <div class="tx_solr">
-                        <div class="tx-solr-searchbox">
-                            <form method="get" id="tx-solr-search-form-pi-results" action="/search" data-suggest="/search" data-suggest-header="Top Results" accept-charset="utf-8">
-                                <div class="header-middle__search-wrp">
-                                    <div class="header-middle__search-box">
-                                        <div class="awesomplete">
-                                            <input type="text" class="tx-solr-q js-solr-q header-middle__search-input" name="tx_solr[q]" value="" placeholder="Search" data-search="searchSuggest" autocomplete="off" aria-autocomplete="list">
-                                            <ul hidden=""></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span></div>
-                                        <button class="tx-solr-submit header-middle__search-submit" type="submit" value="Search"><span class="icons icon-t3-search"></span></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                  </div>
+                  <f:cObject typoscriptObjectPath="lib.contentObject.headerMiddleSearch" />
+                </div>
               </f:if>
             </div>
           </f:if>
@@ -186,21 +159,7 @@
             </f:if>
             <f:if condition="{data.mainNavigationSearch} > 0">
               <div class="main-navigation__search">
-                  <f:comment><f:render section="Search" arguments="{data: data}" /></f:comment>
-                  <div class="tx_solr">
-                      <div class="tx-solr-searchbox">
-                          <form method="get" id="tx-solr-search-form-pi-results" action="/search" data-suggest="/search" data-suggest-header="Top Results" accept-charset="utf-8">
-                              <div class="main-navigation__search-btn-wrp">
-                                  <a class="main-navigation__search-btn js__main-navigation__search-btn" href="#">Search<span></span></a>
-                              </div>
-                              <div class="main-navigation__search-box js__main-navigation__search-box">
-                                  <div class="awesomplete">
-                                      <input type="search" id="inputText" name="tx_solr[q]" value="" placeholder="Search" data-search="searchSuggest" autocomplete="off" aria-autocomplete="list">
-                                      <ul hidden=""></ul><span class="visually-hidden" role="status" aria-live="assertive" aria-relevant="additions"></span></div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
+                <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch" />
               </div>
             </f:if>
           </div>
