@@ -23,6 +23,16 @@
 			<trans-unit id="icon">
 				<source>Icon</source>
 			</trans-unit>
+
+			<trans-unit id="nav_icon_source">
+				<source>Source</source>
+			</trans-unit>
+			<trans-unit id="nav_icon_class">
+				<source>Appearance</source>
+			</trans-unit>
+			<trans-unit id="nav_icon">
+				<source>Icon</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

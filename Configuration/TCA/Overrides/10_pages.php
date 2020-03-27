@@ -130,11 +130,91 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
+    'nav_icon_source' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon_source',
+        'exclude' => true,
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [   'None',
+                    ''
+                ],
+                [
+                    'Bootstrap',
+                    'EXT:t3kit/Resources/Public/Images/Icons/Bootstrap/'
+                ],
+            ],
+            'default' => '',
+        ]
+    ]
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
+    'nav_icon_class' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon_class',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [   'None',
+                    ''
+                ]
+            ],
+            'default' => '',
+        ]
+    ]
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
+    'nav_icon' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' =>'selectSingle',
+            'fieldWizard' => [
+                'selectIcons' => [
+                    'disabled' => 0,
+                    'iconSourceField' => 'nav_icon_source',
+                ],
+            ],
+            'itemsProcFunc' => 'T3k\t3kit\View\IconView->addIconsFromSource',
+            'items' => [
+                [   'None',
+                    ''
+                ]
+            ],
+            'maxitems' => '1',
+            'size' => '1',
+            'default' => '',
+        ]
+    ]
+]);
+
+$GLOBALS['TCA']['pages']['palettes']['nav_icon'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon',
+    'showitem' => '
+        nav_icon_source, nav_icon_class,
+        --linebreak--,
+        nav_icon
+    '
+];
+
+$typeList = [];
+$typeList[] = (string)\TYPO3\CMS\Core\Domain\Repository\PageRepository::DOKTYPE_DEFAULT;
+$typeList[] = (string)\TYPO3\CMS\Core\Domain\Repository\PageRepository::DOKTYPE_LINK;
+$typeList[] = (string)\TYPO3\CMS\Core\Domain\Repository\PageRepository::DOKTYPE_SHORTCUT;
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    'title',
-    '--linebreak--, nav_icon',
-    'after:subtitle'
+    '
+    --palette--;;nav_icon,',
+    implode(',', $typeList),
+    'after:title'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(

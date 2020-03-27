@@ -2,7 +2,9 @@
 # Table structure for table 'pages'
 #
 CREATE TABLE pages (
-	nav_icon int(11) unsigned DEFAULT '0' NOT NULL,
+	nav_icon_source varchar(255) DEFAULT '' NOT NULL,
+	nav_icon_class varchar(255) DEFAULT '' NOT NULL,
+	nav_icon varchar(255) DEFAULT '' NOT NULL,
 	nav_image int(11) unsigned DEFAULT '0' NOT NULL,
 );
 
