@@ -102,9 +102,11 @@
       if (mobileMenuAnimationComplete) {
         mobileMenuAnimationComplete = false;
         $html.toggleClass('mobile-menu-opened');
+        $('.js__navigation__items-wrp').show();
       } else {
         mobileMenuAnimationComplete = true;
         $html.toggleClass('mobile-menu-opened');
+        $('.js__navigation__items-wrp').hide();
       }
       /* 
       $('.js__navigation__items-wrp').not(':animated').slideToggle(300, function () {
