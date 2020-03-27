@@ -1,0 +1,79 @@
+// =========================================================
+// !!! include media query inside the selector==============
+// =========================================================
+// Example:
+// @use '../../bootstrap/mixins' as mixin;
+// header {
+//   width: 200px;
+
+//   @include mixin.media-breakpoint-up(md) {
+//     width: 100px;
+//   }
+// }
+// =========================================================
+// =========================================================
+
+// use t3kit variables based on bootstrap variables
+// check "theme/src/styles/_variables.scss"
+@use '../../variables' as var;
+// use bootstrap mixins based on t3kit variable overrides
+// check "theme/src/styles/bootstrap/mixins/_index.scss"
+@use '../../bootstrap/mixins' as mixin;
+
+.textpic-ce {
+  display: flex;
+}
+
+.textpic-ce__picture,
+.textpic-ce__text {
+  flex: 1;
+}
+
+.text-img-above-left .textpic-ce__picture,
+.text-img-below-left .textpic-ce__picture {
+  text-align: left;
+}
+
+.text-img-above-right .textpic-ce__picture,
+.text-img-below-right .textpic-ce__picture {
+  text-align: right;
+}
+
+.text-img-above-center .textpic-ce__picture,
+.text-img-below-center .textpic-ce__picture {
+  text-align: center;
+}
+
+.text-img-below-left,
+.text-img-below-right,
+.text-img-below-center,
+.text-img-right {
+  flex-direction: column-reverse;
+}
+
+.text-img-above-left,
+.text-img-above-right,
+.text-img-above-center,
+.text-img-left {
+  flex-direction: column;
+}
+
+.text-img-left,
+.text-img-right {
+  .textpic-ce__picture,
+  .textpic-ce__text {
+    padding: 0 1rem;
+  }
+}
+
+.text-img-left {
+  @include mixin.media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+}
+
+.text-img-right {
+  @include mixin.media-breakpoint-up(sm) {
+    flex-direction: row-reverse;
+  }
+}
