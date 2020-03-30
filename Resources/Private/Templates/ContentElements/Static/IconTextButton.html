@@ -26,9 +26,11 @@
             <t3kit:render.svg src="{data.icon}" class="{data.icon_class}" width="24px" height="24px" aria-hidden="true" />
           </span>
         </f:if>
-        <h3 class="icon-text-btn__header">
-          <f:if condition="{data.header}">{data.header}</f:if>
-        </h3>
+        <f:if condition="{data.header}">
+          <h3 class="icon-text-btn__header">
+            {data.header}
+          </h3>
+        </f:if>
       </div>
 
       <f:if condition="{data.bodytext}">
