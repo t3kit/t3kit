@@ -10,7 +10,7 @@
       <f:render section="Content" arguments="{_all}" />
     </f:then>
     <f:else>
-      <f:link.typolink parameter="{data.link}">
+      <f:link.typolink parameter="{data.link}" class="icon-text-btn _whole-area-link">
         <f:render section="Content" arguments="{_all}" />
       </f:link.typolink>
     </f:else>
@@ -38,13 +38,13 @@
       <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">
         <f:link.typolink
           parameter="{data.link}"
-          class="icon-text-btn__link{f:if(condition: flexform.btnAsLink, then: 'btn btn-text', else: ' btn btn-primary')}">
+          class="icon-text-btn__link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
             {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
         </f:link.typolink>
       </f:if>
       <f:if condition="{flexform.disableWholeAreaLink} == 0">
         <span
-          class="big-icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: 'btn btn-text', else: 'btn btn-primary')}"
+          class="icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}"
           aria-hidden="true">
             {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
         </span>
