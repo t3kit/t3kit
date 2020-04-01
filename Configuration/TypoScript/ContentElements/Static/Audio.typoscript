@@ -1,12 +1,12 @@
 # ###########################
-# Text & Media
+# Audio
 #
-# CType: textmedia
+# CType: audio
 # ===========================
-tt_content.textmedia =< lib.contentElement
-tt_content.textmedia {
+tt_content.audio =< lib.contentElement
+tt_content.audio {
 
-  templateName = Textmedia
+  templateName = Audio
 
   dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor

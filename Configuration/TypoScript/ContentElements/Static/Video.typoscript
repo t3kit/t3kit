@@ -1,12 +1,12 @@
 # ###########################
-# Text & Media
+# Video
 #
-# CType: textmedia
+# CType: video
 # ===========================
-tt_content.textmedia =< lib.contentElement
-tt_content.textmedia {
+tt_content.video =< lib.contentElement
+tt_content.video {
 
-  templateName = Textmedia
+  templateName = Video
 
   dataProcessing {
     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor

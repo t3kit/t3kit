@@ -20,11 +20,7 @@ defined('TYPO3_MODE') || die();
                 [
                     'text-right',
                     'text-right'
-                ],
-                [
-                    'text-justify',
-                    'text-justify'
-                ],
+                ]
             ],
             'default' => 'text-left',
         ]
@@ -145,6 +141,36 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
+    'aspect_ratio' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:aspect_ratio',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    '16:9',
+                    '16by9'
+                ],
+                [
+                    '21:9',
+                    '21by9'
+                ],
+                [
+                    '4:3',
+                    '4by3'
+                ],
+                [
+                    '1:1',
+                    '1by1'
+                ]
+            ],
+            'default' => '16by9',
+        ]
+    ],
+]);
+
 $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
     'showitem' => '
         alternative,title,
@@ -152,5 +178,19 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
         --linebreak--,link,
         --linebreak--,crop,
         --linebreak--,picture_width,picture_border_radius,img_thumbnail
+    '
+];
+
+$GLOBALS['TCA']['sys_file_reference']['palettes']['videoOverlayPalette'] = [
+    'showitem' => '
+        title,description,description_align,
+        --linebreak--,autoplay,aspect_ratio
+    '
+];
+
+$GLOBALS['TCA']['sys_file_reference']['palettes']['audioOverlayPalette'] = [
+    'showitem' => '
+        title,description,description_align,
+        --linebreak--,autoplay
     '
 ];

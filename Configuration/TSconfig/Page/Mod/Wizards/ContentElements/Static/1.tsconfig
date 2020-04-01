@@ -16,6 +16,8 @@ mod.wizards.newContentElement.wizardItems.static.elements {
   table.tt_content_defValues.CType = table
   uploads.tt_content_defValues.CType = uploads
 
+  video.tt_content_defValues.CType = video
+  audio.tt_content_defValues.CType = audio
   bigIconTextButton.tt_content_defValues.CType = bigIconTextButton
   iconTextButton.tt_content_defValues.CType = iconTextButton
   imageTextLink.tt_content_defValues.CType = imageTextLink

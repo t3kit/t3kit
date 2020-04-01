@@ -41,6 +41,20 @@ lib.contentElement {
   }
   settings {
     container_width = {$plugin.t3kit.settings.container_width}
+    media {
+      videoConfig {
+        controls = 1
+        loop = 0
+        muted = 0
+        // https://github.com/TYPO3/TYPO3.CMS/blob/4cb53e828bd5138d180cdf9cac1ccf7fd31086d2/typo3/sysext/core/Documentation/Changelog/9.3/Breaking-84843-UseNo-cookieDomainForYoutubeByDefault.rst
+        no-cookie = 1
+      }
+      audioConfig {
+        controls = 1
+        loop = 0
+        muted = 0
+      }
+    }
   }
 
 }

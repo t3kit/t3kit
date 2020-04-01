@@ -35,37 +35,62 @@
     # __________________________
   </f:comment>
 
-  <div class="container-xl">
 
-    <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
+  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
-    <div class="row">
-      <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
-    </div>
+  <main class="start-page">
 
-    <div class="row">
-      <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
-    </div>
-
-    <div class="row">
-      <div class="col-md">
-        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3301}" />
+    <section class="start-page__top-content">
+      <div class="start-page__top-content-container container">
+        <div class="row">
+          <div class="col-md">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+          </div>
+        </div>
       </div>
-      <div class="col-md">
-        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3302}" />
+    </section>
+
+    <section class="start-page__before-content">
+      <div class="start-page__before-content-container container">
+        <div class="row">
+          <div class="col-md">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+          </div>
+        </div>
       </div>
-      <div class="col-md">
-        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3303}" />
+    </section>
+
+
+    <section class="start-page__content">
+      <div class="start-page__content-container container">
+        <div class="row">
+          <div class="col-md">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3301}" />
+          </div>
+          <div class="col-md">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3302}" />
+          </div>
+          <div class="col-md">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3303}" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
-      <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
-    </div>
+    <section class="start-page__after-content">
+      <div class="start-page__after-content-container container">
+        <div class="row">
+          <div class="col-md">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
+  </main>
 
-  </div>
+  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
+
 
 </f:section>
 

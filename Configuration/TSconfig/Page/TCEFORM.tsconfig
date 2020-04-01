@@ -31,16 +31,13 @@ TCEFORM {
       image {
         disabled = 1
       }
-      media {
+      textmedia {
         disabled = 1
       }
     }
     imageorient.removeItems = 17,18
     imageorient.types {
       image {
-        disabled = 1
-      }
-      media {
         disabled = 1
       }
     }

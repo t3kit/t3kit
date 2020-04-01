@@ -126,7 +126,7 @@
   </f:if>
 
 
-  <picture class="picture-partial__elem">
+  <picture class="picture-partial__item">
     <source
       media="(max-width: 767px)"
       srcset="{f:uri.image(image: image, maxWidth: '360', cropVariant: 'mobile')} 360w,
@@ -151,7 +151,7 @@
       <f:variable name="img_thumbnail">img-thumbnail</f:variable>
     </f:if>
 
-    <img class="picture-partial__elem-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}" loading="lazy" src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
+    <img class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}" loading="lazy" src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
   </picture>
 
 </html>

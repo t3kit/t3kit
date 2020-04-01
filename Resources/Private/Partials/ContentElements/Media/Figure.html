@@ -14,7 +14,7 @@
       </f:defaultCase>
     </f:switch>
 
-    <figure class="figure-partial figure ">
+    <figure class="figure-partial figure figure-{type -> f:format.case(mode: 'lower')}">
 
       <f:render partial="Media/Type/{type}" arguments="{data: data, file:file}" optional="1"/>
 
