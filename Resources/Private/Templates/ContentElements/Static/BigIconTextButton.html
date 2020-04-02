@@ -5,21 +5,8 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-  <f:if condition="{flexform.disableWholeAreaLink} == 1">
-    <f:then>
-      <f:render section="Content" arguments="{_all}" />
-    </f:then>
-    <f:else>
-      <f:link.typolink parameter="{data.link}" class="big-icon-text-btn _whole-area-link">
-        <f:render section="Content" arguments="{_all}" />
-      </f:link.typolink>
-    </f:else>
-  </f:if>
-</f:section>
-
-<f:section name="Content">
   <div class="big-icon-text-btn__wrp">
-    <div class="big-icon-text-btn">
+    <div class="big-icon-text-btn {f:if(condition: settings.disableWholeAreaLink, then: '', else: ' _whole-area-link')}">
       <f:if condition="{data.icon}">
         <span class="big-icon-text-btn__icon">
           <t3kit:render.svg src="{data.icon}" class="{data.icon_class}" width="55px" height="55px" aria-hidden="true" />
@@ -39,12 +26,13 @@
       <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">
         <f:link.typolink
           parameter="{data.link}"
-          class="big-icon-text-btn__link{f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
+          class="big-icon-text-btn__link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
             {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
         </f:link.typolink>
       </f:if>
 
       <f:if condition="{flexform.disableWholeAreaLink} == 0">
+          <f:link.typolink parameter="{data.link}" class="big-icon-text-btn _whole-area-link stretched-link"> </f:link.typolink>
           <span
             class="big-icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}"
             aria-hidden="true">
@@ -53,6 +41,12 @@
       </f:if>
     </div>
   </div>
+  <pre>
+    datalink: {data.link}
+    btnaslink: {flexform.btnAsLink}
+    disable: {flexform.disableWholeAreaLink}
+  </pre>
 </f:section>
+
 
 </html>

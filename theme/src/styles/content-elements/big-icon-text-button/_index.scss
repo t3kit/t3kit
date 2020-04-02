@@ -33,7 +33,7 @@
 }
 
 .big-icon-text-btn__link {
-    // displays: flex;
+  // displays: flex;
   position: relative;
   z-index: 1;
 
@@ -66,6 +66,7 @@
   display: inline-block;
 }
 
+/*
 .big-icon-text-btn__sham-link {
   color: var.$primary;
 
@@ -106,7 +107,7 @@
     }
   }
 }
-
+*/
 /*
 .big-icon-text-btn._whole-area-link .big-icon-text-btn__link {
     position: absolute;
@@ -128,8 +129,8 @@
 .frontend_editing .big-icon-text-btn._whole-area-link .big-icon-text-btn__link {
     z-index: -1;
 }
-
-.big-icon-text-btn._whole-area-link:hover .big-icon-text-btn__link {
-    background-color: fade(#fff, 10%);
-}
 */
+
+.big-icon-text-btn._whole-area-link:hover {
+  background-color: transparentize(#fff, 0.9);
+}
