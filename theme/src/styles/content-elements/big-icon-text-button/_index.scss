@@ -32,105 +32,20 @@
   padding: 50px 0 40px;
 }
 
-.big-icon-text-btn__link {
-  // displays: flex;
-  position: relative;
-  z-index: 1;
-
-  &:after {
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-    margin-left: 8px;
-    padding: 0 3px;
-    top: 1px;
-  }
-
-  &.btn-primary {
-    color: #fff;
-  }
-}
-
 .big-icon-text-btn__p {
   margin-bottom: 18px;
 }
 
 .big-icon-text-btn__icon {
   padding: 30px 29px 30px 31px;
-  border: 2px solid tint(var.$primary, 70%);
+  border: 2px solid transparentize(var.$primary, 0.3);
   color: var.$primary;
-  border-radius: 55px;
+  border-radius: 50%;
   margin-right: 0;
   margin-bottom: 10px;
-  font-size: 46px;
   display: inline-block;
 }
 
-/*
-.big-icon-text-btn__sham-link {
-  color: var.$primary;
-
-  &:after {
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-    margin-left: 8px;
-    padding: 0 3px;
-    top: 1px;
-  }
-
-  &.btn-primary {
-    color: #fff;
-  }
-}
-
-.big-icon-text-btn._whole-area-link:hover {
-  text-decoration: none;
-
-  .big-icon-text-btn__header,
-  .big-icon-text-btn__p {
-    color: lighten(var.$primary, 5);
-  }
-
-  .big-icon-text-btn__wrp {
-    background-color: transparentize(#fff, 0.9);
-  }
-
-  .big-icon-text-btn__sham-link {
-    &.btn-text {
-      color: lighten(var.$primary, 5);
-    }
-
-    &.btn-primary {
-      border-color: transparentize(var.$primary, 0.2);
-      background-color: transparentize(var.$primary, 0.2);
-    }
-  }
-}
-*/
-/*
-.big-icon-text-btn._whole-area-link .big-icon-text-btn__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    font-size: 0;
-    text-indent: -9999px;
-    border: none;
-    background: transparent;
-    z-index: 1;
-
-    &:active {
-        box-shadow: none;
-    }
-}
-
-.frontend_editing .big-icon-text-btn._whole-area-link .big-icon-text-btn__link {
-    z-index: -1;
-}
-*/
-
-.big-icon-text-btn._whole-area-link:hover {
+.big-icon-text-btn._whole-area-link:hover .big-icon-text-btn__link._whole-area-link:after {
   background-color: transparentize(#fff, 0.9);
 }
