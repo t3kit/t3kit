@@ -5,19 +5,6 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-  <f:if condition="{flexform.disableWholeAreaLink} == 1">
-    <f:then>
-      <f:render section="Content" arguments="{_all}" />
-    </f:then>
-    <f:else>
-      <f:link.typolink parameter="{data.link}" class="icon-text-btn _whole-area-link">
-        <f:render section="Content" arguments="{_all}" />
-      </f:link.typolink>
-    </f:else>
-  </f:if>
-</f:section>
-
-<f:section name="Content">
   <div class="icon-text-btn__wrp">
     <div class="icon-text-btn">
       <div class="icon-text-btn__icon-and-header">
@@ -45,11 +32,9 @@
         </f:link.typolink>
       </f:if>
       <f:if condition="{flexform.disableWholeAreaLink} == 0">
-        <span
-          class="icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}"
-          aria-hidden="true">
-            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
-        </span>
+        <f:link.typolink parameter="{data.link}" class="icon-text-btn__link _whole-area-link stretched-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
+          {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
+        </f:link.typolink>
       </f:if>
     </div>
   </div>

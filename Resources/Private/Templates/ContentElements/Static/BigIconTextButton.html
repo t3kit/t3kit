@@ -32,20 +32,12 @@
       </f:if>
 
       <f:if condition="{flexform.disableWholeAreaLink} == 0">
-          <f:link.typolink parameter="{data.link}" class="big-icon-text-btn _whole-area-link stretched-link"> </f:link.typolink>
-          <span
-            class="big-icon-text-btn__sham-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}"
-            aria-hidden="true">
-              {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
-          </span>
+          <f:link.typolink parameter="{data.link}" class="big-icon-text-btn__link _whole-area-link stretched-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
+            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
+          </f:link.typolink>
       </f:if>
     </div>
   </div>
-  <pre>
-    datalink: {data.link}
-    btnaslink: {flexform.btnAsLink}
-    disable: {flexform.disableWholeAreaLink}
-  </pre>
 </f:section>
 
 
