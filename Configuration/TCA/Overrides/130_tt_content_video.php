@@ -92,5 +92,4 @@ $GLOBALS['TCA']['tt_content']['types']['video'] = [
  * ###########################
  * Add flexForms for Content Element
  * ===========================
- */
-
+*/
