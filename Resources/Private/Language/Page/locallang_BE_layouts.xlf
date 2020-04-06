@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Page Beck-End Layout translations -->
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
 
-			<trans-unit id="title.1column">
+			<trans-unit id="title.1column" resname="">
 				<source>1 Column</source>
 			</trans-unit>
-			<trans-unit id="title.1column75_sidenav25">
+			<trans-unit id="title.1column75_sidenav25" resname="">
 				<source>1 Column[75%] -> Side Navigation[25%]</source>
 			</trans-unit>
-			<trans-unit id="title.sidenav25_1column75">
+			<trans-unit id="title.sidenav25_1column75" resname="">
 				<source>Side Navigation[25%] -> 1 Column[75%]</source>
 			</trans-unit>
 

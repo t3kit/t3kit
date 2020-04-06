@@ -12,71 +12,10 @@ defined('TYPO3_MODE') || die();
     't3kit'
 );
 
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
-    'nav_icon' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.label',
-        'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
-        // 'displayCond' => 'FIELD:add_background:!=:0',
-        'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('nav_icon', [
-            'appearance' => [
-                'createNewRelationLinkTitle' =>
-                'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
-            ],
-            'overrideChildTca' => [
-                'types' => [
-                    '0' => [
-                        'showitem' => '
-                        --palette--;;imageoverlayPalette,
-                        --palette--;;filePalette'
-                    ],
-                    \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
-                        'showitem' => '
-                        --palette--;;imageoverlayPalette,
-                        --palette--;;filePalette'
-                    ],
-                    \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                        'showitem' => '
-                        --palette--;;imageoverlayPalette,
-                        --palette--;;filePalette'
-                    ],
-                    \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
-                        'showitem' => '
-                        --palette--;;audioOverlayPalette,
-                        --palette--;;filePalette'
-                    ],
-                    \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
-                        'showitem' => '
-                        --palette--;;videoOverlayPalette,
-                        --palette--;;filePalette'
-                    ],
-                    \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
-                        'showitem' => '
-                        --palette--;;imageoverlayPalette,
-                        --palette--;;filePalette'
-                    ]
-                ],
-                'columns' => [
-                    'uid_local' => [
-                        'config' => [
-                            'appearance' => [
-                                'elementBrowserAllowed' => 'png,svg'
-                            ]
-                        ]
-                    ]
-                ]
-            ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
-    ],
-]);
-
-
+// Add image record for page settings.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_image' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.label',
-        'description' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:columns.description',
-        // 'displayCond' => 'FIELD:add_background:!=:0',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_image',
         'exclude' => true,
         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('nav_image', [
             'appearance' => [
@@ -130,9 +69,17 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'layout',
+    '--linebreak--, nav_image',
+    'after:backend_layout_next_level'
+);
+
+// Add icons record for page settings.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_icon_source' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon_source',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon_source',
         'exclude' => true,
         'onChange' => 'reload',
         'config' => [
@@ -154,7 +101,7 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_icon_class' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon_class',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon_class',
         'exclude' => true,
         'config' => [
             'type' => 'select',
@@ -171,7 +118,7 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_icon' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon',
         'exclude' => true,
         'config' => [
             'type' => 'select',
@@ -196,7 +143,7 @@ defined('TYPO3_MODE') || die();
 ]);
 
 $GLOBALS['TCA']['pages']['palettes']['nav_icon'] = [
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TCA_ttc.xlf:nav_icon',
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon.palette',
     'showitem' => '
         nav_icon_source, nav_icon_class,
         --linebreak--,
@@ -211,15 +158,7 @@ $typeList[] = (string)\TYPO3\CMS\Core\Domain\Repository\PageRepository::DOKTYPE_
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages',
-    '
-    --palette--;;nav_icon,',
+    '--palette--;;nav_icon,',
     implode(',', $typeList),
-    'after:title'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'pages',
-    'layout',
-    '--linebreak--, nav_image',
-    'after:backend_layout_next_level'
+    'after:layout'
 );

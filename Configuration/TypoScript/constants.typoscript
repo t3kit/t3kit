@@ -1,30 +1,24 @@
-plugin.t3kit {
-  settings {
-    # customcategory=general=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.general
 
-    # customcategory=goingLive=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.goingLive
-
-    # customsubcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.t3kit
-
-    # cat=general/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.container_width
-    container_width = 1200
-
-    # cat=goingLive/t3kit; type=boolean; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.production
-    production = 0
-
-    # cat=goingLive/t3kit; type=string; label= LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:settings.production
-    theme = t3kit
-  }
+# customcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit
+# customcategory=t3kit_advanced=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit_advanced
+# customsubcategory=meta=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.meta
+page.meta {
+  # cat=t3kit/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.description
+  description = t3kit project. A TYPO3 based web development eco-system.
+  # cat=t3kit/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.author
+  author = t3kit team
+  # cat=t3kit/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.keywords
+  keywords = TYPO3, t3kit
+  # cat=t3kit_advanced; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.viewport
+  viewport = width=device-width, initial-scale=1, shrink-to-fit=no
 }
 
-page.meta {
-  # cat=t3kit: meta data; type=string; label=Description Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.
-  description =
-  # cat=t3kit: meta data; type=string; label=Author Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.
-  author =
-  # cat=t3kit: meta data; type=string; label=Keywords Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.
-  keywords =
-  # cat=t3kit: meta data; type=string; label=Viewport:
-  viewport = width=device-width, initial-scale=1, shrink-to-fit=no
+# customcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit
+# customcategory=t3kit_advanced=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit_advanced
+plugin.t3kit {
+  settings {
+    # cat=t3kit_advanced; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
+    container_width = 1200
+  }
 }
 

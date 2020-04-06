@@ -26,7 +26,7 @@
 
 mod.web_layout.BackendLayouts.empty {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/empty.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.empty
+  title = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:title.empty
   config.backend_layout {
     colCount = 12
     rowCount = 1
@@ -34,7 +34,7 @@ mod.web_layout.BackendLayouts.empty {
     # All Content
     rows.1.columns {
       1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.content
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
         colspan = 12
         colPos = 1001
       }

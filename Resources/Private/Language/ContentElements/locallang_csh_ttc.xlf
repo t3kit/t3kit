@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Context help for tt_content field -->
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_ttc.xlf" date="2019-04-20UTC12:53:470" product-name="context_help">
 		<header/>
 		<body>
 
-			<trans-unit id="header_position.description">
+			<trans-unit id="header_position.description" resname="header_position.description">
 				<source>
 					&lt;strong&gt;Default-Left&lt;/strong&gt; - Aligns the text to the left&lt;br&gt;
 					&lt;strong&gt;Right&lt;/strong&gt; - Aligns the text to the right]&lt;br&gt;
@@ -13,7 +14,7 @@
 				</source>
 			</trans-unit>
 
-			<trans-unit id="section_container_width.description">
+			<trans-unit id="section_container_width.description" resname="section_container_width.description">
 				<source>
 					&lt;strong&gt;Container&lt;/strong&gt; - The image element inside the section with a specific width.
 					Usually, it's up to 1200px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance. &lt;br&gt;

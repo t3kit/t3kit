@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- TypoScript constants translations -->
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
-			<trans-unit id="category.general">
-				<source>General</source>
+			<!-- category -->
+			<trans-unit id="category.t3kit" resname="category.t3kit">
+				<source>t3kit settings</source>
 			</trans-unit>
-			<trans-unit id="category.goingLive">
-				<source>GOING LIVE</source>
+			<trans-unit id="category.t3kit_advanced" resname="category.t3kit_advanced">
+				<source>t3kit advanced settings</source>
 			</trans-unit>
-			<trans-unit id="subcategory.t3kit">
-				<source>t3kit</source>
+
+			<!-- subcategory -->
+			<trans-unit id="subcategory.meta" resname="subcategory.meta">
+				<source>Meta data</source>
 			</trans-unit>
-			<trans-unit id="settings.production">
-				<source>Enable t3kit Production mode: Open site for search robots + compress-concat CSS and JS files</source>
+
+			<!-- meta data -->
+			<trans-unit id="meta.description" resname="meta.description">
+				<source>Description Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
 			</trans-unit>
-			<trans-unit id="settings.container_width">
+			<trans-unit id="meta.author" resname="meta.author">
+				<source>Author Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
+			</trans-unit>
+			<trans-unit id="meta.keywords" resname="meta.keywords">
+				<source>Keywords Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
+			</trans-unit>
+			<trans-unit id="meta.viewport" resname="meta.viewport">
+				<source>Viewport</source>
+			</trans-unit>
+
+			<!-- settings -->
+			<trans-unit id="container_width" resname="container_width">
 				<source>Max page container width</source>
 			</trans-unit>
+
+
 		</body>
 	</file>
 </xliff>

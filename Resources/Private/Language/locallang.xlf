@@ -1,10 +1,11 @@
+<!-- Front-End translations -->
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-20UTC12:53:470" product-name="t3kit">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
 
-			<trans-unit id="scrollToTop">
+			<trans-unit id="scroll_to_top" resname="scroll_to_top">
 				<source>Scroll to top</source>
 			</trans-unit>
 

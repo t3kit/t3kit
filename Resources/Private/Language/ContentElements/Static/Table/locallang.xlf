@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="table_class.table_dark" resname="table_class.table_dark">
+				<source>Dark table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table_striped" resname="table_class.table_striped">
+				<source>Striped rows</source>
+			</trans-unit>
+			<trans-unit id="table_class.table_bordered" resname="table_class.table_bordered">
+				<source>Bordered table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table_borderless" resname="table_class.table_borderless">
+				<source>Borderless table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table_hover" resname="table_class.table_hover">
+				<source>Hoverable rows</source>
+			</trans-unit>
+			<trans-unit id="table_class.table_sm" resname="table_class.table_sm">
+				<source>Small table</source>
+			</trans-unit>
+			<trans-unit id="table_class.table_responsive" resname="table_class.table_responsive">
+				<source>Responsive tables</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

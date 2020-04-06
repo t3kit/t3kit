@@ -26,7 +26,7 @@
 
 mod.web_layout.BackendLayouts.1column75_sidenav25 {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/1column75_sidenav25.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.1column75_sidenav25
+  title = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:title.1column75_sidenav25
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -36,7 +36,7 @@ mod.web_layout.BackendLayouts.1column75_sidenav25 {
 
       # Top content (after site header/before breadcrumbs)
       1.columns.1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.top
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.top
         colspan = 12
         colPos = 50
       }
@@ -45,7 +45,7 @@ mod.web_layout.BackendLayouts.1column75_sidenav25 {
 
       # Additional content (after breadcrumbs/before main content)
       2.columns.1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.before_content
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.before_content
         colspan = 12
         colPos = 60
       }
@@ -54,12 +54,12 @@ mod.web_layout.BackendLayouts.1column75_sidenav25 {
       # All Content
       3.columns {
         1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.content
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 8
           colPos = 7501
         }
         2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.sidenav
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.sidenav
           colspan = 4
         }
       }
@@ -67,7 +67,7 @@ mod.web_layout.BackendLayouts.1column75_sidenav25 {
 
       # Additional content (after main content/before site footer)
       4.columns.1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.after_content
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.after_content
         colspan = 12
         colPos = 90
       }

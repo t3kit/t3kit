@@ -13,12 +13,12 @@ TCEFORM {
     }
     header_layout {
       altLabels {
-        0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.1
-        1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.2
-        2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.3
-        3 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.4
-        4 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.5
-        5 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.6
+        0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.1
+        1 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.2
+        2 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.3
+        3 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.4
+        4 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.5
+        5 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.6
       }
     }
     frame_class {

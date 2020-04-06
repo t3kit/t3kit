@@ -3,22 +3,22 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'description_align' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:description_align',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'text-left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.text_left',
                     'text-left'
                 ],
                 [
-                    'text-center',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.text_center',
                     'text-center'
                 ],
                 [
-                    'text-right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.text_right',
                     'text-right'
                 ]
             ],
@@ -29,46 +29,46 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'picture_width' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:picture_width',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    '100% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.100',
                     '100'
                 ],
                 [
-                    '90% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.90',
                     '90'
                 ],
                 [
-                    '80% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.80',
                     '80'
                 ],
                 [
-                    '70% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.70',
                     '70'
                 ],
                 [
-                    '60% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.60',
                     '60'
                 ],
                 [
-                    '50% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.50',
                     '50'
                 ],
                 [
-                    '40% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.40',
                     '40'
                 ],
                 [
-                    '30% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.30',
                     '30'
                 ],
                 [
-                    '20% of content element',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.20',
                     '20'
                 ]
             ],
@@ -79,42 +79,42 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'picture_border_radius' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:picture_border_radius',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'Default',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.default',
                     ''
                 ],
                 [
-                    'rounded',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded',
                     'rounded'
                 ],
                 [
-                    'rounded-circle',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_circle',
                     'rounded-circle'
                 ],
                 [
-                    'rounded-pill',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_pill',
                     'rounded-pill'
                 ],
                 [
-                    'rounded-top',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_top',
                     'rounded-top'
                 ],
                 [
-                    'rounded-right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_right',
                     'rounded-right'
                 ],
                 [
-                    'rounded-bottom',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_bottom',
                     'rounded-bottom'
                 ],
                 [
-                    'rounded-left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_left',
                     'rounded-left'
                 ]
             ],
@@ -123,11 +123,10 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'img_thumbnail' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:img_thumbnail',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:img_thumbnail',
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
@@ -143,26 +142,26 @@ defined('TYPO3_MODE') || die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'aspect_ratio' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:aspect_ratio',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    '16:9',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.16-9',
                     '16by9'
                 ],
                 [
-                    '21:9',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.21-9',
                     '21by9'
                 ],
                 [
-                    '4:3',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.4-3',
                     '4by3'
                 ],
                 [
-                    '1:1',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.1-1',
                     '1by1'
                 ]
             ],
