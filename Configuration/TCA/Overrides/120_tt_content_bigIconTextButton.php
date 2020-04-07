@@ -11,7 +11,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.title',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextButton.xlf:bigIconTextButton.title',
         'bigIconTextButton',
         'ce-bigIconTextButton'
     ],
@@ -39,7 +39,8 @@ $GLOBALS['TCA']['tt_content']['types']['bigIconTextButton'] = [
             --palette--;;general,
             --palette--;;headers,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            content_alignment_center,
+            content_align_center,
+            --palette--;;link,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
             --palette--;;icon,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
@@ -66,20 +67,6 @@ $GLOBALS['TCA']['tt_content']['types']['bigIconTextButton'] = [
  * Add new palettes for a Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['palettes']['bigIconTextButton'] = array(
-    'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        --linebreak--,
-        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-        --linebreak--,
-        link_title;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.buttonText,
-        --linebreak--,
-        link,
-        --linebreak--,
-        content_alignment_center,
-    ',
-);
 
 
 /*

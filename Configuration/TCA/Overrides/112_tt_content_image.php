@@ -7,25 +7,13 @@ defined('TYPO3_MODE') || die();
  * Add Content Element to Type list
  * ===========================
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.title',
-        'iconTextButton',
-        'ce-iconTextButton'
-    ],
-    'bigIconTextButton',
-    'after'
-);
 
 
-/*
- * ###########################
- * Add icon for Content Element
- * ===========================
- */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextButton'] = 'ce-iconTextButton';
+// /*
+//  * ###########################
+//  * Add icon for Content Element
+//  * ===========================
+//  */
 
 
 /*
@@ -33,18 +21,15 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextButton'] = 'c
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
+$GLOBALS['TCA']['tt_content']['types']['image'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            content_align,
-            --palette--;;link,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
-            --palette--;;icon,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+            image,
+            --palette--;;mediaAdjustments,
+            --palette--;;imagelinks,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -58,7 +43,31 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    '
+    ',
+    'columnsOverrides' => [
+        'image' => [
+            'config' => [
+                'filter' => [
+                    0 => [
+                        'parameters' => [
+                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
+                        ]
+                    ]
+                ],
+                'overrideChildTca' => [
+                    'columns' => [
+                        'uid_local' => [
+                            'config' => [
+                                'appearance' => [
+                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
 ];
 
 
@@ -74,8 +83,3 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
  * Add flexForms for Content Element
  * ===========================
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/IconTextButton.xml',
-    'iconTextButton'
-);

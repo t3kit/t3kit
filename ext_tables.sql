@@ -13,21 +13,26 @@ CREATE TABLE pages (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
-	table_class varchar(255) DEFAULT '' NOT NULL,
-
-	custom_header varchar(255) DEFAULT '' NOT NULL,
-	custom_subheader varchar(255) DEFAULT '' NOT NULL,
+	content_align varchar(60) DEFAULT '' NOT NULL,
+	content_align_center varchar(60) DEFAULT '' NOT NULL,
+	section_container_width varchar(60) DEFAULT '' NOT NULL,
+	icon_source varchar(60) DEFAULT '' NOT NULL,
+	icon_class varchar(60) DEFAULT '' NOT NULL,
+	icon varchar(255) DEFAULT '' NOT NULL,
+	link_title varchar(255) DEFAULT '' NOT NULL,
+	link varchar(1024) DEFAULT '' NOT NULL,
+	link_align varchar(60) DEFAULT '' NOT NULL,
 	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
 	background_color_class varchar(60) DEFAULT '' NOT NULL,
 	background_color varchar(255) DEFAULT '' NOT NULL,
 	background int(11) unsigned DEFAULT '0' NOT NULL,
 	background_parallax tinyint(3) unsigned DEFAULT '0' NOT NULL,
 	full_width_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
-	content_alignment varchar(6) DEFAULT '' NOT NULL,
-	content_alignment_center varchar(6) DEFAULT '' NOT NULL,
-	section_container_width varchar(255) DEFAULT '' NOT NULL,
-	link_title varchar(255) DEFAULT '' NOT NULL,
-	link varchar(1024) DEFAULT '' NOT NULL,
+
+	table_class varchar(255) DEFAULT '' NOT NULL,
+
+
+
 
 	skipLinks_mainNavigation varchar(255) DEFAULT '' NOT NULL,
 	skipLinks_mainContent varchar(255) DEFAULT '' NOT NULL,
@@ -76,14 +81,6 @@ CREATE TABLE tt_content (
 	mainNavigationLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
 	mainNavigationLogo int(11) unsigned DEFAULT '0' NOT NULL,
 	mainNavigationSearch int(11) unsigned DEFAULT '0' NOT NULL,
-
-	author_name varchar(255) DEFAULT '' NOT NULL,
-	work_title varchar(255) DEFAULT '' NOT NULL,
-
-	icon_source varchar(255) DEFAULT '' NOT NULL,
-	icon_class varchar(255) DEFAULT '' NOT NULL,
-	icon varchar(255) DEFAULT '' NOT NULL,
-
 );
 
 

@@ -6,14 +6,14 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 
 					<disableWholeAreaLink>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.disableWholeAreaLink</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.disableWholeAreaLink</label>
 							<config>
 								<type>check</type>
 							</config>
@@ -22,7 +22,7 @@
 
 					<linkAsBtn>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.linkAsBtn</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.linkAsBtn</label>
 							<config>
 								<type>check</type>
 							</config>
@@ -31,7 +31,7 @@
 
 					<hoverEffect>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.hoverEffect</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>

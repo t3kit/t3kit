@@ -10,15 +10,15 @@ defined('TYPO3_MODE') || die();
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.text_left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.left',
                     'text-left'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.text_center',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.center',
                     'text-center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.text_right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.right',
                     'text-right'
                 ]
             ],

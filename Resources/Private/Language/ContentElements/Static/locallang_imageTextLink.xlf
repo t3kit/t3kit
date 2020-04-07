@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="imageTextLink.title" resname="imageTextLink.title">
+				<source>Image text and link</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.description" resname="imageTextLink.description">
+				<source>Image or media, text and link. Will use image before media. Will only render one image or one media.</source>
+			</trans-unit>
+
+			<trans-unit id="imageTextLink.flexform.disableWholeAreaLink" resname="imageTextLink.flexform.disableWholeAreaLink">
+				<source>Disable whole area link</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.linkAsBtn" resname="imageTextLink.flexform.linkAsBtn">
+				<source>Show link as a button</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect" resname="imageTextLink.flexform.hoverEffect">
+				<source>Hover effects</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_disable" resname="imageTextLink.flexform.hoverEffect_disable">
+				<source>Disable</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-1" resname="imageTextLink.flexform.hoverEffect_hover-1">
+				<source>Hover effect 1</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-2" resname="imageTextLink.flexform.hoverEffect_hover-2">
+				<source>Hover effect 2</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-3" resname="imageTextLink.flexform.hoverEffect_hover-3">
+				<source>Hover effect 3</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-4" resname="imageTextLink.flexform.hoverEffect_hover-4">
+				<source>Hover effect 4</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-5" resname="imageTextLink.flexform.hoverEffect_hover-5">
+				<source>Hover effect 5</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-6" resname="imageTextLink.flexform.hoverEffect_hover-6">
+				<source>Hover effect 6</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-7" resname="imageTextLink.flexform.hoverEffect_hover-7">
+				<source>Hover effect 7</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-8" resname="imageTextLink.flexform.hoverEffect_hover-8">
+				<source>Hover effect 8</source>
+			</trans-unit>
+			<trans-unit id="imageTextLink.flexform.hoverEffect_hover-9" resname="imageTextLink.flexform.hoverEffect_hover-9">
+				<source>Hover effect 9</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

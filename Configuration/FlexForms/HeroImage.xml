@@ -6,7 +6,7 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.sheetTitle</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>

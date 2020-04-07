@@ -22,7 +22,7 @@
 				<source>Small table</source>
 			</trans-unit>
 			<trans-unit id="table_class.table_responsive" resname="table_class.table_responsive">
-				<source>Responsive tables</source>
+				<source>Responsive table</source>
 			</trans-unit>
 		</body>
 	</file>

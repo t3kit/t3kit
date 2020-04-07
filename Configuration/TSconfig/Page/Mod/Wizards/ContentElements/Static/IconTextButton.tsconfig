@@ -4,17 +4,11 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     iconTextButton {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:iconTextButton.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:iconTextButton.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.description
       iconIdentifier = ce-iconTextButton
     }
   }
   show := addToList(iconTextButton)
-}
-
-TCEFORM.tt_content.pi_flexform.iconTextButton.sDEF.iconClass {
-  addItems {
-    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:iconTextButton.flexform.icon_none
-  }
 }
 

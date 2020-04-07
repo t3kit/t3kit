@@ -104,13 +104,13 @@
 			<trans-unit id="description_align" resname="description_align">
 				<source>Description align</source>
 			</trans-unit>
-			<trans-unit id="description_align.text_left" resname="description_align.text_left">
+			<trans-unit id="description_align.left" resname="description_align.left">
 				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="description_align.text_center" resname="description_align.text_center">
+			<trans-unit id="description_align.center" resname="description_align.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="description_align.text_right" resname="description_align.text_right">
+			<trans-unit id="description_align.right" resname="description_align.right">
 				<source>Right</source>
 			</trans-unit>
 
@@ -189,6 +189,42 @@
 			<!-- Content element custom t3kit fields translations -->
 			<trans-unit id="content_alignment" resname="content_alignment">
 				<source>Content alignment</source>
+			</trans-unit>
+			<trans-unit id="link.palette" resname="link.palette">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="link_title" resname="link_title">
+				<source>Link title</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="link_align" resname="link_align">
+				<source>Link alignment</source>
+			</trans-unit>
+			<trans-unit id="link_align.left" resname="link_align.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="link_align.center" resname="link_align.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="link_align.right" resname="link_align.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="content_align" resname="content_align">
+				<source>Content alignment</source>
+			</trans-unit>
+			<trans-unit id="content_align.left" resname="content_align.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="content_align.center" resname="content_align.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="content_align.right" resname="content_align.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="content_align.justify" resname="content_align.justify">
+				<source>Justify</source>
 			</trans-unit>
 
 

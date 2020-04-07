@@ -28,19 +28,11 @@ TCEFORM {
       textpic {
         disabled = 1
       }
-      image {
-        disabled = 1
-      }
       textmedia {
         disabled = 1
       }
     }
     imageorient.removeItems = 17,18
-    imageorient.types {
-      image {
-        disabled = 1
-      }
-    }
   }
 
   # ###################################
@@ -104,7 +96,6 @@ TCEFORM {
       }
     }
   }
-
 }
 
 
@@ -114,6 +105,3 @@ TCEFORM {
 
 # header_layout; 0 = Header1 [H1]; 1 = Header2 [H2]; ...
 TCAdefaults.tt_content.header_layout = 1
-
-# header alignment (left by default)
-// TCAdefaults.tt_content.header_position = justify

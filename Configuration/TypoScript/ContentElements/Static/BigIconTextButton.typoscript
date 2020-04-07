@@ -3,19 +3,10 @@ tt_content {
   bigIconTextButton {
     templateName = BigIconTextButton
     dataProcessing {
-      // 10 = T3kit\themeT3kit\DataProcessing\FlexFormProcessor
-      // 10 {
-      //   fieldName = pi_flexform
-      //   as = settings
-      // }
-      20 = T3k\t3kit\DataProcessing\FlexFormProcessor
-      20 {
+      10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      10 {
         fieldName = pi_flexform
-        as = flexform
       }
-      # "inherit" from lib.fluidContent
-      // 800 < lib.contentElement.dataProcessing.800
-      // 830 < lib.contentElement.dataProcessing.830
     }
   }
 }

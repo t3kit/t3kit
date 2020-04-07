@@ -11,7 +11,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.title',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.title',
         'imageTextLink',
         'ce-imageTextLink'
     ],
@@ -39,7 +39,8 @@ $GLOBALS['TCA']['tt_content']['types']['imageTextLink'] = [
             --palette--;;general,
             --palette--;;headers,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            content_alignment,
+            content_align,
+            --palette--;;link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
             --palette--;;mediaAdjustments,
@@ -91,19 +92,6 @@ $GLOBALS['TCA']['tt_content']['types']['imageTextLink'] = [
  * Add new palettes for a Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['palettes']['imageTextLink'] = array(
-    'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
-        --linebreak--,
-        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-        --linebreak--,
-        link_title,
-        --linebreak--,
-        link,
-        --linebreak--,
-        content_alignment,
-    ',
-);
 
 
 /*

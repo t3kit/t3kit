@@ -8,31 +8,31 @@ $GLOBALS['TCA']['tt_content']['columns']['table_class']['config'] = [
     'renderType' => 'selectCheckBox',
     'items' => [
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_dark',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_dark',
             'table-dark'
         ],
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_striped',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_striped',
             'table-striped'
         ],
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_bordered',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_bordered',
             'table-bordered'
         ],
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_borderless',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_borderless',
             'table-borderless'
         ],
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_hover',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_hover',
             'table-hover'
         ],
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_sm',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_sm',
             'table-sm'
         ],
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/Table/locallang.xlf:table_class.table_responsive',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_responsive',
             'table-responsive'
         ],
     ],
