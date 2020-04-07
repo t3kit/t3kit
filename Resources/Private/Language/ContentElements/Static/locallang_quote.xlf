@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="quote.title" resname="">
+				<source>Quote</source>
+			</trans-unit>
+			<trans-unit id="quote.description" resname="quote.description">
+				<source>Quote with optional footer and link</source>
+			</trans-unit>
+
+			<trans-unit id="quote.flexform.title" resname="quote.flexform.title">
+				<source>Quote</source>
+			</trans-unit>
+			<trans-unit id="quote.flexform.author_name" resname="quote.flexform.author_name">
+				<source>Author name</source>
+			</trans-unit>
+			<trans-unit id="quote.flexform.work_title" resname="quote.flexform.work_title">
+				<source>Work title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

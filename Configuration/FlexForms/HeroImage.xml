@@ -13,7 +13,7 @@
 
 					<linkAsBtn>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.linkAsBtn</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.linkAsBtn</label>
 							<config>
 								<type>check</type>
 							</config>
@@ -22,7 +22,7 @@
 
 					<transparentLayer>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.transparentLayer</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -35,7 +35,7 @@
 
 					<horizontalAlignment>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.horizontalAlignment</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -48,7 +48,7 @@
 
 					<verticalAlignment>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.verticalAlignment</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -61,7 +61,7 @@
 
 					<animationStyle>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.animationStyle</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>

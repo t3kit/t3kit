@@ -4,101 +4,6 @@
 		<header/>
 		<body>
 
-			<!--HeroImage Element-->
-			<trans-unit id="heroImage.title">
-				<source>Hero Image</source>
-			</trans-unit>
-			<trans-unit id="heroImage.description">
-				<source>Image, header, subheader, text and link. Will render only if image added</source>
-			</trans-unit>
-
-			<trans-unit id="heroImage.flexform.linkAsBtn">
-				<source>Show link as a button</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.transparentLayer">
-				<source>Element overlay color with opacity</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.horizontalAlignment">
-			<source>Horizontal alignment</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.verticalAlignment">
-				<source>Vertical alignment</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.horizontalAlignment_left">
-				<source>Left align</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.horizontalAlignment_center">
-				<source>Center align</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.horizontalAlignment_right">
-				<source>Right align</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.verticalAlignment_top">
-				<source>Top</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.verticalAlignment_middle">
-				<source>Middle</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.verticalAlignment_bottom">
-				<source>Bottom</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle">
-				<source>Set Animation Style</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle_disable">
-				<source>Disable</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle_1">
-				<source>Fade In Down</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle_2">
-				<source>Fade In</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle_3">
-				<source>Fade In Up</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle_4">
-				<source>Fade from up and down, style 1</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.animationStyle_5">
-				<source>Fade from up and down, style 2</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.transparentLayer_disable">
-				<source>Disable</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.transparentLayer_1">
-				<source>Main color</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.transparentLayer_2">
-				<source>Dark</source>
-			</trans-unit>
-			<trans-unit id="heroImage.flexform.transparentLayer_3">
-				<source>Light</source>
-			</trans-unit>
-
-
-			<!--Quote Element-->
-			<trans-unit id="quote.title">
-				<source>Quote</source>
-			</trans-unit>
-			<trans-unit id="quote.description">
-				<source>Quote with optional footer and link</source>
-			</trans-unit>
-
-			<trans-unit id="quote.linkText">
-				<source>Link text</source>
-			</trans-unit>
-			<trans-unit id="quote.author">
-				<source>Author name</source>
-			</trans-unit>
-			<trans-unit id="quote.cited_work">
-				<source>Work title</source>
-			</trans-unit>
-			<trans-unit id="quote.bodytext">
-				<source>Quote</source>
-			</trans-unit>
-
-
 			<!-- Contacts Card -->
 			<trans-unit id="contactsCard.title">
 				<source>Contacts Card</source>
@@ -218,23 +123,6 @@
 			<trans-unit id="socialIcons.flexform.mynewsdeskLink">
 				<source>Mynewsdesk:</source>
 			</trans-unit>
-
-
-			<!--FullWidthImage Element-->
-			<trans-unit id="fullWidthImage.title">
-				<source>Full Width Image</source>
-			</trans-unit>
-			<trans-unit id="fullWidthImage.description">
-				<source>Full Width Image element</source>
-			</trans-unit>
-
-			<trans-unit id="fullWidthImage.tabs.image">
-				<source>Image</source>
-			</trans-unit>
-			<trans-unit id="fullWidthImage.flexform.includeDoubleDensityImages">
-				<source>Include 2x images in sources</source>
-			</trans-unit>
-
 
 		</body>
 	</file>

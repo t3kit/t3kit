@@ -2,7 +2,6 @@
 defined('TYPO3_MODE') || die();
 
 
-
 /*
  * ###########################
  * Add Content Element to Type list
@@ -12,7 +11,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.title',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title',
         'quote',
         'ce-quote'
     ],
@@ -21,14 +20,12 @@ defined('TYPO3_MODE') || die();
 );
 
 
-
 /*
  * ###########################
  * Add icon for Content Element
  * ===========================
  */
 $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['quote'] = 'ce-quote';
-
 
 
 /*
@@ -40,7 +37,9 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;quote,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.title,
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            --palette--;;link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -63,16 +62,15 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
  * Add new palettes for a Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['palettes']['quote'] = array(
-    'showitem' => '
-        author_name;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.author,
-        --linebreak--,
-        work_title;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.cited_work,
-        --linebreak--,
-        bodytext;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.bodytext,
-        --linebreak--,
-        link_title,
-        --linebreak--,
-        link,
-    ',
+
+
+/*
+ * ###########################
+ * Add flexForms for Content Element
+ * ===========================
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:t3kit/Configuration/FlexForms/Quote.xml',
+    'quote'
 );

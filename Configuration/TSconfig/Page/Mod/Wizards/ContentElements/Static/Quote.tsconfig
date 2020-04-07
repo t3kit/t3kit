@@ -4,18 +4,10 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     quote {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.description
       iconIdentifier = ce-quote
     }
   }
   show := addToList(quote)
 }
-
-// TODO:
-TCEFORM.tt_content.pi_flexform.quote.sDEF.iconClass {
-  addItems {
-    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:quote.flexform.icon_none
-  }
-}
-

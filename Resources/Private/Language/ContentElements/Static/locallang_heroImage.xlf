@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="heroImage.title" resname="heroImage.title">
+				<source>Hero Image</source>
+			</trans-unit>
+			<trans-unit id="heroImage.description" resname="heroImage.description">
+				<source>Image, header, subheader, text and link. Will render only if image added</source>
+			</trans-unit>
+
+			<trans-unit id="heroImage.flexform.linkAsBtn" resname="heroImage.flexform.linkAsBtn">
+				<source>Show link as a button</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer" resname="heroImage.flexform.transparentLayer">
+				<source>Element overlay color with opacity</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.horizontalAlignment" resname="heroImage.flexform.horizontalAlignment">
+			<source>Horizontal alignment</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.verticalAlignment" resname="heroImage.flexform.verticalAlignment">
+				<source>Vertical alignment</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.horizontalAlignment_left" resname="heroImage.flexform.horizontalAlignment_left">
+				<source>Left align</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.horizontalAlignment_center" resname="heroImage.flexform.horizontalAlignment_center">
+				<source>Center align</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.horizontalAlignment_right" resname="heroImage.flexform.horizontalAlignment_right">
+				<source>Right align</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.verticalAlignment_top" resname="heroImage.flexform.verticalAlignment_top">
+				<source>Top</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.verticalAlignment_middle" resname="heroImage.flexform.verticalAlignment_middle">
+				<source>Middle</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.verticalAlignment_bottom" resname="heroImage.flexform.verticalAlignment_bottom">
+				<source>Bottom</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle" resname="heroImage.flexform.animationStyle">
+				<source>Set Animation Style</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle_disable" resname="heroImage.flexform.animationStyle_disable">
+				<source>Disable</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle_1" resname="heroImage.flexform.animationStyle_1">
+				<source>Fade In Down</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle_2" resname="heroImage.flexform.animationStyle_2">
+				<source>Fade In</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle_3" resname="heroImage.flexform.animationStyle_3">
+				<source>Fade In Up</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle_4" resname="heroImage.flexform.animationStyle_4">
+				<source>Fade from up and down, style 1</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.animationStyle_5" resname="heroImage.flexform.animationStyle_5">
+				<source>Fade from up and down, style 2</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_disable" resname="heroImage.flexform.transparentLayer_disable">
+				<source>Disable</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_1" resname="heroImage.flexform.transparentLayer_1">
+				<source>Main color</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_2" resname="heroImage.flexform.transparentLayer_2">
+				<source>Dark</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_3" resname="heroImage.flexform.transparentLayer_3">
+				<source>Light</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

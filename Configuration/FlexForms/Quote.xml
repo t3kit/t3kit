@@ -11,16 +11,22 @@
 				<type>array</type>
 				<el>
 
-					<interval>
+					<author_name>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:logoCarousel.flex.interval</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.author_name</label>
 							<config>
 								<type>input</type>
-								<rows>1</rows>
-								<default>2500</default>
 							</config>
 						</TCEforms>
-					</interval>
+					</author_name>
+					<work_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.work_title</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</work_title>
 
 				</el>
 			</ROOT>

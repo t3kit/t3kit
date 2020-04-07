@@ -1,20 +1,23 @@
+# ###########################
+# Hero Image
+#
+# CType: heroImage
+# ===========================
 tt_content {
   heroImage =< lib.contentElement
   heroImage {
+
     templateName = HeroImage
+
     dataProcessing {
-      20 = T3k\t3kit\DataProcessing\FlexFormProcessor
-      20 {
+      10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      10 {
         fieldName = pi_flexform
-        as = flexform
       }
-      30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      30 {
+      20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      20 {
         references.fieldName = image
       }
-      # "inherit" from lib.fluidContent
-      // 800 < lib.contentElement.dataProcessing.800
-      // 830 < lib.contentElement.dataProcessing.830
     }
   }
 }

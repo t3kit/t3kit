@@ -1,7 +1,14 @@
+# ###########################
+# Image Text Link
+#
+# CType: imageTextLink
+# ===========================
 tt_content {
   imageTextLink =< lib.contentElement
   imageTextLink {
+
     templateName = ImageTextLink
+
     dataProcessing {
       10 = T3k\t3kit\DataProcessing\FlexFormProcessor
       10 {

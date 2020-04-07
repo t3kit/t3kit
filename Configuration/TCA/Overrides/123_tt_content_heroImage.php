@@ -12,7 +12,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.title',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.title',
         'heroImage',
         'ce-heroImage'
     ],
@@ -40,9 +40,12 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;heroImage,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:tabs.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.title,
+            --palette--;;headers,
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            content_align,
+            --palette--;;link,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
             --palette--;;mediaAdjustments,
@@ -68,19 +71,6 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
  * Add new palettes for a Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['palettes']['heroImage'] = array(
-    'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
-        --linebreak--,
-        subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
-        --linebreak--,
-        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-        --linebreak--,
-        link_title,
-        --linebreak--,
-        link,
-    ',
-);
 
 
 /*

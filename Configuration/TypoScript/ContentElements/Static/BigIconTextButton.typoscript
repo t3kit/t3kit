@@ -1,7 +1,14 @@
+# ###########################
+# Big Icon Text Button
+#
+# CType: bigIconTextButton
+# ===========================
 tt_content {
   bigIconTextButton =< lib.contentElement
   bigIconTextButton {
+
     templateName = BigIconTextButton
+
     dataProcessing {
       10 = T3k\t3kit\DataProcessing\FlexFormProcessor
       10 {
