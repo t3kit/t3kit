@@ -11,14 +11,10 @@ tt_content {
       30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       30 {
         references.fieldName = image
-        as = image
       }
       # "inherit" from lib.fluidContent
       // 800 < lib.contentElement.dataProcessing.800
       // 830 < lib.contentElement.dataProcessing.830
-    }
-    settings {
-      maxWidth = 1920
     }
   }
 }

@@ -114,14 +114,11 @@
 				<source>Image, header, subheader, text and link. Will render only if image added</source>
 			</trans-unit>
 
-			<trans-unit id="heroImage.flexform.elementHeight">
-				<source>Set height of element</source>
-			</trans-unit>
 			<trans-unit id="heroImage.flexform.linkAsBtn">
 				<source>Show link as a button</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.transparentLayer">
-				<source>Element overlay color (rgba). Link to online generator: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool</source>
+				<source>Element overlay color with opacity</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.horizontalAlignment">
 			<source>Horizontal alignment</source>
@@ -167,6 +164,18 @@
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle_5">
 				<source>Fade from up and down, style 2</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_disable">
+				<source>Disable</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_1">
+				<source>Main color</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_2">
+				<source>Dark</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.transparentLayer_3">
+				<source>Light</source>
 			</trans-unit>
 
 

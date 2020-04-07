@@ -43,4 +43,13 @@ TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
     }
   }
 
+  transparentLayer {
+    addItems {
+      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer_disable
+      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer_1
+      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer_2
+      3 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer_3
+    }
+  }
+
 }
