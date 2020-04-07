@@ -11,17 +11,6 @@
 				<type>array</type>
 				<el>
 
-					<elementHeight>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.elementHeight</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-								<default>320</default>
-							</config>
-						</TCEforms>
-					</elementHeight>
-
 					<linkAsBtn>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.linkAsBtn</label>
@@ -35,8 +24,11 @@
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer</label>
 							<config>
-								<type>input</type>
-								<rows>1</rows>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items>
+
+								</items>
 							</config>
 						</TCEforms>
 					</transparentLayer>
@@ -46,6 +38,7 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
 
 								</items>
@@ -58,6 +51,7 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
 
 								</items>
@@ -70,6 +64,7 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
 
 								</items>
