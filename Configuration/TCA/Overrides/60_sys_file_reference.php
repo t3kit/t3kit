@@ -11,18 +11,18 @@ defined('TYPO3_MODE') || die();
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.left',
-                    'text-left'
+                    'left'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.center',
-                    'text-center'
+                    'center'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.right',
-                    'text-right'
+                    'right'
                 ]
             ],
-            'default' => 'text-left',
+            'default' => 'left',
         ]
     ],
 ]);

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="button.title" resname="button.title">
+				<source>Button</source>
+			</trans-unit>
+			<trans-unit id="button.description" resname="button.description">
+				<source>A button element</source>
+			</trans-unit>
+
+			<trans-unit id="button.flexform.button_style" resname="button.flexform.button_style">
+				<source>Button style</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_style_primary" resname="button.flexform.button_style_primary">
+				<source>Primary style</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_style_secondary" resname="button.flexform.button_style_secondary">
+				<source>Secondary style</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_style_light" resname="button.flexform.button_style_light">
+				<source>Light style</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_style_dark" resname="button.flexform.button_style_dark">
+				<source>Dark style</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_style_link" resname="button.flexform.button_style_link">
+				<source>Link style</source>
+			</trans-unit>
+
+			<trans-unit id="button.flexform.button_size" resname="button.flexform.button_size">
+				<source>Button size</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_size_default" resname="button.flexform.button_size_default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_size_large" resname="button.flexform.button_size_large">
+				<source>Large</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_size_small" resname="button.flexform.button_size_small">
+				<source>Small</source>
+			</trans-unit>
+
+			<trans-unit id="button.flexform.button_block" resname="button.flexform.button_block">
+				<source>Full-width button</source>
+			</trans-unit>
+			<trans-unit id="button.flexform.button_no_bg" resname="button.flexform.button_no_bg">
+				<source>Border with transparent background</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -11,11 +11,11 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.title',
-        'socialIcons',
-        'ce-socialIcons'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title',
+        'quote',
+        'ce-quote'
     ],
-    'button',
+    'heroImage',
     'after'
 );
 
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['socialIcons'] = 'ce-socialIcons';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['quote'] = 'ce-quote';
 
 
 /*
@@ -33,12 +33,13 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['socialIcons'] = 'ce-s
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['socialIcons'] = [
+$GLOBALS['TCA']['tt_content']['types']['quote'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:socialIcons.flexform.title,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.title,
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            --palette--;;link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -52,8 +53,36 @@ $GLOBALS['TCA']['tt_content']['types']['socialIcons'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    '
+    ',
+    'columnsOverrides' => [
+        'link' => [
+            'config' => [
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
 ];
+
+
+/*
+* ###########################
+* Add columns for Content Element
+* ===========================
+*/
+
+
+/*
+ * ###########################
+ * Add new palettes for a Content Element
+ * ===========================
+ */
 
 
 /*
@@ -63,6 +92,6 @@ $GLOBALS['TCA']['tt_content']['types']['socialIcons'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/SocialIcons.xml',
-    'socialIcons'
+    'FILE:EXT:t3kit/Configuration/FlexForms/Quote.xml',
+    'quote'
 );

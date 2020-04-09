@@ -16,16 +16,14 @@ mod.wizards.newContentElement.wizardItems.static.elements {
   table.tt_content_defValues.CType = table
   uploads.tt_content_defValues.CType = uploads
 
-  video.tt_content_defValues.CType = video
-  audio.tt_content_defValues.CType = audio
   bigIconTextButton.tt_content_defValues.CType = bigIconTextButton
   iconTextButton.tt_content_defValues.CType = iconTextButton
   imageTextLink.tt_content_defValues.CType = imageTextLink
   heroImage.tt_content_defValues.CType = heroImage
+  video.tt_content_defValues.CType = video
+  audio.tt_content_defValues.CType = audio
   quote.tt_content_defValues.CType = quote
   contactsCard.tt_content_defValues.CType = contactsCard
   button.tt_content_defValues.CType = button
-  socialIcons.tt_content_defValues.CType = socialIcons
-  fullWidthImage.tt_content_defValues.CType = fullWidthImage
 
 }

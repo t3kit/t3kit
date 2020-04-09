@@ -58,8 +58,41 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    '
+    ',
+    'columnsOverrides' => [
+        'link' => [
+            'config' => [
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder'
+                        ]
+                    ]
+                ]
+            ]
+        ],
+        'header_link' => [
+            'config' => [
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder, mail, telephone'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
 ];
+
+
+/*
+* ###########################
+* Add columns for Content Element
+* ===========================
+*/
 
 
 /*

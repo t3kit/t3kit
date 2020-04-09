@@ -7,7 +7,7 @@
 				<source>Hero Image</source>
 			</trans-unit>
 			<trans-unit id="heroImage.description" resname="heroImage.description">
-				<source>Image, header, subheader, text and link. Will render only if image added</source>
+				<source>Image, header, subheader, text and link</source>
 			</trans-unit>
 
 			<trans-unit id="heroImage.flexform.linkAsBtn" resname="heroImage.flexform.linkAsBtn">
@@ -41,19 +41,19 @@
 				<source>Bottom</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle" resname="heroImage.flexform.animationStyle">
-				<source>Set Animation Style</source>
+				<source>Set animation style</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle_disable" resname="heroImage.flexform.animationStyle_disable">
 				<source>Disable</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle_1" resname="heroImage.flexform.animationStyle_1">
-				<source>Fade In Down</source>
+				<source>Fade in down</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle_2" resname="heroImage.flexform.animationStyle_2">
-				<source>Fade In</source>
+				<source>Fade in</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle_3" resname="heroImage.flexform.animationStyle_3">
-				<source>Fade In Up</source>
+				<source>Fade in up</source>
 			</trans-unit>
 			<trans-unit id="heroImage.flexform.animationStyle_4" resname="heroImage.flexform.animationStyle_4">
 				<source>Fade from up and down, style 1</source>

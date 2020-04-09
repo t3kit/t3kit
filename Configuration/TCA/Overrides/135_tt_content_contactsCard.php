@@ -11,11 +11,11 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.title',
-        'button',
-        'ce-button'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.title',
+        'contactsCard',
+        'ce-contactsCard'
     ],
-    'contactsCard',
+    'quote',
     'after'
 );
 
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['button'] = 'ce-button';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactsCard'] = 'ce-contactsCard';
 
 
 /*
@@ -33,13 +33,15 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['button'] = 'ce-button
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['button'] = [
+$GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;button,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.title,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.title,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+            image,
+            --palette--;;mediaAdjustments,
+            --palette--;;imagelinks,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -53,8 +55,39 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    '
+    ',
+    'columnsOverrides' => [
+        'image' => [
+            'config' => [
+                'filter' => [
+                    0 => [
+                        'parameters' => [
+                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
+                        ]
+                    ]
+                ],
+                'overrideChildTca' => [
+                    'columns' => [
+                        'uid_local' => [
+                            'config' => [
+                                'appearance' => [
+                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
 ];
+
+
+/*
+* ###########################
+* Add columns for Content Element
+* ===========================
+*/
 
 
 /*
@@ -62,13 +95,6 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
  * Add new palettes for a Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['palettes']['button'] = array(
-    'showitem' => '
-        link_title;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.title,
-        --linebreak--,
-        link,
-    ',
-);
 
 
 /*
@@ -78,6 +104,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['button'] = array(
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/Button.xml',
-    'button'
+    'FILE:EXT:t3kit/Configuration/FlexForms/ContactsCard.xml',
+    'contactsCard'
 );

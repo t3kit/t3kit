@@ -4,8 +4,8 @@
 mod.wizards.newContentElement.wizardItems.static {
   elements {
     button {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.description
       iconIdentifier = ce-button
     }
   }
@@ -15,24 +15,20 @@ mod.wizards.newContentElement.wizardItems.static {
 # Flexform selects
 TCEFORM.tt_content.pi_flexform.button.sDEF {
 
-  buttonSize {
+  button_size {
     addItems {
-      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_default
-      btn-lg = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_large
-      btn-sm = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_small
-      btn-xs = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_extraSmall
+      0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size_default
+      btn-lg = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size_large
+      btn-sm = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size_small
     }
   }
-
-  buttonStyle {
+  button_style {
     addItems {
-      btn-default = Default
-      btn-primary = Primary
-      btn-success = Success
-      btn-info = Info
-      btn-warning = Warning
-      btn-danger = Danger
-      btn-link = Link
+      primary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_primary
+      secondary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_secondary
+      light = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_light
+      dark = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_dark
+      link = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_link
     }
   }
 

@@ -42,7 +42,7 @@ foreach ($CTypeItems as $position => $item) {
         '--div--',
         null
     ],
-    'socialIcons',
+    'button',
     'after'
 );
 
@@ -55,7 +55,7 @@ foreach ($CTypeItems as $position => $item) {
         'div',
         'content-special-div'
     ],
-    'socialIcons',
+    'button',
     'after'
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
@@ -66,7 +66,7 @@ foreach ($CTypeItems as $position => $item) {
         '--div--',
         null
     ],
-    'socialIcons',
+    'button',
     'after'
 );
 
@@ -117,6 +117,7 @@ foreach ($CTypeItems as $position => $item) {
     'menu_sitemap_pages',
     'after'
 );
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',

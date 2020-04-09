@@ -22,7 +22,6 @@ TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
     }
   }
 
-
   verticalAlignment {
     addItems {
       0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.verticalAlignment_top
@@ -30,7 +29,6 @@ TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
       2 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.verticalAlignment_bottom
     }
   }
-
 
   animationStyle {
     addItems {
@@ -51,5 +49,4 @@ TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
       3 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.transparentLayer_3
     }
   }
-
 }

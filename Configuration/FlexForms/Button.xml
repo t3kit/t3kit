@@ -11,9 +11,9 @@
 				<type>array</type>
 				<el>
 
-					<buttonSize>
+					<button_size>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -21,11 +21,11 @@
 								</items>
 							</config>
 						</TCEforms>
-					</buttonSize>
+					</button_size>
 
-					<buttonStyle>
+					<button_style>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonStyle</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -33,16 +33,29 @@
 								</items>
 							</config>
 						</TCEforms>
-					</buttonStyle>
+					</button_style>
 
-					<blockLevel>
+					<button_block>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.blockLevel</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_block</label>
 							<config>
 								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
 							</config>
 						</TCEforms>
-					</blockLevel>
+					</button_block>
+
+					<button_no_bg>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_no_bg</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</button_no_bg>
 
 				</el>
 			</ROOT>

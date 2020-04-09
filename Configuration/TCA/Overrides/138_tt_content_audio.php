@@ -11,7 +11,7 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:audio.title',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_audio.xlf:audio.title',
         'audio',
         'ce-audio'
     ],
@@ -76,9 +76,28 @@ $GLOBALS['TCA']['tt_content']['types']['audio'] = [
                     ]
                 ]
             ]
+        ],
+        'header_link' => [
+            'config' => [
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder, mail, telephone'
+                        ]
+                    ]
+                ]
+            ]
         ]
     ]
 ];
+
+
+/*
+* ###########################
+* Add columns for Content Element
+* ===========================
+*/
 
 
 /*

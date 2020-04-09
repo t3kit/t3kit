@@ -2,26 +2,42 @@
 
 <f:layout name="Default" />
 <f:section name="Header" />
+
 <f:section name="Main">
-  <!-- theme_t3kit: Templates/ContentElements/Button.html [begin] -->
-  <f:comment>
-    <!-- set button classes -->
-  </f:comment>
-  <f:variable name="btnClass">btn</f:variable>
-  <f:if condition="{flexform.buttonStyle}">
-    <f:variable name="btnClass">{btnClass} {flexform.buttonStyle}</f:variable>
+  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [begin] -->
+
+  <f:variable name="btn_class">btn</f:variable>
+  <f:if condition="{flexform.button_no_bg}">
+    <f:then>
+      <f:if condition="{flexform.button_style} == 'link'">
+        <f:then>
+          <f:variable name="btn_class">{btn_class} btn-{flexform.button_style}</f:variable>
+        </f:then>
+        <f:else>
+          <f:variable name="btn_class">{btn_class} btn-outline-{flexform.button_style}</f:variable>
+        </f:else>
+      </f:if>
+    </f:then>
+    <f:else>
+      <f:if condition="{flexform.button_style}">
+        <f:variable name="btn_class">{btn_class} btn-{flexform.button_style}</f:variable>
+      </f:if>
+    </f:else>
   </f:if>
-  <f:if condition="{flexform.buttonSize}">
-    <f:variable name="btnClass">{btnClass} {flexform.buttonSize}</f:variable>
+
+  <f:if condition="{flexform.button_size}">
+    <f:variable name="btn_class">{btn_class} {flexform.button_size}</f:variable>
   </f:if>
-  <f:if condition="{flexform.blockLevel}">
-    <f:variable name="btnClass">{btnClass} btn-block</f:variable>
+
+  <f:if condition="{flexform.button_block}">
+    <f:variable name="btn_class">{btn_class} btn-block</f:variable>
   </f:if>
 
   <f:if condition="{data.link_title}">
-    <f:link.typolink parameter="{data.link}" class="{btnClass}">{data.link_title}</f:link.typolink>
+    <f:link.typolink parameter="{data.link}" class="{btn_class}">{data.link_title}</f:link.typolink>
   </f:if>
-  <!-- theme_t3kit: Templates/ContentElements/Button.html [end] -->
+
+  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [end] -->
 </f:section>
 
 </html>

@@ -32,6 +32,11 @@ TCEFORM {
         disabled = 1
       }
     }
+    link_align.types {
+      button {
+        disabled = 1
+      }
+    }
     imageorient.removeItems = 17,18
   }
 

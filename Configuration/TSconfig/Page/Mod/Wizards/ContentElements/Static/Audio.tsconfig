@@ -3,7 +3,7 @@
 # ===========================
 mod.wizards.newContentElement.wizardItems.static.elements.audio {
   iconIdentifier = content-audio
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:audio.title
-  description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:audio.description
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_audio.xlf:audio.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_audio.xlf:audio.description
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(audio)

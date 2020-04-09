@@ -29,9 +29,9 @@ mod.wizards.newContentElement.wizardItems {
 # ###########################
 # Remove default TYPO3 config for content elements
 # ===========================
-mod.wizards.newContentElement.wizardItems.special.elements.html >
-mod.wizards.newContentElement.wizardItems.special.elements.div >
-mod.wizards.newContentElement.wizardItems.special.elements.shortcut >
+// mod.wizards.newContentElement.wizardItems.special.elements.html >
+// mod.wizards.newContentElement.wizardItems.special.elements.div >
+// mod.wizards.newContentElement.wizardItems.special.elements.shortcut >
 # ___________________________
 
 

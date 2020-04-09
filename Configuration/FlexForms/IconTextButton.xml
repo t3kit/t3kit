@@ -16,6 +16,8 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.flexform.disableWholeAreaLink</label>
 							<config>
 								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
 							</config>
 						</TCEforms>
 					</disableWholeAreaLink>
@@ -25,11 +27,11 @@
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.flexform.btnAsLink</label>
 							<config>
 								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
 							</config>
 						</TCEforms>
 					</btnAsLink>
-
-
 
 				</el>
 			</ROOT>
