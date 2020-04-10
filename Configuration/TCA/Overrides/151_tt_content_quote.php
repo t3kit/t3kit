@@ -2,7 +2,6 @@
 defined('TYPO3_MODE') || die();
 
 
-
 /*
  * ###########################
  * Add Content Element to Type list
@@ -12,14 +11,13 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.title',
-        'heroImage',
-        'ce-heroImage'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title',
+        'quote',
+        'ce-quote'
     ],
-    'imageTextLink',
+    'audio',
     'after'
 );
-
 
 
 /*
@@ -27,8 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroImage'] = 'ce-heroImage';
-
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['quote'] = 'ce-quote';
 
 
 /*
@@ -36,19 +33,14 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroImage'] = 'ce-her
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
+$GLOBALS['TCA']['tt_content']['types']['quote'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,
+            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.title,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            content_align,
             --palette--;;link,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,
-            --palette--;;mediaAdjustments,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -71,18 +63,6 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
                         'options' => [
                             'blindLinkFields' => 'params, target, class',
                             'blindLinkOptions' => 'folder'
-                        ]
-                    ]
-                ]
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'params, target, class',
-                            'blindLinkOptions' => 'folder, mail, telephone'
                         ]
                     ]
                 ]
@@ -113,6 +93,6 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/HeroImage.xml',
-    'heroImage'
+    'FILE:EXT:t3kit/Configuration/FlexForms/Quote.xml',
+    'quote'
 );

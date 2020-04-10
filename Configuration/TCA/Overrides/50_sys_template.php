@@ -1,6 +1,7 @@
 <?php
 defined('TYPO3_MODE') || die();
 
+
 /*
 * ###########################
 * TypoScript for t3kit

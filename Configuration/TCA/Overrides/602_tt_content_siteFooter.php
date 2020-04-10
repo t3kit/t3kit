@@ -15,7 +15,7 @@ defined('TYPO3_MODE') || die();
         'siteFooter',
         'ce-siteFooter'
     ],
-    'html',
+    'shortcut',
     'after'
 );
 
@@ -37,7 +37,7 @@ $GLOBALS['TCA']['tt_content']['types']['siteFooter'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            footer;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:footer.ALT.div_formlabel,
+            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.tabs.settings,
             --palette--;;footerTop,
             --palette--;;footerMiddle,

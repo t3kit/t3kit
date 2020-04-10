@@ -22,15 +22,10 @@ defined('TYPO3_MODE') || die();
  * ===========================
  */
 
-$GLOBALS['TCA']['tt_content']['types']['textpic'] = array_merge(
+$GLOBALS['TCA']['tt_content']['types']['textpic'] = array_replace_recursive(
     $GLOBALS['TCA']['tt_content']['types']['textpic'],
     [
         'columnsOverrides' => [
-            'bodytext' => [
-                'config' => [
-                    'enableRichtext' => true,
-                ]
-            ],
             'image' => [
                 'config' => [
                     'filter' => [

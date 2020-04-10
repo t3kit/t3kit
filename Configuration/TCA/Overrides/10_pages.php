@@ -1,6 +1,7 @@
 <?php
 defined('TYPO3_MODE') || die();
 
+
 /*
 * ###########################
 * PageTS for t3kit
@@ -12,6 +13,12 @@ defined('TYPO3_MODE') || die();
     't3kit'
 );
 
+
+/*
+ * ###########################
+ * add new TCA columns for pages
+ * ===========================
+ */
 // Add image record for page settings.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_image' => [
@@ -142,6 +149,12 @@ defined('TYPO3_MODE') || die();
     ]
 ]);
 
+
+/*
+ * ###########################
+ * Palettes for pages
+ * ===========================
+ */
 $GLOBALS['TCA']['pages']['palettes']['nav_icon'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon.palette',
     'showitem' => '

@@ -11,11 +11,11 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_audio.xlf:audio.title',
-        'audio',
-        'ce-audio'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextButton.xlf:bigIconTextButton.title',
+        'bigIconTextButton',
+        'ce-bigIconTextButton'
     ],
-    'iconTextButton',
+    'uploads',
     'after'
 );
 
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['audio'] = 'ce-audio';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['bigIconTextButton'] = 'ce-bigIconTextButton';
 
 
 /*
@@ -33,13 +33,18 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['audio'] = 'ce-audio';
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['audio'] = [
+$GLOBALS['TCA']['tt_content']['types']['bigIconTextButton'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,
-            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
-            assets,
+            --palette--;;header_layout,
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            --palette--;;title_link,
+            content_align_center,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
+            --palette--;;icon,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -55,35 +60,13 @@ $GLOBALS['TCA']['tt_content']['types']['audio'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
-        'assets' => [
-            'config' => [
-                'filter' => [
-                    0 => [
-                        'parameters' => [
-                            'allowedFileExtensions' => 'mp3'
-                        ]
-                    ]
-                ],
-                'overrideChildTca' => [
-                    'columns' => [
-                        'uid_local' => [
-                            'config' => [
-                                'appearance' => [
-                                    'elementBrowserAllowed' => 'mp3'
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ],
-        'header_link' => [
+        'link' => [
             'config' => [
                 'fieldControl' => [
                     'linkPopup' => [
                         'options' => [
                             'blindLinkFields' => 'params, target, class',
-                            'blindLinkOptions' => 'folder, mail, telephone'
+                            'blindLinkOptions' => 'folder'
                         ]
                     ]
                 ]
@@ -112,3 +95,8 @@ $GLOBALS['TCA']['tt_content']['types']['audio'] = [
  * Add flexForms for Content Element
  * ===========================
  */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:t3kit/Configuration/FlexForms/BigIconTextButton.xml',
+    'bigIconTextButton'
+);

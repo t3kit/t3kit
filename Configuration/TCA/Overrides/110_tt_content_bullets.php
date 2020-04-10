@@ -20,15 +20,10 @@ defined('TYPO3_MODE') || die();
  * Configure element fields (types) to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['bullets']  = array_merge(
+$GLOBALS['TCA']['tt_content']['types']['bullets']  = array_replace_recursive(
     $GLOBALS['TCA']['tt_content']['types']['bullets'],
     [
         'columnsOverrides' => [
-            'bodytext' => [
-                'config' => [
-                    'wrap' => 'off',
-                ],
-            ],
             'header_link' => [
                 'config' => [
                     'fieldControl' => [

@@ -11,11 +11,11 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.title',
-        'iconTextButton',
-        'ce-iconTextButton'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.title',
+        'imageTextLink',
+        'ce-imageTextLink'
     ],
-    'bigIconTextButton',
+    'iconTextButton',
     'after'
 );
 
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextButton'] = 'ce-iconTextButton';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['imageTextLink'] = 'ce-imageTextLink';
 
 
 /*
@@ -33,16 +33,17 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextButton'] = 'c
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
+$GLOBALS['TCA']['tt_content']['types']['imageTextLink'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,
+            --palette--;;header_subheader_layout_position,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             content_align,
-            --palette--;;link,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
-            --palette--;;icon,
+            --palette--;;title_link_align,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+            image,
+            --palette--;;mediaAdjustments,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -60,6 +61,28 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
+        'image' => [
+            'config' => [
+                'filter' => [
+                    0 => [
+                        'parameters' => [
+                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
+                        ]
+                    ]
+                ],
+                'overrideChildTca' => [
+                    'columns' => [
+                        'uid_local' => [
+                            'config' => [
+                                'appearance' => [
+                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ],
         'link' => [
             'config' => [
                 'fieldControl' => [
@@ -67,18 +90,6 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
                         'options' => [
                             'blindLinkFields' => 'params, target, class',
                             'blindLinkOptions' => 'folder'
-                        ]
-                    ]
-                ]
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'params, target, class',
-                            'blindLinkOptions' => 'folder, mail, telephone'
                         ]
                     ]
                 ]
@@ -109,6 +120,6 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/IconTextButton.xml',
-    'iconTextButton'
+    'FILE:EXT:t3kit/Configuration/FlexForms/ImageTextLink.xml',
+    'imageTextLink'
 );

@@ -2,6 +2,7 @@
 defined('TYPO3_MODE') || die();
 
 
+
 /*
  * ###########################
  * Add Content Element to Type list
@@ -11,13 +12,14 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.title',
-        'contactsCard',
-        'ce-contactsCard'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.title',
+        'heroImage',
+        'ce-heroImage'
     ],
-    'quote',
+    'imageTextLink',
     'after'
 );
+
 
 
 /*
@@ -25,7 +27,8 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactsCard'] = 'ce-contactsCard';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroImage'] = 'ce-heroImage';
+
 
 
 /*
@@ -33,15 +36,19 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactsCard'] = 'ce-
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
+$GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.title,
+            --palette--;;header_subheader_layout_position_link,
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            content_align,
+            --palette--;;title_link_position,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
             --palette--;;mediaAdjustments,
-            --palette--;;imagelinks,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -57,23 +64,25 @@ $GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
-        'image' => [
+        'link' => [
             'config' => [
-                'filter' => [
-                    0 => [
-                        'parameters' => [
-                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder'
                         ]
                     ]
-                ],
-                'overrideChildTca' => [
-                    'columns' => [
-                        'uid_local' => [
-                            'config' => [
-                                'appearance' => [
-                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
-                                ]
-                            ]
+                ]
+            ]
+        ],
+        'header_link' => [
+            'config' => [
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder, mail, telephone'
                         ]
                     ]
                 ]
@@ -104,6 +113,6 @@ $GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/ContactsCard.xml',
-    'contactsCard'
+    'FILE:EXT:t3kit/Configuration/FlexForms/HeroImage.xml',
+    'heroImage'
 );

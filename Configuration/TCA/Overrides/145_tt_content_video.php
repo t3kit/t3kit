@@ -15,7 +15,7 @@ defined('TYPO3_MODE') || die();
         'video',
         'ce-video'
     ],
-    'iconTextButton',
+    'heroImage',
     'after'
 );
 
@@ -37,7 +37,7 @@ $GLOBALS['TCA']['tt_content']['types']['video'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,
+            --palette--;;header_subheader_layout_position_link,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
             assets,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,

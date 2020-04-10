@@ -1,6 +1,12 @@
 <?php
 defined('TYPO3_MODE') || die();
 
+
+/*
+ * ###########################
+ * add new TCA columns for sys_file_reference
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'description_align' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align',
@@ -170,6 +176,12 @@ defined('TYPO3_MODE') || die();
     ],
 ]);
 
+
+/*
+ * ###########################
+ * Palettes for sys_file_reference
+ * ===========================
+ */
 $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
     'showitem' => '
         alternative,title,

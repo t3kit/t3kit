@@ -21,15 +21,10 @@ defined('TYPO3_MODE') || die();
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['textmedia']  = array_merge(
+$GLOBALS['TCA']['tt_content']['types']['textmedia']  = array_replace_recursive(
     $GLOBALS['TCA']['tt_content']['types']['textmedia'],
     [
         'columnsOverrides' => [
-            'bodytext' => [
-                'config' => [
-                    'enableRichtext' => true,
-                ]
-            ],
             'assets' => [
                 'config' => [
                     'filter' => [
