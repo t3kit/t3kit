@@ -5,8 +5,8 @@
 mod.wizards.newContentElement.wizardItems.special {
   elements {
     siteHeader {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteHeader.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:siteHeader.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:siteHeader.description
       iconIdentifier = ce-siteHeader
     }
   }

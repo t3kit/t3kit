@@ -4,13 +4,7 @@
 		<header/>
 		<body>
 
-			<!--SiteHeader Element-->
-			<trans-unit id="siteHeader.title">
-				<source>Site Header</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.description">
-				<source>Main header of the site. Will be copied to all subpages.</source>
-			</trans-unit>
+
 
 			<!--SiteHeader Element TCA Overrides-->
 			<trans-unit id="siteHeader.CType">
@@ -120,13 +114,7 @@
 				<source>Skip to main content text</source>
 			</trans-unit>
 
-			<!-- SiteFooter Element -->
-			<trans-unit id="siteFooter.title">
-				<source>Site Footer</source>
-			</trans-unit>
-			<trans-unit id="siteFooter.description">
-				<source>Main footer of the site. Will be copied to all subpages.</source>
-			</trans-unit>
+
 
 			<!--SiteFooter Element TCA Overrides-->
 			siteFooter.showFooterMiddle

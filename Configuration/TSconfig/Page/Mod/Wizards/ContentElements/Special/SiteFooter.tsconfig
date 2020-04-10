@@ -1,12 +1,12 @@
 # ###########################
-# Site header:
-# Site header element.
+# Site footer:
+# Site footer element.
 # ===========================
 mod.wizards.newContentElement.wizardItems.special {
   elements {
     siteFooter {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_special.xlf:siteFooter.description
+      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:siteFooter.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:siteFooter.description
       iconIdentifier = ce-siteFooter
     }
   }
