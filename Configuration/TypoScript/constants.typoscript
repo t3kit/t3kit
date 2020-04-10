@@ -1,6 +1,5 @@
 
 # customcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit
-# customcategory=t3kit_advanced=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit_advanced
 # customsubcategory=meta=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.meta
 page.meta {
   # cat=t3kit/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.description
@@ -9,16 +8,43 @@ page.meta {
   author = t3kit team
   # cat=t3kit/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.keywords
   keywords = TYPO3, t3kit
-  # cat=t3kit_advanced; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.viewport
-  viewport = width=device-width, initial-scale=1, shrink-to-fit=no
 }
 
-# customcategory=t3kit=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit
 # customcategory=t3kit_advanced=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kit_advanced
-plugin.t3kit {
-  settings {
-    # cat=t3kit_advanced; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
+plugin.t3kit.settings {
+
+  # customsubcategory=general=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.general
+  general {
+    # cat=t3kit_advanced/general; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
     container_width = 1200
+
+    # cat=t3kit_advanced/general; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.viewport
+    viewport = width=device-width, initial-scale=1, shrink-to-fit=no
   }
+
+  # customsubcategory=media=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.media
+  media {
+    videoConfig {
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.controls
+      controls = 1
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.loop
+      loop = 0
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.muted
+      muted = 0
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.no-cookie
+      no-cookie = 1
+    }
+    audioConfig {
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.audioConfig.controls
+      controls = 1
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.audioConfig.loop
+      loop = 0
+      # cat=t3kit_advanced/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.audioConfig.muted
+      muted = 0
+    }
+  }
+
 }
 
+
+// TODO: add more details to media constants

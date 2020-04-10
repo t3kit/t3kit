@@ -6,7 +6,6 @@ lib.contentElement {
     0 = EXT:t3kit/Resources/Private/Templates/ContentElements
     10 = EXT:t3kit/Resources/Private/Templates/ContentElements/Static
     20 = EXT:t3kit/Resources/Private/Templates/ContentElements/Dynamic
-    30 = EXT:t3kit/Resources/Private/Templates/ContentElements/Separator
     40 = EXT:t3kit/Resources/Private/Templates/ContentElements/Forms
     50 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
     60 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugins
@@ -43,16 +42,16 @@ lib.contentElement {
     container_width = {$plugin.t3kit.settings.container_width}
     media {
       videoConfig {
-        controls = 1
-        loop = 0
-        muted = 0
+        controls = {$plugin.t3kit.settings.media.videoConfig.controls}
+        loop = {$plugin.t3kit.settings.media.videoConfig.loop}
+        muted = {$plugin.t3kit.settings.media.videoConfig.muted}
         // https://github.com/TYPO3/TYPO3.CMS/blob/4cb53e828bd5138d180cdf9cac1ccf7fd31086d2/typo3/sysext/core/Documentation/Changelog/9.3/Breaking-84843-UseNo-cookieDomainForYoutubeByDefault.rst
-        no-cookie = 1
+        no-cookie = {$plugin.t3kit.settings.media.videoConfig.no-cookie}
       }
       audioConfig {
-        controls = 1
-        loop = 0
-        muted = 0
+        controls = {$plugin.t3kit.settings.media.audioConfig.controls}
+        loop = {$plugin.t3kit.settings.media.audioConfig.loop}
+        muted = {$plugin.t3kit.settings.media.audioConfig.muted}
       }
     }
   }

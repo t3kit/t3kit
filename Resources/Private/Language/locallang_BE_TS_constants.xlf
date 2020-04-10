@@ -16,7 +16,6 @@
 			<trans-unit id="subcategory.meta" resname="subcategory.meta">
 				<source>Meta data</source>
 			</trans-unit>
-
 			<!-- meta data -->
 			<trans-unit id="meta.description" resname="meta.description">
 				<source>Description Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
@@ -27,17 +26,46 @@
 			<trans-unit id="meta.keywords" resname="meta.keywords">
 				<source>Keywords Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
 			</trans-unit>
-			<trans-unit id="meta.viewport" resname="meta.viewport">
-				<source>Viewport</source>
-			</trans-unit>
 
+			<!-- subcategory -->
+			<trans-unit id="subcategory.general" resname="subcategory.general">
+				<source>General settings</source>
+			</trans-unit>
 			<!-- settings -->
 			<trans-unit id="container_width" resname="container_width">
 				<source>Max page container width</source>
 			</trans-unit>
+			<trans-unit id="meta.viewport" resname="meta.viewport">
+				<source>Viewport</source>
+			</trans-unit>
 
+			<!-- subcategory -->
+			<trans-unit id="subcategory.media" resname="subcategory.media">
+				<source>Media settings</source>
+			</trans-unit>
+			<!-- settings media -->
+			<trans-unit id="media.videoConfig.controls" resname="media.videoConfig.controls">
+				<source>Video controls</source>
+			</trans-unit>
+			<trans-unit id="media.videoConfig.loop" resname="media.videoConfig.loop">
+				<source>Video loop</source>
+			</trans-unit>
+			<trans-unit id="media.videoConfig.muted" resname="media.videoConfig.muted">
+				<source>Video muted</source>
+			</trans-unit>
+			<trans-unit id="media.videoConfig.no-cookie" resname="media.videoConfig.no-cookie">
+				<source>Video no-cookie</source>
+			</trans-unit>
+			<trans-unit id="media.audioConfig.controls" resname="media.audioConfig.controls">
+				<source>Audio controls</source>
+			</trans-unit>
+			<trans-unit id="media.audioConfig.loop" resname="media.audioConfig.loop">
+				<source>Audio loop</source>
+			</trans-unit>
+			<trans-unit id="media.audioConfig.muted" resname="media.audioConfig.muted">
+				<source>Audio muted</source>
+			</trans-unit>
 
 		</body>
 	</file>
 </xliff>
-
