@@ -7,4 +7,6 @@
 @import 'EXT:t3kit/Configuration/TypoScript/Page'
 @import 'EXT:t3kit/Configuration/TypoScript/Config'
 
-module.tx_backend.view.partialRootPaths.300 = EXT:t3kit/Resources/Private/BE/Partials/
+
+// TODO
+// module.tx_backend.view.partialRootPaths.300 = EXT:t3kit/Resources/Private/BE/Partials/

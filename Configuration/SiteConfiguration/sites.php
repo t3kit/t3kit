@@ -24,7 +24,7 @@ $GLOBALS['SiteConfiguration']['site']['types']['0']['showitem'] = str_replace(
 );
 
 // TODO: use it in sub-theme to extend theme select box
-// $GLOBALS['SiteConfiguration']['site']['columns']['theme']['config']['items'] = array_merge(
+// $GLOBALS['SiteConfiguration']['site']['columns']['theme']['config']['items'] = array_replace_recursive(
 //     $GLOBALS['SiteConfiguration']['site']['columns']['theme']['config']['items'],
 //     [ ['New Project', 'project_name'] ]
 // );
