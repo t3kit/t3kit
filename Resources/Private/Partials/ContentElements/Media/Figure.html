@@ -19,7 +19,7 @@
       <f:render partial="Media/Type/{type}" arguments="{data: data, file:file}" optional="1"/>
 
       <f:if condition="{file.description}">
-        <figcaption class="figure-partial__caption figure-caption text-{file.referenceProperties.description_align}"><f:format.nl2br>{file.description}</f:format.nl2br></figcaption>
+        <figcaption class="figure-partial__caption figure-caption text-{file.referenceProperties.description_position}"><f:format.nl2br>{file.description}</f:format.nl2br></figcaption>
       </f:if>
 
     </figure>

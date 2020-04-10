@@ -8,23 +8,23 @@ defined('TYPO3_MODE') || die();
  * ===========================
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
-    'description_align' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align',
+    'description_position' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position.left',
                     'left'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.center',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position.center',
                     'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_align.right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position.right',
                     'right'
                 ]
             ],
@@ -185,7 +185,7 @@ defined('TYPO3_MODE') || die();
 $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
     'showitem' => '
         alternative,title,
-        --linebreak--,description,description_align,
+        --linebreak--,description,description_position,
         --linebreak--,link,
         --linebreak--,crop,
         --linebreak--,picture_width,picture_border_radius,img_thumbnail
@@ -194,14 +194,14 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
 
 $GLOBALS['TCA']['sys_file_reference']['palettes']['videoOverlayPalette'] = [
     'showitem' => '
-        title,description,description_align,
+        title,description,description_position,
         --linebreak--,autoplay,aspect_ratio
     '
 ];
 
 $GLOBALS['TCA']['sys_file_reference']['palettes']['audioOverlayPalette'] = [
     'showitem' => '
-        title,description,description_align,
+        title,description,description_position,
         --linebreak--,autoplay
     '
 ];

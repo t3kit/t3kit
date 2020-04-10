@@ -101,16 +101,16 @@
 				<source>20% of content element</source>
 			</trans-unit>
 
-			<trans-unit id="description_align" resname="description_align">
-				<source>Description align</source>
+			<trans-unit id="description_position" resname="description_position">
+				<source>Description alignment</source>
 			</trans-unit>
-			<trans-unit id="description_align.left" resname="description_align.left">
+			<trans-unit id="description_position.left" resname="description_position.left">
 				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="description_align.center" resname="description_align.center">
+			<trans-unit id="description_position.center" resname="description_position.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="description_align.right" resname="description_align.right">
+			<trans-unit id="description_position.right" resname="description_position.right">
 				<source>Right</source>
 			</trans-unit>
 
@@ -187,9 +187,6 @@
 
 
 			<!-- Content element custom t3kit fields translations -->
-			<trans-unit id="content_alignment" resname="content_alignment">
-				<source>Content alignment</source>
-			</trans-unit>
 			<trans-unit id="link.palette" resname="link.palette">
 				<source>Link</source>
 			</trans-unit>
@@ -199,31 +196,31 @@
 			<trans-unit id="link" resname="link">
 				<source>Link</source>
 			</trans-unit>
-			<trans-unit id="link_align" resname="link_align">
+			<trans-unit id="link_position" resname="link_position">
 				<source>Link alignment</source>
 			</trans-unit>
-			<trans-unit id="link_align.left" resname="link_align.left">
+			<trans-unit id="link_position.left" resname="link_position.left">
 				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="link_align.center" resname="link_align.center">
+			<trans-unit id="link_position.center" resname="link_position.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="link_align.right" resname="link_align.right">
+			<trans-unit id="link_position.right" resname="link_position.right">
 				<source>Right</source>
 			</trans-unit>
-			<trans-unit id="content_align" resname="content_align">
+			<trans-unit id="content_position" resname="content_position">
 				<source>Content alignment</source>
 			</trans-unit>
-			<trans-unit id="content_align.left" resname="content_align.left">
+			<trans-unit id="content_position.left" resname="content_position.left">
 				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="content_align.center" resname="content_align.center">
+			<trans-unit id="content_position.center" resname="content_position.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="content_align.right" resname="content_align.right">
+			<trans-unit id="content_position.right" resname="content_position.right">
 				<source>Right</source>
 			</trans-unit>
-			<trans-unit id="content_align.justify" resname="content_align.justify">
+			<trans-unit id="content_position.justify" resname="content_position.justify">
 				<source>Justify</source>
 			</trans-unit>
 

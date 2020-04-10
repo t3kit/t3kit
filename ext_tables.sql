@@ -13,15 +13,15 @@ CREATE TABLE pages (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
-	content_align varchar(60) DEFAULT '' NOT NULL,
-	content_align_center varchar(60) DEFAULT '' NOT NULL,
+	content_position varchar(60) DEFAULT '' NOT NULL,
+	content_position_center varchar(60) DEFAULT '' NOT NULL,
 	section_container_width varchar(60) DEFAULT '' NOT NULL,
 	icon_source varchar(60) DEFAULT '' NOT NULL,
 	icon_class varchar(60) DEFAULT '' NOT NULL,
 	icon varchar(255) DEFAULT '' NOT NULL,
 	link_title varchar(255) DEFAULT '' NOT NULL,
 	link varchar(1024) DEFAULT '' NOT NULL,
-	link_align varchar(60) DEFAULT '' NOT NULL,
+	link_position varchar(60) DEFAULT '' NOT NULL,
 	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
 	background_color_class varchar(60) DEFAULT '' NOT NULL,
 	background_color varchar(255) DEFAULT '' NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE tt_content (
 # Table structure for table 'sys_file_reference'
 #
 CREATE TABLE sys_file_reference (
-	description_align varchar(60) DEFAULT '' NOT NULL,
+	description_position varchar(60) DEFAULT '' NOT NULL,
 	picture_width varchar(60) DEFAULT '' NOT NULL,
 	picture_border_radius varchar(60) DEFAULT '' NOT NULL,
 	aspect_ratio varchar(60) DEFAULT '' NOT NULL,

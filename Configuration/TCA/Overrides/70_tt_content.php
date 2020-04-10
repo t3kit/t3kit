@@ -192,27 +192,27 @@ foreach ($CTypeItems as $position => $item) {
 // ----------------
 // Content element custom t3kit configs
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'content_align' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align',
+    'content_position' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
                     'left'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.center',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
                     'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
                     'right'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.justify',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.justify',
                     'justify'
                 ]
             ],
@@ -222,27 +222,27 @@ foreach ($CTypeItems as $position => $item) {
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'content_align_center' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align',
+    'content_position_center' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.center',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
                     'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
                     'left'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
                     'right'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_align.justify',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.justify',
                     'justify'
                 ]
             ],
@@ -280,23 +280,23 @@ foreach ($CTypeItems as $position => $item) {
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'link_align' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_align',
+    'link_position' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position',
         'exclude' => true,
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_align.left',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.left',
                     'left'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_align.center',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.center',
                     'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_align.right',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.right',
                     'right'
                 ]
             ],
@@ -471,14 +471,14 @@ $GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
 // -------------------
 // Link palettes
 // -------------------
-// add  palette title_link_align
-$GLOBALS['TCA']['tt_content']['palettes']['title_link_align'] = [
+// add  palette title_link_position
+$GLOBALS['TCA']['tt_content']['palettes']['title_link_position'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
     'showitem' => '
-        link_title,link,link_align
+        link_title,link,link_position
     '
 ];
-// add  palette title_link_align
+// add  palette title_link
 $GLOBALS['TCA']['tt_content']['palettes']['title_link'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
     'showitem' => '

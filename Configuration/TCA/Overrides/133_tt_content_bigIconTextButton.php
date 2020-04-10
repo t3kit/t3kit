@@ -40,7 +40,7 @@ $GLOBALS['TCA']['tt_content']['types']['bigIconTextButton'] = [
             --palette--;;header_layout,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             --palette--;;title_link,
-            content_align_center,
+            content_position_center,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
             --palette--;;icon,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,

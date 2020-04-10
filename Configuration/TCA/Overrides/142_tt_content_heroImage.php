@@ -42,7 +42,7 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
             --palette--;;general,
             --palette--;;header_subheader_layout_position_link,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-            content_align,
+            content_position,
             --palette--;;title_link_position,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
