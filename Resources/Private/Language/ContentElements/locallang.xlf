@@ -15,9 +15,6 @@
 			<trans-unit id="group.dynamic" resname="group.dynamic">
 				<source>Dynamic content</source>
 			</trans-unit>
-			<trans-unit id="group.separator" resname="group.separator">
-				<source>Content separator</source>
-			</trans-unit>
 
 			<!-- Content element tabs translations -->
 			<trans-unit id="tabs.settings" resname="tabs.settings">

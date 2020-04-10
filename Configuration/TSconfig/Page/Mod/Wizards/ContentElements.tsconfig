@@ -2,7 +2,7 @@
 # Groups of Content elements
 # ===========================
 
-# Remove default TYPO3 CE groups
+# Remove default "standart" TYPO3 CE group
 mod.wizards.newContentElement.wizardItems.common >
 
 # t3kit CE groups
@@ -11,15 +11,9 @@ mod.wizards.newContentElement.wizardItems {
     header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.static
     before = dynamic
   }
-
   dynamic {
     header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.dynamic
-    before = separator
-  }
-
-  separator {
-    header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.separator
-    before = forms
+    after = static
   }
 }
 # ___________________________
@@ -29,6 +23,5 @@ mod.wizards.newContentElement.wizardItems {
 # ===========================
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/*.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/*.tsconfig'
-@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Separator/*.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/*.tsconfig'
 # ___________________________
