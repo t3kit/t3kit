@@ -96,7 +96,7 @@
   <f:comment>
     Calculate picture_width based on selector in BE to define relative image width inside a content element
   </f:comment>
-  <f:if condition="{image.referenceProperties.picture_width} && {image.picture_width} != 100">
+  <f:if condition="{image.referenceProperties.picture_width} != 100">
     <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
     <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
     <f:variable name="small_viewport_width">{image.referenceProperties.picture_width*small_viewport_width/100}</f:variable>
@@ -151,7 +151,11 @@
       <f:variable name="img_thumbnail">img-thumbnail</f:variable>
     </f:if>
 
-    <img class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}" loading="lazy" src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
+    <img
+    class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}"
+    loading="lazy"
+    {f:if(condition:options.height,then:' style=" height: {options.height}px;"')}
+    src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
   </picture>
 
 </html>
