@@ -1,32 +1,38 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
+
 <f:section name="Header" />
+
 <f:section name="Main">
-  <!-- theme_t3kit: Templates/ContentElements/Quote.html [begin] -->
-  <blockquote class="quote">
-    <div class="quote__body">
-      <t3kit:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">
-        <p class="quote__body-p">{data.bodytext}</p>
-      </t3kit:contentEditable>
-      <span class="quote__body-icon icons icon-t3-quoteMark" aria-hidden="true"></span>
-    </div>
-    <footer class="quote__footer">
-      <f:if condition="{data.author_name}">
-        <span class="quote__footer-name">{data.author_name}<f:render section="nameSuffix" arguments="{title: data.work_title, link: data.link}" /></span>
-      </f:if>
-      <f:if condition="{data.work_title}">
-        <cite class="quote__footer-title" title="{data.work_title}">{data.work_title}<f:render section="nameSuffix" arguments="{link: data.link}" />
-      </f:if>
-      <f:if condition="{data.link}">
-        <f:link.typolink parameter="{data.link}" class="quote__footer-link">{data.link_title}</f:link.typolink>
-      </f:if>
-      <f:if condition="{data.work_title}">
-        </cite>
-      </f:if>
-    </footer>
-  </blockquote>
-  <!-- theme_t3kit: Templates/ContentElements/Quote.html [end] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Quote.html [begin] -->
+
+  <div class="ce-quote__wrp">
+    <blockquote class="ce-quote">
+      <div class="ce-quote__body">
+        <t3kit:contentEditable table="tt_content" field="bodytext" uid="{data.uid}">
+          <p class="ce-quote__body-p">{data.bodytext}</p>
+        </t3kit:contentEditable>
+        <span class="ce-quote__body-icon icons icon-t3-ce-quoteMark" aria-hidden="true"></span>
+      </div>
+      <footer class="ce-quote__footer">
+        <f:if condition="{data.author_name}">
+          <span class="ce-quote__footer-name">{data.author_name}<f:render section="nameSuffix" arguments="{title: data.work_title, link: data.link}" /></span>
+        </f:if>
+        <f:if condition="{data.work_title}">
+          <cite class="ce-quote__footer-title" title="{data.work_title}">{data.work_title}<f:render section="nameSuffix" arguments="{link: data.link}" />
+        </f:if>
+        <f:if condition="{data.link}">
+          <f:link.typolink parameter="{data.link}" class="ce-quote__footer-link">{data.link_title}</f:link.typolink>
+        </f:if>
+        <f:if condition="{data.work_title}">
+          </cite>
+        </f:if>
+      </footer>
+    </blockquote>
+  </div>
+
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Quote.html [end] -->
 </f:section>
 
 <!-- In one line to aviod an extra space before the comma sign-->

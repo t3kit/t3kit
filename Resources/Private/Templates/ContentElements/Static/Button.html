@@ -1,10 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
+
 <f:section name="Header" />
 
 <f:section name="Main">
-  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [begin] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [begin] -->
 
   <f:variable name="btn_class">btn</f:variable>
   <f:if condition="{flexform.button_no_bg}">
@@ -34,10 +35,12 @@
   </f:if>
 
   <f:if condition="{data.link_title}">
-    <f:link.typolink parameter="{data.link}" class="{btn_class}">{data.link_title}</f:link.typolink>
+    <div class="ce-button__wrp">
+      <f:link.typolink parameter="{data.link}" class="ce-button {btn_class}">{data.link_title}</f:link.typolink>
+    </div>
   </f:if>
 
-  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [end] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [end] -->
 </f:section>
 
 </html>

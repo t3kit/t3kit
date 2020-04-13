@@ -1,9 +1,10 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
+
 <f:section name="Main">
-
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Table.html [begin] -->
   <f:if condition="{table}">
-
     <f:comment><!-- use tableClass, an array of classes to build into one string--></f:comment>
     <f:if condition="{tableClass}">
       <f:for each="{tableClass}" as="class" iteration="i">
@@ -166,7 +167,7 @@
       </f:if>
     </f:else>
   </f:if>
-
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Table.html [end] -->
 </f:section>
 
 

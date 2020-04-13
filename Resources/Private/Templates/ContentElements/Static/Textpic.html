@@ -1,7 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
+
 <f:section name="Header" />
+
 <f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/ce-Textpicml [begin] -->
 
   <f:switch expression="{data.imageorient}">
     <f:case value="1">
@@ -30,26 +34,28 @@
     </f:defaultCase>
   </f:switch>
 
+  <div c“lass="ce-textpic__wrp">
+    <div class="ce-textpic {var}">
 
-  <div class="textpic-ce {var}">
-
-    <div class="textpic-ce__picture">
-      <f:render partial="Media/Figure" arguments="{_all}" />
-    </div>
-
-    <div class="textpic-ce__text">
-      <div class="textpic-ce__header">
-        <f:render partial="Header/All" arguments="{_all}" />
+      <div class="ce-textpic__picture">
+        <f:render partial="Media/Figure" arguments="{_all}" />
       </div>
-      <f:if condition="{data.bodytext}">
-        <div class="textpic-ce__bodytext">
-          <f:format.html>{data.bodytext}</f:format.html>
-        </div>
-      </f:if>
-    </div>
 
+      <div class="ce-textpic__text">
+        <div class="ce-textpic__header">
+          <f:render partial="Header/All" arguments="{_all}" />
+        </div>
+        <f:if condition="{data.bodytext}">
+          <div class="ce-textpic__bodytext">
+            <f:format.html>{data.bodytext}</f:format.html>
+          </div>
+        </f:if>
+      </div>
+
+    </div>
   </div>
 
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/ce-Textpicml [end] -->
 </f:section>
 
 </html>

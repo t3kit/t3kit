@@ -1,37 +1,43 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
+
 <f:section name="Header" />
+
 <f:section name="Main">
-  <!-- theme_t3kit: Templates/ContentElements/HeroImage.html [begin] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/HeroImage.html [begin] -->
+
   <f:if condition="{files}">
-    <div class="hero-image js__hero-image">
-      <f:render partial="Media/Figure" arguments="{_all}" />
-      <div
-        class="hero-image__caption-wrp {f:if(condition: '{flexform.horizontalAlignment} == 0', then: '_left-align')}{f:if(condition: '{flexform.horizontalAlignment} == 1', then: '_center-align')}{f:if(condition: '{flexform.horizontalAlignment} == 2', then: '_right-align')} {f:if(condition:'{flexform.transparentLayer} == 0', then: '', else: '_caption-overlay-{flexform.transparentLayer}')}">
+    <div class="ce-hero-image__wrp">
+      <div class="ce-hero-image js__ce-hero-image" {f:if(condition:options.height,then:' style=" height: {options.height}px;"')}>
+        <f:render partial="Media/Figure" arguments="{_all}" />
         <div
-          class="hero-image__caption {f:if(condition: '{flexform.animationStyle} == 0', then: '', else: '_caption-animated-{flexform.animationStyle}')} {f:if(condition: '{flexform.verticalAlignment} == 0', then: '_top')}{f:if(condition: '{flexform.verticalAlignment} == 2', then: '_bottom')}">
-          <f:if condition="{data.header}">
-            <h2 class="hero-image__caption-header" data-header-content='{data.header}'>{data.header}</h2>
-          </f:if>
-          <f:if condition="{data.subheader}">
-            <h3 class="hero-image__caption-subheader" data-subheader-content='{data.subheader}'>{data.subheader}</h3>
-          </f:if>
-          <f:if condition="{data.bodytext}">
-            <p class="hero-image__caption-p line-clamp" data-text-content='{data.bodytext}'>{data.bodytext}</p>
-          </f:if>
-          <f:if condition="{data.link}">
-            <div class="hero-image__caption-link-wrp">
-              <f:link.typolink parameter="{data.link}" title="{data.header}"
-                class="hero-image__caption-link {f:if(condition: flexform.linkAsBtn, then: 'btn', else: '')}">
-                {data.link_title}</f:link.typolink>
-            </div>
-          </f:if>
+          class="ce-hero-image__caption-wrp {f:if(condition: '{flexform.horizontalAlignment} == 0', then: '_left-align')}{f:if(condition: '{flexform.horizontalAlignment} == 1', then: '_center-align')}{f:if(condition: '{flexform.horizontalAlignment} == 2', then: '_right-align')} {f:if(condition:'{flexform.transparentLayer} == 0', then: '', else: '_caption-overlay-{flexform.transparentLayer}')}">
+          <div
+            class="ce-hero-image__caption {f:if(condition: '{flexform.animationStyle} == 0', then: '', else: '_caption-animated-{flexform.animationStyle}')} {f:if(condition: '{flexform.verticalAlignment} == 0', then: '_top')}{f:if(condition: '{flexform.verticalAlignment} == 2', then: '_bottom')}">
+            <f:if condition="{data.header}">
+              <h2 class="ce-hero-image__caption-header" data-header-content='{data.header}'>{data.header}</h2>
+            </f:if>
+            <f:if condition="{data.subheader}">
+              <h3 class="ce-hero-image__caption-subheader" data-subheader-content='{data.subheader}'>{data.subheader}</h3>
+            </f:if>
+            <f:if condition="{data.bodytext}">
+              <p class="ce-hero-image__caption-p line-clamp" data-text-content='{data.bodytext}'>{data.bodytext}</p>
+            </f:if>
+            <f:if condition="{data.link}">
+              <div class="ce-hero-image__caption-link-wrp">
+                <f:link.typolink parameter="{data.link}" title="{data.header}"
+                  class="ce-hero-image__caption-link {f:if(condition: flexform.linkAsBtn, then: 'btn', else: '')}">
+                  {data.link_title}</f:link.typolink>
+              </div>
+            </f:if>
+          </div>
         </div>
       </div>
     </div>
   </f:if>
-  <!-- theme_t3kit: Templates/ContentElements/HeroImage.html [end] -->
+
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/HeroImage.html [end] -->
 </f:section>
 
 </html>
