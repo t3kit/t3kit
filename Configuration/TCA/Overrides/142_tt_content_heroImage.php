@@ -64,6 +64,28 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
+        'image' => [
+            'config' => [
+                'filter' => [
+                    0 => [
+                        'parameters' => [
+                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
+                        ]
+                    ]
+                ],
+                'overrideChildTca' => [
+                    'columns' => [
+                        'uid_local' => [
+                            'config' => [
+                                'appearance' => [
+                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ],
         'link' => [
             'config' => [
                 'fieldControl' => [
