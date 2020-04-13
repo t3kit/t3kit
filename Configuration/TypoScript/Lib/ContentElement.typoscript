@@ -39,7 +39,7 @@ lib.contentElement {
     }
   }
   settings {
-    container_width = {$plugin.t3kit.settings.container_width}
+    container_width = {$plugin.t3kit.settings.general.container_width}
     media {
       videoConfig {
         controls = {$plugin.t3kit.settings.media.videoConfig.controls}

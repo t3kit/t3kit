@@ -11,7 +11,7 @@ page.meta {
   author {
     override.field = author
   }
-  viewport = {$page.meta.viewport}
+  viewport = {$plugin.t3kit.settings.general.viewport}
 
 }
 
