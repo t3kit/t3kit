@@ -391,6 +391,145 @@ foreach ($CTypeItems as $position => $item) {
     ]
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'header_text' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
+        'config' => [
+            'type' => 'text',
+            'cols' => 80,
+            'rows' => 5
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'subheader_text' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.subheader',
+        'config' => [
+            'type' => 'text',
+            'cols' => 80,
+            'rows' => 5
+        ]
+    ],
+]);
+
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'link_as_button' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_as_button',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxLabeledToggle',
+            'items' => [
+                [
+                   0 => '',
+                   1 => '',
+                   'labelChecked' => 'Enabled',
+                   'labelUnchecked' => 'Disabled',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_size' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.default',
+                    0
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.large',
+                    'btn-lg'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.small',
+                    'btn-sm'
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_style' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.primary',
+                    'primary'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.secondary',
+                    'secondary'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.dark',
+                    'dark'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.light',
+                    'light'
+                ]
+            ],
+            'default' => 'primary',
+        ]
+    ],
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_full_width' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_full_width',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => '',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_no_bg' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_no_bg',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => '',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+
 // rewrite "header_position" column config
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'header_position' => [
@@ -471,14 +610,14 @@ $GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
 // -------------------
 // Link palettes
 // -------------------
-// add  palette title_link_position
+// add new palette title_link_position
 $GLOBALS['TCA']['tt_content']['palettes']['title_link_position'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
     'showitem' => '
         link_title,link,link_position
     '
 ];
-// add  palette title_link
+// add new palette title_link
 $GLOBALS['TCA']['tt_content']['palettes']['title_link'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
     'showitem' => '
@@ -487,18 +626,32 @@ $GLOBALS['TCA']['tt_content']['palettes']['title_link'] = [
 ];
 
 // -------------------
+// Button palette
+// -------------------
+// add new palette button
+$GLOBALS['TCA']['tt_content']['palettes']['button'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button.palette',
+    'showitem' => '
+        link_as_button,
+        --linebreak--,
+        button_size,button_style,button_full_width,button_no_bg
+    '
+];
+
+
+// -------------------
 // Header palettes
 // -------------------
-// core header palette = header + layout + position + date + link
-// core headers palette = header + layout + position + date + link + subheader
-// add  palette header_only
+// TYPO3 core header palette = header + layout + position + date + link
+// TYPO3 core headers palette = header + layout + position + date + link + subheader
+// add new palette header_only
 $GLOBALS['TCA']['tt_content']['palettes']['header_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
         header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel
     ',
 ];
-// add  palette header_position
+// add new palette header_position
 $GLOBALS['TCA']['tt_content']['palettes']['header_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
@@ -507,7 +660,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_position'] = [
         header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
     ',
 ];
-// add  palette header_layout
+// add new palette header_layout
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
@@ -516,7 +669,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout'] = [
         header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel
     ',
 ];
-// add  palette header_layout_position
+// add new palette header_layout_position
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
@@ -526,8 +679,8 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position'] = [
         header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
     ',
 ];
-// add  palette header_subheader_layout_position
-$GLOBALS['TCA']['tt_content']['palettes']['header_subheader_layout_position'] = [
+// add new palette header_layout_position_subheader
+$GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_subheader'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
         header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
@@ -538,17 +691,82 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_subheader_layout_position'] = 
         header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
     ',
 ];
-// add  palette header_subheader_layout_position_link
-$GLOBALS['TCA']['tt_content']['palettes']['header_subheader_layout_position_link'] = [
+// add new palette header_layout_position_link_subheader
+$GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
         header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
         --linebreak--,
-        subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel,
+        --linebreak--,
+        header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+        --linebreak--,
+        subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel
+    ',
+];
+
+// -------------------
+// Header in several rows
+// -------------------
+// add new palette headertext_only
+$GLOBALS['TCA']['tt_content']['palettes']['headertext_only'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
+    'showitem' => '
+        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel
+    ',
+];
+// add new palette headertext_position
+$GLOBALS['TCA']['tt_content']['palettes']['headertext_position'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
+    'showitem' => '
+        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        --linebreak--,
+        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+    ',
+];
+// add new palette headertext_layout
+$GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
+    'showitem' => '
+        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        --linebreak--,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel
+    ',
+];
+// add new palette headertext_layout_position
+$GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
+    'showitem' => '
+        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        --linebreak--,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+    ',
+];
+// add new palette headertext_layout_position_subheadertext
+$GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadertext'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
+    'showitem' => '
+        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        --linebreak--,
+        subheader_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
+        --linebreak--,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+    ',
+];
+// add new palette headertext_layout_position_link_subheadertext
+$GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subheadertext'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
+    'showitem' => '
+        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
         --linebreak--,
         header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
         header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel,
         --linebreak--,
-        header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel
+        header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+        --linebreak--,
+        subheader_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel
     ',
 ];

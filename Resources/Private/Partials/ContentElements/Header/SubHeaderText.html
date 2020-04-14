@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{data.subheader_text}">
+  <f:switch expression="{data.header_layout}">
+    <f:case value="0">
+      <h2 class="text-{data.header_position}">
+        <f:format.nl2br>{data.subheader_text}</f:format.nl2br>
+      </h2>
+    </f:case>
+    <f:case value="1">
+      <h3 class="text-{data.header_position}">
+        <f:format.nl2br>{data.subheader_text}</f:format.nl2br>
+      </h3>
+    </f:case>
+    <f:case value="2">
+      <h4 class="text-{data.header_position}">
+        <f:format.nl2br>{data.subheader_text}</f:format.nl2br>
+      </h4>
+    </f:case>
+    <f:case value="3">
+      <h5 class="text-{data.header_position}">
+        <f:format.nl2br>{data.subheader_text}</f:format.nl2br>
+      </h5>
+    </f:case>
+    <f:case value="4">
+      <h6 class="text-{data.header_position}">
+        <f:format.nl2br>{data.subheader_text}</f:format.nl2br>
+      </h6>
+    </f:case>
+    <f:case value="5">
+      <h6 class="text-{data.header_position}">
+        <small><f:format.nl2br>{data.subheader_text}</f:format.nl2br></small>
+      </h6>
+    </f:case>
+  </f:switch>
+</f:if>
+
+</html>

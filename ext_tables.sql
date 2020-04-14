@@ -22,6 +22,15 @@ CREATE TABLE tt_content (
 	link_title varchar(255) DEFAULT '' NOT NULL,
 	link varchar(1024) DEFAULT '' NOT NULL,
 	link_position varchar(60) DEFAULT '' NOT NULL,
+	header_text text,
+	subheader_text text,
+	link_as_button tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	button_size varchar(60) DEFAULT '' NOT NULL,
+	button_style varchar(60) DEFAULT '' NOT NULL,
+	button_full_width tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	button_no_bg tinyint(1) unsigned DEFAULT '0' NOT NULL,
+
+
 	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
 	background_color_class varchar(60) DEFAULT '' NOT NULL,
 	background_color varchar(255) DEFAULT '' NOT NULL,

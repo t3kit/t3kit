@@ -184,6 +184,7 @@
 
 
 			<!-- Content element custom t3kit fields translations -->
+			<!-- link -->
 			<trans-unit id="link.palette" resname="link.palette">
 				<source>Link</source>
 			</trans-unit>
@@ -205,6 +206,7 @@
 			<trans-unit id="link_position.right" resname="link_position.right">
 				<source>Right</source>
 			</trans-unit>
+			<!-- Content alignment -->
 			<trans-unit id="content_position" resname="content_position">
 				<source>Content alignment</source>
 			</trans-unit>
@@ -219,6 +221,46 @@
 			</trans-unit>
 			<trans-unit id="content_position.justify" resname="content_position.justify">
 				<source>Justify</source>
+			</trans-unit>
+			<!-- Button -->
+			<trans-unit id="button.palette" resname="button.palette">
+				<source>Button</source>
+			</trans-unit>
+			<trans-unit id="link_as_button" resname="link_as_button">
+				<source>Show link as a button</source>
+			</trans-unit>
+			<trans-unit id="button_style" resname="button_style">
+				<source>Button style</source>
+			</trans-unit>
+			<trans-unit id="button_style.primary" resname="button_style.primary">
+				<source>Primary style</source>
+			</trans-unit>
+			<trans-unit id="button_style.secondary" resname="button_style.secondary">
+				<source>Secondary style</source>
+			</trans-unit>
+			<trans-unit id="button_style.light" resname="button_style.light">
+				<source>Light style</source>
+			</trans-unit>
+			<trans-unit id="button_style.dark" resname="button_style.dark">
+				<source>Dark style</source>
+			</trans-unit>
+			<trans-unit id="button_size" resname="button_size">
+				<source>Button size</source>
+			</trans-unit>
+			<trans-unit id="button_size.default" resname="button_size.default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="button_size.large" resname="button_size.large">
+				<source>Large</source>
+			</trans-unit>
+			<trans-unit id="button_size.small" resname="button_size.small">
+				<source>Small</source>
+			</trans-unit>
+			<trans-unit id="button_full_width" resname="button_full_width">
+				<source>Full-width button</source>
+			</trans-unit>
+			<trans-unit id="button_no_bg" resname="button_no_bg">
+				<source>Bordered with transparent background</source>
 			</trans-unit>
 
 

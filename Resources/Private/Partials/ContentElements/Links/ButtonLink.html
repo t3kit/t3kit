@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true"></html>
+
+  <f:variable name="btn_class">btn</f:variable>
+  <f:if condition="{data.button_no_bg}">
+    <f:then>
+      <f:if condition="{data.button_style} == 'link'">
+        <f:then>
+          <f:variable name="btn_class">{btn_class} btn-{data.button_style}</f:variable>
+        </f:then>
+        <f:else>
+          <f:variable name="btn_class">{btn_class} btn-outline-{data.button_style}</f:variable>
+        </f:else>
+      </f:if>
+    </f:then>
+    <f:else>
+      <f:if condition="{data.button_style}">
+        <f:variable name="btn_class">{btn_class} btn-{data.button_style}</f:variable>
+      </f:if>
+    </f:else>
+  </f:if>
+
+  <f:if condition="{data.button_size}">
+    <f:variable name="btn_class">{btn_class} {data.button_size}</f:variable>
+  </f:if>
+
+  <f:if condition="{data.button_full_width}">
+    <f:variable name="btn_class">{btn_class} w-100</f:variable>
+  </f:if>
+
+  <f:if condition="{data.link_position}">
+    <f:variable name="position">text-{data.link_position}</f:variable>
+  </f:if>
+
+  <f:if condition="{data.link_title}">
+    <div class="button-partial__wrp {position}">
+      <f:link.typolink parameter="{data.link}" class="button-partial {btn_class}">{data.link_title}</f:link.typolink>
+    </div>
+  </f:if>
+
+</html>
