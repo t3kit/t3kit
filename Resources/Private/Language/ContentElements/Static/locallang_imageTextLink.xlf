@@ -13,9 +13,6 @@
 			<trans-unit id="imageTextLink.flexform.disableWholeAreaLink" resname="imageTextLink.flexform.disableWholeAreaLink">
 				<source>Disable whole area link</source>
 			</trans-unit>
-			<trans-unit id="imageTextLink.flexform.linkAsBtn" resname="imageTextLink.flexform.linkAsBtn">
-				<source>Show link as a button</source>
-			</trans-unit>
 			<trans-unit id="imageTextLink.flexform.hoverEffect" resname="imageTextLink.flexform.hoverEffect">
 				<source>Hover effects</source>
 			</trans-unit>

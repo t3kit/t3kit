@@ -41,6 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             content_position,
             --palette--;;title_link_position,
+            --palette--;;button,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
             --palette--;;icon,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,

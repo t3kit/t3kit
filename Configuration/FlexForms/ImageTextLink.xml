@@ -22,17 +22,6 @@
 						</TCEforms>
 					</disableWholeAreaLink>
 
-					<linkAsBtn>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.linkAsBtn</label>
-							<config>
-								<type>check</type>
-								<renderType>checkboxToggle</renderType>
-								<default>0</default>
-							</config>
-						</TCEforms>
-					</linkAsBtn>
-
 					<hoverEffect>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.hoverEffect</label>

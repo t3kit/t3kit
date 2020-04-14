@@ -42,9 +42,8 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
-            --palette--;;title_link,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
+            --palette--;;title_link_position,
+            --palette--;;button,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -94,8 +93,3 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
  * Add flexForms for Content Element
  * ===========================
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/Button.xml',
-    'button'
-);

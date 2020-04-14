@@ -37,10 +37,11 @@ $GLOBALS['TCA']['tt_content']['types']['imageTextLink'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;header_subheader_layout_position,
+            --palette--;;header_layout_position_subheader,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             content_position,
             --palette--;;title_link_position,
+            --palette--;;button,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
             --palette--;;mediaAdjustments,
