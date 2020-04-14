@@ -8,36 +8,63 @@
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/HeroImage.html [begin] -->
 
   <f:if condition="{files}">
+
+    <f:if condition="{flexform.height} == 0">
+      <f:then>
+        <f:variable name="options" value="{'height': 400}" />
+      </f:then>
+      <f:else>
+        <f:variable name="options" value="{'height': '{flexform.height}'}" />
+      </f:else>
+    </f:if>
+
+
     <div class="ce-hero-image__wrp">
-      <div class="ce-hero-image js__ce-hero-image" {f:if(condition:options.height,then:' style=" height: {options.height}px;"')}>
-        <f:render partial="Media/Figure" arguments="{_all}" />
-        <div
-          class="ce-hero-image__caption-wrp {f:if(condition: '{flexform.horizontalAlignment} == 0', then: '_left-align')}{f:if(condition: '{flexform.horizontalAlignment} == 1', then: '_center-align')}{f:if(condition: '{flexform.horizontalAlignment} == 2', then: '_right-align')} {f:if(condition:'{flexform.transparentLayer} == 0', then: '', else: '_caption-overlay-{flexform.transparentLayer}')}">
-          <div
-            class="ce-hero-image__caption {f:if(condition: '{flexform.animationStyle} == 0', then: '', else: '_caption-animated-{flexform.animationStyle}')} {f:if(condition: '{flexform.verticalAlignment} == 0', then: '_top')}{f:if(condition: '{flexform.verticalAlignment} == 2', then: '_bottom')}">
-            <f:if condition="{data.header}">
-              <h2 class="ce-hero-image__caption-header" data-header-content='{data.header}'>{data.header}</h2>
-            </f:if>
-            <f:if condition="{data.subheader}">
-              <h3 class="ce-hero-image__caption-subheader" data-subheader-content='{data.subheader}'>{data.subheader}</h3>
-            </f:if>
+      <div class="ce-hero-image js__ce-hero-image">
+
+        <div class="ce-hero-image__picture">
+          <f:render partial="Media/Figure" arguments="{_all}" />
+        </div>
+
+        <div class="ce-hero-image__caption-wrp {f:if(condition:'{flexform.transparentLayer} != 0', then: ' ce-hero-image__caption-wrp--overlay-{flexform.overlay}')}">
+          <div class="ce-hero-image__caption container">
+
+            <div class="ce-hero-image__caption-header">
+              <f:render partial="Header/HeaderText" arguments="{_all}" />
+            </div>
+
+            <div class="ce-hero-image__caption-subheader">
+              <f:render partial="Header/SubHeaderText" arguments="{_all}" />
+            </div>
+
             <f:if condition="{data.bodytext}">
-              <p class="ce-hero-image__caption-p line-clamp" data-text-content='{data.bodytext}'>{data.bodytext}</p>
+              <p class="ce-hero-image__caption-bodytext line-clamp text-{data.content_position}">
+                <f:format.nl2br>{data.bodytext}</f:format.nl2br>
+              </p>
             </f:if>
-            <f:if condition="{data.link}">
-              <div class="ce-hero-image__caption-link-wrp">
-                <f:link.typolink parameter="{data.link}" title="{data.header}"
-                  class="ce-hero-image__caption-link {f:if(condition: flexform.linkAsBtn, then: 'btn', else: '')}">
-                  {data.link_title}</f:link.typolink>
+
+            <f:if condition="{data.link_title}">
+              <div class="ce-hero-image__caption-link">
+                <f:if condition="{data.link_as_button}">
+                  <f:then>
+                    <f:render partial="Links/ButtonLink" arguments="{_all}" />
+                  </f:then>
+                  <f:else>
+                    <f:render partial="Links/Link" arguments="{_all}" />
+                  </f:else>
+                </f:if>
               </div>
             </f:if>
+
           </div>
         </div>
+
+
       </div>
     </div>
   </f:if>
 
-<!-- t3kit: Resources/Private/Templates/ContentElements/Static/HeroImage.html [end] -->
+  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/HeroImage.html [end] -->
 </f:section>
 
 </html>

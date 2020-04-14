@@ -11,20 +11,21 @@
 				<type>array</type>
 				<el>
 
-					<linkAsBtn>
+					<height>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.linkAsBtn</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.height</label>
 							<config>
-								<type>check</type>
-								<renderType>checkboxToggle</renderType>
-								<default>0</default>
+								<type>input</type>
+								<size>5</size>
+								<max>5</max>
+								<eval>trim,int</eval>
 							</config>
 						</TCEforms>
-					</linkAsBtn>
+					</height>
 
-					<transparentLayer>
+					<overlay>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.transparentLayer</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -32,43 +33,7 @@
 								</items>
 							</config>
 						</TCEforms>
-					</transparentLayer>
-
-					<horizontalAlignment>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.horizontalAlignment</label>
-							<config>
-								<type>select</type>
-								<renderType>selectSingle</renderType>
-								<items>
-								</items>
-							</config>
-						</TCEforms>
-					</horizontalAlignment>
-
-					<verticalAlignment>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.verticalAlignment</label>
-							<config>
-								<type>select</type>
-								<renderType>selectSingle</renderType>
-								<items>
-								</items>
-							</config>
-						</TCEforms>
-					</verticalAlignment>
-
-					<animationStyle>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.animationStyle</label>
-							<config>
-								<type>select</type>
-								<renderType>selectSingle</renderType>
-								<items>
-								</items>
-							</config>
-						</TCEforms>
-					</animationStyle>
+					</overlay>
 
 				</el>
 			</ROOT>
