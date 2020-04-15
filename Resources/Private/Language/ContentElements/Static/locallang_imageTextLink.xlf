@@ -10,8 +10,8 @@
 				<source>Image or media, text and link. Will use image before media. Will only render one image or one media.</source>
 			</trans-unit>
 
-			<trans-unit id="imageTextLink.flexform.disableWholeAreaLink" resname="imageTextLink.flexform.disableWholeAreaLink">
-				<source>Disable whole area link</source>
+			<trans-unit id="imageTextLink.flexform.stretched_link" resname="imageTextLink.flexform.stretched_link">
+				<source>Enable whole area link</source>
 			</trans-unit>
 			<trans-unit id="imageTextLink.flexform.hoverEffect" resname="imageTextLink.flexform.hoverEffect">
 				<source>Hover effects</source>

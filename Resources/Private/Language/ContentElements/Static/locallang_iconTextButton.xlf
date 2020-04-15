@@ -10,8 +10,8 @@
 				<source>Icon, header, text and button</source>
 			</trans-unit>
 
-			<trans-unit id="iconTextButton.flexform.disableWholeAreaLink" resname="iconTextButton.flexform.disableWholeAreaLink">
-				<source>Disable whole area link</source>
+			<trans-unit id="iconTextButton.flexform.stretched_link" resname="iconTextButton.flexform.stretched_link">
+				<source>Enable whole area link</source>
 			</trans-unit>
 		</body>
 	</file>

@@ -11,16 +11,16 @@
 				<type>array</type>
 				<el>
 
-					<disableWholeAreaLink>
+					<stretched_link>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.disableWholeAreaLink</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.flexform.stretched_link</label>
 							<config>
 								<type>check</type>
 								<renderType>checkboxToggle</renderType>
 								<default>0</default>
 							</config>
 						</TCEforms>
-					</disableWholeAreaLink>
+					</stretched_link>
 
 					<hoverEffect>
 						<TCEforms>

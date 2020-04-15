@@ -289,7 +289,7 @@ foreach ($CTypeItems as $position => $item) {
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.left',
-                    'left'
+                    '0'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.center',
@@ -300,7 +300,7 @@ foreach ($CTypeItems as $position => $item) {
                     'right'
                 ]
             ],
-            'default' => 'left',
+            'default' => '0',
         ]
     ],
 ]);
@@ -541,7 +541,7 @@ foreach ($CTypeItems as $position => $item) {
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
-                    'left'
+                    '0'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
@@ -556,7 +556,7 @@ foreach ($CTypeItems as $position => $item) {
                     'right'
                 ]
             ],
-            'default' => 'left'
+            'default' => '0'
         ]
     ],
 ]);

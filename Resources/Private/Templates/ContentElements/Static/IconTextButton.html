@@ -7,37 +7,44 @@
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextButton.html [begin] -->
 
+  <f:if condition="{flexform.stretched_link}">
+    <f:variable name="stretched_link" value="1" />
+  </f:if>
+
   <div class="ce-icon-text-btn__wrp">
     <div class="ce-icon-text-btn">
-      <div class="ce-icon-text-btn__icon-and-header">
+
+      <div class="ce-icon-text-btn__icon-header">
         <f:if condition="{data.icon}">
-          <span class="ce-icon-text-btn__icon">
-            <t3kit:render.svg src="{data.icon}" class="{data.icon_class}" width="24px" height="24px" aria-hidden="true" />
+          <span class="ce-icon-text-btn__icon-wrp">
+            <t3kit:render.svg src="{data.icon}" class="t3icon ce-icon-text-btn__icon {data.icon_class}" />
           </span>
         </f:if>
+
         <f:if condition="{data.header}">
-          <h3 class="ce-icon-text-btn__header">
-            {data.header}
-          </h3>
+          <div class="ce-icon-text-btn__header">
+            <f:render partial="Header/Header" arguments="{_all}" />
+          </div>
         </f:if>
       </div>
 
       <f:if condition="{data.bodytext}">
-        <p class="ce-icon-text-btn__p"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
+        <p class="ce-icon-text-btn__bodytext"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
       </f:if>
 
-      <f:if condition="{data.link} && {flexform.disableWholeAreaLink} == 1">
-        <f:link.typolink
-          parameter="{data.link}"
-          class="ce-icon-text-btn__link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
-            {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
-        </f:link.typolink>
+      <f:if condition="{data.link_title}">
+        <div class="ce-icon-text-btn__link">
+          <f:if condition="{data.link_as_button}">
+            <f:then>
+              <f:render partial="Link/ButtonLink" arguments="{_all}" />
+            </f:then>
+            <f:else>
+              <f:render partial="Link/Link" arguments="{_all}" />
+            </f:else>
+          </f:if>
+        </div>
       </f:if>
-      <f:if condition="{flexform.disableWholeAreaLink} == 0">
-        <f:link.typolink parameter="{data.link}" class="ce-icon-text-btn__link _whole-area-link stretched-link {f:if(condition: flexform.btnAsLink, then: 'btn-text', else: ' btn btn-primary')}">
-          {f:if(condition: data.link_title, then: data.link_title, else: data.header)}
-        </f:link.typolink>
-      </f:if>
+
     </div>
   </div>
 
