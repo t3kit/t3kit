@@ -11,10 +11,10 @@
     <div class="ce-button">
       <f:if condition="{data.link_as_button}">
         <f:then>
-          <f:render partial="Links/ButtonLink" arguments="{_all}" />
+          <f:render partial="Link/ButtonLink" arguments="{_all}" />
         </f:then>
         <f:else>
-          <f:render partial="Links/Link" arguments="{_all}" />
+          <f:render partial="Link/Link" arguments="{_all}" />
         </f:else>
       </f:if>
     </div>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="contactCard.title" resname="contactCard.title">
+				<source>Contact Card</source>
+			</trans-unit>
+			<trans-unit id="contactCard.description" resname="contactCard.description">
+				<source>Photo and contact information</source>
+			</trans-unit>
+
+			<trans-unit id="contactCard.flexform.title" resname="contactCard.flexform.title">
+				<source>Contacts</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.name" resname="contactCard.flexform.name">
+				<source>Full name</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.job_title" resname="contactCard.flexform.job_title">
+				<source>Job title</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.contactPhone_title_1" resname="contactCard.flexform.contactPhone_title_1">
+				<source>Contact phone title 1</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.contactPhone_link_1" resname="contactCard.flexform.contactPhone_link_1">
+				<source>Contact phone 1</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.contactPhone_title_2" resname="contactCard.flexform.contactPhone_title_2">
+				<source>Contact phone title 2</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.contactPhone_link_2" resname="contactCard.flexform.contactPhone_link_2">
+				<source>Contact phone 2</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.mobilePhone_title" resname="contactCard.flexform.mobilePhone_title">
+				<source>Mobile phone title</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.mobilePhone_link" resname="contactCard.flexform.mobilePhone_link">
+				<source>Mobile phone</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.email" resname="contactCard.flexform.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="contactCard.flexform.icons" resname="contactCard.flexform.icons">
+				<source>Show icons</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

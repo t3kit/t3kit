@@ -19,7 +19,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['button'])) {
         'button',
         'ce-button'
     ],
-    'contactsCard',
+    'contactCard',
     'after'
 );
 

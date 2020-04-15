@@ -23,7 +23,7 @@ mod.wizards.newContentElement.wizardItems.static.elements {
   video.tt_content_defValues.CType = video
   audio.tt_content_defValues.CType = audio
   quote.tt_content_defValues.CType = quote
-  contactsCard.tt_content_defValues.CType = contactsCard
+  contactCard.tt_content_defValues.CType = contactCard
   button.tt_content_defValues.CType = button
 
 }

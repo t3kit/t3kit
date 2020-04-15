@@ -11,9 +11,9 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.title',
-        'contactsCard',
-        'ce-contactsCard'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.title',
+        'contactCard',
+        'ce-contactCard'
     ],
     'quote',
     'after'
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactsCard'] = 'ce-contactsCard';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactCard'] = 'ce-contactCard';
 
 
 /*
@@ -33,16 +33,18 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactsCard'] = 'ce-
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
+$GLOBALS['TCA']['tt_content']['types']['contactCard'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.title,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.title,
+            --palette--;;title_link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
             --palette--;;mediaAdjustments,
-            --palette--;;imagelinks,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
+            --palette--;;icon,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -79,6 +81,18 @@ $GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
                     ]
                 ]
             ]
+        ],
+        'link' => [
+            'config' => [
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkOptions' => 'folder, mail, telephone'
+                        ]
+                    ]
+                ]
+            ]
         ]
     ]
 ];
@@ -105,6 +119,6 @@ $GLOBALS['TCA']['tt_content']['types']['contactsCard'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/ContactsCard.xml',
-    'contactsCard'
+    'FILE:EXT:t3kit/Configuration/FlexForms/ContactCard.xml',
+    'contactCard'
 );

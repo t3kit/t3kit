@@ -1,13 +1,13 @@
 # ###########################
 # Contacts Card
 #
-# CType: contactsCard
+# CType: contactCard
 # ===========================
 tt_content {
-  contactsCard =< lib.contentElement
-  contactsCard {
+  contactCard =< lib.contentElement
+  contactCard {
 
-    templateName = ContactsCard
+    templateName = ContactCard
 
     dataProcessing {
       10 = T3k\t3kit\DataProcessing\FlexFormProcessor

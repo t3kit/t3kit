@@ -65,7 +65,7 @@ $contentElementIcons = [
     'ce-contacts',
     'ce-button',
     'ce-heroImage',
-    'ce-contactsCard'
+    'ce-contactCard'
 ];
 foreach ($contentElementIcons as $icon) {
     $iconRegistry->registerIcon(

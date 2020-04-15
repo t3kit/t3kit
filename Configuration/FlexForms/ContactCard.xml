@@ -13,7 +13,7 @@
 
 					<name>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.name</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.name</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -25,7 +25,7 @@
 
 					<job_title>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.job_title</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.job_title</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -35,9 +35,20 @@
 						</TCEforms>
 					</job_title>
 
+					<icons>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.icons</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</icons>
+
 					<contactPhone_title_1>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.contactPhone_title_1</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_title_1</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -49,7 +60,7 @@
 
 					<contactPhone_link_1>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.contactPhone_link_1</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_link_1</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -57,7 +68,7 @@
 									<linkPopup>
 										<options>
 											<blindLinkFields>params, target, class</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, email</blindLinkOptions>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
 										</options>
 									</linkPopup>
 								</fieldControl>
@@ -71,7 +82,7 @@
 
 					<contactPhone_title_2>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.contactPhone_title_2</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_title_2</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -83,7 +94,7 @@
 
 					<contactPhone_link_2>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.contactPhone_link_2</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_link_2</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -91,7 +102,7 @@
 									<linkPopup>
 										<options>
 											<blindLinkFields>params, target, class</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, email</blindLinkOptions>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
 										</options>
 									</linkPopup>
 								</fieldControl>
@@ -105,7 +116,7 @@
 
 					<mobilePhone_title>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.mobilePhone_title</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.mobilePhone_title</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -117,7 +128,7 @@
 
 					<mobilePhone_link>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.mobilePhone_link</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.mobilePhone_link</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -125,7 +136,7 @@
 									<linkPopup>
 										<options>
 											<blindLinkFields>params, target, class</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, email</blindLinkOptions>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
 										</options>
 									</linkPopup>
 								</fieldControl>
@@ -139,7 +150,7 @@
 
 					<email>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.email</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.email</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -158,51 +169,6 @@
 							</config>
 						</TCEforms>
 					</email>
-
-					<linkedin>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.linkedin</label>
-							<config>
-								<type>input</type>
-								<size>30</size>
-								<max>100</max>
-								<eval>trim</eval>
-							</config>
-						</TCEforms>
-					</linkedin>
-
-					<linkedin_link>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.linkedin_link</label>
-							<config>
-								<type>input</type>
-								<renderType>inputLink</renderType>
-								<fieldControl>
-									<linkPopup>
-										<options>
-											<blindLinkFields>params, target, class</blindLinkFields>
-											<blindLinkOptions>page, file, folder, mail, telephone</blindLinkOptions>
-										</options>
-									</linkPopup>
-								</fieldControl>
-								<size>40</size>
-								<max>1024</max>
-								<eval>trim</eval>
-								<softref>typolink</softref>
-							</config>
-						</TCEforms>
-					</linkedin_link>
-
-					<icons>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactsCard.xlf:contactsCard.flexform.icons</label>
-							<config>
-								<type>check</type>
-								<renderType>checkboxToggle</renderType>
-								<default>0</default>
-							</config>
-						</TCEforms>
-					</icons>
 
 				</el>
 			</ROOT>
