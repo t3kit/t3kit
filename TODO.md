@@ -12,3 +12,5 @@
 - ios android script separately
 - side navigation
 - add classes to menus
+- image height or max-height in heroimage
+- line-clamp

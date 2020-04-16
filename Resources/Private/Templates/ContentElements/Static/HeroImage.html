@@ -23,7 +23,7 @@
       <div class="ce-hero-image js__ce-hero-image">
 
         <div class="ce-hero-image__picture">
-          <f:render partial="Media/Figure" arguments="{_all}" />
+          <f:render partial="Media/Type" arguments="{_all}" />
         </div>
 
         <div class="ce-hero-image__caption-wrp {f:if(condition:'{flexform.transparentLayer} != 0', then: ' ce-hero-image__caption-wrp--overlay-{flexform.overlay}')}">
@@ -38,9 +38,9 @@
             </div>
 
             <f:if condition="{data.bodytext}">
-              <p class="ce-hero-image__caption-bodytext line-clamp text-{data.content_position}">
-                <f:format.nl2br>{data.bodytext}</f:format.nl2br>
-              </p>
+              <div class="ce-hero-image__caption-bodytext">
+                <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
+              </div>
             </f:if>
 
             <f:if condition="{data.link_title}">

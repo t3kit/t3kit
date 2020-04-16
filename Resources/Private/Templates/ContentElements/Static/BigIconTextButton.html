@@ -26,8 +26,16 @@
         </div>
       </f:if>
 
+      <f:if condition="{data.subheader}">
+        <div class="ce-big-icon-text-btn__subheader">
+          <f:render partial="Header/SubHeader" arguments="{_all}" />
+        </div>
+      </f:if>
+
       <f:if condition="{data.bodytext}">
-        <p class="ce-big-icon-text-btn__bodytext"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
+        <div class="ce-big-icon-text-btn__bodytext">
+          <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
+        </div>
       </f:if>
 
 

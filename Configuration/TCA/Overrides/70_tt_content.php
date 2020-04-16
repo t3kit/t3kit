@@ -201,7 +201,7 @@ foreach ($CTypeItems as $position => $item) {
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
-                    'left'
+                    '0'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
@@ -216,40 +216,40 @@ foreach ($CTypeItems as $position => $item) {
                     'justify'
                 ]
             ],
-            'default' => 'left',
+            'default' => '0',
         ]
     ],
 ]);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'content_position_center' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
-                    'center'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
-                    'left'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
-                    'right'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.justify',
-                    'justify'
-                ]
-            ],
-            'default' => 'center',
-        ]
-    ],
-]);
+// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+//     'content_position_center' => [
+//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
+//         'exclude' => true,
+//         'config' => [
+//             'type' => 'select',
+//             'renderType' => 'selectSingle',
+//             'items' => [
+//                 [
+//                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
+//                     'center'
+//                 ],
+//                 [
+//                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
+//                     'left'
+//                 ],
+//                 [
+//                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
+//                     'right'
+//                 ],
+//                 [
+//                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.justify',
+//                     'justify'
+//                 ]
+//             ],
+//             'default' => 'center',
+//         ]
+//     ],
+// ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'link_title' => [
@@ -635,6 +635,17 @@ $GLOBALS['TCA']['tt_content']['palettes']['button'] = [
         link_as_button,
         --linebreak--,
         button_size,button_style,button_full_width,button_no_bg
+    '
+];
+
+// -------------------
+// Bodytext palette
+// -------------------
+// add new palette bodytext_position
+$GLOBALS['TCA']['tt_content']['palettes']['bodytext_position'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:bodytext.palette',
+    'showitem' => '
+        bodytext,content_position
     '
 ];
 

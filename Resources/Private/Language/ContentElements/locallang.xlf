@@ -208,7 +208,7 @@
 			</trans-unit>
 			<!-- Content alignment -->
 			<trans-unit id="content_position" resname="content_position">
-				<source>Content alignment</source>
+				<source>Alignment</source>
 			</trans-unit>
 			<trans-unit id="content_position.left" resname="content_position.left">
 				<source>Left</source>
@@ -261,6 +261,9 @@
 			</trans-unit>
 			<trans-unit id="button_no_bg" resname="button_no_bg">
 				<source>Bordered with transparent background</source>
+			</trans-unit>
+			<trans-unit id="bodytext.palette" resname="bodytext.palette">
+				<source>Text</source>
 			</trans-unit>
 
 

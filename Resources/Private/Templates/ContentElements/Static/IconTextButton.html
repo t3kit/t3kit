@@ -29,7 +29,9 @@
       </div>
 
       <f:if condition="{data.bodytext}">
-        <p class="ce-icon-text-btn__bodytext"><f:format.nl2br>{data.bodytext}</f:format.nl2br></p>
+        <div class="ce-icon-text-btn__bodytext">
+          <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
+        </div>
       </f:if>
 
       <f:if condition="{data.link_title}">
