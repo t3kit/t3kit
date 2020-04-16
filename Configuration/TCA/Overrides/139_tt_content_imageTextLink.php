@@ -15,7 +15,7 @@ defined('TYPO3_MODE') || die();
         'imageTextLink',
         'ce-imageTextLink'
     ],
-    'iconTextButton',
+    'iconTextLink',
     'after'
 );
 

@@ -13,7 +13,7 @@
 
 					<stretched_link>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextButton.xlf:bigIconTextButton.flexform.stretched_link</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextLink.xlf:iconTextLink.flexform.stretched_link</label>
 							<config>
 								<type>check</type>
 								<renderType>checkboxToggle</renderType>

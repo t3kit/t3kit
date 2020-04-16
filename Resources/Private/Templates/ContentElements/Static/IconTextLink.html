@@ -5,37 +5,37 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-<!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextButton.html [begin] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextLink.html [begin] -->
 
   <f:if condition="{flexform.stretched_link}">
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
-  <div class="ce-icon-text-btn__wrp">
-    <div class="ce-icon-text-btn">
+  <div class="ce-icon-text-link__wrp">
+    <div class="ce-icon-text-link">
 
-      <div class="ce-icon-text-btn__icon-header">
+      <div class="ce-icon-text-link__icon-header">
         <f:if condition="{data.icon}">
-          <span class="ce-icon-text-btn__icon-wrp">
-            <t3kit:render.svg src="{data.icon}" class="t3icon ce-icon-text-btn__icon {data.icon_class}" />
+          <span class="ce-icon-text-link__icon-wrp">
+            <t3kit:render.svg src="{data.icon}" class="t3icon ce-icon-text-link__icon {data.icon_class}" />
           </span>
         </f:if>
 
         <f:if condition="{data.header}">
-          <div class="ce-icon-text-btn__header">
+          <div class="ce-icon-text-link__header">
             <f:render partial="Header/Header" arguments="{_all}" />
           </div>
         </f:if>
       </div>
 
       <f:if condition="{data.bodytext}">
-        <div class="ce-icon-text-btn__bodytext">
+        <div class="ce-icon-text-link__bodytext">
           <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
         </div>
       </f:if>
 
       <f:if condition="{data.link_title}">
-        <div class="ce-icon-text-btn__link">
+        <div class="ce-icon-text-link__link">
           <f:if condition="{data.link_as_button}">
             <f:then>
               <f:render partial="Link/ButtonLink" arguments="{_all}" />
@@ -50,7 +50,7 @@
     </div>
   </div>
 
-<!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextButton.html [end] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextLink.html [end] -->
 </f:section>
 
 </html>

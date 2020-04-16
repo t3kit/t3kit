@@ -5,42 +5,42 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-<!-- t3kit: Resources/Private/Templates/ContentElements/Static/BigIconTextButton.html [begin] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/BigIconTextLink.html [begin] -->
 
   <f:if condition="{flexform.stretched_link}">
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
-  <div class="ce-big-icon-text-btn__wrp">
-    <div class="ce-big-icon-text-btn">
+  <div class="ce-big-icon-text-link__wrp">
+    <div class="ce-big-icon-text-link">
 
       <f:if condition="{data.icon}">
-        <span class="ce-big-icon-text-btn__icon-wrp">
-          <t3kit:render.svg src="{data.icon}" class="t3icon ce-big-icon-text-btn__icon {data.icon_class}" />
+        <span class="ce-big-icon-text-link__icon-wrp">
+          <t3kit:render.svg src="{data.icon}" class="t3icon ce-big-icon-text-link__icon {data.icon_class}" />
         </span>
       </f:if>
 
       <f:if condition="{data.header}">
-        <div class="ce-big-icon-text-btn__header">
+        <div class="ce-big-icon-text-link__header">
           <f:render partial="Header/Header" arguments="{_all}" />
         </div>
       </f:if>
 
       <f:if condition="{data.subheader}">
-        <div class="ce-big-icon-text-btn__subheader">
+        <div class="ce-big-icon-text-link__subheader">
           <f:render partial="Header/SubHeader" arguments="{_all}" />
         </div>
       </f:if>
 
       <f:if condition="{data.bodytext}">
-        <div class="ce-big-icon-text-btn__bodytext">
+        <div class="ce-big-icon-text-link__bodytext">
           <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
         </div>
       </f:if>
 
 
       <f:if condition="{data.link_title}">
-        <div class="ce-big-icon-text-btn__link">
+        <div class="ce-big-icon-text-link__link">
           <f:if condition="{data.link_as_button}">
             <f:then>
               <f:render partial="Link/ButtonLink" arguments="{_all}" />
@@ -55,7 +55,7 @@
     </div>
   </div>
 
-<!-- t3kit: Resources/Private/Templates/ContentElements/Static/BigIconTextButton.html [end] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/BigIconTextLink.html [end] -->
 </f:section>
 
 </html>

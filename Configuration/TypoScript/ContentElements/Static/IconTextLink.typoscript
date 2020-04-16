@@ -1,13 +1,13 @@
 # ###########################
 # Icon Text Button
 #
-# CType: iconTextButton
+# CType: iconTextLink
 # ===========================
 tt_content {
-  iconTextButton =< lib.contentElement
-  iconTextButton {
+  iconTextLink =< lib.contentElement
+  iconTextLink {
 
-    templateName = IconTextButton
+    templateName = IconTextLink
 
     dataProcessing {
       10 = T3k\t3kit\DataProcessing\FlexFormProcessor

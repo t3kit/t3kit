@@ -11,11 +11,11 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextButton.xlf:iconTextButton.title',
-        'iconTextButton',
-        'ce-iconTextButton'
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextLink.xlf:iconTextLink.title',
+        'iconTextLink',
+        'ce-iconTextLink'
     ],
-    'bigIconTextButton',
+    'bigIconTextLink',
     'after'
 );
 
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextButton'] = 'ce-iconTextButton';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextLink'] = 'ce-iconTextLink';
 
 
 /*
@@ -33,7 +33,7 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextButton'] = 'c
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
+$GLOBALS['TCA']['tt_content']['types']['iconTextLink'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
@@ -97,6 +97,6 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextButton'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/IconTextButton.xml',
-    'iconTextButton'
+    'FILE:EXT:t3kit/Configuration/FlexForms/IconTextLink.xml',
+    'iconTextLink'
 );

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="bigIconTextLink.title" resname="bigIconTextLink.title">
+				<source>Big icon,Text and Button</source>
+			</trans-unit>
+			<trans-unit id="bigIconTextLink.description" resname="bigIconTextLink.description">
+				<source>Big icon, header, text and button</source>
+			</trans-unit>
+
+			<trans-unit id="bigIconTextLink.flexform.stretched_link" resname="bigIconTextLink.flexform.stretched_link">
+				<source>Enable whole area link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

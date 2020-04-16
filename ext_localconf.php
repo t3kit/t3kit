@@ -52,17 +52,10 @@ $iconRegistry->registerIcon(
 // Content Elements icons
 $contentElementIconFilePath = 'EXT:t3kit/Resources/Public/Icons/ContentElements/';
 $contentElementIcons = [
-    'ce-slider',
-    'ce-bigIconTextButton',
-    'ce-iconTextButton',
+    'ce-bigIconTextLink',
+    'ce-iconTextLink',
     'ce-imageTextLink',
-    'ce-logoCarousel',
     'ce-quote',
-    'ce-fullWidthImage',
-    'ce-responsiveVideo',
-    'ce-socialIcons',
-    'ce-copyrightText',
-    'ce-contacts',
     'ce-button',
     'ce-heroImage',
     'ce-contactCard'
