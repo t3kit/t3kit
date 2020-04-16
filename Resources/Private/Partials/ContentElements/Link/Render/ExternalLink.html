@@ -1,15 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true"></html>
 
-  <f:if condition="{link_position}">
-    <f:variable name="position">text-{link_position}</f:variable>
-  </f:if>
+<f:if condition="{link_position}">
+  <f:variable name="position">text-{link_position}</f:variable>
+</f:if>
 
-  <f:if condition="{link_title}">
-    <div class="external-link-partial__wrp {position}">
-      <f:link.external uri="{link}" class="external-link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}" defaultScheme="https">
-        {link_title}
-      </f:link.external>
-    </div>
-  </f:if>
+<f:if condition="{link_title}">
+  <div class="external-link-partial__wrp {position}">
+    <f:link.external uri="{link}" class="external-link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}" defaultScheme="https">
+      {link_title}
+    </f:link.external>
+  </div>
+</f:if>
 
 </html>

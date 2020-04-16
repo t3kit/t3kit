@@ -1,161 +1,161 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-  <f:variable name="container_width">{settings.container_width}</f:variable>
+<f:variable name="container_width">{settings.container_width}</f:variable>
 
-  <f:comment>
-    Set a viewport to depend on numbers of columns in BE layout
-    ***
-    # Columns pattern [colPos]
-    # [1-10]     -> Header
-    # [11-20]    -> Footer
-    # [30-40]    -> Navigation/Breadcrumbs
-    # [50-90]    -> Additional content
-    # __________________________
-    # 1000-10000 -> All Content
-    # ***
-    # colPos = [1000-1099]  -> 100% column width [col-md-12] (e.g., one column layout)
-    # colPos = [9100-9199]  -> 91% column width [col-md-11] (e.g., two columns layout [91%/8%])
-    # colPos = [8300-8399]  -> 83% column width [col-md-10] (e.g., two columns layout [83%/16%])
-    # colPos = [7500-7599]  -> 75% column width [col-md-9] (e.g., two columns layout [75%/25%])
-    # colPos = [6600-6699]  -> 66% column width [col-md-8] (e.g., two columns layout [66%/33%])
-    # colPos = [5800-5899]  -> 58% column width [col-md-7] (e.g., two columns layout [58%/41%])
-    # colPos = [5000-5099]  -> 50% column width [col-md-6] (e.g., two equal columns layout)
-    # colPos = [4100-4199]  -> 41% column width [col-md-5] (e.g., two columns layout [41%/58%])
-    # colPos = [3300-3399]  -> 33% column width [col-md-4] (e.g., three equal columns layout)
-    # colPos = [2500-2599]  -> 25% column width [col-md-3] (e.g., four equal columns layout)
-    # colPos = [1600-1699]  -> 16% column width [col-md-2] (e.g., six equal columns layout)
-    # colPos = [800-899]    -> 8% column width [col-md-1] (e.g., twelve equal columns layout)
-    # __________________________
-  </f:comment>
+<f:comment>
+  Set a viewport to depend on numbers of columns in BE layout
+  ***
+  # Columns pattern [colPos]
+  # [1-10]     -> Header
+  # [11-20]    -> Footer
+  # [30-40]    -> Navigation/Breadcrumbs
+  # [50-90]    -> Additional content
+  # __________________________
+  # 1000-10000 -> All Content
+  # ***
+  # colPos = [1000-1099]  -> 100% column width [col-md-12] (e.g., one column layout)
+  # colPos = [9100-9199]  -> 91% column width [col-md-11] (e.g., two columns layout [91%/8%])
+  # colPos = [8300-8399]  -> 83% column width [col-md-10] (e.g., two columns layout [83%/16%])
+  # colPos = [7500-7599]  -> 75% column width [col-md-9] (e.g., two columns layout [75%/25%])
+  # colPos = [6600-6699]  -> 66% column width [col-md-8] (e.g., two columns layout [66%/33%])
+  # colPos = [5800-5899]  -> 58% column width [col-md-7] (e.g., two columns layout [58%/41%])
+  # colPos = [5000-5099]  -> 50% column width [col-md-6] (e.g., two equal columns layout)
+  # colPos = [4100-4199]  -> 41% column width [col-md-5] (e.g., two columns layout [41%/58%])
+  # colPos = [3300-3399]  -> 33% column width [col-md-4] (e.g., three equal columns layout)
+  # colPos = [2500-2599]  -> 25% column width [col-md-3] (e.g., four equal columns layout)
+  # colPos = [1600-1699]  -> 16% column width [col-md-2] (e.g., six equal columns layout)
+  # colPos = [800-899]    -> 8% column width [col-md-1] (e.g., twelve equal columns layout)
+  # __________________________
+</f:comment>
 
-  <f:if condition="{data.colPos}>=800 && {data.colPos} <= 899">
-    <f:then>
-      <f:variable name="fluid_viewport_width">8</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12}</f:variable>
-    </f:then>
+<f:if condition="{data.colPos}>=800 && {data.colPos} <= 899">
+  <f:then>
+    <f:variable name="fluid_viewport_width">8</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12}</f:variable>
+  </f:then>
 
-    <f:else if="{data.colPos}>=1600 && {data.colPos} <= 1699">
-      <f:variable name="fluid_viewport_width">16</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/6}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=1600 && {data.colPos} <= 1699">
+    <f:variable name="fluid_viewport_width">16</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/6}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=2500 && {data.colPos} <= 2599">
-      <f:variable name="fluid_viewport_width">25</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/4}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=2500 && {data.colPos} <= 2599">
+    <f:variable name="fluid_viewport_width">25</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/4}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=3300 && {data.colPos} <= 3399">
-      <f:variable name="fluid_viewport_width">33</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/3}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=3300 && {data.colPos} <= 3399">
+    <f:variable name="fluid_viewport_width">33</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/3}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=4100 && {data.colPos} <= 4199">
-      <f:variable name="fluid_viewport_width">41</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12*5}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=4100 && {data.colPos} <= 4199">
+    <f:variable name="fluid_viewport_width">41</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12*5}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=5000 && {data.colPos} <= 5099">
-      <f:variable name="fluid_viewport_width">50</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/2}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=5000 && {data.colPos} <= 5099">
+    <f:variable name="fluid_viewport_width">50</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/2}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=5800 && {data.colPos} <= 5899">
-      <f:variable name="fluid_viewport_width">58</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12*7}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=5800 && {data.colPos} <= 5899">
+    <f:variable name="fluid_viewport_width">58</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12*7}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=6600 && {data.colPos} <= 6699">
-      <f:variable name="fluid_viewport_width">66</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12*8}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=6600 && {data.colPos} <= 6699">
+    <f:variable name="fluid_viewport_width">66</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12*8}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=7500 && {data.colPos} <= 7599">
-      <f:variable name="fluid_viewport_width">75</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12*9}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=7500 && {data.colPos} <= 7599">
+    <f:variable name="fluid_viewport_width">75</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12*9}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=8300 && {data.colPos} <= 8399">
-      <f:variable name="fluid_viewport_width">83</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12*10}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=8300 && {data.colPos} <= 8399">
+    <f:variable name="fluid_viewport_width">83</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12*10}</f:variable>
+  </f:else>
 
-    <f:else if="{data.colPos}>=9100 && {data.colPos} <= 9199">
-      <f:variable name="fluid_viewport_width">91</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width/12*11}</f:variable>
-    </f:else>
+  <f:else if="{data.colPos}>=9100 && {data.colPos} <= 9199">
+    <f:variable name="fluid_viewport_width">91</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width/12*11}</f:variable>
+  </f:else>
 
-    <f:else>
-      <f:variable name="fluid_viewport_width">100</f:variable>
-      <f:variable name="fixed_viewport_width">{container_width}</f:variable>
-    </f:else>
+  <f:else>
+    <f:variable name="fluid_viewport_width">100</f:variable>
+    <f:variable name="fixed_viewport_width">{container_width}</f:variable>
+  </f:else>
+</f:if>
+
+<f:comment>Viewport for mobile devices (always 100% viewport widht)</f:comment>
+<f:variable name="small_viewport_width">100</f:variable>
+
+<f:comment>
+  Calculate picture_width based on selector in BE to define relative image width inside a content element
+</f:comment>
+<f:if condition="{image.referenceProperties.picture_width} != 100">
+  <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
+  <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
+  <f:variable name="small_viewport_width">{image.referenceProperties.picture_width*small_viewport_width/100}</f:variable>
+</f:if>
+
+<f:comment>Viewport for medium screens</f:comment>
+<f:variable name="medium_viewport_width">{fluid_viewport_width}vw</f:variable>
+
+<f:comment>Viewport for big screens</f:comment>
+<f:if condition="{data.section_container_width} == 'container'">
+  <f:then>
+    <f:comment>
+      The image element inside the content with a specific width.
+      Usually, it's up to 1200 px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance.
+    </f:comment>
+
+    <f:variable name="big_viewport_width">{fixed_viewport_width}px</f:variable>
+  </f:then>
+
+  <f:else>
+    <f:comment>
+      The image element inside the content with a fluid/full-screen width. 100% width based on the Bootstrap grid.
+      Lower performance, but with the ability to design site with a full-screen layout. </f:comment>
+
+    <f:variable name="big_viewport_width">{fluid_viewport_width}vm</f:variable>
+  </f:else>
+</f:if>
+
+
+<picture class="picture-partial__item">
+  <source
+    media="(max-width: 767px)"
+    srcset="{f:uri.image(image: image, maxWidth: '360', cropVariant: 'mobile')} 360w,
+      {f:uri.image(image: image, maxWidth: '480', cropVariant: 'mobile')} 480w,
+      {f:uri.image(image: image, maxWidth: '768', cropVariant: 'mobile')} 768w,
+      {f:uri.image(image: image, maxWidth: '1125', cropVariant: 'mobile')} 1125w"
+    sizes="{small_viewport_width}vw">
+
+  <source
+    media="(min-width: 768px)"
+    srcset="{f:uri.image(image: image, maxWidth: '300', cropVariant: 'default')} 300w,
+      {f:uri.image(image: image, maxWidth: '400', cropVariant: 'default')} 400w,
+      {f:uri.image(image: image, maxWidth: '600', cropVariant: 'default')} 600w,
+      {f:uri.image(image: image, maxWidth: '800', cropVariant: 'default')} 800w,
+      {f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')} 992w,
+      {f:uri.image(image: image, maxWidth: '1200', cropVariant: 'default')} 1200w,
+      {f:uri.image(image: image, maxWidth: '1440', cropVariant: 'default')} 1440w,
+      {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
+    sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
+
+  <f:if condition="{image.referenceProperties.img_thumbnail}">
+    <f:variable name="img_thumbnail">img-thumbnail</f:variable>
   </f:if>
 
-  <f:comment>Viewport for mobile devices (always 100% viewport widht)</f:comment>
-  <f:variable name="small_viewport_width">100</f:variable>
-
-  <f:comment>
-    Calculate picture_width based on selector in BE to define relative image width inside a content element
-  </f:comment>
-  <f:if condition="{image.referenceProperties.picture_width} != 100">
-    <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
-    <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
-    <f:variable name="small_viewport_width">{image.referenceProperties.picture_width*small_viewport_width/100}</f:variable>
-  </f:if>
-
-  <f:comment>Viewport for medium screens</f:comment>
-  <f:variable name="medium_viewport_width">{fluid_viewport_width}vw</f:variable>
-
-  <f:comment>Viewport for big screens</f:comment>
-  <f:if condition="{data.section_container_width} == 'container'">
-    <f:then>
-      <f:comment>
-        The image element inside the content with a specific width.
-        Usually, it's up to 1200 px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance.
-      </f:comment>
-
-      <f:variable name="big_viewport_width">{fixed_viewport_width}px</f:variable>
-    </f:then>
-
-    <f:else>
-      <f:comment>
-        The image element inside the content with a fluid/full-screen width. 100% width based on the Bootstrap grid.
-        Lower performance, but with the ability to design site with a full-screen layout. </f:comment>
-
-      <f:variable name="big_viewport_width">{fluid_viewport_width}vm</f:variable>
-    </f:else>
-  </f:if>
-
-
-  <picture class="picture-partial__item">
-    <source
-      media="(max-width: 767px)"
-      srcset="{f:uri.image(image: image, maxWidth: '360', cropVariant: 'mobile')} 360w,
-        {f:uri.image(image: image, maxWidth: '480', cropVariant: 'mobile')} 480w,
-        {f:uri.image(image: image, maxWidth: '768', cropVariant: 'mobile')} 768w,
-        {f:uri.image(image: image, maxWidth: '1125', cropVariant: 'mobile')} 1125w"
-      sizes="{small_viewport_width}vw">
-
-    <source
-      media="(min-width: 768px)"
-      srcset="{f:uri.image(image: image, maxWidth: '300', cropVariant: 'default')} 300w,
-        {f:uri.image(image: image, maxWidth: '400', cropVariant: 'default')} 400w,
-        {f:uri.image(image: image, maxWidth: '600', cropVariant: 'default')} 600w,
-        {f:uri.image(image: image, maxWidth: '800', cropVariant: 'default')} 800w,
-        {f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')} 992w,
-        {f:uri.image(image: image, maxWidth: '1200', cropVariant: 'default')} 1200w,
-        {f:uri.image(image: image, maxWidth: '1440', cropVariant: 'default')} 1440w,
-        {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
-      sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
-
-    <f:if condition="{image.referenceProperties.img_thumbnail}">
-      <f:variable name="img_thumbnail">img-thumbnail</f:variable>
-    </f:if>
-
-    <img
-    class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}"
-    loading="lazy"
-    {f:if(condition:options.height,then:' style=" max-height: {options.height}px;"')}
-    src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
-  </picture>
+  <img
+  class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}"
+  loading="lazy"
+  {f:if(condition:options.height,then:' style=" max-height: {options.height}px;"')}
+  src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
+</picture>
 
 </html>

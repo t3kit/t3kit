@@ -24,39 +24,3 @@
 </f:section>
 
 </html>
-
-
-<f:comment>
-  <f:variable name="btn_class">btn</f:variable>
-  <f:if condition="{flexform.button_no_bg}">
-    <f:then>
-      <f:if condition="{flexform.button_style} == 'link'">
-        <f:then>
-          <f:variable name="btn_class">{btn_class} btn-{flexform.button_style}</f:variable>
-        </f:then>
-        <f:else>
-          <f:variable name="btn_class">{btn_class} btn-outline-{flexform.button_style}</f:variable>
-        </f:else>
-      </f:if>
-    </f:then>
-    <f:else>
-      <f:if condition="{flexform.button_style}">
-        <f:variable name="btn_class">{btn_class} btn-{flexform.button_style}</f:variable>
-      </f:if>
-    </f:else>
-  </f:if>
-
-  <f:if condition="{flexform.button_size}">
-    <f:variable name="btn_class">{btn_class} {flexform.button_size}</f:variable>
-  </f:if>
-
-  <f:if condition="{flexform.button_full_width}">
-    <f:variable name="btn_class">{btn_class} w-100</f:variable>
-  </f:if>
-
-  <f:if condition="{data.link_title}">
-    <div class="ce-button__wrp">
-      <f:link.typolink parameter="{data.link}" class="ce-button {btn_class}">{data.link_title}</f:link.typolink>
-    </div>
-  </f:if>
-</f:comment>

@@ -1,8 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:debug title="" inline="1">{_all}</f:debug>
-  <div class="video-partial__item-wrp embed-responsive embed-responsive-{file.referenceProperties.aspect_ratio}">
-    <f:media class="video-partial__item embed-responsive-item" file="{file}" title="{file.title}" additionalConfig="{settings.media.videoConfig}" />
-  </div>
+<div class="video-partial__item-wrp embed-responsive embed-responsive-{file.referenceProperties.aspect_ratio}">
+  <f:media class="video-partial__item embed-responsive-item" file="{file}" title="{file.title}" additionalConfig="{settings.media.videoConfig}" />
+</div>
 
 </html>

@@ -2,30 +2,30 @@
 
 <f:for each="{files}" as="file">
 
-    <f:switch expression="{file.type}">
-      <f:case value="3">
-        <f:variable name="type">Audio</f:variable>
-      </f:case>
-      <f:case value="4">
-        <f:variable name="type">Video</f:variable>
-      </f:case>
-      <f:defaultCase>
-        <f:variable name="type">Picture</f:variable>
-      </f:defaultCase>
-    </f:switch>
+  <f:switch expression="{file.type}">
+    <f:case value="3">
+      <f:variable name="type">Audio</f:variable>
+    </f:case>
+    <f:case value="4">
+      <f:variable name="type">Video</f:variable>
+    </f:case>
+    <f:defaultCase>
+      <f:variable name="type">Picture</f:variable>
+    </f:defaultCase>
+  </f:switch>
 
-    <figure class="figure-partial figure figure-{type -> f:format.case(mode: 'lower')}">
+  <figure class="figure-partial figure figure-{type -> f:format.case(mode: 'lower')}">
 
-      <f:render partial="Media/Type/{type}" arguments="{data: data, file:file, options:options}" optional="1"/>
+    <f:render partial="Media/Type/{type}" arguments="{data: data, file:file, options:options}" optional="1"/>
 
-      <f:if condition="{file.description}">
-        <figcaption class="figure-partial__caption figure-caption text-{file.referenceProperties.description_position}">
-          <f:format.nl2br>{file.description}</f:format.nl2br>
-        </figcaption>
-      </f:if>
+    <f:if condition="{file.description}">
+      <figcaption class="figure-partial__caption figure-caption text-{file.referenceProperties.description_position}">
+        <f:format.nl2br>{file.description}</f:format.nl2br>
+      </figcaption>
+    </f:if>
 
-    </figure>
-  </f:for>
+  </figure>
+</f:for>
 
 </html>
 
