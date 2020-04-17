@@ -57,6 +57,8 @@ $contentElementIcons = [
     'ce-imageTextLink',
     'ce-quote',
     'ce-button',
+    'ce-video',
+    'ce-element',
     'ce-heroImage',
     'ce-contactCard'
 ];
