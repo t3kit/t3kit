@@ -11,13 +11,21 @@
 
     <f:if condition="{flexform.height} == 0">
       <f:then>
-        <f:variable name="options" value="{'height': 400}" />
+        <f:variable name="options" value="{'max_height': 400}" />
       </f:then>
       <f:else>
-        <f:variable name="options" value="{'height': '{flexform.height}'}" />
+        <f:variable name="options" value="{'max_height': '{flexform.height}'}" />
       </f:else>
     </f:if>
 
+    <f:if condition="{flexform.full_width_caption}">
+        <f:then>
+          <f:variable name="container" value="container-fluid" />
+        </f:then>
+        <f:else>
+          <f:variable name="container" value="container" />
+        </f:else>
+    </f:if>
 
     <div class="ce-hero-image__wrp">
       <div class="ce-hero-image js__ce-hero-image">
@@ -27,7 +35,7 @@
         </div>
 
         <div class="ce-hero-image__caption-wrp {f:if(condition:'{flexform.transparentLayer} != 0', then: ' ce-hero-image__caption-wrp--overlay-{flexform.overlay}')}">
-          <div class="ce-hero-image__caption container">
+          <div class="ce-hero-image__caption {container}">
 
             <div class="ce-hero-image__caption-header">
               <f:render partial="Header/HeaderText" arguments="{_all}" />

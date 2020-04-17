@@ -32,6 +32,10 @@
 			<trans-unit id="heroImage.flexform.overlay_light" resname="heroImage.flexform.overlay_light">
 				<source>Light overlay</source>
 			</trans-unit>
+
+			<trans-unit id="heroImage.flexform.full_width_caption" resname="heroImage.flexform.full_width_caption">
+				<source>Full width caption</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

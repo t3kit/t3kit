@@ -14,3 +14,4 @@
 - add classes to menus
 - image height or max-height in heroimage
 - line-clamp
+- variable fonts

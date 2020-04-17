@@ -35,6 +35,17 @@
 						</TCEforms>
 					</overlay>
 
+					<full_width_caption>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.full_width_caption</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</full_width_caption>
+
 				</el>
 			</ROOT>
 		</sDEF>

@@ -4,10 +4,10 @@
 		<header/>
 		<body>
 			<trans-unit id="iconTextLink.title" resname="iconTextLink.title">
-				<source>Icon,Text and Button</source>
+				<source>Icon,Text and Link</source>
 			</trans-unit>
 			<trans-unit id="iconTextLink.description" resname="iconTextLink.description">
-				<source>Icon, header, text and button</source>
+				<source>Icon, header, text and link</source>
 			</trans-unit>
 
 			<trans-unit id="iconTextLink.flexform.stretched_link" resname="iconTextLink.flexform.stretched_link">
