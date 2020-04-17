@@ -37,13 +37,37 @@
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+  <main class="1column">
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+    <section class="1column__top-content">
+      <div class="1column__top-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+      </div>
+    </section>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1001}" />
+    <section class="1column__before-content ">
+      <div class="1column__before-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+      </div>
+    </section>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+    <section class="1column__content">
+      <div class="1column__content-container container">
+        <div class="row">
+          <div class="col">
+            <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1001}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="1column__after-content">
+      <div class="1column__after-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+      </div>
+    </section>
+
+  </main>
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
 
