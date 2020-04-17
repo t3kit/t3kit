@@ -90,10 +90,15 @@ conf.FAVICONS_TMPL = 'Favicons.html'
 conf.FAVICON_MASTER_PICTURE = t3kitConf['favicon-master-picture']
 conf.FAVICON_PATH = `/typo3conf/ext/${conf.THEME_NAME}/Resources/Public/Favicons`
 
-// Fonts | icons | images -- compilation variables
+// Icons variables
+conf.ICONS_DIST = `${conf.DIST_ROOT}Icons/`
+// Bootstrap Icons
+conf.BOOTSTRAP_ICONS_DIST = `${conf.ICONS_DIST}Bootstrap/`
+conf.BOOTSTRAP_ICONS_SRC = [`${rootDir}/node_modules/bootstrap-icons/icons/*.svg`]
+// ------------------------------
+
 conf.FONTS_DIST = 'Fonts/'
-conf.ICONS_DIST = 'Icons/'
-conf.ICONS_DIST = 'Images/'
+conf.IMAGES_DIST = 'Images/'
 
 // show info about current project config
 async function showInfo () {
