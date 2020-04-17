@@ -88,7 +88,7 @@ conf.FAVICONS_SRC = `${conf.SRC}favicon/`
 conf.FAVICONS_DIST = `${conf.DIST_ROOT}Favicons/`
 conf.FAVICONS_TMPL = 'Favicons.html'
 conf.FAVICON_MASTER_PICTURE = t3kitConf['favicon-master-picture']
-conf.FAVICON_PATH = `/typo3conf/ext/${conf.THEME_NAME}/Resources/Public/Favicons`
+conf.FAVICON_PATH = `/typo3conf/ext/${conf.THEME_NAME}/Resources/Public/assets/Favicons`
 
 // Icons variables
 conf.ICONS_DIST = `${conf.DIST_ROOT}Icons/`
