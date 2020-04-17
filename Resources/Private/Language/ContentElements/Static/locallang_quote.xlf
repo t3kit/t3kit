@@ -16,8 +16,8 @@
 			<trans-unit id="quote.flexform.author_name" resname="quote.flexform.author_name">
 				<source>Author name</source>
 			</trans-unit>
-			<trans-unit id="quote.flexform.work_title" resname="quote.flexform.work_title">
-				<source>Work title</source>
+			<trans-unit id="quote.flexform.job_title" resname="quote.flexform.job_title">
+				<source>Job title</source>
 			</trans-unit>
 		</body>
 	</file>
