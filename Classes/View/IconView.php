@@ -20,7 +20,7 @@ use TYPO3\CMS\Core\Utility\PathUtility;
 /**
  * Icons for t3kit
  *
- * Creates a list of svg files from a folder e.g. EXT:t3kit/Resources/Public/Images/Icons/Bootstrap/
+ * Creates a list of svg files from a folder e.g. EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/
  *
  * Source folder needs to be selected from another field, default is icon_source,
  * but can be set with iconSourceField.

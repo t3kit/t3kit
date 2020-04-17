@@ -341,7 +341,7 @@ foreach ($CTypeItems as $position => $item) {
                 ],
                 [
                     'Bootstrap',
-                    'EXT:t3kit/Resources/Public/Images/Icons/Bootstrap/'
+                    'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
                 ],
             ],
             'default' => '',

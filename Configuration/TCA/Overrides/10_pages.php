@@ -98,7 +98,7 @@ defined('TYPO3_MODE') || die();
                 ],
                 [
                     'Bootstrap',
-                    'EXT:t3kit/Resources/Public/Images/Icons/Bootstrap/'
+                    'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
                 ],
             ],
             'default' => '',
