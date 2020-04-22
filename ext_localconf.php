@@ -60,7 +60,8 @@ $contentElementIcons = [
     'ce-video',
     'ce-element',
     'ce-heroImage',
-    'ce-contactCard'
+    'ce-contactCard',
+    'content-special-dividerIcon'
 ];
 foreach ($contentElementIcons as $icon) {
     $iconRegistry->registerIcon(
