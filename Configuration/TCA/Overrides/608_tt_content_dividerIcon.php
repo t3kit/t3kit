@@ -13,7 +13,7 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_dividerIcon.xlf:dividerIcon.title',
         'dividerIcon',
-        'content-special-dividerIcon'
+        'ce-dividerIcon'
     ],
     'div',
     'after'
@@ -25,7 +25,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['dividerIcon'] = 'content-special-dividerIcon';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['dividerIcon'] = 'ce-dividerIcon';
 
 
 /*
@@ -38,7 +38,6 @@ $GLOBALS['TCA']['tt_content']['types']['dividerIcon'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
-            --palette--;;dividerIcon,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.icon,
             --palette--;;icon,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -54,20 +53,7 @@ $GLOBALS['TCA']['tt_content']['types']['dividerIcon'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    ',
-    'columnsOverrides' => [
-        'link' => [
-            'config' => [
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'params, target, class'
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+    '
 ];
 
 /*
@@ -89,5 +75,3 @@ $GLOBALS['TCA']['tt_content']['types']['dividerIcon'] = [
  * Add flexForms for Content Element
  * ===========================
  */
-
-

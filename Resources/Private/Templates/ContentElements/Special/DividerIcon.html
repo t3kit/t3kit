@@ -7,20 +7,20 @@
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Special/DividerIcon.html [begin] -->
 
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-
-    <div class="content-special-divider-icon__icon">
+  <div class="ce-divider-icon__wrp">
+    <div class="ce-divider-icon">
       <f:if condition="{data.icon}">
         <f:then>
-          <span class="content-special-divider-icon__icon-wrp">
-            <t3kit:render.svg src="{data.icon}" class="t3icon content-special-divider-icon__icon {data.icon_class}" />
+          <span class="ce-divider-icon__icon-wrp">
+            <t3kit:render.svg src="{data.icon}" class="t3icon ce-divider-icon__icon {data.icon_class}" />
           </span>
         </f:then>
         <f:else>
-          <hr />
+          <hr class="ce-divider-icon__hr" />
         </f:else>
       </f:if>
     </div>
+  </div>
 
 <!-- t3kit: Resources/Private/Templates/ContentElements/Special/DividerIcon.html [end] -->
 </f:section>
