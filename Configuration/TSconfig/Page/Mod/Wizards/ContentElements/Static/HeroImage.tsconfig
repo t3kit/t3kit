@@ -23,4 +23,11 @@ TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
       light = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay_light
     }
   }
+  caption_alignment {
+    addItems {
+      left = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment.left
+      center = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment.center
+      right = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment.right
+    }
+  }
 }

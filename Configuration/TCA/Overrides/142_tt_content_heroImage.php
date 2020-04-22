@@ -44,11 +44,11 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
             --palette--;;bodytext_position,
             --palette--;;title_link_position,
             --palette--;;button,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+            simple_image,
+            --palette--;;mediaAdjustments,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tabs.settings,
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,
-            --palette--;;mediaAdjustments,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -64,7 +64,7 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
-        'image' => [
+        'simple_image' => [
             'config' => [
                 'filter' => [
                     0 => [

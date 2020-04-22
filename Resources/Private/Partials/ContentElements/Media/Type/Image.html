@@ -4,7 +4,7 @@
   <f:if condition="{file.link}">
     <f:then>
       <f:link.typolink class="image-partial__link" parameter="{file.link}" title="{file.title}">
-        <f:render partial="Media/Render/Image" arguments="{data: data, image:file}" />
+        <f:render partial="Media/Render/Image" arguments="{data: data, image:file, height:height}" />
       </f:link.typolink>
     </f:then>
 
@@ -14,13 +14,13 @@
         <f:then>
           <div class="image-partial__zoom">
             <f:comment>TODO: add lightbox functionality</f:comment>
-            <f:render partial="Media/Render/Image" arguments="{data: data, image:file}" />
+            <f:render partial="Media/Render/Image" arguments="{data: data, image:file, height:height}" />
           </div>
         </f:then>
 
         <f:else>
           <div class="image-partial__simple">
-            <f:render partial="Media/Render/Image" arguments="{data: data, image:file}" />
+            <f:render partial="Media/Render/Image" arguments="{data: data, image:file, height:height}" />
           </div>
         </f:else>
 

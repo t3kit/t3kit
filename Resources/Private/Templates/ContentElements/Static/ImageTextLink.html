@@ -7,12 +7,21 @@
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/ImageTextLink.html [begin] -->
 
+  <f:if condition="{data.height} == 0">
+    <f:then>
+      <f:variable name="height">300</f:variable>
+    </f:then>
+    <f:else>
+      <f:variable name="height">{data.height}</f:variable>
+    </f:else>
+  </f:if>
+
   <f:if condition="{flexform.stretched_link}">
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
   <div class="ce-img-text-link__wrp">
-    <div class="ce-img-text-link {f:if(condition: '{flexform.hoverEffect} != 0', then: 'ce-img-text-link--hover-{flexform.hoverEffect}')}">
+    <div class="ce-img-text-link">
 
       <f:if condition="{files}">
         <div class="ce-img-text-link__picture">
@@ -37,7 +46,7 @@
         </div>
       </f:if>
 
-      <f:if condition="{data.link_title}">
+      <f:if condition="{data.link}">
         <div class="ce-img-text-link__link">
           <f:if condition="{data.link_as_button}">
             <f:then>

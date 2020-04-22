@@ -16,6 +16,8 @@ CREATE TABLE tt_content (
 	content_position varchar(60) DEFAULT '' NOT NULL,
 	content_position_center varchar(60) DEFAULT '' NOT NULL,
 	section_container_width varchar(60) DEFAULT '' NOT NULL,
+	simple_image int(11) unsigned DEFAULT '0' NOT NULL,
+	height mediumint(8) unsigned DEFAULT '0' NOT NULL,
 	icon_source varchar(60) DEFAULT '' NOT NULL,
 	icon_class varchar(60) DEFAULT '' NOT NULL,
 	icon varchar(255) DEFAULT '' NOT NULL,

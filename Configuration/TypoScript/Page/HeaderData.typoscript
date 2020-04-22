@@ -16,7 +16,7 @@ page.headerData {
     // file = EXT:t3kit/Resources/Private/Templates/Favicons.html
     file = TEXT
     file.stdWrap {
-      data = site:identifier
+      data = site:theme
       // debugFunc = 2
       wrap = EXT: | /Resources/Public/assets/Favicons/Favicons.html
     }

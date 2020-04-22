@@ -17,27 +17,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['t3kit'][] = 'T3k\\t3k
 $GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'][] = 't3kit/Configuration/TypoScript/';
 
 /*
- * ################################################
- * Add t3kit system info to System toolbar item
- * ===============================================
- */
-$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-    \TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class
-);
-$signalSlotDispatcher->connect(
-    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-    'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem\T3kitToolbarItems::class,
-    'addSeparator'
-);
-$signalSlotDispatcher->connect(
-    \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
-    'getSystemInformation',
-    \T3k\t3kit\Backend\ToolbarItems\SystemInformationToolbarItem\T3kitToolbarItems::class,
-    'getT3kitVersion'
-);
-
-/*
  * ###########################
  * Register Icons
  * ===========================

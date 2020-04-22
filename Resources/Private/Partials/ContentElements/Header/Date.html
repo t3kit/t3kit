@@ -4,7 +4,7 @@
   <f:if condition="{data.date}">
       <f:render partial="Header/Render/Date" arguments="{
         date: data.date,
-        positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
+        position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
   </f:if>
 </f:if>
 

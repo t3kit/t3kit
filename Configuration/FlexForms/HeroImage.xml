@@ -35,16 +35,17 @@
 						</TCEforms>
 					</overlay>
 
-					<full_width_caption>
+					<caption_alignment>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.full_width_caption</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment</label>
 							<config>
-								<type>check</type>
-								<renderType>checkboxToggle</renderType>
-								<default>0</default>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items>
+								</items>
 							</config>
 						</TCEforms>
-					</full_width_caption>
+					</caption_alignment>
 
 				</el>
 			</ROOT>

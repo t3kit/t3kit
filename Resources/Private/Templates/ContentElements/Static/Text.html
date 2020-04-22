@@ -5,11 +5,11 @@
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Text.html [begin] -->
 
-  <div class="ce-bodytext__wrp">
-    <f:format.html>{data.bodytext}</f:format.html>
+  <div class="ce-bodytext">
+    <f:render partial="Bodytext/RTEBodytext" arguments="{_all}" />
   </div>
 
-  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Text.html [end] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Text.html [end] -->
 </f:section>
 
 </html>

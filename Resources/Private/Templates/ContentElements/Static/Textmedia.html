@@ -47,7 +47,7 @@
         </div>
         <f:if condition="{data.bodytext}">
           <div class="ce-textmedia__bodytext">
-            <f:format.html>{data.bodytext}</f:format.html>
+            <f:render partial="Bodytext/RTEBodytext" arguments="{_all}" />
           </div>
         </f:if>
       </div>

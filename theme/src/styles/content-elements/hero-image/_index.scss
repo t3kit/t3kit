@@ -19,37 +19,73 @@
 // use bootstrap mixins based on t3kit variable overrides
 // check "theme/src/styles/bootstrap/mixins/_index.scss"
 @use '../../bootstrap/mixins' as mixin;
-@use '../../helpers/line-clamp.scss';
+
+// .ce-hero-image__wrp {
+//   background: red;
+// }
 
 .ce-hero-image {
   position: relative;
 }
 
-
-.ce-hero-image .picture-partial__item-img {
-  width: 100%;
-  object-fit: cover;
-  margin: 0;
-
-  @include mixin.media-breakpoint-down(sm) {
-    height: 360px;
-  }
-}
-
 .ce-hero-image__caption-wrp {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+
+  @include mixin.media-breakpoint-down(sm) {
+    min-height: 360px !important;
+  }
 }
+
+.ce-hero-image__caption-wrp--left {
+  justify-content: flex-start;
+}
+
+.ce-hero-image__caption-wrp--center {
+  justify-content: center;
+}
+
+.ce-hero-image__caption-wrp--right {
+  justify-content: flex-end;
+}
+
+
+// .ce-hero-image .ce-hero-image__caption-wrp {
+// }
 
 .ce-hero-image__caption {
   -webkit-font-smoothing: antialiased;
 }
+
+.ce-hero-image .picture-partial__item-img {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+.ce-img-text-link__picture .picture-partial__item-img {
+  height: 300px;
+}
+// .hero:after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.4);
+// }
+
+
 
 // .ce-hero-image__caption-header {
 
@@ -108,7 +144,20 @@
 // }
 
 .ce-hero-image__caption-wrp--overlay-primary {
-  background-color: transparentize(var.$primary, 0.7);
+  .picture-partial__item-img {
+    background-color: var.$primary;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize(var.$primary, 0.7);
+  }
 }
 
 .ce-hero-image__caption-wrp--overlay-secondary {
