@@ -265,6 +265,13 @@
 			<trans-unit id="bodytext.palette" resname="bodytext.palette">
 				<source>Text</source>
 			</trans-unit>
+			<!-- height -->
+			<trans-unit id="height" resname="height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="height.image" resname="height.image">
+				<source>Image height</source>
+			</trans-unit>
 
 
 			<!-- general flexform -->

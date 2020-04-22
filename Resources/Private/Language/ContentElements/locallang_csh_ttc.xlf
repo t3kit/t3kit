@@ -17,8 +17,8 @@
 			<trans-unit id="section_container_width.description" resname="section_container_width.description">
 				<source>
 					&lt;strong&gt;Container&lt;/strong&gt; - The image element inside the section with a specific width.
-					Usually, it's up to 1200px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance. &lt;br&gt;
-					&lt;strong&gt;Container-fluid&lt;/strong&gt; - The image element inside the section with a fluid/full-screen width. 100% width based on the Bootstrap grid.
+					In t3kit it is up to 1400px. Useful to render images not more than 1400px width in big screens for better performance. &lt;br&gt;
+					&lt;strong&gt;Container-fluid&lt;/strong&gt; - The image element inside the section with a fluid/full-screen width. 100% screen width in any device.
 					Lower performance, but with the ability to design site with a full-screen layout.&lt;br&gt;
 				</source>
 			</trans-unit>

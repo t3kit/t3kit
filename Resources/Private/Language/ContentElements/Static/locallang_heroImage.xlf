@@ -33,9 +33,20 @@
 				<source>Light overlay</source>
 			</trans-unit>
 
-			<trans-unit id="heroImage.flexform.full_width_caption" resname="heroImage.flexform.full_width_caption">
-				<source>Full width caption</source>
+			<trans-unit id="heroImage.flexform.caption_alignment" resname="heroImage.flexform.caption_alignment">
+				<source>Caption alignment</source>
 			</trans-unit>
+			<trans-unit id="heroImage.flexform.caption_alignment.left" resname="heroImage.flexform.caption_alignment.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.caption_alignment.center" resname="heroImage.flexform.caption_alignment.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="heroImage.flexform.caption_alignment.right" resname="heroImage.flexform.caption_alignment.right">
+				<source>Right</source>
+			</trans-unit>
+
+
 		</body>
 	</file>
 </xliff>

@@ -16,7 +16,7 @@ plugin.t3kit.settings {
   # customsubcategory=general=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.general
   general {
     # cat=t3kit_advanced/general; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
-    container_width = 1200
+    container_width = 1400
 
     # cat=t3kit_advanced/general; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.viewport
     viewport = width=device-width, initial-scale=1, shrink-to-fit=no

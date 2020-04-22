@@ -4,13 +4,13 @@
 
   <f:switch expression="{file.type}">
     <f:case value="3">
-      <f:render partial="Media/Type/Audio" arguments="{data: data, file:file, options:options}"/>
+      <f:render partial="Media/Type/Audio" arguments="{data: data, file:file}"/>
     </f:case>
     <f:case value="4">
-      <f:render partial="Media/Type/Video" arguments="{data: data, file:file, options:options}"/>
+      <f:render partial="Media/Type/Video" arguments="{data: data, file:file}"/>
     </f:case>
     <f:defaultCase>
-      <f:render partial="Media/Type/Picture" arguments="{data: data, file:file, options:options}"/>
+      <f:render partial="Media/Type/Picture" arguments="{data: data, file:file, height:height}"/>
     </f:defaultCase>
   </f:switch>
 
