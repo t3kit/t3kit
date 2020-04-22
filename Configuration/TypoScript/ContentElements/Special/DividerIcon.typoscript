@@ -1,0 +1,9 @@
+# ###########################
+# Divider
+#
+# CType: dividerIcon
+# ===========================
+tt_content.dividerIcon =< lib.contentElement
+tt_content.dividerIcon {
+  templateName = DividerIcon
+}
