@@ -5,7 +5,7 @@
       <f:render partial="Header/Render/Header" arguments="{
         header: data.header,
         layout: data.header_layout,
-        positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
+        position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
         link: data.header_link}" />
   </f:if>
 </f:if>
