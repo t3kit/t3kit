@@ -1,6 +1,5 @@
 # TODO
 
-- rename styles folder to scss folder
 - remove TODO.md
 - https://github.com/paulirish/lite-youtube-embed
 - add constants to media settings
@@ -12,6 +11,5 @@
 - ios android script separately
 - side navigation
 - add classes to menus
-- image height or max-height in heroimage
 - line-clamp
 - variable fonts

@@ -71,7 +71,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // CSS compilation variables
-conf.CSS_SRC = `${conf.SRC}styles/`
+conf.CSS_SRC = `${conf.SRC}scss/`
 conf.CSS_DIST = `${conf.DIST}Css/`
 conf.CSS_LINK_DEV = '<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/development/Css/%_file_%" />'
 conf.CSS_LINK_PROD = '<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/production/Css/%_file_%" />'
