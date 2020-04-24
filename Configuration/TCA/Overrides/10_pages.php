@@ -1,4 +1,5 @@
 <?php
+
 defined('TYPO3_MODE') || die();
 
 
@@ -129,7 +130,7 @@ defined('TYPO3_MODE') || die();
         'exclude' => true,
         'config' => [
             'type' => 'select',
-            'renderType' =>'selectSingle',
+            'renderType' => 'selectSingle',
             'fieldWizard' => [
                 'selectIcons' => [
                     'disabled' => 0,

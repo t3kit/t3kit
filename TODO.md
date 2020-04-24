@@ -18,3 +18,4 @@
 - RTE
 - indexed search
 - gallery element
+- issues in github

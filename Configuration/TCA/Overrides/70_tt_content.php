@@ -1,4 +1,5 @@
 <?php
+
 defined('TYPO3_MODE') || die();
 
 
@@ -442,7 +443,7 @@ foreach ($CTypeItems as $position => $item) {
         'exclude' => true,
         'config' => [
             'type' => 'select',
-            'renderType' =>'selectSingle',
+            'renderType' => 'selectSingle',
             'fieldWizard' => [
                 'selectIcons' => [
                     'disabled' => 0,
