@@ -3,6 +3,7 @@ const rollup = require('rollup')
 const { terser } = require('rollup-plugin-terser')
 const sizes = require('rollup-plugin-sizes')
 const resolve = require('@rollup/plugin-node-resolve')
+const legacy = require('@rollup/plugin-legacy')
 const conf = require('../conf')
 
 const SRC = conf.JS_SRC
@@ -38,7 +39,10 @@ const mainJsInputOptions = {
   input: `${SRC}main.js`,
   plugins: [
     resolve(),
-    sizes()
+    sizes(),
+    legacy({
+      '../../node_modules/simplelightbox/dist/simple-lightbox.js': 'SimpleLightbox'
+    })
   ]
 }
 process.env.NODE_ENV === 'production' && mainJsInputOptions.plugins.push(terser({

@@ -298,6 +298,41 @@ foreach ($CTypeItems as $position => $item) {
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'image_zoom_width' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width',
+        'exclude' => true,
+        'displayCond' => 'FIELD:image_zoom:!=:0',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1920',
+                    '1920'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1440',
+                    '1440'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1200',
+                    '1200'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.992',
+                    '992'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.800',
+                    '800'
+                ]
+            ],
+            'default' => '1920',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'simple_image' => [
         'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.images',
         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('image', [
@@ -596,6 +631,14 @@ foreach ($CTypeItems as $position => $item) {
     ],
 ]);
 
+// rewrite image_zoom column
+$GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['columns']['image_zoom'],
+    [
+        'onChange' => 'reload'
+    ]
+);
+
 
 /*
  * ###########################
@@ -621,6 +664,15 @@ $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
         --linebreak--,
         background_parallax,
         full_width_background
+    '
+];
+
+// rewrite imagelinks palette
+$GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks',
+    'showitem' => '
+        image_zoom;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_zoom_formlabel,
+        image_zoom_width
     '
 ];
 

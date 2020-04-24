@@ -25,9 +25,11 @@
     "bootstrap": "4.4.1",
     "bootstrap-icons": "1.0.0-alpha3",
     "jquery": "3.4.1",
-    "popper.js": "1.16.0"
+    "popper.js": "1.16.0",
+    "simplelightbox": "2.1.4"
   },
   "devDependencies": {
+    "@rollup/plugin-legacy": "^2.0.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
     "app-root-path": "^3.0.0",
     "autoprefixer": "^9.7.4",

@@ -272,7 +272,25 @@
 			<trans-unit id="height.image" resname="height.image">
 				<source>Image height</source>
 			</trans-unit>
-
+			<!-- image_zoom_width -->
+			<trans-unit id="image_zoom_width" resname="image_zoom_width">
+				<source>Image width when zoomed</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.1920" resname="image_zoom_width.1920">
+				<source>1920px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.1440" resname="image_zoom_width.1440">
+				<source>1440px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.1200" resname="image_zoom_width.1200">
+				<source>1200px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.992" resname="image_zoom_width.992">
+				<source>992px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.800" resname="image_zoom_width.800">
+				<source>800px</source>
+			</trans-unit>
 
 			<!-- general flexform -->
 			<trans-unit id="flexform.sheetTitle" resname="flexform.sheetTitle">
