@@ -1,14 +1,9 @@
 # ###########################
 # bigIconTextLink Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    bigIconTextLink {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:bigIconTextLink.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:bigIconTextLink.description
-      iconIdentifier = ce-bigIconTextLink
-    }
-  }
-  show := addToList(bigIconTextLink)
+mod.wizards.newContentElement.wizardItems.static.elements.bigIconTextLink {
+  iconIdentifier = ce-bigIconTextLink
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:bigIconTextLink.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:bigIconTextLink.description
 }
-
+mod.wizards.newContentElement.wizardItems.static.show := addToList(bigIconTextLink)

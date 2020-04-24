@@ -5,5 +5,6 @@ mod.wizards.newContentElement.wizardItems.special.elements.div {
   iconIdentifier = content-special-div
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_divider_title
   description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_divider_description
+  saveAndClose = true
 }
 mod.wizards.newContentElement.wizardItems.special.show := addToList(div)

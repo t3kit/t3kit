@@ -2,34 +2,11 @@
 
 defined('TYPO3_MODE') || die();
 
-
-/*
- * ###########################
- * CType config
- * ===========================
- */
-// Rename "Standart" divider into Static content
-$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items']['0']['0'] = '
-    LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.static
-';
-
-// remove "lists" CType divider to combine all elements into Static group
-$CTypeItems = $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'];
-foreach ($CTypeItems as $position => $item) {
-    switch ($item[0]) {
-        case 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.lists':
-            unset($GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][$position]);
-            break;
-    }
-}
-
-
 /*
  * ###########################
  * add new TCA columns for tt_content
  * ===========================
  */
-
 // ----------------
 // // Content element Appearance tab configs
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [

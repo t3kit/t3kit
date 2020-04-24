@@ -1,10 +1,6 @@
 # ###########################
 # Groups of Content elements
 # ===========================
-
-# Remove default "standart" TYPO3 CE group
-mod.wizards.newContentElement.wizardItems.common >
-
 # t3kit CE groups
 mod.wizards.newContentElement.wizardItems {
   static {

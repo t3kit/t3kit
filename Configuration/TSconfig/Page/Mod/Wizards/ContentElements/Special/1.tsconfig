@@ -5,12 +5,12 @@
 # ===========================
 
 # Special CE
+mod.wizards.newContentElement.wizardItems.special.elements >
 mod.wizards.newContentElement.wizardItems.special.elements {
-
   shortcut.tt_content_defValues.CType = shortcut
+  div.tt_content_defValues.CType = div
+  html.tt_content_defValues.CType = html
+  dividerIcon.tt_content_defValues.CType = dividerIcon
   siteHeader.tt_content_defValues.CType = siteHeader
   siteFooter.tt_content_defValues.CType = siteFooter
-  div.tt_content_defValues.CType = div
-  dividerIcon.tt_content_defValues.CType = dividerIcon
-  html.tt_content_defValues.CType = html
 }

@@ -1,16 +1,13 @@
 # ###########################
 # imageTextLink Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    imageTextLink {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.description
-      iconIdentifier = ce-imageTextLink
-    }
-  }
-  show := addToList(imageTextLink)
+mod.wizards.newContentElement.wizardItems.static.elements.imageTextLink {
+  iconIdentifier = ce-imageTextLink
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.description
 }
+mod.wizards.newContentElement.wizardItems.static.show := addToList(imageTextLink)
+
 
 TCEFORM.tt_content.pi_flexform.imageTextLink.sDEF.hoverEffect {
   addItems {

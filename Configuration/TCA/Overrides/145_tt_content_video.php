@@ -2,22 +2,25 @@
 
 defined('TYPO3_MODE') || die();
 
-
 /*
  * ###########################
  * Add Content Element to Type list
  * ===========================
  */
+// all "items" have four parts (fourth being optional)
+// 0 => label
+// 1 => value
+// 2 => icon
+// 3 => groupID
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_video.xlf:video.title',
         'video',
-        'ce-video'
-    ],
-    'heroImage',
-    'after'
+        'ce-video',
+        'default'
+    ]
 );
 
 

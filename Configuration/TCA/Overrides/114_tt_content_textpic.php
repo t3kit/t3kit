@@ -2,7 +2,6 @@
 
 defined('TYPO3_MODE') || die();
 
-
 /*
  * ###########################
  * Add Content Element to Type list

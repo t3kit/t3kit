@@ -1,16 +1,13 @@
 # ###########################
 # button Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    button {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.description
-      iconIdentifier = ce-button
-    }
-  }
-  show := addToList(button)
+mod.wizards.newContentElement.wizardItems.static.elements.button {
+  iconIdentifier = ce-button
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.description
 }
+mod.wizards.newContentElement.wizardItems.static.show := addToList(button)
+
 
 # Flexform selects
 TCEFORM.tt_content.pi_flexform.button.sDEF {

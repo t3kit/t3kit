@@ -2,26 +2,25 @@
 
 defined('TYPO3_MODE') || die();
 
-
-if (!is_array($GLOBALS['TCA']['tt_content']['types']['button'])) {
-    $GLOBALS['TCA']['tt_content']['types']['button'] = [];
-}
-
 /*
  * ###########################
  * Add Content Element to Type list
  * ===========================
  */
+// all "items" have four parts (fourth being optional)
+// 0 => label
+// 1 => value
+// 2 => icon
+// 3 => groupID
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.title',
         'button',
-        'ce-button'
-    ],
-    'contactCard',
-    'after'
+        'ce-button',
+        'default'
+    ]
 );
 
 

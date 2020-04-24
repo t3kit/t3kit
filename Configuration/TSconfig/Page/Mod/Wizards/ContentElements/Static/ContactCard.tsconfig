@@ -1,13 +1,9 @@
 # ###########################
 # contactCard Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    contactCard {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.description
-      iconIdentifier = ce-contactCard
-    }
-  }
-  show := addToList(contactCard)
+mod.wizards.newContentElement.wizardItems.static.elements.contactCard {
+  iconIdentifier = ce-contactCard
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.description
 }
+mod.wizards.newContentElement.wizardItems.static.show := addToList(contactCard)

@@ -5,13 +5,15 @@
 # ===========================
 
 # Static CE
-mod.wizards.newContentElement.wizardItems.static.elements {
+# Remove default "Typical page content" TYPO3 CE group
+mod.wizards.newContentElement.wizardItems.common >
 
+mod.wizards.newContentElement.wizardItems.static.elements {
   header.tt_content_defValues.CType = header
   text.tt_content_defValues.CType = text
   textpic.tt_content_defValues.CType = textpic
-  textmedia.tt_content_defValues.CType = textmedia
   image.tt_content_defValues.CType = image
+  textmedia.tt_content_defValues.CType = textmedia
   bullets.tt_content_defValues.CType = bullets
   table.tt_content_defValues.CType = table
   uploads.tt_content_defValues.CType = uploads
@@ -25,5 +27,4 @@ mod.wizards.newContentElement.wizardItems.static.elements {
   quote.tt_content_defValues.CType = quote
   contactCard.tt_content_defValues.CType = contactCard
   button.tt_content_defValues.CType = button
-
 }

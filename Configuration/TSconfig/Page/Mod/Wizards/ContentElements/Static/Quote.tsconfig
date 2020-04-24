@@ -1,13 +1,9 @@
 # ###########################
 # quote Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    quote {
-      title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.description
-      iconIdentifier = ce-quote
-    }
-  }
-  show := addToList(quote)
+mod.wizards.newContentElement.wizardItems.static.elements.quote {
+  iconIdentifier = ce-quote
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.description
 }
+mod.wizards.newContentElement.wizardItems.static.show := addToList(quote)

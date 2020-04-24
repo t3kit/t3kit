@@ -7,6 +7,21 @@ defined('TYPO3_MODE') || die();
  * Add Content Element to Type list
  * ===========================
  */
+// all "items" have four parts (fourth being optional)
+// 0 => label
+// 1 => value
+// 2 => icon
+// 3 => groupID
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
+    'tt_content',
+    'CType',
+    [
+        'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.5',
+        'table',
+        'content-table',
+        'default'
+    ]
+);
 
 
 /*
@@ -21,7 +36,7 @@ defined('TYPO3_MODE') || die();
  * Configure element fields (types) to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['table']  = array_merge(
+$GLOBALS['TCA']['tt_content']['types']['table']  = array_replace_recursive(
     $GLOBALS['TCA']['tt_content']['types']['table'],
     [
         'columnsOverrides' => [
