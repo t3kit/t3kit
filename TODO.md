@@ -21,3 +21,7 @@
 - issues in github
 - table
 - uploads
+- drop text-justify
+- css variables
+- find-unused-sass-variables
+- add black and white to all styles select box (button styles)

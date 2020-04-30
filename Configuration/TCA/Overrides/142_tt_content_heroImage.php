@@ -112,6 +112,11 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
                     ]
                 ]
             ]
+        ],
+        'section_container_width' => [
+            'config' => [
+                'default' => 'container-fluid'
+            ]
         ]
     ]
 ];
