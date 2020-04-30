@@ -1,89 +1,55 @@
 // ==============================
-// Override Bootstrap default theme
+// Override Bootstrap default variables
 // ==============================
+$primary: #59dbeb !default;
+$secondary: #008292 !default;
+$white: #fff !default;
+$black: #000 !default;
+// $dark
+// $light
 
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #707070;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #1d1d1d;
-$black:    #000;
+$body-bg: $white !default;
+$body-color: #1d1d1d !default;
 
-$blue:    #007bff !default;
-$indigo:  green;
-$purple:  red;
-$pink:    #e83e8c;
-$red:     #dc3545;
-$orange:  #fd7e14;
-$yellow:  #ffc107;
-$green:   #28a745;
-$teal:    #20c997;
-$cyan:    #17a2b8;
+$link-color: $secondary !default;
+$link-hover-color: darken($link-color, 15%) !default;
 
-$primary:       $blue;
-$secondary:     $gray-600;
-$success:       $green;
-$info:          $cyan;
-$warning:       $yellow;
-$danger:        $red;
-$light:         $gray-100;
-$dark:          $gray-800;
+$font-family-sans-serif: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-// Body
-$body-bg:                   $white;
-$body-color:                $gray-900;
+$h1-font-size: 3.2rem !default;
+$h2-font-size: 2.5rem !default;
+$h3-font-size: 2rem !default;
+$h4-font-size: 1.75rem !default;
+$h5-font-size: 1.5rem !default;
+$h6-font-size: 1.25rem !default;
 
-// Links
-$link-color:                              $primary;
-$link-decoration:                         none;
-$link-hover-color:                        darken($link-color, 15%);
-$link-hover-decoration:                   underline;
+$headings-font-style: uppercase !default;
+$headings-font-weight: 500 !default;
+$headings-color: $body-color !default;
 
-// Typography
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$font-size-sm:                $font-size-base * .875 !default;
-
-$font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-medium:          500 !default;
-$font-weight-semibold:        600 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
-
-$font-weight-base:            $font-weight-normal !default;
-$font-size-sm:                $font-size-base * 0.875 !default;
-$line-height-base:            1.5 !default;
-
-$font-family-sans-serif:      'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:            $font-family-sans-serif;
-
-// Navbar
-// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
-$navbar-brand-font-size:            $font-size-lg !default;
-$nav-link-padding-y:                0.5rem !default;
-$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 6 !default;
-$navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
-$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
-
+$input-btn-padding-y: 0.9rem !default;
+$input-btn-padding-x: 2.8rem !default;
+$btn-border-width: 4px !default;
+$btn-font-weight: 600 !default;
+$btn-border-radius: none !default;
+$btn-border-radius-sm: none !default;
+$btn-border-radius-lg: none !default;
 // ==============================
-// Import Bootstrap default theme
+// Import Bootstrap default variables
 @import 'bootstrap/variables';
+// ==============================
+
+// ==============================
+// Import t3kit default css variables
+:root {
+  --t3-primary: #{$primary};
+  --t3-secondary: #{$secondary};
+  --t3-white: #{$white};
+  --t3-black: #{$black};
+  --t3-body-color: #{$body-color};
+  --t3-body-bg: #{$body-bg};
+  --t3-link-color: #{$link-color};
+}
 // ==============================
 
 // ==============================
