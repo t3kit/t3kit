@@ -6,50 +6,58 @@
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Uploads.html [begin] -->
 
   <f:if condition="{files}">
-    <div c“lass="ce-uploads__wrp">
-      <ul class="ce-uploads">
-        <f:for each="{files}" as="file" iteration="fileIterator">
-          <li>
-            <f:if condition="{data.uploads_type} == 1">
-              <f:image src="EXT:t3kit/Resources/Public/Icons/FileIcons/{file.extension}.svg" alt="" />
-            </f:if>
-            <f:if condition="{data.uploads_type} == 2">
-              <f:if condition="{file.type} > 1">
-                <f:if
-                  condition="{f:uri.image(src: 'file:{f:if(condition: file.originalFile, then: \'file:{file.originalFile.uid}\', else: \'file:{file.uid}\')}')} != '/'">
-                  <f:then>
-                    <a href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"'
-                      )}{f:if(condition: file.title, then: ' title="{file.title}"' )}>
-                      <f:media file="{file}" width="150" alt="{file.properties.alternative}" />
-                    </a>
-                  </f:then>
-                  <f:else>
-                    <img src="{f:uri.resource(path: 'Icons/FileIcons/{file.extension}.gif', extensionName: 'frontend')}"
-                      alt="">
-                  </f:else>
+
+    <div class="ce-uploads__wrp">
+      <div class="ce-uploads">
+
+        <ul class="ce-uploads__list">
+          <f:for each="{files}" as="file" iteration="fileIterator">
+            <li class="ce-uploads__list-item">
+              <f:if condition="{data.uploads_type} == 1">
+                <span class="ce-uploads__list-item-icon-wrp">
+                  <f:image class="ce-uploads__list-item-icon" src="EXT:t3kit/Resources/Public/Icons/FileIcons/{file.extension}.svg" alt="" />
+                </span>
+              </f:if>
+              <f:if condition="{data.uploads_type} == 2">
+                <f:if condition="{file.type} > 1">
+                  <f:if
+                    condition="{f:uri.image(src: 'file:{f:if(condition: file.originalFile, then: \'file:{file.originalFile.uid}\', else: \'file:{file.uid}\')}')} != '/'">
+                    <f:then>
+                      <a class="ce-uploads__list-item-image-link" href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"'
+                        )}{f:if(condition: file.title, then: ' title="{file.title}"' )}>
+                        <f:media class="ce-uploads__list-item-image" file="{file}" width="150" alt="{file.properties.alternative}" />
+                      </a>
+                    </f:then>
+                    <f:else>
+                      <img class="ce-uploads__list-item-icon" src="{f:uri.resource(path: 'Icons/FileIcons/{file.extension}.gif', extensionName: 'frontend')}"
+                        alt="">
+                    </f:else>
+                  </f:if>
                 </f:if>
               </f:if>
-            </f:if>
-            <div>
-              <a href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"' )}{f:if(condition:
-                file.title, then: ' title="{file.title}"' )}>
-                <span class="ce-uploads-fileName">{f:if(condition: file.properties.title, then: file.properties.title,
-                  else: file.name) -> f:format.htmlspecialchars()}</span>
-              </a>
-              <f:if condition="{file.properties.description}">
-                <f:if condition="{data.uploads_description}">
-                  <span class="ce-uploads-description">{file.properties.description}</span>
+              <div class="ce-uploads__list-item-body">
+                <a class="ce-uploads__list-item-filename-link" href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"' )}{f:if(condition:
+                  file.title, then: ' title="{file.title}"' )}>
+                  <span class="ce-uploads__list-item-filename">{f:if(condition: file.properties.title, then: file.properties.title,
+                    else: file.name) -> f:format.htmlspecialchars()}</span>
+                </a>
+                <f:if condition="{file.properties.description}">
+                  <f:if condition="{data.uploads_description}">
+                    <span class="ce-uploads__list-item-description">{file.properties.description}</span>
+                  </f:if>
                 </f:if>
-              </f:if>
-              <f:if condition="{data.filelink_size}">
-                <span class="ce-uploads-filesize">
-                  <f:format.bytes value="{file.properties.size}" /></span>
-              </f:if>
-            </div>
-          </li>
-        </f:for>
-      </ul>
+                <f:if condition="{data.filelink_size}">
+                  <span class="ce-uploads__list-item-filesize">
+                    <f:format.bytes value="{file.properties.size}" /></span>
+                </f:if>
+              </div>
+            </li>
+          </f:for>
+        </ul>
+
+      </div>
     </div>
+
   </f:if>
 
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Uploads.html [end] -->

@@ -20,8 +20,10 @@
 - gallery element
 - issues in github
 - table
-- uploads
+- uploads CE clasess
 - drop text-justify
 - css variables
 - find-unused-sass-variables
 - add black and white to all styles select box (button styles)
+- add js async assets
+- Set default value defined in columnsOverrides
