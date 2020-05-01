@@ -3,7 +3,8 @@
 <!-- Configuration/TCA/Overrides ____ everything except content elements -->
 <!-- 50_sys_template -->
 <!-- 60_sys_file_reference -->
-<!-- 70_tt_content.php -->
+<!-- 70_tt_content_CType -->
+<!-- 72_tt_content.php -->
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
 	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
@@ -17,10 +18,10 @@
 			</trans-unit>
 
 			<!-- Content element tabs translations -->
-			<trans-unit id="tabs.settings" resname="tabs.settings">
+			<trans-unit id="tab.settings" resname="tab.settings">
 				<source>Settings</source>
 			</trans-unit>
-			<trans-unit id="tabs.icon" resname="tabs.icon">
+			<trans-unit id="tab.icon" resname="tab.icon">
 				<source>Icon</source>
 			</trans-unit>
 
@@ -293,9 +294,6 @@
 			</trans-unit>
 
 			<!-- general flexform -->
-			<trans-unit id="flexform.sheetTitle" resname="flexform.sheetTitle">
-				<source>Settings</source>
-			</trans-unit>
 			<trans-unit id="flexform.title" resname="flexform.title">
 				<source>Content element settings</source>
 			</trans-unit>

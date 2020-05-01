@@ -5,15 +5,12 @@
 	<sheets>
 		<sDEF>
 			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.sheetTitle</sheetTitle>
-				</TCEforms>
 				<type>array</type>
 				<el>
 
 					<height>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.height</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.height</label>
 							<config>
 								<type>input</type>
 								<size>5</size>
@@ -25,7 +22,7 @@
 
 					<overlay>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
@@ -37,7 +34,7 @@
 
 					<caption_alignment>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment</label>
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>

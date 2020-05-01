@@ -10,37 +10,37 @@
 				<source>Photo and contact information</source>
 			</trans-unit>
 
-			<trans-unit id="contactCard.flexform.title" resname="contactCard.flexform.title">
+			<trans-unit id="flexform.title" resname="flexform.title">
 				<source>Contacts</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.name" resname="contactCard.flexform.name">
+			<trans-unit id="flexform.name" resname="flexform.name">
 				<source>Full name</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.job_title" resname="contactCard.flexform.job_title">
+			<trans-unit id="flexform.job_title" resname="flexform.job_title">
 				<source>Job title</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.contactPhone_title_1" resname="contactCard.flexform.contactPhone_title_1">
+			<trans-unit id="flexform.contactPhone_title_1" resname="flexform.contactPhone_title_1">
 				<source>Contact phone title 1</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.contactPhone_link_1" resname="contactCard.flexform.contactPhone_link_1">
+			<trans-unit id="flexform.contactPhone_link_1" resname="flexform.contactPhone_link_1">
 				<source>Contact phone 1</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.contactPhone_title_2" resname="contactCard.flexform.contactPhone_title_2">
+			<trans-unit id="flexform.contactPhone_title_2" resname="flexform.contactPhone_title_2">
 				<source>Contact phone title 2</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.contactPhone_link_2" resname="contactCard.flexform.contactPhone_link_2">
+			<trans-unit id="flexform.contactPhone_link_2" resname="flexform.contactPhone_link_2">
 				<source>Contact phone 2</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.mobilePhone_title" resname="contactCard.flexform.mobilePhone_title">
+			<trans-unit id="flexform.mobilePhone_title" resname="flexform.mobilePhone_title">
 				<source>Mobile phone title</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.mobilePhone_link" resname="contactCard.flexform.mobilePhone_link">
+			<trans-unit id="flexform.mobilePhone_link" resname="flexform.mobilePhone_link">
 				<source>Mobile phone</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.email" resname="contactCard.flexform.email">
+			<trans-unit id="flexform.email" resname="flexform.email">
 				<source>Email</source>
 			</trans-unit>
-			<trans-unit id="contactCard.flexform.icons" resname="contactCard.flexform.icons">
+			<trans-unit id="flexform.icons" resname="flexform.icons">
 				<source>Show icons</source>
 			</trans-unit>
 		</body>

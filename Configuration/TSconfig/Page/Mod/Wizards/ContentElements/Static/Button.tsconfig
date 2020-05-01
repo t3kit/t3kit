@@ -7,26 +7,3 @@ mod.wizards.newContentElement.wizardItems.static.elements.button {
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.description
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(button)
-
-
-# Flexform selects
-TCEFORM.tt_content.pi_flexform.button.sDEF {
-
-  button_size {
-    addItems {
-      0 = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size_default
-      btn-lg = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size_large
-      btn-sm = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_size_small
-    }
-  }
-  button_style {
-    addItems {
-      primary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_primary
-      secondary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_secondary
-      light = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_light
-      dark = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_dark
-      link = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.flexform.button_style_link
-    }
-  }
-
-}

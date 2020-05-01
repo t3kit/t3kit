@@ -5,15 +5,12 @@
 	<sheets>
 		<sDEF>
 			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.sheetTitle</sheetTitle>
-				</TCEforms>
 				<type>array</type>
 				<el>
 
 					<author_name>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.author_name</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:flexform.author_name</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -25,7 +22,7 @@
 
 					<job_title>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.job_title</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:flexform.job_title</label>
 							<config>
 								<type>input</type>
 								<size>30</size>

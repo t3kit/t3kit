@@ -10,39 +10,39 @@
 				<source>Image, header, subheader, text and link</source>
 			</trans-unit>
 
-			<trans-unit id="heroImage.flexform.height" resname="heroImage.flexform.height">
+			<trans-unit id="flexform.height" resname="flexform.height">
 				<source>Hero Image height (400px by default)</source>
 			</trans-unit>
 
-			<trans-unit id="heroImage.flexform.overlay" resname="heroImage.flexform.overlay">
+			<trans-unit id="flexform.overlay" resname="flexform.overlay">
 				<source>Overlay color with opacity</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.overlay_disable" resname="heroImage.flexform.overlay_disable">
+			<trans-unit id="flexform.overlay_disable" resname="flexform.overlay_disable">
 				<source>No overlay</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.overlay_primary" resname="heroImage.flexform.overlay_primary">
+			<trans-unit id="flexform.overlay_primary" resname="flexform.overlay_primary">
 				<source>Primary color overlay</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.overlay_secondary" resname="heroImage.flexform.overlay_secondary">
+			<trans-unit id="flexform.overlay_secondary" resname="flexform.overlay_secondary">
 				<source>Secondary color overlay</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.overlay_dark" resname="heroImage.flexform.overlay_dark">
+			<trans-unit id="flexform.overlay_dark" resname="flexform.overlay_dark">
 				<source>Dark overlay</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.overlay_light" resname="heroImage.flexform.overlay_light">
+			<trans-unit id="flexform.overlay_light" resname="flexform.overlay_light">
 				<source>Light overlay</source>
 			</trans-unit>
 
-			<trans-unit id="heroImage.flexform.caption_alignment" resname="heroImage.flexform.caption_alignment">
+			<trans-unit id="flexform.caption_alignment" resname="flexform.caption_alignment">
 				<source>Caption alignment</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.caption_alignment.left" resname="heroImage.flexform.caption_alignment.left">
+			<trans-unit id="flexform.caption_alignment.left" resname="flexform.caption_alignment.left">
 				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.caption_alignment.center" resname="heroImage.flexform.caption_alignment.center">
+			<trans-unit id="flexform.caption_alignment.center" resname="flexform.caption_alignment.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="heroImage.flexform.caption_alignment.right" resname="heroImage.flexform.caption_alignment.right">
+			<trans-unit id="flexform.caption_alignment.right" resname="flexform.caption_alignment.right">
 				<source>Right</source>
 			</trans-unit>
 

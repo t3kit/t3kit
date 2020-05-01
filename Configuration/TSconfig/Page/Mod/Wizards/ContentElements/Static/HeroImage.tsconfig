@@ -13,18 +13,18 @@ TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
 
   overlay {
     addItems {
-      disable = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay_disable
-      primary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay_primary
-      secondary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay_secondary
-      dark = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay_dark
-      light = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.overlay_light
+      disable = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_disable
+      primary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_primary
+      secondary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_secondary
+      dark = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_dark
+      light = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_light
     }
   }
   caption_alignment {
     addItems {
-      left = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment.left
-      center = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment.center
-      right = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.flexform.caption_alignment.right
+      left = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment.left
+      center = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment.center
+      right = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment.right
     }
   }
 }

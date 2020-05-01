@@ -5,15 +5,12 @@
 	<sheets>
 		<sDEF>
 			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.sheetTitle</sheetTitle>
-				</TCEforms>
 				<type>array</type>
 				<el>
 
 					<name>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.name</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.name</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -25,7 +22,7 @@
 
 					<job_title>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.job_title</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.job_title</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -37,7 +34,7 @@
 
 					<icons>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.icons</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.icons</label>
 							<config>
 								<type>check</type>
 								<renderType>checkboxToggle</renderType>
@@ -48,7 +45,7 @@
 
 					<contactPhone_title_1>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_title_1</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_title_1</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -60,7 +57,7 @@
 
 					<contactPhone_link_1>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_link_1</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_link_1</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -82,7 +79,7 @@
 
 					<contactPhone_title_2>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_title_2</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_title_2</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -94,7 +91,7 @@
 
 					<contactPhone_link_2>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.contactPhone_link_2</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_link_2</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -116,7 +113,7 @@
 
 					<mobilePhone_title>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.mobilePhone_title</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.mobilePhone_title</label>
 							<config>
 								<type>input</type>
 								<size>30</size>
@@ -128,7 +125,7 @@
 
 					<mobilePhone_link>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.mobilePhone_link</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.mobilePhone_link</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>
@@ -150,7 +147,7 @@
 
 					<email>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.flexform.email</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.email</label>
 							<config>
 								<type>input</type>
 								<renderType>inputLink</renderType>

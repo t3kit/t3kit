@@ -10,7 +10,7 @@
 				<source>Big icon, header, text and link</source>
 			</trans-unit>
 
-			<trans-unit id="bigIconTextLink.flexform.stretched_link" resname="bigIconTextLink.flexform.stretched_link">
+			<trans-unit id="flexform.stretched_link" resname="flexform.stretched_link">
 				<source>Enable whole area link</source>
 			</trans-unit>
 		</body>

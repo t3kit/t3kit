@@ -10,13 +10,13 @@
 				<source>Quote with optional footer and link</source>
 			</trans-unit>
 
-			<trans-unit id="quote.flexform.title" resname="quote.flexform.title">
+			<trans-unit id="flexform.title" resname="flexform.title">
 				<source>Quote</source>
 			</trans-unit>
-			<trans-unit id="quote.flexform.author_name" resname="quote.flexform.author_name">
+			<trans-unit id="flexform.author_name" resname="flexform.author_name">
 				<source>Author name</source>
 			</trans-unit>
-			<trans-unit id="quote.flexform.job_title" resname="quote.flexform.job_title">
+			<trans-unit id="flexform.job_title" resname="flexform.job_title">
 				<source>Job title</source>
 			</trans-unit>
 		</body>

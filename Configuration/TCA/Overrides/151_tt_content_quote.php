@@ -42,7 +42,7 @@ $GLOBALS['TCA']['tt_content']['types']['quote'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.flexform.title,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:flexform.title,
             --palette--;;bodytext_position,
             --palette--;;title_link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
