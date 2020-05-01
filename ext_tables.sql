@@ -46,15 +46,6 @@ CREATE TABLE tt_content (
 
 
 
-	skipLinks_mainNavigation varchar(255) DEFAULT '' NOT NULL,
-	skipLinks_mainContent varchar(255) DEFAULT '' NOT NULL,
-
-	headerTop int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopContacts int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopSearch int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopNavigation int(11) unsigned DEFAULT '0' NOT NULL,
-
 	footerTop int(11) unsigned DEFAULT '0' NOT NULL,
 	footerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
 	footerMiddleFirstHeader varchar (255) DEFAULT '' NOT NULL,
@@ -71,28 +62,6 @@ CREATE TABLE tt_content (
 	footerBottomLinks varchar (255) DEFAULT '' NOT NULL,
 
 	footerMiddleText varchar(255) DEFAULT '' NOT NULL,
-
-	email_address varchar(255) DEFAULT '' NOT NULL,
-	email_title varchar(255) DEFAULT '' NOT NULL,
-	email_icon int(11) unsigned DEFAULT '0' NOT NULL,
-	email_show_title int(11) unsigned DEFAULT '0' NOT NULL,
-
-	phone_link varchar(255) DEFAULT '' NOT NULL,
-	phone_text varchar(50) DEFAULT '' NOT NULL,
-	phone_title varchar(255) DEFAULT '' NOT NULL,
-	phone_icon int(11) unsigned DEFAULT '0' NOT NULL,
-	phone_show_title int(11) unsigned DEFAULT '0' NOT NULL,
-
-
-	headerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
-	headerMiddleLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
-	headerMiddleLogo int(11) unsigned DEFAULT '0' NOT NULL,
-	headerMiddleSearch int(11) unsigned DEFAULT '0' NOT NULL,
-
-	mainNavigation int(11) unsigned DEFAULT '0' NOT NULL,
-	mainNavigationLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
-	mainNavigationLogo int(11) unsigned DEFAULT '0' NOT NULL,
-	mainNavigationSearch int(11) unsigned DEFAULT '0' NOT NULL,
 );
 
 

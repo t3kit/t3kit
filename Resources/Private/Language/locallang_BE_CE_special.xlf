@@ -4,124 +4,12 @@
 		<header/>
 		<body>
 
-
-
-			<!--SiteHeader Element TCA Overrides-->
-			<trans-unit id="siteHeader.CType">
-				<source>Site Header | (Main header of the site. Will be copied to all subpages)</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.tabs.settings">
-				<source>Site Header Settings </source>
-			</trans-unit>
-
-			<trans-unit id="siteHeader.palette.headerTop">
-				<source>Site Header Top</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.palette.headerMiddle">
-				<source>Site Header Middle</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.palette.mainNavigation">
-				<source>Main Navigation</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.palette.accessibility">
-				<source>Accessibility</source>
-			</trans-unit>
-
-			<!--Site Header Top-->
-			<trans-unit id="siteHeader.showHeaderTop">
-				<source>Show Site Header Top section</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.headerTopContacts">
-				<source>Site Header Top Contacts</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.headerTopNavigation">
-				<source>Site Header Top Navigation</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.headerTopLangMenu">
-				<source>Site Header Top Language Menu</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.headerTopSearch">
-				<source>Site Header Top Search</source>
-			</trans-unit>
-
-			<trans-unit id="siteHeader.email_address">
-				<source>Email address</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.email_title">
-				<source>Email title</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.email_icon">
-				<source>Show Email icon</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.email_show_title">
-				<source>Show Email title</source>
-			</trans-unit>
-
-			<trans-unit id="siteHeader.phone_link">
-				<source>Phone number link</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.phone_text">
-				<source>Phone number text</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.phone_title">
-				<source>Phone number title</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.phone_icon">
-				<source>topShow Phone icon</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.phone_show_title">
-				<source>Show Phone title</source>
-			</trans-unit>
-
-
-			<!-- Site Header Middle -->
-			<trans-unit id="siteHeader.showHeaderMiddle">
-				<source>Show Site Header Middle section</source>
-			</trans-unit>
-
-
-			<!-- Main Navigation -->
-			<trans-unit id="siteHeader.showNavigationMenu">
-				<source>Show Site Nagivation section</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.logo">
-				<source>Logo</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.search">
-				<source>Search</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.language">
-				<source>Language menu</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.showInDesktop">
-				<source>Show in desktop</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.showInMobile">
-				<source>Show in mobile</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.showAllDevices">
-				<source>Show for all devices</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.doNotShow">
-				<source>Do not show</source>
-			</trans-unit>
-
-			<!-- Accessibility -->
-			<trans-unit id="siteHeader.skipLinks_mainNavigation">
-				<source>Skip to main navigation text</source>
-			</trans-unit>
-			<trans-unit id="siteHeader.skipLinks_mainContent">
-				<source>Skip to main content text</source>
-			</trans-unit>
-
-
-
 			<!--SiteFooter Element TCA Overrides-->
 			siteFooter.showFooterMiddle
 			<trans-unit id="siteFooter.CType">
 				<source>Site Footer | (Footer of the site. Will be copied to all subpages)</source>
 			</trans-unit>
-			<trans-unit id="siteFooter.tabs.settings">
+			<trans-unit id="tab.settings">
 				<source>Site Footer Settings </source>
 			</trans-unit>
 			<trans-unit id="siteFooter.showFooterTop">
