@@ -5,5 +5,6 @@ mod.wizards.newContentElement.wizardItems.special.elements.dividerIcon {
   iconIdentifier = ce-dividerIcon
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_dividerIcon.xlf:dividerIcon.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_dividerIcon.xlf:dividerIcon.description
+  tt_content_defValues.CType = dividerIcon
 }
 mod.wizards.newContentElement.wizardItems.special.show := addToList(dividerIcon)

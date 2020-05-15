@@ -8,11 +8,62 @@ defined('TYPO3_MODE') || die();
 * PageTS for t3kit
 * ===========================
 */
+// BE layouts
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
-    'Configuration/TSconfig/Import.tsconfig',
-    't3kit'
+    'Configuration/TSconfig/Page/BElayouts.tsconfig',
+    'All BE layouts'
 );
+// Content Elements
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/ContentElements.tsconfig',
+    'All t3kit Content Elements'
+);
+// RTE
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/RTE.tsconfig',
+    'RTE'
+);
+// TCAdefaults
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/TCAdefaults.tsconfig',
+    'TCAdefaults'
+);
+// TCEFORM
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/TCEFORM.tsconfig',
+    'TCEFORM'
+);
+// TCEMAIN
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/TCEMAIN.tsconfig',
+    'TCEMAIN'
+);
+
+// -------------------------------
+// t3kit Content Elements includes
+// -------------------------------
+
+// Static CE-s
+// Dynamic CE-s
+// Special CE-s
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig',
+    '(Special CE) SiteHeader'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig',
+    '(Special CE) SiteFooter'
+);
+
+
 
 
 /*

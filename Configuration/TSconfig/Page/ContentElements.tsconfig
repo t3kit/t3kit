@@ -1,0 +1,17 @@
+# TYPO3 TSconfig Reference
+# https://docs.typo3.org/m/typo3/reference-tsconfig/master/en-us/Index.html
+
+# ###########################
+# Import configurations for all t3kit Content elements
+# ===========================
+// Static
+// @import 'EXT:t3kit/'
+
+// Dynamic
+// @import 'EXT:t3kit/'
+
+// Special
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/DividerIcon.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig'
+# ___________________________
