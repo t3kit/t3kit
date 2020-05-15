@@ -6,5 +6,3 @@ TCEMAIN.permissions {
   user = show,editcontent,new,edit,delete
   group = show,editcontent,new,edit,delete
 }
-
-// TODO add groupid

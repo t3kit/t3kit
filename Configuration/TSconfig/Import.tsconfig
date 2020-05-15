@@ -13,10 +13,11 @@
 # RTE
 @import 'EXT:t3kit/Configuration/TSconfig/Page/RTE.tsconfig'
 
+# TCAdefaults
+@import 'EXT:t3kit/Configuration/TSconfig/Page/TCAdefaults.tsconfig'
+
 # TCEFORM
 @import 'EXT:t3kit/Configuration/TSconfig/Page/TCEFORM.tsconfig'
 
 # TCEMAIN
 @import 'EXT:t3kit/Configuration/TSconfig/Page/TCEMAIN.tsconfig'
-
-
