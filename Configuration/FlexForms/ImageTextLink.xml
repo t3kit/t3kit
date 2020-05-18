@@ -19,18 +19,6 @@
 						</TCEforms>
 					</stretched_link>
 
-					<hoverEffect>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:flexform.hoverEffect</label>
-							<config>
-								<type>select</type>
-								<renderType>selectSingle</renderType>
-								<items>
-								</items>
-							</config>
-						</TCEforms>
-					</hoverEffect>
-
 				</el>
 			</ROOT>
 		</sDEF>
