@@ -1,5 +1,0 @@
-@import 'EXT:t3kit/Configuration/TypoScript/ContentElements/Static/'
-// @import 'EXT:t3kit/Configuration/TypoScript/ContentElements/Dynamic/'
-@import 'EXT:t3kit/Configuration/TypoScript/ContentElements/Menu/'
-@import 'EXT:t3kit/Configuration/TypoScript/ContentElements/Plugins/'
-@import 'EXT:t3kit/Configuration/TypoScript/ContentElements/Special/'

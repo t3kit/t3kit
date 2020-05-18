@@ -1,0 +1,28 @@
+page.headerData {
+  # Fonts
+  150 = TEXT
+  150.value (
+       <!-- Fonts -->
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" rel="stylesheet">
+ )
+
+  # Favicons ==> http://realfavicongenerator.net/
+  # add imege(svg) to theme/src/favicon/ with name [favicon.svg]
+  # npm run favicons
+  ####################################
+  180 = FLUIDTEMPLATE
+  180 {
+    file = TEXT
+    file.stdWrap {
+      data = site:theme
+      wrap = EXT: | /Resources/Public/assets/Favicons/Favicons.html
+    }
+    dataProcessing {
+      110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+      110 {
+        as = site
+      }
+    }
+  }
+
+}

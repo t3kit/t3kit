@@ -1,4 +1,4 @@
-// Config options reference https://docs.typo3.org/typo3cms/TyposcriptReference/stable/Setup/Config/
+# Config options reference https://docs.typo3.org/typo3cms/TyposcriptReference/stable/Setup/Config/
 config {
   absRefPrefix = auto
   doctype = html5
@@ -21,22 +21,23 @@ config {
 
   removeDefaultCss = 1
 
-  // If the value is "external", then the default JavaScript is written to a temporary file and included from that file
-  // removeDefaultJS = external
-  removeDefaultJS = 1
 
   sendCacheHeaders = 1
 
-  // if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
+  # if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
   spamProtectEmailAddresses = ascii
 
-  // TYPO3 Production context
+  # If the value is "external", then the default JavaScript is written to a temporary file and included from that file
+  # removeDefaultJS = external
+  removeDefaultJS = 1
+
+  # TYPO3 Production context
   admPanel = 0
   debug = 0
-  headerComment = t3kit10 | t3kit.com
+  headerComment = {$config.headerComment}
   no_cache = 0
 
-  // Compression and Concatenation of CSS and JS Files
+  # Compression and Concatenation of CSS and JS Files
   compressJs = 1
   compressCss = 1
   concatenateJs = 1
@@ -45,16 +46,16 @@ config {
 
 
 
-// If [Development]
-// TYPO3 Development context and every its subcontext
+# If [Development]
+# TYPO3 Development context and every its subcontext
 [applicationContext matches "#^Development#"]
 config {
   admPanel = 1
   debug = 1
-  headerComment = t3kit10 | t3kit.com (Development)
+  headerComment = {$config.headerComment} (Development)
   no_cache = 1
 
-  // Compression and Concatenation of CSS and JS Files
+  # Compression and Concatenation of CSS and JS Files
   compressJs = 0
   compressCss = 0
   concatenateJs = 0

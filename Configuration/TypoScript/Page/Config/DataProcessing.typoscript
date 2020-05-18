@@ -1,6 +1,5 @@
 page.10.dataProcessing {
 
-
   # Main menu
   20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
   20 {
@@ -20,7 +19,6 @@ page.10.dataProcessing {
       }
     }
   }
-
 
   # Side Navigation
   40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -43,7 +41,6 @@ page.10.dataProcessing {
     }
   }
 
-
   # Breadcrumbs
   50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
   50 {
@@ -65,14 +62,12 @@ page.10.dataProcessing {
     }
   }
 
-
   # Language Navigation
   60 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
   60 {
     as = languageNavigation
     languages = auto
   }
-
 
   # Site Processor
   110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
