@@ -11,12 +11,12 @@ page.meta {
   author {
     override.field = author
   }
-  viewport = {$plugin.t3kit.settings.general.viewport}
+  viewport = {$page.meta.viewport}
 
 }
 
-// If [Development]
-// TYPO3 Development context and every its subcontext
+# If [Development]
+# TYPO3 Development context and every its subcontext
 [applicationContext matches "#^Development#"]
 page.meta.robots = noindex,nofollow
 [end]

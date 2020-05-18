@@ -1,0 +1,26 @@
+# customcategory=t3kitPage=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kitPage
+page {
+
+  # customsubcategory=meta=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.meta
+  meta {
+    # cat=t3kitPage/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.description
+    description = t3kit project. A TYPO3 based web development eco-system.
+    # cat=t3kitPage/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.author
+    author = t3kit team
+    # cat=t3kitPage/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.keywords
+    keywords = TYPO3, t3kit
+    # cat=t3kitPage/meta; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:meta.viewport
+    viewport = width=device-width, initial-scale=1, shrink-to-fit=no
+  }
+
+  # customsubcategory=fluidtemplate=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.fluidtemplate
+  fluidtemplate {
+    # cat=t3kitPage/fluidtemplate; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:fluidtemplate.layoutRootPath
+    layoutRootPath =
+    # cat=t3kitPage/fluidtemplate; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:fluidtemplate.partialRootPath
+    partialRootPath =
+    # cat=t3kitPage/fluidtemplate; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:fluidtemplate.templateRootPath
+    templateRootPath =
+  }
+
+}

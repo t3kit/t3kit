@@ -20,7 +20,7 @@ page {
       }
       ifEmpty = Default
     }
-    ### end
+    ### end ###
     templateRootPaths {
       0 = EXT:t3kit/Resources/Private/Templates/Page
       200 = {$page.fluidtemplate.templateRootPath}
@@ -35,13 +35,25 @@ page {
       200 = {$page.fluidtemplate.layoutRootPath}
     }
     variables {
+      backend_layout = TEXT
+      backend_layout {
+        data = pagelayout
+        replacement.10 {
+          search = pagets__
+          replace =
+        }
+        ifEmpty = default
+      }
+      pageTitle = TEXT
+      pageTitle.data = page:title
       application_context = TEXT
       application_context.value = production
     }
   }
 }
 
-
+# If [Development]
+# TYPO3 Development context and every its subcontext
 [applicationContext matches "#^Development#"]
 page.10.partialRootPaths {
   20 = EXT:t3kit/Resources/Public/assets/development

@@ -4,44 +4,30 @@
 	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
+
+			<!-- ==================== -->
+			<!-- t3kit general config -->
+			<!-- ==================== -->
 			<!-- category -->
-			<trans-unit id="category.t3kit" resname="category.t3kit">
-				<source>t3kit settings</source>
-			</trans-unit>
-			<trans-unit id="category.t3kit_advanced" resname="category.t3kit_advanced">
-				<source>t3kit advanced settings</source>
-			</trans-unit>
-
-			<!-- subcategory -->
-			<trans-unit id="subcategory.meta" resname="subcategory.meta">
-				<source>Meta data</source>
-			</trans-unit>
-			<!-- meta data -->
-			<trans-unit id="meta.description" resname="meta.description">
-				<source>Description Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
-			</trans-unit>
-			<trans-unit id="meta.author" resname="meta.author">
-				<source>Author Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
-			</trans-unit>
-			<trans-unit id="meta.keywords" resname="meta.keywords">
-				<source>Keywords Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
-			</trans-unit>
-
-			<!-- subcategory -->
-			<trans-unit id="subcategory.general" resname="subcategory.general">
-				<source>General settings</source>
+			<trans-unit id="category.t3kitConfig" resname="category.t3kitConfig">
+				<source>t3kit General config</source>
 			</trans-unit>
 			<!-- settings -->
-			<trans-unit id="container_width" resname="container_width">
-				<source>Max page container width</source>
-			</trans-unit>
-			<trans-unit id="meta.viewport" resname="meta.viewport">
-				<source>Viewport</source>
+			<trans-unit id="config.headerComment" resname="config.headerComment">
+				<source>Comment in the head section of the page</source>
 			</trans-unit>
 
-			<!-- subcategory -->
+
+			<!-- ============================ -->
+			<!-- t3kit Content Element config -->
+			<!-- ============================ -->
+			<!-- category -->
+			<trans-unit id="category.t3kitContentElement" resname="category.t3kitContentElement">
+				<source>t3kit Content Element</source>
+			</trans-unit>
+			<!-- subcategory media -->
 			<trans-unit id="subcategory.media" resname="subcategory.media">
-				<source>Media settings</source>
+				<source>Content Element Media settings</source>
 			</trans-unit>
 			<!-- settings media -->
 			<trans-unit id="media.videoConfig.controls" resname="media.videoConfig.controls">
@@ -64,6 +50,64 @@
 			</trans-unit>
 			<trans-unit id="media.audioConfig.muted" resname="media.audioConfig.muted">
 				<source>Audio muted</source>
+			</trans-unit>
+			<!-- subcategory view -->
+			<trans-unit id="subcategory.view" resname="subcategory.view">
+				<source>Content Element Fluidtemplate paths</source>
+			</trans-unit>
+			<!-- settings view -->
+			<trans-unit id="view.layoutRootPath" resname="view.layoutRootPath">
+				<source>Layouts</source>
+			</trans-unit>
+			<trans-unit id="view.partialRootPath" resname="view.partialRootPath">
+				<source>Partials</source>
+			</trans-unit>
+			<trans-unit id="view.templateRootPath" resname="view.templateRootPath">
+				<source>Templates</source>
+			</trans-unit>
+			<!-- other settings -->
+			<trans-unit id="container_width" resname="container_width">
+				<source>Max page container width</source>
+			</trans-unit>
+
+
+			<!-- ============================ -->
+			<!-- t3kit Page config -->
+			<!-- ============================ -->
+			<!-- category -->
+			<trans-unit id="category.t3kitPage" resname="category.t3kitPage">
+				<source>t3kit Page</source>
+			</trans-unit>
+			<!-- subcategory -->
+			<trans-unit id="subcategory.meta" resname="subcategory.meta">
+				<source>Meta data</source>
+			</trans-unit>
+			<!-- settings meta -->
+			<trans-unit id="meta.description" resname="meta.description">
+				<source>Description Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
+			</trans-unit>
+			<trans-unit id="meta.author" resname="meta.author">
+				<source>Author Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
+			</trans-unit>
+			<trans-unit id="meta.keywords" resname="meta.keywords">
+				<source>Keywords Meta Tag: Will be used as reserve metadata for all pages of the site in case if there was not added specific metadata for exact page.</source>
+			</trans-unit>
+			<trans-unit id="meta.viewport" resname="meta.viewport">
+				<source>Viewport</source>
+			</trans-unit>
+			<!-- subcategory fluidtemplate -->
+			<trans-unit id="subcategory.fluidtemplate" resname="subcategory.fluidtemplate">
+				<source>Page Fluidtemplate paths</source>
+			</trans-unit>
+			<!-- settings fluidtemplate -->
+			<trans-unit id="fluidtemplate.layoutRootPath" resname="fluidtemplate.layoutRootPath">
+				<source>Layouts</source>
+			</trans-unit>
+			<trans-unit id="fluidtemplate.partialRootPath" resname="fluidtemplate.partialRootPath">
+				<source>Partials</source>
+			</trans-unit>
+			<trans-unit id="fluidtemplate.templateRootPath" resname="fluidtemplate.templateRootPath">
+				<source>Templates</source>
 			</trans-unit>
 
 		</body>

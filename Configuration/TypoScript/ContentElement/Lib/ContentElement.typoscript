@@ -1,0 +1,57 @@
+# Default FLUIDTEMPLATE configuration for content elements
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
+  templateName = Default
+  templateRootPaths {
+    10 = EXT:t3kit/Resources/Private/Templates/ContentElements/Static
+    20 = EXT:t3kit/Resources/Private/Templates/ContentElements/Dynamic
+    30 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
+    40 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugin
+    50 = EXT:t3kit/Resources/Private/Templates/ContentElements/Special
+    200 = {$plugin.t3kit.contentElement.view.templateRootPath}
+  }
+  partialRootPaths {
+    0 = EXT:t3kit/Resources/Private/Partials/ContentElements
+    200 = {$plugin.t3kit.contentElement.view.partialRootPath}
+  }
+  layoutRootPaths {
+    0 = EXT:t3kit/Resources/Private/Layouts/ContentElements
+    200 = {$plugin.t3kit.contentElement.view.layoutRootPath}
+  }
+  // dataProcessing {
+  //   100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+  //   100 {
+  //     references.fieldName = background
+  //     as = background
+  //   }
+  // }
+  variables {
+    backend_layout = TEXT
+    backend_layout {
+      data = pagelayout
+      replacement.10 {
+        search = pagets__
+        replace =
+      }
+      ifEmpty = default
+    }
+  }
+  settings {
+    container_width = {$plugin.t3kit.contentElement.container_width}
+    media {
+      videoConfig {
+        controls = {$plugin.t3kit.contentElement.media.videoConfig.controls}
+        loop = {$plugin.t3kit.contentElement.media.videoConfig.loop}
+        muted = {$plugin.t3kit.contentElement.media.videoConfig.muted}
+        # https://github.com/TYPO3/TYPO3.CMS/blob/4cb53e828bd5138d180cdf9cac1ccf7fd31086d2/typo3/sysext/core/Documentation/Changelog/9.3/Breaking-84843-UseNo-cookieDomainForYoutubeByDefault.rst
+        no-cookie = {$plugin.t3kit.contentElement.media.videoConfig.no-cookie}
+      }
+      audioConfig {
+        controls = {$plugin.t3kit.contentElement.media.audioConfig.controls}
+        loop = {$plugin.t3kit.contentElement.media.audioConfig.loop}
+        muted = {$plugin.t3kit.contentElement.media.audioConfig.muted}
+      }
+    }
+  }
+
+}
