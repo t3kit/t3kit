@@ -2,6 +2,7 @@
 # Groups of Content elements
 # ===========================
 # t3kit CE groups
+# add static and dynamic CE groups
 mod.wizards.newContentElement.wizardItems {
   static {
     header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.static

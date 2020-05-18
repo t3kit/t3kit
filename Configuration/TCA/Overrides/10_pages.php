@@ -11,13 +11,13 @@ defined('TYPO3_MODE') || die();
 // BE layouts
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
-    'Configuration/TSconfig/Page/BElayouts.tsconfig',
+    'Configuration/TSconfig/Page/BackendLayouts.tsconfig',
     'All BE layouts'
 );
 // Content Elements
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
-    'Configuration/TSconfig/Page/ContentElements.tsconfig',
+    'Configuration/TSconfig/Page/Mod/Wizards/T3kitContentElements.tsconfig',
     'All t3kit Content Elements'
 );
 // RTE
@@ -50,8 +50,65 @@ defined('TYPO3_MODE') || die();
 // -------------------------------
 
 // Static CE-s
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/BigIconTextLink.tsconfig',
+    '(Static CE) BigIconTextLink'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/IconTextLink.tsconfig',
+    '(Static CE) IconTextLink'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ImageTextLink.tsconfig',
+    '(Static CE) ImageTextLink'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/HeroImage.tsconfig',
+    '(Static CE) HeroImage'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Video.tsconfig',
+    '(Static CE) Video'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Audio.tsconfig',
+    '(Static CE) Audio'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Quote.tsconfig',
+    '(Static CE) Quote'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ContactCard.tsconfig',
+    '(Static CE) ContactCard'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Button.tsconfig',
+    '(Static CE) Button'
+);
+
 // Dynamic CE-s
+// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+//     't3kit',
+//     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/___.tsconfig',
+//     '(Dynamic CE) ___'
+// );
+
 // Special CE-s
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/DividerIcon.tsconfig',
+    '(Special CE) SiteHeader'
+);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig',
@@ -62,8 +119,6 @@ defined('TYPO3_MODE') || die();
     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig',
     '(Special CE) SiteFooter'
 );
-
-
 
 
 /*

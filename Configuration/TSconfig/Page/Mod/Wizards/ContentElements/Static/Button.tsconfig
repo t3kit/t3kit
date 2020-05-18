@@ -5,5 +5,6 @@ mod.wizards.newContentElement.wizardItems.static.elements.button {
   iconIdentifier = ce-button
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_button.xlf:button.description
+  tt_content_defValues.CType = button
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(button)

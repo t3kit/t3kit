@@ -20,13 +20,13 @@ $t3kitextConf = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
 // BE layouts
 if (!(bool) $t3kitextConf['disableBELayouts']) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        "@import 'EXT:t3kit/Configuration/TSconfig/Page/BElayouts.tsconfig'"
+        "@import 'EXT:t3kit/Configuration/TSconfig/Page/BackendLayouts.tsconfig'"
     );
 }
 // Content Elements
 if (!(bool) $t3kitextConf['disableContentElements']) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        "@import 'EXT:t3kit/Configuration/TSconfig/Page/ContentElements.tsconfig'"
+        "@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/T3kitContentElements.tsconfig'"
     );
 }
 // RTE

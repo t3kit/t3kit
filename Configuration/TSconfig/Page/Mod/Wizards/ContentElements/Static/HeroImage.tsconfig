@@ -5,6 +5,7 @@ mod.wizards.newContentElement.wizardItems.static.elements.heroImage {
   iconIdentifier = ce-heroImage
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.description
+  tt_content_defValues.CType = heroImage
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(heroImage)
 

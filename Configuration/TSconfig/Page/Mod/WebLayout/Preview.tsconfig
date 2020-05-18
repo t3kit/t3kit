@@ -1,3 +1,0 @@
-# Render previews of content elements in the page module
-
-mod.web_layout.tt_content.preview.header = EXT:t3kit/Resources/Private/Templates/Preview/Header.html
