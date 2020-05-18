@@ -1,9 +1,11 @@
 # ###########################
 # Text & Images Content element
 # ===========================
+mod.wizards.newContentElement.wizardItems.static.elements.textpic >
 mod.wizards.newContentElement.wizardItems.static.elements.textpic {
   iconIdentifier = content-textpic
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_textImage_title
   description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_textImage_description
+  tt_content_defValues.CType = textpic
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(textpic)

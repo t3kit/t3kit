@@ -29,3 +29,13 @@
 - Set default value defined in columnsOverrides
 - add add groupid to TCEMAIN.permissions
 - Registering Scheduler Tasks in ext_localconf.php
+
+***
+
+## add a new content element
+
+1.
+2.
+3.
+4.
+5.

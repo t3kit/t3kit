@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- t3kit Extension Configuration translations -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="pagets.disableBELayouts" resname="pagets.disableBELayouts">
+				<source>Disable PageTS config for t3kit BE layouts: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [All BE layouts (t3kit)]</source>
+			</trans-unit>
+			<trans-unit id="pagets.disableContentElements" resname="pagets.disableContentElements">
+				<source>Disable PageTS config for t3kit Content elements: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [All Content Elements (t3kit)]</source>
+			</trans-unit>
+			<trans-unit id="pagets.disableRTE" resname="pagets.disableRTE">
+				<source>Disable PageTS config for RTE: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [RTE (t3kit)]</source>
+			</trans-unit>
+			<trans-unit id="pagets.disableTCAdefaults" resname="pagets.disableTCAdefaults">
+				<source>Disable PageTS config for TCAdefaults: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [TCAdefaults (t3kit)]</source>
+			</trans-unit>
+			<trans-unit id="pagets.disableTCEFORM" resname="pagets.disableTCEFORM">
+				<source>Disable PageTS config for TCEFORM: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [TCEFORM (t3kit)]</source>
+			</trans-unit>
+			<trans-unit id="pagets.disableTCEMAIN" resname="pagets.disableTCEMAIN">
+				<source>Disable PageTS config for TCEMAIN: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [TCEMAIN (t3kit)]</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

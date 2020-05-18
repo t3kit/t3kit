@@ -8,10 +8,116 @@ defined('TYPO3_MODE') || die();
 * PageTS for t3kit
 * ===========================
 */
+// BE layouts
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
-    'Configuration/TSconfig/Import.tsconfig',
-    't3kit'
+    'Configuration/TSconfig/Page/BackendLayouts.tsconfig',
+    'All BE layouts'
+);
+// Content Elements
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/T3kitContentElements.tsconfig',
+    'All t3kit Content Elements'
+);
+// RTE
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/RTE.tsconfig',
+    'RTE'
+);
+// TCAdefaults
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/TCAdefaults.tsconfig',
+    'TCAdefaults'
+);
+// TCEFORM
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/TCEFORM.tsconfig',
+    'TCEFORM'
+);
+// TCEMAIN
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/TCEMAIN.tsconfig',
+    'TCEMAIN'
+);
+
+// -------------------------------
+// t3kit Content Elements includes
+// -------------------------------
+
+// Static CE-s
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/BigIconTextLink.tsconfig',
+    '(Static CE) BigIconTextLink'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/IconTextLink.tsconfig',
+    '(Static CE) IconTextLink'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ImageTextLink.tsconfig',
+    '(Static CE) ImageTextLink'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/HeroImage.tsconfig',
+    '(Static CE) HeroImage'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Video.tsconfig',
+    '(Static CE) Video'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Audio.tsconfig',
+    '(Static CE) Audio'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Quote.tsconfig',
+    '(Static CE) Quote'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ContactCard.tsconfig',
+    '(Static CE) ContactCard'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Button.tsconfig',
+    '(Static CE) Button'
+);
+
+// Dynamic CE-s
+// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+//     't3kit',
+//     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/___.tsconfig',
+//     '(Dynamic CE) ___'
+// );
+
+// Special CE-s
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/DividerIcon.tsconfig',
+    '(Special CE) SiteHeader'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig',
+    '(Special CE) SiteHeader'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig',
+    '(Special CE) SiteFooter'
 );
 
 

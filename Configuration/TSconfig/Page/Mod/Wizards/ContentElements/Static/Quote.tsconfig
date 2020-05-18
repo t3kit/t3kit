@@ -5,5 +5,6 @@ mod.wizards.newContentElement.wizardItems.static.elements.quote {
   iconIdentifier = ce-quote
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:quote.description
+  tt_content_defValues.CType = quote
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(quote)

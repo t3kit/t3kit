@@ -1,0 +1,25 @@
+# TYPO3 TSconfig Reference
+# https://docs.typo3.org/m/typo3/reference-tsconfig/master/en-us/Index.html
+
+# ###########################
+# Import configurations for all t3kit Content elements
+# ===========================
+// Static
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/BigIconTextLink.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/IconTextLink.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ImageTextLink.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/HeroImage.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Video.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Audio.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Quote.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ContactCard.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Button.tsconfig'
+
+// Dynamic
+// @import 'EXT:t3kit/'
+
+// Special
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/DividerIcon.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig'
+# ___________________________
