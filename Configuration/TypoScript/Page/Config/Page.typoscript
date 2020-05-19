@@ -49,6 +49,16 @@ page {
       application_context = TEXT
       application_context.value = production
     }
+    settings {
+      nav {
+        breadcrumb {
+          showBreadcrumbMenu = {$page.nav.breadcrumb.showBreadcrumbMenu}
+          icon = {$page.nav.breadcrumb.icon}
+          image = {$page.nav.breadcrumb.image}
+        }
+      }
+    }
+
   }
 }
 

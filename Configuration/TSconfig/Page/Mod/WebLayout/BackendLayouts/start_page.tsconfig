@@ -46,8 +46,6 @@ mod.web_layout.BackendLayouts.start_page {
         colPos = 50
       }
 
-      # Breadcrumbs
-
       # Additional content (after breadcrumbs/before main content)
       3.columns.1 {
         name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.before_content

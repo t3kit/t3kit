@@ -23,4 +23,16 @@ page {
     templateRootPath =
   }
 
+  # customsubcategory=nav=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.nav
+  nav {
+    breadcrumb {
+      # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.breadcrumb.showBreadcrumbMenu
+      showBreadcrumbMenu = 1
+      # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.breadcrumb.icon
+      icon = 0
+      # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.breadcrumb.image
+      image = 0
+    }
+  }
+
 }

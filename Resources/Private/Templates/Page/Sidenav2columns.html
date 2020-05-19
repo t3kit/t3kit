@@ -45,6 +45,12 @@
       </div>
     </section>
 
+    <f:if condition="{settings.nav.breadcrumb.showBreadcrumbMenu}">
+      <div class="breadcrumb-wrp container">
+        <f:render partial="Nav/Breadcrumb" arguments="{_all}" />
+      </div>
+    </f:if>
+
     <section class="sidenav-2columns__before-content ">
       <div class="sidenav-2columns__before-content-container">
         <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />

@@ -33,6 +33,7 @@ mod.web_layout.BackendLayouts.default {
 
     # Site Header (inherited from start page layout)
 
+    # Breadcrumbs
 
     # All Content
     rows.1.columns {

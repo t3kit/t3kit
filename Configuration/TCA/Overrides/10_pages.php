@@ -140,17 +140,17 @@ defined('TYPO3_MODE') || die();
                 'types' => [
                     '0' => [
                         'showitem' => '
-                    --palette--;;imageoverlayPalette,
-                        --palette--;;filePalette'
+                            --palette--;;simpleImageOverlayPalette,
+                            --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
                         'showitem' => '
-                        --palette--;;imageoverlayPalette,
+                        --palette--;;simpleImageOverlayPalette,
                         --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                         'showitem' => '
-                        --palette--;;imageoverlayPalette,
+                        --palette--;;simpleImageOverlayPalette,
                         --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
@@ -165,7 +165,7 @@ defined('TYPO3_MODE') || die();
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
                         'showitem' => '
-                        --palette--;;imageoverlayPalette,
+                        --palette--;;simpleImageOverlayPalette,
                         --palette--;;filePalette'
                     ]
                 ],

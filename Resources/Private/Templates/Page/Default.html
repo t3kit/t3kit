@@ -39,6 +39,12 @@
 
   <main class="default">
 
+    <f:if condition="{settings.nav.breadcrumb.showBreadcrumbMenu}">
+      <div class="breadcrumb-wrp container">
+        <f:render partial="Nav/Breadcrumb" arguments="{_all}" />
+      </div>
+    </f:if>
+
     <section class="default__content">
       <div class="default__content-container container">
         <div class="row">

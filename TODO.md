@@ -29,6 +29,10 @@
 - Set default value defined in columnsOverrides
 - add add groupid to TCEMAIN.permissions
 - Registering Scheduler Tasks in ext_localconf.php
+- add icons for BE layouts and content elements
+- add BE Preview for CE-s
+- ScrollToTop styles CE
+- ScrollToTop styles Page
 
 ***
 

@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment>https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html</f:comment>
+
+<f:if condition="{breadcrumb}">
+  <nav class="breadcrumb-page-partial" aria-label="Breadcrumb">
+    <ol class="breadcrumb breadcrumb__list">
+      <f:for each="{breadcrumb}" as="item">
+        <li class="breadcrumb-item breadcrumb__list-item {f:if(condition: item.current, then:'active')}"
+        {f:if(condition: item.current, then: 'aria-current="page"')} >
+          <f:if condition="{item.current}">
+            <f:then>
+              <f:render section="breadcrumbTitle" arguments="{item: item}" />
+            </f:then>
+            <f:else>
+              <a class="breadcrumb__list-item-link" href="{item.link}" title="{item.title}">
+                <f:render section="breadcrumbTitle" arguments="{item: item}" />
+              </a>
+            </f:else>
+          </f:if>
+        </li>
+      </f:for>
+    </ol>
+  </nav>
+</f:if>
+
+<f:section name="breadcrumbTitle">
+  <f:if condition="{settings.nav.breadcrumb.icon} && {item.data.nav_icon}">
+    <span class="breadcrumb__list-item-icon-wrp">
+      <t3kit:render.svg src="{item.data.nav_icon}" class="t3icon breadcrumb__list-item-icon {item.data.nav_icon_class}" />
+    </span>
+  </f:if>
+
+  <f:if condition="{settings.nav.breadcrumb.image} && {item.nav_image}">
+    <div class="breadcrumb__list-item-image-wrp">
+      <f:media class="breadcrumb__list-item-image img-fluid"
+        file="{item.nav_image.0}"
+        alt="{item.nav_image.0.alternative}"
+        title="{item.nav_image.0.title}"
+        loading="lazy" />
+    </div>
+  </f:if>
+
+  <span class="breadcrumb__list-item-title">{item.title}</span>
+</f:section>
+
+</html>

@@ -1,38 +1,14 @@
 page.10.dataProcessing {
 
-  # Main menu
-  20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-  20 {
-    as = mainNavigation
-    levels = 2
-    includeSpacer = 1
-    dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      10 {
-        references.fieldName = nav_icon
-        as = nav_icon
-      }
-      20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      20 {
-        references.fieldName = nav_image
-        as = nav_image
-      }
-    }
-  }
-
   # Side Navigation
   40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
   40 {
     as = sideNavigation
     entryLevel = 1
     levels = 5
+    expandAll = 0
     includeSpacer = 1
     dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      10 {
-        references.fieldName = nav_icon
-        as = nav_icon
-      }
       20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       20 {
         references.fieldName = nav_image
@@ -49,24 +25,12 @@ page.10.dataProcessing {
     special = rootline
     special.range = 0|-1
     dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-      10 {
-        references.fieldName = nav_icon
-        as = nav_icon
-      }
       20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       20 {
         references.fieldName = nav_image
         as = nav_image
       }
     }
-  }
-
-  # Language Navigation
-  60 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-  60 {
-    as = languageNavigation
-    languages = auto
   }
 
   # Site Processor
