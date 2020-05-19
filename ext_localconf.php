@@ -20,7 +20,7 @@ $t3kitextConf = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
 // BE layouts
 if (!(bool) $t3kitextConf['disableBELayouts']) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        "@import 'EXT:t3kit/Configuration/TSconfig/Page/BackendLayouts.tsconfig'"
+        "@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/WebLayout/BackendLayouts.tsconfig'"
     );
 }
 // Content Elements

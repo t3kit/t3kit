@@ -11,7 +11,7 @@ defined('TYPO3_MODE') || die();
 // BE layouts
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
-    'Configuration/TSconfig/Page/BackendLayouts.tsconfig',
+    'Configuration/TSconfig/Page/Mod/WebLayout/BackendLayouts.tsconfig',
     'All BE layouts'
 );
 // Content Elements
