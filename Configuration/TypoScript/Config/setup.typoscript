@@ -22,7 +22,7 @@ config {
   removeDefaultCss = 1
 
   // default target attr for RTE external links
-  extTarget = _self
+  // extTarget = _self
 
   sendCacheHeaders = 1
 

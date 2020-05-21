@@ -5,7 +5,6 @@ lib.parseFunc {
   makelinks {
     http {
       keep = path
-      extTarget = _blank
     }
     mailto {
       keep = path
@@ -17,7 +16,6 @@ lib.parseFunc {
       current = 1
       typolink {
         parameter.data = parameters : allParams
-        extTarget = _blank
       }
       parseFunc.constants = 1
     }
@@ -33,7 +31,6 @@ lib.parseFunc {
         # the target attribute takes precedence over the constant (styles.content.links.extTarget)
         # which takes precedence over config.extTarget
         extTarget.ifEmpty < config.extTarget
-        extTarget.ifEmpty.override = _blank
         extTarget.override.data = parameters:target
       }
     }
