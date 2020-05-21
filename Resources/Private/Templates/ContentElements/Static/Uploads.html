@@ -23,8 +23,8 @@
                   <f:if
                     condition="{f:uri.image(src: 'file:{f:if(condition: file.originalFile, then: \'file:{file.originalFile.uid}\', else: \'file:{file.uid}\')}')} != '/'">
                     <f:then>
-                      <a class="ce-uploads__list-item-image-link" href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"'
-                        )}{f:if(condition: file.title, then: ' title="{file.title}"' )}>
+                      <a class="ce-uploads__list-item-image-link" href="{file.publicUrl}"
+                        {f:if(condition:data.target,then: ' target="{data.target}"')}>
                         <f:media class="ce-uploads__list-item-image" file="{file}" width="150" alt="{file.properties.alternative}" />
                       </a>
                     </f:then>
@@ -36,8 +36,7 @@
                 </f:if>
               </f:if>
               <div class="ce-uploads__list-item-body">
-                <a class="ce-uploads__list-item-filename-link" href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"' )}{f:if(condition:
-                  file.title, then: ' title="{file.title}"' )}>
+                <a class="ce-uploads__list-item-filename-link" href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"' )}>
                   <span class="ce-uploads__list-item-filename">{f:if(condition: file.properties.title, then: file.properties.title,
                     else: file.name) -> f:format.htmlspecialchars()}</span>
                 </a>

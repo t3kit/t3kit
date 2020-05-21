@@ -64,7 +64,7 @@
 								<fieldControl>
 									<linkPopup>
 										<options>
-											<blindLinkFields>params, target, class</blindLinkFields>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
 											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
 										</options>
 									</linkPopup>
@@ -98,7 +98,7 @@
 								<fieldControl>
 									<linkPopup>
 										<options>
-											<blindLinkFields>params, target, class</blindLinkFields>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
 											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
 										</options>
 									</linkPopup>
@@ -132,7 +132,7 @@
 								<fieldControl>
 									<linkPopup>
 										<options>
-											<blindLinkFields>params, target, class</blindLinkFields>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
 											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
 										</options>
 									</linkPopup>
@@ -154,7 +154,7 @@
 								<fieldControl>
 									<linkPopup>
 										<options>
-											<blindLinkFields>params, target, class</blindLinkFields>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
 											<blindLinkOptions>page, file, folder, url, telephone</blindLinkOptions>
 										</options>
 									</linkPopup>

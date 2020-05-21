@@ -64,7 +64,7 @@ $GLOBALS['TCA']['tt_content']['types']['button'] = [
                 'fieldControl' => [
                     'linkPopup' => [
                         'options' => [
-                            'blindLinkFields' => 'params, target, class'
+                            'blindLinkFields' => 'params, class, title'
                         ]
                     ]
                 ]

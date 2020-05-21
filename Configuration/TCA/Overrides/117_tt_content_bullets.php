@@ -45,7 +45,7 @@ $GLOBALS['TCA']['tt_content']['types']['bullets']  = array_replace_recursive(
                     'fieldControl' => [
                         'linkPopup' => [
                             'options' => [
-                                'blindLinkFields' => 'params, target, class',
+                                'blindLinkFields' => 'params, target, class, title',
                                 'blindLinkOptions' => 'folder, mail, telephone'
                             ]
                         ]

@@ -3,7 +3,7 @@
 <div class="picture-partial">
   <f:if condition="{file.link}">
     <f:then>
-      <f:link.typolink class="picture-partial__link" parameter="{file.link}" title="{file.title}">
+      <f:link.typolink class="picture-partial__link" parameter="{file.link}" >
         <f:render partial="Media/Render/Picture" arguments="{data: data, image:file, height:height, width:width}" />
       </f:link.typolink>
     </f:then>
@@ -14,7 +14,6 @@
         <f:then>
           <div class="picture-partial__zoom">
             <a href="{f:uri.image(image: file, maxWidth: '{data.image_zoom_width}')}"
-              title="{file.properties.title}"
               data-caption="{file.properties.description}"
               rel="picture-partial__zoom-{data.uid}"
               class="picture-partial__zoom-link">

@@ -163,7 +163,7 @@
   class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}"
   loading="lazy"
   {f:if(condition:height,then:' height="{height}px"')}
-  src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" title="{image.title}">
+  src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" >
 </picture>
 
 </html>

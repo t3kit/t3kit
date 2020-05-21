@@ -94,7 +94,7 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
                 'fieldControl' => [
                     'linkPopup' => [
                         'options' => [
-                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkFields' => 'params, target, class, title',
                             'blindLinkOptions' => 'folder'
                         ]
                     ]
@@ -106,7 +106,7 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
                 'fieldControl' => [
                     'linkPopup' => [
                         'options' => [
-                            'blindLinkFields' => 'params, target, class',
+                            'blindLinkFields' => 'params, target, class, title',
                             'blindLinkOptions' => 'folder, mail, telephone'
                         ]
                     ]

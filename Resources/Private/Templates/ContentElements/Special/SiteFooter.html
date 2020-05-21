@@ -57,8 +57,7 @@
                 <ul class="footer__links-list">
                   <f:for each="{footerMiddleSecondLinks}" as="page">
                     <li class="footer__links-item">
-                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
-                          title="{page.title}">
+                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
                         <span>{page.title}</span>
                       </a>
                     </li>
@@ -75,8 +74,7 @@
                 <ul class="footer__links-list">
                   <f:for each="{footerMiddleThirdLinks}" as="page">
                     <li class="footer__links-item">
-                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}
-                          title="{page.title}">
+                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
                         <span>{page.title}</span>
                       </a>
                     </li>
@@ -118,8 +116,7 @@
                 <ul class="footer__links-list footer__bottom-links">
                   <f:for each="{footerBottomLinks}" as="page">
                     <li class="footer__links-item footer__bottom-item">
-                      <a href="{page.link}" class="footer__bottom-link" {f:if(condition: page.target, then: ' target="{page.target}"' )}
-                          title="{page.title}">
+                      <a href="{page.link}" class="footer__bottom-link" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
                         <span>{page.title}</span>
                       </a>
                     </li>
@@ -129,14 +126,14 @@
           </div>
           <div class="footer__social-list">
             <!-- Social Icon -->
-            <!-- <a class="social-icons__item" href="https://twitter.com/typo3" target="_blank" title="Twitter"><span class="icons icon-t3-twitter"></span></a>
-            <a class="social-icons__item" href="https://www.linkedin.com/company/typo3-association" target="_blank" title="LinkedIn"><span class="icons icon-t3-linkedin"></span></a>
-            <a class="social-icons__item" href="https://instagram.com/explore/tags/typo3/" target="_blank" title="Instagram"><span class="icons icon-t3-instagram"></span></a>
-            <a class="social-icons__item" href="https://www.facebook.com/typo3" target="_blank" title="Facebook"><span class="icons icon-t3-facebook"></span></a> -->
-            <a class="footer__social-item" href="https://twitter.com/typo3" target="_blank" title="Twitter"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="footer__social-item" href="https://www.linkedin.com/company/typo3-association" target="_blank" title="LinkedIn"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="footer__social-item" href="https://instagram.com/explore/tags/typo3/" target="_blank" title="Instagram"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="footer__social-item" href="https://www.facebook.com/typo3" target="_blank" title="Facebook"><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <!-- <a class="social-icons__item" href="https://twitter.com/typo3" target="_blank" ><span class="icons icon-t3-twitter"></span></a>
+            <a class="social-icons__item" href="https://www.linkedin.com/company/typo3-association" target="_blank" ><span class="icons icon-t3-linkedin"></span></a>
+            <a class="social-icons__item" href="https://instagram.com/explore/tags/typo3/" target="_blank" ><span class="icons icon-t3-instagram"></span></a>
+            <a class="social-icons__item" href="https://www.facebook.com/typo3" target="_blank" ><span class="icons icon-t3-facebook"></span></a> -->
+            <a class="footer__social-item" href="https://twitter.com/typo3" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://www.linkedin.com/company/typo3-association" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://instagram.com/explore/tags/typo3/" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
+            <a class="footer__social-item" href="https://www.facebook.com/typo3" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
           </div>
         </div>
       </f:if>
@@ -147,7 +144,7 @@
 <f:section name="imageType">
   <f:if condition="{mediaItem.link}">
     <f:then>
-      <f:link.typolink title="{mediaItem.title}" class="footer__logo-link" parameter="{mediaItem.link}">
+      <f:link.typolink  class="footer__logo-link" parameter="{mediaItem.link}">
         <f:render section="media" arguments="{_all}" />
       </f:link.typolink>
     </f:then>
@@ -161,7 +158,7 @@
 
 <f:section name="media">
   <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
-    title="{mediaItem.title}" class="footer__logo-image img-fluid" />
+    class="footer__logo-image img-fluid" />
 </f:section>
 
 </html>
