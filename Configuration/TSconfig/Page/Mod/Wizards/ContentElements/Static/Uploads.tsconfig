@@ -1,7 +1,7 @@
 # ###########################
 # File Links Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static.elements.uploads >
+mod.wizards.newContentElement.wizardItems.common.elements.uploads >
 mod.wizards.newContentElement.wizardItems.static.elements.uploads {
   iconIdentifier = content-special-uploads
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_filelinks_title

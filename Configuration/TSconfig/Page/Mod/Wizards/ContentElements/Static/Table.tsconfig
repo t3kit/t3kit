@@ -1,7 +1,7 @@
 # ###########################
 # Table Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static.elements.table >
+mod.wizards.newContentElement.wizardItems.common.elements.table >
 mod.wizards.newContentElement.wizardItems.static.elements.table {
   iconIdentifier = content-table
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_table_title

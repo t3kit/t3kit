@@ -1,7 +1,7 @@
 # ###########################
 # Text & Media Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static.elements.textmedia >
+mod.wizards.newContentElement.wizardItems.common.elements.textmedia >
 mod.wizards.newContentElement.wizardItems.static.elements.textmedia {
   iconIdentifier = content-textmedia
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_textMedia_title

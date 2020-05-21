@@ -1,7 +1,7 @@
 # ###########################
 # Bullet List Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static.elements.bullets >
+mod.wizards.newContentElement.wizardItems.common.elements.bullets >
 mod.wizards.newContentElement.wizardItems.static.elements.bullets {
   iconIdentifier = content-bullets
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_bulletList_title
