@@ -4,6 +4,66 @@ defined('TYPO3_MODE') || die();
 
 /*
  * ###########################
+ * rewrite existed TCA columns for tt_content
+ * ===========================
+ */
+// ----------------
+// rewrite "header_link" column config
+$GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['columns']['header_link'],
+    [
+        'config' => [
+            'fieldControl' => [
+                'linkPopup' => [
+                    'options' => [
+                        'blindLinkFields' => 'params, target, class, title',
+                        'blindLinkOptions' => 'folder, mail, telephone'
+                    ],
+                ],
+            ],
+        ]
+    ]
+);
+
+// rewrite "header_position" column config
+$GLOBALS['TCA']['tt_content']['columns']['header_position']  = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['columns']['header_position'],
+    [
+        'config' => [
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
+                    '0'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
+                    'center'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.justify',
+                    'justify'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
+                    'right'
+                ]
+            ],
+            'default' => '0'
+        ]
+    ]
+);
+
+// rewrite image_zoom column
+$GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['columns']['image_zoom'],
+    [
+        'onChange' => 'reload'
+    ]
+);
+
+
+ /*
+ * ###########################
  * add new TCA columns for tt_content
  * ===========================
  */
@@ -222,6 +282,15 @@ defined('TYPO3_MODE') || die();
             'size' => 50,
             'max' => 1024,
             'eval' => 'trim',
+            'fieldControl' => [
+                'linkPopup' => [
+                    'options' => [
+                        'title' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link',
+                        'blindLinkFields' => 'params, target, class, title',
+                        'blindLinkOptions' => 'folder'
+                    ],
+                ],
+            ],
             'softref' => 'typolink'
         ]
     ],
@@ -577,46 +646,6 @@ defined('TYPO3_MODE') || die();
         ]
     ],
 ]);
-
-// rewrite "header_position" column config
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'header_position' => [
-        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
-                    '0'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
-                    'center'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.justify',
-                    'justify'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
-                    'right'
-                ]
-            ],
-            'default' => '0'
-        ]
-    ],
-]);
-
-// rewrite image_zoom column
-$GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['columns']['image_zoom'],
-    [
-        'onChange' => 'reload'
-    ]
-);
-
 
 /*
  * ###########################

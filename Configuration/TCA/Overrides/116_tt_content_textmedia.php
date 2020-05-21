@@ -46,18 +46,6 @@ $GLOBALS['TCA']['tt_content']['types']['textmedia']  = array_replace_recursive(
                         ]
                     ]
                 ]
-            ],
-            'header_link' => [
-                'config' => [
-                    'fieldControl' => [
-                        'linkPopup' => [
-                            'options' => [
-                                'blindLinkFields' => 'params, target, class, title',
-                                'blindLinkOptions' => 'folder, mail, telephone'
-                            ]
-                        ]
-                    ]
-                ]
             ]
         ]
     ]

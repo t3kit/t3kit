@@ -36,25 +36,6 @@ defined('TYPO3_MODE') || die();
  * Configure element fields (types) to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['uploads']  = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['types']['uploads'],
-    [
-        'columnsOverrides' => [
-            'header_link' => [
-                'config' => [
-                    'fieldControl' => [
-                        'linkPopup' => [
-                            'options' => [
-                                'blindLinkFields' => 'params, target, class, title',
-                                'blindLinkOptions' => 'folder, mail, telephone'
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
-);
 
 
 /*

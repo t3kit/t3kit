@@ -89,30 +89,6 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
                 ]
             ]
         ],
-        'link' => [
-            'config' => [
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'params, target, class, title',
-                            'blindLinkOptions' => 'folder'
-                        ]
-                    ]
-                ]
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'params, target, class, title',
-                            'blindLinkOptions' => 'folder, mail, telephone'
-                        ]
-                    ]
-                ]
-            ]
-        ],
         'section_container_width' => [
             'config' => [
                 'default' => 'container-fluid'

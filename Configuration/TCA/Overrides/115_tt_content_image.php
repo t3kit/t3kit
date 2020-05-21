@@ -66,18 +66,6 @@ $GLOBALS['TCA']['tt_content']['types']['image'] = [
                     ]
                 ]
             ]
-        ],
-        'header_link' => [
-            'config' => [
-                'fieldControl' => [
-                    'linkPopup' => [
-                        'options' => [
-                            'blindLinkFields' => 'params, target, class, title',
-                            'blindLinkOptions' => 'folder, mail, telephone'
-                        ]
-                    ]
-                ]
-            ]
         ]
     ]
 ];

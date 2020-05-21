@@ -2,6 +2,28 @@
 
 defined('TYPO3_MODE') || die();
 
+/*
+ * ###########################
+ * rewrite existed TCA columns for sys_file_reference
+ * ===========================
+ */
+// rewrite "link" column config
+$GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recursive(
+    $GLOBALS['TCA']['sys_file_reference']['columns']['link'],
+    [
+        'config' => [
+            'fieldControl' => [
+                'linkPopup' => [
+                    'options' => [
+                        'blindLinkFields' => 'params, target, class, title',
+                        'blindLinkOptions' => 'folder, mail, telephone'
+                    ],
+                ],
+            ],
+        ]
+    ]
+);
+
 
 /*
  * ###########################
