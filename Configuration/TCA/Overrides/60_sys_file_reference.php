@@ -207,7 +207,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
  */
 $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
     'showitem' => '
-        alternative,title,
+        alternative,
         --linebreak--,description,description_position,
         --linebreak--,link,
         --linebreak--,crop,
@@ -217,7 +217,7 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
 
 $GLOBALS['TCA']['sys_file_reference']['palettes']['simpleImageOverlayPalette'] = [
     'showitem' => '
-        alternative,title,
+        alternative,
         --linebreak--,description,description_position,
         --linebreak--,link,
         --linebreak--,crop
@@ -226,14 +226,14 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['simpleImageOverlayPalette'] =
 
 $GLOBALS['TCA']['sys_file_reference']['palettes']['videoOverlayPalette'] = [
     'showitem' => '
-        title,description,description_position,
-        --linebreak--,autoplay,aspect_ratio
+        description,description_position,
+        --linebreak--,autoplay,aspect_ratio,title
     '
 ];
 
 $GLOBALS['TCA']['sys_file_reference']['palettes']['audioOverlayPalette'] = [
     'showitem' => '
-        title,description,description_position,
+        description,description_position,
         --linebreak--,autoplay
     '
 ];
