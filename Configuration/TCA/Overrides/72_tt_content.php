@@ -694,9 +694,11 @@ $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments'] = [
 $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments_height'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',
     'showitem' => '
-        section_container_width,height;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:height.image,
+        section_container_width,height;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:height.image
     '
 ];
+
+
 
 // add icon palette
 $GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
@@ -760,61 +762,61 @@ $GLOBALS['TCA']['tt_content']['palettes']['bodytext_position'] = [
 $GLOBALS['TCA']['tt_content']['palettes']['header_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel
+        header
     ',
 ];
 // add new palette header_position
 $GLOBALS['TCA']['tt_content']['palettes']['header_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header,
         --linebreak--,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+        header_position
     ',
 ];
 // add new palette header_layout
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel
+        header_layout
     ',
 ];
 // add new palette header_layout_position
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+        header_layout,
+        header_position
     ',
 ];
 // add new palette header_layout_position_subheader
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_subheader'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header,
         --linebreak--,
-        subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
+        header_layout,
+        header_position,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+        subheader
     ',
 ];
 // add new palette header_layout_position_link_subheader
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel,
+        header_layout,
+        header_position,
         --linebreak--,
-        header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+        header_link,
         --linebreak--,
-        subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel
+        subheader
     ',
 ];
 
@@ -825,60 +827,60 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel
+        header_text
     ',
 ];
 // add new palette headertext_position
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header_text,
         --linebreak--,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+        header_position
     ',
 ];
 // add new palette headertext_layout
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header_text,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel
+        header_layout
     ',
 ];
 // add new palette headertext_layout_position
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header_text,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+        header_layout,
+        header_position
     ',
 ];
 // add new palette headertext_layout_position_subheadertext
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadertext'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header_text,
         --linebreak--,
-        subheader_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
+        header_layout,
+        header_position,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel
+        subheader_text
     ',
 ];
 // add new palette headertext_layout_position_link_subheadertext
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subheadertext'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
-        header_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        header_text,
         --linebreak--,
-        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
-        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel,
+        header_layout,
+        header_position,
         --linebreak--,
-        header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+        header_link,
         --linebreak--,
-        subheader_text;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel
+        subheader_text
     ',
 ];
