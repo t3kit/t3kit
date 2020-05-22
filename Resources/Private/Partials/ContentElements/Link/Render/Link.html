@@ -6,8 +6,11 @@
 
 <f:if condition="{link_title}">
   <div class="link-partial__wrp {position}">
-    <f:link.typolink parameter="{link}" class="link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}">
-      {link_title}
+    <f:link.typolink
+      parameter="{link}"
+      additionalAttributes="{aria-label:accessible_link_label}"
+      class="link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}">
+        {link_title}
     </f:link.typolink>
   </div>
 </f:if>

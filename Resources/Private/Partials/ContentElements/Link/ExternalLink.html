@@ -3,6 +3,7 @@
 <f:if condition="{data.link_title} || {data.link}">
   <f:render partial="Link/Render/ExternalLink" arguments="{
     link_title: data.link_title,
+    accessible_link_label: data.accessible_link_label,
     link_position: data.link_position,
     stretched_link : stretched_link,
     link: data.link}" />

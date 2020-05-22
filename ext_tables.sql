@@ -23,6 +23,7 @@ CREATE TABLE tt_content (
 	icon_class varchar(60) DEFAULT '' NOT NULL,
 	icon varchar(255) DEFAULT '' NOT NULL,
 	link_title varchar(255) DEFAULT '' NOT NULL,
+	accessible_link_label varchar(255) DEFAULT '' NOT NULL,
 	link varchar(1024) DEFAULT '' NOT NULL,
 	link_position varchar(60) DEFAULT '' NOT NULL,
 	header_text text,

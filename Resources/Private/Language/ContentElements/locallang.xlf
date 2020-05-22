@@ -192,6 +192,9 @@
 			<trans-unit id="link_title" resname="link_title">
 				<source>Link title</source>
 			</trans-unit>
+			<trans-unit id="accessible_link_label" resname="accessible_link_label">
+				<source>Accessible link label</source>
+			</trans-unit>
 			<trans-unit id="link" resname="link">
 				<source>Link</source>
 			</trans-unit>

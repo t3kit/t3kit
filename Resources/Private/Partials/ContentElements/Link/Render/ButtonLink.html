@@ -33,7 +33,12 @@
 
 <f:if condition="{link_title}">
   <div class="button-partial__wrp {position}">
-    <f:link.typolink parameter="{link}" class="button-partial {btn_class} {f:if(condition: stretched_link, then: ' stretched-link ')}">{link_title}</f:link.typolink>
+    <f:link.typolink
+      parameter="{link}"
+      additionalAttributes="{aria-label:accessible_link_label}"
+      class="button-partial {btn_class} {f:if(condition: stretched_link, then: ' stretched-link ')}">
+        {link_title}
+    </f:link.typolink>
   </div>
 </f:if>
 

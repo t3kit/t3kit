@@ -271,6 +271,17 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
     ],
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'accessible_link_label' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:accessible_link_label',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255
+        ]
+    ],
+]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'link' => [
@@ -699,7 +710,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments_height'] = [
 ];
 
 
-
 // add icon palette
 $GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:icon.palette',
@@ -717,14 +727,18 @@ $GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
 $GLOBALS['TCA']['tt_content']['palettes']['title_link_position'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
     'showitem' => '
-        link_title,link,link_position
+        link_title,link,link_position,
+        --linebreak--,
+        accessible_link_label
     '
 ];
 // add new palette title_link
 $GLOBALS['TCA']['tt_content']['palettes']['title_link'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
     'showitem' => '
-        link_title,link
+        link_title,link,
+        --linebreak--,
+        accessible_link_label
     '
 ];
 

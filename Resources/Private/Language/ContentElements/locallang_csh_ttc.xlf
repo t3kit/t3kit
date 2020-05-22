@@ -23,6 +23,13 @@
 				</source>
 			</trans-unit>
 
+			<trans-unit id="accessible_link_label.description" resname="accessible_link_label.description">
+				<source>
+					If the link title is added at the end of repeated blocks of text, for example &lt;strong&gt;“Read more”&lt;/strong&gt; links at the end of short teasers for blog posts, then you can provide more descriptive link text specifically for screen reader users using &lt;strong&gt;Accessible link label&lt;/strong&gt;. &lt;br&gt;
+					It will be visually hidden for a normal view.
+				</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

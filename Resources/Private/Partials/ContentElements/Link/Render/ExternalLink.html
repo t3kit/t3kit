@@ -6,8 +6,12 @@
 
 <f:if condition="{link_title}">
   <div class="external-link-partial__wrp {position}">
-    <f:link.external uri="{link}" class="external-link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}" defaultScheme="https">
-      {link_title}
+    <f:link.external
+      uri="{link}"
+      additionalAttributes="{aria-label:accessible_link_label}"
+      class="external-link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}"
+      defaultScheme="https">
+        {link_title}
     </f:link.external>
   </div>
 </f:if>
