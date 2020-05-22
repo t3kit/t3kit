@@ -5,17 +5,25 @@
 <f:section name="Main">
 
   <f:if condition="{menu}">
-    <ul>
-      <f:for each="{menu}" as="page">
-        <li>
-          <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
-            <span>{page.title}</span>
-          </a>
-        </li>
-      </f:for>
-    </ul>
+
+    <div class="ce-menu__wrp">
+      <div class="ce-menu ce-menu--pages">
+
+        <ul class="ce-menu__list">
+          <f:for each="{menu}" as="page">
+            <li class="ce-menu__list-item">
+              <f:render partial="Nav/PageLink" arguments="{page: page, link: '{page.link}', title: '{page.title}'}" />
+            </li>
+          </f:for>
+        </ul>
+
+      </div>
+    </div>
+
   </f:if>
 
 </f:section>
 
 </html>
+
+

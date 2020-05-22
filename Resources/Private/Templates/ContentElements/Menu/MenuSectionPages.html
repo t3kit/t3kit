@@ -5,26 +5,32 @@
 <f:section name="Main">
 
   <f:if condition="{menu}">
-    <ul>
-      <f:for each="{menu}" as="page">
-        <li>
-          <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )} >
-            <span>{page.title}</span>
-          </a>
-          <f:if condition="{page.content}">
-            <ul>
-              <f:for each="{page.content}" as="element">
-                <li>
-                  <a href="{page.link}#c{element.data.uid}" {f:if(condition: page.target, then: ' target="{page.target}"' )} >
-                    <span>{element.data.header}</span>
-                  </a>
-                </li>
-              </f:for>
-            </ul>
-          </f:if>
-        </li>
-      </f:for>
-    </ul>
+
+    <div class="ce-menu__wrp">
+      <div class="ce-menu ce-menu--section-pages">
+
+        <ul class="ce-menu__list">
+          <f:for each="{menu}" as="page">
+            <li class="ce-menu__list-item">
+              <f:render partial="Nav/PageLink" arguments="{page: page, link: '{page.link}', title: '{page.title}'}" />
+              <f:if condition="{page.content}">
+                <ul class="ce-menu__list-content">
+                  <f:for each="{page.content}" as="element">
+                    <f:if condition="{element.data.header}">
+                      <li class="ce-menu__list-content-item">
+                        <f:render partial="Nav/PageLink" arguments="{page: page, link: '{page.link}#c{element.data.uid}', title: '{element.data.header}'}" />
+                      </li>
+                    </f:if>
+                  </f:for>
+                </ul>
+              </f:if>
+            </li>
+          </f:for>
+        </ul>
+
+      </div>
+    </div>
+
   </f:if>
 
 </f:section>
