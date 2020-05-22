@@ -8,6 +8,9 @@
 			<trans-unit id="scroll_to_top" resname="scroll_to_top">
 				<source>Scroll to top</source>
 			</trans-unit>
+			<trans-unit id="target_blank" resname="target_blank">
+				<source>Opens a new window</source>
+			</trans-unit>
 
 		</body>
 	</file>
