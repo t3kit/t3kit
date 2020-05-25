@@ -9,30 +9,6 @@ const conf = require('../conf')
 const SRC = conf.JS_SRC
 const DIST = conf.JS_DIST
 
-// compile jQuery
-const jQueryInputOptions = {
-  external: ['jquery'],
-  input: `${SRC}jquery.js`,
-  context: 'window',
-  plugins: [
-    resolve(),
-    sizes()
-  ]
-}
-process.env.NODE_ENV === 'production' && jQueryInputOptions.plugins.push(terser({
-  output: {
-    comments: false
-  }
-}))
-const jQueryOutputOptions = {
-  file: `${DIST}jquery.js`,
-  format: 'iife'
-}
-async function compilejQuery () {
-  const bundle = await rollup.rollup(jQueryInputOptions)
-  await bundle.write(jQueryOutputOptions)
-}
-
 // compile mainjs
 const mainJsInputOptions = {
   external: ['jquery'],
@@ -54,9 +30,7 @@ const mainJsOutputOptions = {
   file: `${DIST}main.js`,
   format: 'iife',
   sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
-  globals: {
-    jquery: 'jQuery'
-  }
+  sourcemapExcludeSources: true
 }
 async function compileMainJs () {
   const bundle = await rollup.rollup(mainJsInputOptions)
@@ -81,9 +55,7 @@ const plugin1OutputOptions = {
   file: `${DIST}plugin1.js`,
   format: 'iife',
   sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
-  globals: {
-    jquery: 'jQuery'
-  }
+  sourcemapExcludeSources: true
 }
 async function compilePlugin1 () {
   const bundle = await rollup.rollup(plugin1InputOptions)
@@ -108,9 +80,7 @@ const plugin2OutputOptions = {
   file: `${DIST}plugin2.js`,
   format: 'iife',
   sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
-  globals: {
-    jquery: 'jQuery'
-  }
+  sourcemapExcludeSources: true
 }
 async function compilePlugin2 () {
   const bundle = await rollup.rollup(plugin2InputOptions)
@@ -127,5 +97,5 @@ function compilePlugin2JsWatch () {
   watch([`${SRC}plugin2/**/*.js`, `${SRC}plugin2.js`], compilePlugin2)
 }
 
-exports.compileJs = parallel(compilejQuery, compileMainJs, compilePlugin1, compilePlugin2)
+exports.compileJs = parallel(compileMainJs, compilePlugin1, compilePlugin2)
 exports.compileJsWatch = parallel(compileMainJsWatch, compilePlugin1JsWatch, compilePlugin2JsWatch)

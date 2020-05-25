@@ -8,7 +8,7 @@ const { compileJs, compileJsWatch } = require('./rollup')
 const { revJs } = require('./rev')
 const { addJsTemplate, addCssTemplate } = require('./template')
 const { compressCss, compressJs } = require('./compress')
-const { serve } = require('./browser-sync')
+// const { serve } = require('./browser-sync')
 const { generateFavicon, injectFaviconMarkups } = require('./real-favicon')
 const conf = require('./conf')
 const { ensureTmpDir } = require('./helpers')
@@ -37,7 +37,8 @@ exports.default = series(
   parallel(compileCss, compileJs),
   parallel(addJsTemplate, addCssTemplate),
   conf.showInfo,
-  parallel(compileCssWatch, compileJsWatch, serve)
+  parallel(compileCssWatch, compileJsWatch)
+  // parallel(compileCssWatch, compileJsWatch, serve)
 )
 
 exports.favicons = series(
