@@ -11,7 +11,6 @@ const DIST = conf.JS_DIST
 
 // compile mainjs
 const mainJsInputOptions = {
-  external: ['jquery'],
   input: `${SRC}main.js`,
   plugins: [
     resolve(),
@@ -39,7 +38,6 @@ async function compileMainJs () {
 
 // compile plugin1
 const plugin1InputOptions = {
-  external: ['jquery'],
   input: `${SRC}plugin1.js`,
   plugins: [
     resolve(),
@@ -64,7 +62,6 @@ async function compilePlugin1 () {
 
 // compile plugin2
 const plugin2InputOptions = {
-  external: ['jquery'],
   input: `${SRC}plugin2.js`,
   plugins: [
     resolve(),

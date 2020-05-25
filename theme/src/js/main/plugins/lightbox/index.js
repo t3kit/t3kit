@@ -1,4 +1,4 @@
-import SimpleLightbox from '../../../../../../node_modules/simplelightbox/dist/simple-lightbox'
+import SimpleLightbox from 'simplelightbox'
 
 const simpleLightbox = function (className, options) {
   return new SimpleLightbox(className, options)
