@@ -11,6 +11,9 @@
 			<trans-unit id="target_blank" resname="target_blank">
 				<source>Opens a new window</source>
 			</trans-unit>
+			<trans-unit id="skip_to_main_content" resname="skip_to_main_content">
+				<source>Skip to main content</source>
+			</trans-unit>
 
 		</body>
 	</file>
