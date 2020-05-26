@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "bootstrap": "github:twbs/bootstrap#c9cd3e4",
-    "bootstrap-icons": "1.0.0-alpha4",
-    "simplelightbox": "~2.2.1"
+    "simplelightbox": "github:dmh/simplelightbox#619a4d2",
+    "bootstrap-icons": "1.0.0-alpha4"
   },
   "devDependencies": {
     "@rollup/plugin-legacy": "^2.0.0",
