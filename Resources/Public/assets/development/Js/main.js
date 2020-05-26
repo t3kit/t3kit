@@ -1,1579 +1,1321 @@
 (function () {
-  'use strict';
+    'use strict';
 
-  /*!
-  	By André Rinas, www.andrerinas.de
-  	Documentation, www.simplelightbox.de
-  	Available for use under the MIT License
-  	Version 2.1.5
-  */
+    /*!
+    	By André Rinas, www.andrerinas.de
+    	Documentation, www.simplelightbox.de
+    	Available for use under the MIT License
+    	Version 2.2.1
+    */
+    class SimpleLightbox {
 
-  function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+        defaultOptions = {
+            sourceAttr: 'href',
+            overlay: true,
+            spinner: true,
+            nav: true,
+            navText: ['&lsaquo;', '&rsaquo;'],
+            captions: true,
+            captionDelay: 0,
+            captionSelector: 'img',
+            captionType: 'attr',
+            captionsData: 'title',
+            captionPosition: 'bottom',
+            captionClass: '',
+            close: true,
+            closeText: '&times;',
+            swipeClose: true,
+            showCounter: true,
+            fileExt: 'png|jpg|jpeg|gif|webp',
+            animationSlide: true,
+            animationSpeed: 250,
+            preloading: true,
+            enableKeyboard: true,
+            loop: true,
+            rel: false,
+            docClose: true,
+            swipeTolerance: 50,
+            className: 'simple-lightbox',
+            widthRatio: 0.8,
+            heightRatio: 0.9,
+            scaleImageToRatio: false,
+            disableRightClick: false,
+            disableScroll: true,
+            alertError: true,
+            alertErrorMessage: 'Image not found, next image will be loaded',
+            additionalHtml: false,
+            history: true,
+            throttleInterval: 0,
+            doubleTapZoom: 2,
+            maxZoom: 10,
+            htmlClass: 'has-lightbox',
+            rtl: false
+        };
 
-  function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+        transitionPrefix;
+        transitionCapable = false;
 
-  function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+        isTouchDevice = ('ontouchstart' in window);
 
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+        initialLocationHash;
 
-  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+        pushStateSupport = ('pushState' in history);
 
-  function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+        isOpen = false;
+        isAnimating = false;
+        isClosing = false;
+        urlChangedOnce = false;
+        hashReseted = false;
+        historyHasChanges = false;
+        historyUpdateTimeout = null;
 
-  var SimpleLightbox = /*#__PURE__*/function () {
-    function SimpleLightbox(elements, options) {
-      var _this = this;
+        currentImage;
+        eventNamespace = 'simplelightbox';
+        domNodes = {};
 
-      _classCallCheck(this, SimpleLightbox);
+        loadedImages = [];
+        initialImageIndex = 0;
+        currentImageIndex = 0;
 
-      _defineProperty(this, "defaultOptions", {
-        sourceAttr: 'href',
-        overlay: true,
-        spinner: true,
-        nav: true,
-        navText: ['&lsaquo;', '&rsaquo;'],
-        captions: true,
-        captionDelay: 0,
-        captionSelector: 'img',
-        captionType: 'attr',
-        captionsData: 'title',
-        captionPosition: 'bottom',
-        captionClass: '',
-        close: true,
-        closeText: '&times;',
-        swipeClose: true,
-        showCounter: true,
-        fileExt: 'png|jpg|jpeg|gif|webp',
-        animationSlide: true,
-        animationSpeed: 250,
-        preloading: true,
-        enableKeyboard: true,
-        loop: true,
-        rel: false,
-        docClose: true,
-        swipeTolerance: 50,
-        className: 'simple-lightbox',
-        widthRatio: 0.8,
-        heightRatio: 0.9,
-        scaleImageToRatio: false,
-        disableRightClick: false,
-        disableScroll: true,
-        alertError: true,
-        alertErrorMessage: 'Image not found, next image will be loaded',
-        additionalHtml: false,
-        history: true,
-        throttleInterval: 0,
-        doubleTapZoom: 2,
-        maxZoom: 10,
-        htmlClass: 'has-lightbox',
-        rtl: false
-      });
+        initialSelector = null;
+        globalScrollbarWidth = 0;
 
-      _defineProperty(this, "transitionPrefix", void 0);
+        controlCoordinates = {
+            swipeDiff: 0,
+            swipeYDiff: 0,
+            swipeStart: 0,
+            swipeEnd: 0,
+            swipeYStart: 0,
+            swipeYEnd: 0,
+            mousedown: false,
+            imageLeft: 0,
+            zoomed: false,
+            containerHeight: 0,
+            containerWidth: 0,
+            containerOffsetX: 0,
+            containerOffsetY: 0,
+            imgHeight: 0,
+            imgWidth: 0,
+            capture: false,
+            initialOffsetX: 0,
+            initialOffsetY: 0,
+            initialPointerOffsetX: 0,
+            initialPointerOffsetY: 0,
+            initialPointerOffsetX2: 0,
+            initialPointerOffsetY2: 0,
+            initialScale: 1,
+            initialPinchDistance: 0,
+            pointerOffsetX: 0,
+            pointerOffsetY: 0,
+            pointerOffsetX2: 0,
+            pointerOffsetY2: 0,
+            targetOffsetX: 0,
+            targetOffsetY: 0,
+            targetScale: 0,
+            pinchOffsetX: 0,
+            pinchOffsetY: 0,
+            limitOffsetX: 0,
+            limitOffsetY: 0,
+            scaleDifference: 0,
+            targetPinchDistance: 0,
+            touchCount: 0,
+            doubleTapped: false,
+            touchmoveCount: 0
+        };
 
-      _defineProperty(this, "transitionCapable", false);
+        constructor(elements, options) {
 
-      _defineProperty(this, "isTouchDevice", 'ontouchstart' in window);
+            this.options = Object.assign(this.defaultOptions, options);
 
-      _defineProperty(this, "initialLocationHash", void 0);
+            if (typeof elements === 'string') {
+                this.initialSelector = elements;
+                this.elements = Array.from(document.querySelectorAll(elements));
+            } else {
+                this.elements = ((typeof elements.length !== 'undefined') && elements.length > 0) ? Array.from(elements) : [elements];
+            }
 
-      _defineProperty(this, "pushStateSupport", 'pushState' in history);
+            this.relatedElements = [];
 
-      _defineProperty(this, "isOpen", false);
+            this.transitionPrefix = this.calculateTransitionPrefix();
+            this.transitionCapable = this.transitionPrefix !== false;
+            this.initialLocationHash = this.hash;
 
-      _defineProperty(this, "isAnimating", false);
+            // this should be handled by attribute selector IMHO! => 'a[rel=bla]'...
+            if (this.options.rel) {
+                this.elements = this.getRelated(this.options.rel);
+            }
 
-      _defineProperty(this, "isClosing", false);
+            this.createDomNodes();
 
-      _defineProperty(this, "urlChangedOnce", false);
+            if (this.options.close) {
+                this.domNodes.wrapper.appendChild(this.domNodes.closeButton);
+            }
 
-      _defineProperty(this, "hashReseted", false);
+            if (this.options.nav) {
+                this.domNodes.wrapper.appendChild(this.domNodes.navigation);
+            }
 
-      _defineProperty(this, "historyHasChanges", false);
+            if (this.options.spinner) {
+                this.domNodes.wrapper.appendChild(this.domNodes.spinner);
+            }
 
-      _defineProperty(this, "historyUpdateTimeout", null);
+            this.addEventListener(this.elements, 'click.' + this.eventNamespace, (event) => {
 
-      _defineProperty(this, "currentImage", void 0);
+                if (this.isValidLink(event.currentTarget)) {
+                    event.preventDefault();
+                    if (this.isAnimating) {
+                        return false;
+                    }
 
-      _defineProperty(this, "eventNamespace", 'simplelightbox');
+                    this.initialImageIndex = this.elements.indexOf(event.currentTarget);
+                    this.openImage(event.currentTarget);
+                }
+            });
 
-      _defineProperty(this, "domNodes", {});
+            // close addEventListener click addEventListener doc
+            if (this.options.docClose) {
+                this.addEventListener(this.domNodes.overlay, ['click.' + this.eventNamespace, 'touchstart.' + this.eventNamespace], (event) => {
+                    if (this.isOpen) {
+                        this.close();
+                    }
+                });
+            }
 
-      _defineProperty(this, "loadedImages", []);
+            // disable rightclick
+            if (this.options.disableRightClick) {
+                this.addEventListener(document.body, 'contextmenu.' + this.eventNamespace, (event) => {
+                    if (event.target.classList.contains('sl-overlay')) {
+                        event.preventDefault();
+                    }
+                });
+            }
 
-      _defineProperty(this, "initialImageIndex", 0);
+            // keyboard-control
+            if (this.options.enableKeyboard) {
+                this.addEventListener(document.body, 'keyup.' + this.eventNamespace, this.throttle((event) => {
+                    this.controlCoordinates.swipeDiff = 0;
+                    // keyboard control only if lightbox is open
 
-      _defineProperty(this, "currentImageIndex", 0);
+                    if (this.isAnimating && event.key === 'Escape') {
+                        this.currentImage.setAttribute('src', '');
+                        this.isAnimating = false;
+                        return this.close();
+                    }
 
-      _defineProperty(this, "initialSelector", null);
+                    if (this.isOpen) {
+                        event.preventDefault();
+                        if (event.key === 'Escape') {
+                            this.close();
+                        }
+                        if(!this.isAnimating && ['ArrowLeft', 'ArrowRight'].indexOf(event.key) > -1) {
+                          this.loadImage(event.key === 'ArrowRight' ? 1 : -1);
+                        }
+                    }
+                }, this.options.throttleInterval));
+            }
 
-      _defineProperty(this, "globalScrollbarWidth", 0);
-
-      _defineProperty(this, "controlCoordinates", {
-        swipeDiff: 0,
-        swipeYDiff: 0,
-        swipeStart: 0,
-        swipeEnd: 0,
-        swipeYStart: 0,
-        swipeYEnd: 0,
-        mousedown: false,
-        imageLeft: 0,
-        zoomed: false,
-        containerHeight: 0,
-        containerWidth: 0,
-        containerOffsetX: 0,
-        containerOffsetY: 0,
-        imgHeight: 0,
-        imgWidth: 0,
-        capture: false,
-        initialOffsetX: 0,
-        initialOffsetY: 0,
-        initialPointerOffsetX: 0,
-        initialPointerOffsetY: 0,
-        initialPointerOffsetX2: 0,
-        initialPointerOffsetY2: 0,
-        initialScale: 1,
-        initialPinchDistance: 0,
-        pointerOffsetX: 0,
-        pointerOffsetY: 0,
-        pointerOffsetX2: 0,
-        pointerOffsetY2: 0,
-        targetOffsetX: 0,
-        targetOffsetY: 0,
-        targetScale: 0,
-        pinchOffsetX: 0,
-        pinchOffsetY: 0,
-        limitOffsetX: 0,
-        limitOffsetY: 0,
-        scaleDifference: 0,
-        targetPinchDistance: 0,
-        touchCount: 0,
-        doubleTapped: false,
-        touchmoveCount: 0
-      });
-
-      this.options = Object.assign(this.defaultOptions, options);
-
-      if (typeof elements === 'string') {
-        this.initialSelector = elements;
-        this.elements = Array.from(document.querySelectorAll(elements));
-      } else {
-        this.elements = typeof elements.length !== 'undefined' && elements.length > 0 ? Array.from(elements) : [elements];
-      }
-
-      this.relatedElements = [];
-      this.transitionPrefix = this.calculateTransitionPrefix();
-      this.transitionCapable = this.transitionPrefix !== false;
-      this.initialLocationHash = this.hash; // this should be handled by attribute selector IMHO! => 'a[rel=bla]'...
-
-      if (this.options.rel) {
-        this.elements = this.getRelated(this.options.rel);
-      }
-
-      this.createDomNodes();
-
-      if (this.options.close) {
-        this.domNodes.wrapper.appendChild(this.domNodes.closeButton);
-      }
-
-      if (this.options.nav) {
-        this.domNodes.wrapper.appendChild(this.domNodes.navigation);
-      }
-
-      if (this.options.spinner) {
-        this.domNodes.wrapper.appendChild(this.domNodes.spinner);
-      }
-
-      this.addEventListener(this.elements, 'click.' + this.eventNamespace, function (event) {
-        if (_this.isValidLink(event.currentTarget)) {
-          event.preventDefault();
-
-          if (_this.isAnimating) {
-            return false;
-          }
-
-          _this.initialImageIndex = _this.elements.indexOf(event.currentTarget);
-
-          _this.openImage(event.currentTarget);
+            this.addEvents();
         }
-      }); // close addEventListener click addEventListener doc
 
-      if (this.options.docClose) {
-        this.addEventListener(this.domNodes.overlay, ['click.' + this.eventNamespace, 'touchstart.' + this.eventNamespace], function (event) {
-          if (_this.isOpen) {
-            _this.close();
-          }
-        });
-      } // disable rightclick
+        createDomNodes() {
+            this.domNodes.overlay = document.createElement('div');
+            this.domNodes.overlay.classList.add('sl-overlay');
+            this.domNodes.overlay.dataset.opacityTarget = ".7";
 
+            this.domNodes.closeButton = document.createElement('button');
+            this.domNodes.closeButton.classList.add('sl-close');
+            this.domNodes.closeButton.innerHTML = this.options.closeText;
 
-      if (this.options.disableRightClick) {
-        this.addEventListener(document.body, 'contextmenu.' + this.eventNamespace, function (event) {
-          if (event.target.classList.contains('sl-overlay')) {
-            event.preventDefault();
-          }
-        });
-      } // keyboard-control
+            this.domNodes.spinner = document.createElement('div');
+            this.domNodes.spinner.classList.add('sl-spinner');
+            this.domNodes.spinner.innerHTML = '<div></div>';
 
+            this.domNodes.navigation = document.createElement('div');
+            this.domNodes.navigation.classList.add('sl-navigation');
+            this.domNodes.navigation.innerHTML = `<button class="sl-prev">${this.options.navText[0]}</button><button class="sl-next">${this.options.navText[1]}</button>`;
 
-      if (this.options.enableKeyboard) {
-        this.addEventListener(document.body, 'keyup.' + this.eventNamespace, this.throttle(function (event) {
-          _this.controlCoordinates.swipeDiff = 0; // keyboard control only if lightbox is open
+            this.domNodes.counter = document.createElement('div');
+            this.domNodes.counter.classList.add('sl-counter');
+            this.domNodes.counter.innerHTML = '<span class="sl-current"></span>/<span class="sl-total"></span>';
 
-          if (_this.isAnimating && event.key === 'Escape') {
-            _this.currentImage.setAttribute('src', '');
-
-            _this.isAnimating = false;
-            return _this.close();
-          }
-
-          if (_this.isOpen) {
-            event.preventDefault();
-
-            if (event.key === 'Escape') {
-              _this.close();
+            this.domNodes.caption = document.createElement('div');
+            this.domNodes.caption.classList.add('sl-caption', 'pos-' + this.options.captionPosition);
+            if (this.options.captionClass) {
+                this.domNodes.caption.classList.add(this.options.captionClass);
             }
 
-            if (!_this.isAnimating && ['ArrowLeft', 'ArrowRight'].indexOf(event.key) > -1) {
-              _this.loadImage(event.key === 'ArrowRight' ? 1 : -1);
-            }
-          }
-        }, this.options.throttleInterval));
-      }
+            this.domNodes.image = document.createElement('div');
+            this.domNodes.image.classList.add('sl-image');
 
-      this.addEvents();
+            this.domNodes.wrapper = document.createElement('div');
+            this.domNodes.wrapper.classList.add('sl-wrapper');
+            if (this.options.className) {
+                this.domNodes.wrapper.classList.add(this.options.className);
+            }
+            if(this.options.rtl) {
+                this.domNodes.wrapper.classList.add('sl-dir-rtl');
+            }
+        }
+
+        throttle(func, limit) {
+            let inThrottle;
+            return function () {
+                if (!inThrottle) {
+                    func.apply(this, arguments);
+                    inThrottle = true;
+                    setTimeout(function () {
+                        return inThrottle = false;
+                    }, limit);
+                }
+            };
+        }
+
+        isValidLink(element) {
+            return (!this.options.fileExt) || ('pathname' in element && (new RegExp('(' + this.options.fileExt + ')$', 'i')).test(element.pathname));
+        }
+
+        calculateTransitionPrefix() {
+            let s = (document.body || document.documentElement).style;
+
+            return 'transition' in s ? '' :
+                'WebkitTransition' in s ? '-webkit-' :
+                    'MozTransition' in s ? '-moz-' :
+                        'OTransition' in s ? '-o' :
+                            false;
+        }
+
+        toggleScrollbar(type) {
+            let scrollbarWidth = 0;
+            if (type === 'hide') {
+                let fullWindowWidth = window.innerWidth;
+                if (!fullWindowWidth) {
+                    let documentElementRect = document.documentElement.getBoundingClientRect();
+                    fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left);
+                }
+                if (document.body.clientWidth < fullWindowWidth) {
+                    let scrollDiv = document.createElement('div'),
+                        paddingRight = parseInt(document.body.style.paddingRight || 0, 10);
+
+                    scrollDiv.classList.add('sl-scrollbar-measure');
+
+                    document.body.appendChild(scrollDiv);
+                    scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+                    document.body.removeChild(scrollDiv);
+
+                    document.body.dataset.originalPaddingRight = paddingRight;
+                    if (scrollbarWidth > 0) {
+                        document.body.classList.add('hidden-scroll');
+                        document.body.style.paddingRight = (paddingRight + scrollbarWidth) + 'px';
+                    }
+                }
+            } else {
+                document.body.classList.remove('hidden-scroll');
+                document.body.style.paddingRight = document.body.dataset.originalPaddingRight;
+            }
+            return scrollbarWidth;
+        }
+
+        close() {
+            if (!this.isOpen || this.isAnimating || this.isClosing) {
+                return false;
+            }
+
+            this.isClosing = true;
+            let element = this.relatedElements[this.currentImageIndex];
+            element.dispatchEvent(new Event('close.simplelightbox'));
+
+            if (this.options.history) {
+                this.historyHasChanges = false;
+                if(!this.hashReseted) {
+                    this.resetHash();
+                }
+            }
+
+            this.fadeOut(document.querySelectorAll('.sl-image img, .sl-overlay, .sl-close, .sl-navigation, .sl-image .sl-caption, .sl-counter'), 300, () => {
+                if (this.options.disableScroll) {
+                    this.toggleScrollbar('show');
+                }
+
+                if (this.options.htmlClass && this.options.htmlClass !== '') {
+                    document.querySelector('html').classList.remove(this.options.htmlClass);
+                }
+
+                document.body.removeChild(this.domNodes.wrapper);
+                document.body.removeChild(this.domNodes.overlay);
+                this.domNodes.additionalHtml = null;
+
+                element.dispatchEvent(new Event('closed.simplelightbox'));
+
+                this.isClosing = false;
+            });
+
+            this.currentImage = null;
+            this.isOpen = false;
+            this.isAnimating = false;
+
+            // reset touchcontrol coordinates
+            for (let key in this.controlCoordinates) {
+                this.controlCoordinates[key] = 0;
+            }
+            this.controlCoordinates.mousedown = false;
+            this.controlCoordinates.zoomed = false;
+            this.controlCoordinates.capture = false;
+            this.controlCoordinates.initialScale = this.minMax(1, 1, this.options.maxZoom);
+            this.controlCoordinates.doubleTapped = false;
+        }
+
+        get hash() {
+            return window.location.hash.substring(1);
+        }
+
+        preload() {
+            let index = this.currentImageIndex,
+                length = this.relatedElements.length,
+                next = (index + 1 < 0) ? length - 1 : (index + 1 >= length - 1) ? 0 : index + 1,
+                prev = (index - 1 < 0) ? length - 1 : (index - 1 >= length - 1) ? 0 : index - 1,
+                nextImage = new Image(),
+                prevImage = new Image();
+
+            nextImage.addEventListener('load', (event) => {
+                let src = event.target.getAttribute('src');
+                if (this.loadedImages.indexOf(src) === -1) { //is this condition even required... setting multiple times will not change usage...
+                    this.loadedImages.push(src);
+                }
+                this.relatedElements[index].dispatchEvent(new Event('nextImageLoaded.' + this.eventNamespace));
+            });
+            nextImage.setAttribute('src', this.relatedElements[next].getAttribute(this.options.sourceAttr));
+
+            prevImage.addEventListener('load', (event) => {
+                let src = event.target.getAttribute('src');
+                if (this.loadedImages.indexOf(src) === -1) {
+                    this.loadedImages.push(src);
+                }
+                this.relatedElements[index].dispatchEvent(new Event('prevImageLoaded.' + this.eventNamespace));
+            });
+            prevImage.setAttribute('src', this.relatedElements[prev].getAttribute(this.options.sourceAttr));
+        }
+
+        loadImage(direction) {
+            let slideDirection = direction;
+            if(this.options.rtl) {
+                direction = -direction;
+            }
+
+            this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('change.' + this.eventNamespace));
+            this.relatedElements[this.currentImageIndex].dispatchEvent(new Event((direction === 1 ? 'next' : 'prev') + '.' + this.eventNamespace));
+
+            let newIndex = this.currentImageIndex + direction;
+
+            if (this.isAnimating || (newIndex < 0 || newIndex >= this.relatedElements.length) && this.options.loop === false) {
+                return false;
+            }
+
+            this.currentImageIndex = (newIndex < 0) ? this.relatedElements.length - 1 : (newIndex > this.relatedElements.length - 1) ? 0 : newIndex;
+
+            this.domNodes.counter.querySelector('.sl-current').innerHTML = this.currentImageIndex + 1;
+
+
+            if (this.options.animationSlide) {
+                this.slide(this.options.animationSpeed / 1000, (-100 * slideDirection) - this.controlCoordinates.swipeDiff + 'px');
+            }
+
+            this.fadeOut(this.domNodes.image, 300, () => {
+              this.isAnimating = true;
+                setTimeout(() => {
+                    let element = this.relatedElements[this.currentImageIndex];
+                    this.currentImage.setAttribute('src', element.getAttribute(this.options.sourceAttr));
+
+                    if (this.loadedImages.indexOf(element.getAttribute(this.options.sourceAttr)) === -1) {
+                        this.show(this.domNodes.spinner);
+                    }
+
+                    if(this.domNodes.image.contains(this.domNodes.caption)) {
+                      this.domNodes.image.removeChild(this.domNodes.caption);
+                    }
+
+                    this.adjustImage(slideDirection);
+                    if (this.options.preloading) this.preload();
+                }, 100);
+            });
+        }
+
+        adjustImage(direction) {
+            if (!this.currentImage) {
+                return false;
+            }
+
+            let tmpImage = new Image(),
+                windowWidth = window.innerWidth * this.options.widthRatio,
+                windowHeight = window.innerHeight * this.options.heightRatio;
+
+            tmpImage.setAttribute('src', this.currentImage.getAttribute('src'));
+
+            this.currentImage.dataset.scale = 1;
+            this.currentImage.dataset.translateX = 0;
+            this.currentImage.dataset.translateY = 0;
+            this.zoomPanElement(0, 0, 1);
+
+            tmpImage.addEventListener('error', (event) => {
+                this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('error.' + this.eventNamespace));
+                this.isAnimating = false;
+                this.isOpen = false;
+                this.domNodes.spinner.style.display = 'none';
+
+                let dirIsDefined = direction === 1 || direction === -1;
+                if (this.initialImageIndex === this.currentImageIndex && dirIsDefined) {
+                    return this.close();
+                }
+
+                if (this.options.alertError) {
+                    alert(this.options.alertErrorMessage);
+                }
+
+                this.loadImage(dirIsDefined ? direction : 1);
+            });
+
+
+            tmpImage.addEventListener('load', (event) => {
+                if (typeof direction !== 'undefined') {
+                    this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('changed.' + this.eventNamespace));
+                    this.relatedElements[this.currentImageIndex].dispatchEvent(new Event((direction === 1 ? 'nextDone' : 'prevDone') + '.' + this.eventNamespace));
+                }
+
+                // history
+                if (this.options.history) {
+                    this.updateURL();
+                }
+
+                if (this.loadedImages.indexOf(this.currentImage.getAttribute('src')) === -1) {
+                    this.loadedImages.push(this.currentImage.getAttribute('src'));
+                }
+
+                let imageWidth = event.target.width,
+                    imageHeight = event.target.height;
+
+                if (this.options.scaleImageToRatio || imageWidth > windowWidth || imageHeight > windowHeight) {
+                    let ratio = imageWidth / imageHeight > windowWidth / windowHeight ? imageWidth / windowWidth : imageHeight / windowHeight;
+                    imageWidth /= ratio;
+                    imageHeight /= ratio;
+                }
+
+                this.domNodes.image.style.top = (window.innerHeight - imageHeight) / 2 + 'px';
+                this.domNodes.image.style.left = (window.innerWidth - imageWidth - this.globalScrollbarWidth) / 2 + 'px';
+                this.domNodes.image.style.width = imageWidth + 'px';
+                this.domNodes.image.style.height = imageHeight + 'px';
+
+                this.domNodes.spinner.style.display = 'none';
+
+                this.fadeIn(this.currentImage, 300);
+
+                this.isOpen = true;
+
+                let captionContainer = this.options.captionSelector === 'self' ? this.relatedElements[this.currentImageIndex] : this.relatedElements[this.currentImageIndex].querySelector(this.options.captionSelector),
+                    captionText;
+                if(this.options.captions && captionContainer) {
+                    if (this.options.captionType === 'data') {
+                        captionText = captionContainer.dataset[this.options.captionsData];
+                    } else if (this.options.captionType === 'text') {
+                        captionText = captionContainer.innerHTML;
+                    } else {
+                        captionText = captionContainer.getAttribute(this.options.captionsData);
+                    }
+                }
+
+                if (!this.options.loop) {
+                    if (this.currentImageIndex === 0) {
+                        this.hide(this.domNodes.navigation.querySelector('.sl-prev'));
+                    }
+                    if (this.currentImageIndex >= this.relatedElements.length - 1) {
+                        this.hide(this.domNodes.navigation.querySelector('.sl-next'));
+                    }
+                    if (this.currentImageIndex > 0) {
+                        this.show(this.domNodes.navigation.querySelector('.sl-prev'));
+                    }
+                    if (this.currentImageIndex < this.relatedElements.length - 1) {
+                        this.show(this.domNodes.navigation.querySelector('.sl-next'));
+                    }
+                }
+
+                if (this.relatedElements.length === 1) {
+                    this.hide(this.domNodes.navigation.querySelectorAll('.sl-prev, .sl-next'));
+                } else {
+                    this.show(this.domNodes.navigation.querySelectorAll('.sl-prev, .sl-next'));
+                }
+
+                if (direction === 1 || direction === -1) {
+                    if (this.options.animationSlide) {
+                        this.slide(0, 100 * direction + 'px');
+                        setTimeout(() => {
+                            this.slide(this.options.animationSpeed / 1000, 0 + 'px');
+                        }, 50);
+                    }
+                    this.fadeIn(this.domNodes.image, 300, () => {
+                        this.isAnimating = false;
+                        this.setCaption(captionText, imageWidth);
+                    });
+
+                } else {
+                    this.isAnimating = false;
+                    this.setCaption(captionText, imageWidth);
+                }
+
+                if (this.options.additionalHtml && !this.domNodes.additionalHtml) {
+                    this.domNodes.additionalHtml = document.createElement('div');
+                    this.domNodes.additionalHtml.classList.add('sl-additional-html');
+                    this.domNodes.additionalHtml.innerHTML = this.options.additionalHtml;
+                    this.domNodes.image.appendChild(this.domNodes.additionalHtml);
+                }
+
+            });
+        }
+
+        zoomPanElement(targetOffsetX, targetOffsetY, targetScale) {
+
+            this.currentImage.style[this.transitionPrefix + 'transform'] = 'translate(' + targetOffsetX + ',' + targetOffsetY + ') scale(' + targetScale + ')';
+
+        };
+
+        minMax(value, min, max) {
+            return (value < min) ? min : (value > max) ? max : value;
+        };
+
+        setZoomData(initialScale, targetOffsetX, targetOffsetY) {
+            this.currentImage.dataset.scale = initialScale;
+            this.currentImage.dataset.translateX = targetOffsetX;
+            this.currentImage.dataset.translateY = targetOffsetY;
+        };
+
+
+        hashchangeHandler() {
+            if (this.isOpen && this.hash === this.initialLocationHash) {
+                this.hashReseted = true;
+                this.close();
+            }
+        }
+
+        addEvents() {
+
+            // resize/responsive
+            this.addEventListener(window, 'resize.' + this.eventNamespace, (event) => {
+                //this.adjustImage.bind(this)
+                if (this.isOpen) {
+                    this.adjustImage();
+                }
+            });
+
+            this.addEventListener(this.domNodes.closeButton, ['click.' + this.eventNamespace, 'touchstart.' + this.eventNamespace], this.close.bind(this));
+
+            if (this.options.history) {
+                setTimeout(() => {
+                    this.addEventListener(window, 'hashchange.' + this.eventNamespace, (event) => {
+                        if (this.isOpen) {
+                            this.hashchangeHandler();
+                        }
+                    });
+                }, 40);
+            }
+
+            this.addEventListener(this.domNodes.navigation.getElementsByTagName('button'), 'click.' + this.eventNamespace, (event) => {
+                if (!event.currentTarget.tagName.match(/button/i)) {
+                    return true;
+                }
+
+                event.preventDefault();
+                this.controlCoordinates.swipeDiff = 0;
+                this.loadImage(event.currentTarget.classList.contains('sl-next') ? 1 : -1);
+            });
+
+            this.addEventListener(this.domNodes.image, ['touchstart.' + this.eventNamespace, 'mousedown.' + this.eventNamespace], (event) => {
+                if (event.target.tagName === 'A' && event.type === 'touchstart') {
+                    return true;
+                }
+
+                if (event.type === 'mousedown') {
+                    this.controlCoordinates.initialPointerOffsetX = event.clientX;
+                    this.controlCoordinates.initialPointerOffsetY = event.clientY;
+                    this.controlCoordinates.containerHeight = this.getDimensions(this.domNodes.image).height;
+                    this.controlCoordinates.containerWidth = this.getDimensions(this.domNodes.image).width;
+                    this.controlCoordinates.imgHeight = this.getDimensions(this.currentImage).height;
+                    this.controlCoordinates.imgWidth = this.getDimensions(this.currentImage).width;
+                    this.controlCoordinates.containerOffsetX = this.domNodes.image.offsetLeft;
+                    this.controlCoordinates.containerOffsetY = this.domNodes.image.offsetTop;
+
+                    this.controlCoordinates.initialOffsetX = parseFloat(this.currentImage.dataset.translateX);
+                    this.controlCoordinates.initialOffsetY = parseFloat(this.currentImage.dataset.translateY);
+                    this.controlCoordinates.capture = true;
+                } else {
+                    this.controlCoordinates.touchCount = event.touches.length;
+                    this.controlCoordinates.initialPointerOffsetX = event.touches[0].clientX;
+                    this.controlCoordinates.initialPointerOffsetY = event.touches[0].clientY;
+                    this.controlCoordinates.containerHeight = this.getDimensions(this.domNodes.image).height;
+                    this.controlCoordinates.containerWidth = this.getDimensions(this.domNodes.image).width;
+                    this.controlCoordinates.imgHeight = this.getDimensions(this.currentImage).height;
+                    this.controlCoordinates.imgWidth = this.getDimensions(this.currentImage).width;
+                    this.controlCoordinates.containerOffsetX = this.domNodes.image.offsetLeft;
+                    this.controlCoordinates.containerOffsetY = this.domNodes.image.offsetTop;
+
+                    if (this.controlCoordinates.touchCount === 1) /* Single touch */ {
+                        if (!this.controlCoordinates.doubleTapped) {
+                            this.controlCoordinates.doubleTapped = true;
+                            setTimeout(() => {
+                                this.controlCoordinates.doubleTapped = false;
+                            }, 300);
+                        } else {
+
+                            this.currentImage.classList.add('sl-transition');
+                            if (!this.controlCoordinates.zoomed) {
+                                this.controlCoordinates.initialScale = this.options.doubleTapZoom;
+                                this.setZoomData(this.controlCoordinates.initialScale,0, 0);
+                                this.zoomPanElement(0 + "px", 0 + "px", this.controlCoordinates.initialScale);
+
+
+                                if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                                    this.fadeOut(this.domNodes.caption, 200);
+                                }
+
+                                this.controlCoordinates.zoomed = true;
+                            } else {
+                                this.controlCoordinates.initialScale = 1;
+                                this.setZoomData(this.controlCoordinates.initialScale,0, 0);
+                                this.zoomPanElement(0 + "px", 0 + "px", this.controlCoordinates.initialScale);
+                                this.controlCoordinates.zoomed = false;
+                            }
+
+                            setTimeout(() => {
+                                if (this.currentImage) {
+                                    this.currentImage.classList.remove('sl-transition');
+                                }
+                            }, 200);
+                            return false;
+                        }
+
+                        this.controlCoordinates.initialOffsetX  = parseFloat(this.currentImage.dataset.translateX);
+                        this.controlCoordinates.initialOffsetY = parseFloat(this.currentImage.dataset.translateY);
+                    }
+                    else if (this.controlCoordinates.touchCount === 2) /* Pinch */ {
+                        this.controlCoordinates.initialPointerOffsetX2 = event.touches[1].clientX;
+                        this.controlCoordinates.initialPointerOffsetY2 = event.touches[1].clientY;
+                        this.controlCoordinates.initialOffsetX = parseFloat(this.currentImage.dataset.translateX);
+                        this.controlCoordinates.initialOffsetY = parseFloat(this.currentImage.dataset.translateY);
+                        this.controlCoordinates.pinchOffsetX = (this.controlCoordinates.initialPointerOffsetX + this.controlCoordinates.initialPointerOffsetX2) / 2;
+                        this.controlCoordinates.pinchOffsetY = (this.controlCoordinates.initialPointerOffsetY + this.controlCoordinates.initialPointerOffsetY2) / 2;
+                        this.controlCoordinates.initialPinchDistance = Math.sqrt(((this.controlCoordinates.initialPointerOffsetX - this.controlCoordinates.initialPointerOffsetX2) * (this.controlCoordinates.initialPointerOffsetX - this.controlCoordinates.initialPointerOffsetX2)) + ((this.controlCoordinates.initialPointerOffsetY - this.controlCoordinates.initialPointerOffsetY2) * (this.controlCoordinates.initialPointerOffsetY - this.controlCoordinates.initialPointerOffsetY2)));
+                    }
+                    this.controlCoordinates.capture = true;
+                }
+                if(this.controlCoordinates.mousedown) return true;
+                if (this.transitionCapable) {
+                    this.controlCoordinates.imageLeft = parseInt(this.domNodes.image.style.left, 10);
+                }
+                this.controlCoordinates.mousedown = true;
+                this.controlCoordinates.swipeDiff = 0;
+                this.controlCoordinates.swipeYDiff = 0;
+                this.controlCoordinates.swipeStart = event.pageX || event.touches[0].pageX;
+                this.controlCoordinates.swipeYStart = event.pageY || event.touches[0].pageY;
+
+                return false;
+            });
+
+            this.addEventListener(this.domNodes.image, ['touchmove.' + this.eventNamespace, 'mousemove.' + this.eventNamespace, 'MSPointerMove'], (event) => {
+
+
+                if (!this.controlCoordinates.mousedown) {
+                    return true;
+                }
+
+                event.preventDefault();
+
+                if (event.type === 'touchmove') {
+                    if (this.controlCoordinates.capture === false) {
+                        return false;
+                    }
+
+                    this.controlCoordinates.pointerOffsetX = event.touches[0].clientX;
+                    this.controlCoordinates.pointerOffsetY = event.touches[0].clientY;
+                    this.controlCoordinates.touchCount = event.touches.length;
+                    this.controlCoordinates.touchmoveCount++;
+
+                    if (this.controlCoordinates.touchCount > 1) /* Pinch */ {
+                        this.controlCoordinates.pointerOffsetX2 = event.touches[1].clientX;
+                        this.controlCoordinates.pointerOffsetY2 = event.touches[1].clientY;
+                        this.controlCoordinates.targetPinchDistance = Math.sqrt(((this.controlCoordinates.pointerOffsetX - this.controlCoordinates.pointerOffsetX2) * (this.controlCoordinates.pointerOffsetX - this.controlCoordinates.pointerOffsetX2)) + ((this.controlCoordinates.pointerOffsetY - this.controlCoordinates.pointerOffsetY2) * (this.controlCoordinates.pointerOffsetY - this.controlCoordinates.pointerOffsetY2)));
+                        if (this.controlCoordinates.initialPinchDistance === null) {
+                            this.controlCoordinates.initialPinchDistance = this.controlCoordinates.targetPinchDistance;
+                        }
+
+                        if (Math.abs(this.controlCoordinates.initialPinchDistance - this.controlCoordinates.targetPinchDistance) >= 1) {
+                            /* Initialize helpers */
+                            this.controlCoordinates.targetScale = this.minMax(this.controlCoordinates.targetPinchDistance / this.controlCoordinates.initialPinchDistance * this.controlCoordinates.initialScale, 1, this.options.maxZoom);
+                            this.controlCoordinates.limitOffsetX = ((this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) - this.controlCoordinates.containerWidth) / 2;
+                            this.controlCoordinates.limitOffsetY = ((this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) - this.controlCoordinates.containerHeight) / 2;
+                            this.controlCoordinates.scaleDifference = this.controlCoordinates.targetScale - this.controlCoordinates.initialScale;
+                            this.controlCoordinates.targetOffsetX = (this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) <= this.controlCoordinates.containerWidth ? 0 : this.minMax(this.controlCoordinates.initialOffsetX - ((((((this.controlCoordinates.pinchOffsetX - this.controlCoordinates.containerOffsetX) - (this.controlCoordinates.containerWidth / 2)) - this.controlCoordinates.initialOffsetX) / (this.controlCoordinates.targetScale - this.controlCoordinates.scaleDifference))) * this.controlCoordinates.scaleDifference), this.controlCoordinates.limitOffsetX * (-1), this.controlCoordinates.limitOffsetX);
+                            this.controlCoordinates.targetOffsetY = (this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) <= this.controlCoordinates.containerHeight ? 0 : this.minMax(this.controlCoordinates.initialOffsetY - ((((((this.controlCoordinates.pinchOffsetY - this.controlCoordinates.containerOffsetY) - (this.controlCoordinates.containerHeight / 2)) - this.controlCoordinates.initialOffsetY) / (this.controlCoordinates.targetScale - this.controlCoordinates.scaleDifference))) * this.controlCoordinates.scaleDifference), this.controlCoordinates.limitOffsetY * (-1), this.controlCoordinates.limitOffsetY);
+
+                            this.zoomPanElement(this.controlCoordinates.targetOffsetX + "px", this.controlCoordinates.targetOffsetY + "px", this.controlCoordinates.targetScale);
+
+                            if (this.controlCoordinates.targetScale > 1) {
+                                this.controlCoordinates.zoomed = true;
+                                if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                                    this.fadeOut(this.domNodes.caption, 200);
+                                }
+                            }
+
+                            this.controlCoordinates.initialPinchDistance = this.controlCoordinates.targetPinchDistance;
+                            this.controlCoordinates.initialScale = this.controlCoordinates.targetScale;
+                            this.controlCoordinates.initialOffsetX = this.controlCoordinates.targetOffsetX;
+                            this.controlCoordinates.initialOffsetY = this.controlCoordinates.targetOffsetY;
+                        }
+                    } else {
+                        this.controlCoordinates.targetScale = this.controlCoordinates.initialScale;
+                        this.controlCoordinates.limitOffsetX = ((this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) - this.controlCoordinates.containerWidth) / 2;
+                        this.controlCoordinates.limitOffsetY = ((this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) - this.controlCoordinates.containerHeight) / 2;
+                        this.controlCoordinates.targetOffsetX = (this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) <= this.controlCoordinates.containerWidth ? 0 : this.minMax(this.controlCoordinates.pointerOffsetX - (this.controlCoordinates.initialPointerOffsetX - this.controlCoordinates.initialOffsetX), this.controlCoordinates.limitOffsetX * (-1), this.controlCoordinates.limitOffsetX);
+                        this.controlCoordinates.targetOffsetY = (this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) <= this.controlCoordinates.containerHeight ? 0 : this.minMax(this.controlCoordinates.pointerOffsetY - (this.controlCoordinates.initialPointerOffsetY - this.controlCoordinates.initialOffsetY), this.controlCoordinates.limitOffsetY * (-1), this.controlCoordinates.limitOffsetY);
+
+                        if (Math.abs(this.controlCoordinates.targetOffsetX) === Math.abs(this.controlCoordinates.limitOffsetX)) {
+                            this.controlCoordinates.initialOffsetX = this.controlCoordinates.targetOffsetX;
+                            this.controlCoordinates.initialPointerOffsetX = this.controlCoordinates.pointerOffsetX;
+                        }
+
+                        if (Math.abs(this.controlCoordinates.targetOffsetY) === Math.abs(this.controlCoordinates.limitOffsetY)) {
+                            this.controlCoordinates.initialOffsetY = this.controlCoordinates.targetOffsetY;
+                            this.controlCoordinates.initialPointerOffsetY = this.controlCoordinates.pointerOffsetY;
+                        }
+
+                        this.setZoomData(this.controlCoordinates.initialScale, this.controlCoordinates.targetOffsetX, this.controlCoordinates.targetOffsetY);
+                        this.zoomPanElement(this.controlCoordinates.targetOffsetX + "px", this.controlCoordinates.targetOffsetY + "px", this.controlCoordinates.targetScale);
+                    }
+                }
+
+                /* Mouse Move implementation */
+                if (event.type === 'mousemove' && this.controlCoordinates.mousedown) {
+                  if(event.type == 'touchmove') return true;
+                  if(this.controlCoordinates.capture === false) return false;
+
+                  this.controlCoordinates.pointerOffsetX = event.clientX;
+                  this.controlCoordinates.pointerOffsetY = event.clientY;
+
+                  this.controlCoordinates.targetScale = this.controlCoordinates.initialScale;
+                  this.controlCoordinates.limitOffsetX = ((this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) - this.controlCoordinates.containerWidth) / 2;
+                  this.controlCoordinates.limitOffsetY = ((this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) - this.controlCoordinates.containerHeight) / 2;
+                  this.controlCoordinates.targetOffsetX = (this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) <= this.controlCoordinates.containerWidth ? 0 : this.minMax(this.controlCoordinates.pointerOffsetX - (this.controlCoordinates.initialPointerOffsetX - this.controlCoordinates.initialOffsetX), this.controlCoordinates.limitOffsetX * (-1), this.controlCoordinates.limitOffsetX);
+                  this.controlCoordinates.targetOffsetY = (this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) <= this.controlCoordinates.containerHeight ? 0 : this.minMax(this.controlCoordinates.pointerOffsetY - (this.controlCoordinates.initialPointerOffsetY - this.controlCoordinates.initialOffsetY), this.controlCoordinates.limitOffsetY * (-1), this.controlCoordinates.limitOffsetY);
+
+                  if (Math.abs(this.controlCoordinates.targetOffsetX) === Math.abs(this.controlCoordinates.limitOffsetX)) {
+                      this.controlCoordinates.initialOffsetX = this.controlCoordinates.targetOffsetX;
+                      this.controlCoordinates.initialPointerOffsetX = this.controlCoordinates.pointerOffsetX;
+                  }
+
+                  if (Math.abs(this.controlCoordinates.targetOffsetY) === Math.abs(this.controlCoordinates.limitOffsetY)) {
+                      this.controlCoordinates.initialOffsetY = this.controlCoordinates.targetOffsetY;
+                      this.controlCoordinates.initialPointerOffsetY = this.controlCoordinates.pointerOffsetY;
+                  }
+
+                  this.setZoomData(this.controlCoordinates.initialScale, this.controlCoordinates.targetOffsetX, this.controlCoordinates.targetOffsetY);
+                  this.zoomPanElement(this.controlCoordinates.targetOffsetX + "px", this.controlCoordinates.targetOffsetY + "px", this.controlCoordinates.targetScale);
+
+                }
+
+                if (!this.controlCoordinates.zoomed) {
+
+                    this.controlCoordinates.swipeEnd = event.pageX || event.touches[0].pageX;
+                    this.controlCoordinates.swipeYEnd = event.pageY || event.touches[0].pageY;
+                    this.controlCoordinates.swipeDiff = this.controlCoordinates.swipeStart - this.controlCoordinates.swipeEnd;
+                    this.controlCoordinates.swipeYDiff = this.controlCoordinates.swipeYStart - this.controlCoordinates.swipeYEnd;
+                    if (this.options.animationSlide) {
+                        this.slide(0, -this.controlCoordinates.swipeDiff + 'px');
+                    }
+                }
+
+            });
+
+
+            this.addEventListener(this.domNodes.image, ['touchend.' + this.eventNamespace, 'mouseup.' + this.eventNamespace, 'touchcancel.' + this.eventNamespace, 'mouseleave.' + this.eventNamespace, 'pointerup', 'pointercancel', 'MSPointerUp', 'MSPointerCancel'], (event) => {
+
+
+                if (this.isTouchDevice && event.type === 'touchend') {
+                    this.controlCoordinates.touchCount = event.touches.length;
+                    if (this.controlCoordinates.touchCount === 0) /* No touch */ {
+                        /* Set attributes */
+                        if (this.currentImage) {
+                            this.setZoomData(this.controlCoordinates.initialScale, this.controlCoordinates.targetOffsetX, this.controlCoordinates.targetOffsetY);
+                        }
+                        if (this.controlCoordinates.initialScale === 1) {
+                            this.controlCoordinates.zoomed = false;
+                            if (this.domNodes.caption.style.display === 'none') {
+                                this.fadeIn(this.domNodes.caption, 200);
+                            }
+                        }
+                        this.controlCoordinates.initialPinchDistance = null;
+                        this.controlCoordinates.capture = false;
+                    } else if (this.controlCoordinates.touchCount === 1) /* Single touch */ {
+                        this.controlCoordinates.initialPointerOffsetX = event.touches[0].clientX;
+                        this.controlCoordinates.initialPointerOffsetY = event.touches[0].clientY;
+                    } else if (this.controlCoordinates.touchCount > 1) /* Pinch */ {
+                        this.controlCoordinates.initialPinchDistance = null;
+                    }
+                }
+
+
+                if (this.controlCoordinates.mousedown) {
+                    this.controlCoordinates.mousedown = false;
+                    let possibleDir = true;
+                    if (!this.options.loop) {
+                        if (this.currentImageIndex === 0 && this.controlCoordinates.swipeDiff < 0) {
+                            possibleDir = false;
+                        }
+                        if (this.currentImageIndex >= this.relatedElements.length - 1 && this.controlCoordinates.swipeDiff > 0) {
+                            possibleDir = false;
+                        }
+                    }
+                    if (Math.abs(this.controlCoordinates.swipeDiff) > this.options.swipeTolerance && possibleDir) {
+                        this.loadImage(this.controlCoordinates.swipeDiff > 0 ? 1 : -1);
+                    }
+                    else if (this.options.animationSlide) {
+                        this.slide(this.options.animationSpeed / 1000, 0 + 'px');
+                    }
+
+                    if (this.options.swipeClose && Math.abs(this.controlCoordinates.swipeYDiff) > 50 && Math.abs(this.controlCoordinates.swipeDiff) < this.options.swipeTolerance) {
+                        this.close();
+                    }
+                }
+            });
+
+            this.addEventListener(this.domNodes.image, ['dblclick'], (event) => {
+                if(this.isTouchDevice) return;
+                this.controlCoordinates.initialPointerOffsetX = event.clientX;
+                this.controlCoordinates.initialPointerOffsetY = event.clientY;
+                this.controlCoordinates.containerHeight = this.getDimensions(this.domNodes.image).height;
+                this.controlCoordinates.containerWidth = this.getDimensions(this.domNodes.image).width;
+                this.controlCoordinates.imgHeight = this.getDimensions(this.currentImage).height;
+                this.controlCoordinates.imgWidth = this.getDimensions(this.currentImage).width;
+                this.controlCoordinates.containerOffsetX = this.domNodes.image.offsetLeft;
+                this.controlCoordinates.containerOffsetY = this.domNodes.image.offsetTop;
+
+                this.currentImage.classList.add('sl-transition');
+
+                if(!this.controlCoordinates.zoomed) {
+                    this.controlCoordinates.initialScale = this.options.doubleTapZoom;
+                    this.setZoomData(this.controlCoordinates.initialScale, 0, 0);
+                    this.zoomPanElement(0 + "px", 0 + "px", this.controlCoordinates.initialScale);
+                    if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                        this.fadeOut(this.domNodes.caption, 200);
+                    }
+                    this.controlCoordinates.zoomed = true;
+                } else {
+                    this.controlCoordinates.initialScale = 1;
+                    this.setZoomData(this.controlCoordinates.initialScale, 0, 0);
+                    this.zoomPanElement(0 + "px", 0 + "px", this.controlCoordinates.initialScale);
+                    this.controlCoordinates.zoomed = false;
+                    if (this.domNodes.caption.style.display === 'none') {
+                        this.fadeIn(this.domNodes.caption, 200);
+                    }
+                }
+                setTimeout(() => {
+                    if (this.currentImage) {
+                        this.currentImage.classList.remove('sl-transition');
+                    }
+                }, 200);
+
+                this.controlCoordinates.capture = true;
+                return false;
+            });
+
+        }
+
+        getDimensions(element) {
+            let styles = window.getComputedStyle(element),
+                height = element.offsetHeight,
+                width = element.offsetWidth,
+                borderTopWidth = parseFloat(styles.borderTopWidth),
+                borderBottomWidth = parseFloat(styles.borderBottomWidth),
+                paddingTop = parseFloat(styles.paddingTop),
+                paddingBottom = parseFloat(styles.paddingBottom),
+                borderLeftWidth = parseFloat(styles.borderLeftWidth),
+                borderRightWidth = parseFloat(styles.borderRightWidth),
+                paddingLeft = parseFloat(styles.paddingLeft),
+                paddingRight = parseFloat(styles.paddingRight);
+            return {
+                height: height - borderBottomWidth - borderTopWidth - paddingTop - paddingBottom,
+                width: width - borderLeftWidth - borderRightWidth - paddingLeft - paddingRight
+            };
+        }
+
+        updateHash() {
+            let newHash = 'pid=' + (this.currentImageIndex + 1),
+                newURL = window.location.href.split('#')[0] + '#' + newHash;
+
+            this.hashReseted = false;
+
+            if (this.pushStateSupport) {
+                window.history[this.historyHasChanges ? 'replaceState' : 'pushState']('', document.title, newURL);
+            } else {
+                // what is the browser target of this?
+                if (this.historyHasChanges) {
+                    window.location.replace(newURL);
+                } else {
+                    window.location.hash = newHash;
+                }
+            }
+            if(!this.historyHasChanges) {
+                this.urlChangedOnce = true;
+            }
+
+            this.historyHasChanges = true;
+        }
+
+        resetHash() {
+            this.hashReseted = true;
+            if(this.urlChangedOnce) {
+                history.back();
+            } else {
+                if (this.pushStateSupport) {
+                    history.pushState('', document.title, window.location.pathname + window.location.search);
+                } else {
+                    window.location.hash = '';
+                }
+            }
+            //
+            //in case an history operation is still pending
+            clearTimeout(this.historyUpdateTimeout);
+        }
+
+        updateURL() {
+            clearTimeout(this.historyUpdateTimeout);
+            if (!this.historyHasChanges) {
+                this.updateHash(); // first time
+            } else {
+                this.historyUpdateTimeout = setTimeout(this.updateHash.bind(this), 800);
+            }
+        }
+
+        setCaption(captionText, imageWidth) {
+            if (this.options.captions && captionText && captionText !== '' && typeof captionText !== "undefined") {
+                this.hide(this.domNodes.caption);
+                this.domNodes.caption.style.width = imageWidth + 'px';
+                this.domNodes.caption.innerHTML = captionText;
+
+                this.domNodes.image.appendChild(this.domNodes.caption);
+
+                setTimeout(() => {
+                    this.fadeIn(this.domNodes.caption, 300);
+                }, this.options.captionDelay);
+            }
+        }
+
+        slide(speed, pos) {
+            if (!this.transitionCapable) {
+                return this.domNodes.image.style.left = pos;
+            }
+
+            this.domNodes.image.style[this.transitionPrefix + 'transform'] = 'translateX(' + pos + ')';
+            this.domNodes.image.style[this.transitionPrefix + 'transition'] = this.transitionPrefix + 'transform ' + speed + 's linear';
+        }
+
+        getRelated(rel) {
+            let elems;
+            if (rel && rel !== false && rel !== 'nofollow') {
+                elems = Array.from(this.elements).filter(element => element.getAttribute('rel') === rel);
+            } else {
+                elems = this.elements;
+            }
+            return elems;
+        }
+
+        openImage(element) {
+            element.dispatchEvent(new Event('show.' + this.eventNamespace));
+
+            if (this.options.disableScroll) {
+                this.globalScrollbarWidth = this.toggleScrollbar('hide');
+            }
+
+            if (this.options.htmlClass && this.options.htmlClass !== '') {
+                document.querySelector('html').classList.add(this.options.htmlClass);
+            }
+
+            document.body.appendChild(this.domNodes.wrapper);
+
+            this.domNodes.wrapper.appendChild(this.domNodes.image);
+            if (this.options.overlay) {
+                document.body.appendChild(this.domNodes.overlay);
+            }
+
+            this.relatedElements = this.getRelated(element.rel);
+
+            if (this.options.showCounter) {
+                if (this.relatedElements.length == 1 && this.domNodes.wrapper.contains(this.domNodes.counter)) {
+                    this.domNodes.wrapper.removeChild(this.domNodes.counter);
+                } else if(this.relatedElements.length > 1 && !this.domNodes.wrapper.contains(this.domNodes.counter)) {
+                    this.domNodes.wrapper.appendChild(this.domNodes.counter);
+                }
+            }
+
+            this.isAnimating = true;
+
+            this.currentImageIndex = this.relatedElements.indexOf(element);
+
+            let targetURL = element.getAttribute(this.options.sourceAttr);
+
+            this.currentImage = document.createElement('img');
+            this.currentImage.style.display = 'none';
+            this.currentImage.setAttribute('src', targetURL);
+            this.currentImage.dataset.scale = 1;
+            this.currentImage.dataset.translateX = 0;
+            this.currentImage.dataset.translateY = 0;
+
+            if (this.loadedImages.indexOf(targetURL) === -1) {
+                this.loadedImages.push(targetURL);
+            }
+
+            this.domNodes.image.innerHTML = '';
+            this.domNodes.image.setAttribute('style', '');
+
+            this.domNodes.image.appendChild(this.currentImage);
+
+
+            this.fadeIn(this.domNodes.overlay, 300);
+            this.fadeIn([this.domNodes.counter, this.domNodes.navigation, this.domNodes.closeButton], 300);
+
+            this.show(this.domNodes.spinner);
+            this.domNodes.counter.querySelector('.sl-current').innerHTML = this.currentImageIndex + 1;
+            this.domNodes.counter.querySelector('.sl-total').innerHTML = this.relatedElements.length;
+
+            this.adjustImage();
+            if (this.options.preloading) {
+                this.preload();
+            }
+
+            setTimeout(() => {
+                element.dispatchEvent(new Event('shown.' + this.eventNamespace));
+            }, this.options.animationSpeed);
+        }
+
+        // utility
+
+        addEventListener(elements, events, callback, opts) {
+            elements = this.wrap(elements);
+            events = this.wrap(events);
+
+
+            for (let element of elements) {
+                if (!element.namespaces) {
+                    element.namespaces = {};
+                } // save the namespaces addEventListener the DOM element itself
+
+                for (let event of events) {
+                    let options = opts || false;
+                    element.namespaces[event] = callback;
+                    element.addEventListener(event.split('.')[0], callback, options);
+
+                }
+            }
+        }
+
+        removeEventListener(elements, events) {
+            elements = this.wrap(elements);
+            events = this.wrap(events);
+            for (let element of elements) {
+                for (let event of events) {
+                    element.removeEventListener(event.split('.')[0], element.namespaces[event]);
+                    delete element.namespaces[event];
+                }
+            }
+        }
+
+        fadeOut(elements, duration, callback) {
+            elements = this.wrap(elements);
+            for (let element of elements) {
+                element.style.opacity = 1;
+            }
+
+            let step = 16.66666 / (duration || 300),
+                fade = () => {
+                    let currentOpacity = parseFloat(elements[0].style.opacity);
+                    if ((currentOpacity -= step) < 0) {
+                        for (let element of elements) {
+                            element.style.display = "none";
+                            element.style.opacity = '';
+                        }
+                        callback && callback.call(this, elements);
+                    } else {
+                        for (let element of elements) {
+                            element.style.opacity = currentOpacity;
+                        }
+                        requestAnimationFrame(fade);
+                    }
+                };
+
+            fade();
+        }
+
+        fadeIn(elements, duration, callback, display) {
+            elements = this.wrap(elements);
+            for (let element of elements) {
+                element.style.opacity = 0;
+                element.style.display = display || "block";
+            }
+
+
+            let opacityTarget = parseFloat(elements[0].dataset.opacityTarget || 1),
+                step = (16.66666 * opacityTarget) / (duration || 300),
+                fade = () => {
+                    let currentOpacity = parseFloat(elements[0].style.opacity);
+                    if (!((currentOpacity += step) > opacityTarget)) {
+                        for (let element of elements) {
+                            element.style.opacity = currentOpacity;
+                        }
+                        requestAnimationFrame(fade);
+                    } else {
+                        for (let element of elements) {
+                            element.style.opacity = '';
+                        }
+                        callback && callback.call(this, elements);
+                    }
+                };
+
+            fade();
+        }
+
+        hide(elements) {
+            elements = this.wrap(elements);
+            for (let element of elements) {
+                element.dataset.initialDisplay = element.style.display;
+                element.style.display = 'none';
+            }
+        }
+
+        show(elements, display) {
+            elements = this.wrap(elements);
+            for (let element of elements) {
+                element.style.display = element.dataset.initialDisplay || display || 'block';
+            }
+        }
+
+        wrap(input) {
+            return typeof input[Symbol.iterator] === 'function' && typeof input !== 'string' ? input : [input];
+        }
+
+        on(events, callback) {
+            events = this.wrap(events);
+            for (let element of this.elements) {
+                if (!element.fullyNamespacedEvents) {
+                    element.fullyNamespacedEvents = {};
+                }
+                for (let event of events) {
+                    element.fullyNamespacedEvents[event] = callback;
+                    element.addEventListener(event, callback);
+                }
+            }
+            return this;
+        }
+
+        off(events) {
+            events = this.wrap(events);
+            for (let element of this.elements) {
+                for (let event of events) {
+                    if (typeof element.fullyNamespacedEvents !== 'undefined' && event in element.fullyNamespacedEvents) {
+                        element.removeEventListener(event, element.fullyNamespacedEvents[event]);
+                    }
+                }
+            }
+            return this;
+        }
+
+        // api
+
+        open(elem) {
+            elem = elem || this.elements[0];
+            if(typeof jQuery !== "undefined" && elem instanceof jQuery) {
+                elem = elem.get(0);
+            }
+            this.initialImageIndex = this.elements.indexOf(elem);
+            if(this.initialImageIndex > -1) {
+                this.openImage(elem);
+            }
+        }
+
+        next() {
+            this.loadImage(1);
+        }
+
+        prev() {
+            this.loadImage(-1);
+        }
+
+        //close is exposed anyways..
+
+        destroy() {
+            //remove all custom event listeners from elements
+            this.off([
+                'close.' + this.eventNamespace,
+                'closed.' + this.eventNamespace,
+                'nextImageLoaded.' + this.eventNamespace,
+                'prevImageLoaded.' + this.eventNamespace,
+                'change.' + this.eventNamespace,
+                'nextDone.' + this.eventNamespace,
+                'prevDone.' + this.eventNamespace,
+                'error.' + this.eventNamespace,
+                'changed.' + this.eventNamespace,
+                'next.' + this.eventNamespace,
+                'prev.' + this.eventNamespace,
+                'show.' + this.eventNamespace,
+                'shown.' + this.eventNamespace
+            ]);
+
+            this.removeEventListener(this.elements, 'click.' + this.eventNamespace);
+
+            this.removeEventListener(document.body, 'contextmenu.' + this.eventNamespace);
+            this.removeEventListener(document.body, 'keyup.' + this.eventNamespace);
+
+            this.removeEventListener(this.domNodes.navigation.getElementsByTagName('button'), 'click.' + this.eventNamespace);
+            this.removeEventListener(this.domNodes.closeButton, 'click.' + this.eventNamespace);
+            this.removeEventListener(window, 'resize.' + this.eventNamespace);
+            this.removeEventListener(window, 'hashchange.' + this.eventNamespace);
+
+            this.close();
+            if (this.isOpen) {
+                document.body.removeChild(this.domNodes.wrapper);
+                document.body.removeChild(this.domNodes.overlay);
+            }
+
+            this.elements = null;
+        }
+
+        refresh() {
+            if (!this.initialSelector) {
+                throw 'refreshing only works when you initialize using a selector!';
+            }
+
+            let options = this.options,
+                selector = this.initialSelector;
+
+            this.destroy();
+
+            this.constructor(selector, options);
+
+            return this;
+        }
     }
 
-    _createClass(SimpleLightbox, [{
-      key: "createDomNodes",
-      value: function createDomNodes() {
-        this.domNodes.overlay = document.createElement('div');
-        this.domNodes.overlay.classList.add('sl-overlay');
-        this.domNodes.overlay.dataset.opacityTarget = ".7";
-        this.domNodes.closeButton = document.createElement('button');
-        this.domNodes.closeButton.classList.add('sl-close');
-        this.domNodes.closeButton.innerHTML = this.options.closeText;
-        this.domNodes.spinner = document.createElement('div');
-        this.domNodes.spinner.classList.add('sl-spinner');
-        this.domNodes.spinner.innerHTML = '<div></div>';
-        this.domNodes.navigation = document.createElement('div');
-        this.domNodes.navigation.classList.add('sl-navigation');
-        this.domNodes.navigation.innerHTML = "<button class=\"sl-prev\">".concat(this.options.navText[0], "</button><button class=\"sl-next\">").concat(this.options.navText[1], "</button>");
-        this.domNodes.counter = document.createElement('div');
-        this.domNodes.counter.classList.add('sl-counter');
-        this.domNodes.counter.innerHTML = '<span class="sl-current"></span>/<span class="sl-total"></span>';
-        this.domNodes.caption = document.createElement('div');
-        this.domNodes.caption.classList.add('sl-caption', 'pos-' + this.options.captionPosition);
-
-        if (this.options.captionClass) {
-          this.domNodes.caption.classList.add(this.options.captionClass);
-        }
-
-        this.domNodes.image = document.createElement('div');
-        this.domNodes.image.classList.add('sl-image');
-        this.domNodes.wrapper = document.createElement('div');
-        this.domNodes.wrapper.classList.add('sl-wrapper');
-
-        if (this.options.className) {
-          this.domNodes.wrapper.classList.add(this.options.className);
-        }
-
-        if (this.options.rtl) {
-          this.domNodes.wrapper.classList.add('sl-dir-rtl');
-        }
-      }
-    }, {
-      key: "throttle",
-      value: function throttle(func, limit) {
-        var inThrottle;
-        return function () {
-          if (!inThrottle) {
-            func.apply(this, arguments);
-            inThrottle = true;
-            setTimeout(function () {
-              return inThrottle = false;
-            }, limit);
-          }
-        };
-      }
-    }, {
-      key: "isValidLink",
-      value: function isValidLink(element) {
-        return !this.options.fileExt || 'pathname' in element && new RegExp('(' + this.options.fileExt + ')$', 'i').test(element.pathname);
-      }
-    }, {
-      key: "calculateTransitionPrefix",
-      value: function calculateTransitionPrefix() {
-        var s = (document.body || document.documentElement).style;
-        return 'transition' in s ? '' : 'WebkitTransition' in s ? '-webkit-' : 'MozTransition' in s ? '-moz-' : 'OTransition' in s ? '-o' : false;
-      }
-    }, {
-      key: "toggleScrollbar",
-      value: function toggleScrollbar(type) {
-        var scrollbarWidth = 0;
-
-        if (type === 'hide') {
-          var fullWindowWidth = window.innerWidth;
-
-          if (!fullWindowWidth) {
-            var documentElementRect = document.documentElement.getBoundingClientRect();
-            fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left);
-          }
-
-          if (document.body.clientWidth < fullWindowWidth) {
-            var scrollDiv = document.createElement('div'),
-                paddingRight = parseInt(document.body.style.paddingRight || 0, 10);
-            scrollDiv.classList.add('sl-scrollbar-measure');
-            document.body.appendChild(scrollDiv);
-            scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-            document.body.removeChild(scrollDiv);
-            document.body.dataset.originalPaddingRight = paddingRight;
-
-            if (scrollbarWidth > 0) {
-              document.body.classList.add('hidden-scroll');
-              document.body.style.paddingRight = paddingRight + scrollbarWidth + 'px';
-            }
-          }
-        } else {
-          document.body.classList.remove('hidden-scroll');
-          document.body.style.paddingRight = document.body.dataset.originalPaddingRight;
-        }
-
-        return scrollbarWidth;
-      }
-    }, {
-      key: "close",
-      value: function close() {
-        var _this2 = this;
-
-        if (!this.isOpen || this.isAnimating || this.isClosing) {
-          return false;
-        }
-
-        this.isClosing = true;
-        var element = this.relatedElements[this.currentImageIndex];
-        element.dispatchEvent(new Event('close.simplelightbox'));
-
-        if (this.options.history) {
-          this.historyHasChanges = false;
-
-          if (!this.hashReseted) {
-            this.resetHash();
-          }
-        }
-
-        this.fadeOut(document.querySelectorAll('.sl-image img, .sl-overlay, .sl-close, .sl-navigation, .sl-image .sl-caption, .sl-counter'), 300, function () {
-          if (_this2.options.disableScroll) {
-            _this2.toggleScrollbar('show');
-          }
-
-          if (_this2.options.htmlClass && _this2.options.htmlClass !== '') {
-            document.querySelector('html').classList.remove(_this2.options.htmlClass);
-          }
-
-          document.body.removeChild(_this2.domNodes.wrapper);
-          document.body.removeChild(_this2.domNodes.overlay);
-          _this2.domNodes.additionalHtml = null;
-          element.dispatchEvent(new Event('closed.simplelightbox'));
-          _this2.isClosing = false;
-        });
-        this.currentImage = null;
-        this.isOpen = false;
-        this.isAnimating = false; // reset touchcontrol coordinates
-
-        for (var key in this.controlCoordinates) {
-          this.controlCoordinates[key] = 0;
-        }
-
-        this.controlCoordinates.mousedown = false;
-        this.controlCoordinates.zoomed = false;
-        this.controlCoordinates.capture = false;
-        this.controlCoordinates.initialScale = this.minMax(1, 1, this.options.maxZoom);
-        this.controlCoordinates.doubleTapped = false;
-      }
-    }, {
-      key: "preload",
-      value: function preload() {
-        var _this3 = this;
-
-        var index = this.currentImageIndex,
-            length = this.relatedElements.length,
-            next = index + 1 < 0 ? length - 1 : index + 1 >= length - 1 ? 0 : index + 1,
-            prev = index - 1 < 0 ? length - 1 : index - 1 >= length - 1 ? 0 : index - 1,
-            nextImage = new Image(),
-            prevImage = new Image();
-        nextImage.addEventListener('load', function (event) {
-          var src = event.target.getAttribute('src');
-
-          if (_this3.loadedImages.indexOf(src) === -1) {
-            //is this condition even required... setting multiple times will not change usage...
-            _this3.loadedImages.push(src);
-          }
-
-          _this3.relatedElements[index].dispatchEvent(new Event('nextImageLoaded.' + _this3.eventNamespace));
-        });
-        nextImage.setAttribute('src', this.relatedElements[next].getAttribute(this.options.sourceAttr));
-        prevImage.addEventListener('load', function (event) {
-          var src = event.target.getAttribute('src');
-
-          if (_this3.loadedImages.indexOf(src) === -1) {
-            _this3.loadedImages.push(src);
-          }
-
-          _this3.relatedElements[index].dispatchEvent(new Event('prevImageLoaded.' + _this3.eventNamespace));
-        });
-        prevImage.setAttribute('src', this.relatedElements[prev].getAttribute(this.options.sourceAttr));
-      }
-    }, {
-      key: "loadImage",
-      value: function loadImage(direction) {
-        var _this4 = this;
-
-        var slideDirection = direction;
-
-        if (this.options.rtl) {
-          direction = -direction;
-        }
-
-        this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('change.' + this.eventNamespace));
-        this.relatedElements[this.currentImageIndex].dispatchEvent(new Event((direction === 1 ? 'next' : 'prev') + '.' + this.eventNamespace));
-        var newIndex = this.currentImageIndex + direction;
-
-        if (this.isAnimating || (newIndex < 0 || newIndex >= this.relatedElements.length) && this.options.loop === false) {
-          return false;
-        }
-
-        this.currentImageIndex = newIndex < 0 ? this.relatedElements.length - 1 : newIndex > this.relatedElements.length - 1 ? 0 : newIndex;
-        this.domNodes.counter.querySelector('.sl-current').innerHTML = this.currentImageIndex + 1;
-
-        if (this.options.animationSlide) {
-          this.slide(this.options.animationSpeed / 1000, -100 * slideDirection - this.controlCoordinates.swipeDiff + 'px');
-        }
-
-        this.fadeOut(this.domNodes.image, 300, function () {
-          _this4.isAnimating = true;
-          setTimeout(function () {
-            var element = _this4.relatedElements[_this4.currentImageIndex];
-
-            _this4.currentImage.setAttribute('src', element.getAttribute(_this4.options.sourceAttr));
-
-            if (_this4.loadedImages.indexOf(element.getAttribute(_this4.options.sourceAttr)) === -1) {
-              _this4.show(_this4.domNodes.spinner);
-            }
-
-            if (_this4.domNodes.image.contains(_this4.domNodes.caption)) {
-              _this4.domNodes.image.removeChild(_this4.domNodes.caption);
-            }
-
-            _this4.adjustImage(slideDirection);
-
-            if (_this4.options.preloading) _this4.preload();
-          }, 100);
-        });
-      }
-    }, {
-      key: "adjustImage",
-      value: function adjustImage(direction) {
-        var _this5 = this;
-
-        if (!this.currentImage) {
-          return false;
-        }
-
-        var tmpImage = new Image(),
-            windowWidth = window.innerWidth * this.options.widthRatio,
-            windowHeight = window.innerHeight * this.options.heightRatio;
-        tmpImage.setAttribute('src', this.currentImage.getAttribute('src'));
-        this.currentImage.dataset.scale = 1;
-        this.currentImage.dataset.translateX = 0;
-        this.currentImage.dataset.translateY = 0;
-        this.zoomPanElement(0, 0, 1);
-        tmpImage.addEventListener('error', function (event) {
-          _this5.relatedElements[_this5.currentImageIndex].dispatchEvent(new Event('error.' + _this5.eventNamespace));
-
-          _this5.isAnimating = false;
-          _this5.isOpen = false;
-          _this5.domNodes.spinner.style.display = 'none';
-          var dirIsDefined = direction === 1 || direction === -1;
-
-          if (_this5.initialImageIndex === _this5.currentImageIndex && dirIsDefined) {
-            return _this5.close();
-          }
-
-          if (_this5.options.alertError) {
-            alert(_this5.options.alertErrorMessage);
-          }
-
-          _this5.loadImage(dirIsDefined ? direction : 1);
-        });
-        tmpImage.addEventListener('load', function (event) {
-          if (typeof direction !== 'undefined') {
-            _this5.relatedElements[_this5.currentImageIndex].dispatchEvent(new Event('changed.' + _this5.eventNamespace));
-
-            _this5.relatedElements[_this5.currentImageIndex].dispatchEvent(new Event((direction === 1 ? 'nextDone' : 'prevDone') + '.' + _this5.eventNamespace));
-          } // history
-
-
-          if (_this5.options.history) {
-            _this5.updateURL();
-          }
-
-          if (_this5.loadedImages.indexOf(_this5.currentImage.getAttribute('src')) === -1) {
-            _this5.loadedImages.push(_this5.currentImage.getAttribute('src'));
-          }
-
-          var imageWidth = event.target.width,
-              imageHeight = event.target.height;
-
-          if (_this5.options.scaleImageToRatio || imageWidth > windowWidth || imageHeight > windowHeight) {
-            var ratio = imageWidth / imageHeight > windowWidth / windowHeight ? imageWidth / windowWidth : imageHeight / windowHeight;
-            imageWidth /= ratio;
-            imageHeight /= ratio;
-          }
-
-          _this5.domNodes.image.style.top = (window.innerHeight - imageHeight) / 2 + 'px';
-          _this5.domNodes.image.style.left = (window.innerWidth - imageWidth - _this5.globalScrollbarWidth) / 2 + 'px';
-          _this5.domNodes.image.style.width = imageWidth + 'px';
-          _this5.domNodes.image.style.height = imageHeight + 'px';
-          _this5.domNodes.spinner.style.display = 'none';
-
-          _this5.fadeIn(_this5.currentImage, 300);
-
-          _this5.isOpen = true;
-          var captionContainer = _this5.options.captionSelector === 'self' ? _this5.relatedElements[_this5.currentImageIndex] : _this5.relatedElements[_this5.currentImageIndex].querySelector(_this5.options.captionSelector),
-              captionText;
-
-          if (_this5.options.captions && captionContainer) {
-            if (_this5.options.captionType === 'data') {
-              captionText = captionContainer.dataset[_this5.options.captionsData];
-            } else if (_this5.options.captionType === 'text') {
-              captionText = captionContainer.innerHTML;
-            } else {
-              captionText = captionContainer.getAttribute(_this5.options.captionsData);
-            }
-          }
-
-          if (!_this5.options.loop) {
-            if (_this5.currentImageIndex === 0) {
-              _this5.hide(_this5.domNodes.navigation.querySelector('.sl-prev'));
-            }
-
-            if (_this5.currentImageIndex >= _this5.relatedElements.length - 1) {
-              _this5.hide(_this5.domNodes.navigation.querySelector('.sl-next'));
-            }
-
-            if (_this5.currentImageIndex > 0) {
-              _this5.show(_this5.domNodes.navigation.querySelector('.sl-prev'));
-            }
-
-            if (_this5.currentImageIndex < _this5.relatedElements.length - 1) {
-              _this5.show(_this5.domNodes.navigation.querySelector('.sl-next'));
-            }
-          }
-
-          if (_this5.relatedElements.length === 1) {
-            _this5.hide(_this5.domNodes.navigation.querySelectorAll('.sl-prev, .sl-next'));
-          } else {
-            _this5.show(_this5.domNodes.navigation.querySelectorAll('.sl-prev, .sl-next'));
-          }
-
-          if (direction === 1 || direction === -1) {
-            if (_this5.options.animationSlide) {
-              _this5.slide(0, 100 * direction + 'px');
-
-              setTimeout(function () {
-                _this5.slide(_this5.options.animationSpeed / 1000, 0 + 'px');
-              }, 50);
-            }
-
-            _this5.fadeIn(_this5.domNodes.image, 300, function () {
-              _this5.isAnimating = false;
-
-              _this5.setCaption(captionText, imageWidth);
-            });
-          } else {
-            _this5.isAnimating = false;
-
-            _this5.setCaption(captionText, imageWidth);
-          }
-
-          if (_this5.options.additionalHtml && !_this5.domNodes.additionalHtml) {
-            _this5.domNodes.additionalHtml = document.createElement('div');
-
-            _this5.domNodes.additionalHtml.classList.add('sl-additional-html');
-
-            _this5.domNodes.additionalHtml.innerHTML = _this5.options.additionalHtml;
-
-            _this5.domNodes.image.appendChild(_this5.domNodes.additionalHtml);
-          }
-        });
-      }
-    }, {
-      key: "zoomPanElement",
-      value: function zoomPanElement(targetOffsetX, targetOffsetY, targetScale) {
-        this.currentImage.style[this.transitionPrefix + 'transform'] = 'translate(' + targetOffsetX + ',' + targetOffsetY + ') scale(' + targetScale + ')';
-      }
-    }, {
-      key: "minMax",
-      value: function minMax(value, min, max) {
-        return value < min ? min : value > max ? max : value;
-      }
-    }, {
-      key: "setZoomData",
-      value: function setZoomData(initialScale, targetOffsetX, targetOffsetY) {
-        this.currentImage.dataset.scale = initialScale;
-        this.currentImage.dataset.translateX = targetOffsetX;
-        this.currentImage.dataset.translateY = targetOffsetY;
-      }
-    }, {
-      key: "hashchangeHandler",
-      value: function hashchangeHandler() {
-        if (this.isOpen && this.hash === this.initialLocationHash) {
-          this.hashReseted = true;
-          this.close();
-        }
-      }
-    }, {
-      key: "addEvents",
-      value: function addEvents() {
-        var _this6 = this;
-
-        // resize/responsive
-        this.addEventListener(window, 'resize.' + this.eventNamespace, function (event) {
-          //this.adjustImage.bind(this)
-          if (_this6.isOpen) {
-            _this6.adjustImage();
-          }
-        });
-        this.addEventListener(this.domNodes.closeButton, ['click.' + this.eventNamespace, 'touchstart.' + this.eventNamespace], this.close.bind(this));
-
-        if (this.options.history) {
-          setTimeout(function () {
-            _this6.addEventListener(window, 'hashchange.' + _this6.eventNamespace, function (event) {
-              if (_this6.isOpen) {
-                _this6.hashchangeHandler();
-              }
-            });
-          }, 40);
-        }
-
-        this.addEventListener(this.domNodes.navigation.getElementsByTagName('button'), 'click.' + this.eventNamespace, function (event) {
-          if (!event.currentTarget.tagName.match(/button/i)) {
-            return true;
-          }
-
-          event.preventDefault();
-          _this6.controlCoordinates.swipeDiff = 0;
-
-          _this6.loadImage(event.currentTarget.classList.contains('sl-next') ? 1 : -1);
-        });
-        this.addEventListener(this.domNodes.image, ['touchstart.' + this.eventNamespace, 'mousedown.' + this.eventNamespace], function (event) {
-          if (event.target.tagName === 'A' && event.type === 'touchstart') {
-            return true;
-          }
-
-          if (event.type === 'mousedown') {
-            _this6.controlCoordinates.initialPointerOffsetX = event.clientX;
-            _this6.controlCoordinates.initialPointerOffsetY = event.clientY;
-            _this6.controlCoordinates.containerHeight = _this6.getDimensions(_this6.domNodes.image).height;
-            _this6.controlCoordinates.containerWidth = _this6.getDimensions(_this6.domNodes.image).width;
-            _this6.controlCoordinates.imgHeight = _this6.getDimensions(_this6.currentImage).height;
-            _this6.controlCoordinates.imgWidth = _this6.getDimensions(_this6.currentImage).width;
-            _this6.controlCoordinates.containerOffsetX = _this6.domNodes.image.offsetLeft;
-            _this6.controlCoordinates.containerOffsetY = _this6.domNodes.image.offsetTop;
-            _this6.controlCoordinates.initialOffsetX = parseFloat(_this6.currentImage.dataset.translateX);
-            _this6.controlCoordinates.initialOffsetY = parseFloat(_this6.currentImage.dataset.translateY);
-            _this6.controlCoordinates.capture = true;
-          } else {
-            _this6.controlCoordinates.touchCount = event.touches.length;
-            _this6.controlCoordinates.initialPointerOffsetX = event.touches[0].clientX;
-            _this6.controlCoordinates.initialPointerOffsetY = event.touches[0].clientY;
-            _this6.controlCoordinates.containerHeight = _this6.getDimensions(_this6.domNodes.image).height;
-            _this6.controlCoordinates.containerWidth = _this6.getDimensions(_this6.domNodes.image).width;
-            _this6.controlCoordinates.imgHeight = _this6.getDimensions(_this6.currentImage).height;
-            _this6.controlCoordinates.imgWidth = _this6.getDimensions(_this6.currentImage).width;
-            _this6.controlCoordinates.containerOffsetX = _this6.domNodes.image.offsetLeft;
-            _this6.controlCoordinates.containerOffsetY = _this6.domNodes.image.offsetTop;
-
-            if (_this6.controlCoordinates.touchCount === 1)
-              /* Single touch */
-              {
-                if (!_this6.controlCoordinates.doubleTapped) {
-                  _this6.controlCoordinates.doubleTapped = true;
-                  setTimeout(function () {
-                    _this6.controlCoordinates.doubleTapped = false;
-                  }, 300);
-                } else {
-                  _this6.currentImage.classList.add('sl-transition');
-
-                  if (!_this6.controlCoordinates.zoomed) {
-                    _this6.controlCoordinates.initialScale = _this6.options.doubleTapZoom;
-
-                    _this6.setZoomData(_this6.controlCoordinates.initialScale, 0, 0);
-
-                    _this6.zoomPanElement(0 + "px", 0 + "px", _this6.controlCoordinates.initialScale);
-
-                    if (!_this6.domNodes.caption.style.opacity && _this6.domNodes.caption.style.display !== 'none') {
-                      _this6.fadeOut(_this6.domNodes.caption, 200);
-                    }
-
-                    _this6.controlCoordinates.zoomed = true;
-                  } else {
-                    _this6.controlCoordinates.initialScale = 1;
-
-                    _this6.setZoomData(_this6.controlCoordinates.initialScale, 0, 0);
-
-                    _this6.zoomPanElement(0 + "px", 0 + "px", _this6.controlCoordinates.initialScale);
-
-                    _this6.controlCoordinates.zoomed = false;
-                  }
-
-                  setTimeout(function () {
-                    if (_this6.currentImage) {
-                      _this6.currentImage.classList.remove('sl-transition');
-                    }
-                  }, 200);
-                  return false;
-                }
-
-                _this6.controlCoordinates.initialOffsetX = parseFloat(_this6.currentImage.dataset.translateX);
-                _this6.controlCoordinates.initialOffsetY = parseFloat(_this6.currentImage.dataset.translateY);
-              } else if (_this6.controlCoordinates.touchCount === 2)
-              /* Pinch */
-              {
-                _this6.controlCoordinates.initialPointerOffsetX2 = event.touches[1].clientX;
-                _this6.controlCoordinates.initialPointerOffsetY2 = event.touches[1].clientY;
-                _this6.controlCoordinates.initialOffsetX = parseFloat(_this6.currentImage.dataset.translateX);
-                _this6.controlCoordinates.initialOffsetY = parseFloat(_this6.currentImage.dataset.translateY);
-                _this6.controlCoordinates.pinchOffsetX = (_this6.controlCoordinates.initialPointerOffsetX + _this6.controlCoordinates.initialPointerOffsetX2) / 2;
-                _this6.controlCoordinates.pinchOffsetY = (_this6.controlCoordinates.initialPointerOffsetY + _this6.controlCoordinates.initialPointerOffsetY2) / 2;
-                _this6.controlCoordinates.initialPinchDistance = Math.sqrt((_this6.controlCoordinates.initialPointerOffsetX - _this6.controlCoordinates.initialPointerOffsetX2) * (_this6.controlCoordinates.initialPointerOffsetX - _this6.controlCoordinates.initialPointerOffsetX2) + (_this6.controlCoordinates.initialPointerOffsetY - _this6.controlCoordinates.initialPointerOffsetY2) * (_this6.controlCoordinates.initialPointerOffsetY - _this6.controlCoordinates.initialPointerOffsetY2));
-              }
-
-            _this6.controlCoordinates.capture = true;
-          }
-
-          if (_this6.controlCoordinates.mousedown) return true;
-
-          if (_this6.transitionCapable) {
-            _this6.controlCoordinates.imageLeft = parseInt(_this6.domNodes.image.style.left, 10);
-          }
-
-          _this6.controlCoordinates.mousedown = true;
-          _this6.controlCoordinates.swipeDiff = 0;
-          _this6.controlCoordinates.swipeYDiff = 0;
-          _this6.controlCoordinates.swipeStart = event.pageX || event.touches[0].pageX;
-          _this6.controlCoordinates.swipeYStart = event.pageY || event.touches[0].pageY;
-          return false;
-        });
-        this.addEventListener(this.domNodes.image, ['touchmove.' + this.eventNamespace, 'mousemove.' + this.eventNamespace, 'MSPointerMove'], function (event) {
-          if (!_this6.controlCoordinates.mousedown) {
-            return true;
-          }
-
-          event.preventDefault();
-
-          if (event.type === 'touchmove') {
-            if (_this6.controlCoordinates.capture === false) {
-              return false;
-            }
-
-            _this6.controlCoordinates.pointerOffsetX = event.touches[0].clientX;
-            _this6.controlCoordinates.pointerOffsetY = event.touches[0].clientY;
-            _this6.controlCoordinates.touchCount = event.touches.length;
-            _this6.controlCoordinates.touchmoveCount++;
-
-            if (_this6.controlCoordinates.touchCount > 1)
-              /* Pinch */
-              {
-                _this6.controlCoordinates.pointerOffsetX2 = event.touches[1].clientX;
-                _this6.controlCoordinates.pointerOffsetY2 = event.touches[1].clientY;
-                _this6.controlCoordinates.targetPinchDistance = Math.sqrt((_this6.controlCoordinates.pointerOffsetX - _this6.controlCoordinates.pointerOffsetX2) * (_this6.controlCoordinates.pointerOffsetX - _this6.controlCoordinates.pointerOffsetX2) + (_this6.controlCoordinates.pointerOffsetY - _this6.controlCoordinates.pointerOffsetY2) * (_this6.controlCoordinates.pointerOffsetY - _this6.controlCoordinates.pointerOffsetY2));
-
-                if (_this6.controlCoordinates.initialPinchDistance === null) {
-                  _this6.controlCoordinates.initialPinchDistance = _this6.controlCoordinates.targetPinchDistance;
-                }
-
-                if (Math.abs(_this6.controlCoordinates.initialPinchDistance - _this6.controlCoordinates.targetPinchDistance) >= 1) {
-                  /* Initialize helpers */
-                  _this6.controlCoordinates.targetScale = _this6.minMax(_this6.controlCoordinates.targetPinchDistance / _this6.controlCoordinates.initialPinchDistance * _this6.controlCoordinates.initialScale, 1, _this6.options.maxZoom);
-                  _this6.controlCoordinates.limitOffsetX = (_this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerWidth) / 2;
-                  _this6.controlCoordinates.limitOffsetY = (_this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerHeight) / 2;
-                  _this6.controlCoordinates.scaleDifference = _this6.controlCoordinates.targetScale - _this6.controlCoordinates.initialScale;
-                  _this6.controlCoordinates.targetOffsetX = _this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale <= _this6.controlCoordinates.containerWidth ? 0 : _this6.minMax(_this6.controlCoordinates.initialOffsetX - (_this6.controlCoordinates.pinchOffsetX - _this6.controlCoordinates.containerOffsetX - _this6.controlCoordinates.containerWidth / 2 - _this6.controlCoordinates.initialOffsetX) / (_this6.controlCoordinates.targetScale - _this6.controlCoordinates.scaleDifference) * _this6.controlCoordinates.scaleDifference, _this6.controlCoordinates.limitOffsetX * -1, _this6.controlCoordinates.limitOffsetX);
-                  _this6.controlCoordinates.targetOffsetY = _this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale <= _this6.controlCoordinates.containerHeight ? 0 : _this6.minMax(_this6.controlCoordinates.initialOffsetY - (_this6.controlCoordinates.pinchOffsetY - _this6.controlCoordinates.containerOffsetY - _this6.controlCoordinates.containerHeight / 2 - _this6.controlCoordinates.initialOffsetY) / (_this6.controlCoordinates.targetScale - _this6.controlCoordinates.scaleDifference) * _this6.controlCoordinates.scaleDifference, _this6.controlCoordinates.limitOffsetY * -1, _this6.controlCoordinates.limitOffsetY);
-
-                  _this6.zoomPanElement(_this6.controlCoordinates.targetOffsetX + "px", _this6.controlCoordinates.targetOffsetY + "px", _this6.controlCoordinates.targetScale);
-
-                  if (_this6.controlCoordinates.targetScale > 1) {
-                    _this6.controlCoordinates.zoomed = true;
-
-                    if (!_this6.domNodes.caption.style.opacity && _this6.domNodes.caption.style.display !== 'none') {
-                      _this6.fadeOut(_this6.domNodes.caption, 200);
-                    }
-                  }
-
-                  _this6.controlCoordinates.initialPinchDistance = _this6.controlCoordinates.targetPinchDistance;
-                  _this6.controlCoordinates.initialScale = _this6.controlCoordinates.targetScale;
-                  _this6.controlCoordinates.initialOffsetX = _this6.controlCoordinates.targetOffsetX;
-                  _this6.controlCoordinates.initialOffsetY = _this6.controlCoordinates.targetOffsetY;
-                }
-              } else {
-              _this6.controlCoordinates.targetScale = _this6.controlCoordinates.initialScale;
-              _this6.controlCoordinates.limitOffsetX = (_this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerWidth) / 2;
-              _this6.controlCoordinates.limitOffsetY = (_this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerHeight) / 2;
-              _this6.controlCoordinates.targetOffsetX = _this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale <= _this6.controlCoordinates.containerWidth ? 0 : _this6.minMax(_this6.controlCoordinates.pointerOffsetX - (_this6.controlCoordinates.initialPointerOffsetX - _this6.controlCoordinates.initialOffsetX), _this6.controlCoordinates.limitOffsetX * -1, _this6.controlCoordinates.limitOffsetX);
-              _this6.controlCoordinates.targetOffsetY = _this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale <= _this6.controlCoordinates.containerHeight ? 0 : _this6.minMax(_this6.controlCoordinates.pointerOffsetY - (_this6.controlCoordinates.initialPointerOffsetY - _this6.controlCoordinates.initialOffsetY), _this6.controlCoordinates.limitOffsetY * -1, _this6.controlCoordinates.limitOffsetY);
-
-              if (Math.abs(_this6.controlCoordinates.targetOffsetX) === Math.abs(_this6.controlCoordinates.limitOffsetX)) {
-                _this6.controlCoordinates.initialOffsetX = _this6.controlCoordinates.targetOffsetX;
-                _this6.controlCoordinates.initialPointerOffsetX = _this6.controlCoordinates.pointerOffsetX;
-              }
-
-              if (Math.abs(_this6.controlCoordinates.targetOffsetY) === Math.abs(_this6.controlCoordinates.limitOffsetY)) {
-                _this6.controlCoordinates.initialOffsetY = _this6.controlCoordinates.targetOffsetY;
-                _this6.controlCoordinates.initialPointerOffsetY = _this6.controlCoordinates.pointerOffsetY;
-              }
-
-              _this6.setZoomData(_this6.controlCoordinates.initialScale, _this6.controlCoordinates.targetOffsetX, _this6.controlCoordinates.targetOffsetY);
-
-              _this6.zoomPanElement(_this6.controlCoordinates.targetOffsetX + "px", _this6.controlCoordinates.targetOffsetY + "px", _this6.controlCoordinates.targetScale);
-            }
-          }
-          /* Mouse Move implementation */
-
-
-          if (event.type === 'mousemove' && _this6.controlCoordinates.mousedown) {
-            if (event.type == 'touchmove') return true;
-            if (_this6.controlCoordinates.capture === false) return false;
-            _this6.controlCoordinates.pointerOffsetX = event.clientX;
-            _this6.controlCoordinates.pointerOffsetY = event.clientY;
-            _this6.controlCoordinates.targetScale = _this6.controlCoordinates.initialScale;
-            _this6.controlCoordinates.limitOffsetX = (_this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerWidth) / 2;
-            _this6.controlCoordinates.limitOffsetY = (_this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerHeight) / 2;
-            _this6.controlCoordinates.targetOffsetX = _this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale <= _this6.controlCoordinates.containerWidth ? 0 : _this6.minMax(_this6.controlCoordinates.pointerOffsetX - (_this6.controlCoordinates.initialPointerOffsetX - _this6.controlCoordinates.initialOffsetX), _this6.controlCoordinates.limitOffsetX * -1, _this6.controlCoordinates.limitOffsetX);
-            _this6.controlCoordinates.targetOffsetY = _this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale <= _this6.controlCoordinates.containerHeight ? 0 : _this6.minMax(_this6.controlCoordinates.pointerOffsetY - (_this6.controlCoordinates.initialPointerOffsetY - _this6.controlCoordinates.initialOffsetY), _this6.controlCoordinates.limitOffsetY * -1, _this6.controlCoordinates.limitOffsetY);
-
-            if (Math.abs(_this6.controlCoordinates.targetOffsetX) === Math.abs(_this6.controlCoordinates.limitOffsetX)) {
-              _this6.controlCoordinates.initialOffsetX = _this6.controlCoordinates.targetOffsetX;
-              _this6.controlCoordinates.initialPointerOffsetX = _this6.controlCoordinates.pointerOffsetX;
-            }
-
-            if (Math.abs(_this6.controlCoordinates.targetOffsetY) === Math.abs(_this6.controlCoordinates.limitOffsetY)) {
-              _this6.controlCoordinates.initialOffsetY = _this6.controlCoordinates.targetOffsetY;
-              _this6.controlCoordinates.initialPointerOffsetY = _this6.controlCoordinates.pointerOffsetY;
-            }
-
-            _this6.setZoomData(_this6.controlCoordinates.initialScale, _this6.controlCoordinates.targetOffsetX, _this6.controlCoordinates.targetOffsetY);
-
-            _this6.zoomPanElement(_this6.controlCoordinates.targetOffsetX + "px", _this6.controlCoordinates.targetOffsetY + "px", _this6.controlCoordinates.targetScale);
-          }
-
-          if (!_this6.controlCoordinates.zoomed) {
-            _this6.controlCoordinates.swipeEnd = event.pageX || event.touches[0].pageX;
-            _this6.controlCoordinates.swipeYEnd = event.pageY || event.touches[0].pageY;
-            _this6.controlCoordinates.swipeDiff = _this6.controlCoordinates.swipeStart - _this6.controlCoordinates.swipeEnd;
-            _this6.controlCoordinates.swipeYDiff = _this6.controlCoordinates.swipeYStart - _this6.controlCoordinates.swipeYEnd;
-
-            if (_this6.options.animationSlide) {
-              _this6.slide(0, -_this6.controlCoordinates.swipeDiff + 'px');
-            }
-          }
-        });
-        this.addEventListener(this.domNodes.image, ['touchend.' + this.eventNamespace, 'mouseup.' + this.eventNamespace, 'touchcancel.' + this.eventNamespace, 'mouseleave.' + this.eventNamespace, 'pointerup', 'pointercancel', 'MSPointerUp', 'MSPointerCancel'], function (event) {
-          if (_this6.isTouchDevice && event.type === 'touchend') {
-            _this6.controlCoordinates.touchCount = event.touches.length;
-
-            if (_this6.controlCoordinates.touchCount === 0)
-              /* No touch */
-              {
-                /* Set attributes */
-                _this6.setZoomData(_this6.controlCoordinates.initialScale, _this6.controlCoordinates.targetOffsetX, _this6.controlCoordinates.targetOffsetY);
-
-                if (_this6.controlCoordinates.initialScale === 1) {
-                  _this6.controlCoordinates.zoomed = false;
-
-                  if (_this6.domNodes.caption.style.display === 'none') {
-                    _this6.fadeIn(_this6.domNodes.caption, 200);
-                  }
-                }
-
-                _this6.controlCoordinates.initialPinchDistance = null;
-                _this6.controlCoordinates.capture = false;
-              } else if (_this6.controlCoordinates.touchCount === 1)
-              /* Single touch */
-              {
-                _this6.controlCoordinates.initialPointerOffsetX = event.touches[0].clientX;
-                _this6.controlCoordinates.initialPointerOffsetY = event.touches[0].clientY;
-              } else if (_this6.controlCoordinates.touchCount > 1)
-              /* Pinch */
-              {
-                _this6.controlCoordinates.initialPinchDistance = null;
-              }
-          }
-
-          if (_this6.controlCoordinates.mousedown) {
-            _this6.controlCoordinates.mousedown = false;
-            var possibleDir = true;
-
-            if (!_this6.options.loop) {
-              if (_this6.currentImageIndex === 0 && _this6.controlCoordinates.swipeDiff < 0) {
-                possibleDir = false;
-              }
-
-              if (_this6.currentImageIndex >= _this6.relatedElements.length - 1 && _this6.controlCoordinates.swipeDiff > 0) {
-                possibleDir = false;
-              }
-            }
-
-            if (Math.abs(_this6.controlCoordinates.swipeDiff) > _this6.options.swipeTolerance && possibleDir) {
-              _this6.loadImage(_this6.controlCoordinates.swipeDiff > 0 ? 1 : -1);
-            } else if (_this6.options.animationSlide) {
-              _this6.slide(_this6.options.animationSpeed / 1000, 0 + 'px');
-            }
-
-            if (_this6.options.swipeClose && Math.abs(_this6.controlCoordinates.swipeYDiff) > 50 && Math.abs(_this6.controlCoordinates.swipeDiff) < _this6.options.swipeTolerance) {
-              _this6.close();
-            }
-          }
-        });
-        this.addEventListener(this.domNodes.image, ['dblclick'], function (event) {
-          if (_this6.isTouchDevice) return;
-          _this6.controlCoordinates.initialPointerOffsetX = event.clientX;
-          _this6.controlCoordinates.initialPointerOffsetY = event.clientY;
-          _this6.controlCoordinates.containerHeight = _this6.getDimensions(_this6.domNodes.image).height;
-          _this6.controlCoordinates.containerWidth = _this6.getDimensions(_this6.domNodes.image).width;
-          _this6.controlCoordinates.imgHeight = _this6.getDimensions(_this6.currentImage).height;
-          _this6.controlCoordinates.imgWidth = _this6.getDimensions(_this6.currentImage).width;
-          _this6.controlCoordinates.containerOffsetX = _this6.domNodes.image.offsetLeft;
-          _this6.controlCoordinates.containerOffsetY = _this6.domNodes.image.offsetTop;
-
-          _this6.currentImage.classList.add('sl-transition');
-
-          if (!_this6.controlCoordinates.zoomed) {
-            _this6.controlCoordinates.initialScale = _this6.options.doubleTapZoom;
-
-            _this6.setZoomData(_this6.controlCoordinates.initialScale, 0, 0);
-
-            _this6.zoomPanElement(0 + "px", 0 + "px", _this6.controlCoordinates.initialScale);
-
-            if (!_this6.domNodes.caption.style.opacity && _this6.domNodes.caption.style.display !== 'none') {
-              _this6.fadeOut(_this6.domNodes.caption, 200);
-            }
-
-            _this6.controlCoordinates.zoomed = true;
-          } else {
-            _this6.controlCoordinates.initialScale = 1;
-
-            _this6.setZoomData(_this6.controlCoordinates.initialScale, 0, 0);
-
-            _this6.zoomPanElement(0 + "px", 0 + "px", _this6.controlCoordinates.initialScale);
-
-            _this6.controlCoordinates.zoomed = false;
-
-            if (_this6.domNodes.caption.style.display === 'none') {
-              _this6.fadeIn(_this6.domNodes.caption, 200);
-            }
-          }
-
-          setTimeout(function () {
-            if (_this6.currentImage) {
-              _this6.currentImage.classList.remove('sl-transition');
-            }
-          }, 200);
-          _this6.controlCoordinates.capture = true;
-          return false;
-        });
-      }
-    }, {
-      key: "getDimensions",
-      value: function getDimensions(element) {
-        var styles = window.getComputedStyle(element),
-            height = element.offsetHeight,
-            width = element.offsetWidth,
-            borderTopWidth = parseFloat(styles.borderTopWidth),
-            borderBottomWidth = parseFloat(styles.borderBottomWidth),
-            paddingTop = parseFloat(styles.paddingTop),
-            paddingBottom = parseFloat(styles.paddingBottom),
-            borderLeftWidth = parseFloat(styles.borderLeftWidth),
-            borderRightWidth = parseFloat(styles.borderRightWidth),
-            paddingLeft = parseFloat(styles.paddingLeft),
-            paddingRight = parseFloat(styles.paddingRight);
-        return {
-          height: height - borderBottomWidth - borderTopWidth - paddingTop - paddingBottom,
-          width: width - borderLeftWidth - borderRightWidth - paddingLeft - paddingRight
-        };
-      }
-    }, {
-      key: "updateHash",
-      value: function updateHash() {
-        var newHash = 'pid=' + (this.currentImageIndex + 1),
-            newURL = window.location.href.split('#')[0] + '#' + newHash;
-        this.hashReseted = false;
-
-        if (this.pushStateSupport) {
-          window.history[this.historyHasChanges ? 'replaceState' : 'pushState']('', document.title, newURL);
-        } else {
-          // what is the browser target of this?
-          if (this.historyHasChanges) {
-            window.location.replace(newURL);
-          } else {
-            window.location.hash = newHash;
-          }
-        }
-
-        if (!this.historyHasChanges) {
-          this.urlChangedOnce = true;
-        }
-
-        this.historyHasChanges = true;
-      }
-    }, {
-      key: "resetHash",
-      value: function resetHash() {
-        this.hashReseted = true;
-
-        if (this.urlChangedOnce) {
-          history.back();
-        } else {
-          if (this.pushStateSupport) {
-            history.pushState('', document.title, window.location.pathname + window.location.search);
-          } else {
-            window.location.hash = '';
-          }
-        } //
-        //in case an history operation is still pending
-
-
-        clearTimeout(this.historyUpdateTimeout);
-      }
-    }, {
-      key: "updateURL",
-      value: function updateURL() {
-        clearTimeout(this.historyUpdateTimeout);
-
-        if (!this.historyHasChanges) {
-          this.updateHash(); // first time
-        } else {
-          this.historyUpdateTimeout = setTimeout(this.updateHash.bind(this), 800);
-        }
-      }
-    }, {
-      key: "setCaption",
-      value: function setCaption(captionText, imageWidth) {
-        var _this7 = this;
-
-        if (this.options.captions && captionText && captionText !== '' && typeof captionText !== "undefined") {
-          this.hide(this.domNodes.caption);
-          this.domNodes.caption.style.width = imageWidth + 'px';
-          this.domNodes.caption.innerHTML = captionText;
-          this.domNodes.image.appendChild(this.domNodes.caption);
-          setTimeout(function () {
-            _this7.fadeIn(_this7.domNodes.caption, 300);
-          }, this.options.captionDelay);
-        }
-      }
-    }, {
-      key: "slide",
-      value: function slide(speed, pos) {
-        if (!this.transitionCapable) {
-          return this.domNodes.image.style.left = pos;
-        }
-
-        this.domNodes.image.style[this.transitionPrefix + 'transform'] = 'translateX(' + pos + ')';
-        this.domNodes.image.style[this.transitionPrefix + 'transition'] = this.transitionPrefix + 'transform ' + speed + 's linear';
-      }
-    }, {
-      key: "getRelated",
-      value: function getRelated(rel) {
-        var elems;
-
-        if (rel && rel !== false && rel !== 'nofollow') {
-          elems = Array.from(this.elements).filter(function (element) {
-            return element.getAttribute('rel') === rel;
-          });
-        } else {
-          elems = this.elements;
-        }
-
-        return elems;
-      }
-    }, {
-      key: "openImage",
-      value: function openImage(element) {
-        var _this8 = this;
-
-        element.dispatchEvent(new Event('show.' + this.eventNamespace));
-
-        if (this.options.disableScroll) {
-          this.globalScrollbarWidth = this.toggleScrollbar('hide');
-        }
-
-        if (this.options.htmlClass && this.options.htmlClass !== '') {
-          document.querySelector('html').classList.add(this.options.htmlClass);
-        }
-
-        document.body.appendChild(this.domNodes.wrapper);
-        this.domNodes.wrapper.appendChild(this.domNodes.image);
-
-        if (this.options.overlay) {
-          document.body.appendChild(this.domNodes.overlay);
-        }
-
-        this.relatedElements = this.getRelated(element.rel);
-
-        if (this.options.showCounter) {
-          if (this.relatedElements.length == 1 && this.domNodes.wrapper.contains(this.domNodes.counter)) {
-            this.domNodes.wrapper.removeChild(this.domNodes.counter);
-          } else if (this.relatedElements.length > 1 && !this.domNodes.wrapper.contains(this.domNodes.counter)) {
-            this.domNodes.wrapper.appendChild(this.domNodes.counter);
-          }
-        }
-
-        this.isAnimating = true;
-        this.currentImageIndex = this.relatedElements.indexOf(element);
-        var targetURL = element.getAttribute(this.options.sourceAttr);
-        this.currentImage = document.createElement('img');
-        this.currentImage.style.display = 'none';
-        this.currentImage.setAttribute('src', targetURL);
-        this.currentImage.dataset.scale = 1;
-        this.currentImage.dataset.translateX = 0;
-        this.currentImage.dataset.translateY = 0;
-
-        if (this.loadedImages.indexOf(targetURL) === -1) {
-          this.loadedImages.push(targetURL);
-        }
-
-        this.domNodes.image.innerHTML = '';
-        this.domNodes.image.setAttribute('style', '');
-        this.domNodes.image.appendChild(this.currentImage);
-        this.fadeIn(this.domNodes.overlay, 300);
-        this.fadeIn([this.domNodes.counter, this.domNodes.navigation, this.domNodes.closeButton], 300);
-        this.show(this.domNodes.spinner);
-        this.domNodes.counter.querySelector('.sl-current').innerHTML = this.currentImageIndex + 1;
-        this.domNodes.counter.querySelector('.sl-total').innerHTML = this.relatedElements.length;
-        this.adjustImage();
-
-        if (this.options.preloading) {
-          this.preload();
-        }
-
-        setTimeout(function () {
-          element.dispatchEvent(new Event('shown.' + _this8.eventNamespace));
-        }, this.options.animationSpeed);
-      } // utility
-
-    }, {
-      key: "addEventListener",
-      value: function addEventListener(elements, events, callback, opts) {
-        elements = this.wrap(elements);
-        events = this.wrap(events);
-
-        var _iterator = _createForOfIteratorHelper(elements),
-            _step;
-
-        try {
-          for (_iterator.s(); !(_step = _iterator.n()).done;) {
-            var element = _step.value;
-
-            if (!element.namespaces) {
-              element.namespaces = {};
-            } // save the namespaces addEventListener the DOM element itself
-
-
-            var _iterator2 = _createForOfIteratorHelper(events),
-                _step2;
-
-            try {
-              for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-                var event = _step2.value;
-                var options = opts || false;
-                element.namespaces[event] = callback;
-                element.addEventListener(event.split('.')[0], callback, options);
-              }
-            } catch (err) {
-              _iterator2.e(err);
-            } finally {
-              _iterator2.f();
-            }
-          }
-        } catch (err) {
-          _iterator.e(err);
-        } finally {
-          _iterator.f();
-        }
-      }
-    }, {
-      key: "removeEventListener",
-      value: function removeEventListener(elements, events) {
-        elements = this.wrap(elements);
-        events = this.wrap(events);
-
-        var _iterator3 = _createForOfIteratorHelper(elements),
-            _step3;
-
-        try {
-          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-            var element = _step3.value;
-
-            var _iterator4 = _createForOfIteratorHelper(events),
-                _step4;
-
-            try {
-              for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-                var event = _step4.value;
-                element.removeEventListener(event.split('.')[0], element.namespaces[event]);
-                delete element.namespaces[event];
-              }
-            } catch (err) {
-              _iterator4.e(err);
-            } finally {
-              _iterator4.f();
-            }
-          }
-        } catch (err) {
-          _iterator3.e(err);
-        } finally {
-          _iterator3.f();
-        }
-      }
-    }, {
-      key: "fadeOut",
-      value: function fadeOut(elements, duration, callback) {
-        var _this9 = this;
-
-        elements = this.wrap(elements);
-
-        var _iterator5 = _createForOfIteratorHelper(elements),
-            _step5;
-
-        try {
-          for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-            var element = _step5.value;
-            element.style.opacity = 1;
-          }
-        } catch (err) {
-          _iterator5.e(err);
-        } finally {
-          _iterator5.f();
-        }
-
-        var step = 16.66666 / (duration || 300),
-            fade = function fade() {
-          var currentOpacity = parseFloat(elements[0].style.opacity);
-
-          if ((currentOpacity -= step) < 0) {
-            var _iterator6 = _createForOfIteratorHelper(elements),
-                _step6;
-
-            try {
-              for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-                var element = _step6.value;
-                element.style.display = "none";
-                element.style.opacity = '';
-              }
-            } catch (err) {
-              _iterator6.e(err);
-            } finally {
-              _iterator6.f();
-            }
-
-            callback && callback.call(_this9, elements);
-          } else {
-            var _iterator7 = _createForOfIteratorHelper(elements),
-                _step7;
-
-            try {
-              for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
-                var _element = _step7.value;
-                _element.style.opacity = currentOpacity;
-              }
-            } catch (err) {
-              _iterator7.e(err);
-            } finally {
-              _iterator7.f();
-            }
-
-            requestAnimationFrame(fade);
-          }
-        };
-
-        fade();
-      }
-    }, {
-      key: "fadeIn",
-      value: function fadeIn(elements, duration, callback, display) {
-        var _this10 = this;
-
-        elements = this.wrap(elements);
-
-        var _iterator8 = _createForOfIteratorHelper(elements),
-            _step8;
-
-        try {
-          for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
-            var element = _step8.value;
-            element.style.opacity = 0;
-            element.style.display = display || "block";
-          }
-        } catch (err) {
-          _iterator8.e(err);
-        } finally {
-          _iterator8.f();
-        }
-
-        var opacityTarget = parseFloat(elements[0].dataset.opacityTarget || 1),
-            step = 16.66666 * opacityTarget / (duration || 300),
-            fade = function fade() {
-          var currentOpacity = parseFloat(elements[0].style.opacity);
-
-          if (!((currentOpacity += step) > opacityTarget)) {
-            var _iterator9 = _createForOfIteratorHelper(elements),
-                _step9;
-
-            try {
-              for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
-                var element = _step9.value;
-                element.style.opacity = currentOpacity;
-              }
-            } catch (err) {
-              _iterator9.e(err);
-            } finally {
-              _iterator9.f();
-            }
-
-            requestAnimationFrame(fade);
-          } else {
-            var _iterator10 = _createForOfIteratorHelper(elements),
-                _step10;
-
-            try {
-              for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
-                var _element2 = _step10.value;
-                _element2.style.opacity = '';
-              }
-            } catch (err) {
-              _iterator10.e(err);
-            } finally {
-              _iterator10.f();
-            }
-
-            callback && callback.call(_this10, elements);
-          }
-        };
-
-        fade();
-      }
-    }, {
-      key: "hide",
-      value: function hide(elements) {
-        elements = this.wrap(elements);
-
-        var _iterator11 = _createForOfIteratorHelper(elements),
-            _step11;
-
-        try {
-          for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
-            var element = _step11.value;
-            element.dataset.initialDisplay = element.style.display;
-            element.style.display = 'none';
-          }
-        } catch (err) {
-          _iterator11.e(err);
-        } finally {
-          _iterator11.f();
-        }
-      }
-    }, {
-      key: "show",
-      value: function show(elements, display) {
-        elements = this.wrap(elements);
-
-        var _iterator12 = _createForOfIteratorHelper(elements),
-            _step12;
-
-        try {
-          for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
-            var element = _step12.value;
-            element.style.display = element.dataset.initialDisplay || display || 'block';
-          }
-        } catch (err) {
-          _iterator12.e(err);
-        } finally {
-          _iterator12.f();
-        }
-      }
-    }, {
-      key: "wrap",
-      value: function wrap(input) {
-        return typeof input[Symbol.iterator] === 'function' && typeof input !== 'string' ? input : [input];
-      }
-    }, {
-      key: "on",
-      value: function on(events, callback) {
-        events = this.wrap(events);
-
-        var _iterator13 = _createForOfIteratorHelper(this.elements),
-            _step13;
-
-        try {
-          for (_iterator13.s(); !(_step13 = _iterator13.n()).done;) {
-            var element = _step13.value;
-
-            if (!element.fullyNamespacedEvents) {
-              element.fullyNamespacedEvents = {};
-            }
-
-            var _iterator14 = _createForOfIteratorHelper(events),
-                _step14;
-
-            try {
-              for (_iterator14.s(); !(_step14 = _iterator14.n()).done;) {
-                var event = _step14.value;
-                element.fullyNamespacedEvents[event] = callback;
-                element.addEventListener(event, callback);
-              }
-            } catch (err) {
-              _iterator14.e(err);
-            } finally {
-              _iterator14.f();
-            }
-          }
-        } catch (err) {
-          _iterator13.e(err);
-        } finally {
-          _iterator13.f();
-        }
-
-        return this;
-      }
-    }, {
-      key: "off",
-      value: function off(events) {
-        events = this.wrap(events);
-
-        var _iterator15 = _createForOfIteratorHelper(this.elements),
-            _step15;
-
-        try {
-          for (_iterator15.s(); !(_step15 = _iterator15.n()).done;) {
-            var element = _step15.value;
-
-            var _iterator16 = _createForOfIteratorHelper(events),
-                _step16;
-
-            try {
-              for (_iterator16.s(); !(_step16 = _iterator16.n()).done;) {
-                var event = _step16.value;
-
-                if (typeof element.fullyNamespacedEvents !== 'undefined' && event in element.fullyNamespacedEvents) {
-                  element.removeEventListener(event, element.fullyNamespacedEvents[event]);
-                }
-              }
-            } catch (err) {
-              _iterator16.e(err);
-            } finally {
-              _iterator16.f();
-            }
-          }
-        } catch (err) {
-          _iterator15.e(err);
-        } finally {
-          _iterator15.f();
-        }
-
-        return this;
-      } // api
-
-    }, {
-      key: "open",
-      value: function open(elem) {
-        elem = elem || this.elements[0];
-
-        if (typeof jQuery !== "undefined" && elem instanceof jQuery) {
-          elem = elem.get(0);
-        }
-
-        this.initialImageIndex = this.elements.indexOf(elem);
-
-        if (this.initialImageIndex > -1) {
-          this.openImage(elem);
-        }
-      }
-    }, {
-      key: "next",
-      value: function next() {
-        this.loadImage(1);
-      }
-    }, {
-      key: "prev",
-      value: function prev() {
-        this.loadImage(-1);
-      } //close is exposed anyways..
-
-    }, {
-      key: "destroy",
-      value: function destroy() {
-        //remove all custom event listeners from elements
-        this.off(['close.' + this.eventNamespace, 'closed.' + this.eventNamespace, 'nextImageLoaded.' + this.eventNamespace, 'prevImageLoaded.' + this.eventNamespace, 'change.' + this.eventNamespace, 'nextDone.' + this.eventNamespace, 'prevDone.' + this.eventNamespace, 'error.' + this.eventNamespace, 'changed.' + this.eventNamespace, 'next.' + this.eventNamespace, 'prev.' + this.eventNamespace, 'show.' + this.eventNamespace, 'shown.' + this.eventNamespace]);
-        this.removeEventListener(this.elements, 'click.' + this.eventNamespace);
-        this.removeEventListener(document.body, 'contextmenu.' + this.eventNamespace);
-        this.removeEventListener(document.body, 'keyup.' + this.eventNamespace);
-        this.removeEventListener(this.domNodes.navigation.getElementsByTagName('button'), 'click.' + this.eventNamespace);
-        this.removeEventListener(this.domNodes.closeButton, 'click.' + this.eventNamespace);
-        this.removeEventListener(window, 'resize.' + this.eventNamespace);
-        this.removeEventListener(window, 'hashchange.' + this.eventNamespace);
-        this.close();
-
-        if (this.isOpen) {
-          document.body.removeChild(this.domNodes.wrapper);
-          document.body.removeChild(this.domNodes.overlay);
-        }
-
-        this.elements = null;
-      }
-    }, {
-      key: "refresh",
-      value: function refresh() {
-        if (!this.initialSelector) {
-          throw 'refreshing only works when you initialize using a selector!';
-        }
-
-        var options = this.options,
-            selector = this.initialSelector;
-        this.destroy();
-        this.constructor(selector, options);
-        return this;
-      }
-    }, {
-      key: "hash",
-      get: function get() {
-        return window.location.hash.substring(1);
-      }
-    }]);
-
-    return SimpleLightbox;
-  }();
-
-  const simpleLightbox = function (className, options) {
-    return new SimpleLightbox(className, options)
-  };
-
-  // simpleLightbox for picture partial
-  simpleLightbox('.picture-partial__zoom-link', {
-    captionSelector: 'self',
-    captionType: 'data',
-    captionsData: 'caption'
-  });
-
-  // simpleLightbox for image partial
-  simpleLightbox('.image-partial__zoom-link', {
-    captionSelector: 'self',
-    captionType: 'data',
-    captionsData: 'caption'
-  });
+    const simpleLightbox = function (className, options) {
+      return new SimpleLightbox(className, options)
+    };
+
+    // simpleLightbox for picture partial
+    simpleLightbox('.picture-partial__zoom-link', {
+      captionSelector: 'self',
+      captionType: 'data',
+      captionsData: 'caption'
+    });
+
+    // simpleLightbox for image partial
+    simpleLightbox('.image-partial__zoom-link', {
+      captionSelector: 'self',
+      captionType: 'data',
+      captionsData: 'caption'
+    });
 
 }());
 //# sourceMappingURL=main.js.map
