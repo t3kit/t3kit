@@ -40,7 +40,7 @@ $btn-border-radius-lg: none !default;
 // ==============================
 
 // ==============================
-// Import t3kit default css variables
+// t3kit default css variables
 :root {
   --t3-primary: #{$primary};
   --t3-secondary: #{$secondary};
@@ -49,6 +49,22 @@ $btn-border-radius-lg: none !default;
   --t3-body-color: #{$body-color};
   --t3-body-bg: #{$body-bg};
   --t3-link-color: #{$link-color};
+
+
+  // ========================
+  // Helpers
+  // ========================
+  // skip-links
+  --t3-skip-link--bg: var(--t3-body-bg);
+
+  // scroll-to-top
+  --t3-scroll-to-top--color: var(--t3-body-bg);
+  --t3-scroll-to-top--bg: var(--t3-link-color);
+  --t3-scroll-to-top--hover-color: #999;
+
+  // target-blank-link
+  --t3-target-blank-msg--color: var(--t3-body-color);
+  --t3-target-blank-msg--bg: var(--t3-body-bg);
 }
 // ==============================
 
