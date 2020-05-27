@@ -81,9 +81,9 @@ lib.parseFunc_RTE {
         HTMLparser = 1
         HTMLparser {
           tags.table.fixAttrib.class {
-            default = contenttable
+            default = table
             always = 1
-            list = contenttable
+            list = table
           }
           keepNonMatchedTags = 1
         }

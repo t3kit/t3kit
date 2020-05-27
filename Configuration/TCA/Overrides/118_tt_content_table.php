@@ -50,10 +50,6 @@ $GLOBALS['TCA']['tt_content']['columns']['table_class']['config'] = [
     'renderType' => 'selectCheckBox',
     'items' => [
         [
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_dark',
-            'table-dark'
-        ],
-        [
             'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf:table_class.table_striped',
             'table-striped'
         ],

@@ -3,9 +3,6 @@
 	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_table.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
-			<trans-unit id="table_class.table_dark" resname="table_class.table_dark">
-				<source>Dark table</source>
-			</trans-unit>
 			<trans-unit id="table_class.table_striped" resname="table_class.table_striped">
 				<source>Striped rows</source>
 			</trans-unit>
