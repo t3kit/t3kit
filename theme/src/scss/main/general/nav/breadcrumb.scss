@@ -1,0 +1,27 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: var(--t3-breadcrumb--bg);
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: var(--t3-breadcrumb--color);
+  content: "/";
+}
+
+.breadcrumb-item.active {
+  color: var(--t3-breadcrumb--active-color);
+}

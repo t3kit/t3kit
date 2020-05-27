@@ -1,7 +1,0 @@
-// Text Clamp (Truncating Multiple Line Text)
-@mixin text-clamp($line) {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $line; // amount of lines to show
-}

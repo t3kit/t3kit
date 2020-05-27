@@ -1,0 +1,60 @@
+// ==================================================================
+// ======== Helper classes for TYPO3 layouts, wrappers, margins  ====
+// ==================================================================
+// $margin-5: 5px;
+// $margin-10: 10px;
+// $margin-15: 15px;
+// $margin-20: 20px;
+// $margin-25: 25px;
+// $margin-30: 30px;
+// $margin-40: 40px;
+// $margin-50: 50px;
+// $margin-60: 60px;
+// $margin-70: 70px;
+
+// .margin-top-5 { margin-top: $margin-5 / 2; }
+// .margin-top-10 { margin-top: $margin-10 / 2; }
+// .margin-top-15 { margin-top: $margin-15 / 2; }
+// .margin-top-20 { margin-top: $margin-20 / 2; }
+// .margin-top-25 { margin-top: $margin-25 / 2; }
+// .margin-top-30 { margin-top: $margin-30 / 2; }
+// .margin-top-40 { margin-top: $margin-40 / 2; }
+// .margin-top-50 { margin-top: $margin-50 / 2; }
+// .margin-top-60 { margin-top: $margin-60 / 2; }
+// .margin-top-70 { margin-top: $margin-70 / 2; }
+
+// .margin-bottom-5 { margin-bottom: $margin-5 / 2; }
+// .margin-bottom-10 { margin-bottom: $margin-10 / 2; }
+// .margin-bottom-15 { margin-bottom: $margin-15 / 2; }
+// .margin-bottom-20 { margin-bottom: $margin-20 / 2; }
+// .margin-bottom-25 { margin-bottom: $margin-25 / 2; }
+// .margin-bottom-30 { margin-bottom: $margin-30 / 2; }
+// .margin-bottom-40 { margin-bottom: $margin-40 / 2; }
+// .margin-bottom-50 { margin-bottom: $margin-50 / 2; }
+// .margin-bottom-60 { margin-bottom: $margin-60 / 2; }
+// .margin-bottom-70 { margin-bottom: $margin-70 / 2; }
+
+// // @media (min-width: $screen-sm-min) {
+// @include media-breakpoint-up(md) {
+//   .margin-top-5 { margin-top: $margin-5; }
+//   .margin-top-10 { margin-top: $margin-10; }
+//   .margin-top-15 { margin-top: $margin-15; }
+//   .margin-top-20 { margin-top: $margin-20; }
+//   .margin-top-25 { margin-top: $margin-25; }
+//   .margin-top-30 { margin-top: $margin-30; }
+//   .margin-top-40 { margin-top: $margin-40; }
+//   .margin-top-50 { margin-top: $margin-50; }
+//   .margin-top-60 { margin-top: $margin-60; }
+//   .margin-top-70 { margin-top: $margin-70; }
+
+//   .margin-bottom-5 { margin-bottom: $margin-5; }
+//   .margin-bottom-10 { margin-bottom: $margin-10; }
+//   .margin-bottom-15 { margin-bottom: $margin-15; }
+//   .margin-bottom-20 { margin-bottom: $margin-20; }
+//   .margin-bottom-25 { margin-bottom: $margin-25; }
+//   .margin-bottom-30 { margin-bottom: $margin-30; }
+//   .margin-bottom-40 { margin-bottom: $margin-40; }
+//   .margin-bottom-50 { margin-bottom: $margin-50; }
+//   .margin-bottom-60 { margin-bottom: $margin-60; }
+//   .margin-bottom-70 { margin-bottom: $margin-70; }
+// }

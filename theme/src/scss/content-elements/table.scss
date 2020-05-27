@@ -1,0 +1,58 @@
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--t3-table--color);
+  vertical-align: top;
+  border-color: var(--t3-table--border-color);
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--t3-table--bg);
+  border-bottom-width: 1px;
+}
+
+.table > tbody {
+  vertical-align: inherit;
+}
+
+.table > thead {
+  vertical-align: bottom;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: currentColor;
+}
+
+.caption-top {
+  caption-side: top;
+}
+
+.table-sm > :not(caption) > * > * {
+  padding: 0.25rem 0.25rem;
+}
+
+.table-bordered > :not(caption) > * {
+  border-width: 1px 0;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 0 1px;
+}
+
+.table-borderless > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--t3-table--striped-bg);
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: var(--t3-table--hover-bg);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

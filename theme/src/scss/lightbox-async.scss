@@ -1,26 +1,26 @@
-@use 'root/root';
+// @use 'root/root';
 
-// t3kit design
-@use 'root/t3kit-root';
+// // t3kit design
+// @use 'root/t3kit-root';
 
-// ===== bootstrap reboot =====
-@use 'bootstrap';
+// // ===== bootstrap reboot =====
+// @use 'bootstrap';
 
-// ===== general =====
-@use 'main/general/global';
-@use 'main/general/typography';
-@use 'main/general/media';
-// ===== nav =====
-@use 'main/general/nav/breadcrumb';
-@use 'main/general/nav/side-navigation';
-@use 'main/general/nav/skip-links';
-@use 'main/general/nav/target-blank';
-@use 'main/general/nav/scroll-to-top';
+// // ===== general =====
+// @use 'main/general/global';
+// @use 'main/general/typography';
+// @use 'main/general/media';
+// // ===== nav =====
+// @use 'main/general/nav/breadcrumb';
+// @use 'main/general/nav/side-navigation';
+// @use 'main/general/nav/skip-links';
+// @use 'main/general/nav/target-blank';
+// @use 'main/general/nav/scroll-to-top';
 
-// // ===== helpers =====
-@use 'main/general/helpers/content-margins';
-@use 'main/general/helpers/text-clamp';
-@use 'main/general/helpers/print';
+// // // ===== helpers =====
+// @use 'main/general/helpers/content-margins';
+// @use 'main/general/helpers/text-clamp';
+// @use 'main/general/helpers/print';
 
 
 
@@ -28,7 +28,7 @@
 
 // @use 'helpers/text-clamp';
 // ===== content-elements =====
-@use 'content-elements/table';
+// @use 'content-elements/table';
 // @use 'content-elements/footer';
 // @use 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';

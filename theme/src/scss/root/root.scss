@@ -1,0 +1,93 @@
+// ==============================
+// t3kit variables
+:root {
+  // main variables
+  --t3-primary: #59dbeb;
+  --t3-secondary: #008292;
+  --t3-white: #fff;
+  --t3-black: #000;
+  --t3-light: #f8f9fa;
+  --t3-dark: #343a40;
+  --t3-body--color: #1d1d1d;
+  --t3-body--bg: var(--t3-white);
+  --t3-body--font-size: 1rem;
+  --t3-border--color: #dee2e6;
+
+  // link
+  --t3-link--color: var(--t3-secondary);
+  --t3-link--hover-color: var(--t3-secondary);
+
+  // btn
+
+  // font
+  --t3-font--sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --t3-font--monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  // headings
+  // h1
+  --t3-h1--font-size-mobile: calc(1.375rem + 1.5vw);
+  --t3-h1--font-size: 2.5rem;
+
+  // h2
+  --t3-h2--font-size-mobile: calc(1.325rem + 0.9vw);
+  --t3-h2--font-size: 2rem;
+
+  // h3
+  --t3-h3--font-size-mobile: calc(1.3rem + 0.6vw);
+  --t3-h3--font-size: 1.75rem;
+
+  // h4
+  --t3-h4--font-size-mobile: calc(1.275rem + 0.3vw);
+  --t3-h4--font-size: 1.5rem;
+  --t3-h5--font-size: 1.25rem;
+  --t3-h6--font-size: 1rem;
+  --t3-headings--text-transform: none;
+  --t3-headings--color: var(--t3-body-color);
+
+  // caption
+  --t3-caption--color: #6c757d;
+
+  // overlay
+  --t3-primary-overlay: rgba(89, 219, 235, 0.4);
+  --t3-secondary-overlay: rgba(0, 130, 146, 0.4);
+  --t3-light-overlay: rgba(52, 58, 64, 0.4);
+  --t3-dark-overlay: rgba(248, 249, 250, 0.4);
+
+  // ========================
+  // Navigation
+  // ========================
+  // breadcrumb
+  --t3-breadcrumb--color: var(--t3-link-color);
+  --t3-breadcrumb--bg: var(--t3-body-bg);
+  --t3-breadcrumb--active-color: var(--t3-body-color);
+
+  // ========================
+  // Content elements
+  // ========================
+  // table
+  --t3-table--color: var(--t3-body-color);
+  --t3-table--border-color: var(--t3-border-color);
+  --t3-table--bg: transparent;
+  --t3-table--striped-bg: rgba(0, 0, 0, 0.05);
+  --t3-table--hover-bg: rgba(0, 0, 0, 0.05);
+
+  // ========================
+  // Content elements
+  // ========================
+
+  // ========================
+  // Helpers
+  // ========================
+  // skip-links
+  --t3-skip-link--bg: var(--t3-body--bg);
+
+  // scroll-to-top
+  --t3-scroll-to-top--color: var(--t3-body--bg);
+  --t3-scroll-to-top--bg: var(--t3-link--color);
+  --t3-scroll-to-top--hover-color: #9998;
+
+  // target-blank-link
+  --t3-target-blank-msg--color: var(--t3-body--color);
+  --t3-target-blank-msg--bg: var(--t3-body--bg);
+}
+// ==============================

@@ -19,8 +19,6 @@
 // use bootstrap mixins based on t3kit variable overrides
 // check "theme/src/styles/bootstrap/mixins/_index.scss"
 @use '../../bootstrap/mixins' as mixin;
-// use t3kit mixins
-@use '../../mixins/text-clamp' as t3mix;
 
 .ce-hero-image {
   position: relative;
@@ -79,16 +77,20 @@
   color: var(--t3-white);
 
   @include mixin.font-size(2rem);
-  @include t3mix.text-clamp(2);
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 
   @include mixin.media-breakpoint-up(md) {
-    @include t3mix.text-clamp(3);
+    -webkit-line-clamp: 3;
   }
 }
 
 .ce-hero-image__caption-wrp--overlay-primary {
   .picture-partial__item-img {
-    background-color: var.$primary;
+    background-color: var(--t3-primary);
   }
 
   &:after {
@@ -114,3 +116,34 @@
 .ce-hero-image__caption-wrp--overlay-light {
   background-color: transparentize(var.$light, 0.6);
 }
+
+
+.ce-hero-image__caption-wrp--overlay-primary:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(89, 219, 235, 0.4);
+  background-color: rgba(var(--ddddd), 0.4);
+  // background-color: var(--ddddd)9;
+}
+
+.ce-hero-image__caption-wrp--overlay-secondary {
+  background-color: rgba(0, 130, 146, 0.4);
+}
+
+.ce-hero-image__caption-wrp--overlay-dark {
+  background-color: rgba(52, 58, 64, 0.4);
+}
+
+.ce-hero-image__caption-wrp--overlay-light {
+  background-color: rgba(248, 249, 250, 0.4);
+}
+
+body {
+  background-color: rgba(var(--ddddd), 0.4);
+}
+// rgba(var(--color), 0.8)
