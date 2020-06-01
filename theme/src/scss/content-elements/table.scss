@@ -1,14 +1,14 @@
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: var(--t3-table--color);
+  color: var(--t3-table-color);
   vertical-align: top;
-  border-color: var(--t3-table--border-color);
+  border-color: var(--t3-table-border-color);
 }
 
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
-  background-color: var(--t3-table--bg);
+  background-color: var(--t3-table-bg);
   border-bottom-width: 1px;
 }
 
@@ -45,11 +45,13 @@
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: var(--t3-table--striped-bg);
+  background-color: var(--t3-table-striped-bg);
+  color: var(--t3-table-striped-color);
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: var(--t3-table--hover-bg);
+  background-color: var(--t3-table-hover-bg);
+  color: var(--t3-table-hover-color);
 }
 
 .table-responsive {

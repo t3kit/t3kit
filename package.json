@@ -87,7 +87,8 @@
   "stylelint": {
     "extends": "stylelint-config-standard-scss",
     "rules": {
-      "selector-pseudo-element-colon-notation": "single"
+      "selector-pseudo-element-colon-notation": "single",
+      "no-descending-specificity": null
     }
   },
   "husky": {

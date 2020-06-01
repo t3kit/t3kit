@@ -6,27 +6,24 @@
 // ===== bootstrap reboot =====
 @use 'bootstrap';
 
-// ===== general =====
-@use 'main/general/global';
-@use 'main/general/typography';
-@use 'main/general/media';
+// ===== typography =====
+@use 'main/typography';
 // ===== nav =====
-@use 'main/general/nav/breadcrumb';
-@use 'main/general/nav/side-navigation';
-@use 'main/general/nav/skip-links';
-@use 'main/general/nav/target-blank';
-@use 'main/general/nav/scroll-to-top';
+@use 'main/nav/breadcrumb';
+@use 'main/nav/side-navigation';
+@use 'main/nav/skip-links';
+@use 'main/nav/target-blank';
+@use 'main/nav/scroll-to-top';
 
 // // ===== helpers =====
-@use 'main/general/helpers/content-margins';
-@use 'main/general/helpers/text-clamp';
-@use 'main/general/helpers/print';
+@use 'main/helpers/media';
+@use 'main/helpers/content-margins';
+@use 'main/helpers/buttons';
+@use 'main/helpers/text';
+@use 'main/helpers/border-radius';
+@use 'main/helpers/print';
 
 
-
-
-
-// @use 'helpers/text-clamp';
 // ===== content-elements =====
 @use 'content-elements/table';
 // @use 'content-elements/footer';
@@ -47,6 +44,6 @@
 // @use 'content-elements/divider-icon';
 
 // // ===== plugins =====
-@use 'main/plugins/lightbox';
+// @use 'main/plugins/lightbox';
 // // @use 'plugins/news/';
 // // @use 'plugins/search';

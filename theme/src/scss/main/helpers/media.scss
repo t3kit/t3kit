@@ -4,15 +4,6 @@
   height: auto;
 }
 
-// .img-thumbnail {
-//   padding: 0.25rem;
-//   background-color: #fff;
-//   border: 1px solid #dee2e6;
-//   border-radius: 0.25rem;
-//   max-width: 100%;
-//   height: auto;
-// }
-
 .figure {
   display: inline-block;
 }
@@ -24,7 +15,7 @@
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: var(--t3-caption-color);
 }
 
 .figure-video {
