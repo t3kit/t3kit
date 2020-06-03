@@ -20,6 +20,7 @@
 
 // Special
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/DividerIcon.tsconfig'
-@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SimpleSiteHeader.tsconfig'
+// @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig'
 # ___________________________

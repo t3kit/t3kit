@@ -25,7 +25,10 @@
 
 
 // ===== content-elements =====
-@use 'content-elements/table';
+@use 'main/content-elements/table';
+@use 'main/content-elements/textmedia';
+@use 'main/content-elements/textpic';
+@use 'main/content-elements/simple-site-header';
 // @use 'content-elements/footer';
 // @use 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';

@@ -2,27 +2,33 @@
 // t3kit variables
 // ==============================
 :root {
-  // main color variables
+  // _________________
+  // Main color variables
+  // -----------------
 
   // primary color
   --t3-primary: #59dbeb;
   --t3-primary-hs: 187, 78%;
   --t3-primary-l: 64%;
+  --t3-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
 
   // secondary color
   --t3-secondary: #008292;
   --t3-secondary-hs: 187, 100%;
   --t3-secondary-l: 29%;
+  --t3-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
 
   // light color
   --t3-light: #f8f9fa;
   --t3-light-hs: 210, 17%;
   --t3-light-l: 98%;
+  --t3-light-overlay: hsla(var(--t3-light-hs), var(--t3-light-l), 0.4);
 
   // dark color
   --t3-dark: #343a40;
   --t3-dark-hs: 210, 10%;
   --t3-dark-l: 23%;
+  --t3-dark-overlay: hsla(var(--t3-dark-hs), var(--t3-dark-l), 0.4);
 
   // white/black color
   --t3-white: #fff;
@@ -34,14 +40,22 @@
   --t3-body-font-size: 1rem;
   --t3-border-color: #dee2e6;
 
-  // overlay
-  --t3-primary-overlay: rgba(89, 219, 235, 0.4);
-  --t3-secondary-overlay: rgba(0, 130, 146, 0.4);
-  --t3-light-overlay: rgba(52, 58, 64, 0.4);
-  --t3-dark-overlay: rgba(248, 249, 250, 0.4);
-
   // input-focus
-  --t3-input-focus: 0 0 0 0.2rem rgba(211, 32, 39, 0.247);
+  // --t3-input-focus: 0 0 0 0.2rem hsla(358, 74%, 48%, 0.247);
+
+  // _________________
+  // Page blocks
+  // -----------------
+  // Header
+  --t3-header-color: var(--t3-body-color);
+  --t3-header-bg: var(--t3-body-bg);
+  // Main navigation
+  --t3-main-nav-color-hs: 0, 0%;
+  --t3-main-nav-color-l: 100%;
+  --t3-main-nav-bg: var(--t3-body-color);
+  // Footer
+  --t3-footer-color: var(--t3-body-bg);
+  --t3-footer-bg: var(--t3-body-color);
 
   // _________________
   // Typography
@@ -148,10 +162,17 @@
   --t3-btn-dark-active-bg: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 10%));
   --t3-btn-dark-active-border-color: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 13%));
 
-
   // _________________
   // Navigation
   // -----------------
+  // main navigation
+  // --t3-main-navigation-color-hs
+  // --t3-main-navigation-color-l
+  // --t3-main-navigation-bg-hs
+  // --t3-main-navigation-bg-l
+  // --t3-nav-link-padding-top: 0.5rem;
+  // --t3-nav-link-padding-left: 1rem;
+
   // side-navigation
 
   // breadcrumb

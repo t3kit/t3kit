@@ -4,82 +4,72 @@
 #
 # CType: siteHeader
 # ===========================
-tt_content.siteHeader =< lib.contentElement
-tt_content.siteHeader {
-  templateName = SiteHeader
-  dataProcessing {
+// tt_content.siteHeader =< lib.contentElement
+// tt_content.siteHeader {
 
-    # Main menu
-    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    20 {
-      as = mainNavigation
-      levels = 2
-      includeSpacer = 1
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
-          references.fieldName = nav_icon
-          as = nav_icon
-        }
-        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        20 {
-          references.fieldName = nav_image
-          as = nav_image
-        }
-      }
-    }
+//   templateName = SiteHeader
 
-    30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-    30 {
-      references.fieldName = image
-      as = image
-    }
+//   dataProcessing {
+//     10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+//     10 {
+//       fieldName = pi_flexform
+//       as = flexform
+//     }
+//     20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+//     20 {
+//       references.fieldName = image
+//     }
 
-    # Language Navigation
-    60 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-    60 {
-      as = languageNavigation
-      languages = auto
-    }
+//     # Main menu
+//     30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+//     30 {
+//       as = mainNavigation
+//       levels = 2
+//       includeSpacer = 1
+//       dataProcessing {
+//         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+//         10 {
+//           references.fieldName = nav_icon
+//           as = nav_icon
+//         }
+//         20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+//         20 {
+//           references.fieldName = nav_image
+//           as = nav_image
+//         }
+//       }
+//     }
 
-
-    70 = T3k\t3kit\DataProcessing\FlexFormProcessor
-    70 {
-      fieldName = pi_flexform
-      as = flexform
-    }
+//     # Language Navigation
+//     50 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+//     50 {
+//       as = languageNavigation
+//       languages = auto
+//     }
 
 
-    80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
-    80 {
-      as = site
-    }
+//     70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+//     70 {
+//       special = list
+//       special.value.field = pages
+//       dataProcessing {
+//         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+//         10 {
+//           references.fieldName = nav_icon
+//           as = nav_icon
+//         }
+//         20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+//         20 {
+//           references.fieldName = nav_image
+//           as = nav_image
+//         }
+//       }
+//     }
 
-    90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    90 {
-      special = directory
-      special.value.field = pages
-      dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-        10 {
-          references.fieldName = media
-        }
-        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-        20 {
-          table = tt_content
-          pidInList.field = uid
-          orderBy = sorting
-          as = content
-          dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-              references.fieldName = image
-            }
-          }
-        }
-      }
-    }
+//     80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+//     80 {
+//       as = site
+//     }
 
-
-  }
-}
+//   }
+// }

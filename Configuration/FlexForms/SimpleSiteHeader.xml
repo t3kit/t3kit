@@ -1,0 +1,117 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<!-- <main_nav_search>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_search</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_search>
+
+					<main_nav_lang_menu>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_lang_menu</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_lang_menu> -->
+
+					<main_nav_dropdown>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_dropdown</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_dropdown>
+
+					<main_nav_dropdown>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_dropdown</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_dropdown>
+
+										<main_nav_full_width>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_full_width</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_full_width>
+
+					<main_nav_mobile_toggle_position>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_toggle_position</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>main-navigation-toggler-right</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_toggle_position.right</numIndex>
+										<numIndex index="1">main-navigation-toggler-right</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_toggle_position.left</numIndex>
+										<numIndex index="1">main-navigation-toggler-left</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</main_nav_mobile_toggle_position>
+
+					<main_nav_mobile_breakpoint>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_breakpoint</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>main-navigation-expand-lg</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_breakpoint.lg</numIndex>
+										<numIndex index="1">main-navigation-expand-lg</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_breakpoint.xl</numIndex>
+										<numIndex index="1">main-navigation-expand-xl</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_mobile_breakpoint.xxl</numIndex>
+										<numIndex index="1">main-navigation-expand-xxl</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</main_nav_mobile_breakpoint>
+
+				</el>
+			</ROOT>
+		</sDEF>
+
+	</sheets>
+</T3DataStructure>

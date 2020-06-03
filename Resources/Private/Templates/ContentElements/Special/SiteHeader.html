@@ -37,7 +37,7 @@
                 <f:if condition="{data.phone_show_title}">
                   <span class="header-top__contact-tel-title">{data.phone_title}</span>
                 </f:if>
-                <f:link.typolink class="header-top__contact-tel-link" title="{data.phone_title}"
+                <f:link.typolink class="header-top__contact-tel-link"
                   additionalAttributes="{aria-label: '{data.phone_title}'}" parameter="{data.phone_link}">
                   {data.phone_text}
                   </f:link.typolink>
@@ -49,7 +49,7 @@
                 <f:if condition="{data.email_show_title}">
                   <span class="header-top__contact-email-title">{data.email_title}</span>
                 </f:if>
-                <f:link.email class="header-top__contact-email-link" title="{data.email_title}"
+                <f:link.email class="header-top__contact-email-link"
                   additionalAttributes="{aria-label: '{data.email_title}'}" email="{data.email_address}" />
               </div>
             </div>
@@ -133,7 +133,7 @@
 
           <f:for each="{mainNavigation}" as="navItem">
             <li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
-              <a href="{navItem.link}" title="{navItem.title}"
+              <a href="{navItem.link}"
                 class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
 
               <f:if condition="{navItem.children}">
@@ -193,14 +193,14 @@
         <f:for each="{languageNavigation}" as="language">
           <f:if condition="{language.available}">
             <f:then>
-              <a href="{language.link}" title="{language.title}"
+              <a href="{language.link}"
                 class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
                 <span class="flag-icon flag-icon-{language.flagIdentifier}"></span>
                 {language.navigationTitle}
               </a>
             </f:then>
             <f:else>
-              <span title="{language.title}" class="header-top__language-menu-box-item">
+              <span  class="header-top__language-menu-box-item">
                 <span class="flag-icon flag-icon-{language.flagIdentifier}"></span>
                 {language.navigationTitle}
               </span>
@@ -226,7 +226,7 @@
 <f:section name="imageType">
   <f:if condition="{mediaItem.link}">
     <f:then>
-      <f:link.typolink title="{mediaItem.title}" class="img-text-link__img-link" parameter="{mediaItem.link}">
+      <f:link.typolink  class="img-text-link__img-link" parameter="{mediaItem.link}">
         <f:render section="media" arguments="{_all}" />
       </f:link.typolink>
     </f:then>
@@ -240,7 +240,7 @@
 
 <f:section name="media">
   <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
-    title="{mediaItem.title}" class="img-text-link__img img-fluid" />
+    class="img-text-link__img img-fluid" />
 </f:section>
 
 <f:comment>

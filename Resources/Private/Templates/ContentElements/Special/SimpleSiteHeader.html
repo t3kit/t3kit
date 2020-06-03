@@ -1,0 +1,143 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+  <header class="header ce-simple-site-header">
+    <div class="ce-simple-site-header__main-navigation-wrp">
+
+      <f:render section="mainNavigation" arguments="{_all}" />
+
+    </div>
+  </header>
+
+</f:section>
+
+<f:comment>======== Main navigation ========</f:comment>
+<f:section name="mainNavigation">
+
+    <nav id="main-navigation"
+      class="main-navigation {flexform.main_nav_mobile_breakpoint}">
+      <div class="main-navigation__container
+        {flexform.main_nav_mobile_toggle_position}
+        {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
+
+        <f:if condition="{files}">
+          <div class="main-navigation__logo navbar-brand">
+            <f:render section="logo" arguments="{_all}" />
+          </div>
+        </f:if>
+        <button class="main-navigation-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="main-navigation-toggler-icon"></span>
+        </button>
+
+        <div class="main-navigation__items-wrp collapse navbar-collapse" id="mainNavigation">
+          <ul class="main-navigation__list ">
+
+            <f:for each="{mainNavigation}" as="navItem">
+              <li class="nav-item main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')} {f:if(condition: navItem.children, then:' dropdown')}">
+
+                <f:if condition="{navItem.children} && {flexform.main_nav_dropdown}">
+                  <f:then>
+                    <f:render section="mainNavigationdropdown" arguments="{_all}" />
+                  </f:then>
+                  <f:else>
+                    <a href="{navItem.link}"
+                      class="main-navigation__item-link"
+                      {f:if(condition: navItem.current, then: 'aria-current="page"')}>
+                        {navItem.title}
+                    </a>
+                  </f:else>
+                </f:if>
+
+              </li>
+            </f:for>
+
+          </ul>
+          <f:if condition="{flexform.main_nav_search}">
+            <div class="ce-simple-site-header__main-navigation-search">
+              <f:render section="search" arguments="{_all}" />
+            </div>
+          </f:if>
+          <f:if condition="{flexform.main_nav_lang_menu}">
+            <div class="ce-simple-site-header__main-navigation-langmenu">
+              <f:render section="langmenu" arguments="{_all}" />
+            </div>
+          </f:if>
+        </div>
+
+      </div>
+    </nav>
+
+</f:section>
+
+<f:comment>Logo section</f:comment>
+<f:section name="logo">
+  <div class="ce-simple-site-header__logo-wrp">
+    <div class="ce-simple-site-header__logo">
+      <f:render partial="Media/Image" arguments="{_all}" />
+    </div>
+  </div>
+</f:section>
+
+<f:comment>Search section</f:comment>
+<f:section name="search">
+  <div class="ce-simple-site-header__search-wrp">
+    <div class="ce-simple-site-header__search">
+    </div>
+  </div>
+</f:section>
+
+<f:comment>Lang menu section</f:comment>
+<f:section name="langmenu">
+  <div class="ce-simple-site-header__langmenu-wrp">
+    <div class="ce-simple-site-header__langmenu">
+    </div>
+  </div>
+</f:section>
+
+<f:comment>======== Main navigation dropdown ========</f:comment>
+<f:section name="mainNavigationdropdown">
+
+  <a href="#"
+    id="navbarDropdown"
+    class="main-navigation__item-link
+      {f:if(condition: navItem.children, then:' dropdown-toggle')}"
+    role="button"
+    data-toggle="dropdown"
+    aria-expanded="false">
+      {navItem.title}
+  </a>
+
+  <ul class="main-navigation__dropdown-item-list
+    dropdown-menu
+    {f:if(condition: '{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3', then: ' show-parent-link')}"
+    aria-labelledby="navbarDropdown">
+    <f:if condition="{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3 ">
+      <li class="main-navigation__dropdown-item {f:if(condition: navItem.active, then:' active')} {navItem.data.uid}">
+        <a class="main-navigation__dropdown-item-link main-navigation__dropdown-item-parent-link"
+          href="{navItem.link}"
+          {f:if(condition: navItem.current, then: 'aria-current="page"')}>
+            {navItem.title}
+        </a>
+      </li>
+    </f:if>
+    <f:for each="{navItem.children}" as="childItem">
+      <li class="main-navigation__dropdown-item {f:if(condition: childItem.active, then:' active')} {childItem.data.uid}">
+        <a href="{childItem.link}"
+          class=" main-navigation__dropdown-item-link"
+          {f:if(condition: navItem.current, then: 'aria-current="page"')}>
+            {childItem.title}
+        </a>
+      </li>
+    </f:for>
+  </ul>
+
+</f:section>
+
+
+
+
+
+</html>

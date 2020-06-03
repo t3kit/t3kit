@@ -16,9 +16,9 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:siteHeader.title',
-        'siteHeader',
-        'ce-siteHeader',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:simpleSiteHeader.title',
+        'simpleSiteHeader',
+        'ce-simpleSiteHeader',
         'special'
     ]
 );
@@ -29,7 +29,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteHeader'] = 'ce-siteHeader';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['simpleSiteHeader'] = 'ce-simpleSiteHeader';
 
 
 /*
@@ -37,17 +37,15 @@ $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteHeader'] = 'ce-si
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
+$GLOBALS['TCA']['tt_content']['types']['simpleSiteHeader'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:tab.logo,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:tab.logo,
             simple_image,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:tab.settings,
-            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.title,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:tab.meta_menu,
-            pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.menu_formlabel,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:tab.settings,
+            pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -96,6 +94,6 @@ $GLOBALS['TCA']['tt_content']['types']['siteHeader'] = [
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/SiteHeader.xml',
-    'siteHeader'
+    'FILE:EXT:t3kit/Configuration/FlexForms/SimpleSiteHeader.xml',
+    'simpleSiteHeader'
 );

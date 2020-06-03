@@ -15,10 +15,10 @@
 
 // use t3kit variables based on bootstrap variables
 // check "theme/src/styles/_variables.scss"
-@use '../../variables' as var;
+// @use '../../variables' as var;
 // use bootstrap mixins based on t3kit variable overrides
 // check "theme/src/styles/bootstrap/mixins/_index.scss"
-@use '../../bootstrap/mixins' as mixin;
+// @use '../../bootstrap/mixins' as mixin;
 
 .textmedia-ce {
   display: flex;
