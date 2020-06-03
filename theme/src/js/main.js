@@ -1,5 +1,5 @@
 // Content Elements
-import './main/content-elements/site-header'
+import './content-elements/simple-site-header'
 
 // Plugins
-import './main/plugins/lightbox'
+import './plugins/lightbox'
