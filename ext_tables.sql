@@ -74,5 +74,4 @@ CREATE TABLE sys_file_reference (
 	picture_width varchar(60) DEFAULT '' NOT NULL,
 	picture_border_radius varchar(60) DEFAULT '' NOT NULL,
 	aspect_ratio varchar(60) DEFAULT '' NOT NULL,
-	img_thumbnail tinyint(3) unsigned DEFAULT '0' NOT NULL,
 );

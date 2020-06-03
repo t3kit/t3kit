@@ -142,10 +142,6 @@
 				<source>Rounded-left</source>
 			</trans-unit>
 
-			<trans-unit id="img_thumbnail" resname="img_thumbnail">
-				<source>Image thumbnail</source>
-			</trans-unit>
-
 			<trans-unit id="aspect_ratio" resname="aspect_ratio">
 				<source>Video aspect ratio</source>
 			</trans-unit>

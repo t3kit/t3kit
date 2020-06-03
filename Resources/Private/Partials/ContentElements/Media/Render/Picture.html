@@ -155,12 +155,8 @@
       {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
     sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
-  <f:if condition="{image.referenceProperties.img_thumbnail}">
-    <f:variable name="img_thumbnail">img-thumbnail</f:variable>
-  </f:if>
-
   <img
-  class="picture-partial__item-img img-fluid figure-img {img_thumbnail} {image.referenceProperties.picture_border_radius}"
+  class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
   loading="lazy"
   {f:if(condition:height,then:' height="{height}px"')}
   src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" >

@@ -153,23 +153,6 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
-    'img_thumbnail' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:img_thumbnail',
-        'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'items' => [
-                [
-                    0 => '',
-                    1 => '',
-                ]
-            ],
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'aspect_ratio' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio',
         'exclude' => true,
@@ -211,7 +194,7 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
         --linebreak--,description,description_position,
         --linebreak--,link,
         --linebreak--,crop,
-        --linebreak--,picture_width,picture_border_radius,img_thumbnail
+        --linebreak--,picture_width,picture_border_radius
     '
 ];
 
