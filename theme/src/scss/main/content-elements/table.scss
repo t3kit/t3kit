@@ -1,0 +1,86 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+.table {
+  --t3-table-color: var(--t3-body-color);
+  --t3-table-border-color: var(--t3-border-color);
+  --t3-table-bg: transparent;
+  --t3-table-striped-color: var(--t3-table-color);
+  --t3-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --t3-table-hover-color: var(--t3-table-color);
+  --t3-table-hover-bg: rgba(0, 0, 0, 0.075);
+
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--t3-table-color);
+  vertical-align: top;
+  border-color: var(--t3-table-border-color);
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--t3-table-bg);
+  border-bottom-width: 1px;
+}
+
+.table > tbody {
+  vertical-align: inherit;
+}
+
+.table > thead {
+  vertical-align: bottom;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: currentColor;
+}
+
+.caption-top {
+  caption-side: top;
+}
+
+.table-sm > :not(caption) > * > * {
+  padding: 0.25rem 0.25rem;
+}
+
+.table-bordered > :not(caption) > * {
+  border-width: 1px 0;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 0 1px;
+}
+
+.table-borderless > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--t3-table-striped-bg);
+  color: var(--t3-table-striped-color);
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: var(--t3-table-hover-bg);
+  color: var(--t3-table-hover-color);
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Small devices (landscape phones, 576px and up) sm
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up) md
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up) lg
+// @media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up) xl
+// @media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up) xxl
+// @media (min-width: 1400px) { ... }

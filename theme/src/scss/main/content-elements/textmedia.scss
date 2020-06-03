@@ -1,0 +1,71 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+.textmedia-ce {
+  display: flex;
+}
+
+.textmedia-ce__media,
+.textmedia-ce__text {
+  flex: 1;
+}
+
+.text-media-above-left .textmedia-ce__media,
+.text-media-below-left .textmedia-ce__media {
+  text-align: left;
+}
+
+.text-media-above-right .textmedia-ce__media,
+.text-media-below-right .textmedia-ce__media {
+  text-align: right;
+}
+
+.text-media-above-center .textmedia-ce__media,
+.text-media-below-center .textmedia-ce__media {
+  text-align: center;
+}
+
+.text-media-below-left,
+.text-media-below-right,
+.text-media-below-center,
+.text-media-right {
+  flex-direction: column-reverse;
+}
+
+.text-media-above-left,
+.text-media-above-right,
+.text-media-above-center,
+.text-media-left {
+  flex-direction: column;
+}
+
+.text-media-left,
+.text-media-right {
+  .textmedia-ce__media,
+  .textmedia-ce__text {
+    padding: 0 1rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up) sm
+@media (min-width: 576px) {
+  .text-media-left {
+    flex-direction: row;
+  }
+
+  .text-media-right {
+    flex-direction: row-reverse;
+  }
+}
+
+// Medium devices (tablets, 768px and up) md
+// @media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up) lg
+// @media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up) xl
+// @media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up) xxl
+// @media (min-width: 1400px) { ... }
