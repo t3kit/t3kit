@@ -40,10 +40,12 @@ config {
   no_cache = 0
 
   # Compression and Concatenation of CSS and JS Files
-  compressJs = 1
-  compressCss = 1
-  concatenateJs = 1
-  concatenateCss = 1
+  # not using by default because t3kit compressing FE files separately
+  # should be enabled if using some other non-t3kit CSS/JS files
+  # compressJs = 1
+  # compressCss = 1
+  # concatenateJs = 1
+  # concatenateCss = 1
 }
 
 
@@ -58,9 +60,10 @@ config {
   no_cache = 1
 
   # Compression and Concatenation of CSS and JS Files
-  compressJs = 0
-  compressCss = 0
-  concatenateJs = 0
-  concatenateCss = 0
+  # not using by default because t3kit compressing FE files separately and only for Production
+  # compressJs = 0
+  # compressCss = 0
+  # concatenateJs = 0
+  # concatenateCss = 0
 }
 [end]
