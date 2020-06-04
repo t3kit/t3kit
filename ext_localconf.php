@@ -84,3 +84,27 @@ foreach ($contentElementIcons as $icon) {
         ['source' => $contentElementIconFilePath . $icon . '.svg']
     );
 }
+
+/*
+ * ###########################
+ * Register for hooks to show preview of tt_content elements in page module
+ * ===========================
+ */
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['image'] =
+\T3k\t3kit\Hooks\PageLayoutView\ImageCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['textmedia'] =
+\T3k\t3kit\Hooks\PageLayoutView\TextmediaCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['textpic'] =
+\T3k\t3kit\Hooks\PageLayoutView\TextpicCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['video'] =
+\T3k\t3kit\Hooks\PageLayoutView\VideoCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['imageTextLink'] =
+\T3k\t3kit\Hooks\PageLayoutView\ImageTextLinkCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['audio'] =
+\T3k\t3kit\Hooks\PageLayoutView\AudioCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['heroImage'] =
+\T3k\t3kit\Hooks\PageLayoutView\HeroImageCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['contactCard'] =
+\T3k\t3kit\Hooks\PageLayoutView\ContactCardCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['simpleSiteHeader'] =
+\T3k\t3kit\Hooks\PageLayoutView\SimpleSiteHeaderCEPreviewRenderer::class;
