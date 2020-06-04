@@ -45,7 +45,7 @@ $GLOBALS['TCA']['tt_content']['types']['contactCard'] = [
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.title,
             --palette--;;title_link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,
+            simple_image,
             --palette--;;mediaAdjustments,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tab.icon,
             --palette--;;icon,
@@ -64,28 +64,6 @@ $GLOBALS['TCA']['tt_content']['types']['contactCard'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
-        'image' => [
-            'config' => [
-                'filter' => [
-                    0 => [
-                        'parameters' => [
-                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
-                        ]
-                    ]
-                ],
-                'overrideChildTca' => [
-                    'columns' => [
-                        'uid_local' => [
-                            'config' => [
-                                'appearance' => [
-                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ],
         'link' => [
             'config' => [
                 'fieldControl' => [

@@ -59,31 +59,7 @@ $GLOBALS['TCA']['tt_content']['types']['simpleSiteHeader'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    ',
-    'columnsOverrides' => [
-        'simple_image' => [
-            'config' => [
-                'filter' => [
-                    0 => [
-                        'parameters' => [
-                            'allowedFileExtensions' => 'jpg,jpeg,png,svg'
-                        ]
-                    ]
-                ],
-                'overrideChildTca' => [
-                    'columns' => [
-                        'uid_local' => [
-                            'config' => [
-                                'appearance' => [
-                                    'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+    '
 ];
 
 

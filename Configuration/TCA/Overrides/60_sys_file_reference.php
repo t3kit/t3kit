@@ -188,7 +188,25 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
  * Palettes for sys_file_reference
  * ===========================
  */
-$GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
+
+$GLOBALS['TCA']['sys_file_reference']['palettes']['simpleImageOverlayPalette'] = [
+    'showitem' => '
+        alternative,
+        --linebreak--,description,description_position,
+        --linebreak--,link
+    '
+];
+
+$GLOBALS['TCA']['sys_file_reference']['palettes']['simpleCropImageOverlayPalette'] = [
+    'showitem' => '
+        alternative,
+        --linebreak--,description,description_position,
+        --linebreak--,link,
+        --linebreak--,crop
+    '
+];
+
+$GLOBALS['TCA']['sys_file_reference']['palettes']['advancedImageOverlayPalette'] = [
     'showitem' => '
         alternative,
         --linebreak--,description,description_position,
@@ -198,12 +216,13 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['imageoverlayPalette'] = [
     '
 ];
 
-$GLOBALS['TCA']['sys_file_reference']['palettes']['simpleImageOverlayPalette'] = [
+$GLOBALS['TCA']['sys_file_reference']['palettes']['advancedMediaOverlayPalette'] = [
     'showitem' => '
         alternative,
         --linebreak--,description,description_position,
         --linebreak--,link,
-        --linebreak--,crop
+        --linebreak--,crop,
+        --linebreak--,picture_width,picture_border_radius
     '
 ];
 

@@ -59,6 +59,22 @@
 
 
 			<!-- Content element Image/Media tab config fields translations -->
+			<trans-unit id="simple_image" resname="simple_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="simple_crop_image" resname="simple_crop_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="advanced_image" resname="advanced_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="advanced_image" resname="advanced_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="advanced_media" resname="advanced_media">
+				<source>Media</source>
+			</trans-unit>
+
 			<trans-unit id="section_container_width" resname="section_container_width">
 				<source>Section container width</source>
 			</trans-unit>

@@ -42,8 +42,8 @@ $GLOBALS['TCA']['tt_content']['types']['audio'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;header_layout_position_link_subheader,
-            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
-            assets,
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,
+            advanced_media,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -59,7 +59,7 @@ $GLOBALS['TCA']['tt_content']['types']['audio'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
     'columnsOverrides' => [
-        'assets' => [
+        'advanced_media' => [
             'config' => [
                 'filter' => [
                     0 => [
