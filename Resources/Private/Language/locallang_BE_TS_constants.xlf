@@ -65,6 +65,10 @@
 			<trans-unit id="view.templateRootPath" resname="view.templateRootPath">
 				<source>Templates</source>
 			</trans-unit>
+			<!-- subcategory pageLayoutView -->
+			<trans-unit id="subcategory.pageLayoutView" resname="subcategory.pageLayoutView">
+				<source>TYPO3 BE Page Layout View</source>
+			</trans-unit>
 			<!-- other settings -->
 			<trans-unit id="container_width" resname="container_width">
 				<source>Max page container width</source>

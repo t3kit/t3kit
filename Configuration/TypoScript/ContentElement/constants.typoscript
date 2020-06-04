@@ -33,6 +33,12 @@ plugin.t3kit.contentElement {
     templateRootPath =
   }
 
+  # customsubcategory=pageLayoutView=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.pageLayoutView
+  pageLayoutView {
+    # cat=t3kitContentElement/pageLayoutView; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:view.partialRootPath
+    partialRootPath =
+  }
+
   # cat=t3kitContentElement; type=int[100-7000]; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
   container_width = 1400
 
