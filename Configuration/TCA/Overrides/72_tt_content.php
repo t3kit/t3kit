@@ -833,23 +833,32 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
  */
 
 // rewrite "frames" palette
+// $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
+//     'showitem' => '
+//         space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
+//         space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
+//         --linebreak--,
+//         layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
+//         frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
+//         --linebreak--,
+//         add_background,
+//         --linebreak--,
+//         background_color_class,
+//         background_color,
+//         --linebreak--,
+//         background,
+//         --linebreak--,
+//         background_parallax,
+//         full_width_background
+//     '
+// ];
 $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
     'showitem' => '
         space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
         space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
         --linebreak--,
         layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
-        frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
-        --linebreak--,
-        add_background,
-        --linebreak--,
-        background_color_class,
-        background_color,
-        --linebreak--,
-        background,
-        --linebreak--,
-        background_parallax,
-        full_width_background
+        frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel
     '
 ];
 
