@@ -270,7 +270,7 @@ defined('TYPO3_MODE') || die();
 $GLOBALS['TCA']['pages']['palettes']['nav_icon'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon.palette',
     'showitem' => '
-        nav_icon_source, nav_icon_class,
+        nav_icon_source,
         --linebreak--,
         nav_icon
     '

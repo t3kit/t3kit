@@ -882,7 +882,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments_height'] = [
 $GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:icon.palette',
     'showitem' => '
-        icon_source, icon_class,
+        icon_source,
         --linebreak--,
         icon
     '
