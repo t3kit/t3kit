@@ -170,12 +170,46 @@
 				<source>1:1</source>
 			</trans-unit>
 
-
 			<!-- Content element Appearance tab config fields translations -->
-			<!-- <trans-unit id="" resname="">
-				<source></source>
-			</trans-unit> -->
-
+			<trans-unit id="space_before_class" resname="space_before_class">
+				<source>Space Before</source>
+			</trans-unit>
+			<trans-unit id="space_after_class" resname="space_after_class">
+				<source>Space After</source>
+			</trans-unit>
+			<trans-unit id="margin_default" resname="margin_default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="margin_5" resname="margin_5">
+				<source>5px</source>
+			</trans-unit>
+			<trans-unit id="margin_10" resname="margin_10">
+				<source>10px</source>
+			</trans-unit>
+			<trans-unit id="margin_15" resname="margin_15">
+				<source>15px</source>
+			</trans-unit>
+			<trans-unit id="margin_20" resname="margin_20">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="margin_25" resname="margin_25">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="margin_30" resname="margin_30">
+				<source>30px</source>
+			</trans-unit>
+			<trans-unit id="margin_40" resname="margin_40">
+				<source>40px</source>
+			</trans-unit>
+			<trans-unit id="margin_50" resname="margin_50">
+				<source>50px</source>
+			</trans-unit>
+			<trans-unit id="margin_60" resname="margin_60">
+				<source>60px</source>
+			</trans-unit>
+			<trans-unit id="margin_70" resname="margin_70">
+				<source>70px</source>
+			</trans-unit>
 
 			<!-- Content element Icon tab config fields translations -->
 			<trans-unit id="icon_source" resname="icon_source">

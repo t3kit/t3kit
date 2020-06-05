@@ -62,6 +62,124 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
     ]
 );
 
+// rewrite space_before_class column
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'space_before_class' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:space_before_class',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
+                    '0'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
+                    'margin-top-5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
+                    'margin-top-10'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
+                    'margin-top-15'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
+                    'margin-top-20'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
+                    'margin-top-25'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
+                    'margin-top-30'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
+                    'margin-top-40'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
+                    'margin-top-50'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
+                    'margin-top-60'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
+                    'margin-top-70'
+                ]
+            ],
+            'default' => '0'
+        ]
+    ],
+]);
+
+// rewrite space_after_class column
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'space_after_class' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:space_after_class',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
+                    '0'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
+                    'margin-bottom-5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
+                    'margin-bottom-10'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
+                    'margin-bottom-15'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
+                    'margin-bottom-20'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
+                    'margin-bottom-25'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
+                    'margin-bottom-30'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
+                    'margin-bottom-40'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
+                    'margin-bottom-50'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
+                    'margin-bottom-60'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
+                    'margin-bottom-70'
+                ]
+            ],
+            'default' => '0'
+        ]
+    ],
+]);
+
 
  /*
  * ###########################
