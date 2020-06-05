@@ -15,11 +15,6 @@ namespace T3k\t3kit\DataProcessing;
  * The TYPO3 project - inspiring people to share!
  */
 
- /*
- * The t3kit project
- * https://github.com/t3kit
- */
-
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;

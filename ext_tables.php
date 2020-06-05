@@ -15,3 +15,11 @@ defined('TYPO3_MODE') || die();
     'sys_file_reference',
     'EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_sfr.xlf'
 );
+
+
+/*
+ * ###########################
+ * Load additional t3kit stylesheets to skin the Backend
+ * ===========================
+ */
+$GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:t3kit/Resources/Public/CSS/BE/';

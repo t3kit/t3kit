@@ -15,14 +15,11 @@ namespace T3k\t3kit\Hooks\PageLayoutView;
  * The TYPO3 project - inspiring people to share!
  */
 
- /*
- * The t3kit project
- * https://github.com/t3kit
- */
-
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\PageLayoutView;
 use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Service\FlexFormService;
 
 /**
  * Contains a preview rendering for the page module of CType="image"
@@ -58,7 +55,8 @@ class ContactCardCEPreviewRenderer implements PageLayoutViewDrawItemHookInterfac
                     foreach ($fileReferences as $fileReference) {
                         $description = $fileReference->getDescription();
                         if ($description !== null && $description !== '') {
-                            $linkedContent .= htmlspecialchars($description) . '<br />';
+                            $linkedContent .= htmlspecialchars($description);
+                            $linkedContent = '<span class="t3kit-ce-image-description">' . $linkedContent . '</span>';
                         }
                     }
 
@@ -66,6 +64,11 @@ class ContactCardCEPreviewRenderer implements PageLayoutViewDrawItemHookInterfac
 
                     unset($linkedContent);
                 }
+            }
+
+            if ($row['pi_flexform']) {
+                $flexformService = GeneralUtility::makeInstance(FlexFormService::class);
+                $itemContent .= $flexformService->convertFlexFormContentToArray($row['pi_flexform'])['name'] ?? null;
             }
 
             $drawItem = false;

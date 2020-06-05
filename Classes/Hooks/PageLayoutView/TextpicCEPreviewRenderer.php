@@ -15,11 +15,6 @@ namespace T3k\t3kit\Hooks\PageLayoutView;
  * The TYPO3 project - inspiring people to share!
  */
 
- /*
- * The t3kit project
- * https://github.com/t3kit
- */
-
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\PageLayoutView;
 use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
@@ -58,7 +53,8 @@ class TextpicCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
                     foreach ($fileReferences as $fileReference) {
                         $description = $fileReference->getDescription();
                         if ($description !== null && $description !== '') {
-                            $linkedContent .= htmlspecialchars($description) . '<br />';
+                            $linkedContent .= htmlspecialchars($description);
+                            $linkedContent = '<span class="t3kit-ce-image-description">' . $linkedContent . '</span>';
                         }
                     }
 
