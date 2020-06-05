@@ -25,11 +25,13 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
     ]
 );
 
-// rewrite "header_position" column config
-$GLOBALS['TCA']['tt_content']['columns']['header_position']  = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['columns']['header_position'],
-    [
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'header_position' => [
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position',
+        'exclude' => true,
         'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
@@ -40,10 +42,6 @@ $GLOBALS['TCA']['tt_content']['columns']['header_position']  = array_replace_rec
                     'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.justify',
-                    'justify'
-                ],
-                [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
                     'right'
                 ]
@@ -51,7 +49,7 @@ $GLOBALS['TCA']['tt_content']['columns']['header_position']  = array_replace_rec
             'default' => '0'
         ]
     ]
-);
+]);
 
 // rewrite image_zoom column
 $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursive(
@@ -251,10 +249,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
                     'right'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.justify',
-                    'justify'
                 ]
             ],
             'default' => '0',

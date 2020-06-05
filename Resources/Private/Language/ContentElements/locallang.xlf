@@ -53,10 +53,6 @@
 			<trans-unit id="header_position.center" resname="header_position.center">
 				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="header_position.justify" resname="header_position.justify">
-				<source>Justify</source>
-			</trans-unit>
-
 
 			<!-- Content element Image/Media tab config fields translations -->
 			<trans-unit id="simple_image" resname="simple_image">
@@ -234,9 +230,6 @@
 			</trans-unit>
 			<trans-unit id="content_position.right" resname="content_position.right">
 				<source>Right</source>
-			</trans-unit>
-			<trans-unit id="content_position.justify" resname="content_position.justify">
-				<source>Justify</source>
 			</trans-unit>
 			<!-- Button -->
 			<trans-unit id="button.palette" resname="button.palette">
