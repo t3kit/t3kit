@@ -83,7 +83,6 @@
   // caption
   --t3-caption-color: #6c757d;
 
-
   // _________________
   // Helpers
   // -----------------
@@ -101,66 +100,6 @@
   --t3-ce-margin-50: 3.125rem;
   --t3-ce-margin-60: 3.75rem;
   --t3-ce-margin-70: 4.375rem;
-
-  // Buttons
-  --t3-btn-text-decoration: none;
-  --t3-btn-font-size: 1rem;
-  --t3-btn-font-weight: 400;
-  --t3-btn-border-radius: 0.25rem;
-  --t3-btn-padding-top: 0.375rem;
-  --t3-btn-padding-left: 0.75rem;
-
-  // btn primary
-  --t3-btn-primary-bg-hs: var(--t3-primary-hs);
-  --t3-btn-primary-bg-l: var(--t3-primary-l);
-  --t3-btn-primary-bg: hsl(var(--t3-btn-primary-bg-hs), var(--t3-btn-primary-bg-l));
-  --t3-btn-primary-color: var(--t3-body-bg);
-  --t3-btn-primary-borber-color: hsl(var(--t3-btn-primary-bg-hs), var(--t3-btn-primary-bg-l));
-  --t3-btn-primary-hover-color: var(--t3-btn-primary-color);
-  --t3-btn-primary-hover-bg: hsl(var(--t3-btn-primary-bg-hs), calc(var(--t3-btn-primary-bg-l) - 8%));
-  --t3-btn-primary-hover-border-color: hsl(var(--t3-btn-primary-bg-hs), calc(var(--t3-btn-primary-bg-l) - 10%));
-  --t3-btn-primary-active-color: var(--t3-btn-primary-color);
-  --t3-btn-primary-active-bg: hsl(var(--t3-btn-primary-bg-hs), calc(var(--t3-btn-primary-bg-l) - 10%));
-  --t3-btn-primary-active-border-color: hsl(var(--t3-btn-primary-bg-hs), calc(var(--t3-btn-primary-bg-l) - 13%));
-
-  // btn secondary
-  --t3-btn-secondary-bg-hs: var(--t3-secondary-hs);
-  --t3-btn-secondary-bg-l: var(--t3-secondary-l);
-  --t3-btn-secondary-bg: hsl(var(--t3-btn-secondary-bg-hs), var(--t3-btn-secondary-bg-l));
-  --t3-btn-secondary-color: var(--t3-body-bg);
-  --t3-btn-secondary-borber-color: hsl(var(--t3-btn-secondary-bg-hs), var(--t3-btn-secondary-bg-l));
-  --t3-btn-secondary-hover-color: var(--t3-btn-secondary-color);
-  --t3-btn-secondary-hover-bg: hsl(var(--t3-btn-secondary-bg-hs), calc(var(--t3-btn-secondary-bg-l) - 8%));
-  --t3-btn-secondary-hover-border-color: hsl(var(--t3-btn-secondary-bg-hs), calc(var(--t3-btn-secondary-bg-l) - 10%));
-  --t3-btn-secondary-active-color: var(--t3-btn-secondary-color);
-  --t3-btn-secondary-active-bg: hsl(var(--t3-btn-secondary-bg-hs), calc(var(--t3-btn-secondary-bg-l) - 10%));
-  --t3-btn-secondary-active-border-color: hsl(var(--t3-btn-secondary-bg-hs), calc(var(--t3-btn-secondary-bg-l) - 13%));
-
-  // btn light
-  --t3-btn-light-bg-hs: var(--t3-light-hs);
-  --t3-btn-light-bg-l: var(--t3-light-l);
-  --t3-btn-light-bg: hsl(var(--t3-btn-light-bg-hs), var(--t3-btn-light-bg-l));
-  --t3-btn-light-color: var(--t3-body-color);
-  --t3-btn-light-borber-color: hsl(var(--t3-btn-light-bg-hs), var(--t3-btn-light-bg-l));
-  --t3-btn-light-hover-color: var(--t3-btn-light-color);
-  --t3-btn-light-hover-bg: hsl(var(--t3-btn-light-bg-hs), calc(var(--t3-btn-light-bg-l) - 8%));
-  --t3-btn-light-hover-border-color: hsl(var(--t3-btn-light-bg-hs), calc(var(--t3-btn-light-bg-l) - 10%));
-  --t3-btn-light-active-color: var(--t3-btn-light-color);
-  --t3-btn-light-active-bg: hsl(var(--t3-btn-light-bg-hs), calc(var(--t3-btn-light-bg-l) - 10%));
-  --t3-btn-light-active-border-color: hsl(var(--t3-btn-light-bg-hs), calc(var(--t3-btn-light-bg-l) - 13%));
-
-  // btn dark
-  --t3-btn-dark-bg-hs: var(--t3-dark-hs);
-  --t3-btn-dark-bg-l: var(--t3-dark-l);
-  --t3-btn-dark-bg: hsl(var(--t3-btn-dark-bg-hs), var(--t3-btn-dark-bg-l));
-  --t3-btn-dark-color: var(--t3-body-bg);
-  --t3-btn-dark-borber-color: hsl(var(--t3-btn-dark-bg-hs), var(--t3-btn-dark-bg-l));
-  --t3-btn-dark-hover-color: var(--t3-btn-dark-color);
-  --t3-btn-dark-hover-bg: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 8%));
-  --t3-btn-dark-hover-border-color: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 10%));
-  --t3-btn-dark-active-color: var(--t3-btn-dark-color);
-  --t3-btn-dark-active-bg: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 10%));
-  --t3-btn-dark-active-border-color: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 13%));
 
   // _________________
   // Navigation
