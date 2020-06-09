@@ -21,11 +21,17 @@
     <f:variable name="container">container</f:variable>
   </f:if>
 
-  <div class="ce-hero-image__wrp {container}">
-    <div class="ce-hero-image {f:if(condition:'{flexform.transparentLayer} != 0', then: 'ce-hero-image__caption-wrp--overlay-{flexform.overlay}')}">
+  <f:if condition="{files} == false">
+    <f:variable name="background">ce-hero-image--bg ce-hero-image--bg-{flexform.background}</f:variable>
+  </f:if>
 
-      <div class="ce-hero-image__caption-wrp container ce-hero-image__caption-wrp--{flexform.caption_alignment}" {f:if(condition:height, then: 'style="min-height: {height}px;"')}>
-        <div class="ce-hero-image__caption">
+  <div class="ce-hero-image__wrp {container}">
+    <div class="ce-hero-image
+      {background}
+      {f:if(condition: flexform.overlay, then: ' ce-hero-image--overlay-{flexform.overlay}')}">
+
+      <div class="ce-hero-image__caption-wrp container" {f:if(condition:height, then: 'style="min-height: {height}px;"')}>
+        <div class="ce-hero-image__caption ce-hero-image__caption--{flexform.caption_alignment}">
 
           <f:if condition="{data.header_text}">
             <div class="ce-hero-image__caption-header">
@@ -40,7 +46,7 @@
           </f:if>
 
           <f:if condition="{data.bodytext}">
-            <div class="ce-hero-image__caption-bodytext">
+            <div class="ce-hero-image__caption-bodytext fluid-font-size">
               <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
             </div>
           </f:if>

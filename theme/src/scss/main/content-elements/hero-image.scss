@@ -1,52 +1,46 @@
-// =========================================================
-// !!! include media query inside the selector==============
-// =========================================================
-// Example:
-// @use '../../bootstrap/mixins' as mixin;
-// header {
-//   width: 200px;
-
-//   @include mixin.media-breakpoint-up(md) {
-//     width: 100px;
-//   }
-// }
-// =========================================================
-// =========================================================
-
-// use t3kit variables based on bootstrap variables
-// check "theme/src/styles/_variables.scss"
-@use '../../variables' as var;
-// use bootstrap mixins based on t3kit variable overrides
-// check "theme/src/styles/bootstrap/mixins/_index.scss"
-@use '../../bootstrap/mixins' as mixin;
-
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 .ce-hero-image {
+  --t3-ce-hero-image-header-color: var(--t3-primary);
+  --t3-ce-hero-image-header-size: 80;
+  --t3-ce-hero-image-subheader-color: var(--t3-white);
+  --t3-ce-hero-image-subheader-size: 80;
+  --t3-ce-hero-image-bodytext-color: var(--t3-white);
+  --t3-ce-hero-image-bodytext-size: 28;
+  --t3-ce-hero-image-bodytext-width: 75%;
+  --t3-ce-hero-image-min-height-on-mobile: 460px;
+  --t3-ce-hero-image-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
+  --t3-ce-hero-image-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
+  --t3-ce-hero-image-light-overlay: hsla(var(--t3-light-hs), var(--t3-light-l), 0.4);
+  --t3-ce-hero-image-dark-overlay: hsla(var(--t3-dark-hs), var(--t3-dark-l), 0.4);
+  --t3-ce-hero-image-primary-bg: var(--t3-primary);
+  --t3-ce-hero-image-secondary-bg: var(--t3-secondary);
+  --t3-ce-hero-image-dark-bg: var(--t3-dark);
+
   position: relative;
 }
 
 .ce-hero-image__caption-wrp {
   display: flex;
   align-items: center;
-
-  @include mixin.media-breakpoint-down(sm) {
-    min-height: 460px !important;
-  }
-}
-
-.ce-hero-image__caption-wrp--left {
-  justify-content: flex-start;
-}
-
-.ce-hero-image__caption-wrp--center {
-  justify-content: center;
-}
-
-.ce-hero-image__caption-wrp--right {
-  justify-content: flex-end;
 }
 
 .ce-hero-image__caption {
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
+}
+
+.ce-hero-image__caption--left {
+  align-items: flex-start;
+}
+
+.ce-hero-image__caption--center {
+  align-items: center;
+}
+
+.ce-hero-image__caption--right {
+  align-items: flex-end;
 }
 
 .ce-hero-image .picture-partial__item-img {
@@ -60,90 +54,134 @@
 }
 
 .ce-hero-image__caption-header h1 {
-  font-weight: 900;
-  color: var(--t3-primary);
+  --font-size: var(--t3-ce-hero-image-header-size);
 
-  @include mixin.font-size(5rem);
+  font-weight: 900;
+  color: var(--t3-ce-hero-image-header-color);
 }
 
 .ce-hero-image__caption-subheader h2 {
-  font-weight: 900;
-  color: var(--t3-white);
+  --font-size: var(--t3-ce-hero-image-subheader-size);
 
-  @include mixin.font-size(5rem);
+  font-weight: 900;
+  color: var(--t3-ce-hero-image-subheader-color);
+}
+
+.ce-hero-image__caption-bodytext.fluid-font-size {
+  --font-size: var(--t3-ce-hero-image-bodytext-size);
 }
 
 .ce-hero-image__caption-bodytext .bodytext-partial {
-  color: var(--t3-white);
-
-  @include mixin.font-size(2rem);
-
+  font-size: inherit;
+  color: var(--t3-ce-hero-image-bodytext-color);
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-
-  @include mixin.media-breakpoint-up(md) {
-    -webkit-line-clamp: 3;
-  }
 }
 
-.ce-hero-image__caption-wrp--overlay-primary {
-  .picture-partial__item-img {
-    background-color: var(--t3-primary);
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: transparentize(var.$primary, 0.6);
-  }
-}
-
-.ce-hero-image__caption-wrp--overlay-secondary {
-  background-color: transparentize(var.$secondary, 0.6);
-}
-
-.ce-hero-image__caption-wrp--overlay-dark {
-  background-color: transparentize(var.$dark, 0.6);
-}
-
-.ce-hero-image__caption-wrp--overlay-light {
-  background-color: transparentize(var.$light, 0.6);
-}
-
-
-.ce-hero-image__caption-wrp--overlay-primary:after {
+// hero image background
+.ce-hero-image--bg:after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -2;
   width: 100%;
   height: 100%;
-  background-color: rgba(89, 219, 235, 0.4);
-  background-color: rgba(var(--ddddd), 0.4);
-  // background-color: var(--ddddd)9;
 }
 
-.ce-hero-image__caption-wrp--overlay-secondary {
-  background-color: rgba(0, 130, 146, 0.4);
+.ce-hero-image--bg-primary:after {
+  background-color: var(--t3-ce-hero-image-primary-bg);
 }
 
-.ce-hero-image__caption-wrp--overlay-dark {
-  background-color: rgba(52, 58, 64, 0.4);
+.ce-hero-image--bg-secondary:after {
+  background-color: var(--t3-ce-hero-image-secondary-bg);
 }
 
-.ce-hero-image__caption-wrp--overlay-light {
-  background-color: rgba(248, 249, 250, 0.4);
+.ce-hero-image--bg-dark:after {
+  background-color: var(--t3-ce-hero-image-dark-bg);
 }
 
-body {
-  background-color: rgba(var(--ddddd), 0.4);
+// hero image overlay
+.ce-hero-image--overlay-primary {
+  background-color: var(--t3-ce-hero-image-primary-overlay);
 }
-// rgba(var(--color), 0.8)
+
+.ce-hero-image--overlay-primary .picture-partial__item-img {
+  background-color: hsl(var(--t3-primary-hs), calc(var(--t3-primary-l) - 30%));
+}
+
+.ce-hero-image--overlay-secondary {
+  background-color: var(--t3-ce-hero-image-secondary-overlay);
+}
+
+.ce-hero-image--overlay-secondary .picture-partial__item-img {
+  background-color: hsl(var(--t3-secondary-hs), calc(var(--t3-secondary-l) - 30%));
+}
+
+.ce-hero-image--overlay-dark {
+  background-color: var(--t3-ce-hero-image-dark-overlay);
+}
+
+.ce-hero-image--overlay-dark .picture-partial__item-img {
+  background-color: hsl(var(--t3-dark-hs), calc(var(--t3-dark-l) - 20%));
+}
+
+.ce-hero-image--overlay-light {
+  background-color: var(--t3-ce-hero-image-light-overlay);
+}
+
+.ce-hero-image--overlay-light .picture-partial__item-img {
+  background-color: hsl(var(--t3-light-hs), calc(var(--t3-light-l) - 70%));
+}
+
+.ce-hero-image--overlay-disable .picture-partial__item-img {
+  background-color: hsl(var(--t3-dark-hs), calc(var(--t3-dark-l) - 20%));
+}
+
+// --------------------------------------------------------
+// X-Small devices (portrait phones, less than 576px) xs
+@media (max-width: 575.98px) {
+  .ce-hero-image__caption-wrp {
+    min-height: var(--t3-ce-hero-image-min-height-on-mobile) !important;
+  }
+}
+// Small devices (landscape phones, 576px and up) sm
+// @media (min-width: 576px) { ... }
+
+// --------------------------------------------------------
+// Small devices (landscape phones, less than 768px) sm
+// @media (max-width: 767.98px) { ... }
+// Medium devices (tablets, 768px and up) md
+@media (min-width: 768px) {
+  .ce-hero-image__caption-bodytext .bodytext-partial {
+    -webkit-line-clamp: 3;
+  }
+}
+
+// --------------------------------------------------------
+// Medium devices (tablets, less than 992px) md
+// @media (max-width: 991.98px) { ... }
+// Large devices (desktops, 992px and up) lg
+@media (min-width: 992px) {
+  .ce-hero-image__caption-bodytext {
+    width: var(--t3-ce-hero-image-bodytext-width);
+  }
+
+  .ce-hero-image__caption-link {
+    width: var(--t3-ce-hero-image-bodytext-width);
+  }
+}
+
+// --------------------------------------------------------
+// Large devices (desktops, less than 1200px) lg
+// @media (max-width: 1199.98px) { ... }
+// X-Large devices (large desktops, 1200px and up) xl
+// @media (min-width: 1200px) { ... }
+
+// --------------------------------------------------------
+// X-Large devices (large desktops, less than 1400px) xl
+// @media (max-width: 1399.98px) { ... }
+// XX-Large devices (larger desktops, 1400px and up) xxl
+// @media (min-width: 1400px) { ... }

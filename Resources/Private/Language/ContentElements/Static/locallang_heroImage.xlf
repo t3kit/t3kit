@@ -46,6 +46,22 @@
 				<source>Right</source>
 			</trans-unit>
 
+			<trans-unit id="flexform.background" resname="flexform.background">
+				<source>Background color (use instead of an image)</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_disable" resname="flexform.background_disable">
+				<source>No background</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_primary" resname="flexform.background_primary">
+				<source>Primary color background</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_secondary" resname="flexform.background_secondary">
+				<source>Secondary color background</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_dark" resname="flexform.background_dark">
+				<source>Dark background</source>
+			</trans-unit>
+
 
 		</body>
 	</file>

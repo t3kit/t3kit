@@ -1,8 +1,5 @@
 @use 'root/root';
 
-// t3kit design
-@use 'root/t3kit-root';
-
 // ===== bootstrap reboot =====
 @use 'bootstrap';
 
@@ -23,12 +20,12 @@
 @use 'main/helpers/border-radius';
 @use 'main/helpers/print';
 
-
 // ===== content-elements =====
 @use 'main/content-elements/table';
 @use 'main/content-elements/textmedia';
 @use 'main/content-elements/textpic';
 @use 'main/content-elements/simple-site-header';
+@use 'main/content-elements/hero-image';
 // @use 'content-elements/footer';
 // @use 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';
@@ -50,3 +47,6 @@
 // @use 'main/plugins/lightbox';
 // // @use 'plugins/news/';
 // // @use 'plugins/search';
+
+// t3kit design
+@use 'root/t3kit-root';

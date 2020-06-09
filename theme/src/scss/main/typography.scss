@@ -39,7 +39,8 @@ read about it more: https://github.com/twbs/rfs */
 h1,
 h2,
 h3,
-h4, {
+h4,
+.fluid-font-size {
   --t3-fluid-font-size:
     calc(
       ((20 + ((var(--font-size) - 20) / 10)) / 16 * 1rem)
@@ -56,7 +57,8 @@ h4, {
   h1,
   h2,
   h3,
-  h4, {
+  h4,
+  .fluid-font-size {
     font-size: var(--t3-font-size-to-rem);
   }
 }
@@ -90,6 +92,10 @@ h5 {
 h6 {
   --font-size: var(--t3-h6-font-size);
   // font-size: var(--t3-h6-font-size);
+}
+
+.fluid-font-size {
+  --font-size: 30;
 }
 
 // links

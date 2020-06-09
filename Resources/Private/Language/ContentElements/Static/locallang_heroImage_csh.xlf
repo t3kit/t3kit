@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Context help for tt_content field -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage_csh.xlf" date="2019-04-20UTC12:53:470" product-name="context_help">
+		<header/>
+		<body>
+
+			<trans-unit id="height.description" resname="height.description">
+				<source>
+					&lt;strong&gt;300&lt;/strong&gt; = &lt;strong&gt;1920px+ x 900px&lt;/strong&gt; image &lt;br&gt;
+					&lt;strong&gt;350&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1050px&lt;/strong&gt; image &lt;br&gt;
+					&lt;strong&gt;400&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1200px&lt;/strong&gt; image &lt;br&gt;
+					&lt;strong&gt;450&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1350px&lt;/strong&gt; image &lt;br&gt;
+					&lt;strong&gt;500&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1500px&lt;/strong&gt; image &lt;br&gt;
+					&lt;strong&gt;550&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1650px&lt;/strong&gt; image &lt;br&gt;
+					&lt;strong&gt;600&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1800px&lt;/strong&gt; image
+				</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

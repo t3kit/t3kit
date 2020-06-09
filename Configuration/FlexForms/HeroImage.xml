@@ -44,6 +44,18 @@
 						</TCEforms>
 					</caption_alignment>
 
+					<background>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.background</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items>
+								</items>
+							</config>
+						</TCEforms>
+					</background>
+
 				</el>
 			</ROOT>
 		</sDEF>

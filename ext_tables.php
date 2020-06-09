@@ -15,6 +15,10 @@ defined('TYPO3_MODE') || die();
     'sys_file_reference',
     'EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_sfr.xlf'
 );
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+    'tt_content.pi_flexform.heroImage',
+    'EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage_csh.xlf'
+);
 
 
 /*
