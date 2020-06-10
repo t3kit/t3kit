@@ -1,4 +1,8 @@
 .ce-simple-site-header {
+  --t3-ce-header-nav-bg: var(--t3-body-color);
+  --t3-ce-header-nav-color-hs: 0, 0%;
+  --t3-ce-header-nav-color-l: 100%;
+  --t3-ce-header-nav-color: hsl(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l));
   --t3-ce-header-nav-padding-top: 0.5rem;
   --t3-ce-header-nav-padding-right: 0;
   --t3-ce-header-nav-padding-bottom: 0.5rem;
@@ -6,14 +10,10 @@
   --t3-ce-header-nav-logo-padding-top: 0.3125rem;
   --t3-ce-header-nav-logo-padding-bottom: 0.3125rem;
   --t3-ce-header-nav-logo-margin-right: 2rem;
-  --t3-ce-header-nav-bg: var(--t3-main-nav-bg);
-  --t3-ce-header-nav-color-hs: var(--t3-main-nav-color-hs);
-  --t3-ce-header-nav-color-l: var(--t3-main-nav-color-l);
   --t3-ce-header-nav-link-padding-top: 0.7rem;
   --t3-ce-header-nav-link-padding-left: 1rem;
   --t3-ce-header-nav-link-padding-right: 1rem;
-  --t3-ce-header-nav-link-text-decoration: none;
-  --t3-ce-header-nav-color: hsl(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l));
+  --t3-ce-header-nav-link-text-transform: none;
   --t3-ce-header-nav-hover-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.7);
   --t3-ce-header-nav-hover-bg: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.08);
   --t3-ce-header-nav-active-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.7);
@@ -68,7 +68,8 @@
   padding-bottom: var(--t3-ce-header-nav-link-padding-top);
   padding-right: var(--t3-ce-header-nav-link-padding-right);
   padding-left: var(--t3-ce-header-nav-link-padding-left);
-  text-decoration: var(--t3-ce-header-nav-link-text-decoration);
+  text-decoration: none;
+  text-transform: var(--t3-ce-header-nav-link-text-transform);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   color: var(--t3-ce-header-nav-color);
   font-size: var(--t3-ce-header-nav-font-size);
@@ -297,6 +298,7 @@
 
   .main-navigation-expand-lg .navbar-collapse {
     display: flex !important;
+    width: auto;
   }
 
   .main-navigation-expand-lg .main-navigation-toggler {
@@ -333,6 +335,7 @@
 
   .main-navigation-expand-xl .navbar-collapse {
     display: flex !important;
+    width: auto;
   }
 
   .main-navigation-expand-xl .main-navigation-toggler {
@@ -369,6 +372,7 @@
 
   .main-navigation-expand-xxl .navbar-collapse {
     display: flex !important;
+    width: auto;
   }
 
   .main-navigation-expand-xxl .main-navigation-toggler {

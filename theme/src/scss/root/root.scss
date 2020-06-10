@@ -44,20 +44,6 @@
   // --t3-input-focus: 0 0 0 0.2rem hsla(358, 74%, 48%, 0.247);
 
   // _________________
-  // Page blocks
-  // -----------------
-  // Header
-  --t3-header-color: var(--t3-body-color);
-  --t3-header-bg: var(--t3-body-bg);
-  // Main navigation
-  --t3-main-nav-color-hs: 0, 0%;
-  --t3-main-nav-color-l: 100%;
-  --t3-main-nav-bg: var(--t3-body-color);
-  // Footer
-  --t3-footer-color: var(--t3-body-bg);
-  --t3-footer-bg: var(--t3-body-color);
-
-  // _________________
   // Typography
   // -----------------
   // font
@@ -78,7 +64,7 @@
 
   // link
   --t3-link-color: var(--t3-secondary);
-  --t3-link-hover-color: var(--t3-secondary);
+  --t3-link-hover-color: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.8);
 
   // caption
   --t3-caption-color: #6c757d;

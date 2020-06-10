@@ -36,36 +36,10 @@ CREATE TABLE tt_content (
 	button_style varchar(60) DEFAULT '' NOT NULL,
 	button_full_width tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	button_no_bg tinyint(1) unsigned DEFAULT '0' NOT NULL,
-
-
-	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
-	background_color_class varchar(60) DEFAULT '' NOT NULL,
-	background_color varchar(255) DEFAULT '' NOT NULL,
-	background int(11) unsigned DEFAULT '0' NOT NULL,
-	background_parallax tinyint(3) unsigned DEFAULT '0' NOT NULL,
-	full_width_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
-
 	table_class varchar(255) DEFAULT '' NOT NULL,
-
-
-
-
-	footerTop int(11) unsigned DEFAULT '0' NOT NULL,
-	footerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
-	footerMiddleFirstHeader varchar (255) DEFAULT '' NOT NULL,
-	footerMiddleFirstLogo int(11) unsigned DEFAULT '0' NOT NULL,
-	footerMiddleFirstText varchar (1024) DEFAULT '' NOT NULL,
-	footerMiddleSecondHeader varchar (255) DEFAULT '' NOT NULL,
-	footerMiddleSecondLinks text,
-	footerMiddleThirdHeader varchar (255) DEFAULT '' NOT NULL,
-	footerMiddleThirdLinks text,
-	footerMiddleFourthHeader varchar (255) DEFAULT '' NOT NULL,
-	footerMiddleFourthForm int(11) unsigned DEFAULT '0' NOT NULL,
-	footerBottom int(11) unsigned DEFAULT '0' NOT NULL,
-	footerBottomCopyright varchar (255) DEFAULT '' NOT NULL,
-	footerBottomLinks varchar (255) DEFAULT '' NOT NULL,
-
-	footerMiddleText varchar(255) DEFAULT '' NOT NULL,
+	page_links_1 text,
+	page_links_2 text,
+	page_links_3 text,
 );
 
 

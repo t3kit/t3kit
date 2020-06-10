@@ -18,7 +18,7 @@
 				<source>Logo</source>
 			</trans-unit>
 			<trans-unit id="flexform.title" resname="flexform.title">
-				<source>Simple site header settiings</source>
+				<source>Simple site header settings</source>
 			</trans-unit>
 
 			<!-- main_nav -->

@@ -52,7 +52,7 @@
 						</TCEforms>
 					</main_nav_dropdown>
 
-										<main_nav_full_width>
+					<main_nav_full_width>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_full_width</label>
 							<config>

@@ -2,163 +2,148 @@
 
 <f:layout name="Default" />
 
+<f:section name="Header" />
+
 <f:section name="Main">
-  <footer class="footer">
-    <div class="container">
-      <f:if condition="{data.footerTop}">
+
+
+  <footer class="footer ce-site-footer">
+    <div class="ce-site-footer__container
+      {f:if(condition: flexform.footer_full_width, then: ' container-fluid', else: ' container')}">
+
+      <div class="ce-site-footer__columns">
         <div class="row">
-          <!-- List of menus -->
-          <div class="col">
 
-          </div>
-          <!-- Sibscribe form & RTE text-->
-          <div class="col">
+          <f:if condition="{flexform.show_address} || {files}">
+            <div class="col-md">
 
-          </div>
+              <f:if condition="{files}">
+                <div class="ce-site-footer__logo">
+                  <f:render partial="Media/Image" arguments="{_all}" />
+                </div>
+              </f:if>
 
-          <!-- Force next columns to break to new line at md breakpoint and up -->
-          <div class="w-100 d-none d-md-bloc"></div>
-        </div>
-      </f:if>
+              <div class="ce-site-footer__info">
+                <div class="ce-site-footer__info-title-wrp">
+                  <span class="ce-site-footer__info-title">{flexform.name}</span>
+                </div>
 
-      <f:if condition="{data.footerMiddle}">
-        <div class="footer__middle">
-          <div class="row">
-            <div class="footer__middle-column col-sm-6 col-lg-3">
-              <f:if condition="{image} && {data.footerMiddleFirstLogo}">
-                <!-- Logo -->
-                  <f:then>
-                  <div class="footer__logo">
-                    <f:for each="{image}" as="mediaItem" iteration="imageIteration">
-                      <f:if condition="{imageIteration.isFirst}">
-                        <f:render section="imageType" arguments="{_all}" />
-                      </f:if>
-                    </f:for>
+                <address class="ce-site-footer__address-wrp">
+                  <span class="ce-site-footer__address">
+                    <f:format.nl2br>{flexform.address}</f:format.nl2br>
+                  </span>
+
+                  <div class="ce-site-footer__phone">
+                    <f:link.typolink parameter="{flexform.contactPhone_link}" class="ce-site-footer__phone-item ce-site-footer__link">
+                      {flexform.contactPhone_title}
+                    </f:link.typolink>
                   </div>
-                  </f:then>
-              </f:if>
-              <f:if condition="{data.footerMiddleFirstHeader}">
-                <!--  -->
-              <h4 class="footer__header">{data.footerMiddleFirstHeader}</h4>
-              </f:if>
-              <f:if condition="{data.footerMiddleFirstText}">
-                <!--  -->
-                <div class="footer__contacts">
-                  <f:format.html>{data.footerMiddleFirstText}</f:format.html>
-                </div>
-              </f:if>
-            </div>
-            <div class="footer__middle-column col-sm-6 col-lg-3">
-              <!-- Shourt cuts 1 -->
-              <f:if condition="{data.footerMiddleSecondHeader}">
-                <h4 class="footer__header">{data.footerMiddleSecondHeader}</h4>
-              </f:if>
-              <f:if condition="{footerMiddleSecondLinks}">
-                <ul class="footer__links-list">
-                  <f:for each="{footerMiddleSecondLinks}" as="page">
-                    <li class="footer__links-item">
-                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
-                        <span>{page.title}</span>
-                      </a>
-                    </li>
-                  </f:for>
-                </ul>
-              </f:if>
-            </div>
-            <div class="footer__middle-column col-sm-6 col-lg-3">
-              <!-- Shourt cuts 2 -->
-              <f:if condition="{data.footerMiddleThirdHeader}">
-                <h4 class="footer__header">{data.footerMiddleThirdHeader}</h4>
-              </f:if>
-              <f:if condition="{footerMiddleThirdLinks}">
-                <ul class="footer__links-list">
-                  <f:for each="{footerMiddleThirdLinks}" as="page">
-                    <li class="footer__links-item">
-                      <a href="{page.link}" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
-                        <span>{page.title}</span>
-                      </a>
-                    </li>
-                  </f:for>
-                </ul>
-              </f:if>
-            </div>
-            <div class="footer__middle-column col-sm-6 col-lg-3">
-              <f:if condition="{data.footerMiddleFourthHeader}">
-                <!-- Sibscribe form -->
-                <h4 class="footer__header">{data.footerMiddleFourthHeader}</h4>
-              </f:if>
-              <form class="footer__form">
-                <div class="form-group">
-                  <input type="text" class="footer__form-input form-control" id="exampleInputPassword1" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <input type="email" class="footer__form-input form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="E-mail">
-                </div>
-                <button type="submit" class="footer__btn btn btn-primary">Submit</button>
-              </form>
-              <f:if condition="{data.footerMiddleFourthForm}">
-                <!-- Sibscribe form -->
-                <!-- <f:format.html>{data.footerMiddleFourthForm}</f:format.html> -->
-              </f:if>
-            </div>
-          </div>
-        </div>
-      </f:if><!-- // end of footer-middle -->
 
-      <f:if condition="{data.footerBottom}">
-        <div class="footer__bottom">
-          <div class="footer__bottom-wrap">
-            <!-- All rights reserved -->
-            <p class="footer__bottom-copyright">{data.footerBottomCopyright}</p>
-            <!-- Additional (navigation) Links -->
-            <f:if condition="{footerBottomLinks}">
-                <ul class="footer__links-list footer__bottom-links">
-                  <f:for each="{footerBottomLinks}" as="page">
-                    <li class="footer__links-item footer__bottom-item">
-                      <a href="{page.link}" class="footer__bottom-link" {f:if(condition: page.target, then: ' target="{page.target}"' )}>
-                        <span>{page.title}</span>
-                      </a>
-                    </li>
-                  </f:for>
-                </ul>
-              </f:if>
-          </div>
-          <div class="footer__social-list">
-            <!-- Social Icon -->
-            <!-- <a class="social-icons__item" href="https://twitter.com/typo3" target="_blank" ><span class="icons icon-t3-twitter"></span></a>
-            <a class="social-icons__item" href="https://www.linkedin.com/company/typo3-association" target="_blank" ><span class="icons icon-t3-linkedin"></span></a>
-            <a class="social-icons__item" href="https://instagram.com/explore/tags/typo3/" target="_blank" ><span class="icons icon-t3-instagram"></span></a>
-            <a class="social-icons__item" href="https://www.facebook.com/typo3" target="_blank" ><span class="icons icon-t3-facebook"></span></a> -->
-            <a class="footer__social-item" href="https://twitter.com/typo3" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="footer__social-item" href="https://www.linkedin.com/company/typo3-association" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="footer__social-item" href="https://instagram.com/explore/tags/typo3/" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-            <a class="footer__social-item" href="https://www.facebook.com/typo3" target="_blank" ><img src="https://dummyimage.com/24x24/fff/000" alt=""></a>
-          </div>
+                  <div class="ce-site-footer__email">
+                    <f:link.typolink parameter="{flexform.email}" class="ce-site-footer__email-item ce-site-footer__link"/>
+                  </div>
+                </address>
+              </div>
+
+            </div>
+          </f:if>
+
+          <f:if condition="{links_1}">
+            <div class="col-md">
+
+              <div class="ce-site-footer__column">
+                <f:if condition="{flexform.column_1_title}">
+                  <p class="ce-site-footer__column-title">
+                    {flexform.column_1_title}
+                  </p>
+                </f:if>
+
+                <div class="ce-site-footer__column-links-1">
+                  <f:render section="links" arguments="{links: links_1}" />
+                </div>
+              </div>
+
+            </div>
+          </f:if>
+
+          <f:if condition="{links_2}">
+            <div class="col-md">
+
+              <div class="ce-site-footer__column">
+                <f:if condition="{flexform.column_2_title}">
+                  <p class="ce-site-footer__column-title">
+                    {flexform.column_2_title}
+                  </p>
+                </f:if>
+
+                <div class="ce-site-footer__column-links-2">
+                  <f:render section="links" arguments="{links: links_2}" />
+                </div>
+              </div>
+
+            </div>
+          </f:if>
+
+          <f:if condition="{links_3}">
+            <div class="col-md">
+
+              <div class="ce-site-footer__column">
+                <f:if condition="{flexform.column_3_title}">
+                  <p class="ce-site-footer__column-title">
+                    {flexform.column_3_title}
+                  </p>
+                </f:if>
+
+                <div class="ce-site-footer__column-links-3">
+                  <f:render section="links" arguments="{links: links_3}" />
+                </div>
+              </div>
+
+            </div>
+          </f:if>
+
         </div>
-      </f:if>
+      </div>
+
+      <div class="ce-site-footer__bottom">
+        <f:if condition="{flexform.copyright}">
+          <div class="ce-site-footer__bottom-copyright-wrp">
+            <div class="ce-site-footer__bottom-copyright">
+              {flexform.copyright}
+            </div>
+          </div>
+        </f:if>
+        <f:if condition="{bottom_links}">
+            <div class="ce-site-footer__bottom-links">
+              <f:render section="links" arguments="{links: bottom_links}" />
+            </div>
+        </f:if>
+      </div>
+
     </div>
   </footer>
+
 </f:section>
 
-<f:section name="imageType">
-  <f:if condition="{mediaItem.link}">
-    <f:then>
-      <f:link.typolink  class="footer__logo-link" parameter="{mediaItem.link}">
-        <f:render section="media" arguments="{_all}" />
-      </f:link.typolink>
-    </f:then>
 
-    <f:else>
-      <f:render section="media" arguments="{_all}" />
-    </f:else>
+<f:comment>======== Links ========</f:comment>
+<f:section name="links">
 
-  </f:if>
+    <div class="ce-site-footer__links">
+      <ul class="ce-site-footer__links-list">
+
+        <f:for each="{links}" as="linkItem">
+          <li class="ce-site-footer__links-list-item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')}">
+            <a href="{linkItem.link}" class="ce-site-footer__links-list-item-link ce-site-footer__link">
+                {linkItem.title}
+            </a>
+          </li>
+        </f:for>
+
+      </ul>
+    </div>
+
 </f:section>
 
-<f:section name="media">
-  <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
-    class="footer__logo-image img-fluid" />
-</f:section>
 
 </html>

@@ -334,6 +334,10 @@
 			<trans-unit id="image_zoom_width.800" resname="image_zoom_width.800">
 				<source>800px</source>
 			</trans-unit>
+			<!-- page links -->
+			<trans-unit id="page_links" resname="page_links">
+				<source>Pages</source>
+			</trans-unit>
 
 			<!-- general flexform -->
 			<trans-unit id="flexform.title" resname="flexform.title">

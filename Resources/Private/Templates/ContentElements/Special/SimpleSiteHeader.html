@@ -2,6 +2,8 @@
 
 <f:layout name="Default" />
 
+<f:section name="Header" />
+
 <f:section name="Main">
 
   <header class="header ce-simple-site-header">
@@ -36,7 +38,7 @@
           <ul class="main-navigation__list ">
 
             <f:for each="{mainNavigation}" as="navItem">
-              <li class="nav-item main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')} {f:if(condition: navItem.children, then:' dropdown')}">
+              <li class="main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')} {f:if(condition: navItem.children, then:' dropdown')}">
 
                 <f:if condition="{navItem.children} && {flexform.main_nav_dropdown}">
                   <f:then>
@@ -127,7 +129,7 @@
       <li class="main-navigation__dropdown-item {f:if(condition: childItem.active, then:' active')} {childItem.data.uid}">
         <a href="{childItem.link}"
           class=" main-navigation__dropdown-item-link"
-          {f:if(condition: navItem.current, then: 'aria-current="page"')}>
+          {f:if(condition: childItem.current, then: 'aria-current="page"')}>
             {childItem.title}
         </a>
       </li>

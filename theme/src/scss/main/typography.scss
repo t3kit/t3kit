@@ -1,5 +1,5 @@
 body {
-  font-family: var(--t3-ff--sans-serif);
+  font-family: var(--t3-font-family-base);
   color: var(--t3-body-color);
   background-color: var(--t3-body-bg);
   font-size: var(--t3-body-font-size);
@@ -9,7 +9,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--t3-ff--monospace);
+  font-family: var(--t3-ff-monospace);
 }
 
 // Headings
@@ -104,7 +104,7 @@ a {
 }
 
 a:hover {
-  color: var(--t3-link--hever-color);
+  color: var(--t3-link-hover-color);
 }
 
 caption {
