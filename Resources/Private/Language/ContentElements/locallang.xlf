@@ -171,6 +171,7 @@
 			</trans-unit>
 
 			<!-- Content element Appearance tab config fields translations -->
+			<!-- space_before/space_after -->
 			<trans-unit id="space_before_class" resname="space_before_class">
 				<source>Space Before</source>
 			</trans-unit>

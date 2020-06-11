@@ -11,13 +11,13 @@
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
-  <div class="ce-big-icon-text-link__wrp">
+  <div class="ce-big-icon-text-link__wrp {f:if(condition: flexform.inverted_color, then: ' iverted-color inverted-color')}">
     <div class="ce-big-icon-text-link">
 
       <f:if condition="{data.icon}">
-        <span class="ce-big-icon-text-link__icon-wrp">
+        <div class="ce-big-icon-text-link__icon-wrp text-{data.header_position}">
           <t3kit:render.svg src="{data.icon}" class="t3icon ce-big-icon-text-link__icon {data.icon_class}" />
-        </span>
+        </div>
       </f:if>
 
       <f:if condition="{data.header}">

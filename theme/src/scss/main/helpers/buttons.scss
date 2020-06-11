@@ -3,6 +3,7 @@
   --t3-btn-text-transform: none;
   --t3-btn-font-size: 1rem;
   --t3-btn-font-weight: 400;
+  --t3-btn-border: 1px;
   --t3-btn-border-radius: 0.25rem;
   --t3-btn-padding-top: 0.375rem;
   --t3-btn-padding-left: 0.75rem;
@@ -71,7 +72,7 @@
   -webkit-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: var(--t3-btn-border) solid transparent;
   padding: var(--t3-btn-padding-top) var(--t3-btn-padding-left);
   font-size: var(--t3-btn-font-size);
   border-radius: var(--t3-btn-border-radius);

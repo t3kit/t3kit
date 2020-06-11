@@ -1,5 +1,80 @@
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
+.ce-big-icon-text-link__wrp {
+  --t3-ce-bitl-color: var(--t3-body-color);
+  --t3-ce-bitl-icon-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-icon-width: 3rem;
+  --t3-ce-bitl-icon-height: 3rem;
+  --t3-ce-bitl-header-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-header-size: 28;
+  --t3-ce-bitl-header-font-weight: inherit;
+  --t3-ce-bitl-subheader-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-subheader-size: 24;
+  --t3-ce-bitl-subheader-font-weight: inherit;
+  --t3-ce-bitl-bodytext-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-bodytext-font-size: inherit;
+  --t3-ce-bitl-link-color: var(--t3-ce-bitl-color);
+
+  position: relative;
+  overflow: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--t3-ce-bitl-color);
+  // margin-left: -10px;
+  // padding-left: 10px;
+}
+
+.ce-big-icon-text-link__wrp.inverted-color {
+  --t3-ce-bitl-color: var(--t3-body-bg);
+}
+
+.ce-big-icon-text-link__icon-wrp {
+  padding-bottom: 1.8rem;
+  display: block;
+}
+
+.ce-big-icon-text-link__icon {
+  width: var(--t3-ce-bitl-icon-width);
+  height: var(--t3-ce-bitl-icon-height);
+  fill: var(--t3-ce-bitl-icon-color);
+}
+
+.ce-big-icon-text-link__header .header-item {
+  --font-size: var(--t3-ce-bitl-header-size);
+
+  font-weight: var(--t3-ce-bitl-header-font-weight);
+  color: var(--t3-ce-bitl-header-color);
+}
+
+.ce-big-icon-text-link__subheader .subheader-item {
+  --font-size: var(--t3-ce-bitl-subheader-size);
+
+  font-weight: var(--t3-ce-bitl-subheader-font-weight);
+  color: var(--t3-ce-bitl-subheader-color);
+}
+
+.ce-big-icon-text-link__bodytext .bodytext-partial {
+  font-size: var(--t3-ce-bitl-bodytext-font-size);
+  color: var(--t3-ce-bitl-bodytext-color);
+}
+
+.ce-big-icon-text-link__link .link-partial {
+  color: var(--t3-ce-bitl-link-color);
+}
+
+.ce-big-icon-text-link__link .stretched-link:after {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ce-big-icon-text-link__link .stretched-link:after {
+    transition: none;
+  }
+}
+
+.ce-big-icon-text-link__link .stretched-link:hover:after {
+  background-color: hsla(0, 0, 0%, 0.03);
+}
 
 // --------------------------------------------------------
 // X-Small devices (portrait phones, less than 576px) xs

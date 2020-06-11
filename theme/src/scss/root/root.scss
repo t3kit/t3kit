@@ -32,10 +32,19 @@
 
   // white/black color
   --t3-white: #fff;
-  --t3-black: #000;
+  --t3-black: #1d1d1d;
+  --t3-gray-90: hsl(0, 0%, 90%);
+  --t3-gray-80: hsl(0, 0%, 80%);
+  --t3-gray-70: hsl(0, 0%, 70%);
+  --t3-gray-60: hsl(0, 0%, 60%);
+  --t3-gray-50: hsl(0, 0%, 50%);
+  --t3-gray-40: hsl(0, 0%, 40%);
+  --t3-gray-30: hsl(0, 0%, 30%);
+  --t3-gray-20: hsl(0, 0%, 20%);
+  --t3-gray-10: hsl(0, 0%, 10%);
 
   // main body variables
-  --t3-body-color: #1d1d1d;
+  --t3-body-color: var(--t3-black);
   --t3-body-bg: var(--t3-white);
   --t3-body-font-size: 1rem;
   --t3-border-color: #dee2e6;

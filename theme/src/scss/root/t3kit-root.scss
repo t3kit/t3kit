@@ -7,6 +7,10 @@
 
 .btn {
   --t3-btn-text-transform: uppercase;
+  --t3-btn-border-radius: 0;
+  --t3-btn-padding-top: 0.475rem;
+  --t3-btn-padding-left: 2.5rem;
+  --t3-btn-border: 3px;
 }
 
 .ce-simple-site-header {
@@ -16,5 +20,19 @@
 .ce-site-footer {
   --t3-ce-footer-links-text-transform: uppercase;
   --t3-ce-footer-title-text-transform: uppercase;
+}
 
+.ce-hero-image {
+  --t3-ce-hero-image-header-color: var(--t3-primary);
+  --t3-ce-hero-image-header-size: 80;
+  --t3-ce-hero-image-subheader-size: 80;
+  --t3-ce-hero-image-bodytext-size: 28;
+  --t3-ce-hero-image-bodytext-width: 75%;
+}
+
+.ce-big-icon-text-link__wrp {
+  --t3-ce-bitl-header-size: 26;
+  --t3-ce-bitl-header-font-weight: 300;
+  --t3-ce-bitl-subheader-size: 26;
+  --t3-ce-bitl-subheader-font-weight: 600;
 }

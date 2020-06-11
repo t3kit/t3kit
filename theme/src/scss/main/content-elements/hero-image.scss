@@ -1,13 +1,13 @@
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 .ce-hero-image {
-  --t3-ce-hero-image-header-color: var(--t3-primary);
-  --t3-ce-hero-image-header-size: 80;
+  --t3-ce-hero-image-header-color: var(--t3-white);
+  --t3-ce-hero-image-header-size: 70;
   --t3-ce-hero-image-subheader-color: var(--t3-white);
-  --t3-ce-hero-image-subheader-size: 80;
+  --t3-ce-hero-image-subheader-size: 60;
   --t3-ce-hero-image-bodytext-color: var(--t3-white);
-  --t3-ce-hero-image-bodytext-size: 28;
-  --t3-ce-hero-image-bodytext-width: 75%;
+  --t3-ce-hero-image-bodytext-size: 25;
+  --t3-ce-hero-image-bodytext-width: 100%;
   --t3-ce-hero-image-min-height-on-mobile: 460px;
   --t3-ce-hero-image-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
   --t3-ce-hero-image-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
@@ -53,17 +53,17 @@
   height: 100%;
 }
 
-.ce-hero-image__caption-header h1 {
+.ce-hero-image__caption-header .header-text-item {
   --font-size: var(--t3-ce-hero-image-header-size);
 
-  font-weight: 900;
+  font-weight: bold;
   color: var(--t3-ce-hero-image-header-color);
 }
 
-.ce-hero-image__caption-subheader h2 {
+.ce-hero-image__caption-subheader .subheader-text-item {
   --font-size: var(--t3-ce-hero-image-subheader-size);
 
-  font-weight: 900;
+  font-weight: bold;
   color: var(--t3-ce-hero-image-subheader-color);
 }
 

@@ -19,6 +19,7 @@
 @use 'main/helpers/text';
 @use 'main/helpers/border-radius';
 @use 'main/helpers/print';
+@use 'main/helpers/background';
 
 // ===== content-elements =====
 @use 'main/content-elements/table';
@@ -27,6 +28,7 @@
 @use 'main/content-elements/simple-site-header';
 @use 'main/content-elements/site-footer';
 @use 'main/content-elements/hero-image';
+@use 'main/content-elements/big-icon-text-button';
 // @use 'content-elements/footer';
 // @use 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';
