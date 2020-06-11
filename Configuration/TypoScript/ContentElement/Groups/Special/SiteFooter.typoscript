@@ -24,6 +24,7 @@ tt_content.siteFooter {
     50 {
       special = list
       special.value.field = page_links_1
+      includeNotInMenu = 1
       as = links_1
     }
 
@@ -31,6 +32,7 @@ tt_content.siteFooter {
     60 {
       special = list
       special.value.field = page_links_2
+      includeNotInMenu = 1
       as = links_2
     }
 
@@ -38,6 +40,7 @@ tt_content.siteFooter {
     70 {
       special = list
       special.value.field = page_links_3
+      includeNotInMenu = 1
       as = links_3
     }
 
@@ -45,6 +48,7 @@ tt_content.siteFooter {
     80 {
       special = list
       special.value.field = pages
+      includeNotInMenu = 1
       as = bottom_links
     }
 

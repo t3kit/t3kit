@@ -6,7 +6,6 @@
 
 <f:section name="Main">
 
-
   <footer class="footer ce-site-footer">
     <div class="ce-site-footer__container
       {f:if(condition: flexform.footer_full_width, then: ' container-fluid', else: ' container')}">
@@ -48,7 +47,7 @@
             </div>
           </f:if>
 
-          <f:if condition="{links_1}">
+          <f:if condition="{links_1.1}">
             <div class="col-md">
 
               <div class="ce-site-footer__column">
@@ -66,7 +65,7 @@
             </div>
           </f:if>
 
-          <f:if condition="{links_2}">
+          <f:if condition="{links_2.1}">
             <div class="col-md">
 
               <div class="ce-site-footer__column">
@@ -84,7 +83,7 @@
             </div>
           </f:if>
 
-          <f:if condition="{links_3}">
+          <f:if condition="{links_3.1}">
             <div class="col-md">
 
               <div class="ce-site-footer__column">
@@ -113,7 +112,7 @@
             </div>
           </div>
         </f:if>
-        <f:if condition="{bottom_links}">
+        <f:if condition="{bottom_links.1}">
             <div class="ce-site-footer__bottom-links">
               <f:render section="links" arguments="{links: bottom_links}" />
             </div>
