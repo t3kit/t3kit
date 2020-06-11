@@ -76,7 +76,7 @@ mod.web_layout.BackendLayouts.3columns_sidenav {
 
 
       # Additional content (after main content/before site footer)
-      4.columns.1 {
+      90.columns.1 {
         name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.after_content
         colspan = 12
         colPos = 90
