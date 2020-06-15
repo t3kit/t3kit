@@ -11,7 +11,10 @@
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
-  <div class="ce-big-icon-text-link__wrp {f:if(condition: flexform.inverted_color, then: ' iverted-color inverted-color')}">
+  <div class="ce-big-icon-text-link__wrp
+    {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
+    {f:if(condition: flexform.inverted_color, then: ' inverted-color')}">
+
     <div class="ce-big-icon-text-link">
 
       <f:if condition="{data.icon}">

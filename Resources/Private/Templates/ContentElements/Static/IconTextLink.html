@@ -11,14 +11,17 @@
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
-  <div class="ce-icon-text-link__wrp">
+  <div class="ce-icon-text-link__wrp
+    {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
+    {f:if(condition: flexform.inverted_color, then: ' inverted-color')}">
+
     <div class="ce-icon-text-link">
 
       <div class="ce-icon-text-link__icon-header">
         <f:if condition="{data.icon}">
-          <span class="ce-icon-text-link__icon-wrp">
+          <div class="ce-icon-text-link__icon-wrp">
             <t3kit:render.svg src="{data.icon}" class="t3icon ce-icon-text-link__icon {data.icon_class}" />
-          </span>
+          </div>
         </f:if>
 
         <f:if condition="{data.header}">
@@ -27,6 +30,12 @@
           </div>
         </f:if>
       </div>
+
+      <f:if condition="{data.subheader}">
+        <div class="ce-icon-text-link__subheader">
+          <f:render partial="Header/SubHeader" arguments="{_all}" />
+        </div>
+      </f:if>
 
       <f:if condition="{data.bodytext}">
         <div class="ce-icon-text-link__bodytext">

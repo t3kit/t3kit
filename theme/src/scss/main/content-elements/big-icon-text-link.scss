@@ -20,17 +20,19 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--t3-ce-bitl-color);
-  // margin-left: -10px;
-  // padding-left: 10px;
 }
 
 .ce-big-icon-text-link__wrp.inverted-color {
   --t3-ce-bitl-color: var(--t3-body-bg);
 }
 
+.ce-big-icon-text-link__wrp.internal-margins {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .ce-big-icon-text-link__icon-wrp {
   padding-bottom: 1.8rem;
-  display: block;
 }
 
 .ce-big-icon-text-link__icon {

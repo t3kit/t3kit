@@ -13,6 +13,13 @@
 			<trans-unit id="flexform.stretched_link" resname="flexform.stretched_link">
 				<source>Enable whole area link</source>
 			</trans-unit>
+			<trans-unit id="flexform.internal_margins" resname="flexform.internal_margins">
+				<source>Enable internal margins</source>
+			</trans-unit>
+			<trans-unit id="flexform.inverted_color" resname="flexform.inverted_color">
+				<source>Inverted color</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

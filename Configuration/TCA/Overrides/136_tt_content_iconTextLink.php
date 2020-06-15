@@ -41,7 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['iconTextLink'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;header_layout,
+            --palette--;;header_layout_position_subheader,
             --palette--;;bodytext_position,
             --palette--;;title_link_position,
             --palette--;;button,

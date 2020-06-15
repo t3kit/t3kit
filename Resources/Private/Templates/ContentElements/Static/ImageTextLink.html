@@ -7,12 +7,12 @@
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/ImageTextLink.html [begin] -->
 
-  <f:if condition="{data.height} == 0">
+  <f:if condition="{flexform.image_height} == 0">
     <f:then>
-      <f:variable name="height">300</f:variable>
+      <f:variable name="height">200</f:variable>
     </f:then>
     <f:else>
-      <f:variable name="height">{data.height}</f:variable>
+      <f:variable name="height">{flexform.image_height}</f:variable>
     </f:else>
   </f:if>
 
@@ -20,44 +20,60 @@
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
-  <div class="ce-img-text-link__wrp">
+  <div class="ce-img-text-link__wrp
+    {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
+    {f:if(condition: flexform.inverted_color, then: ' inverted-color')}">
+
     <div class="ce-img-text-link">
 
       <f:if condition="{files}">
-        <div class="ce-img-text-link__picture">
+        <div class="ce-img-text-link__picture"
+          {f:if(condition:height,then:' style="height: {height}px;"')}>
           <f:render partial="Media/Type" arguments="{_all}" />
         </div>
       </f:if>
 
-      <f:if condition="{data.header}">
-        <div class="ce-img-text-link__header">
-          <f:render partial="Header/Header" arguments="{_all}" />
-        </div>
-      </f:if>
-      <f:if condition="{data.subheader}">
-        <div class="ce-img-text-link__subheader">
-          <f:render partial="Header/SubHeader" arguments="{_all}" />
-        </div>
-      </f:if>
+      <div class="ce-img-text-link__body">
 
-      <f:if condition="{data.bodytext}">
-        <div class="ce-img-text-link__bodytext">
-          <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
-        </div>
-      </f:if>
+        <f:if condition="{svg_image}">
+          <div class="ce-img-text-link__svg-image
+            text-{data.header_position}"
+            {f:if(condition:height,then:' style="height: {height}px;"')}>
+            <f:render partial="Media/Svg" arguments="{data: data, files: svg_image}" />
+          </div>
+        </f:if>
 
-      <f:if condition="{data.link}">
-        <div class="ce-img-text-link__link">
-          <f:if condition="{data.link_as_button}">
-            <f:then>
-              <f:render partial="Link/ButtonLink" arguments="{_all}" />
-            </f:then>
-            <f:else>
-              <f:render partial="Link/Link" arguments="{_all}" />
-            </f:else>
-          </f:if>
-        </div>
-      </f:if>
+        <f:if condition="{data.header}">
+          <div class="ce-img-text-link__header">
+            <f:render partial="Header/Header" arguments="{_all}" />
+          </div>
+        </f:if>
+        <f:if condition="{data.subheader}">
+          <div class="ce-img-text-link__subheader">
+            <f:render partial="Header/SubHeader" arguments="{_all}" />
+          </div>
+        </f:if>
+
+        <f:if condition="{data.bodytext}">
+          <div class="ce-img-text-link__bodytext">
+            <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
+          </div>
+        </f:if>
+
+        <f:if condition="{data.link}">
+          <div class="ce-img-text-link__link">
+            <f:if condition="{data.link_as_button}">
+              <f:then>
+                <f:render partial="Link/ButtonLink" arguments="{_all}" />
+              </f:then>
+              <f:else>
+                <f:render partial="Link/Link" arguments="{_all}" />
+              </f:else>
+            </f:if>
+          </div>
+        </f:if>
+
+      </div>
 
     </div>
   </div>

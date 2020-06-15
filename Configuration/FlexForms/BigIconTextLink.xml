@@ -19,6 +19,17 @@
 						</TCEforms>
 					</stretched_link>
 
+					<internal_margins>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:flexform.internal_margins</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</internal_margins>
+
 					<inverted_color>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:flexform.inverted_color</label>
