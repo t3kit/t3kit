@@ -7,10 +7,6 @@
 // -- bootstrap/scss/grid";
 // ---------------------------------
 
-// $font-size-root:              null !default;
-// $line-height-base:            1.5 !default;
-// $paragraph-margin-bottom:   1rem !default;
-
 // $grid-breakpoints: (
 //   xs: 0,
 //   sm: 576px,
@@ -31,6 +27,8 @@
 // $grid-columns:                12 !default;
 // $grid-gutter-width:           1.5rem !default;
 // $grid-row-columns:            6 !default;
+
+$enable-negative-margins: true;
 
 // ==============================
 // Import Bootstrap default variables

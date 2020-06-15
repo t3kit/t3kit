@@ -13,6 +13,7 @@
 @use 'main/nav/scroll-to-top';
 
 // // ===== helpers =====
+@use 'main/helpers/grid';
 @use 'main/helpers/media';
 @use 'main/helpers/content-margins';
 @use 'main/helpers/buttons';
@@ -28,7 +29,9 @@
 @use 'main/content-elements/simple-site-header';
 @use 'main/content-elements/site-footer';
 @use 'main/content-elements/hero-image';
-@use 'main/content-elements/big-icon-text-button';
+@use 'main/content-elements/big-icon-text-link';
+@use 'main/content-elements/image-text-link';
+@use 'main/content-elements/icon-text-link';
 // @use 'content-elements/footer';
 // @use 'content-elements/big-icon-text-button';
 // @use 'content-elements/accordion';
@@ -47,7 +50,7 @@
 // @use 'content-elements/divider-icon';
 
 // // ===== plugins =====
-// @use 'main/plugins/lightbox';
+@use 'main/plugins/lightbox';
 // // @use 'plugins/news/';
 // // @use 'plugins/search';
 
