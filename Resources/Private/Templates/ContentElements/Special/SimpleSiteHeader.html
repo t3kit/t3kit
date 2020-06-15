@@ -25,7 +25,7 @@
         {flexform.main_nav_mobile_toggle_position}
         {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
 
-        <f:if condition="{files}">
+        <f:if condition="{files} || {svg_image}">
           <div class="main-navigation__logo navbar-brand">
             <f:render section="logo" arguments="{_all}" />
           </div>
@@ -78,7 +78,12 @@
 <f:section name="logo">
   <div class="ce-simple-site-header__logo-wrp">
     <div class="ce-simple-site-header__logo">
-      <f:render partial="Media/Image" arguments="{_all}" />
+      <f:if condition="{files}">
+        <f:render partial="Media/Image" arguments="{_all}" />
+      </f:if>
+      <f:if condition="{svg_image}">
+        <f:render partial="Media/Svg" arguments="{data: data, files: svg_image}" />
+      </f:if>
     </div>
   </div>
 </f:section>

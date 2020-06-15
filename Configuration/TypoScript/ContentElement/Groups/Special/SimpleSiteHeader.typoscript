@@ -19,6 +19,11 @@ tt_content.simpleSiteHeader {
     20 {
       references.fieldName = simple_image
     }
+    25 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    25 {
+      references.fieldName = svg_image
+      as = svg_image
+    }
 
     # Main menu
     30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor

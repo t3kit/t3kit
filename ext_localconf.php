@@ -108,3 +108,5 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php'][
 \T3k\t3kit\Hooks\PageLayoutView\ContactCardCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['simpleSiteHeader'] =
 \T3k\t3kit\Hooks\PageLayoutView\SimpleSiteHeaderCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['siteFooter'] =
+\T3k\t3kit\Hooks\PageLayoutView\SiteFooterCEPreviewRenderer::class;

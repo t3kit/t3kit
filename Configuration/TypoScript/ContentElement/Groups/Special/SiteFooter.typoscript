@@ -19,6 +19,11 @@ tt_content.siteFooter {
     20 {
       references.fieldName = simple_image
     }
+    25 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    25 {
+      references.fieldName = svg_image
+      as = svg_image
+    }
 
     50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     50 {

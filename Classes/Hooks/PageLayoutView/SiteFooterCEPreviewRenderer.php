@@ -18,12 +18,14 @@ namespace T3k\t3kit\Hooks\PageLayoutView;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\PageLayoutView;
 use TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Service\FlexFormService;
 
 /**
  * Contains a preview rendering for the page module of CType="image"
  * @internal this is a concrete TYPO3 hook implementation and solely used for EXT:frontend and not part of TYPO3's Core API.
  */
-class ImageCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
+class SiteFooterCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
 {
     /**
      * Preprocesses the preview rendering of the content element "image".
@@ -41,11 +43,11 @@ class ImageCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
         &$itemContent,
         array &$row
     ) {
-        if ($row['CType'] === 'image') {
-            if ($row['advanced_image']) {
-                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'advanced_image'), $row);
+        if ($row['CType'] === 'siteFooter') {
+            if ($row['simple_image']) {
+                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'simple_image'), $row);
 
-                $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'advanced_image', $row);
+                $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'simple_image', $row);
 
                 if (!empty($fileReferences)) {
                     $linkedContent = '';
@@ -84,6 +86,11 @@ class ImageCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
 
                     unset($linkedContent);
                 }
+            }
+
+            if ($row['pi_flexform']) {
+                $flexformService = GeneralUtility::makeInstance(FlexFormService::class);
+                $itemContent .= $flexformService->convertFlexFormContentToArray($row['pi_flexform'])['copyright'] ?? null;
             }
 
             $drawItem = false;
