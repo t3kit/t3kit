@@ -64,6 +64,28 @@ class ImageTextLinkCEPreviewRenderer implements PageLayoutViewDrawItemHookInterf
                 }
             }
 
+            if ($row['svg_image']) {
+                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'svg_image'), $row);
+
+                $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'svg_image', $row);
+
+                if (!empty($fileReferences)) {
+                    $linkedContent = '';
+
+                    foreach ($fileReferences as $fileReference) {
+                        $description = $fileReference->getDescription();
+                        if ($description !== null && $description !== '') {
+                            $linkedContent .= htmlspecialchars($description);
+                            $linkedContent = '<span class="t3kit-ce-image-description">' . $linkedContent . '</span>';
+                        }
+                    }
+
+                    $itemContent .= $parentObject->linkEditContent($linkedContent, $row);
+
+                    unset($linkedContent);
+                }
+            }
+
             $drawItem = false;
         }
     }

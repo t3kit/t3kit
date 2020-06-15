@@ -19,6 +19,11 @@ tt_content {
       20 {
         references.fieldName = simple_crop_image
       }
+      30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      30 {
+        references.fieldName = svg_image
+        as = svg_image
+      }
     }
   }
 }

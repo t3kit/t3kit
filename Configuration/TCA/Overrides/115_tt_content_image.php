@@ -30,6 +30,7 @@ $GLOBALS['TCA']['tt_content']['types']['image'] = array_replace_recursive(
                 --palette--;;headers,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                 advanced_image,
+                svg_image,
                 --palette--;;mediaAdjustments,
                 --palette--;;imagelinks,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,

@@ -13,5 +13,10 @@ tt_content.image {
     10 {
       references.fieldName = advanced_image
     }
+    20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    20 {
+      references.fieldName = svg_image
+      as = svg_image
+    }
   }
 }

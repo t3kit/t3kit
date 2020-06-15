@@ -155,11 +155,12 @@
       {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
     sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
-  <img
-  class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
-  loading="lazy"
-  {f:if(condition:height,then:' height="{height}px"')}
-  src="{f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')}" alt="{image.alternative}" >
+    <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
+      image="{image}"
+      alt="{image.alternative}"
+      cropVariant="default"
+      loading="lazy" />
+
 </picture>
 
 </html>

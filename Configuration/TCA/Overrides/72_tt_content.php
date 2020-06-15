@@ -549,7 +549,61 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     'uid_local' => [
                         'config' => [
                             'appearance' => [
-                                'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                'elementBrowserAllowed' => 'jpg,jpeg,png'
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'svg_image' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:svg_image',
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('svg_image', [
+            'appearance' => [
+                'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
+            ],
+            'overrideChildTca' => [
+                'types' => [
+                    '0' => [
+                        'showitem' => '
+                            --palette--;;svgImageOverlayPalette,
+                            --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+                        'showitem' => '
+                            --palette--;;svgImageOverlayPalette,
+                            --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                        'showitem' => '
+                            --palette--;;svgImageOverlayPalette,
+                            --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+                        'showitem' => '
+                            --palette--;;audioOverlayPalette,
+                            --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+                        'showitem' => '
+                            --palette--;;videoOverlayPalette,
+                            --palette--;;filePalette'
+                    ],
+                    \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+                        'showitem' => '
+                            --palette--;;svgImageOverlayPalette,
+                            --palette--;;filePalette'
+                    ]
+                ],
+                'columns' => [
+                    'uid_local' => [
+                        'config' => [
+                            'appearance' => [
+                                'elementBrowserAllowed' => 'svg'
                             ]
                         ]
                     ]
@@ -603,7 +657,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     'uid_local' => [
                         'config' => [
                             'appearance' => [
-                                'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                'elementBrowserAllowed' => 'jpg,jpeg,png'
                             ]
                         ]
                     ]
@@ -657,7 +711,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     'uid_local' => [
                         'config' => [
                             'appearance' => [
-                                'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
+                                'elementBrowserAllowed' => 'jpg,jpeg,png'
                             ]
                         ]
                     ]
@@ -712,7 +766,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     'uid_local' => [
                         'config' => [
                             'appearance' => [
-                                'elementBrowserAllowed' => 'jpg,jpeg,png,svg,mp4,webm,youtube,vimeo,mp3'
+                                'elementBrowserAllowed' => 'jpg,jpeg,png,mp4,webm,youtube,vimeo,mp3'
                             ]
                         ]
                     ]

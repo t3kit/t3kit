@@ -7,7 +7,12 @@
 
   <div class="ce-image__wrp">
     <div class="ce-image">
-      <f:render partial="Media/Figure" arguments="{_all}" />
+      <f:if condition="{files}">
+        <f:render partial="Media/Figure" arguments="{_all}" />
+      </f:if>
+      <f:if condition="{svg_image}">
+        <f:render partial="Media/Svg" arguments="{data: data, files: svg_image}"/>
+      </f:if>
     </div>
   </div>
 

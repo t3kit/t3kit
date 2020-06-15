@@ -24,6 +24,9 @@
 			<trans-unit id="tab.icon" resname="tab.icon">
 				<source>Icon</source>
 			</trans-unit>
+			<trans-unit id="tab.svg_image" resname="tab.tabs.svg_image">
+				<source>SVG</source>
+			</trans-unit>
 
 			<!-- Content element General tab config fields translations -->
 			<trans-unit id="header_layout.1" resname="header_layout.1">
@@ -168,6 +171,9 @@
 			</trans-unit>
 			<trans-unit id="aspect_ratio.1-1" resname="aspect_ratio.1-1">
 				<source>1:1</source>
+			</trans-unit>
+			<trans-unit id="svg_width" resname="svg_width">
+				<source>SVG image width</source>
 			</trans-unit>
 
 			<!-- Content element Appearance tab config fields translations -->
@@ -338,6 +344,10 @@
 			<!-- page links -->
 			<trans-unit id="page_links" resname="page_links">
 				<source>Pages</source>
+			</trans-unit>
+			<!-- svg_image -->
+			<trans-unit id="svg_image" resname="svg_image">
+				<source>SVG</source>
 			</trans-unit>
 
 			<!-- general flexform -->

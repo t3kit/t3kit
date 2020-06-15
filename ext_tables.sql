@@ -18,6 +18,7 @@ CREATE TABLE tt_content (
 	section_container_width varchar(60) DEFAULT '' NOT NULL,
 	image_zoom_width varchar(60) DEFAULT '' NOT NULL,
 	simple_image int(11) unsigned DEFAULT '0' NOT NULL,
+	svg_image int(11) unsigned DEFAULT '0' NOT NULL,
 	simple_crop_image int(11) unsigned DEFAULT '0' NOT NULL,
 	advanced_image int(11) unsigned DEFAULT '0' NOT NULL,
 	advanced_media int(11) unsigned DEFAULT '0' NOT NULL,
@@ -51,4 +52,5 @@ CREATE TABLE sys_file_reference (
 	picture_width varchar(60) DEFAULT '' NOT NULL,
 	picture_border_radius varchar(60) DEFAULT '' NOT NULL,
 	aspect_ratio varchar(60) DEFAULT '' NOT NULL,
+	svg_width mediumint(8) unsigned DEFAULT '0' NOT NULL,
 );

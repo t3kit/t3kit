@@ -182,6 +182,24 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
     ],
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
+    'svg_width' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:svg_width',
+        'config' => [
+            'type' => 'input',
+            'size' => 4,
+            'max' => 4,
+            'eval' => 'int',
+            'range' => [
+                'upper' => 1999,
+                'lower' => 0,
+            ],
+            'default' => 0
+        ]
+    ],
+]);
+
 
 /*
  * ###########################
@@ -194,6 +212,14 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['simpleImageOverlayPalette'] =
         alternative,
         --linebreak--,description,description_position,
         --linebreak--,link
+    '
+];
+
+$GLOBALS['TCA']['sys_file_reference']['palettes']['svgImageOverlayPalette'] = [
+    'showitem' => '
+        alternative,
+        --linebreak--,description,description_position,
+        --linebreak--,link,svg_width
     '
 ];
 
