@@ -130,6 +130,23 @@ mod.web_layout.BackendLayouts.start_page {
           colPos = 3309
         }
       }
+      9.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3310
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3311
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3312
+        }
+      }
 
 
       # Additional content (after main content/before site footer)
