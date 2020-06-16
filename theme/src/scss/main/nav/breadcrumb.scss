@@ -1,27 +1,82 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
 .breadcrumb {
+  --t3-breadcrumb-bg: var(--t3-body-bg);
+  --t3-breadcrumb-color: var(--t3-body-color);
+  --t3-breadcrumb-hover-color: var(--t3-link-hover-color);
+  --t3-breadcrumb-active-color: var(--t3-body-color);
+  --t3-breadcrumb-separator-color: var(--t3-body-color);
+  --t3-breadcrumb-separator: "/";
+  --t3-breadcrumb-text-transform: none;
+}
+
+.breadcrumb__list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.5rem 1rem;
+  padding: 1.6rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
   background-color: var(--t3-breadcrumb-bg);
 }
 
-.breadcrumb-item {
+.breadcrumb__list-item {
   display: flex;
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumb__list-item + .breadcrumb__list-item {
   padding-left: 0.5rem;
 }
 
-.breadcrumb-item + .breadcrumb-item:before {
+.breadcrumb__list-item + .breadcrumb__list-item:before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: var(--t3-breadcrumb-color);
-  content: "/";
+  color: var(--t3-breadcrumb-separator-color);
+  content: var(--t3-breadcrumb-separator);
+  font-weight: normal;
 }
 
-.breadcrumb-item.active {
-  color: var(--t3-breadcrumb-active-color);
+.breadcrumb__list-item-link {
+  color: var(--t3-breadcrumb-color);
+  text-transform: var(--t3-breadcrumb-text-transform);
 }
+
+.breadcrumb__list-item-link:hover {
+  color: var(--t3-breadcrumb-hover-color);
+}
+
+.breadcrumb__list-item.active {
+  color: var(--t3-breadcrumb-active-color);
+  font-weight: 300;
+  text-transform: var(--t3-breadcrumb-text-transform);
+}
+
+// --------------------------------------------------------
+// X-Small devices (portrait phones, less than 576px) xs
+// @media (max-width: 575.98px) { ... }
+// Small devices (landscape phones, 576px and up) sm
+// @media (min-width: 576px) { ... }
+
+// --------------------------------------------------------
+// Small devices (landscape phones, less than 768px) sm
+// @media (max-width: 767.98px) { ... }
+// Medium devices (tablets, 768px and up) md
+// @media (min-width: 768px) { ... }
+
+// --------------------------------------------------------
+// Medium devices (tablets, less than 992px) md
+// @media (max-width: 991.98px) { ... }
+// Large devices (desktops, 992px and up) lg
+// @media (min-width: 992px) { ... }
+
+// --------------------------------------------------------
+// Large devices (desktops, less than 1200px) lg
+// @media (max-width: 1199.98px) { ... }
+// X-Large devices (large desktops, 1200px and up) xl
+// @media (min-width: 1200px) { ... }
+
+// --------------------------------------------------------
+// X-Large devices (large desktops, less than 1400px) xl
+// @media (max-width: 1399.98px) { ... }
+// XX-Large devices (larger desktops, 1400px and up) xxl
+// @media (min-width: 1400px) { ... }
