@@ -285,9 +285,6 @@
 			<trans-unit id="button_style.primary" resname="button_style.primary">
 				<source>Primary style</source>
 			</trans-unit>
-			<trans-unit id="button_style.secondary" resname="button_style.secondary">
-				<source>Secondary style</source>
-			</trans-unit>
 			<trans-unit id="button_style.light" resname="button_style.light">
 				<source>Light style</source>
 			</trans-unit>

@@ -945,10 +945,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     'primary'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.secondary',
-                    'secondary'
-                ],
-                [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.dark',
                     'dark'
                 ],
