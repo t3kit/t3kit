@@ -121,6 +121,7 @@
     dropdown-menu
     {f:if(condition: '{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3', then: ' show-parent-link')}"
     aria-labelledby="navbarDropdown">
+
     <f:if condition="{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3 ">
       <li class="main-navigation__dropdown-item {f:if(condition: navItem.active, then:' active')} {navItem.data.uid}">
         <a class="main-navigation__dropdown-item-link main-navigation__dropdown-item-parent-link"
@@ -130,14 +131,25 @@
         </a>
       </li>
     </f:if>
+
     <f:for each="{navItem.children}" as="childItem">
-      <li class="main-navigation__dropdown-item {f:if(condition: childItem.active, then:' active')} {childItem.data.uid}">
-        <a href="{childItem.link}"
-          class=" main-navigation__dropdown-item-link"
-          {f:if(condition: childItem.current, then: 'aria-current="page"')}>
-            {childItem.title}
-        </a>
-      </li>
+
+      <f:if condition="{childItem.spacer}">
+        <f:then>
+            <li class="main-navigation__dropdown-item-divider"></li>
+        </f:then>
+
+        <f:else>
+          <li class="main-navigation__dropdown-item {f:if(condition: childItem.active, then:' active')} {childItem.data.uid}">
+            <a href="{childItem.link}"
+              class=" main-navigation__dropdown-item-link"
+              {f:if(condition: childItem.current, then: 'aria-current="page"')}>
+                {childItem.title}
+            </a>
+          </li>
+        </f:else>
+      </f:if>
+
     </f:for>
   </ul>
 
