@@ -6,7 +6,7 @@ page.10.dataProcessing {
     as = sideNavigation
     entryLevel = 1
     levels = 5
-    expandAll = 0
+    expandAll = {$page.nav.sidenav.expandAll}
     includeSpacer = 1
     dataProcessing {
       20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -40,5 +40,3 @@ page.10.dataProcessing {
   }
 
 }
-
-

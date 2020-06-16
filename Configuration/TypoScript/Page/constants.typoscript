@@ -33,6 +33,14 @@ page {
       # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.breadcrumb.image
       image = 0
     }
+    sidenav {
+      # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.sidenav.expandAll
+      expandAll = 0
+      # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.sidenav.icon
+      icon = 0
+      # cat=t3kitPage/nav; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:nav.sidenav.image
+      image = 0
+    }
   }
 
 }

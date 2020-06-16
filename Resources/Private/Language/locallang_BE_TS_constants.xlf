@@ -113,11 +113,11 @@
 			<trans-unit id="fluidtemplate.templateRootPath" resname="fluidtemplate.templateRootPath">
 				<source>Templates</source>
 			</trans-unit>
-			<!-- subcategory fluidtemplate -->
+			<!-- subcategory nav -->
 			<trans-unit id="subcategory.nav" resname="subcategory.nav">
 				<source>Navigation</source>
 			</trans-unit>
-			<!-- settings fluidtemplate -->
+			<!-- settings breadcrumb -->
 			<trans-unit id="nav.breadcrumb.showBreadcrumbMenu" resname="nav.breadcrumb.showBreadcrumbMenu">
 				<source>Show breadcrumb menu</source>
 			</trans-unit>
@@ -126,6 +126,16 @@
 			</trans-unit>
 			<trans-unit id="nav.breadcrumb.image" resname="nav.breadcrumb.image">
 				<source>Show page images in breadcrumb menu</source>
+			</trans-unit>
+			<!-- settings sideNavigation -->
+			<trans-unit id="nav.sidenav.expandAll" resname="nav.sidenav.expandAll">
+				<source>Side-Navigation expand all pages</source>
+			</trans-unit>
+			<trans-unit id="nav.sidenav.icon" resname="nav.sidenav.icon">
+				<source>Show page icons in Side-Navigation menu</source>
+			</trans-unit>
+			<trans-unit id="nav.sidenav.image" resname="nav.sidenav.image">
+				<source>Show page images in Side-Navigation menu</source>
 			</trans-unit>
 
 		</body>

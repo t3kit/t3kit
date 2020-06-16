@@ -56,6 +56,10 @@ page {
           icon = {$page.nav.breadcrumb.icon}
           image = {$page.nav.breadcrumb.image}
         }
+        sidenav {
+          icon = {$page.nav.sidenav.icon}
+          image = {$page.nav.sidenav.image}
+        }
       }
     }
 
