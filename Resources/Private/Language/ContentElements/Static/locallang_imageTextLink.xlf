@@ -14,9 +14,6 @@
 			<trans-unit id="flexform.stretched_link" resname="flexform.stretched_link">
 				<source>Enable whole area link</source>
 			</trans-unit>
-			<trans-unit id="flexform.image_height" resname="flexform.image_height">
-				<source>Image height (200px by default)</source>
-			</trans-unit>
 			<trans-unit id="flexform.internal_margins" resname="flexform.internal_margins">
 				<source>Enable internal margins</source>
 			</trans-unit>
