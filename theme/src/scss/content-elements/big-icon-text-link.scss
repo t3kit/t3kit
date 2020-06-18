@@ -17,7 +17,6 @@
 
   position: relative;
   overflow: auto;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--t3-ce-bitl-color);
 }
@@ -29,6 +28,7 @@
 .ce-big-icon-text-link__wrp.internal-margins {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1rem;
 }
 
 .ce-big-icon-text-link__icon-wrp {

@@ -13,9 +13,9 @@
   --t3-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
 
   // secondary color
-  --t3-secondary: #008292;
+  --t3-secondary: #007e8f;
   --t3-secondary-hs: 187, 100%;
-  --t3-secondary-l: 29%;
+  --t3-secondary-l: 28%;
   --t3-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
 
   // light color
@@ -48,9 +48,6 @@
   --t3-body-bg: var(--t3-white);
   --t3-body-font-size: 1rem;
   --t3-border-color: #dee2e6;
-
-  // input-focus
-  // --t3-input-focus: 0 0 0 0.2rem hsla(358, 74%, 48%, 0.247);
 
   // _________________
   // Typography
@@ -95,24 +92,6 @@
   --t3-ce-margin-50: 3.125rem;
   --t3-ce-margin-60: 3.75rem;
   --t3-ce-margin-70: 4.375rem;
-
-  // _________________
-  // Navigation
-  // -----------------
-  // main navigation
-  // --t3-main-navigation-color-hs
-  // --t3-main-navigation-color-l
-  // --t3-main-navigation-bg-hs
-  // --t3-main-navigation-bg-l
-  // --t3-nav-link-padding-top: 0.5rem;
-  // --t3-nav-link-padding-left: 1rem;
-
-  // side-navigation
-
-  // breadcrumb
-  --t3-breadcrumb-color: var(--t3-link-color);
-  --t3-breadcrumb-bg: var(--t3-body-bg);
-  --t3-breadcrumb-active-color: var(--t3-body-color);
 
   // skip-links
   --t3-skip-link-bg: var(--t3-body-bg);
