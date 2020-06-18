@@ -110,3 +110,8 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php'][
 \T3k\t3kit\Hooks\PageLayoutView\SimpleSiteHeaderCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['siteFooter'] =
 \T3k\t3kit\Hooks\PageLayoutView\SiteFooterCEPreviewRenderer::class;
+
+// Register RTE presets
+if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'])) {
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'] = 'EXT:t3kit/Configuration/RTE/Default.yaml';
+}
