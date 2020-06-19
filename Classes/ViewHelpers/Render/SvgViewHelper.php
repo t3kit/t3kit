@@ -46,6 +46,8 @@ class SvgViewHelper extends AbstractViewHelper
         $this->registerArgument('height', 'float', 'Specifies a height for the svg', false);
         $this->registerArgument('aria-label', 'string', 'Specifies an aria-label for the svg', false);
         $this->registerArgument('aria-hidden', 'bool', 'Specifies aria-hidden for the svg', false);
+        $this->registerArgument('role', 'string', 'Specifies role attr for the svg', false);
+        $this->registerArgument('focusable', 'string', 'Specifies aria-hidden for the svg', false);
     }
 
     /**
@@ -94,9 +96,14 @@ class SvgViewHelper extends AbstractViewHelper
         // Remove xml version tag
         $domXml = dom_import_simplexml($svgElement);
 
-        $domXml->setAttribute('role', 'img');
+        if (!empty($this->arguments['role'])) {
+            $domXml->setAttribute('role', $this->arguments['role']);
+        }
         if (!empty($this->arguments['aria-label'])) {
             $domXml->setAttribute('aria-label', $this->arguments['aria-label']);
+        }
+        if (!empty($this->arguments['focusable'])) {
+            $domXml->setAttribute('focusable', $this->arguments['focusable']);
         }
         if (!empty($this->arguments['aria-hidden']) && $this->arguments['aria-hidden'] === true) {
             $domXml->setAttribute('aria-hidden', 'true');
