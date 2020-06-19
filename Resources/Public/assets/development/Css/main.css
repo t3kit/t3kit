@@ -8126,6 +8126,12 @@ caption {
   height: auto;
 }
 
+.svg-full-width {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
 .figure {
   display: inline-block;
 }
@@ -10031,7 +10037,6 @@ fieldset:disabled .btn {
 .ce-img-text-link__picture,
 .ce-img-text-link__svg-image {
   margin-bottom: 1rem;
-  overflow: hidden;
 }
 
 .ce-img-text-link__svg-image {
