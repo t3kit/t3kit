@@ -7,6 +7,10 @@
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/ImageTextLink.html [begin] -->
 
+  <f:if condition="{flexform.image_height}">
+    <f:variable name="height">{flexform.image_height}</f:variable>
+  </f:if>
+
   <f:if condition="{flexform.stretched_link}">
     <f:variable name="stretched_link" value="1" />
   </f:if>
@@ -28,7 +32,7 @@
         <f:if condition="{svg_image}">
           <div class="ce-img-text-link__svg-image
             text-{data.header_position}">
-            <f:render partial="Media/Svg" arguments="{data: data, files: svg_image}" />
+            <f:render partial="Media/Svg" arguments="{data: data, files: svg_image, height: height}" />
           </div>
         </f:if>
 

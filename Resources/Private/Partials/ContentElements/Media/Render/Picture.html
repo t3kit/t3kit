@@ -155,10 +155,15 @@
       {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
     sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
+    <f:if condition="{height}">
+      <f:variable name="style">height:{height}px</f:variable>
+    </f:if>
+
     <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
       image="{image}"
       alt="{image.alternative}"
       cropVariant="default"
+      additionalAttributes="{style:'{style}'}"
       loading="lazy" />
 
 </picture>

@@ -12,6 +12,12 @@
   height: auto;
 }
 
+.svg-full-width {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
 .figure {
   display: inline-block;
 }

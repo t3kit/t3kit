@@ -20,6 +20,9 @@
 			<trans-unit id="flexform.inverted_color" resname="flexform.inverted_color">
 				<source>Inverted color</source>
 			</trans-unit>
+			<trans-unit id="flexform.image_height" resname="flexform.image_height">
+				<source>Image height</source>
+			</trans-unit>
 
 		</body>
 	</file>

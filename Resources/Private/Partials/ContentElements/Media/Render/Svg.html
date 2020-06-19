@@ -1,10 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:image class="svg-partial__item svg-fluid"
+<f:if condition="{file.alternative}">
+  <f:variable name="role">img</f:variable>
+</f:if>
+
+<f:image class="svg-partial__item svg-fluid
+  {f:if(condition:height,then:' svg-full-width')}"
   image="{file}"
   width="{file.referenceProperties.svg_width}m"
   minWidth="{file.referenceProperties.svg_width}"
   alt="{file.alternative}"
+  additionalAttributes="{role:'{role}'}"
   loading="lazy" />
 
 </html>
