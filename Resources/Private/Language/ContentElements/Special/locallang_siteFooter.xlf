@@ -78,6 +78,9 @@
 			<trans-unit id="flexform.footer_full_width" resname="flexform.footer_full_width">
 				<source>Footer full width</source>
 			</trans-unit>
+			<trans-unit id="flexform.show_page_icons" resname="flexform.show_page_icons">
+				<source>Show page icons or images</source>
+			</trans-unit>
 
 
 			<!-- footer_links -->

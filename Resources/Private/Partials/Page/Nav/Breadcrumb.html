@@ -27,7 +27,7 @@
 <f:section name="breadcrumbTitle">
   <f:if condition="{settings.nav.breadcrumb.icon} && {item.data.nav_icon}">
     <span class="breadcrumb__list-item-icon-wrp">
-      <t3kit:render.svg src="{item.data.nav_icon}" class="t3icon breadcrumb__list-item-icon {item.data.nav_icon_class}" />
+      <t3kit:render.svg src="{item.data.nav_icon}" aria-hidden="true" focusable="false" class="t3icon breadcrumb__list-item-icon {item.data.nav_icon_class}" />
     </span>
   </f:if>
 

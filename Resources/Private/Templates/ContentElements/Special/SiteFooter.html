@@ -65,7 +65,7 @@
                 </f:if>
 
                 <div class="ce-site-footer__column-links-1">
-                  <f:render section="links" arguments="{links: links_1}" />
+                  <f:render section="links" arguments="{links: links_1, flexform: flexform}" />
                 </div>
               </div>
 
@@ -83,7 +83,7 @@
                 </f:if>
 
                 <div class="ce-site-footer__column-links-2">
-                  <f:render section="links" arguments="{links: links_2}" />
+                  <f:render section="links" arguments="{links: links_2, flexform: flexform}" />
                 </div>
               </div>
 
@@ -101,7 +101,7 @@
                 </f:if>
 
                 <div class="ce-site-footer__column-links-3">
-                  <f:render section="links" arguments="{links: links_3}" />
+                  <f:render section="links" arguments="{links: links_3, flexform: flexform}" />
                 </div>
               </div>
 
@@ -121,7 +121,7 @@
         </f:if>
         <f:if condition="{bottom_links.1}">
             <div class="ce-site-footer__bottom-links">
-              <f:render section="links" arguments="{links: bottom_links}" />
+              <f:render section="links" arguments="{links: bottom_links, flexform: flexform}" />
             </div>
         </f:if>
       </div>
@@ -137,11 +137,10 @@
 
     <div class="ce-site-footer__links">
       <ul class="ce-site-footer__links-list">
-
         <f:for each="{links}" as="linkItem">
           <li class="ce-site-footer__links-list-item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')}">
             <a href="{linkItem.link}" class="ce-site-footer__links-list-item-link ce-site-footer__link">
-                {linkItem.title}
+                <f:render section="linkTitle" arguments="{item: linkItem, flexform: flexform}" />
             </a>
           </li>
         </f:for>
@@ -151,5 +150,25 @@
 
 </f:section>
 
+
+<f:section name="linkTitle">
+
+  <f:if condition="{flexform.show_page_icons} && {item.data.nav_icon}">
+    <span class="ce-site-footer__links-list-item-icon-wrp">
+      <t3kit:render.svg src="{item.data.nav_icon}" aria-hidden="true" focusable="false" class="t3icon ce-site-footer__links-list-item-icon {item.data.nav_icon_class}" />
+    </span>
+  </f:if>
+
+  <f:if condition="{flexform.show_page_icons} && {item.nav_image}">
+    <div class="ce-site-footer__links-list-item-image-wrp">
+      <f:media class="ce-site-footer__links-list-item-image img-fluid"
+        file="{item.nav_image.0}"
+        alt="{item.nav_image.0.alternative}"
+        loading="lazy" />
+    </div>
+  </f:if>
+
+  <span class="ce-site-footer__links-list-item-title">{item.title}</span>
+</f:section>
 
 </html>

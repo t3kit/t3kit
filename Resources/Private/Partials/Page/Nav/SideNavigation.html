@@ -46,7 +46,7 @@
 <f:section name="sidenavTitle">
   <f:if condition="{settings.nav.sidenav.icon} && {item.data.nav_icon}">
     <span class="sidenav__list-item-icon-wrp">
-      <t3kit:render.svg src="{item.data.nav_icon}" class="t3icon sidenav__list-item-icon {item.data.nav_icon_class}" />
+      <t3kit:render.svg src="{item.data.nav_icon}" aria-hidden="true" focusable="false" class="t3icon sidenav__list-item-icon {item.data.nav_icon_class}" />
     </span>
   </f:if>
 

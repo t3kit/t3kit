@@ -199,6 +199,17 @@
 						</TCEforms>
 					</footer_full_width>
 
+					<show_page_icons>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.show_page_icons</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</show_page_icons>
+
 				</el>
 			</ROOT>
 		</site_footer_settings>
