@@ -42,6 +42,8 @@ $GLOBALS['TCA']['tt_content']['types']['siteFooter'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,
+            header_layout,
+            header_style,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:tab.logo,
             simple_image,
             svg_image,

@@ -14,7 +14,7 @@
         <div class="row">
 
           <f:if condition="{flexform.show_address} || {files}">
-            <div class="col-md">
+            <div class="col-lg">
 
               <f:if condition="{files} || {svg_image}">
                 <div class="ce-site-footer__logo">
@@ -55,54 +55,69 @@
           </f:if>
 
           <f:if condition="{links_1.1}">
-            <div class="col-md">
+            <div class="col-lg">
 
               <div class="ce-site-footer__column">
-                <f:if condition="{flexform.column_1_title}">
-                  <p class="ce-site-footer__column-title">
-                    {flexform.column_1_title}
-                  </p>
-                </f:if>
+                <nav class="ce-site-footer__column-nav">
+                  <f:if condition="{flexform.column_1_title}">
+                    <div class="ce-site-footer__column-title">
+                      <f:render partial="Header/Render/Header" arguments="{
+                        header: flexform.column_1_title,
+                        layout: data.header_layout,
+                        style: data.header_style}" />
+                    </div>
+                  </f:if>
 
-                <div class="ce-site-footer__column-links-1">
-                  <f:render section="links" arguments="{links: links_1, flexform: flexform}" />
-                </div>
+                  <div class="ce-site-footer__column-links">
+                    <f:render section="links" arguments="{links: links_1, flexform: flexform}" />
+                  </div>
+                </nav>
               </div>
 
             </div>
           </f:if>
 
           <f:if condition="{links_2.1}">
-            <div class="col-md">
+            <div class="col-lg">
 
               <div class="ce-site-footer__column">
-                <f:if condition="{flexform.column_2_title}">
-                  <p class="ce-site-footer__column-title">
-                    {flexform.column_2_title}
-                  </p>
-                </f:if>
+                <nav class="ce-site-footer__column-nav">
+                  <f:if condition="{flexform.column_2_title}">
+                    <div class="ce-site-footer__column-title">
+                      <f:render partial="Header/Render/Header" arguments="{
+                        header: flexform.column_2_title,
+                        layout: data.header_layout,
+                        style: data.header_style}" />
+                    </div>
+                  </f:if>
 
-                <div class="ce-site-footer__column-links-2">
-                  <f:render section="links" arguments="{links: links_2, flexform: flexform}" />
-                </div>
+                  <div class="ce-site-footer__column-links">
+                    <f:render section="links" arguments="{links: links_2, flexform: flexform}" />
+                  </div>
+                </nav>
               </div>
 
             </div>
           </f:if>
 
           <f:if condition="{links_3.1}">
-            <div class="col-md">
+            <div class="col-lg">
 
               <div class="ce-site-footer__column">
-                <f:if condition="{flexform.column_3_title}">
-                  <p class="ce-site-footer__column-title">
-                    {flexform.column_3_title}
-                  </p>
-                </f:if>
+                <nav class="ce-site-footer__column-nav">
+                  <f:if condition="{flexform.column_3_title}">
+                    <div class="ce-site-footer__column-title">
+                      <f:render partial="Header/Render/Header" arguments="{
+                        header: flexform.column_3_title,
+                        layout: data.header_layout,
+                        style: data.header_style}" />
+                    </div>
+                  </f:if>
 
-                <div class="ce-site-footer__column-links-3">
-                  <f:render section="links" arguments="{links: links_3, flexform: flexform}" />
-                </div>
+                  <div class="ce-site-footer__column-links">
+                    <f:render section="links" arguments="{links: links_3, flexform: flexform}" />
+                  </div>
+                </nav>
               </div>
 
             </div>

@@ -3,7 +3,7 @@
 <f:comment>https://www.w3.org/TR/wai-aria-practices/examples/breadcrumb/index.html</f:comment>
 
 <f:if condition="{breadcrumb}">
-  <nav class="breadcrumb breadcrumb-page-partial" aria-label="Breadcrumb">
+  <nav class="breadcrumb breadcrumb-page-partial" aria-label="Breadcrumbs">
     <ol class="breadcrumb__list">
       <f:for each="{breadcrumb}" as="item">
         <li class="breadcrumb__list-item {f:if(condition: item.current, then:'active')}"
