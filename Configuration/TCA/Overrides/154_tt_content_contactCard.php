@@ -45,7 +45,7 @@ $GLOBALS['TCA']['tt_content']['types']['contactCard'] = [
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.title,
             --palette--;;title_link,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            simple_crop_image,
+            picture,
             --palette--;;mediaAdjustments,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,

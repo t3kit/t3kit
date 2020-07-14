@@ -42,10 +42,10 @@ class ImageTextLinkCEPreviewRenderer implements PageLayoutViewDrawItemHookInterf
         array &$row
     ) {
         if ($row['CType'] === 'imageTextLink') {
-            if ($row['simple_crop_image']) {
-                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'simple_crop_image'), $row);
+            if ($row['picture']) {
+                $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'picture'), $row);
 
-                $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'simple_crop_image', $row);
+                $fileReferences = BackendUtility::resolveFileReferences('tt_content', 'picture', $row);
 
                 if (!empty($fileReferences)) {
                     $linkedContent = '';

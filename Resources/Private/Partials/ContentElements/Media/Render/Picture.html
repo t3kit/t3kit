@@ -133,39 +133,88 @@
   </f:else>
 </f:if>
 
+<f:if condition="{image.referenceProperties.picture_height}">
 
-<picture class="picture-partial__item">
-  <source
-    media="(max-width: 767px)"
-    srcset="{f:uri.image(image: image, maxWidth: '360', cropVariant: 'mobile')} 360w,
-      {f:uri.image(image: image, maxWidth: '480', cropVariant: 'mobile')} 480w,
-      {f:uri.image(image: image, maxWidth: '768', cropVariant: 'mobile')} 768w,
-      {f:uri.image(image: image, maxWidth: '1125', cropVariant: 'mobile')} 1125w"
-    sizes="{small_viewport_width}vw">
+  <f:then>
+    <f:variable name="picture_height">{image.referenceProperties.picture_height}c</f:variable>
+    <picture class="picture-partial__item">
+      <source
+        media="(max-width: 991px)"
+        srcset="{f:uri.image(image: image, width: '340', height: '{picture_height}', cropVariant: 'mobile')} 340w,
+          {f:uri.image(image: image, width: '480', height: '{picture_height}', cropVariant: 'mobile')} 480w,
+          {f:uri.image(image: image, width: '640', height: '{picture_height}', cropVariant: 'mobile')} 640w,
+          {f:uri.image(image: image, width: '750', height: '{picture_height}', cropVariant: 'mobile')} 750w,
+          {f:uri.image(image: image, width: '828', height: '{picture_height}', cropVariant: 'mobile')} 828w"
+        sizes="{small_viewport_width}vw">
 
-  <source
-    media="(min-width: 768px)"
-    srcset="{f:uri.image(image: image, maxWidth: '300', cropVariant: 'default')} 300w,
-      {f:uri.image(image: image, maxWidth: '400', cropVariant: 'default')} 400w,
-      {f:uri.image(image: image, maxWidth: '600', cropVariant: 'default')} 600w,
-      {f:uri.image(image: image, maxWidth: '800', cropVariant: 'default')} 800w,
-      {f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')} 992w,
-      {f:uri.image(image: image, maxWidth: '1200', cropVariant: 'default')} 1200w,
-      {f:uri.image(image: image, maxWidth: '1440', cropVariant: 'default')} 1440w,
-      {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
-    sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
+      <source
+        media="(min-width: 992px)"
+        srcset="{f:uri.image(image: image, width: '340', cropVariant: 'default')} 340w,
+          {f:uri.image(image: image, width: '440', height: '{picture_height}', cropVariant: 'default')} 440w,
+          {f:uri.image(image: image, width: '480', height: '{picture_height}', cropVariant: 'default')} 480w,
+          {f:uri.image(image: image, width: '660', height: '{picture_height}', cropVariant: 'default')} 660w,
+          {f:uri.image(image: image, width: '750', height: '{picture_height}', cropVariant: 'default')} 750w,
+          {f:uri.image(image: image, width: '828', height: '{picture_height}', cropVariant: 'default')} 828w,
+          {f:uri.image(image: image, width: '900', height: '{picture_height}', cropVariant: 'default')} 900w,
+          {f:uri.image(image: image, width: '992', height: '{picture_height}', cropVariant: 'default')} 992w,
+          {f:uri.image(image: image, width: '1280', height: '{picture_height}', cropVariant: 'default')} 1280w,
+          {f:uri.image(image: image, width: '1440', height: '{picture_height}', cropVariant: 'default')} 1440w,
+          {f:uri.image(image: image, width: '1680', height: '{picture_height}', cropVariant: 'default')} 1680w,
+          {f:uri.image(image: image, width: '1920', height: '{picture_height}', cropVariant: 'default')} 1920w"
+        sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
-    <f:if condition="{height}">
-      <f:variable name="style">height:{height}px</f:variable>
-    </f:if>
+        <f:if condition="{height}">
+          <f:variable name="style">height:{height}px</f:variable>
+        </f:if>
 
-    <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
-      image="{image}"
-      alt="{image.alternative}"
-      cropVariant="default"
-      additionalAttributes="{style:'{style}'}"
-      loading="lazy" />
+        <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
+          image="{image}"
+          alt="{image.alternative}"
+          cropVariant="default"
+          loading="lazy" />
+    </picture>
+  </f:then>
 
-</picture>
+  <f:else>
+    <picture class="picture-partial__item">
+      <source
+        media="(max-width: 991px)"
+        srcset="{f:uri.image(image: image, maxWidth: '340', cropVariant: 'mobile')} 340w,
+          {f:uri.image(image: image, maxWidth: '480', cropVariant: 'mobile')} 480w,
+          {f:uri.image(image: image, maxWidth: '640', cropVariant: 'mobile')} 640w,
+          {f:uri.image(image: image, maxWidth: '750', cropVariant: 'mobile')} 750w,
+          {f:uri.image(image: image, maxWidth: '828', cropVariant: 'mobile')} 828w"
+        sizes="{small_viewport_width}vw">
+
+      <source
+        media="(min-width: 992px)"
+        srcset="{f:uri.image(image: image, maxWidth: '340', cropVariant: 'default')} 340w,
+          {f:uri.image(image: image, maxWidth: '440', cropVariant: 'default')} 440w,
+          {f:uri.image(image: image, maxWidth: '480', cropVariant: 'default')} 480w,
+          {f:uri.image(image: image, maxWidth: '660', cropVariant: 'default')} 660w,
+          {f:uri.image(image: image, maxWidth: '750', cropVariant: 'default')} 750w,
+          {f:uri.image(image: image, maxWidth: '828', cropVariant: 'default')} 828w,
+          {f:uri.image(image: image, maxWidth: '900', cropVariant: 'default')} 900w,
+          {f:uri.image(image: image, maxWidth: '992', cropVariant: 'default')} 992w,
+          {f:uri.image(image: image, maxWidth: '1280', cropVariant: 'default')} 1280w,
+          {f:uri.image(image: image, maxWidth: '1440', cropVariant: 'default')} 1440w,
+          {f:uri.image(image: image, maxWidth: '1680', cropVariant: 'default')} 1680w,
+          {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
+        sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
+
+        <f:if condition="{height}">
+          <f:variable name="style">height:{height}px</f:variable>
+        </f:if>
+
+        <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
+          image="{image}"
+          alt="{image.alternative}"
+          cropVariant="default"
+          additionalAttributes="{style:'{style}'}"
+          loading="lazy" />
+    </picture>
+  </f:else>
+
+</f:if>
 
 </html>

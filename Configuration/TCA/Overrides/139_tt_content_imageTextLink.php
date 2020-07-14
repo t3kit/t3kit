@@ -46,7 +46,7 @@ $GLOBALS['TCA']['tt_content']['types']['imageTextLink'] = [
             --palette--;;title_link_position,
             --palette--;;button,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            simple_crop_image,
+            picture,
             svg_image,
             --palette--;;mediaAdjustments_height,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tab.settings,

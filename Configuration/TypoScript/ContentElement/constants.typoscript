@@ -40,6 +40,6 @@ plugin.t3kit.contentElement {
   }
 
   # cat=t3kitContentElement; type=int[100-7000]; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
-  container_width = 1400
+  container_width = 1320
 
 }

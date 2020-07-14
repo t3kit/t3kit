@@ -17,7 +17,7 @@ tt_content {
       }
       20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       20 {
-        references.fieldName = simple_crop_image
+        references.fieldName = picture
       }
       30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       30 {

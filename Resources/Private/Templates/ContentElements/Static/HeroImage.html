@@ -10,10 +10,10 @@
 
   <f:if condition="{flexform.height} == 0">
     <f:then>
-      <f:variable name="height">400</f:variable>
+      <f:variable name="hero_height">400</f:variable>
     </f:then>
     <f:else>
-      <f:variable name="height">{flexform.height}</f:variable>
+      <f:variable name="hero_height">{flexform.height}</f:variable>
     </f:else>
   </f:if>
 
@@ -30,7 +30,7 @@
       {background}
       {f:if(condition: flexform.overlay, then: ' ce-hero-image--overlay-{flexform.overlay}')}">
 
-      <div class="ce-hero-image__caption-wrp container" {f:if(condition:height, then: 'style="min-height: {height}px;"')}>
+      <div class="ce-hero-image__caption-wrp container" {f:if(condition:hero_height, then: 'style="min-height: {hero_height}px;"')}>
         <div class="ce-hero-image__caption ce-hero-image__caption--{flexform.caption_alignment}">
 
           <f:if condition="{data.header_text}">

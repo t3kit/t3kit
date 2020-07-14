@@ -726,7 +726,16 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                                 'elementBrowserAllowed' => 'jpg,jpeg,png'
                             ]
                         ]
-                    ]
+                    ],
+                    'crop' => [
+                        'config' => [
+                            'cropVariants' => [
+                                'mobile' => [
+                                    'disabled' => true
+                                ],
+                            ],
+                        ],
+                    ],
                 ]
             ],
         ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
@@ -788,9 +797,9 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'simple_crop_image' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:simple_crop_image',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('simple_crop_image', [
+    'picture' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture',
+        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('picture', [
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
             ],
@@ -798,17 +807,17 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 'types' => [
                     '0' => [
                         'showitem' => '
-                            --palette--;;simpleCropImageOverlayPalette,
+                            --palette--;;pictureOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
                         'showitem' => '
-                            --palette--;;simpleCropImageOverlayPalette,
+                            --palette--;;pictureOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                         'showitem' => '
-                            --palette--;;simpleCropImageOverlayPalette,
+                            --palette--;;pictureOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
@@ -823,7 +832,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
                         'showitem' => '
-                            --palette--;;simpleCropImageOverlayPalette,
+                            --palette--;;pictureOverlayPalette,
                             --palette--;;filePalette'
                     ]
                 ],

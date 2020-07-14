@@ -117,7 +117,7 @@
 			<trans-unit id="simple_image" resname="simple_image">
 				<source>Image</source>
 			</trans-unit>
-			<trans-unit id="simple_crop_image" resname="simple_crop_image">
+			<trans-unit id="picture" resname="picture">
 				<source>Image</source>
 			</trans-unit>
 			<trans-unit id="advanced_image" resname="advanced_image">
@@ -138,6 +138,9 @@
 			</trans-unit>
 			<trans-unit id="section_container_width.container_fluid" resname="section_container_width.container_fluid">
 				<source>Fluid container width</source>
+			</trans-unit>
+			<trans-unit id="picture_height" resname="picture_height">
+				<source>Picture height</source>
 			</trans-unit>
 			<trans-unit id="picture_width" resname="picture_width">
 				<source>Picture width</source>
