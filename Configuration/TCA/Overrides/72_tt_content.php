@@ -27,7 +27,7 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'header_position' => [
-        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position',
         'exclude' => true,
         'config' => [
             'type' => 'select',
@@ -49,6 +49,48 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'default' => '0'
         ]
     ]
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'header_layout' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.1',
+                    '1'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.2',
+                    '2'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.3',
+                    '3'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.4',
+                    '4'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.5',
+                    '5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.6',
+                    '6'
+                ],
+                [
+                    'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout.I.6',
+                    '100'
+                ]
+            ],
+            'default' => '2'
+        ]
+    ],
 ]);
 
 // rewrite image_zoom column
@@ -348,6 +390,138 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 
 // ----------------
 // Content element custom t3kit configs
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'header_style' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.default',
+                    '0'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.1',
+                    'h1'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.2',
+                    'h2'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.3',
+                    'h3'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.4',
+                    'h4'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.5',
+                    'h5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.6',
+                    'h6'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.1',
+                    'large-h1'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.2',
+                    'large-h2'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.3',
+                    'large-h3'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.4',
+                    'large-h4'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.5',
+                    'large-h5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
+                    'large-h6'
+                ]
+            ],
+            'default' => '0'
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'subheader_style' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:subheader_style',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.default',
+                    '0'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.1',
+                    'h1'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.2',
+                    'h2'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.3',
+                    'h3'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.4',
+                    'h4'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.5',
+                    'h5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.6',
+                    'h6'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.1',
+                    'large-h1'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.2',
+                    'large-h2'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.3',
+                    'large-h3'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.4',
+                    'large-h4'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.5',
+                    'large-h5'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
+                    'large-h6'
+                ]
+            ],
+            'default' => '0'
+        ]
+    ],
+]);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'content_position' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
@@ -1160,6 +1334,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['bodytext_position'] = [
 // -------------------
 // TYPO3 core header palette = header + layout + position + date + link
 // TYPO3 core headers palette = header + layout + position + date + link + subheader
+
 // add new palette header_only
 $GLOBALS['TCA']['tt_content']['palettes']['header_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1182,7 +1357,8 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout'] = [
     'showitem' => '
         header,
         --linebreak--,
-        header_layout
+        header_layout,
+        header_style
     ',
 ];
 // add new palette header_layout_position
@@ -1192,6 +1368,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position'] = [
         header,
         --linebreak--,
         header_layout,
+        header_style,
         header_position
     ',
 ];
@@ -1202,9 +1379,11 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_subheader'] = 
         header,
         --linebreak--,
         header_layout,
+        header_style,
         header_position,
         --linebreak--,
-        subheader
+        subheader,
+        subheader_style
     ',
 ];
 // add new palette header_layout_position_link_subheader
@@ -1214,11 +1393,13 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader
         header,
         --linebreak--,
         header_layout,
+        header_style,
         header_position,
         --linebreak--,
         header_link,
         --linebreak--,
-        subheader
+        subheader,
+        subheader_style
     ',
 ];
 
@@ -1247,7 +1428,8 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
     'showitem' => '
         header_text,
         --linebreak--,
-        header_layout
+        header_layout,
+        header_style
     ',
 ];
 // add new palette headertext_layout_position
@@ -1257,6 +1439,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
         header_text,
         --linebreak--,
         header_layout,
+        header_style,
         header_position
     ',
 ];
@@ -1267,9 +1450,11 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadert
         header_text,
         --linebreak--,
         header_layout,
+        header_style,
         header_position,
         --linebreak--,
-        subheader_text
+        subheader_text,
+        subheader_style
     ',
 ];
 // add new palette headertext_layout_position_link_subheadertext
@@ -1279,10 +1464,12 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subhe
         header_text,
         --linebreak--,
         header_layout,
+        header_style,
         header_position,
         --linebreak--,
         header_link,
         --linebreak--,
-        subheader_text
+        subheader_text,
+        subheader_style
     ',
 ];

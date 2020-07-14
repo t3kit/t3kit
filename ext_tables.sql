@@ -13,6 +13,8 @@ CREATE TABLE pages (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
+	header_style varchar(60) DEFAULT '0' NOT NULL,
+	subheader_style varchar(60) DEFAULT '0' NOT NULL,
 	content_position varchar(60) DEFAULT '' NOT NULL,
 	content_position_center varchar(60) DEFAULT '' NOT NULL,
 	section_container_width varchar(60) DEFAULT '' NOT NULL,

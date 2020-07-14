@@ -29,6 +29,9 @@
 			</trans-unit>
 
 			<!-- Content element General tab config fields translations -->
+			<trans-unit id="header_layout" resname="header_layout">
+				<source>Heading type</source>
+			</trans-unit>
 			<trans-unit id="header_layout.1" resname="header_layout.1">
 				<source>Heading 1</source>
 			</trans-unit>
@@ -46,6 +49,59 @@
 			</trans-unit>
 			<trans-unit id="header_layout.6" resname="header_layout.6">
 				<source>Heading 6</source>
+			</trans-unit>
+
+			<trans-unit id="header_style" resname="header_style">
+				<source>Heading style</source>
+			</trans-unit>
+			<trans-unit id="subheader_style" resname="subheader_style">
+				<source>Subheading style</source>
+			</trans-unit>
+			<trans-unit id="header_style.default" resname="header_style.default">
+				<source>Default (based on Heading type)</source>
+			</trans-unit>
+			<trans-unit id="header_style.1" resname="header_style.1">
+				<source>Heading 1 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.2" resname="header_style.2">
+				<source>Heading 2 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.3" resname="header_style.3">
+				<source>Heading 3 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.4" resname="header_style.4">
+				<source>Heading 4 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.5" resname="header_style.5">
+				<source>Heading 5 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.6" resname="header_style.6">
+				<source>Heading 6 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.1" resname="header_style.large_heading.1">
+				<source>Large heading 1 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.2" resname="header_style.large_heading.2">
+				<source>Large heading 2 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.3" resname="header_style.large_heading.3">
+				<source>Large heading 3 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.4" resname="header_style.large_heading.4">
+				<source>Large heading 4 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.5" resname="header_style.large_heading.5">
+				<source>Large heading 5 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.6" resname="header_style.large_heading.6">
+				<source>Large heading 6 style</source>
+			</trans-unit>
+
+
+
+
+			<trans-unit id="header_position" resname="header_position">
+				<source>Heading alignment</source>
 			</trans-unit>
 			<trans-unit id="header_position.left" resname="header_position.left">
 				<source>Left</source>

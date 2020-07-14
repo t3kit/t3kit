@@ -2,33 +2,33 @@
 
 <f:if condition="{subheader_text}">
   <f:switch expression="{header_layout}">
-    <f:case value="0">
-      <h2 class="{header_position} subheader-text-item">
+    <f:case value="1">
+      <h2 class="{header_position} {subheader_style} subheader-text-item">
         <f:format.nl2br>{subheader_text}</f:format.nl2br>
       </h2>
     </f:case>
-    <f:case value="1">
-      <h3 class="{header_position} subheader-text-item">
+    <f:case value="2">
+      <h3 class="{header_position} {subheader_style} subheader-text-item">
         <f:format.nl2br>{subheader_text}</f:format.nl2br>
       </h3>
     </f:case>
-    <f:case value="2">
-      <h4 class="{header_position} subheader-text-item">
+    <f:case value="3">
+      <h4 class="{header_position} {subheader_style} subheader-text-item">
         <f:format.nl2br>{subheader_text}</f:format.nl2br>
       </h4>
     </f:case>
-    <f:case value="3">
-      <h5 class="{header_position} subheader-text-item">
+    <f:case value="4">
+      <h5 class="{header_position} {subheader_style} subheader-text-item">
         <f:format.nl2br>{subheader_text}</f:format.nl2br>
       </h5>
     </f:case>
-    <f:case value="4">
-      <h6 class="{header_position} subheader-text-item">
+    <f:case value="5">
+      <h6 class="{header_position} {subheader_style} subheader-text-item">
         <f:format.nl2br>{subheader_text}</f:format.nl2br>
       </h6>
     </f:case>
-    <f:case value="5">
-      <h6 class="{header_position} subheader-text-item">
+    <f:case value="6">
+      <h6 class="{header_position} {subheader_style} subheader-text-item">
         <small><f:format.nl2br>{subheader_text}</f:format.nl2br></small>
       </h6>
     </f:case>
