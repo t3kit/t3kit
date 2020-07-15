@@ -10,7 +10,6 @@
   --t3-ce-footer-links-color: hsl(var(--t3-ce-footer-color-hs), var(--t3-ce-footer-color-l));
   --t3-ce-footer-links-hover-color: hsla(var(--t3-ce-footer-color-hs), var(--t3-ce-footer-color-l), 0.7);
   --t3-ce-footer-links-text-transform: none;
-  --t3-ce-footer-title-text-transform: none;
 
   background-color: var(--t3-ce-footer-bg);
   color: var(--t3-ce-footer-color);
@@ -22,7 +21,7 @@
 .ce-site-footer__link {
   display: inline-block;
   text-transform: var(--t3-ce-footer-links-text-transform);
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   color: var(--t3-ce-footer-links-color);
   text-decoration: none;
@@ -64,7 +63,6 @@
 
 .ce-site-footer__info-title {
   font-weight: bold;
-  text-transform: var(--t3-ce-footer-title-text-transform);
 }
 
 .ce-site-footer__address-wrp {
@@ -75,10 +73,8 @@
   line-height: 1.9;
 }
 
-.ce-site-footer__column-title {
-  text-transform: var(--t3-ce-footer-title-text-transform);
-  margin-bottom: 0.8rem;
-  font-weight: bold;
+.ce-site-footer__column-title .header-item {
+  color: var(--t3-ce-footer-color);
 }
 
 .ce-site-footer__links-list {
@@ -112,7 +108,6 @@
 }
 
 .ce-site-footer__bottom-copyright {
-  text-transform: uppercase;
   padding-bottom: 0.4rem;
 }
 
@@ -126,7 +121,13 @@
 // Small devices (landscape phones, less than 768px) sm
 // @media (max-width: 767.98px) { ... }
 // Medium devices (tablets, 768px and up) md
-@media (min-width: 768px) {
+// @media (min-width: 768px) { ... }
+
+// --------------------------------------------------------
+// Medium devices (tablets, less than 992px) md
+// @media (max-width: 991.98px) { ... }
+// Large devices (desktops, 992px and up) lg
+@media (min-width: 992px) {
   .ce-site-footer__columns,
   .ce-site-footer__bottom {
     text-align: left;
@@ -135,14 +136,7 @@
   .ce-site-footer__bottom {
     flex-direction: row;
   }
-
 }
-
-// --------------------------------------------------------
-// Medium devices (tablets, less than 992px) md
-// @media (max-width: 991.98px) { ... }
-// Large devices (desktops, 992px and up) lg
-// @media (min-width: 992px) { ... }
 
 // --------------------------------------------------------
 // Large devices (desktops, less than 1200px) lg
