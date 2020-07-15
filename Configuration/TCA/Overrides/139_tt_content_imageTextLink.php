@@ -48,7 +48,7 @@ $GLOBALS['TCA']['tt_content']['types']['imageTextLink'] = [
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             picture,
             svg_image,
-            --palette--;;mediaAdjustments_height,
+            --palette--;;mediaAdjustments,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tab.settings,
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,

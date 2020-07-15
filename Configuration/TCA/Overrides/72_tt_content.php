@@ -690,17 +690,17 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 'types' => [
                     '0' => [
                         'showitem' => '
-                            --palette--;;simpleImageOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
                         'showitem' => '
-                            --palette--;;simpleImageOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                         'showitem' => '
-                            --palette--;;simpleImageOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
@@ -715,7 +715,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
                         'showitem' => '
-                            --palette--;;simpleImageOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ]
                 ],
@@ -807,17 +807,17 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 'types' => [
                     '0' => [
                         'showitem' => '
-                            --palette--;;pictureOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
                         'showitem' => '
-                            --palette--;;pictureOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                         'showitem' => '
-                            --palette--;;pictureOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
@@ -832,7 +832,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
                         'showitem' => '
-                            --palette--;;pictureOverlayPalette,
+                            --palette--;;imageOverlayPalette,
                             --palette--;;filePalette'
                     ]
                 ],
@@ -916,17 +916,17 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 'types' => [
                     '0' => [
                         'showitem' => '
-                            --palette--;;advancedMediaOverlayPalette,
+                            --palette--;;advancedImageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
                         'showitem' => '
-                            --palette--;;advancedMediaOverlayPalette,
+                            --palette--;;advancedImageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
                         'showitem' => '
-                            --palette--;;advancedMediaOverlayPalette,
+                            --palette--;;advancedImageOverlayPalette,
                             --palette--;;filePalette'
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
@@ -941,7 +941,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     ],
                     \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
                         'showitem' => '
-                            --palette--;;advancedMediaOverlayPalette,
+                            --palette--;;advancedImageOverlayPalette,
                             --palette--;;filePalette'
                     ]
                 ],
@@ -1349,7 +1349,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
         header
-    ',
+    '
 ];
 // add new palette header_position
 $GLOBALS['TCA']['tt_content']['palettes']['header_position'] = [
@@ -1358,7 +1358,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_position'] = [
         header,
         --linebreak--,
         header_position
-    ',
+    '
 ];
 // add new palette header_layout
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout'] = [
@@ -1368,7 +1368,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout'] = [
         --linebreak--,
         header_layout,
         header_style
-    ',
+    '
 ];
 // add new palette header_layout_position
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position'] = [
@@ -1379,7 +1379,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position'] = [
         header_layout,
         header_style,
         header_position
-    ',
+    '
 ];
 // add new palette header_layout_position_subheader
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_subheader'] = [
@@ -1393,7 +1393,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_subheader'] = 
         --linebreak--,
         subheader,
         subheader_style
-    ',
+    '
 ];
 // add new palette header_layout_position_link_subheader
 $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader'] = [
@@ -1409,7 +1409,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader
         --linebreak--,
         subheader,
         subheader_style
-    ',
+    '
 ];
 
 // -------------------
@@ -1420,7 +1420,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
     'showitem' => '
         header_text
-    ',
+    '
 ];
 // add new palette headertext_position
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_position'] = [
@@ -1429,7 +1429,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_position'] = [
         header_text,
         --linebreak--,
         header_position
-    ',
+    '
 ];
 // add new palette headertext_layout
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
@@ -1439,7 +1439,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
         --linebreak--,
         header_layout,
         header_style
-    ',
+    '
 ];
 // add new palette headertext_layout_position
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
@@ -1450,7 +1450,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
         header_layout,
         header_style,
         header_position
-    ',
+    '
 ];
 // add new palette headertext_layout_position_subheadertext
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadertext'] = [
@@ -1464,7 +1464,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadert
         --linebreak--,
         subheader_text,
         subheader_style
-    ',
+    '
 ];
 // add new palette headertext_layout_position_link_subheadertext
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subheadertext'] = [
@@ -1480,5 +1480,5 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subhe
         --linebreak--,
         subheader_text,
         subheader_style
-    ',
+    '
 ];

@@ -139,9 +139,6 @@
 			<trans-unit id="section_container_width.container_fluid" resname="section_container_width.container_fluid">
 				<source>Fluid container width</source>
 			</trans-unit>
-			<trans-unit id="picture_height" resname="picture_height">
-				<source>Picture height</source>
-			</trans-unit>
 			<trans-unit id="picture_width" resname="picture_width">
 				<source>Picture width</source>
 			</trans-unit>

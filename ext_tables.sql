@@ -52,7 +52,6 @@ CREATE TABLE tt_content (
 CREATE TABLE sys_file_reference (
 	description_position varchar(60) DEFAULT '' NOT NULL,
 	picture_width varchar(60) DEFAULT '' NOT NULL,
-	picture_height varchar(60) DEFAULT '' NOT NULL,
 	picture_border_radius varchar(60) DEFAULT '' NOT NULL,
 	aspect_ratio varchar(60) DEFAULT '' NOT NULL,
 	svg_width mediumint(8) unsigned DEFAULT '0' NOT NULL,

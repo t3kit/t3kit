@@ -30,7 +30,7 @@
       {background}
       {f:if(condition: flexform.overlay, then: ' ce-hero-image--overlay-{flexform.overlay}')}">
 
-      <div class="ce-hero-image__caption-wrp container" {f:if(condition:hero_height, then: 'style="min-height: {hero_height}px;"')}>
+      <div class="ce-hero-image__caption-wrp container" {f:if(condition:hero_height, then: 'style="height: {hero_height}px;"')}>
         <div class="ce-hero-image__caption ce-hero-image__caption--{flexform.caption_alignment}">
 
           <f:if condition="{data.header_text}">

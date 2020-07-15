@@ -133,10 +133,10 @@
   </f:else>
 </f:if>
 
-<f:if condition="{image.referenceProperties.picture_height}">
+<f:if condition="{height}">
 
   <f:then>
-    <f:variable name="picture_height">{image.referenceProperties.picture_height}c</f:variable>
+    <f:variable name="picture_height">{height}c</f:variable>
     <picture class="picture-partial__item">
       <source
         media="(max-width: 991px)"
@@ -162,10 +162,6 @@
           {f:uri.image(image: image, width: '1680', height: '{picture_height}', cropVariant: 'default')} 1680w,
           {f:uri.image(image: image, width: '1920', height: '{picture_height}', cropVariant: 'default')} 1920w"
         sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
-
-        <f:if condition="{height}">
-          <f:variable name="style">height:{height}px</f:variable>
-        </f:if>
 
         <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
           image="{image}"
@@ -202,15 +198,10 @@
           {f:uri.image(image: image, maxWidth: '1920', cropVariant: 'default')} 1920w"
         sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
-        <f:if condition="{height}">
-          <f:variable name="style">height:{height}px</f:variable>
-        </f:if>
-
         <f:image class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius}"
           image="{image}"
           alt="{image.alternative}"
           cropVariant="default"
-          additionalAttributes="{style:'{style}'}"
           loading="lazy" />
     </picture>
   </f:else>

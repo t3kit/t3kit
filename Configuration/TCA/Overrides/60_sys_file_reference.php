@@ -107,24 +107,6 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
-    'picture_height' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_height',
-        'config' => [
-            'type' => 'input',
-            'size' => 4,
-            'max' => 4,
-            'eval' => 'int',
-            'range' => [
-                'upper' => 1999,
-                'lower' => 0,
-            ],
-            'default' => 0
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('sys_file_reference', [
     'picture_border_radius' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius',
         'exclude' => true,
@@ -225,7 +207,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
  * ===========================
  */
 
-$GLOBALS['TCA']['sys_file_reference']['palettes']['simpleImageOverlayPalette'] = [
+$GLOBALS['TCA']['sys_file_reference']['palettes']['imageOverlayPalette'] = [
     'showitem' => '
         alternative,
         --linebreak--,description,description_position,
@@ -242,15 +224,6 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['svgImageOverlayPalette'] = [
     '
 ];
 
-$GLOBALS['TCA']['sys_file_reference']['palettes']['pictureOverlayPalette'] = [
-    'showitem' => '
-        alternative,
-        --linebreak--,description,description_position,
-        --linebreak--,link,
-        --linebreak--,crop,
-        --linebreak--,picture_height
-    '
-];
 
 $GLOBALS['TCA']['sys_file_reference']['palettes']['advancedImageOverlayPalette'] = [
     'showitem' => '
@@ -258,17 +231,7 @@ $GLOBALS['TCA']['sys_file_reference']['palettes']['advancedImageOverlayPalette']
         --linebreak--,description,description_position,
         --linebreak--,link,
         --linebreak--,crop,
-        --linebreak--,picture_width,picture_height,picture_border_radius
-    '
-];
-
-$GLOBALS['TCA']['sys_file_reference']['palettes']['advancedMediaOverlayPalette'] = [
-    'showitem' => '
-        alternative,
-        --linebreak--,description,description_position,
-        --linebreak--,link,
-        --linebreak--,crop,
-        --linebreak--,picture_width,picture_height,picture_border_radius
+        --linebreak--,picture_width,picture_border_radius
     '
 ];
 
