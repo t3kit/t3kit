@@ -1,27 +1,27 @@
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
-.textmedia-ce {
+.ce-textmedia {
   display: flex;
 }
 
-.textmedia-ce__media,
-.textmedia-ce__text {
+.ce-textmedia__media,
+.ce-textmedia__text {
   flex: 1;
 }
 
-.text-media-above-left .textmedia-ce__media,
-.text-media-below-left .textmedia-ce__media {
+.text-media-above-left .ce-textmedia__media,
+.text-media-below-left .ce-textmedia__media {
   text-align: left;
 }
 
-.text-media-above-right .textmedia-ce__media,
-.text-media-below-right .textmedia-ce__media {
+.text-media-above-right .ce-textmedia__media,
+.text-media-below-right .ce-textmedia__media {
   text-align: right;
 }
 
-.text-media-above-center .textmedia-ce__media,
-.text-media-below-center .textmedia-ce__media {
+.text-media-above-center .ce-textmedia__media,
+.text-media-below-center .ce-textmedia__media {
   text-align: center;
 }
 
@@ -41,8 +41,8 @@
 
 .text-media-left,
 .text-media-right {
-  .textmedia-ce__media,
-  .textmedia-ce__text {
+  .ce-textmedia__media,
+  .ce-textmedia__text {
     padding: 0 1rem;
   }
 }
