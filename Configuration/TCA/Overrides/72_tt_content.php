@@ -1265,6 +1265,24 @@ $GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
     '
 ];
 
+// rewrite headers palette
+$GLOBALS['TCA']['tt_content']['palettes']['headers'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers',
+    'showitem' => '
+        header,
+        --linebreak--,
+        header_layout,
+        header_style,
+        header_position,
+        date,
+        --linebreak--,
+        header_link,
+        --linebreak--,
+        subheader,
+        subheader_style
+    '
+];
+
 // rewrite mediaAdjustments palette
 $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',
