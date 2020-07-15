@@ -46,6 +46,8 @@ page {
       }
       pageTitle = TEXT
       pageTitle.data = page:title
+      theme = TEXT
+      theme.data = site:theme
       application_context = TEXT
       application_context.value = production
     }
