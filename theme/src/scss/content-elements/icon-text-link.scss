@@ -48,16 +48,12 @@
 }
 
 .ce-icon-text-link__header .header-item {
-  --font-size: var(--t3-ce-icotl-header-size);
-
   font-weight: var(--t3-ce-icotl-header-font-weight);
   color: var(--t3-ce-icotl-header-color);
   margin: 0;
 }
 
 .ce-icon-text-link__subheader .subheader-item {
-  --font-size: var(--t3-ce-icotl-subheader-size);
-
   font-weight: var(--t3-ce-icotl-subheader-font-weight);
   color: var(--t3-ce-icotl-subheader-color);
 }

@@ -58,7 +58,6 @@
   --t3-font-family-base: var(--t3-font-sans-serif);
 
   // headings
-  --t3-headings-text-transform: none;
   --t3-headings-color: var(--t3-body-color);
   // should be the only number with pixels in mind. Will be converted to rem
   --t3-h1-font-size: 40;
@@ -67,6 +66,12 @@
   --t3-h4-font-size: 24;
   --t3-h5-font-size: 20;
   --t3-h6-font-size: 16;
+  --t3-large-h1-font-size: 80;
+  --t3-large-h2-font-size: 70;
+  --t3-large-h3-font-size: 60;
+  --t3-large-h4-font-size: 55;
+  --t3-large-h5-font-size: 50;
+  --t3-large-h6-font-size: 45;
 
   // link
   --t3-link-color: var(--t3-secondary);

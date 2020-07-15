@@ -1,6 +1,5 @@
 .btn {
   // Buttons
-  --t3-btn-text-transform: none;
   --t3-btn-font-size: 1rem;
   --t3-btn-font-weight: 400;
   --t3-btn-border: 1px;
@@ -52,7 +51,6 @@
   line-height: 1.5;
   color: var(--t3-body-color);
   text-align: center;
-  text-transform: var(--t3-btn-text-transform);
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;

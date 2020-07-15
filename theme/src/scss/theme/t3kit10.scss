@@ -2,11 +2,9 @@
 // t3kit variables
 :root {
   --t3-font-sans-serif: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --t3-headings-text-transform: uppercase;
 }
 
 .btn {
-  --t3-btn-text-transform: uppercase;
   --t3-btn-border-radius: 0;
   --t3-btn-padding-top: 0.475rem;
   --t3-btn-padding-left: 2.5rem;
@@ -23,7 +21,6 @@
 
 .ce-site-footer {
   --t3-ce-footer-links-text-transform: uppercase;
-  --t3-ce-footer-title-text-transform: uppercase;
 }
 
 .ce-hero-image {
