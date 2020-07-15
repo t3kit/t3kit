@@ -1,15 +1,18 @@
+[site("configuration")["theme"] == "t3kit"]
 page.headerData {
   # Fonts
   150 = TEXT
   150.value (
-       <!-- Fonts -->
-       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" rel="stylesheet">
- )
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" rel="stylesheet">
+  )
+}
+[global]
 
-  # Favicons ==> http://realfavicongenerator.net/
-  # add imege(svg) to theme/src/favicon/ with name [favicon.svg]
-  # npm run favicons
-  ####################################
+# Favicons ==> http://realfavicongenerator.net/
+# add imege(svg) to theme/src/favicon/ with name [favicon.svg]
+# npm run favicons
+####################################
+page.headerData {
   180 = FLUIDTEMPLATE
   180 {
     file = TEXT
@@ -24,5 +27,4 @@ page.headerData {
       }
     }
   }
-
 }
