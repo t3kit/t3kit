@@ -140,7 +140,7 @@
 // X-Small devices (portrait phones, less than 576px) xs
 @media (max-width: 575.98px) {
   .ce-hero-image__caption-wrp {
-    min-height: var(--t3-ce-hero-image-min-height-on-mobile) !important;
+    height: var(--t3-ce-hero-image-min-height-on-mobile) !important;
   }
 }
 // Small devices (landscape phones, 576px and up) sm

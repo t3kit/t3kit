@@ -22,6 +22,10 @@
   --t3-ce-itl-color: var(--t3-body-bg);
 }
 
+.inverted-color .ce-img-text-link__subheader .subheader-item {
+  color: var(--t3-primary);
+}
+
 .internal-margins .ce-img-text-link__body {
   padding-left: 1rem;
   padding-right: 1rem;
