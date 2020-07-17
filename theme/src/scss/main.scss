@@ -14,7 +14,6 @@
 @use 'global/helpers/text';
 @use 'global/helpers/border-radius';
 @use 'global/helpers/print';
-@use 'global/helpers/background';
 
 // ===== nav =====
 @use 'global/nav/breadcrumb';
@@ -37,7 +36,11 @@
 // @use 'content-elements/quote';
 // @use 'content-elements/divider-icon';
 
-// // ===== plugins =====
+// ===== appearance =====
+@use 'appearance/color';
+@use 'appearance/background';
+
+// ===== plugins =====
 @use 'plugins/lightbox';
 
 // themes

@@ -27,8 +27,9 @@
 }
 
 .internal-margins .ce-img-text-link__body {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-bottom: 1.8rem;
 }
 
 .ce-img-text-link__picture,
@@ -78,7 +79,7 @@
   color: var(--t3-ce-itl-bodytext-color);
 }
 
-.ce-img-text-link__link {
+.ce-img-text-link__body {
   padding-bottom: 1.2rem;
 }
 
