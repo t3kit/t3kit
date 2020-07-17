@@ -8908,62 +8908,6 @@ fieldset:disabled .btn {
     display: inline-flex !important;
   }
 }
-.primary-bg-color {
-  background-color: var(--t3-primary);
-}
-
-.secondary-bg-color {
-  background-color: var(--t3-secondary);
-}
-
-.light-bg-color {
-  background-color: var(--t3-light);
-}
-
-.dark-bg-color {
-  background-color: var(--t3-dark);
-}
-
-.black-bg-color {
-  background-color: var(--t3-body-color);
-}
-
-.gray-90-bg-color {
-  background-color: var(--t3-gray-90);
-}
-
-.gray-80-bg-color {
-  background-color: var(--t3-gray-80);
-}
-
-.gray-70-bg-color {
-  background-color: var(--t3-gray-70);
-}
-
-.gray-60-bg-color {
-  background-color: var(--t3-gray-60);
-}
-
-.gray-50-bg-color {
-  background-color: var(--t3-gray-50);
-}
-
-.gray-40-bg-color {
-  background-color: var(--t3-gray-40);
-}
-
-.gray-30-bg-color {
-  background-color: var(--t3-gray-30);
-}
-
-.gray-20-bg-color {
-  background-color: var(--t3-gray-20);
-}
-
-.gray-10-bg-color {
-  background-color: var(--t3-gray-10);
-}
-
 .breadcrumb {
   --t3-breadcrumb-bg: var(--t3-body-bg);
   --t3-breadcrumb-color: var(--t3-body-color);
@@ -9828,6 +9772,7 @@ fieldset:disabled .btn {
 
   .ce-site-footer__bottom {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .ce-hero-image {
@@ -10007,9 +9952,10 @@ fieldset:disabled .btn {
 }
 
 .ce-big-icon-text-link__wrp.internal-margins {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
 .ce-big-icon-text-link__icon-wrp {
@@ -10079,8 +10025,9 @@ fieldset:disabled .btn {
 }
 
 .internal-margins .ce-img-text-link__body {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-bottom: 1.8rem;
 }
 
 .ce-img-text-link__picture,
@@ -10130,7 +10077,7 @@ fieldset:disabled .btn {
   color: var(--t3-ce-itl-bodytext-color);
 }
 
-.ce-img-text-link__link {
+.ce-img-text-link__body {
   padding-bottom: 1.2rem;
 }
 
@@ -10176,9 +10123,10 @@ fieldset:disabled .btn {
 }
 
 .ce-icon-text-link__wrp.internal-margins {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
 .ce-icon-text-link__wrp.inverted-color {
@@ -10232,6 +10180,106 @@ fieldset:disabled .btn {
 }
 .ce-icon-text-link__link .stretched-link:hover:after {
   background-color: rgba(0, 0, 0, 0.03);
+}
+
+.inverted-color,
+.inverted-color .header-item,
+.inverted-color .subheader-item,
+.inverted-color .bodytext-partial,
+.inverted-color .link-partial {
+  color: var(--t3-body-bg);
+}
+
+.primary-color,
+.primary-color .header-item,
+.primary-color .subheader-item,
+.primary-color .bodytext-partial,
+.primary-color .link-partial {
+  color: var(--t3-primary);
+}
+
+.secondary-color,
+.secondary-color .header-item,
+.secondary-color .subheader-item,
+.secondary-color .bodytext-partial,
+.secondary-color .link-partial {
+  color: var(--t3-secondary);
+}
+
+.dark-color,
+.dark-color .header-item,
+.dark-color .subheader-item,
+.dark-color .bodytext-partial,
+.dark-color .link-partial {
+  color: var(--t3-dark);
+}
+
+.light-color,
+.light-color .header-item,
+.light-color .subheader-item,
+.light-color .bodytext-partial,
+.light-color .link-partial {
+  color: var(--t3-light);
+}
+
+.primary-bg-color {
+  background-color: var(--t3-primary);
+}
+
+.secondary-bg-color {
+  background-color: var(--t3-secondary);
+}
+
+.light-bg-color {
+  background-color: var(--t3-light);
+}
+
+.dark-bg-color {
+  background-color: var(--t3-dark);
+}
+
+.default-bg-color {
+  background-color: var(--t3-body-bg);
+}
+
+.inverted-bg-color {
+  background-color: var(--t3-body-color);
+}
+
+.gray-90-bg-color {
+  background-color: var(--t3-gray-90);
+}
+
+.gray-80-bg-color {
+  background-color: var(--t3-gray-80);
+}
+
+.gray-70-bg-color {
+  background-color: var(--t3-gray-70);
+}
+
+.gray-60-bg-color {
+  background-color: var(--t3-gray-60);
+}
+
+.gray-50-bg-color {
+  background-color: var(--t3-gray-50);
+}
+
+.gray-40-bg-color {
+  background-color: var(--t3-gray-40);
+}
+
+.gray-30-bg-color {
+  background-color: var(--t3-gray-30);
+}
+
+.gray-20-bg-color {
+  background-color: var(--t3-gray-20);
+}
+
+.gray-10-bg-color {
+  background-color: var(--t3-gray-10);
 }
 
 body.hidden-scroll {
