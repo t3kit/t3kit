@@ -4,7 +4,8 @@
   <div class="{f:if(condition: data.frame_class, then: 'frame-{data.frame_class}')}{f:if(condition: data.space_before_class, then: ' {data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' {data.space_after_class}')}">
 </f:if>
 
-<div id="c{data.uid}" class="ctype__{data.CType}{f:if(condition: data.layout, then: ' {data.layout}')}">
+<div id="c{data.uid}" class="ctype__{data.CType} {data.background_color_class} {data.color_class}
+  {f:if(condition: data.layout, then: ' {data.layout}')}">
   <f:if condition="{data._LOCALIZED_UID}"><a id="c{data._LOCALIZED_UID}"></a></f:if>
 
   <f:render section="Header" optional="true">

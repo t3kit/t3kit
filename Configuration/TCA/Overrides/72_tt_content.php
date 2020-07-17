@@ -249,30 +249,55 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 //     ]
 // ]);
 
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'background_color_class' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color_class',
-//         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color_class.description',
-//         'displayCond' => 'FIELD:add_background:!=:0',
-//         'exclude' => true,
-//         'config' => [
-//             'type' => 'select',
-//             'renderType' => 'selectSingle',
-//             'items' => [
-//                 ['none', 'none'],
-//                 ['Primary', 'primary'],
-//                 ['Secondary', 'secondary'],
-//                 ['Accent #1', 'accent1'],
-//                 ['Accent #2', 'accent2'],
-//                 ['Accent #3', 'accent3'],
-//                 ['White', 'white'],
-//                 ['Black', 'black'],
-//                 ['Gray', 'gray']
-//             ],
-//             'default' => 'none',
-//         ],
-//     ],
-// ]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'background_color_class' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color_class',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['none', '0'],
+                ['Primary', 'primary-bg-color'],
+                ['Secondary', 'secondary-bg-color'],
+                ['Dark', 'dark-bg-color'],
+                ['Light', 'light-bg-color'],
+                ['Default', 'default-bg-color'],
+                ['Inverted', 'inverted-bg-color'],
+                ['Gray 90', 'gray-90-bg-color'],
+                ['Gray 80', 'gray-80-bg-color'],
+                ['Gray 70', 'gray-70-bg-color'],
+                ['Gray 60', 'gray-60-bg-color'],
+                ['Gray 50', 'gray-50-bg-color'],
+                ['Gray 40', 'gray-40-bg-color'],
+                ['Gray 30', 'gray-30-bg-color'],
+                ['Gray 20', 'gray-20-bg-color'],
+                ['Gray 10', 'gray-10-bg-color']
+            ],
+            'default' => '0',
+        ],
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'color_class' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:color_class',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['none', '0'],
+                ['Primary', 'primary-color'],
+                ['Secondary', 'secondary-color'],
+                ['Dark', 'dark-color'],
+                ['Light', 'light-color'],
+                ['Inverted', 'inverted-color']
+            ],
+            'default' => '0',
+        ],
+    ],
+]);
 
 // \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
 //     'background_color' => [
@@ -1227,32 +1252,16 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
  */
 
 // rewrite "frames" palette
-// $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
-//     'showitem' => '
-//         space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
-//         space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
-//         --linebreak--,
-//         layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
-//         frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
-//         --linebreak--,
-//         add_background,
-//         --linebreak--,
-//         background_color_class,
-//         background_color,
-//         --linebreak--,
-//         background,
-//         --linebreak--,
-//         background_parallax,
-//         full_width_background
-//     '
-// ];
 $GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
     'showitem' => '
         space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
         space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
         --linebreak--,
         layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
-        frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel
+        frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
+        --linebreak--,
+        color_class,
+        background_color_class
     '
 ];
 

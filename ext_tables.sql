@@ -43,6 +43,8 @@ CREATE TABLE tt_content (
 	page_links_1 text,
 	page_links_2 text,
 	page_links_3 text,
+	color_class varchar(60) DEFAULT '0' NOT NULL,
+	background_color_class varchar(60) DEFAULT '0' NOT NULL,
 );
 
 

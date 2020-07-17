@@ -273,6 +273,12 @@
 			<trans-unit id="margin_70" resname="margin_70">
 				<source>70px</source>
 			</trans-unit>
+			<trans-unit id="color_class" resname="color_class">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="background_color_class" resname="background_color_class">
+				<source>Background</source>
+			</trans-unit>
 
 			<!-- Content element Icon tab config fields translations -->
 			<trans-unit id="icon_source" resname="icon_source">
