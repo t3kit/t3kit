@@ -115,3 +115,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php'][
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'])) {
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'] = 'EXT:t3kit/Configuration/RTE/Default.yaml';
 }
+
+// Register report module additions
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['reports']['tx_reports']['status']['providers']['security'][] = \T3k\t3kit\Report\T3kitSecurityStatus::class;

@@ -65,3 +65,14 @@
 .t3kit-ce-footer--special {
   background: #42895417;
 }
+
+.t3kit-preview-wrp img {
+  background: #e8e8e8;
+  padding: 4px;
+}
+
+.t3kit-status-report-link {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
