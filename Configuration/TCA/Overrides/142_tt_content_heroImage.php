@@ -43,6 +43,7 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
+            header;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_element_title,
             --palette--;;headertext_layout_position_link_subheadertext,
             --palette--;;bodytext_position,
             --palette--;;title_link_position,

@@ -29,6 +29,9 @@
 			</trans-unit>
 
 			<!-- Content element General tab config fields translations -->
+			<trans-unit id="content_element_title" resname="content_element_title">
+				<source>Content element title (not visible in frontend)</source>
+			</trans-unit>
 			<trans-unit id="header_layout" resname="header_layout">
 				<source>Heading type</source>
 			</trans-unit>
