@@ -7157,12 +7157,12 @@ h4,
 .h2,
 .h3,
 .h4,
-.large_h1,
-.large_h2,
-.large_h3,
-.large_h4,
-.large_h5,
-.large_h6,
+.large-h1,
+.large-h2,
+.large-h3,
+.large-h4,
+.large-h5,
+.large-h6,
 .fluid-font-size {
   --t3-fluid-font-size:
     calc(
@@ -7183,12 +7183,12 @@ h4,
 .h2,
 .h3,
 .h4,
-.large_h1,
-.large_h2,
-.large_h3,
-.large_h4,
-.large_h5,
-.large_h6,
+.large-h1,
+.large-h2,
+.large-h3,
+.large-h4,
+.large-h5,
+.large-h6,
 .fluid-font-size {
     font-size: var(--t3-font-size-to-rem);
   }
@@ -7197,6 +7197,7 @@ h5,
 h6,
 .h5,
 .h6 {
+  --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
   font-size: var(--t3-font-size-to-rem);
 }
 
@@ -7288,9 +7289,13 @@ caption {
   margin-right: 0.5rem;
 }
 
+blockquote,
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
+  padding-left: 1.2rem;
+  margin-left: 3rem;
+  border-left: 8px solid var(--t3-border-color);
 }
 
 .blockquote-footer {
@@ -8173,6 +8178,7 @@ caption {
   }
 }
 .img-fluid {
+  --t3-border-radius: 2rem;
   max-width: 100%;
   height: auto;
 }
@@ -9263,6 +9269,15 @@ fieldset:disabled .btn {
 .text-img-above-left .ce-textpic__picture,
 .text-img-below-left .ce-textpic__picture {
   text-align: left;
+}
+
+.text-img-above-left .ce-textpic__picture .picture-partial__item-img,
+.text-img-below-left .ce-textpic__picture .picture-partial__item-img,
+.text-img-above-right .ce-textpic__picture .picture-partial__item-img,
+.text-img-below-right .ce-textpic__picture .picture-partial__item-img,
+.text-img-above-center .ce-textpic__picture .picture-partial__item-img,
+.text-img-below-center .ce-textpic__picture .picture-partial__item-img {
+  width: auto;
 }
 
 .text-img-above-right .ce-textpic__picture,
