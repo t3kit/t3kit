@@ -20,7 +20,7 @@
 <f:section name="mainNavigation">
 
     <nav id="main-navigation"
-      aria-label="Global"
+      aria-label="Primary"
       class="main-navigation {flexform.main_nav_mobile_breakpoint}">
       <div class="main-navigation__container
         {flexform.main_nav_mobile_toggle_position}
@@ -41,7 +41,7 @@
             <f:for each="{mainNavigation}" as="navItem">
               <li class="main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')} {f:if(condition: navItem.children, then:' dropdown')}">
 
-                <f:if condition="{navItem.children} && {flexform.main_nav_dropdown}">
+                <f:if condition="{navItem.children} && {flexform.main_nav_dropdown} && {navItem.data.hide_subpages_in_menu} == 0">
                   <f:then>
                     <f:render section="mainNavigationdropdown" arguments="{_all}" />
                   </f:then>

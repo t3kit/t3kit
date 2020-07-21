@@ -261,6 +261,30 @@ defined('TYPO3_MODE') || die();
     ]
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
+    'hide_subpages_in_menu' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:hide_subpages_in_menu',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => '',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'visibility',
+    'hide_subpages_in_menu',
+    'after:nav_hide'
+);
 
 /*
  * ###########################

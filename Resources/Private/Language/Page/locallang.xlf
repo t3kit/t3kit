@@ -6,7 +6,7 @@
 	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/Page/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
-			<!-- Page Appearance tab config fields translations -->
+
 			<trans-unit id="nav_image" resname="nav_image">
 				<source>Page image</source>
 			</trans-unit>
@@ -21,6 +21,9 @@
 			</trans-unit>
 			<trans-unit id="nav_icon.palette" resname="nav_icon.palette">
 				<source>Page icon</source>
+			</trans-unit>
+			<trans-unit id="hide_subpages_in_menu" resname="hide_subpages_in_menu">
+				<source>Hide child pages in the dropdown menu</source>
 			</trans-unit>
 
 		</body>

@@ -54,11 +54,12 @@
             </div>
           </f:if>
 
-          <f:if condition="{links_1.1}">
-            <div class="col-lg">
+          <nav class="footer-site-navigation" aria-label="Site">
 
-              <div class="ce-site-footer__column">
-                <nav class="ce-site-footer__column-nav">
+            <f:if condition="{links_1.1}">
+              <div class="col-lg">
+
+                <div class="ce-site-footer__column">
                   <f:if condition="{flexform.column_1_title}">
                     <div class="ce-site-footer__column-title">
                       <f:render partial="Header/Render/Header" arguments="{
@@ -71,17 +72,15 @@
                   <div class="ce-site-footer__column-links">
                     <f:render section="links" arguments="{links: links_1, flexform: flexform}" />
                   </div>
-                </nav>
+                </div>
+
               </div>
+            </f:if>
 
-            </div>
-          </f:if>
+            <f:if condition="{links_2.1}">
+              <div class="col-lg">
 
-          <f:if condition="{links_2.1}">
-            <div class="col-lg">
-
-              <div class="ce-site-footer__column">
-                <nav class="ce-site-footer__column-nav">
+                <div class="ce-site-footer__column">
                   <f:if condition="{flexform.column_2_title}">
                     <div class="ce-site-footer__column-title">
                       <f:render partial="Header/Render/Header" arguments="{
@@ -94,17 +93,15 @@
                   <div class="ce-site-footer__column-links">
                     <f:render section="links" arguments="{links: links_2, flexform: flexform}" />
                   </div>
-                </nav>
+                </div>
+
               </div>
+            </f:if>
 
-            </div>
-          </f:if>
+            <f:if condition="{links_3.1}">
+              <div class="col-lg">
 
-          <f:if condition="{links_3.1}">
-            <div class="col-lg">
-
-              <div class="ce-site-footer__column">
-                <nav class="ce-site-footer__column-nav">
+                <div class="ce-site-footer__column">
                   <f:if condition="{flexform.column_3_title}">
                     <div class="ce-site-footer__column-title">
                       <f:render partial="Header/Render/Header" arguments="{
@@ -117,11 +114,12 @@
                   <div class="ce-site-footer__column-links">
                     <f:render section="links" arguments="{links: links_3, flexform: flexform}" />
                   </div>
-                </nav>
-              </div>
+                </div>
 
-            </div>
-          </f:if>
+              </div>
+            </f:if>
+
+          </nav>
 
         </div>
       </div>
