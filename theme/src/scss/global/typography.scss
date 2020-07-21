@@ -43,12 +43,12 @@ h4,
 .h2,
 .h3,
 .h4,
-.large_h1,
-.large_h2,
-.large_h3,
-.large_h4,
-.large_h5,
-.large_h6,
+.large-h1,
+.large-h2,
+.large-h3,
+.large-h4,
+.large-h5,
+.large-h6,
 .fluid-font-size {
   --t3-fluid-font-size:
     calc(
@@ -71,12 +71,12 @@ h4,
   .h2,
   .h3,
   .h4,
-  .large_h1,
-  .large_h2,
-  .large_h3,
-  .large_h4,
-  .large_h5,
-  .large_h6,
+  .large-h1,
+  .large-h2,
+  .large-h3,
+  .large-h4,
+  .large-h5,
+  .large-h6,
   .fluid-font-size {
     font-size: var(--t3-font-size-to-rem);
   }
@@ -86,6 +86,8 @@ h5,
 h6,
 .h5,
 .h6 {
+  --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
+
   font-size: var(--t3-font-size-to-rem);
 }
 
@@ -180,9 +182,13 @@ caption {
 }
 
 // Blockquote
+blockquote,
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
+  padding-left: 1.2rem;
+  margin-left: 3rem;
+  border-left: 8px solid var(--t3-border-color);
 }
 
 .blockquote-footer {

@@ -14,7 +14,7 @@
         <div class="row">
 
           <f:if condition="{flexform.show_address} || {files}">
-            <div class="col-lg">
+            <div class="col-lg-3">
 
               <f:if condition="{files} || {svg_image}">
                 <div class="ce-site-footer__logo">
@@ -54,7 +54,8 @@
             </div>
           </f:if>
 
-          <nav class="footer-site-navigation" aria-label="Site">
+          <div class="col-lg-9">
+          <nav class="footer-site-navigation row" aria-label="Site">
 
             <f:if condition="{links_1.1}">
               <div class="col-lg">
@@ -120,6 +121,7 @@
             </f:if>
 
           </nav>
+        </div>
 
         </div>
       </div>
