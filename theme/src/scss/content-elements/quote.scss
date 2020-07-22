@@ -30,3 +30,53 @@
 // @media (max-width: 1399.98px) { ... }
 // XX-Large devices (larger desktops, 1400px and up) xxl
 // @media (min-width: 1400px) { ... }
+
+.ce-quote__wrp {
+  --t3-ce-quote-color: var(--t3-body-color);
+  --t3-ce-quote-bg-color: var(--t3-light);
+  --t3-ce-quote-border-color: var(--t3-border-color);
+  --t3-ce-quote-bodytext-color: var(--t3-ce-quote-color);
+  --t3-ce-quote-author-color: var(--t3-ce-quote-color);
+  --t3-ce-quote-jt-color: var(--t3-ce-quote-color);
+  --t3-ce-quote-link-color: var(--t3-link-color);
+
+  position: relative;
+  overflow: auto;
+  color: var(--t3-ce-quote-color);
+}
+
+.ce-quote {
+  background: var(--t3-ce-quote-bg-color);
+  border-color: var(--t3-ce-quote-border-color);
+  padding-top: 1.6rem;
+  padding-right: 1.2rem;
+}
+
+.ce-quote__bodytext {
+  color: var(--t3-ce-quote-bodytext-color);
+}
+
+.ce-quote__footer {
+  color: var(--t3-ce-quote-color);
+  display: block;
+  font-size: 0.875rem;
+  padding-bottom: 0.875rem;
+  text-align: right;
+}
+
+.ce-quote__footer:before {
+  content: "— ";
+}
+
+.ce-quote__footer-author-name {
+  color: var(--t3-ce-quote-author-color);
+}
+
+.ce-quote__footer-author-job-title {
+  color: var(--t3-ce-quote-jt-color);
+}
+
+.ce-quote__footer-link {
+  color: var(--t3-ce-quote-link-color);
+  padding-left: 1.25rem;
+}
