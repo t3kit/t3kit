@@ -39,3 +39,4 @@ editor:
       - JustifyBlock
       - Anchor
       - Table
+      - Strike
