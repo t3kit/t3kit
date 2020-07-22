@@ -1,53 +1,15 @@
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
-.ce-divider-icon {
-  --t3-ce-divider-color: var(--t3-body-color);
-
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  margin: 20px 0;
-  opacity: 0.4;
+.ce-uploads {
+  --t3-ce-uploads-icon-color: var(--t3-secondary);
 }
 
-.ce-divider-icon__icon-wrp {
-  position: relative;
-  line-height: 1;
-  font-size: 1.5rem;
+.ce-uploads__list-item-icon {
+  width: 2rem;
 }
 
-.ce-divider-icon__icon-wrp:after {
-  left: 0.5em;
-  margin-right: -50%;
-  background-color: var(--t3-ce-divider-color);
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  margin-top: -1px;
-  width: 50%;
-}
-
-.ce-divider-icon__icon-wrp:before {
-  right: 0.5em;
-  margin-left: -50%;
-  background-color: var(--t3-ce-divider-color);
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  margin-top: -1px;
-  width: 50%;
-}
-
-.ce-divider-icon__icon {
-  color: var(--t3-ce-divider-color);
-}
-
-.ce-divider-icon__hr {
-  border-top: 1px solid var(--t3-ce-divider-color);
+.ce-uploads__list-item-icon .st0 {
+  fill: var(--t3-ce-uploads-icon-color);
 }
 
 // --------------------------------------------------------

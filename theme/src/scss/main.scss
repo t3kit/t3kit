@@ -26,6 +26,7 @@
 @use 'content-elements/table';
 @use 'content-elements/textmedia';
 @use 'content-elements/textpic';
+@use 'content-elements/uploads';
 @use 'content-elements/simple-site-header';
 @use 'content-elements/site-footer';
 @use 'content-elements/hero-image';
@@ -34,7 +35,8 @@
 @use 'content-elements/icon-text-link';
 @use 'content-elements/contact-card';
 @use 'content-elements/quote';
-// @use 'content-elements/divider-icon';
+@use 'content-elements/divider-icon';
+@use 'content-elements/divider';
 
 // ===== appearance =====
 @use 'appearance/color';
