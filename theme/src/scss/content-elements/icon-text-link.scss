@@ -38,6 +38,14 @@
   align-items: center;
 }
 
+.ce-icon-text-link--header-center {
+  justify-content: center;
+}
+
+.ce-icon-text-link--header-right {
+  justify-content: flex-end;
+}
+
 .ce-icon-text-link__icon-wrp {
   padding-right: 1rem;
 }
