@@ -1,8 +1,8 @@
 
 require('./check').checkNode()
 const { series, parallel } = require('gulp')
-const { clean, cleanFavicons, cleanBootstrapIcons } = require('./clean')
-const { copyBootstrapIcons } = require('./copy')
+const { clean, cleanFavicons, cleanBootstrapIcons, cleanFileTypeIcons } = require('./clean')
+const { copyBootstrapIcons, copyFileTypeIcons } = require('./copy')
 const { compileCss, compileCssWatch } = require('./sass')
 const { compileJs, compileJsWatch } = require('./rollup')
 const { revJs } = require('./rev')
@@ -51,5 +51,11 @@ exports.favicons = series(
 exports.icons = series(
   cleanBootstrapIcons,
   copyBootstrapIcons,
+  conf.showInfo
+)
+
+exports.filetype = series(
+  cleanFileTypeIcons,
+  copyFileTypeIcons,
   conf.showInfo
 )

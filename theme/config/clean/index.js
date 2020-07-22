@@ -25,6 +25,15 @@ async function cleanBootstrapIcons () {
   }
 }
 
+async function cleanFileTypeIcons () {
+  try {
+    await del([`${conf.FILE_TYPE_ICONS_DIST}*`], { force: true })
+  } catch (error) {
+    console.error('(cleanFileTypeIcons) Error:', error)
+  }
+}
+
 exports.clean = clean
 exports.cleanFavicons = cleanFavicons
 exports.cleanBootstrapIcons = cleanBootstrapIcons
+exports.cleanFileTypeIcons = cleanFileTypeIcons

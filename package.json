@@ -15,6 +15,7 @@
     "composer": "composer test",
     "githook": "npm-run-all --parallel test composer",
     "favicons": "gulp -f theme/config/gulpfile.js favicons",
+    "filetype": "gulp -f theme/config/gulpfile.js filetype",
     "icons": "gulp -f theme/config/gulpfile.js icons",
     "dev": "gulp -f theme/config/gulpfile.js build",
     "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
@@ -23,8 +24,9 @@
   },
   "dependencies": {
     "bootstrap": "github:twbs/bootstrap#c9cd3e4",
-    "simplelightbox": "github:dmh/simplelightbox#619a4d2",
-    "bootstrap-icons": "1.0.0-alpha4"
+    "bootstrap-icons": "1.0.0-alpha4",
+    "file-icon-vectors": "1.0.0",
+    "simplelightbox": "github:dmh/simplelightbox#619a4d2"
   },
   "devDependencies": {
     "@rollup/plugin-legacy": "^2.0.0",

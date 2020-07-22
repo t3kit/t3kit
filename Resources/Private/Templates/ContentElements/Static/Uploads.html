@@ -16,7 +16,7 @@
 
               <f:if condition="{data.uploads_type} == 1">
                 <span class="ce-uploads__list-item-icon-wrp">
-                  <t3kit:render.svg src="{f:uri.resource(path: 'Icons/FileIcons/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon" />
+                  <t3kit:render.svg src="{f:uri.resource(path: 'assets/Filetypes/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon" />
                 </span>
               </f:if>
 
@@ -28,7 +28,7 @@
                       </a>
                     </f:then>
                     <f:else>
-                      <t3kit:render.svg src="{f:uri.resource(path: 'Icons/FileIcons/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon" />
+                      <t3kit:render.svg src="{f:uri.resource(path: 'assets/Filetypes/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon" />
                     </f:else>
                 </f:if>
               </f:if>

@@ -97,6 +97,11 @@ conf.BOOTSTRAP_ICONS_DIST = `${conf.ICONS_DIST}Bootstrap/`
 conf.BOOTSTRAP_ICONS_SRC = [`${rootDir}/node_modules/bootstrap-icons/icons/*.svg`]
 // ------------------------------
 
+// File Type Icons variables
+conf.FILE_TYPE_ICONS_DIST = `${conf.DIST_ROOT}Filetypes/`
+conf.FILE_TYPE_ICONS_SRC = [`${rootDir}/node_modules/file-icon-vectors/dist/icons/vivid/*.svg`]
+// ------------------------------
+
 conf.FONTS_DIST = 'Fonts/'
 conf.IMAGES_DIST = 'Images/'
 
