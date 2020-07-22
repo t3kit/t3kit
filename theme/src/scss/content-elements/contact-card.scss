@@ -30,3 +30,55 @@
 // @media (max-width: 1399.98px) { ... }
 // XX-Large devices (larger desktops, 1400px and up) xxl
 // @media (min-width: 1400px) { ... }
+
+.ce-contact-card__wrp {
+  --t3-ce-cc-color: var(--t3-body-color);
+  --t3-ce-cc-border-color: var(--t3-border-color);
+  --t3-ce-cc-line-color: var(--t3-secondary);
+  --t3-ce-cc-name-color: var(--t3-ce-cc-color);
+  --t3-ce-cc-jt-color: var(--t3-ce-cc-color);
+  --t3-ce-cc-link-color: var(--t3-link-color);
+
+  position: relative;
+  color: var(--t3-ce-cc-color);
+}
+
+.ce-contact-card {
+  text-align: center;
+  border: 1px solid var(--t3-ce-cc-border-color);
+  margin-bottom: 1.6rem;
+}
+
+.ce-contact-card__info {
+  padding-bottom: 1.25rem;
+}
+
+.ce-contact-card__name-wrp {
+  color: var(--t3-ce-cc-name-color);
+  font-size: 1.25rem;
+}
+
+.ce-contact-card__job-title {
+  color: var(--t3-ce-cc-jt-color);
+  font-size: 0.85rem;
+}
+
+.ce-contact-card__job-title-wrp:after {
+  content: "";
+  display: block;
+  width: 20%;
+  background: var(--t3-ce-cc-line-color);
+  height: 2px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ce-contact-card__phone,
+.ce-contact-card__email,
+.ce-contact-card__link {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--t3-ce-cc-link-color);
+}
