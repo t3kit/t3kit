@@ -54,6 +54,10 @@ if (!(bool) $t3kitextConf['disableTCEMAIN']) {
     );
 }
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+    "@import 'EXT:t3kit/Configuration/TSconfig/User/Options.tsconfig'"
+);
+
 // Define TypoScript as content rendering template
 $GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'][] = 't3kit/Configuration/TypoScript/';
 

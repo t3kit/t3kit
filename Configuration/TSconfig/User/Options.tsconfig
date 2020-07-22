@@ -1,0 +1,2 @@
+// Show "duplicate” button by default
+options.showDuplicate = 1
