@@ -12,7 +12,7 @@
         <ul class="ce-menu__list">
           <f:for each="{content}" as="element">
             <li class="ce-menu__list-item">
-              <f:link.page pageUid="{element.data.pid}" section="{element.data.uid}"></f:link.page>
+              <f:link.page pageUid="{element.data.pid}" section="{element.data.uid}">
                 <span class="ce-menu__list-item-header">{element.data.header}</span>
               </f:link.page>
             </li>
