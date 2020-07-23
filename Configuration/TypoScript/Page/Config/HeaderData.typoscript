@@ -1,9 +1,17 @@
 [site("configuration")["theme"] == "t3kit"]
 page.headerData {
-  # Fonts
+  # Google Fonts
+  // https://csswizardry.com/2020/05/the-fastest-google-fonts/
   150 = TEXT
   150.value (
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600,900&display=swap"
+      media="print"
+      onload="this.media='all'" />
   )
 }
 [global]
