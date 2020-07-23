@@ -55,7 +55,7 @@ mod.web_layout.BackendLayouts.start_page {
 
 
       # All Content
-      4.columns {
+      5.columns {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
@@ -77,17 +77,17 @@ mod.web_layout.BackendLayouts.start_page {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
-          colPos = 3304
+          colPos = 3307
         }
         2 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
-          colPos = 3305
+          colPos = 3308
         }
         3 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
-          colPos = 3306
+          colPos = 3309
         }
       }
 
@@ -95,17 +95,17 @@ mod.web_layout.BackendLayouts.start_page {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
-          colPos = 3322
+          colPos = 3313
         }
         2 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
-          colPos = 3323
+          colPos = 3314
         }
         3 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
-          colPos = 3324
+          colPos = 3315
         }
       }
 
@@ -126,68 +126,11 @@ mod.web_layout.BackendLayouts.start_page {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 12
-          colPos = 8300
+          colPos = 8302
         }
       }
 
       30.columns {
-        1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 6
-          colPos = 5005
-        }
-        2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 6
-          colPos = 5006
-        }
-      }
-
-      35.columns {
-        1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 12
-          colPos = 8301
-        }
-      }
-
-      40.columns {
-        1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3307
-        }
-        2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3308
-        }
-        3 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3309
-        }
-      }
-
-      45.columns {
-        1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3310
-        }
-        2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3311
-        }
-        3 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3312
-        }
-      }
-
-      50.columns {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 6
@@ -200,56 +143,15 @@ mod.web_layout.BackendLayouts.start_page {
         }
       }
 
-      55.columns {
+      35.columns {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 6
-          colPos = 5009
-        }
-        2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 6
-          colPos = 5010
+          colspan = 12
+          colPos = 8305
         }
       }
 
-      60.columns {
-        1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3313
-        }
-        2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3314
-        }
-        3 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3315
-        }
-      }
-
-      65.columns {
-        1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3316
-        }
-        2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3317
-        }
-        3 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
-          colspan = 4
-          colPos = 3318
-        }
-      }
-
-      70.columns {
+      40.columns {
         1 {
           name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
           colspan = 4
@@ -267,15 +169,165 @@ mod.web_layout.BackendLayouts.start_page {
         }
       }
 
+      45.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3325
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3326
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3327
+        }
+      }
+
+      50.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 6
+          colPos = 5011
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 6
+          colPos = 5012
+        }
+      }
+
+      55.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 6
+          colPos = 5015
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 6
+          colPos = 5016
+        }
+      }
+
+      60.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3331
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3332
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3333
+        }
+      }
+
+      65.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3337
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3338
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3339
+        }
+      }
+
+      70.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3343
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3344
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3345
+        }
+      }
+
+      75.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 12
+          colPos = 1008
+        }
+      }
+
+      80.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3349
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3350
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3351
+        }
+      }
+
+      85.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 12
+          colPos = 1012
+        }
+      }
+
+      90.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3355
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3356
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.content
+          colspan = 4
+          colPos = 3357
+        }
+      }
+
       # Additional content (after main content/before site footer)
-      90.columns.1 {
+      890.columns.1 {
         name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.after_content
         colspan = 12
         colPos = 90
       }
 
       # Site Footer (inherited from start page layout)
-      100.columns.1 {
+      900.columns.1 {
         name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.footer
         colspan = 12
         colPos = 11
