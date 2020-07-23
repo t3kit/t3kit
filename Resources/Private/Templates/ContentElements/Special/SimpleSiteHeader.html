@@ -109,7 +109,7 @@
 <f:section name="mainNavigationdropdown">
 
   <a href="#"
-    id="navbarDropdown"
+    id="navbarDropdown{navItem.data.uid}"
     class="main-navigation__item-link
       {f:if(condition: navItem.children, then:' dropdown-toggle')}"
     role="button"
@@ -121,7 +121,7 @@
   <ul class="main-navigation__dropdown-item-list
     dropdown-menu
     {f:if(condition: '{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3', then: ' show-parent-link')}"
-    aria-labelledby="navbarDropdown">
+    aria-labelledby="navbarDropdown{navItem.data.uid}">
 
     <f:if condition="{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3 ">
       <li class="main-navigation__dropdown-item {f:if(condition: navItem.active, then:' active')} {navItem.data.uid}">
