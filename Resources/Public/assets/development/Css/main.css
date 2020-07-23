@@ -9969,7 +9969,6 @@ fieldset:disabled .btn {
   --t3-ce-bitl-bodytext-font-size: inherit;
   --t3-ce-bitl-link-color: var(--t3-ce-bitl-color);
   position: relative;
-  overflow: auto;
   padding-bottom: 1rem;
   color: var(--t3-ce-bitl-color);
 }
@@ -10039,7 +10038,6 @@ fieldset:disabled .btn {
   --t3-ce-itl-bodytext-font-size: inherit;
   --t3-ce-itl-link-color: var(--t3-ce-itl-color);
   position: relative;
-  overflow: auto;
   color: var(--t3-ce-itl-color);
 }
 
@@ -10144,7 +10142,6 @@ fieldset:disabled .btn {
   --t3-ce-icotl-bodytext-font-size: inherit;
   --t3-ce-icotl-link-color: var(--t3-ce-icotl-color);
   position: relative;
-  overflow: auto;
   padding-bottom: 1rem;
   color: var(--t3-ce-icotl-color);
 }
@@ -10231,7 +10228,6 @@ fieldset:disabled .btn {
 .ce-contact-card {
   text-align: center;
   border: 1px solid var(--t3-ce-cc-border-color);
-  margin-bottom: 1.6rem;
 }
 
 .ce-contact-card__info {
@@ -10245,7 +10241,7 @@ fieldset:disabled .btn {
 
 .ce-contact-card__job-title {
   color: var(--t3-ce-cc-jt-color);
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .ce-contact-card__job-title-wrp:after {
@@ -10264,8 +10260,9 @@ fieldset:disabled .btn {
 .ce-contact-card__email,
 .ce-contact-card__link {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--t3-ce-cc-link-color);
+  padding-bottom: 0.6rem;
 }
 
 .ce-quote__wrp {
