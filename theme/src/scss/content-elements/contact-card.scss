@@ -46,7 +46,6 @@
 .ce-contact-card {
   text-align: center;
   border: 1px solid var(--t3-ce-cc-border-color);
-  margin-bottom: 1.6rem;
 }
 
 .ce-contact-card__info {
@@ -60,7 +59,7 @@
 
 .ce-contact-card__job-title {
   color: var(--t3-ce-cc-jt-color);
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .ce-contact-card__job-title-wrp:after {
@@ -79,6 +78,7 @@
 .ce-contact-card__email,
 .ce-contact-card__link {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--t3-ce-cc-link-color);
+  padding-bottom: 0.6rem;
 }
