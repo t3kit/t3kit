@@ -5,6 +5,10 @@ body {
   font-size: var(--t3-body-font-size);
 }
 
+p {
+  font-weight: var(--t3-p-font-weight);
+}
+
 pre,
 code,
 kbd,
@@ -19,7 +23,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--t3-headings-color);
+  color: var(--t3-heading-color);
+  font-weight: var(--t3-heading-font-weight);
+}
+
+.large-h1,
+.large-h2,
+.large-h3,
+.large-h4,
+.large-h5,
+.large-h6 {
+  color: var(--t3-large-heading-color);
+  font-weight: var(--t3-large-heading-font-weight);
 }
 
 // ============================================
@@ -61,6 +76,15 @@ h4,
   font-size: var(--t3-fluid-font-size);
 }
 
+h5,
+h6,
+.h5,
+.h6 {
+  --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
+
+  font-size: var(--t3-font-size-to-rem);
+}
+
 @media (min-width: 1200px) {
   // for 1200px screen and bigger
   h1,
@@ -80,15 +104,6 @@ h4,
   .fluid-font-size {
     font-size: var(--t3-font-size-to-rem);
   }
-}
-
-h5,
-h6,
-.h5,
-.h6 {
-  --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
-
-  font-size: var(--t3-font-size-to-rem);
 }
 
 h1,
@@ -152,6 +167,7 @@ h6,
 // links
 a {
   color: var(--t3-link-color);
+  font-weight: var(--t3-link-font-weight);
 }
 
 a:hover {

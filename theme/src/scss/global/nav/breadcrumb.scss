@@ -7,7 +7,8 @@
   --t3-breadcrumb-hover-color: var(--t3-link-hover-color);
   --t3-breadcrumb-active-color: var(--t3-body-color);
   --t3-breadcrumb-separator-color: var(--t3-body-color);
-  --t3-breadcrumb-separator: "/";
+  // --t3-breadcrumb-separator: "/";
+  --t3-breadcrumb-separator: url("data:image/svg+xml,%3Csvg class='t3-breadcrumb-separator-icon' width='1.3em' height='1.3em' viewBox='0 0 16 16' fill='rgb(0, 130, 146)' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z'/%3E%3Cpath fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
   --t3-breadcrumb-text-transform: none;
 }
 

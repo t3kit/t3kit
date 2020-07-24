@@ -6,13 +6,8 @@
   --t3-ce-icotl-icon-width: 2.5rem;
   --t3-ce-icotl-icon-height: 2.5rem;
   --t3-ce-icotl-header-color: var(--t3-ce-icotl-color);
-  --t3-ce-icotl-header-size: 24;
-  --t3-ce-icotl-header-font-weight: inherit;
   --t3-ce-icotl-subheader-color: var(--t3-ce-icotl-color);
-  --t3-ce-icotl-subheader-size: 20;
-  --t3-ce-icotl-subheader-font-weight: inherit;
   --t3-ce-icotl-bodytext-color: var(--t3-ce-icotl-color);
-  --t3-ce-icotl-bodytext-font-size: inherit;
   --t3-ce-icotl-link-color: var(--t3-ce-icotl-color);
 
   position: relative;
@@ -56,18 +51,16 @@
 }
 
 .ce-icon-text-link__header .header-item {
-  font-weight: var(--t3-ce-icotl-header-font-weight);
   color: var(--t3-ce-icotl-header-color);
   margin: 0;
 }
 
 .ce-icon-text-link__subheader .subheader-item {
-  font-weight: var(--t3-ce-icotl-subheader-font-weight);
+  font-weight: 600;
   color: var(--t3-ce-icotl-subheader-color);
 }
 
 .ce-icon-text-link__bodytext .bodytext-partial {
-  font-size: var(--t3-ce-icotl-bodytext-font-size);
   color: var(--t3-ce-icotl-bodytext-color);
 }
 

@@ -6,13 +6,8 @@
   --t3-ce-bitl-icon-width: 3rem;
   --t3-ce-bitl-icon-height: 3rem;
   --t3-ce-bitl-header-color: var(--t3-ce-bitl-color);
-  --t3-ce-bitl-header-size: 28;
-  --t3-ce-bitl-header-font-weight: inherit;
   --t3-ce-bitl-subheader-color: var(--t3-ce-bitl-color);
-  --t3-ce-bitl-subheader-size: 24;
-  --t3-ce-bitl-subheader-font-weight: inherit;
   --t3-ce-bitl-bodytext-color: var(--t3-ce-bitl-color);
-  --t3-ce-bitl-bodytext-font-size: inherit;
   --t3-ce-bitl-link-color: var(--t3-ce-bitl-color);
 
   position: relative;
@@ -42,17 +37,15 @@
 }
 
 .ce-big-icon-text-link__header .header-item {
-  font-weight: var(--t3-ce-bitl-header-font-weight);
   color: var(--t3-ce-bitl-header-color);
 }
 
 .ce-big-icon-text-link__subheader .subheader-item {
-  font-weight: var(--t3-ce-bitl-subheader-font-weight);
+  font-weight: 600;
   color: var(--t3-ce-bitl-subheader-color);
 }
 
 .ce-big-icon-text-link__bodytext .bodytext-partial {
-  font-size: var(--t3-ce-bitl-bodytext-font-size);
   color: var(--t3-ce-bitl-bodytext-color);
 }
 

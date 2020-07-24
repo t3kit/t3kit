@@ -53,12 +53,17 @@
   // Typography
   // -----------------
   // font
-  --t3-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  // default
+  // --t3-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --t3-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --t3-font-family-base: var(--t3-font-sans-serif);
 
+  // t3kit
+  --t3-font-sans-serif: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
   // headings
-  --t3-headings-color: var(--t3-body-color);
+  --t3-heading-color: var(--t3-body-color);
+  --t3-large-heading-color: var(--t3-body-color);
   // should be the only number with pixels in mind. Will be converted to rem
   --t3-h1-font-size: 48;
   --t3-h2-font-size: 40;
@@ -76,6 +81,12 @@
   // link
   --t3-link-color: var(--t3-secondary);
   --t3-link-hover-color: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.8);
+
+  // font weight
+  --t3-p-font-weight: 300;
+  --t3-heading-font-weight: 300;
+  --t3-large-heading-font-weight: 900;
+  --t3-link-font-weight: 500;
 
   // caption
   --t3-caption-color: #6c757d;

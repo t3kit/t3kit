@@ -4,13 +4,8 @@
 .ce-img-text-link__wrp {
   --t3-ce-itl-color: var(--t3-body-color);
   --t3-ce-itl-header-color: var(--t3-ce-itl-color);
-  --t3-ce-itl-header-size: 26;
-  --t3-ce-itl-header-font-weight: inherit;
   --t3-ce-itl-subheader-color: var(--t3-ce-itl-color);
-  --t3-ce-itl-subheader-size: 22;
-  --t3-ce-itl-subheader-font-weight: inherit;
   --t3-ce-itl-bodytext-color: var(--t3-ce-itl-color);
-  --t3-ce-itl-bodytext-font-size: inherit;
   --t3-ce-itl-link-color: var(--t3-ce-itl-color);
 
   position: relative;
@@ -64,17 +59,15 @@
 }
 
 .ce-img-text-link__header .header-item {
-  font-weight: var(--t3-ce-itl-header-font-weight);
   color: var(--t3-ce-itl-header-color);
 }
 
 .ce-img-text-link__subheader .subheader-item {
-  font-weight: var(--t3-ce-itl-subheader-font-weight);
+  font-weight: 600;
   color: var(--t3-ce-itl-subheader-color);
 }
 
 .ce-img-text-link__bodytext .bodytext-partial {
-  font-size: var(--t3-ce-itl-bodytext-font-size);
   color: var(--t3-ce-itl-bodytext-color);
 }
 
