@@ -7,13 +7,9 @@
 
 			<trans-unit id="height.description" resname="height.description">
 				<source>
-					&lt;strong&gt;300&lt;/strong&gt; = &lt;strong&gt;1920px+ x 900px&lt;/strong&gt; image &lt;br&gt;
-					&lt;strong&gt;350&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1050px&lt;/strong&gt; image &lt;br&gt;
-					&lt;strong&gt;400&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1200px&lt;/strong&gt; image &lt;br&gt;
-					&lt;strong&gt;450&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1350px&lt;/strong&gt; image &lt;br&gt;
-					&lt;strong&gt;500&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1500px&lt;/strong&gt; image &lt;br&gt;
-					&lt;strong&gt;550&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1650px&lt;/strong&gt; image &lt;br&gt;
-					&lt;strong&gt;600&lt;/strong&gt; = &lt;strong&gt;1920px+ x 1800px&lt;/strong&gt; image
+					The minimum width of the image should be not less than &lt;strong&gt;1920px&lt;/strong&gt;.&lt;br&gt;
+					Also, it is recommended to crop the image according to a defined height.&lt;br&gt;
+					Without the manual crop, the image will be cropped by a center.
 				</source>
 			</trans-unit>
 
