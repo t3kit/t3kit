@@ -16,3 +16,6 @@ disableTCEFORM = 0
 
 # cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableTCEMAIN
 disableTCEMAIN = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:userts.disableOptions
+disableUserTSoptions = 0

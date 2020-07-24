@@ -22,6 +22,9 @@
 			<trans-unit id="pagets.disableTCEMAIN" resname="pagets.disableTCEMAIN">
 				<source>Disable PageTS config for TCEMAIN: If this is turned on then you need to include the configuration manually in Page TSconfig section -> [TCEMAIN (t3kit)]</source>
 			</trans-unit>
+			<trans-unit id="userts.disableOptions" resname="userts.disableOptions">
+				<source>Disable t3kit default UserTS options</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
