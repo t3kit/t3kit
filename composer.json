@@ -24,28 +24,34 @@
     "docs": "https://github.com/t3kit/t3kit"
   },
   "require": {
-    "typo3/cms-backend": "^10.4.2",
-    "typo3/cms-core": "^10.4.2",
-    "typo3/cms-extbase": "^10.4.2",
-    "typo3/cms-extensionmanager": "^10.4.2",
-    "typo3/cms-filelist": "^10.4.2",
-    "typo3/cms-fluid": "^10.4.2",
-    "typo3/cms-frontend": "^10.4.2",
-    "typo3/cms-install": "^10.4.2",
-    "typo3/cms-recordlist": "^10.4.2",
-    "typo3/cms-form": "^10.4.2",
-    "typo3/cms-rte-ckeditor": "^10.4.2",
-    "typo3/cms-seo": "^10.4.2",
-    "typo3/cms-tstemplate": "^10.4.2",
-    "typo3/cms-felogin": "^10.4.2"
+    "typo3/cms-backend": "^10.4.6",
+    "typo3/cms-core": "^10.4.6",
+    "typo3/cms-extbase": "^10.4.6",
+    "typo3/cms-extensionmanager": "^10.4.6",
+    "typo3/cms-filelist": "^10.4.6",
+    "typo3/cms-filemetadata": "^10.4.6",
+    "typo3/cms-fluid": "^10.4.6",
+    "typo3/cms-frontend": "^10.4.6",
+    "typo3/cms-install": "^10.4.6",
+    "typo3/cms-recordlist": "^10.4.6",
+    "typo3/cms-form": "^10.4.6",
+    "typo3/cms-rte-ckeditor": "^10.4.6",
+    "typo3/cms-seo": "^10.4.6",
+    "typo3/cms-tstemplate": "^10.4.6",
+    "typo3/cms-felogin": "^10.4.6"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.5.5",
+    "squizlabs/php_codesniffer": "^3.5.6",
     "helmich/typo3-typoscript-lint": "^2.1.1",
     "heahdude/yaml-linter": "^1.0.3",
-    "sclable/xml-lint": "^0.2.4"
+    "sclable/xml-lint": "^0.3.0"
   },
-  "suggest": {},
+  "suggest": {
+    "typo3/cms-indexed-search": "TYPO3 indexed search",
+    "yoast-seo-for-typo3/yoast_seo": "Yoast SEO for TYPO3",
+    "friendsoftypo3/frontend-editing": "Enable editors to work with the content in the most intuitive way possible",
+    "apache-solr-for-typo3/solr": "Apache Solr for TYPO3"
+  },
   "autoload": {
     "psr-4": {
       "T3k\\t3kit\\": "Classes"
