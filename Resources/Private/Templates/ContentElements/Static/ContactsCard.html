@@ -1,0 +1,99 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace t3kit=T3kit\themeT3kit\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Header" />
+<f:section name="Main">
+  <!-- theme_t3kit: Templates/ContentElements/ContactsCard.html [begin] -->
+  <div class="contacts-card">
+    <div class="contacts-card__photo">
+      <f:if condition="{image}">
+        <f:then>
+          <f:for each="{image}" as="image" iteration="imageIteration">
+            <f:if condition="{imageIteration.isFirst}">
+              <f:if condition="{settings.imgAsBg} == 1">
+                <f:then>
+                  <div
+                    class="contacts-card__contacts-photo _img-overlay {f:cObject(typoscriptObjectPath:'lib.responsiveContactCards', data:image.uid)}">
+                  </div>
+                </f:then>
+                <f:else>
+                  <f:image class="img-responsive contacts-card__contacts-photo" image="{image}"
+                    maxWidth="{data.imagewidth}" maxHeight="{data.imageheight}" cropVariant="default" />
+                </f:else>
+              </f:if>
+            </f:if>
+          </f:for>
+        </f:then>
+        <f:else>
+          <f:image src="{settings.defaultImage}" class="img-responsive contacts-card__contacts-photo" />
+        </f:else>
+      </f:if>
+    </div>
+    <div
+      class="contacts-card__contacts {f:if(condition: '{settings.imgAsBg} == 1', then: '_contact-information-overlay')}">
+      <f:if condition="{data.header}">
+        <span class="contacts-card__contact-name">{data.header}</span>
+
+      </f:if>
+      <f:if condition="{data.subheader}">
+        <span class="contacts-card__contact-job">{data.subheader}</span>
+      </f:if>
+      <f:if condition="{settings.contactPhone_1}">
+        <div class="contacts-card__contact-phone-wrp">
+          <f:if condition="{settings.icons} == 0">
+            <span class="icons icon-t3-mobile"></span>
+            <f:translate key="phone_label"></f:translate>
+          </f:if>
+          <t3kit:link.tel tel="{settings.contactPhone_1}" class="contacts-card__contact-phone">{settings.contactPhone_1}
+          </t3kit:link.tel>
+        </div>
+      </f:if>
+      <f:if condition="{settings.contactPhone_2}">
+        <div class="contacts-card__contact-phone-wrp">
+          <f:if condition="{settings.icons} == 0">
+            <span class="icons icon-t3-mobile"></span>
+            <f:translate key="phone_label"></f:translate>
+          </f:if>
+          <t3kit:link.tel tel="{settings.contactPhone_2}" class="contacts-card__contact-phone">{settings.contactPhone_2}
+          </t3kit:link.tel>
+        </div>
+      </f:if>
+      <f:if condition="{settings.mobilePhone}">
+        <div class="contacts-card__contact-phone-wrp">
+          <f:if condition="{settings.icons} == 0">
+            <span class="icons icon-smartphone"></span>
+            <f:translate key="phone_label"></f:translate>
+          </f:if>
+          <t3kit:link.tel tel="{settings.mobilePhone}" class="contacts-card__contact-phone">{settings.mobilePhone}
+          </t3kit:link.tel>
+        </div>
+      </f:if>
+      <f:if condition="{settings.email}">
+        <div class="contacts-card__contact-email-wrp">
+          <f:if condition="{settings.icons} == 0">
+            <span class="icons icon-t3-mail"></span>
+            <f:translate key="email_label"></f:translate>
+          </f:if>
+          <f:link.email email="{settings.email}" class="contacts-card__contact-email" title="{settings.email}">
+            {settings.email}
+          </f:link.email>
+        </div>
+      </f:if>
+      <f:if condition="{settings.linkedInLink}">
+        <div class="contacts-card__contact-linkedin-wrp">
+          <f:if condition="{settings.icons} == 0">
+            <span class="icons icon-t3-linkedin"></span>
+          </f:if>
+          <f:link.external uri="{settings.linkedInLink}" class="contacts-card__contact-linkedin" defaultScheme="https"
+            target="_blank">
+            {settings.linkedInLink}
+          </f:link.external>
+        </div>
+      </f:if>
+    </div>
+  </div>
+
+  <!-- theme_t3kit: Templates/ContentElements/ContactsCard.html [end] -->
+</f:section>
+
+</html>

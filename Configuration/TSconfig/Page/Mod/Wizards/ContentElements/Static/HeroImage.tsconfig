@@ -1,0 +1,46 @@
+# ###########################
+# heroImage Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static {
+  elements {
+    heroImage {
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.description
+      iconIdentifier = ce-heroImage
+    }
+  }
+  show := addToList(heroImage)
+}
+
+TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
+
+  horizontalAlignment {
+    addItems {
+      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment_left
+      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment_center
+      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment_right
+    }
+  }
+
+
+  verticalAlignment {
+    addItems {
+      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment_top
+      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment_middle
+      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment_bottom
+    }
+  }
+
+
+  animationStyle {
+    addItems {
+      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_disable
+      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_1
+      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_2
+      3 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_3
+      4 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_4
+      5 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_5
+    }
+  }
+
+}

@@ -1,0 +1,70 @@
+# ###################################
+# 3 Columns[25%-50%-25%] | Page Backend Layout
+# ==================================
+
+# Columns pattern
+# [1-10]     ->  Header
+# [11-20]    -> Footer
+# [30-40]    -> Navigation/Breadcrumbs
+# [50-90]   -> Additional content
+# [100-900]  -> All Content
+
+mod.web_layout.BackendLayouts.3columns25_50_25 {
+  icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/3columns25_50_25.svg
+  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.3columns25_50_25
+  config.backend_layout {
+    colCount = 12
+    rowCount = 4
+    rows {
+
+      # Site Header (inherited from start page layout)
+
+      # Top content (after site header/before breadcrumbs)
+      1.columns.1 {
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.top
+        colspan = 12
+        colPos = 50
+      }
+
+      # Breadcrumbs (inherited from start page layout)
+
+      # Additional content (after breadcrumbs/before main content)
+      2.columns.1 {
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.before_content
+        colspan = 12
+        colPos = 60
+      }
+
+
+      # All Content
+      3.columns {
+        1 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
+          colspan = 3
+          colPos = 101
+        }
+        2 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
+          colspan = 6
+          colPos = 102
+        }
+        3 {
+          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.3.content
+          colspan = 3
+          colPos = 103
+        }
+      }
+
+
+      # Additional content (after main content/before site footer)
+      4.columns.1 {
+        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.after_content
+        colspan = 12
+        colPos = 90
+      }
+
+      # Site Footer (inherited from start page layout)
+
+    }
+  }
+}

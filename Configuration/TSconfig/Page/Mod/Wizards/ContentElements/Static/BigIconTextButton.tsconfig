@@ -1,0 +1,20 @@
+# ###########################
+# bigIconTextButton Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static {
+  elements {
+    bigIconTextButton {
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.description
+      iconIdentifier = ce-bigIconTextButton
+    }
+  }
+  show := addToList(bigIconTextButton)
+}
+
+TCEFORM.tt_content.pi_flexform.bigIconTextButton.sDEF.iconClass {
+  addItems {
+    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:bigIconTextButton.flexform.icon_none
+  }
+}
+

@@ -1,0 +1,10 @@
+# ###########################
+# Insert records:
+# This element embeds other content elements.
+# ===========================
+mod.wizards.newContentElement.wizardItems.special.elements.shortcut {
+  iconIdentifier = content-special-shortcut
+  title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_shortcut_title
+  description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_shortcut_description
+}
+mod.wizards.newContentElement.wizardItems.special.show := addToList(shortcut)

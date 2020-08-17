@@ -1,0 +1,51 @@
+tt_content {
+  socialIcons =< lib.contentElement
+  socialIcons {
+    templateName = SocialIcons
+    dataProcessing {
+      20 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      20 {
+        fieldName = pi_flexform
+        as = flexform
+      }
+      # "inherit" from lib.fluidContent
+      // 800 < lib.contentElement.dataProcessing.800
+      // 830 < lib.contentElement.dataProcessing.830
+    }
+    variables {
+      # set fluid variable "allowLinksFromConstants"
+      # to use as a condition in template if social links from constants are allowed
+      allowLinksFromConstants = TEXT
+      allowLinksFromConstants {
+        # default to "false"
+        value = 0
+        stdWrap {
+          # override to "true" for default language
+          override = 1
+          override {
+            if {
+              value = 0
+              equals.data = TSFE:sys_language_uid
+            }
+          }
+          stdWrap {
+            # override to "true" for non default languages AND allowFallback is "true"
+            override = 1
+            override {
+              if {
+                value = 0
+                isGreaterThan.data = TSFE:sys_language_uid
+                isTrue.cObject = TEXT
+                isTrue.cObject {
+                  value = 1
+                  if.value = 1
+                  if.equals = {$themes.configuration.socialmedia.allowFallback}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

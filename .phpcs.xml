@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="t3kit">
+    <rule ref="PSR2"/>
+    <file>Classes/</file>
+    <file>Configuration/TCA/</file>
+    <file>ext_emconf.php</file>
+    <file>ext_localconf.php</file>
+    <file>ext_tables.php</file>
+</ruleset>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="new_element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D3D3D3;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#999999;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{fill:#FF5335;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#53A5C3;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#7EBCD2;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#A9D2E1;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#737373;}
+</style>
+<path class="st0" d="M0,0h100v100H0V0z"/>
+<polygon class="st1" points="100,24.3 88,12 87,78 20.3,78.2 12,88 24.9,100 100,100 "/>
+<g>
+	<rect x="13" y="13.1" class="st2" width="74" height="74"/>
+	<path class="st3" d="M86,14.1v72H14v-72H86 M88,12.1H12v76h76V12.1L88,12.1z"/>
+</g>
+<rect x="29" y="24" class="st2" width="42" height="8"/>
+<rect x="18" y="38" class="st2" width="64" height="4"/>
+<polygon class="st4" points="36.1,68.5 19,86 53.3,86 "/>
+<polygon class="st5" points="60.1,62.6 37.1,86 83,86 "/>
+<circle class="st6" cx="27.5" cy="60.5" r="4.5"/>
+<rect x="18" y="47" class="st2" width="64" height="4"/>
+<rect x="29" y="23" class="st7" width="42" height="8"/>
+<rect x="18" y="37" class="st7" width="64" height="4"/>
+<rect x="18" y="45" class="st7" width="64" height="4"/>
+</svg>

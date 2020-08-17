@@ -1,0 +1,29 @@
+# ###########################
+# List of t3kit content elements
+#
+# Needed for sorting all content elements
+# ===========================
+
+# Static CE
+mod.wizards.newContentElement.wizardItems.static.elements {
+
+  header.tt_content_defValues.CType = header
+  text.tt_content_defValues.CType = text
+  textpic.tt_content_defValues.CType = textpic
+  textmedia.tt_content_defValues.CType = textmedia
+  image.tt_content_defValues.CType = image
+  bullets.tt_content_defValues.CType = bullets
+  table.tt_content_defValues.CType = table
+  uploads.tt_content_defValues.CType = uploads
+
+  bigIconTextButton.tt_content_defValues.CType = bigIconTextButton
+  iconTextButton.tt_content_defValues.CType = iconTextButton
+  imageTextLink.tt_content_defValues.CType = imageTextLink
+  heroImage.tt_content_defValues.CType = heroImage
+  quote.tt_content_defValues.CType = quote
+  contactsCard.tt_content_defValues.CType = contactsCard
+  button.tt_content_defValues.CType = button
+  socialIcons.tt_content_defValues.CType = socialIcons
+  fullWidthImage.tt_content_defValues.CType = fullWidthImage
+
+}

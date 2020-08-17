@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="ResponsiveVideo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="-289 412.9 16 16" style="enable-background:new -289 412.9 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D3D3D3;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#F85B30;}
+	.st3{fill:#999999;}
+	.st4{fill:#4BB4DA;}
+	.st5{fill:#93D2E9;}
+	.st6{fill:#B7E1F0;}
+</style>
+<g>
+	<path class="st0" d="M-289,412.9h16v16h-16V412.9z"/>
+	<g>
+		<rect x="-287.5" y="414.4" class="st1" width="13" height="13"/>
+		<path class="st2" d="M-275,414.9v12h-12v-12H-275 M-274,413.9h-14v14h14V413.9L-274,413.9z"/>
+	</g>
+	<g>
+		<polygon class="st3" points="-274,427.9 -288,427.9 -287,428.9 -273,428.9 		"/>
+	</g>
+	<g>
+		<polygon class="st3" points="-274,427.9 -274,413.9 -273,414.9 -273,428.9 		"/>
+	</g>
+	<g>
+		<rect x="-288" y="416.9" class="st4" width="14" height="8"/>
+	</g>
+	<polygon class="st5" points="-282.7,420.9 -286,424.9 -279.5,424.9 	"/>
+	<polygon class="st6" points="-278,419.2 -282,424.9 -274,424.9 	"/>
+	<circle class="st1" cx="-285" cy="419.9" r="1"/>
+	<path class="st2" d="M-279.4,422.7h-3.4c-0.6,0-1-0.4-1-1V420c0-0.6,0.4-1,1-1h3.4c0.6,0,1,0.4,1,1v1.7
+		C-278.4,422.2-278.8,422.7-279.4,422.7z"/>
+	<path class="st1" d="M-281.7,421.7V420c0-0.1,0.2-0.2,0.3-0.2l1.4,0.8c0.1,0.1,0.1,0.3,0,0.3l-1.4,0.9
+		C-281.5,421.9-281.7,421.8-281.7,421.7z"/>
+</g>
+</svg>

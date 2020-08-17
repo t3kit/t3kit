@@ -1,0 +1,15 @@
+.panel-title {
+    font-weight: normal;
+
+    > a {
+        display: block;
+        padding: 10px 15px;
+        margin: -10px -15px;
+    }
+}
+
+.panel-title > a.empty {
+    display: block;
+    padding: 19px 15px 18px;
+    margin: -10px -15px;
+}

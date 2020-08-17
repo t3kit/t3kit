@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="ImageTextLink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D3D3D3;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{fill:#F85B30;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#999999;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#58595B;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#939598;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#4BB4DA;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#93D2E9;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#B7E1F0;}
+	.st9{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M0,0h16v16H0V0z"/>
+	<g>
+		<rect x="1.5" y="1.5" class="st1" width="13" height="13"/>
+		<path class="st2" d="M14,2v12H2V2H14 M15,1H1v14h14V1L15,1z"/>
+	</g>
+	<g>
+		<polygon class="st3" points="15,15 1,15 2,16 16,16 		"/>
+	</g>
+	<rect x="3" y="8" class="st4" width="8" height="1"/>
+	<rect x="3" y="10" class="st5" width="10" height="1"/>
+	<g>
+		<rect x="3" y="3" class="st6" width="10" height="4"/>
+	</g>
+	<polygon class="st7" points="7.9,5.3 6.3,7 9.5,7 	"/>
+	<polygon class="st8" points="10.5,4 8,7 13,7 	"/>
+	<ellipse class="st9" cx="4.8" cy="4.7" rx="0.8" ry="0.7"/>
+	<g>
+		<path class="st2" d="M3,11.8h0.5v0.9h0.8V13H3V11.8z"/>
+		<path class="st2" d="M5,11.8h0.5V13H5V11.8z"/>
+		<path class="st2" d="M6.3,11.8h0.5l0.6,0.6v-0.6h0.5V13H7.4l-0.6-0.6V13H6.3V11.8z"/>
+		<path class="st2" d="M8.7,11.8h0.5v0.4l0.5-0.4h0.7l-0.6,0.4l0.6,0.7H9.8l-0.3-0.5l-0.3,0.2V13H8.7V11.8z"/>
+	</g>
+	<g>
+		<polygon class="st3" points="15,15 15,1 16,2 16,16 		"/>
+	</g>
+</g>
+</svg>

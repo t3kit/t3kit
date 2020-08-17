@@ -1,0 +1,171 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Empty" />
+
+<f:section name="Main">
+
+
+
+  <div id="top-header"></div>
+  <header class="header">
+
+    <div class="skip-links">
+      <f:link.typolink parameter="{page.uid}#main-navigation" class="skip-links__item sr-only sr-only-focusable">
+        {data.skipLinks_mainNavigation}
+      </f:link.typolink>
+      <f:link.typolink parameter="{page.uid}#main-content" class="skip-links__item sr-only sr-only-focusable">
+        {data.skipLinks_mainContent}
+      </f:link.typolink>
+    </div>
+
+    <f:if condition="{data.headerTop}">
+      <div class="header-top-wrp">
+        <div class="header-top">
+
+          <div class="header-top__main-navigation-toggle-btn">
+            <button type="button" class="main-navigation__toggle-btn js__main-navigation__toggle-btn">
+              <span>toggle menu</span>
+            </button>
+          </div>
+
+          <f:if condition="{data.headerTopContacts}">
+            <div class="header-top__contact">
+              <div class="header-top__contact-tel">
+                <f:if condition="{data.tel_icon}">
+                  <span class="icons icon-t3-mobile" aria-hidden="true"></span>
+                </f:if>
+                <f:if condition="{data.phone_show_title}">
+                  <span class="header-top__contact-tel-title">{data.phone_title}</span>
+                </f:if>
+                <f:link.typolink class="header-top__contact-tel-link" title="{data.phone_title}"
+                  additionalAttributes="{aria-label: '{data.phone_title}'}" parameter="{data.phone_link}">
+                  </f:link.typolink>
+              </div>
+              <div class="header-top__contact-email">
+                <f:if condition="{data.email_icon}">
+                  <span class="icons icon-t3-mail" aria-hidden="true"></span>
+                </f:if>
+                <f:if condition="{data.email_show_title}">
+                  <span class="header-top__contact-email-title">{data.email_title}</span>
+                </f:if>
+                <f:link.email class="header-top__contact-email-link" title="{data.email_title}"
+                  additionalAttributes="{aria-label: '{data.email_title}'}" email="{data.email_address}" />
+              </div>
+            </div>
+          </f:if>
+
+          <f:if condition="{data.headerTopLangMenu}">
+            <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+
+          </f:if>
+
+          <f:if condition="{data.headerTopSearch}">
+            -----headerTopSearch
+          </f:if>
+
+          <f:if condition="{data.headerTopNavigation}">
+            ------headerTopNavigation
+          </f:if>
+
+        </div>
+      </div>
+    </f:if>
+
+
+    <f:if condition="{data.headerMiddle}">
+      <div class="header-middle-wrp">
+        <div class="header-middle">
+
+        </div>
+      </div>
+    </f:if>
+
+    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation}" />
+
+
+  </header>
+</f:section>
+
+
+
+
+<f:section name="MainNavigation">
+  <f:if condition="{mainNavigation}">
+    <!-- t3kit: Main menu [begin] -->
+
+    <nav id="main-navigation"
+      class="main-navigation js__main-navigation">
+      <div class="main-navigation__items-wrp js__navigation__items-wrp">
+        <ul class="main-navigation__items-list js__main-navigation__items-list ">
+
+          <f:for each="{mainNavigation}" as="navItem">
+            <li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
+              <a href="{navItem.link}" title="{navItem.title}"
+                class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
+
+              <f:if condition="{navItem.children}">
+                <a href="#" class="main-navigation__open-sub-menu-link js__main-navigation__open-sub-menu-link">Open</a>
+                <ul class="main-navigation__sub-item-list">
+                  <f:for each="{navItem.children}" as="childItem">
+                    <li class="main-navigation__sub-item {f:if(condition: childItem.active, then:' _active')} {childItem.data.uid} ">
+                      <a href="{childItem.link}" class="main-navigation__sub-item-link">{childItem.title}</a>
+                    </li>
+                  </f:for>
+                </ul>
+              </f:if>
+
+            </li>
+          </f:for>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- t3kit: Main menu [end] -->
+  </f:if>
+</f:section>
+
+
+
+
+<f:section name="LanguageNavigation">
+
+  <f:if condition="{languageNavigation}">
+    <!-- t3kit: LanguageNavigation [begin] -->
+
+    <div class="header-top__language-menu">
+      <f:for each="{languageNavigation}" as="language">
+        <f:if condition="{language.active}">
+          <a class="header-top__language-menu-btn js__header-top__language-menu-btn" href="#">
+            <span class="main-flag-icon flag-icon flag-icon-{language.flagIdentifier}"></span>
+            <span class="main-flag-language flag-language">{language.navigationTitle}</span>
+          </a>
+        </f:if>
+      </f:for>
+      <div class="header-top__language-menu-box js__header-top__language-menu-box">
+        <f:for each="{languageNavigation}" as="language">
+          <f:if condition="{language.available}">
+            <f:then>
+              <a href="{language.link}" title="{language.title}"
+                class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
+                <span class="flag-icon flag-icon-{language.flagIdentifier}"></span>
+                {language.navigationTitle}
+              </a>
+            </f:then>
+            <f:else>
+              <span title="{language.title}" class="header-top__language-menu-box-item">
+                <span class="flag-icon flag-icon-{language.flagIdentifier}"></span>
+                {language.navigationTitle}
+              </span>
+            </f:else>
+          </f:if>
+        </f:for>
+        <button class="header-top__language-menu-box-close-btn js__header-top__language-menu-box-close-btn"></button>
+      </div>
+    </div>
+
+    <!-- t3kit: LanguageNavigation [end] -->
+  </f:if>
+</f:section>
+
+
+</html>

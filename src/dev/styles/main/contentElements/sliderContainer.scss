@@ -1,0 +1,133 @@
+.slider-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.slider-container_loader {
+    display: block;
+    width: 46px;
+    height: 46px;
+    height: 350px;
+    position: relative;
+    margin: 0 auto;
+
+    &:after {
+        content: " ";
+        display: block;
+        top: 50%;
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 5px solid $main-color;
+        border-color: $main-color transparent $main-color transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.slider-container__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container-effect .slider-container__container {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container__wrapper > .slider-container__slide {
+    background-color: $main-body-bg;
+}
+
+.slider-container__button-next,
+.slider-container__button-prev {
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.slider-container__button-next {
+    right: 0;
+}
+
+.slider-container__button-prev {
+    left: 0;
+}
+
+.slider-container__button-next:before {
+    content: '\e675';
+}
+
+.slider-container__button-prev:before {
+    content: '\e672';
+}
+
+.slider-container__pagination .swiper-pagination-bullet-active {
+    background: $main-color;
+}
+
+.slider-container__pagination {
+    font-size: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.slider-container__pagination > .swiper-pagination-bullet {
+    margin: 0 5px;
+}
+
+// @media (min-width: $screen-sm-min) {
+@include media-breakpoint-up(md) {
+    ._arrows-outside {
+        padding: 0 40px;
+    }
+}
+
+// @media (min-width: $screen-md-min) {
+@include media-breakpoint-up(lg) {
+    .slider-container__button-next,
+    .slider-container__button-prev {
+        display: block;
+        background: none;
+
+        @include icons();
+
+        color: $main-color;
+        -moz-osx-font-smoothing: grayscale;
+        height: auto;
+        font-size: 35px;
+    }
+
+    .slider-container-effect .slider-container__container {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+// @media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(xl) {
+    .slider-container-effect {
+        margin: 0 auto;
+    }
+}
+
+._pagination-inside .slider-container__pagination {
+    bottom: 10px;
+}
+
+._pagination-outside .slider-container__pagination {
+    position: static;
+}

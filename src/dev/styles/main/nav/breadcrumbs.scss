@@ -1,0 +1,50 @@
+// =========================================================
+// === Breadcrumbs =========================================
+// =========================================================
+
+.breadcrumbs {
+    border-bottom: 1px solid $breadcrumbs-border-color;
+    margin-bottom: 30px;
+    background: $breadcrumbs-background;
+}
+
+.breadcrumbs__list {
+    padding: 12px 15px 12px 4px;
+    margin-bottom: 0;
+}
+
+.breadcrumbs__list-item {
+    font-size: 14px;
+    display: inline-block;
+    color: $breadcrumbs-link-color;
+    text-transform: uppercase;
+}
+
+.breadcrumbs__list-item .icon-t3-home {
+    padding-right: 5px;
+}
+
+.breadcrumbs__list-link {
+    color: $breadcrumbs-link-color;
+}
+
+.no-touch .breadcrumbs__list-link:hover {
+    color: $breadcrumbs-link-hover-color;
+}
+
+.breadcrumbs__list-item._active {
+    color: $breadcrumbs-link-active-color;
+}
+
+.breadcrumbs__list-item:before {
+    content: "/";
+    color: $breadcrumbs-link-active-color;
+    padding: 0 8px 0 4px;
+}
+
+.breadcrumbs__list-item:first-child:before {
+    content: "";
+    padding: 0;
+}
+// =========================================================
+// =========================================================

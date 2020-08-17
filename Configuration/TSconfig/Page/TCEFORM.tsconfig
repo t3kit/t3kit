@@ -1,0 +1,48 @@
+# ###################################
+# TCEFORM
+# ==================================
+TCEFORM {
+  pages {
+    layout {
+      removeItems = 1,2,3
+    }
+  }
+  tt_content {
+    layout {
+      removeItems = 1,2,3
+    }
+    header_layout {
+      altLabels {
+        0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.1
+        1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.2
+        2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.3
+        3 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.4
+        4 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.5
+        5 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_layout.6
+      }
+    }
+    frame_class {
+      removeItems = ruler-before,ruler-after,indent,indent-left,indent-right
+    }
+    header_position {
+      removeItems = left
+      addItems.justify = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.justify
+      // altLabels.. = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.left
+      altLabels.center = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.center
+      altLabels.right = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:header_position.right
+
+
+    }
+  }
+}
+
+
+# ###################################
+# override the default values of TCA fields
+# ==================================
+
+# header_layout; 0 = Header1 [H1]; 1 = Header2 [H2]; ...
+TCAdefaults.tt_content.header_layout = 1
+
+# header alignment (left by default)
+// TCAdefaults.tt_content.header_position = justify

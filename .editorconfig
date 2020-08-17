@@ -1,0 +1,51 @@
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
+root = true
+
+[*]
+charset = utf-8
+# Get rid of whitespace to avoid diffs with a bunch of EOL changes
+trim_trailing_whitespace = true
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+
+# TypeScript/JavaScript/JSON files
+[*.{ts,js,json}]
+indent_size = 2
+
+# TypoScript/TSconfig files
+[*.{typoscript,tsconfig}]
+indent_size = 2
+
+# XLF/XML files
+[*.{xlf,xml}]
+indent_style = tab
+
+# YAML-Files
+[*.{yaml,yml}]
+indent_size = 2
+
+# ReST-Files
+[*.rst]
+indent_size = 3
+
+# SQL files
+[*.sql]
+indent_style = tab
+indent_size = 2
+
+# .htaccess
+[{_.htaccess,.htaccess}]
+indent_style = tab
+
+# HTML files
+[*.html]
+indent_size = 2
+
+# CSS/SCSS files
+[*.{css,scss}]
+indent_size = 2

@@ -1,0 +1,10 @@
+# ###########################
+# Divider Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.special.elements.div >
+mod.wizards.newContentElement.wizardItems.separator.elements.div {
+  iconIdentifier = content-special-div
+  title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_divider_title
+  description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:special_divider_description
+}
+mod.wizards.newContentElement.wizardItems.separator.show := addToList(div)

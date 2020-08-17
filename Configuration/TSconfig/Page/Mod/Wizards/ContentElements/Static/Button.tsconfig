@@ -1,0 +1,39 @@
+# ###########################
+# button Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static {
+  elements {
+    button {
+      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.title
+      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.description
+      iconIdentifier = ce-button
+    }
+  }
+  show := addToList(button)
+}
+
+# Flexform selects
+TCEFORM.tt_content.pi_flexform.button.sDEF {
+
+  buttonSize {
+    addItems {
+      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_default
+      btn-lg = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_large
+      btn-sm = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_small
+      btn-xs = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:button.flexform.buttonSize_extraSmall
+    }
+  }
+
+  buttonStyle {
+    addItems {
+      btn-default = Default
+      btn-primary = Primary
+      btn-success = Success
+      btn-info = Info
+      btn-warning = Warning
+      btn-danger = Danger
+      btn-link = Link
+    }
+  }
+
+}

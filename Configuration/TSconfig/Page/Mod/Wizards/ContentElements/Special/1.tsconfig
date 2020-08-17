@@ -1,0 +1,14 @@
+# ###########################
+# List of t3kit content elements
+#
+# Needed for sorting all content elements
+# ===========================
+
+# Special CE
+mod.wizards.newContentElement.wizardItems.special.elements {
+
+  shortcut.tt_content_defValues.CType = shortcut
+  html.tt_content_defValues.CType = html
+  siteHeader.tt_content_defValues.CType = siteHeader
+
+}

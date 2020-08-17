@@ -1,0 +1,9 @@
+# ###########################
+# Image Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static.elements.image {
+  iconIdentifier = content-image
+  title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_imagesOnly_title
+  description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_imagesOnly_description
+}
+mod.wizards.newContentElement.wizardItems.static.show := addToList(image)
