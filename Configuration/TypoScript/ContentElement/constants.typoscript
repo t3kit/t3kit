@@ -1,0 +1,45 @@
+# customcategory=t3kitContentElement=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kitContentElement
+plugin.t3kit.contentElement {
+
+  # customsubcategory=media=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.media
+  media {
+    videoConfig {
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.controls
+      controls = 1
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.loop
+      loop = 0
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.muted
+      muted = 0
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.videoConfig.no-cookie
+      no-cookie = 1
+    }
+    audioConfig {
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.audioConfig.controls
+      controls = 1
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.audioConfig.loop
+      loop = 0
+      # cat=t3kitContentElement/media; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:media.audioConfig.muted
+      muted = 0
+    }
+  }
+
+  # customsubcategory=view=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.view
+  view {
+    # cat=t3kitContentElement/view; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:view.layoutRootPath
+    layoutRootPath =
+    # cat=t3kitContentElement/view; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:view.partialRootPath
+    partialRootPath =
+    # cat=t3kitContentElement/view; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:view.templateRootPath
+    templateRootPath =
+  }
+
+  # customsubcategory=pageLayoutView=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:subcategory.pageLayoutView
+  pageLayoutView {
+    # cat=t3kitContentElement/pageLayoutView; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:view.partialRootPath
+    partialRootPath =
+  }
+
+  # cat=t3kitContentElement; type=int[100-7000]; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:container_width
+  container_width = 1320
+
+}

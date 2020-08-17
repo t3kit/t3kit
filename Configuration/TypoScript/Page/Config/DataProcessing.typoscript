@@ -1,0 +1,42 @@
+page.10.dataProcessing {
+
+  # Side Navigation
+  40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+  40 {
+    as = sideNavigation
+    entryLevel = 1
+    levels = 5
+    expandAll = {$page.nav.sidenav.expandAll}
+    includeSpacer = 1
+    dataProcessing {
+      20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      20 {
+        references.fieldName = nav_image
+        as = nav_image
+      }
+    }
+  }
+
+  # Breadcrumbs
+  50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+  50 {
+    as = breadcrumb
+    includeNotInMenu = 1
+    special = rootline
+    special.range = 0|-1
+    dataProcessing {
+      20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      20 {
+        references.fieldName = nav_image
+        as = nav_image
+      }
+    }
+  }
+
+  # Site Processor
+  110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+  110 {
+    as = site
+  }
+
+}

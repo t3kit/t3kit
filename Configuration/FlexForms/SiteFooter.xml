@@ -1,0 +1,218 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.site_footer.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<show_address>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.show_address</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</show_address>
+
+					<name>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.name</label>
+							<displayCond>FIELD:show_address:!=:0</displayCond>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</name>
+
+					<address>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.address</label>
+							<displayCond>FIELD:show_address:!=:0</displayCond>
+							<config>
+								<type>text</type>
+								<cols>80</cols>
+								<rows>8</rows>
+							</config>
+						</TCEforms>
+					</address>
+
+					<contactPhone_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.contactPhone_title</label>
+							<displayCond>FIELD:show_address:!=:0</displayCond>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</contactPhone_title>
+
+					<contactPhone_link>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.contactPhone_link</label>
+							<displayCond>FIELD:show_address:!=:0</displayCond>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</contactPhone_link>
+
+					<email>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.email</label>
+							<displayCond>FIELD:show_address:!=:0</displayCond>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, telephone</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</email>
+
+				</el>
+			</ROOT>
+		</sDEF>
+
+		<site_footer_columns>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.site_footer_columns.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<column_1_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.column_1_title</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</column_1_title>
+
+					<column_2_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.column_2_title</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</column_2_title>
+
+					<column_3_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.column_3_title</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</column_3_title>
+
+				</el>
+			</ROOT>
+		</site_footer_columns>
+
+		<site_footer_bottom>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.site_footer_bottom.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<copyright>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.copyright</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>150</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</copyright>
+
+				</el>
+			</ROOT>
+		</site_footer_bottom>
+
+		<site_footer_settings>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.site_footer_settings.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<footer_full_width>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.footer_full_width</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</footer_full_width>
+
+					<show_page_icons>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:flexform.show_page_icons</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</show_page_icons>
+
+				</el>
+			</ROOT>
+		</site_footer_settings>
+
+	</sheets>
+</T3DataStructure>

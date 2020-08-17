@@ -4,26 +4,50 @@ name: Code Guidelines
 on: [push, pull_request]
 
 jobs:
-  build:
 
-    name: Lint code
 
-    runs-on: ubuntu-18.04
+  build-composer:
+    name: Run Composer lint
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      - run: npm install eclint
+      - name: Validate composer.json and composer.lock
+        run: composer validate
 
-      - name: EditorConfig check
-        run: node_modules/eclint/bin/eclint.js check "**/*.{sh,yml,yaml,json,xml,xlf,html}"
+      - name: Composer version
+        run: composer --version
 
-      - name: Install t3kit Composer dependencies
-        uses: docker://composer:1.9
+      - name: Install Composer dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run default Composer lint tests
+        run: composer run-script test
+
+
+  build-npm:
+    name: Run npm lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          args: "install"
+          node-version: ${{ matrix.node-version }}
 
-      - name: Run composer lint
-        uses: docker://composer:1.9
-        with:
-          args: "run-script lint"
+      - name: node & npm version
+        run: |
+          node -v
+          npm -v
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Run default npm lint tests
+        run: npm test

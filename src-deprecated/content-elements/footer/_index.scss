@@ -1,0 +1,276 @@
+// =========================================================
+// !!! include media query inside the selector==============
+// =========================================================
+// Example:
+// @use '../../bootstrap/mixins' as mixin;
+// header {
+//   width: 200px;
+
+//   @include mixin.media-breakpoint-up(md) {
+//     width: 100px;
+//   }
+// }
+// =========================================================
+// =========================================================
+
+// use t3kit variables based on bootstrap variables
+// check "theme/src/styles/_variables.scss"
+@use '../../variables' as var;
+// use bootstrap mixins based on t3kit variable overrides
+// check "theme/src/styles/bootstrap/mixins/_index.scss"
+@use '../../bootstrap/mixins' as mixin;
+
+// =================================
+// === Footer  =====================
+// =================================
+.footer {
+  background: var.$gray-900;
+  padding: 140px 0 60px;
+  font-family: var.$font-family-sans-serif;
+  font-weight: var.$font-weight-medium;
+  font-size: 14px;
+  color: var.$white;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+
+  & a {
+    transition: color 0.2s ease;
+    color: var.$white;
+
+    &:hover,
+    &:focus {
+      color: var.$gray-500;
+      text-decoration: none;
+    }
+  }
+
+  @include mixin.media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+
+.footer__header {
+  color: var.$white;
+  font-weight: var.$font-weight-bolder;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// =================================
+// === Footer Middle ===============
+// =================================
+.footer__middle {
+  border-bottom: 1px solid rgba(var.$white, 0.1);
+  margin-bottom: 40px;
+
+  @include mixin.media-breakpoint-up(lg) {
+    margin-bottom: 50px;
+    padding-bottom: 83px;
+  }
+
+  & p {
+    line-height: 30px;
+    margin-bottom: 0;
+
+    @include mixin.media-breakpoint-down(md) {
+      line-height: 50px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__middle-column {
+  @include mixin.media-breakpoint-down(md) {
+    margin-bottom: 67px;
+  }
+
+  @include mixin.media-breakpoint-between(sm, lg) {
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 120px;
+    }
+  }
+}
+
+// === Footer Logo===========
+// =================================
+
+.footer__logo {
+  margin-bottom: 34px;
+}
+
+.footer__logo-image {
+  max-width: 175px;
+}
+
+// === Footer Links===========
+// =================================
+.footer__links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__links-item {
+  line-height: 50px;
+}
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// === *Footer Form ===============
+// =================================
+// .footer__form-input,
+// .footer__form-input:focus {
+//   height: 56px;
+//   outline: none;
+//   border: none;
+//   border-radius: 0;
+//   background-color: rgba(var.$gray-600, 0.5);
+//   color: var.$white;
+//   box-shadow: none;
+//   padding: 17px 19px;
+// }
+
+.footer__form-input {
+  height: 56px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(var.$gray-600, 0.5);
+  color: var.$white;
+  box-shadow: none;
+  padding: 17px 19px;
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder {
+    color: rgba(var.$white, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border: none;
+    background-color: rgba(var.$gray-600, 0.5);
+    color: var.$white;
+    box-shadow: none;
+  }
+}
+
+.footer__btn {
+  border: 4px solid var.$white;
+  font-size: 16px;
+  height: 61px;
+  margin-top: 34px;
+  width: 100%;
+  font-weight: var.$font-weight-bolder;
+  letter-spacing: 0.2px;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  background-color: var.$gray-900;
+
+  &:hover {
+    background-color: var.$gray-800;
+  }
+}
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// === Footer Social Links ===============
+// =================================
+
+.footer__social__item {
+  color: var.$white;
+  margin-left: 50px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// === Footer Bottom ===============
+// =================================
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mixin.media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+
+.footer__bottom-wrap {
+  display: flex;
+
+  @include mixin.media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
+
+  @include mixin.media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+  }
+}
+
+.footer__bottom-links {
+  margin-bottom: 0;
+
+  @include mixin.media-breakpoint-down(sm) {
+    width: 100%;
+  }
+}
+
+.footer__bottom-copyright {
+  line-height: unset;
+  margin-bottom: 0;
+
+  @include mixin.media-breakpoint-down(sm) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__bottom-item {
+  margin-left: 20px;
+  position: relative;
+  line-height: unset;
+  display: inline-block;
+
+  &:after {
+    content: "";
+    background-color: #fff;
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    left: -11px;
+  }
+
+  @include mixin.media-breakpoint-down(sm) {
+    margin: 0 10px 10px;
+
+    &:first-child:after {
+      display: none;
+    }
+  }
+}
+
+// .no-touch .footer a:hover {
+//   color: var.$gray-500;
+// }
+
+// .no-touch .footer-bottom .social-icons__item {
+//   &:hover {
+//     color: var.$gray-500;
+
+//     & > .icons:after {
+//       border-color: fade(var.$gray-500, 50%);
+//     }
+//   }
+// }
+
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------

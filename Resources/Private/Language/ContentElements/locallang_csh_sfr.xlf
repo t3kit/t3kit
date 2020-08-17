@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Context help for sys_file_reference field -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_sfr.xlf" date="2019-04-20UTC12:53:470" product-name="context_help">
+		<header/>
+		<body>
+
+			<trans-unit id="picture_width.description" resname="picture_width.description">
+				<source>Relative picture width inside content element</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

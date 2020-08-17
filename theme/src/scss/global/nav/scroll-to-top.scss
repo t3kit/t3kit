@@ -1,0 +1,21 @@
+.scroll-to-top {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -3.4rem;
+}
+
+.scroll-to-top__link {
+  margin-right: 3rem;
+  padding: 0.6rem;
+  background-color: var(--t3-scroll-to-top-bg);
+  color: var(--t3-scroll-to-top-color);
+}
+
+.scroll-to-top__link:hover {
+  color: var(--t3-scroll-to-top-hover-color);
+}
+
+// .scroll-to-top__icon-wrp {}
+// .scroll-to-top__icon {}
+// .scroll-to-top__text {}

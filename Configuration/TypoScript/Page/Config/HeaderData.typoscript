@@ -1,0 +1,38 @@
+[site("configuration")["theme"] == "t3kit"]
+page.headerData {
+  # Google Fonts optimization
+  // https://csswizardry.com/2020/05/the-fastest-google-fonts/
+  150 = TEXT
+  150.value (
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;900&display=swap"
+      as="style" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;900&display=swap"
+      media="print"
+      onload="this.media='all'" />
+  )
+}
+[global]
+
+# Favicons ==> http://realfavicongenerator.net/
+# add imege(svg) to theme/src/favicon/ with name [favicon.svg]
+# npm run favicons
+####################################
+page.headerData {
+  180 = FLUIDTEMPLATE
+  180 {
+    file = TEXT
+    file.stdWrap {
+      data = site:theme
+      wrap = EXT: | /Resources/Public/assets/Favicons/Favicons.html
+    }
+    dataProcessing {
+      110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+      110 {
+        as = site
+      }
+    }
+  }
+}

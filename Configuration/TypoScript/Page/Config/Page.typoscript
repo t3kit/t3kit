@@ -1,0 +1,78 @@
+# PAGE
+page = PAGE
+page {
+  typeNum = 0
+  10 = FLUIDTEMPLATE
+  10 {
+    ### start ### this config borrowed from bootstrap_package (https://github.com/benjaminkott/bootstrap_package)
+    templateName = TEXT
+    templateName {
+      cObject = TEXT
+      cObject {
+        data = pagelayout
+        required = 1
+        case = uppercamelcase
+        split {
+          token = pagets__
+          cObjNum = 1
+          1.current = 1
+        }
+      }
+      ifEmpty = Default
+    }
+    ### end ###
+    templateRootPaths {
+      0 = EXT:t3kit/Resources/Private/Templates/Page
+      200 = {$page.fluidtemplate.templateRootPath}
+    }
+    partialRootPaths {
+      0 = EXT:t3kit/Resources/Private/Partials/Page
+      20 = EXT:t3kit/Resources/Public/assets/production
+      200 = {$page.fluidtemplate.partialRootPath}
+    }
+    layoutRootPaths {
+      0 = EXT:t3kit/Resources/Private/Layouts/Page
+      200 = {$page.fluidtemplate.layoutRootPath}
+    }
+    variables {
+      backend_layout = TEXT
+      backend_layout {
+        data = pagelayout
+        replacement.10 {
+          search = pagets__
+          replace =
+        }
+        ifEmpty = default
+      }
+      pageTitle = TEXT
+      pageTitle.data = page:title
+      theme = TEXT
+      theme.data = site:theme
+      application_context = TEXT
+      application_context.value = production
+    }
+    settings {
+      nav {
+        breadcrumb {
+          showBreadcrumbMenu = {$page.nav.breadcrumb.showBreadcrumbMenu}
+          icon = {$page.nav.breadcrumb.icon}
+          image = {$page.nav.breadcrumb.image}
+        }
+        sidenav {
+          icon = {$page.nav.sidenav.icon}
+          image = {$page.nav.sidenav.image}
+        }
+      }
+    }
+
+  }
+}
+
+# If [Development]
+# TYPO3 Development context and every its subcontext
+[applicationContext matches "#^Development#"]
+page.10.partialRootPaths {
+  20 = EXT:t3kit/Resources/Public/assets/development
+}
+page.10.variables.application_context.value = development
+[end]

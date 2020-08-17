@@ -1,10 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:if condition="{date}">
-  <p class="{positionClass}">
-    <time datetime="{date -> f:format.date(format: '%Y-%m-%d')}">
-      <f:format.date format="%B %e, %Y">{date}</f:format.date>
-    </time>
-  </p>
+
+<f:if condition="{data.header_layout} != 100">
+  <f:if condition="{data.date}">
+      <f:render partial="Header/Render/Date" arguments="{
+        date: data.date,
+        position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
+  </f:if>
 </f:if>
 
 </html>

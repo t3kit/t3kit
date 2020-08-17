@@ -1,17 +1,22 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:switch expression="{file.type}">
-  <f:case value="3">
-    <f:render partial="Media/Type/Audio"
-      arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
-  </f:case>
-  <f:case value="4">
-    <f:render partial="Media/Type/Video"
-      arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
-  </f:case>
-  <f:defaultCase>
-    <f:render partial="Media/Type/Image"
-      arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
-  </f:defaultCase>
-</f:switch>
+
+<f:for each="{files}" as="file">
+
+  <f:switch expression="{file.type}">
+    <f:case value="3">
+      <f:render partial="Media/Type/Audio" arguments="{data: data, file:file}"/>
+    </f:case>
+    <f:case value="4">
+      <f:render partial="Media/Type/Video" arguments="{data: data, file:file}"/>
+    </f:case>
+    <f:defaultCase>
+      <f:render partial="Media/Type/Picture" arguments="{data: data, file:file, height:height, width:width}"/>
+    </f:defaultCase>
+  </f:switch>
+
+</f:for>
 
 </html>
+
+
+

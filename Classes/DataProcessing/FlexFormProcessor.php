@@ -1,4 +1,5 @@
 <?php
+
 namespace T3k\t3kit\DataProcessing;
 
 /*
@@ -12,11 +13,6 @@ namespace T3k\t3kit\DataProcessing;
  * LICENSE.txt file that was distributed with this source code.
  *
  * The TYPO3 project - inspiring people to share!
- */
-
- /*
- * The t3kit project
- * https://github.com/t3kit
  */
 
 use TYPO3\CMS\Core\Service\FlexFormService;

@@ -1,48 +1,58 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
+
 <f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Bullets.html [begin] -->
 
   <f:if condition="{bullets}">
 
-    <f:switch expression="{data.bullets_type}">
+    <div class="ce-bullets__wrp">
+      <div class="ce-bullets">
 
-      <f:case value="0">
-        <ul class="ce-bullets">
-          <f:for each="{bullets}" as="bullet">
-            <li>{bullet}</li>
-          </f:for>
-        </ul>
-      </f:case>
+        <f:switch expression="{data.bullets_type}">
 
-      <f:case value="1">
-        <ol class="ce-bullets">
-          <f:for each="{bullets}" as="bullet">
-            <li>{bullet}</li>
-          </f:for>
-        </ol>
-      </f:case>
+          <f:case value="0">
+            <ul class="ce-bullets__unlist">
+              <f:for each="{bullets}" as="bullet">
+                <li class="ce-bullets__unlist-item">{bullet}</li>
+              </f:for>
+            </ul>
+          </f:case>
 
-      <f:case value="2">
-        <dl class="ce-bullets">
-          <f:for each="{bullets}" as="definitionListItem">
-            <f:for each="{definitionListItem}" as="termDescription" iteration="termDescriptionIterator">
-              <f:if condition="{termDescriptionIterator.isFirst}">
-                <f:then>
-                  <dt>{termDescription}</dt>
-                </f:then>
-                <f:else>
-                  <dd>{termDescription}</dd>
-                </f:else>
-              </f:if>
-            </f:for>
-          </f:for>
-        </dl>
-      </f:case>
+          <f:case value="1">
+            <ol class="ce-bullets__list">
+              <f:for each="{bullets}" as="bullet">
+                <li class="ce-bullets__list-item">{bullet}</li>
+              </f:for>
+            </ol>
+          </f:case>
 
-    </f:switch>
+          <f:case value="2">
+            <dl class="ce-bullets__dlist">
+              <f:for each="{bullets}" as="definitionListItem">
+                <f:for each="{definitionListItem}" as="termDescription" iteration="termDescriptionIterator">
+                  <f:if condition="{termDescriptionIterator.isFirst}">
+                    <f:then>
+                      <dt class="ce-bullets__dlist-term">{termDescription}</dt>
+                    </f:then>
+                    <f:else>
+                      <dd class="ce-bullets__dlist-description">{termDescription}</dd>
+                    </f:else>
+                  </f:if>
+                </f:for>
+              </f:for>
+            </dl>
+          </f:case>
+
+        </f:switch>
+
+      </div>
+    </div>
 
   </f:if>
 
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Bullets.html [end] -->
 </f:section>
 
 </html>

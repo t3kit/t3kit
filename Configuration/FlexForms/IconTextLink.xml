@@ -1,0 +1,48 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<stretched_link>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextLink.xlf:flexform.stretched_link</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</stretched_link>
+
+					<internal_margins>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextLink.xlf:flexform.internal_margins</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</internal_margins>
+
+					<inverted_color>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextLink.xlf:flexform.inverted_color</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</inverted_color>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

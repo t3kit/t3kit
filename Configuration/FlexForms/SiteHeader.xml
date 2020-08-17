@@ -1,0 +1,334 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<header_top>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<renderType>checkboxLabeledToggle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+										<numIndex index="labelUnchecked">Disabled</numIndex>
+										<numIndex index="labelChecked">Enabled</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_top>
+
+					<header_top_contacts>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.contacts</label>
+							<onChange>reload</onChange>
+							<displayCond>FIELD:header_top:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_top_contacts>
+
+					<header_top_meta_menu>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.meta_menu</label>
+							<displayCond>FIELD:header_top:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_top_meta_menu>
+
+					<header_top_search>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.search</label>
+							<displayCond>FIELD:header_top:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_top_search>
+
+					<header_top_lang_menu>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.lang_menu</label>
+							<displayCond>FIELD:header_top:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_top_lang_menu>
+
+					<header_top_contacts_phone_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.contacts.phone_title</label>
+							<displayCond type="array">
+								<AND type="array">
+									<numIndex index="0">FIELD:header_top:!=:0</numIndex>
+									<numIndex index="1">FIELD:header_top_contacts:!=:0</numIndex>
+								</AND>
+							</displayCond>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</header_top_contacts_phone_title>
+
+					<header_top_contacts_phone>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.contacts.phone</label>
+							<displayCond type="array">
+								<AND type="array">
+									<numIndex index="0">FIELD:header_top:!=:0</numIndex>
+									<numIndex index="1">FIELD:header_top_contacts:!=:0</numIndex>
+								</AND>
+							</displayCond>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</header_top_contacts_phone>
+
+					<header_top_contacts_email>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.contacts.email</label>
+							<displayCond type="array">
+								<AND type="array">
+									<numIndex index="0">FIELD:header_top:!=:0</numIndex>
+									<numIndex index="1">FIELD:header_top_contacts:!=:0</numIndex>
+								</AND>
+							</displayCond>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, telephone</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</header_top_contacts_email>
+
+					<header_top_contacts_icons>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_top.contacts.icons</label>
+							<displayCond type="array">
+								<AND type="array">
+									<numIndex index="0">FIELD:header_top:!=:0</numIndex>
+									<numIndex index="1">FIELD:header_top_contacts:!=:0</numIndex>
+								</AND>
+							</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_top_contacts_icons>
+
+				</el>
+			</ROOT>
+		</sDEF>
+
+		<header_middle_tab>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_middle.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<header_middle>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_middle</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<renderType>checkboxLabeledToggle</renderType>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0"></numIndex>
+										<numIndex index="1"></numIndex>
+										<numIndex index="labelUnchecked">Disabled</numIndex>
+										<numIndex index="labelChecked">Enabled</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_middle>
+
+					<header_middle_logo>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_middle.logo</label>
+							<displayCond>FIELD:header_middle:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_middle_logo>
+
+					<header_middle_meta_menu>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_middle.meta_menu</label>
+							<displayCond>FIELD:header_middle:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_middle_meta_menu>
+
+					<header_middle_search>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_middle.search</label>
+							<displayCond>FIELD:header_middle:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_middle_search>
+
+					<header_middle_lang_menu>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.header_middle.lang_menu</label>
+							<displayCond>FIELD:header_middle:!=:0</displayCond>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_middle_lang_menu>
+
+				</el>
+			</ROOT>
+		</header_middle_tab>
+
+		<main_nav_tab>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.sheet_title</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<main_nav_logo>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.logo</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_logo>
+
+					<main_nav_search>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.search</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_search>
+
+					<main_nav_lang_menu>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.lang_menu</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_lang_menu>
+
+					<main_nav_dropdown>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.dropdown</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_dropdown>
+
+					<main_nav_dropdown_lv2>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.dropdown_lv2</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_dropdown_lv2>
+
+					<main_nav_dropdown_lv3>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.dropdown_lv3</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</main_nav_dropdown_lv3>
+
+				</el>
+			</ROOT>
+		</main_nav_tab>
+
+	</sheets>
+</T3DataStructure>

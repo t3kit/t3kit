@@ -1,0 +1,8 @@
+# ###################################
+# RTE
+# ==================================
+// RTE.default.preset = default
+RTE.default.preset = t3kit_default
+
+// the title is set based on the RTE.classesAnchor configuration and cannot be modified by the author
+RTE.buttons.link.properties.title.readOnly = 1

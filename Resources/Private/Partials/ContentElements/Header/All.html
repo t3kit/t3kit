@@ -1,20 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:if condition="{data.header_layout} != 100">
   <f:if condition="{data.header} || {data.subheader} || {data.date}">
-    <header>
-      <f:render partial="Header/Header" arguments="{
+      <f:render partial="Header/Render/Header" arguments="{
         header: data.header,
         layout: data.header_layout,
-        positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
+        style: data.header_style,
+        position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
         link: data.header_link}" />
-      <f:render partial="Header/SubHeader" arguments="{
+      <f:render partial="Header/Render/SubHeader" arguments="{
         subheader: data.subheader,
         layout: data.header_layout,
-        positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}'}" />
-      <f:render partial="Header/Date" arguments="{
+        subheader_style: data.subheader_style,
+        position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
+      <f:render partial="Header/Render/Date" arguments="{
         date: data.date,
-        positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}'}" />
-    </header>
+        position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
   </f:if>
 </f:if>
 

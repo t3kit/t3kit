@@ -1,0 +1,37 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="picture-partial">
+  <f:if condition="{file.link}">
+    <f:then>
+      <f:link.typolink class="picture-partial__link" parameter="{file.link}" >
+        <f:render partial="Media/Render/Picture" arguments="{data: data, image:file, height:height, width:width}" />
+      </f:link.typolink>
+    </f:then>
+
+    <f:else>
+      <f:if condition="{data.image_zoom}">
+
+        <f:then>
+          <div class="picture-partial__zoom">
+            <a href="{f:uri.image(image: file, maxWidth: '{data.image_zoom_width}')}"
+              data-caption="{file.properties.description}"
+              rel="picture-partial__zoom-{data.uid}"
+              class="picture-partial__zoom-link">
+              <f:render partial="Media/Render/Picture" arguments="{data: data, image:file, height:height, width:width}" />
+            </a>
+          </div>
+        </f:then>
+
+        <f:else>
+          <div class="picture-partial__simple">
+            <f:render partial="Media/Render/Picture" arguments="{data: data, image:file, height:height, width:width}" />
+          </div>
+        </f:else>
+
+      </f:if>
+    </f:else>
+
+  </f:if>
+</div>
+
+</html>

@@ -1,68 +1,76 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
+
 <f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Table.html [begin] -->
 
   <f:if condition="{table}">
 
-    <f:comment><!-- use tableClass, an array of classes to build into one string--></f:comment>
-    <f:if condition="{tableClass}">
-      <f:for each="{tableClass}" as="class" iteration="i">
-        <f:variable name="table_classes">{table_classes} {class}</f:variable>
-      </f:for>
-    </f:if>
+    <div class="ce-table__wrp">
 
-    <table class="ce-table table{f:if(condition: table_classes, then: '{table_classes}')}">
-      <f:if condition="{data.table_caption}">
-        <caption>{data.table_caption}</caption>
+      <f:comment><!-- use tableClass, an array of classes to build into one string--></f:comment>
+      <f:if condition="{tableClass}">
+        <f:for each="{tableClass}" as="class" iteration="i">
+          <f:variable name="table_classes">{table_classes} {class}</f:variable>
+        </f:for>
       </f:if>
-      <f:for each="{table}" as="row" iteration="rowIterator">
-        <f:if condition="{rowIterator.isFirst}">
-          <f:then>
-            <f:if condition="{data.table_header_position} == 1">
-              <f:then>
-                <thead>
-              </f:then>
-              <f:else>
-                <tbody>
-              </f:else>
-            </f:if>
-          </f:then>
-          <f:else>
-            <f:if condition="{rowIterator.isLast}">
-              <f:if condition="{data.table_tfoot}">
-                </tbody>
-                <tfoot>
-              </f:if>
-            </f:if>
-          </f:else>
+
+      <table class="ce-table table {f:if(condition: table_classes, then: '{table_classes}')}">
+        <f:if condition="{data.table_caption}">
+          <caption>{data.table_caption}</caption>
         </f:if>
-        <tr>
-          <f:for each="{row}" as="cell" iteration="columnIterator">
-            <f:render section="Columns" arguments="{_all}" />
-          </f:for>
-        </tr>
-        <f:if condition="{rowIterator.isFirst}">
-          <f:then>
-            <f:if condition="{data.table_header_position} == 1">
-              </thead>
-              <tbody>
-            </f:if>
-          </f:then>
-          <f:else>
-            <f:if condition="{rowIterator.isLast}">
-              <f:if condition="{data.table_tfoot}">
+        <f:for each="{table}" as="row" iteration="rowIterator">
+          <f:if condition="{rowIterator.isFirst}">
+            <f:then>
+              <f:if condition="{data.table_header_position} == 1">
                 <f:then>
-                  </tfoot>
+                  <thead>
                 </f:then>
                 <f:else>
-                  </tbody>
+                  <tbody>
                 </f:else>
               </f:if>
-            </f:if>
-          </f:else>
-        </f:if>
-      </f:for>
-    </table>
+            </f:then>
+            <f:else>
+              <f:if condition="{rowIterator.isLast}">
+                <f:if condition="{data.table_tfoot}">
+                  </tbody>
+                  <tfoot>
+                </f:if>
+              </f:if>
+            </f:else>
+          </f:if>
+          <tr>
+            <f:for each="{row}" as="cell" iteration="columnIterator">
+              <f:render section="Columns" arguments="{_all}" />
+            </f:for>
+          </tr>
+          <f:if condition="{rowIterator.isFirst}">
+            <f:then>
+              <f:if condition="{data.table_header_position} == 1">
+                </thead>
+                <tbody>
+              </f:if>
+            </f:then>
+            <f:else>
+              <f:if condition="{rowIterator.isLast}">
+                <f:if condition="{data.table_tfoot}">
+                  <f:then>
+                    </tfoot>
+                  </f:then>
+                  <f:else>
+                    </tbody>
+                  </f:else>
+                </f:if>
+              </f:if>
+            </f:else>
+          </f:if>
+        </f:for>
+      </table>
+
+    </div>
+
   </f:if>
 
 </f:section>
@@ -114,9 +122,9 @@
     </f:else>
   </f:if>
 
-  <f:if condition="{cell}">
+  <f:if condition="{cell} != ''">
     <f:then>
-      <f:format.nl2br>{cell}</f:format.nl2br>
+      {cell -> f:format.nl2br()}
     </f:then>
     <f:else>
       &nbsp;
@@ -167,8 +175,7 @@
     </f:else>
   </f:if>
 
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Table.html [end] -->
 </f:section>
-
-
 
 </html>

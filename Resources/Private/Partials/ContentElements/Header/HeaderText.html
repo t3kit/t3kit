@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{data.header_layout} != 100">
+  <f:if condition="{data.header_text}">
+      <f:render partial="Header/Render/HeaderText" arguments="{
+        header_text: data.header_text,
+        header_layout: data.header_layout,
+        header_style: data.header_style,
+        header_position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
+        header_link: data.header_link}" />
+  </f:if>
+</f:if>
+
+</html>

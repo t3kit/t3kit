@@ -5,40 +5,58 @@
 	<sheets>
 		<sDEF>
 			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
-				</TCEforms>
 				<type>array</type>
 				<el>
 
-					<disableWholeAreaLink>
+					<stretched_link>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.disableWholeAreaLink</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:flexform.stretched_link</label>
 							<config>
 								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
 							</config>
 						</TCEforms>
-					</disableWholeAreaLink>
+					</stretched_link>
 
-					<linkAsBtn>
+					<internal_margins>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.linkAsBtn</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:flexform.internal_margins</label>
 							<config>
 								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
 							</config>
 						</TCEforms>
-					</linkAsBtn>
+					</internal_margins>
 
-					<hoverEffect>
+					<inverted_color>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:flexform.inverted_color</label>
 							<config>
-								<type>select</type>
-								<items>
-								</items>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
 							</config>
 						</TCEforms>
-					</hoverEffect>
+					</inverted_color>
+
+					<image_height>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:flexform.image_height</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+								<max>4</max>
+								<eval>int</eval>
+								<range>
+									<upper>1999</upper>
+									<lower>0</lower>
+								</range>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</image_height>
 
 				</el>
 			</ROOT>

@@ -1,0 +1,10 @@
+# ###########################
+# Video Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static.elements.video {
+  iconIdentifier = ce-video
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_video.xlf:video.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_video.xlf:video.description
+  tt_content_defValues.CType = video
+}
+mod.wizards.newContentElement.wizardItems.static.show := addToList(video)

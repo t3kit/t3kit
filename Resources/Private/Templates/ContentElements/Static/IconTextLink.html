@@ -1,0 +1,67 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Header" />
+
+<f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextLink.html [begin] -->
+
+  <f:if condition="{flexform.stretched_link}">
+    <f:variable name="stretched_link" value="1" />
+  </f:if>
+
+  <div class="ce-icon-text-link__wrp
+    {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
+    {f:if(condition: flexform.inverted_color, then: ' inverted-color')}">
+
+    <div class="ce-icon-text-link">
+
+      <div class="ce-icon-text-link__icon-header
+      {f:if(condition: '{data.header_position} == right' , then: ' ce-icon-text-link--header-right')}
+      {f:if(condition: '{data.header_position} == center' , then: ' ce-icon-text-link--header-center')}">
+        <f:if condition="{data.icon}">
+          <div class="ce-icon-text-link__icon-wrp">
+            <t3kit:render.svg src="{data.icon}" class="t3icon ce-icon-text-link__icon {data.icon_class}" />
+          </div>
+        </f:if>
+
+        <f:if condition="{data.header}">
+          <div class="ce-icon-text-link__header">
+            <f:render partial="Header/Header" arguments="{_all}" />
+          </div>
+        </f:if>
+      </div>
+
+      <f:if condition="{data.subheader}">
+        <div class="ce-icon-text-link__subheader">
+          <f:render partial="Header/SubHeader" arguments="{_all}" />
+        </div>
+      </f:if>
+
+      <f:if condition="{data.bodytext}">
+        <div class="ce-icon-text-link__bodytext">
+          <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
+        </div>
+      </f:if>
+
+      <f:if condition="{data.link}">
+        <div class="ce-icon-text-link__link">
+          <f:if condition="{data.link_as_button}">
+            <f:then>
+              <f:render partial="Link/ButtonLink" arguments="{_all}" />
+            </f:then>
+            <f:else>
+              <f:render partial="Link/Link" arguments="{_all}" />
+            </f:else>
+          </f:if>
+        </div>
+      </f:if>
+
+    </div>
+  </div>
+
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/IconTextLink.html [end] -->
+</f:section>
+
+</html>

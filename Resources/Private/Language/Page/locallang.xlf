@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Beck-End Pages translations -->
+<!-- Configuration/TCA/Overrides -->
+<!-- 10_pages.php -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/Page/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="nav_image" resname="nav_image">
+				<source>Page image</source>
+			</trans-unit>
+			<trans-unit id="nav_icon_source" resname="nav_icon_source">
+				<source>Icon source</source>
+			</trans-unit>
+			<trans-unit id="nav_icon_class" resname="nav_icon_class">
+				<source>Icon appearance</source>
+			</trans-unit>
+			<trans-unit id="nav_icon" resname="nav_icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="nav_icon.palette" resname="nav_icon.palette">
+				<source>Page icon</source>
+			</trans-unit>
+			<trans-unit id="hide_subpages_in_menu" resname="hide_subpages_in_menu">
+				<source>Hide child pages in the dropdown menu</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

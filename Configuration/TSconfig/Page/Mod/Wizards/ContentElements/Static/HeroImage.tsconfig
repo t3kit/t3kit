@@ -1,46 +1,39 @@
 # ###########################
 # heroImage Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    heroImage {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.description
-      iconIdentifier = ce-heroImage
-    }
-  }
-  show := addToList(heroImage)
+mod.wizards.newContentElement.wizardItems.static.elements.heroImage {
+  iconIdentifier = ce-heroImage
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.description
+  tt_content_defValues.CType = heroImage
 }
+mod.wizards.newContentElement.wizardItems.static.show := addToList(heroImage)
+
 
 TCEFORM.tt_content.pi_flexform.heroImage.sDEF {
 
-  horizontalAlignment {
+  overlay {
     addItems {
-      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment_left
-      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment_center
-      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment_right
+      disable = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_disable
+      primary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_primary
+      secondary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_secondary
+      dark = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_dark
+      light = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay_light
     }
   }
-
-
-  verticalAlignment {
+  caption_alignment {
     addItems {
-      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment_top
-      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment_middle
-      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment_bottom
+      left = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment.left
+      center = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment.center
+      right = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment.right
     }
   }
-
-
-  animationStyle {
+  background {
     addItems {
-      0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_disable
-      1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_1
-      2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_2
-      3 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_3
-      4 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_4
-      5 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle_5
+      disable = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.background_disable
+      primary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.background_primary
+      secondary = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.background_secondary
+      dark = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.background_dark
     }
   }
-
 }

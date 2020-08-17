@@ -1,0 +1,107 @@
+{
+  "name": "t3kit",
+  "version": "10.0.0",
+  "description": "Base theme for t3kit project. A TYPO3 website starterkit.",
+  "license": "GPL-2.0",
+  "authors": "t3kit Community",
+  "repository": "t3kit/t3kit",
+  "scripts": {
+    "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
+    "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
+    "lint-css": "stylelint 'theme/src/styles/**/*.{css,scss}' --cache --cache-location .cache/.stylelintcache",
+    "lint-editorconfig": "eclint check '**/*.{sh,yml,yaml,json,xml,xlf,html}' '!Resources/Public/**/*' '!theme/.tmp/**/*'",
+    "lint-fix": "stylelint 'theme/src/styles/**/*.{css,scss}' --fix",
+    "test": "npm-run-all --parallel lint-config lint-editorconfig",
+    "composer": "composer test",
+    "githook": "npm-run-all --parallel test composer",
+    "favicons": "gulp -f theme/config/gulpfile.js favicons",
+    "filetype": "gulp -f theme/config/gulpfile.js filetype",
+    "icons": "gulp -f theme/config/gulpfile.js icons",
+    "dev": "gulp -f theme/config/gulpfile.js build",
+    "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
+    "build": "npm-run-all --parallel dev prod",
+    "start": "gulp -f theme/config/gulpfile.js"
+  },
+  "dependencies": {
+    "bootstrap": "github:twbs/bootstrap#c9cd3e4",
+    "bootstrap-icons": "1.0.0-alpha4",
+    "file-icon-vectors": "1.0.0",
+    "simplelightbox": "github:dmh/simplelightbox#619a4d2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-legacy": "^2.0.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "app-root-path": "^3.0.0",
+    "autoprefixer": "^9.8.0",
+    "boxen": "^4.2.0",
+    "browser-sync": "^2.26.7",
+    "browserslist": "^4.12.0",
+    "chalk": "^4.0.0",
+    "cpy": "8.1.0",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "eclint": "^2.8.1",
+    "fibers": "^5.0.0",
+    "fs-extra": "^9.0.0",
+    "git-rev-sync": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-brotli": "^2.0.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-real-favicon": "^0.3.2",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "husky": "^4.2.5",
+    "js-yaml": "^3.14.0",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.10.9",
+    "rollup-plugin-filesize": "^9.0.0",
+    "rollup-plugin-sizes": "^1.0.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "sass": "^1.26.5",
+    "semver": "^7.3.2",
+    "snazzy": "^8.0.0",
+    "standard": "^14.3.4",
+    "stylelint": "^13.5.0",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=12.16.0"
+  },
+  "browserslist": [
+    "> 1.6% and last 2 versions",
+    "IOS >= 12 and > 0.5%"
+  ],
+  "standard": {
+    "ignore": [
+      "dist/",
+      "Resources/Public/"
+    ]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard-scss",
+    "rules": {
+      "selector-pseudo-element-colon-notation": "single",
+      "no-descending-specificity": null
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run githook"
+    }
+  },
+  "t3kit": {
+    "theme-name": "t3kit",
+    "typo3-site-config-dir": "t3kit",
+    "favicon-master-picture": "favicon.svg",
+    "proxy-host": "t3kit10.t3.localhost"
+  }
+}

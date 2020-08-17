@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Context help for tt_content field -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_ttc.xlf" date="2019-04-20UTC12:53:470" product-name="context_help">
+		<header/>
+		<body>
+
+			<trans-unit id="header_position.description" resname="header_position.description">
+				<source>
+					&lt;strong&gt;Default-Left&lt;/strong&gt; - Aligns the text to the left&lt;br&gt;
+					&lt;strong&gt;Center&lt;/strong&gt; - Centers the text&lt;br&gt;
+					&lt;strong&gt;Right&lt;/strong&gt; - Aligns the text to the right]&lt;br&gt;
+				</source>
+			</trans-unit>
+
+			<trans-unit id="section_container_width.description" resname="section_container_width.description">
+				<source>
+					&lt;strong&gt;Container&lt;/strong&gt; - The image element inside the section with a specific width.
+					In t3kit it is up to 1400px. Useful to render images not more than 1400px width in big screens for better performance. &lt;br&gt;
+					&lt;strong&gt;Container-fluid&lt;/strong&gt; - The image element inside the section with a fluid/full-screen width. 100% screen width in any device.
+					Lower performance, but with the ability to design site with a full-screen layout.&lt;br&gt;
+				</source>
+			</trans-unit>
+
+			<trans-unit id="accessible_link_label.description" resname="accessible_link_label.description">
+				<source>
+					If the link title is added at the end of repeated blocks of text, for example &lt;strong&gt;“Read more”&lt;/strong&gt; links at the end of short teasers for blog posts, then you can provide more descriptive link text specifically for screen reader users using &lt;strong&gt;Accessible link label&lt;/strong&gt;. &lt;br&gt;
+					It will be visually hidden for a normal view.
+				</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

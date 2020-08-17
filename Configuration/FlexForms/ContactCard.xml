@@ -1,0 +1,174 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<name>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.name</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</name>
+
+					<job_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.job_title</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</job_title>
+
+					<icons>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.icons</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</icons>
+
+					<contactPhone_title_1>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_title_1</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</contactPhone_title_1>
+
+					<contactPhone_link_1>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_link_1</label>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</contactPhone_link_1>
+
+					<contactPhone_title_2>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_title_2</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</contactPhone_title_2>
+
+					<contactPhone_link_2>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_link_2</label>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</contactPhone_link_2>
+
+					<mobilePhone_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.mobilePhone_title</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</mobilePhone_title>
+
+					<mobilePhone_link>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.mobilePhone_link</label>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</mobilePhone_link>
+
+					<email>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.email</label>
+							<config>
+								<type>input</type>
+								<renderType>inputLink</renderType>
+								<fieldControl>
+									<linkPopup>
+										<options>
+											<blindLinkFields>params, target, class, title</blindLinkFields>
+											<blindLinkOptions>page, file, folder, url, telephone</blindLinkOptions>
+										</options>
+									</linkPopup>
+								</fieldControl>
+								<size>30</size>
+								<max>255</max>
+								<eval>trim</eval>
+								<softref>typolink</softref>
+							</config>
+						</TCEforms>
+					</email>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

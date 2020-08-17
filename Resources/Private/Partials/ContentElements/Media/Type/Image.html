@@ -1,31 +1,37 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<figure class="image">
+
+<div class="image-partial">
   <f:if condition="{file.link}">
     <f:then>
-      <f:link.typolink parameter="{file.link}" title="{file.title}">
-        <f:render partial="Media/Rendering/Image"
-          arguments="{file: file, dimensions: dimensions, settings: settings}" />
+      <f:link.typolink class="image-partial__link" parameter="{file.link}" >
+        <f:render partial="Media/Render/Image" arguments="{data: data, image:file}" />
       </f:link.typolink>
     </f:then>
+
     <f:else>
       <f:if condition="{data.image_zoom}">
+
         <f:then>
-          <f:comment><!-- TODO: fix "clickEnlarge", FSC have a clickEnlarge viewhelper here--></f:comment>
-            <f:render partial="Media/Rendering/Image"
-              arguments="{file: file, dimensions: dimensions, settings: settings}" />
+          <div class="image-partial__zoom">
+            <a href="{f:uri.image(image: file, maxWidth: '{data.image_zoom_width}')}"
+              data-caption="{file.properties.description}"
+              rel="image-partial__zoom-{data.uid}"
+              class="image-partial__zoom-link">
+              <f:render partial="Media/Render/Image" arguments="{data: data, image:file}" />
+            </a>
+          </div>
         </f:then>
+
         <f:else>
-          <f:render partial="Media/Rendering/Image"
-            arguments="{file: file, dimensions: dimensions, settings: settings}" />
+          <div class="image-partial__simple">
+            <f:render partial="Media/Render/Image" arguments="{data: data, image:file}" />
+          </div>
         </f:else>
+
       </f:if>
     </f:else>
+
   </f:if>
-  <f:if condition="{file.description}">
-    <figcaption class="image-caption">
-      {file.description}
-    </figcaption>
-  </f:if>
-</figure>
+</div>
 
 </html>

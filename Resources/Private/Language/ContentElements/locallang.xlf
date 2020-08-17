@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Beck-End Content elements translations -->
+<!-- Configuration/TCA/Overrides ____ everything except content elements -->
+<!-- 50_sys_template -->
+<!-- 60_sys_file_reference -->
+<!-- 70_tt_content_CType -->
+<!-- 72_tt_content.php -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<!-- Content element groups translations -->
+			<trans-unit id="group.static" resname="group.static">
+				<source>Static content</source>
+			</trans-unit>
+			<trans-unit id="group.dynamic" resname="group.dynamic">
+				<source>Dynamic content</source>
+			</trans-unit>
+
+			<!-- Content element tabs translations -->
+			<trans-unit id="tab.settings" resname="tab.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="tab.icon" resname="tab.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tab.svg_image" resname="tab.tabs.svg_image">
+				<source>SVG</source>
+			</trans-unit>
+
+			<!-- Content element General tab config fields translations -->
+			<trans-unit id="content_element_title" resname="content_element_title">
+				<source>Content element title (not visible in frontend)</source>
+			</trans-unit>
+			<trans-unit id="header_layout" resname="header_layout">
+				<source>Heading type</source>
+			</trans-unit>
+			<trans-unit id="header_layout.1" resname="header_layout.1">
+				<source>Heading 1</source>
+			</trans-unit>
+			<trans-unit id="header_layout.2" resname="header_layout.2">
+				<source>Heading 2</source>
+			</trans-unit>
+			<trans-unit id="header_layout.3" resname="header_layout.3">
+				<source>Heading 3</source>
+			</trans-unit>
+			<trans-unit id="header_layout.4" resname="header_layout.4">
+				<source>Heading 4</source>
+			</trans-unit>
+			<trans-unit id="header_layout.5" resname="header_layout.5">
+				<source>Heading 5</source>
+			</trans-unit>
+			<trans-unit id="header_layout.6" resname="header_layout.6">
+				<source>Heading 6</source>
+			</trans-unit>
+
+			<trans-unit id="header_style" resname="header_style">
+				<source>Heading style</source>
+			</trans-unit>
+			<trans-unit id="subheader_style" resname="subheader_style">
+				<source>Subheading style</source>
+			</trans-unit>
+			<trans-unit id="header_style.default" resname="header_style.default">
+				<source>Default (based on Heading type)</source>
+			</trans-unit>
+			<trans-unit id="header_style.1" resname="header_style.1">
+				<source>Heading 1 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.2" resname="header_style.2">
+				<source>Heading 2 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.3" resname="header_style.3">
+				<source>Heading 3 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.4" resname="header_style.4">
+				<source>Heading 4 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.5" resname="header_style.5">
+				<source>Heading 5 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.6" resname="header_style.6">
+				<source>Heading 6 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.1" resname="header_style.large_heading.1">
+				<source>Large heading 1 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.2" resname="header_style.large_heading.2">
+				<source>Large heading 2 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.3" resname="header_style.large_heading.3">
+				<source>Large heading 3 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.4" resname="header_style.large_heading.4">
+				<source>Large heading 4 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.5" resname="header_style.large_heading.5">
+				<source>Large heading 5 style</source>
+			</trans-unit>
+			<trans-unit id="header_style.large_heading.6" resname="header_style.large_heading.6">
+				<source>Large heading 6 style</source>
+			</trans-unit>
+
+
+
+
+			<trans-unit id="header_position" resname="header_position">
+				<source>Heading alignment</source>
+			</trans-unit>
+			<trans-unit id="header_position.left" resname="header_position.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="header_position.right" resname="header_position.right">
+				<source>Right</source>
+			</trans-unit>
+			<trans-unit id="header_position.center" resname="header_position.center">
+				<source>Center</source>
+			</trans-unit>
+
+			<!-- Content element Image/Media tab config fields translations -->
+			<trans-unit id="simple_image" resname="simple_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="picture" resname="picture">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="advanced_image" resname="advanced_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="advanced_image" resname="advanced_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="advanced_media" resname="advanced_media">
+				<source>Media</source>
+			</trans-unit>
+
+			<trans-unit id="section_container_width" resname="section_container_width">
+				<source>Section container width</source>
+			</trans-unit>
+			<trans-unit id="section_container_width.container" resname="section_container_width.container">
+				<source>Fixed container width</source>
+			</trans-unit>
+			<trans-unit id="section_container_width.container_fluid" resname="section_container_width.container_fluid">
+				<source>Fluid container width</source>
+			</trans-unit>
+			<trans-unit id="picture_width" resname="picture_width">
+				<source>Picture width</source>
+			</trans-unit>
+			<trans-unit id="picture_width.100" resname="picture_width.100">
+				<source>100% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.90" resname="picture_width.90">
+				<source>90% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.80" resname="picture_width.80">
+				<source>80% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.70" resname="picture_width.70">
+				<source>70% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.60" resname="picture_width.60">
+				<source>60% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.50" resname="picture_width.50">
+				<source>50% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.40" resname="picture_width.40">
+				<source>40% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.30" resname="picture_width.30">
+				<source>30% of content element</source>
+			</trans-unit>
+			<trans-unit id="picture_width.20" resname="picture_width.20">
+				<source>20% of content element</source>
+			</trans-unit>
+
+			<trans-unit id="description_position" resname="description_position">
+				<source>Description alignment</source>
+			</trans-unit>
+			<trans-unit id="description_position.left" resname="description_position.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="description_position.center" resname="description_position.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="description_position.right" resname="description_position.right">
+				<source>Right</source>
+			</trans-unit>
+
+			<trans-unit id="picture_border_radius" resname="picture_border_radius">
+				<source>Picture border radius</source>
+			</trans-unit>
+			<trans-unit id="picture_border_radius.default" resname="picture_border_radius.default">
+				<source>No radius</source>
+			</trans-unit>
+			<trans-unit id="picture_border_radius.rounded" resname="picture_border_radius.rounded">
+				<source>Rounded</source>
+			</trans-unit>
+			<trans-unit id="picture_border_radius.rounded_circle" resname="picture_border_radius.rounded_circle">
+				<source>Rounded-circle</source>
+			</trans-unit>
+			<trans-unit id="picture_border_radius.rounded_pill" resname="picture_border_radius.rounded_pill">
+				<source>Rounded-pill</source>
+			</trans-unit>
+			<trans-unit id="picture_border_radius.rounded_top" resname="picture_border_radius.rounded_top">
+				<source>Rounded-top</source>
+			</trans-unit>
+			<trans-unit id="picture_border_radius.rounded_right" resname="picture_border_radius.rounded_right">
+				<source>Rounded-right</source>
+			</trans-unit>
+
+			<trans-unit id="picture_border_radius.rounded_bottom" resname="picture_border_radius.rounded_bottom">
+				<source>Rounded-bottom</source>
+			</trans-unit>
+
+			<trans-unit id="picture_border_radius.rounded_left" resname="picture_border_radius.rounded_left">
+				<source>Rounded-left</source>
+			</trans-unit>
+
+			<trans-unit id="aspect_ratio" resname="aspect_ratio">
+				<source>Video aspect ratio</source>
+			</trans-unit>
+			<trans-unit id="aspect_ratio.16-9" resname="aspect_ratio.16-9">
+				<source>16:9</source>
+			</trans-unit>
+			<trans-unit id="aspect_ratio.21-9" resname="aspect_ratio.21-9">
+				<source>21:9</source>
+			</trans-unit>
+			<trans-unit id="aspect_ratio.4-3" resname="aspect_ratio.4-3">
+				<source>4:3</source>
+			</trans-unit>
+			<trans-unit id="aspect_ratio.1-1" resname="aspect_ratio.1-1">
+				<source>1:1</source>
+			</trans-unit>
+			<trans-unit id="svg_width" resname="svg_width">
+				<source>SVG image width</source>
+			</trans-unit>
+
+			<!-- Content element Appearance tab config fields translations -->
+			<!-- space_before/space_after -->
+			<trans-unit id="space_before_class" resname="space_before_class">
+				<source>Space Before</source>
+			</trans-unit>
+			<trans-unit id="space_after_class" resname="space_after_class">
+				<source>Space After</source>
+			</trans-unit>
+			<trans-unit id="margin_default" resname="margin_default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="margin_5" resname="margin_5">
+				<source>5px</source>
+			</trans-unit>
+			<trans-unit id="margin_10" resname="margin_10">
+				<source>10px</source>
+			</trans-unit>
+			<trans-unit id="margin_15" resname="margin_15">
+				<source>15px</source>
+			</trans-unit>
+			<trans-unit id="margin_20" resname="margin_20">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="margin_25" resname="margin_25">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="margin_30" resname="margin_30">
+				<source>30px</source>
+			</trans-unit>
+			<trans-unit id="margin_40" resname="margin_40">
+				<source>40px</source>
+			</trans-unit>
+			<trans-unit id="margin_50" resname="margin_50">
+				<source>50px</source>
+			</trans-unit>
+			<trans-unit id="margin_60" resname="margin_60">
+				<source>60px</source>
+			</trans-unit>
+			<trans-unit id="margin_70" resname="margin_70">
+				<source>70px</source>
+			</trans-unit>
+			<trans-unit id="color_class" resname="color_class">
+				<source>Color</source>
+			</trans-unit>
+			<trans-unit id="background_color_class" resname="background_color_class">
+				<source>Background</source>
+			</trans-unit>
+
+			<!-- Content element Icon tab config fields translations -->
+			<trans-unit id="icon_source" resname="icon_source">
+				<source>Icon source</source>
+			</trans-unit>
+			<trans-unit id="icon_class" resname="icon_class">
+				<source>Icon appearance</source>
+			</trans-unit>
+			<trans-unit id="icon" resname="icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="icon.palette" resname="icon.palette">
+				<source>Icon</source>
+			</trans-unit>
+
+
+			<!-- Content element custom t3kit fields translations -->
+			<!-- link -->
+			<trans-unit id="link.palette" resname="link.palette">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="link_title" resname="link_title">
+				<source>Link title</source>
+			</trans-unit>
+			<trans-unit id="accessible_link_label" resname="accessible_link_label">
+				<source>Accessible link label</source>
+			</trans-unit>
+			<trans-unit id="link" resname="link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="link_position" resname="link_position">
+				<source>Link alignment</source>
+			</trans-unit>
+			<trans-unit id="link_position.left" resname="link_position.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="link_position.center" resname="link_position.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="link_position.right" resname="link_position.right">
+				<source>Right</source>
+			</trans-unit>
+			<!-- Content alignment -->
+			<trans-unit id="content_position" resname="content_position">
+				<source>Alignment</source>
+			</trans-unit>
+			<trans-unit id="content_position.left" resname="content_position.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="content_position.center" resname="content_position.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="content_position.right" resname="content_position.right">
+				<source>Right</source>
+			</trans-unit>
+			<!-- Button -->
+			<trans-unit id="button.palette" resname="button.palette">
+				<source>Button</source>
+			</trans-unit>
+			<trans-unit id="link_as_button" resname="link_as_button">
+				<source>Show link as a button</source>
+			</trans-unit>
+			<trans-unit id="button_style" resname="button_style">
+				<source>Button style</source>
+			</trans-unit>
+			<trans-unit id="button_style.primary" resname="button_style.primary">
+				<source>Primary style</source>
+			</trans-unit>
+			<trans-unit id="button_style.light" resname="button_style.light">
+				<source>Light style</source>
+			</trans-unit>
+			<trans-unit id="button_style.dark" resname="button_style.dark">
+				<source>Dark style</source>
+			</trans-unit>
+			<trans-unit id="button_size" resname="button_size">
+				<source>Button size</source>
+			</trans-unit>
+			<trans-unit id="button_size.default" resname="button_size.default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="button_size.large" resname="button_size.large">
+				<source>Large</source>
+			</trans-unit>
+			<trans-unit id="button_size.small" resname="button_size.small">
+				<source>Small</source>
+			</trans-unit>
+			<trans-unit id="button_full_width" resname="button_full_width">
+				<source>Full-width button</source>
+			</trans-unit>
+			<trans-unit id="button_no_bg" resname="button_no_bg">
+				<source>Bordered with transparent background</source>
+			</trans-unit>
+			<trans-unit id="bodytext.palette" resname="bodytext.palette">
+				<source>Text</source>
+			</trans-unit>
+			<!-- height -->
+			<trans-unit id="height" resname="height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="height.image" resname="height.image">
+				<source>Image height</source>
+			</trans-unit>
+			<!-- image_zoom_width -->
+			<trans-unit id="image_zoom_width" resname="image_zoom_width">
+				<source>Image width when zoomed</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.1920" resname="image_zoom_width.1920">
+				<source>1920px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.1440" resname="image_zoom_width.1440">
+				<source>1440px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.1200" resname="image_zoom_width.1200">
+				<source>1200px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.992" resname="image_zoom_width.992">
+				<source>992px</source>
+			</trans-unit>
+			<trans-unit id="image_zoom_width.800" resname="image_zoom_width.800">
+				<source>800px</source>
+			</trans-unit>
+			<!-- page links -->
+			<trans-unit id="page_links" resname="page_links">
+				<source>Pages</source>
+			</trans-unit>
+			<!-- svg_image -->
+			<trans-unit id="svg_image" resname="svg_image">
+				<source>SVG</source>
+			</trans-unit>
+
+			<!-- general flexform -->
+			<trans-unit id="flexform.title" resname="flexform.title">
+				<source>Content element settings</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

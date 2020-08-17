@@ -1,0 +1,218 @@
+body {
+  font-family: var(--t3-font-family-base);
+  color: var(--t3-body-color);
+  background-color: var(--t3-body-bg);
+  font-size: var(--t3-body-font-size);
+}
+
+p {
+  font-weight: var(--t3-p-font-weight);
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--t3-ff-monospace);
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--t3-heading-color);
+  font-weight: var(--t3-heading-font-weight);
+}
+
+.large-h1,
+.large-h2,
+.large-h3,
+.large-h4,
+.large-h5,
+.large-h6 {
+  color: var(--t3-large-heading-color);
+  font-weight: var(--t3-large-heading-font-weight);
+}
+
+// ============================================
+// Fluid Font Sizes
+// ============================================
+
+/* use it only if font-size bigger then 20px/1.25rem
+read about it more: https://github.com/twbs/rfs */
+
+/* use this pattern:
+--font-size: 60; should be the only number with pixels in mind. Will be converted to rem. */
+
+/* .special-element h1 {
+  --font-size: 60;
+} */
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4,
+.large-h1,
+.large-h2,
+.large-h3,
+.large-h4,
+.large-h5,
+.large-h6,
+.fluid-font-size {
+  --t3-fluid-font-size:
+    calc(
+      ((20 + ((var(--font-size) - 20) / 10)) / 16 * 1rem)
+      +
+      (((var(--font-size) - (20 + ((var(--font-size) - 20) / 10)) ) * 100 / 1200) * 1vw)
+    );
+  --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
+
+  font-size: var(--t3-fluid-font-size);
+}
+
+h5,
+h6,
+.h5,
+.h6 {
+  --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
+
+  font-size: var(--t3-font-size-to-rem);
+}
+
+@media (min-width: 1200px) {
+  // for 1200px screen and bigger
+  h1,
+  h2,
+  h3,
+  h4,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .large-h1,
+  .large-h2,
+  .large-h3,
+  .large-h4,
+  .large-h5,
+  .large-h6,
+  .fluid-font-size {
+    font-size: var(--t3-font-size-to-rem);
+  }
+}
+
+h1,
+.h1 {
+  --font-size: var(--t3-h1-font-size);
+}
+
+h2,
+.h2 {
+  --font-size: var(--t3-h2-font-size);
+}
+
+h3,
+.h3 {
+  --font-size: var(--t3-h3-font-size);
+}
+
+h4,
+.h4 {
+  --font-size: var(--t3-h4-font-size);
+}
+
+h5,
+.h5 {
+  --font-size: var(--t3-h5-font-size);
+}
+
+h6,
+.h6 {
+  --font-size: var(--t3-h6-font-size);
+}
+
+.large-h1 {
+  --font-size: var(--t3-large-h1-font-size);
+}
+
+.large-h2 {
+  --font-size: var(--t3-large-h2-font-size);
+}
+
+.large-h3 {
+  --font-size: var(--t3-large-h3-font-size);
+}
+
+.large-h4 {
+  --font-size: var(--t3-large-h4-font-size);
+}
+
+.large-h5 {
+  --font-size: var(--t3-large-h5-font-size);
+}
+
+.large-h6 {
+  --font-size: var(--t3-large-h6-font-size);
+}
+
+.fluid-font-size {
+  --font-size: 30;
+}
+
+// links
+a {
+  color: var(--t3-link-color);
+  font-weight: var(--t3-link-font-weight);
+}
+
+a:hover {
+  color: var(--t3-link-hover-color);
+}
+
+caption {
+  color: var(--t3-caption-color);
+}
+
+// Lists
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+// Blockquote
+blockquote,
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  padding-left: 1.2rem;
+  margin-left: 3rem;
+  border-left: 8px solid var(--t3-border-color);
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 0.875em;
+  color: var(--t3-caption-color);
+}
+
+.blockquote-footer:before {
+  content: "— ";
+}

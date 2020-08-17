@@ -1,8 +1,0 @@
-# ###########################
-# List of t3kit content elements
-#
-# Needed for sorting all content elements
-# ===========================
-
-# Separator CE
-mod.wizards.newContentElement.wizardItems.separator.elements.div.tt_content_defValues.CType = div

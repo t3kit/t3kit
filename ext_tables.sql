@@ -2,8 +2,11 @@
 # Table structure for table 'pages'
 #
 CREATE TABLE pages (
-	nav_icon int(11) unsigned DEFAULT '0' NOT NULL,
+	nav_icon_source varchar(255) DEFAULT '' NOT NULL,
+	nav_icon_class varchar(255) DEFAULT '' NOT NULL,
+	nav_icon varchar(255) DEFAULT '' NOT NULL,
 	nav_image int(11) unsigned DEFAULT '0' NOT NULL,
+	hide_subpages_in_menu tinyint(1) unsigned DEFAULT '0' NOT NULL,
 );
 
 
@@ -11,45 +14,48 @@ CREATE TABLE pages (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
-	table_class varchar(255) DEFAULT '' NOT NULL,
-
-	custom_header varchar(255) DEFAULT '' NOT NULL,
-	custom_subheader varchar(255) DEFAULT '' NOT NULL,
-	add_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
-	background_color_class varchar(60) DEFAULT '' NOT NULL,
-	background_color varchar(255) DEFAULT '' NOT NULL,
-	background int(11) unsigned DEFAULT '0' NOT NULL,
-	background_parallax tinyint(3) unsigned DEFAULT '0' NOT NULL,
-	full_width_background tinyint(3) unsigned DEFAULT '0' NOT NULL,
-	content_alignment varchar(6) DEFAULT '' NOT NULL,
-	content_alignment_center varchar(6) DEFAULT '' NOT NULL,
+	header_style varchar(60) DEFAULT '0' NOT NULL,
+	subheader_style varchar(60) DEFAULT '0' NOT NULL,
+	content_position varchar(60) DEFAULT '' NOT NULL,
+	content_position_center varchar(60) DEFAULT '' NOT NULL,
+	section_container_width varchar(60) DEFAULT '' NOT NULL,
+	image_zoom_width varchar(60) DEFAULT '' NOT NULL,
+	simple_image int(11) unsigned DEFAULT '0' NOT NULL,
+	svg_image int(11) unsigned DEFAULT '0' NOT NULL,
+	picture int(11) unsigned DEFAULT '0' NOT NULL,
+	advanced_image int(11) unsigned DEFAULT '0' NOT NULL,
+	advanced_media int(11) unsigned DEFAULT '0' NOT NULL,
+	height mediumint(8) unsigned DEFAULT '0' NOT NULL,
+	icon_source varchar(60) DEFAULT '' NOT NULL,
+	icon_class varchar(60) DEFAULT '' NOT NULL,
+	icon varchar(255) DEFAULT '' NOT NULL,
 	link_title varchar(255) DEFAULT '' NOT NULL,
+	accessible_link_label varchar(255) DEFAULT '' NOT NULL,
 	link varchar(1024) DEFAULT '' NOT NULL,
-
-	skipLinks_mainNavigation varchar(255) DEFAULT '' NOT NULL,
-	skipLinks_mainContent varchar(255) DEFAULT '' NOT NULL,
-
-	headerTop int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopContacts int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopLangMenu int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopSearch int(11) unsigned DEFAULT '0' NOT NULL,
-	headerTopNavigation int(11) unsigned DEFAULT '0' NOT NULL,
-
-	email_address varchar(255) DEFAULT '' NOT NULL,
-	email_title varchar(255) DEFAULT '' NOT NULL,
-	email_icon int(11) unsigned DEFAULT '0' NOT NULL,
-	email_show_title int(11) unsigned DEFAULT '0' NOT NULL,
-
-	phone_link varchar(255) DEFAULT '' NOT NULL,
-	phone_text varchar(50) DEFAULT '' NOT NULL,
-	phone_title varchar(255) DEFAULT '' NOT NULL,
-	phone_icon int(11) unsigned DEFAULT '0' NOT NULL,
-	phone_show_title int(11) unsigned DEFAULT '0' NOT NULL,
+	link_position varchar(60) DEFAULT '' NOT NULL,
+	header_text text,
+	subheader_text text,
+	link_as_button tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	button_size varchar(60) DEFAULT '' NOT NULL,
+	button_style varchar(60) DEFAULT '' NOT NULL,
+	button_full_width tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	button_no_bg tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	table_class varchar(255) DEFAULT '' NOT NULL,
+	page_links_1 text,
+	page_links_2 text,
+	page_links_3 text,
+	color_class varchar(60) DEFAULT '0' NOT NULL,
+	background_color_class varchar(60) DEFAULT '0' NOT NULL,
+);
 
 
-	headerMiddle int(11) unsigned DEFAULT '0' NOT NULL,
-
-	mainNavigation int(11) unsigned DEFAULT '0' NOT NULL,
-
-
+#
+# Table structure for table 'sys_file_reference'
+#
+CREATE TABLE sys_file_reference (
+	description_position varchar(60) DEFAULT '' NOT NULL,
+	picture_width varchar(60) DEFAULT '' NOT NULL,
+	picture_border_radius varchar(60) DEFAULT '' NOT NULL,
+	aspect_ratio varchar(60) DEFAULT '' NOT NULL,
+	svg_width mediumint(8) unsigned DEFAULT '0' NOT NULL,
 );

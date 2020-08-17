@@ -1,11 +1,24 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Default" />
-<f:section name="Main">
 
-  <div class="ce-image ce-{gallery.position.horizontal} ce-{gallery.position.vertical}">
-    <f:render partial="Media/Gallery" arguments="{_all}" />
+<f:layout name="Default" />
+
+<f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Image.html [begin] -->
+
+  <div class="ce-image__wrp">
+    <div class="ce-image">
+      <f:if condition="{files}">
+        <f:render partial="Media/Figure" arguments="{_all}" />
+      </f:if>
+      <f:if condition="{svg_image}">
+        <f:render partial="Media/Svg" arguments="{data: data, files: svg_image}"/>
+      </f:if>
+    </div>
   </div>
 
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Image.html [end] -->
 </f:section>
 
 </html>
+
+

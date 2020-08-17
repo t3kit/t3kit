@@ -1,9 +1,11 @@
 # ###########################
 # Regular Text Content element
 # ===========================
+mod.wizards.newContentElement.wizardItems.common.elements.text >
 mod.wizards.newContentElement.wizardItems.static.elements.text {
   iconIdentifier = content-text
   title = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_regularText_title
   description = LLL:EXT:backend/Resources/Private/Language/locallang_db_new_content_el.xlf:common_regularText_description
+  tt_content_defValues.CType = text
 }
 mod.wizards.newContentElement.wizardItems.static.show := addToList(text)

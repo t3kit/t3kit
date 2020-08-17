@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="siteFooter.title" resname="siteFooter.title">
+				<source>Site Footer</source>
+			</trans-unit>
+			<trans-unit id="siteFooter.description" resname="siteFooter.title">
+				<source>Main footer of the site. Will be copied to all subpages.</source>
+			</trans-unit>
+
+			<trans-unit id="tab.settings" resname="tab.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="tab.logo" resname="tab.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tab.links" resname="tab.links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="flexform.title" resname="flexform.title">
+				<source>Site footer settings</source>
+			</trans-unit>
+
+			<!-- address -->
+			<trans-unit id="flexform.site_footer.sheet_title" resname="flexform.site_footer.sheet_title">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="flexform.show_address" resname="flexform.show_address">
+				<source>Show address</source>
+			</trans-unit>
+			<trans-unit id="flexform.name" resname="flexform.name">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="flexform.address" resname="flexform.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="flexform.contactPhone_title" resname="flexform.contactPhone_title">
+				<source>Contact phone title</source>
+			</trans-unit>
+			<trans-unit id="flexform.contactPhone_link" resname="flexform.contactPhone_link">
+				<source>Contact phone</source>
+			</trans-unit>
+			<trans-unit id="flexform.email" resname="flexform.email">
+				<source>Email</source>
+			</trans-unit>
+
+			<!-- site_footer_columns -->
+			<trans-unit id="flexform.site_footer_columns.sheet_title" resname="flexform.site_footer_columns.sheet_title">
+				<source>Footer columns</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_1_title" resname="flexform.column_1_title">
+				<source>Column 1 title</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.column_2_title" resname="flexform.column_2_title">
+				<source>Column 2 title</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.column_3_title" resname="flexform.column_3_title">
+				<source>Column 3 title</source>
+			</trans-unit>
+
+			<!-- footer_bottom -->
+			<trans-unit id="flexform.site_footer_bottom.sheet_title" resname="flexform.site_footer_bottom.sheet_title">
+				<source>Footer bottom</source>
+			</trans-unit>
+			<trans-unit id="flexform.copyright" resname="flexform.copyright">
+				<source>Copyright</source>
+			</trans-unit>
+
+			<!-- settings -->
+			<trans-unit id="flexform.site_footer_settings.sheet_title" resname="flexform.site_footer_settings.sheet_title">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="flexform.footer_full_width" resname="flexform.footer_full_width">
+				<source>Footer full width</source>
+			</trans-unit>
+			<trans-unit id="flexform.show_page_icons" resname="flexform.show_page_icons">
+				<source>Show page icons or images</source>
+			</trans-unit>
+
+
+			<!-- footer_links -->
+			<trans-unit id="page_links_1" resname="page_links_1">
+				<source>Links column 1</source>
+			</trans-unit>
+			<trans-unit id="page_links_2" resname="page_links_2">
+				<source>Links column 2</source>
+			</trans-unit>
+			<trans-unit id="page_links_3" resname="page_links_3">
+				<source>Links column 3</source>
+			</trans-unit>
+			<trans-unit id="footer_bottom_links" resname="footer_bottom_links">
+				<source>Footer bottom links</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

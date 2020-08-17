@@ -1,0 +1,63 @@
+# ###########################
+# Insert records:
+# This element embeds other content elements.
+#
+# CType: siteFooter
+# ===========================
+tt_content.siteFooter =< lib.contentElement
+tt_content.siteFooter {
+  templateName = SiteFooter
+
+  dataProcessing {
+    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+
+    20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    20 {
+      references.fieldName = simple_image
+    }
+    25 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    25 {
+      references.fieldName = svg_image
+      as = svg_image
+    }
+
+    50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    50 {
+      special = list
+      special.value.field = page_links_1
+      includeNotInMenu = 1
+      as = links_1
+    }
+
+    60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    60 {
+      special = list
+      special.value.field = page_links_2
+      includeNotInMenu = 1
+      as = links_2
+    }
+
+    70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    70 {
+      special = list
+      special.value.field = page_links_3
+      includeNotInMenu = 1
+      as = links_3
+    }
+
+    80 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    80 {
+      special = list
+      special.value.field = pages
+      includeNotInMenu = 1
+      as = bottom_links
+    }
+
+  }
+}
+
+

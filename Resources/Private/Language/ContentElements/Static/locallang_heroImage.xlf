@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="heroImage.title" resname="heroImage.title">
+				<source>Hero Image</source>
+			</trans-unit>
+			<trans-unit id="heroImage.description" resname="heroImage.description">
+				<source>Image, header, subheader, text and link</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.height" resname="flexform.height">
+				<source>Hero Image height (400px by default)</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.overlay" resname="flexform.overlay">
+				<source>Overlay color with opacity</source>
+			</trans-unit>
+			<trans-unit id="flexform.overlay_disable" resname="flexform.overlay_disable">
+				<source>No overlay</source>
+			</trans-unit>
+			<trans-unit id="flexform.overlay_primary" resname="flexform.overlay_primary">
+				<source>Primary color overlay</source>
+			</trans-unit>
+			<trans-unit id="flexform.overlay_secondary" resname="flexform.overlay_secondary">
+				<source>Secondary color overlay</source>
+			</trans-unit>
+			<trans-unit id="flexform.overlay_dark" resname="flexform.overlay_dark">
+				<source>Dark overlay</source>
+			</trans-unit>
+			<trans-unit id="flexform.overlay_light" resname="flexform.overlay_light">
+				<source>Light overlay</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.caption_alignment" resname="flexform.caption_alignment">
+				<source>Caption alignment</source>
+			</trans-unit>
+			<trans-unit id="flexform.caption_alignment.left" resname="flexform.caption_alignment.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="flexform.caption_alignment.center" resname="flexform.caption_alignment.center">
+				<source>Center</source>
+			</trans-unit>
+			<trans-unit id="flexform.caption_alignment.right" resname="flexform.caption_alignment.right">
+				<source>Right</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.background" resname="flexform.background">
+				<source>Background color (use instead of an image)</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_disable" resname="flexform.background_disable">
+				<source>No background</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_primary" resname="flexform.background_primary">
+				<source>Primary color background</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_secondary" resname="flexform.background_secondary">
+				<source>Secondary color background</source>
+			</trans-unit>
+			<trans-unit id="flexform.background_dark" resname="flexform.background_dark">
+				<source>Dark background</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

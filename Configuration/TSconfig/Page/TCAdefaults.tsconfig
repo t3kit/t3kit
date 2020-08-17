@@ -1,0 +1,7 @@
+# ###################################
+# TCAdefaults
+# override the default values of TCA fields
+# ==================================
+
+# header_layout; 0 = Header1 [H1]; 1 = Header2 [H2]; ...
+TCAdefaults.tt_content.header_layout = 2

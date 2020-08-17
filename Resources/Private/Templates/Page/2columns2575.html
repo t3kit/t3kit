@@ -2,18 +2,86 @@
 
 <f:layout name="Default" />
 
+<f:comment>
+  <!-- Add additional page-specific JS and CSS assets if needed -->
+  <f:render partial="Css/Plugin1" arguments="{_all}" />
+  <f:render partial="Js/Plugin1" arguments="{_all}" />
+  <f:render partial="Js/Plugin2" arguments="{_all}" />
+</f:comment>
+
+<f:comment>
+  # Columns pattern [colPos]
+  # [1-10]     -> Header
+  # [11-20]    -> Footer
+  # [30-40]    -> Navigation/Breadcrumbs
+  # [50-90]    -> Additional content
+  # __________________________
+  # 1000-10000 -> All Content
+  # ***
+  # colPos = [1000-1099]  -> 100% column width [col-12] (e.g., one column layout)
+  # colPos = [9100-9199]  -> 91% column width [col-11] (e.g., two columns layout [91%/8%])
+  # colPos = [8300-8399]  -> 83% column width [col-10] (e.g., two columns layout [83%/16%])
+  # colPos = [7500-7599]  -> 75% column width [col-9] (e.g., two columns layout [75%/25%])
+  # colPos = [6600-6699]  -> 66% column width [col-8] (e.g., two columns layout [66%/33%])
+  # colPos = [5800-5899]  -> 58% column width [col-7] (e.g., two columns layout [58%/41%])
+  # colPos = [5000-5099]  -> 50% column width [col-6] (e.g., two equal columns layout)
+  # colPos = [4100-4199]  -> 41% column width [col-5] (e.g., two columns layout [41%/58%])
+  # colPos = [3300-3399]  -> 33% column width [col-4] (e.g., three equal columns layout)
+  # colPos = [2500-2599]  -> 25% column width [col-3] (e.g., four equal columns layout)
+  # colPos = [1600-1699]  -> 16% column width [col-2] (e.g., six equal columns layout)
+  # colPos = [800-899]    -> 8% column width [col-1] (e.g., twelve equal columns layout)
+  # __________________________
+</f:comment>
+
 <f:section name="Main">
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+  <main id="main" class="2columns25-75">
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+    <section class="2columns25-75__top-content">
+      <div class="2columns25-75__top-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+      </div>
+    </section>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:101}" />
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:102}" />
+    <f:if condition="{settings.nav.breadcrumb.showBreadcrumbMenu}">
+      <div class="breadcrumb-wrp container">
+        <f:render partial="Nav/Breadcrumb" arguments="{_all}" />
+      </div>
+    </f:if>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+    <section class="2columns25-75__before-content ">
+      <div class="2columns25-75__before-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+      </div>
+    </section>
+
+    <section class="2columns25-75__content">
+
+      <div class="container-wrp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:2501}" />
+            </div>
+
+            <div class="col-lg-9">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:7501}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="2columns25-75__after-content">
+      <div class="2columns25-75__after-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+      </div>
+    </section>
+
+  </main>
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
 

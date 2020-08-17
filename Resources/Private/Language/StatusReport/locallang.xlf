@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="status_installtool_password" resname="status_installtool_password">
+				<source>t3kit Install Tool Password</source>
+			</trans-unit>
+			<trans-unit id="status_admin_user_account" resname="status_admin_user_account">
+				<source>t3kit Admin User Account</source>
+			</trans-unit>
+			<trans-unit id="warning.installtool_default_password" resname="warning.installtool_default_password">
+				<source>The Install Tool is still using the default t3kit password "admin1234". Update this within the %sChange Install Tool Password section%s of the Install Tool.</source>
+			</trans-unit>
+			<trans-unit id="warning.backend_default_admin_user" resname="warning.backend_default_admin_user">
+				<source>The default t3kit backend user "admin" with password "admin1234" is still present. %sEdit this user account%s, either deleting it completely or changing the username and password.</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,17 @@
+# ###########################
+# Text and Images
+#
+# CType: textpic
+# ===========================
+tt_content.textpic =< lib.contentElement
+tt_content.textpic {
+
+  templateName = Textpic
+
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      references.fieldName = advanced_image
+    }
+  }
+}

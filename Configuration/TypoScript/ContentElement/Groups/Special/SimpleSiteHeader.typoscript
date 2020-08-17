@@ -1,0 +1,55 @@
+# ###########################
+# Insert records:
+# This element embeds other content elements.
+#
+# CType: simpleSiteHeader
+# ===========================
+tt_content.simpleSiteHeader =< lib.contentElement
+tt_content.simpleSiteHeader {
+
+  templateName = SimpleSiteHeader
+
+  dataProcessing {
+    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+    20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    20 {
+      references.fieldName = simple_image
+    }
+    25 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    25 {
+      references.fieldName = svg_image
+      as = svg_image
+    }
+
+    # Main menu
+    30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    30 {
+      as = mainNavigation
+      levels = 2
+      includeSpacer = 1
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_image
+          as = nav_image
+        }
+      }
+    }
+
+    # Language Navigation
+    50 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+    50 {
+      as = languageNavigation
+      languages = auto
+    }
+
+    80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    80 {
+      as = site
+    }
+  }
+}

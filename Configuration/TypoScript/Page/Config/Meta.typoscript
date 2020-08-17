@@ -1,0 +1,22 @@
+page.meta {
+  description = {$page.meta.description}
+  description {
+    override.field = description
+  }
+  keywords = {$page.meta.keywords}
+  keywords {
+    override.field = keywords
+  }
+  author = {$page.meta.author}
+  author {
+    override.field = author
+  }
+  viewport = {$page.meta.viewport}
+
+}
+
+# If [Development]
+# TYPO3 Development context and every its subcontext
+[applicationContext matches "#^Development#"]
+page.meta.robots = noindex,nofollow
+[end]

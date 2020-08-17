@@ -9,9 +9,21 @@ defined('TYPO3_MODE') || die();
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tt_content',
-    'EXT:t3kit/Resources/Private/Language/locallang_csh_tt_content.xlf'
+    'EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_ttc.xlf'
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-    'tt_content',
-    'EXT:t3kit/Resources/Private/Language/locallang_csh_BE_CE_special.xlf'
+    'sys_file_reference',
+    'EXT:t3kit/Resources/Private/Language/ContentElements/locallang_csh_sfr.xlf'
 );
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+    'tt_content.pi_flexform.heroImage',
+    'EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage_csh.xlf'
+);
+
+
+/*
+ * ###########################
+ * Load additional t3kit stylesheets to skin the Backend
+ * ===========================
+ */
+$GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:t3kit/Resources/Public/CSS/BE/';

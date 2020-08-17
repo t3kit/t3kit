@@ -1,4 +1,5 @@
 composer.lock
 build
 node_modules
-src/node_modules/*
+.cache
+.tmp

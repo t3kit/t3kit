@@ -1,0 +1,98 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+.ce-big-icon-text-link__wrp {
+  --t3-ce-bitl-color: var(--t3-body-color);
+  --t3-ce-bitl-icon-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-icon-width: 3rem;
+  --t3-ce-bitl-icon-height: 3rem;
+  --t3-ce-bitl-header-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-subheader-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-bodytext-color: var(--t3-ce-bitl-color);
+  --t3-ce-bitl-link-color: var(--t3-ce-bitl-color);
+
+  position: relative;
+  padding-bottom: 1rem;
+  color: var(--t3-ce-bitl-color);
+}
+
+.ce-big-icon-text-link__wrp.inverted-color {
+  --t3-ce-bitl-color: var(--t3-body-bg);
+}
+
+.ce-big-icon-text-link__wrp.internal-margins {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.ce-big-icon-text-link__icon-wrp {
+  padding-bottom: 1rem;
+}
+
+.ce-big-icon-text-link__icon {
+  width: var(--t3-ce-bitl-icon-width);
+  height: var(--t3-ce-bitl-icon-height);
+  fill: var(--t3-ce-bitl-icon-color);
+}
+
+.ce-big-icon-text-link__header .header-item {
+  color: var(--t3-ce-bitl-header-color);
+}
+
+.ce-big-icon-text-link__subheader .subheader-item {
+  font-weight: 600;
+  color: var(--t3-ce-bitl-subheader-color);
+}
+
+.ce-big-icon-text-link__bodytext .bodytext-partial {
+  color: var(--t3-ce-bitl-bodytext-color);
+}
+
+.ce-big-icon-text-link__link .link-partial {
+  color: var(--t3-ce-bitl-link-color);
+}
+
+.ce-big-icon-text-link__link .stretched-link:after {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ce-big-icon-text-link__link .stretched-link:after {
+    transition: none;
+  }
+}
+
+.ce-big-icon-text-link__link .stretched-link:hover:after {
+  background-color: hsla(0, 0, 0%, 0.03);
+}
+
+// --------------------------------------------------------
+// X-Small devices (portrait phones, less than 576px) xs
+// @media (max-width: 575.98px) { ... }
+// Small devices (landscape phones, 576px and up) sm
+// @media (min-width: 576px) { ... }
+
+// --------------------------------------------------------
+// Small devices (landscape phones, less than 768px) sm
+// @media (max-width: 767.98px) { ... }
+// Medium devices (tablets, 768px and up) md
+// @media (min-width: 768px) { ... }
+
+// --------------------------------------------------------
+// Medium devices (tablets, less than 992px) md
+// @media (max-width: 991.98px) { ... }
+// Large devices (desktops, 992px and up) lg
+// @media (min-width: 992px) { ... }
+
+// --------------------------------------------------------
+// Large devices (desktops, less than 1200px) lg
+// @media (max-width: 1199.98px) { ... }
+// X-Large devices (large desktops, 1200px and up) xl
+// @media (min-width: 1200px) { ... }
+
+// --------------------------------------------------------
+// X-Large devices (large desktops, less than 1400px) xl
+// @media (max-width: 1399.98px) { ... }
+// XX-Large devices (larger desktops, 1400px and up) xxl
+// @media (min-width: 1400px) { ... }

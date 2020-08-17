@@ -1,0 +1,2 @@
+# import Page TypoScript
+@import 'EXT:t3kit/Configuration/TypoScript/Page/Config/'

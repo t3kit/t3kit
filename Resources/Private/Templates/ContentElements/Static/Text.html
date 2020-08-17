@@ -1,9 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Default" />
+
 <f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Text.html [begin] -->
 
-  <f:format.html>{data.bodytext}</f:format.html>
+  <div class="ce-bodytext">
+    <f:render partial="Bodytext/RTEBodytext" arguments="{_all}" />
+  </div>
 
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Text.html [end] -->
 </f:section>
 
 </html>

@@ -1,0 +1,17 @@
+# ###########################
+# Video
+#
+# CType: video
+# ===========================
+tt_content.video =< lib.contentElement
+tt_content.video {
+
+  templateName = Video
+
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    10 {
+      references.fieldName = advanced_media
+    }
+  }
+}

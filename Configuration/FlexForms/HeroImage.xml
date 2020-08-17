@@ -5,77 +5,56 @@
 	<sheets>
 		<sDEF>
 			<ROOT>
-				<TCEforms>
-					<sheetTitle>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE.xlf:flexform.sheetTitle</sheetTitle>
-				</TCEforms>
 				<type>array</type>
 				<el>
 
-					<elementHeight>
+					<height>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.elementHeight</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.height</label>
 							<config>
 								<type>input</type>
-								<rows>1</rows>
-								<default>320</default>
+								<size>5</size>
+								<max>5</max>
+								<eval>trim,int</eval>
 							</config>
 						</TCEforms>
-					</elementHeight>
+					</height>
 
-					<linkAsBtn>
+					<overlay>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.linkAsBtn</label>
-							<config>
-								<type>check</type>
-							</config>
-						</TCEforms>
-					</linkAsBtn>
-
-					<transparentLayer>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.transparentLayer</label>
-							<config>
-								<type>input</type>
-								<rows>1</rows>
-							</config>
-						</TCEforms>
-					</transparentLayer>
-
-					<horizontalAlignment>
-						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.horizontalAlignment</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.overlay</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
-
 								</items>
 							</config>
 						</TCEforms>
-					</horizontalAlignment>
+					</overlay>
 
-					<verticalAlignment>
+					<caption_alignment>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.verticalAlignment</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.caption_alignment</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
-
 								</items>
 							</config>
 						</TCEforms>
-					</verticalAlignment>
+					</caption_alignment>
 
-					<animationStyle>
+					<background>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:heroImage.flexform.animationStyle</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.background</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<items>
-
 								</items>
 							</config>
 						</TCEforms>
-					</animationStyle>
+					</background>
 
 				</el>
 			</ROOT>

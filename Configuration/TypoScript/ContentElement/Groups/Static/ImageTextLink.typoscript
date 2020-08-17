@@ -1,0 +1,29 @@
+# ###########################
+# Image Text Link
+#
+# CType: imageTextLink
+# ===========================
+tt_content {
+  imageTextLink =< lib.contentElement
+  imageTextLink {
+
+    templateName = ImageTextLink
+
+    dataProcessing {
+      10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      10 {
+        fieldName = pi_flexform
+        as = flexform
+      }
+      20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      20 {
+        references.fieldName = picture
+      }
+      30 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      30 {
+        references.fieldName = svg_image
+        as = svg_image
+      }
+    }
+  }
+}

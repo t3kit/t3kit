@@ -1,0 +1,41 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{header_text}">
+  <f:switch expression="{header_layout}">
+    <f:case value="1">
+      <h1 class="{header_position} {header_style} header-text-item">
+        <f:link.typolink parameter="{header_link}"><f:format.nl2br>{header_text}</f:format.nl2br></f:link.typolink>
+      </h1>
+    </f:case>
+    <f:case value="2">
+      <h2 class="{header_position} {header_style} header-text-item">
+        <f:link.typolink parameter="{header_link}"><f:format.nl2br>{header_text}</f:format.nl2br></f:link.typolink>
+      </h2>
+    </f:case>
+    <f:case value="3">
+      <h3 class="{header_position} {header_style} header-text-item">
+        <f:link.typolink parameter="{header_link}"><f:format.nl2br>{header_text}</f:format.nl2br></f:link.typolink>
+      </h3>
+    </f:case>
+    <f:case value="4">
+      <h4 class="{header_position} {header_style} header-text-item">
+        <f:link.typolink parameter="{header_link}"><f:format.nl2br>{header_text}</f:format.nl2br></f:link.typolink>
+      </h4>
+    </f:case>
+    <f:case value="5">
+      <h5 class="{header_position} {header_style} header-text-item">
+        <f:link.typolink parameter="{header_link}"><f:format.nl2br>{header_text}</f:format.nl2br></f:link.typolink>
+      </h5>
+    </f:case>
+    <f:case value="6">
+      <h6 class="{header_position} {header_style} header-text-item">
+        <f:link.typolink parameter="{header_link}"><f:format.nl2br>{header_text}</f:format.nl2br></f:link.typolink>
+      </h6>
+    </f:case>
+    <f:case value="100">
+      <f:comment> -- do not show header -- </f:comment>
+    </f:case>
+  </f:switch>
+</f:if>
+
+</html>

@@ -1,0 +1,8 @@
+# ###################################
+# TCEMAIN
+# ==================================
+TCEMAIN.permissions {
+  user = show,editcontent,new,edit,delete
+  group = show,editcontent,new,edit,delete
+  groupid = 1
+}

@@ -1,10 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:spaceless>
 
-  <div id="top"></div>
+<f:render partial="Css/Maincss" arguments="{_all}" />
+<f:render partial="Js/Mainjs" arguments="{_all}" />
 
-  <f:render section="Main" />
+<f:render partial="Nav/SkipLinks" arguments="{_all}" />
+<div id="top"></div>
 
-</f:spaceless>
+<f:render section="Main" />
 
 </html>

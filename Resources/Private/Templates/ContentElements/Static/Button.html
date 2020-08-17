@@ -1,27 +1,26 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:layout name="Default" />
+
 <f:section name="Header" />
+
 <f:section name="Main">
-  <!-- theme_t3kit: Templates/ContentElements/Button.html [begin] -->
-  <f:comment>
-    <!-- set button classes -->
-  </f:comment>
-  <f:variable name="btnClass">btn</f:variable>
-  <f:if condition="{settings.buttonStyle}">
-    <f:variable name="btnClass">{btnClass} {settings.buttonStyle}</f:variable>
-  </f:if>
-  <f:if condition="{settings.buttonSize}">
-    <f:variable name="btnClass">{btnClass} {settings.buttonSize}</f:variable>
-  </f:if>
-  <f:if condition="{settings.blockLevel}">
-    <f:variable name="btnClass">{btnClass} btn-block</f:variable>
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [begin] -->
+
+  <f:if condition="{data.link}">
+    <div class="ce-button">
+      <f:if condition="{data.link_as_button}">
+        <f:then>
+          <f:render partial="Link/ButtonLink" arguments="{_all}" />
+        </f:then>
+        <f:else>
+          <f:render partial="Link/Link" arguments="{_all}" />
+        </f:else>
+      </f:if>
+    </div>
   </f:if>
 
-  <f:if condition="{data.header_link}">
-    <f:link.typolink parameter="{data.header_link}" class="{btnClass}">{data.header}</f:link.typolink>
-  </f:if>
-  <!-- theme_t3kit: Templates/ContentElements/Button.html [end] -->
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Button.html [end] -->
 </f:section>
 
 </html>

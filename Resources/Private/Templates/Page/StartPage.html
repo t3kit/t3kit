@@ -4,17 +4,332 @@
 
 <f:section name="Main">
 
+  <f:comment>
+    <!-- Add additional page-specific JS and CSS assets if needed -->
+    <f:render partial="Css/Plugin1" arguments="{_all}" />
+    <f:render partial="Js/Plugin1" arguments="{_all}" />
+    <f:render partial="Js/Plugin2" arguments="{_all}" />
+  </f:comment>
+
+  <f:comment>
+    # Columns pattern [colPos]
+    # [1-10]     -> Header
+    # [11-20]    -> Footer
+    # [30-40]    -> Navigation/Breadcrumbs
+    # [50-90]    -> Additional content
+    # __________________________
+    # 1000-10000 -> All Content
+    # ***
+    # colPos = [1000-1099]  -> 100% column width [col-12] (e.g., one column layout)
+    # colPos = [9100-9199]  -> 91% column width [col-11] (e.g., two columns layout [91%/8%])
+    # colPos = [8300-8399]  -> 83% column width [col-10] (e.g., two columns layout [83%/16%])
+    # colPos = [7500-7599]  -> 75% column width [col-9] (e.g., two columns layout [75%/25%])
+    # colPos = [6600-6699]  -> 66% column width [col-8] (e.g., two columns layout [66%/33%])
+    # colPos = [5800-5899]  -> 58% column width [col-7] (e.g., two columns layout [58%/41%])
+    # colPos = [5000-5099]  -> 50% column width [col-6] (e.g., two equal columns layout)
+    # colPos = [4100-4199]  -> 41% column width [col-5] (e.g., two columns layout [41%/58%])
+    # colPos = [3300-3399]  -> 33% column width [col-4] (e.g., three equal columns layout)
+    # colPos = [2500-2599]  -> 25% column width [col-3] (e.g., four equal columns layout)
+    # colPos = [1600-1699]  -> 16% column width [col-2] (e.g., six equal columns layout)
+    # colPos = [800-899]    -> 8% column width [col-1] (e.g., twelve equal columns layout)
+    # __________________________
+  </f:comment>
+
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+  <main id="main" class="start-page">
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+    <section class="start-page__top-content">
+      <div class="start-page__top-content-container pb-5">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:50}" />
+      </div>
+    </section>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:101}" />
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:102}" />
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:103}" />
+    <section class="start-page__before-content">
+      <div class="start-page__before-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:60}" />
+      </div>
+    </section>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+    <section class="start-page__content">
+
+      <div class="container-wrp pt-2 pt-lg-4 ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3301}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3302}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3303}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-lg-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3307}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3308}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3309}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp inverted-bg-color pt-5 pb-5 pt-lg-7 pb-lg-7">
+        <div class="container">
+          <div class="row g-5 justify-content-around">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3313}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3314}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3315}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-5 pt-lg-0">
+        <div class="container">
+          <div class="row g-0 ">
+            <div class="col-lg-6 align-self-center figure-lg-margin-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5003}" />
+            </div>
+
+            <div class="col-lg-5 col-xl-4 offset-lg-1 align-self-center pb-5 pb-lg-0 ">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5004}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-8 pb-8 inverted-bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:8302}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pb-5 pt-5 pt-lg-0">
+        <div class="container">
+          <div class="row g-0 justify-content-between">
+            <div class="col-lg-5 align-self-center">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5007}" />
+            </div>
+
+            <div class="col-lg-6  align-self-center figure-lg-margin-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5008}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-lg-8 ">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:8305}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-3 pb-5">
+        <div class="container">
+          <div class="row justify-content-center ">
+            <div class="col-lg-3 pb-5 pb-lg-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3319}" />
+            </div>
+
+            <div class="col-lg-3 pb-5 pb-lg-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3320}" />
+            </div>
+
+            <div class="col-lg-3 pb-5 pb-lg-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3321}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp gray-90-bg-color pt-5 pb-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3325}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3326}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3327}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pb-5 pb-lg-0 ">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-lg-6 align-self-center figure-lg-margin-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5011}" />
+            </div>
+
+            <div class="col-lg-5 col-xl-4 offset-lg-1 align-self-center">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5012}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-lg-5 align-self-center">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5015}" />
+            </div>
+
+            <div class="col-lg-6 offset-lg-1 align-self-center figure-lg-margin-0">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:5016}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp inverted-bg-color pt-5 pb-5">
+        <div class="container">
+          <div class="row g-xl-5 justify-content-center">
+            <div class="col-lg-3">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3331}" />
+            </div>
+
+            <div class="col-lg-3">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3332}" />
+            </div>
+
+            <div class="col-lg-3">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3333}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp ">
+        <div class="container">
+          <div class="row g-0 ">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3337}" />
+            </div>
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3338}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3339}" />
+            </div>
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3343}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3344}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3345}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-5 pb-5 pt-lg-6 pb-lg-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1008}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp ">
+        <div class="container">
+          <div class="row g-5 justify-content-around">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3349}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3350}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3351}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pt-5 pb-5 pt-lg-6 pb-lg-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1012}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wrp pb-5 pb-lg-7">
+        <div class="container">
+          <div class="row g-5 justify-content-around">
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3355}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3356}" />
+            </div>
+
+            <div class="col-lg-4">
+              <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3357}" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="start-page__after-content">
+      <div class="start-page__after-content-container">
+        <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:90}" />
+      </div>
+    </section>
+
+  </main>
 
   <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
 

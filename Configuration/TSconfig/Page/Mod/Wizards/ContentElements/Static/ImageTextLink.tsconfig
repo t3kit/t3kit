@@ -1,28 +1,11 @@
 # ###########################
 # imageTextLink Content element
 # ===========================
-mod.wizards.newContentElement.wizardItems.static {
-  elements {
-    imageTextLink {
-      title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.title
-      description = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.description
-      iconIdentifier = ce-imageTextLink
-    }
-  }
-  show := addToList(imageTextLink)
+mod.wizards.newContentElement.wizardItems.static.elements.imageTextLink {
+  iconIdentifier = ce-imageTextLink
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.description
+  tt_content_defValues.CType = imageTextLink
 }
+mod.wizards.newContentElement.wizardItems.static.show := addToList(imageTextLink)
 
-TCEFORM.tt_content.pi_flexform.imageTextLink.sDEF.hoverEffect {
-  addItems {
-    0 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_disable
-    1 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-1
-    2 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-2
-    3 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-3
-    4 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-4
-    5 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-5
-    6 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-6
-    7 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-7
-    8 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-8
-    9 = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_CE_static.xlf:imageTextLink.flexform.hoverEffect_hover-9
-  }
-}

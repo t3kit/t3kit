@@ -1,0 +1,20 @@
+# ###########################
+# Quote
+#
+# CType: quote
+# ===========================
+tt_content {
+  quote =< lib.contentElement
+  quote {
+
+    templateName = Quote
+
+    dataProcessing {
+      10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      10 {
+        fieldName = pi_flexform
+        as = flexform
+      }
+    }
+  }
+}

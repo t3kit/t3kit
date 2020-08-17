@@ -2,16 +2,31 @@
 # 3 Columns[25%-25%-25%] -> Side Navigation[25%] | Page Backend Layout
 # ==================================
 
-# Columns pattern
-# [1-10]     ->  Header
+# Columns pattern [colPos]
+# [1-10]     -> Header
 # [11-20]    -> Footer
 # [30-40]    -> Navigation/Breadcrumbs
-# [50-90]   -> Additional content
-# [100-900]  -> All Content
+# [50-90]    -> Additional content
+# __________________________
+# 1000-10000 -> All Content
+# ***
+# colPos = [1000-1099]  -> 100% column width [col-md-12] (e.g., one column layout)
+# colPos = [9100-9199]  -> 91% column width [col-md-11] (e.g., two columns layout [91%/8%])
+# colPos = [8300-8399]  -> 83% column width [col-md-10] (e.g., two columns layout [83%/16%])
+# colPos = [7500-7599]  -> 75% column width [col-md-9] (e.g., two columns layout [75%/25%])
+# colPos = [6600-6699]  -> 66% column width [col-md-8] (e.g., two columns layout [66%/33%])
+# colPos = [5800-5899]  -> 58% column width [col-md-7] (e.g., two columns layout [58%/41%])
+# colPos = [5000-5099]  -> 50% column width [col-md-6] (e.g., two equal columns layout)
+# colPos = [4100-4199]  -> 41% column width [col-md-5] (e.g., two columns layout [41%/58%])
+# colPos = [3300-3399]  -> 33% column width [col-md-4] (e.g., three equal columns layout)
+# colPos = [2500-2599]  -> 25% column width [col-md-3] (e.g., four equal columns layout)
+# colPos = [1600-1699]  -> 16% column width [col-md-2] (e.g., six equal columns layout)
+# colPos = [800-899]    -> 8% column width [col-md-1] (e.g., twelve equal columns layout)
+# __________________________
 
 mod.web_layout.BackendLayouts.3columns_sidenav {
   icon = EXT:t3kit/Resources/Public/Icons/BackendLayouts/3columns_sidenav.svg
-  title = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:title.3columns_sidenav
+  title = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:title.3columns_sidenav
   config.backend_layout {
     colCount = 12
     rowCount = 4
@@ -21,7 +36,7 @@ mod.web_layout.BackendLayouts.3columns_sidenav {
 
       # Top content (after site header/before breadcrumbs)
       1.columns.1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.top
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.top
         colspan = 12
         colPos = 50
       }
@@ -30,7 +45,7 @@ mod.web_layout.BackendLayouts.3columns_sidenav {
 
       # Additional content (after breadcrumbs/before main content)
       2.columns.1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.before_content
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.before_content
         colspan = 12
         colPos = 60
       }
@@ -39,30 +54,30 @@ mod.web_layout.BackendLayouts.3columns_sidenav {
       # All Content
       3.columns {
         1 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.1.content
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.1.content
           colspan = 3
-          colPos = 101
+          colPos = 2501
         }
         2 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.2.content
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.2.content
           colspan = 3
-          colPos = 102
+          colPos = 2502
         }
         3 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.3.content
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.3.content
           colspan = 3
-          colPos = 103
+          colPos = 2503
         }
         4 {
-          name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.sidenav
+          name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.sidenav
           colspan = 3
         }
       }
 
 
       # Additional content (after main content/before site footer)
-      4.columns.1 {
-        name = LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_layouts.xlf:columns.after_content
+      890.columns.1 {
+        name = LLL:EXT:t3kit/Resources/Private/Language/Page/locallang_BE_layouts.xlf:columns.after_content
         colspan = 12
         colPos = 90
       }

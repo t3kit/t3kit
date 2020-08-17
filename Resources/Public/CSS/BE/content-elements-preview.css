@@ -1,0 +1,78 @@
+.exampleContent > strong > a {
+  font-size: 13px;
+}
+
+.t3kit-ce-image-description {
+  font-style: italic;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  line-height: 1.3;
+  display: block;
+}
+
+.t3kit-ce-header {
+  font-size: 13px;
+  margin-bottom: 2px;
+  margin-top: 3px;
+}
+
+.t3kit-ce-subheader {
+  font-weight: 700;
+  padding-top: 6px;
+  margin-bottom: 2px;
+}
+
+.t3kit-ce-div-hr {
+  background-color: #ee8433;
+  margin: 2px;
+}
+
+.t3kit-ce-divider-icon-hr {
+  background-color: #59f;
+  margin: 2px;
+  margin-top: -15px;
+}
+
+.t3kit-ce-divider-icon-wrp {
+  text-align: center;
+}
+
+.t3kit-ce-footer {
+  border-top: 1px dashed #b1b1b1;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-bottom: 1px;
+  position: relative;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #707070;
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+.t3kit-ce-footer--typo3-default {
+  background: #ff870017;
+}
+
+.t3kit-ce-footer--static {
+  background: #1a568f17;
+}
+
+.t3kit-ce-footer--dynamic {
+  background: #8b2f6017;
+}
+
+.t3kit-ce-footer--special {
+  background: #42895417;
+}
+
+.t3kit-preview-wrp img {
+  background: #e8e8e8;
+  padding: 4px;
+}
+
+.t3kit-status-report-link {
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}

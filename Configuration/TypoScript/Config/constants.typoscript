@@ -1,0 +1,7 @@
+# customcategory=t3kitConfig=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:category.t3kitConfig
+config {
+
+  # cat=t3kitConfig; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:config.headerComment
+  headerComment = t3kit10 | t3kit.com
+
+}

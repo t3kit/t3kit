@@ -1,4 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:layout name="Empty" />
 
 <f:section name="Main">
@@ -36,8 +37,9 @@
                 <f:if condition="{data.phone_show_title}">
                   <span class="header-top__contact-tel-title">{data.phone_title}</span>
                 </f:if>
-                <f:link.typolink class="header-top__contact-tel-link" title="{data.phone_title}"
+                <f:link.typolink class="header-top__contact-tel-link"
                   additionalAttributes="{aria-label: '{data.phone_title}'}" parameter="{data.phone_link}">
+                  {data.phone_text}
                   </f:link.typolink>
               </div>
               <div class="header-top__contact-email">
@@ -47,7 +49,7 @@
                 <f:if condition="{data.email_show_title}">
                   <span class="header-top__contact-email-title">{data.email_title}</span>
                 </f:if>
-                <f:link.email class="header-top__contact-email-link" title="{data.email_title}"
+                <f:link.email class="header-top__contact-email-link"
                   additionalAttributes="{aria-label: '{data.email_title}'}" email="{data.email_address}" />
               </div>
             </div>
@@ -59,13 +61,12 @@
           </f:if>
 
           <f:if condition="{data.headerTopSearch}">
-            -----headerTopSearch
+            <f:cObject typoscriptObjectPath="lib.contentObject.headerTopSearch" />
           </f:if>
 
           <f:if condition="{data.headerTopNavigation}">
             ------headerTopNavigation
           </f:if>
-
         </div>
       </div>
     </f:if>
@@ -74,13 +75,35 @@
     <f:if condition="{data.headerMiddle}">
       <div class="header-middle-wrp">
         <div class="header-middle">
-
+          <!-- Logo -->
+          <f:if condition="{data.headerMiddleLogo}">
+            <f:if condition="{image}">
+              <div class="header-middle__logo">
+                <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                  <f:if condition="{imageIteration.isFirst}">
+                    <f:render section="imageType" arguments="{_all}" />
+                  </f:if>
+                </f:for>
+              </div>
+            </f:if>
+          </f:if>
+          <f:if condition="{data.headerMiddleLangMenu} || {data.headerMiddleSearch}">
+            <div class="header-components">
+              <f:if condition="{data.mainNavigationLangMenu}">
+                <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+              </f:if>
+              <f:if condition="{data.headerMiddleSearch} > 0">
+                <div class="header-middle__search">
+                  <f:cObject typoscriptObjectPath="lib.contentObject.headerMiddleSearch" />
+                </div>
+              </f:if>
+            </div>
+          </f:if>
         </div>
       </div>
     </f:if>
 
-    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation}" />
-
+    <f:render section="MainNavigation" arguments="{mainNavigation: mainNavigation, data: data, image: image, languageNavigation: languageNavigation}" />
 
   </header>
 </f:section>
@@ -91,15 +114,26 @@
 <f:section name="MainNavigation">
   <f:if condition="{mainNavigation}">
     <!-- t3kit: Main menu [begin] -->
-
     <nav id="main-navigation"
       class="main-navigation js__main-navigation">
       <div class="main-navigation__items-wrp js__navigation__items-wrp">
+        <f:if condition="{data.mainNavigationLogo}">
+          <!-- Logo -->
+          <f:if condition="{image}">
+            <div class="main-navigation__logo">
+              <f:for each="{image}" as="mediaItem" iteration="imageIteration">
+                <f:if condition="{imageIteration.isFirst}">
+                  <f:render section="imageType" arguments="{_all}" />
+                </f:if>
+              </f:for>
+            </div>
+          </f:if>
+        </f:if>
         <ul class="main-navigation__items-list js__main-navigation__items-list ">
 
           <f:for each="{mainNavigation}" as="navItem">
             <li class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
-              <a href="{navItem.link}" title="{navItem.title}"
+              <a href="{navItem.link}"
                 class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
 
               <f:if condition="{navItem.children}">
@@ -117,6 +151,20 @@
           </f:for>
 
         </ul>
+        <f:if condition="{data.mainNavigationLangMenu} || {data.mainNavigationSearch}">
+          <div class="header-components">
+            <f:if condition="{data.mainNavigationLangMenu}">
+              <div class="main-navigation__langMenu">
+                  <f:render section="LanguageNavigation" arguments="{languageNavigation: languageNavigation}" />
+              </div>
+            </f:if>
+            <f:if condition="{data.mainNavigationSearch} > 0">
+              <div class="main-navigation__search">
+                <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch" />
+              </div>
+            </f:if>
+          </div>
+        </f:if>
       </div>
     </nav>
 
@@ -145,14 +193,14 @@
         <f:for each="{languageNavigation}" as="language">
           <f:if condition="{language.available}">
             <f:then>
-              <a href="{language.link}" title="{language.title}"
+              <a href="{language.link}"
                 class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
                 <span class="flag-icon flag-icon-{language.flagIdentifier}"></span>
                 {language.navigationTitle}
               </a>
             </f:then>
             <f:else>
-              <span title="{language.title}" class="header-top__language-menu-box-item">
+              <span  class="header-top__language-menu-box-item">
                 <span class="flag-icon flag-icon-{language.flagIdentifier}"></span>
                 {language.navigationTitle}
               </span>
@@ -167,5 +215,48 @@
   </f:if>
 </f:section>
 
+<f:section name="Search">
+  <div class="tx_solr">
+    <div class="tx-solr-searchbox">
+        Search
+    </div>
+  </div>
+</f:section>
 
+<f:section name="imageType">
+  <f:if condition="{mediaItem.link}">
+    <f:then>
+      <f:link.typolink  class="img-text-link__img-link" parameter="{mediaItem.link}">
+        <f:render section="media" arguments="{_all}" />
+      </f:link.typolink>
+    </f:then>
+
+    <f:else>
+      <f:render section="media" arguments="{_all}" />
+    </f:else>
+
+  </f:if>
+</f:section>
+
+<f:section name="media">
+  <f:media file="{mediaItem}" width="{data.imagewidth}" height="{data.imageheight}" alt="{mediaItem.alternative}"
+    class="img-text-link__img img-fluid" />
+</f:section>
+
+<f:comment>
+<f:if condition="{data.mainNavigationLogo} > 0">
+  <f:variable name="mainNavigationLogo"><f:spaceless><f:render section="getClassesFromOptions" arguments="{selectedOption: data.mainNavigationLogo}" /></f:spaceless></f:variable>
+  <div class="main-navigation__logo">
+    <img src="https://demo.t3kit.com/fileadmin/example_content/images/logo.png">
+  </div>
+</f:if>
+<f:section name="getClassesFromOptions">
+    <f:switch expression="{selectedOption}">
+      <f:case value="1">d-block</f:case>
+      <f:case value="2">d-none d-md-block</f:case>
+      <f:case value="3">d-none d-sm-block d-md-none</f:case>
+      <f:defaultCase>d-none</f:defaultCase>
+    </f:switch>
+</f:section>
+</f:comment>
 </html>

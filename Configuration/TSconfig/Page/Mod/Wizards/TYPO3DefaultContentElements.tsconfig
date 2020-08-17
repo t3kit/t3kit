@@ -1,0 +1,36 @@
+# ###########################
+# Groups of Content elements
+# ===========================
+# t3kit CE groups
+# add static and dynamic CE groups
+mod.wizards.newContentElement.wizardItems {
+  static {
+    header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.static
+    before = dynamic
+  }
+  dynamic {
+    header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.dynamic
+    after = static
+  }
+}
+# ___________________________
+
+// TYPO3 default content elements
+// Static
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Header.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Text.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Textpic.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Image.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Textmedia.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Bullets.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Table.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Uploads.tsconfig'
+
+// @import 'EXT:t3kit/'
+
+// Special
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Shortcut.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Div.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Html.tsconfig'
+
+

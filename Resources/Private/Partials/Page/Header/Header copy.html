@@ -61,7 +61,7 @@
           <f:for each="{mainNavigation}" as="navItem">
             <li
               class="main-navigation__item js__main-navigation__item {navItem.data.uid} {f:if(condition: navItem.active, then:' _active')} {f:if(condition: navItem.children, then:' _sub')}">
-              <a href="{navItem.link}" title="{navItem.title}"
+              <a href="{navItem.link}"
                 class="main-navigation__item-link js__main-navigation__item-link">{navItem.title}</a>
 
               <f:if condition="{navItem.children}">
@@ -111,13 +111,13 @@
         <f:for each="{languageNavigation}" as="language">
           <f:if condition="{language.available}">
             <f:then>
-              <a href="{language.link}" title="{language.title}"
+              <a href="{language.link}"
                 class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
                 <span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
               </a>
             </f:then>
             <f:else>
-              <span title="{language.title}" class="header-top__language-menu-box-item">
+              <span class="header-top__language-menu-box-item">
                 <span class="flag-icon flag-icon-{language.flagIdentifier}"></span> {language.navigationTitle}
               </span>
             </f:else>

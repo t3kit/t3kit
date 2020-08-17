@@ -1,29 +1,27 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:spaceless>
 
-  <f:if condition="{data.frame_class} != 'none' || {data.space_before_class} || {data.space_after_class}">
-    <div class="{f:if(condition: data.frame_class, then: 'frame {data.frame_class}')}{f:if(condition: data.space_before_class, then: ' {data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' {data.space_after_class}')}">
-  </f:if>
+<f:if condition="{data.frame_class} != 'none' || {data.space_before_class} || {data.space_after_class}">
+  <div class="{f:if(condition: data.frame_class, then: 'frame-{data.frame_class}')}{f:if(condition: data.space_before_class, then: ' {data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' {data.space_after_class}')}">
+</f:if>
 
-  <div id="c{data.uid}" class="CType__{data.CType}{f:if(condition: data.layout, then: ' {data.layout}')}">
-    <f:if condition="{data._LOCALIZED_UID}"><a id="c{data._LOCALIZED_UID}"></a></f:if>
+<div id="c{data.uid}" class="ctype__{data.CType} {data.background_color_class} {data.color_class}
+  {f:if(condition: data.layout, then: ' {data.layout}')}">
+  <f:if condition="{data._LOCALIZED_UID}"><a id="c{data._LOCALIZED_UID}"></a></f:if>
 
-    <f:render section="Header" optional="true">
-      <f:render partial="Header/All" arguments="{_all}" />
-    </f:render>
+  <f:render section="Header" optional="true">
+    <f:render partial="Header/All" arguments="{_all}" />
+  </f:render>
 
-    <f:render section="Main" optional="true" />
+  <f:render section="Main" optional="true" />
 
-    <f:render section="ScrollToTop" optional="true">
-      <f:render partial="Nav/ScrollToTop" arguments="{_all}" />
-    </f:render>
+  <f:render section="ScrollToTop" optional="true">
+    <f:render partial="Nav/ScrollToTop" arguments="{_all}" />
+  </f:render>
 
+</div>
+
+<f:if condition="{data.frame_class} != 'none' || {data.space_before_class} || {data.space_after_class}">
   </div>
-
-  <f:if condition="{data.frame_class} != 'none' || {data.space_before_class} || {data.space_after_class}">
-    </div>
-  </f:if>
-
-</f:spaceless>
+</f:if>
 
 </html>

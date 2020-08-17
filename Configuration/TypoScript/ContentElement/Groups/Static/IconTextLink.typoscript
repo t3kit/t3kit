@@ -1,0 +1,20 @@
+# ###########################
+# Icon Text Button
+#
+# CType: iconTextLink
+# ===========================
+tt_content {
+  iconTextLink =< lib.contentElement
+  iconTextLink {
+
+    templateName = IconTextLink
+
+    dataProcessing {
+      10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+      10 {
+        fieldName = pi_flexform
+        as = flexform
+      }
+    }
+  }
+}

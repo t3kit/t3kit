@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="simpleSiteHeader.title" resname="simpleSiteHeader.title">
+				<source>Simple Site Header</source>
+			</trans-unit>
+			<trans-unit id="simpleSiteHeader.description" resname="simpleSiteHeader.description">
+				<source>Simple main header of the site. Will be copied to all subpages.</source>
+			</trans-unit>
+
+			<trans-unit id="tab.settings" resname="tab.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="tab.logo" resname="tab.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="flexform.title" resname="flexform.title">
+				<source>Simple site header settings</source>
+			</trans-unit>
+
+			<!-- main_nav -->
+			<trans-unit id="flexform.main_nav.sheet_title" resname="flexform.main_nav.sheet_title">
+				<source>Main navigation</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_search" resname="flexform.main_nav_search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_lang_menu" resname="flexform.main_nav_lang_menu">
+				<source>Language menu</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_dropdown" resname="flexform.main_nav_dropdown">
+				<source>Dropdown</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_full_width" resname="flexform.main_nav_full_width">
+				<source>Main navigation full width</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_toggle_position" resname="flexform.main_nav_mobile_toggle_position">
+				<source>Mobile navigation toggle position</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_toggle_position.right" resname="flexform.main_nav_mobile_toggle_position.right">
+				<source>Right top</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_toggle_position.left" resname="flexform.main_nav_mobile_toggle_position.left">
+				<source>Left top</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_breakpoint" resname="flexform.main_nav_mobile_breakpoint">
+				<source>Mobile navigation breakpoint</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_breakpoint.lg" resname="flexform.main_nav_mobile_breakpoint.lg">
+				<source>992px and less</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_breakpoint.xl" resname="flexform.main_nav_mobile_breakpoint.xl">
+				<source>1200px and less</source>
+			</trans-unit>
+			<trans-unit id="flexform.main_nav_mobile_breakpoint.xxl" resname="flexform.main_nav_mobile_breakpoint.xxl">
+				<source>1400px and less</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

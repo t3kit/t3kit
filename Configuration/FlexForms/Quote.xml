@@ -1,0 +1,39 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<author_name>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:flexform.author_name</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</author_name>
+
+					<job_title>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_quote.xlf:flexform.job_title</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</job_title>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

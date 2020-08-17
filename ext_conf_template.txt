@@ -1,0 +1,21 @@
+# PageTS
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableBELayouts
+disableBELayouts = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableContentElements
+disableContentElements = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableRTE
+disableRTE = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableTCAdefaults
+disableTCAdefaults = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableTCEFORM
+disableTCEFORM = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:pagets.disableTCEMAIN
+disableTCEMAIN = 0
+
+# cat=PageTs; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_ext_conf_template.xlf:userts.disableOptions
+disableUserTSoptions = 0

@@ -1,0 +1,189 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Header" />
+
+<f:section name="Main">
+
+  <footer class="footer ce-site-footer">
+    <div class="ce-site-footer__container
+      {f:if(condition: flexform.footer_full_width, then: ' container-fluid', else: ' container')}">
+
+      <div class="ce-site-footer__columns">
+        <div class="row">
+
+          <f:if condition="{flexform.show_address} || {files}">
+            <div class="col-lg-3">
+
+              <f:if condition="{files} || {svg_image}">
+                <div class="ce-site-footer__logo">
+                  <f:if condition="{files}">
+                    <f:render partial="Media/Image" arguments="{_all}" />
+                  </f:if>
+                  <f:if condition="{svg_image}">
+                    <f:render partial="Media/Svg" arguments="{data: data, files: svg_image}" />
+                  </f:if>
+                </div>
+              </f:if>
+
+              <f:if condition="{flexform.show_address}">
+                <div class="ce-site-footer__info">
+                  <div class="ce-site-footer__info-title-wrp">
+                    <span class="ce-site-footer__info-title">{flexform.name}</span>
+                  </div>
+
+                  <address class="ce-site-footer__address-wrp">
+                    <span class="ce-site-footer__address">
+                      <f:format.nl2br>{flexform.address}</f:format.nl2br>
+                    </span>
+
+                    <div class="ce-site-footer__phone">
+                      <f:link.typolink parameter="{flexform.contactPhone_link}" class="ce-site-footer__phone-item ce-site-footer__link">
+                        {flexform.contactPhone_title}
+                      </f:link.typolink>
+                    </div>
+
+                    <div class="ce-site-footer__email">
+                      <f:link.typolink parameter="{flexform.email}" class="ce-site-footer__email-item ce-site-footer__link"/>
+                    </div>
+                  </address>
+                </div>
+              </f:if>
+
+            </div>
+          </f:if>
+
+          <div class="col-lg-9">
+          <nav class="footer-site-navigation row" aria-label="Site">
+
+            <f:if condition="{links_1.1}">
+              <div class="col-lg">
+
+                <div class="ce-site-footer__column">
+                  <f:if condition="{flexform.column_1_title}">
+                    <div class="ce-site-footer__column-title">
+                      <f:render partial="Header/Render/Header" arguments="{
+                        header: flexform.column_1_title,
+                        layout: data.header_layout,
+                        style: data.header_style}" />
+                    </div>
+                  </f:if>
+
+                  <div class="ce-site-footer__column-links">
+                    <f:render section="links" arguments="{links: links_1, flexform: flexform}" />
+                  </div>
+                </div>
+
+              </div>
+            </f:if>
+
+            <f:if condition="{links_2.1}">
+              <div class="col-lg">
+
+                <div class="ce-site-footer__column">
+                  <f:if condition="{flexform.column_2_title}">
+                    <div class="ce-site-footer__column-title">
+                      <f:render partial="Header/Render/Header" arguments="{
+                        header: flexform.column_2_title,
+                        layout: data.header_layout,
+                        style: data.header_style}" />
+                    </div>
+                  </f:if>
+
+                  <div class="ce-site-footer__column-links">
+                    <f:render section="links" arguments="{links: links_2, flexform: flexform}" />
+                  </div>
+                </div>
+
+              </div>
+            </f:if>
+
+            <f:if condition="{links_3.1}">
+              <div class="col-lg">
+
+                <div class="ce-site-footer__column">
+                  <f:if condition="{flexform.column_3_title}">
+                    <div class="ce-site-footer__column-title">
+                      <f:render partial="Header/Render/Header" arguments="{
+                        header: flexform.column_3_title,
+                        layout: data.header_layout,
+                        style: data.header_style}" />
+                    </div>
+                  </f:if>
+
+                  <div class="ce-site-footer__column-links">
+                    <f:render section="links" arguments="{links: links_3, flexform: flexform}" />
+                  </div>
+                </div>
+
+              </div>
+            </f:if>
+
+          </nav>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="ce-site-footer__bottom">
+        <f:if condition="{flexform.copyright}">
+          <div class="ce-site-footer__bottom-copyright-wrp">
+            <div class="ce-site-footer__bottom-copyright">
+              {flexform.copyright}
+            </div>
+          </div>
+        </f:if>
+        <f:if condition="{bottom_links.1}">
+            <div class="ce-site-footer__bottom-links">
+              <f:render section="links" arguments="{links: bottom_links, flexform: flexform}" />
+            </div>
+        </f:if>
+      </div>
+
+    </div>
+  </footer>
+
+</f:section>
+
+
+<f:comment>======== Links ========</f:comment>
+<f:section name="links">
+
+    <div class="ce-site-footer__links">
+      <ul class="ce-site-footer__links-list">
+        <f:for each="{links}" as="linkItem">
+          <li class="ce-site-footer__links-list-item {navItem.data.uid} {f:if(condition: navItem.active, then:' active')}">
+            <a href="{linkItem.link}" class="ce-site-footer__links-list-item-link ce-site-footer__link">
+                <f:render section="linkTitle" arguments="{item: linkItem, flexform: flexform}" />
+            </a>
+          </li>
+        </f:for>
+
+      </ul>
+    </div>
+
+</f:section>
+
+
+<f:section name="linkTitle">
+
+  <f:if condition="{flexform.show_page_icons} && {item.data.nav_icon}">
+    <span class="ce-site-footer__links-list-item-icon-wrp">
+      <t3kit:render.svg src="{item.data.nav_icon}" aria-hidden="true" focusable="false" class="t3icon ce-site-footer__links-list-item-icon {item.data.nav_icon_class}" />
+    </span>
+  </f:if>
+
+  <f:if condition="{flexform.show_page_icons} && {item.nav_image}">
+    <div class="ce-site-footer__links-list-item-image-wrp">
+      <f:media class="ce-site-footer__links-list-item-image img-fluid"
+        file="{item.nav_image.0}"
+        alt="{item.nav_image.0.alternative}"
+        loading="lazy" />
+    </div>
+  </f:if>
+
+  <span class="ce-site-footer__links-list-item-title">{item.title}</span>
+</f:section>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Context help for tt_content field -->
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage_csh.xlf" date="2019-04-20UTC12:53:470" product-name="context_help">
+		<header/>
+		<body>
+
+			<trans-unit id="height.description" resname="height.description">
+				<source>
+					The minimum width of the image should be not less than &lt;strong&gt;1920px&lt;/strong&gt;.&lt;br&gt;
+					Also, it is recommended to crop the image according to a defined height.&lt;br&gt;
+					Without the manual crop, the image will be cropped by a center.
+				</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

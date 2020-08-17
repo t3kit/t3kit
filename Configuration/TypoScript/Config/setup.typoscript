@@ -1,0 +1,69 @@
+# Config options reference https://docs.typo3.org/typo3cms/TyposcriptReference/stable/Setup/Config/
+config {
+  absRefPrefix = auto
+  doctype = html5
+
+  index_enable = 1
+  index_externals = 1
+  index_metatags = 1
+
+  inlineStyle2TempFile = 1
+
+  linkVars = L(int)
+
+  metaCharset = utf-8
+
+  moveJsFromHeaderToFooter = 1
+
+  pageTitleFirst = 1
+  pageTitleSeparator = -
+  pageTitleSeparator.noTrimWrap = | | |
+
+  removeDefaultCss = 1
+
+  // default target attr for RTE external links
+  // extTarget = _self
+
+  sendCacheHeaders = 1
+
+  # if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
+  spamProtectEmailAddresses = ascii
+
+  # If the value is "external", then the default JavaScript is written to a temporary file and included from that file
+  # removeDefaultJS = external
+  removeDefaultJS = 1
+
+  # TYPO3 Production context
+  admPanel = 0
+  debug = 0
+  headerComment = {$config.headerComment}
+  no_cache = 0
+
+  # Compression and Concatenation of CSS and JS Files
+  # not using by default because t3kit compressing FE files separately
+  # should be enabled if using some other non-t3kit CSS/JS files
+  # compressJs = 1
+  # compressCss = 1
+  # concatenateJs = 1
+  # concatenateCss = 1
+}
+
+
+
+# If [Development]
+# TYPO3 Development context and every its subcontext
+[applicationContext matches "#^Development#"]
+config {
+  admPanel = 1
+  debug = 1
+  headerComment = {$config.headerComment} (Development)
+  no_cache = 1
+
+  # Compression and Concatenation of CSS and JS Files
+  # not using by default because t3kit compressing FE files separately and only for Production
+  # compressJs = 0
+  # compressCss = 0
+  # concatenateJs = 0
+  # concatenateCss = 0
+}
+[end]
