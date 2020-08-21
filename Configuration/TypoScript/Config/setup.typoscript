@@ -39,6 +39,16 @@ config {
   headerComment = {$config.headerComment}
   no_cache = 0
 
+  // https://owasp.org/www-project-secure-headers/
+  additionalHeaders {
+    // The X-Frame-Options response header improves the protection of web applications against clickjacking. It instructs the browser whether the content can be displayed within frames.
+    210.header = X-Frame-Options:SAMEORIGIN
+    // The Referrer-Policy HTTP header governs which referrer information, sent in the Referer header, should be included with requests made.
+    230.header = Referrer-Policy:strict-origin-when-cross-origin
+    // The X-XSS-Protection header has been deprecated by modern browsers and its use can introduce additional security issues on the client side. As such, it is recommended to set the header as X-XSS-Protection: 0 in order to disable the XSS Auditor, and not allow it to take the default behavior of the browser handling the response.
+    250.header = X-Xss-Protection:0
+  }
+
   # Compression and Concatenation of CSS and JS Files
   # not using by default because t3kit compressing FE files separately
   # should be enabled if using some other non-t3kit CSS/JS files
