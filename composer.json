@@ -38,7 +38,8 @@
     "typo3/cms-rte-ckeditor": "^10.4.6",
     "typo3/cms-seo": "^10.4.6",
     "typo3/cms-tstemplate": "^10.4.6",
-    "typo3/cms-felogin": "^10.4.6"
+    "typo3/cms-felogin": "^10.4.6",
+    "friendsoftypo3/frontend-editing": "^1.9 || ^2.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.6",
