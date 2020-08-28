@@ -50,7 +50,6 @@
   "suggest": {
     "typo3/cms-indexed-search": "TYPO3 indexed search",
     "yoast-seo-for-typo3/yoast_seo": "Yoast SEO for TYPO3",
-    "friendsoftypo3/frontend-editing": "Enable editors to work with the content in the most intuitive way possible",
     "apache-solr-for-typo3/solr": "Apache Solr for TYPO3"
   },
   "autoload": {
