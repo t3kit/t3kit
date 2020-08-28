@@ -2,6 +2,7 @@
 
 <f:if condition="{data.bodytext}">
   <f:render partial="Bodytext/Render/Bodytext" arguments="{
+    uid: data.uid,
     bodytext: data.bodytext,
     bodytext_position: data.content_position}" />
 </f:if>

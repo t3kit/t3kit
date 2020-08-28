@@ -4,14 +4,14 @@
   <f:variable name="position">text-{link_position}</f:variable>
 </f:if>
 
-<f:if condition="{link_title}">
+<f:if condition="{link_title} || {core:isPlaceholderEnabled()}">
   <div class="external-link-partial__wrp {position}">
     <f:link.external
       uri="{link}"
       additionalAttributes="{aria-label:accessible_link_label}"
       class="external-link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}"
       defaultScheme="https">
-        {link_title}
+        <core:contentEditable table="tt_content" field="link_title" uid="{uid}">{link_title}</core:contentEditable>
     </f:link.external>
   </div>
 </f:if>

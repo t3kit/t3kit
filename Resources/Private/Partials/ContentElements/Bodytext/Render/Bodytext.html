@@ -4,8 +4,12 @@
   <f:variable name="position">text-{bodytext_position}</f:variable>
 </f:if>
 
-<f:if condition="{bodytext}">
-  <p class="bodytext-partial {position}"><f:format.nl2br>{bodytext}</f:format.nl2br></p>
+<f:if condition="{bodytext} || {core:isPlaceholderEnabled()}">
+  <p class="bodytext-partial {position}">
+    <core:contentEditable table="tt_content" field="bodytext" uid="{uid}">
+      <f:format.nl2br>{bodytext}</f:format.nl2br>
+    </core:contentEditable>
+  </p>
 </f:if>
 
 </html>

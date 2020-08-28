@@ -45,7 +45,7 @@
         <div class="ce-textmedia__header">
           <f:render partial="Header/All" arguments="{_all}" />
         </div>
-        <f:if condition="{data.bodytext}">
+        <f:if condition="{data.bodytext} || {core:isPlaceholderEnabled()}">
           <div class="ce-textmedia__bodytext">
             <f:render partial="Bodytext/RTEBodytext" arguments="{_all}" />
           </div>

@@ -18,9 +18,11 @@
 
     <f:render partial="Media/Type/{type}" arguments="{data: data, file:file, height:height, width:width}" optional="1"/>
 
-    <f:if condition="{file.description}">
+    <f:if condition="{file.description} || {core:isPlaceholderEnabled()}">
       <figcaption class="figure-partial__caption figure-caption text-{file.referenceProperties.description_position}">
-        <f:format.nl2br>{file.description}</f:format.nl2br>
+        <core:contentEditable table="sys_file_reference" field="description" uid="{file.uid}">
+          <f:format.nl2br>{file.description}</f:format.nl2br>
+        </core:contentEditable>
       </figcaption>
     </f:if>
 

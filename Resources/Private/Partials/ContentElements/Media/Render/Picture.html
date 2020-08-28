@@ -90,11 +90,11 @@
   </f:else>
 </f:if>
 
-<f:comment>Viewport for mobile devices (always 100% viewport widht)</f:comment>
+<f:comment>Viewport for mobile devices (always 100% viewport width)</f:comment>
 <f:variable name="small_viewport_width">100</f:variable>
 
 <f:comment>
-  Calculate picture_width based on selector or widht variable in BE to define relative image width inside a content element
+  Calculate picture_width based on selector or width variable in BE to define relative image width inside a content element
 </f:comment>
 <f:if condition="{width}">
   <f:then>
@@ -118,7 +118,7 @@
   <f:then>
     <f:comment>
       The image element inside the content with a specific width.
-      Usually, it's up to 1200 px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance.
+      Usually, it's up to 1200px based on the Bootstrap grid. Useful to render images not more than 1200px width for better performance.
     </f:comment>
 
     <f:variable name="big_viewport_width">{fixed_viewport_width}px</f:variable>
