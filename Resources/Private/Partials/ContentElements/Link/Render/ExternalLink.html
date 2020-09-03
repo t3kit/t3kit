@@ -9,7 +9,7 @@
     <f:link.external
       uri="{link}"
       additionalAttributes="{aria-label:accessible_link_label}"
-      class="external-link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}"
+      class="external-link-partial {f:if(condition: '{stretched_link} && !{core:isFrontendEditingActive()}', then: ' stretched-link ')}"
       defaultScheme="https">
         <core:contentEditable table="tt_content" field="link_title" uid="{uid}">{link_title}</core:contentEditable>
     </f:link.external>

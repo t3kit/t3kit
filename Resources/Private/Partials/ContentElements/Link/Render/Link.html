@@ -9,7 +9,7 @@
     <f:link.typolink
       parameter="{link}"
       additionalAttributes="{aria-label:accessible_link_label}"
-      class="link-partial {f:if(condition: stretched_link, then: ' stretched-link ')}">
+      class="link-partial {f:if(condition: '{stretched_link} && !{core:isFrontendEditingActive()}', then: ' stretched-link ')}">
         <core:contentEditable table="tt_content" field="link_title" uid="{uid}">{link_title}</core:contentEditable>
     </f:link.typolink>
   </div>
