@@ -38,8 +38,7 @@
     "typo3/cms-rte-ckeditor": "^10.4.6",
     "typo3/cms-seo": "^10.4.6",
     "typo3/cms-tstemplate": "^10.4.6",
-    "typo3/cms-felogin": "^10.4.6",
-    "friendsoftypo3/frontend-editing": "^1.9 || ^2.0"
+    "typo3/cms-felogin": "^10.4.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.6",
@@ -50,7 +49,8 @@
   "suggest": {
     "typo3/cms-indexed-search": "TYPO3 indexed search",
     "yoast-seo-for-typo3/yoast_seo": "Yoast SEO for TYPO3",
-    "apache-solr-for-typo3/solr": "Apache Solr for TYPO3"
+    "apache-solr-for-typo3/solr": "Apache Solr for TYPO3",
+    "friendsoftypo3/frontend-editing": "Easy inline editing for TYPO3"
   },
   "autoload": {
     "psr-4": {
