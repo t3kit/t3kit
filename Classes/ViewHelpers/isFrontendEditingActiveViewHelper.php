@@ -16,10 +16,8 @@ namespace T3k\t3kit\ViewHelpers;
  */
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-use TYPO3\CMS\FrontendEditing\Service\ExtensionManagerConfigurationService;
-use TYPO3\CMS\FrontendEditing\Utility\FrontendEditingUtility;
-use TYPO3\CMS\FrontendEditing\ViewHelpers\IsPlaceholderEnabledViewHelper
-    as FrontendEditingIsPlaceholderEnabledViewHelper;
+use TYPO3\CMS\FrontendEditing\ViewHelpers\IsFrontendEditingActiveViewHelper
+    as FrontendEditingIsFrontendEditingActiveViewHelper;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
@@ -35,7 +33,7 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
  *     {header}
  * </f:if>
  */
-class IsPlaceholderEnabledViewHelper extends AbstractViewHelper
+class IsFrontendEditingActiveViewHelper extends AbstractViewHelper
 {
     use CompileWithRenderStatic;
 
@@ -50,7 +48,7 @@ class IsPlaceholderEnabledViewHelper extends AbstractViewHelper
         RenderingContextInterface $renderingContext
     ) {
         if (ExtensionManagementUtility::isLoaded('frontend_editing')) {
-            return FrontendEditingIsPlaceholderEnabledViewHelper::renderStatic(
+            return FrontendEditingIsFrontendEditingActiveViewHelper::renderStatic(
                 $arguments,
                 $renderChildrenClosure,
                 $renderingContext

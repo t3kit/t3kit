@@ -26,26 +26,26 @@
           </div>
         </f:if>
 
-        <f:if condition="{data.header} || {core:isPlaceholderEnabled()}">
+        <f:if condition="{data.header} || {t3kit:isPlaceholderEnabled()}">
           <div class="ce-icon-text-link__header">
             <f:render partial="Header/Header" arguments="{_all}" />
           </div>
         </f:if>
       </div>
 
-      <f:if condition="{data.subheader} || {core:isPlaceholderEnabled()}">
+      <f:if condition="{data.subheader} || {t3kit:isPlaceholderEnabled()}">
         <div class="ce-icon-text-link__subheader">
           <f:render partial="Header/SubHeader" arguments="{_all}" />
         </div>
       </f:if>
 
-      <f:if condition="{data.bodytext} || {core:isPlaceholderEnabled()}">
+      <f:if condition="{data.bodytext} || {t3kit:isPlaceholderEnabled()}">
         <div class="ce-icon-text-link__bodytext">
           <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
         </div>
       </f:if>
 
-      <f:if condition="{data.link} || {core:isPlaceholderEnabled()}">
+      <f:if condition="{data.link} || {t3kit:isPlaceholderEnabled()}">
         <div class="ce-icon-text-link__link">
           <f:if condition="{data.link_as_button}">
             <f:then>

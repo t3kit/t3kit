@@ -4,11 +4,11 @@
   <f:variable name="position">text-{bodytext_position}</f:variable>
 </f:if>
 
-<f:if condition="{bodytext} || {core:isPlaceholderEnabled()}">
+<f:if condition="{bodytext} || {t3kit:isPlaceholderEnabled()}">
   <p class="bodytext-partial {position}">
-    <core:contentEditable table="tt_content" field="bodytext" uid="{uid}">
+    <t3kit:contentEditable table="tt_content" field="bodytext" uid="{uid}">
       <f:format.nl2br>{bodytext}</f:format.nl2br>
-    </core:contentEditable>
+    </t3kit:contentEditable>
   </p>
 </f:if>
 
