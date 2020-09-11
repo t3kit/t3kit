@@ -27,9 +27,9 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
  *
  * Example:
  *
- * <t3kit:contentEditable table="tt_content" field="bodytext" uid="{item.uid}">
+ * <core:contentEditable table="tt_content" field="bodytext" uid="{item.uid}">
  *     {item.bodytext}
- * </t3kit:contentEditable>
+ * </core:contentEditable>
  *
  * Output:
  * <div contenteditable="true" data-table="tt_content" data-field="bodytext" data-uid="1">

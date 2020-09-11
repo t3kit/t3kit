@@ -1,13 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:if condition="{data.header_layout} != 100">
-  <f:render partial="Header/Render/Header" arguments="{
-    uid: data.uid,
-    header: data.header,
-    layout: data.header_layout,
-    style: data.header_style,
-    position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
-    link: data.header_link}" />
+  <f:if condition="{data.header} || {t3kit:isPlaceholderEnabled()}">
+    <f:render partial="Header/Render/Header" arguments="{
+      uid: data.uid,
+      header: data.header,
+      layout: data.header_layout,
+      style: data.header_style,
+      position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
+      link: data.header_link}" />
+  </f:if>
 </f:if>
 
 </html>

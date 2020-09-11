@@ -31,7 +31,7 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
  *
  * Example:
  *
- * <f:if condition="{header} || {t3kit:isPlaceholderEnabled()}">
+ * <f:if condition="{header} || {core:isPlaceholderEnabled()}">
  *     {header}
  * </f:if>
  */
