@@ -35,7 +35,9 @@
     # __________________________
   </f:comment>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
+  <header class="header simple-site-header sticky-header">
+    <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:1, slide:'-1'}" />
+  </header>
 
   <main id="main" class="start-page">
 
@@ -90,7 +92,7 @@
       </div>
 
       <div class="container-wrp inverted-bg-color pt-5 pb-5 pt-lg-7 pb-lg-7">
-        <div class="container">
+        <div class="container overflow-hidden">
           <div class="row g-5 justify-content-around">
             <div class="col-lg-4">
               <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3313}" />
@@ -174,7 +176,7 @@
       </div>
 
       <div class="container-wrp gray-90-bg-color pt-5 pb-5">
-        <div class="container">
+        <div class="container overflow-hidden">
           <div class="row g-5">
             <div class="col-lg-4">
               <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3325}" />
@@ -276,7 +278,7 @@
       </div>
 
       <div class="container-wrp ">
-        <div class="container">
+        <div class="container overflow-hidden">
           <div class="row g-5 justify-content-around">
             <div class="col-lg-4">
               <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3349}" />
@@ -304,7 +306,7 @@
       </div>
 
       <div class="container-wrp pb-5 pb-lg-7">
-        <div class="container">
+        <div class="container overflow-hidden">
           <div class="row g-5 justify-content-around">
             <div class="col-lg-4">
               <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:3355}" />
@@ -331,7 +333,9 @@
 
   </main>
 
-  <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
+  <footer class="footer">
+    <f:cObject typoscriptObjectPath="lib.contentRender" data="{colPos:11, slide:'-1'}" />
+  </footer>
 
 </f:section>
 
