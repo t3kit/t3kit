@@ -4,32 +4,44 @@
   <f:switch expression="{header_layout}">
     <f:case value="1">
       <h2 class="{header_position} {subheader_style} subheader-text-item">
-        <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        <t3kit:contentEditable table="tt_content" field="subheader_text" uid="{uid}">
+          <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        </t3kit:contentEditable>
       </h2>
     </f:case>
     <f:case value="2">
       <h3 class="{header_position} {subheader_style} subheader-text-item">
-        <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        <t3kit:contentEditable table="tt_content" field="subheader_text" uid="{uid}">
+          <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        </t3kit:contentEditable>
       </h3>
     </f:case>
     <f:case value="3">
       <h4 class="{header_position} {subheader_style} subheader-text-item">
-        <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        <t3kit:contentEditable table="tt_content" field="subheader_text" uid="{uid}">
+          <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        </t3kit:contentEditable>
       </h4>
     </f:case>
     <f:case value="4">
       <h5 class="{header_position} {subheader_style} subheader-text-item">
-        <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        <t3kit:contentEditable table="tt_content" field="subheader_text" uid="{uid}">
+          <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        </t3kit:contentEditable>
       </h5>
     </f:case>
     <f:case value="5">
       <h6 class="{header_position} {subheader_style} subheader-text-item">
-        <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        <t3kit:contentEditable table="tt_content" field="subheader_text" uid="{uid}">
+          <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        </t3kit:contentEditable>
       </h6>
     </f:case>
     <f:case value="6">
       <h6 class="{header_position} {subheader_style} subheader-text-item">
-        <small><f:format.nl2br>{subheader_text}</f:format.nl2br></small>
+        <t3kit:contentEditable table="tt_content" field="subheader_text" uid="{uid}">
+          <f:format.nl2br>{subheader_text}</f:format.nl2br>
+        </t3kit:contentEditable>
       </h6>
     </f:case>
   </f:switch>

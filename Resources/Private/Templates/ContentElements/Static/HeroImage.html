@@ -33,25 +33,25 @@
       <div class="ce-hero-image__caption-wrp container" {f:if(condition:height, then: 'style="height: {height}px;"')}>
         <div class="ce-hero-image__caption ce-hero-image__caption--{flexform.caption_alignment}">
 
-          <f:if condition="{data.header_text}">
+          <f:if condition="{data.header_text} || {t3kit:isPlaceholderEnabled()}">
             <div class="ce-hero-image__caption-header">
               <f:render partial="Header/HeaderText" arguments="{_all}" />
             </div>
           </f:if>
 
-          <f:if condition="{data.subheader_text}">
+          <f:if condition="{data.subheader_text} || {t3kit:isPlaceholderEnabled()}">
             <div class="ce-hero-image__caption-subheader">
               <f:render partial="Header/SubHeaderText" arguments="{_all}" />
             </div>
           </f:if>
 
-          <f:if condition="{data.bodytext}">
+          <f:if condition="{data.bodytext} || {t3kit:isPlaceholderEnabled()}">
             <div class="ce-hero-image__caption-bodytext fluid-font-size">
               <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
             </div>
           </f:if>
 
-          <f:if condition="{data.link}">
+          <f:if condition="{data.link} || {t3kit:isPlaceholderEnabled()}">
             <div class="ce-hero-image__caption-link">
               <f:if condition="{data.link_as_button}">
                 <f:then>

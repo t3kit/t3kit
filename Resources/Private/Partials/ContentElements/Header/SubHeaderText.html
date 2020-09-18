@@ -1,12 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:if condition="{data.header_layout} != 100">
-  <f:if condition="{data.subheader_text}">
-      <f:render partial="Header/Render/SubHeaderText" arguments="{
-        subheader_text: data.subheader_text,
-        header_layout: data.header_layout,
-        subheader_style: data.subheader_style,
-        header_position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
+  <f:if condition="{data.subheader_text} || {t3kit:isPlaceholderEnabled()}">
+    <f:render partial="Header/Render/SubHeaderText" arguments="{
+      uid: data.uid,
+      subheader_text: data.subheader_text,
+      header_layout: data.header_layout,
+      subheader_style: data.subheader_style,
+      header_position: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}' }" />
   </f:if>
 </f:if>
 

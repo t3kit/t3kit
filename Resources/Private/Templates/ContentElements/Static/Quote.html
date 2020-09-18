@@ -10,7 +10,7 @@
   <div class="ce-quote__wrp">
     <blockquote class="ce-quote">
 
-      <f:if condition="{data.bodytext}">
+      <f:if condition="{data.bodytext} || {t3kit:isPlaceholderEnabled()}">
         <div class="ce-quote__bodytext">
           <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
         </div>
@@ -30,7 +30,7 @@
           </span>
         </f:if>
 
-        <f:if condition="{data.link}">
+        <f:if condition="{data.link} || {t3kit:isPlaceholderEnabled()}">
           <div class="ce-quote__footer-link">
             <f:render partial="Link/Link" arguments="{_all}" />
           </div>

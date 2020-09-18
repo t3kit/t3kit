@@ -31,13 +31,13 @@
   <f:variable name="position">text-{link_position}</f:variable>
 </f:if>
 
-<f:if condition="{link_title}">
+<f:if condition="{link_title} || {t3kit:isPlaceholderEnabled()}">
   <div class="button-partial__wrp {position}">
     <f:link.typolink
       parameter="{link}"
       additionalAttributes="{aria-label:accessible_link_label}"
-      class="button-partial {btn_class} {f:if(condition: stretched_link, then: ' stretched-link ')}">
-        {link_title}
+      class="button-partial {btn_class} {f:if(condition: '{stretched_link} && !{t3kit:isFrontendEditingActive()}', then: ' stretched-link ')}">
+        <t3kit:contentEditable table="tt_content" field="link_title" uid="{uid}">{link_title}</t3kit:contentEditable>
     </f:link.typolink>
   </div>
 </f:if>
