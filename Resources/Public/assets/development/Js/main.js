@@ -4,7 +4,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.0.0-alpha1): util/index.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -113,21 +113,20 @@
   };
 
   const typeCheckConfig = (componentName, config, configTypes) => {
-    Object.keys(configTypes)
-      .forEach(property => {
-        const expectedTypes = configTypes[property];
-        const value = config[property];
-        const valueType = value && isElement(value) ?
-          'element' :
-          toType(value);
+    Object.keys(configTypes).forEach(property => {
+      const expectedTypes = configTypes[property];
+      const value = config[property];
+      const valueType = value && isElement(value) ?
+        'element' :
+        toType(value);
 
-        if (!new RegExp(expectedTypes).test(valueType)) {
-          throw new Error(
-            `${componentName.toUpperCase()}: ` +
-            `Option "${property}" provided type "${valueType}" ` +
-            `but expected type "${expectedTypes}".`)
-        }
-      });
+      if (!new RegExp(expectedTypes).test(valueType)) {
+        throw new Error(
+          `${componentName.toUpperCase()}: ` +
+          `Option "${property}" provided type "${valueType}" ` +
+          `but expected type "${expectedTypes}".`)
+      }
+    });
   };
 
   const isVisible = element => {
@@ -164,7 +163,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.0.0-alpha1): dom/data.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -179,22 +178,22 @@
     let id = 1;
     return {
       set(element, key, data) {
-        if (typeof element.key === 'undefined') {
-          element.key = {
+        if (typeof element.bsKey === 'undefined') {
+          element.bsKey = {
             key,
             id
           };
           id++;
         }
 
-        storeData[element.key.id] = data;
+        storeData[element.bsKey.id] = data;
       },
       get(element, key) {
-        if (!element || typeof element.key === 'undefined') {
+        if (!element || typeof element.bsKey === 'undefined') {
           return null
         }
 
-        const keyProperties = element.key;
+        const keyProperties = element.bsKey;
         if (keyProperties.key === key) {
           return storeData[keyProperties.id]
         }
@@ -202,14 +201,14 @@
         return null
       },
       delete(element, key) {
-        if (typeof element.key === 'undefined') {
+        if (typeof element.bsKey === 'undefined') {
           return
         }
 
-        const keyProperties = element.key;
+        const keyProperties = element.bsKey;
         if (keyProperties.key === key) {
           delete storeData[keyProperties.id];
-          delete element.key;
+          delete element.bsKey;
         }
       }
     }
@@ -302,7 +301,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.0.0-alpha1): dom/event-handler.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -392,6 +391,8 @@
 
   function bootstrapHandler(element, fn) {
     return function handler(event) {
+      event.delegateTarget = element;
+
       if (handler.oneOff) {
         EventHandler.off(element, event.type, fn);
       }
@@ -407,6 +408,8 @@
       for (let { target } = event; target && target !== this; target = target.parentNode) {
         for (let i = domElements.length; i--;) {
           if (domElements[i] === target) {
+            event.delegateTarget = target;
+
             if (handler.oneOff) {
               EventHandler.off(element, event.type, fn);
             }
@@ -505,14 +508,13 @@
   function removeNamespacedHandlers(element, events, typeEvent, namespace) {
     const storeElementEvent = events[typeEvent] || {};
 
-    Object.keys(storeElementEvent)
-      .forEach(handlerKey => {
-        if (handlerKey.indexOf(namespace) > -1) {
-          const event = storeElementEvent[handlerKey];
+    Object.keys(storeElementEvent).forEach(handlerKey => {
+      if (handlerKey.indexOf(namespace) > -1) {
+        const event = storeElementEvent[handlerKey];
 
-          removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector);
-        }
-      });
+        removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector);
+      }
+    });
   }
 
   const EventHandler = {
@@ -545,23 +547,21 @@
       }
 
       if (isNamespace) {
-        Object.keys(events)
-          .forEach(elementEvent => {
-            removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
-          });
+        Object.keys(events).forEach(elementEvent => {
+          removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
+        });
       }
 
       const storeElementEvent = events[typeEvent] || {};
-      Object.keys(storeElementEvent)
-        .forEach(keyHandlers => {
-          const handlerKey = keyHandlers.replace(stripUidRegex, '');
+      Object.keys(storeElementEvent).forEach(keyHandlers => {
+        const handlerKey = keyHandlers.replace(stripUidRegex, '');
 
-          if (!inNamespace || originalTypeEvent.indexOf(handlerKey) > -1) {
-            const event = storeElementEvent[keyHandlers];
+        if (!inNamespace || originalTypeEvent.indexOf(handlerKey) > -1) {
+          const event = storeElementEvent[keyHandlers];
 
-            removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector);
-          }
-        });
+          removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector);
+        }
+      });
     },
 
     trigger(element, event, args) {
@@ -598,16 +598,15 @@
         });
       }
 
-      // merge custom informations in our event
+      // merge custom information in our event
       if (typeof args !== 'undefined') {
-        Object.keys(args)
-          .forEach(key => {
-            Object.defineProperty(evt, key, {
-              get() {
-                return args[key]
-              }
-            });
+        Object.keys(args).forEach(key => {
+          Object.defineProperty(evt, key, {
+            get() {
+              return args[key]
+            }
           });
+        });
       }
 
       if (defaultPrevented) {
@@ -635,7 +634,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.0.0-alpha1): dom/manipulator.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -724,7 +723,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.0.0-alpha1): dom/selector-engine.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -803,7 +802,7 @@
   /**
    * --------------------------------------------------------------------------
    * Bootstrap (v5.0.0-alpha1): collapse.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -1073,8 +1072,7 @@
     }
 
     _getDimension() {
-      const hasWidth = this._element.classList.contains(WIDTH);
-      return hasWidth ? WIDTH : HEIGHT
+      return this._element.classList.contains(WIDTH) ? WIDTH : HEIGHT
     }
 
     _getParent() {
@@ -1105,21 +1103,21 @@
     }
 
     _addAriaAndCollapsedClass(element, triggerArray) {
-      if (element) {
-        const isOpen = element.classList.contains(CLASS_NAME_SHOW);
-
-        if (triggerArray.length) {
-          triggerArray.forEach(elem => {
-            if (isOpen) {
-              elem.classList.remove(CLASS_NAME_COLLAPSED);
-            } else {
-              elem.classList.add(CLASS_NAME_COLLAPSED);
-            }
-
-            elem.setAttribute('aria-expanded', isOpen);
-          });
-        }
+      if (!element || !triggerArray.length) {
+        return
       }
+
+      const isOpen = element.classList.contains(CLASS_NAME_SHOW);
+
+      triggerArray.forEach(elem => {
+        if (isOpen) {
+          elem.classList.remove(CLASS_NAME_COLLAPSED);
+        } else {
+          elem.classList.add(CLASS_NAME_COLLAPSED);
+        }
+
+        elem.setAttribute('aria-expanded', isOpen);
+      });
     }
 
     // Static
@@ -1129,7 +1127,7 @@
       const _config = {
         ...Default,
         ...Manipulator.getDataAttributes(element),
-        ...typeof config === 'object' && config ? config : {}
+        ...(typeof config === 'object' && config ? config : {})
       };
 
       if (!data && _config.toggle && typeof config === 'string' && /show|hide/.test(config)) {
@@ -1213,6 +1211,13 @@
       return Collapse.jQueryInterface
     };
   }
+
+  /**
+   * --------------------------------------------------------------------------
+   * Bootstrap (v5.0.0-alpha1): dropdown.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * --------------------------------------------------------------------------
+   */
 
   /**
    * ------------------------------------------------------------------------
