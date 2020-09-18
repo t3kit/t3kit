@@ -1,10 +1,1 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="1" width="14" height="14" fill="white"/>
-<path d="M3 9H13V10H3V9Z" fill="#B9B9B9"/>
-<path d="M3 7H13V8H3V7Z" fill="#B9B9B9"/>
-<path d="M7 5H13V6H7V5Z" fill="#B9B9B9"/>
-<path d="M7 3H13V4H7V3Z" fill="#B9B9B9"/>
-<path d="M3 11H7V12H3V11Z" fill="#79A548"/>
-<path d="M4.5 6C5.32843 6 6 5.32843 6 4.5C6 3.67157 5.32843 3 4.5 3C3.67157 3 3 3.67157 3 4.5C3 5.32843 3.67157 6 4.5 6Z" fill="#5599FF"/>
-<path d="M14 2V14H2V2H14ZM15 1H1V15H15V1Z" fill="#999999"/>
-</svg>
+<svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m1 1h14v14h-14z" fill="#fff"/><g fill="#b9b9b9"><path d="m3 9h10v1h-10z"/><path d="m3 7h10v1h-10z"/><path d="m7 5h6v1h-6z"/><path d="m7 3h6v1h-6z"/></g><path d="m3 11h4v1h-4z" fill="#79a548"/><path d="m4.5 6c.82843 0 1.5-.67157 1.5-1.5s-.67157-1.5-1.5-1.5-1.5.67157-1.5 1.5.67157 1.5 1.5 1.5z" fill="#59f"/><path d="m14 2v12h-12v-12zm1-1h-14v14h14z" fill="#999"/></svg>
