@@ -18,7 +18,7 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_bigIconTextLink.xlf:bigIconTextLink.title',
         'bigIconTextLink',
-        'ce-bigIconTextLink',
+        'ce-big-icon-text-link',
         'default'
     ]
 );
@@ -29,7 +29,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['bigIconTextLink'] = 'ce-bigIconTextLink';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['bigIconTextLink'] = 'ce-big-icon-text-link';
 
 
 /*

@@ -18,7 +18,7 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:siteFooter.title',
         'siteFooter',
-        'ce-siteFooter',
+        'ce-site-footer',
         'special'
     ]
 );
@@ -29,7 +29,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteFooter'] = 'ce-siteFooter';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['siteFooter'] = 'ce-site-footer';
 
 
 /*

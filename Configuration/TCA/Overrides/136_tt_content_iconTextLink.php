@@ -18,7 +18,7 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_iconTextLink.xlf:iconTextLink.title',
         'iconTextLink',
-        'ce-iconTextLink',
+        'ce-icon-text-link',
         'default'
     ]
 );
@@ -29,7 +29,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextLink'] = 'ce-iconTextLink';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['iconTextLink'] = 'ce-icon-text-link';
 
 
 /*

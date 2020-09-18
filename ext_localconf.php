@@ -73,16 +73,26 @@ $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\
 // Content Elements icons
 $contentElementIconFilePath = 'EXT:t3kit/Resources/Public/Icons/ContentElements/';
 $contentElementIcons = [
-    'ce-bigIconTextLink',
-    'ce-iconTextLink',
-    'ce-imageTextLink',
-    'ce-quote',
+    'ce-accordion',
+    'ce-audio',
+    'ce-big-icon-text-link',
     'ce-button',
-    'ce-video',
-    'ce-element',
-    'ce-heroImage',
-    'ce-contactCard',
-    'ce-dividerIcon'
+    'ce-card',
+    'ce-contact-card',
+    'ce-custom',
+    'ce-divider-icon',
+    'ce-gallery',
+    'ce-hero-image',
+    'ce-icon-text-link',
+    'ce-image-left-right',
+    'ce-image-slider',
+    'ce-image-text-link',
+    'ce-quote',
+    'ce-simple-site-header',
+    'ce-site-footer',
+    'ce-site-header',
+    'ce-tabs',
+    'ce-video'
 ];
 foreach ($contentElementIcons as $icon) {
     $iconRegistry->registerIcon(

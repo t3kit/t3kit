@@ -2,7 +2,7 @@
 # Site footer element.
 # ===========================
 mod.wizards.newContentElement.wizardItems.special.elements.siteFooter {
-  iconIdentifier = ce-element
+  iconIdentifier = ce-site-footer
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:siteFooter.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteFooter.xlf:siteFooter.description
   tt_content_defValues.CType = siteFooter

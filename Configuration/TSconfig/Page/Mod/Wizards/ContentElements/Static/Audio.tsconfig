@@ -2,7 +2,7 @@
 # Audio Content element
 # ===========================
 mod.wizards.newContentElement.wizardItems.static.elements.audio {
-  iconIdentifier = content-audio
+  iconIdentifier = ce-audio
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_audio.xlf:audio.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_audio.xlf:audio.description
   tt_content_defValues.CType = audio

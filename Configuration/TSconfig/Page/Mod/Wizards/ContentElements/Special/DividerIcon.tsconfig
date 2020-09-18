@@ -2,7 +2,7 @@
 # DividerIcon Content element
 # ===========================
 mod.wizards.newContentElement.wizardItems.special.elements.dividerIcon {
-  iconIdentifier = ce-dividerIcon
+  iconIdentifier = ce-divider-icon
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_dividerIcon.xlf:dividerIcon.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_dividerIcon.xlf:dividerIcon.description
   tt_content_defValues.CType = dividerIcon

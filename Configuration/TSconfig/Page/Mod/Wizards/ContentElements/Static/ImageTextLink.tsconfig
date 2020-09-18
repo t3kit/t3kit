@@ -2,7 +2,7 @@
 # imageTextLink Content element
 # ===========================
 mod.wizards.newContentElement.wizardItems.static.elements.imageTextLink {
-  iconIdentifier = ce-imageTextLink
+  iconIdentifier = ce-image-text-link
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:imageTextLink.description
   tt_content_defValues.CType = imageTextLink

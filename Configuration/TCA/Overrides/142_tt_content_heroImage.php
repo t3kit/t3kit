@@ -18,7 +18,7 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:heroImage.title',
         'heroImage',
-        'ce-heroImage',
+        'ce-hero-image',
         'default'
     ]
 );
@@ -30,7 +30,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroImage'] = 'ce-heroImage';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroImage'] = 'ce-hero-image';
 
 
 

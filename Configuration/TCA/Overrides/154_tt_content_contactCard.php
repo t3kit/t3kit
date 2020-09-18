@@ -18,7 +18,7 @@ defined('TYPO3_MODE') || die();
     [
         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:contactCard.title',
         'contactCard',
-        'ce-contactCard',
+        'ce-contact-card',
         'default'
     ]
 );
@@ -29,7 +29,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactCard'] = 'ce-contactCard';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['contactCard'] = 'ce-contact-card';
 
 
 /*
