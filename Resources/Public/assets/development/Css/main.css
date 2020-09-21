@@ -9627,7 +9627,7 @@ fieldset:disabled .btn {
   display: block;
 }
 
-.header.simple-site-header.sticky-header {
+.header.site-header.sticky-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
