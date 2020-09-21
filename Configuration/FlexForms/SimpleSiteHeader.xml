@@ -109,6 +109,17 @@
 						</TCEforms>
 					</main_nav_mobile_breakpoint>
 
+					<sticky_header>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.sticky_header</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</sticky_header>
+
 				</el>
 			</ROOT>
 		</sDEF>

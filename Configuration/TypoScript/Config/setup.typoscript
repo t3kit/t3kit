@@ -44,6 +44,7 @@ config {
     // The X-Frame-Options response header improves the protection of web applications against clickjacking. It instructs the browser whether the content can be displayed within frames.
     210.header = X-Frame-Options:SAMEORIGIN
     // The Referrer-Policy HTTP header governs which referrer information, sent in the Referer header, should be included with requests made.
+    // https://web.dev/referrer-best-practices/
     230.header = Referrer-Policy:strict-origin-when-cross-origin
     // The X-XSS-Protection header has been deprecated by modern browsers and its use can introduce additional security issues on the client side. As such, it is recommended to set the header as X-XSS-Protection: 0 in order to disable the XSS Auditor, and not allow it to take the default behavior of the browser handling the response.
     250.header = X-Xss-Protection:0

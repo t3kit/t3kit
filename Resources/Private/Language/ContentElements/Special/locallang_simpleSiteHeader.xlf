@@ -58,6 +58,9 @@
 			<trans-unit id="flexform.main_nav_mobile_breakpoint.xxl" resname="flexform.main_nav_mobile_breakpoint.xxl">
 				<source>1400px and less</source>
 			</trans-unit>
+			<trans-unit id="flexform.sticky_header" resname="flexform.sticky_header">
+				<source>Sticky site header</source>
+			</trans-unit>
 
 		</body>
 	</file>
