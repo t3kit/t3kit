@@ -1,0 +1,6 @@
+# ###########################
+# Import frontend_editing typoscript
+# ===========================
+@import 'EXT:frontend_editing/Configuration/TypoScript/setup.ts'
+
+config.frontend_editing = 1
