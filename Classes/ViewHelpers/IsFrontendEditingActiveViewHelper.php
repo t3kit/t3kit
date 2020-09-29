@@ -29,9 +29,11 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
  *
  * Example:
  *
- * <f:if condition="{header} || {t3kit:isPlaceholderEnabled()}">
- *     {header}
- * </f:if>
+ * <f:link.typolink
+ *   parameter="{link}"
+ *   class="button-partial {f:if(condition: '{stretched_link} && !{t3kit:isFrontendEditingActive()}', then: ' stretched-link ')}">
+ *     {link_title}
+ * </f:link.typolink>
  */
 class IsFrontendEditingActiveViewHelper extends AbstractViewHelper
 {
