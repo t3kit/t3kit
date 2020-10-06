@@ -14,22 +14,6 @@
 @import 'EXT:t3kit/Configuration/TypoScript/Page/setup.typoscript'
 # import Config setup
 @import 'EXT:t3kit/Configuration/TypoScript/Config/setup.typoscript'
+# import plugins setup
+@import 'EXT:t3kit/Configuration/TypoScript/Plugin/setup.typoscript'
 
-
-# ###########################
-# import TypoScript setup for plugins
-# ===========================
-// indexed_search
-[userFunc = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('indexed_search')]
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/setup.typoscript">
-[end]
-
-// seo
-[userFunc = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('seo')]
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TypoScript/Plugin/Seo/setup.typoscript">
-[end]
-
-// frontend_editing
-[userFunc = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('frontend_editing')]
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TypoScript/Plugin/FrontendEditing/setup.typoscript">
-[end]

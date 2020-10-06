@@ -35,3 +35,10 @@ defined('TYPO3_MODE') || die();
     'Configuration/TypoScript/Config',
     '--- General Config'
 );
+
+// Include Plugin Config
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    't3kit',
+    'Configuration/TypoScript/Plugin',
+    '--- Plugin Config'
+);

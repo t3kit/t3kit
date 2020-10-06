@@ -14,17 +14,6 @@
 @import 'EXT:t3kit/Configuration/TypoScript/Page/constants.typoscript'
 # import Config constants
 @import 'EXT:t3kit/Configuration/TypoScript/Config/constants.typoscript'
+# import Plugin constants
+@import 'EXT:t3kit/Configuration/TypoScript/Plugin/constants.typoscript'
 
-
-# ###########################
-# import TypoScript constants for plugins
-# ===========================
-// indexed_search
-[userFunc = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('indexed_search')]
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/constants.typoscript" >
-[end]
-
-// seo
-[userFunc = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('seo')]
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TypoScript/Plugin/Seo/constants.typoscript" >
-[end]
