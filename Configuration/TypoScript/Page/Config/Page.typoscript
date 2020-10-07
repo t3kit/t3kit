@@ -27,7 +27,7 @@ page {
     }
     partialRootPaths {
       0 = EXT:t3kit/Resources/Private/Partials/Page
-      20 = EXT:{site:theme}/Resources/Public/assets/production
+      20.dataWrap = EXT:{site:theme}/Resources/Public/assets/production
       200 = {$page.fluidtemplate.partialRootPath}
     }
     layoutRootPaths {
@@ -72,7 +72,7 @@ page {
 # TYPO3 Development context and every its subcontext
 [applicationContext matches "#^Development#"]
 page.10.partialRootPaths {
-  20 = EXT:{site:theme}/Resources/Public/assets/development
+  20.dataWrap = EXT:{site:theme}/Resources/Public/assets/development
 }
 page.10.variables.application_context.value = development
 [end]
