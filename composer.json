@@ -41,10 +41,9 @@
     "typo3/cms-felogin": "^10.4.6"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.5.6",
     "helmich/typo3-typoscript-lint": "^2.1.1",
-    "heahdude/yaml-linter": "^1.0.3",
-    "sclable/xml-lint": "^0.3.0"
+    "sclable/xml-lint": "^0.3.0",
+    "squizlabs/php_codesniffer": "^3.5.6"
   },
   "suggest": {
     "typo3/cms-indexed-search": "TYPO3 indexed search",
@@ -69,7 +68,7 @@
   "scripts": {
     "lint-php": "phpcs --colors",
     "lint-typoscript": "typoscript-lint --ansi",
-    "lint-yaml": "yaml-linter --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
+    "lint-yaml": "build/vendor/bin/yaml-lint --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
     "lint-xml": "xmllint --ansi --exclude=build/ .",
     "test": [
       "@lint-php",
