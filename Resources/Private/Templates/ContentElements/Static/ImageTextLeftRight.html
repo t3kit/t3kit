@@ -1,0 +1,91 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Header" />
+
+<f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/ImageTextLeftRight.html [begin] -->
+
+<f:if condition="{flexform.image_height}">
+  <f:variable name="height">{flexform.image_height}</f:variable>
+</f:if>
+
+<f:if condition="{flexform.stretched_link}">
+  <f:variable name="stretched_link" value="1" />
+</f:if>
+
+<div class="ce-img-text-left-right-wrp ce-img-text-left-right--{flexform.image_alignment}
+  {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
+  {f:if(condition: flexform.inverted_color, then: ' inverted-color')}">
+
+  <div class="ce-img-text-left-right">
+
+    <f:if condition="{svg_image}">
+      <div class="ce-img-text-left-right__svg-image-wrp">
+        <div class="ce-img-text-left-right__svg-image {f:if(condition:height, then: 'fixed-height')}"
+          {f:if(condition:height, then: 'style="height: {height}px;"')}>
+          <f:render partial="Media/Svg" arguments="{data: data, files: svg_image, height: height}" />
+        </div>
+      </div>
+    </f:if>
+
+    <f:if condition="{files}">
+      <div class="ce-img-text-left-right__picture-wrp">
+        <div class="ce-img-text-left-right__picture {f:if(condition:height, then: 'fixed-height')}"
+          {f:if(condition:height, then: 'style="height: {height}px;"')}>
+            <f:render partial="Media/Type" arguments="{_all}" />
+        </div>
+      </div>
+    </f:if>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 {f:if(condition:'{flexform.image_alignment} == left', then: 'offset-md-6')}">
+
+          <div class="ce-img-text-left-right__body-wrp">
+
+            <div class="ce-img-text-left-right__body">
+
+              <f:if condition="{data.header} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-img-text-left-right__header">
+                  <f:render partial="Header/Header" arguments="{_all}" />
+                </div>
+              </f:if>
+              <f:if condition="{data.subheader} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-img-text-left-right__subheader">
+                  <f:render partial="Header/SubHeader" arguments="{_all}" />
+                </div>
+              </f:if>
+
+              <f:if condition="{data.bodytext} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-img-text-left-right__bodytext">
+                  <f:render partial="Bodytext/Bodytext" arguments="{_all}" />
+                </div>
+              </f:if>
+
+              <f:if condition="{data.link} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-img-text-left-right__link">
+                  <f:if condition="{data.link_as_button}">
+                    <f:then>
+                      <f:render partial="Link/ButtonLink" arguments="{_all}" />
+                    </f:then>
+                    <f:else>
+                      <f:render partial="Link/Link" arguments="{_all}" />
+                    </f:else>
+                  </f:if>
+                </div>
+              </f:if>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/ImageTextLeftRight.html [end] -->
+</f:section>
+
+</html>

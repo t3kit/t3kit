@@ -14,6 +14,7 @@
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Quote.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ContactCard.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Button.tsconfig'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/ImageTextLeftRight.tsconfig'
 
 // Dynamic
 // @import 'EXT:t3kit/'
