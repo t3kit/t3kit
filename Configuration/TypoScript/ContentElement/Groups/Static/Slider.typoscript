@@ -1,0 +1,36 @@
+# ###########################
+# Slider
+#
+# CType: slider
+# ===========================
+tt_content.slider =< lib.contentElement
+tt_content.slider {
+
+  templateName = Slider
+
+  dataProcessing {
+    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    20 {
+        table = tx_t3kit_slider_item
+        pidInList.field = pid
+        where {
+            data = field:uid
+            intval = 1
+            wrap = tt_content=|
+        }
+        orderBy = sorting
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = picture
+            }
+        }
+    }
+  }
+
+}

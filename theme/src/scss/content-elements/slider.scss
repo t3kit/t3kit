@@ -1,0 +1,95 @@
+.ce-slider {
+  --t3-ce-slider-header-color: var(--t3-primary);
+  --t3-ce-slider-subheader-color: var(--t3-white);
+  --t3-ce-slider-bodytext-color: var(--t3-white);
+  --t3-ce-slider-bodytext-width: 100%;
+  --t3-ce-slider-min-height-on-mobile: 460px;
+  --t3-ce-slider-controls: var(--t3-primary);
+}
+
+.ce-slider__caption-wrp {
+  display: flex;
+  align-items: center;
+}
+
+.ce-slider__caption {
+  flex: 1;
+}
+
+.ce-slider .picture-partial__item-img {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.ce-slider__caption-header .header-item {
+  color: var(--t3-ce-slider-header-color);
+}
+
+.ce-slider__caption-subheader .subheader-text-item {
+  color: var(--t3-ce-slider-subheader-color);
+}
+
+.ce-slider__caption-bodytext.fluid-font-size {
+  --font-size: 28;
+}
+
+.ce-slider__caption-bodytext .bodytext-partial {
+  font-size: inherit;
+  font-weight: 500;
+  color: var(--t3-ce-slider-bodytext-color);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+// --------------------------------------------------------
+// X-Small devices (portrait phones, less than 576px) xs
+@media (max-width: 575.98px) {
+  .ce-slider__caption-wrp {
+    height: var(--t3-ce-slider-min-height-on-mobile) !important;
+  }
+}
+// Small devices (landscape phones, 576px and up) sm
+// @media (min-width: 576px) { ... }
+
+// --------------------------------------------------------
+// Small devices (landscape phones, less than 768px) sm
+// @media (max-width: 767.98px) { ... }
+// Medium devices (tablets, 768px and up) md
+// @media (min-width: 768px) {
+//  .ce-slider__caption-bodytext .bodytext-partial {
+//    -webkit-line-clamp: 3;
+//  }
+// }
+
+// --------------------------------------------------------
+// Medium devices (tablets, less than 992px) md
+// @media (max-width: 991.98px) { ... }
+// Large devices (desktops, 992px and up) lg
+@media (min-width: 992px) {
+  .ce-slider__caption-bodytext {
+    width: var(--t3-ce-slider-bodytext-width);
+  }
+
+  .ce-slider__caption-link {
+    width: var(--t3-ce-slider-bodytext-width);
+  }
+}
+
+// --------------------------------------------------------
+// Large devices (desktops, less than 1200px) lg
+// @media (max-width: 1199.98px) { ... }
+// X-Large devices (large desktops, 1200px and up) xl
+// @media (min-width: 1200px) { ... }
+
+// --------------------------------------------------------
+// X-Large devices (large desktops, less than 1400px) xl
+// @media (max-width: 1399.98px) { ... }
+// XX-Large devices (larger desktops, 1400px and up) xxl
+// @media (min-width: 1400px) { ... }

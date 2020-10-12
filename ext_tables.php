@@ -27,3 +27,8 @@ defined('TYPO3_MODE') || die();
  * ===========================
  */
 $GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:t3kit/Resources/Public/CSS/BE/';
+
+/***************
+* Allow Custom Records on Standard Pages
+*/
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3kit_slider_item');

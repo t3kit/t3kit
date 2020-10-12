@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf" date="2019-10-09UTC08:37:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="slider.title" resname="slider.title">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="slider.description" resname="slider.description">
+				<source>Slider element</source>
+			</trans-unit>
+			<trans-unit id="slider.item" resname="slider.item">
+				<source>Slider item</source>
+			</trans-unit>
+			<trans-unit id="slider.tt_content">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="slider.tab">
+				<source>Slider items</source>
+			</trans-unit>
+			<trans-unit id="slider.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="slider.header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="slider.bodytext">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="slider.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="slider.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="slider.image">
+				<source>Image</source>
+			</trans-unit>
+			
+			
+			<trans-unit id="flexform.height" resname="flexform.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="flexform.interval" resname="flexform.interval">
+				<source>Interval</source>
+			</trans-unit>
+			<trans-unit id="flexform.transition" resname="flexform.transition">
+				<source>Transition</source>
+			</trans-unit>
+			<trans-unit id="flexform.transition.fade" resname="flexform.transition.fade">
+				<source>Fade</source>
+			</trans-unit>
+			<trans-unit id="flexform.transition.slide" resname="flexform.transition.slide">
+				<source>Slide</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

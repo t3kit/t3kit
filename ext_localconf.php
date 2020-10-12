@@ -121,6 +121,8 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php'][
 \T3k\t3kit\Hooks\PageLayoutView\AudioCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['heroImage'] =
 \T3k\t3kit\Hooks\PageLayoutView\HeroImageCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['slider'] =
+\T3k\t3kit\Hooks\PageLayoutView\SliderCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['contactCard'] =
 \T3k\t3kit\Hooks\PageLayoutView\ContactCardCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['simpleSiteHeader'] =
