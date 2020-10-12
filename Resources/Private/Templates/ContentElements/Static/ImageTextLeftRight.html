@@ -15,7 +15,7 @@
   <f:variable name="stretched_link" value="1" />
 </f:if>
 
-<div class="ce-img-text-left-right-wrp ce-img-text-left-right--{flexform.image_alignment}
+<div class="ce-img-text-left-right__wrp ce-img-text-left-right--{flexform.image_alignment}
   {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
   {f:if(condition: flexform.inverted_color, then: ' inverted-color')}">
 
@@ -23,7 +23,7 @@
 
     <f:if condition="{svg_image}">
       <div class="ce-img-text-left-right__svg-image-wrp">
-        <div class="ce-img-text-left-right__svg-image {f:if(condition:height, then: 'fixed-height')}"
+        <div class="ce-img-text-left-right__svg-image"
           {f:if(condition:height, then: 'style="height: {height}px;"')}>
           <f:render partial="Media/Svg" arguments="{data: data, files: svg_image, height: height}" />
         </div>
@@ -32,7 +32,7 @@
 
     <f:if condition="{files}">
       <div class="ce-img-text-left-right__picture-wrp">
-        <div class="ce-img-text-left-right__picture {f:if(condition:height, then: 'fixed-height')}"
+        <div class="ce-img-text-left-right__picture"
           {f:if(condition:height, then: 'style="height: {height}px;"')}>
             <f:render partial="Media/Type" arguments="{_all}" />
         </div>
@@ -41,7 +41,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 {f:if(condition:'{flexform.image_alignment} == left', then: 'offset-md-6')}">
+        <div class="col-lg-6 {f:if(condition:'{flexform.image_alignment} == left', then: 'offset-lg-6')}">
 
           <div class="ce-img-text-left-right__body-wrp">
 
