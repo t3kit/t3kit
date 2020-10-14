@@ -76,3 +76,18 @@
   font-weight: bold;
   font-style: italic;
 }
+
+/* BE layouts active styles */
+.icon-list .item {
+  border: 6px solid transparent;
+  padding: 2px;
+}
+
+.icon-list .active {
+  background-color: #fff;
+  border: 6px solid #c7264e;
+}
+
+.icon-list :first-child.active {
+  border-left: 6px solid #c7264e;
+}
