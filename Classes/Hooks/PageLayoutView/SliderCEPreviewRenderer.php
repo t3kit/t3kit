@@ -58,7 +58,7 @@ class SliderCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
                     )
                     ->execute()
                     ->fetchAll();
-                
+
                 foreach ($slides as $key => $slide) {
                     $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($slide, 'tx_t3kit_slider_item', 'picture'), $row);
                     /*

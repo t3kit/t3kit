@@ -9,7 +9,7 @@
 				<el>
 					<height>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:flexform.height</label>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:flexform.height</label>
 							<config>
 								<type>input</type>
 								<size>5</size>
@@ -21,7 +21,7 @@
 					<!--
 					<interval>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:flexform.interval
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:flexform.interval
 							</label>
 							<config>
 								<type>input</type>
@@ -33,7 +33,7 @@
 					</interval>
 					<transition>
 						<TCEforms>
-							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:flexform.transition
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:flexform.transition
 							</label>
 							<config>
 								<type>select</type>
@@ -41,11 +41,11 @@
 								<default>fade</default>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:flexform.transition.fade</numIndex>
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:flexform.transition.fade</numIndex>
 										<numIndex index="1">fade</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:flexform.transition.slide</numIndex>
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:flexform.transition.slide</numIndex>
 										<numIndex index="1">slide</numIndex>
 									</numIndex>
 								</items>

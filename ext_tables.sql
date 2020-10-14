@@ -57,10 +57,11 @@ CREATE TABLE tx_t3kit_slider_item (
 	pid int(11) DEFAULT '0' NOT NULL,
 
 	tt_content int(11) unsigned DEFAULT '0',
-	header text,
+	header_text text,
 	header_position varchar(255) DEFAULT '' NOT NULL,
 	header_layout varchar(30) DEFAULT '0' NOT NULL,
 	header_style varchar(60) DEFAULT '0' NOT NULL,
+	header_link varchar(1024) DEFAULT '' NOT NULL,
 	subheader_text text,
 	subheader_style varchar(60) DEFAULT '0' NOT NULL,
 	content_position varchar(60) DEFAULT '' NOT NULL,
@@ -73,6 +74,7 @@ CREATE TABLE tx_t3kit_slider_item (
 	button_size varchar(60) DEFAULT '' NOT NULL,
 	button_style varchar(60) DEFAULT '' NOT NULL,
 	button_no_bg tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	button_full_width tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	picture int(11) unsigned DEFAULT '0' NOT NULL,
 	section_container_width varchar(60) DEFAULT '' NOT NULL,
 

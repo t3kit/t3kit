@@ -1,0 +1,10 @@
+# ###########################
+# Slider Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.dynamic.elements.slider {
+  iconIdentifier = ce-image-slider
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.description
+  tt_content_defValues.CType = slider
+}
+mod.wizards.newContentElement.wizardItems.dynamic.show := addToList(slider)

@@ -26,8 +26,6 @@ mod.wizards.newContentElement.wizardItems {
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Table.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Uploads.tsconfig'
 
-// @import 'EXT:t3kit/'
-
 // Special
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Shortcut.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Div.tsconfig'

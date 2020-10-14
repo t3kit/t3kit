@@ -1,25 +1,18 @@
 <?php
 
-if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('lang')) {
-    $generalLanguageFile = 'EXT:lang/Resources/Private/Language/locallang_general.xlf';
-} else {
-    $generalLanguageFile = 'EXT:core/Resources/Private/Language/locallang_general.xlf';
-}
-
 return [
     'ctrl' => [
-        'label' => 'header',
+        'label' => 'header_text',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'title' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:slider.item',
+        'title' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.item',
         'delete' => 'deleted',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
-        'hideTable' => true,
         'hideAtCopy' => true,
-        'prependAtCopy' => 'LLL:' . $generalLanguageFile . ':LGL.prependAtCopy',
+        'prependAtCopy' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
         'transOrigPointerField' => 'l18n_parent',
         'transOrigDiffSourceField' => 'l18n_diffsource',
         'languageField' => 'sys_language_uid',
@@ -29,7 +22,7 @@ return [
             'endtime' => 'endtime',
         ],
         'typeicon_classes' => [
-            'default' => 'ce-icon-text-link'
+            'default' => 'ce-image-slider'
         ]
     ],
     'interface' => [
@@ -41,15 +34,17 @@ return [
     'types' => [
         '1' => [
             'showitem' => '
-                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-                --palette--;;header_layout_position_subheader,
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
+                --palette--;;general,
+                --palette--;;headertext_layout_position_link_subheadertext,
                 --palette--;;bodytext_position,
                 --palette--;;title_link_position,
                 --palette--;;button,
-                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,picture,
-                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
-                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
-                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+                picture,
+            --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
+                --palette--;;hidden,
+                --palette--;;access,
                 --palette--;;hiddenLanguagePalette,
             '
         ],
@@ -58,36 +53,40 @@ return [
         '1' => [
             'showitem' => ''
         ],
-        'access' => [
-            'showitem' => '
-                starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
-                endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel
-            '
-        ],
         'general' => [
             'showitem' => '
                 tt_content,
                 item_type;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType_formlabel,
             '
         ],
-        'visibility' => [
+        'hidden' => [
             'showitem' => '
-                hidden;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:slider.item
-            '
+                hidden;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:field.default.hidden
+            ',
+        ],
+        'access' => [
+            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access',
+            'showitem' => '
+                starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
+                endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel,
+            ',
         ],
         // hidden but needs to be included all the time, so sys_language_uid is set correctly
         'hiddenLanguagePalette' => [
             'showitem' => 'sys_language_uid, l18n_parent',
             'isHiddenPalette' => true,
         ],
-        'header_layout_position_subheader' => [
+
+        'headertext_layout_position_link_subheadertext' => [
             'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
             'showitem' => '
-                header,
+                header_text,
                 --linebreak--,
                 header_layout,
                 header_style,
                 header_position,
+                --linebreak--,
+                header_link,
                 --linebreak--,
                 subheader_text,
                 subheader_style
@@ -119,7 +118,7 @@ return [
     'columns' => [
         'tt_content' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:slider.title',
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.title',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -131,23 +130,26 @@ return [
         ],
         'hidden' => [
             'exclude' => true,
-            'label' => 'LLL:' . $generalLanguageFile . ':LGL.hidden',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
             'config' => [
                 'type' => 'check',
+                'renderType' => 'checkboxToggle',
                 'items' => [
-                    '1' => [
-                        '0' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:hidden.I.0'
+                    [
+                        0 => '',
+                        1 => '',
+                        'invertStateDisplay' => true
                     ]
-                ]
+                ],
             ]
         ],
         'starttime' => [
             'exclude' => true,
-            'label' => 'LLL:' . $generalLanguageFile . ':LGL.starttime',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
+                'eval' => 'datetime,int',
                 'default' => 0
             ],
             'l10n_mode' => 'exclude',
@@ -155,11 +157,11 @@ return [
         ],
         'endtime' => [
             'exclude' => true,
-            'label' => 'LLL:' . $generalLanguageFile . ':LGL.endtime',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
+                'eval' => 'datetime,int',
                 'default' => 0,
                 'range' => [
                     'upper' => mktime(0, 0, 0, 1, 1, 2038)
@@ -169,8 +171,8 @@ return [
             'l10n_display' => 'defaultAsReadonly'
         ],
         'sys_language_uid' => [
-            'exclude' => 1,
-            'label' => 'LLL:' . $generalLanguageFile . ':LGL.language',
+            'exclude' => true,
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -178,11 +180,11 @@ return [
                 'foreign_table_where' => 'ORDER BY sys_language.title',
                 'items' => [
                     [
-                        'LLL:' . $generalLanguageFile . ':LGL.allLanguages',
+                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
                         -1
                     ],
                     [
-                        'LLL:' . $generalLanguageFile . ':LGL.default_value',
+                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
                         0
                     ]
                 ],
@@ -191,8 +193,7 @@ return [
         ],
         'l18n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => 1,
-            'label' => 'LLL:' . $generalLanguageFile . ':LGL.l18n_parent',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -213,7 +214,8 @@ return [
                 'default' => ''
             ]
         ],
-        'header' => [
+
+        'header_text' => [
             'exclude' => true,
             'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
             'config' => [
@@ -347,6 +349,25 @@ return [
                 'default' => '0'
             ]
         ],
+        'header_link' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputLink',
+                'size' => 50,
+                'max' => 1024,
+                'eval' => 'trim',
+                'fieldControl' => [
+                    'linkPopup' => [
+                        'options' => [
+                            'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                        ],
+                    ],
+                ],
+                'softref' => 'typolink'
+            ]
+        ],
         'subheader_text' => [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.subheader',
@@ -418,6 +439,17 @@ return [
                 ],
                 'default' => '0'
             ]
+        ],
+        'bodytext' => [
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
+            'l10n_mode' => 'prefixLangTitle',
+            'config' => [
+                'type' => 'text',
+                'cols' => 80,
+                'rows' => 5,
+                'softref' => 'typolink_tag,images,email[subst],url',
+                'enableRichtext' => false
+            ],
         ],
         'content_position' => [
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
@@ -570,6 +602,22 @@ return [
                 'default' => 'primary',
             ]
         ],
+        'button_full_width' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_full_width',
+            'displayCond' => 'FIELD:link_as_button:!=:0',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'items' => [
+                    [
+                        0 => '',
+                        1 => '',
+                    ]
+                ],
+                'default' => 0,
+            ]
+        ],
         'button_no_bg' => [
             'exclude' => true,
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_no_bg',
@@ -586,18 +634,7 @@ return [
                 'default' => 0,
             ]
         ],
-        'bodytext' => [
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
-            'l10n_mode' => 'prefixLangTitle',
-            'l10n_cat' => 'text',
-            'config' => [
-                'type' => 'text',
-                'cols' => '80',
-                'rows' => '5',
-                'softref' => 'typolink_tag,images,email[subst],url',
-                'enableRichtext' => false
-            ],
-        ],
+
         'picture' => [
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('picture', [
@@ -650,25 +687,6 @@ return [
                 'minitems' => 0,
                 'maxitems' => 1,
             ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
-        ],
-        'section_container_width' => [
-            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width',
-            'exclude' => true,
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container',
-                        'container'
-                    ],
-                    [
-                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container_fluid',
-                        'container-fluid'
-                    ]
-                ],
-                'default' => 'container',
-            ]
         ]
-    ],
+    ]
 ];

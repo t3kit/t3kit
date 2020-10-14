@@ -101,7 +101,7 @@
   },
   "t3kit": {
     "theme-name": "t3kit",
-    "typo3-site-config-dir": "aimpointrow",
+    "typo3-site-config-dir": "t3kit",
     "favicon-master-picture": "favicon.svg",
     "proxy-host": "t3kit10.t3.localhost"
   }

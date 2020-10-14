@@ -16,10 +16,10 @@ defined('TYPO3_MODE') || die();
     'tt_content',
     'CType',
     [
-        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:slider.title',
+        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.title',
         'slider',
-        'ce-image-text-link',
-        'default'
+        'ce-image-slider',
+        'dynamic'
     ]
 );
 
@@ -29,7 +29,7 @@ defined('TYPO3_MODE') || die();
  * Add icon for Content Element
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slider'] = 'ce-image-text-link';
+$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['slider'] = 'ce-image-slider';
 
 
 /*
@@ -42,10 +42,10 @@ $GLOBALS['TCA']['tt_content']['types']['slider'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             header;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_element_title,
-            section_container_width,
-        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:slider.tab,tx_t3kit_slider_item,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.tab,tx_t3kit_slider_item,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tab.settings,
             pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
+            section_container_width,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -77,7 +77,7 @@ $GLOBALS['TCA']['tt_content']['types']['slider'] = [
 */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'tx_t3kit_slider_item' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_slider.xlf:slider.item',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.item',
         'config' => [
             'type' => 'inline',
             'foreign_table' => 'tx_t3kit_slider_item',
