@@ -3,7 +3,7 @@
 
 # import ContentElements
 @import 'EXT:t3kit/Configuration/TypoScript/ContentElement/Groups/Static/'
-// @import 'EXT:t3kit/Configuration/TypoScript/ContentElement/Groups/Dynamic/'
+@import 'EXT:t3kit/Configuration/TypoScript/ContentElement/Groups/Dynamic/'
 @import 'EXT:t3kit/Configuration/TypoScript/ContentElement/Groups/Menu/'
 @import 'EXT:t3kit/Configuration/TypoScript/ContentElement/Groups/Plugin/'
 @import 'EXT:t3kit/Configuration/TypoScript/ContentElement/Groups/Special/'

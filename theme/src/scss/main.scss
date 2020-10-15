@@ -37,6 +37,7 @@
 @use 'content-elements/quote';
 @use 'content-elements/divider-icon';
 @use 'content-elements/divider';
+@use 'content-elements/slider';
 
 // ===== appearance =====
 @use 'appearance/color';
@@ -44,3 +45,4 @@
 
 // ===== plugins =====
 @use 'plugins/lightbox';
+@use 'plugins/swiperjs';

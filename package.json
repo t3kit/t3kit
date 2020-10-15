@@ -26,7 +26,8 @@
     "bootstrap": "github:twbs/bootstrap#4e9a29e",
     "bootstrap-icons": "1.0.0-alpha4",
     "file-icon-vectors": "1.0.0",
-    "simplelightbox": "github:dmh/simplelightbox#619a4d2"
+    "simplelightbox": "github:dmh/simplelightbox#619a4d2",
+    "swiper": "^6.3.3"
   },
   "devDependencies": {
     "@rollup/plugin-legacy": "^2.0.0",

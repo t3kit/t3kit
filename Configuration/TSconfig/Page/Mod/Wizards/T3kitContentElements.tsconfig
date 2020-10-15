@@ -16,7 +16,7 @@
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Static/Button.tsconfig'
 
 // Dynamic
-// @import 'EXT:t3kit/'
+@import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/Slider.tsconfig'
 
 // Special
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/DividerIcon.tsconfig'
