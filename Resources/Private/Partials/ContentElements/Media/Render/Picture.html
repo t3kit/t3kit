@@ -105,9 +105,9 @@
   </f:else>
 </f:if>
 <f:if condition="{picture_width} != 100">
-  <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
-  <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
-  <f:variable name="small_viewport_width">{image.referenceProperties.picture_width*small_viewport_width/100}</f:variable>
+  <f:variable name="fluid_viewport_width">{picture_width*fluid_viewport_width/100}</f:variable>
+  <f:variable name="fixed_viewport_width">{picture_width*fixed_viewport_width/100}</f:variable>
+  <f:variable name="small_viewport_width">{picture_width*small_viewport_width/100}</f:variable>
 </f:if>
 
 <f:comment>Viewport for medium screens</f:comment>

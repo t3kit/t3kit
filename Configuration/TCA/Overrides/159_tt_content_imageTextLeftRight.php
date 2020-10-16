@@ -64,7 +64,14 @@ $GLOBALS['TCA']['tt_content']['types']['imageTextLeftRight'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    '
+    ',
+    'columnsOverrides' => [
+        'section_container_width' => [
+            'config' => [
+                'default' => 'container-fluid'
+            ]
+        ]
+    ]
 ];
 
 

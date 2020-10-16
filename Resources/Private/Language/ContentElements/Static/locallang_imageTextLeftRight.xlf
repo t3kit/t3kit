@@ -10,21 +10,20 @@
 			<trans-unit id="imageTextLeftRight.description" resname="imageTextLeftRight.description">
 				<source>Image or icon to the left or right, and text and link, to the opposite side.</source>
 			</trans-unit>
-
-			<trans-unit id="flexform.stretched_link" resname="flexform.stretched_link">
-				<source>Enable whole area link</source>
-			</trans-unit>
-			<trans-unit id="flexform.internal_margins" resname="flexform.internal_margins">
-				<source>Enable internal margins</source>
-			</trans-unit>
-			<trans-unit id="flexform.inverted_color" resname="flexform.inverted_color">
-				<source>Inverted color</source>
-			</trans-unit>
 			<trans-unit id="flexform.image_height" resname="flexform.image_height">
 				<source>Image height</source>
 			</trans-unit>
+			<trans-unit id="flexform.image_width" resname="flexform.image_width">
+				<source>Image width (50% by default)</source>
+			</trans-unit>
 			<trans-unit id="flexform.image_alignment" resname="flexform.image_alignment">
 				<source>Image alignment</source>
+			</trans-unit>
+			<trans-unit id="flexform.image_alignment.left" resname="flexform.image_alignment.left">
+				<source>Left</source>
+			</trans-unit>
+			<trans-unit id="flexform.image_alignment.right" resname="flexform.image_alignment.right">
+				<source>Right</source>
 			</trans-unit>
 
 		</body>
