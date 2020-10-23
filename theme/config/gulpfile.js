@@ -3,10 +3,12 @@ require('./check').checkNode()
 const { series, parallel } = require('gulp')
 const { clean, cleanFavicons, cleanBootstrapIcons, cleanFileTypeIcons } = require('./clean')
 const { copyBootstrapIcons, copyFileTypeIcons } = require('./copy')
-const { compileCss, compileCssWatch } = require('./sass')
+const { compileScss, compileCssWatch } = require('./sass')
+const { compileCss } = require('./css')
 const { compileJs, compileJsWatch } = require('./rollup')
 const { revJs } = require('./rev')
 const { addJsTemplate, addCssTemplate } = require('./template')
+// const { addCssTemplate222 } = require('./222')
 const { compressCss, compressJs } = require('./compress')
 // const { serve } = require('./browser-sync')
 const { generateFavicon, injectFaviconMarkups } = require('./real-favicon')
@@ -36,8 +38,8 @@ exports.default = series(
   clean,
   parallel(compileCss, compileJs),
   parallel(addJsTemplate, addCssTemplate),
-  conf.showInfo,
-  parallel(compileCssWatch, compileJsWatch)
+  conf.showInfo
+  // parallel(compileCssWatch, compileJsWatch)
   // parallel(compileCssWatch, compileJsWatch, serve)
 )
 
@@ -57,5 +59,13 @@ exports.icons = series(
 exports.filetype = series(
   cleanFileTypeIcons,
   copyFileTypeIcons,
+  conf.showInfo
+)
+
+exports.testt = series(
+  clean,
+  // compileJs,
+  parallel(compileCss, compileJs),
+  parallel(addJsTemplate, addCssTemplate),
   conf.showInfo
 )

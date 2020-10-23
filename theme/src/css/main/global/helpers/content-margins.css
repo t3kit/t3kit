@@ -1,0 +1,65 @@
+/* ================================================================== */
+/* Helper margin classes for the content elements */
+/* Appearance --> Space After and Space Before */
+/* ================================================================== */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+.margin-top-5 { margin-top: calc(var(--t3-ce-margin-5) / 2); }
+.margin-top-10 { margin-top: calc(var(--t3-ce-margin-10) / 2); }
+.margin-top-15 { margin-top: calc(var(--t3-ce-margin-16) / 2); }
+.margin-top-20 { margin-top: calc(var(--t3-ce-margin-20) / 2); }
+.margin-top-25 { margin-top: calc(var(--t3-ce-margin-25) / 2); }
+.margin-top-30 { margin-top: calc(var(--t3-ce-margin-30) / 2); }
+.margin-top-40 { margin-top: calc(var(--t3-ce-margin-40) / 2); }
+.margin-top-50 { margin-top: calc(var(--t3-ce-margin-50) / 2); }
+.margin-top-60 { margin-top: calc(var(--t3-ce-margin-60) / 2); }
+.margin-top-70 { margin-top: calc(var(--t3-ce-margin-70) / 2); }
+
+.margin-bottom-5 { margin-bottom: calc(var(--t3-ce-margin-5) / 2); }
+.margin-bottom-10 { margin-bottom: calc(var(--t3-ce-margin-10) / 2); }
+.margin-bottom-15 { margin-bottom: calc(var(--t3-ce-margin-16) / 2); }
+.margin-bottom-20 { margin-bottom: calc(var(--t3-ce-margin-20) / 2); }
+.margin-bottom-25 { margin-bottom: calc(var(--t3-ce-margin-25) / 2); }
+.margin-bottom-30 { margin-bottom: calc(var(--t3-ce-margin-30) / 2); }
+.margin-bottom-40 { margin-bottom: calc(var(--t3-ce-margin-40) / 2); }
+.margin-bottom-50 { margin-bottom: calc(var(--t3-ce-margin-50) / 2); }
+.margin-bottom-60 { margin-bottom: calc(var(--t3-ce-margin-60) / 2); }
+.margin-bottom-70 { margin-bottom: calc(var(--t3-ce-margin-70) / 2); }
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .margin-top-5 { margin-top: var(--t3-ce-margin-5); }
+  .margin-top-10 { margin-top: var(--t3-ce-margin-10); }
+  .margin-top-15 { margin-top: var(--t3-ce-margin-16); }
+  .margin-top-20 { margin-top: var(--t3-ce-margin-20); }
+  .margin-top-25 { margin-top: var(--t3-ce-margin-25); }
+  .margin-top-30 { margin-top: var(--t3-ce-margin-30); }
+  .margin-top-40 { margin-top: var(--t3-ce-margin-40); }
+  .margin-top-50 { margin-top: var(--t3-ce-margin-50); }
+  .margin-top-60 { margin-top: var(--t3-ce-margin-60); }
+  .margin-top-70 { margin-top: var(--t3-ce-margin-70); }
+
+  .margin-bottom-5 { margin-bottom: var(--t3-ce-margin-5); }
+  .margin-bottom-10 { margin-bottom: var(--t3-ce-margin-10); }
+  .margin-bottom-15 { margin-bottom: var(--t3-ce-margin-16); }
+  .margin-bottom-20 { margin-bottom: var(--t3-ce-margin-20); }
+  .margin-bottom-25 { margin-bottom: var(--t3-ce-margin-25); }
+  .margin-bottom-30 { margin-bottom: var(--t3-ce-margin-30); }
+  .margin-bottom-40 { margin-bottom: var(--t3-ce-margin-40); }
+  .margin-bottom-50 { margin-bottom: var(--t3-ce-margin-50); }
+  .margin-bottom-60 { margin-bottom: var(--t3-ce-margin-60); }
+  .margin-bottom-70 { margin-bottom: var(--t3-ce-margin-70); }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */

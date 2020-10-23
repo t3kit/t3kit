@@ -71,16 +71,26 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // CSS compilation variables
-conf.CSS_SRC = `${conf.SRC}scss/`
+conf.CSS_SRC = `${conf.SRC}css/`
 conf.CSS_DIST = `${conf.DIST}Css/`
 conf.CSS_LINK_DEV = '<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/development/Css/%_file_%" />'
 conf.CSS_LINK_PROD = '<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/production/Css/%_file_%" />'
+conf.CSS_LINK_ASYNC_DEV = `<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/development/Css/%_file_%" media="print" additionalAttributes="{onload=\'this.media=\\'all\\'\'}" />` // eslint-disable-line
+conf.CSS_LINK_ASYNC_PROD = `<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/Resources/Public/assets/production/Css/%_file_%" media="print" additionalAttributes="{onload=\'this.media=\\'all\\'\'}" />` // eslint-disable-line
+
+// SCSS compilation variables
+conf.SCSS_SRC = `${conf.SRC}scss/`
+conf.SCSS_DIST = `${conf.CSS_SRC}/lib`
 
 // JS compilation variables
 conf.JS_SRC = `${conf.SRC}js/`
 conf.JS_DIST = `${conf.DIST}Js/`
 conf.JS_LINK_DEV = '<f:asset.script identifier="%_id_%" src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
 conf.JS_LINK_PROD = '<f:asset.script identifier="%_id_%" src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
+conf.JS_LINK_DEFER_DEV = '<f:asset.script identifier="%_id_%" defer src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
+conf.JS_LINK_DEFER_PROD = '<f:asset.script identifier="%_id_%" defer src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
+conf.JS_LINK_ASYNC_DEV = '<f:asset.script identifier="%_id_%" async src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
+conf.JS_LINK_ASYNC_PROD = '<f:asset.script identifier="%_id_%" async src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
 
 // FAVICONS compilation variables
 // add more favicon customization into generateFavicon object --> (theme/config/real-favicon/index.js)

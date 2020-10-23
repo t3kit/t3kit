@@ -1,0 +1,17 @@
+.skip-link__wrp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: var(--t3-skip-link-bg);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin: 2rem auto 1.2rem 0;
+  overflow: hidden;
+}
+
+.skip-link {
+  display: inline-block;
+  margin: 0.8rem 1.2rem;
+  text-align: center;
+  width: 120px;
+}

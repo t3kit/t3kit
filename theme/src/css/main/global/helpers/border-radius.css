@@ -1,0 +1,35 @@
+.rounded {
+  border-radius: var(--t3-border-radius) !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: 50rem !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+.rounded-top {
+  border-top-left-radius: var(--t3-border-radius) !important;
+  border-top-right-radius: var(--t3-border-radius) !important;
+}
+
+.rounded-right {
+  border-top-right-radius: var(--t3-border-radius) !important;
+  border-bottom-right-radius: var(--t3-border-radius) !important;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: var(--t3-border-radius) !important;
+  border-bottom-left-radius: var(--t3-border-radius) !important;
+}
+
+.rounded-left {
+  border-bottom-left-radius: var(--t3-border-radius) !important;
+  border-top-left-radius: var(--t3-border-radius) !important;
+}

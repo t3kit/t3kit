@@ -9,38 +9,45 @@ const gulpif = require('gulp-if')
 const rev = require('gulp-rev')
 const size = require('gulp-size')
 const conf = require('../conf')
+var cssimport = require('postcss-import')
+const rootDir = require('app-root-path').path
 
 sass.compiler = require('sass')
-const SRC = conf.SCSS_SRC
-const DIST = conf.SCSS_DIST
-// const onlyCss = '*.css'
+const SRC = conf.CSS_SRC
+const DIST = conf.CSS_DIST
+const onlyCss = '*.css'
+const llll = `${rootDir}/theme/src/css`
 
 const postCssPlugins = [
-  autoprefixer()
+  autoprefixer(),
+  cssimport()
 ]
 // minify css with cssnano if production
 process.env.NODE_ENV === 'production' && postCssPlugins.push(cssnano({ preset: 'default' }))
 
 // compile scss to css
 function compileCss () {
-  return src('*.scss', { cwd: `${SRC}` })
-    // .pipe(sourcemaps.init())
+  return src('*.css', { cwd: llll })
+    .pipe(sourcemaps.init())
     // .pipe(sass({ fiber: Fiber }).on('error', sass.logError))
-    .pipe(sass.sync().on('error', sass.logError))
-    // .pipe(gulpif(
-    //   process.env.NODE_ENV === 'production',
-    //   sourcemaps.write('.', { includeContent: false, sourceRoot: '../../../../../theme/src/scss/', addComment: false }),
-    //   sourcemaps.write('.', { includeContent: false, sourceRoot: '../../../../../theme/src/scss/' })))
+    // .pipe(sass.sync().on('error', sass.logError))
+    .pipe(postcss(postCssPlugins))
+    .pipe(gulpif(
+      process.env.NODE_ENV === 'production',
+      sourcemaps.write('.', { includeContent: false, addComment: false }),
+      sourcemaps.write('.')))
     // .pipe(gulpif(onlyCss, postcss(postCssPlugins)))
-    // .pipe(gulpif(onlyCss && process.env.NODE_ENV === 'production', rev()))
+    // .pipe(sourcemaps.write('.'))
+    .pipe(gulpif(onlyCss && process.env.NODE_ENV === 'production', rev()))
     .pipe(size({ showFiles: true }))
     .pipe(dest(DIST))
 }
 
 // gulp watch for scssToCss task
-// function compileCssWatch () {
-//   watch(`${SRC}**/*.scss`, compileCss)
-// }
-compileCss()
-// exports.compileCss = compileCss
+function compileCssWatch () {
+  watch(`${SRC}**/*.scss`, compileCss)
+}
+
+// compileCss()
+exports.compileCss = compileCss
 // exports.compileCssWatch = compileCssWatch

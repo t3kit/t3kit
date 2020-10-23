@@ -1,0 +1,108 @@
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-wrap {
+  white-space: normal !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-break {
+  word-wrap: break-word !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-monospace {
+  font-family: var(--t3-font-monospace) !important;
+}
+
+.text-color-reset {
+  color: inherit !important;
+}
+
+.text-reset {
+  font-family: var(--t3-font-family-base);
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+
+// Text Clamp (Truncating Multiple Line Text)
+.text-clamp-base {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp3 {
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp4 {
+  -webkit-line-clamp: 4;
+}
+
+.line-clamp5 {
+  -webkit-line-clamp: 5;
+}
+
+.line-clamp6 {
+  -webkit-line-clamp: 5;
+}
+
+.line-clamp7 {
+  -webkit-line-clamp: 5;
+}
+
+.line-clamp8 {
+  -webkit-line-clamp: 5;
+}
