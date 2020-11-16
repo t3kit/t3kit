@@ -42,6 +42,7 @@ return [
                 --palette--;;button,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                 picture,
+                image_overlay,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                 --palette--;;hidden,
                 --palette--;;access,
@@ -687,6 +688,36 @@ return [
                 'minitems' => 0,
                 'maxitems' => 1,
             ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ],
+        'image_overlay' => [
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_disable',
+                        '0'
+                    ],
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_primary',
+                        'overlay-primary'
+                    ],
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_secondary',
+                        'overlay-secondary'
+                    ],
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_dark',
+                        'overlay-dark'
+                    ],
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_light',
+                        'overlay-light'
+                    ]
+                ],
+                'default' => '0',
+            ]
         ]
     ]
 ];

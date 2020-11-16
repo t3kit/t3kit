@@ -16,6 +16,24 @@
 			<trans-unit id="slider.tab" resname="slider.tab">
 				<source>Image slider items</source>
 			</trans-unit>
+			<trans-unit id="slider.overlay" resname="slider.tab">
+				<source>Overlay color with opacity</source>
+			</trans-unit>
+			<trans-unit id="slider.overlay_disable" resname="slider.overlay_disable">
+				<source>No overlay</source>
+			</trans-unit>
+			<trans-unit id="slider.overlay_primary" resname="slider.overlay_primary">
+				<source>Primary color overlay</source>
+			</trans-unit>
+			<trans-unit id="slider.overlay_secondary" resname="slider.overlay_secondary">
+				<source>Secondary color overlay</source>
+			</trans-unit>
+			<trans-unit id="slider.overlay_dark" resname="slider.overlay_dark">
+				<source>Dark overlay</source>
+			</trans-unit>
+			<trans-unit id="slider.overlay_light" resname="slider.overlay_light">
+				<source>Light overlay</source>
+			</trans-unit>
 
 			<trans-unit id="flexform.height" resname="flexform.height">
 				<source>Height</source>
