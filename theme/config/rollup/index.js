@@ -5,6 +5,7 @@ const sizes = require('rollup-plugin-sizes')
 const resolve = require('@rollup/plugin-node-resolve')
 // const legacy = require('@rollup/plugin-legacy')
 const conf = require('../conf')
+const { babel } = require('@rollup/plugin-babel')
 
 const SRC = conf.JS_SRC
 const DIST = conf.JS_DIST
@@ -14,10 +15,14 @@ const mainJsInputOptions = {
   input: `${SRC}main.js`,
   plugins: [
     resolve(),
-    sizes()
-    // legacy({
-    //   '../../node_modules/simplelightbox/dist/simple-lightbox.js': 'SimpleLightbox'
-    // })
+    sizes(),
+    babel({
+      exclude: 'node_modules/**',
+      babelHelpers: 'bundled',
+      retainLines: true,
+      presets: ['@babel/preset-env'],
+      plugins: [['@babel/plugin-proposal-class-properties']]
+    })
   ]
 }
 process.env.NODE_ENV === 'production' && mainJsInputOptions.plugins.push(terser({
@@ -27,7 +32,7 @@ process.env.NODE_ENV === 'production' && mainJsInputOptions.plugins.push(terser(
 }))
 const mainJsOutputOptions = {
   file: `${DIST}main.js`,
-  format: 'iife',
+  // format: 'iife',
   sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
   sourcemapExcludeSources: true
 }
