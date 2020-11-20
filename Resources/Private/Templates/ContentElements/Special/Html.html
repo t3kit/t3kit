@@ -6,9 +6,7 @@
 
 <f:section name="Main">
 
-  <f:if condition="{data.bodytext}">
-    <f:render partial="Bodytext/RTEBodytext" arguments="{_all}" />
-  </f:if>
+  <f:format.raw>{data.bodytext}</f:format.raw>
 
 </f:section>
 
