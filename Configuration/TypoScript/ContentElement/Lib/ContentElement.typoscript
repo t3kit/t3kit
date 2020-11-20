@@ -8,14 +8,21 @@ lib.contentElement {
     30 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
     40 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugin
     50 = EXT:t3kit/Resources/Private/Templates/ContentElements/Special
+    110.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Static
+    120.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Dynamic
+    130.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Menu
+    140.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Plugin
+    150.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Special
     200 = {$plugin.t3kit.contentElement.view.templateRootPath}
   }
   partialRootPaths {
     0 = EXT:t3kit/Resources/Private/Partials/ContentElements
+    100.dataWrap = EXT:{site:theme}/Resources/Private/Partials/ContentElements
     200 = {$plugin.t3kit.contentElement.view.partialRootPath}
   }
   layoutRootPaths {
     0 = EXT:t3kit/Resources/Private/Layouts/ContentElements
+    100.dataWrap = EXT:{site:theme}/Resources/Private/Layouts/ContentElements
     200 = {$plugin.t3kit.contentElement.view.layoutRootPath}
   }
   // dataProcessing {
@@ -61,4 +68,5 @@ lib.contentElement {
 # Extended Fluid templates for PageLayoutView
 # ===========================
 module.tx_backend.view.partialRootPaths.100 = EXT:t3kit/Resources/Private/Partials/
+module.tx_backend.view.partialRootPaths.150.dataWrap = EXT:{site:theme}/Resources/Private/Partials/
 module.tx_backend.view.partialRootPaths.200 = {$plugin.t3kit.contentElement.pageLayoutView.partialRootPath}

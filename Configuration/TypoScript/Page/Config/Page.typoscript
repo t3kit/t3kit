@@ -23,15 +23,18 @@ page {
     ### end ###
     templateRootPaths {
       0 = EXT:t3kit/Resources/Private/Templates/Page
+      100.dataWrap = EXT:{site:theme}/Resources/Private/Templates/Page
       200 = {$page.fluidtemplate.templateRootPath}
     }
     partialRootPaths {
       0 = EXT:t3kit/Resources/Private/Partials/Page
       20.dataWrap = EXT:{site:theme}/Resources/Public/assets/production
+      100.dataWrap = EXT:{site:theme}/Resources/Private/Partials/Page
       200 = {$page.fluidtemplate.partialRootPath}
     }
     layoutRootPaths {
       0 = EXT:t3kit/Resources/Private/Layouts/Page
+      100.dataWrap = EXT:{site:theme}/Resources/Private/Layouts/Page
       200 = {$page.fluidtemplate.layoutRootPath}
     }
     variables {
