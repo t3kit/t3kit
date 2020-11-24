@@ -25,7 +25,7 @@
       <div class="ce-slider swiper-wrapper">
           <!-- Slides -->
         <f:for each="{records}" as="item" iteration="iteration">
-          <div class="swiper-slide{f:if(condition: iteration.isFirst,then:' active')}">
+          <div class="swiper-slide{f:if(condition: iteration.isFirst,then:' active')} {item.data.image_overlay}">
             <div class="ce-slider__caption-wrp container" {f:if(condition:height, then: 'style="height: {height}px;"')}>
               <div class="ce-slider__caption">
                 <f:if condition="{item.data.header_text} || {t3kit:isPlaceholderEnabled()}">

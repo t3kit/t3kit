@@ -76,6 +76,7 @@ CREATE TABLE tx_t3kit_slider_item (
 	button_no_bg tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	button_full_width tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	picture int(11) unsigned DEFAULT '0' NOT NULL,
+	image_overlay varchar(60) DEFAULT '' NOT NULL,
 	section_container_width varchar(60) DEFAULT '' NOT NULL,
 
 	PRIMARY KEY (uid),
