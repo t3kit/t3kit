@@ -55,6 +55,7 @@ async function getFileList (dir) {
     files = files.filter(dirent => dirent.isFile())
       .map(dirent => dirent.name)
       .filter(item => { return !(item.includes('map') || item.includes('br') || item.includes('gz') || item.includes('html')) })
+      console.log('🚀 ~ file: index.js ~ line 60 ~ getFileList ~ files', files)
     return files
   }
 }
@@ -123,6 +124,9 @@ async function addCssTemplate () {
     let link = ''
     files.forEach(async (fileName) => {
       let tmplName = fileName.split('.')[0]
+      if (process.env.NODE_ENV === 'production') {
+        tmplName = tmplName.slice(0, -11)
+      }
       if (fileName.includes('async')) {
         link = CSS_LINK_ASYNC
       } else {
@@ -160,6 +164,9 @@ async function addJsTemplate () {
 
 
       let tmplName = fileName.split('.')[0]
+      if (process.env.NODE_ENV === 'production') {
+        tmplName = tmplName.slice(0, -11)
+      }
       if (fileName.includes('defer')) {
         link = JS_LINK_DEFER
       } else if (fileName.includes('async')) {

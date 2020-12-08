@@ -72,7 +72,7 @@
   text-decoration: line-through !important;
 }
 
-// Text Clamp (Truncating Multiple Line Text)
+/* Text Clamp (Truncating Multiple Line Text) */
 .text-clamp-base {
   overflow: hidden;
   display: -webkit-box;

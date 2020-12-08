@@ -2,20 +2,20 @@ const { watch, parallel } = require('gulp')
 const rollup = require('rollup')
 const { terser } = require('rollup-plugin-terser')
 const sizes = require('rollup-plugin-sizes')
-const resolve = require('@rollup/plugin-node-resolve')
+const { nodeResolve } = require('@rollup/plugin-node-resolve')
 // const legacy = require('@rollup/plugin-legacy')
 const conf = require('../conf')
 const fs = require('fs')
 const fse = require('fs-extra')
 const fsPromises = fs.promises
-const rootDir = require('app-root-path').path
+// const rootDir = require('app-root-path').path
 
 
 
 
 
-const SRC = conf.JS_SRC
-const DIST = conf.JS_DIST
+// const SRC = conf.JS_SRC
+// const DIST = conf.JS_DIST
 
 // let files
 async function getFileList (dir) {
@@ -29,14 +29,14 @@ async function getFileList (dir) {
 
   if (files !== undefined) {
     files = files.filter(dirent => dirent.isFile())
-      .map(dirent => `${SRC}${dirent.name}`)
+      .map(dirent => `${conf.JS_SRC}${dirent.name}`)
       .filter(item => { return !(item.includes('map') || item.includes('br') || item.includes('gz') || item.includes('html') || item.includes('md')) })
-      console.log('getFileList -> files', files)
+    // console.log('getFileList -> files', files)
     return files
   }
 }
 
-const llll = `${rootDir}/theme/src/js`
+// const llll = `${rootDir}/theme/src/js`
 
 // let /mmm
 // (async () => { await getFileList(llll) })()
@@ -59,19 +59,21 @@ const llll = `${rootDir}/theme/src/js`
 
 
 async function rrrr () {
-  const files = await getFileList(llll)
+  const files = await getFileList(conf.JS_SRC)
   const mainJsInputOptions = {
     // input: `${SRC}main.js`,
     // input: getFileList(llll).then((val) => { console.log(val) }),
     input: files,
     plugins: [
-      resolve(),
+      nodeResolve(),
       sizes()
-      // legacy({
-      //   '../../node_modules/simplelightbox/dist/simple-lightbox.js': 'SimpleLightbox'
-      // })
     ]
   }
+  process.env.NODE_ENV === 'production' && mainJsInputOptions.plugins.push(terser({
+    output: {
+      comments: false
+    }
+  }))
 
   // console.log('rrrr -> mainJsInputOptions', mainJsInputOptions)
   return mainJsInputOptions
@@ -79,37 +81,32 @@ async function rrrr () {
 
 
 
-const mainJsInputOptions = {
-  // input: `${SRC}main.js`,
-  input: {
-    b: '/Users/mac/t3kit/t3kit-starter/public/typo3conf/ext/t3kit/theme/src/js/main.js'
-    // index: '/Users/mac/t3kit/t3kit-starter/public/typo3conf/ext/t3kit/theme/src/js/plugin3--async.js'
-  },
-  // input: getFileList(llll).then((val) => { console.log(val) }),
-  // input: (async () => { return await getFileList(llll) })(),
-  plugins: [
-    resolve(),
-    sizes()
-    // legacy({
-    //   '../../node_modules/simplelightbox/dist/simple-lightbox.js': 'SimpleLightbox'
-    // })
-  ]
-}
+// const mainJsInputOptions = {
+//   // input: `${SRC}main.js`,
+//   input: {
+//     b: '/Users/mac/t3kit/t3kit-starter/public/typo3conf/ext/t3kit/theme/src/js/main.js'
+//     // index: '/Users/mac/t3kit/t3kit-starter/public/typo3conf/ext/t3kit/theme/src/js/plugin3--async.js'
+//   },
+//   // input: getFileList(llll).then((val) => { console.log(val) }),
+//   // input: (async () => { return await getFileList(llll) })(),
+//   plugins: [
+//     resolve(),
+//     sizes()
+//     // legacy({
+//     //   '../../node_modules/simplelightbox/dist/simple-lightbox.js': 'SimpleLightbox'
+//     // })
+//   ]
+// }
 
-process.env.NODE_ENV === 'production' && mainJsInputOptions.plugins.push(terser({
-  output: {
-    comments: false
-  }
-}))
 const mainJsOutputOptions = {
   // file: `${DIST}main.js`,
-  dir: DIST
+  dir: conf.JS_DIST,
   // entryFileNames: 'entry-[name].js',
   // format: 'iife'
-  // sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
-  // sourcemapExcludeSources: true
+  sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
+  sourcemapExcludeSources: true
 }
-async function compileMainJs () {
+async function compileJs () {
   // const bundle = await rollup.rollup(mainJsInputOptions)
   const bundle = await rollup.rollup(await rrrr())
   await bundle.write(mainJsOutputOptions)
@@ -163,9 +160,10 @@ async function compileMainJs () {
 //   await bundle.write(plugin2OutputOptions)
 // }
 
-// function compileMainJsWatch () {
-//   watch([`${SRC}main/**/*.js`, `${SRC}main.js`], compileMainJs)
-// }
+function compileJsWatch () {
+  watch([`${conf.JS_SRC}**/*.js`], compileJs)
+}
+
 // function compilePlugin1JsWatch () {
 //   watch([`${SRC}plugin1/**/*.js`, `${SRC}plugin1.js`], compilePlugin1)
 // }
@@ -174,5 +172,6 @@ async function compileMainJs () {
 // }
 
 // exports.compileJs = parallel(compileMainJs, compilePlugin1, compilePlugin2)
-exports.compileJs = parallel(compileMainJs)
+exports.compileJs = compileJs
+exports.compileJsWatch = compileJsWatch
 // exports.compileJsWatch = parallel(compileMainJsWatch, compilePlugin1JsWatch, compilePlugin2JsWatch)

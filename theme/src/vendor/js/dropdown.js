@@ -11,7 +11,7 @@ import {
   isVisible,
   noop,
   typeCheckConfig
-} from 'bootstrap/js/src/util/index'
+} from 'bootstrap/js/src/util'
 import Data from 'bootstrap/js/src/dom/data'
 import EventHandler from 'bootstrap/js/src/dom/event-handler'
 import Manipulator from 'bootstrap/js/src/dom/manipulator'

@@ -10,4 +10,12 @@ function revJs () {
     .pipe(dest(conf.JS_DIST))
 }
 
+function revCsss () {
+  return src(`${conf.CSS_DIST}**/*.css`)
+    .pipe(rev())
+    .pipe(revdel())
+    .pipe(dest(conf.CSS_DIST))
+}
+
 exports.revJs = revJs
+exports.revCsss = revCsss

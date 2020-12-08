@@ -1,4 +1,4 @@
-import SimpleLightbox from 'simplelightbox'
+import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js'
 
 const simpleLightbox = function (className, options) {
   return new SimpleLightbox(className, options)
