@@ -7,24 +7,27 @@ const CSS_DIST = conf.CSS_DIST
 const JS_DIST = conf.JS_DIST
 
 let JS_LINK
-let JS_LINK_DEFER
-let JS_LINK_ASYNC
+// let JS_LINK_DEFER
+// let JS_LINK_ASYNC
 let CSS_LINK
 let CSS_LINK_ASYNC
 if (process.env.NODE_ENV === 'production') {
   JS_LINK = conf.JS_LINK_PROD
-  JS_LINK_DEFER = conf.JS_LINK_DEFER_PROD
-  JS_LINK_ASYNC = conf.JS_LINK_ASYNC_PROD
+  // JS_LINK_DEFER = conf.JS_LINK_DEFER_PROD
+  // JS_LINK_ASYNC = conf.JS_LINK_ASYNC_PROD
   CSS_LINK = conf.CSS_LINK_PROD
   CSS_LINK_ASYNC = conf.CSS_LINK_ASYNC_PROD
 } else {
   JS_LINK = conf.JS_LINK_DEV
-  JS_LINK_DEFER = conf.JS_LINK_DEFER_DEV
-  JS_LINK_ASYNC = conf.JS_LINK_ASYNC_DEV
+  // JS_LINK_DEFER = conf.JS_LINK_DEFER_DEV
+  // JS_LINK_ASYNC = conf.JS_LINK_ASYNC_DEV
   CSS_LINK = conf.CSS_LINK_DEV
   CSS_LINK_ASYNC = conf.CSS_LINK_ASYNC_DEV
 }
 
+function addLinkSettings (link, settings) {
+  return link.replace('%_settings_%', settings)
+}
 // async function getFileList (dir) {
 //   let files
 //   try {
@@ -55,7 +58,6 @@ async function getFileList (dir) {
     files = files.filter(dirent => dirent.isFile())
       .map(dirent => dirent.name)
       .filter(item => { return !(item.includes('map') || item.includes('br') || item.includes('gz') || item.includes('html')) })
-      console.log('🚀 ~ file: index.js ~ line 60 ~ getFileList ~ files', files)
     return files
   }
 }
@@ -167,12 +169,21 @@ async function addJsTemplate () {
       if (process.env.NODE_ENV === 'production') {
         tmplName = tmplName.slice(0, -11)
       }
+
       if (fileName.includes('defer')) {
-        link = JS_LINK_DEFER
+        if (fileName.includes('defer-p1')) {
+          link = addLinkSettings(JS_LINK, 'defer="true" priority="1"')
+        } else {
+          link = addLinkSettings(JS_LINK, 'defer="true"')
+        }
       } else if (fileName.includes('async')) {
-        link = JS_LINK_ASYNC
+        if (fileName.includes('async-p1')) {
+          link = addLinkSettings(JS_LINK, 'async="true" priority="1"')
+        } else {
+          link = addLinkSettings(JS_LINK, 'async="true"')
+        }
       } else {
-        link = JS_LINK
+        link = addLinkSettings(JS_LINK, '')
       }
       tmplName = tmplName.charAt(0).toUpperCase() + tmplName.slice(1)
       link = link.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -3))

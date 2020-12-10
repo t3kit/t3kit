@@ -85,12 +85,12 @@ conf.SCSS_DIST = `${conf.SRC}vendor/css`
 // JS compilation variables
 conf.JS_SRC = `${conf.SRC}js/`
 conf.JS_DIST = `${conf.DIST}Js/`
-conf.JS_LINK_DEV = '<f:asset.script identifier="%_id_%" src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
-conf.JS_LINK_PROD = '<f:asset.script identifier="%_id_%" src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
-conf.JS_LINK_DEFER_DEV = '<f:asset.script identifier="%_id_%" defer src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
-conf.JS_LINK_DEFER_PROD = '<f:asset.script identifier="%_id_%" defer src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
-conf.JS_LINK_ASYNC_DEV = '<f:asset.script identifier="%_id_%" async src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
-conf.JS_LINK_ASYNC_PROD = '<f:asset.script identifier="%_id_%" async src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
+conf.JS_LINK_DEV = '<f:asset.script identifier="%_id_%" %_settings_% src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
+conf.JS_LINK_PROD = '<f:asset.script identifier="%_id_%" %_settings_% src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
+// conf.JS_LINK_DEFER_DEV = '<f:asset.script identifier="%_id_%" defer="true" src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
+// conf.JS_LINK_DEFER_PROD = '<f:asset.script identifier="%_id_%" defer="true" src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
+// conf.JS_LINK_ASYNC_DEV = '<f:asset.script identifier="%_id_%" async="true" src="EXT:{site.configuration.theme}/Resources/Public/assets/development/Js/%_file_%" />'
+// conf.JS_LINK_ASYNC_PROD = '<f:asset.script identifier="%_id_%" async="true" src="EXT:{site.configuration.theme}/Resources/Public/assets/production/Js/%_file_%" />'
 
 // FAVICONS compilation variables
 // add more favicon customization into generateFavicon object --> (theme/config/real-favicon/index.js)
