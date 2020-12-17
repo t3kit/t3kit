@@ -1,36 +1,47 @@
-const { dest, src, parallel, series } = require('gulp')
-const size = require('gulp-size')
-const gulpBrotli = require('gulp-brotli')
-const gulpGzip = require('gulp-gzip')
+const zlib = require('zlib')
+const { pipeline } = require('stream')
+const { createReadStream, createWriteStream } = require('fs')
 const conf = require('../conf')
+const utils = require('../utils')
 
-// compress with brotli
-function brotliCss () {
-  return src(`${conf.CSS_DIST}**/*.css`)
-    .pipe(gulpBrotli())
-    .pipe(size({ showFiles: true }))
-    .pipe(dest(conf.CSS_DIST))
-}
-function brotliJs () {
-  return src(`${conf.JS_DIST}**/*.js`)
-    .pipe(gulpBrotli())
-    .pipe(size({ showFiles: true }))
-    .pipe(dest(conf.JS_DIST))
+async function compressFiles (glob) {
+  try {
+    const files = await utils.getFileList(glob, { objectMode: true })
+    files.forEach(async (file) => {
+      const source = createReadStream(file.path)
+      const gzipDestination = createWriteStream(`${file.path}.gz`)
+      const brotliDestination = createWriteStream(`${file.path}.br`)
+
+      const gzip = zlib.createGzip()
+      const brotli = zlib.createBrotliCompress()
+
+      pipeline(source, gzip, gzipDestination, (err) => {
+        if (err) {
+          console.error('gzip error', err)
+          process.exitCode = 1
+        }
+      })
+      pipeline(source, brotli, brotliDestination, (err) => {
+        if (err) {
+          console.error('brotli error', err)
+          process.exitCode = 1
+        }
+      })
+    })
+  } catch (error) {
+    console.error(`compressFiles(${glob}) Error:`, error)
+  }
 }
 
-// compress with gzip
-function gzipCss () {
-  return src(`${conf.CSS_DIST}**/*.css`)
-    .pipe(gulpGzip())
-    .pipe(size({ showFiles: true }))
-    .pipe(dest(conf.CSS_DIST))
+async function compressCss () {
+  await compressFiles(`${conf.CSS_DIST}*.css`)
 }
-function gzipJs () {
-  return src(`${conf.JS_DIST}**/*.js`)
-    .pipe(gulpGzip())
-    .pipe(size({ showFiles: true }))
-    .pipe(dest(conf.JS_DIST))
+async function compressJs () {
+  await compressFiles(`${conf.JS_DIST}*.js`)
 }
 
-exports.compressCss = parallel(brotliCss, gzipCss)
-exports.compressJs = series(brotliJs, gzipJs)
+exports.compressCss = compressCss
+exports.compressJs = compressJs
+
+// compressFiles(`${conf.CSS_DIST}*.css`)
+// compressFiles(`${conf.JS_DIST}*.js`)

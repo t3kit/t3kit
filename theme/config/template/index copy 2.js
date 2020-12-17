@@ -1,7 +1,7 @@
 const fsPromises = require('fs').promises
-const pEachSeries = require('p-each-series')
 const conf = require('../conf')
 const utils = require('../utils')
+const globby = require('globby')
 
 let JS_LINK
 let CSS_LINK
@@ -24,7 +24,7 @@ async function addCssTemplate () {
   try {
     const files = await utils.getFileList(`${conf.CSS_DIST}*.css`, { objectMode: true })
     let link = ''
-    await pEachSeries(files, async (file) => {
+    files.forEach(async (file) => {
       const fileName = file.name
       let tmplName = fileName.split('.')[0]
       if (process.env.NODE_ENV === 'production') {
@@ -49,7 +49,7 @@ async function addJsTemplate () {
   try {
     const files = await utils.getFileList(`${conf.JS_DIST}*.js`, { objectMode: true })
     let link = ''
-    await pEachSeries(files, async (file) => {
+    files.forEach(async (file) => {
       const fileName = file.name
       let tmplName = fileName.split('.')[0]
       if (process.env.NODE_ENV === 'production') {
@@ -79,6 +79,10 @@ async function addJsTemplate () {
     console.error('(addJsTemplate) Error:', error)
   }
 }
+
+// addCssTemplate()
+// addJsTemplate()
+
 
 exports.addJsTemplate = addJsTemplate
 exports.addCssTemplate = addCssTemplate
