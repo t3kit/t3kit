@@ -1,46 +1,59 @@
-const { watch, dest, src } = require('gulp')
-const sass = require('gulp-sass')
-// const Fiber = require('fibers')
-// const sourcemaps = require('gulp-sourcemaps')
-// const postcss = require('gulp-postcss')
-// const autoprefixer = require('autoprefixer')
-// const cssnano = require('cssnano')
-// const gulpif = require('gulp-if')
-// const rev = require('gulp-rev')
-const size = require('gulp-size')
+const fsPromises = require('fs').promises
+const pEachSeries = require('p-each-series')
+const sass = require('sass')
+const size = require('filesize')
+const boxen = require('boxen')
 const conf = require('../conf')
+const utils = require('../utils')
 
-sass.compiler = require('sass')
-// const SRC = conf.SCSS_SRC
-// const DIST = conf.SCSS_DIST
-// const onlyCss = '*.css'
 
-// const postCssPlugins = [
-//   autoprefixer()
-// ]
-// minify css with cssnano if production
-// process.env.NODE_ENV === 'production' && postCssPlugins.push(cssnano({ preset: 'default' }))
-
-// compile scss to css
-function compileScss () {
-  return src('*.scss', { cwd: conf.SCSS_SRC })
-    // .pipe(sourcemaps.init())
-    // .pipe(sass({ fiber: Fiber }).on('error', sass.logError))
-    .pipe(sass.sync().on('error', sass.logError))
-    // .pipe(gulpif(
-    //   process.env.NODE_ENV === 'production',
-    //   sourcemaps.write('.', { includeContent: false, sourceRoot: '../../../../../theme/src/scss/', addComment: false }),
-    //   sourcemaps.write('.', { includeContent: false, sourceRoot: '../../../../../theme/src/scss/' })))
-    // .pipe(gulpif(onlyCss, postcss(postCssPlugins)))
-    // .pipe(gulpif(onlyCss && process.env.NODE_ENV === 'production', rev()))
-    .pipe(size({ showFiles: true }))
-    .pipe(dest(conf.SCSS_DIST))
+function logFiles (val, file, fnVal = '', promise = false) {
+  const fnValStyle = `${chalk.white.reset(`${fnVal}`)}`
+  const fnNameStyle = chalk.blue.bold(`${fnName}(${fnValStyle})`)
+  let msgStyle = `${chalk.red.bold('Error in func:')}${fnNameStyle}${chalk.red.bold(' -->')}`
+  if (promise) {
+    msgStyle = `${chalk.red.dim.bold('Error in func:')}${fnNameStyle}${chalk.red.dim.bold(' -->')}`
+  }
+  console.error(msgStyle, error)
 }
 
-// gulp watch for scssToCss task
-function compileScssWatch () {
-  watch(`${conf.SCSS_SRC}**/*.scss`, compileScss)
+
+
+function sassPromise (fileName) {
+  return new Promise((resolve, reject) => {
+    sass.render({ file: fileName }, function (error, result) {
+      if (error) {
+        utils.errLogFn(error.message, 'sassPromise', `${fileName}`, true)
+        reject(error)
+      } else {
+        resolve(result)
+      }
+    })
+  })
+}
+
+async function compileScss () {
+  try {
+    utils.start('compileScss')
+    const files = await utils.getFileList(`${conf.SCSS_SRC}*.scss`, { objectMode: true })
+    const fileList = []
+    await pEachSeries(files, async (file, index) => {
+      const scssResult = await sassPromise(file.path)
+      const fileName = `${file.name.slice(0, -5)}.css`
+      await fsPromises.writeFile(`${conf.SCSS_DIST}${fileName}`, scssResult.css)
+      const fileStats = await fsPromises.stat(`${conf.SCSS_DIST}${fileName}`)
+      fileList[index] = { name: fileName, size: size(fileStats.size) }
+    })
+    utils.boxEnd(fileList, 'compileScss')
+  } catch (error) {
+    utils.errLogFn(error, 'compileScss')
+  }
 }
 // compileScss()
-exports.compileScss = compileScss
-exports.compileScssWatch = compileScssWatch
+// exports.compileScss = compileScss
+
+async function start () {
+  await Promise.all([compileScss(), compileScss()])
+
+}
+start()

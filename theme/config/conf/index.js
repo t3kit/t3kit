@@ -80,7 +80,7 @@ conf.CSS_LINK_ASYNC_PROD = `<f:asset.css identifier="%_id_%" href="EXT:{site.con
 
 // SCSS compilation variables
 conf.SCSS_SRC = `${conf.SRC}scss/`
-conf.SCSS_DIST = `${conf.SRC}vendor/css`
+conf.SCSS_DIST = `${conf.SRC}vendor/css/`
 
 // JS compilation variables
 conf.JS_SRC = `${conf.SRC}js/`

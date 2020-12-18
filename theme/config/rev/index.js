@@ -112,8 +112,8 @@ async function revFiles (glob) {
       hash = hash.slice(0, 10)
       await fsPromises.rename(fileName, `${newFileName}-${hash}${fileExt}`)
     })
-  } catch (error) {
-    console.error(`func:compressFiles(${glob}) Error:`, error)
+  } catch (err) {
+    console.error(`func:compressFiles(${glob}) Error:`, err)
   }
 }
 
