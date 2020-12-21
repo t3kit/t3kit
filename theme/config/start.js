@@ -2,6 +2,7 @@ const conf = require('./conf')
 const utils = require('./utils')
 const { clean } = require('./clean')
 const { compileCss } = require('./css')
+const { compileScss } = require('./sass')
 const { compileJs } = require('./rollup')
 const { addCssTemplate, addJsTemplate } = require('./template')
 const { compressCss, compressJs } = require('./compress')
@@ -40,11 +41,11 @@ async function start () {
   // ]
   // await pSeries(tasks)
   await clean()
-
+  await compileScss()
   await Promise.all([compileCss(), compileJs()])
-  await Promise.all([revCss(), revJs()])
+  // await Promise.all([revCss(), revJs()])
   await Promise.all([addCssTemplate(), addJsTemplate()])
-  await Promise.all([compressCss(), compressJs()])
+  // await Promise.all([compressCss(), compressJs()])
 
   // await compressCss
 }

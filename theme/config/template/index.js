@@ -3,53 +3,49 @@ const pEachSeries = require('p-each-series')
 const conf = require('../conf')
 const utils = require('../utils')
 
-let JS_LINK
-let CSS_LINK
-let CSS_LINK_ASYNC
-if (process.env.NODE_ENV === 'production') {
-  JS_LINK = conf.JS_LINK_PROD
-  CSS_LINK = conf.CSS_LINK_PROD
-  CSS_LINK_ASYNC = conf.CSS_LINK_ASYNC_PROD
-} else {
-  JS_LINK = conf.JS_LINK_DEV
-  CSS_LINK = conf.CSS_LINK_DEV
-  CSS_LINK_ASYNC = conf.CSS_LINK_ASYNC_DEV
-}
-
 function addLinkSettings (link, settings) {
   return link.replace('%_settings_%', settings)
 }
 
 async function addCssTemplate () {
   try {
+    const timeStart = utils.start('addCssTemplate', 'cyan.inverse')
+    const fileList = []
+
     const files = await utils.getFileList(`${conf.CSS_DIST}*.css`, { objectMode: true })
     let link = ''
-    await pEachSeries(files, async (file) => {
+    await pEachSeries(files, async (file, index) => {
       const fileName = file.name
       let tmplName = fileName.split('.')[0]
       if (process.env.NODE_ENV === 'production') {
         tmplName = tmplName.slice(0, -11)
       }
       if (fileName.includes('async')) {
-        link = CSS_LINK_ASYNC
+        link = conf.CSS_LINK_ASYNC
       } else {
-        link = CSS_LINK
+        link = conf.CSS_LINK
       }
       tmplName = tmplName.charAt(0).toUpperCase() + tmplName.slice(1)
       link = link.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -4))
       await fsPromises.writeFile(`${conf.CSS_DIST}${tmplName}.html`, link)
+
+      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${tmplName}.html` }
     })
-    return true
+
+    utils.boxEnd(fileList, 'addCssTemplate', timeStart, 'cyan.inverse')
   } catch (error) {
-    console.error('(addCssTemplate) Error:', error)
+    utils.errLogFn(error, 'addCssTemplate')
   }
 }
 
 async function addJsTemplate () {
   try {
+    const timeStart = utils.start('addJsTemplate', 'cyan.inverse')
+    const fileList = []
+
     const files = await utils.getFileList(`${conf.JS_DIST}*.js`, { objectMode: true })
     let link = ''
-    await pEachSeries(files, async (file) => {
+    await pEachSeries(files, async (file, index) => {
       const fileName = file.name
       let tmplName = fileName.split('.')[0]
       if (process.env.NODE_ENV === 'production') {
@@ -58,25 +54,29 @@ async function addJsTemplate () {
 
       if (fileName.includes('defer')) {
         if (fileName.includes('defer-p1')) {
-          link = addLinkSettings(JS_LINK, 'defer="true" priority="1"')
+          link = addLinkSettings(conf.JS_LINK, 'defer="true" priority="1"')
         } else {
-          link = addLinkSettings(JS_LINK, 'defer="true"')
+          link = addLinkSettings(conf.JS_LINK, 'defer="true"')
         }
       } else if (fileName.includes('async')) {
         if (fileName.includes('async-p1')) {
-          link = addLinkSettings(JS_LINK, 'async="true" priority="1"')
+          link = addLinkSettings(conf.JS_LINK, 'async="true" priority="1"')
         } else {
-          link = addLinkSettings(JS_LINK, 'async="true"')
+          link = addLinkSettings(conf.JS_LINK, 'async="true"')
         }
       } else {
-        link = addLinkSettings(JS_LINK, '')
+        link = addLinkSettings(conf.JS_LINK, '')
       }
       tmplName = tmplName.charAt(0).toUpperCase() + tmplName.slice(1)
       link = link.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -3))
       await fsPromises.writeFile(`${conf.JS_DIST}${tmplName}.html`, link)
+
+      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${tmplName}.html` }
     })
+
+    utils.boxEnd(fileList, 'addJsTemplate', timeStart, 'cyan.inverse')
   } catch (error) {
-    console.error('(addJsTemplate) Error:', error)
+    utils.errLogFn(error, 'addJsTemplate')
   }
 }
 

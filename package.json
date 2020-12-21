@@ -72,6 +72,7 @@
     "moment": "^2.29.1",
     "npm-run-all": "~4.1.5",
     "p-each-series": "^2.2.0",
+    "p-map-series": "^2.1.0",
     "p-series": "^2.1.0",
     "postcss": "^8.2.1",
     "postcss-import": "~13.0.0",
@@ -110,14 +111,6 @@
     }
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "npm run githook"
-    }
-  },
-  "t3kit": {
-    "theme-name": "t3kit",
-    "typo3-site-config-dir": "t3kit",
-    "favicon-master-picture": "favicon.svg",
-    "proxy-host": "t3kit10.t3.localhost"
+    "hooks": {}
   }
 }
