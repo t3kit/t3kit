@@ -15,7 +15,7 @@ process.env.NODE_ENV === 'production' && postcssPlugins.push(cssnano({ preset: '
 
 async function compileCss () {
   try {
-    const timeStart = utils.start('compileCss')
+    const timeStart = utils.start('compileCss', 'blue')
     const fileList = []
 
     await fse.ensureDir(conf.CSS_DIST)
@@ -36,7 +36,7 @@ async function compileCss () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'compileCss', timeStart)
+    utils.boxEnd(fileList, 'compileCss', timeStart, 'blue')
   } catch (error) {
     utils.errLogFn(error, 'compileCss')
   }

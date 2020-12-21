@@ -20,7 +20,7 @@ async function revCss () {
       await fsPromises.rename(file.path, `${filePath}-${hash}${fileExt}`)
 
       const fileStats = await fsPromises.stat(`${filePath}-${hash}${fileExt}`)
-      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CCS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
+      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
     })
 
     utils.boxEnd(fileList, 'revCss', timeStart, 'blue.bold')

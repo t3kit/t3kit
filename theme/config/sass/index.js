@@ -20,7 +20,7 @@ function sassPromise (fileName) {
 
 async function compileScss () {
   try {
-    const timeStart = utils.start('compileScss', 'magenta.inverse')
+    const timeStart = utils.start('compileScss', 'magenta')
     const fileList = []
 
     const files = await utils.getFileList(`${conf.SCSS_SRC}*.scss`, { objectMode: true })
@@ -32,7 +32,7 @@ async function compileScss () {
       fileList[index] = { name: `src/vendor/css/${fileName}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'compileScss', timeStart, 'magenta.inverse', false)
+    utils.boxEnd(fileList, 'compileScss', timeStart, 'magenta', false)
   } catch (error) {
     utils.errLogFn(error, 'compileScss')
   }

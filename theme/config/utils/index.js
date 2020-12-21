@@ -5,6 +5,13 @@ const moment = require('moment')
 const boxen = require('boxen')
 const conf = require('../conf')
 
+let envContext
+if (process.env.NODE_ENV === 'production') {
+  envContext = chalk`[{blue.bold ${conf.CONTEXT}} {white context}]`
+} else {
+  envContext = chalk`[{red.bold ${conf.CONTEXT}} {white context}]`
+}
+
 async function ensureTmpDir () {
   try {
     await fse.ensureDir(`${conf.TEMP}`)
@@ -34,51 +41,67 @@ function errLogFn (error, fnName, fnVal = '', promise = false) {
   console.error(msgStyle, error)
 }
 
-function filesStats (files, prod = true) {
+function filesStats (files, context = true) {
   let infoBlock = ''
-  if (prod) {
-    infoBlock = `${chalk.blue.bold.inverse(conf.CONTEXT)}\n`
-  }
+  // if (context) {
+  //   infoBlock = `${envContext}\n`
+  //   // if (process.env.NODE_ENV === 'production') {
+  //   //   infoBlock = chalk`${context}\n`
+  //   // } else {
+  //   //   infoBlock = chalk`{red.bold ${conf.CONTEXT}} {white context}\n`
+  //   // }
+  // }
   const lastItem = files.length - 1
   files.forEach((file, index) => {
-    if (file.size) {
-      infoBlock = infoBlock + `${chalk.green(file.name)} (${chalk.yellow.bold(file.size)})`
+    if (!file.compress) {
+      if (file.size) {
+        infoBlock = infoBlock + `${chalk.green(file.name)} (${chalk.yellow.bold(file.size)})`
+      } else {
+        infoBlock = infoBlock + `${chalk.green(file.name)}`
+      }
+      if (index !== lastItem) {
+        infoBlock = infoBlock + '\n'
+      }
     } else {
-      infoBlock = infoBlock + `${chalk.green(file.name)}`
-    }
-    if (index !== lastItem) {
-      infoBlock = infoBlock + '\n'
+      // const msg = chalk`[${moment().format('hh:mm:ss')}] {white.dim Starting} {white.bold ${taskName}} ...`
+      infoBlock = infoBlock + chalk`{green ${file.compress.initialFile}} ({yellow.bold ${file.compress.initialFileSize}})\n{green ${file.compress.gzFile}} ({yellow.bold ${file.compress.gzFileSize}})\n{green ${file.compress.brFile}} ({yellow.bold ${file.compress.brFileSize}})\n______________________\n`
+      if (index !== lastItem) {
+        infoBlock = infoBlock + '\n'
+      }
     }
   })
   return infoBlock
 }
 
-function start (fn, color = 'blue.inverse') {
-  console.log(chalk`[${moment().format('hh:mm:ss')}] {magenta.underline Starting} {${color} ${fn}} ...`)
+function start (fn, color) {
+  console.log(chalk`[${moment().format('hh:mm:ss')}] {white.underline Starting} {${color} ${fn}} ...`)
   return moment()
 }
-function end (fn, color = 'blue.inverse') {
-  return chalk`[${moment().format('hh:mm:ss')}] {magenta.bold Finished} {${color} ${fn}}`
-}
+// function end (fn, color = 'blue.inverse') {
+//   return chalk`[${moment().format('hh:mm:ss')}] {white.bold Finished} {${color} ${fn}}`
+// }
 
-function boxEnd (files, fn, timeStart, endColor, prod) {
+function boxEnd (files, fn, timeStart, endColor, context) {
   const timeEnd = moment()
   const timeDiff = timeEnd.diff(timeStart, 's', true)
+  const title = chalk`{${endColor} ${fn}}\n`
+  const ending = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {${endColor} ${fn}}`
+  const filesInfo = filesStats(files, context)
   if (files) {
     console.log(
-      boxen(`${filesStats(files, prod)}\n${end(fn, endColor)} after ${chalk.redBright.underline(timeDiff)} s`,
+      boxen(`${title}${filesInfo}\n${ending} after ${chalk.cyan.underline(timeDiff)} s`,
         { padding: { left: 1, right: 1 } })
     )
   } else {
     console.log(
-      boxen(`${end(fn, endColor)} after ${chalk.redBright.underline(timeDiff)} s`,
+      boxen(`${ending} after ${chalk.cyan.underline(timeDiff)} s`,
         { padding: { left: 1, right: 1 } })
     )
   }
 }
 
 function mainTaskStart (taskName) {
-  const msg = chalk`[${moment().format('hh:mm:ss')}] {white.dim Starting} {white.bold ${taskName}} ...`
+  const msg = chalk`[${moment().format('hh:mm:ss')}] {white.bold ${taskName}}`
   console.log(
     `${boxen(`${msg}`,
       {
@@ -94,12 +117,12 @@ function mainTaskStart (taskName) {
 function mainTaskEnd (taskName, timeStart) {
   const timeEnd = moment()
   const timeDiff = timeEnd.diff(timeStart, 's', true)
-  const msg = chalk`[${moment().format('hh:mm:ss')}] {white.dim Finished} {white.bold ${taskName}}`
+  const msg = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {white.bold ${taskName}}`
   console.log(
-    `\n${boxen(`${msg} after ${chalk.redBright.underline(timeDiff)} s`,
+    `\n${boxen(`DONE\n${envContext}\n${msg} after ${chalk.redBright.underline(timeDiff)} s`,
       {
         padding: { top: 1, left: 1, bottom: 0, right: 2 },
-        borderColor: 'red',
+        borderColor: 'white',
         borderStyle: 'doubleSingle'
       }
     )}`
@@ -108,7 +131,6 @@ function mainTaskEnd (taskName, timeStart) {
 
 exports.ensureTmpDir = ensureTmpDir
 exports.start = start
-exports.end = end
 exports.boxEnd = boxEnd
 exports.mainTaskStart = mainTaskStart
 exports.mainTaskEnd = mainTaskEnd

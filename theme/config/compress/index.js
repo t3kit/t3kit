@@ -1,47 +1,95 @@
+const fsPromises = require('fs').promises
+const { promisify } = require('util')
+const size = require('filesize')
 const zlib = require('zlib')
 const { pipeline } = require('stream')
+const pipe = promisify(pipeline)
 const { createReadStream, createWriteStream } = require('fs')
+const pEachSeries = require('p-each-series')
 const conf = require('../conf')
 const utils = require('../utils')
 
-async function compressFiles (glob) {
+async function compressCss () {
   try {
-    const files = await utils.getFileList(glob, { objectMode: true })
-    files.forEach(async (file) => {
+    const timeStart = utils.start('compressCss', 'blue')
+    const fileList = []
+
+    const files = await utils.getFileList(`${conf.CSS_DIST}*.css`, { objectMode: true })
+
+    await pEachSeries(files, async (file, index) => {
       const source = createReadStream(file.path)
-      const gzipDestination = createWriteStream(`${file.path}.gz`)
-      const brotliDestination = createWriteStream(`${file.path}.br`)
+      const source2 = createReadStream(file.path)
 
       const gzip = zlib.createGzip()
-      const brotli = zlib.createBrotliCompress()
+      const gzipDestination = createWriteStream(`${file.path}.gz`)
+      await pipe(source, gzip, gzipDestination)
 
-      pipeline(source, gzip, gzipDestination, (err) => {
-        if (err) {
-          console.error('gzip error', err)
-          process.exitCode = 1
+      const brotli = zlib.createBrotliCompress()
+      const brotliDestination = createWriteStream(`${file.path}.br`)
+      await pipe(source2, brotli, brotliDestination)
+
+      const initialFileStats = await fsPromises.stat(`${conf.CSS_DIST}${file.name}`)
+      const gzFileStats = await fsPromises.stat(`${conf.CSS_DIST}${file.name}.gz`)
+      const brFileStats = await fsPromises.stat(`${conf.CSS_DIST}${file.name}.br`)
+      const filePath = `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${file.name}`
+      fileList[index] = {
+        compress: {
+          initialFile: filePath,
+          initialFileSize: size(initialFileStats.size),
+          gzFile: `${filePath}.gz`,
+          gzFileSize: size(gzFileStats.size),
+          brFile: `${filePath}.br`,
+          brFileSize: size(brFileStats.size)
         }
-      })
-      pipeline(source, brotli, brotliDestination, (err) => {
-        if (err) {
-          console.error('brotli error', err)
-          process.exitCode = 1
-        }
-      })
+      }
     })
+
+    utils.boxEnd(fileList, 'compressCss', timeStart, 'blue')
   } catch (error) {
-    console.error(`compressFiles(${glob}) Error:`, error)
+    utils.errLogFn(error, 'compressCss')
   }
 }
 
-async function compressCss () {
-  await compressFiles(`${conf.CSS_DIST}*.css`)
-}
 async function compressJs () {
-  await compressFiles(`${conf.JS_DIST}*.js`)
+  try {
+    const timeStart = utils.start('compressJs', 'yellow')
+    const fileList = []
+
+    const files = await utils.getFileList(`${conf.JS_DIST}*.js`, { objectMode: true })
+
+    await pEachSeries(files, async (file, index) => {
+      const source = createReadStream(file.path)
+      const source2 = createReadStream(file.path)
+
+      const gzip = zlib.createGzip()
+      const gzipDestination = createWriteStream(`${file.path}.gz`)
+      await pipe(source, gzip, gzipDestination)
+
+      const brotli = zlib.createBrotliCompress()
+      const brotliDestination = createWriteStream(`${file.path}.br`)
+      await pipe(source2, brotli, brotliDestination)
+
+      const initialFileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}`)
+      const gzFileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}.gz`)
+      const brFileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}.br`)
+      const filePath = `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${file.name}`
+      fileList[index] = {
+        compress: {
+          initialFile: filePath,
+          initialFileSize: size(initialFileStats.size),
+          gzFile: `${filePath}.gz`,
+          gzFileSize: size(gzFileStats.size),
+          brFile: `${filePath}.br`,
+          brFileSize: size(brFileStats.size)
+        }
+      }
+    })
+
+    utils.boxEnd(fileList, 'compressJs', timeStart, 'yellow')
+  } catch (error) {
+    utils.errLogFn(error, 'compressJs')
+  }
 }
 
 exports.compressCss = compressCss
 exports.compressJs = compressJs
-
-// compressFiles(`${conf.CSS_DIST}*.css`)
-// compressFiles(`${conf.JS_DIST}*.js`)

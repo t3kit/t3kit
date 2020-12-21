@@ -3,7 +3,7 @@ const conf = require('../conf')
 
 async function clean () {
   try {
-    await del([`${conf.DIST}*`], { force: true })
+    await del([`${conf.DIST}${conf.CONTEXT}*`], { force: true })
   } catch (error) {
     console.error('(clean) Error:', error)
   }

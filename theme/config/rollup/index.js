@@ -11,7 +11,7 @@ const utils = require('../utils')
 
 async function compileJs () {
   try {
-    const timeStart = utils.start('compileJs', 'yellow.inverse')
+    const timeStart = utils.start('compileJs', 'yellow')
     const fileList = []
 
     await fse.ensureDir(conf.JS_DIST)
@@ -43,7 +43,7 @@ async function compileJs () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'compileJs', timeStart, 'yellow.inverse')
+    utils.boxEnd(fileList, 'compileJs', timeStart, 'yellow')
   } catch (error) {
     utils.errLogFn(error, 'compileJs')
   }

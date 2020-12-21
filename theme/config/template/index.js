@@ -9,7 +9,7 @@ function addLinkSettings (link, settings) {
 
 async function addCssTemplate () {
   try {
-    const timeStart = utils.start('addCssTemplate', 'cyan.inverse')
+    const timeStart = utils.start('addCssTemplate', 'blue')
     const fileList = []
 
     const files = await utils.getFileList(`${conf.CSS_DIST}*.css`, { objectMode: true })
@@ -32,7 +32,7 @@ async function addCssTemplate () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${tmplName}.html` }
     })
 
-    utils.boxEnd(fileList, 'addCssTemplate', timeStart, 'cyan.inverse')
+    utils.boxEnd(fileList, 'addCssTemplate', timeStart, 'blue')
   } catch (error) {
     utils.errLogFn(error, 'addCssTemplate')
   }
@@ -40,7 +40,7 @@ async function addCssTemplate () {
 
 async function addJsTemplate () {
   try {
-    const timeStart = utils.start('addJsTemplate', 'cyan.inverse')
+    const timeStart = utils.start('addJsTemplate', 'yellow')
     const fileList = []
 
     const files = await utils.getFileList(`${conf.JS_DIST}*.js`, { objectMode: true })
@@ -74,7 +74,7 @@ async function addJsTemplate () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${tmplName}.html` }
     })
 
-    utils.boxEnd(fileList, 'addJsTemplate', timeStart, 'cyan.inverse')
+    utils.boxEnd(fileList, 'addJsTemplate', timeStart, 'yellow')
   } catch (error) {
     utils.errLogFn(error, 'addJsTemplate')
   }
