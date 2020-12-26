@@ -24,7 +24,10 @@ config {
   // default target attr for RTE external links
   // extTarget = _self
 
-  sendCacheHeaders = 1
+// The number of second a page may remain in cache
+// cache_period = 86400 // default 24 hours
+
+sendCacheHeaders = 1
 
   # if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
   spamProtectEmailAddresses = ascii
@@ -77,4 +80,12 @@ config {
   # concatenateJs = 0
   # concatenateCss = 0
 }
+[end]
+
+
+// Overwrite the default TYPO3 Cache-control header
+[{$cacheControl} == 1]
+    config.additionalHeaders {
+      10.header = Cache-control: max-age={$cacheControlMaxAge}
+    }
 [end]

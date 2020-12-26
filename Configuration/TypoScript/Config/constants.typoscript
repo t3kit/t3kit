@@ -4,4 +4,9 @@ config {
   # cat=t3kitConfig; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:config.headerComment
   headerComment = t3kit10 | t3kit.com
 
+  # cat=t3kitConfig; type=boolean; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:config.cacheControl
+  cacheControl = 1
+
+  # cat=t3kitConfig; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:config.cacheControlMaxAge
+  cacheControlMaxAge = 300
 }

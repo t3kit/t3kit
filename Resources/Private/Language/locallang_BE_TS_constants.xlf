@@ -16,6 +16,12 @@
 			<trans-unit id="config.headerComment" resname="config.headerComment">
 				<source>Comment in the head section of the page</source>
 			</trans-unit>
+			<trans-unit id="config.cacheControl" resname="config.cacheControl">
+				<source>Overwrite the default TYPO3 Cache-control header</source>
+			</trans-unit>
+			<trans-unit id="config.cacheControlMaxAge" resname="config.cacheControlMaxAge">
+				<source>Cache-control: max-age=...</source>
+			</trans-unit>
 
 
 			<!-- ============================ -->
