@@ -20,7 +20,7 @@
 				<source>Overwrite the default TYPO3 Cache-control header</source>
 			</trans-unit>
 			<trans-unit id="config.cacheControlMaxAge" resname="config.cacheControlMaxAge">
-				<source>Cache-control: max-age=...</source>
+				<source>Cache-control max-age=</source>
 			</trans-unit>
 
 

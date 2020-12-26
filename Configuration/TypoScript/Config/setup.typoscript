@@ -84,8 +84,8 @@ config {
 
 
 // Overwrite the default TYPO3 Cache-control header
-[{$cacheControl} == 1]
+[{$config.cacheControl} == 1]
     config.additionalHeaders {
-      10.header = Cache-control: max-age={$cacheControlMaxAge}
+      10.header = Cache-control: max-age={$config.cacheControlMaxAge}
     }
 [end]
