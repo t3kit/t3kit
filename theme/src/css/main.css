@@ -1,7 +1,7 @@
 @import 'main/global/root.css';
 
 /* ===== bootstrap reboot & grid ===== */
-@import '../vendor/css/bootstrap.css';
+@import 'vendor/bootstrap.css';
 
 /* ===== typography ===== */
 @import 'main/global/typography.css';
@@ -44,4 +44,4 @@
 @import 'main/appearance/background.css';
 
 /* ===== plugins ===== */
-@import '../vendor/css/swiperjs.css';
+@import 'vendor/swiperjs.css';

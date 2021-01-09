@@ -1,2 +1,2 @@
 import 'bootstrap/js/src/collapse'
-import '../vendor/js/dropdown.js'
+import './vendor/dropdown.js'

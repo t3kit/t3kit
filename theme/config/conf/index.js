@@ -11,6 +11,7 @@ conf.THEME_FOLDER = 'theme/'
 conf.SRC_FOLDER = 'src/'
 conf.TMP_FOLDER = '.tmp/'
 conf.ASSETS_FOLDER = 'assets/'
+conf.VENDOR_FOLDER = 'vendor/'
 conf.RESOURCES_FOLDER = 'Resources/Public/'
 conf.CSS_FOLDER = 'Css/'
 conf.JS_FOLDER = 'Js/'
@@ -32,7 +33,7 @@ conf.CSS_LINK_ASYNC = `<f:asset.css identifier="%_id_%" href="EXT:{site.configur
 
 // SCSS compilation variables
 conf.SCSS_SRC = `${conf.SRC}${conf.SCSS_FOLDER}`
-conf.SCSS_DIST = `${conf.SRC}vendor/css/`
+conf.SCSS_DIST = `${conf.CSS_SRC}${conf.VENDOR_FOLDER}`
 
 // JS compilation variables
 conf.JS_SRC = `${conf.SRC}${conf.JS_FOLDER.toLowerCase()}`

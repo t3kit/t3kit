@@ -1,6 +1,7 @@
 const fsPromises = require('fs').promises
 const pEachSeries = require('p-each-series')
 const size = require('filesize')
+const fse = require('fs-extra')
 const sass = require('sass')
 const conf = require('../conf')
 const utils = require('../utils')
@@ -23,6 +24,7 @@ async function compileScss () {
     const timeStart = utils.start('compileScss', 'magenta')
     const fileList = []
 
+    await fse.ensureDir(conf.SCSS_DIST)
     const files = await utils.getFileList(`${conf.SCSS_SRC}*.scss`, { objectMode: true })
     await pEachSeries(files, async (file, index) => {
       const scssResult = await sassPromise(file.path)
