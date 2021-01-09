@@ -1,7 +1,6 @@
 # ###########################
 # Import IndexedSearch typoscript
 # ===========================
-@import 'EXT:indexed_search/Configuration/TypoScript/setup.typoscript'
 
 # Plugin configuration
 plugin.tx_indexedsearch {

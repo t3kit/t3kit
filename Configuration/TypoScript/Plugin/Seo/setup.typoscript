@@ -1,5 +1,0 @@
-# ###########################
-# Import seo typoscript
-# ===========================
-@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
-

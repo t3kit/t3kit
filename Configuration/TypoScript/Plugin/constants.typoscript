@@ -2,10 +2,3 @@
 # import TypoScript constants for plugins
 # ===========================
 
-// seo
-@import 'EXT:t3kit/Configuration/TypoScript/Plugin/Seo/constants.typoscript'
-
-// indexed_search
-[userFunc = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('indexed_search')]
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/constants.typoscript" >
-[end]

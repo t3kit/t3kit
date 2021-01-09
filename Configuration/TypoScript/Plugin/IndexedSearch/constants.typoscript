@@ -1,4 +1,0 @@
-# ###########################
-# Import IndexedSearch constants
-# ===========================
-@import 'EXT:indexed_search/Configuration/TypoScript/constants.typoscript'
