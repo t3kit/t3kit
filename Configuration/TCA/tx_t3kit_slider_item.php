@@ -25,12 +25,6 @@ return [
             'default' => 'ce-image-slider'
         ]
     ],
-    'interface' => [
-        'showRecordFieldList' => '
-            hidden,
-            tt_content
-        ',
-    ],
     'types' => [
         '1' => [
             'showitem' => '
