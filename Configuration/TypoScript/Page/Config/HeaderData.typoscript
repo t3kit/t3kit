@@ -1,4 +1,4 @@
-[site("configuration")["theme"] == "t3kit"]
+[site("identifier") == "t3kit"]
 page.headerData {
   # Google Fonts optimization
   // https://csswizardry.com/2020/05/the-fastest-google-fonts/
