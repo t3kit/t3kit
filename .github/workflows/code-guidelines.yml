@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
 
   build-npm:
-    name: Run npm lint
+    name: Run  npm test
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -23,9 +23,6 @@ jobs:
 
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
-
-      - name: Run default Composer lint tests
-        run: composer run-script test
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
