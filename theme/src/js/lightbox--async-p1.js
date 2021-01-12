@@ -1,5 +1,5 @@
 import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js'
-let global = ''
+const global = window
 const simpleLightbox = function (className, options) {
   return new SimpleLightbox(className, options)
 }

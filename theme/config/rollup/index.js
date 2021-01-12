@@ -9,8 +9,11 @@ const sizes = require('rollup-plugin-sizes')
 const conf = require('../conf')
 const utils = require('../utils')
 
-async function compileJs () {
+async function compileJs (options) {
   try {
+    options = options || {}
+    const hideStatus = options.hideStatus || false
+
     const timeStart = utils.start('compileJs', 'yellow')
     const fileList = []
 
@@ -21,10 +24,10 @@ async function compileJs () {
       const inputOptions = {
         input: file.path,
         plugins: [
-          nodeResolve(),
-          sizes()
+          nodeResolve()
         ]
       }
+      hideStatus || inputOptions.plugins.push(sizes())
       process.env.NODE_ENV === 'production' && inputOptions.plugins.push(terser({
         output: {
           comments: false
@@ -43,9 +46,9 @@ async function compileJs () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'compileJs', timeStart, 'yellow')
+    hideStatus || utils.boxEnd(fileList, { functionName: 'compileJs', timeStart: timeStart, endColor: 'yellow' })
   } catch (error) {
-    utils.errLogFn(error, 'compileJs')
+    utils.errLogFn(error, { functionName: 'compileJs' })
   }
 }
 

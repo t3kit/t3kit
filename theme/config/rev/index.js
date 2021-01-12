@@ -23,9 +23,9 @@ async function revCss () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'revCss', timeStart, 'blue.bold')
+    utils.boxEnd(fileList, { functionName: 'revCss', timeStart: timeStart, endColor: 'blue.bold' })
   } catch (error) {
-    utils.errLogFn(error, 'revCss')
+    utils.errLogFn(error, { functionName: 'revCss' })
   }
 }
 
@@ -47,9 +47,9 @@ async function revJs () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'revJs', timeStart, 'yellow.bold')
+    utils.boxEnd(fileList, { functionName: 'revJs', timeStart: timeStart, endColor: 'yellow.bold' })
   } catch (error) {
-    utils.errLogFn(error, 'revJs')
+    utils.errLogFn(error, { functionName: 'revJs' })
   }
 }
 

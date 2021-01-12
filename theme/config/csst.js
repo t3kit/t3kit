@@ -82,7 +82,7 @@ function cssomPromise (css) {
 
       // utils.boxEnd(fileList, 'cssom', timeStart, 'magenta', false)
     } catch (error) {
-      utils.errLogFn(error, 'cssom')
+      // utils.errLogFn(error, 'cssom')
     }
   }
 

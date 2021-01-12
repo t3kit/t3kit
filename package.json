@@ -10,28 +10,16 @@
     "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
     "lint-css": "stylelint 'theme/src/styles/**/*.{css,scss}' --cache --cache-location .cache/.stylelintcache",
     "lint-editorconfig": "eclint check '**/*.{sh,yml,yaml,json,xml,xlf,html}' '!Resources/Public/**/*' '!theme/.tmp/**/*'",
-    "lint-fix": "stylelint 'theme/src/styles/**/*.{css,scss}' --fix",
-    "test": "npm-run-all --parallel lint-config lint-editorconfig",
-    "composer": "composer test",
-    "githook": "npm-run-all --parallel test composer",
+    "lint-all": "npm-run-all --parallel lint-config lint-js lint-config lint-editorconfig",
+    "composer-test": "composer test",
+    "test": "npm-run-all --parallel lint-all composer-test",
     "favicons": "gulp -f theme/config/gulpfile.js favicons",
     "filetype": "gulp -f theme/config/gulpfile.js filetype",
     "icons": "gulp -f theme/config/gulpfile.js icons",
-    "dev": "gulp -f theme/config/gulpfile.js build",
-    "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
-    "build": "npm-run-all --parallel dev prod",
-    "start": "gulp -f theme/config/gulpfile.js",
-    "testt": "gulp -f theme/config/gulpfile.js testt",
-    "testtp": "NODE_ENV=production gulp -f theme/config/gulpfile.js testt",
-    "ppp": "node theme/config/start.js",
-    "pd": "node theme/config/build.js",
-    "pp": "NODE_ENV=production node theme/config/build.js",
-    "prr-------": "---------------node theme/config/.postcssrc.js",
-    "compress-css": "node -e 'require(\"./theme/config/compress\").compressCss'",
-    "compress-js": "node -e 'require(\"./theme/config/compress\").compressJs()'",
-    "compress": "run-p compress-css compress-js",
-    "fff": "run-s compile-css compress-css",
-    "compile-css": "node -e 'require(\"./theme/config/css\").compileCss()'"
+    "start": "node theme/config/start.js",
+    "dev": "node theme/config/build.js",
+    "prod": "NODE_ENV=production node theme/config/build.js",
+    "build": "npm-run-all --parallel dev prod"
   },
   "dependencies": {
     "bootstrap": "v5.0.0-alpha2",
@@ -86,6 +74,7 @@
     "rollup-plugin-sizes": "~1.0.3",
     "rollup-plugin-terser": "~7.0.2",
     "sass": "~1.30.0",
+    "snazzy": "^9.0.0",
     "standard": "~16.0.3",
     "stylelint": "~13.8.0",
     "stylelint-config-standard": "~20.0.0"
@@ -101,6 +90,7 @@
   ],
   "standard": {
     "ignore": [
+      "vendor/",
       "dist/",
       "Resources/Public/"
     ]
@@ -112,9 +102,15 @@
       "no-descending-specificity": null,
       "comment-empty-line-before": null,
       "at-rule-no-unknown": null
-    }
+    },
+    "ignoreFiles": [
+      "**/vendor/**/*.css",
+      "Resources/Public/"
+    ]
   },
   "husky": {
-    "hooks": {}
+    "hooks": {
+      "pre-commit": "npm test"
+    }
   }
 }

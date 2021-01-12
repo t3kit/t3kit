@@ -13,14 +13,14 @@ editor:
     format_tags: "p;h1;h2;h3;h4;h5;pre"
 
     toolbarGroups:
-        - { name: 'styles', groups: [ styles ] }
-        - { name: 'basicstyles', groups: [ basicstyles] }
-        - { name: paragraph, groups: [ list, indent, blocks, align ] }
-        - { name: 'links', groups: [ links ] }
-        - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
-        - { name: 'insert', groups: [ insert, insertcharacters ] }
-        - { name: 'tools', groups: [ tools ] }
-        - { name: 'document', groups: [ mode ] }
+      - { name: 'styles', groups: [ styles ] }
+      - { name: 'basicstyles', groups: [ basicstyles] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: 'links', groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: 'insert', groups: [ insert, insertcharacters ] }
+      - { name: 'tools', groups: [ tools ] }
+      - { name: 'document', groups: [ mode ] }
 
     justifyClasses:
       - text-left

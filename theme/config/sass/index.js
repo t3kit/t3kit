@@ -10,7 +10,8 @@ function sassPromise (fileName) {
   return new Promise((resolve, reject) => {
     sass.render({ file: fileName }, function (error, result) {
       if (error) {
-        utils.errLogFn(error.message, 'sassPromise', `${fileName}`, true)
+        utils.errLogFn(error.message, { functionName: 'sassPromise', functionVal: fileName, newPromise: true })
+
         reject(error)
       } else {
         resolve(result)
@@ -19,7 +20,10 @@ function sassPromise (fileName) {
   })
 }
 
-async function compileScss () {
+async function compileScss (options) {
+  options = options || {}
+  const hideStatus = options.hideStatus || false
+
   try {
     const timeStart = utils.start('compileScss', 'magenta')
     const fileList = []
@@ -34,9 +38,9 @@ async function compileScss () {
       fileList[index] = { name: `src/vendor/css/${fileName}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'compileScss', timeStart, 'magenta', false)
+    hideStatus || utils.boxEnd(fileList, { functionName: 'compileScss', timeStart: timeStart, endColor: 'magenta' })
   } catch (error) {
-    utils.errLogFn(error, 'compileScss')
+    utils.errLogFn(error, { functionName: 'compileScss' })
   }
 }
 

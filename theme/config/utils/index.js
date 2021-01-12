@@ -20,37 +20,35 @@ async function ensureTmpDir () {
   }
 }
 
-async function getFileList (glob, opt) {
+async function getFileList (glob, options) {
   try {
-    const files = await globby(glob, opt)
+    const files = await globby(glob, options)
     if (files !== undefined) {
       return files
     }
   } catch (error) {
-    console.error(`(getFileList ${glob} ${opt} ) Error:`, error)
+    console.error(`(getFileList ${glob} ${options} ) Error:`, error)
   }
 }
 
-function errLogFn (error, fnName, fnVal = '', promise = false) {
-  const fnValStyle = `${chalk.white.reset(`${fnVal}`)}`
-  const fnNameStyle = chalk.blue.bold(`${fnName}(${fnValStyle})`)
+function errLogFn (error, options) {
+  // options
+  options = options || {}
+  const functionName = options.functionName || ''
+  const functionVal = options.functionVal || ''
+  const newPromise = options.newPromise || false
+
+  const fnValStyle = `${chalk.white.reset(`${functionVal}`)}`
+  const fnNameStyle = chalk.blue.bold(`${functionName}(${fnValStyle})`)
   let msgStyle = `${chalk.red.bold('Error in func:')}${fnNameStyle}${chalk.red.bold(' -->')}`
-  if (promise) {
+  if (newPromise) {
     msgStyle = `${chalk.red.dim.bold('Error in func:')}${fnNameStyle}${chalk.red.dim.bold(' -->')}`
   }
   console.error(msgStyle, error)
 }
 
-function filesStats (files, context = true) {
+function filesStats (files) {
   let infoBlock = ''
-  // if (context) {
-  //   infoBlock = `${envContext}\n`
-  //   // if (process.env.NODE_ENV === 'production') {
-  //   //   infoBlock = chalk`${context}\n`
-  //   // } else {
-  //   //   infoBlock = chalk`{red.bold ${conf.CONTEXT}} {white context}\n`
-  //   // }
-  // }
   const lastItem = files.length - 1
   files.forEach((file, index) => {
     if (!file.compress) {
@@ -63,7 +61,6 @@ function filesStats (files, context = true) {
         infoBlock = infoBlock + '\n'
       }
     } else {
-      // const msg = chalk`[${moment().format('hh:mm:ss')}] {white.dim Starting} {white.bold ${taskName}} ...`
       infoBlock = infoBlock + chalk`{green ${file.compress.initialFile}} ({yellow.bold ${file.compress.initialFileSize}})\n{green ${file.compress.gzFile}} ({yellow.bold ${file.compress.gzFileSize}})\n{green ${file.compress.brFile}} ({yellow.bold ${file.compress.brFileSize}})\n______________________\n`
       if (index !== lastItem) {
         infoBlock = infoBlock + '\n'
@@ -73,20 +70,23 @@ function filesStats (files, context = true) {
   return infoBlock
 }
 
-function start (fn, color) {
-  console.log(chalk`[${moment().format('hh:mm:ss')}] {white.underline Starting} {${color} ${fn}} ...`)
+function start (functionName, color) {
+  console.log(chalk`[${moment().format('hh:mm:ss')}] {white.underline Starting} {${color} ${functionName}} ...`)
   return moment()
 }
-// function end (fn, color = 'blue.inverse') {
-//   return chalk`[${moment().format('hh:mm:ss')}] {white.bold Finished} {${color} ${fn}}`
-// }
 
-function boxEnd (files, fn, timeStart, endColor, context) {
+function boxEnd (files, options) {
+  // options
+  options = options || {}
+  const functionName = options.functionName || ''
+  const timeStart = options.timeStart || 0
+  const endColor = options.endColor || ''
+
   const timeEnd = moment()
   const timeDiff = timeEnd.diff(timeStart, 's', true)
-  const title = chalk`{${endColor} ${fn}}\n`
-  const ending = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {${endColor} ${fn}}`
-  const filesInfo = filesStats(files, context)
+  const title = chalk`{${endColor} ${functionName}}\n`
+  const ending = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {${endColor} ${functionName}}`
+  const filesInfo = filesStats(files)
   if (files) {
     console.log(
       boxen(`${title}${filesInfo}\n${ending} after ${chalk.cyan.underline(timeDiff)} s`,

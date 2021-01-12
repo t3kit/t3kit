@@ -13,8 +13,11 @@ const postcssPlugins = [
 ]
 process.env.NODE_ENV === 'production' && postcssPlugins.push(cssnano({ preset: 'default' }))
 
-async function compileCss () {
+async function compileCss (options) {
   try {
+    options = options || {}
+    const hideStatus = options.hideStatus || false
+
     const timeStart = utils.start('compileCss', 'blue')
     const fileList = []
 
@@ -36,9 +39,9 @@ async function compileCss () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
-    utils.boxEnd(fileList, 'compileCss', timeStart, 'blue')
+    hideStatus || utils.boxEnd(fileList, { functionName: 'compileCss', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
-    utils.errLogFn(error, 'compileCss')
+    utils.errLogFn(error, { functionName: 'compileCss' })
   }
 }
 
