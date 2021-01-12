@@ -1,32 +1,33 @@
-const utils = require('../utils')
 const chokidar = require('chokidar')
 const chalk = require('chalk')
 const { compileCss } = require('../css')
 const { compileScss } = require('../sass')
 const { compileJs } = require('../rollup')
 const { addCssTemplate, addJsTemplate } = require('../template')
+const conf = require('../conf')
+const utils = require('../utils')
 
 async function watchAll () {
   try {
-    chokidar.watch(['Resources/Public/assets/development/Css/*.css'], { ignoreInitial: true, awaitWriteFinish: false }).on('add', (event, path) => {
+    chokidar.watch([`${conf.CSS_DIST}*.css`], { ignoreInitial: true, awaitWriteFinish: false }).on('add', (event, path) => {
       addCssTemplate()
     })
 
-    chokidar.watch(['Resources/Public/assets/development/Js/*.js'], { ignoreInitial: true, awaitWriteFinish: false }).on('add', (event, path) => {
+    chokidar.watch([`${conf.JS_DIST}*.js`], { ignoreInitial: true, awaitWriteFinish: false }).on('add', (event, path) => {
       addJsTemplate()
     })
 
-    chokidar.watch(['theme/src/css/**/*.css', 'theme/src/vendor/css/*.css'], { ignoreInitial: true, awaitWriteFinish: false }).on('all', (event, path) => {
+    chokidar.watch([`${conf.CSS_SRC}**/*.css`, `${conf.CSS_SRC}${conf.VENDOR_FOLDER}*.css`], { ignoreInitial: true, awaitWriteFinish: false }).on('all', (event, path) => {
       console.log(chalk`{red ${event}} ${path}`)
       compileCss({ hideStatus: true })
     })
 
-    chokidar.watch(['theme/src/js/**/*.js', 'theme/src/vendor/js/*.js'], { ignoreInitial: true, awaitWriteFinish: false }).on('all', (event, path) => {
+    chokidar.watch([`${conf.JS_SRC}**/*.js`, `${conf.JS_SRC}${conf.VENDOR_FOLDER}*.js`], { ignoreInitial: true, awaitWriteFinish: false }).on('all', (event, path) => {
       console.log(chalk`{red ${event}} ${path}`)
       compileJs({ hideStatus: true })
     })
 
-    chokidar.watch('theme/src/scss/**/*.scss', { ignoreInitial: true }).on('all', (event, path) => {
+    chokidar.watch(`${conf.SCSS_SRC}**/*.scss`, { ignoreInitial: true }).on('all', (event, path) => {
       console.log(chalk`{red ${event}} ${path}`)
       compileScss({ hideStatus: true })
     })
