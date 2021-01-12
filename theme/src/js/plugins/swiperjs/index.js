@@ -5,25 +5,25 @@ import Swiper, { Navigation, Pagination, A11y } from 'swiper'
 Swiper.use([Navigation, Pagination, A11y])
 
 // init Swiper:
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
+const swiper = new Swiper('.swiper-container', {  // eslint-disable-line
+  // Optional parameters
   direction: 'horizontal',
   loop: false,
   autoplay: {
-    delay: 3000,
+    delay: 3000
   },
   a11y: {
     prevSlideMessage: 'Previous slide',
-    nextSlideMessage: 'Next slide',
+    nextSlideMessage: 'Next slide'
   },
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination'
   },
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-prev'
   }
 })

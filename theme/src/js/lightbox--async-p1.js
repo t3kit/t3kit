@@ -1,5 +1,5 @@
 import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js'
-const global = window
+const global = window  // eslint-disable-line
 const simpleLightbox = function (className, options) {
   return new SimpleLightbox(className, options)
 }
