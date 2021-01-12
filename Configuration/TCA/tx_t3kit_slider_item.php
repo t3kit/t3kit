@@ -545,10 +545,10 @@ return [
                 'renderType' => 'checkboxLabeledToggle',
                 'items' => [
                     [
-                       0 => '',
-                       1 => '',
-                       'labelChecked' => 'Enabled',
-                       'labelUnchecked' => 'Disabled',
+                        0 => '',
+                        1 => '',
+                        'labelChecked' => 'Enabled',
+                        'labelUnchecked' => 'Disabled',
                     ]
                 ],
                 'default' => 0,

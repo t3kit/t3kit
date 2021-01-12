@@ -223,7 +223,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 ]);
 
 
- /*
+/*
  * ###########################
  * add new TCA columns for tt_content
  * ===========================
@@ -1102,10 +1102,10 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'renderType' => 'checkboxLabeledToggle',
             'items' => [
                 [
-                   0 => '',
-                   1 => '',
-                   'labelChecked' => 'Enabled',
-                   'labelUnchecked' => 'Disabled',
+                    0 => '',
+                    1 => '',
+                    'labelChecked' => 'Enabled',
+                    'labelUnchecked' => 'Disabled',
                 ]
             ],
             'default' => 0,
