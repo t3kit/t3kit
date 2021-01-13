@@ -75,9 +75,10 @@ function start (functionName, color) {
   return moment()
 }
 
-function boxEnd (files, options) {
+function boxEnd (options) {
   // options
   options = options || {}
+  const files = options.files || false
   const functionName = options.functionName || ''
   const timeStart = options.timeStart || 0
   const endColor = options.endColor || ''
@@ -86,8 +87,8 @@ function boxEnd (files, options) {
   const timeDiff = timeEnd.diff(timeStart, 's', true)
   const title = chalk`{${endColor} ${functionName}}\n`
   const ending = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {${endColor} ${functionName}}`
-  const filesInfo = filesStats(files)
   if (files) {
+    const filesInfo = filesStats(files)
     console.log(
       boxen(`${title}${filesInfo}\n${ending} after ${chalk.cyan.underline(timeDiff)} s`,
         { padding: { left: 1, right: 1 } })
@@ -114,12 +115,23 @@ function mainTaskStart (taskName) {
   return moment()
 }
 
-function mainTaskEnd (taskName, timeStart) {
+function mainTaskEnd (options) {
+  // options
+  options = options || {}
+  const taskName = options.taskName || ''
+  const timeStart = options.timeStart || 0
+  const skipContext = options.skipContext || false
+
+  if (skipContext) {
+    envContext = ''
+  } else {
+    envContext = `\n${envContext}`
+  }
   const timeEnd = moment()
   const timeDiff = timeEnd.diff(timeStart, 's', true)
   const msg = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {white.bold ${taskName}}`
   console.log(
-    `\n${boxen(`DONE\n${envContext}\n${msg} after ${chalk.redBright.underline(timeDiff)} s`,
+    `\n${boxen(`DONE${envContext}\n${msg} after ${chalk.redBright.underline(timeDiff)} s`,
       {
         padding: { top: 1, left: 1, bottom: 0, right: 2 },
         borderColor: 'white',

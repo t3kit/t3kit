@@ -1,3 +1,4 @@
+require('./check').checkNode()
 const cssom = require('cssom')
 const fsPromises = require('fs').promises
 const pEachSeries = require('p-each-series')
@@ -40,8 +41,6 @@ async function rrrr () {
     // await fsPromises.writeFile(`${conf.SCSS_DIST}${fileName}`, scssResult.css)
     // const fileStats = await fsPromises.stat(`${conf.SCSS_DIST}${fileName}`)
     // fileList[index] = { name: `src/vendor/css/${fileName}`, size: size(fileStats.size) }
-
-    // utils.boxEnd(fileList, 'cssom', timeStart, 'magenta', false)
   } catch (error) {
     // utils.errLogFn(error, 'cssom')
   }

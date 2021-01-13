@@ -1,3 +1,4 @@
+require('./check').checkNode()
 const { clean } = require('./clean')
 const { compileCss } = require('./css')
 const { compileScss } = require('./sass')
@@ -20,6 +21,6 @@ async function build () {
     await Promise.all([addCssTemplate(), addJsTemplate()])
   }
 
-  utils.mainTaskEnd('Build task', timeStart)
+  utils.mainTaskEnd({ taskName: 'Build task', timeStart: timeStart })
 }
 build()

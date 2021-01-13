@@ -44,7 +44,7 @@ async function compressCss () {
       }
     })
 
-    utils.boxEnd(fileList, { functionName: 'compressCss', timeStart: timeStart, endColor: 'blue' })
+    utils.boxEnd({ files: fileList, functionName: 'compressCss', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'compressCss' })
   }
@@ -85,7 +85,7 @@ async function compressJs () {
       }
     })
 
-    utils.boxEnd(fileList, { functionName: 'compressJs', timeStart: timeStart, endColor: 'yellow' })
+    utils.boxEnd({ files: fileList, functionName: 'compressJs', timeStart: timeStart, endColor: 'yellow' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'compressJs' })
   }

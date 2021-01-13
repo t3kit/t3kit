@@ -39,7 +39,7 @@ async function compileCss (options) {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
-    hideStatus || utils.boxEnd(fileList, { functionName: 'compileCss', timeStart: timeStart, endColor: 'blue' })
+    hideStatus || utils.boxEnd({ files: fileList, functionName: 'compileCss', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'compileCss' })
   }

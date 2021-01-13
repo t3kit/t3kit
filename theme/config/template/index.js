@@ -32,7 +32,7 @@ async function addCssTemplate () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${tmplName}.html` }
     })
 
-    utils.boxEnd(fileList, { functionName: 'addCssTemplate', timeStart: timeStart, endColor: 'blue' })
+    utils.boxEnd({ files: fileList, functionName: 'addCssTemplate', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'addCssTemplate' })
   }
@@ -74,7 +74,7 @@ async function addJsTemplate () {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${tmplName}.html` }
     })
 
-    utils.boxEnd(fileList, { functionName: 'addJsTemplate', timeStart: timeStart, endColor: 'yellow' })
+    utils.boxEnd({ files: fileList, functionName: 'addJsTemplate', timeStart: timeStart, endColor: 'yellow' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'addJsTemplate' })
   }

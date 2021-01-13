@@ -44,7 +44,6 @@ conf.JS_LINK = `<f:asset.script identifier="%_id_%" %_settings_% src="EXT:{site.
 // add more favicon customization into generateFavicon object --> (theme/config/real-favicon/index.js)
 conf.FAVICONS_SRC = `${conf.SRC}favicon/`
 conf.FAVICONS_DIST = `${conf.DIST}Favicons/`
-conf.FAVICONS_TMPL = 'Favicons.html'
 conf.FAVICON_MASTER_PICTURE = 'favicon.svg'
 conf.FAVICON_PATH = `/typo3conf/ext/${rootDirName}/${conf.RESOURCES_FOLDER}${conf.ASSETS_FOLDER}Favicons`
 

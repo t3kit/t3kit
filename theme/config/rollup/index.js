@@ -46,7 +46,7 @@ async function compileJs (options) {
       fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
-    hideStatus || utils.boxEnd(fileList, { functionName: 'compileJs', timeStart: timeStart, endColor: 'yellow' })
+    hideStatus || utils.boxEnd({ files: fileList, functionName: 'compileJs', timeStart: timeStart, endColor: 'yellow' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'compileJs' })
   }

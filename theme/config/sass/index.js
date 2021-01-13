@@ -38,7 +38,7 @@ async function compileScss (options) {
       fileList[index] = { name: `src/vendor/css/${fileName}`, size: size(fileStats.size) }
     })
 
-    hideStatus || utils.boxEnd(fileList, { functionName: 'compileScss', timeStart: timeStart, endColor: 'magenta' })
+    hideStatus || utils.boxEnd({ files: fileList, functionName: 'compileScss', timeStart: timeStart, endColor: 'magenta' })
   } catch (error) {
     utils.errLogFn(error, { functionName: 'compileScss' })
   }

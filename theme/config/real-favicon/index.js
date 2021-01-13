@@ -1,96 +1,114 @@
-const realFavicon = require('gulp-real-favicon')
-const fs = require('fs')
+const fsPromises = require('fs').promises
 const fse = require('fs-extra')
 const gitRev = require('git-rev-sync')
-const { dest, src, series } = require('gulp')
+const rfg = require('rfg-api').init()
 const conf = require('../conf')
+const utils = require('../utils')
 
-// File where the favicon markups are stored
-const FAVICON_DATA_FILE = `${conf.TEMP}faviconData.json`
+const API_KEY = 'eabf77c98d6bd1eea81fb58be7895c42dafc2b21'
 
-function generateFavicon (done) {
-  realFavicon.generateFavicon({
-    masterPicture: `${conf.FAVICONS_SRC}${conf.FAVICON_MASTER_PICTURE}`,
-    dest: conf.FAVICONS_DIST,
-    iconsPath: conf.FAVICON_PATH,
-    design: {
-      ios: {
-        pictureAspect: 'noChange',
-        assets: {
-          ios6AndPriorIcons: false,
-          ios7AndLaterIcons: false,
-          precomposedIcons: false,
-          declareOnlyDefaultIcon: true
-        }
-      },
-      desktopBrowser: {
-        design: 'raw'
-      },
-      windows: {
-        pictureAspect: 'noChange',
-        backgroundColor: '#2b5797',
-        onConflict: 'override',
-        assets: {
-          windows80Ie10Tile: false,
-          windows10Ie11EdgeTiles: {
-            small: false,
-            medium: true,
-            big: false,
-            rectangle: false
-          }
-        }
-      },
-      androidChrome: {
-        pictureAspect: 'noChange',
-        themeColor: '#ffffff',
-        manifest: {
-          display: 'browser',
-          orientation: 'notSet',
-          onConflict: 'override',
-          declared: true
-        },
-        assets: {
-          legacyIcon: false,
-          lowResolutionIcons: false
-        }
-      },
-      safariPinnedTab: {
-        pictureAspect: 'blackAndWhite',
-        threshold: 50,
-        themeColor: '#6d6d6d'
+const faviconOptions = {
+  masterPicture: `${conf.FAVICONS_SRC}${conf.FAVICON_MASTER_PICTURE}`,
+  dest: conf.FAVICONS_DIST,
+  iconsPath: conf.FAVICON_PATH,
+  design: {
+    ios: {
+      pictureAspect: 'noChange',
+      assets: {
+        ios6AndPriorIcons: false,
+        ios7AndLaterIcons: false,
+        precomposedIcons: false,
+        declareOnlyDefaultIcon: true
       }
     },
-    settings: {
-      compression: 2,
-      scalingAlgorithm: 'Mitchell',
-      errorOnImageTooSmall: false,
-      readmeFile: false,
-      htmlCodeFile: false,
-      usePathAsIs: false
+    desktopBrowser: {
+      design: 'raw'
     },
-    versioning: {
-      paramName: 'v',
-      paramValue: gitRev.short()
+    windows: {
+      pictureAspect: 'noChange',
+      backgroundColor: '#2b5797',
+      onConflict: 'override',
+      assets: {
+        windows80Ie10Tile: false,
+        windows10Ie11EdgeTiles: {
+          small: false,
+          medium: true,
+          big: false,
+          rectangle: false
+        }
+      }
     },
-    markupFile: FAVICON_DATA_FILE
-  }, function () {
-    done()
+    androidChrome: {
+      pictureAspect: 'noChange',
+      themeColor: '#ffffff',
+      manifest: {
+        display: 'browser',
+        orientation: 'notSet',
+        onConflict: 'override',
+        declared: true
+      },
+      assets: {
+        legacyIcon: false,
+        lowResolutionIcons: false
+      }
+    },
+    safariPinnedTab: {
+      pictureAspect: 'blackAndWhite',
+      threshold: 50,
+      themeColor: '#6d6d6d'
+    }
+  },
+  settings: {
+    compression: 2,
+    scalingAlgorithm: 'Mitchell',
+    errorOnImageTooSmall: false,
+    readmeFile: false,
+    htmlCodeFile: true,
+    usePathAsIs: false
+  },
+  versioning: {
+    paramName: 'v',
+    paramValue: gitRev.short()
+  },
+  markupFile: `${conf.TEMP}faviconData.json`
+}
+
+function generateFaviconsPromise (fileName) {
+  return new Promise((resolve, reject) => {
+    const request = rfg.createRequest({
+      apiKey: API_KEY,
+      masterPicture: faviconOptions.masterPicture,
+      iconsPath: faviconOptions.iconsPath,
+      design: faviconOptions.design,
+      settings: faviconOptions.settings,
+      versioning: faviconOptions.versioning
+    })
+
+    rfg.generateFavicon(request, faviconOptions.dest, function (error, data) {
+      if (error) {
+        utils.errLogFn(error.message, { functionName: 'generateFaviconsPromise', newPromise: true })
+        reject(error)
+      } else {
+        resolve(data)
+      }
+    })
   })
 }
 
-async function createFaviconTmpl () {
+async function generateFavicons () {
   try {
-    await fse.ensureFile(`${conf.TEMP}${conf.FAVICONS_TMPL}`)
+    const timeStart = utils.start('generateFavicons', 'blue')
+
+    const data = await generateFaviconsPromise()
+
+    await fse.ensureDir(`${conf.TEMP}`)
+    await fsPromises.writeFile(faviconOptions.markupFile, JSON.stringify(data))
+    await fsPromises.rename(`${conf.FAVICONS_DIST}html_code.html`, `${conf.FAVICONS_DIST}Favicons.html`)
+
+    utils.boxEnd({ functionName: 'generateFavicons', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
-    console.error('(createFaviconHtml) Error:', error)
+    utils.errLogFn(error, { functionName: 'generateFavicons' })
   }
 }
 
-function injectFaviconMarkups () {
-  return src(conf.FAVICONS_TMPL, { cwd: `${conf.TEMP}` })
-    .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
-    .pipe(dest(conf.FAVICONS_DIST))
-}
-
-exports.generateFavicon = generateFavicon
-exports.injectFaviconMarkups = series(createFaviconTmpl, injectFaviconMarkups)
+exports.generateFavicons = generateFavicons
