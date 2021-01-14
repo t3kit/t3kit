@@ -10,6 +10,10 @@ imports:
 editor:
   config:
 
+    contentsCss:
+      - "EXT:rte_ckeditor/Resources/Public/Css/contents.css"
+      - "EXT:t3kit/Resources/Public/CSS/RTE/contents.css"
+
     format_tags: "p;h1;h2;h3;h4;h5;pre"
 
     toolbarGroups:
@@ -23,9 +27,9 @@ editor:
       - { name: 'document', groups: [ mode ] }
 
     justifyClasses:
-      - text-left
+      - text-start
       - text-center
-      - text-right
+      - text-end
 
     extraPlugins:
       - justify

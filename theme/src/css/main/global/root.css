@@ -7,7 +7,7 @@
   /* ----------------- */
 
   /* primary color */
-  --t3-primary: #af2c93;
+  --t3-primary: #59dbeb;
   --t3-primary-hs: 187, 78%;
   --t3-primary-l: 64%;
   --t3-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);

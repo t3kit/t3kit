@@ -19,7 +19,7 @@
   border-top-right-radius: var(--t3-border-radius) !important;
 }
 
-.rounded-right {
+.rounded-end {
   border-top-right-radius: var(--t3-border-radius) !important;
   border-bottom-right-radius: var(--t3-border-radius) !important;
 }
@@ -29,7 +29,7 @@
   border-bottom-left-radius: var(--t3-border-radius) !important;
 }
 
-.rounded-left {
+.rounded-start {
   border-bottom-left-radius: var(--t3-border-radius) !important;
   border-top-left-radius: var(--t3-border-radius) !important;
 }

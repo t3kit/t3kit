@@ -9,7 +9,6 @@
 /* ===== helpers ===== */
 @import 'main/global/helpers/grid.css';
 @import 'main/global/helpers/media.css';
-@import 'main/global/helpers/content-margins.css';
 @import 'main/global/helpers/buttons.css';
 @import 'main/global/helpers/text.css';
 @import 'main/global/helpers/border-radius.css';
@@ -42,6 +41,7 @@
 /* ===== appearance ===== */
 @import 'main/appearance/color.css';
 @import 'main/appearance/background.css';
+@import 'main/appearance/content-margins.css';
 
 /* ===== plugins ===== */
 @import 'vendor/swiperjs.css';

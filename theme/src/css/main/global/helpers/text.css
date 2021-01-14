@@ -1,40 +1,3 @@
-
-.text-left {
-  text-align: left !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-wrap {
-  white-space: normal !important;
-}
-
-.text-nowrap {
-  white-space: nowrap !important;
-}
-
-.text-break {
-  word-wrap: break-word !important;
-}
-
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-
-.text-capitalize {
-  text-transform: capitalize !important;
-}
-
 .font-monospace {
   font-family: var(--t3-font-monospace) !important;
 }
@@ -59,19 +22,6 @@
   white-space: normal;
   line-break: auto;
 }
-
-.text-decoration-none {
-  text-decoration: none !important;
-}
-
-.text-decoration-underline {
-  text-decoration: underline !important;
-}
-
-.text-decoration-line-through {
-  text-decoration: line-through !important;
-}
-
 /* Text Clamp (Truncating Multiple Line Text) */
 .text-clamp-base {
   overflow: hidden;

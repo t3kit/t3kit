@@ -86,7 +86,7 @@
     },
     "ignoreFiles": [
       "**/vendor/**/*.css",
-      "Resources/Public/"
+      "Resources/Public/**/*.css"
     ]
   },
   "husky": {

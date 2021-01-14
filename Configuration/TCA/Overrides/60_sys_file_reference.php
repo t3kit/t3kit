@@ -40,7 +40,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position.left',
-                    'left'
+                    'start'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position.center',
@@ -48,10 +48,10 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:description_position.right',
-                    'right'
+                    'end'
                 ]
             ],
-            'default' => 'left',
+            'default' => 'start',
         ]
     ],
 ]);
@@ -136,7 +136,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_right',
-                    'rounded-right'
+                    'rounded-end'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_bottom',
@@ -144,7 +144,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_border_radius.rounded_left',
-                    'rounded-left'
+                    'rounded-start'
                 ]
             ],
             'default' => '',
