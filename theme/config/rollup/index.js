@@ -4,6 +4,7 @@ const size = require('filesize')
 const pEachSeries = require('p-each-series')
 const rollup = require('rollup')
 const { nodeResolve } = require('@rollup/plugin-node-resolve')
+const replace = require('@rollup/plugin-replace')
 const { terser } = require('rollup-plugin-terser')
 const sizes = require('rollup-plugin-sizes')
 const conf = require('../conf')
@@ -24,7 +25,11 @@ async function compileJs (options) {
       const inputOptions = {
         input: file.path,
         plugins: [
-          nodeResolve()
+          nodeResolve(),
+          replace({
+            'process.env.NODE_ENV': process.env.NODE_ENV,
+            global: 'window'
+          })
         ]
       }
       hideStatus || inputOptions.plugins.push(sizes())
