@@ -41,6 +41,7 @@
     "typo3/cms-felogin": "^10.4.6"
   },
   "require-dev": {
+    "editorconfig-checker/editorconfig-checker": "^10.2",
     "helmich/typo3-typoscript-lint": "^2.1.1",
     "sclable/xml-lint": "^0.3.0",
     "squizlabs/php_codesniffer": "^3.5.6"
@@ -68,13 +69,15 @@
   "scripts": {
     "lint-php": "phpcs --colors",
     "lint-typoscript": "typoscript-lint --ansi",
-    "lint-yaml": "build/vendor/bin/yaml-lint --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
+    "lint-yaml": "yaml-lint --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
     "lint-xml": "xmllint --ansi --exclude=build/ .",
+    "lint-editorconfig": "ec -exclude LICENSE.txt",
     "test": [
       "@lint-php",
       "@lint-yaml",
       "@lint-xml",
-      "@lint-typoscript"
+      "@lint-typoscript",
+      "@lint-editorconfig"
     ]
   },
   "extra": {

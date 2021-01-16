@@ -6,103 +6,93 @@
   "authors": "t3kit Community",
   "repository": "t3kit/t3kit",
   "scripts": {
+    "lint-css": "stylelint 'theme/src/css/**/*.css' --cache --cache-location .cache/.stylelintcache",
+    "lint-scss": "stylelint 'theme/src/scss/**/*.scss' --cache --cache-location .cache/.stylelintcache",
     "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
     "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
-    "lint-css": "stylelint 'theme/src/styles/**/*.{css,scss}' --cache --cache-location .cache/.stylelintcache",
-    "lint-editorconfig": "eclint check '**/*.{sh,yml,yaml,json,xml,xlf,html}' '!Resources/Public/**/*' '!theme/.tmp/**/*'",
-    "lint-fix": "stylelint 'theme/src/styles/**/*.{css,scss}' --fix",
-    "test": "npm-run-all --parallel lint-config lint-editorconfig",
-    "composer": "composer test",
-    "githook": "npm-run-all --parallel test composer",
-    "favicons": "gulp -f theme/config/gulpfile.js favicons",
-    "filetype": "gulp -f theme/config/gulpfile.js filetype",
-    "icons": "gulp -f theme/config/gulpfile.js icons",
-    "dev": "gulp -f theme/config/gulpfile.js build",
-    "prod": "NODE_ENV=production gulp -f theme/config/gulpfile.js build",
-    "build": "npm-run-all --parallel dev prod",
-    "start": "gulp -f theme/config/gulpfile.js"
+    "lint-all": "npm-run-all --parallel lint-css lint-scss lint-js lint-config",
+    "composer-test": "composer test",
+    "test": "npm-run-all --parallel lint-all composer-test",
+    "favicons": "node theme/config/favicons.js",
+    "filetypeIcons": "node theme/config/file-type-icons.js",
+    "icons": "node theme/config/icons.js",
+    "dev": "node theme/config/build.js",
+    "prod": "NODE_ENV=production node theme/config/build.js",
+    "build": "npm-run-all dev prod",
+    "start": "node theme/config/start.js"
   },
   "dependencies": {
-    "bootstrap": "5.0.0-alpha2",
-    "bootstrap-icons": "1.0.0",
+    "bootstrap": "v5.0.0-beta1",
+    "bootstrap-icons": "1.3.0",
     "file-icon-vectors": "1.0.0",
-    "simplelightbox": "2.4.0",
-    "swiper": "6.3.3"
+    "simplelightbox": "2.7.0",
+    "swiper": "6.4.5"
   },
   "devDependencies": {
-    "@rollup/plugin-legacy": "^2.0.0",
-    "@rollup/plugin-node-resolve": "^7.1.3",
-    "app-root-path": "^3.0.0",
-    "autoprefixer": "^9.8.0",
-    "boxen": "^4.2.0",
-    "browser-sync": "^2.26.7",
-    "browserslist": "^4.12.0",
-    "chalk": "^4.0.0",
-    "cpy": "8.1.0",
-    "cssnano": "^4.1.10",
-    "del": "^5.1.0",
-    "dotenv": "^8.2.0",
-    "eclint": "^2.8.1",
-    "fibers": "^5.0.0",
-    "fs-extra": "^9.0.0",
-    "git-rev-sync": "^2.0.0",
-    "gulp": "^4.0.2",
-    "gulp-brotli": "^2.0.2",
-    "gulp-gzip": "^1.4.2",
-    "gulp-if": "^3.0.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-real-favicon": "^0.3.2",
-    "gulp-rev": "^9.0.0",
-    "gulp-rev-delete-original": "^0.2.3",
-    "gulp-sass": "^4.1.0",
-    "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "husky": "^4.2.5",
-    "js-yaml": "^3.14.0",
-    "nodemon": "^2.0.4",
-    "npm-run-all": "^4.1.5",
-    "rollup": "^2.10.9",
-    "rollup-plugin-filesize": "^9.0.0",
-    "rollup-plugin-sizes": "^1.0.2",
-    "rollup-plugin-terser": "^6.1.0",
-    "sass": "^1.26.5",
-    "semver": "^7.3.2",
-    "snazzy": "^8.0.0",
-    "standard": "^14.3.4",
-    "stylelint": "^13.5.0",
-    "stylelint-config-standard-scss": "^1.1.0",
-    "stylelint-scss": "^3.17.2"
+    "@rollup/plugin-node-resolve": "~11.1.0",
+    "@rollup/plugin-replace": "~2.3.4",
+    "app-root-path": "~3.0.0",
+    "boxen": "~5.0.0",
+    "browserslist": "~4.16.1",
+    "chalk": "~4.1.0",
+    "chokidar": "~3.5.1",
+    "cpy": "~8.1.1",
+    "cssnano": "~4.1.10",
+    "cssom": "~0.4.4",
+    "del": "~6.0.0",
+    "filesize": "~6.1.0",
+    "fs-extra": "~9.0.1",
+    "git-rev-sync": "~3.0.1",
+    "globby": "~11.0.1",
+    "hasha": "~5.2.2",
+    "husky": "~4.3.8",
+    "moment": "~2.29.1",
+    "npm-run-all": "~4.1.5",
+    "p-each-series": "~2.2.0",
+    "postcss": "~8.2.1",
+    "postcss-import": "~14.0.0",
+    "rfg-api": "^0.5.1",
+    "rollup": "~2.36.2",
+    "rollup-plugin-sizes": "~1.0.3",
+    "rollup-plugin-terser": "~7.0.2",
+    "sass": "~1.32.4",
+    "snazzy": "~9.0.0",
+    "standard": "~16.0.3",
+    "stylelint": "~13.8.0",
+    "stylelint-config-standard": "~20.0.0"
   },
   "peerDependencies": {},
   "engines": {
-    "node": ">=12.16.0"
+    "node": ">=14.15.1"
   },
   "browserslist": [
-    "> 1.6% and last 2 versions",
-    "IOS >= 12 and > 0.5%"
+    "> 1.5% and last 2 versions",
+    "IOS >= 13 and > 0.5%",
+    "Safari >= 13"
   ],
   "standard": {
     "ignore": [
+      "vendor/",
       "dist/",
       "Resources/Public/"
     ]
   },
   "stylelint": {
-    "extends": "stylelint-config-standard-scss",
+    "extends": "stylelint-config-standard",
     "rules": {
       "selector-pseudo-element-colon-notation": "single",
-      "no-descending-specificity": null
-    }
+      "no-descending-specificity": null,
+      "comment-empty-line-before": null,
+      "at-rule-no-unknown": null
+    },
+    "ignoreFiles": [
+      "**/vendor/**/*.css",
+      "Resources/Public/**/*.css"
+    ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run githook"
+      "pre-commit": "npm test"
     }
-  },
-  "t3kit": {
-    "theme-name": "t3kit",
-    "typo3-site-config-dir": "t3kit",
-    "favicon-master-picture": "favicon.svg",
-    "proxy-host": "t3kit10.t3.localhost"
   }
 }

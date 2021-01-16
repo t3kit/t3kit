@@ -2,7 +2,7 @@
 
 namespace T3k\t3kit\Hooks\PageLayoutView;
 
- /*
+/*
  * This file is part of the TYPO3 CMS project.
  *
  * It is free software; you can redistribute it and/or modify it under

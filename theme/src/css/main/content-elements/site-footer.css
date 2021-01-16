@@ -1,0 +1,152 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+.ce-site-footer {
+  --t3-ce-footer-bg: var(--t3-body-color);
+  --t3-ce-footer-color-hs: 0, 0%;
+  --t3-ce-footer-color-l: 100%;
+  --t3-ce-footer-color: hsl(var(--t3-ce-footer-color-hs), var(--t3-ce-footer-color-l));
+  --t3-ce-footer-font-size: 0.875rem;
+  --t3-ce-footer-links-color: hsl(var(--t3-ce-footer-color-hs), var(--t3-ce-footer-color-l));
+  --t3-ce-footer-links-hover-color: hsla(var(--t3-ce-footer-color-hs), var(--t3-ce-footer-color-l), 0.7);
+
+  background-color: var(--t3-ce-footer-bg);
+  color: var(--t3-ce-footer-color);
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: var(--t3-ce-footer-font-size);
+}
+
+.ce-site-footer__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  color: var(--t3-ce-footer-links-color);
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ce-site-footer__link {
+    transition: none;
+  }
+}
+
+.ce-site-footer__link:hover {
+  color: var(--t3-ce-footer-links-hover-color);
+  text-decoration: underline;
+}
+
+.ce-site-footer__columns {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.ce-site-footer__columns,
+.ce-site-footer__bottom {
+  text-align: center;
+}
+
+.ce-site-footer__logo {
+  padding-top: 2rem;
+}
+
+.ce-site-footer__info {
+  padding-top: 2rem;
+}
+
+.ce-site-footer__column {
+  padding-top: 2rem;
+}
+
+.ce-site-footer__info-title {
+  font-weight: 900;
+}
+
+.ce-site-footer__address-wrp {
+  padding-top: 0.5rem;
+}
+
+.ce-site-footer__address {
+  line-height: 1.9;
+}
+
+.ce-site-footer__column-title .header-item {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--t3-ce-footer-color);
+}
+
+.ce-site-footer__links-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.ce-site-footer__bottom-links {
+  padding-left: 1rem;
+}
+
+.ce-site-footer__bottom-links .ce-site-footer__links-list {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ce-site-footer__bottom-links .ce-site-footer__links-list-item-link {
+  padding: 0 0.5rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ce-site-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(var(--t3-ce-footer-font-size) - 0.125rem);
+}
+
+.ce-site-footer__bottom-copyright {
+  padding-bottom: 0.4rem;
+}
+
+/* -------------------------------------------------------- */
+/* X-Small devices (portrait phones, less than 576px) xs */
+/* @media (max-width: 575.98px) { ... } */
+/* Small devices (landscape phones, 576px and up) sm */
+/* @media (min-width: 576px) { ... } */
+
+/* -------------------------------------------------------- */
+/* Small devices (landscape phones, less than 768px) sm */
+/* @media (max-width: 767.98px) { ... } */
+/* Medium devices (tablets, 768px and up) md */
+/* @media (min-width: 768px) { ... } */
+
+/* -------------------------------------------------------- */
+/* Medium devices (tablets, less than 992px) md */
+/* @media (max-width: 991.98px) { ... } */
+/* Large devices (desktops, 992px and up) lg */
+@media (min-width: 992px) {
+  .ce-site-footer__columns,
+  .ce-site-footer__bottom {
+    text-align: left;
+  }
+
+  .ce-site-footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* -------------------------------------------------------- */
+/* Large devices (desktops, less than 1200px) lg */
+/* @media (max-width: 1199.98px) { ... } */
+/* X-Large devices (large desktops, 1200px and up) xl */
+/* @media (min-width: 1200px) { ... } */
+
+/* -------------------------------------------------------- */
+/* X-Large devices (large desktops, less than 1400px) xl */
+/* @media (max-width: 1399.98px) { ... } */
+/* XX-Large devices (larger desktops, 1400px and up) xxl */
+/* @media (min-width: 1400px) { ... } */

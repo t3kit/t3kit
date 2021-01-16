@@ -1,0 +1,37 @@
+// ==============================
+// Override Bootstrap default variables
+// ==============================
+// we are using:
+// -- bootstrap/scss/reboot";
+// -- bootstrap/scss/containers";
+// -- bootstrap/scss/grid";
+// ---------------------------------
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px
+// ) !default;
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+// ) !default;
+
+// $grid-columns:                12 !default;
+// $grid-gutter-width:           1.5rem !default;
+// $grid-row-columns:            6 !default;
+
+$enable-negative-margins: true;
+
+// ==============================
+// Import Bootstrap default variables
+@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../../../../node_modules/bootstrap/scss/variables";
+// ==============================

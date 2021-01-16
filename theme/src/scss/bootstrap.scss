@@ -1,0 +1,138 @@
+// ===== bootstrap reboot & grid =====
+
+// Import project variables on top of Bootstrap to override default theme
+@import 'bootstrap/variables';
+
+// Bootstrap Configuration
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+// // Bootstrap reboot
+@import "../../../node_modules/bootstrap/scss/reboot";
+
+// // Bootstrap Grid
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+
+// // Bootstrap Helpers
+@import "../../../node_modules/bootstrap/scss/helpers/clearfix";
+@import "../../../node_modules/bootstrap/scss/helpers/ratio";
+@import "../../../node_modules/bootstrap/scss/helpers/position";
+@import "../../../node_modules/bootstrap/scss/helpers/visually-hidden";
+@import "../../../node_modules/bootstrap/scss/helpers/stretched-link";
+@import "../../../node_modules/bootstrap/scss/helpers/text-truncation";
+
+// Bootstrap Utilities
+// Only use the utilities we need
+$utilities: map-get-multiple(
+  $utilities,
+  (
+    "display",
+    "order",
+    "flex",
+    "flex-direction",
+    "flex-grow",
+    "flex-shrink",
+    "flex-wrap",
+    "justify-content",
+    "align-items",
+    "align-content",
+    "align-self",
+    "margin",
+    // "margin-x",
+    // "margin-y",
+    "margin-top",
+    "margin-end",
+    "margin-bottom",
+    "margin-start",
+    "negative-margin",
+    // "negative-margin-x",
+    // "negative-margin-y",
+    "negative-margin-top",
+    "negative-margin-end",
+    "negative-margin-bottom",
+    "negative-margin-start",
+    "padding",
+    // "padding-x",
+    // "padding-y",
+    "padding-top",
+    "padding-end",
+    "padding-bottom",
+    "padding-start",
+    //===================
+    "align",
+    "float",
+    "overflow",
+    // "shadow",
+    "position",
+    "top",
+    "bottom",
+    "start",
+    "end",
+    // "translate-middle",
+    // "border",
+    // "border-top",
+    // "border-end",
+    // "border-bottom",
+    // "border-start",
+    // "border-color",
+    // "border-width",
+    "width",
+    "max-width",
+    "viewport-width",
+    "min-viewport-width",
+    "height",
+    "max-height",
+    "viewport-height",
+    "min-viewport-height",
+    // "gap",
+    // "font-size",
+    // "font-style",
+    // "font-weight",
+    // "text-transform",
+    "text-align",
+    // "color",
+    // "line-height",
+    // "background-color",
+    // "gradient",
+    // "white-space",
+    // "text-decoration",
+    // "word-wrap",
+    // "font-family",
+    "user-select",
+    "pointer-events",
+    // "rounded",
+    // "rounded-top",
+    // "rounded-end",
+    // "rounded-bottom",
+    // "rounded-start",
+    "visibility",
+  )
+);
+
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+
+// Bootstrap Components
+// @import "../../../node_modules/bootstrap/scss/dropdown";
+// @import "../../../node_modules/bootstrap/scss/buttons";
+// @import "../../../node_modules/bootstrap/scss/nav";
+// @import "../../../node_modules/bootstrap/scss/navbar";
+
+// @import "../../../node_modules/bootstrap/scss/alert";
+// @import "../../../node_modules/bootstrap/scss/badge";
+// @import "../../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../../node_modules/bootstrap/scss/button-group";
+// @import "../../../node_modules/bootstrap/scss/card";
+// @import "../../../node_modules/bootstrap/scss/carousel";
+// @import "../../../node_modules/bootstrap/scss/close";
+// @import "../../../node_modules/bootstrap/scss/forms";
+// @import "../../../node_modules/bootstrap/scss/list-group";
+// @import "../../../node_modules/bootstrap/scss/modal";
+// @import "../../../node_modules/bootstrap/scss/pagination";
+// @import "../../../node_modules/bootstrap/scss/popover";
+// @import "../../../node_modules/bootstrap/scss/progress";
+// @import "../../../node_modules/bootstrap/scss/spinners";
+// @import "../../../node_modules/bootstrap/scss/toasts";
+// @import "../../../node_modules/bootstrap/scss/tooltip";
+// @import "../../../node_modules/bootstrap/scss/accordion";
+@import "../../../node_modules/bootstrap/scss/transitions";

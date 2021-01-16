@@ -31,7 +31,7 @@
             <f:render section="logo" arguments="{_all}" />
           </div>
         </f:if>
-        <button class="main-navigation-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="main-navigation-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="main-navigation-toggler-icon"></span>
         </button>
 
@@ -113,7 +113,7 @@
     class="main-navigation__item-link
       {f:if(condition: navItem.children, then:' dropdown-toggle')}"
     role="button"
-    data-toggle="dropdown"
+    data-bs-toggle="dropdown"
     aria-expanded="false">
       {navItem.title}
   </a>

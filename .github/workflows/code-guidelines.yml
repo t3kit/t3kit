@@ -5,10 +5,12 @@ on: [push, pull_request]
 
 jobs:
 
-
-  build-composer:
-    name: Run Composer lint
+  build-npm:
+    name: Run  npm test
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -21,20 +23,6 @@ jobs:
 
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
-
-      - name: Run default Composer lint tests
-        run: composer run-script test
-
-
-  build-npm:
-    name: Run npm lint
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
-
-    steps:
-      - uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1

@@ -43,7 +43,7 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
-                    'right'
+                    'end'
                 ]
             ],
             'default' => '0'
@@ -223,7 +223,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 ]);
 
 
- /*
+/*
  * ###########################
  * add new TCA columns for tt_content
  * ===========================
@@ -565,7 +565,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
-                    'right'
+                    'end'
                 ]
             ],
             'default' => '0',
@@ -639,7 +639,7 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.right',
-                    'right'
+                    'end'
                 ]
             ],
             'default' => '0',
@@ -1102,10 +1102,10 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'renderType' => 'checkboxLabeledToggle',
             'items' => [
                 [
-                   0 => '',
-                   1 => '',
-                   'labelChecked' => 'Enabled',
-                   'labelUnchecked' => 'Disabled',
+                    0 => '',
+                    1 => '',
+                    'labelChecked' => 'Enabled',
+                    'labelUnchecked' => 'Disabled',
                 ]
             ],
             'default' => 0,

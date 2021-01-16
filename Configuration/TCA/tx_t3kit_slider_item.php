@@ -338,7 +338,7 @@ return [
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
-                        'right'
+                        'end'
                     ]
                 ],
                 'default' => '0'
@@ -463,7 +463,7 @@ return [
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
-                        'right'
+                        'end'
                     ]
                 ],
                 'default' => '0',
@@ -525,7 +525,7 @@ return [
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.right',
-                        'right'
+                        'end'
                     ]
                 ],
                 'default' => '0',
@@ -540,10 +540,10 @@ return [
                 'renderType' => 'checkboxLabeledToggle',
                 'items' => [
                     [
-                       0 => '',
-                       1 => '',
-                       'labelChecked' => 'Enabled',
-                       'labelUnchecked' => 'Disabled',
+                        0 => '',
+                        1 => '',
+                        'labelChecked' => 'Enabled',
+                        'labelUnchecked' => 'Disabled',
                     ]
                 ],
                 'default' => 0,
