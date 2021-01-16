@@ -2,10 +2,10 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-70x70.png?v=4468030"/>
-            <square150x150logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-150x150.png?v=4468030"/>
-            <square310x310logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-310x310.png?v=4468030"/>
-            <wide310x150logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-310x150.png?v=4468030"/>
+            <square70x70logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-70x70.png?v=712203d"/>
+            <square150x150logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-150x150.png?v=712203d"/>
+            <square310x310logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-310x310.png?v=712203d"/>
+            <wide310x150logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-310x150.png?v=712203d"/>
             <TileColor>#2b5797</TileColor>
         </tile>
     </msapplication>
