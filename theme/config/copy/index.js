@@ -1,24 +1,26 @@
+const pEachSeries = require('p-each-series')
 const utils = require('../utils')
 const cpy = require('cpy')
-const conf = require('../conf')
 
-async function copyBootstrapIcons () {
+async function copyIcons (localConf) {
   try {
-    const timeStart = utils.start('copyBootstrapIcons', 'blue')
+    const timeStart = utils.start('copyIcons', 'blue')
 
-    await cpy(`${conf.BOOTSTRAP_ICONS_SRC}`, `${conf.BOOTSTRAP_ICONS_DIST}`)
+    await pEachSeries(localConf.ICONS, async (icons) => {
+      await cpy(icons.src, icons.dist)
+    })
 
-    utils.boxEnd({ functionName: 'copyBootstrapIcons', timeStart: timeStart, endColor: 'blue' })
+    utils.boxEnd({ functionName: 'copyIcons', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
-    utils.errLogFn(error, { functionName: 'copyBootstrapIcons' })
+    utils.errLogFn(error, { functionName: 'copyIcons' })
   }
 }
 
-async function copyFileTypeIcons () {
+async function copyFileTypeIcons (localConf) {
   try {
     const timeStart = utils.start('copyFileTypeIcons', 'blue')
 
-    await cpy(`${conf.FILE_TYPE_ICONS_SRC}`, `${conf.FILE_TYPE_ICONS_DIST}`)
+    await cpy(`${localConf.FILE_TYPE_ICONS_SRC}`, `${localConf.FILE_TYPE_ICONS_DIST}`)
 
     utils.boxEnd({ functionName: 'copyFileTypeIcons', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {
@@ -26,5 +28,5 @@ async function copyFileTypeIcons () {
   }
 }
 
-exports.copyBootstrapIcons = copyBootstrapIcons
+exports.copyIcons = copyIcons
 exports.copyFileTypeIcons = copyFileTypeIcons

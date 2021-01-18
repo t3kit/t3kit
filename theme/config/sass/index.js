@@ -3,7 +3,6 @@ const pEachSeries = require('p-each-series')
 const size = require('filesize')
 const fse = require('fs-extra')
 const sass = require('sass')
-const conf = require('../conf')
 const utils = require('../utils')
 
 function sassPromise (fileName) {
@@ -20,7 +19,7 @@ function sassPromise (fileName) {
   })
 }
 
-async function compileScss (options) {
+async function compileScss (localConf, options) {
   options = options || {}
   const hideStatus = options.hideStatus || false
 
@@ -28,13 +27,13 @@ async function compileScss (options) {
     const timeStart = utils.start('compileScss', 'magenta')
     const fileList = []
 
-    await fse.ensureDir(conf.SCSS_DIST)
-    const files = await utils.getFileList(`${conf.SCSS_SRC}*.scss`, { objectMode: true })
+    await fse.ensureDir(localConf.SCSS_DIST)
+    const files = await utils.getFileList(`${localConf.SCSS_SRC}*.scss`, { objectMode: true })
     await pEachSeries(files, async (file, index) => {
       const scssResult = await sassPromise(file.path)
       const fileName = `${file.name.slice(0, -5)}.css`
-      await fsPromises.writeFile(`${conf.SCSS_DIST}${fileName}`, scssResult.css)
-      const fileStats = await fsPromises.stat(`${conf.SCSS_DIST}${fileName}`)
+      await fsPromises.writeFile(`${localConf.SCSS_DIST}${fileName}`, scssResult.css)
+      const fileStats = await fsPromises.stat(`${localConf.SCSS_DIST}${fileName}`)
       fileList[index] = { name: `src/vendor/css/${fileName}`, size: size(fileStats.size) }
     })
 

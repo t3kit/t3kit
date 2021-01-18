@@ -1,23 +1,13 @@
-const fse = require('fs-extra')
 const globby = require('globby')
 const chalk = require('chalk')
 const moment = require('moment')
 const boxen = require('boxen')
-const conf = require('../conf')
 
 let envContext
 if (process.env.NODE_ENV === 'production') {
-  envContext = chalk`[{blue.bold ${conf.CONTEXT}} {white context}]`
+  envContext = chalk`[{blue.bold production} {white context}]`
 } else {
-  envContext = chalk`[{red.bold ${conf.CONTEXT}} {white context}]`
-}
-
-async function ensureTmpDir () {
-  try {
-    await fse.ensureDir(`${conf.TEMP}`)
-  } catch (error) {
-    console.error('(ensureTmpDir) Error:', error)
-  }
+  envContext = chalk`[{red.bold development} {white context}]`
 }
 
 async function getFileList (glob, options) {
@@ -141,7 +131,6 @@ function mainTaskEnd (options) {
   )
 }
 
-exports.ensureTmpDir = ensureTmpDir
 exports.start = start
 exports.boxEnd = boxEnd
 exports.mainTaskStart = mainTaskStart

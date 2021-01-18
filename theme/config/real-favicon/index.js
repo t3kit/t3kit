@@ -2,15 +2,11 @@ const fsPromises = require('fs').promises
 const fse = require('fs-extra')
 const gitRev = require('git-rev-sync')
 const rfg = require('rfg-api').init()
-const conf = require('../conf')
 const utils = require('../utils')
 
 const API_KEY = 'eabf77c98d6bd1eea81fb58be7895c42dafc2b21'
 
 const faviconOptions = {
-  masterPicture: `${conf.FAVICONS_SRC}${conf.FAVICON_MASTER_PICTURE}`,
-  dest: conf.FAVICONS_DIST,
-  iconsPath: conf.FAVICON_PATH,
   design: {
     ios: {
       pictureAspect: 'noChange',
@@ -69,22 +65,21 @@ const faviconOptions = {
   versioning: {
     paramName: 'v',
     paramValue: gitRev.short()
-  },
-  markupFile: `${conf.TEMP}faviconData.json`
+  }
 }
 
-function generateFaviconsPromise (fileName) {
+function generateFaviconsPromise (localConf) {
   return new Promise((resolve, reject) => {
     const request = rfg.createRequest({
       apiKey: API_KEY,
-      masterPicture: faviconOptions.masterPicture,
-      iconsPath: faviconOptions.iconsPath,
+      masterPicture: `${localConf.FAVICONS_SRC}${localConf.FAVICON_MASTER_PICTURE}`,
+      iconsPath: localConf.FAVICON_PATH,
       design: faviconOptions.design,
       settings: faviconOptions.settings,
       versioning: faviconOptions.versioning
     })
 
-    rfg.generateFavicon(request, faviconOptions.dest, function (error, data) {
+    rfg.generateFavicon(request, localConf.FAVICONS_DIST, function (error, data) {
       if (error) {
         utils.errLogFn(error.message, { functionName: 'generateFaviconsPromise', newPromise: true })
         reject(error)
@@ -95,15 +90,15 @@ function generateFaviconsPromise (fileName) {
   })
 }
 
-async function generateFavicons () {
+async function generateFavicons (localConf) {
   try {
     const timeStart = utils.start('generateFavicons', 'blue')
 
-    const data = await generateFaviconsPromise()
+    const data = await generateFaviconsPromise(localConf)
 
-    await fse.ensureDir(`${conf.TEMP}`)
-    await fsPromises.writeFile(faviconOptions.markupFile, JSON.stringify(data))
-    await fsPromises.rename(`${conf.FAVICONS_DIST}html_code.html`, `${conf.FAVICONS_DIST}Favicons.html`)
+    await fse.ensureDir(`${localConf.TEMP}`)
+    await fsPromises.writeFile(`${localConf.TEMP}faviconData.json`, JSON.stringify(data))
+    await fsPromises.rename(`${localConf.FAVICONS_DIST}html_code.html`, `${localConf.FAVICONS_DIST}Favicons.html`)
 
     utils.boxEnd({ functionName: 'generateFavicons', timeStart: timeStart, endColor: 'blue' })
   } catch (error) {

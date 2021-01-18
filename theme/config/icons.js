@@ -1,14 +1,15 @@
-require('./check').checkNode()
+const localConf = require('./localConf')
+require('./check/dependencies').checkDependencies(localConf)
+require('./check/node').checkNode()
+
 const utils = require('./utils')
-const { cleanBootstrapIcons } = require('./clean')
-const { copyBootstrapIcons } = require('./copy')
+const { cleanIcons } = require('./clean')
+const { copyIcons } = require('./copy')
 
 async function icons () {
   const timeStart = utils.mainTaskStart('Add icons task')
-  await cleanBootstrapIcons()
-  await copyBootstrapIcons()
-  // add more icons here
-  // ...
+  await cleanIcons(localConf)
+  await copyIcons(localConf)
   utils.mainTaskEnd({ taskName: 'Add icons task', timeStart: timeStart, skipContext: true })
 }
 icons()

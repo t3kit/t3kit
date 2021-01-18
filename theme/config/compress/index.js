@@ -6,15 +6,14 @@ const { pipeline } = require('stream')
 const pipe = promisify(pipeline)
 const { createReadStream, createWriteStream } = require('fs')
 const pEachSeries = require('p-each-series')
-const conf = require('../conf')
 const utils = require('../utils')
 
-async function compressCss () {
+async function compressCss (localConf) {
   try {
     const timeStart = utils.start('compressCss', 'blue')
     const fileList = []
 
-    const files = await utils.getFileList(`${conf.CSS_DIST}*.css`, { objectMode: true })
+    const files = await utils.getFileList(`${localConf.CSS_DIST}*.css`, { objectMode: true })
 
     await pEachSeries(files, async (file, index) => {
       const source = createReadStream(file.path)
@@ -28,10 +27,10 @@ async function compressCss () {
       const brotliDestination = createWriteStream(`${file.path}.br`)
       await pipe(source2, brotli, brotliDestination)
 
-      const initialFileStats = await fsPromises.stat(`${conf.CSS_DIST}${file.name}`)
-      const gzFileStats = await fsPromises.stat(`${conf.CSS_DIST}${file.name}.gz`)
-      const brFileStats = await fsPromises.stat(`${conf.CSS_DIST}${file.name}.br`)
-      const filePath = `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${file.name}`
+      const initialFileStats = await fsPromises.stat(`${localConf.CSS_DIST}${file.name}`)
+      const gzFileStats = await fsPromises.stat(`${localConf.CSS_DIST}${file.name}.gz`)
+      const brFileStats = await fsPromises.stat(`${localConf.CSS_DIST}${file.name}.br`)
+      const filePath = `${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.CSS_FOLDER}${file.name}`
       fileList[index] = {
         compress: {
           initialFile: filePath,
@@ -50,12 +49,12 @@ async function compressCss () {
   }
 }
 
-async function compressJs () {
+async function compressJs (localConf) {
   try {
     const timeStart = utils.start('compressJs', 'yellow')
     const fileList = []
 
-    const files = await utils.getFileList(`${conf.JS_DIST}*.js`, { objectMode: true })
+    const files = await utils.getFileList(`${localConf.JS_DIST}*.js`, { objectMode: true })
 
     await pEachSeries(files, async (file, index) => {
       const source = createReadStream(file.path)
@@ -69,10 +68,10 @@ async function compressJs () {
       const brotliDestination = createWriteStream(`${file.path}.br`)
       await pipe(source2, brotli, brotliDestination)
 
-      const initialFileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}`)
-      const gzFileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}.gz`)
-      const brFileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}.br`)
-      const filePath = `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${file.name}`
+      const initialFileStats = await fsPromises.stat(`${localConf.JS_DIST}${file.name}`)
+      const gzFileStats = await fsPromises.stat(`${localConf.JS_DIST}${file.name}.gz`)
+      const brFileStats = await fsPromises.stat(`${localConf.JS_DIST}${file.name}.br`)
+      const filePath = `${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.JS_FOLDER}${file.name}`
       fileList[index] = {
         compress: {
           initialFile: filePath,

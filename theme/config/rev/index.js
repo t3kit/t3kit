@@ -2,15 +2,14 @@ const fsPromises = require('fs').promises
 const pEachSeries = require('p-each-series')
 const hasha = require('hasha')
 const size = require('filesize')
-const conf = require('../conf')
 const utils = require('../utils')
 
-async function revCss () {
+async function revCss (localConf) {
   try {
     const timeStart = utils.start('revCss', 'blue.bold')
     const fileList = []
 
-    const files = await utils.getFileList(`${conf.CSS_DIST}*.css`, { objectMode: true })
+    const files = await utils.getFileList(`${localConf.CSS_DIST}*.css`, { objectMode: true })
     await pEachSeries(files, async (file, index) => {
       const filePath = file.path.slice(0, -4)
       const fileName = file.name.slice(0, -4)
@@ -20,7 +19,7 @@ async function revCss () {
       await fsPromises.rename(file.path, `${filePath}-${hash}${fileExt}`)
 
       const fileStats = await fsPromises.stat(`${filePath}-${hash}${fileExt}`)
-      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.CSS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
+      fileList[index] = { name: `${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.CSS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
     })
 
     utils.boxEnd({ files: fileList, functionName: 'revCss', timeStart: timeStart, endColor: 'blue.bold' })
@@ -29,12 +28,12 @@ async function revCss () {
   }
 }
 
-async function revJs () {
+async function revJs (localConf) {
   try {
     const timeStart = utils.start('revJs', 'yellow.bold')
     const fileList = []
 
-    const files = await utils.getFileList(`${conf.JS_DIST}*.js`, { objectMode: true })
+    const files = await utils.getFileList(`${localConf.JS_DIST}*.js`, { objectMode: true })
     await pEachSeries(files, async (file, index) => {
       const filePath = file.path.slice(0, -3)
       const fileName = file.name.slice(0, -3)
@@ -44,7 +43,7 @@ async function revJs () {
       await fsPromises.rename(file.path, `${filePath}-${hash}${fileExt}`)
 
       const fileStats = await fsPromises.stat(`${filePath}-${hash}${fileExt}`)
-      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
+      fileList[index] = { name: `${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.JS_FOLDER}${fileName}-${hash}${fileExt}`, size: size(fileStats.size) }
     })
 
     utils.boxEnd({ files: fileList, functionName: 'revJs', timeStart: timeStart, endColor: 'yellow.bold' })

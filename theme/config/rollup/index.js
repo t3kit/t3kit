@@ -7,10 +7,9 @@ const { nodeResolve } = require('@rollup/plugin-node-resolve')
 const replace = require('@rollup/plugin-replace')
 const { terser } = require('rollup-plugin-terser')
 const sizes = require('rollup-plugin-sizes')
-const conf = require('../conf')
 const utils = require('../utils')
 
-async function compileJs (options) {
+async function compileJs (localConf, options) {
   try {
     options = options || {}
     const hideStatus = options.hideStatus || false
@@ -18,8 +17,8 @@ async function compileJs (options) {
     const timeStart = utils.start('compileJs', 'yellow')
     const fileList = []
 
-    await fse.ensureDir(conf.JS_DIST)
-    const files = await utils.getFileList(`${conf.JS_SRC}*.js`, { objectMode: true })
+    await fse.ensureDir(localConf.JS_DIST)
+    const files = await utils.getFileList(`${localConf.JS_SRC}*.js`, { objectMode: true })
 
     await pEachSeries(files, async (file, index) => {
       const inputOptions = {
@@ -39,7 +38,7 @@ async function compileJs (options) {
         }
       }))
       const outputOptions = {
-        file: `${conf.JS_DIST}${file.name}`,
+        file: `${localConf.JS_DIST}${file.name}`,
         format: 'iife',
         sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
         sourcemapExcludeSources: true
@@ -47,8 +46,8 @@ async function compileJs (options) {
       const bundle = await rollup.rollup(inputOptions)
       await bundle.write(outputOptions)
 
-      const fileStats = await fsPromises.stat(`${conf.JS_DIST}${file.name}`)
-      fileList[index] = { name: `${conf.ASSETS_FOLDER}${conf.CONTEXT}/${conf.JS_FOLDER}${file.name}`, size: size(fileStats.size) }
+      const fileStats = await fsPromises.stat(`${localConf.JS_DIST}${file.name}`)
+      fileList[index] = { name: `${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.JS_FOLDER}${file.name}`, size: size(fileStats.size) }
     })
 
     hideStatus || utils.boxEnd({ files: fileList, functionName: 'compileJs', timeStart: timeStart, endColor: 'yellow' })
