@@ -7572,12 +7572,21 @@ fieldset:disabled .btn {
 .text-img-left {
   flex-direction: column;
 }
-.text-img-left,
-.text-img-right {
-  .ce-textpic__picture,
-  .ce-textpic__text {
-    padding: 0 1rem;
-  }
+.text-img-left .ce-textpic__picture {
+  padding: 0;
+  padding-right: 1rem;
+}
+.text-img-right .ce-textpic__picture {
+  padding: 0;
+  padding-left: 1rem;
+}
+.text-img-left .ce-textpic__text {
+  padding: 0;
+  padding-left: 1rem;
+}
+.text-img-right .ce-textpic__text {
+  padding: 0;
+  padding-right: 1rem;
 }
 /* -------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) xs */
