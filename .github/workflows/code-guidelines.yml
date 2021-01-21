@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
 
   build-npm:
-    name: Run  npm test
+    name: Run npm test
     runs-on: ubuntu-latest
     strategy:
       matrix:

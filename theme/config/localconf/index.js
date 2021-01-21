@@ -39,13 +39,6 @@ localConf.JS_SRC = `${localConf.SRC}${localConf.JS_FOLDER.toLowerCase()}`
 localConf.JS_DIST = `${localConf.DIST}${localConf.CONTEXT}/${localConf.JS_FOLDER}`
 localConf.JS_LINK = `<f:asset.script identifier="%_id_%" %_settings_% src="EXT:{site.configuration.theme}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.JS_FOLDER}%_file_%" />`
 
-// FAVICONS compilation variables
-// add more favicon customization into generateFavicon object --> (theme/config/real-favicon/index.js)
-localConf.FAVICONS_SRC = `${localConf.SRC}favicon/`
-localConf.FAVICONS_DIST = `${localConf.DIST}Favicons/`
-localConf.FAVICON_MASTER_PICTURE = 'favicon.svg'
-localConf.FAVICON_PATH = `/typo3conf/ext/${localConf.dirName}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}Favicons`
-
 // Icons variables
 localConf.ICONS = [
   {
@@ -59,3 +52,73 @@ localConf.ICONS = [
 localConf.FILE_TYPE_ICONS_DIST = `${localConf.DIST}Filetypes/`
 localConf.FILE_TYPE_ICONS_SRC = [`${localConf.rootPath}/node_modules/file-icon-vectors/dist/icons/vivid/*.svg`]
 // ------------------------------
+
+// FAVICONS compilation variables
+// based on https://realfavicongenerator.net/
+localConf.FAVICONS_SRC = `${localConf.SRC}favicon/`
+localConf.FAVICONS_DIST = `${localConf.DIST}Favicons/`
+localConf.FAVICON_MASTER_PICTURE = 'favicon.svg'
+localConf.FAVICON_PATH = `/typo3conf/ext/${localConf.dirName}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}Favicons`
+
+// https://realfavicongenerator.net/api/non_interactive_api#.YAmW22QzZqs
+localConf.FAVICON_OPTIONS = {
+  design: {
+    ios: {
+      pictureAspect: 'noChange',
+      assets: {
+        ios6AndPriorIcons: false,
+        ios7AndLaterIcons: false,
+        precomposedIcons: false,
+        declareOnlyDefaultIcon: true
+      }
+    },
+    desktopBrowser: {
+      design: 'raw'
+    },
+    windows: {
+      pictureAspect: 'noChange',
+      backgroundColor: '#2b5797',
+      onConflict: 'override',
+      assets: {
+        windows80Ie10Tile: false,
+        windows10Ie11EdgeTiles: {
+          small: false,
+          medium: true,
+          big: false,
+          rectangle: false
+        }
+      }
+    },
+    androidChrome: {
+      pictureAspect: 'noChange',
+      themeColor: '#ffffff',
+      manifest: {
+        display: 'browser',
+        orientation: 'notSet',
+        onConflict: 'override',
+        declared: true
+      },
+      assets: {
+        legacyIcon: false,
+        lowResolutionIcons: false
+      }
+    },
+    safariPinnedTab: {
+      pictureAspect: 'blackAndWhite',
+      threshold: 50,
+      themeColor: '#6d6d6d'
+    }
+  },
+  settings: {
+    compression: 2,
+    scalingAlgorithm: 'Mitchell',
+    errorOnImageTooSmall: false,
+    readmeFile: false,
+    htmlCodeFile: true,
+    usePathAsIs: false
+  },
+  versioning: {
+    paramName: 'v',
+    paramValue: 'test'
+  }
+}

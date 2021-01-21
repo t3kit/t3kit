@@ -6,69 +6,9 @@ const utils = require('../utils')
 
 const API_KEY = 'eabf77c98d6bd1eea81fb58be7895c42dafc2b21'
 
-const faviconOptions = {
-  design: {
-    ios: {
-      pictureAspect: 'noChange',
-      assets: {
-        ios6AndPriorIcons: false,
-        ios7AndLaterIcons: false,
-        precomposedIcons: false,
-        declareOnlyDefaultIcon: true
-      }
-    },
-    desktopBrowser: {
-      design: 'raw'
-    },
-    windows: {
-      pictureAspect: 'noChange',
-      backgroundColor: '#2b5797',
-      onConflict: 'override',
-      assets: {
-        windows80Ie10Tile: false,
-        windows10Ie11EdgeTiles: {
-          small: false,
-          medium: true,
-          big: false,
-          rectangle: false
-        }
-      }
-    },
-    androidChrome: {
-      pictureAspect: 'noChange',
-      themeColor: '#ffffff',
-      manifest: {
-        display: 'browser',
-        orientation: 'notSet',
-        onConflict: 'override',
-        declared: true
-      },
-      assets: {
-        legacyIcon: false,
-        lowResolutionIcons: false
-      }
-    },
-    safariPinnedTab: {
-      pictureAspect: 'blackAndWhite',
-      threshold: 50,
-      themeColor: '#6d6d6d'
-    }
-  },
-  settings: {
-    compression: 2,
-    scalingAlgorithm: 'Mitchell',
-    errorOnImageTooSmall: false,
-    readmeFile: false,
-    htmlCodeFile: true,
-    usePathAsIs: false
-  },
-  versioning: {
-    paramName: 'v',
-    paramValue: gitRev.short()
-  }
-}
-
 function generateFaviconsPromise (localConf) {
+  localConf.FAVICON_OPTIONS.versioning.paramValue = gitRev.short()
+  const faviconOptions = localConf.FAVICON_OPTIONS
   return new Promise((resolve, reject) => {
     const request = rfg.createRequest({
       apiKey: API_KEY,
