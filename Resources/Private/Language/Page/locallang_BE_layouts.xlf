@@ -5,104 +5,104 @@
 		<header/>
 		<body>
 
-			<trans-unit id="title.1column" resname="">
+			<trans-unit id="title.1column" resname="title.1column">
 				<source>1 Column</source>
 			</trans-unit>
-			<trans-unit id="title.1column75_sidenav25" resname="">
+			<trans-unit id="title.1column75_sidenav25" resname="title.1column75_sidenav25">
 				<source>1 Column[75%] -> Side Navigation[25%]</source>
 			</trans-unit>
-			<trans-unit id="title.sidenav25_1column75" resname="">
+			<trans-unit id="title.sidenav25_1column75" resname="title.sidenav25_1column75">
 				<source>Side Navigation[25%] -> 1 Column[75%]</source>
 			</trans-unit>
 
-			<trans-unit id="title.2columns">
+			<trans-unit id="title.2columns" resname="title.2columns">
 				<source>2 Columns[50%-50%]</source>
 			</trans-unit>
-			<trans-unit id="title.2columns_sidenav">
+			<trans-unit id="title.2columns_sidenav" resname="title.2columns_sidenav">
 				<source>2 Columns[33%-33%] -> Side Navigation[33%]</source>
 			</trans-unit>
-			<trans-unit id="title.sidenav_2columns">
+			<trans-unit id="title.sidenav_2columns" resname="title.sidenav_2columns">
 				<source>Side Navigation[33%] -> 2 Columns[33%-33%]</source>
 			</trans-unit>
-			<trans-unit id="title.2columns25_75">
+			<trans-unit id="title.2columns25_75" resname="title.2columns25_75">
 				<source>2 Columns[25%-75%]</source>
 			</trans-unit>
-			<trans-unit id="title.2columns75_25">
+			<trans-unit id="title.2columns75_25" resname="title.2columns75_25">
 				<source>2 Columns[75%-25%]</source>
 			</trans-unit>
-			<trans-unit id="title.sidenav25_2columns50_25">
+			<trans-unit id="title.sidenav25_2columns50_25" resname="title.sidenav25_2columns50_25">
 				<source>Side Navigation[25%] -> 2 Columns[50%-25%]</source>
 			</trans-unit>
-			<trans-unit id="title.2columns25_50_sidenav25">
+			<trans-unit id="title.2columns25_50_sidenav25" resname="title.2columns25_50_sidenav25">
 				<source>2 Columns[25%-50%] -> Side Navigation[25%]</source>
 			</trans-unit>
 
-			<trans-unit id="title.3columns">
+			<trans-unit id="title.3columns" resname="title.3columns">
 				<source>3 Columns[33%-33%-33%]</source>
 			</trans-unit>
-			<trans-unit id="title.3columns_sidenav">
+			<trans-unit id="title.3columns_sidenav" resname="title.3columns_sidenav">
 				<source>3 Columns[25%-25%-25%] -> Side Navigation[25%]</source>
 			</trans-unit>
-			<trans-unit id="title.sidenav_3columns">
+			<trans-unit id="title.sidenav_3columns" resname="title.sidenav_3columns">
 				<source>Side Navigation[25%] -> 3 Columns[25%-25%-25%]</source>
 			</trans-unit>
-			<trans-unit id="title.3columns25_50_25">
+			<trans-unit id="title.3columns25_50_25" resname="title.3columns25_50_25">
 				<source>3 Columns[25%-50%-25%]</source>
 			</trans-unit>
 
-			<trans-unit id="title.4columns">
+			<trans-unit id="title.4columns" resname="title.4columns">
 				<source>4 Columns[25%-25%-25%-25%]</source>
 			</trans-unit>
 
-			<trans-unit id="title.empty">
+			<trans-unit id="title.empty" resname="title.empty">
 				<source>Empty</source>
 			</trans-unit>
-			<trans-unit id="title.default">
+			<trans-unit id="title.default" resname="title.default">
 				<source>Default</source>
 			</trans-unit>
 
-			<trans-unit id="title.start_page">
+			<trans-unit id="title.start_page" resname="title.start_page">
 				<source>Start Page</source>
 			</trans-unit>
 
 
 
-			<trans-unit id="columns.header">
+			<trans-unit id="columns.header" resname="columns.header">
 				<source>Site header</source>
 			</trans-unit>
-			<trans-unit id="columns.footer">
+			<trans-unit id="columns.footer" resname="columns.footer">
 				<source>Site footer</source>
 			</trans-unit>
-			<trans-unit id="columns.breadcrumbs">
+			<trans-unit id="columns.breadcrumbs" resname="columns.breadcrumbs">
 				<source>Breadcrumbs</source>
 			</trans-unit>
-			<trans-unit id="columns.sidenav">
+			<trans-unit id="columns.sidenav" resname="columns.sidenav">
 				<source>Side Navigation</source>
 			</trans-unit>
 
-			<trans-unit id="columns.top">
+			<trans-unit id="columns.top" resname="columns.top">
 				<source>Top content (after site header/before breadcrumbs)</source>
 			</trans-unit>
-			<trans-unit id="columns.before_content">
+			<trans-unit id="columns.before_content" resname="columns.before_content">
 				<source>Additional content (after breadcrumbs/before main content)</source>
 			</trans-unit>
-			<trans-unit id="columns.after_content">
+			<trans-unit id="columns.after_content" resname="columns.after_content">
 				<source>Additional content (after main content/before site footer)</source>
 			</trans-unit>
 
-			<trans-unit id="columns.content">
+			<trans-unit id="columns.content" resname="columns.content">
 				<source>Content</source>
 			</trans-unit>
-			<trans-unit id="columns.1.content">
+			<trans-unit id="columns.1.content" resname="columns.1.content">
 				<source>Content [Column 1]</source>
 			</trans-unit>
-			<trans-unit id="columns.2.content">
+			<trans-unit id="columns.2.content" resname="columns.2.content">
 				<source>Content [Column 2]</source>
 			</trans-unit>
-			<trans-unit id="columns.3.content">
+			<trans-unit id="columns.3.content" resname="columns.3.content">
 				<source>Content [Column 3]</source>
 			</trans-unit>
-			<trans-unit id="columns.4.content">
+			<trans-unit id="columns.4.content" resname="columns.4.content">
 				<source>Content [Column 4]</source>
 			</trans-unit>
 

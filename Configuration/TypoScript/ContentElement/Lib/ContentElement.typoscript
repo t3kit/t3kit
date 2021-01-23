@@ -68,5 +68,4 @@ lib.contentElement {
 # Extended Fluid templates for PageLayoutView
 # ===========================
 module.tx_backend.view.partialRootPaths.100 = EXT:t3kit/Resources/Private/Partials/
-// module.tx_backend.view.partialRootPaths.150.dataWrap = EXT:{site:theme}/Resources/Private/Partials/
 module.tx_backend.view.partialRootPaths.200 = {$plugin.t3kit.contentElement.pageLayoutView.partialRootPath}
