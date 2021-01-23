@@ -28,8 +28,7 @@ lib.parseFunc {
         ATagParams.data = parameters:allParams
         # the target attribute takes precedence over config.intTarget
         target.ifEmpty.data = parameters:target
-        # the target attribute takes precedence over the constant (styles.content.links.extTarget)
-        # which takes precedence over config.extTarget
+        # the target attribute takes precedence over config.extTarget
         extTarget.ifEmpty < config.extTarget
         extTarget.override.data = parameters:target
       }
