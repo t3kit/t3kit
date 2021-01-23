@@ -7,7 +7,7 @@
 				<source>Big icon,Text and Link</source>
 			</trans-unit>
 			<trans-unit id="bigIconTextLink.description" resname="bigIconTextLink.description">
-				<source>Big icon, header, text and link</source>
+				<source>Big icon, header, text and link/button</source>
 			</trans-unit>
 
 			<trans-unit id="flexform.stretched_link" resname="flexform.stretched_link">

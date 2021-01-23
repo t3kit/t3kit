@@ -8,7 +8,7 @@
 				<source>Image text and link</source>
 			</trans-unit>
 			<trans-unit id="imageTextLink.description" resname="imageTextLink.description">
-				<source>Image or media, text and link. Will use image before media. Will only render one image or one media.</source>
+				<source>Image, header, text and link/button</source>
 			</trans-unit>
 
 			<trans-unit id="flexform.stretched_link" resname="flexform.stretched_link">
