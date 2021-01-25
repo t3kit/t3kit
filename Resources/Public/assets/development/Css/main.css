@@ -7333,9 +7333,9 @@ fieldset:disabled .btn {
   position: absolute;
   display: block;
   text-align: center;
-  top: 1.4rem;
+  bottom: -1.3rem;
   width: 13em;
-  left: 1rem;
+  left: 0.5rem;
   background-color: var(--t3-target-blank-msg-bg);
   color: var(--t3-target-blank-msg-color);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -7354,7 +7354,9 @@ fieldset:disabled .btn {
   border: 0 !important;
 }
 /* .target-blank-link__icon-wrp {} */
-/* .target-blank-link__icon {} */
+.target-blank-link__icon {
+  margin-bottom: 0.3rem;
+}
 .scroll-to-top {
   background-color: #fff;
   display: flex;
