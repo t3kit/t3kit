@@ -13,9 +13,9 @@
   --t3-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
 
   /* secondary color */
-  --t3-secondary: #007e8f;
+  --t3-secondary: #00626f;
   --t3-secondary-hs: 187, 100%;
-  --t3-secondary-l: 28%;
+  --t3-secondary-l: 22%;
   --t3-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
 
   /* light color */
