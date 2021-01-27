@@ -8,7 +8,7 @@ const swiper = function (className, options) {
   return new Swiper(className, options)
 }
 
-swiper('.swiper-container', {
+swiper('.t3kit-swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -21,12 +21,12 @@ swiper('.swiper-container', {
   },
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination'
+    el: '.t3kit-swiper-pagination'
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.t3kit-swiper-button-next',
+    prevEl: '.t3kit-swiper-button-prev'
   }
 })
