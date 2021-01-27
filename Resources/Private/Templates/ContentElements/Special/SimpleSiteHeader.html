@@ -123,10 +123,10 @@
 
   <ul class="main-navigation__dropdown-item-list
     dropdown-menu
-    {f:if(condition: '{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3', then: ' show-parent-link')}"
+    {f:if(condition: '{navItem.data.doktype} == 1 || {navItem.data.doktype} == 9 || {navItem.data.doktype} == 3', then: ' show-parent-link')}"
     aria-labelledby="navbarDropdown{navItem.data.uid}">
 
-    <f:if condition="{navItem.data.doktype} == 1 || {navItem.data.doktype} == 3 ">
+    <f:if condition="{navItem.data.doktype} == 1 || {navItem.data.doktype} == 9 || {navItem.data.doktype} == 3 ">
       <li class="main-navigation__dropdown-item {f:if(condition: navItem.active, then:' active')} {navItem.data.uid}">
         <a class="main-navigation__dropdown-item-link main-navigation__dropdown-item-parent-link"
           href="{navItem.link}"
