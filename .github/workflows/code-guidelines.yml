@@ -22,7 +22,7 @@ jobs:
         run: composer --version
 
       - name: Install Composer dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        run: composer install --prefer-dist --no-progress --ignore-platform-reqs
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
