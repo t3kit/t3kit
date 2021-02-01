@@ -50,9 +50,11 @@
 ## Required dependencies
 
 - [Git](https://git-scm.com/)
-- [Composer](https://getcomposer.org/) >= v1.9.1
-- [Docker](https://docs.docker.com/install/) >= v19.03.12
-- [Docker Compose](https://docs.docker.com/compose/install/) >= v1.26.2
+- [Composer](https://getcomposer.org/) >= v2.0.8
+- [Docker](https://docs.docker.com/install/) >= v20.10.2
+- [Docker Compose](https://docs.docker.com/compose/install/) >= v1.27.4
+- [Node.js](https://nodejs.org/en/download/) >= v14.15.1
+- [NPM](https://nodejs.org/en/download/) >= v6.14.10
 
 ## File structure
 
