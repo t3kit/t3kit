@@ -8,5 +8,5 @@ config {
   cacheControl = 0
 
   # cat=t3kitConfig; type=string; label=LLL:EXT:t3kit/Resources/Private/Language/locallang_BE_TS_constants.xlf:config.cacheControlMaxAge
-  cacheControlMaxAge = 300
+  cacheControlValue = max-age=300
 }
