@@ -58,7 +58,7 @@
 
 ***
 
-#### v10.0.0 `August 17, 2020`
+#### v10.0.0-alpha `August 17, 2020`
 
 - **[DOC]** update README file ([bce6f54](https://github.com/t3kit/t3kit/commit/bce6f54))
 - **[TASK]** add suggestions of extensions for t3kit ([1f383da](https://github.com/t3kit/t3kit/commit/1f383da))
