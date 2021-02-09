@@ -90,8 +90,10 @@
   </f:else>
 </f:if>
 
+
 <f:comment>Viewport for mobile devices (always 100% viewport width)</f:comment>
 <f:variable name="small_viewport_width">100</f:variable>
+
 
 <f:comment>
   Calculate picture_width based on selector or width variable in BE to define relative image width inside a content element
@@ -104,11 +106,40 @@
     <f:variable name="picture_width">{image.referenceProperties.picture_width}</f:variable>
   </f:else>
 </f:if>
-<f:if condition="{picture_width} != 100">
+
+
+<f:if condition="{picture_width} != 100 && {data.CType} != textpic">
   <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
   <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
   <f:variable name="small_viewport_width">{image.referenceProperties.picture_width*small_viewport_width/100}</f:variable>
 </f:if>
+
+
+<f:comment>
+  Special configuration only for textpic CE
+  Render only 50% of the image for textpic CE if imageorient = Beside Text, Right/Left. In this case, images always take only 50% of the content element width on big viewport.
+</f:comment>
+<f:if condition="{data.CType} == textpic">
+  <f:if condition="{data.imageorient} == 25 || {data.imageorient} == 26">
+    <f:then>
+      <f:if condition="{picture_width} > 50">
+        <f:variable name="picture_width">50</f:variable>
+      </f:if>
+      <f:variable name="fluid_viewport_width">{picture_width*fluid_viewport_width/100}</f:variable>
+      <f:variable name="fixed_viewport_width">{picture_width*fixed_viewport_width/100}</f:variable>
+      <f:variable name="small_viewport_width">100</f:variable>
+    </f:then>
+
+    <f:else>
+      <f:if condition="{picture_width} != 100">
+        <f:variable name="fluid_viewport_width">{image.referenceProperties.picture_width*fluid_viewport_width/100}</f:variable>
+        <f:variable name="fixed_viewport_width">{image.referenceProperties.picture_width*fixed_viewport_width/100}</f:variable>
+        <f:variable name="small_viewport_width">{image.referenceProperties.picture_width*small_viewport_width/100}</f:variable>
+      </f:if>
+    </f:else>
+  </f:if>
+</f:if>
+
 
 <f:comment>Viewport for medium screens</f:comment>
 <f:variable name="medium_viewport_width">{fluid_viewport_width}vw</f:variable>
@@ -120,15 +151,14 @@
       The image element inside the content with a specific width.
       Usually, it's up to 1400px based on the Bootstrap grid. Useful to render images not more than 1400px width for better performance.
     </f:comment>
-
     <f:variable name="big_viewport_width">{fixed_viewport_width}px</f:variable>
   </f:then>
 
   <f:else>
     <f:comment>
       The image element inside the content with a fluid/full-screen width. 100% width based on the Bootstrap grid.
-      Lower performance, but with the ability to design site with a full-screen layout. </f:comment>
-
+      Lower performance, but with the ability to design site with a full-screen layout.
+    </f:comment>
     <f:variable name="big_viewport_width">{fluid_viewport_width}vw</f:variable>
   </f:else>
 </f:if>
