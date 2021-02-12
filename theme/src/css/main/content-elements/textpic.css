@@ -14,15 +14,6 @@
   text-align: left;
 }
 
-.text-img-above-left .ce-textpic__picture .picture-partial__item-img,
-.text-img-below-left .ce-textpic__picture .picture-partial__item-img,
-.text-img-above-right .ce-textpic__picture .picture-partial__item-img,
-.text-img-below-right .ce-textpic__picture .picture-partial__item-img,
-.text-img-above-center .ce-textpic__picture .picture-partial__item-img,
-.text-img-below-center .ce-textpic__picture .picture-partial__item-img {
-  width: auto;
-}
-
 .text-img-above-right .ce-textpic__picture,
 .text-img-below-right .ce-textpic__picture {
   text-align: right;
@@ -102,11 +93,6 @@
 
   .text-img-right .ce-textpic__text {
     padding-right: 1rem;
-  }
-
-  .text-img-right .picture-partial__item-img,
-  .text-img-left .picture-partial__item-img {
-    width: auto;
   }
 }
 
