@@ -85,10 +85,16 @@ config {
 }
 [end]
 
-
-// Overwrite the default TYPO3 Cache-control header
+// Overwrite the default TYPO3 Cache-control header if constant $config.cacheControl = true
 [{$config.cacheControl} == 1 && backend.user.isLoggedIn == false]
 config.additionalHeaders {
   10.header = Cache-control: {$config.cacheControlValue}
+}
+[end]
+
+// Overwrite the default TYPO3 Cache-control header with env:OVERWRITE_DEFAULT_CACHE_CONTROL_HEADER
+[getenv("OVERWRITE_DEFAULT_CACHE_CONTROL_HEADER") && {$config.cacheControl} == 0 && backend.user.isLoggedIn == false]
+config.additionalHeaders {
+  10.header := getEnv(OVERWRITE_DEFAULT_CACHE_CONTROL_HEADER)
 }
 [end]
