@@ -10,7 +10,7 @@
       <f:render partial="Media/Type/Video" arguments="{data: data, file:file}"/>
     </f:case>
     <f:defaultCase>
-      <f:render partial="Media/Type/Picture" arguments="{data: data, file:file, height:height, width:width}"/>
+      <f:render partial="Media/Type/Picture" arguments="{data:data, file:file, height:height, width:width, mobile_width:mobile_width}"/>
     </f:defaultCase>
   </f:switch>
 
