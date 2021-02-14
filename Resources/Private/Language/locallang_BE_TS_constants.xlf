@@ -10,7 +10,7 @@
 			<!-- ==================== -->
 			<!-- category -->
 			<trans-unit id="category.t3kitConfig" resname="category.t3kitConfig">
-				<source>t3kit General config</source>
+				<source>__t3kit Config</source>
 			</trans-unit>
 			<!-- settings -->
 			<trans-unit id="config.headerComment" resname="config.headerComment">
@@ -20,7 +20,7 @@
 				<source>Overwrite the default TYPO3 Cache-control header</source>
 			</trans-unit>
 			<trans-unit id="config.cacheControlMaxAge" resname="config.cacheControlMaxAge">
-				<source>Cache-control max-age=</source>
+				<source>Cache-control</source>
 			</trans-unit>
 
 
@@ -29,7 +29,7 @@
 			<!-- ============================ -->
 			<!-- category -->
 			<trans-unit id="category.t3kitContentElement" resname="category.t3kitContentElement">
-				<source>t3kit Content Element</source>
+				<source>__t3kit Content Element</source>
 			</trans-unit>
 			<!-- subcategory media -->
 			<trans-unit id="subcategory.media" resname="subcategory.media">
@@ -86,7 +86,7 @@
 			<!-- ============================ -->
 			<!-- category -->
 			<trans-unit id="category.t3kitPage" resname="category.t3kitPage">
-				<source>t3kit Page</source>
+				<source>__t3kit Page</source>
 			</trans-unit>
 			<!-- subcategory -->
 			<trans-unit id="subcategory.meta" resname="subcategory.meta">
