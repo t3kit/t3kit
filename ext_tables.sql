@@ -46,6 +46,7 @@ CREATE TABLE tt_content (
 	page_links_3 text,
 	color_class varchar(60) DEFAULT '0' NOT NULL,
 	background_color_class varchar(60) DEFAULT '0' NOT NULL,
+	textorient varchar(60) DEFAULT '' NOT NULL,
 	tx_t3kit_slider_item int(11) unsigned DEFAULT '0',
 );
 

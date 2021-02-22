@@ -234,6 +234,16 @@
 			<trans-unit id="svg_width" resname="svg_width">
 				<source>SVG image width</source>
 			</trans-unit>
+			<!-- textorient -->
+			<trans-unit id="textorient" resname="textorient">
+				<source>Text position</source>
+			</trans-unit>
+			<trans-unit id="textorient.default" resname="textorient.default">
+				<source>Strict. 50% of the content element</source>
+			</trans-unit>
+			<trans-unit id="textorient.auto" resname="textorient.auto">
+				<source>Auto. Depend on the image/media size</source>
+			</trans-unit>
 
 			<!-- Content element Appearance tab config fields translations -->
 			<!-- space_before/space_after -->

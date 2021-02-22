@@ -1110,6 +1110,33 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
         ]
     ],
 ]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'textorient' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient',
+        'displayCond' => [
+            'OR' => [
+                'FIELD:imageorient:=:25',
+                'FIELD:imageorient:=:26'
+            ],
+        ],
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.default',
+                    0
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.auto',
+                    'textorient-auto'
+                ],
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
 
 /*
  * ###########################
@@ -1165,6 +1192,17 @@ $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments'] = [
         section_container_width
     '
 ];
+
+// rewrite gallerySettings palette
+$GLOBALS['TCA']['tt_content']['palettes']['gallerySettings'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.gallerySettings',
+    'showitem' => '
+        imageorient,
+        imagecols,
+        textorient
+    '
+];
+
 // add mediaAdjustments_height palette
 $GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments_height'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',

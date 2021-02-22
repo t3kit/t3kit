@@ -71,6 +71,11 @@
 /* @media (max-width: 991.98px) { ... } */
 /* Large devices (desktops, 992px and up) lg */
 @media (min-width: 992px) {
+  .ce-textpic.textorient-auto .ce-textpic__picture {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+
   .text-img-left {
     flex-direction: row;
   }

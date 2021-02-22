@@ -29,6 +29,12 @@
 				</source>
 			</trans-unit>
 
+			<trans-unit id="textorient.description" resname="textorient.description">
+				<source>
+					Body text width relative to the content element.&lt;br&gt;
+					By default, this is strictly 50% for text and images, but with a smaller image/media, the text will remain 50% until you change it to &lt;strong&gt;“auto”&lt;/strong&gt;
+				</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
