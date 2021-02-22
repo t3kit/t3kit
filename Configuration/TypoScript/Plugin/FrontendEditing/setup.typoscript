@@ -1,5 +1,0 @@
-# ###########################
-# Import frontend_editing typoscript
-# ===========================
-
-config.frontend_editing = 1

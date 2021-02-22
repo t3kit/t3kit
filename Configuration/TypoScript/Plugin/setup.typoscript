@@ -4,6 +4,3 @@
 
 // indexed_search
 @import 'EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/setup.typoscript'
-
-// frontend_editing
-@import 'EXT:t3kit/Configuration/TypoScript/Plugin/FrontendEditing/setup.typoscript'
