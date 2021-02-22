@@ -162,19 +162,19 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.16-9',
-                    '16by9'
+                    '16x9'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.21-9',
-                    '21by9'
+                    '21x9'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.4-3',
-                    '4by3'
+                    '4x3'
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:aspect_ratio.1-1',
-                    '1by1'
+                    '1x1'
                 ]
             ],
             'default' => '16by9',
