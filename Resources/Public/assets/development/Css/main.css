@@ -7491,28 +7491,25 @@ fieldset:disabled .btn {
 .text-media-above-right,
 .text-media-above-center,
 .text-media-left {
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
-.text-media-left,
-.text-media-right {
-  .ce-textmedia__media,
-  .ce-textmedia__text {
-    padding: 0 1rem;
-  }
+.text-media-left .ce-textmedia__media {
+  padding: 0;
+}
+.text-media-right .ce-textmedia__media {
+  padding: 0;
+}
+.text-media-left .ce-textmedia__text {
+  padding: 0;
+}
+.text-media-right .ce-textmedia__text {
+  padding: 0;
 }
 /* -------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) xs */
 /* @media (max-width: 575.98px) { ... } */
 /* Small devices (landscape phones, 576px and up) sm */
-@media (min-width: 576px) {
-  .text-media-left {
-    flex-direction: row;
-  }
-
-  .text-media-right {
-    flex-direction: row-reverse;
-  }
-}
+/* @media (min-width: 576px) { ... } */
 /* -------------------------------------------------------- */
 /* Small devices (landscape phones, less than 768px) sm */
 /* @media (max-width: 767.98px) { ... } */
@@ -7522,7 +7519,36 @@ fieldset:disabled .btn {
 /* Medium devices (tablets, less than 992px) md */
 /* @media (max-width: 991.98px) { ... } */
 /* Large devices (desktops, 992px and up) lg */
-/* @media (min-width: 992px) { ... } */
+@media (min-width: 992px) {
+  .ce-textmedia.textorient-auto .ce-textmedia__media {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+
+  .text-media-left {
+    flex-direction: row;
+  }
+
+  .text-media-right {
+    flex-direction: row-reverse;
+  }
+
+  .text-media-left .ce-textmedia__media {
+    padding-right: 1rem;
+  }
+
+  .text-media-right .ce-textmedia__media {
+    padding-left: 1rem;
+  }
+
+  .text-media-left .ce-textmedia__text {
+    padding-left: 1rem;
+  }
+
+  .text-media-right .ce-textmedia__text {
+    padding-right: 1rem;
+  }
+}
 /* -------------------------------------------------------- */
 /* Large devices (desktops, less than 1200px) lg */
 /* @media (max-width: 1199.98px) { ... } */
@@ -7593,6 +7619,11 @@ fieldset:disabled .btn {
 /* @media (max-width: 991.98px) { ... } */
 /* Large devices (desktops, 992px and up) lg */
 @media (min-width: 992px) {
+  .ce-textpic.textorient-auto .ce-textpic__picture {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+
   .text-img-left {
     flex-direction: row;
   }
