@@ -228,27 +228,8 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
  * add new TCA columns for tt_content
  * ===========================
  */
-// ----------------
-// Content element Appearance tab configs
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'add_background' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:add_background',
-//         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:add_background.description',
-//         'exclude' => true,
-//         'config' => [
-//             'type' => 'check',
-//             'items' => [
-//                 [
-//                     0 => '',
-//                     1 => '',
-//                 ]
-//             ],
-//             'default' => 0,
-//         ],
-//         'onChange' => 'reload',
-//     ]
-// ]);
 
+// Content element Appearance tab configs
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'background_color_class' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color_class',
@@ -299,121 +280,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
     ],
 ]);
 
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'background_color' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color',
-//         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color.description',
-//         'displayCond' => 'FIELD:add_background:!=:0',
-//         'exclude' => true,
-//         'config' => [
-//             'type' => 'input',
-//             'renderType' => 'colorpicker',
-//             'default' => '#fff',
-//         ],
-//     ],
-// ]);
-
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'background' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background',
-//         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background.description',
-//         'displayCond' => 'FIELD:add_background:!=:0',
-//         'exclude' => true,
-//         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('background', [
-//             'appearance' => [
-//                 'createNewRelationLinkTitle' => '
-//                 LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference
-//                 ',
-//             ],
-//             'overrideChildTca' => [
-//                 'types' => [
-//                     '0' => [
-//                         'showitem' => '
-//                         --palette--;;imageoverlayPalette,
-//                         --palette--;;filePalette'
-//                     ],
-//                     \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
-//                         'showitem' => '
-//                         --palette--;;imageoverlayPalette,
-//                         --palette--;;filePalette'
-//                     ],
-//                     \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-//                         'showitem' => '
-//                         --palette--;;imageoverlayPalette,
-//                         --palette--;;filePalette'
-//                     ],
-//                     \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
-//                         'showitem' => '
-//                         --palette--;;audioOverlayPalette,
-//                         --palette--;;filePalette'
-//                     ],
-//                     \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
-//                         'showitem' => '
-//                         --palette--;;videoOverlayPalette,
-//                         --palette--;;filePalette'
-//                     ],
-//                     \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
-//                         'showitem' => '
-//                         --palette--;;imageoverlayPalette,
-//                         --palette--;;filePalette'
-//                     ]
-//                 ],
-//                 'columns' => [
-//                     'uid_local' => [
-//                         'config' => [
-//                             'appearance' => [
-//                                 'elementBrowserAllowed' => 'jpg,jpeg,png,svg,youtube'
-//                             ]
-//                         ]
-//                     ]
-//                 ]
-//             ],
-//             'minitems' => 0,
-//             'maxitems' => 1,
-
-//         ], $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext'])
-//     ],
-// ]);
-
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'background_parallax' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_parallax',
-//         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_parallax.description',
-//         'displayCond' => 'FIELD:add_background:!=:0',
-//         'exclude' => true,
-//         'config' => [
-//             'type' => 'check',
-//             'items' => [
-//                 [
-//                     0 => '',
-//                     1 => '',
-//                 ]
-//             ],
-//             'default' => 0,
-//         ]
-//     ]
-// ]);
-
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-//     'full_width_background' => [
-//         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:full_width_background',
-//         'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:full_width_background.description',
-//         'displayCond' => 'FIELD:add_background:!=:0',
-//         'exclude' => true,
-//         'config' => [
-//             'type' => 'check',
-//             'items' => [
-//                 [
-//                     0 => '',
-//                     1 => '',
-//                 ]
-//             ],
-//             'default' => 0,
-//         ]
-//     ]
-// ]);
-
-// ----------------
 // Content element custom t3kit configs
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'header_style' => [
