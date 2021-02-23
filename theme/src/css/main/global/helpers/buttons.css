@@ -12,7 +12,7 @@
   --t3-btn-primary-bg-l: var(--t3-secondary-l);
   --t3-btn-primary-bg: hsl(var(--t3-btn-primary-bg-hs), var(--t3-btn-primary-bg-l));
   --t3-btn-primary-color: var(--t3-body-bg);
-  --t3-btn-primary-borber-color: hsl(var(--t3-btn-primary-bg-hs), var(--t3-btn-primary-bg-l));
+  --t3-btn-primary-border-color: hsl(var(--t3-btn-primary-bg-hs), var(--t3-btn-primary-bg-l));
   --t3-btn-primary-hover-color: var(--t3-btn-primary-color);
   --t3-btn-primary-hover-bg: hsl(var(--t3-btn-primary-bg-hs), calc(var(--t3-btn-primary-bg-l) - 8%));
   --t3-btn-primary-hover-border-color: hsl(var(--t3-btn-primary-bg-hs), calc(var(--t3-btn-primary-bg-l) - 10%));
@@ -25,7 +25,7 @@
   --t3-btn-light-bg-l: var(--t3-light-l);
   --t3-btn-light-bg: hsl(var(--t3-btn-light-bg-hs), var(--t3-btn-light-bg-l));
   --t3-btn-light-color: var(--t3-body-color);
-  --t3-btn-light-borber-color: hsl(var(--t3-btn-light-bg-hs), var(--t3-btn-light-bg-l));
+  --t3-btn-light-border-color: hsl(var(--t3-btn-light-bg-hs), var(--t3-btn-light-bg-l));
   --t3-btn-light-hover-color: var(--t3-btn-light-color);
   --t3-btn-light-hover-bg: hsl(var(--t3-btn-light-bg-hs), calc(var(--t3-btn-light-bg-l) - 8%));
   --t3-btn-light-hover-border-color: hsl(var(--t3-btn-light-bg-hs), calc(var(--t3-btn-light-bg-l) - 10%));
@@ -38,7 +38,7 @@
   --t3-btn-dark-bg-l: var(--t3-dark-l);
   --t3-btn-dark-bg: hsl(var(--t3-btn-dark-bg-hs), var(--t3-btn-dark-bg-l));
   --t3-btn-dark-color: var(--t3-body-bg);
-  --t3-btn-dark-borber-color: hsl(var(--t3-btn-dark-bg-hs), var(--t3-btn-dark-bg-l));
+  --t3-btn-dark-border-color: hsl(var(--t3-btn-dark-bg-hs), var(--t3-btn-dark-bg-l));
   --t3-btn-dark-hover-color: var(--t3-btn-dark-color);
   --t3-btn-dark-hover-bg: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 8%));
   --t3-btn-dark-hover-border-color: hsl(var(--t3-btn-dark-bg-hs), calc(var(--t3-btn-dark-bg-l) - 10%));
@@ -112,7 +112,7 @@ fieldset:disabled .btn {
 .btn-primary {
   color: var(--t3-btn-primary-color);
   background-color: var(--t3-btn-primary-bg);
-  border-color: var(--t3-btn-primary-borber-color);
+  border-color: var(--t3-btn-primary-border-color);
 }
 
 .btn-primary:hover {
@@ -147,14 +147,14 @@ fieldset:disabled .btn {
 .btn-primary.disabled {
   color: var(--t3-btn-primary-color);
   background-color: var(--t3-btn-primary-bg);
-  border-color: var(--t3-btn-primary-borber-color);
+  border-color: var(--t3-btn-primary-border-color);
 }
 
 /* light button style */
 .btn-light {
   color: var(--t3-btn-light-color);
   background-color: var(--t3-btn-light-bg);
-  border-color: var(--t3-btn-light-borber-color);
+  border-color: var(--t3-btn-light-border-color);
 }
 
 .btn-light:hover {
@@ -189,14 +189,14 @@ fieldset:disabled .btn {
 .btn-light.disabled {
   color: var(--t3-btn-light-color);
   background-color: var(--t3-btn-light-bg);
-  border-color: var(--t3-btn-light-borber-color);
+  border-color: var(--t3-btn-light-border-color);
 }
 
 /* dark button style */
 .btn-dark {
   color: var(--t3-btn-dark-color);
   background-color: var(--t3-btn-dark-bg);
-  border-color: var(--t3-btn-dark-borber-color);
+  border-color: var(--t3-btn-dark-border-color);
 }
 
 .btn-dark:hover {
@@ -231,7 +231,7 @@ fieldset:disabled .btn {
 .btn-dark.disabled {
   color: var(--t3-btn-dark-color);
   background-color: var(--t3-btn-dark-bg);
-  border-color: var(--t3-btn-dark-borber-color);
+  border-color: var(--t3-btn-dark-border-color);
 }
 
 /* outline-primary */
