@@ -26,8 +26,8 @@ async function compileJs (localConf, options) {
         plugins: [
           nodeResolve(),
           replace({
-            'process.env.NODE_ENV': process.env.NODE_ENV,
-            global: 'window'
+            preventAssignment: true,
+            'process.env.NODE_ENV': process.env.NODE_ENV
           })
         ]
       }
