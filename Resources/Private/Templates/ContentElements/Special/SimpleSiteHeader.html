@@ -22,9 +22,10 @@
 <f:comment>======== Main navigation ========</f:comment>
 <f:section name="mainNavigation">
 
+    <f:comment>add "navbar" class only for the one reason - to disable Popperjs in the Bootstrap dropdown js script</f:comment>
     <nav id="main-navigation"
       aria-label="Primary"
-      class="main-navigation {flexform.main_nav_mobile_breakpoint}">
+      class="main-navigation {flexform.main_nav_mobile_breakpoint} navbar">
       <div class="main-navigation__container
         {flexform.main_nav_mobile_toggle_position}
         {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">

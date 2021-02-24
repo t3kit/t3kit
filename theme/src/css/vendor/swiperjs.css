@@ -52,6 +52,13 @@
   margin: 0 auto;
 }
 
+.swiper-container-pointer-events {
+  touch-action: pan-y;
+}
+.swiper-container-pointer-events.swiper-container-vertical {
+  touch-action: pan-x;
+}
+
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
@@ -193,7 +200,7 @@
   width: 8px;
   height: 8px;
   display: inline-block;
-  border-radius: 100%;
+  border-radius: 50%;
   background: #000;
   opacity: 0.2;
 }
