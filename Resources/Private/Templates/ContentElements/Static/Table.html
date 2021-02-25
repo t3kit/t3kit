@@ -7,14 +7,23 @@
 
   <f:if condition="{table}">
 
-    <div class="ce-table__wrp">
+    <f:comment><!-- use tableClass, an array of classes to build into one string--></f:comment>
+    <f:if condition="{tableClass}">
+      <f:for each="{tableClass}" as="class" iteration="i">
 
-      <f:comment><!-- use tableClass, an array of classes to build into one string--></f:comment>
-      <f:if condition="{tableClass}">
-        <f:for each="{tableClass}" as="class" iteration="i">
-          <f:variable name="table_classes">{table_classes} {class}</f:variable>
-        </f:for>
-      </f:if>
+        <f:if condition="{class} == table-responsive">
+          <f:then>
+            <f:variable name="table_responsive">{class}</f:variable>
+          </f:then>
+          <f:else>
+            <f:variable name="table_classes">{table_classes} {class}</f:variable>
+          </f:else>
+        </f:if>
+
+      </f:for>
+    </f:if>
+
+    <div class="ce-table__wrp {table_responsive}">
 
       <table class="ce-table table {f:if(condition: table_classes, then: '{table_classes}')}">
         <f:if condition="{data.table_caption}">
