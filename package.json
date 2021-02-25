@@ -7,8 +7,8 @@
   "repository": "t3kit/t3kit",
   "scripts": {
     "postinstall": "husky install",
-    "lint-css": "stylelint 'theme/src/css/**/*.css' --cache --cache-location .cache/.stylelintcache",
-    "lint-scss": "stylelint 'theme/src/scss/**/*.scss' --cache --cache-location .cache/.stylelintcache",
+    "lint-css": "stylelint 'theme/src/css/**/*.css'",
+    "lint-scss": "stylelint 'theme/src/scss/**/*.scss'",
     "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
     "lint-config": "standard -v 'theme/config/**/*.js' | snazzy",
     "lint-all": "npm-run-all --parallel lint-css lint-scss lint-js lint-config",
