@@ -1376,7 +1376,7 @@
         }
     }
 
-    window.SimpleLightbox = SimpleLightbox;
+    global.SimpleLightbox = SimpleLightbox;
 
     const simpleLightbox = function (className, options) {
       return new SimpleLightbox(className, options)

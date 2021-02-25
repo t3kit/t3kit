@@ -355,9 +355,8 @@ label {
 button {
   border-radius: 0;
 }
-button:focus {
-  outline: dotted 1px;
-  outline: -webkit-focus-ring-color auto 5px;
+button:focus:not(:focus-visible) {
+  outline: 0;
 }
 input,
 button,
@@ -1771,7 +1770,7 @@ progress {
 }
 .ratio::before {
   display: block;
-  padding-top: var(--aspect-ratio);
+  padding-top: var(--bs-aspect-ratio);
   content: "";
 }
 .ratio > * {
@@ -1782,16 +1781,16 @@ progress {
   height: 100%;
 }
 .ratio-1x1 {
-  --aspect-ratio: 100%;
+  --bs-aspect-ratio: 100%;
 }
 .ratio-4x3 {
-  --aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: calc(3 / 4 * 100%);
 }
 .ratio-16x9 {
-  --aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: calc(9 / 16 * 100%);
 }
 .ratio-21x9 {
-  --aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: calc(9 / 21 * 100%);
 }
 .fixed-top {
   position: fixed;
@@ -1848,7 +1847,7 @@ progress {
   }
 }
 .visually-hidden,
-.visually-hidden-focusable:not(:focus) {
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -7489,7 +7488,9 @@ fieldset:disabled .btn {
 }
 .text-media-above-left,
 .text-media-above-right,
-.text-media-above-center,
+.text-media-above-center {
+  flex-direction: column;
+}
 .text-media-left {
   flex-direction: column-reverse;
 }
@@ -7588,7 +7589,9 @@ fieldset:disabled .btn {
 }
 .text-img-above-left,
 .text-img-above-right,
-.text-img-above-center,
+.text-img-above-center {
+  flex-direction: column;
+}
 .text-img-left {
   flex-direction: column-reverse;
 }
@@ -9120,6 +9123,12 @@ fieldset:disabled .btn {
   transition-timing-function: ease-out;
   margin: 0 auto;
 }
+.swiper-container-pointer-events {
+  touch-action: pan-y;
+}
+.swiper-container-pointer-events.swiper-container-vertical {
+  touch-action: pan-x;
+}
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
@@ -9250,7 +9259,7 @@ fieldset:disabled .btn {
   width: 8px;
   height: 8px;
   display: inline-block;
-  border-radius: 100%;
+  border-radius: 50%;
   background: #000;
   opacity: 0.2;
 }
