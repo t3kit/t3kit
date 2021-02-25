@@ -33,7 +33,10 @@
 
 .text-img-above-left,
 .text-img-above-right,
-.text-img-above-center,
+.text-img-above-center {
+  flex-direction: column;
+}
+
 .text-img-left {
   flex-direction: column-reverse;
 }

@@ -33,7 +33,10 @@
 
 .text-media-above-left,
 .text-media-above-right,
-.text-media-above-center,
+.text-media-above-center {
+  flex-direction: column;
+}
+
 .text-media-left {
   flex-direction: column-reverse;
 }
