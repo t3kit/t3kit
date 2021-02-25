@@ -30,6 +30,7 @@
     "swiper": "6.4.15"
   },
   "devDependencies": {
+    "stylelint-no-unsupported-browser-features": "~4.1.4",
     "@rollup/plugin-node-resolve": "~11.2.0",
     "@rollup/plugin-replace": "~2.4.1",
     "boxen": "~5.0.0",
@@ -68,8 +69,8 @@
   },
   "browserslist": [
     "> 1.5% and last 2 versions",
-    "IOS >= 13 and > 0.5%",
-    "Safari >= 13"
+    "IOS >= 13 and > 1.5%",
+    "Safari >= 13 and > 1.5%"
   ],
   "standard": {
     "ignore": [
@@ -80,11 +81,15 @@
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
+    "plugins": [
+      "stylelint-no-unsupported-browser-features"
+    ],
     "rules": {
       "selector-pseudo-element-colon-notation": "single",
       "no-descending-specificity": null,
       "comment-empty-line-before": null,
-      "at-rule-no-unknown": null
+      "at-rule-no-unknown": null,
+      "plugin/no-unsupported-browser-features": true
     },
     "ignoreFiles": [
       "**/vendor/**/*.css",
