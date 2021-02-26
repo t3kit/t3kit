@@ -5,7 +5,11 @@
 <f:section name="Header" />
 
 <f:section name="Main">
-<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Slider.html [begin] -->
+  <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Slider.html [begin] -->
+  <f:if condition="{flexform.jsname}">
+    <f:render partial="Js/{flexform.jsname}" arguments="{_all}" />
+  </f:if>
+
   <f:if condition="{flexform.height} == 0">
     <f:then>
       <f:variable name="height">400</f:variable>

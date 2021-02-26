@@ -18,6 +18,17 @@
 							</config>
 						</TCEforms>
 					</height>
+					<jsname>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:flexform.jsname</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</jsname>
 					<!--
 					<interval>
 						<TCEforms>

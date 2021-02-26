@@ -16,6 +16,13 @@
 			<trans-unit id="slider.tab" resname="slider.tab">
 				<source>Image slider items</source>
 			</trans-unit>
+			<trans-unit id="flexform.height" resname="flexform.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="flexform.jsname" resname="flexform.jsname">
+				<source>JS file name. (Resources/Public/assets/development|production/Js/(jsname).html) (in t3kit by default it is "Swiperjs--async-p1")</source>
+			</trans-unit>
+
 			<trans-unit id="slider.overlay" resname="slider.tab">
 				<source>Overlay color with opacity</source>
 			</trans-unit>
@@ -35,9 +42,6 @@
 				<source>Light overlay</source>
 			</trans-unit>
 
-			<trans-unit id="flexform.height" resname="flexform.height">
-				<source>Height</source>
-			</trans-unit>
 			<trans-unit id="flexform.interval" resname="flexform.interval">
 				<source>Interval</source>
 			</trans-unit>
