@@ -17,6 +17,7 @@ lib.contentElement {
   }
   partialRootPaths {
     0 = EXT:t3kit/Resources/Private/Partials/ContentElements
+    20.dataWrap = EXT:{site:theme}/Resources/Public/assets/production
     100.dataWrap = EXT:{site:theme}/Resources/Private/Partials/ContentElements
     200 = {$plugin.t3kit.contentElement.view.partialRootPath}
   }
@@ -25,13 +26,13 @@ lib.contentElement {
     100.dataWrap = EXT:{site:theme}/Resources/Private/Layouts/ContentElements
     200 = {$plugin.t3kit.contentElement.view.layoutRootPath}
   }
-  // dataProcessing {
-  //   100 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-  //   100 {
-  //     references.fieldName = background
-  //     as = background
-  //   }
-  // }
+  dataProcessing {
+    # Site Processor
+    110 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    110 {
+      as = site
+    }
+  }
   variables {
     backend_layout = TEXT
     backend_layout {
@@ -69,3 +70,12 @@ lib.contentElement {
 # ===========================
 module.tx_backend.view.partialRootPaths.100 = EXT:t3kit/Resources/Private/Partials/
 module.tx_backend.view.partialRootPaths.200 = {$plugin.t3kit.contentElement.pageLayoutView.partialRootPath}
+
+
+# If [Development]
+# TYPO3 Development context and every its subcontext
+[applicationContext matches "#^Development#"]
+lib.contentElement.partialRootPaths {
+  20.dataWrap = EXT:{site:theme}/Resources/Public/assets/development
+}
+[end]
