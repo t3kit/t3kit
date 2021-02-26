@@ -68,7 +68,7 @@
   },
   "scripts": {
     "lint-php": "phpcs --colors",
-    "lint-typoscript": "typoscript-lint --ansi",
+    "lint-typoscript": "typoscript-lint --ansi --fail-on-warnings",
     "lint-yaml": "yaml-lint --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
     "lint-xml": "xmllint --ansi --exclude=build/ .",
     "lint-editorconfig": "ec -exclude LICENSE.txt",
