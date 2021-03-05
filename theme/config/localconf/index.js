@@ -29,6 +29,7 @@ localConf.CSS_SRC = `${localConf.SRC}${localConf.CSS_FOLDER.toLowerCase()}`
 localConf.CSS_DIST = `${localConf.DIST}${localConf.CONTEXT}/${localConf.CSS_FOLDER}`
 localConf.CSS_LINK = `<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.CSS_FOLDER}%_file_%" />`
 localConf.CSS_LINK_ASYNC = `<f:asset.css identifier="%_id_%" href="EXT:{site.configuration.theme}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.CSS_FOLDER}%_file_%" media="print" additionalAttributes="{onload=\'this.media=\\'all\\'\'}" />` // eslint-disable-line
+localConf.CSS_LINK_INLINE = '<f:asset.css identifier="%_id_%" %_settings_% > %_inlineData_% </f:asset.css>'
 
 // SCSS compilation variables
 localConf.SCSS_SRC = `${localConf.SRC}${localConf.SCSS_FOLDER}`
@@ -38,6 +39,7 @@ localConf.SCSS_DIST = `${localConf.CSS_SRC}${localConf.VENDOR_FOLDER}`
 localConf.JS_SRC = `${localConf.SRC}${localConf.JS_FOLDER.toLowerCase()}`
 localConf.JS_DIST = `${localConf.DIST}${localConf.CONTEXT}/${localConf.JS_FOLDER}`
 localConf.JS_LINK = `<f:asset.script identifier="%_id_%" %_settings_% src="EXT:{site.configuration.theme}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.JS_FOLDER}%_file_%" />`
+localConf.JS_LINK_INLINE = '<f:asset.script identifier="%_id_%" %_settings_% > %_inlineData_% </f:asset.script>'
 
 // Icons variables
 localConf.ICONS = [

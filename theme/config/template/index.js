@@ -21,6 +21,13 @@ async function addCssTemplate (localConf) {
       }
       if (fileName.includes('async')) {
         link = localConf.CSS_LINK_ASYNC
+      } else if (fileName.includes('inline')) {
+        const fileInline = await fsPromises.readFile(file.path, 'utf8')
+        if (fileName.includes('inline-p1')) {
+          link = addLinkSettings(localConf.CSS_LINK_INLINE, 'priority="1"').replace('%_inlineData_%', fileInline).replace('sourceMappingURL', '')
+        } else {
+          link = addLinkSettings(localConf.CSS_LINK_INLINE, '').replace('%_inlineData_%', fileInline).replace('sourceMappingURL', '')
+        }
       } else {
         link = localConf.CSS_LINK
       }
@@ -63,8 +70,19 @@ async function addJsTemplate (localConf) {
         } else {
           link = addLinkSettings(localConf.JS_LINK, 'async="true"')
         }
+      } else if (fileName.includes('inline')) {
+        const fileInline = await fsPromises.readFile(file.path, 'utf8')
+        if (fileName.includes('inline-p1')) {
+          link = addLinkSettings(localConf.JS_LINK_INLINE, 'priority="1"').replace('%_inlineData_%', fileInline).replace('sourceMappingURL', '')
+        } else {
+          link = addLinkSettings(localConf.JS_LINK_INLINE, '').replace('%_inlineData_%', fileInline).replace('sourceMappingURL', '')
+        }
       } else {
-        link = addLinkSettings(localConf.JS_LINK, '')
+        if (fileName.includes('-p1')) {
+          link = addLinkSettings(localConf.JS_LINK, 'priority="1"')
+        } else {
+          link = addLinkSettings(localConf.JS_LINK, '')
+        }
       }
       tmplName = tmplName.charAt(0).toUpperCase() + tmplName.slice(1)
       link = link.replace('%_file_%', fileName).replace('%_id_%', fileName.slice(0, -3))
