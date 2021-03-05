@@ -213,6 +213,11 @@
   border-radius: var(--t3-ce-header-nav-dropdown-border-radius);
 }
 
+.main-navigation__list .main-navigation__item:last-child .main-navigation__dropdown-item-list {
+  right: 0;
+  left: auto;
+}
+
 .dropdown-divider {
   height: 0;
   margin: 0.5rem 0;
