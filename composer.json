@@ -83,7 +83,8 @@
   "extra": {
     "typo3/cms": {
         "web-dir": "build/public",
-        "app-dir": "build"
+        "app-dir": "build",
+        "extension-key": "t3kit"
     }
   }
 }
