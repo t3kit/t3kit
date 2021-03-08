@@ -297,9 +297,6 @@
 			<trans-unit id="icon_source" resname="icon_source">
 				<source>Icon source</source>
 			</trans-unit>
-			<trans-unit id="icon_class" resname="icon_class">
-				<source>Icon appearance</source>
-			</trans-unit>
 			<trans-unit id="icon" resname="icon">
 				<source>Icon</source>
 			</trans-unit>

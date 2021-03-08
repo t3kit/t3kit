@@ -3,54 +3,38 @@
 defined('TYPO3_MODE') || die();
 
 /*
+ * #####################################################################
+ * #####################################################################
+ * TCA Columns
+ * =====================================================================
+ * =====================================================================
+ */
+
+
+/*
  * ###########################
- * rewrite existed TCA columns for tt_content
+ * Header
+ * ---------------------------
+ * header_text
+ * header_layout
+ * header_style
+ * header_position
+ * header_link
  * ===========================
  */
-// ----------------
-// rewrite "header_link" column config
-$GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['columns']['header_link'],
-    [
-        'config' => [
-            'fieldControl' => [
-                'linkPopup' => [
-                    'options' => [
-                        'blindLinkFields' => 'params, target, class, title',
-                        'blindLinkOptions' => 'folder, mail, telephone'
-                    ],
-                ],
-            ],
-        ]
-    ]
-);
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'header_position' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position',
+    'header_text' => [
         'exclude' => true,
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
-                    '0'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
-                    'center'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
-                    'end'
-                ]
-            ],
-            'default' => '0'
+            'type' => 'text',
+            'cols' => 80,
+            'rows' => 5
         ]
-    ]
+    ],
 ]);
 
+// override TYPO3 "header_layout" column config (frontend sys. ext.)
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'header_layout' => [
         'exclude' => true,
@@ -93,194 +77,6 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
     ],
 ]);
 
-// rewrite image_zoom column
-$GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['columns']['image_zoom'],
-    [
-        'onChange' => 'reload',
-        'config' => [
-            'default' => 0
-        ]
-    ]
-);
-
-// rewrite space_before_class column
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'space_before_class' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:space_before_class',
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
-                    '0'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
-                    'margin-top-5'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
-                    'margin-top-10'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
-                    'margin-top-15'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
-                    'margin-top-20'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
-                    'margin-top-25'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
-                    'margin-top-30'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
-                    'margin-top-40'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
-                    'margin-top-50'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
-                    'margin-top-60'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
-                    'margin-top-70'
-                ]
-            ],
-            'default' => '0'
-        ]
-    ],
-]);
-
-// rewrite space_after_class column
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'space_after_class' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:space_after_class',
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
-                    '0'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
-                    'margin-bottom-5'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
-                    'margin-bottom-10'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
-                    'margin-bottom-15'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
-                    'margin-bottom-20'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
-                    'margin-bottom-25'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
-                    'margin-bottom-30'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
-                    'margin-bottom-40'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
-                    'margin-bottom-50'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
-                    'margin-bottom-60'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
-                    'margin-bottom-70'
-                ]
-            ],
-            'default' => '0'
-        ]
-    ],
-]);
-
-
-/*
- * ###########################
- * add new TCA columns for tt_content
- * ===========================
- */
-
-// Content element Appearance tab configs
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'background_color_class' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color_class',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                ['none', '0'],
-                ['Primary', 'primary-bg-color'],
-                ['Secondary', 'secondary-bg-color'],
-                ['Dark', 'dark-bg-color'],
-                ['Light', 'light-bg-color'],
-                ['Default', 'default-bg-color'],
-                ['Inverted', 'inverted-bg-color'],
-                ['Gray 90', 'gray-90-bg-color'],
-                ['Gray 80', 'gray-80-bg-color'],
-                ['Gray 70', 'gray-70-bg-color'],
-                ['Gray 60', 'gray-60-bg-color'],
-                ['Gray 50', 'gray-50-bg-color'],
-                ['Gray 40', 'gray-40-bg-color'],
-                ['Gray 30', 'gray-30-bg-color'],
-                ['Gray 20', 'gray-20-bg-color'],
-                ['Gray 10', 'gray-10-bg-color']
-            ],
-            'default' => '0',
-        ],
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'color_class' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:color_class',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                ['none', '0'],
-                ['Primary', 'primary-color'],
-                ['Secondary', 'secondary-color'],
-                ['Dark', 'dark-color'],
-                ['Light', 'light-color'],
-                ['Inverted', 'inverted-color']
-            ],
-            'default' => '0',
-        ],
-    ],
-]);
-
-// Content element custom t3kit configs
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'header_style' => [
         'exclude' => true,
@@ -343,6 +139,71 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                 ]
             ],
             'default' => '0'
+        ]
+    ],
+]);
+
+// override TYPO3 "header_position" column config (frontend sys. ext.)
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'header_position' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
+                    '0'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
+                    'center'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
+                    'end'
+                ]
+            ],
+            'default' => '0'
+        ]
+    ]
+]);
+// override TYPO3 "header_link" column config (frontend sys. ext.)
+$GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['columns']['header_link'],
+    [
+        'config' => [
+            'fieldControl' => [
+                'linkPopup' => [
+                    'options' => [
+                        'blindLinkFields' => 'params, target, class, title',
+                        'blindLinkOptions' => 'folder, mail, telephone'
+                    ],
+                ],
+            ],
+        ]
+    ]
+);
+
+
+
+/*
+ * ###########################
+ * SubHeader
+ * ---------------------------
+ * subheader_text
+ * subheader_style
+ * ===========================
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'subheader_text' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.subheader',
+        'config' => [
+            'type' => 'text',
+            'cols' => 80,
+            'rows' => 5
         ]
     ],
 ]);
@@ -413,6 +274,15 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
     ],
 ]);
 
+
+
+/*
+ * ###########################
+ * Bodytext
+ * ---------------------------
+ * content_position
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'content_position' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
@@ -439,22 +309,27 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
     ],
 ]);
 
+
+
+/*
+ * ###########################
+ * Link/Button
+ * ---------------------------
+ * link_title
+ * link
+ * link_position
+ * accessible_link_label
+ * link_as_button
+ * button_size
+ * button_style
+ * button_full_width
+ * button_no_bg
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'link_title' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_title',
-        'config' => [
-            'type' => 'input',
-            'size' => 50,
-            'max' => 255
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'accessible_link_label' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:accessible_link_label',
         'config' => [
             'type' => 'input',
             'size' => 50,
@@ -514,62 +389,140 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'section_container_width' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width',
+    'accessible_link_label' => [
         'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:accessible_link_label',
         'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container',
-                    'container'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container_fluid',
-                    'container-fluid'
-                ]
-            ],
-            'default' => 'container',
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255
         ]
     ],
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'image_zoom_width' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width',
+    'link_as_button' => [
         'exclude' => true,
-        'displayCond' => 'FIELD:image_zoom:!=:0',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_as_button',
+        'onChange' => 'reload',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxLabeledToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => '',
+                    'labelChecked' => 'Enabled',
+                    'labelUnchecked' => 'Disabled',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_size' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1920',
-                    '1920'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.default',
+                    0
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1440',
-                    '1440'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.large',
+                    'btn-lg'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1200',
-                    '1200'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.992',
-                    '992'
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.800',
-                    '800'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.small',
+                    'btn-sm'
                 ]
             ],
-            'default' => '1920',
+            'default' => 0,
+        ]
+    ],
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_style' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.primary',
+                    'primary'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.dark',
+                    'dark'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.light',
+                    'light'
+                ]
+            ],
+            'default' => 'primary',
+        ]
+    ],
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_full_width' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_full_width',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => '',
+                ]
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'button_no_bg' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_no_bg',
+        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => '',
+                ]
+            ],
+            'default' => 0,
         ]
     ],
 ]);
 
+
+
+/*
+ * ###########################
+ * Image/Media
+ * ---------------------------
+ * simple_image
+ * svg_image
+ * picture
+ * advanced_image
+ * advanced_media
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'simple_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:simple_image',
@@ -632,7 +585,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
         ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
     ],
 ]);
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'svg_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:svg_image',
@@ -851,24 +803,123 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
 ]);
 
 
+
+/*
+ * ###########################
+ * Media Adjustments
+ * ---------------------------
+ * section_container_width
+ * image_zoom
+ * image_zoom_width
+ * textorient
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'height' => [
+    'section_container_width' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width',
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:height',
         'config' => [
-            'type' => 'input',
-            'size' => 4,
-            'max' => 4,
-            'eval' => 'int',
-            'range' => [
-                'upper' => 1999,
-                'lower' => 0,
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container',
+                    'container'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container_fluid',
+                    'container-fluid'
+                ]
             ],
-            'default' => 0
+            'default' => 'container',
         ]
     ],
 ]);
 
+// override TYPO3 "image_zoom" column config (frontend sys. ext.)
+$GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['columns']['image_zoom'],
+    [
+        'onChange' => 'reload',
+        'config' => [
+            'default' => 0
+        ]
+    ]
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'image_zoom_width' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width',
+        'exclude' => true,
+        'displayCond' => 'FIELD:image_zoom:!=:0',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1920',
+                    '1920'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1440',
+                    '1440'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1200',
+                    '1200'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.992',
+                    '992'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.800',
+                    '800'
+                ]
+            ],
+            'default' => '1920',
+        ]
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'textorient' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient',
+        'displayCond' => [
+            'OR' => [
+                'FIELD:imageorient:=:25',
+                'FIELD:imageorient:=:26'
+            ],
+        ],
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.default',
+                    0
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.auto',
+                    'textorient-auto'
+                ],
+            ],
+            'default' => 0,
+        ]
+    ],
+]);
+
+
+
+/*
+ * ###########################
+ * Icon
+ * ---------------------------
+ * icon_source
+ * icon
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'icon_source' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:icon_source',
@@ -885,23 +936,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
                     'Bootstrap',
                     'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
                 ],
-            ],
-            'default' => '',
-        ]
-    ]
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'icon_class' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:icon_class',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [   'None',
-                    ''
-                ]
             ],
             'default' => '',
         ]
@@ -933,141 +967,197 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
     ]
 ]);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'header_text' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header',
-        'config' => [
-            'type' => 'text',
-            'cols' => 80,
-            'rows' => 5
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'subheader_text' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.subheader',
-        'config' => [
-            'type' => 'text',
-            'cols' => 80,
-            'rows' => 5
-        ]
-    ],
-]);
 
 
+/*
+ * ###########################
+ * Appearance
+ * ---------------------------
+ * space_before_class
+ * space_after_class
+ * color_class
+ * background_color_class
+ * ===========================
+ */
+// override TYPO3 "space_before_class" column config (frontend sys. ext.)
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'link_as_button' => [
+    'space_before_class' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_as_button',
-        'onChange' => 'reload',
-        'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxLabeledToggle',
-            'items' => [
-                [
-                    0 => '',
-                    1 => '',
-                    'labelChecked' => 'Enabled',
-                    'labelUnchecked' => 'Disabled',
-                ]
-            ],
-            'default' => 0,
-        ]
-    ],
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'button_size' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size',
-        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:space_before_class',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.default',
-                    0
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
+                    '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.large',
-                    'btn-lg'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
+                    'margin-top-5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.small',
-                    'btn-sm'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
+                    'margin-top-10'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
+                    'margin-top-15'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
+                    'margin-top-20'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
+                    'margin-top-25'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
+                    'margin-top-30'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
+                    'margin-top-40'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
+                    'margin-top-50'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
+                    'margin-top-60'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
+                    'margin-top-70'
                 ]
             ],
-            'default' => 0,
+            'default' => '0'
         ]
     ],
 ]);
+
+// override TYPO3 "space_after_class" column config (frontend sys. ext.)
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'button_style' => [
+    'space_after_class' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style',
-        'displayCond' => 'FIELD:link_as_button:!=:0',
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:space_after_class',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.primary',
-                    'primary'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
+                    '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.dark',
-                    'dark'
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
+                    'margin-bottom-5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.light',
-                    'light'
-                ]
-            ],
-            'default' => 'primary',
-        ]
-    ],
-]);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'button_full_width' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_full_width',
-        'displayCond' => 'FIELD:link_as_button:!=:0',
-        'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'items' => [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
+                    'margin-bottom-10'
+                ],
                 [
-                    0 => '',
-                    1 => '',
-                ]
-            ],
-            'default' => 0,
-        ]
-    ],
-]);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'button_no_bg' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_no_bg',
-        'displayCond' => 'FIELD:link_as_button:!=:0',
-        'config' => [
-            'type' => 'check',
-            'renderType' => 'checkboxToggle',
-            'items' => [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
+                    'margin-bottom-15'
+                ],
                 [
-                    0 => '',
-                    1 => '',
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
+                    'margin-bottom-20'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
+                    'margin-bottom-25'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
+                    'margin-bottom-30'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
+                    'margin-bottom-40'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
+                    'margin-bottom-50'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
+                    'margin-bottom-60'
+                ],
+                [
+                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
+                    'margin-bottom-70'
                 ]
             ],
-            'default' => 0,
+            'default' => '0'
         ]
     ],
 ]);
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'color_class' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:color_class',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['none', '0'],
+                ['Primary', 'primary-color'],
+                ['Secondary', 'secondary-color'],
+                ['Dark', 'dark-color'],
+                ['Light', 'light-color'],
+                ['Inverted', 'inverted-color']
+            ],
+            'default' => '0',
+        ],
+    ],
+]);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
+    'background_color_class' => [
+        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:background_color_class',
+        'exclude' => true,
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['none', '0'],
+                ['Primary', 'primary-bg-color'],
+                ['Secondary', 'secondary-bg-color'],
+                ['Dark', 'dark-bg-color'],
+                ['Light', 'light-bg-color'],
+                ['Default', 'default-bg-color'],
+                ['Inverted', 'inverted-bg-color'],
+                ['Gray 90', 'gray-90-bg-color'],
+                ['Gray 80', 'gray-80-bg-color'],
+                ['Gray 70', 'gray-70-bg-color'],
+                ['Gray 60', 'gray-60-bg-color'],
+                ['Gray 50', 'gray-50-bg-color'],
+                ['Gray 40', 'gray-40-bg-color'],
+                ['Gray 30', 'gray-30-bg-color'],
+                ['Gray 20', 'gray-20-bg-color'],
+                ['Gray 10', 'gray-10-bg-color']
+            ],
+            'default' => '0',
+        ],
+    ],
+]);
+
+
+
+/*
+ * ###########################
+ * Other
+ * ---------------------------
+ * page_links_1
+ * page_links_2
+ * page_links_3
+ * ===========================
+ */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'page_links_1' => [
         'exclude' => true,
@@ -1110,64 +1200,33 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
         ]
     ],
 ]);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'textorient' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient',
-        'displayCond' => [
-            'OR' => [
-                'FIELD:imageorient:=:25',
-                'FIELD:imageorient:=:26'
-            ],
-        ],
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.default',
-                    0
-                ],
-                [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.auto',
-                    'textorient-auto'
-                ],
-            ],
-            'default' => 0,
-        ]
-    ],
-]);
+
+
+
+
+/*
+ * #####################################################################
+ * #####################################################################
+ * TCA Palettes
+ * =====================================================================
+ * =====================================================================
+ */
 
 /*
  * ###########################
- * Additional palettes for tt_content
+ * Header palettes
+ * ---------------------------
+ * header -> TYPO3 core header palette = layout + position + date + link
+ * headers
+ * header_only
+ * header_position
+ * header_layout
+ * header_layout_position
+ * header_layout_position_subheader
+ * header_layout_position_link_subheader
  * ===========================
  */
-
-// rewrite "frames" palette
-$GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
-    'showitem' => '
-        space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
-        space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
-        --linebreak--,
-        layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
-        frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
-        --linebreak--,
-        color_class,
-        background_color_class
-    '
-];
-
-// rewrite imagelinks palette
-$GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
-    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks',
-    'showitem' => '
-        image_zoom;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_zoom_formlabel,
-        image_zoom_width
-    '
-];
-
-// rewrite headers palette
+// override TYPO3 "headers" palette config (frontend sys. ext.)
 $GLOBALS['TCA']['tt_content']['palettes']['headers'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers',
     'showitem' => '
@@ -1184,96 +1243,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['headers'] = [
         subheader_style
     '
 ];
-
-// rewrite mediaAdjustments palette
-$GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments'] = [
-    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',
-    'showitem' => '
-        section_container_width
-    '
-];
-
-// rewrite gallerySettings palette
-$GLOBALS['TCA']['tt_content']['palettes']['gallerySettings'] = [
-    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.gallerySettings',
-    'showitem' => '
-        imageorient,
-        imagecols,
-        textorient
-    '
-];
-
-// add mediaAdjustments_height palette
-$GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments_height'] = [
-    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',
-    'showitem' => '
-        section_container_width,height;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:height.image
-    '
-];
-
-
-// add icon palette
-$GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:icon.palette',
-    'showitem' => '
-        icon_source,
-        --linebreak--,
-        icon
-    '
-];
-
-// -------------------
-// Link palettes
-// -------------------
-// add new palette title_link_position
-$GLOBALS['TCA']['tt_content']['palettes']['title_link_position'] = [
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
-    'showitem' => '
-        link_title,link,link_position,
-        --linebreak--,
-        accessible_link_label
-    '
-];
-// add new palette title_link
-$GLOBALS['TCA']['tt_content']['palettes']['title_link'] = [
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
-    'showitem' => '
-        link_title,link,
-        --linebreak--,
-        accessible_link_label
-    '
-];
-
-// -------------------
-// Button palette
-// -------------------
-// add new palette button
-$GLOBALS['TCA']['tt_content']['palettes']['button'] = [
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button.palette',
-    'showitem' => '
-        link_as_button,
-        --linebreak--,
-        button_size,button_style,button_full_width,button_no_bg
-    '
-];
-
-// -------------------
-// Bodytext palette
-// -------------------
-// add new palette bodytext_position
-$GLOBALS['TCA']['tt_content']['palettes']['bodytext_position'] = [
-    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:bodytext.palette',
-    'showitem' => '
-        bodytext,content_position
-    '
-];
-
-
-// -------------------
-// Header palettes
-// -------------------
-// TYPO3 core header palette = header + layout + position + date + link
-// TYPO3 core headers palette = header + layout + position + date + link + subheader
 
 // add new palette header_only
 $GLOBALS['TCA']['tt_content']['palettes']['header_only'] = [
@@ -1343,9 +1312,20 @@ $GLOBALS['TCA']['tt_content']['palettes']['header_layout_position_link_subheader
     '
 ];
 
-// -------------------
-// Header in several rows
-// -------------------
+
+
+/*
+ * ###########################
+ * Header with line breaks palettes
+ * ---------------------------
+ * headertext_only
+ * headertext_position
+ * headertext_layout
+ * headertext_layout_position
+ * headertext_layout_position_subheadertext
+ * headertext_layout_position_link_subheadertext
+ * ===========================
+ */
 // add new palette headertext_only
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_only'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1353,6 +1333,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_only'] = [
         header_text
     '
 ];
+
 // add new palette headertext_position
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1362,6 +1343,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_position'] = [
         header_position
     '
 ];
+
 // add new palette headertext_layout
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1372,6 +1354,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout'] = [
         header_style
     '
 ];
+
 // add new palette headertext_layout_position
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1383,6 +1366,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position'] = [
         header_position
     '
 ];
+
 // add new palette headertext_layout_position_subheadertext
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadertext'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1397,6 +1381,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_subheadert
         subheader_style
     '
 ];
+
 // add new palette headertext_layout_position_link_subheadertext
 $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subheadertext'] = [
     'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
@@ -1411,5 +1396,152 @@ $GLOBALS['TCA']['tt_content']['palettes']['headertext_layout_position_link_subhe
         --linebreak--,
         subheader_text,
         subheader_style
+    '
+];
+
+
+
+/*
+ * ###########################
+ * Bodytext palettes
+ * ---------------------------
+ * bodytext_position
+ * ===========================
+ */
+// add new palette bodytext_position
+$GLOBALS['TCA']['tt_content']['palettes']['bodytext_position'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:bodytext.palette',
+    'showitem' => '
+        bodytext,content_position
+    '
+];
+
+
+
+/*
+ * ###########################
+ * Link palettes
+ * ---------------------------
+ * title_link_position
+ * title_link
+ * ===========================
+ */
+// add new palette title_link_position
+$GLOBALS['TCA']['tt_content']['palettes']['title_link_position'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
+    'showitem' => '
+        link_title,link,link_position,
+        --linebreak--,
+        accessible_link_label
+    '
+];
+// add new palette title_link
+$GLOBALS['TCA']['tt_content']['palettes']['title_link'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link.palette',
+    'showitem' => '
+        link_title,link,
+        --linebreak--,
+        accessible_link_label
+    '
+];
+
+
+
+/*
+ * ###########################
+ * Button palettes
+ * ---------------------------
+ * button
+ * ===========================
+ */
+// add new palette button
+$GLOBALS['TCA']['tt_content']['palettes']['button'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button.palette',
+    'showitem' => '
+        link_as_button,
+        --linebreak--,
+        button_size,button_style,button_full_width,button_no_bg
+    '
+];
+
+
+
+/*
+ * ###########################
+ * Media Adjustments palettes
+ * ---------------------------
+ * imagelinks
+ * mediaAdjustments
+ * gallerySettings
+ * ===========================
+ */
+// override TYPO3 "imagelinks" palette config (frontend sys. ext.)
+$GLOBALS['TCA']['tt_content']['palettes']['imagelinks'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks',
+    'showitem' => '
+        image_zoom;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_zoom_formlabel,
+        image_zoom_width
+    '
+];
+
+
+
+// override TYPO3 "mediaAdjustments" palette config (frontend sys. ext.)
+$GLOBALS['TCA']['tt_content']['palettes']['mediaAdjustments'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments',
+    'showitem' => '
+        section_container_width
+    '
+];
+
+// override TYPO3 "gallerySettings" palette config (frontend sys. ext.)
+$GLOBALS['TCA']['tt_content']['palettes']['gallerySettings'] = [
+    'label' => 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.gallerySettings',
+    'showitem' => '
+        imageorient,
+        imagecols,
+        textorient
+    '
+];
+
+
+
+/*
+ * ###########################
+ * Icon palettes
+ * ---------------------------
+ * icon
+ * ===========================
+ */
+// add icon palette
+$GLOBALS['TCA']['tt_content']['palettes']['icon'] = [
+    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:icon.palette',
+    'showitem' => '
+        icon_source,
+        --linebreak--,
+        icon
+    '
+];
+
+
+
+/*
+ * ###########################
+ * Appearance palettes
+ * ---------------------------
+ * frames
+ * ===========================
+ */
+// override TYPO3 "frames" palette config (frontend sys. ext.)
+$GLOBALS['TCA']['tt_content']['palettes']['frames'] = [
+    'showitem' => '
+        space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
+        space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
+        --linebreak--,
+        layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
+        frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
+        --linebreak--,
+        color_class,
+        background_color_class
     '
 ];

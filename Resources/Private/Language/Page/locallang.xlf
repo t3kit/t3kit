@@ -13,9 +13,6 @@
 			<trans-unit id="nav_icon_source" resname="nav_icon_source">
 				<source>Icon source</source>
 			</trans-unit>
-			<trans-unit id="nav_icon_class" resname="nav_icon_class">
-				<source>Icon appearance</source>
-			</trans-unit>
 			<trans-unit id="nav_icon" resname="nav_icon">
 				<source>Icon</source>
 			</trans-unit>
