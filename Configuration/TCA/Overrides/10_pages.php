@@ -45,10 +45,10 @@ defined('TYPO3_MODE') || die();
     'TCEMAIN'
 );
 
+
 // -------------------------------
 // t3kit Content Elements includes
 // -------------------------------
-
 // Static CE-s
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
@@ -97,11 +97,11 @@ defined('TYPO3_MODE') || die();
 );
 
 // Dynamic CE-s
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-//     't3kit',
-//     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/___.tsconfig',
-//     '(Dynamic CE) ___'
-// );
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/Slider.tsconfig',
+    '(Dynamic CE) Image Slider'
+);
 
 // Special CE-s
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
@@ -114,11 +114,6 @@ defined('TYPO3_MODE') || die();
     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SimpleSiteHeader.tsconfig',
     '(Special CE) SimpleSiteHeader'
 );
-// \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-//     't3kit',
-//     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig',
-//     '(Special CE) SiteHeader'
-// );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig',
@@ -126,12 +121,15 @@ defined('TYPO3_MODE') || die();
 );
 
 
+
+
 /*
- * ###########################
- * add new TCA columns for pages
- * ===========================
+ * #####################################################################
+ * #####################################################################
+ * Columns and Palettes for pages
+ * =====================================================================
+ * =====================================================================
  */
-// Add image record for page settings.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_image',
@@ -195,7 +193,6 @@ defined('TYPO3_MODE') || die();
     'after:backend_layout_next_level'
 );
 
-// Add icons record for page settings.
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
     'nav_icon_source' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon_source',
@@ -212,23 +209,6 @@ defined('TYPO3_MODE') || die();
                     'Bootstrap',
                     'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
                 ],
-            ],
-            'default' => '',
-        ]
-    ]
-]);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', [
-    'nav_icon_class' => [
-        'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon_class',
-        'exclude' => true,
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                [   'None',
-                    ''
-                ]
             ],
             'default' => '',
         ]
@@ -286,11 +266,6 @@ defined('TYPO3_MODE') || die();
     'after:nav_hide'
 );
 
-/*
- * ###########################
- * Palettes for pages
- * ===========================
- */
 $GLOBALS['TCA']['pages']['palettes']['nav_icon'] = [
     'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_icon.palette',
     'showitem' => '

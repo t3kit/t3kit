@@ -6,7 +6,11 @@
 
 <f:section name="Main">
   <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Slider.html [begin] -->
-  <f:if condition="{flexform.jsname}">
+
+  <f:if condition="{flexform.js_file} == local">
+    <f:render partial="Js/Swiperjs--async-p1" arguments="{_all}" />
+  </f:if>
+  <f:if condition="{flexform.js_file} == custom">
     <f:render partial="Js/{flexform.jsname}" arguments="{_all}" />
   </f:if>
 
@@ -23,63 +27,71 @@
     <f:variable name="container">container</f:variable>
   </f:if>
 
-  <!-- Slider main container -->
   <div class="ce-slider__wrp swiper-container t3kit-swiper-container {container}">
-      <!-- Additional required wrapper -->
-      <div class="ce-slider swiper-wrapper">
-          <!-- Slides -->
-        <f:for each="{records}" as="item" iteration="iteration">
-          <div class="swiper-slide{f:if(condition: iteration.isFirst,then:' active')} {item.data.image_overlay}">
-            <div class="ce-slider__caption-wrp container" {f:if(condition:height, then: 'style="height: {height}px;"')}>
-              <div class="ce-slider__caption">
-                <f:if condition="{item.data.header_text} || {t3kit:isPlaceholderEnabled()}">
-                  <div class="ce-slider__caption-header">
-                    <f:render partial="Header/HeaderText" arguments="{data: item.data}" />
-                  </div>
-                </f:if>
+    <div class="ce-slider swiper-wrapper">
 
-                <f:if condition="{item.data.subheader_text} || {t3kit:isPlaceholderEnabled()}">
-                  <div class="ce-slider__caption-subheader">
-                    <f:render partial="Header/SubHeaderText" arguments="{data: item.data}" />
-                  </div>
-                </f:if>
+      <f:for each="{records}" as="item" iteration="iteration">
+        <div class="swiper-slide
+          {f:if(condition: iteration.isFirst,then:' active')}
+          {f:if(condition: item.data.overlay, then: ' ce-slider--overlay-{item.data.overlay}')}">
 
-                <f:if condition="{item.data.bodytext} || {t3kit:isPlaceholderEnabled()}">
-                  <div class="ce-slider__caption-bodytext fluid-font-size">
-                    <f:render partial="Bodytext/Bodytext" arguments="{data: item.data}" />
-                  </div>
-                </f:if>
+          <div class="ce-slider__caption-wrp
+            ce-slider__caption--{item.data.caption_alignment}
+            container"
+            {f:if(condition:height, then: 'style="height: {height}px;"')}>
+            <div class="ce-slider__caption">
 
-                <f:if condition="{item.data.link} || {t3kit:isPlaceholderEnabled()}">
-                  <div class="ce-slider__caption-link">
-                    <f:if condition="{item.data.link_as_button}">
-                      <f:then>
-                        <f:render partial="Link/ButtonLink" arguments="{data: item.data}" />
-                      </f:then>
-                      <f:else>
-                        <f:render partial="Link/Link" arguments="{data: item.data}" />
-                      </f:else>
-                    </f:if>
-                  </div>
-                </f:if>
-              </div>
+              <f:if condition="{item.data.header_text} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-slider__caption-header">
+                  <f:render partial="Header/HeaderText" arguments="{data: item.data}" />
+                </div>
+              </f:if>
+
+              <f:if condition="{item.data.subheader_text} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-slider__caption-subheader">
+                  <f:render partial="Header/SubHeaderText" arguments="{data: item.data}" />
+                </div>
+              </f:if>
+
+              <f:if condition="{item.data.bodytext} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-slider__caption-bodytext fluid-font-size">
+                  <f:render partial="Bodytext/Bodytext" arguments="{data: item.data}" />
+                </div>
+              </f:if>
+
+              <f:if condition="{item.data.link} || {t3kit:isPlaceholderEnabled()}">
+                <div class="ce-slider__caption-link">
+                  <f:if condition="{item.data.link_as_button}">
+                    <f:then>
+                      <f:render partial="Link/ButtonLink" arguments="{data: item.data}" />
+                    </f:then>
+                    <f:else>
+                      <f:render partial="Link/Link" arguments="{data: item.data}" />
+                    </f:else>
+                  </f:if>
+                </div>
+              </f:if>
+
+
             </div>
-            <f:if condition="{item.files}">
-              <div class="ce-slider__picture">
-                <f:render partial="Media/Type" arguments="{files: item.files, data: data, height: height}" />
-              </div>
-            </f:if>
           </div>
-        </f:for>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination t3kit-swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev t3kit-swiper-button-prev"></div>
-      <div class="swiper-button-next t3kit-swiper-button-next"></div>
+          <f:if condition="{item.files}">
+            <div class="ce-slider__picture">
+              <f:render partial="Media/Type" arguments="{files: item.files, data: data, height: height}" />
+            </div>
+          </f:if>
+        </div>
+      </f:for>
+    </div>
+
+    <div class="swiper-pagination t3kit-swiper-pagination"></div>
+
+    <div class="swiper-button-prev t3kit-swiper-button-prev"></div>
+    <div class="swiper-button-next t3kit-swiper-button-next"></div>
 
   </div>
 
+<!-- t3kit: Resources/Private/Templates/ContentElements/Static/Slider.html [end] -->
 </f:section>
 </html>

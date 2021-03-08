@@ -14,6 +14,9 @@
 @import 'main/global/helpers/border-radius.css';
 @import 'main/global/helpers/print.css';
 
+/* ===== plugins ===== */
+@import 'main/plugins/swiperjs.css';
+
 /* ===== nav ===== */
 @import 'main/global/nav/breadcrumb.css';
 @import 'main/global/nav/side-navigation.css';
@@ -42,6 +45,3 @@
 @import 'main/appearance/color.css';
 @import 'main/appearance/background.css';
 @import 'main/appearance/content-margins.css';
-
-/* ===== plugins ===== */
-@import 'vendor/swiperjs.css';

@@ -19,8 +19,20 @@
 			<trans-unit id="flexform.height" resname="flexform.height">
 				<source>Height</source>
 			</trans-unit>
-			<trans-unit id="flexform.jsname" resname="flexform.jsname">
-				<source>JS file name. (Resources/Public/assets/development|production/Js/(jsname).html) (in t3kit by default it is "Swiperjs--async-p1")</source>
+			<trans-unit id="flexform.js_file" resname="flexform.js_file">
+				<source>Image Slider JS file</source>
+			</trans-unit>
+			<trans-unit id="flexform.js_file.local" resname="flexform.js_file.local">
+				<source>Local</source>
+			</trans-unit>
+			<trans-unit id="flexform.js_file.custom" resname="flexform.js_file.custom">
+				<source>Custom</source>
+			</trans-unit>
+			<trans-unit id="flexform.js_file.global" resname="flexform.js_file.global">
+				<source>Global</source>
+			</trans-unit>
+			<trans-unit id="flexform.js_name" resname="flexform.js_name">
+				<source>JS file name. (Resources/Public/assets/development|production/Js/(jsname).html)</source>
 			</trans-unit>
 
 			<trans-unit id="slider.overlay" resname="slider.tab">
@@ -42,17 +54,17 @@
 				<source>Light overlay</source>
 			</trans-unit>
 
-			<trans-unit id="flexform.interval" resname="flexform.interval">
-				<source>Interval</source>
+			<trans-unit id="slider.caption_alignment" resname="slider.caption_alignment">
+				<source>Caption alignment</source>
 			</trans-unit>
-			<trans-unit id="flexform.transition" resname="flexform.transition">
-				<source>Transition</source>
+			<trans-unit id="slider.caption_alignment.left" resname="slider.caption_alignment.left">
+				<source>Left</source>
 			</trans-unit>
-			<trans-unit id="flexform.transition.fade" resname="flexform.transition.fade">
-				<source>Fade</source>
+			<trans-unit id="slider.caption_alignment.center" resname="slider.caption_alignment.center">
+				<source>Center</source>
 			</trans-unit>
-			<trans-unit id="flexform.transition.slide" resname="flexform.transition.slide">
-				<source>Slide</source>
+			<trans-unit id="slider.caption_alignment.right" resname="slider.caption_alignment.right">
+				<source>Right</source>
 			</trans-unit>
 		</body>
 	</file>

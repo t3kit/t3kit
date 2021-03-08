@@ -3,6 +3,7 @@
 return [
     'ctrl' => [
         'label' => 'header_text',
+        'label_alt' => 'subheader_text',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -13,8 +14,8 @@ return [
         'origUid' => 't3_origuid',
         'hideAtCopy' => true,
         'prependAtCopy' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
-        'transOrigPointerField' => 'l18n_parent',
-        'transOrigDiffSourceField' => 'l18n_diffsource',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
         'languageField' => 'sys_language_uid',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -29,14 +30,14 @@ return [
         '1' => [
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                --palette--;;general,
                 --palette--;;headertext_layout_position_link_subheadertext,
                 --palette--;;bodytext_position,
                 --palette--;;title_link_position,
                 --palette--;;button,
+                caption_alignment,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                 picture,
-                image_overlay,
+                overlay,
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                 --palette--;;hidden,
                 --palette--;;access,
@@ -47,12 +48,6 @@ return [
     'palettes' => [
         '1' => [
             'showitem' => ''
-        ],
-        'general' => [
-            'showitem' => '
-                tt_content,
-                item_type;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType_formlabel,
-            '
         ],
         'hidden' => [
             'showitem' => '
@@ -66,12 +61,10 @@ return [
                 endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel,
             ',
         ],
-        // hidden but needs to be included all the time, so sys_language_uid is set correctly
         'hiddenLanguagePalette' => [
             'showitem' => 'sys_language_uid, l18n_parent',
             'isHiddenPalette' => true,
         ],
-
         'headertext_layout_position_link_subheadertext' => [
             'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
             'showitem' => '
@@ -171,22 +164,18 @@ return [
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'sys_language',
-                'foreign_table_where' => 'ORDER BY sys_language.title',
+                'special' => 'languages',
                 'items' => [
                     [
                         'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                        -1
+                        -1,
+                        'flags-multiple'
                     ],
-                    [
-                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
-                        0
-                    ]
                 ],
-                'allowNonIdValues' => true,
+                'default' => 0,
             ]
         ],
-        'l18n_parent' => [
+        'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
@@ -203,10 +192,9 @@ return [
                 'default' => 0
             ]
         ],
-        'l18n_diffsource' => [
+        'l10n_diffsource' => [
             'config' => [
                 'type' => 'passthrough',
-                'default' => ''
             ]
         ],
 
@@ -357,6 +345,8 @@ return [
                     'linkPopup' => [
                         'options' => [
                             'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                            'blindLinkFields' => 'params, target, class, title',
+                            'blindLinkOptions' => 'folder, mail, telephone'
                         ],
                     ],
                 ],
@@ -436,15 +426,15 @@ return [
             ]
         ],
         'bodytext' => [
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
             'l10n_mode' => 'prefixLangTitle',
+            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text',
             'config' => [
                 'type' => 'text',
                 'cols' => 80,
-                'rows' => 5,
-                'softref' => 'typolink_tag,images,email[subst],url',
+                'rows' => 15,
+                'softref' => 'typolink_tag,email[subst],url',
                 'enableRichtext' => false
-            ],
+            ]
         ],
         'content_position' => [
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position',
@@ -469,6 +459,15 @@ return [
                 'default' => '0',
             ]
         ],
+        'link_title' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_title',
+            'config' => [
+                'type' => 'input',
+                'size' => 50,
+                'max' => 255
+            ]
+        ],
         'link' => [
             'exclude' => true,
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link',
@@ -488,24 +487,6 @@ return [
                     ],
                 ],
                 'softref' => 'typolink'
-            ]
-        ],
-        'link_title' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_title',
-            'config' => [
-                'type' => 'input',
-                'size' => 50,
-                'max' => 255
-            ]
-        ],
-        'accessible_link_label' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:accessible_link_label',
-            'config' => [
-                'type' => 'input',
-                'size' => 50,
-                'max' => 255
             ]
         ],
         'link_position' => [
@@ -529,6 +510,15 @@ return [
                     ]
                 ],
                 'default' => '0',
+            ]
+        ],
+        'accessible_link_label' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:accessible_link_label',
+            'config' => [
+                'type' => 'input',
+                'size' => 50,
+                'max' => 255
             ]
         ],
         'link_as_button' => [
@@ -683,7 +673,8 @@ return [
                 'maxitems' => 1,
             ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
         ],
-        'image_overlay' => [
+
+        'overlay' => [
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay',
             'config' => [
                 'type' => 'select',
@@ -691,23 +682,46 @@ return [
                 'items' => [
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_disable',
-                        '0'
+                        'disable'
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_primary',
-                        'overlay-primary'
+                        'primary'
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_secondary',
-                        'overlay-secondary'
+                        'secondary'
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_dark',
-                        'overlay-dark'
+                        'dark'
                     ],
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.overlay_light',
-                        'overlay-light'
+                        'light'
+                    ]
+                ],
+                'default' => 'disable',
+            ]
+        ],
+
+        'caption_alignment' => [
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.caption_alignment',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.caption_alignment.left',
+                        '0'
+                    ],
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.caption_alignment.center',
+                        'center'
+                    ],
+                    [
+                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_slider.xlf:slider.caption_alignment.right',
+                        'right'
                     ]
                 ],
                 'default' => '0',

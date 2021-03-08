@@ -12,16 +12,14 @@ swiper('.t3kit-swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
-  autoplay: {
-    delay: 3000
-  },
   a11y: {
     prevSlideMessage: 'Previous slide',
     nextSlideMessage: 'Next slide'
   },
   // If we need pagination
   pagination: {
-    el: '.t3kit-swiper-pagination'
+    el: '.t3kit-swiper-pagination',
+    clickable: true
   },
 
   // Navigation arrows
