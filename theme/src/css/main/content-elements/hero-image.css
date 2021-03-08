@@ -2,9 +2,12 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 .ce-hero-image {
   --t3-ce-hero-image-header-color: var(--t3-primary);
+  --t3-ce-hero-image-header-link-hover-color: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.8);
   --t3-ce-hero-image-subheader-color: var(--t3-white);
   --t3-ce-hero-image-bodytext-color: var(--t3-white);
-  --t3-ce-hero-image-bodytext-width: 75%;
+  --t3-ce-hero-image-link-color: var(--t3-light);
+  --t3-ce-hero-image-link-hover-color: hsla(var(--t3-light-hs), var(--t3-light-l), 0.8);
+  --t3-ce-hero-image-caption-width: 75%;
   --t3-ce-hero-image-min-height-on-mobile: 460px;
   --t3-ce-hero-image-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
   --t3-ce-hero-image-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
@@ -29,15 +32,15 @@
 }
 
 .ce-hero-image__caption--left {
-  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .ce-hero-image__caption--center {
-  align-items: center;
+  justify-content: center;
 }
 
 .ce-hero-image__caption--right {
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .ce-hero-image .picture-partial__item-img {
@@ -52,6 +55,22 @@
 
 .ce-hero-image__caption-header .header-text-item {
   color: var(--t3-ce-hero-image-header-color);
+}
+
+.ce-hero-image__caption-header .header-text-item a {
+  color: var(--t3-ce-hero-image-header-color);
+}
+
+.ce-hero-image__caption-header .header-text-item a:hover {
+  color: var(--t3-ce-hero-image-header-link-hover-color);
+}
+
+.ce-hero-image__caption-link .link-partial {
+  color: var(--t3-ce-hero-image-link-color);
+}
+
+.ce-hero-image__caption-link .link-partial:hover {
+  color: var(--t3-ce-hero-image-link-hover-color);
 }
 
 .ce-hero-image__caption-subheader .subheader-text-item {
@@ -157,12 +176,8 @@
 /* @media (max-width: 991.98px) { ... } */
 /* Large devices (desktops, 992px and up) lg */
 @media (min-width: 992px) {
-  .ce-hero-image__caption-bodytext {
-    width: var(--t3-ce-hero-image-bodytext-width);
-  }
-
-  .ce-hero-image__caption-link {
-    width: var(--t3-ce-hero-image-bodytext-width);
+  .ce-hero-image__caption {
+    width: var(--t3-ce-hero-image-caption-width);
   }
 }
 

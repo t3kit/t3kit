@@ -30,8 +30,11 @@
       {background}
       {f:if(condition: flexform.overlay, then: ' ce-hero-image--overlay-{flexform.overlay}')}">
 
-      <div class="ce-hero-image__caption-wrp container" {f:if(condition:height, then: 'style="height: {height}px;"')}>
-        <div class="ce-hero-image__caption ce-hero-image__caption--{flexform.caption_alignment}">
+      <div class="ce-hero-image__caption-wrp
+        ce-hero-image__caption--{flexform.caption_alignment}
+        container"
+        {f:if(condition:height, then: 'style="height: {height}px;"')}>
+        <div class="ce-hero-image__caption">
 
           <f:if condition="{data.header_text} || {t3kit:isPlaceholderEnabled()}">
             <div class="ce-hero-image__caption-header">
