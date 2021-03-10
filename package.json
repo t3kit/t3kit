@@ -95,10 +95,5 @@
       "**/vendor/**/*.css",
       "Resources/Public/**/*.css"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
   }
 }

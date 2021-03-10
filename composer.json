@@ -59,25 +59,22 @@
   },
   "prefer-stable": true,
   "config": {
-    "platform": {
-      "php": "7.4"
-    },
     "vendor-dir": "build/vendor",
     "optimize-autoloader": true,
     "sort-packages": true
   },
   "scripts": {
     "lint-php": "phpcs --colors",
-    "lint-typoscript": "typoscript-lint --ansi --fail-on-warnings",
     "lint-yaml": "yaml-lint --ansi typoscript-lint.yml Resources/ Configuration/ Classes/",
-    "lint-xml": "xmllint --ansi --exclude=build/ .",
     "lint-editorconfig": "ec -exclude LICENSE.txt",
+    "lint-typoscript": "typoscript-lint --ansi --fail-on-warnings",
+    "lint-xml": "xmllint --ansi --exclude=build/ .",
     "test": [
       "@lint-php",
       "@lint-yaml",
-      "@lint-xml",
+      "@lint-editorconfig",
       "@lint-typoscript",
-      "@lint-editorconfig"
+      "@lint-xml"
     ]
   },
   "extra": {
