@@ -61,8 +61,8 @@ jobs:
 
       - name: PKG versions
         run: |
-          composer -v
-          php -v
           node -v
           npm -v
+          php -v
+          composer -v
 

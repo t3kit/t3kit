@@ -1,7 +1,9 @@
 name: Commit Message Check
 # https://github.com/t3kit/.github/blob/master/CONTRIBUTING.md#coding-rules
 
-on: [pull_request]
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review, review_requested]
 
 jobs:
 
