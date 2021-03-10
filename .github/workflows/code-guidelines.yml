@@ -8,34 +8,61 @@ jobs:
   build-npm:
     name: Run npm test
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [14.x]
+        php-version: ['7.4']
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Validate composer.json and composer.lock
-        run: composer validate
+      - name: Set up PHP v${{ matrix.php-version }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          tools: composer:v2
 
-      - name: Composer version
-        run: composer --version
-
-      - name: Install Composer dependencies
-        run: composer install --prefer-dist --no-progress --ignore-platform-reqs
-
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Set up Node.js v${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: node & npm version
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - name: Composer Cache
+        id: composer-cache
         run: |
-          node -v
-          npm -v
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+
+      - name: Install Composer dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('public/typo3conf/ext/**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install npm dependencies
         run: npm ci
 
       - name: Run default npm lint tests
         run: npm test
+
+      - name: PKG versions
+        run: |
+          composer -v
+          php -v
+          node -v
+          npm -v
+
