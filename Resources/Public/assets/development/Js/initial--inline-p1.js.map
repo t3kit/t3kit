@@ -1,1 +1,1 @@
-{"version":3,"file":"initial--inline-p1.js","sources":["../../../../../theme/src/js/initial--inline-p1.js"],"sourcesContent":null,"names":[],"mappings":";;;CAAA;CACA,MAAM,CAAC,MAAM,GAAG,GAAE;AAClB;CACA;CACA,MAAM,CAAC,MAAM,GAAG,MAAM;;;;;;"}
+{"version":3,"file":"initial--inline-p1.js","sources":["../../../../../theme/src/js/initial--inline-p1.js"],"sourcesContent":null,"names":["window","global","Popper"],"mappings":";;;AAAA;AACAA,EAAAA,MAAM,CAACC,MAAP,GAAgB,EAAhB;;AAEA;AACAD,EAAAA,MAAM,CAACE,MAAP,GAAgB,MAAM,EAAtB;;"}
