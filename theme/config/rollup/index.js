@@ -7,6 +7,7 @@ const { nodeResolve } = require('@rollup/plugin-node-resolve')
 const replace = require('@rollup/plugin-replace')
 const { terser } = require('rollup-plugin-terser')
 const sizes = require('rollup-plugin-sizes')
+const { getBabelOutputPlugin } = require('@rollup/plugin-babel')
 const utils = require('../utils')
 
 async function compileJs (localConf, options) {
@@ -28,6 +29,12 @@ async function compileJs (localConf, options) {
           replace({
             preventAssignment: true,
             'process.env.NODE_ENV': process.env.NODE_ENV
+          }),
+          getBabelOutputPlugin({
+            retainLines: true,
+            allowAllFormats: true,
+            presets: ['@babel/preset-env'],
+            plugins: [['@babel/plugin-proposal-class-properties']]
           })
         ]
       }
