@@ -176,7 +176,7 @@
   define specific image width if it less than 100% by picture_width property
 </f:comment>
 <f:if condition="{image.referenceProperties.picture_width} != 100">
-  <f:asset.css identifier="picture-uid-{image.uid}">
+  <f:asset.css identifier="picture-uid-{image.uid}" priority="1">
     .picture-uid-{image.uid} { width: {small_viewport_width}vw; }
     @media (min-width: 992px) {
       .picture-uid-{image.uid} { width: {medium_viewport_width}; }
