@@ -1,5 +1,5 @@
 
-const localConf = require('./localConf')
+const localConf = require('./localconf')
 require('./check/dependencies').checkDependencies(localConf)
 require('./check/node').checkNode()
 
