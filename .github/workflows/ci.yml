@@ -68,6 +68,7 @@ jobs:
 
   test:
     name: Run npm test
+    needs: setup
     runs-on: ubuntu-latest
 
     strategy:
