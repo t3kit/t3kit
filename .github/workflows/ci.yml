@@ -5,8 +5,8 @@ on: [push, pull_request]
 
 jobs:
 
-  setup:
-    name: setup
+  test:
+    name: test
     runs-on: ubuntu-latest
 
     strategy:
@@ -66,8 +66,9 @@ jobs:
           php -v
           composer -v
 
-  test:
-    name: test
+  build:
+    needs: test
+    name: build
     runs-on: ubuntu-latest
 
     strategy:
