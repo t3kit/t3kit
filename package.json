@@ -6,7 +6,7 @@
   "authors": "t3kit Community",
   "repository": "t3kit/t3kit",
   "scripts": {
-    "postinstall": "husky install",
+    "prepare": "is-ci || husky install",
     "lint-css": "stylelint 'theme/src/css/**/*.css'",
     "lint-scss": "stylelint 'theme/src/scss/**/*.scss'",
     "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
@@ -48,6 +48,7 @@
     "globby": "~11.0.1",
     "hasha": "~5.2.2",
     "husky": "~5.1.3",
+    "is-ci": "^3.0.0",
     "moment": "~2.29.1",
     "npm-run-all": "~4.1.5",
     "p-each-series": "~2.2.0",
