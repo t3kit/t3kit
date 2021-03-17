@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
 
   main:
-    name: main
+    name: Code Guidelines
     runs-on: ubuntu-latest
 
     strategy:
