@@ -5,8 +5,8 @@ on: [push, pull_request]
 
 jobs:
 
-  build-npm:
-    name: Run npm test
+  main:
+    name: main
     runs-on: ubuntu-latest
 
     strategy:
@@ -46,18 +46,26 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
 
+      - name: Get npm cache directory
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+
       - uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('public/typo3conf/ext/**/package-lock.json') }}
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Install npm dependencies
         run: npm ci
 
-      - name: Run default npm lint tests
+      - name: Run npm test
         run: npm test
+
+      - name: Run npm build
+        run: npm run build
 
       - name: PKG versions
         run: |
@@ -65,4 +73,3 @@ jobs:
           npm -v
           php -v
           composer -v
-
