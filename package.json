@@ -6,7 +6,7 @@
   "authors": "t3kit Community",
   "repository": "t3kit/t3kit",
   "scripts": {
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "lint-css": "stylelint 'theme/src/css/**/*.css'",
     "lint-scss": "stylelint 'theme/src/scss/**/*.scss'",
     "lint-js": "standard -v 'theme/src/js/**/*.js' | snazzy",
