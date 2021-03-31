@@ -1376,7 +1376,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
     }}
 
 
-  global.SimpleLightbox = SimpleLightbox;
+  window.SimpleLightbox = SimpleLightbox;
 
   const simpleLightbox = function (className, options) {
     return new SimpleLightbox(className, options);

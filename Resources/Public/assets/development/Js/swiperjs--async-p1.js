@@ -1157,6 +1157,25 @@
     return Date.now();
   }
 
+  function getComputedStyle$1(el) {
+    var window = getWindow();
+    var style;
+
+    if (window.getComputedStyle) {
+      style = window.getComputedStyle(el, null);
+    }
+
+    if (!style && el.currentStyle) {
+      style = el.currentStyle;
+    }
+
+    if (!style) {
+      style = el.style;
+    }
+
+    return style;
+  }
+
   function getTranslate(el, axis) {
     if (axis === void 0) {
       axis = 'x';
@@ -1166,7 +1185,7 @@
     var matrix;
     var curTransform;
     var transformMatrix;
-    var curStyle = window.getComputedStyle(el, null);
+    var curStyle = getComputedStyle$1(el);
 
     if (window.WebKitCSSMatrix) {
       curTransform = curStyle.transform || curStyle.webkitTransform;
@@ -1203,17 +1222,20 @@
   }
 
   function isObject(o) {
-    return typeof o === 'object' && o !== null && o.constructor && o.constructor === Object;
+    return typeof o === 'object' && o !== null && o.constructor && Object.prototype.toString.call(o).slice(8, -1) === 'Object';
   }
 
   function extend() {
     var to = Object(arguments.length <= 0 ? undefined : arguments[0]);
+    var noExtend = ['__proto__', 'constructor', 'prototype'];
 
     for (var i = 1; i < arguments.length; i += 1) {
       var nextSource = i < 0 || arguments.length <= i ? undefined : arguments[i];
 
       if (nextSource !== undefined && nextSource !== null) {
-        var keysArray = Object.keys(Object(nextSource));
+        var keysArray = Object.keys(Object(nextSource)).filter(function (key) {
+          return noExtend.indexOf(key) < 0;
+        });
 
         for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex += 1) {
           var nextKey = keysArray[nextIndex];
@@ -1221,10 +1243,19 @@
 
           if (desc !== undefined && desc.enumerable) {
             if (isObject(to[nextKey]) && isObject(nextSource[nextKey])) {
-              extend(to[nextKey], nextSource[nextKey]);
+              if (nextSource[nextKey].__swiper__) {
+                to[nextKey] = nextSource[nextKey];
+              } else {
+                extend(to[nextKey], nextSource[nextKey]);
+              }
             } else if (!isObject(to[nextKey]) && isObject(nextSource[nextKey])) {
               to[nextKey] = {};
-              extend(to[nextKey], nextSource[nextKey]);
+
+              if (nextSource[nextKey].__swiper__) {
+                to[nextKey] = nextSource[nextKey];
+              } else {
+                extend(to[nextKey], nextSource[nextKey]);
+              }
             } else {
               to[nextKey] = nextSource[nextKey];
             }
@@ -1747,7 +1778,6 @@
       return parseFloat(node.getPropertyValue(getDirectionLabel(label)) || 0);
     };
 
-    var window = getWindow();
     var params = swiper.params;
     var $wrapperEl = swiper.$wrapperEl,
     swiperSize = swiper.size,
@@ -1874,7 +1904,7 @@
       if (slide.css('display') === 'none') continue; // eslint-disable-line
 
       if (params.slidesPerView === 'auto') {
-        var slideStyles = window.getComputedStyle(slide[0], null);
+        var slideStyles = getComputedStyle(slide[0]);
         var currentTransform = slide[0].style.transform;
         var currentWebKitTransform = slide[0].style.webkitTransform;
 
@@ -1895,7 +1925,7 @@
           var paddingRight = getDirectionPropertyValue(slideStyles, 'padding-right');
           var marginLeft = getDirectionPropertyValue(slideStyles, 'margin-left');
           var marginRight = getDirectionPropertyValue(slideStyles, 'margin-right');
-          var boxSizing = slideStyles.getPropertyValue(slideStyles, 'box-sizing');
+          var boxSizing = slideStyles.getPropertyValue('box-sizing');
 
           if (boxSizing && boxSizing === 'border-box') {
             slideSize = width + marginLeft + marginRight;
@@ -4359,11 +4389,8 @@
     var resultClasses = [];
     entries.forEach(function (item) {
       if (typeof item === 'object') {
-        Object.entries(item).forEach(function (_ref) {
-          var classNames = _ref[0],
-          condition = _ref[1];
-
-          if (condition) {
+        Object.keys(item).forEach(function (classNames) {
+          if (item[classNames]) {
             resultClasses.push(prefix + classNames);
           }
         });
@@ -4667,7 +4694,7 @@
         args[_key] = arguments[_key];
       }
 
-      if (args.length === 1 && args[0].constructor && args[0].constructor === Object) {
+      if (args.length === 1 && args[0].constructor && Object.prototype.toString.call(args[0]).slice(8, -1) === 'Object') {
         params = args[0];
       } else {
         el = args[0];
@@ -4691,6 +4718,7 @@
 
 
       var swiper = this;
+      swiper.__swiper__ = true;
       swiper.support = getSupport();
       swiper.device = getDevice({
         userAgent: params.userAgent });
@@ -5195,10 +5223,15 @@
 
   function _extends$2() {_extends$2 = Object.assign || function (target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i];for (var key in source) {if (Object.prototype.hasOwnProperty.call(source, key)) {target[key] = source[key];}}}return target;};return _extends$2.apply(this, arguments);}
   var Navigation = {
+    toggleEl: function toggleEl($el, disabled) {
+      $el[disabled ? 'addClass' : 'removeClass'](this.params.navigation.disabledClass);
+      if ($el[0] && $el[0].tagName === 'BUTTON') $el[0].disabled = disabled;
+    },
     update: function update() {
       // Update Navigation Buttons
       var swiper = this;
       var params = swiper.params.navigation;
+      var toggleEl = swiper.navigation.toggleEl;
       if (swiper.params.loop) return;
       var _swiper$navigation = swiper.navigation,
       $nextEl = _swiper$navigation.$nextEl,
@@ -5206,9 +5239,9 @@
 
       if ($prevEl && $prevEl.length > 0) {
         if (swiper.isBeginning) {
-          $prevEl.addClass(params.disabledClass);
+          toggleEl($prevEl, true);
         } else {
-          $prevEl.removeClass(params.disabledClass);
+          toggleEl($prevEl, false);
         }
 
         $prevEl[swiper.params.watchOverflow && swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
@@ -5216,9 +5249,9 @@
 
       if ($nextEl && $nextEl.length > 0) {
         if (swiper.isEnd) {
-          $nextEl.addClass(params.disabledClass);
+          toggleEl($nextEl, true);
         } else {
-          $nextEl.removeClass(params.disabledClass);
+          toggleEl($nextEl, false);
         }
 
         $nextEl[swiper.params.watchOverflow && swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
@@ -5745,7 +5778,7 @@
       return $el;
     },
     addElRoleDescription: function addElRoleDescription($el, description) {
-      $el.attr('aria-role-description', description);
+      $el.attr('aria-roledescription', description);
       return $el;
     },
     addElControls: function addElControls($el, controls) {
@@ -5892,7 +5925,8 @@
       swiper.a11y.addElRole($(swiper.slides), 'group');
       swiper.slides.each(function (slideEl) {
         var $slideEl = $(slideEl);
-        swiper.a11y.addElLabel($slideEl, $slideEl.index() + 1 + " / " + swiper.slides.length);
+        var ariaLabelMessage = params.slideLabelMessage.replace(/\{\{index\}\}/, $slideEl.index() + 1).replace(/\{\{slidesLength\}\}/, swiper.slides.length);
+        swiper.a11y.addElLabel($slideEl, ariaLabelMessage);
       }); // Navigation
 
       var $nextEl;
@@ -5974,6 +6008,7 @@
         firstSlideMessage: 'This is the first slide',
         lastSlideMessage: 'This is the last slide',
         paginationBulletMessage: 'Go to slide {{index}}',
+        slideLabelMessage: '{{index}} / {{slidesLength}}',
         containerMessage: null,
         containerRoleDescriptionMessage: null,
         itemRoleDescriptionMessage: null } },

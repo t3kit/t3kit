@@ -25,7 +25,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): util/index.js
+   * Bootstrap (v5.0.0-beta3): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -184,7 +184,7 @@
     }
   };
 
-  const isRTL = document.documentElement.dir === 'rtl';
+  const isRTL = () => document.documentElement.dir === 'rtl';
 
   const defineJQueryPlugin = (name, plugin) => {
     onDOMContentLoaded(() => {
@@ -204,7 +204,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): dom/data.js
+   * Bootstrap (v5.0.0-beta3): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -215,62 +215,54 @@
    * ------------------------------------------------------------------------
    */
 
-  const mapData = (() => {
-    const storeData = {};
-    let id = 1;
-    return {
-      set(element, key, data) {
-        if (typeof element.bsKey === 'undefined') {
-          element.bsKey = {
-            key,
-            id };
+  const elementMap = new Map();
 
-          id++;
-        }
+  var Data = {
+    set(element, key, instance) {
+      if (!elementMap.has(element)) {
+        elementMap.set(element, new Map());
+      }
 
-        storeData[element.bsKey.id] = data;
-      },
-      get(element, key) {
-        if (!element || typeof element.bsKey === 'undefined') {
-          return null;
-        }
+      const instanceMap = elementMap.get(element);
 
-        const keyProperties = element.bsKey;
-        if (keyProperties.key === key) {
-          return storeData[keyProperties.id];
-        }
+      // make it clear we only want one instance per element
+      // can be removed later when multiple key/instances are fine to be used
+      if (!instanceMap.has(key) && instanceMap.size !== 0) {
+        // eslint-disable-next-line no-console
+        console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
+        return;
+      }
 
-        return null;
-      },
-      delete(element, key) {
-        if (typeof element.bsKey === 'undefined') {
-          return;
-        }
-
-        const keyProperties = element.bsKey;
-        if (keyProperties.key === key) {
-          delete storeData[keyProperties.id];
-          delete element.bsKey;
-        }
-      } };
-
-  })();
-
-  const Data = {
-    setData(instance, key, data) {
-      mapData.set(instance, key, data);
+      instanceMap.set(key, instance);
     },
-    getData(instance, key) {
-      return mapData.get(instance, key);
+
+    get(element, key) {
+      if (elementMap.has(element)) {
+        return elementMap.get(element).get(key) || null;
+      }
+
+      return null;
     },
-    removeData(instance, key) {
-      mapData.delete(instance, key);
+
+    remove(element, key) {
+      if (!elementMap.has(element)) {
+        return;
+      }
+
+      const instanceMap = elementMap.get(element);
+
+      instanceMap.delete(key);
+
+      // free up element references if there are no instances left for an element
+      if (instanceMap.size === 0) {
+        elementMap.delete(element);
+      }
     } };
 
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): dom/event-handler.js
+   * Bootstrap (v5.0.0-beta3): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -598,7 +590,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): dom/manipulator.js
+   * Bootstrap (v5.0.0-beta3): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -677,7 +669,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): dom/selector-engine.js
+   * Bootstrap (v5.0.0-beta3): dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -751,7 +743,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): base-component.js
+   * Bootstrap (v5.0.0-beta3): base-component.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -762,27 +754,29 @@
    * ------------------------------------------------------------------------
    */
 
-  const VERSION = '5.0.0-beta2';
+  const VERSION = '5.0.0-beta3';
 
   class BaseComponent {
     constructor(element) {
+      element = typeof element === 'string' ? document.querySelector(element) : element;
+
       if (!element) {
         return;
       }
 
       this._element = element;
-      Data.setData(element, this.constructor.DATA_KEY, this);
+      Data.set(this._element, this.constructor.DATA_KEY, this);
     }
 
     dispose() {
-      Data.removeData(this._element, this.constructor.DATA_KEY);
+      Data.remove(this._element, this.constructor.DATA_KEY);
       this._element = null;
     }
 
     /** Static */
 
     static getInstance(element) {
-      return Data.getData(element, this.DATA_KEY);
+      return Data.get(element, this.DATA_KEY);
     }
 
     static get VERSION() {
@@ -792,7 +786,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): dropdown.js
+   * Bootstrap (v5.0.0-beta3): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -834,21 +828,19 @@
   const CLASS_NAME_NAVBAR = 'navbar';
 
   const SELECTOR_DATA_TOGGLE$1 = '[data-bs-toggle="dropdown"]';
-  const SELECTOR_FORM_CHILD = '.dropdown form';
   const SELECTOR_MENU = '.dropdown-menu';
   const SELECTOR_NAVBAR_NAV = '.navbar-nav';
   const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
 
-  const PLACEMENT_TOP = isRTL ? 'top-end' : 'top-start';
-  const PLACEMENT_TOPEND = isRTL ? 'top-start' : 'top-end';
-  const PLACEMENT_BOTTOM = isRTL ? 'bottom-end' : 'bottom-start';
-  const PLACEMENT_BOTTOMEND = isRTL ? 'bottom-start' : 'bottom-end';
-  const PLACEMENT_RIGHT = isRTL ? 'left-start' : 'right-start';
-  const PLACEMENT_LEFT = isRTL ? 'right-start' : 'left-start';
+  const PLACEMENT_TOP = isRTL() ? 'top-end' : 'top-start';
+  const PLACEMENT_TOPEND = isRTL() ? 'top-start' : 'top-end';
+  const PLACEMENT_BOTTOM = isRTL() ? 'bottom-end' : 'bottom-start';
+  const PLACEMENT_BOTTOMEND = isRTL() ? 'bottom-start' : 'bottom-end';
+  const PLACEMENT_RIGHT = isRTL() ? 'left-start' : 'right-start';
+  const PLACEMENT_LEFT = isRTL() ? 'right-start' : 'left-start';
 
   const Default$1 = {
     offset: [0, 2],
-    flip: true,
     boundary: 'clippingParents',
     reference: 'toggle',
     display: 'dynamic',
@@ -857,7 +849,6 @@
 
   const DefaultType$1 = {
     offset: '(array|string|function)',
-    flip: 'boolean',
     boundary: '(string|element)',
     reference: '(string|element|object)',
     display: 'string',
@@ -956,7 +947,7 @@
         const popperConfig = this._getPopperConfig();
         const isDisplayStatic = popperConfig.modifiers.find(modifier => modifier.name === 'applyStyles' && modifier.enabled === false);
 
-        this._popper = Popper.createPopper(referenceElement, this._menu, popperConfig);
+        this._popper = Popper__namespace.createPopper(referenceElement, this._menu, popperConfig);
 
         if (isDisplayStatic) {
           Manipulator.setDataAttribute(this._menu, 'popper', 'static');
@@ -1007,7 +998,6 @@
     }
 
     dispose() {
-      super.dispose();
       EventHandler.off(this._element, EVENT_KEY$1);
       this._menu = null;
 
@@ -1015,6 +1005,8 @@
         this._popper.destroy();
         this._popper = null;
       }
+
+      super.dispose();
     }
 
     update() {
@@ -1029,7 +1021,6 @@
     _addEventListeners() {
       EventHandler.on(this._element, EVENT_CLICK, event => {
         event.preventDefault();
-        event.stopPropagation();
         this.toggle();
       });
     }
@@ -1102,7 +1093,6 @@
         modifiers: [{
           name: 'preventOverflow',
           options: {
-            altBoundary: this._config.flip,
             boundary: this._config.boundary } },
 
 
@@ -1131,7 +1121,7 @@
     // Static
 
     static dropdownInterface(element, config) {
-      let data = Data.getData(element, DATA_KEY$1);
+      let data = Data.get(element, DATA_KEY$1);
       const _config = typeof config === 'object' ? config : null;
 
       if (!data) {
@@ -1154,14 +1144,20 @@
     }
 
     static clearMenus(event) {
-      if (event && (event.button === RIGHT_MOUSE_BUTTON || event.type === 'keyup' && event.key !== TAB_KEY)) {
-        return;
+      if (event) {
+        if (event.button === RIGHT_MOUSE_BUTTON || event.type === 'keyup' && event.key !== TAB_KEY) {
+          return;
+        }
+
+        if (/input|select|textarea|form/i.test(event.target.tagName)) {
+          return;
+        }
       }
 
       const toggles = SelectorEngine.find(SELECTOR_DATA_TOGGLE$1);
 
       for (let i = 0, len = toggles.length; i < len; i++) {
-        const context = Data.getData(toggles[i], DATA_KEY$1);
+        const context = Data.get(toggles[i], DATA_KEY$1);
         const relatedTarget = {
           relatedTarget: toggles[i] };
 
@@ -1179,11 +1175,16 @@
           continue;
         }
 
-        if (event && (event.type === 'click' &&
-        /input|textarea/i.test(event.target.tagName) ||
-        event.type === 'keyup' && event.key === TAB_KEY) &&
-        dropdownMenu.contains(event.target)) {
-          continue;
+        if (event) {
+          // Don't close the menu if the clicked element or one of its parents is the dropdown button
+          if ([context._element].some(element => event.composedPath().includes(element))) {
+            continue;
+          }
+
+          // Tab navigation through the dropdown menu shouldn't close the menu
+          if (event.type === 'keyup' && event.key === TAB_KEY && dropdownMenu.contains(event.target)) {
+            continue;
+          }
         }
 
         const hideEvent = EventHandler.trigger(toggles[i], EVENT_HIDE$1, relatedTarget);
@@ -1296,10 +1297,8 @@
   EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearMenus);
   EventHandler.on(document, EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE$1, function (event) {
     event.preventDefault();
-    event.stopPropagation();
-    Dropdown.dropdownInterface(this, 'toggle');
+    Dropdown.dropdownInterface(this);
   });
-  EventHandler.on(document, EVENT_CLICK_DATA_API$1, SELECTOR_FORM_CHILD, e => e.stopPropagation());
 
   /**
    * ------------------------------------------------------------------------
@@ -1312,7 +1311,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta2): collapse.js
+   * Bootstrap (v5.0.0-beta3): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1368,8 +1367,8 @@
       this._isTransitioning = false;
       this._config = this._getConfig(config);
       this._triggerArray = SelectorEngine.find(
-      `${SELECTOR_DATA_TOGGLE}[href="#${element.id}"],` +
-      `${SELECTOR_DATA_TOGGLE}[data-bs-target="#${element.id}"]`);
+      `${SELECTOR_DATA_TOGGLE}[href="#${this._element.id}"],` +
+      `${SELECTOR_DATA_TOGGLE}[data-bs-target="#${this._element.id}"]`);
 
 
       const toggleList = SelectorEngine.find(SELECTOR_DATA_TOGGLE);
@@ -1378,7 +1377,7 @@
         const elem = toggleList[i];
         const selector = getSelectorFromElement(elem);
         const filterElement = SelectorEngine.find(selector).
-        filter(foundElem => foundElem === element);
+        filter(foundElem => foundElem === this._element);
 
         if (selector !== null && filterElement.length) {
           this._selector = selector;
@@ -1443,7 +1442,7 @@
       const container = SelectorEngine.findOne(this._selector);
       if (actives) {
         const tempActiveData = actives.find(elem => container !== elem);
-        activesData = tempActiveData ? Data.getData(tempActiveData, DATA_KEY) : null;
+        activesData = tempActiveData ? Data.get(tempActiveData, DATA_KEY) : null;
 
         if (activesData && activesData._isTransitioning) {
           return;
@@ -1462,7 +1461,7 @@
           }
 
           if (!activesData) {
-            Data.setData(elemActive, DATA_KEY, null);
+            Data.set(elemActive, DATA_KEY, null);
           }
         });
       }
@@ -1628,7 +1627,7 @@
     // Static
 
     static collapseInterface(element, config) {
-      let data = Data.getData(element, DATA_KEY);
+      let data = Data.get(element, DATA_KEY);
       const _config = {
         ...Default,
         ...Manipulator.getDataAttributes(element),
@@ -1676,7 +1675,7 @@
     const selectorElements = SelectorEngine.find(selector);
 
     selectorElements.forEach(element => {
-      const data = Data.getData(element, DATA_KEY);
+      const data = Data.get(element, DATA_KEY);
       let config;
       if (data) {
         // update parent attribute
@@ -1703,5 +1702,5 @@
 
   defineJQueryPlugin(NAME, Collapse);
 
-})(Popper);
+})(Popper = () => {});
 //# sourceMappingURL=bootstrap--async-p1.js.map
