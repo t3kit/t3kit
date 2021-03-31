@@ -8,15 +8,11 @@
   {f:if(condition: data.layout, then: ' {data.layout}')}">
   <f:if condition="{data._LOCALIZED_UID}"><a id="c{data._LOCALIZED_UID}"></a></f:if>
 
-  <!--TYPO3SEARCH_begin-->
-
   <f:render section="Header" optional="true">
     <f:render partial="Header/All" arguments="{_all}" />
   </f:render>
 
   <f:render section="Main" optional="true" />
-
-  <!--TYPO3SEARCH_end-->
 
   <f:render section="ScrollToTop" optional="true">
     <f:render partial="Nav/ScrollToTop" arguments="{_all}" />
