@@ -18,18 +18,22 @@ async function compileJs (localConf, options) {
     const timeStart = utils.start('compileJs', 'yellow')
     const fileList = []
 
+    let replaceVal = {
+      preventAssignment: true,
+      'process.env.NODE_ENV': process.env.NODE_ENV
+    }
+    replaceVal = { ...replaceVal, ...localConf.replace }
+
     await fse.ensureDir(localConf.JS_DIST)
     const files = await utils.getFileList(`${localConf.JS_SRC}*.js`, { objectMode: true })
 
     await pEachSeries(files, async (file, index) => {
       const inputOptions = {
         input: file.path,
+        external: [],
         plugins: [
           nodeResolve(),
-          replace({
-            preventAssignment: true,
-            'process.env.NODE_ENV': process.env.NODE_ENV
-          }),
+          replace(replaceVal),
           getBabelOutputPlugin({
             retainLines: true,
             allowAllFormats: true,
@@ -44,12 +48,16 @@ async function compileJs (localConf, options) {
           comments: false
         }
       }))
+      inputOptions.external = [...inputOptions.external, ...localConf.external]
+
       const outputOptions = {
         file: `${localConf.JS_DIST}${file.name}`,
         format: 'iife',
         sourcemap: process.env.NODE_ENV === 'production' ? 'hidden' : true,
-        sourcemapExcludeSources: true
+        sourcemapExcludeSources: true,
+        globals: {}
       }
+      outputOptions.globals = { ...outputOptions.globals, ...localConf.globals }
       const bundle = await rollup.rollup(inputOptions)
       await bundle.write(outputOptions)
 

@@ -40,6 +40,19 @@ localConf.JS_SRC = `${localConf.SRC}${localConf.JS_FOLDER.toLowerCase()}`
 localConf.JS_DIST = `${localConf.DIST}${localConf.CONTEXT}/${localConf.JS_FOLDER}`
 localConf.JS_LINK = `<f:asset.script identifier="%_id_%" %_settings_% src="EXT:{site.configuration.theme}/${localConf.RESOURCES_FOLDER}${localConf.ASSETS_FOLDER}${localConf.CONTEXT}/${localConf.JS_FOLDER}%_file_%" />`
 localConf.JS_LINK_INLINE = '<f:asset.script identifier="%_id_%" %_settings_% > %_inlineData_% </f:asset.script>'
+// JS | Rollup config
+// external (https://rollupjs.org/guide/en/#external)
+localConf.external = [
+  '@popperjs/core'
+]
+// replace (https://github.com/rollup/plugins/tree/master/packages/replace)
+localConf.replace = {
+  global: 'window'
+}
+// globals (https://rollupjs.org/guide/en/#outputglobals)
+localConf.globals = {
+  '@popperjs/core': 'Popper = () => {}'
+}
 
 // Icons variables
 localConf.ICONS = [
