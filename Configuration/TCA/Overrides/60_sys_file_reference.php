@@ -177,7 +177,7 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
                     '1x1'
                 ]
             ],
-            'default' => '16by9',
+            'default' => '16x9',
         ]
     ],
 ]);
