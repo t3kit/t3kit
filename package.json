@@ -74,7 +74,7 @@
     "npm": ">=7.7.6"
   },
   "browserslist": [
-    "> 1.5% and last 2 versions",
+    "> 1.6% and last 2 versions",
     "IOS >= 13 and > 1.5%",
     "Safari >= 13 and > 1.5%"
   ],
