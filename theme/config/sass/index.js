@@ -3,11 +3,21 @@ const pEachSeries = require('p-each-series')
 const size = require('filesize')
 const fse = require('fs-extra')
 const sass = require('sass')
+const Fiber = require('fibers')
+// const packageImporter = require('node-sass-package-importer')
+const nodeModuleImport = require('@node-sass/node-module-importer')
+
 const utils = require('../utils')
 
 function sassPromise (fileName) {
   return new Promise((resolve, reject) => {
-    sass.render({ file: fileName }, function (error, result) {
+    sass.render({
+      file: fileName,
+      // importer: packageImporter(),
+      importer: nodeModuleImport,
+      fiber: Fiber
+    },
+    function (error, result) {
       if (error) {
         utils.errLogFn(error.message, { functionName: 'sassPromise', functionVal: fileName, newPromise: true })
 
