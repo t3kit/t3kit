@@ -26,7 +26,7 @@
     "bootstrap": "v5.0.0-beta3",
     "bootstrap-icons": "1.4.1",
     "file-icon-vectors": "1.0.0",
-    "simplelightbox": "https://github.com/dmh/simplelightbox.git#nodeps",
+    "simplelightbox": "git@github.com:dmh/simplelightbox.git#nodeps",
     "swiper": "6.5.4"
   },
   "devDependencies": {
