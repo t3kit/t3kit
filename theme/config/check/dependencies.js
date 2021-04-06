@@ -6,7 +6,7 @@ function checkNodeModules (localConf) {
   if (!fs.existsSync(`${localConf.rootPath}/node_modules`)) {
     console.log('Error: No node modules installed in this extension')
     console.log('Please install all required dependencies by running <npm install>')
-    console.log(`You should use Node.js ${nodeEngine} and NPM ${npmVer}\n`)
+    console.log(`Use Node.js ${nodeEngine} and NPM ${npmVer}\n`)
     process.exit(1)
   }
 }
