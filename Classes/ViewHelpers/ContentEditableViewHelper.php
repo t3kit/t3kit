@@ -80,6 +80,12 @@ class ContentEditableViewHelper extends AbstractViewHelper
             'The database uid (identifier) to be used for the record when saving the content',
             true
         );
+        $this->registerArgument(
+            'tag',
+            'string',
+            'An optional tag name, e.g. "div" or "span".',
+            false
+        );
     }
 
     /**
