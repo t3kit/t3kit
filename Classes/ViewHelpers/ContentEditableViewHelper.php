@@ -97,7 +97,8 @@ class ContentEditableViewHelper extends AbstractTagBasedViewHelper
     /**
      * @return mixed|string
      */
-    public function render() {
+    public function render()
+    {
         $arguments = $this->arguments;
 
         if (ExtensionManagementUtility::isLoaded('frontend_editing')) {
