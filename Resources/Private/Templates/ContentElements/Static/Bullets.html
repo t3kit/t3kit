@@ -4,8 +4,7 @@
 
 <f:section name="Main">
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/Bullets.html [begin] -->
-
-  <f:if condition="{bullets}">
+  <f:if condition="{bullets} || {t3kit:isPlaceholderEnabled()}">
 
     <div class="ce-bullets__wrp">
       <div class="ce-bullets">
@@ -13,34 +12,34 @@
         <f:switch expression="{data.bullets_type}">
 
           <f:case value="0">
-            <ul class="ce-bullets__unlist">
+            <t3kit:contentEditable tag="ul" table="tt_content" field="bodytext" uid="{data.uid}" class="ce-bullets__unlist">
               <f:for each="{bullets}" as="bullet">
                 <li class="ce-bullets__unlist-item">{bullet}</li>
               </f:for>
-            </ul>
+            </t3kit:contentEditable>
           </f:case>
 
           <f:case value="1">
-            <ol class="ce-bullets__list">
+            <t3kit:contentEditable tag="ol" table="tt_content" field="bodytext" uid="{data.uid}" class="ce-bullets__list">
               <f:for each="{bullets}" as="bullet">
                 <li class="ce-bullets__list-item">{bullet}</li>
               </f:for>
-            </ol>
+            </t3kit:contentEditable>
           </f:case>
 
           <f:case value="2">
             <dl class="ce-bullets__dlist">
               <f:for each="{bullets}" as="definitionListItem">
-                <f:for each="{definitionListItem}" as="termDescription" iteration="termDescriptionIterator">
-                  <f:if condition="{termDescriptionIterator.isFirst}">
-                    <f:then>
-                      <dt class="ce-bullets__dlist-term">{termDescription}</dt>
-                    </f:then>
-                    <f:else>
-                      <dd class="ce-bullets__dlist-description">{termDescription}</dd>
-                    </f:else>
-                  </f:if>
-                </f:for>
+                  <f:for each="{definitionListItem}" as="termDescription" iteration="termDescriptionIterator">
+                    <f:if condition="{termDescriptionIterator.isFirst}">
+                      <f:then>
+                        <dt class="ce-bullets__dlist-term">{termDescription}</dt>
+                      </f:then>
+                      <f:else>
+                        <dd class="ce-bullets__dlist-description">{termDescription}</dd>
+                      </f:else>
+                    </f:if>
+                  </f:for>
               </f:for>
             </dl>
           </f:case>

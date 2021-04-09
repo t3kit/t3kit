@@ -36,6 +36,12 @@ defined('TYPO3_MODE') || die();
  * Configure element fields (types) to display
  * ===========================
  */
+$GLOBALS['TCA']['tt_content']['types']['bullets']['columnsOverrides']['bodytext'] = [
+    'config' => [
+        'enableFrontendRichtext' => true,
+        'frontendRichtextConfiguration' => 'listonly',
+    ],
+];
 
 
 /*

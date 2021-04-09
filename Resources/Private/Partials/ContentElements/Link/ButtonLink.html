@@ -3,6 +3,8 @@
 <f:if condition="{data.link_title} || {data.link} || {t3kit:isPlaceholderEnabled()}">
   <f:render partial="Link/Render/ButtonLink" arguments="{
     uid: data.uid,
+    table: table,
+    field: field,
     link_title: data.link_title,
     accessible_link_label: data.accessible_link_label,
     button_no_bg: data.button_no_bg,

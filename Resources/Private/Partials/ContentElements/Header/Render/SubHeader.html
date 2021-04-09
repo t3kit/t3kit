@@ -1,35 +1,43 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <f:if condition="{subheader} || {t3kit:isPlaceholderEnabled()}">
+  <f:if condition="!{table}">
+    <f:variable name="table" value="tt_content" />
+  </f:if>
+
+  <f:if condition="!{field}">
+    <f:variable name="field" value="header" />
+  </f:if>
+
   <f:switch expression="{layout}">
     <f:case value="1">
       <h2 class="{position} {subheader_style} subheader-item">
-        <t3kit:contentEditable table="tt_content" field="subheader" uid="{uid}">{subheader}</t3kit:contentEditable>
+        <t3kit:contentEditable table="tt_content" field="{subheader}" uid="{uid}">{subheader}</t3kit:contentEditable>
       </h2>
     </f:case>
     <f:case value="2">
       <h3 class="{position} {subheader_style} subheader-item">
-        <t3kit:contentEditable table="tt_content" field="subheader" uid="{uid}">{subheader}</t3kit:contentEditable>
+        <t3kit:contentEditable table="tt_content" field="{subheader}" uid="{uid}">{subheader}</t3kit:contentEditable>
       </h3>
     </f:case>
     <f:case value="3">
       <h4 class="{position} {subheader_style} subheader-item">
-        <t3kit:contentEditable table="tt_content" field="subheader" uid="{uid}">{subheader}</t3kit:contentEditable>
+        <t3kit:contentEditable table="tt_content" field="{subheader}" uid="{uid}">{subheader}</t3kit:contentEditable>
       </h4>
     </f:case>
     <f:case value="4">
       <h5 class="{position} {subheader_style} subheader-item">
-        <t3kit:contentEditable table="tt_content" field="subheader" uid="{uid}">{subheader}</t3kit:contentEditable>
+        <t3kit:contentEditable table="tt_content" field="{subheader}" uid="{uid}">{subheader}</t3kit:contentEditable>
       </h5>
     </f:case>
     <f:case value="5">
       <h6 class="{position} {subheader_style} subheader-item">
-        <t3kit:contentEditable table="tt_content" field="subheader" uid="{uid}">{subheader}</t3kit:contentEditable>
+        <t3kit:contentEditable table="tt_content" field="{subheader}" uid="{uid}">{subheader}</t3kit:contentEditable>
       </h6>
     </f:case>
     <f:case value="6">
       <h6 class="{position} {subheader_style} subheader-item">
-        <small><t3kit:contentEditable table="tt_content" field="subheader" uid="{uid}">{subheader}</t3kit:contentEditable></small>
+        <small><t3kit:contentEditable table="tt_content" field="{subheader}" uid="{uid}">{subheader}</t3kit:contentEditable></small>
       </h6>
     </f:case>
   </f:switch>

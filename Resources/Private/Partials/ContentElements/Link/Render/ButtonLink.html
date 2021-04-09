@@ -1,5 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
+<f:if condition="!{table}">
+  <f:variable name="table" value="tt_content" />
+</f:if>
+
+<f:if condition="!{field}">
+  <f:variable name="field" value="link_title" />
+</f:if>
+
 <f:variable name="btn_class">btn</f:variable>
 <f:if condition="{button_no_bg}">
   <f:then>
@@ -37,7 +45,7 @@
       parameter="{link}"
       additionalAttributes="{aria-label:accessible_link_label}"
       class="button-partial {btn_class} {f:if(condition: '{stretched_link} && !{t3kit:isFrontendEditingActive()}', then: ' stretched-link ')}">
-        <t3kit:contentEditable table="tt_content" field="link_title" uid="{uid}">{link_title}</t3kit:contentEditable>
+        <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{link_title}</t3kit:contentEditable>
     </f:link.typolink>
   </div>
 </f:if>
