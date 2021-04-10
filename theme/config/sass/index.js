@@ -4,7 +4,6 @@ const size = require('filesize')
 const fse = require('fs-extra')
 const sass = require('sass')
 const Fiber = require('fibers')
-// const packageImporter = require('node-sass-package-importer')
 const nodeModuleImport = require('@node-sass/node-module-importer')
 
 const utils = require('../utils')
@@ -13,7 +12,6 @@ function sassPromise (fileName) {
   return new Promise((resolve, reject) => {
     sass.render({
       file: fileName,
-      // importer: packageImporter(),
       importer: nodeModuleImport,
       fiber: Fiber
     },

@@ -73,6 +73,15 @@ jobs:
       - name: Run npm build
         run: npm run build
 
+      - name: Run npm icons
+        run: npm run icons
+
+      - name: Run npm filetypeIcons
+        run: npm run filetypeIcons
+
+      - name: Run npm favicons
+        run: npm run favicons
+
       - name: PKG versions
         run: |
           node -v
