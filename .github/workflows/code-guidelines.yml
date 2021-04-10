@@ -61,11 +61,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install npm@latest
-        run: npm install -g npm@latest
+      - name: Install npm@^7.9
+        run: npm install -g npm@^7.9
 
       - name: Install npm dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Run npm test
         run: npm test
