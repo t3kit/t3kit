@@ -71,9 +71,27 @@ $GLOBALS['TCA']['tt_content']['types']['heroImage'] = [
         'section_container_width' => [
             'config' => [
                 'default' => 'container-fluid'
-            ]
-        ]
-    ]
+            ],
+        ],
+        'header_text' => [
+            'config' => [
+                'enableFrontendRichtext' => true,
+                'frontendRichtextConfiguration' => 'bronly',
+            ],
+        ],
+        'subheader_text' => [
+            'config' => [
+                'enableFrontendRichtext' => true,
+                'frontendRichtextConfiguration' => 'bronly',
+            ],
+        ],
+        'bodytext' => [
+            'config' => [
+                'enableFrontendRichtext' => true,
+                'frontendRichtextConfiguration' => 'bronly',
+            ],
+        ],
+    ],
 ];
 
 

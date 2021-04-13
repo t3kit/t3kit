@@ -1,12 +1,20 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
+<f:if condition="!{table}">
+  <f:variable name="table" value="tt_content" />
+</f:if>
+
+<f:if condition="!{field}">
+  <f:variable name="field" value="bodytext" />
+</f:if>
+
 <f:if condition="{bodytext_position}">
   <f:variable name="position">text-{bodytext_position}</f:variable>
 </f:if>
 
 <f:if condition="{bodytext} || {t3kit:isPlaceholderEnabled()}">
   <p class="bodytext-partial {position}">
-    <t3kit:contentEditable table="tt_content" field="bodytext" uid="{uid}">
+    <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">
       <f:format.nl2br>{bodytext}</f:format.nl2br>
     </t3kit:contentEditable>
   </p>

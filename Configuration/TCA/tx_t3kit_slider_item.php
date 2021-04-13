@@ -42,7 +42,27 @@ return [
                 --palette--;;hidden,
                 --palette--;;access,
                 --palette--;;hiddenLanguagePalette,
-            '
+            ',
+            'columnsOverrides' => [
+                'header_text' => [
+                    'config' => [
+                        'enableFrontendRichtext' => true,
+                        'frontendRichtextConfiguration' => 'bronly',
+                    ],
+                ],
+                'subheader_text' => [
+                    'config' => [
+                        'enableFrontendRichtext' => true,
+                        'frontendRichtextConfiguration' => 'bronly',
+                    ],
+                ],
+                'bodytext' => [
+                    'config' => [
+                        'enableFrontendRichtext' => true,
+                        'frontendRichtextConfiguration' => 'bronly',
+                    ],
+                ],
+            ],
         ],
     ],
     'palettes' => [

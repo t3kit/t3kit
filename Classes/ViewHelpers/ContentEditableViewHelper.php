@@ -18,8 +18,12 @@ namespace T3k\t3kit\ViewHelpers;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\FrontendEditing\ViewHelpers\ContentEditableViewHelper
     as FrontendEditingContentEditableViewHelper;
-use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
+use TYPO3Fluid\Fluid\Core\Compiler\TemplateCompiler;
+use TYPO3Fluid\Fluid\Core\Compiler\ViewHelperCompiler;
+use TYPO3Fluid\Fluid\Core\Parser\SyntaxTree\ViewHelperNode;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
+use TYPO3Fluid\Fluid\Core\ViewHelper\TagBuilder;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 
 /**
@@ -36,9 +40,8 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
  *     This is the content text to edit
  * </div>
  */
-class ContentEditableViewHelper extends AbstractViewHelper
+class ContentEditableViewHelper extends AbstractTagBasedViewHelper
 {
-    use CompileWithRenderStatic;
 
     /**
      * Disable the escaping of children
@@ -62,6 +65,9 @@ class ContentEditableViewHelper extends AbstractViewHelper
     public function initializeArguments()
     {
         parent::initializeArguments();
+
+        $this->registerUniversalTagAttributes();
+
         $this->registerArgument(
             'table',
             'string',
@@ -80,31 +86,40 @@ class ContentEditableViewHelper extends AbstractViewHelper
             'The database uid (identifier) to be used for the record when saving the content',
             true
         );
+        $this->registerArgument(
+            'tag',
+            'string',
+            'An optional tag name, e.g. "div" or "span".',
+            false
+        );
     }
 
     /**
-     * An empty placeholder viewhelper to prevent Exceptions
-     *
-     * @param array $arguments
-     * @param \Closure $renderChildrenClosure
-     * @param RenderingContextInterface $renderingContext
-     *
-     * @return string Rendered email link
+     * @return mixed|string
      */
-    public static function renderStatic(
-        array $arguments,
-        \Closure $renderChildrenClosure,
-        RenderingContextInterface $renderingContext
-    ) {
+    public function render()
+    {
+        $arguments = $this->arguments;
+
         if (ExtensionManagementUtility::isLoaded('frontend_editing')) {
-            return FrontendEditingContentEditableViewHelper::renderStatic(
+            return $this->renderingContext->getViewHelperInvoker()->invoke(
+                \TYPO3\CMS\FrontendEditing\ViewHelpers\ContentEditableViewHelper::class,
                 $arguments,
-                $renderChildrenClosure,
-                $renderingContext
+                $this->renderingContext,
+                $this->renderChildrenClosure ?? $this->buildRenderChildrenClosure()
             );
         }
 
-        $content = $renderChildrenClosure();
-        return $content;
+        $content = $this->renderChildren();
+
+        if ($arguments['tag'] === null) {
+            return $content;
+        }
+
+        $this->tagName = $arguments['tag'];
+        $this->tag->setTagName($this->tagName);
+        $this->tag->setContent($content);
+
+        return $this->tag->render();
     }
 }

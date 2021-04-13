@@ -43,19 +43,28 @@
 
               <f:if condition="{item.data.header_text} || {t3kit:isPlaceholderEnabled()}">
                 <div class="ce-slider__caption-header">
-                  <f:render partial="Header/HeaderText" arguments="{data: item.data}" />
+                  <f:render
+                    partial="Header/HeaderText"
+                    arguments="{data: item.data, table: 'tx_t3kit_slider_item', field: 'header_text'}"
+                  />
                 </div>
               </f:if>
 
               <f:if condition="{item.data.subheader_text} || {t3kit:isPlaceholderEnabled()}">
                 <div class="ce-slider__caption-subheader">
-                  <f:render partial="Header/SubHeaderText" arguments="{data: item.data}" />
+                  <f:render
+                    partial="Header/SubHeaderText"
+                    arguments="{data: item.data, table: 'tx_t3kit_slider_item', field: 'subheader_text'}"
+                  />
                 </div>
               </f:if>
 
               <f:if condition="{item.data.bodytext} || {t3kit:isPlaceholderEnabled()}">
                 <div class="ce-slider__caption-bodytext fluid-font-size">
-                  <f:render partial="Bodytext/Bodytext" arguments="{data: item.data}" />
+                  <f:render
+                    partial="Bodytext/Bodytext"
+                    arguments="{data: item.data, table: 'tx_t3kit_slider_item'}"
+                  />
                 </div>
               </f:if>
 
@@ -63,10 +72,16 @@
                 <div class="ce-slider__caption-link">
                   <f:if condition="{item.data.link_as_button}">
                     <f:then>
-                      <f:render partial="Link/ButtonLink" arguments="{data: item.data}" />
+                      <f:render
+                        partial="Link/ButtonLink"
+                        arguments="{data: item.data, table: 'tx_t3kit_slider_item'}"
+                      />
                     </f:then>
                     <f:else>
-                      <f:render partial="Link/Link" arguments="{data: item.data}" />
+                      <f:render
+                        partial="Link/Link"
+                        arguments="{data: item.data, table: 'tx_t3kit_slider_item'}"
+                      />
                     </f:else>
                   </f:if>
                 </div>
@@ -78,7 +93,10 @@
 
           <f:if condition="{item.files}">
             <div class="ce-slider__picture">
-              <f:render partial="Media/Type" arguments="{files: item.files, data: data, height: height}" />
+              <f:render
+                partial="Media/Type"
+                arguments="{files: item.files, data: data, height: height}"
+              />
             </div>
           </f:if>
         </div>
