@@ -1127,7 +1127,10 @@
     remove: remove };
 
   Object.keys(Methods).forEach(function (methodName) {
-    $.fn[methodName] = Methods[methodName];
+    Object.defineProperty($.fn, methodName, {
+      value: Methods[methodName],
+      writable: true });
+
   });
 
   function deleteProps(obj) {
@@ -1279,6 +1282,15 @@
 
       instance[key] = obj[key];
     });
+  }
+
+  function classesToSelector(classes) {
+    if (classes === void 0) {
+      classes = '';
+    }
+
+    return "." + classes.trim().replace(/([\.:\/])/g, '\\$1') // eslint-disable-line
+    .replace(/ /g, '.');
   }
 
   var support;
@@ -5510,8 +5522,8 @@
       }
 
       if (params.type === 'fraction') {
-        $el.find("." + params.currentClass).text(params.formatFractionCurrent(current + 1));
-        $el.find("." + params.totalClass).text(params.formatFractionTotal(total));
+        $el.find(classesToSelector(params.currentClass)).text(params.formatFractionCurrent(current + 1));
+        $el.find(classesToSelector(params.totalClass)).text(params.formatFractionTotal(total));
       }
 
       if (params.type === 'progressbar') {
@@ -5533,7 +5545,7 @@
           scaleY = scale;
         }
 
-        $el.find("." + params.progressbarFillClass).transform("translate3d(0,0,0) scaleX(" + scaleX + ") scaleY(" + scaleY + ")").transition(swiper.params.speed);
+        $el.find(classesToSelector(params.progressbarFillClass)).transform("translate3d(0,0,0) scaleX(" + scaleX + ") scaleY(" + scaleY + ")").transition(swiper.params.speed);
       }
 
       if (params.type === 'custom' && params.renderCustom) {
@@ -5570,7 +5582,7 @@
         }
 
         $el.html(paginationHTML);
-        swiper.pagination.bullets = $el.find("." + params.bulletClass.replace(/ /g, '.'));
+        swiper.pagination.bullets = $el.find(classesToSelector(params.bulletClass));
       }
 
       if (params.type === 'fraction') {
@@ -5628,7 +5640,7 @@
       }
 
       if (params.clickable) {
-        $el.on('click', "." + params.bulletClass.replace(/ /g, '.'), function onClick(e) {
+        $el.on('click', classesToSelector(params.bulletClass), function onClick(e) {
           e.preventDefault();
           var index = $(this).index() * swiper.params.slidesPerGroup;
           if (swiper.params.loop) index += swiper.loopedSlides;
@@ -5651,7 +5663,7 @@
       if (swiper.pagination.bullets) swiper.pagination.bullets.removeClass(params.bulletActiveClass);
 
       if (params.clickable) {
-        $el.off('click', "." + params.bulletClass.replace(/ /g, '.'));
+        $el.off('click', classesToSelector(params.bulletClass));
       }
     } };
 
@@ -5835,7 +5847,7 @@
         }
       }
 
-      if (swiper.pagination && $targetEl.is("." + swiper.params.pagination.bulletClass.replace(/ /g, '.'))) {
+      if (swiper.pagination && $targetEl.is(classesToSelector(swiper.params.pagination.bulletClass))) {
         $targetEl[0].click();
       }
     },
@@ -5966,7 +5978,7 @@
 
 
       if (swiper.pagination && swiper.params.pagination.clickable && swiper.pagination.bullets && swiper.pagination.bullets.length) {
-        swiper.pagination.$el.on('keydown', "." + swiper.params.pagination.bulletClass.replace(/ /g, '.'), swiper.a11y.onEnterOrSpaceKey);
+        swiper.pagination.$el.on('keydown', classesToSelector(swiper.params.pagination.bulletClass), swiper.a11y.onEnterOrSpaceKey);
       }
     },
     destroy: function destroy() {
@@ -5993,7 +6005,7 @@
 
 
       if (swiper.pagination && swiper.params.pagination.clickable && swiper.pagination.bullets && swiper.pagination.bullets.length) {
-        swiper.pagination.$el.off('keydown', "." + swiper.params.pagination.bulletClass.replace(/ /g, '.'), swiper.a11y.onEnterOrSpaceKey);
+        swiper.pagination.$el.off('keydown', classesToSelector(swiper.params.pagination.bulletClass), swiper.a11y.onEnterOrSpaceKey);
       }
     } };
 
