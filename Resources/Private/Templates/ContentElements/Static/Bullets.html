@@ -30,16 +30,16 @@
           <f:case value="2">
             <dl class="ce-bullets__dlist">
               <f:for each="{bullets}" as="definitionListItem">
-                  <f:for each="{definitionListItem}" as="termDescription" iteration="termDescriptionIterator">
-                    <f:if condition="{termDescriptionIterator.isFirst}">
-                      <f:then>
-                        <dt class="ce-bullets__dlist-term">{termDescription}</dt>
-                      </f:then>
-                      <f:else>
-                        <dd class="ce-bullets__dlist-description">{termDescription}</dd>
-                      </f:else>
-                    </f:if>
-                  </f:for>
+                <f:for each="{definitionListItem}" as="termDescription" iteration="termDescriptionIterator">
+                  <f:if condition="{termDescriptionIterator.isFirst}">
+                    <f:then>
+                      <dt class="ce-bullets__dlist-term">{termDescription}</dt>
+                    </f:then>
+                    <f:else>
+                      <dd class="ce-bullets__dlist-description">{termDescription}</dd>
+                    </f:else>
+                  </f:if>
+                </f:for>
               </f:for>
             </dl>
           </f:case>
