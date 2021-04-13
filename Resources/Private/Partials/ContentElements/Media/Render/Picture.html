@@ -117,7 +117,7 @@
 </f:if>
 
 
-<f:if condition="{picture_width} != 100 && {data.CType} != textpic">
+<f:if condition="{picture_width} != 100 && {data.CType} != textpic && {data.CType} != textmedia">
   <f:variable name="fluid_viewport_width">{picture_width*fluid_viewport_width/100}</f:variable>
   <f:variable name="fixed_viewport_width">{picture_width*fixed_viewport_width/100}</f:variable>
   <f:variable name="small_viewport_width">{picture_mobile_width*small_viewport_width/100}</f:variable>
@@ -125,10 +125,10 @@
 
 
 <f:comment>
-  Special configuration only for textpic CE
-  Render only 50% of the image for textpic CE if imageorient = Beside Text, Right/Left. In this case, images always take only 50% of the content element width on big viewport.
+  Special configuration only for textpic and textmedia CE
+  Render only 50% of the image for textpic/textmedia CE if imageorient = Beside Text, Right/Left. In this case, images always take only 50% of the content element width on big viewport.
 </f:comment>
-<f:if condition="{data.CType} == textpic">
+<f:if condition="{data.CType} == textpic || {data.CType} == textmedia">
   <f:if condition="{data.imageorient} == 25 || {data.imageorient} == 26">
     <f:then>
       <f:if condition="{picture_width} > 50">
@@ -137,6 +137,9 @@
       <f:variable name="fluid_viewport_width">{picture_width*fluid_viewport_width/100}</f:variable>
       <f:variable name="fixed_viewport_width">{picture_width*fixed_viewport_width/100}</f:variable>
       <f:variable name="small_viewport_width">{picture_mobile_width*2*small_viewport_width/100}</f:variable>
+      <f:if condition="{data.textorient} == textorient-auto">
+        <f:variable name="small_viewport_width">100</f:variable>
+      </f:if>
     </f:then>
 
     <f:else>
