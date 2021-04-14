@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-150x150.png?v=9ccf9b3"/>
+            <square150x150logo src="/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/mstile-150x150.png?v=181d4e8"/>
             <TileColor>#2b5797</TileColor>
         </tile>
     </msapplication>
