@@ -58,6 +58,17 @@
 						</TCEforms>
 					</image_height>
 
+					<header_above_image>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLink.xlf:flexform.header_above_image</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</header_above_image>
+
 				</el>
 			</ROOT>
 		</sDEF>
