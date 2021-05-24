@@ -154,7 +154,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       if (this.options.uniqueImages) {
         let imgArr = [];
         this.elements = Array.from(this.elements).filter(
-        element => {
+        (element) => {
           let src = element.getAttribute(this.options.sourceAttr);
           if (imgArr.indexOf(src) === -1) {
             imgArr.push(src);
@@ -179,7 +179,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         this.domNodes.wrapper.appendChild(this.domNodes.spinner);
       }
 
-      this.addEventListener(this.elements, 'click.' + this.eventNamespace, event => {
+      this.addEventListener(this.elements, 'click.' + this.eventNamespace, (event) => {
 
         if (this.isValidLink(event.currentTarget)) {
           event.preventDefault();
@@ -194,7 +194,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
       // close addEventListener click addEventListener doc
       if (this.options.docClose) {
-        this.addEventListener(this.domNodes.wrapper, ['click.' + this.eventNamespace, 'touchstart.' + this.eventNamespace], event => {
+        this.addEventListener(this.domNodes.wrapper, ['click.' + this.eventNamespace, 'touchstart.' + this.eventNamespace], (event) => {
           if (this.isOpen && event.target === event.currentTarget) {
             this.close();
           }
@@ -203,7 +203,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
       // disable rightclick
       if (this.options.disableRightClick) {
-        this.addEventListener(document.body, 'contextmenu.' + this.eventNamespace, event => {
+        this.addEventListener(document.body, 'contextmenu.' + this.eventNamespace, (event) => {
           if (event.target.classList.contains('sl-overlay')) {
             event.preventDefault();
           }
@@ -212,7 +212,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
       // keyboard-control
       if (this.options.enableKeyboard) {
-        this.addEventListener(document.body, 'keyup.' + this.eventNamespace, this.throttle(event => {
+        this.addEventListener(document.body, 'keyup.' + this.eventNamespace, this.throttle((event) => {
           this.controlCoordinates.swipeDiff = 0;
           // keyboard control only if lightbox is open
 
@@ -331,7 +331,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
             document.body.classList.add('hidden-scroll');
             document.body.style.paddingRight = paddingRight + scrollbarWidth + 'px';
 
-            fixedElements.forEach(element => {
+            fixedElements.forEach((element) => {
               const actualPadding = element.style.paddingRight;
               const calculatedPadding = window.getComputedStyle(element)['padding-right'];
               element.dataset.originalPaddingRight = actualPadding;
@@ -344,7 +344,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         document.body.classList.remove('hidden-scroll');
         document.body.style.paddingRight = document.body.dataset.originalPaddingRight;
 
-        fixedElements.forEach(element => {
+        fixedElements.forEach((element) => {
           const padding = element.dataset.originalPaddingRight;
           if (typeof padding !== 'undefined') {
             element.style.paddingRight = padding;
@@ -418,7 +418,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       nextImage = new Image(),
       prevImage = new Image();
 
-      nextImage.addEventListener('load', event => {
+      nextImage.addEventListener('load', (event) => {
         let src = event.target.getAttribute('src');
         if (this.loadedImages.indexOf(src) === -1) {//is this condition even required... setting multiple times will not change usage...
           this.loadedImages.push(src);
@@ -427,7 +427,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       });
       nextImage.setAttribute('src', this.relatedElements[next].getAttribute(this.options.sourceAttr));
 
-      prevImage.addEventListener('load', event => {
+      prevImage.addEventListener('load', (event) => {
         let src = event.target.getAttribute('src');
         if (this.loadedImages.indexOf(src) === -1) {
           this.loadedImages.push(src);
@@ -503,7 +503,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       this.currentImage.dataset.translateY = 0;
       this.zoomPanElement(0, 0, 1);
 
-      tmpImage.addEventListener('error', event => {
+      tmpImage.addEventListener('error', (event) => {
         this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('error.' + this.eventNamespace));
         this.isAnimating = false;
         this.isOpen = false;
@@ -522,7 +522,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       });
 
 
-      tmpImage.addEventListener('load', event => {
+      tmpImage.addEventListener('load', (event) => {
         if (typeof direction !== 'undefined') {
           this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('changed.' + this.eventNamespace));
           this.relatedElements[this.currentImageIndex].dispatchEvent(new Event((direction === 1 ? 'nextDone' : 'prevDone') + '.' + this.eventNamespace));
@@ -657,7 +657,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
     addEvents() {
 
       // resize/responsive
-      this.addEventListener(window, 'resize.' + this.eventNamespace, event => {
+      this.addEventListener(window, 'resize.' + this.eventNamespace, (event) => {
         //this.adjustImage.bind(this)
         if (this.isOpen) {
           this.adjustImage();
@@ -668,7 +668,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
       if (this.options.history) {
         setTimeout(() => {
-          this.addEventListener(window, 'hashchange.' + this.eventNamespace, event => {
+          this.addEventListener(window, 'hashchange.' + this.eventNamespace, (event) => {
             if (this.isOpen) {
               this.hashchangeHandler();
             }
@@ -676,7 +676,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         }, 40);
       }
 
-      this.addEventListener(this.domNodes.navigation.getElementsByTagName('button'), 'click.' + this.eventNamespace, event => {
+      this.addEventListener(this.domNodes.navigation.getElementsByTagName('button'), 'click.' + this.eventNamespace, (event) => {
         if (!event.currentTarget.tagName.match(/button/i)) {
           return true;
         }
@@ -686,7 +686,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         this.loadImage(event.currentTarget.classList.contains('sl-next') ? 1 : -1);
       });
 
-      this.addEventListener(this.domNodes.image, ['touchstart.' + this.eventNamespace, 'mousedown.' + this.eventNamespace], event => {
+      this.addEventListener(this.domNodes.image, ['touchstart.' + this.eventNamespace, 'mousedown.' + this.eventNamespace], (event) => {
         if (event.target.tagName === 'A' && event.type === 'touchstart') {
           return true;
         }
@@ -777,7 +777,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         return false;
       });
 
-      this.addEventListener(this.domNodes.image, ['touchmove.' + this.eventNamespace, 'mousemove.' + this.eventNamespace, 'MSPointerMove'], event => {
+      this.addEventListener(this.domNodes.image, ['touchmove.' + this.eventNamespace, 'mousemove.' + this.eventNamespace, 'MSPointerMove'], (event) => {
 
 
         if (!this.controlCoordinates.mousedown) {
@@ -892,7 +892,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       });
 
 
-      this.addEventListener(this.domNodes.image, ['touchend.' + this.eventNamespace, 'mouseup.' + this.eventNamespace, 'touchcancel.' + this.eventNamespace, 'mouseleave.' + this.eventNamespace, 'pointerup', 'pointercancel', 'MSPointerUp', 'MSPointerCancel'], event => {
+      this.addEventListener(this.domNodes.image, ['touchend.' + this.eventNamespace, 'mouseup.' + this.eventNamespace, 'touchcancel.' + this.eventNamespace, 'mouseleave.' + this.eventNamespace, 'pointerup', 'pointercancel', 'MSPointerUp', 'MSPointerCancel'], (event) => {
 
 
         if (this.isTouchDevice && event.type === 'touchend') {
@@ -943,7 +943,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         }
       });
 
-      this.addEventListener(this.domNodes.image, ['dblclick'], event => {
+      this.addEventListener(this.domNodes.image, ['dblclick'], (event) => {
         if (this.isTouchDevice) return;
         this.controlCoordinates.initialPointerOffsetX = event.clientX;
         this.controlCoordinates.initialPointerOffsetY = event.clientY;
@@ -1077,7 +1077,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
     getRelated(rel) {
       let elems;
       if (rel && rel !== false && rel !== 'nofollow') {
-        elems = Array.from(this.elements).filter(element => element.getAttribute('rel') === rel);
+        elems = Array.from(this.elements).filter((element) => element.getAttribute('rel') === rel);
       } else {
         elems = this.elements;
       }
@@ -1154,7 +1154,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
     forceFocus() {
       this.removeEventListener(document, 'focusin.' + this.eventNamespace);
-      this.addEventListener(document, 'focusin.' + this.eventNamespace, event => {
+      this.addEventListener(document, 'focusin.' + this.eventNamespace, (event) => {
         if (document !== event.target &&
         this.domNodes.wrapper !== event.target &&
         !this.domNodes.wrapper.contains(event.target)) {

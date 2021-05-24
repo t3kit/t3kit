@@ -25,15 +25,83 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): util/index.js
+   * Bootstrap (v5.0.1): dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+  const NODE_TEXT = 3;
+
+  const SelectorEngine = {
+    find(selector, element = document.documentElement) {
+      return [].concat(...Element.prototype.querySelectorAll.call(element, selector));
+    },
+
+    findOne(selector, element = document.documentElement) {
+      return Element.prototype.querySelector.call(element, selector);
+    },
+
+    children(element, selector) {
+      return [].concat(...element.children).
+      filter((child) => child.matches(selector));
+    },
+
+    parents(element, selector) {
+      const parents = [];
+
+      let ancestor = element.parentNode;
+
+      while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
+        if (ancestor.matches(selector)) {
+          parents.push(ancestor);
+        }
+
+        ancestor = ancestor.parentNode;
+      }
+
+      return parents;
+    },
+
+    prev(element, selector) {
+      let previous = element.previousElementSibling;
+
+      while (previous) {
+        if (previous.matches(selector)) {
+          return [previous];
+        }
+
+        previous = previous.previousElementSibling;
+      }
+
+      return [];
+    },
+
+    next(element, selector) {
+      let next = element.nextElementSibling;
+
+      while (next) {
+        if (next.matches(selector)) {
+          return [next];
+        }
+
+        next = next.nextElementSibling;
+      }
+
+      return [];
+    } };
+
+
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend';
 
   // Shoutout AngusCroll (https://goo.gl/pxwQGp)
-  const toType = obj => {
+  const toType = (obj) => {
     if (obj === null || obj === undefined) {
       return `${obj}`;
     }
@@ -41,7 +109,7 @@
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
   };
 
-  const getSelector = element => {
+  const getSelector = (element) => {
     let selector = element.getAttribute('data-bs-target');
 
     if (!selector || selector === '#') {
@@ -57,7 +125,7 @@
 
       // Just in case some CMS puts out a full URL with the anchor appended
       if (hrefAttr.includes('#') && !hrefAttr.startsWith('#')) {
-        hrefAttr = '#' + hrefAttr.split('#')[1];
+        hrefAttr = `#${hrefAttr.split('#')[1]}`;
       }
 
       selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : null;
@@ -66,7 +134,7 @@
     return selector;
   };
 
-  const getSelectorFromElement = element => {
+  const getSelectorFromElement = (element) => {
     const selector = getSelector(element);
 
     if (selector) {
@@ -76,13 +144,13 @@
     return null;
   };
 
-  const getElementFromSelector = element => {
+  const getElementFromSelector = (element) => {
     const selector = getSelector(element);
 
     return selector ? document.querySelector(selector) : null;
   };
 
-  const getTransitionDurationFromElement = element => {
+  const getTransitionDurationFromElement = (element) => {
     if (!element) {
       return 0;
     }
@@ -105,11 +173,33 @@
     return (Number.parseFloat(transitionDuration) + Number.parseFloat(transitionDelay)) * MILLISECONDS_MULTIPLIER;
   };
 
-  const triggerTransitionEnd = element => {
+  const triggerTransitionEnd = (element) => {
     element.dispatchEvent(new Event(TRANSITION_END));
   };
 
-  const isElement = obj => (obj[0] || obj).nodeType;
+  const isElement = (obj) => {
+    if (!obj || typeof obj !== 'object') {
+      return false;
+    }
+
+    if (typeof obj.jquery !== 'undefined') {
+      obj = obj[0];
+    }
+
+    return typeof obj.nodeType !== 'undefined';
+  };
+
+  const getElement = (obj) => {
+    if (isElement(obj)) {// it's a jQuery object or a node element
+      return obj.jquery ? obj[0] : obj;
+    }
+
+    if (typeof obj === 'string' && obj.length > 0) {
+      return SelectorEngine.findOne(obj);
+    }
+
+    return null;
+  };
 
   const emulateTransitionEnd = (element, duration) => {
     let called = false;
@@ -130,22 +220,20 @@
   };
 
   const typeCheckConfig = (componentName, config, configTypes) => {
-    Object.keys(configTypes).forEach(property => {
+    Object.keys(configTypes).forEach((property) => {
       const expectedTypes = configTypes[property];
       const value = config[property];
       const valueType = value && isElement(value) ? 'element' : toType(value);
 
       if (!new RegExp(expectedTypes).test(valueType)) {
         throw new TypeError(
-        `${componentName.toUpperCase()}: ` +
-        `Option "${property}" provided type "${valueType}" ` +
-        `but expected type "${expectedTypes}".`);
+        `${componentName.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`);
 
       }
     });
   };
 
-  const isVisible = element => {
+  const isVisible = (element) => {
     if (!element) {
       return false;
     }
@@ -162,9 +250,25 @@
     return false;
   };
 
-  const noop = () => function () {};
+  const isDisabled = (element) => {
+    if (!element || element.nodeType !== Node.ELEMENT_NODE) {
+      return true;
+    }
 
-  const reflow = element => element.offsetHeight;
+    if (element.classList.contains('disabled')) {
+      return true;
+    }
+
+    if (typeof element.disabled !== 'undefined') {
+      return element.disabled;
+    }
+
+    return element.hasAttribute('disabled') && element.getAttribute('disabled') !== 'false';
+  };
+
+  const noop = () => {};
+
+  const reflow = (element) => element.offsetHeight;
 
   const getjQuery = () => {
     const { jQuery } = window;
@@ -176,7 +280,7 @@
     return null;
   };
 
-  const onDOMContentLoaded = callback => {
+  const onDOMContentLoaded = (callback) => {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', callback);
     } else {
@@ -186,11 +290,12 @@
 
   const isRTL = () => document.documentElement.dir === 'rtl';
 
-  const defineJQueryPlugin = (name, plugin) => {
+  const defineJQueryPlugin = (plugin) => {
     onDOMContentLoaded(() => {
       const $ = getjQuery();
       /* istanbul ignore if */
       if ($) {
+        const name = plugin.NAME;
         const JQUERY_NO_CONFLICT = $.fn[name];
         $.fn[name] = plugin.jQueryInterface;
         $.fn[name].Constructor = plugin;
@@ -202,9 +307,15 @@
     });
   };
 
+  const execute = (callback) => {
+    if (typeof callback === 'function') {
+      callback();
+    }
+  };
+
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/data.js
+   * Bootstrap (v5.0.1): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -262,7 +373,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/event-handler.js
+   * Bootstrap (v5.0.1): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -282,6 +393,7 @@
     mouseenter: 'mouseover',
     mouseleave: 'mouseout' };
 
+  const customEventsRegex = /^(mouseenter|mouseleave)/i;
   const nativeEvents = new Set([
   'click',
   'dblclick',
@@ -373,7 +485,7 @@
 
             if (handler.oneOff) {
               // eslint-disable-next-line unicorn/consistent-destructuring
-              EventHandler.off(element, event.type, fn);
+              EventHandler.off(element, event.type, selector, fn);
             }
 
             return fn.apply(target, [event]);
@@ -404,14 +516,7 @@
     const delegation = typeof handler === 'string';
     const originalHandler = delegation ? delegationFn : handler;
 
-    // allow to get the native events from namespaced events ('click.bs.button' --> 'click')
-    let typeEvent = originalTypeEvent.replace(stripNameRegex, '');
-    const custom = customEvents[typeEvent];
-
-    if (custom) {
-      typeEvent = custom;
-    }
-
+    let typeEvent = getTypeEvent(originalTypeEvent);
     const isNative = nativeEvents.has(typeEvent);
 
     if (!isNative) {
@@ -429,6 +534,24 @@
     if (!handler) {
       handler = delegationFn;
       delegationFn = null;
+    }
+
+    // in case of mouseenter or mouseleave wrap the handler within a function that checks for its DOM position
+    // this prevents the handler from being dispatched the same way as mouseover or mouseout does
+    if (customEventsRegex.test(originalTypeEvent)) {
+      const wrapFn = (fn) => {
+        return function (event) {
+          if (!event.relatedTarget || event.relatedTarget !== event.delegateTarget && !event.delegateTarget.contains(event.relatedTarget)) {
+            return fn.call(this, event);
+          }
+        };
+      };
+
+      if (delegationFn) {
+        delegationFn = wrapFn(delegationFn);
+      } else {
+        handler = wrapFn(handler);
+      }
     }
 
     const [delegation, originalHandler, typeEvent] = normalizeParams(originalTypeEvent, handler, delegationFn);
@@ -470,13 +593,19 @@
   function removeNamespacedHandlers(element, events, typeEvent, namespace) {
     const storeElementEvent = events[typeEvent] || {};
 
-    Object.keys(storeElementEvent).forEach(handlerKey => {
+    Object.keys(storeElementEvent).forEach((handlerKey) => {
       if (handlerKey.includes(namespace)) {
         const event = storeElementEvent[handlerKey];
 
         removeHandler(element, events, typeEvent, event.originalHandler, event.delegationSelector);
       }
     });
+  }
+
+  function getTypeEvent(event) {
+    // allow to get the native events from namespaced events ('click.bs.button' --> 'click')
+    event = event.replace(stripNameRegex, '');
+    return customEvents[event] || event;
   }
 
   const EventHandler = {
@@ -509,13 +638,13 @@
       }
 
       if (isNamespace) {
-        Object.keys(events).forEach(elementEvent => {
+        Object.keys(events).forEach((elementEvent) => {
           removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
         });
       }
 
       const storeElementEvent = events[typeEvent] || {};
-      Object.keys(storeElementEvent).forEach(keyHandlers => {
+      Object.keys(storeElementEvent).forEach((keyHandlers) => {
         const handlerKey = keyHandlers.replace(stripUidRegex, '');
 
         if (!inNamespace || originalTypeEvent.includes(handlerKey)) {
@@ -532,7 +661,7 @@
       }
 
       const $ = getjQuery();
-      const typeEvent = event.replace(stripNameRegex, '');
+      const typeEvent = getTypeEvent(event);
       const inNamespace = event !== typeEvent;
       const isNative = nativeEvents.has(typeEvent);
 
@@ -563,7 +692,7 @@
 
       // merge custom information in our event
       if (typeof args !== 'undefined') {
-        Object.keys(args).forEach(key => {
+        Object.keys(args).forEach((key) => {
           Object.defineProperty(evt, key, {
             get() {
               return args[key];
@@ -590,7 +719,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/manipulator.js
+   * Bootstrap (v5.0.1): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -616,7 +745,7 @@
   }
 
   function normalizeDataKey(key) {
-    return key.replace(/[A-Z]/g, chr => `-${chr.toLowerCase()}`);
+    return key.replace(/[A-Z]/g, (chr) => `-${chr.toLowerCase()}`);
   }
 
   const Manipulator = {
@@ -636,8 +765,8 @@
       const attributes = {};
 
       Object.keys(element.dataset).
-      filter(key => key.startsWith('bs')).
-      forEach(key => {
+      filter((key) => key.startsWith('bs')).
+      forEach((key) => {
         let pureKey = key.replace(/^bs/, '');
         pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1, pureKey.length);
         attributes[pureKey] = normalizeData(element.dataset[key]);
@@ -669,7 +798,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/selector-engine.js
+   * Bootstrap (v5.0.1): base-component.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -680,85 +809,11 @@
    * ------------------------------------------------------------------------
    */
 
-  const NODE_TEXT = 3;
-
-  const SelectorEngine = {
-    find(selector, element = document.documentElement) {
-      return [].concat(...Element.prototype.querySelectorAll.call(element, selector));
-    },
-
-    findOne(selector, element = document.documentElement) {
-      return Element.prototype.querySelector.call(element, selector);
-    },
-
-    children(element, selector) {
-      return [].concat(...element.children).
-      filter(child => child.matches(selector));
-    },
-
-    parents(element, selector) {
-      const parents = [];
-
-      let ancestor = element.parentNode;
-
-      while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
-        if (ancestor.matches(selector)) {
-          parents.push(ancestor);
-        }
-
-        ancestor = ancestor.parentNode;
-      }
-
-      return parents;
-    },
-
-    prev(element, selector) {
-      let previous = element.previousElementSibling;
-
-      while (previous) {
-        if (previous.matches(selector)) {
-          return [previous];
-        }
-
-        previous = previous.previousElementSibling;
-      }
-
-      return [];
-    },
-
-    next(element, selector) {
-      let next = element.nextElementSibling;
-
-      while (next) {
-        if (next.matches(selector)) {
-          return [next];
-        }
-
-        next = next.nextElementSibling;
-      }
-
-      return [];
-    } };
-
-
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): base-component.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
-
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
-
-  const VERSION = '5.0.0-beta3';
+  const VERSION = '5.0.1';
 
   class BaseComponent {
     constructor(element) {
-      element = typeof element === 'string' ? document.querySelector(element) : element;
+      element = getElement(element);
 
       if (!element) {
         return;
@@ -770,7 +825,23 @@
 
     dispose() {
       Data.remove(this._element, this.constructor.DATA_KEY);
-      this._element = null;
+      EventHandler.off(this._element, this.constructor.EVENT_KEY);
+
+      Object.getOwnPropertyNames(this).forEach((propertyName) => {
+        this[propertyName] = null;
+      });
+    }
+
+    _queueCallback(callback, element, isAnimated = true) {
+      if (!isAnimated) {
+        execute(callback);
+        return;
+      }
+
+      const transitionDuration = getTransitionDurationFromElement(element);
+      EventHandler.one(element, 'transitionend', () => execute(callback));
+
+      emulateTransitionEnd(element, transitionDuration);
     }
 
     /** Static */
@@ -781,12 +852,24 @@
 
     static get VERSION() {
       return VERSION;
+    }
+
+    static get NAME() {
+      throw new Error('You have to implement the static method "NAME", for each component!');
+    }
+
+    static get DATA_KEY() {
+      return `bs.${this.NAME}`;
+    }
+
+    static get EVENT_KEY() {
+      return `.${this.DATA_KEY}`;
     }}
 
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dropdown.js
+   * Bootstrap (v5.0.1): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -820,7 +903,6 @@
   const EVENT_KEYDOWN_DATA_API = `keydown${EVENT_KEY$1}${DATA_API_KEY$1}`;
   const EVENT_KEYUP_DATA_API = `keyup${EVENT_KEY$1}${DATA_API_KEY$1}`;
 
-  const CLASS_NAME_DISABLED = 'disabled';
   const CLASS_NAME_SHOW$1 = 'show';
   const CLASS_NAME_DROPUP = 'dropup';
   const CLASS_NAME_DROPEND = 'dropend';
@@ -844,7 +926,8 @@
     boundary: 'clippingParents',
     reference: 'toggle',
     display: 'dynamic',
-    popperConfig: null };
+    popperConfig: null,
+    autoClose: true };
 
 
   const DefaultType$1 = {
@@ -852,7 +935,8 @@
     boundary: '(string|element)',
     reference: '(string|element|object)',
     display: 'string',
-    popperConfig: '(null|object|function)' };
+    popperConfig: '(null|object|function)',
+    autoClose: '(boolean|string)' };
 
 
   /**
@@ -883,22 +967,21 @@
       return DefaultType$1;
     }
 
-    static get DATA_KEY() {
-      return DATA_KEY$1;
+    static get NAME() {
+      return NAME$1;
     }
 
     // Public
 
     toggle() {
-      if (this._element.disabled || this._element.classList.contains(CLASS_NAME_DISABLED)) {
+      if (isDisabled(this._element)) {
         return;
       }
 
       const isActive = this._element.classList.contains(CLASS_NAME_SHOW$1);
 
-      Dropdown.clearMenus();
-
       if (isActive) {
+        this.hide();
         return;
       }
 
@@ -906,7 +989,7 @@
     }
 
     show() {
-      if (this._element.disabled || this._element.classList.contains(CLASS_NAME_DISABLED) || this._menu.classList.contains(CLASS_NAME_SHOW$1)) {
+      if (isDisabled(this._element) || this._menu.classList.contains(CLASS_NAME_SHOW$1)) {
         return;
       }
 
@@ -934,18 +1017,13 @@
         if (this._config.reference === 'parent') {
           referenceElement = parent;
         } else if (isElement(this._config.reference)) {
-          referenceElement = this._config.reference;
-
-          // Check if it's jQuery element
-          if (typeof this._config.reference.jquery !== 'undefined') {
-            referenceElement = this._config.reference[0];
-          }
+          referenceElement = getElement(this._config.reference);
         } else if (typeof this._config.reference === 'object') {
           referenceElement = this._config.reference;
         }
 
         const popperConfig = this._getPopperConfig();
-        const isDisplayStatic = popperConfig.modifiers.find(modifier => modifier.name === 'applyStyles' && modifier.enabled === false);
+        const isDisplayStatic = popperConfig.modifiers.find((modifier) => modifier.name === 'applyStyles' && modifier.enabled === false);
 
         this._popper = Popper__namespace.createPopper(referenceElement, this._menu, popperConfig);
 
@@ -961,7 +1039,7 @@
       if ('ontouchstart' in document.documentElement &&
       !parent.closest(SELECTOR_NAVBAR_NAV)) {
         [].concat(...document.body.children).
-        forEach(elem => EventHandler.on(elem, 'mouseover', null, noop()));
+        forEach((elem) => EventHandler.on(elem, 'mouseover', noop));
       }
 
       this._element.focus();
@@ -973,7 +1051,7 @@
     }
 
     hide() {
-      if (this._element.disabled || this._element.classList.contains(CLASS_NAME_DISABLED) || !this._menu.classList.contains(CLASS_NAME_SHOW$1)) {
+      if (isDisabled(this._element) || !this._menu.classList.contains(CLASS_NAME_SHOW$1)) {
         return;
       }
 
@@ -981,29 +1059,12 @@
         relatedTarget: this._element };
 
 
-      const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE$1, relatedTarget);
-
-      if (hideEvent.defaultPrevented) {
-        return;
-      }
-
-      if (this._popper) {
-        this._popper.destroy();
-      }
-
-      this._menu.classList.toggle(CLASS_NAME_SHOW$1);
-      this._element.classList.toggle(CLASS_NAME_SHOW$1);
-      Manipulator.removeDataAttribute(this._menu, 'popper');
-      EventHandler.trigger(this._element, EVENT_HIDDEN$1, relatedTarget);
+      this._completeHide(relatedTarget);
     }
 
     dispose() {
-      EventHandler.off(this._element, EVENT_KEY$1);
-      this._menu = null;
-
       if (this._popper) {
         this._popper.destroy();
-        this._popper = null;
       }
 
       super.dispose();
@@ -1019,10 +1080,34 @@
     // Private
 
     _addEventListeners() {
-      EventHandler.on(this._element, EVENT_CLICK, event => {
+      EventHandler.on(this._element, EVENT_CLICK, (event) => {
         event.preventDefault();
         this.toggle();
       });
+    }
+
+    _completeHide(relatedTarget) {
+      const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE$1, relatedTarget);
+      if (hideEvent.defaultPrevented) {
+        return;
+      }
+
+      // If this is a touch-enabled device we remove the extra
+      // empty mouseover listeners we added for iOS support
+      if ('ontouchstart' in document.documentElement) {
+        [].concat(...document.body.children).
+        forEach((elem) => EventHandler.off(elem, 'mouseover', noop));
+      }
+
+      if (this._popper) {
+        this._popper.destroy();
+      }
+
+      this._menu.classList.remove(CLASS_NAME_SHOW$1);
+      this._element.classList.remove(CLASS_NAME_SHOW$1);
+      this._element.setAttribute('aria-expanded', 'false');
+      Manipulator.removeDataAttribute(this._menu, 'popper');
+      EventHandler.trigger(this._element, EVENT_HIDDEN$1, relatedTarget);
     }
 
     _getConfig(config) {
@@ -1077,11 +1162,11 @@
       const { offset } = this._config;
 
       if (typeof offset === 'string') {
-        return offset.split(',').map(val => Number.parseInt(val, 10));
+        return offset.split(',').map((val) => Number.parseInt(val, 10));
       }
 
       if (typeof offset === 'function') {
-        return popperData => offset(popperData, this._element);
+        return (popperData) => offset(popperData, this._element);
       }
 
       return offset;
@@ -1118,6 +1203,31 @@
 
     }
 
+    _selectMenuItem(event) {
+      const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._menu).filter(isVisible);
+
+      if (!items.length) {
+        return;
+      }
+
+      let index = items.indexOf(event.target);
+
+      // Up
+      if (event.key === ARROW_UP_KEY && index > 0) {
+        index--;
+      }
+
+      // Down
+      if (event.key === ARROW_DOWN_KEY && index < items.length - 1) {
+        index++;
+      }
+
+      // index is -1 if the first keydown is an ArrowUp
+      index = index === -1 ? 0 : index;
+
+      items[index].focus();
+    }
+
     // Static
 
     static dropdownInterface(element, config) {
@@ -1144,71 +1254,48 @@
     }
 
     static clearMenus(event) {
-      if (event) {
-        if (event.button === RIGHT_MOUSE_BUTTON || event.type === 'keyup' && event.key !== TAB_KEY) {
-          return;
-        }
-
-        if (/input|select|textarea|form/i.test(event.target.tagName)) {
-          return;
-        }
+      if (event && (event.button === RIGHT_MOUSE_BUTTON || event.type === 'keyup' && event.key !== TAB_KEY)) {
+        return;
       }
 
       const toggles = SelectorEngine.find(SELECTOR_DATA_TOGGLE$1);
 
       for (let i = 0, len = toggles.length; i < len; i++) {
         const context = Data.get(toggles[i], DATA_KEY$1);
+        if (!context || context._config.autoClose === false) {
+          continue;
+        }
+
+        if (!context._element.classList.contains(CLASS_NAME_SHOW$1)) {
+          continue;
+        }
+
         const relatedTarget = {
-          relatedTarget: toggles[i] };
+          relatedTarget: context._element };
 
-
-        if (event && event.type === 'click') {
-          relatedTarget.clickEvent = event;
-        }
-
-        if (!context) {
-          continue;
-        }
-
-        const dropdownMenu = context._menu;
-        if (!toggles[i].classList.contains(CLASS_NAME_SHOW$1)) {
-          continue;
-        }
 
         if (event) {
-          // Don't close the menu if the clicked element or one of its parents is the dropdown button
-          if ([context._element].some(element => event.composedPath().includes(element))) {
+          const composedPath = event.composedPath();
+          const isMenuTarget = composedPath.includes(context._menu);
+          if (
+          composedPath.includes(context._element) ||
+          context._config.autoClose === 'inside' && !isMenuTarget ||
+          context._config.autoClose === 'outside' && isMenuTarget)
+          {
             continue;
           }
 
-          // Tab navigation through the dropdown menu shouldn't close the menu
-          if (event.type === 'keyup' && event.key === TAB_KEY && dropdownMenu.contains(event.target)) {
+          // Tab navigation through the dropdown menu or events from contained inputs shouldn't close the menu
+          if (context._menu.contains(event.target) && (event.type === 'keyup' && event.key === TAB_KEY || /input|select|option|textarea|form/i.test(event.target.tagName))) {
             continue;
+          }
+
+          if (event.type === 'click') {
+            relatedTarget.clickEvent = event;
           }
         }
 
-        const hideEvent = EventHandler.trigger(toggles[i], EVENT_HIDE$1, relatedTarget);
-        if (hideEvent.defaultPrevented) {
-          continue;
-        }
-
-        // If this is a touch-enabled device we remove the extra
-        // empty mouseover listeners we added for iOS support
-        if ('ontouchstart' in document.documentElement) {
-          [].concat(...document.body.children).
-          forEach(elem => EventHandler.off(elem, 'mouseover', null, noop()));
-        }
-
-        toggles[i].setAttribute('aria-expanded', 'false');
-
-        if (context._popper) {
-          context._popper.destroy();
-        }
-
-        dropdownMenu.classList.remove(CLASS_NAME_SHOW$1);
-        toggles[i].classList.remove(CLASS_NAME_SHOW$1);
-        Manipulator.removeDataAttribute(dropdownMenu, 'popper');
-        EventHandler.trigger(toggles[i], EVENT_HIDDEN$1, relatedTarget);
+        context._completeHide(relatedTarget);
       }
     }
 
@@ -1232,26 +1319,29 @@
         return;
       }
 
-      event.preventDefault();
-      event.stopPropagation();
+      const isActive = this.classList.contains(CLASS_NAME_SHOW$1);
 
-      if (this.disabled || this.classList.contains(CLASS_NAME_DISABLED)) {
+      if (!isActive && event.key === ESCAPE_KEY) {
         return;
       }
 
-      const parent = Dropdown.getParentFromElement(this);
-      const isActive = this.classList.contains(CLASS_NAME_SHOW$1);
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (isDisabled(this)) {
+        return;
+      }
+
+      const getToggleButton = () => this.matches(SELECTOR_DATA_TOGGLE$1) ? this : SelectorEngine.prev(this, SELECTOR_DATA_TOGGLE$1)[0];
 
       if (event.key === ESCAPE_KEY) {
-        const button = this.matches(SELECTOR_DATA_TOGGLE$1) ? this : SelectorEngine.prev(this, SELECTOR_DATA_TOGGLE$1)[0];
-        button.focus();
+        getToggleButton().focus();
         Dropdown.clearMenus();
         return;
       }
 
       if (!isActive && (event.key === ARROW_UP_KEY || event.key === ARROW_DOWN_KEY)) {
-        const button = this.matches(SELECTOR_DATA_TOGGLE$1) ? this : SelectorEngine.prev(this, SELECTOR_DATA_TOGGLE$1)[0];
-        button.click();
+        getToggleButton().click();
         return;
       }
 
@@ -1260,28 +1350,7 @@
         return;
       }
 
-      const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, parent).filter(isVisible);
-
-      if (!items.length) {
-        return;
-      }
-
-      let index = items.indexOf(event.target);
-
-      // Up
-      if (event.key === ARROW_UP_KEY && index > 0) {
-        index--;
-      }
-
-      // Down
-      if (event.key === ARROW_DOWN_KEY && index < items.length - 1) {
-        index++;
-      }
-
-      // index is -1 if the first keydown is an ArrowUp
-      index = index === -1 ? 0 : index;
-
-      items[index].focus();
+      Dropdown.getInstance(getToggleButton())._selectMenuItem(event);
     }}
 
 
@@ -1307,11 +1376,11 @@
    * add .Dropdown to jQuery only if jQuery is present
    */
 
-  defineJQueryPlugin(NAME$1, Dropdown);
+  defineJQueryPlugin(Dropdown);
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): collapse.js
+   * Bootstrap (v5.0.1): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1377,7 +1446,7 @@
         const elem = toggleList[i];
         const selector = getSelectorFromElement(elem);
         const filterElement = SelectorEngine.find(selector).
-        filter(foundElem => foundElem === this._element);
+        filter((foundElem) => foundElem === this._element);
 
         if (selector !== null && filterElement.length) {
           this._selector = selector;
@@ -1402,8 +1471,8 @@
       return Default;
     }
 
-    static get DATA_KEY() {
-      return DATA_KEY;
+    static get NAME() {
+      return NAME;
     }
 
     // Public
@@ -1426,7 +1495,7 @@
 
       if (this._parent) {
         actives = SelectorEngine.find(SELECTOR_ACTIVES, this._parent).
-        filter(elem => {
+        filter((elem) => {
           if (typeof this._config.parent === 'string') {
             return elem.getAttribute('data-bs-parent') === this._config.parent;
           }
@@ -1441,7 +1510,7 @@
 
       const container = SelectorEngine.findOne(this._selector);
       if (actives) {
-        const tempActiveData = actives.find(elem => container !== elem);
+        const tempActiveData = actives.find((elem) => container !== elem);
         activesData = tempActiveData ? Data.get(tempActiveData, DATA_KEY) : null;
 
         if (activesData && activesData._isTransitioning) {
@@ -1455,7 +1524,7 @@
       }
 
       if (actives) {
-        actives.forEach(elemActive => {
+        actives.forEach((elemActive) => {
           if (container !== elemActive) {
             Collapse.collapseInterface(elemActive, 'hide');
           }
@@ -1474,7 +1543,7 @@
       this._element.style[dimension] = 0;
 
       if (this._triggerArray.length) {
-        this._triggerArray.forEach(element => {
+        this._triggerArray.forEach((element) => {
           element.classList.remove(CLASS_NAME_COLLAPSED);
           element.setAttribute('aria-expanded', true);
         });
@@ -1495,11 +1564,8 @@
 
       const capitalizedDimension = dimension[0].toUpperCase() + dimension.slice(1);
       const scrollSize = `scroll${capitalizedDimension}`;
-      const transitionDuration = getTransitionDurationFromElement(this._element);
 
-      EventHandler.one(this._element, 'transitionend', complete);
-
-      emulateTransitionEnd(this._element, transitionDuration);
+      this._queueCallback(complete, this._element, true);
       this._element.style[dimension] = `${this._element[scrollSize]}px`;
     }
 
@@ -1545,22 +1611,12 @@
       };
 
       this._element.style[dimension] = '';
-      const transitionDuration = getTransitionDurationFromElement(this._element);
 
-      EventHandler.one(this._element, 'transitionend', complete);
-      emulateTransitionEnd(this._element, transitionDuration);
+      this._queueCallback(complete, this._element, true);
     }
 
     setTransitioning(isTransitioning) {
       this._isTransitioning = isTransitioning;
-    }
-
-    dispose() {
-      super.dispose();
-      this._config = null;
-      this._parent = null;
-      this._triggerArray = null;
-      this._isTransitioning = null;
     }
 
     // Private
@@ -1582,19 +1638,12 @@
     _getParent() {
       let { parent } = this._config;
 
-      if (isElement(parent)) {
-        // it's a jQuery object
-        if (typeof parent.jquery !== 'undefined' || typeof parent[0] !== 'undefined') {
-          parent = parent[0];
-        }
-      } else {
-        parent = SelectorEngine.findOne(parent);
-      }
+      parent = getElement(parent);
 
       const selector = `${SELECTOR_DATA_TOGGLE}[data-bs-parent="${parent}"]`;
 
       SelectorEngine.find(selector, parent).
-      forEach(element => {
+      forEach((element) => {
         const selected = getElementFromSelector(element);
 
         this._addAriaAndCollapsedClass(
@@ -1613,7 +1662,7 @@
 
       const isOpen = element.classList.contains(CLASS_NAME_SHOW);
 
-      triggerArray.forEach(elem => {
+      triggerArray.forEach((elem) => {
         if (isOpen) {
           elem.classList.remove(CLASS_NAME_COLLAPSED);
         } else {
@@ -1674,7 +1723,7 @@
     const selector = getSelectorFromElement(this);
     const selectorElements = SelectorEngine.find(selector);
 
-    selectorElements.forEach(element => {
+    selectorElements.forEach((element) => {
       const data = Data.get(element, DATA_KEY);
       let config;
       if (data) {
@@ -1700,7 +1749,7 @@
    * add .Collapse to jQuery only if jQuery is present
    */
 
-  defineJQueryPlugin(NAME, Collapse);
+  defineJQueryPlugin(Collapse);
 
 })(Popper = () => {});
 //# sourceMappingURL=bootstrap--async-p1.js.map
