@@ -214,5 +214,5 @@ blockquote,
 }
 
 .blockquote-footer:before {
-  content: "— ";
+  content: "— "; /* stylelint-disable-line */
 }

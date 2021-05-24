@@ -34,7 +34,7 @@
 }
 
 .ce-quote__footer:before {
-  content: "— ";
+  content: "— "; /* stylelint-disable-line */
 }
 
 .ce-quote__footer-author-name {
