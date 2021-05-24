@@ -23,6 +23,9 @@
 			<trans-unit id="flexform.image_height" resname="flexform.image_height">
 				<source>Image height</source>
 			</trans-unit>
+			<trans-unit id="flexform.header_above_image" resname="flexform.header_above_image">
+				<source>Header above image</source>
+			</trans-unit>
 
 		</body>
 	</file>

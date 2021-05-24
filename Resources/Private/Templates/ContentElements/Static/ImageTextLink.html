@@ -15,10 +15,22 @@
     <f:variable name="stretched_link" value="1" />
   </f:if>
 
+  <f:if condition="{flexform.header_above_image}">
+    <f:variable name="header_above_image" value="1" />
+  </f:if>
+
   <div class="ce-img-text-link__wrp
     {f:if(condition: flexform.internal_margins, then: ' internal-margins')}
     {f:if(condition: flexform.inverted_color, then: ' inverted-color')}
     {f:if(condition: flexform.stretched_link, then: ' stretched-link-wrp')}">
+
+    <f:if condition="{header_above_image}">
+      <f:if condition="{data.header} || {t3kit:isPlaceholderEnabled()}">
+        <div class="ce-img-text-link__header">
+          <f:render partial="Header/Header" arguments="{_all}" />
+        </div>
+      </f:if>
+    </f:if>
 
     <div class="ce-img-text-link">
 
@@ -39,11 +51,14 @@
           </div>
         </f:if>
 
-        <f:if condition="{data.header} || {t3kit:isPlaceholderEnabled()}">
-          <div class="ce-img-text-link__header">
-            <f:render partial="Header/Header" arguments="{_all}" />
-          </div>
+        <f:if condition="!{header_above_image}">
+          <f:if condition="{data.header} || {t3kit:isPlaceholderEnabled()}">
+            <div class="ce-img-text-link__header">
+              <f:render partial="Header/Header" arguments="{_all}" />
+            </div>
+          </f:if>
         </f:if>
+
         <f:if condition="{data.subheader} || {t3kit:isPlaceholderEnabled()}">
           <div class="ce-img-text-link__subheader">
             <f:render partial="Header/SubHeader" arguments="{_all}" />
