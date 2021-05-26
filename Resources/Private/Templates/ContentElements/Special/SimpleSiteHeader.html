@@ -50,11 +50,7 @@
                     <f:render section="mainNavigationdropdown" arguments="{_all}" />
                   </f:then>
                   <f:else>
-                    <a href="{navItem.link}"
-                      class="main-navigation__item-link"
-                      {f:if(condition: navItem.current, then: 'aria-current="page"')}>
-                        {navItem.title}
-                    </a>
+                    <f:render section="menuLink" arguments="{item:navItem, class: 'main-navigation__item-link'}" />
                   </f:else>
                 </f:if>
 
@@ -129,11 +125,9 @@
 
     <f:if condition="{navItem.data.doktype} == 1 || {navItem.data.doktype} == 9 || {navItem.data.doktype} == 3 ">
       <li class="main-navigation__dropdown-item {f:if(condition: navItem.active, then:' active')} {navItem.data.uid}">
-        <a class="main-navigation__dropdown-item-link main-navigation__dropdown-item-parent-link"
-          href="{navItem.link}"
-          {f:if(condition: navItem.current, then: 'aria-current="page"')}>
-            {navItem.title}
-        </a>
+
+        <f:render section="menuLink" arguments="{item:navItem, class: 'main-navigation__dropdown-item-link main-navigation__dropdown-item-parent-link'}" />
+
       </li>
     </f:if>
 
@@ -146,11 +140,9 @@
 
         <f:else>
           <li class="main-navigation__dropdown-item {f:if(condition: childItem.active, then:' active')} {childItem.data.uid}">
-            <a href="{childItem.link}"
-              class=" main-navigation__dropdown-item-link"
-              {f:if(condition: childItem.current, then: 'aria-current="page"')}>
-                {childItem.title}
-            </a>
+
+            <f:render section="menuLink" arguments="{item:childItem, class: 'main-navigation__dropdown-item-link'}" />
+
           </li>
         </f:else>
       </f:if>
@@ -160,8 +152,38 @@
 
 </f:section>
 
+<f:comment>Main menu link section</f:comment>
+<f:comment>+Accessibility for target _blank link structure</f:comment>
+<f:section name="menuLink">
+  <a href="{item.link}"
+    class="{class} {f:if(condition: item.target,then: ' target-blank-link')}"
+    {f:if(condition: item.target, then: 'rel="noreferrer"' )}
+    {f:if(condition: item.target, then: 'target="_blank"')}
+    {f:if(condition: item.current, then: 'aria-current="page"')}>
 
+    <f:if condition="{item.target}">
+      <f:then>
+        <strong class="main-navigation__item-link-title target-blank-link__title">
+          {item.title}
+        </strong>
+        <span class="target-blank-link__msg">
+          <f:translate key="target_blank" extensionName="t3kit" />
+        </span>
+        <span class="target-blank-link__icon-wrp">
+          <svg class="target-blank-link__icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+          </svg>
+        </span>
+      </f:then>
 
-
+      <f:else>
+        <span class="main-navigation__item-link-title">
+          {item.title}
+        </span>
+      </f:else>
+    </f:if>
+  </a>
+</f:section>
 
 </html>
