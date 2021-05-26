@@ -35,7 +35,7 @@ CREATE TABLE tt_content (
 	section_container_width varchar(60) DEFAULT '' NOT NULL,
 	image_zoom_width varchar(60) DEFAULT '' NOT NULL,
 	textorient varchar(60) DEFAULT '' NOT NULL,
-	icon_source varchar(60) DEFAULT '' NOT NULL,
+	icon_source varchar(255) DEFAULT '' NOT NULL,
 	icon varchar(255) DEFAULT '' NOT NULL,
 	color_class varchar(60) DEFAULT '0' NOT NULL,
 	background_color_class varchar(60) DEFAULT '0' NOT NULL,
