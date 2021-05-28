@@ -84,7 +84,7 @@ $contentElementIcons = [
     'ce-gallery',
     'ce-hero-image',
     'ce-icon-text-link',
-    'ce-image-left-right',
+    'ce-image-text-left-right',
     'ce-image-slider',
     'ce-image-text-link',
     'ce-quote',
@@ -129,6 +129,8 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php'][
 \T3k\t3kit\Hooks\PageLayoutView\SimpleSiteHeaderCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['siteFooter'] =
 \T3k\t3kit\Hooks\PageLayoutView\SiteFooterCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['imageTextLeftRight'] =
+\T3k\t3kit\Hooks\PageLayoutView\ImageTextLeftRightCEPreviewRenderer::class;
 
 // Register RTE presets
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'])) {

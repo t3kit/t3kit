@@ -1,0 +1,19 @@
+# ###########################
+# imageTextLeftRight Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.static.elements.imageTextLeftRight {
+  iconIdentifier = ce-image-text-left-right
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:imageTextLeftRight.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:imageTextLeftRight.description
+  tt_content_defValues.CType = imageTextLeftRight
+}
+mod.wizards.newContentElement.wizardItems.static.show := addToList(imageTextLeftRight)
+
+TCEFORM.tt_content.pi_flexform.imageTextLeftRight.sDEF {
+  image_alignment {
+    addItems {
+      left = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:flexform.image_alignment.left
+      right = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:flexform.image_alignment.right
+    }
+  }
+}

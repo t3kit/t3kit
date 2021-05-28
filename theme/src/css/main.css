@@ -40,6 +40,7 @@
 @import 'main/content-elements/divider-icon.css';
 @import 'main/content-elements/divider.css';
 @import 'main/content-elements/slider.css';
+@import 'main/content-elements/image-text-left-right.css';
 
 /* ===== appearance ===== */
 @import 'main/appearance/color.css';

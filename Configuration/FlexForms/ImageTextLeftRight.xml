@@ -1,0 +1,61 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<image_height>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:flexform.image_height</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+								<max>4</max>
+								<eval>trim,int</eval>
+								<range>
+									<upper>1999</upper>
+									<lower>0</lower>
+								</range>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</image_height>
+
+					<image_width>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:flexform.image_width</label>
+							<config>
+								<type>input</type>
+								<size>3</size>
+								<max>3</max>
+								<eval>trim,int</eval>
+								<range>
+									<upper>90</upper>
+									<lower>10</lower>
+								</range>
+								<default>50</default>
+							</config>
+						</TCEforms>
+					</image_width>
+
+					<image_alignment>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_imageTextLeftRight.xlf:flexform.image_alignment</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items>
+								</items>
+							</config>
+						</TCEforms>
+					</image_alignment>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
