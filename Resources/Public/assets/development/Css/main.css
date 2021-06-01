@@ -9123,7 +9123,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .ce-img-text-left-right__picture {
   position: relative;
 }
-.ce-img-text-left-right__picture .picture-partial__item-img {
+.ce-img-text-left-right__picture--cropped .picture-partial__item-img {
   position: absolute;
   object-fit: cover;
   left: 0;
@@ -9175,6 +9175,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .ce-img-text-left-right {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .ce-img-text-left-right--right .ce-img-text-left-right {
