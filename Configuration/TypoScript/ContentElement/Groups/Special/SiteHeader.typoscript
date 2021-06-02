@@ -1,0 +1,71 @@
+# ###########################
+# Insert records:
+# This element embeds other content elements.
+#
+# CType: siteHeader
+# ===========================
+tt_content.siteHeader =< lib.contentElement
+tt_content.siteHeader {
+
+  templateName = SiteHeader
+
+  dataProcessing {
+    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+    20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    20 {
+      references.fieldName = simple_image
+    }
+    25 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    25 {
+      references.fieldName = svg_image
+      as = svg_image
+    }
+
+    # Main menu
+    30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    30 {
+      as = mainNavigation
+      levels = 5
+      includeSpacer = 1
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_image
+          as = nav_image
+        }
+      }
+    }
+
+    # Language Navigation
+    50 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+    50 {
+      as = languageNavigation
+      languages = auto
+    }
+    /*
+    # Root menu
+    60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    60 {
+      special = list
+      special.value.field = page_links_7
+      excludeUidList = 1
+      as = languageMenuExternalLink
+    }
+    */
+    70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    70 {
+      special = list
+      special.value.field = pages
+      as = metaMenu
+    }
+
+    80 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+    80 {
+      as = site
+    }
+  }
+}

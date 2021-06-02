@@ -29,7 +29,8 @@
 @import 'main/content-elements/textmedia.css';
 @import 'main/content-elements/textpic.css';
 @import 'main/content-elements/uploads.css';
-@import 'main/content-elements/simple-site-header.css';
+/* @import 'main/content-elements/simple-site-header.css'; */
+@import 'main/content-elements/site-header.css';
 @import 'main/content-elements/site-footer.css';
 @import 'main/content-elements/hero-image.css';
 @import 'main/content-elements/big-icon-text-link.css';

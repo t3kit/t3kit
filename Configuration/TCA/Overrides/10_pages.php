@@ -116,6 +116,11 @@ defined('TYPO3_MODE') || die();
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteHeader.tsconfig',
+    '(Special CE) SiteHeader'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
     'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/SiteFooter.tsconfig',
     '(Special CE) SiteFooter'
 );

@@ -1,4 +1,4 @@
-.ce-simple-site-header {
+.ce-site-header {
   --t3-ce-header-nav-bg: var(--t3-body-color);
   --t3-ce-header-nav-color-hs: 0, 0%;
   --t3-ce-header-nav-color-l: 100%;
@@ -431,26 +431,35 @@
   margin: 0 auto;
   right: 0;
   padding: 18px 0;
+  border-top: 1px solid var(--t3-gray-60);
+  border-left: 1px solid var(--t3-ce-header-nav-dropdown-bg);
+  border-right: 1px solid var(--t3-ce-header-nav-dropdown-bg);
 }
 
-span.main-navigation__dropdown-item-header {
-  color: #fff;
+.main-navigation__big-dropdown-item-link.main-navigation__dropdown-item-parent-link {
+  font-size: calc(var(--t3-ce-header-nav-font-size) + 0.10rem);
+  color: var(--t3-ce-header-nav-dropdown-color);
+  padding-left: 0.5rem;
 }
 
 
 .main-navigation__big-dropdown-item-list._sub-menu-level-2,
 .main-navigation__big-dropdown-item-list._sub-menu-level-3 {
-padding-left: 0;
-list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 .main-navigation__dropdown-item-wrp {
   position: relative;
 }
 
+.main-navigation__dropdown-item-wrp.active .main-navigation__dropdown-item-parent-link {
+  color: var(--t3-ce-header-nav-active-color);
+  background-color: var(--t3-ce-header-nav-active-bg);
+}
+
 .ce-site-header__top-wrp {
-  background: var(--t3-secondary);
-  color: #fff;
+  background: var(--t3-white);
 }
 
 .ce-site-header__top {
@@ -460,40 +469,49 @@ list-style: none;
   padding: 0 1rem;
 }
 
-.ce-simple-site-header__top-meta-menu .main-navigation__list {
+.ce-site-header__top-meta-menu .main-navigation__list {
   flex-direction: row;
 }
 
-.ce-simple-site-header__top-meta-menu .main-navigation__item-link {
+.ce-site-header__top-meta-menu .main-navigation__item-link {
   padding: 0.6rem 1rem;
+  color: var(--t3-black);
 }
 
-.ce-site-header__top .ce-simple-site-header__top-langmenu {
+.ce-site-header__top .ce-site-header__top-langmenu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.ce-site-header__top .ce-simple-site-header__top-langmenu .header-top__language-menu-btn {
+.ce-site-header__top .ce-site-header__top-langmenu .header-top__language-menu-btn {
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--t3-black);
 }
 
 .header-top__language-menu-box, .header-top__meta-menu-box {
   position: absolute;
   z-index: 2;
   display: none;
-  background-color: var(--t3-secondary);
-  padding: 18px 30px;
-  width: fit-content;
-  top: calc(100% + 27px);
+  background-color: var(--t3-white);
+  padding: 1rem 2rem;
   list-style: none;
-  left: -15px;
-  min-width: 130px;
+  right: 0;
+  left: auto;
 }
+
+.header-top__language-menu-box .header-top__language-menu-box-item {
+  color: var(--t3-black);
+}
+
 .header-top__language-menu-box.show, .header-top__meta-menu-box.show {
   display: block;
+}
+
+.main-navigation__list.sticky-menu {
+  max-height: 70vh;
+  overflow: auto;
 }
