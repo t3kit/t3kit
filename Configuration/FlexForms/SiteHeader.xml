@@ -104,15 +104,15 @@
 								<default>dropdown</default>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav.dropdown</numIndex>
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.dropdown</numIndex>
 										<numIndex index="1">dropdown</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_big_dropdown</numIndex>
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav_big_dropdown</numIndex>
 										<numIndex index="1">big-menu-dropdown</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav.dropdown_none</numIndex>
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav.dropdown_none</numIndex>
 										<numIndex index="1">none</numIndex>
 									</numIndex>
 								</items>
