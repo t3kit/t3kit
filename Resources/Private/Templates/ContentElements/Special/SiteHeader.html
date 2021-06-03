@@ -268,7 +268,7 @@
               </div><div class="col-lg-3">
             </f:then>
             <f:else>
-              <f:comment>Sub menu level 2</f:comment>
+              <f:comment>Start sub menu level 2</f:comment>
               <ul class="main-navigation__big-dropdown-item-list _sub-menu-level-2">
                 <li class="main-navigation__dropdown-item-wrp {f:if(condition: childItem.active, then:' active')} {childItem.data.uid}">
 
@@ -286,7 +286,7 @@
                     </a>
                   </f:if>
 
-                  <f:comment>Sub menu level 3</f:comment>
+                  <f:comment>Start sub menu level 3</f:comment>
                   <f:if condition="{childItem.data.hide_subpages_in_menu} == 0">
                       <ul class="main-navigation__big-dropdown-item-list _sub-menu-level-3 collapse mobile-menu-links-collapse" id="child-{iteration.cycle}">
                         <f:for each="{childItem.children}" as="childItem">
@@ -313,11 +313,10 @@
                         </f:for>
                       </ul>
                   </f:if>
-                  
-                  <f:comment>end sub menu level 3</f:comment>
+                  <f:comment>End sub menu level 3</f:comment>
                 </li>
               </ul>
-              <f:comment>end sub menu level 3</f:comment>
+              <f:comment>End sub menu level 3</f:comment>
             </f:else>
           </f:if>
           <f:if condition="{iteration.isLast}">
