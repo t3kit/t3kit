@@ -8143,21 +8143,22 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 }
 @media (min-width: 992px) {
   .big-menu-dropdown {
-      position: absolute;
+    position: absolute;
   }
 
   .mobile-menu-toggler {
-      display: none;
-      visibility: hidden;
+    display: none;
+    visibility: hidden;
   }
+
   .mobile-menu-links-collapse {
-      display: block!important;
+    display: block !important;
   }
 }
 .mobile-menu-toggler {
   float: right;
   transform: rotate(0deg);
-  transition: .2s;
+  transition: 0.2s;
   position: absolute;
   right: 0;
   top: 0;
@@ -8177,7 +8178,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   border-right: 1px solid var(--t3-ce-header-nav-dropdown-bg);
 }
 .main-navigation__big-dropdown-item-link.main-navigation__dropdown-item-parent-link {
-  font-size: calc(var(--t3-ce-header-nav-font-size) + 0.10rem);
+  font-size: calc(var(--t3-ce-header-nav-font-size) + 0.1rem);
   color: var(--t3-ce-header-nav-dropdown-color);
   padding-left: 0.5rem;
 }
@@ -8221,7 +8222,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   align-items: center;
   color: var(--t3-black);
 }
-.header-top__language-menu-box, .header-top__meta-menu-box {
+.header-top__language-menu-box {
   position: absolute;
   z-index: 2;
   display: none;
@@ -8234,7 +8235,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .header-top__language-menu-box .header-top__language-menu-box-item {
   color: var(--t3-black);
 }
-.header-top__language-menu-box.show, .header-top__meta-menu-box.show {
+.header-top__language-menu-box.show {
   display: block;
 }
 .main-navigation__list.sticky-menu {
@@ -9227,7 +9228,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .ce-img-text-left-right__picture {
   position: relative;
 }
-.ce-img-text-left-right__picture .picture-partial__item-img {
+.ce-img-text-left-right__picture--cropped .picture-partial__item-img {
   position: absolute;
   object-fit: cover;
   left: 0;
@@ -9279,6 +9280,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .ce-img-text-left-right {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .ce-img-text-left-right--right .ce-img-text-left-right {
