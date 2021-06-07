@@ -76,6 +76,7 @@
 					<main_nav_search>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_search</label>
+							<onChange>reload</onChange>
 							<config>
 								<type>check</type>
 								<renderType>checkboxToggle</renderType>
@@ -87,6 +88,7 @@
 					<main_nav_lang_menu>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.main_nav_lang_menu</label>
+							<onChange>reload</onChange>
 							<config>
 								<type>check</type>
 								<renderType>checkboxToggle</renderType>

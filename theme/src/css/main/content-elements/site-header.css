@@ -531,6 +531,7 @@
   list-style: none;
   right: 0;
   left: auto;
+  width: auto;
 }
 
 .header__language-menu-box .header__language-menu-box-item {
@@ -595,7 +596,7 @@
 }
 
 .ce-site-header__search-field-input {
-  width: 100%;
+  flex-basis: 100%;
   z-index: 1;
   padding: 0 1rem;
   border: 0;

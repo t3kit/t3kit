@@ -64,15 +64,6 @@
   </div>
 </f:section>
 
-<f:comment>Top search</f:comment>
-<f:section name="topSearch">
-  <div class="ce-site-header__top-search-wrp d-sm-block d-lg-none">
-    <div class="ce-site-header__top-search">
-    </div>
-  </div>
-
-</f:section>
-
 <f:comment>======== Main navigation ========</f:comment>
 <f:section name="mainNavigation">
 
@@ -154,15 +145,7 @@
 
 <f:comment>Search section</f:comment>
 <f:section name="search">
-    <div class="ce-site-header__search">
-      <a class="ce-site-header__search-icon collapsed main-navigation__item-link" href="#search__main-navigation-search" aria-controls="search__main-navigation-search" id="solr-search-toggle-btn" data-bs-toggle="collapse" aria-expanded="false" aria-label="{f:translate(key: 'submit', extensionName: 'solr')}">
-        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" class="ce-site-header__search-icon-search" aria-hidden="true" focusable="false"/>
-        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/x-circle.svg" class="ce-site-header__search-icon-close" aria-hidden="true" focusable="false"/>
-      </a>
-      <div class="ce-site-header__search-field collapse search-collapse" id="search__main-navigation-search" aria-labelledby="solr-search-toggle-btn">
-        <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch.20" />
-      </div>
-    </div>
+  <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch.20" />
 </f:section>
 
 <f:comment>Lang menu section</f:comment>
@@ -178,7 +161,7 @@
             </a>
           </f:if>
         </f:for>
-        <ul class="header__language-menu-box dropdown-menu">
+        <ul class="header__language-menu-box dropdown-menu {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
           <f:for each="{languageNavigation}" as="language">
             <f:if condition="{language.active} == 0">
                 <li>
