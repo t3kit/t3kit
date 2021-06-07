@@ -103,29 +103,29 @@ lib.contentObject.mainNavigationSearch.20 {
 
 tx_solr_suggest = PAGE
 tx_solr_suggest {
-    typeNum = 7384
-    config {
-        disableAllHeaderCode = 1
-        xhtml_cleaning = 0
-        admPanel = 0
-        additionalHeaders = Content-type: text/plain
-        no_cache = 0
-    }
+  typeNum = 7384
+  config {
+    disableAllHeaderCode = 1
+    xhtml_cleaning = 0
+    admPanel = 0
+    additionalHeaders = Content-type: text/plain
+    no_cache = 0
+  }
 
-    10 = USER
-    10 {
-        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-        extensionName = Solr
-        pluginName = pi_suggest
-        vendorName = ApacheSolrForTypo3
-        controller = Suggest
-        action = suggest
-    }
+  10 = USER
+  10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = Solr
+    pluginName = pi_suggest
+    vendorName = ApacheSolrForTypo3
+    controller = Suggest
+    action = suggest
+  }
 }
 
 [siteLanguage("locale") == "sv_SE.UTF-8"]
 plugin.tx_solr.search {
-    sorting.options {
+  sorting.options {
     relevance.label = Relevans
     title.label = Titel
     type.label = Typ
@@ -140,7 +140,7 @@ plugin.tx_solr.search {
         tx_pxaproductmanager_domain_model_product {
           value = Produkter
         }
-        default{
+        default {
           value = Sidor
         }
       }
@@ -156,8 +156,8 @@ lib.t3kit_solr < plugin.tx_solr_PiSearch_Search
 
 # Provide typoscript libraries
 lib.t3kit_solr {
-	settings < plugin.tx_solr.settings
-	view < plugin.tx_solr.view
+  settings < plugin.tx_solr.settings
+  view < plugin.tx_solr.view
   search.targetPage = 1
 }
 
