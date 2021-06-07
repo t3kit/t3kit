@@ -177,6 +177,33 @@
 						</TCEforms>
 					</main_nav_mobile_breakpoint>
 
+					<main_nav_mobile_search_position>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav_mobile_search_position</label>
+							<displayCond>
+								<or>
+										<value1>FIELD:main_nav_search:!=:0</value1>
+										<value2>FIELD:main_nav_lang_menu:!=:0</value2>
+								</or>
+							</displayCond>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>inside</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav_mobile_search_position.inside</numIndex>
+										<numIndex index="1">inside</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf:flexform.main_nav_mobile_search_position.outside</numIndex>
+										<numIndex index="1">outside</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</main_nav_mobile_search_position>
+
 					<sticky_header>
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:flexform.sticky_header</label>

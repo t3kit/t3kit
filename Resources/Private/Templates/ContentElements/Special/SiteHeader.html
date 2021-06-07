@@ -22,11 +22,17 @@
             </f:if>
 
             <f:if condition="{flexform.header_top_lang_menu}">
-                <f:render section="topLangmenu" arguments="{_all}" />
+              <div class="ce-site-header__top-langmenu-wrp navbar">
+                <ul class="ce-site-header__top-langmenu dropdown">
+                  <f:render section="langmenu" arguments="{_all}" />
+                </ul>
+              </div>
             </f:if>
 
             <f:if condition="{flexform.header_top_search}">
-                <f:render section="topSearch" arguments="{_all}" />
+              <div class="ce-site-header__top-search-wrp">
+                <f:render section="search" arguments="{_all}" />
+              </div>
             </f:if>
 
           </div>
@@ -55,40 +61,6 @@
           </f:for>
         </ul>
     </div>
-  </div>
-</f:section>
-
-<f:comment>Top lang menu section</f:comment>
-<f:section name="topLangmenu">
-  <div class="ce-site-header__top-langmenu-wrp navbar">
-    <ul class="ce-site-header__top-langmenu dropdown">
-      <li>
-        <f:for each="{languageNavigation}" as="language">
-          <f:if condition="{language.active}">
-            <a class="header-top__language-menu-btn dropdown-toggle" href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span class="main-flag-language flag-language">{language.navigationTitle}</span>
-            </a>
-          </f:if>
-        </f:for>
-        <ul class="header-top__language-menu-box dropdown-menu">
-          <f:for each="{languageNavigation}" as="language">
-            <f:if condition="{language.active} == 0">
-                <li>
-                  <f:if condition="{language.link}">
-                      <a href="{language.link}" class="header-top__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
-                        <span class="flag-icon icon-{language.flag}"></span>
-                        {language.navigationTitle}
-                      </a>
-                  </f:if>
-                </li>
-            </f:if>
-          </f:for>
-        </ul>
-      </li>
-    </ul>
   </div>
 </f:section>
 
@@ -121,7 +93,7 @@
           <span class="main-navigation-toggler-icon"></span>
         </button>
 
-        <div class="main-navigation__items-wrp collapse navbar-collapse" id="mainNavigation">
+        <div class="main-navigation__items-wrp collapse navbar-collapse {f:if(condition: '{flexform.main_nav_mobile_search_position} == inside', then: ' inside')}" id="mainNavigation">
           <ul class="main-navigation__list {f:if(condition: '{flexform.sticky_header} && {flexform.main_nav_dropdown} == big-menu-dropdown', then: ' sticky-menu')}">
 
             <f:for each="{mainNavigation}" as="navItem">
@@ -138,20 +110,29 @@
 
               </li>
             </f:for>
-
           </ul>
-          <f:if condition="{flexform.main_nav_search}">
-            <div class="ce-site-header__main-navigation-search">
-              <f:render section="search" arguments="{_all}" />
+          <f:if condition="{flexform.main_nav_mobile_search_position} == outside">
             </div>
           </f:if>
-          <f:if condition="{flexform.main_nav_lang_menu}">
-            <div class="ce-site-header__main-navigation-langmenu">
-              <f:render section="langmenu" arguments="{_all}" />
-            </div>
-          </f:if>
-        </div>
 
+            <f:if condition="{flexform.main_nav_lang_menu}">
+              <div class="ce-site-header__langmenu-wrp {flexform.main_nav_mobile_search_position}">
+                <ul class="ce-site-header__langmenu">
+                  <f:render section="langmenu" arguments="{_all}" />
+                </ul>
+              </div>
+            </f:if>
+            <f:if condition="{flexform.main_nav_search}">
+              <div class="ce-site-header__main-navigation-search {flexform.main_nav_mobile_search_position}">
+                <div class="ce-site-header__search-wrp">
+                  <f:render section="search" arguments="{_all}" />
+                </div>
+              </div>
+            </f:if>
+
+        <f:if condition="{flexform.main_nav_mobile_search_position} == inside">
+          </div>
+        </f:if>
       </div>
     </nav>
 
@@ -173,18 +154,45 @@
 
 <f:comment>Search section</f:comment>
 <f:section name="search">
-  <div class="ce-site-header__search-wrp">
     <div class="ce-site-header__search">
+      <a class="ce-site-header__search-icon collapsed main-navigation__item-link" href="#search__main-navigation-search" aria-controls="search__main-navigation-search" id="solr-search-toggle-btn" data-bs-toggle="collapse" aria-expanded="false" aria-label="{f:translate(key: 'submit', extensionName: 'solr')}">
+        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" class="ce-site-header__search-icon-search" aria-hidden="true" focusable="false"/>
+        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/x-circle.svg" class="ce-site-header__search-icon-close" aria-hidden="true" focusable="false"/>
+      </a>
+      <div class="ce-site-header__search-field collapse search-collapse" id="search__main-navigation-search" aria-labelledby="solr-search-toggle-btn">
+        <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch.20" />
+      </div>
     </div>
-  </div>
 </f:section>
 
 <f:comment>Lang menu section</f:comment>
 <f:section name="langmenu">
-  <div class="ce-site-header__langmenu-wrp">
-    <div class="ce-site-header__langmenu">
-    </div>
-  </div>
+      <li>
+        <f:for each="{languageNavigation}" as="language">
+          <f:if condition="{language.active}">
+            <a class="header__language-menu-link dropdown-toggle main-navigation__item-link" href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span class="main-flag-language flag-language">{language.navigationTitle}</span>
+            </a>
+          </f:if>
+        </f:for>
+        <ul class="header__language-menu-box dropdown-menu">
+          <f:for each="{languageNavigation}" as="language">
+            <f:if condition="{language.active} == 0">
+                <li>
+                  <f:if condition="{language.link}">
+                      <a href="{language.link}" class="header__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
+                        <span class="flag-icon icon-{language.flag}"></span>
+                        {language.navigationTitle}
+                      </a>
+                  </f:if>
+                </li>
+            </f:if>
+          </f:for>
+        </ul>
+      </li>
 </f:section>
 
 <f:comment>======== Main navigation dropdown ========</f:comment>

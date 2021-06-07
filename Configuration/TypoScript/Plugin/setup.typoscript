@@ -3,4 +3,7 @@
 # ===========================
 
 // indexed_search
-@import 'EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/setup.typoscript'
+//@import 'EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/setup.typoscript'
+
+// solr
+@import 'EXT:t3kit/Configuration/TypoScript/Plugin/Solr/setup.typoscript'

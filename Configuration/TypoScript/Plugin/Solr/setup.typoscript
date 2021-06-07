@@ -1,0 +1,164 @@
+# ###########################
+# Import Solr typoscript
+# ===========================
+@import 'EXT:solr/Configuration/TypoScript/Solr/setup.txt'
+
+# Plugin configuration
+plugin.tx_solr {
+  view {
+    templateRootPaths {
+      200 = EXT:t3kit/Resources/Private/Extensions/solr/Templates/
+    }
+    partialRootPaths {
+      200 = EXT:t3kit/Resources/Private/Extensions/solr/Partials/
+    }
+    layoutRootPaths {
+      200 = EXT:t3kit/Resources/Private/Extensions/solr/Layouts/
+    }
+    templateFiles {
+      form = Form
+      form.availableTemplates {
+        headerTopSearch {
+          label = Header top Searchform Template
+          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/HeaderTopSearch.html
+        }
+        headerMiddleSearch {
+          label = Header middle Searchform Template
+          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/HeaderMiddleSearch.html
+        }
+        mainNavigationSearch {
+          label = Main navigation Searchform Template
+          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/MainNavigationSearch.html
+        }
+      }
+    }
+  }
+
+  index {
+    queue {
+      products {
+        # Exclude "manual" products from solr index for products.
+        # They are a bit special since the link should go to first fal_link, not a single view.
+        additionalWhereClause = product_type not in (8)
+        fields {
+          attribute_moa_textS = USER
+          attribute_moa_textS {
+            userFunc = Pixelant\PxaProductManager\UserFunction\Solr\AttributeValue->value
+            identifier = moa
+          }
+          attribute_application_textM = USER
+          attribute_application_textM {
+            userFunc = Pixelant\PxaProductManager\UserFunction\Solr\AttributeMultiValue->value
+            identifier = application
+          }
+        }
+      }
+    }
+  }
+
+  search {
+    results {
+      resultsHighlighting {
+        fragmentSize = 50
+      }
+    }
+    query {
+      queryFields := addToList(attribute_moa_textS^50.0, attribute_application_textM^10.0)
+    }
+  }
+}
+
+lib.contentObject.headerTopSearch.20 < plugin.tx_solr_PiSearch_Search
+lib.contentObject.headerTopSearch.20 {
+  settings < plugin.tx_solr.settings
+  view < plugin.tx_solr.view
+  view {
+    templateFiles {
+      form = headerTopSearch
+    }
+  }
+}
+
+lib.contentObject.headerMiddleSearch.20 < plugin.tx_solr_PiSearch_Search
+lib.contentObject.headerMiddleSearch.20 {
+  settings < plugin.tx_solr.settings
+  view < plugin.tx_solr.view
+  view {
+    templateFiles {
+      form = headerMiddleSearch
+    }
+  }
+}
+
+lib.contentObject.mainNavigationSearch.20 < plugin.tx_solr_PiSearch_Search
+lib.contentObject.mainNavigationSearch.20 {
+  settings < plugin.tx_solr.settings
+  view < plugin.tx_solr.view
+  view {
+    templateFiles {
+      form = mainNavigationSearch
+    }
+  }
+}
+
+tx_solr_suggest = PAGE
+tx_solr_suggest {
+    typeNum = 7384
+    config {
+        disableAllHeaderCode = 1
+        xhtml_cleaning = 0
+        admPanel = 0
+        additionalHeaders = Content-type: text/plain
+        no_cache = 0
+    }
+
+    10 = USER
+    10 {
+        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+        extensionName = Solr
+        pluginName = pi_suggest
+        vendorName = ApacheSolrForTypo3
+        controller = Suggest
+        action = suggest
+    }
+}
+
+[siteLanguage("locale") == "sv_SE.UTF-8"]
+plugin.tx_solr.search {
+    sorting.options {
+    relevance.label = Relevans
+    title.label = Titel
+    type.label = Typ
+    author.label = Författare
+    created.label = Datum skapat
+  }
+  faceting.facets {
+    type {
+      label = Innehållstyp
+
+      renderingInstruction {
+        tx_pxaproductmanager_domain_model_product {
+          value = Produkter
+        }
+        default{
+          value = Sidor
+        }
+      }
+    }
+  }
+}
+[global]
+
+/*
+lib.searchbox < plugin.tx_solr_PiSearch_Search
+
+lib.t3kit_solr < plugin.tx_solr_PiSearch_Search
+
+# Provide typoscript libraries
+lib.t3kit_solr {
+	settings < plugin.tx_solr.settings
+	view < plugin.tx_solr.view
+  search.targetPage = 1
+}
+
+*/

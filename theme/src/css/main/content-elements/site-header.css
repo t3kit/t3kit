@@ -26,6 +26,9 @@
   --t3-ce-header-nav-toggler-border-radius: 0.25rem;
   /* --t3-ce-header-nav-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
   --t3-ce-header-nav-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --t3-ce-header-nav-search-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(255,255,255);' class='bi bi-search' viewBox='0 0 16 16'><path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/></svg>");
+  --t3-ce-header-nav-search-icon-color: var(--t3-ce-header-nav-color);
+  
   /* dropdown */
   --t3-ce-header-nav-dropdown-color-hs: 210, 11%;
   --t3-ce-header-nav-dropdown-color-l: 15%;
@@ -308,6 +311,7 @@
   .main-navigation-expand-lg .navbar-collapse {
     display: flex !important;
     width: auto;
+    margin-left: auto;
   }
 
   .main-navigation-expand-lg .main-navigation-toggler {
@@ -466,7 +470,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 1rem;
 }
 
 .ce-site-header__top-meta-menu .main-navigation__list {
@@ -478,21 +481,49 @@
   color: var(--t3-black);
 }
 
-.ce-site-header__top .ce-site-header__top-langmenu {
+.main-navigation__list.sticky-menu {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.main-navigation__langmenu-search-wrp {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.ce-site-header__langmenu,
+.ce-site-header__top-langmenu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.ce-site-header__top .ce-site-header__top-langmenu .header-top__language-menu-btn {
+.header__language-menu-link {
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
-  align-items: center;
+  align-items: center; 
+}
+
+.ce-site-header__top-langmenu .header__language-menu-link {
   color: var(--t3-black);
 }
 
-.header-top__language-menu-box {
+.ce-site-header__langmenu .header__language-menu-link {
+  color: var(--t3-ce-header-nav-color);
+}
+
+.ce-site-header__langmenu .header__language-menu-box {
+  text-align: right;
+}
+
+.ce-site-header__langmenu .header__language-menu-box li {
+  display: inline-block;
+}
+
+.ce-site-header__top-langmenu .header__language-menu-box {
   position: absolute;
   z-index: 2;
   display: none;
@@ -503,15 +534,160 @@
   left: auto;
 }
 
-.header-top__language-menu-box .header-top__language-menu-box-item {
+.header__language-menu-box .header__language-menu-box-item {
   color: var(--t3-black);
 }
 
-.header-top__language-menu-box.show {
+
+.header__language-menu-box.show {
   display: block;
 }
 
-.main-navigation__list.sticky-menu {
-  max-height: 70vh;
-  overflow: auto;
+
+.header__language-menu-box {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  background-color: var(--t3-white);
+  padding: 1rem 2rem;
+  list-style: none;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+
+.ce-site-header__search-icon {
+  color: var(--t3-ce-header-nav-color);
+}
+
+.ce-site-header__top-search-wrp .ce-site-header__search-icon {
+  color: var(--t3-ce-header-nav-bg);
+}
+
+.ce-site-header__top-search-wrp .ce-site-header__search-field {
+  top: auto;
+}
+
+@media (max-width: 991px) {
+  .main-navigation__items-wrp.inside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-navigation__items-wrp.inside.collapse:not(.show) {
+    display: none;
+  }
+
+  .main-navigation__items-wrp.inside .main-navigation__list {
+      order: 2;
+      width: 100%;
+  }
+
+  .ce-site-header__langmenu-wrp {
+      order: 3;
+  }
+}
+
+.ce-site-header__search-field {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.ce-site-header__search-field-input {
+  width: 100%;
+  z-index: 1;
+  padding: 0 1rem;
+  border: 0px;
+}
+
+.ce-site-header__search-field-submit {
+  border: 0px;
+  background: var(--t3-white);
+  display: flex;
+  align-items: center;
+}
+
+
+.ce-site-header__search-icon.collapsed .ce-site-header__search-icon-search {
+  display: inline;
+}
+
+.ce-site-header__search-icon.collapsed .ce-site-header__search-icon-close {
+  display: none;
+}
+
+.ce-site-header__search-icon .ce-site-header__search-icon-search {
+  display: none;
+}
+.ce-site-header__search-icon .ce-site-header__search-icon-close {
+  display: inline;
+}
+
+@media (max-width: 991px) {
+  .ce-site-header__main-navigation-search:not(.outside) {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .ce-site-header__main-navigation-search:not(.outside) .ce-site-header__search-icon {
+    display: none;
+  }
+  .ce-site-header__main-navigation-search:not(.outside) .ce-site-header__search-field.collapse {
+    display: block !important;
+  }
+  .ce-site-header__main-navigation-search:not(.outside) .ce-site-header__search-field {
+    position: relative;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .main-navigation-toggler-left .main-navigation__logo {
+    order: 1;
+  }
+
+
+  .main-navigation-toggler-left .main-navigation-toggler {
+    order: 4;
+    margin-right: auto;
+  }
+
+  .main-navigation-toggler-left .main-navigation__items-wrp {
+    order: 5;
+  }
+
+
+  .main-navigation-toggler-left .ce-site-header__langmenu-wrp.outside {
+    order: 3;
+  }
+
+  .main-navigation-toggler-left .ce-site-header__main-navigation-search.outside {
+    order: 2;
+  }
+
+  .main-navigation-toggler-right .main-navigation__logo {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .main-navigation-toggler-right .main-navigation-toggler {
+    order: 4;
+  }
+
+  .main-navigation-toggler-right .main-navigation__items-wrp {
+    order: 5;
+  }
+
+
+  .main-navigation-toggler-right .ce-site-header__langmenu-wrp.outside {
+    order: 2;
+  }
+
+  .main-navigation-toggler-right .ce-site-header__main-navigation-search.outside {
+    order: 3;
+  }
 }

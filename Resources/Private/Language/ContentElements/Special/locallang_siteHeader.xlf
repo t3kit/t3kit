@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="EXT:theme_t3kit_aimpoint/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_siteHeader.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
 		<header/>
 		<body>
 
@@ -56,26 +56,6 @@
 			<source>Show contacts icons</source>
 		</trans-unit>
 
-		<!-- header_middle -->
-		<trans-unit id="flexform.header_middle.sheet_title">
-			<source>Site Header Middle</source>
-		</trans-unit>
-		<trans-unit id="flexform.header_middle">
-			<source>Show Site Header Middle section</source>
-		</trans-unit>
-		<trans-unit id="flexform.header_middle.logo">
-			<source>Logo</source>
-		</trans-unit>
-		<trans-unit id="flexform.header_middle.meta_menu">
-			<source>Meta menu</source>
-		</trans-unit>
-		<trans-unit id="flexform.header_middle.search">
-			<source>Search</source>
-		</trans-unit>
-		<trans-unit id="flexform.header_middle.lang_menu">
-			<source>Language menu</source>
-		</trans-unit>
-
 		<!-- main_nav -->
 		<trans-unit id="flexform.main_nav.sheet_title">
 			<source>Main Navigation</source>
@@ -104,6 +84,15 @@
 		</trans-unit>
 		<trans-unit id="flexform.main_nav.dropdown_lv3">
 			<source>Dropdown level3</source>
+		</trans-unit>
+		<trans-unit id="flexform.main_nav_mobile_search_position" resname="flexform.main_nav_mobile_search_position">
+			<source>Mobile search and language menu position</source>
+		</trans-unit>
+		<trans-unit id="flexform.main_nav_mobile_search_position.inside" resname="flexform.main_nav_mobile_search_position.inside">
+			<source>Inside toggle-menu</source>
+		</trans-unit>
+		<trans-unit id="flexform.main_nav_mobile_search_position.outside" resname="flexform.main_nav_mobile_search_position.outside">
+			<source>Outside toggle-menu</source>
 		</trans-unit>
 
 		<!-- Accessibility -->
