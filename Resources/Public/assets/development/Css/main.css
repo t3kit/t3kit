@@ -7807,8 +7807,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   --t3-ce-header-nav-toggler-border-radius: 0.25rem;
   /* --t3-ce-header-nav-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
   --t3-ce-header-nav-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  --t3-ce-header-nav-search-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='rgb(255,255,255);' class='bi bi-search' viewBox='0 0 16 16'><path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/></svg>");
-  --t3-ce-header-nav-search-icon-color: var(--t3-ce-header-nav-color);
   --t3-search-wrp-bg: var(--t3-white);
   --t3-language-wrp-bg: var(--t3-white);
 
@@ -7831,6 +7829,19 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   --t3-ce-header-nav-dropdown-item-hover-bg: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.1);
   --t3-ce-header-nav-dropdown-item-active-bg: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.05);
   --t3-ce-header-nav-dropdown-item-active-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.7);
+
+  /* search button */
+  --t3-btn-search-bg-hs: 0, 0%;
+  --t3-btn-search-bg-l: 80%;
+  --t3-btn-search-bg: hsl(var(--t3-btn-search-bg-hs), var(--t3-btn-search-bg-l));
+  --t3-btn-search-color: var(--t3-body-bg);
+  --t3-btn-search-border-color: hsl(var(--t3-btn-search-bg-hs), var(--t3-btn-search-bg-l));
+  --t3-btn-search-hover-color: var(--t3-btn-search-color);
+  --t3-btn-search-hover-bg: hsl(var(--t3-btn-search-bg-hs), calc(var(--t3-btn-search-bg-l) - 8%));
+  --t3-btn-search-hover-border-color: hsl(var(--t3-btn-search-bg-hs), calc(var(--t3-btn-search-bg-l) - 10%));
+  --t3-btn-search-active-color: var(--t3-btn-search-color);
+  --t3-btn-search-active-bg: hsl(var(--t3-btn-search-bg-hs), calc(var(--t3-btn-search-bg-l) - 10%));
+  --t3-btn-search-active-border-color: hsl(var(--t3-btn-search-bg-hs), calc(var(--t3-btn-search-bg-l) - 13%));
 }
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
@@ -8448,6 +8459,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   right: 0;
   top: 0;
   padding: 0 20px;
+  color: var(--t3-ce-header-nav-color);
+}
+.mobile-menu-toggler:hover {
+  color: var(--t3-ce-header-nav-hover-color);
 }
 .mobile-menu-toggler:not(.collapsed) {
   transform: rotate(45deg);
@@ -8536,14 +8551,11 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   width: auto;
 }
 .header__language-menu-box-content {
-  padding: 1rem 2rem;
   background-color: var(--t3-language-wrp-bg);
-  border-right: 1px solid var(--t3-gray-80);
-  border-bottom: 1px solid var(--t3-gray-80);
-  border-left: 1px solid var(--t3-gray-80);
 }
 .header__language-menu-box-content-list {
   margin-bottom: 0;
+  padding: 1rem 2rem;
 }
 .header__language-menu-box .header__language-menu-box-item {
   color: var(--t3-black);
@@ -8559,6 +8571,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   left: 0;
   right: 0;
   top: 100%;
+  border-bottom: 1px solid var(--t3-gray-80);
 }
 .ce-site-header__search-icon {
   color: var(--t3-ce-header-nav-color);
@@ -8576,9 +8589,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   right: 0;
   z-index: 1;
   background-color: var(--t3-search-wrp-bg);
-}
-.ce-site-header__search-field-content {
-  border: 1px solid var(--t3-gray-80);
+  border-bottom: 1px solid var(--t3-gray-80);
 }
 .ce-site-header__search-field-input {
   flex-basis: 100%;
@@ -8599,9 +8610,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .ce-site-header__search-icon .ce-site-header__search-icon-close {
   display: inline;
 }
-.main-navigation__search-btn {
-  border-left: 1px solid var(--t3-gray-80);
-}
 .main-navigation__dropdown-item-child-link {
   padding-left: calc(var(--t3-ce-header-nav-dropdown-item-padding-left) + 0.8rem);
 }
@@ -8610,6 +8618,33 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 }
 .main-navigation__dropdown-item-parent-link-with-child {
   font-size: calc(var(--t3-ce-header-nav-font-size) + 0.1rem);
+}
+.main-navigation__search-btn {
+  color: var(--t3-btn-search-color);
+  background-color: var(--t3-btn-search-bg);
+  border-color: var(--t3-btn-search-border-color);
+}
+.main-navigation__search-btn:hover {
+  color: var(--t3-btn-search-hover-color);
+  background-color: var(--t3-btn-search-hover-bg);
+  border-color: var(--t3-btn-search-hover-border-color);
+}
+.main-navigation__search-btn:focus,
+.main-navigation__search-btn.focus {
+  color: var(--t3-btn-search-hover-color);
+  background-color: var(--t3-btn-search-hover-bg);
+  border-color: var(--t3-btn-search-hover-border-color);
+  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-search-bg-hs), var(--t3-btn-search-bg-l), 0.5);
+}
+.main-navigation__search-btn:active,
+.main-navigation__search-btn.active {
+  color: var(--t3-btn-search-active-color);
+  background-color: var(--t3-btn-search-active-bg);
+  border-color: var(--t3-btn-search-active-border-color);
+}
+.main-navigation__search-btn:active:focus,
+.main-navigation__search-btn.active:focus {
+  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-search-bg-hs), var(--t3-btn-search-bg-l), 0.5);
 }
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
