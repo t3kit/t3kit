@@ -7834,7 +7834,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   --t3-btn-search-bg-hs: 0, 0%;
   --t3-btn-search-bg-l: 80%;
   --t3-btn-search-bg: hsl(var(--t3-btn-search-bg-hs), var(--t3-btn-search-bg-l));
-  --t3-btn-search-color: var(--t3-body-bg);
+  --t3-btn-search-color: var(--t3-body-color);
   --t3-btn-search-border-color: hsl(var(--t3-btn-search-bg-hs), var(--t3-btn-search-bg-l));
   --t3-btn-search-hover-color: var(--t3-btn-search-color);
   --t3-btn-search-hover-bg: hsl(var(--t3-btn-search-bg-hs), calc(var(--t3-btn-search-bg-l) - 8%));
