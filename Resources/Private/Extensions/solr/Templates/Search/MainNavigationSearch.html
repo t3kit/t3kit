@@ -7,8 +7,9 @@
         <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" class="ce-site-header__search-icon-search" aria-hidden="true" focusable="false"/>
         <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/x-circle.svg" class="ce-site-header__search-icon-close" aria-hidden="true" focusable="false"/>
     </a>
-    <div class="ce-site-header__search-field collapse search-collapse {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}" id="search__main-navigation-search" aria-labelledby="solr-search-toggle-btn">
-        <div class="tx-solr-search-form">
+    <div class="ce-site-header__search-field-wrp collapse search-collapse" id="search__main-navigation-search" aria-labelledby="solr-search-toggle-btn">
+        <div class="ce-site-header__search-field {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
+            <div class="tx-solr-search-form ce-site-header__search-field-content">
                 <s:searchForm id="main-navigation-tx-solr-search-form-pi-results" additionalFilters="{additionalFilters}" suggestHeader="{s:translate(key:'suggest_header',default:'Top Results')}">
                     <div class="input-group d-flex">
                         <f:for each="{existingParameters}" key="name" as="value">
@@ -20,9 +21,9 @@
                             <input type="hidden" name="id" value="{pageUid}" />
                         </f:if>
 
-                        <input type="text" placeholder="{f:translate(key: 'solr.placeholder', extensionName: 'ThemeT3kitAimpoint')}" class="tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus form-control ce-site-header__search-field-input" name="{pluginNamespace}[q]" value="{q}" data-search="searchSuggest" />
+                        <input type="text" placeholder="{f:translate(key: 'search.placeholder', extensionName: 'T3kit')}" class="tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus form-control ce-site-header__search-field-input" name="{pluginNamespace}[q]" value="{q}" data-search="searchSuggest" />
                         <span class="input-group-btn">
-                            <button class="btn btn-light tx-solr-submit" type="submit">
+                            <button class="btn btn-light tx-solr-submit main-navigation__search-btn" type="submit">
                                 <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" aria-hidden="true" focusable="false"/>
                                 <f:comment>
                                 <span>
@@ -33,6 +34,7 @@
                         </span>
                     </div>
                 </s:searchForm>
+            </div>
         </div>
     </div>
 </div>
