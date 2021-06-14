@@ -8069,6 +8069,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp {
     order: 3;
+    width: 100%;
   }
 
   .main-navigation-expand-lg .ce-site-header__main-navigation-search:not(.outside) {
@@ -8203,6 +8204,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp {
     order: 3;
+    width: 100%;
   }
 
   .main-navigation-expand-xl .ce-site-header__main-navigation-search:not(.outside) {
@@ -8337,6 +8339,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-xxl .ce-site-header__langmenu-wrp {
     order: 3;
+    width: 100%;
   }
 
   .main-navigation-expand-xxl .ce-site-header__main-navigation-search:not(.outside) {
@@ -8511,6 +8514,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .main-navigation__list.sticky-menu {
   max-height: 70vh;
   overflow: auto;
+  min-height: 100%;
 }
 .main-navigation__langmenu-search-wrp {
   display: flex;

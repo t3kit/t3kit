@@ -322,6 +322,7 @@
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp {
     order: 3;
+    width: 100%;
   }
 
   .main-navigation-expand-lg .ce-site-header__main-navigation-search:not(.outside) {
@@ -457,6 +458,7 @@
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp {
     order: 3;
+    width: 100%;
   }
 
   .main-navigation-expand-xl .ce-site-header__main-navigation-search:not(.outside) {
@@ -592,6 +594,7 @@
 
   .main-navigation-expand-xxl .ce-site-header__langmenu-wrp {
     order: 3;
+    width: 100%;
   }
 
   .main-navigation-expand-xxl .ce-site-header__main-navigation-search:not(.outside) {
@@ -779,6 +782,7 @@
 .main-navigation__list.sticky-menu {
   max-height: 70vh;
   overflow: auto;
+  min-height: 100%;
 }
 
 .main-navigation__langmenu-search-wrp {
