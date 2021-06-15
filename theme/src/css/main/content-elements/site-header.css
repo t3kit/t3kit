@@ -453,11 +453,11 @@
   }
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
-      display: none;
+    display: none;
   }
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp.outside .main-flag-language {
-      display: block;
+    display: block;
   }
 }
 
@@ -600,11 +600,11 @@
   }
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
-      display: none;
+    display: none;
   }
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp.outside .main-flag-language {
-      display: block;
+    display: block;
   }
 }
 
