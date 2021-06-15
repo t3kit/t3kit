@@ -401,7 +401,8 @@
     margin-right: 10px;
   }
 
-  .main-navigation-expand-lg .main-navigation__search-btn {
+  .main-navigation-expand-lg .main-navigation__search-btn,
+  .ce-site-header__top-search-wrp .main-navigation__search-btn {
     padding: 0.6rem 1rem;
   }
 
