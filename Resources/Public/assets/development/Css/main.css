@@ -8039,6 +8039,15 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .big-menu-wrp {
   position: static;
 }
+.ce-site-header__langmenu-wrp.inside .main-flag-language-icon {
+  display: none;
+}
+.ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
+  display: block;
+}
+.ce-site-header__langmenu-wrp.outside .main-flag-language {
+  display: none;
+}
 /* -------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) xs */
 /* @media (max-width: 575.98px) { ... } */
@@ -8069,7 +8078,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp {
     order: 3;
-    width: 100%;
   }
 
   .main-navigation-expand-lg .ce-site-header__main-navigation-search:not(.outside) {
@@ -8136,6 +8144,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .main-navigation-expand-lg .main-navigation__search-btn {
     padding: 0.6rem 1rem;
   }
+
+  .main-navigation-expand-lg .ce-site-header__langmenu-wrp.inside {
+    width: 100%;
+  }
 }
 /* Large devices (desktops, 992px and up) lg */
 @media (min-width: 992px) {
@@ -8183,6 +8195,14 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .main-navigation-expand-lg .mobile-menu-links-collapse {
     display: block !important;
   }
+
+  .main-navigation-expand-lg .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
+      display: none;
+  }
+
+  .main-navigation-expand-lg .ce-site-header__langmenu-wrp.outside .main-flag-language {
+      display: block;
+  }
 }
 /* -------------------------------------------------------- */
 /* Large devices (desktops, less than 1200px) lg */
@@ -8204,7 +8224,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp {
     order: 3;
-    width: 100%;
   }
 
   .main-navigation-expand-xl .ce-site-header__main-navigation-search:not(.outside) {
@@ -8271,6 +8290,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .main-navigation-expand-xl .main-navigation__search-btn {
     padding: 0.6rem 1rem;
   }
+  
+  .main-navigation-expand-xl .ce-site-header__langmenu-wrp.inside {
+    width: 100%;
+  }
 }
 /* X-Large devices (large desktops, 1200px and up) xl */
 @media (min-width: 1200px) {
@@ -8318,6 +8341,14 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .main-navigation-expand-xl .mobile-menu-links-collapse {
     display: block !important;
   }
+
+  .main-navigation-expand-xl .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
+      display: none;
+  }
+
+  .main-navigation-expand-xl .ce-site-header__langmenu-wrp.outside .main-flag-language {
+      display: block;
+  }
 }
 /* -------------------------------------------------------- */
 /* X-Large devices (large desktops, less than 1400px) xl */
@@ -8339,7 +8370,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-xxl .ce-site-header__langmenu-wrp {
     order: 3;
-    width: 100%;
   }
 
   .main-navigation-expand-xxl .ce-site-header__main-navigation-search:not(.outside) {
@@ -8406,6 +8436,10 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .main-navigation-expand-xxl .main-navigation__search-btn {
     padding: 0.6rem 1rem;
   }
+
+  .main-navigation-expand-xxl .ce-site-header__langmenu-wrp.inside {
+    width: 100%;
+  }
 }
 /* XX-Large devices (larger desktops, 1400px and up) xxl */
 @media (min-width: 1400px) {
@@ -8452,6 +8486,14 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 
   .main-navigation-expand-xxl .mobile-menu-links-collapse {
     display: block !important;
+  }
+
+  .main-navigation-expand-xxl .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
+    display: none;
+  }
+
+  .main-navigation-expand-xxl .ce-site-header__langmenu-wrp.outside .main-flag-language {
+    display: block;
   }
 }
 .mobile-menu-toggler {
@@ -8511,7 +8553,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   padding: 0.6rem 1rem;
   color: var(--t3-black);
 }
-.main-navigation__list.sticky-menu {
+.main-navigation__items-wrp.show .main-navigation__list.sticky-menu {
   max-height: 70vh;
   overflow: auto;
   min-height: 100%;
