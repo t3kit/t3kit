@@ -290,6 +290,10 @@
   position: static;
 }
 
+.ce-site-header__top-langmenu .main-flag-language-icon {
+  display: none;
+}
+
 .ce-site-header__langmenu-wrp.inside .main-flag-language-icon {
   display: none;
 }

@@ -8039,6 +8039,9 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .big-menu-wrp {
   position: static;
 }
+.ce-site-header__top-langmenu .main-flag-language-icon {
+  display: none;
+}
 .ce-site-header__langmenu-wrp.inside .main-flag-language-icon {
   display: none;
 }
@@ -8197,11 +8200,11 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   }
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
-      display: none;
+    display: none;
   }
 
   .main-navigation-expand-lg .ce-site-header__langmenu-wrp.outside .main-flag-language {
-      display: block;
+    display: block;
   }
 }
 /* -------------------------------------------------------- */
@@ -8290,7 +8293,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .main-navigation-expand-xl .main-navigation__search-btn {
     padding: 0.6rem 1rem;
   }
-  
+
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp.inside {
     width: 100%;
   }
@@ -8343,11 +8346,11 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   }
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp.outside .main-flag-language-icon {
-      display: none;
+    display: none;
   }
 
   .main-navigation-expand-xl .ce-site-header__langmenu-wrp.outside .main-flag-language {
-      display: block;
+    display: block;
   }
 }
 /* -------------------------------------------------------- */
