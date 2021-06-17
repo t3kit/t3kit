@@ -2,7 +2,7 @@
 # Site header element.
 # ===========================
 mod.wizards.newContentElement.wizardItems.special.elements.simpleSiteHeader {
-  iconIdentifier = ce-site-header
+  iconIdentifier = ce-simple-site-header
   title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:simpleSiteHeader.title
   description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Special/locallang_simpleSiteHeader.xlf:simpleSiteHeader.description
   tt_content_defValues.CType = simpleSiteHeader
