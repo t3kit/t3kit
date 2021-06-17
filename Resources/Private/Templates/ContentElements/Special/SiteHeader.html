@@ -13,9 +13,9 @@
     <f:if condition="{flexform.main_nav_dropdown} == big-menu-dropdown">
       <f:render partial="Js/Site-header--inline" arguments="{_all}" />
     </f:if>
-    <f:debug>{_all}</f:debug>
+
     <f:if condition="{flexform.main_nav_search}">
-      <f:if condition="{searchExt} == solr}">
+      <f:if condition="{searchExt} == 'solr'}">
         <f:render partial="Js/Awesomplete--async" arguments="{_all}" />
       </f:if>
     </f:if>
@@ -158,7 +158,7 @@
     </a>
     <div class="ce-site-header__search-field-wrp collapse search-collapse" id="search__main-navigation-search" aria-labelledby="search-toggle-btn">
         <div class="ce-site-header__search-field {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
-          <f:cObject typoscriptObjectPath="lib.contentObject.headerTopSearch.20" />
+          <f:cObject typoscriptObjectPath="lib.contentObject.searchInput.20" />
         </div>
     </div>
   </div>
@@ -173,7 +173,7 @@
     </a>
     <div class="ce-site-header__search-field-wrp collapse search-collapse" id="search__main-navigation-search" aria-labelledby="search-toggle-btn">
         <div class="ce-site-header__search-field {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
-          <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch.20" />
+          <f:cObject typoscriptObjectPath="lib.contentObject.searchInput.20" />
         </div>
     </div>
   </div>

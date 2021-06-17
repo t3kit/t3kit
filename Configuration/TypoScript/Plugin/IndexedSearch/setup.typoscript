@@ -18,14 +18,9 @@ plugin.tx_indexedsearch {
 }
 
 lib {
-  contentObject.headerTopSearch.20 = FLUIDTEMPLATE
-  contentObject.headerTopSearch.20 {
-    file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/HeaderTopSearch.html
-    settings < plugin.tx_indexedsearch.settings
-  }
-  contentObject.mainNavigationSearch.20 = FLUIDTEMPLATE
-  contentObject.mainNavigationSearch.20 {
-    file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/MainNavigationSearch.html
+  contentObject.searchInput.20 = FLUIDTEMPLATE
+  contentObject.searchInput.20 {
+    file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/SearchInput.html
     settings < plugin.tx_indexedsearch.settings
   }
   contentElement {

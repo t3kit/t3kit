@@ -18,37 +18,22 @@ plugin.tx_solr {
     templateFiles {
       form = Form
       form.availableTemplates {
-        headerTopSearch {
-          label = LLL:EXT:t3kit/Resources/Private/Language/locallang.xlf.search.headerTop.template
-          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/HeaderTopSearch.html
-        }
-        mainNavigationSearch {
-          label = LLL:EXT:t3kit/Resources/Private/Language/locallang.xlf.search.manNavigation.template
-          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/MainNavigationSearch.html
+        searchInput {
+          label = LLL:EXT:t3kit/Resources/Private/Language/locallang.xlf.searchInput.template
+          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/SearchInput.html
         }
       }
     }
   }
 }
 
-lib.contentObject.headerTopSearch.20 < plugin.tx_solr_PiSearch_Search
-lib.contentObject.headerTopSearch.20 {
+lib.contentObject.searchInput.20 < plugin.tx_solr_PiSearch_Search
+lib.contentObject.searchInput.20 {
   settings < plugin.tx_solr.settings
   view < plugin.tx_solr.view
   view {
     templateFiles {
-      form = headerTopSearch
-    }
-  }
-}
-
-lib.contentObject.mainNavigationSearch.20 < plugin.tx_solr_PiSearch_Search
-lib.contentObject.mainNavigationSearch.20 {
-  settings < plugin.tx_solr.settings
-  view < plugin.tx_solr.view
-  view {
-    templateFiles {
-      form = mainNavigationSearch
+      form = searchInput
     }
   }
 }
