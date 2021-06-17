@@ -74,3 +74,10 @@ tx_solr_suggest {
     action = suggest
   }
 }
+
+lib.contentElement {
+  variables {
+    searchExt = TEXT
+    searchExt.value = solr
+  }
+}

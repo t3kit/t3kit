@@ -34,3 +34,10 @@ lib.contentObject.mainNavigationSearch.20 {
   file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/MainNavigationSearch.html
   settings < plugin.tx_indexedsearch.settings
 }
+
+lib.contentElement {
+  variables {
+    searchExt = TEXT
+    searchExt.value = indexedsearch
+  }
+}

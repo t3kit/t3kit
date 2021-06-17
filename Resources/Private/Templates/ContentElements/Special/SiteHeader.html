@@ -13,9 +13,11 @@
     <f:if condition="{flexform.main_nav_dropdown} == big-menu-dropdown">
       <f:render partial="Js/Site-header--inline" arguments="{_all}" />
     </f:if>
-
+    <f:debug>{_all}</f:debug>
     <f:if condition="{flexform.main_nav_search}">
-      <f:render partial="Js/Awesomplete--async" arguments="{_all}" />
+      <f:if condition="{searchExt} == solr}">
+        <f:render partial="Js/Awesomplete--async" arguments="{_all}" />
+      </f:if>
     </f:if>
 
     <f:if condition="{flexform.header_top}">
