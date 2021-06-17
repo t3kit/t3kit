@@ -17,6 +17,12 @@
 			<trans-unit id="search.placeholder" resname="search.placeholder">
 				<source>Search</source>
 			</trans-unit>
+			<trans-unit id="search.headerTop.template" resname="search.headerTop.template">
+				<source>Header top Searchform Template</source>
+			</trans-unit>
+			<trans-unit id="search.mainNavigation.template" resname="search.mainNavigation.template">
+				<source>Main navigation Searchform Template</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

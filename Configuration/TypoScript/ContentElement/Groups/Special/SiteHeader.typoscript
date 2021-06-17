@@ -46,16 +46,6 @@ tt_content.siteHeader {
       as = languageNavigation
       languages = auto
     }
-    /*
-    # Root menu
-    60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    60 {
-      special = list
-      special.value.field = page_links_7
-      excludeUidList = 1
-      as = languageMenuExternalLink
-    }
-    */
     70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     70 {
       special = list

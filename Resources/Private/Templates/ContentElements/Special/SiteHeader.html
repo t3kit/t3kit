@@ -14,6 +14,10 @@
       <f:render partial="Js/Site-header--inline" arguments="{_all}" />
     </f:if>
 
+    <f:if condition="{flexform.main_nav_search}">
+      <f:render partial="Js/Awesomplete--async" arguments="{_all}" />
+    </f:if>
+
     <f:if condition="{flexform.header_top}">
       <div class="ce-site-header__top-wrp">
           <div class="ce-site-header__top container">
@@ -53,10 +57,10 @@
 <f:section name="topMetamenu">
   <div class="ce-site-header__top-meta-menu-wrp">
     <div class="ce-site-header__top-meta-menu">
-        <ul class="main-navigation__list">
+        <ul class="ce-site-header__top-meta-menu-list">
           <f:for each="{metaMenu}" as="metaItem" iteration="i">
-            <li class="main-navigation__item {metaItem.data.uid}">
-              <f:render section="menuLink" arguments="{item:metaItem, class: 'main-navigation__item-link'}" />
+            <li class="ce-site-header__top-meta-menu-list-item {metaItem.data.uid}">
+              <f:render section="menuLink" arguments="{item:metaItem, class: 'ce-site-header__top-meta-menu-list-item-link'}" />
             </li>
           </f:for>
         </ul>
@@ -143,6 +147,21 @@
   </div>
 </f:section>
 
+<f:comment>Top Search section</f:comment>
+<f:section name="topSearch">
+  <div class="ce-site-header__search">
+    <a class="ce-site-header__search-icon collapsed ce-site-header__top-meta-menu-list-item-link" href="#search__main-navigation-search" aria-controls="search__main-navigation-search" id="search-toggle-btn" data-bs-toggle="collapse" aria-expanded="false" >
+        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" class="ce-site-header__search-icon-search" aria-hidden="true" focusable="false"/>
+        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/x-circle.svg" class="ce-site-header__search-icon-close" aria-hidden="true" focusable="false"/>
+    </a>
+    <div class="ce-site-header__search-field-wrp collapse search-collapse" id="search__main-navigation-search" aria-labelledby="search-toggle-btn">
+        <div class="ce-site-header__search-field {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
+          <f:cObject typoscriptObjectPath="lib.contentObject.headerTopSearch.20" />
+        </div>
+    </div>
+  </div>
+  </f:section>
+
 <f:comment>Search section</f:comment>
 <f:section name="search">
   <div class="ce-site-header__search">
@@ -152,7 +171,7 @@
     </a>
     <div class="ce-site-header__search-field-wrp collapse search-collapse" id="search__main-navigation-search" aria-labelledby="search-toggle-btn">
         <div class="ce-site-header__search-field {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
-          <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch.20" data="{test: flexform.main_nav_full_width}" />
+          <f:cObject typoscriptObjectPath="lib.contentObject.mainNavigationSearch.20" />
         </div>
     </div>
   </div>
@@ -319,7 +338,7 @@
                   <f:comment>End sub menu level 3</f:comment>
                 </li>
               </ul>
-              <f:comment>End sub menu level 3</f:comment>
+              <f:comment>End sub menu level 2</f:comment>
             </f:else>
           </f:if>
           <f:if condition="{iteration.isLast}">

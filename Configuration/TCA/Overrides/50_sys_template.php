@@ -42,3 +42,17 @@ defined('TYPO3_MODE') || die();
     'Configuration/TypoScript/Plugin',
     '--- Plugin Config'
 );
+
+// Include Indexed Search Config
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    't3kit',
+    'Configuration/TypoScript/Plugin/IndexedSearch',
+    '--- Indexed Search Config'
+);
+
+// Include Solr Config
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    't3kit',
+    'Configuration/TypoScript/Plugin/Solr',
+    '--- Solr Config'
+);

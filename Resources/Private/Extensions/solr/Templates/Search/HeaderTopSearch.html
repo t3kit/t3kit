@@ -2,39 +2,33 @@
         xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
         xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers/"
         data-namespace-typo3-fluid="true">
-<div class="ce-site-header__search">
-    <a class="ce-site-header__search-icon collapsed main-navigation__item-link" href="#search__main-navigation-search" aria-controls="search__main-navigation-search" id="solr-search-toggle-btn" data-bs-toggle="collapse" aria-expanded="false" aria-label="{f:translate(key: 'submit', extensionName: 'solr')}">
-        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" class="ce-site-header__search-icon-search" aria-hidden="true" focusable="false"/>
-        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/x-circle.svg" class="ce-site-header__search-icon-close" aria-hidden="true" focusable="false"/>
-    </a>
-    <div class="ce-site-header__search-field-wrp collapse search-collapse" id="search__main-navigation-search" aria-labelledby="solr-search-toggle-btn">
-        <div class="ce-site-header__search-field {f:if(condition: flexform.main_nav_full_width, then: ' container-fluid', else: ' container')}">
-            <div class="tx-solr-search-form ce-site-header__search-field-content">
-                <s:searchForm id="main-navigation-tx-solr-search-form-pi-results" additionalFilters="{additionalFilters}" suggestHeader="{s:translate(key:'suggest_header',default:'Top Results')}">
-                    <div class="input-group d-flex">
-                        <f:for each="{existingParameters}" key="name" as="value">
-                            <f:form.hidden name="{pluginNamespace}{name}" value="{value}" />
-                        </f:for>
+<div class="tx-solr-search-form header-top__search">
+    <s:searchForm id="main-navigation-tx-solr-search-form-pi-results" additionalFilters="{additionalFilters}" suggestHeader="{s:translate(key:'suggest_header',default:'Top Results')}">
+        <div class="input-group d-flex">
+            <div class="header-top__search-box js__header-top__search-box d-flex w-100">
+                <f:for each="{existingParameters}" key="name" as="value">
+                    <f:form.hidden name="{pluginNamespace}{name}" value="{value}" />
+                </f:for>
 
-                        <f:if condition="{addPageAndLanguageId}">
-                            <input type="hidden" name="L" value="{languageUid}" />
-                            <input type="hidden" name="id" value="{pageUid}" />
-                        </f:if>
+                <f:if condition="{addPageAndLanguageId}">
+                    <input type="hidden" name="L" value="{languageUid}" />
+                    <input type="hidden" name="id" value="{pageUid}" />
+                </f:if>
 
-                        <input type="text" placeholder="{f:translate(key: 'search.placeholder', extensionName: 'T3kit')}" class="tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus form-control ce-site-header__search-field-input" name="{pluginNamespace}[q]" value="{q}" data-search="searchSuggest" />
-                        <span class="input-group-btn">
-                            <button class="btn btn-light tx-solr-submit main-navigation__search-btn" type="submit">
-                                <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" aria-hidden="true" focusable="false"/>
-                                <f:comment>
-                                <span>
-                                    <s:translate key="submit">Search</s:translate>
-                                </span>
-                                </f:comment>
-                            </button>
+                <input type="text" placeholder="{f:translate(key: 'search.placeholder', extensionName: 'T3kit')}" class="tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus form-control header-top__search-input" name="{pluginNamespace}[q]" value="{q}" data-search="searchSuggest" />
+            </div>
+            <div class="header-top__search-btn-wrp">
+                <span class="input-group-btn">
+                    <button class="btn tx-solr-submit header-top__search-btn" type="submit">
+                        <t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" aria-hidden="true" focusable="false"/>
+                        <f:comment>
+                        <span>
+                            <s:translate key="submit">Search</s:translate>
                         </span>
-                    </div>
-                </s:searchForm>
+                        </f:comment>
+                    </button>
+                </span>
             </div>
         </div>
-    </div>
+    </s:searchForm>
 </div>
