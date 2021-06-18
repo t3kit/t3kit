@@ -1,0 +1,68 @@
+# ###########################
+# Import Solr typoscript
+# ===========================
+@import 'EXT:solr/Configuration/TypoScript/Solr/setup.txt'
+
+# Plugin configuration
+plugin.tx_solr {
+  view {
+    templateRootPaths {
+      200 = EXT:t3kit/Resources/Private/Extensions/solr/Templates/
+    }
+    partialRootPaths {
+      200 = EXT:t3kit/Resources/Private/Extensions/solr/Partials/
+    }
+    layoutRootPaths {
+      200 = EXT:t3kit/Resources/Private/Extensions/solr/Layouts/
+    }
+    templateFiles {
+      form = Form
+      form.availableTemplates {
+        searchInput {
+          label = LLL:EXT:t3kit/Resources/Private/Language/locallang.xlf.searchInput.template
+          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/SearchInput.html
+        }
+      }
+    }
+  }
+}
+
+lib.contentObject.searchInput.20 < plugin.tx_solr_PiSearch_Search
+lib.contentObject.searchInput.20 {
+  settings < plugin.tx_solr.settings
+  view < plugin.tx_solr.view
+  view {
+    templateFiles {
+      form = searchInput
+    }
+  }
+}
+
+tx_solr_suggest = PAGE
+tx_solr_suggest {
+  typeNum = 7384
+  config {
+    disableAllHeaderCode = 1
+    xhtml_cleaning = 0
+    admPanel = 0
+    additionalHeaders = Content-type: text/plain
+    no_cache = 0
+  }
+
+  10 = USER
+  10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = Solr
+    pluginName = pi_suggest
+    vendorName = ApacheSolrForTypo3
+    controller = Suggest
+    action = suggest
+  }
+}
+
+lib.contentElement {
+  variables {
+    searchExt = TEXT
+    searchExt.value = solr
+  }
+}

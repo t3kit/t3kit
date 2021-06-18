@@ -1,6 +1,3 @@
 # ###########################
 # import TypoScript setup for plugins
 # ===========================
-
-// indexed_search
-@import 'EXT:t3kit/Configuration/TypoScript/Plugin/IndexedSearch/setup.typoscript'

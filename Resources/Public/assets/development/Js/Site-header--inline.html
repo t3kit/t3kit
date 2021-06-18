@@ -1,0 +1,15 @@
+<f:asset.script identifier="site-header--inline"  > (function () {
+  'use strict';
+
+  const dropdownMenu = document.querySelectorAll('#dropdown-big-menu');
+  if (dropdownMenu.length !== 0) {
+    dropdownMenu.forEach((dropdownMenuItem) => {
+      dropdownMenuItem.addEventListener('click', (event) => {
+        event.stopPropagation();
+      });
+    });
+  }
+
+})();
+//# =site-header--inline.js.map
+ </f:asset.script>

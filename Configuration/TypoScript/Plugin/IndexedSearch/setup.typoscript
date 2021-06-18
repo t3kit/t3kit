@@ -17,20 +17,16 @@ plugin.tx_indexedsearch {
   }
 }
 
-lib.contentObject.headerTopSearch.20 = FLUIDTEMPLATE
-lib.contentObject.headerTopSearch.20 {
-  file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/HeaderTopSearch.html
-  settings < plugin.tx_indexedsearch.settings
-}
-
-lib.contentObject.headerMiddleSearch.20 = FLUIDTEMPLATE
-lib.contentObject.headerMiddleSearch.20 {
-  file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/HeaderMiddleSearch.html
-  settings < plugin.tx_indexedsearch.settings
-}
-
-lib.contentObject.mainNavigationSearch.20 = FLUIDTEMPLATE
-lib.contentObject.mainNavigationSearch.20 {
-  file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/MainNavigationSearch.html
-  settings < plugin.tx_indexedsearch.settings
+lib {
+  contentObject.searchInput.20 = FLUIDTEMPLATE
+  contentObject.searchInput.20 {
+    file = EXT:t3kit/Resources/Private/Extensions/indexed_search/Templates/SearchInput.html
+    settings < plugin.tx_indexedsearch.settings
+  }
+  contentElement {
+    variables {
+      searchExt = TEXT
+      searchExt.value = indexedsearch
+    }
+  }
 }

@@ -14,7 +14,12 @@
 			<trans-unit id="skip_to_main_content" resname="skip_to_main_content">
 				<source>Skip to main content</source>
 			</trans-unit>
-
+			<trans-unit id="search.placeholder" resname="search.placeholder">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="searchInput.template" resname="searcHInput.template">
+				<source>Search input template</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
