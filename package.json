@@ -30,7 +30,7 @@
     "bootstrap-icons": "1.5.0",
     "file-icon-vectors": "1.0.0",
     "simplelightbox": "git@github.com:dmh/simplelightbox.git#nodeps",
-    "swiper": "6.6.2"
+    "swiper": "6.7.0"
   },
   "devDependencies": {
     "@babel/preset-env": "~7.14.2",
@@ -44,7 +44,7 @@
     "chokidar": "~3.5.1",
     "cpy": "~8.1.2",
     "cssnano": "~5.0.4",
-    "cssom": "~0.4.4",
+    "cssom": "~0.5.0",
     "del": "~6.0.0",
     "fibers": "^5.0.0",
     "filesize": "~6.3.0",
@@ -59,7 +59,7 @@
     "postcss": "~8.3.0",
     "postcss-import": "~14.0.2",
     "rfg-api": "~0.5.2",
-    "rollup": "~2.49.0",
+    "rollup": "~2.52.2",
     "rollup-plugin-sizes": "~1.0.4",
     "rollup-plugin-terser": "~7.0.2",
     "sass": "1.32.13",
