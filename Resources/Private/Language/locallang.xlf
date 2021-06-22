@@ -17,7 +17,7 @@
 			<trans-unit id="search.placeholder" resname="search.placeholder">
 				<source>Search</source>
 			</trans-unit>
-			<trans-unit id="searchInput.template" resname="searcHInput.template">
+			<trans-unit id="searchForm.template" resname="searchForm.template">
 				<source>Search input template</source>
 			</trans-unit>
 		</body>

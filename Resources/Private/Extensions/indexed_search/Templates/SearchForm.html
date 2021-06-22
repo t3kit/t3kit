@@ -1,0 +1,16 @@
+<div class="tx-indexedsearch-searchbox search-form__wrp">
+    <f:form class="search-form" pageUid="{settings.targetPid}" method="post" absolute="0" action="search" extensionName="IndexedSearch" pluginName="pi2" controller="Search">
+        <div class="input-group d-flex search-form__group-wrp">
+            <div class="d-flex w-100 search-form__group-input-wrp">
+                <div class="d-flex w-100">
+                    <f:form.textfield name="search[sword]" value="{sword}" class="search-form__group-input" placeholder="{f:translate(key: 'search.placeholder', extensionName: 't3kit')}" />
+                </div>
+            </div>
+            <div class="search-form__group-btn-wrp">
+                <div class="search-form__group-btn">
+                    <a class="search-form__group-btn-submit btn" href="#"><t3kit:render.svg src="/typo3conf/ext/t3kit/Resources/Public/assets/Icons/Bootstrap/search.svg" aria-hidden="true" focusable="false"/></a>
+                </div>
+            </div>
+        </div>
+    </f:form>
+</div>

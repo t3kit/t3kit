@@ -131,6 +131,8 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php'][
 \T3k\t3kit\Hooks\PageLayoutView\SiteFooterCEPreviewRenderer::class;
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['imageTextLeftRight'] =
 \T3k\t3kit\Hooks\PageLayoutView\ImageTextLeftRightCEPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['siteHeader'] =
+\T3k\t3kit\Hooks\PageLayoutView\SiteHeaderCEPreviewRenderer::class;
 
 // Register RTE presets
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'])) {

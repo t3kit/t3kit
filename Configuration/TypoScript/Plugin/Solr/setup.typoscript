@@ -18,22 +18,22 @@ plugin.tx_solr {
     templateFiles {
       form = Form
       form.availableTemplates {
-        searchInput {
-          label = LLL:EXT:t3kit/Resources/Private/Language/locallang.xlf.searchInput.template
-          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/SearchInput.html
+        searchForm {
+          label = LLL:EXT:t3kit/Resources/Private/Language/locallang.xlf.searchForm.template
+          file = EXT:t3kit/Resources/Private/Extensions/solr/Templates/SearchForm.html
         }
       }
     }
   }
 }
 
-lib.contentObject.searchInput.20 < plugin.tx_solr_PiSearch_Search
-lib.contentObject.searchInput.20 {
+lib.contentObject.searchForm.20 < plugin.tx_solr_PiSearch_Search
+lib.contentObject.searchForm.20 {
   settings < plugin.tx_solr.settings
   view < plugin.tx_solr.view
   view {
     templateFiles {
-      form = searchInput
+      form = searchForm
     }
   }
 }
