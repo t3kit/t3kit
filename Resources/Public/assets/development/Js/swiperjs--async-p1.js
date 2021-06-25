@@ -1230,12 +1230,14 @@
 
   function extend() {
     var to = Object(arguments.length <= 0 ? undefined : arguments[0]);
-    var noExtend = ['__proto__', 'constructor', 'prototype'];
+    var noExtend = ['__proto__', 'constructor', 'prototype']; // eslint-disable-next-line
+
+    var HTMLElement = typeof window !== 'undefined' ? window.HTMLElement : undefined;
 
     for (var i = 1; i < arguments.length; i += 1) {
       var nextSource = i < 0 || arguments.length <= i ? undefined : arguments[i];
 
-      if (nextSource !== undefined && nextSource !== null) {
+      if (nextSource !== undefined && nextSource !== null && !(HTMLElement && nextSource instanceof HTMLElement)) {
         var keysArray = Object.keys(Object(nextSource)).filter(function (key) {
           return noExtend.indexOf(key) < 0;
         });
@@ -1916,7 +1918,7 @@
           column = i - row * slidesPerRow;
         }
 
-        slide.css(getDirectionLabel('margin-top'), row !== 0 && params.spaceBetween && params.spaceBetween + "px");
+        slide.css(getDirectionLabel('margin-top'), row !== 0 ? params.spaceBetween && params.spaceBetween + "px" : '');
       }
 
       if (slide.css('display') === 'none') continue; // eslint-disable-line
@@ -3001,7 +3003,6 @@
     var normalizedSnapGrid = snapGrid.map(function (val) {
       return normalize(val);
     });
-    snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate)];
     var prevSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate) - 1];
 
     if (typeof prevSnap === 'undefined' && params.cssMode) {
@@ -3523,9 +3524,9 @@
 
     if (e.type !== 'touchstart') {
       var preventDefault = true;
-      if ($targetEl.is(data.formElements)) preventDefault = false;
+      if ($targetEl.is(data.focusableElements)) preventDefault = false;
 
-      if (document.activeElement && $(document.activeElement).is(data.formElements) && document.activeElement !== $targetEl[0]) {
+      if (document.activeElement && $(document.activeElement).is(data.focusableElements) && document.activeElement !== $targetEl[0]) {
         document.activeElement.blur();
       }
 
@@ -3601,7 +3602,7 @@
     }
 
     if (data.isTouchEvent && document.activeElement) {
-      if (e.target === document.activeElement && $(e.target).is(data.formElements)) {
+      if (e.target === document.activeElement && $(e.target).is(data.focusableElements)) {
         data.isMoved = true;
         swiper.allowClick = false;
         return;
@@ -4404,7 +4405,6 @@
     if (!breakpoints || base === 'container' && !containerEl) return undefined;
     var breakpoint = false;
     var window = getWindow();
-    var currentWidth = base === 'window' ? window.innerWidth : containerEl.clientWidth;
     var currentHeight = base === 'window' ? window.innerHeight : containerEl.clientHeight;
     var points = Object.keys(breakpoints).map(function (point) {
       if (typeof point === 'string' && point.indexOf('@') === 0) {
@@ -4430,7 +4430,11 @@
       point = _points$i.point,
       value = _points$i.value;
 
-      if (value <= currentWidth) {
+      if (base === 'window') {
+        if (window.matchMedia("(min-width: " + value + "px)").matches) {
+          breakpoint = point;
+        }
+      } else if (value <= containerEl.clientWidth) {
         breakpoint = point;
       }
     }
@@ -4605,6 +4609,7 @@
     nested: false,
     createElements: false,
     enabled: true,
+    focusableElements: 'input, select, option, textarea, button, video, label',
     // Overrides
     width: null,
     height: null,
@@ -4907,7 +4912,7 @@
           startTranslate: undefined,
           allowThresholdMove: undefined,
           // Form elements to match
-          formElements: 'input, select, option, textarea, button, video, label',
+          focusableElements: swiper.params.focusableElements,
           // Last click time
           lastClickTime: now(),
           clickTimeout: undefined,
@@ -5146,9 +5151,13 @@
 
       el.swiper = swiper;
 
+      var getWrapperSelector = function getWrapperSelector() {
+        return "." + (swiper.params.wrapperClass || '').trim().split(' ').join('.');
+      };
+
       var getWrapper = function getWrapper() {
         if (el && el.shadowRoot && el.shadowRoot.querySelector) {
-          var res = $(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
+          var res = $(el.shadowRoot.querySelector(getWrapperSelector())); // Children needs to return slot items
 
           res.children = function (options) {
             return $el.children(options);
@@ -5157,7 +5166,7 @@
           return res;
         }
 
-        return $el.children("." + swiper.params.wrapperClass);
+        return $el.children(getWrapperSelector());
       }; // Find Wrapper
 
 

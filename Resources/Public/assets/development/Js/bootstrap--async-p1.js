@@ -25,7 +25,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): dom/selector-engine.js
+   * Bootstrap (v5.0.2): dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -201,24 +201,6 @@
     return null;
   };
 
-  const emulateTransitionEnd = (element, duration) => {
-    let called = false;
-    const durationPadding = 5;
-    const emulatedDuration = duration + durationPadding;
-
-    function listener() {
-      called = true;
-      element.removeEventListener(TRANSITION_END, listener);
-    }
-
-    element.addEventListener(TRANSITION_END, listener);
-    setTimeout(() => {
-      if (!called) {
-        triggerTransitionEnd(element);
-      }
-    }, emulatedDuration);
-  };
-
   const typeCheckConfig = (componentName, config, configTypes) => {
     Object.keys(configTypes).forEach((property) => {
       const expectedTypes = configTypes[property];
@@ -234,20 +216,11 @@
   };
 
   const isVisible = (element) => {
-    if (!element) {
+    if (!isElement(element) || element.getClientRects().length === 0) {
       return false;
     }
 
-    if (element.style && element.parentNode && element.parentNode.style) {
-      const elementStyle = getComputedStyle(element);
-      const parentNodeStyle = getComputedStyle(element.parentNode);
-
-      return elementStyle.display !== 'none' &&
-      parentNodeStyle.display !== 'none' &&
-      elementStyle.visibility !== 'hidden';
-    }
-
-    return false;
+    return getComputedStyle(element).getPropertyValue('visibility') === 'visible';
   };
 
   const isDisabled = (element) => {
@@ -280,9 +253,18 @@
     return null;
   };
 
+  const DOMContentLoadedCallbacks = [];
+
   const onDOMContentLoaded = (callback) => {
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', callback);
+      // add listener on the first call when the document is in loading state
+      if (!DOMContentLoadedCallbacks.length) {
+        document.addEventListener('DOMContentLoaded', () => {
+          DOMContentLoadedCallbacks.forEach((callback) => callback());
+        });
+      }
+
+      DOMContentLoadedCallbacks.push(callback);
     } else {
       callback();
     }
@@ -313,67 +295,66 @@
     }
   };
 
-  /**
-   * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): dom/data.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-   * --------------------------------------------------------------------------
-   */
+  const executeAfterTransition = (callback, transitionElement, waitForTransition = true) => {
+    if (!waitForTransition) {
+      execute(callback);
+      return;
+    }
 
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
+    const durationPadding = 5;
+    const emulatedDuration = getTransitionDurationFromElement(transitionElement) + durationPadding;
 
-  const elementMap = new Map();
+    let called = false;
 
-  var Data = {
-    set(element, key, instance) {
-      if (!elementMap.has(element)) {
-        elementMap.set(element, new Map());
-      }
-
-      const instanceMap = elementMap.get(element);
-
-      // make it clear we only want one instance per element
-      // can be removed later when multiple key/instances are fine to be used
-      if (!instanceMap.has(key) && instanceMap.size !== 0) {
-        // eslint-disable-next-line no-console
-        console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
+    const handler = ({ target }) => {
+      if (target !== transitionElement) {
         return;
       }
 
-      instanceMap.set(key, instance);
-    },
+      called = true;
+      transitionElement.removeEventListener(TRANSITION_END, handler);
+      execute(callback);
+    };
 
-    get(element, key) {
-      if (elementMap.has(element)) {
-        return elementMap.get(element).get(key) || null;
+    transitionElement.addEventListener(TRANSITION_END, handler);
+    setTimeout(() => {
+      if (!called) {
+        triggerTransitionEnd(transitionElement);
       }
+    }, emulatedDuration);
+  };
 
-      return null;
-    },
+  /**
+   * Return the previous/next element of a list.
+   *
+   * @param {array} list    The list of elements
+   * @param activeElement   The active element
+   * @param shouldGetNext   Choose to get next or previous element
+   * @param isCycleAllowed
+   * @return {Element|elem} The proper element
+   */
+  const getNextActiveElement = (list, activeElement, shouldGetNext, isCycleAllowed) => {
+    let index = list.indexOf(activeElement);
 
-    remove(element, key) {
-      if (!elementMap.has(element)) {
-        return;
-      }
+    // if the element does not exist in the list return an element depending on the direction and if cycle is allowed
+    if (index === -1) {
+      return list[!shouldGetNext && isCycleAllowed ? list.length - 1 : 0];
+    }
 
-      const instanceMap = elementMap.get(element);
+    const listLength = list.length;
 
-      instanceMap.delete(key);
+    index += shouldGetNext ? 1 : -1;
 
-      // free up element references if there are no instances left for an element
-      if (instanceMap.size === 0) {
-        elementMap.delete(element);
-      }
-    } };
+    if (isCycleAllowed) {
+      index = (index + listLength) % listLength;
+    }
 
+    return list[Math.max(0, Math.min(index, listLength - 1))];
+  };
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): dom/event-handler.js
+   * Bootstrap (v5.0.2): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -719,7 +700,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): dom/manipulator.js
+   * Bootstrap (v5.0.2): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -798,7 +779,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): base-component.js
+   * Bootstrap (v5.0.2): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -809,7 +790,65 @@
    * ------------------------------------------------------------------------
    */
 
-  const VERSION = '5.0.1';
+  const elementMap = new Map();
+
+  var Data = {
+    set(element, key, instance) {
+      if (!elementMap.has(element)) {
+        elementMap.set(element, new Map());
+      }
+
+      const instanceMap = elementMap.get(element);
+
+      // make it clear we only want one instance per element
+      // can be removed later when multiple key/instances are fine to be used
+      if (!instanceMap.has(key) && instanceMap.size !== 0) {
+        // eslint-disable-next-line no-console
+        console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
+        return;
+      }
+
+      instanceMap.set(key, instance);
+    },
+
+    get(element, key) {
+      if (elementMap.has(element)) {
+        return elementMap.get(element).get(key) || null;
+      }
+
+      return null;
+    },
+
+    remove(element, key) {
+      if (!elementMap.has(element)) {
+        return;
+      }
+
+      const instanceMap = elementMap.get(element);
+
+      instanceMap.delete(key);
+
+      // free up element references if there are no instances left for an element
+      if (instanceMap.size === 0) {
+        elementMap.delete(element);
+      }
+    } };
+
+
+  /**
+   * --------------------------------------------------------------------------
+   * Bootstrap (v5.0.2): base-component.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * --------------------------------------------------------------------------
+   */
+
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+  const VERSION = '5.0.2';
 
   class BaseComponent {
     constructor(element) {
@@ -833,21 +872,17 @@
     }
 
     _queueCallback(callback, element, isAnimated = true) {
-      if (!isAnimated) {
-        execute(callback);
-        return;
-      }
-
-      const transitionDuration = getTransitionDurationFromElement(element);
-      EventHandler.one(element, 'transitionend', () => execute(callback));
-
-      emulateTransitionEnd(element, transitionDuration);
+      executeAfterTransition(callback, element, isAnimated);
     }
 
     /** Static */
 
     static getInstance(element) {
       return Data.get(element, this.DATA_KEY);
+    }
+
+    static getOrCreateInstance(element, config = {}) {
+      return this.getInstance(element) || new this(element, typeof config === 'object' ? config : null);
     }
 
     static get VERSION() {
@@ -869,7 +904,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): dropdown.js
+   * Bootstrap (v5.0.2): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1203,40 +1238,22 @@
 
     }
 
-    _selectMenuItem(event) {
+    _selectMenuItem({ key, target }) {
       const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._menu).filter(isVisible);
 
       if (!items.length) {
         return;
       }
 
-      let index = items.indexOf(event.target);
-
-      // Up
-      if (event.key === ARROW_UP_KEY && index > 0) {
-        index--;
-      }
-
-      // Down
-      if (event.key === ARROW_DOWN_KEY && index < items.length - 1) {
-        index++;
-      }
-
-      // index is -1 if the first keydown is an ArrowUp
-      index = index === -1 ? 0 : index;
-
-      items[index].focus();
+      // if target isn't included in items (e.g. when expanding the dropdown)
+      // allow cycling to get the last item in case key equals ARROW_UP_KEY
+      getNextActiveElement(items, target, key === ARROW_DOWN_KEY, !items.includes(target)).focus();
     }
 
     // Static
 
     static dropdownInterface(element, config) {
-      let data = Data.get(element, DATA_KEY$1);
-      const _config = typeof config === 'object' ? config : null;
-
-      if (!data) {
-        data = new Dropdown(element, _config);
-      }
+      const data = Dropdown.getOrCreateInstance(element, config);
 
       if (typeof config === 'string') {
         if (typeof data[config] === 'undefined') {
@@ -1261,7 +1278,7 @@
       const toggles = SelectorEngine.find(SELECTOR_DATA_TOGGLE$1);
 
       for (let i = 0, len = toggles.length; i < len; i++) {
-        const context = Data.get(toggles[i], DATA_KEY$1);
+        const context = Dropdown.getInstance(toggles[i]);
         if (!context || context._config.autoClose === false) {
           continue;
         }
@@ -1340,17 +1357,18 @@
         return;
       }
 
-      if (!isActive && (event.key === ARROW_UP_KEY || event.key === ARROW_DOWN_KEY)) {
-        getToggleButton().click();
+      if (event.key === ARROW_UP_KEY || event.key === ARROW_DOWN_KEY) {
+        if (!isActive) {
+          getToggleButton().click();
+        }
+
+        Dropdown.getInstance(getToggleButton())._selectMenuItem(event);
         return;
       }
 
       if (!isActive || event.key === SPACE_KEY) {
         Dropdown.clearMenus();
-        return;
       }
-
-      Dropdown.getInstance(getToggleButton())._selectMenuItem(event);
     }}
 
 
@@ -1380,7 +1398,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.1): collapse.js
+   * Bootstrap (v5.0.2): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1511,7 +1529,7 @@
       const container = SelectorEngine.findOne(this._selector);
       if (actives) {
         const tempActiveData = actives.find((elem) => container !== elem);
-        activesData = tempActiveData ? Data.get(tempActiveData, DATA_KEY) : null;
+        activesData = tempActiveData ? Collapse.getInstance(tempActiveData) : null;
 
         if (activesData && activesData._isTransitioning) {
           return;
@@ -1676,7 +1694,7 @@
     // Static
 
     static collapseInterface(element, config) {
-      let data = Data.get(element, DATA_KEY);
+      let data = Collapse.getInstance(element);
       const _config = {
         ...Default,
         ...Manipulator.getDataAttributes(element),
@@ -1724,7 +1742,7 @@
     const selectorElements = SelectorEngine.find(selector);
 
     selectorElements.forEach((element) => {
-      const data = Data.get(element, DATA_KEY);
+      const data = Collapse.getInstance(element);
       let config;
       if (data) {
         // update parent attribute
