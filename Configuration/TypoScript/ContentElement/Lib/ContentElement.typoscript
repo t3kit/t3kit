@@ -5,11 +5,13 @@ lib.contentElement {
   templateRootPaths {
     10 = EXT:t3kit/Resources/Private/Templates/ContentElements/Static
     20 = EXT:t3kit/Resources/Private/Templates/ContentElements/Dynamic
+    25 = EXT:t3kit/Resources/Private/Templates/ContentElements/Grid
     30 = EXT:t3kit/Resources/Private/Templates/ContentElements/Menu
     40 = EXT:t3kit/Resources/Private/Templates/ContentElements/Plugin
     50 = EXT:t3kit/Resources/Private/Templates/ContentElements/Special
     110.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Static
     120.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Dynamic
+    125.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Grid
     130.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Menu
     140.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Plugin
     150.dataWrap = EXT:{site:theme}/Resources/Private/Templates/ContentElements/Special

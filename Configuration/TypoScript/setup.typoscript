@@ -17,3 +17,16 @@
 # import plugins setup
 @import 'EXT:t3kit/Configuration/TypoScript/Plugin/setup.typoscript'
 
+
+
+
+
+
+tt_content.b13-2cols =< lib.contentElement
+tt_content.b13-2cols {
+  templateName = 2Cols
+  dataProcessing {
+    80 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}
+
