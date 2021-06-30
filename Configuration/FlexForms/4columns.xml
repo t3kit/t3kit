@@ -1,0 +1,106 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<container>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.container</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>0</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.container.none</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.container.container</numIndex>
+										<numIndex index="1">container</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.container.container-fluid</numIndex>
+										<numIndex index="1">container-fluid</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</container>
+
+					<mobile_breakpoints>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.mobile_breakpoints</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>lg</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.mobile_breakpoints.sm</numIndex>
+										<numIndex index="1">sm</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.mobile_breakpoints.md</numIndex>
+										<numIndex index="1">md</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.mobile_breakpoints.lg</numIndex>
+										<numIndex index="1">lg</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.mobile_breakpoints.xl</numIndex>
+										<numIndex index="1">xl</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</mobile_breakpoints>
+
+					<column_gutters>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>4</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters.gx0</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters.gx1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters.gx2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters.gx3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters.gx4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_4columns.xlf:flexform.column_gutters.gx5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</column_gutters>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
