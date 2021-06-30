@@ -13,7 +13,7 @@ mod.wizards.newContentElement.wizardItems {
     after = static
   }
   grid {
-    header = grid
+    header = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.grid
     after = dynamic
   }
 }
@@ -34,5 +34,3 @@ mod.wizards.newContentElement.wizardItems {
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Shortcut.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Div.tsconfig'
 @import 'EXT:t3kit/Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Special/Html.tsconfig'
-
-

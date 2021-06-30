@@ -39,11 +39,11 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['itemGroups']['defau
     'after:default'
 );
 
-// Add "ffffff content" CType divider
+// Add "Grid content" CType divider
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItemGroup(
     'tt_content',
     'CType',
     'grid',
-    'grid',
+    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:group.grid',
     'after:dynamic'
 );
