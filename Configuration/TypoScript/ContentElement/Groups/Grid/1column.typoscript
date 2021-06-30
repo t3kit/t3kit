@@ -1,0 +1,19 @@
+# ###########################
+# 1 column grid
+#
+# CType: 1column
+# ===========================
+tt_content.1column =< lib.contentElement
+tt_content.1column {
+
+  templateName = 1column
+
+  dataProcessing {
+    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+    80 = B13\Container\DataProcessing\ContainerProcessor
+  }
+}

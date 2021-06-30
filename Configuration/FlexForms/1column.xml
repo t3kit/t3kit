@@ -1,0 +1,40 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<container>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_1column.xlf:flexform.container</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<default>0</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_1column.xlf:flexform.container.none</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_1column.xlf:flexform.container.container</numIndex>
+										<numIndex index="1">container</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_1column.xlf:flexform.container.container-fluid</numIndex>
+										<numIndex index="1">container-fluid</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</container>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

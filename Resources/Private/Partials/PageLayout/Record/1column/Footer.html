@@ -1,0 +1,10 @@
+<p class="t3kit-ce-footer t3kit-ce-footer--grid">
+  {item.record.CType}
+  <f:if condition="{item.footerInfo}">
+    <div class="t3-page-ce-footer">
+        <div class="t3-page-ce-info">
+            {item.footerInfo -> f:format.raw()}
+        </div>
+    </div>
+  </f:if>
+</p>

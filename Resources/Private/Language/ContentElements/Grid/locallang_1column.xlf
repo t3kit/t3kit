@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_1column.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="1column.title" resname="1column.title">
+				<source>1 columns grid</source>
+			</trans-unit>
+			<trans-unit id="1column.description" resname="1column.description">
+				<source>1 columns grid element</source>
+			</trans-unit>
+
+			<trans-unit id="1column.column1" resname="1column.column1">
+				<source>Column 1</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.container" resname="flexform.container">
+				<source>container</source>
+			</trans-unit>
+			<trans-unit id="flexform.container.none" resname="flexform.container.none">
+				<source>Without container wrapper (full width page)</source>
+			</trans-unit>
+			<trans-unit id="flexform.container.container" resname="flexform.container.container">
+				<source>Container layout (centered 1320px width)</source>
+			</trans-unit>
+			<trans-unit id="flexform.container.container-fluid" resname="flexform.container.container-fluid">
+				<source>Сontainer fluid layout (full width layout)</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
