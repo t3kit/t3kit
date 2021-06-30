@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_2columns.xlf" date="2019-04-20UTC12:53:470" product-name="t3kit">
+		<header/>
+		<body>
+
+			<trans-unit id="2columns.title" resname="2columns.title">
+				<source>2 columns grid</source>
+			</trans-unit>
+			<trans-unit id="2columns.description" resname="2columns.description">
+				<source>2 columns grid element</source>
+			</trans-unit>
+
+			<trans-unit id="2columns.column1" resname="2columns.column1">
+				<source>Column 1</source>
+			</trans-unit>
+			<trans-unit id="2columns.column2" resname="2columns.column2">
+				<source>Column 2</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.container" resname="flexform.container">
+				<source>container</source>
+			</trans-unit>
+			<trans-unit id="flexform.container.none" resname="flexform.container.none">
+				<source>Without container wrapper (full width page)</source>
+			</trans-unit>
+			<trans-unit id="flexform.container.container" resname="flexform.container.container">
+				<source>Container layout (centered 1320px width)</source>
+			</trans-unit>
+			<trans-unit id="flexform.container.container-fluid" resname="flexform.container.container-fluid">
+				<source>Сontainer fluid layout (full width layout)</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.mobile_breakpoints" resname="flexform.mobile_breakpoints">
+				<source>Layout breakpoint. Determine when the columns layout will transform into one column layout</source>
+			</trans-unit>
+			<trans-unit id="flexform.mobile_breakpoints.sm" resname="flexform.mobile_breakpoints.sm">
+				<source>Small (576px and less)</source>
+			</trans-unit>
+			<trans-unit id="flexform.mobile_breakpoints.md" resname="flexform.mobile_breakpoints.md">
+				<source>Medium (768px and less)</source>
+			</trans-unit>
+			<trans-unit id="flexform.mobile_breakpoints.lg" resname="flexform.mobile_breakpoints.lg">
+				<source>Large (992px and less)</source>
+			</trans-unit>
+			<trans-unit id="flexform.mobile_breakpoints.xl" resname="flexform.mobile_breakpoints.xl">
+				<source>Extra large (1200px and less)</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.column_gutters" resname="flexform.column_gutters">
+				<source>Horizontal column gutters</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_gutters.gx0" resname="flexform.column_gutters.gx0">
+				<source>0px</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_gutters.gx1" resname="flexform.column_gutters.gx1">
+				<source>4px</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_gutters.gx2" resname="flexform.column_gutters.gx2">
+				<source>8px</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_gutters.gx3" resname="flexform.column_gutters.gx3">
+				<source>16px</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_gutters.gx4" resname="flexform.column_gutters.gx4">
+				<source>24px</source>
+			</trans-unit>
+			<trans-unit id="flexform.column_gutters.gx5" resname="flexform.column_gutters.gx5">
+				<source>48px</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

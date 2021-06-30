@@ -92,7 +92,11 @@ $contentElementIcons = [
     'ce-site-footer',
     'ce-site-header',
     'ce-tabs',
-    'ce-video'
+    'ce-video',
+    'ce-1column',
+    'ce-2columns',
+    'ce-3columns',
+    'ce-4columns'
 ];
 foreach ($contentElementIcons as $icon) {
     $iconRegistry->registerIcon(

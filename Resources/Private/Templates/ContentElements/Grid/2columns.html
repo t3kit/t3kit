@@ -1,0 +1,62 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment>
+  # Columns pattern [colPos] for grid columns content elements
+  # We are using the same approach as BE layouts templates, but with opposite numeric direction, to ensure that we don't have duplicated colPos.
+  # ***
+  # colPos = [1099-1000]  -> 100% column width [col-12] (e.g., one column layout)
+  # colPos = [9199-9100]  -> 91% column width [col-11] (e.g., two columns layout [91%/8%])
+  # colPos = [8399-8300]  -> 83% column width [col-10] (e.g., two columns layout [83%/16%])
+  # colPos = [7599-7500]  -> 75% column width [col-9] (e.g., two columns layout [75%/25%])
+  # colPos = [6699-6600]  -> 66% column width [col-8] (e.g., two columns layout [66%/33%])
+  # colPos = [5899-5800]  -> 58% column width [col-7] (e.g., two columns layout [58%/41%])
+  # colPos = [5099-5000]  -> 50% column width [col-6] (e.g., two equal columns layout)
+  # colPos = [4199-4100]  -> 41% column width [col-5] (e.g., two columns layout [41%/58%])
+  # colPos = [3399-3300]  -> 33% column width [col-4] (e.g., three equal columns layout)
+  # colPos = [2599-2500]  -> 25% column width [col-3] (e.g., four equal columns layout)
+  # colPos = [1699-1600]  -> 16% column width [col-2] (e.g., six equal columns layout)
+  # colPos = [899-800]    -> 8% column width [col-1] (e.g., twelve equal columns layout)
+  # __________________________
+</f:comment>
+
+<f:layout name="DefaultNoSearch" />
+
+<f:section name="Header" />
+
+<f:section name="Main">
+<!-- t3kit: Resources/Private/Templates/ContentElements/Grid/2columns.html [begin] -->
+
+  <f:if condition="{flexform.column_gutters} > 0">
+    <f:variable name="overflow_hidden">overflow-hidden</f:variable>
+  </f:if>
+
+  <div class="ce-grid-2columns__wrp">
+    <div class="ce-grid-2columns {f:if(condition: flexform.container, then: ' {flexform.container}')} {overflow_hidden}">
+
+      <div class="ce-grid-2columns__row row row-cols-1 row-cols-{flexform.mobile_breakpoints}-2 gx-{flexform.column_gutters}">
+
+        <div class="col ce-grid-2columns__row-column1">
+          <f:if condition="{children_5099}">
+            <f:for each="{children_5099}" as="child">
+              <f:format.raw>{child.renderedContent}</f:format.raw>
+            </f:for>
+          </f:if>
+        </div>
+
+        <div class="col ce-grid-2columns__row-column2">
+          <f:if condition="{children_5098}">
+            <f:for each="{children_5098}" as="child">
+              <f:format.raw>{child.renderedContent}</f:format.raw>
+            </f:for>
+          </f:if>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<!-- t3kit: Resources/Private/Templates/ContentElements/Grid/2columns.html [end] -->
+</f:section>
+
+</html>

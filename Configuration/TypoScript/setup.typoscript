@@ -16,4 +16,3 @@
 @import 'EXT:t3kit/Configuration/TypoScript/Config/setup.typoscript'
 # import plugins setup
 @import 'EXT:t3kit/Configuration/TypoScript/Plugin/setup.typoscript'
-

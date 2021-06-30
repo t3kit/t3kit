@@ -16,6 +16,9 @@
 			<trans-unit id="group.dynamic" resname="group.dynamic">
 				<source>Dynamic content</source>
 			</trans-unit>
+			<trans-unit id="group.grid" resname="group.grid">
+				<source>Grids</source>
+			</trans-unit>
 
 			<!-- Content element tabs translations -->
 			<trans-unit id="tab.settings" resname="tab.settings">
