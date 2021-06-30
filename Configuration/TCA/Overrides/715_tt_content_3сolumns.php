@@ -4,24 +4,25 @@ defined('TYPO3_MODE') || die();
 
 /*
  * ###########################
- * 2 columns grid config
+ * 3 columns grid config
  * ===========================
  */
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (
         new \B13\Container\Tca\ContainerConfiguration(
-            '2columns', // CType
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_2columns.xlf:2columns.title',
-            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_2columns.xlf:2columns.description',
+            '3columns', // CType
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_3columns.xlf:3columns.title',
+            'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_3columns.xlf:3columns.description',
             [
                 [
-                    ['name' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_2columns.xlf:2columns.column1', 'colPos' => 5099],
-                    ['name' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_2columns.xlf:2columns.column2', 'colPos' => 5098]
+                    ['name' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_3columns.xlf:3columns.column1', 'colPos' => 3399],
+                    ['name' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_3columns.xlf:3columns.column2', 'colPos' => 3398],
+                    ['name' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Grid/locallang_3columns.xlf:3columns.column3', 'colPos' => 3397]
                 ]
             ]
         )
     )
-    ->setIcon('EXT:t3kit/Resources/Public/Icons/ContentElements/ce-2columns.svg')
+    ->setIcon('EXT:t3kit/Resources/Public/Icons/ContentElements/ce-3columns.svg')
     ->setSaveAndCloseInNewContentElementWizard(false)
     ->setGroup('grid')
 );
@@ -32,7 +33,7 @@ defined('TYPO3_MODE') || die();
  * Configure element fields to display
  * ===========================
  */
-$GLOBALS['TCA']['tt_content']['types']['2columns']['showitem'] = '
+$GLOBALS['TCA']['tt_content']['types']['3columns']['showitem'] = '
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;;general,
         header;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_element_title,
@@ -60,6 +61,6 @@ $GLOBALS['TCA']['tt_content']['types']['2columns']['showitem'] = '
  */
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
-    'FILE:EXT:t3kit/Configuration/FlexForms/2columns.xml',
-    '2columns'
+    'FILE:EXT:t3kit/Configuration/FlexForms/3columns.xml',
+    '3columns'
 );

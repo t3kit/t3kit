@@ -4,7 +4,7 @@ defined('TYPO3_MODE') || die();
 
 /*
  * ###########################
- * 2 columns grid config
+ * 1 column grid config
  * ===========================
  */
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
@@ -21,7 +21,7 @@ defined('TYPO3_MODE') || die();
         )
     )
     ->setIcon('EXT:t3kit/Resources/Public/Icons/ContentElements/ce-1column.svg')
-    ->setSaveAndCloseInNewContentElementWizard(true)
+    ->setSaveAndCloseInNewContentElementWizard(false)
     ->setGroup('grid')
 );
 
