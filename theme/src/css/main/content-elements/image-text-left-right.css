@@ -56,7 +56,7 @@
 /* -------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) xs */
 @media (max-width: 575.98px) {
-  .ce-img-text-left-right__picture {
+  .ce-img-text-left-right__picture.ce-img-text-left-right__picture--cropped {
     height: var(--t3-ce-itlr-min-height-on-mobile) !important;
   }
 }
