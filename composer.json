@@ -38,7 +38,8 @@
     "typo3/cms-rte-ckeditor": "^10.4.6",
     "typo3/cms-seo": "^10.4.6",
     "typo3/cms-tstemplate": "^10.4.6",
-    "typo3/cms-felogin": "^10.4.6"
+    "typo3/cms-felogin": "^10.4.6",
+    "b13/container": "^1.3"
   },
   "require-dev": {
     "editorconfig-checker/editorconfig-checker": "~10.2.3",
