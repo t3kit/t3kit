@@ -30,6 +30,13 @@ tt_content.siteFooter {
       special.value.field = page_links_1
       includeNotInMenu = 1
       as = links_1
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_image
+          as = nav_image
+        }
+      }
     }
 
     60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -38,6 +45,13 @@ tt_content.siteFooter {
       special.value.field = page_links_2
       includeNotInMenu = 1
       as = links_2
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_image
+          as = nav_image
+        }
+      }
     }
 
     70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -46,6 +60,13 @@ tt_content.siteFooter {
       special.value.field = page_links_3
       includeNotInMenu = 1
       as = links_3
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = nav_image
+          as = nav_image
+        }
+      }
     }
 
     80 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
