@@ -62,7 +62,7 @@
         <ul class="ce-site-header__top-meta-menu-list">
           <f:for each="{metaMenu}" as="metaItem" iteration="i">
             <li class="ce-site-header__top-meta-menu-list-item {metaItem.data.uid}">
-              <f:render section="menuLink" arguments="{item:metaItem, class: 'ce-site-header__top-meta-menu-list-item-link'}" />
+              <f:render section="menuLink" arguments="{item:metaItem, class: 'ce-site-header__top-meta-menu-list-item-link main-navigation__item-link'}" />
             </li>
           </f:for>
         </ul>
@@ -183,7 +183,7 @@
 <f:section name="langmenu">
         <f:for each="{languageNavigation}" as="language">
           <f:if condition="{language.active}">
-            <a class="header__language-menu-link dropdown-toggle main-navigation__item-link" href="#"
+            <a class="ce-site-header__language-menu-link dropdown-toggle main-navigation__item-link" href="#"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false">
@@ -194,14 +194,14 @@
             </a>
           </f:if>
         </f:for>
-        <div class="header__language-menu-box dropdown-menu">
-          <div class="header__language-menu-box-content {f:if(condition: flexform.main_nav_full_width, then: 'container-fluid', else: 'container')}">
-            <ul class="header__language-menu-box-content-list">
+        <div class="ce-site-header__language-menu-box dropdown-menu">
+          <div class="ce-site-header__language-menu-box-content {f:if(condition: flexform.main_nav_full_width, then: 'container-fluid', else: 'container')}">
+            <ul class="ce-site-header__language-menu-box-content-list">
               <f:for each="{languageNavigation}" as="language">
                 <f:if condition="{language.active} == 0">
                     <li>
                       <f:if condition="{language.link}">
-                          <a href="{language.link}" class="header__language-menu-box-item{f:if(condition: language.active, then: ' active')}">
+                          <a href="{language.link}" class="ce-site-header__language-menu-box-item {f:if(condition: language.active, then: ' active')}">
                             <span class="flag-icon icon-{language.flag}"></span>
                             {language.navigationTitle}
                           </a>
@@ -356,7 +356,7 @@
 <f:comment>+Accessibility for target _blank link structure</f:comment>
 <f:section name="menuLink">
   <a href="{item.link}"
-    class="{class} {f:if(condition: item.target,then: ' target-blank-link')}"
+    class="{class} {f:if(condition: item.target,then: ' target-blank-link')} {f:if(condition: item.active, then:' active')}"
     {f:if(condition: item.target, then: 'rel="noreferrer"' )}
     {f:if(condition: item.target, then: 'target="_blank"')}
     {f:if(condition: item.current, then: 'aria-current="page"')}>

@@ -156,7 +156,7 @@
 <f:comment>+Accessibility for target _blank link structure</f:comment>
 <f:section name="menuLink">
   <a href="{item.link}"
-    class="{class} {f:if(condition: item.target,then: ' target-blank-link')}"
+    class="{class} {f:if(condition: item.target,then: ' target-blank-link')} {f:if(condition: item.active, then:' active')}"
     {f:if(condition: item.target, then: 'rel="noreferrer"' )}
     {f:if(condition: item.target, then: 'target="_blank"')}
     {f:if(condition: item.current, then: 'aria-current="page"')}>
