@@ -8144,7 +8144,6 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 }
 .ce-site-header {
   --t3-ce-header-nav-bg: var(--t3-body-color);
-  /* --t3-ce-header-nav-bg: var(--t3-body-bg); */
   --t3-ce-header-nav-color-hs: 0, 0%;
   --t3-ce-header-nav-color-l: 100%;
   --t3-ce-header-nav-color: hsl(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l));
@@ -8533,7 +8532,7 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   align-items: center;
 }
 .ce-site-header__top-langmenu .ce-site-header__language-menu-link {
-  color: var(--t3-ce-lang-menu-color);
+  color: var(--t3-ce-header-top-color);
 }
 .ce-site-header__langmenu .ce-site-header__language-menu-link {
   color: var(--t3-ce-header-nav-color);
