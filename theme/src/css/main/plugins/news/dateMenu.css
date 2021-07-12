@@ -1,0 +1,12 @@
+.news .news-menu-view ul {
+  list-style: none;
+}
+
+.news .news-menu-view li a {
+  color: var(--t3-news-date-menu-color);
+  transition: 200ms ease-in-out;
+}
+
+.news .news-menu-view li a:hover {
+  color: var(--t3-news-date-menu-color-hovered);
+}

@@ -1,0 +1,12 @@
+.page-navigation a {
+  color: var(--t3-news-pagination-links);
+  transition: 200ms ease-in;
+}
+
+.page-navigation a:hover {
+  color: var(--t3-news-pagination-links-hovered);
+}
+
+.page-navigation .current {
+  color: var(--t3-news-pagination-links-current);
+}

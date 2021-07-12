@@ -47,3 +47,12 @@
 @import 'main/appearance/color.css';
 @import 'main/appearance/background.css';
 @import 'main/appearance/content-margins.css';
+
+/* ===== news ===== */
+@import 'main/plugins/news/news.css';
+@import 'main/plugins/news/footer.css';
+@import 'main/plugins/news/headlines.css';
+@import 'main/plugins/news/tags.css';
+@import 'main/plugins/news/pagination.css';
+@import 'main/plugins/news/image.css';
+@import 'main/plugins/news/dateMenu.css';

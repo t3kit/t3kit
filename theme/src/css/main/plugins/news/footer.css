@@ -1,0 +1,3 @@
+.news .footer p {
+  line-height: var(--t3-news-footer-line-height);
+}

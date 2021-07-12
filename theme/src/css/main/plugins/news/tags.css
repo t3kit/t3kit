@@ -1,0 +1,22 @@
+.news-list-tags {
+  color: var(--t3-news-tag-color);
+  font-weight: var(--t3-news-tag-font-weight);
+}
+
+.news-list-author {
+  font-style: var(--t3-news-author-font-style);
+}
+
+.news .news-tags {
+  list-style: none;
+}
+
+.news .news-tags li a {
+  color: var(--t3-news-tag-list-item-color);
+  font-weight: var(--t3-news-tag-font-weight);
+  transition: 200ms ease-in-out;
+}
+
+.news .news-tags li a:hover {
+  color: var(--t3-news-tag-list-item-color-hovered);
+}

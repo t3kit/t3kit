@@ -1,0 +1,18 @@
+.news .header a {
+  color: var(--t3-ce-news-headline-color);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.news .header a:after {
+  content: '';
+  width: 0;
+  height: var(--t3-news-headline-underline-height);
+  display: block;
+  background: var(--t3-news-headline-hovered-color);
+  transition: 300ms ease-in-out;
+}
+
+.news .header a:hover:after {
+  width: 100%;
+}

@@ -1,0 +1,13 @@
+.news-img-wrap .mediaelement {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.news-img-wrap .mediaelement img {
+  transition: opacity 200ms ease-in;
+}
+
+.news-img-wrap .mediaelement:hover img {
+  opacity: .85;
+}

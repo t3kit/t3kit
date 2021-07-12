@@ -1,0 +1,16 @@
+.news {
+  --t3-news-footer-line-height: 1.6rem;
+  --t3-news-headline-color: var(--t3-body-color);
+  --t3-news-headline-hovered-color: var(--t3-body-color);
+  --t3-news-headline-underline-height: 3px;
+  --t3-news-tag-color: var(--t3-dark);
+  --t3-news-tag-font-weight: var(--t3-link-font-weight);
+  --t3-news-tag-list-item-color: var(--t3-ce-icotl-link-color);
+  --t3-news-tag-list-item-color-hovered: var(--t3-gray-30);
+  --t3-news-author-font-style: italic;
+  --t3-news-pagination-links: var(--t3-gray-40);
+  --t3-news-pagination-links-hovered: var(--t3-gray-60);
+  --t3-news-pagination-links-current: var(--t3-black);
+  --t3-news-date-menu-color: var(--t3-ce-icotl-link-color);
+  --t3-news-date-menu-color-hovered: var(--t3-gray-30);
+}
