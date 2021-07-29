@@ -57,6 +57,15 @@
   padding: 0;
 }
 
+.ce-textpic figure {
+  display: table;
+}
+
+.ce-textpic figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+
 /* -------------------------------------------------------- */
 /* X-Small devices (portrait phones, less than 576px) xs */
 /* @media (max-width: 575.98px) { ... } */
