@@ -57,11 +57,11 @@
   padding: 0;
 }
 
-.ce-textpic figure {
+.ce-textpic .figure {
   display: table;
 }
 
-.ce-textpic figcaption {
+.ce-textpic .figure-caption {
   display: table-caption;
   caption-side: bottom;
 }
