@@ -11,17 +11,17 @@
 
 .text-img-above-left .ce-textpic__picture,
 .text-img-below-left .ce-textpic__picture {
-  text-align: left;
+  align-self: flex-start;
 }
 
 .text-img-above-right .ce-textpic__picture,
 .text-img-below-right .ce-textpic__picture {
-  text-align: right;
+  align-self: flex-end;
 }
 
 .text-img-above-center .ce-textpic__picture,
 .text-img-below-center .ce-textpic__picture {
-  text-align: center;
+  align-self: center;
 }
 
 .text-img-below-left,
@@ -55,6 +55,15 @@
 
 .text-img-right .ce-textpic__text {
   padding: 0;
+}
+
+.ce-textpic .figure {
+  display: table;
+}
+
+.ce-textpic .figure-caption {
+  display: table-caption;
+  caption-side: bottom;
 }
 
 /* -------------------------------------------------------- */
