@@ -29,10 +29,8 @@ config {
 
   sendCacheHeaders = 1
 
-  # if = [ascii], then don't need any JavaScript -> removeDefaultJS = 1
-  spamProtectEmailAddresses = ascii
-  // spamProtectEmailAddresses_atSubst = (at)
-  spamProtectEmailAddresses_atSubst = @
+  # Should be disabled as it has no effect against modern bots.
+  spamProtectEmailAddresses = 0
 
 
   # If the value is "external", then the default JavaScript is written to a temporary file and included from that file
