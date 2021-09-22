@@ -10,14 +10,12 @@
           var d = Object.getOwnPropertyDescriptor(e, k);
           Object.defineProperty(n, k, d.get ? d : {
             enumerable: true,
-            get: function () {
-              return e[k];
-            } });
+            get: function () {return e[k];} });
 
         }
       });
     }
-    n['default'] = e;
+    n["default"] = e;
     return Object.freeze(n);
   }
 
@@ -25,78 +23,10 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): dom/selector-engine.js
+   * Bootstrap (v5.1.1): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
-
-  /**
-   * ------------------------------------------------------------------------
-   * Constants
-   * ------------------------------------------------------------------------
-   */
-
-  const NODE_TEXT = 3;
-
-  const SelectorEngine = {
-    find(selector, element = document.documentElement) {
-      return [].concat(...Element.prototype.querySelectorAll.call(element, selector));
-    },
-
-    findOne(selector, element = document.documentElement) {
-      return Element.prototype.querySelector.call(element, selector);
-    },
-
-    children(element, selector) {
-      return [].concat(...element.children).
-      filter((child) => child.matches(selector));
-    },
-
-    parents(element, selector) {
-      const parents = [];
-
-      let ancestor = element.parentNode;
-
-      while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
-        if (ancestor.matches(selector)) {
-          parents.push(ancestor);
-        }
-
-        ancestor = ancestor.parentNode;
-      }
-
-      return parents;
-    },
-
-    prev(element, selector) {
-      let previous = element.previousElementSibling;
-
-      while (previous) {
-        if (previous.matches(selector)) {
-          return [previous];
-        }
-
-        previous = previous.previousElementSibling;
-      }
-
-      return [];
-    },
-
-    next(element, selector) {
-      let next = element.nextElementSibling;
-
-      while (next) {
-        if (next.matches(selector)) {
-          return [next];
-        }
-
-        next = next.nextElementSibling;
-      }
-
-      return [];
-    } };
-
-
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend';
 
@@ -195,7 +125,7 @@
     }
 
     if (typeof obj === 'string' && obj.length > 0) {
-      return SelectorEngine.findOne(obj);
+      return document.querySelector(obj);
     }
 
     return null;
@@ -241,7 +171,18 @@
 
   const noop = () => {};
 
-  const reflow = (element) => element.offsetHeight;
+  /**
+   * Trick to restart an element's animation
+   *
+   * @param {HTMLElement} element
+   * @return void
+   *
+   * @see https://www.charistheo.io/blog/2021/02/restart-a-css-animation-with-javascript/#restarting-a-css-animation
+   */
+  const reflow = (element) => {
+    // eslint-disable-next-line no-unused-expressions
+    element.offsetHeight;
+  };
 
   const getjQuery = () => {
     const { jQuery } = window;
@@ -354,7 +295,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): dom/event-handler.js
+   * Bootstrap (v5.1.1): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -465,7 +406,6 @@
             event.delegateTarget = target;
 
             if (handler.oneOff) {
-              // eslint-disable-next-line unicorn/consistent-destructuring
               EventHandler.off(element, event.type, selector, fn);
             }
 
@@ -700,7 +640,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): dom/manipulator.js
+   * Bootstrap (v5.1.1): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -764,8 +704,8 @@
       const rect = element.getBoundingClientRect();
 
       return {
-        top: rect.top + document.body.scrollTop,
-        left: rect.left + document.body.scrollLeft };
+        top: rect.top + window.pageYOffset,
+        left: rect.left + window.pageXOffset };
 
     },
 
@@ -779,7 +719,90 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): dom/data.js
+   * Bootstrap (v5.1.1): dom/selector-engine.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * --------------------------------------------------------------------------
+   */
+
+  const NODE_TEXT = 3;
+
+  const SelectorEngine = {
+    find(selector, element = document.documentElement) {
+      return [].concat(...Element.prototype.querySelectorAll.call(element, selector));
+    },
+
+    findOne(selector, element = document.documentElement) {
+      return Element.prototype.querySelector.call(element, selector);
+    },
+
+    children(element, selector) {
+      return [].concat(...element.children).
+      filter((child) => child.matches(selector));
+    },
+
+    parents(element, selector) {
+      const parents = [];
+
+      let ancestor = element.parentNode;
+
+      while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
+        if (ancestor.matches(selector)) {
+          parents.push(ancestor);
+        }
+
+        ancestor = ancestor.parentNode;
+      }
+
+      return parents;
+    },
+
+    prev(element, selector) {
+      let previous = element.previousElementSibling;
+
+      while (previous) {
+        if (previous.matches(selector)) {
+          return [previous];
+        }
+
+        previous = previous.previousElementSibling;
+      }
+
+      return [];
+    },
+
+    next(element, selector) {
+      let next = element.nextElementSibling;
+
+      while (next) {
+        if (next.matches(selector)) {
+          return [next];
+        }
+
+        next = next.nextElementSibling;
+      }
+
+      return [];
+    },
+
+    focusableChildren(element) {
+      const focusables = [
+      'a',
+      'button',
+      'input',
+      'textarea',
+      'select',
+      'details',
+      '[tabindex]',
+      '[contenteditable="true"]'].
+      map((selector) => `${selector}:not([tabindex^="-"])`).join(', ');
+
+      return this.find(focusables, element).filter((el) => !isDisabled(el) && isVisible(el));
+    } };
+
+
+  /**
+   * --------------------------------------------------------------------------
+   * Bootstrap (v5.1.1): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -837,7 +860,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): base-component.js
+   * Bootstrap (v5.1.1): base-component.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -848,7 +871,7 @@
    * ------------------------------------------------------------------------
    */
 
-  const VERSION = '5.0.2';
+  const VERSION = '5.1.1';
 
   class BaseComponent {
     constructor(element) {
@@ -878,7 +901,7 @@
     /** Static */
 
     static getInstance(element) {
-      return Data.get(element, this.DATA_KEY);
+      return Data.get(getElement(element), this.DATA_KEY);
     }
 
     static getOrCreateInstance(element, config = {}) {
@@ -904,7 +927,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): dropdown.js
+   * Bootstrap (v5.1.1): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -933,7 +956,6 @@
   const EVENT_HIDDEN$1 = `hidden${EVENT_KEY$1}`;
   const EVENT_SHOW$1 = `show${EVENT_KEY$1}`;
   const EVENT_SHOWN$1 = `shown${EVENT_KEY$1}`;
-  const EVENT_CLICK = `click${EVENT_KEY$1}`;
   const EVENT_CLICK_DATA_API$1 = `click${EVENT_KEY$1}${DATA_API_KEY$1}`;
   const EVENT_KEYDOWN_DATA_API = `keydown${EVENT_KEY$1}${DATA_API_KEY$1}`;
   const EVENT_KEYUP_DATA_API = `keyup${EVENT_KEY$1}${DATA_API_KEY$1}`;
@@ -988,8 +1010,6 @@
       this._config = this._getConfig(config);
       this._menu = this._getMenuElement();
       this._inNavbar = this._detectNavbar();
-
-      this._addEventListeners();
     }
 
     // Getters
@@ -1009,26 +1029,14 @@
     // Public
 
     toggle() {
-      if (isDisabled(this._element)) {
-        return;
-      }
-
-      const isActive = this._element.classList.contains(CLASS_NAME_SHOW$1);
-
-      if (isActive) {
-        this.hide();
-        return;
-      }
-
-      this.show();
+      return this._isShown() ? this.hide() : this.show();
     }
 
     show() {
-      if (isDisabled(this._element) || this._menu.classList.contains(CLASS_NAME_SHOW$1)) {
+      if (isDisabled(this._element) || this._isShown(this._menu)) {
         return;
       }
 
-      const parent = Dropdown.getParentFromElement(this._element);
       const relatedTarget = {
         relatedTarget: this._element };
 
@@ -1039,32 +1047,12 @@
         return;
       }
 
+      const parent = Dropdown.getParentFromElement(this._element);
       // Totally disable Popper for Dropdowns in Navbar
       if (this._inNavbar) {
         Manipulator.setDataAttribute(this._menu, 'popper', 'none');
       } else {
-        if (typeof Popper__namespace === 'undefined') {
-          throw new TypeError('Bootstrap\'s dropdowns require Popper (https://popper.js.org)');
-        }
-
-        let referenceElement = this._element;
-
-        if (this._config.reference === 'parent') {
-          referenceElement = parent;
-        } else if (isElement(this._config.reference)) {
-          referenceElement = getElement(this._config.reference);
-        } else if (typeof this._config.reference === 'object') {
-          referenceElement = this._config.reference;
-        }
-
-        const popperConfig = this._getPopperConfig();
-        const isDisplayStatic = popperConfig.modifiers.find((modifier) => modifier.name === 'applyStyles' && modifier.enabled === false);
-
-        this._popper = Popper__namespace.createPopper(referenceElement, this._menu, popperConfig);
-
-        if (isDisplayStatic) {
-          Manipulator.setDataAttribute(this._menu, 'popper', 'static');
-        }
+        this._createPopper(parent);
       }
 
       // If this is a touch-enabled device we add extra
@@ -1080,13 +1068,13 @@
       this._element.focus();
       this._element.setAttribute('aria-expanded', true);
 
-      this._menu.classList.toggle(CLASS_NAME_SHOW$1);
-      this._element.classList.toggle(CLASS_NAME_SHOW$1);
+      this._menu.classList.add(CLASS_NAME_SHOW$1);
+      this._element.classList.add(CLASS_NAME_SHOW$1);
       EventHandler.trigger(this._element, EVENT_SHOWN$1, relatedTarget);
     }
 
     hide() {
-      if (isDisabled(this._element) || !this._menu.classList.contains(CLASS_NAME_SHOW$1)) {
+      if (isDisabled(this._element) || !this._isShown(this._menu)) {
         return;
       }
 
@@ -1113,13 +1101,6 @@
     }
 
     // Private
-
-    _addEventListeners() {
-      EventHandler.on(this._element, EVENT_CLICK, (event) => {
-        event.preventDefault();
-        this.toggle();
-      });
-    }
 
     _completeHide(relatedTarget) {
       const hideEvent = EventHandler.trigger(this._element, EVENT_HIDE$1, relatedTarget);
@@ -1162,6 +1143,35 @@
       }
 
       return config;
+    }
+
+    _createPopper(parent) {
+      if (typeof Popper__namespace === 'undefined') {
+        throw new TypeError('Bootstrap\'s dropdowns require Popper (https://popper.js.org)');
+      }
+
+      let referenceElement = this._element;
+
+      if (this._config.reference === 'parent') {
+        referenceElement = parent;
+      } else if (isElement(this._config.reference)) {
+        referenceElement = getElement(this._config.reference);
+      } else if (typeof this._config.reference === 'object') {
+        referenceElement = this._config.reference;
+      }
+
+      const popperConfig = this._getPopperConfig();
+      const isDisplayStatic = popperConfig.modifiers.find((modifier) => modifier.name === 'applyStyles' && modifier.enabled === false);
+
+      this._popper = Popper__namespace.createPopper(referenceElement, this._menu, popperConfig);
+
+      if (isDisplayStatic) {
+        Manipulator.setDataAttribute(this._menu, 'popper', 'static');
+      }
+    }
+
+    _isShown(element = this._element) {
+      return element.classList.contains(CLASS_NAME_SHOW$1);
     }
 
     _getMenuElement() {
@@ -1252,21 +1262,19 @@
 
     // Static
 
-    static dropdownInterface(element, config) {
-      const data = Dropdown.getOrCreateInstance(element, config);
+    static jQueryInterface(config) {
+      return this.each(function () {
+        const data = Dropdown.getOrCreateInstance(this, config);
 
-      if (typeof config === 'string') {
+        if (typeof config !== 'string') {
+          return;
+        }
+
         if (typeof data[config] === 'undefined') {
           throw new TypeError(`No method named "${config}"`);
         }
 
         data[config]();
-      }
-    }
-
-    static jQueryInterface(config) {
-      return this.each(function () {
-        Dropdown.dropdownInterface(this, config);
       });
     }
 
@@ -1283,7 +1291,7 @@
           continue;
         }
 
-        if (!context._element.classList.contains(CLASS_NAME_SHOW$1)) {
+        if (!context._isShown()) {
           continue;
         }
 
@@ -1349,20 +1357,20 @@
         return;
       }
 
-      const getToggleButton = () => this.matches(SELECTOR_DATA_TOGGLE$1) ? this : SelectorEngine.prev(this, SELECTOR_DATA_TOGGLE$1)[0];
+      const getToggleButton = this.matches(SELECTOR_DATA_TOGGLE$1) ? this : SelectorEngine.prev(this, SELECTOR_DATA_TOGGLE$1)[0];
+      const instance = Dropdown.getOrCreateInstance(getToggleButton);
 
       if (event.key === ESCAPE_KEY) {
-        getToggleButton().focus();
-        Dropdown.clearMenus();
+        instance.hide();
         return;
       }
 
       if (event.key === ARROW_UP_KEY || event.key === ARROW_DOWN_KEY) {
         if (!isActive) {
-          getToggleButton().click();
+          instance.show();
         }
 
-        Dropdown.getInstance(getToggleButton())._selectMenuItem(event);
+        instance._selectMenuItem(event);
         return;
       }
 
@@ -1384,7 +1392,7 @@
   EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearMenus);
   EventHandler.on(document, EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE$1, function (event) {
     event.preventDefault();
-    Dropdown.dropdownInterface(this);
+    Dropdown.getOrCreateInstance(this).toggle();
   });
 
   /**
@@ -1398,7 +1406,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.2): collapse.js
+   * Bootstrap (v5.1.1): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1416,12 +1424,12 @@
 
   const Default = {
     toggle: true,
-    parent: '' };
+    parent: null };
 
 
   const DefaultType = {
     toggle: 'boolean',
-    parent: '(string|element)' };
+    parent: '(null|element)' };
 
 
   const EVENT_SHOW = `show${EVENT_KEY}`;
@@ -1434,11 +1442,12 @@
   const CLASS_NAME_COLLAPSE = 'collapse';
   const CLASS_NAME_COLLAPSING = 'collapsing';
   const CLASS_NAME_COLLAPSED = 'collapsed';
+  const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
 
   const WIDTH = 'width';
   const HEIGHT = 'height';
 
-  const SELECTOR_ACTIVES = '.show, .collapsing';
+  const SELECTOR_ACTIVES = '.collapse.show, .collapse.collapsing';
   const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="collapse"]';
 
   /**
@@ -1453,10 +1462,7 @@
 
       this._isTransitioning = false;
       this._config = this._getConfig(config);
-      this._triggerArray = SelectorEngine.find(
-      `${SELECTOR_DATA_TOGGLE}[href="#${this._element.id}"],` +
-      `${SELECTOR_DATA_TOGGLE}[data-bs-target="#${this._element.id}"]`);
-
+      this._triggerArray = [];
 
       const toggleList = SelectorEngine.find(SELECTOR_DATA_TOGGLE);
 
@@ -1472,10 +1478,10 @@
         }
       }
 
-      this._parent = this._config.parent ? this._getParent() : null;
+      this._initializeChildren();
 
       if (!this._config.parent) {
-        this._addAriaAndCollapsedClass(this._element, this._triggerArray);
+        this._addAriaAndCollapsedClass(this._triggerArray, this._isShown());
       }
 
       if (this._config.toggle) {
@@ -1496,7 +1502,7 @@
     // Public
 
     toggle() {
-      if (this._element.classList.contains(CLASS_NAME_SHOW)) {
+      if (this._isShown()) {
         this.hide();
       } else {
         this.show();
@@ -1504,30 +1510,20 @@
     }
 
     show() {
-      if (this._isTransitioning || this._element.classList.contains(CLASS_NAME_SHOW)) {
+      if (this._isTransitioning || this._isShown()) {
         return;
       }
 
-      let actives;
+      let actives = [];
       let activesData;
 
-      if (this._parent) {
-        actives = SelectorEngine.find(SELECTOR_ACTIVES, this._parent).
-        filter((elem) => {
-          if (typeof this._config.parent === 'string') {
-            return elem.getAttribute('data-bs-parent') === this._config.parent;
-          }
-
-          return elem.classList.contains(CLASS_NAME_COLLAPSE);
-        });
-
-        if (actives.length === 0) {
-          actives = null;
-        }
+      if (this._config.parent) {
+        const children = SelectorEngine.find(`.${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`, this._config.parent);
+        actives = SelectorEngine.find(SELECTOR_ACTIVES, this._config.parent).filter((elem) => !children.includes(elem)); // remove children if greater depth
       }
 
       const container = SelectorEngine.findOne(this._selector);
-      if (actives) {
+      if (actives.length) {
         const tempActiveData = actives.find((elem) => container !== elem);
         activesData = tempActiveData ? Collapse.getInstance(tempActiveData) : null;
 
@@ -1541,17 +1537,15 @@
         return;
       }
 
-      if (actives) {
-        actives.forEach((elemActive) => {
-          if (container !== elemActive) {
-            Collapse.collapseInterface(elemActive, 'hide');
-          }
+      actives.forEach((elemActive) => {
+        if (container !== elemActive) {
+          Collapse.getOrCreateInstance(elemActive, { toggle: false }).hide();
+        }
 
-          if (!activesData) {
-            Data.set(elemActive, DATA_KEY, null);
-          }
-        });
-      }
+        if (!activesData) {
+          Data.set(elemActive, DATA_KEY, null);
+        }
+      });
 
       const dimension = this._getDimension();
 
@@ -1560,22 +1554,16 @@
 
       this._element.style[dimension] = 0;
 
-      if (this._triggerArray.length) {
-        this._triggerArray.forEach((element) => {
-          element.classList.remove(CLASS_NAME_COLLAPSED);
-          element.setAttribute('aria-expanded', true);
-        });
-      }
-
-      this.setTransitioning(true);
+      this._addAriaAndCollapsedClass(this._triggerArray, true);
+      this._isTransitioning = true;
 
       const complete = () => {
+        this._isTransitioning = false;
+
         this._element.classList.remove(CLASS_NAME_COLLAPSING);
         this._element.classList.add(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW);
 
         this._element.style[dimension] = '';
-
-        this.setTransitioning(false);
 
         EventHandler.trigger(this._element, EVENT_SHOWN);
       };
@@ -1588,7 +1576,7 @@
     }
 
     hide() {
-      if (this._isTransitioning || !this._element.classList.contains(CLASS_NAME_SHOW)) {
+      if (this._isTransitioning || !this._isShown()) {
         return;
       }
 
@@ -1607,22 +1595,19 @@
       this._element.classList.remove(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW);
 
       const triggerArrayLength = this._triggerArray.length;
-      if (triggerArrayLength > 0) {
-        for (let i = 0; i < triggerArrayLength; i++) {
-          const trigger = this._triggerArray[i];
-          const elem = getElementFromSelector(trigger);
+      for (let i = 0; i < triggerArrayLength; i++) {
+        const trigger = this._triggerArray[i];
+        const elem = getElementFromSelector(trigger);
 
-          if (elem && !elem.classList.contains(CLASS_NAME_SHOW)) {
-            trigger.classList.add(CLASS_NAME_COLLAPSED);
-            trigger.setAttribute('aria-expanded', false);
-          }
+        if (elem && !this._isShown(elem)) {
+          this._addAriaAndCollapsedClass([trigger], false);
         }
       }
 
-      this.setTransitioning(true);
+      this._isTransitioning = true;
 
       const complete = () => {
-        this.setTransitioning(false);
+        this._isTransitioning = false;
         this._element.classList.remove(CLASS_NAME_COLLAPSING);
         this._element.classList.add(CLASS_NAME_COLLAPSE);
         EventHandler.trigger(this._element, EVENT_HIDDEN);
@@ -1633,8 +1618,8 @@
       this._queueCallback(complete, this._element, true);
     }
 
-    setTransitioning(isTransitioning) {
-      this._isTransitioning = isTransitioning;
+    _isShown(element = this._element) {
+      return element.classList.contains(CLASS_NAME_SHOW);
     }
 
     // Private
@@ -1642,43 +1627,39 @@
     _getConfig(config) {
       config = {
         ...Default,
+        ...Manipulator.getDataAttributes(this._element),
         ...config };
 
       config.toggle = Boolean(config.toggle); // Coerce string values
+      config.parent = getElement(config.parent);
       typeCheckConfig(NAME, config, DefaultType);
       return config;
     }
 
     _getDimension() {
-      return this._element.classList.contains(WIDTH) ? WIDTH : HEIGHT;
+      return this._element.classList.contains(CLASS_NAME_HORIZONTAL) ? WIDTH : HEIGHT;
     }
 
-    _getParent() {
-      let { parent } = this._config;
-
-      parent = getElement(parent);
-
-      const selector = `${SELECTOR_DATA_TOGGLE}[data-bs-parent="${parent}"]`;
-
-      SelectorEngine.find(selector, parent).
-      forEach((element) => {
-        const selected = getElementFromSelector(element);
-
-        this._addAriaAndCollapsedClass(
-        selected,
-        [element]);
-
-      });
-
-      return parent;
-    }
-
-    _addAriaAndCollapsedClass(element, triggerArray) {
-      if (!element || !triggerArray.length) {
+    _initializeChildren() {
+      if (!this._config.parent) {
         return;
       }
 
-      const isOpen = element.classList.contains(CLASS_NAME_SHOW);
+      const children = SelectorEngine.find(`.${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`, this._config.parent);
+      SelectorEngine.find(SELECTOR_DATA_TOGGLE, this._config.parent).filter((elem) => !children.includes(elem)).
+      forEach((element) => {
+        const selected = getElementFromSelector(element);
+
+        if (selected) {
+          this._addAriaAndCollapsedClass([element], this._isShown(selected));
+        }
+      });
+    }
+
+    _addAriaAndCollapsedClass(triggerArray, isOpen) {
+      if (!triggerArray.length) {
+        return;
+      }
 
       triggerArray.forEach((elem) => {
         if (isOpen) {
@@ -1693,34 +1674,22 @@
 
     // Static
 
-    static collapseInterface(element, config) {
-      let data = Collapse.getInstance(element);
-      const _config = {
-        ...Default,
-        ...Manipulator.getDataAttributes(element),
-        ...(typeof config === 'object' && config ? config : {}) };
-
-
-      if (!data && _config.toggle && typeof config === 'string' && /show|hide/.test(config)) {
-        _config.toggle = false;
-      }
-
-      if (!data) {
-        data = new Collapse(element, _config);
-      }
-
-      if (typeof config === 'string') {
-        if (typeof data[config] === 'undefined') {
-          throw new TypeError(`No method named "${config}"`);
-        }
-
-        data[config]();
-      }
-    }
-
     static jQueryInterface(config) {
       return this.each(function () {
-        Collapse.collapseInterface(this, config);
+        const _config = {};
+        if (typeof config === 'string' && /show|hide/.test(config)) {
+          _config.toggle = false;
+        }
+
+        const data = Collapse.getOrCreateInstance(this, _config);
+
+        if (typeof config === 'string') {
+          if (typeof data[config] === 'undefined') {
+            throw new TypeError(`No method named "${config}"`);
+          }
+
+          data[config]();
+        }
       });
     }}
 
@@ -1737,26 +1706,11 @@
       event.preventDefault();
     }
 
-    const triggerData = Manipulator.getDataAttributes(this);
     const selector = getSelectorFromElement(this);
     const selectorElements = SelectorEngine.find(selector);
 
     selectorElements.forEach((element) => {
-      const data = Collapse.getInstance(element);
-      let config;
-      if (data) {
-        // update parent attribute
-        if (data._parent === null && typeof triggerData.parent === 'string') {
-          data._config.parent = triggerData.parent;
-          data._parent = data._getParent();
-        }
-
-        config = 'toggle';
-      } else {
-        config = triggerData;
-      }
-
-      Collapse.collapseInterface(element, config);
+      Collapse.getOrCreateInstance(element, { toggle: false }).toggle();
     });
   });
 
