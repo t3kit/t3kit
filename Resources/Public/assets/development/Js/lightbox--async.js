@@ -5,7 +5,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
   	By André Rinas, www.andrerinas.de
   	Documentation, www.simplelightbox.de
   	Available for use under the MIT License
-  	Version 2.7.0
+  	Version 2.8.1
   */
   class SimpleLightbox {
 
@@ -129,9 +129,11 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
 
 
-    constructor(elements, options) {_defineProperty(this, "defaultOptions", { sourceAttr: 'href', overlay: true, spinner: true, nav: true, navText: ['&lsaquo;', '&rsaquo;'], captions: true, captionDelay: 0, captionSelector: 'img', captionType: 'attr', captionsData: 'title', captionPosition: 'bottom', captionClass: '', close: true, closeText: '&times;', swipeClose: true, showCounter: true, fileExt: 'png|jpg|jpeg|gif|webp', animationSlide: true, animationSpeed: 250, preloading: true, enableKeyboard: true, loop: true, rel: false, docClose: true, swipeTolerance: 50, className: 'simple-lightbox', widthRatio: 0.8, heightRatio: 0.9, scaleImageToRatio: false, disableRightClick: false, disableScroll: true, alertError: true, alertErrorMessage: 'Image not found, next image will be loaded', additionalHtml: false, history: true, throttleInterval: 0, doubleTapZoom: 2, maxZoom: 10, htmlClass: 'has-lightbox', rtl: false, fixedClass: 'sl-fixed', fadeSpeed: 300, uniqueImages: true, focus: true });_defineProperty(this, "transitionPrefix", void 0);_defineProperty(this, "transitionCapable", false);_defineProperty(this, "isTouchDevice", 'ontouchstart' in window);_defineProperty(this, "initialLocationHash", void 0);_defineProperty(this, "pushStateSupport", 'pushState' in history);_defineProperty(this, "isOpen", false);_defineProperty(this, "isAnimating", false);_defineProperty(this, "isClosing", false);_defineProperty(this, "isFadeIn", false);_defineProperty(this, "urlChangedOnce", false);_defineProperty(this, "hashReseted", false);_defineProperty(this, "historyHasChanges", false);_defineProperty(this, "historyUpdateTimeout", null);_defineProperty(this, "currentImage", void 0);_defineProperty(this, "eventNamespace", 'simplelightbox');_defineProperty(this, "domNodes", {});_defineProperty(this, "loadedImages", []);_defineProperty(this, "initialImageIndex", 0);_defineProperty(this, "currentImageIndex", 0);_defineProperty(this, "initialSelector", null);_defineProperty(this, "globalScrollbarWidth", 0);_defineProperty(this, "controlCoordinates", { swipeDiff: 0, swipeYDiff: 0, swipeStart: 0, swipeEnd: 0, swipeYStart: 0, swipeYEnd: 0, mousedown: false, imageLeft: 0, zoomed: false, containerHeight: 0, containerWidth: 0, containerOffsetX: 0, containerOffsetY: 0, imgHeight: 0, imgWidth: 0, capture: false, initialOffsetX: 0, initialOffsetY: 0, initialPointerOffsetX: 0, initialPointerOffsetY: 0, initialPointerOffsetX2: 0, initialPointerOffsetY2: 0, initialScale: 1, initialPinchDistance: 0, pointerOffsetX: 0, pointerOffsetY: 0, pointerOffsetX2: 0, pointerOffsetY2: 0, targetOffsetX: 0, targetOffsetY: 0, targetScale: 0, pinchOffsetX: 0, pinchOffsetY: 0, limitOffsetX: 0, limitOffsetY: 0, scaleDifference: 0, targetPinchDistance: 0, touchCount: 0, doubleTapped: false, touchmoveCount: 0 });
+
+    constructor(elements, options) {_defineProperty(this, "defaultOptions", { sourceAttr: 'href', overlay: true, spinner: true, nav: true, navText: ['&lsaquo;', '&rsaquo;'], captions: true, captionDelay: 0, captionSelector: 'img', captionType: 'attr', captionsData: 'title', captionPosition: 'bottom', captionClass: '', close: true, closeText: '&times;', swipeClose: true, showCounter: true, fileExt: 'png|jpg|jpeg|gif|webp', animationSlide: true, animationSpeed: 250, preloading: true, enableKeyboard: true, loop: true, rel: false, docClose: true, swipeTolerance: 50, className: 'simple-lightbox', widthRatio: 0.8, heightRatio: 0.9, scaleImageToRatio: false, disableRightClick: false, disableScroll: true, alertError: true, alertErrorMessage: 'Image not found, next image will be loaded', additionalHtml: false, history: true, throttleInterval: 0, doubleTapZoom: 2, maxZoom: 10, htmlClass: 'has-lightbox', rtl: false, fixedClass: 'sl-fixed', fadeSpeed: 300, uniqueImages: true, focus: true });_defineProperty(this, "transitionPrefix", void 0);_defineProperty(this, "isPassiveEventsSupported", void 0);_defineProperty(this, "transitionCapable", false);_defineProperty(this, "isTouchDevice", 'ontouchstart' in window);_defineProperty(this, "isAppleDevice", /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform));_defineProperty(this, "initialLocationHash", void 0);_defineProperty(this, "pushStateSupport", 'pushState' in history);_defineProperty(this, "isOpen", false);_defineProperty(this, "isAnimating", false);_defineProperty(this, "isClosing", false);_defineProperty(this, "isFadeIn", false);_defineProperty(this, "urlChangedOnce", false);_defineProperty(this, "hashReseted", false);_defineProperty(this, "historyHasChanges", false);_defineProperty(this, "historyUpdateTimeout", null);_defineProperty(this, "currentImage", void 0);_defineProperty(this, "eventNamespace", 'simplelightbox');_defineProperty(this, "domNodes", {});_defineProperty(this, "loadedImages", []);_defineProperty(this, "initialImageIndex", 0);_defineProperty(this, "currentImageIndex", 0);_defineProperty(this, "initialSelector", null);_defineProperty(this, "globalScrollbarWidth", 0);_defineProperty(this, "controlCoordinates", { swipeDiff: 0, swipeYDiff: 0, swipeStart: 0, swipeEnd: 0, swipeYStart: 0, swipeYEnd: 0, mousedown: false, imageLeft: 0, zoomed: false, containerHeight: 0, containerWidth: 0, containerOffsetX: 0, containerOffsetY: 0, imgHeight: 0, imgWidth: 0, capture: false, initialOffsetX: 0, initialOffsetY: 0, initialPointerOffsetX: 0, initialPointerOffsetY: 0, initialPointerOffsetX2: 0, initialPointerOffsetY2: 0, initialScale: 1, initialPinchDistance: 0, pointerOffsetX: 0, pointerOffsetY: 0, pointerOffsetX2: 0, pointerOffsetY2: 0, targetOffsetX: 0, targetOffsetY: 0, targetScale: 0, pinchOffsetX: 0, pinchOffsetY: 0, limitOffsetX: 0, limitOffsetY: 0, scaleDifference: 0, targetPinchDistance: 0, touchCount: 0, doubleTapped: false, touchmoveCount: 0 });
 
       this.options = Object.assign(this.defaultOptions, options);
+      this.isPassiveEventsSupported = this.checkPassiveEventsSupport();
 
       if (typeof elements === 'string') {
         this.initialSelector = elements;
@@ -204,7 +206,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       // disable rightclick
       if (this.options.disableRightClick) {
         this.addEventListener(document.body, 'contextmenu.' + this.eventNamespace, (event) => {
-          if (event.target.classList.contains('sl-overlay')) {
+          if (event.target.parentElement.classList.contains("sl-image")) {
             event.preventDefault();
           }
         });
@@ -235,6 +237,22 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       }
 
       this.addEvents();
+    }
+
+    checkPassiveEventsSupport() {
+      // https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
+      // Test via a getter in the options object to see if the passive property is accessed
+      let supportsPassive = false;
+      try {
+        let opts = Object.defineProperty({}, 'passive', {
+          get: function () {
+            supportsPassive = true;
+          } });
+
+        window.addEventListener("testPassive", null, opts);
+        window.removeEventListener("testPassive", null, opts);
+      } catch (e) {}
+      return supportsPassive;
     }
 
     createDomNodes() {
@@ -294,7 +312,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
     }
 
     isValidLink(element) {
-      return !this.options.fileExt || 'pathname' in element && new RegExp('(' + this.options.fileExt + ')$', 'i').test(element.pathname);
+      return !this.options.fileExt || element.getAttribute(this.options.sourceAttr) && new RegExp('(' + this.options.fileExt + ')$', 'i').test(element.getAttribute(this.options.sourceAttr));
     }
 
     calculateTransitionPrefix() {
@@ -327,7 +345,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
           document.body.removeChild(scrollDiv);
 
           document.body.dataset.originalPaddingRight = paddingRight;
-          if (scrollbarWidth > 0) {
+          if (scrollbarWidth > 0 || scrollbarWidth == 0 && this.isAppleDevice) {
             document.body.classList.add('hidden-scroll');
             document.body.style.paddingRight = paddingRight + scrollbarWidth + 'px';
 
@@ -460,10 +478,8 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       if (this.options.animationSlide) {
         this.slide(this.options.animationSpeed / 1000, -100 * slideDirection - this.controlCoordinates.swipeDiff + 'px');
       }
-
       this.fadeOut(this.domNodes.image, this.options.fadeSpeed, () => {
         this.isAnimating = true;
-
         if (!this.isClosing) {
           setTimeout(() => {
 
@@ -506,7 +522,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       tmpImage.addEventListener('error', (event) => {
         this.relatedElements[this.currentImageIndex].dispatchEvent(new Event('error.' + this.eventNamespace));
         this.isAnimating = false;
-        this.isOpen = false;
+        this.isOpen = true;
         this.domNodes.spinner.style.display = 'none';
 
         let dirIsDefined = direction === 1 || direction === -1;
@@ -692,6 +708,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         }
 
         if (event.type === 'mousedown') {
+          event.preventDefault();
           this.controlCoordinates.initialPointerOffsetX = event.clientX;
           this.controlCoordinates.initialPointerOffsetY = event.clientY;
           this.controlCoordinates.containerHeight = this.getDimensions(this.domNodes.image).height;
@@ -784,8 +801,6 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
           return true;
         }
 
-        event.preventDefault();
-
         if (event.type === 'touchmove') {
           if (this.controlCoordinates.capture === false) {
             return false;
@@ -852,6 +867,9 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         /* Mouse Move implementation */
         if (event.type === 'mousemove' && this.controlCoordinates.mousedown) {
           if (event.type == 'touchmove') return true;
+
+          event.preventDefault();
+
           if (this.controlCoordinates.capture === false) return false;
 
           this.controlCoordinates.pointerOffsetX = event.clientX;
@@ -1164,11 +1182,9 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
     }
 
     // utility
-
     addEventListener(elements, events, callback, opts) {
       elements = this.wrap(elements);
       events = this.wrap(events);
-
 
       for (let element of elements) {
         if (!element.namespaces) {
@@ -1177,9 +1193,16 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
         for (let event of events) {
           let options = opts || false;
+          let needsPassiveFix = ['touchstart', 'touchmove'].indexOf(event.split('.')[0]) >= 0;
+          if (needsPassiveFix && this.isPassiveEventsSupported) {
+            if (typeof options === 'object') {
+              options.passive = true;
+            } else {
+              options = { passive: true };
+            }
+          }
           element.namespaces[event] = callback;
           element.addEventListener(event.split('.')[0], callback, options);
-
         }
       }
     }
@@ -1376,7 +1399,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
     }}
 
 
-  global.SimpleLightbox = SimpleLightbox;
+  window.SimpleLightbox = SimpleLightbox;
 
   const simpleLightbox = function (className, options) {
     return new SimpleLightbox(className, options);
