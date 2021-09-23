@@ -20,9 +20,6 @@
 			<trans-unit id="searchForm.template" resname="searchForm.template">
 				<source>Search input template</source>
 			</trans-unit>
-			<trans-unit id="frame_internal_padding" resname="frame_internal_padding">
-				<source>Internal padding</source>
-			</trans-unit>
 		</body>
 	</file>
 </xliff>

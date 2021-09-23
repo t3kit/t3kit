@@ -426,6 +426,11 @@
 			<trans-unit id="flexform.title" resname="flexform.title">
 				<source>Content element settings</source>
 			</trans-unit>
+
+			<!-- frames -->
+			<trans-unit id="frame_internal_padding" resname="frame_internal_padding">
+				<source>Internal padding</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
