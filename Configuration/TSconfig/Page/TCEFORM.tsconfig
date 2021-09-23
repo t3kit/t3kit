@@ -13,6 +13,9 @@ TCEFORM {
     }
     frame_class {
       removeItems = ruler-before,ruler-after,indent,indent-left,indent-right
+      addItems {
+        internal-padding = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:frame_internal_padding
+      }
     }
     imagecols.types {
       textpic {
