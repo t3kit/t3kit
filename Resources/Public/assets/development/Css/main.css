@@ -10360,6 +10360,30 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
 .margin-bottom-50 { margin-bottom: calc(var(--t3-ce-margin-50) / 2); }
 .margin-bottom-60 { margin-bottom: calc(var(--t3-ce-margin-60) / 2); }
 .margin-bottom-70 { margin-bottom: calc(var(--t3-ce-margin-70) / 2); }
+.margin-top-5 .internal-padding { padding-top: calc(var(--t3-ce-margin-5) / 2); }
+.margin-top-10 .internal-padding { padding-top: calc(var(--t3-ce-margin-10) / 2); }
+.margin-top-15 .internal-padding { padding-top: calc(var(--t3-ce-margin-16) / 2); }
+.margin-top-20 .internal-padding { padding-top: calc(var(--t3-ce-margin-20) / 2); }
+.margin-top-25 .internal-padding { padding-top: calc(var(--t3-ce-margin-25) / 2); }
+.margin-top-30 .internal-padding { padding-top: calc(var(--t3-ce-margin-30) / 2); }
+.margin-top-40 .internal-padding { padding-top: calc(var(--t3-ce-margin-40) / 2); }
+.margin-top-50 .internal-padding { padding-top: calc(var(--t3-ce-margin-50) / 2); }
+.margin-top-60 .internal-padding { padding-top: calc(var(--t3-ce-margin-60) / 2); }
+.margin-top-70 .internal-padding { padding-top: calc(var(--t3-ce-margin-70) / 2); }
+.margin-bottom-5 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-5) / 2); }
+.margin-bottom-10 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-10) / 2); }
+.margin-bottom-15 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-16) / 2); }
+.margin-bottom-20 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-20) / 2); }
+.margin-bottom-25 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-25) / 2); }
+.margin-bottom-30 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-30) / 2); }
+.margin-bottom-40 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-40) / 2); }
+.margin-bottom-50 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-50) / 2); }
+.margin-bottom-60 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-60) / 2); }
+.margin-bottom-70 .internal-padding { padding-bottom: calc(var(--t3-ce-margin-70) / 2); }
+.frame-internal-padding {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Small devices (landscape phones, 576px and up) */
 /* @media (min-width: 576px) { ... } */
 /* Medium devices (tablets, 768px and up) */
@@ -10387,6 +10411,33 @@ button.swiper-pagination-bullet{border:none;margin:0;padding:0;box-shadow:none;-
   .margin-bottom-50 { margin-bottom: var(--t3-ce-margin-50); }
   .margin-bottom-60 { margin-bottom: var(--t3-ce-margin-60); }
   .margin-bottom-70 { margin-bottom: var(--t3-ce-margin-70); }
+
+  .margin-top-5 .internal-padding { padding-top: var(--t3-ce-margin-5); }
+  .margin-top-10 .internal-padding { padding-top: var(--t3-ce-margin-10); }
+  .margin-top-15 .internal-padding { padding-top: var(--t3-ce-margin-16); }
+  .margin-top-20 .internal-padding { padding-top: var(--t3-ce-margin-20); }
+  .margin-top-25 .internal-padding { padding-top: var(--t3-ce-margin-25); }
+  .margin-top-30 .internal-padding { padding-top: var(--t3-ce-margin-30); }
+  .margin-top-40 .internal-padding { padding-top: var(--t3-ce-margin-40); }
+  .margin-top-50 .internal-padding { padding-top: var(--t3-ce-margin-50); }
+  .margin-top-60 .internal-padding { padding-top: var(--t3-ce-margin-60); }
+  .margin-top-70 .internal-padding { padding-top: var(--t3-ce-margin-70); }
+
+  .margin-bottom-5 .internal-padding { padding-bottom: var(--t3-ce-margin-5); }
+  .margin-bottom-10 .internal-padding { padding-bottom: var(--t3-ce-margin-10); }
+  .margin-bottom-15 .internal-padding { padding-bottom: var(--t3-ce-margin-16); }
+  .margin-bottom-20 .internal-padding { padding-bottom: var(--t3-ce-margin-20); }
+  .margin-bottom-25 .internal-padding { padding-bottom: var(--t3-ce-margin-25); }
+  .margin-bottom-30 .internal-padding { padding-bottom: var(--t3-ce-margin-30); }
+  .margin-bottom-40 .internal-padding { padding-bottom: var(--t3-ce-margin-40); }
+  .margin-bottom-50 .internal-padding { padding-bottom: var(--t3-ce-margin-50); }
+  .margin-bottom-60 .internal-padding { padding-bottom: var(--t3-ce-margin-60); }
+  .margin-bottom-70 .internal-padding { padding-bottom: var(--t3-ce-margin-70); }
+
+  .frame-internal-padding {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 /* X-Large devices (large desktops, 1200px and up) */
 /* @media (min-width: 1200px) { ... } */
