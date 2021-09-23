@@ -1,14 +1,12 @@
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination, A11y } from 'swiper'
 
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination, A11y])
-
 const swiper = function (className, options) {
   return new Swiper(className, options)
 }
 
 swiper('.t3kit-swiper-container', {
+  modules: [Navigation, Pagination, A11y],
   // Optional parameters
   direction: 'horizontal',
   loop: false,
