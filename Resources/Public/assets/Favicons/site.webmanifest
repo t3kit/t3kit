@@ -3,12 +3,12 @@
     "short_name": "",
     "icons": [
         {
-            "src": "/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/android-chrome-192x192.png?v=181d4e8",
+            "src": "/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/android-chrome-192x192.png?v=0ef3f0f",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/android-chrome-512x512.png?v=181d4e8",
+            "src": "/typo3conf/ext/t3kit/Resources/Public/assets/Favicons/android-chrome-512x512.png?v=0ef3f0f",
             "sizes": "512x512",
             "type": "image/png"
         }
