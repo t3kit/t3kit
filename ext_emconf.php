@@ -15,7 +15,7 @@ $EM_CONF['t3kit'] = [
             'fluid_styled_content' => '*',
         ],
     ],
-    'state' => 'beta',
+    'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,

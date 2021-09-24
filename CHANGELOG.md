@@ -1,4 +1,37 @@
 
+#### v10.0.0 `September 24, 2021`
+
+- **[TASK]** update favicons ([01103f69](https://github.com/t3kit/t3kit/commit/01103f69))
+- **[TASK]** update Bootstrap icons ([e20ec3be](https://github.com/t3kit/t3kit/commit/e20ec3be))
+- **[TASK]** use original simplelightbox, downgrade rollup-plugin-replace ([f9eda9cc](https://github.com/t3kit/t3kit/commit/f9eda9cc))
+- **[TASK]** add new frame for adding padding (#278) ([816bf160](https://github.com/t3kit/t3kit/commit/816bf160))
+- **[TASK]** update npm dep-s, bootstrap to v5.1.1, swiper to v7.0.6, dev dep-s ([14a15d88](https://github.com/t3kit/t3kit/commit/14a15d88))
+- **[BUGFIX]** fix z-index for slider and dropdown ([cc73883d](https://github.com/t3kit/t3kit/commit/cc73883d))
+- **[BUGFIX]** Disable spamProtectedEmailAdresses (#274) ([3969502b](https://github.com/t3kit/t3kit/commit/3969502b))
+- **[BUGFIX]** align image description under images in CE textpic (#273) ([d8b2eaf2](https://github.com/t3kit/t3kit/commit/d8b2eaf2))
+- **[TASK]** opdate header CE, add more css var-s, fix hover and active state for the top menu ([4eb327c3](https://github.com/t3kit/t3kit/commit/4eb327c3))
+- **[TASK]** add possibility to link target_blank for footer links (#271) ([94234bda](https://github.com/t3kit/t3kit/commit/94234bda))
+- **[BUGFIX]** fix image height on small screens for img-text-left-right CE ([338d7d46](https://github.com/t3kit/t3kit/commit/338d7d46))
+- **[TASK]** update npm dep-s, husky v7.0.0, swiper v6.7.5 ([883ba446](https://github.com/t3kit/t3kit/commit/883ba446))
+- **[TASK]** add b13/container ext. as a required dependency ([c53727f1](https://github.com/t3kit/t3kit/commit/c53727f1))
+- **[FEATURE]** add 4 columns grid CE ([6ab6d125](https://github.com/t3kit/t3kit/commit/6ab6d125))
+- **[FEATURE]** add 3 columns grid CE ([44211420](https://github.com/t3kit/t3kit/commit/44211420))
+- **[FEATURE]** add 1 column grid CE ([8eaaa3fb](https://github.com/t3kit/t3kit/commit/8eaaa3fb))
+- **[FEATURE]** add 2 columns grid CE (#270) ([e0bcd905](https://github.com/t3kit/t3kit/commit/e0bcd905))
+- **[TASK]** add footerInfo for BE PageLayout for all CE-s ([d1f62eff](https://github.com/t3kit/t3kit/commit/d1f62eff))
+- **[TASK]** use ~ for npm dep-s, update bootstrap and swiper ([6f4e6ecb](https://github.com/t3kit/t3kit/commit/6f4e6ecb))
+- **[TASK]** update siteHeade CE, add BE preview, modify classes for search forms, update styles ([17e2747b](https://github.com/t3kit/t3kit/commit/17e2747b))
+- **[FEATURE]** add site header CE with big menu, lang menu, search and top menu (#269) ([4eee4831](https://github.com/t3kit/t3kit/commit/4eee4831))
+- **[TASK]** img-text-left-right CE, add option to not crop the image if height = 0 ([378da299](https://github.com/t3kit/t3kit/commit/378da299))
+- **[FEATURE]** add imageTextLeftRight CE ([e2f297f5](https://github.com/t3kit/t3kit/commit/e2f297f5))
+- **[TASK]** increase icon_source field to 255 char ([2f120cff](https://github.com/t3kit/t3kit/commit/2f120cff))
+- **[TASK]** add target _blank attr for links in main menu ([cc61f421](https://github.com/t3kit/t3kit/commit/cc61f421))
+- **[TASK]** update deps, bootstrap v5.0.1, swiper, devDependencies ([bfbd8b20](https://github.com/t3kit/t3kit/commit/bfbd8b20))
+- **[TASK]** add stretched-link-wrp class on static elements that supports (Enable whole area link) ([8bfb2432](https://github.com/t3kit/t3kit/commit/8bfb2432))
+- **[TASK]** ImageTextLink support for putting header above image (#263) ([f9871717](https://github.com/t3kit/t3kit/commit/f9871717))
+
+***
+
 #### v10.0.0-beta.2 `April 14, 2021`
 
 - **[TASK]** enable FEeditingv2 for bigIconTextLink CE ([181d4e8e](https://github.com/t3kit/t3kit/commit/181d4e8e))
