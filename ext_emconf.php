@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
             'fluid_styled_content' => '*',
         ],
     ],
-    'state' => 'beta',
+    'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
