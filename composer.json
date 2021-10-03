@@ -58,7 +58,7 @@
       "T3k\\t3kit\\": "Classes"
     }
   },
-  "prefer-stable": false,
+  "prefer-stable": true,
   "config": {
     "vendor-dir": "build/vendor",
     "optimize-autoloader": true,
