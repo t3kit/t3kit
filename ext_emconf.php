@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = [
+$EM_CONF['t3kit'] = [
     'title' => 't3kit',
     'description' => 't3kit project. A TYPO3 website starterkit.',
     'version' => '10.0.0',
