@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  web:
+    container_name: t3kitext_web
+    image: t3kit/11-php8-fpm-nginx-buster:0.0.1
+    env_file:
+      - composer.env
+    volumes:
+      - type: bind
+        source: ../../
+        target: /var/www/html
+
+networks:
+  default:
+    name: nproxy
