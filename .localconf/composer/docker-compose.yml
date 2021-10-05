@@ -4,7 +4,7 @@ services:
 
   web:
     container_name: t3kitext_web
-    image: t3kit/11-php8-fpm-nginx-buster:0.0.1
+    image: t3kit/11-php8-fpm-nginx-buster:1.0.0
     env_file:
       - composer.env
     volumes:
