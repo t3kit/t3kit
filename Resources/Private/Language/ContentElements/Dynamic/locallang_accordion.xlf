@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf" date="2021-10-19UTC12:09:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="accordion.title" resname="accordion.title">
+				<source>Accordion</source>
+			</trans-unit>
+			<trans-unit id="accordion.description" resname="accordion.description">
+				<source>Accordion element</source>
+			</trans-unit>
+			<trans-unit id="accordion.item" resname="accordion.item">
+				<source>Accordion item</source>
+			</trans-unit>
+			<trans-unit id="accordion.tab" resname="accordion.tab">
+				<source>Accordion items</source>
+			</trans-unit>
+			<trans-unit id="accordion.header" resname="accordion.title">
+				<source>Accordion header</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

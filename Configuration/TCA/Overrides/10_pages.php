@@ -103,6 +103,12 @@ defined('TYPO3_MODE') || die();
     '(Dynamic CE) Image Slider'
 );
 
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    't3kit',
+    'Configuration/TSconfig/Page/Mod/Wizards/ContentElements/Dynamic/Accordion.tsconfig',
+    '(Dynamic CE) Accordion'
+);
+
 // Special CE-s
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     't3kit',

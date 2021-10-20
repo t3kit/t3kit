@@ -16,7 +16,14 @@
 
               <f:if condition="{data.uploads_type} == 1">
                 <span class="ce-uploads__list-item-icon-wrp">
-                  <t3kit:render.svg src="{f:uri.resource(path: 'assets/Filetypes/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon" />
+                  <f:if condition="{file.extension} == 'youtube'">
+                    <f:then>
+                      <t3kit:render.svg src="{f:uri.resource(path: 'assets/Icons/Bootstrap/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon ce-uploads__list-item-icon-{file.extension}" />
+                    </f:then>
+                    <f:else>
+                      <t3kit:render.svg src="{f:uri.resource(path: 'assets/Filetypes/{file.extension}.svg', extensionName: 't3kit')}" class="ce-uploads__list-item-icon" />
+                    </f:else>
+                  </f:if>
                 </span>
               </f:if>
 
