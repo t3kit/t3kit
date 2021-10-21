@@ -1,0 +1,203 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Header"/>
+
+<f:section name="Main">
+  <!-- t3kit/Resources/Private/Templates/ContentElements/Dynamic/Accordion.html [begin] -->
+  <div class="ce-accordion__wrp t3kit-accordion-container">
+    <div class="ce-accordion accordion" id="accordion-{data.uid}">
+      <f:for each="{records}" as="item" iteration="iteration">
+
+
+        <f:if condition="{iteration.cycle} == 1 && {flexform.open_first} == 1">
+          <f:then>
+            <f:variable name="open">true</f:variable>
+            <f:variable name="show">show</f:variable>
+          </f:then>
+          <f:else>
+            <f:variable name="open">false</f:variable>
+            <f:variable name="show"></f:variable>
+          </f:else>
+        </f:if>
+
+        <f:if condition="{flexform.always_open} == 1">
+          <f:then>
+            <f:variable name="always-open">true</f:variable>
+          </f:then>
+          <f:else>
+            <f:variable name="always-open">false</f:variable>
+          </f:else>
+        </f:if>
+
+        <f:comment><!-- Assign order variables --></f:comment>
+        <f:for each="{item.order_options}" as="order_options" iteration="i">
+          <f:variable name="order-{order_options}">order-{i.cycle}</f:variable>
+        </f:for>
+
+        <div class="accordion-item" id="item-{data.uid}-{iteration.cycle}">
+          <div class="accordion-header ce-accordion__header-wrp" id="header-{data.uid}-{iteration.cycle}">
+            <f:render
+              section="accordionHeader"
+              arguments="{data: data, item: item, table: 'tx_t3kit_accordion_item', field: 'header', iteration: iteration, open: open }"
+            />
+          </div>
+          <div id="body-{data.uid}-{iteration.cycle}"class="accordion-collapse {f:if(condition: '{show} == "show"', then: 'show')} collapse " aria-labelledby="#header-{data.uid}-{iteration.cycle}" {f:if(condition: '{always-open} == "true" ', then: '', else: 'data-bs-parent="accordion-{data-uid}"')}">
+
+            <div class="ce-accordion__body-wrp accordion-body flex-column d-flex">
+              <f:if condition="{item.images}">
+                <div class="ce-accordion__picture {order-images}">
+                  <f:render
+                    partial="Media/Type"
+                    arguments="{files: item.images, data: data}"
+                  />
+                </div>
+              </f:if>
+              <div class="ce-accordion__bodytext-wrp {order-bodytext}">
+                <f:render
+                  partial="Bodytext/RTEBodytext"
+                  arguments="{data: item.data, table: 'tx_t3kit_accordion_item'}"
+                />
+              </div>
+
+              <f:if condition="{item.files}">
+                <div class="ce-accordion__file-list-wrp {order-files}">
+                  <ul class="ce-accordion__file-list">
+                    <f:for each="{item.files}" as="file" iteration="fileIterator">
+                      <li class="ce-accordion__file-list-item">
+
+                        <f:if condition="{item.data.uploads_type} == 1">
+                          <span class="ce-accordion__file-list-item-icon-wrp">
+                            <f:if condition="{file.extension} == 'youtube'">
+                              <f:then>
+                                <t3kit:render.svg src="{f:uri.resource(path: 'assets/Icons/Bootstrap/{file.extension}.svg', extensionName: 't3kit')}" class="ce-accordion__file-list-item-icon ce-accordion__file-list-item-icon-{file.extension}" />
+                              </f:then>
+                              <f:else>
+                                <t3kit:render.svg src="{f:uri.resource(path: 'assets/Filetypes/{file.extension}.svg', extensionName: 't3kit')}" class="ce-accordion__file-list-item-icon" />
+                              </f:else>
+                            </f:if>
+                          </span>
+                        </f:if>
+
+                        <f:if condition="{item.data.uploads_type} == 2">
+                          <f:if condition="{file.type} > 1 && {file.type} < 5">
+                              <f:then>
+                                <a class="ce-accordion__file-list-item-thumbnail-link" href="{file.publicUrl}">
+                                  <f:media class="ce-accordion__file-list-thumbnail" file="{file}" width="150" alt="{file.properties.alternative}" title="{file.title}"/>
+                                </a>
+                              </f:then>
+                              <f:else>
+                                <t3kit:render.svg src="{f:uri.resource(path: 'assets/Filetypes/{file.extension}.svg', extensionName: 't3kit')}" class="ce-accordion__file-list-item-icon" />
+                              </f:else>
+                          </f:if>
+                        </f:if>
+
+                        <div class="ce-accordion__item-body">
+                          <a class="ce-accordion__item-filename-link {f:if(condition:item.data.target,then: ' target-blank-link')}"
+                            href="{file.publicUrl}"
+                            {f:if(condition:item.data.target,then: ' target="{item.data.target}" rel="noreferrer"' )}>
+
+                            <f:if condition="{item.data.target}">
+                              <f:then>
+                                <strong class="ce-accordion__item-filename target-blank-link__title">
+                                  {f:if(condition: file.properties.title, then: file.properties.title, else: file.name) -> f:format.htmlspecialchars()}
+                                </strong>
+                                <span class="target-blank-link__msg">
+                                  <f:translate key="target_blank" extensionName="t3kit" />
+                                </span>
+                                <span class="target-blank-link__icon-wrp">
+                                  <svg class="target-blank-link__icon" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                    <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h8a1.5 1.5 0 001.5-1.5V9a.5.5 0 00-1 0v4a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h4a.5.5 0 000-1H3A1.5 1.5 0 001.5 5v8zm7-11a.5.5 0 01.5-.5h5a.5.5 0 01.5.5v5a.5.5 0 01-1 0V2.5H9a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                                    <path fill-rule="evenodd" d="M14.354 1.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                                  </svg>
+                                </span>
+                              </f:then>
+
+                              <f:else>
+                                <span class="ce-accordion__item-filename">
+                                  {f:if(condition: file.properties.title, then: file.properties.title, else: file.name) -> f:format.htmlspecialchars()}
+                                </span>
+                              </f:else>
+                            </f:if>
+
+                          </a>
+
+                          <f:if condition="{file.properties.description}">
+                            <f:if condition="{item.data.uploads_description}">
+                              <span class="ce-accordion__item-description">
+                                {file.properties.description}
+                              </span>
+                            </f:if>
+                          </f:if>
+
+                          <f:if condition="{item.data.filelink_size}">
+                            <span class="ce-accordion__item-filesize">
+                              <f:format.bytes value="{file.properties.size}"/>
+                            </span>
+                          </f:if>
+
+                        </div>
+
+                      </li>
+                    </f:for>
+                  </ul>
+                </div>
+              </f:if>
+
+            </div>
+          </div>
+        </div>
+      </f:for>
+
+    </div>
+  </div>
+  <!-- t3kit/Resources/Private/Templates/ContentElements/Dynamic/Accordion.html [end] -->
+</f:section>
+<f:section name="accordionHeader">
+  <f:switch expression="{item.data.header_layout}">
+    <f:case value="1">
+      <h1 class="ce-accordion__header header">
+        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
+        </button>
+      </h1>
+    </f:case>
+    <f:case value="2">
+      <h2 class="ce-accordion__header header">
+        <button class="accordion-button {item.data.header_style} {open} {f:if(condition: '{open} == "false"', then: 'collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
+        </button>
+      </h2>
+    </f:case>
+    <f:case value="3">
+      <h3 class="ce-accordion__header header">
+        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
+        </button>
+      </h3>
+    </f:case>
+    <f:case value="4">
+      <h4 class="ce-accordion__header header">
+        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
+        </button>
+      </h4>
+    </f:case>
+    <f:case value="5">
+      <h5 class="ce-accordion__header header">
+        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
+        </button>
+      </h5>
+    </f:case>
+    <f:case value="6">
+      <h6 class="ce-accordion__header header">
+        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
+        </button>
+      </h6>
+    </f:case>
+  </f:switch>
+</f:section>
+</html>

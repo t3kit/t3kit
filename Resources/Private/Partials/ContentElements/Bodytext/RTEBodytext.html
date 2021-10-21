@@ -3,6 +3,8 @@
 <f:if condition="{data.bodytext}">
   <f:render partial="Bodytext/Render/RTEBodytext" arguments="{
     uid: data.uid,
+    table: table,
+    field: field,
     bodytext: data.bodytext}" />
 </f:if>
 

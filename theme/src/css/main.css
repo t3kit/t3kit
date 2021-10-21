@@ -42,6 +42,7 @@
 @import 'main/content-elements/divider.css';
 @import 'main/content-elements/slider.css';
 @import 'main/content-elements/image-text-left-right.css';
+@import 'main/content-elements/accordion.css';
 
 /* ===== appearance ===== */
 @import 'main/appearance/color.css';

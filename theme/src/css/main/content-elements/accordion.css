@@ -1,0 +1,90 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+.ce-accordion__wrp {
+  --t3-ce-accordion-header-color: var(--t3-body-color);
+  --t3-ce-accordion-header-active-color: var(--t3-white);
+  --t3-ce-accordion-file-icon-color: var(--t3-secondary);
+  --t3-ce-accordion-background-color: var(--t3-white);
+  --t3-ce-accordion-background-active-color: var(--t3-secondary);
+  --t3-ce-accordion-focus-color: var(--t3-border-color);
+  --t3-ce-accordion-icon-width: 1.25rem;
+  --t3-ce-accordion-icon-height: 1.25rem;
+  --t3-ce-accordion-icon-gb: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --t3-ce-accordion-icon-active-gb: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f8f9fa' %3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button {
+  color: var(--t3-ce-accordion-header-color);
+  background-color: var(--t3-ce-accordion-background-color);
+}
+
+.accordion-button:focus {
+  border-color: var(--t3-ce-accordion-focus-color);
+}
+
+.accordion-button:after {
+  background-image: var(--t3-ce-accordion-icon-gb);
+  width: var(--t3-ce-accordion-icon-width);
+  height: var(--t3-ce-accordion-icon-height);
+}
+
+.accordion-button:not(.collapsed):after {
+  background-image: var(--t3-ce-accordion-icon-active-gb);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--t3-ce-accordion-header-active-color);
+  background-color: var(--t3-ce-accordion-background-active-color);
+}
+
+.ce-accordion__file-list-item-icon {
+  width: 2rem;
+}
+
+.ce-accordion__file-list-item-icon .st0 {
+  fill: var(--t3-ce-accordion-file-icon-color);
+}
+
+.ce-accordion__file-list-item-icon-youtube,
+.ce-accordion__file-list-item-icon-vimeo {
+  height: 2rem;
+}
+
+.ce-accordion__file-list-item-icon-youtube {
+  fill: var(--t3-ce-accordion-file-icon-color);
+}
+
+.ce-accordion__file-list-item-icon-vimeo {
+  fill: var(--t3-ce-accordion-file-icon-color);
+}
+
+/* -------------------------------------------------------- */
+/* X-Small devices (portrait phones, less than 576px) xs */
+/* @media (max-width: 575.98px) { ... } */
+/* Small devices (landscape phones, 576px and up) sm */
+/* @media (min-width: 576px) { ... } */
+
+/* -------------------------------------------------------- */
+/* Small devices (landscape phones, less than 768px) sm */
+/* @media (max-width: 767.98px) { ... } */
+/* Medium devices (tablets, 768px and up) md */
+/* @media (min-width: 768px) { ... } */
+
+/* -------------------------------------------------------- */
+/* Medium devices (tablets, less than 992px) md */
+/* @media (max-width: 991.98px) { ... } */
+/* Large devices (desktops, 992px and up) lg */
+/* @media (min-width: 992px) { ... } */
+
+/* -------------------------------------------------------- */
+/* Large devices (desktops, less than 1200px) lg */
+/* @media (max-width: 1199.98px) { ... } */
+/* X-Large devices (large desktops, 1200px and up) xl */
+/* @media (min-width: 1200px) { ... } */
+
+/* -------------------------------------------------------- */
+/* X-Large devices (large desktops, less than 1400px) xl */
+/* @media (max-width: 1399.98px) { ... } */
+/* XX-Large devices (larger desktops, 1400px and up) xxl */
+/* @media (min-width: 1400px) { ... } */

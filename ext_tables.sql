@@ -44,6 +44,7 @@ CREATE TABLE tt_content (
 	page_links_3 text,
 	table_class varchar(255) DEFAULT '' NOT NULL,
 	tx_t3kit_slider_item int(11) unsigned DEFAULT '0',
+	tx_t3kit_accordion_item int(11) unsigned DEFAULT '0',
 );
 
 #
@@ -75,6 +76,39 @@ CREATE TABLE tx_t3kit_slider_item (
 	picture int(11) unsigned DEFAULT '0' NOT NULL,
 	overlay varchar(60) DEFAULT '' NOT NULL,
 	caption_alignment varchar(60) DEFAULT '' NOT NULL,
+
+	sys_language_uid int(11) DEFAULT '0' NOT NULL,
+	l10n_parent int(11) unsigned DEFAULT '0' NOT NULL,
+	l10n_diffsource mediumblob NULL,
+
+	PRIMARY KEY (uid),
+	KEY parent (pid,sorting),
+	KEY t3ver_oid (t3ver_oid,t3ver_wsid),
+	KEY language (l10n_parent,sys_language_uid)
+);
+
+#
+# Table structure for table 'tx_t3kit_accordion_item'
+#
+CREATE TABLE tx_t3kit_accordion_item (
+	uid int(11) unsigned NOT NULL auto_increment,
+	pid int(11) DEFAULT '0' NOT NULL,
+
+	tt_content int(11) unsigned DEFAULT '0',
+	header text,
+	header_layout varchar(30) DEFAULT '0' NOT NULL,
+	header_style varchar(60) DEFAULT '0' NOT NULL,
+	bodytext mediumtext,
+	picture int(11) unsigned DEFAULT '0' NOT NULL,
+	media int(11) unsigned DEFAULT '0' NOT NULL,
+	file_collections text,
+	filelink_size tinyint(3) unsigned DEFAULT '0' NOT NULL,
+	filelink_sorting varchar(64) DEFAULT '' NOT NULL,
+	filelink_sorting_direction varchar(4) DEFAULT '' NOT NULL,
+	target varchar(30) DEFAULT '' NOT NULL,
+	uploads_description tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	uploads_type tinyint(3) unsigned DEFAULT '0' NOT NULL,
+	order_options mediumtext,
 
 	sys_language_uid int(11) DEFAULT '0' NOT NULL,
 	l10n_parent int(11) unsigned DEFAULT '0' NOT NULL,
