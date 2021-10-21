@@ -190,7 +190,6 @@
 </f:section>
 
 <f:section name="accordionButton">
-
   <f:variable name="collapsedClass">{f:if(condition: '{open} == "false"', then: ' collapsed')}</f:variable>
   <button class="accordion-button {item.data.header_style}{collapsedClass}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
     <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
