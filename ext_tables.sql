@@ -95,8 +95,9 @@ CREATE TABLE tx_t3kit_accordion_item (
 	pid int(11) DEFAULT '0' NOT NULL,
 
 	tt_content int(11) unsigned DEFAULT '0',
-	header_text text,
+	header text,
 	header_layout varchar(30) DEFAULT '0' NOT NULL,
+	header_style varchar(60) DEFAULT '0' NOT NULL,
 	bodytext mediumtext,
 	picture int(11) unsigned DEFAULT '0' NOT NULL,
 	media int(11) unsigned DEFAULT '0' NOT NULL,

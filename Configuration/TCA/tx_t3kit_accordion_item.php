@@ -2,8 +2,8 @@
 
 return [
     'ctrl' => [
-        'label' => 'header_text',
-        'label_alt' => 'header_text',
+        'label' => 'header',
+        'label_alt' => 'header',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -32,10 +32,8 @@ return [
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;;headertext_layout_style,
                 --palette--;;bodytext,
-                caption_alignment,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                 picture,
-                overlay,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:media,
                 --palette--;;uploads,
                 --palette--;;uploadslayout,
@@ -45,12 +43,6 @@ return [
                 --palette--;;hiddenLanguagePalette,
             ',
             'columnsOverrides' => [
-                'header_text' => [
-                    'config' => [
-                        'enableFrontendRichtext' => true,
-                        'frontendRichtextConfiguration' => 'bronly',
-                    ],
-                ],
                 'bodytext' => [
                     'config' => [
                         'enableFrontendRichtext' => true,
@@ -83,7 +75,7 @@ return [
         'headertext_layout_style' => [
             'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
             'showitem' => '
-                header_text,
+                header,
                 --linebreak--,
                 header_layout,
                 header_style,
@@ -212,7 +204,7 @@ return [
             ]
         ],
 
-        'header_text' => [
+        'header' => [
             'exclude' => true,
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:accordion.header',
             'config' => [
@@ -312,29 +304,6 @@ return [
                     [
                         'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
                         'large-h6'
-                    ]
-                ],
-                'default' => '0'
-            ]
-        ],
-        'header_position' => [
-            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position',
-            'exclude' => true,
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
-                        '0'
-                    ],
-                    [
-                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
-                        'center'
-                    ],
-                    [
-                        'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
-                        'end'
                     ]
                 ],
                 'default' => '0'

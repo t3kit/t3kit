@@ -14,7 +14,7 @@
           <div class="accordion-header ce-accordion_header__wrp ce-accordion__caption--{item.data.caption_alignment}" id="header-{data.uid}-{iteration.cycle}">
             <f:render
               section="accordionHeader"
-              arguments="{data: data, item: item, table: 'tx_t3kit_accordion_item', field: 'header_text', iteration: iteration }"
+              arguments="{data: data, item: item, table: 'tx_t3kit_accordion_item', field: 'header', iteration: iteration }"
             />
           </div>
           <div id="body-{data.uid}-{iteration.cycle}" class="accordion-collapse collapse " aria-labelledby="#header-{data.uid}-{iteration.cycle}" data-bs-parent="#accordion-{data.uid}">
@@ -27,10 +27,10 @@
                   />
                 </div>
               </f:if>
-              <f:render
-                partial="Bodytext/RTEBodytext"
-                arguments="{data: item.data, table: 'tx_t3kit_accordion_item'}"
-              />
+
+              <t3kit:contentEditable table="tx_t3kit_accordion_item" field="bodytext" uid="{item.data.uid}">
+                <f:format.html>{item.data.bodytext}</f:format.html>
+              </t3kit:contentEditable>
 
               <f:if condition="{item.files}">
                 <ul class="ce-accordion__file-list">
@@ -128,42 +128,42 @@
     <f:case value="1">
       <h1 class="header-text-item">
         <button class="accordion-button {item.data.header_style} collapsed icon-{item.data.header_position}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="false" aria-controls="#body-{data.uid}-{iteration.cycle}">
-          <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{item.data.header_text}</t3kit:contentEditable>
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h1>
     </f:case>
     <f:case value="2">
       <h2 class="header-text-item">
         <button class="accordion-button {item.data.header_style} collapsed icon-{item.data.header_position}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="false" aria-controls="#body-{data.uid}-{iteration.cycle}">
-          <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{item.data.header_text}</t3kit:contentEditable>
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h2>
     </f:case>
     <f:case value="3">
       <h3 class="header-text-item">
         <button class="accordion-button {item.data.header_style} collapsed icon-{item.data.header_position}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="false" aria-controls="#body-{data.uid}-{iteration.cycle}">
-          <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{item.data.header_text}</t3kit:contentEditable>
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h3>
     </f:case>
     <f:case value="4">
       <h4 class="header-text-item">
         <button class="accordion-button {item.data.header_style} collapsed icon-{item.data.header_position}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="false" aria-controls="#body-{data.uid}-{iteration.cycle}">
-          <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{item.data.header_text}</t3kit:contentEditable>
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h4>
     </f:case>
     <f:case value="5">
       <h5 class="header-text-item">
         <button class="accordion-button {item.data.header_style} collapsed icon-{item.data.header_position}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="false" aria-controls="#body-{data.uid}-{iteration.cycle}">
-          <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{item.data.header_text}</t3kit:contentEditable>
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h5>
     </f:case>
     <f:case value="6">
       <h6 class="header-text-item">
         <button class="accordion-button {item.data.header_style} collapsed icon-{item.data.header_position}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="false" aria-controls="#body-{data.uid}-{iteration.cycle}">
-          <t3kit:contentEditable table="{table}" field="{field}" uid="{uid}">{item.data.header_text}</t3kit:contentEditable>
+          <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h6>
     </f:case>
