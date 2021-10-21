@@ -30,7 +30,7 @@ return [
         '1' => [
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                --palette--;;headertext_layout_style,
+                --palette--;;header_layout_style,
                 --palette--;;bodytext,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
                 picture,
@@ -72,7 +72,7 @@ return [
             'showitem' => 'sys_language_uid, l18n_parent',
             'isHiddenPalette' => true,
         ],
-        'headertext_layout_style' => [
+        'header_layout_style' => [
             'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header',
             'showitem' => '
                 header,
@@ -85,7 +85,9 @@ return [
         'bodytext' => [
             'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:bodytext.palette',
             'showitem' => '
-                bodytext
+                bodytext,
+                --linebreak--,
+                order_options
             '
         ],
         'uploads' => [
@@ -481,6 +483,35 @@ return [
                 ],
                 'default' => 0
             ]
-        ]
-    ]
+        ],
+        'order_options' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:accordion.order_options',
+            'description' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:accordion.order_options_description',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'items' => [
+                    [
+                        'Bodytext',
+                        'bodytext',
+                    ],
+                    [
+                        'Images',
+                        'images',
+                    ],
+                    [
+                        'Files',
+                        'files',
+                    ],
+                ],
+                'size' => 3,
+                'autoSizeMax' => 3,
+                'maxitems' => 3,
+                'minitems' => 1,
+                'multiple' => false,
+                'default' => 'bodytext,images,files',
+            ],
+        ],
+    ],
 ];

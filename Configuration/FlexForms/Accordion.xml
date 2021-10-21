@@ -1,0 +1,37 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<type>array</type>
+				<el>
+
+					<open_first>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:flexform.open_first</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</open_first>
+
+					<always_open>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:flexform.always_open</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</always_open>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

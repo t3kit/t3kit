@@ -38,6 +38,12 @@ tt_content.accordion {
           sorting.direction.field = filelink_sorting_direction
           as = files
         }
+        30 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
+        30 {
+          fieldName = order_options
+          delimiter = ,
+          as = order_options
+        }
       }
     }
   }

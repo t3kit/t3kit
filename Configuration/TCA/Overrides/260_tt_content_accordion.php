@@ -43,6 +43,8 @@ $GLOBALS['TCA']['tt_content']['types']['accordion'] = [
             --palette--;;general,
             header;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_element_title,
         --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:accordion.tab,tx_t3kit_accordion_item,
+        --div--;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:tab.settings,
+        pi_flexform;LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:flexform.title,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;;frames,
             --palette--;;appearanceLinks,
@@ -57,13 +59,6 @@ $GLOBALS['TCA']['tt_content']['types']['accordion'] = [
             rowDescription,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ',
-    'columnsOverrides' => [
-        'section_container_width' => [
-            'config' => [
-                'default' => 'container-fluid'
-            ]
-        ]
-    ]
 ];
 
 
@@ -96,3 +91,20 @@ $GLOBALS['TCA']['tt_content']['types']['accordion'] = [
         ]
     ]
 ]);
+/*
+ * ###########################
+ * Add new palettes for a Content Element
+ * ===========================
+ */
+
+
+/*
+ * ###########################
+ * Add flexForms for Content Element
+ * ===========================
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:t3kit/Configuration/FlexForms/Accordion.xml',
+    'accordion'
+);

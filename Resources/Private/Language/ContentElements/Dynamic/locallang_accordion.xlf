@@ -15,8 +15,21 @@
 			<trans-unit id="accordion.tab" resname="accordion.tab">
 				<source>Accordion items</source>
 			</trans-unit>
-			<trans-unit id="accordion.header" resname="accordion.title">
+			<trans-unit id="accordion.header" resname="accordion.header">
 				<source>Accordion header</source>
+			</trans-unit>
+			<trans-unit id="flexform.open_first" resname="flexform.open_first">
+				<source>Open first accordion item</source>
+			</trans-unit>
+			<trans-unit id="flexform.always_open" resname="flexform.alway_open">
+				<source>Accordion items stay open when another item is opened</source>
+			</trans-unit>
+
+			<trans-unit id="accordion.order_options" resname="accordion.order_options">
+				<source>Order options</source>
+			</trans-unit>
+			<trans-unit id="accordion.order_options_description" resname="accordion.order_options_description">
+				<source>Order options in frontend</source>
 			</trans-unit>
 		</body>
 	</file>
