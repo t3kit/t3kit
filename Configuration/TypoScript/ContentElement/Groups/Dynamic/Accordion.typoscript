@@ -1,0 +1,50 @@
+# ###########################
+# Accordion
+#
+# CType: accordion
+# ===========================
+tt_content.accordion =< lib.contentElement
+tt_content.accordion {
+
+  templateName = Accordion
+
+  dataProcessing {
+    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 {
+      fieldName = pi_flexform
+      as = flexform
+    }
+    20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    20 {
+      table = tx_t3kit_accordion_item
+      pidInList.field = pid
+      where {
+        data = field:uid
+        intval = 1
+        wrap = tt_content=|
+      }
+      orderBy = sorting
+      dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+          references.fieldName = picture
+          as = images
+        }
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+          references.fieldName = media
+          collections.field = file_collections
+          sorting.field = filelink_sorting
+          sorting.direction.field = filelink_sorting_direction
+          as = files
+        }
+        30 = TYPO3\CMS\Frontend\DataProcessing\SplitProcessor
+        30 {
+          fieldName = order_options
+          delimiter = ,
+          as = order_options
+        }
+      }
+    }
+  }
+}

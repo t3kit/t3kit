@@ -8,6 +8,19 @@
   width: 2rem;
 }
 
+.ce-uploads__list-item-icon-youtube,
+.ce-uploads__list-item-icon-vimeo {
+  height: 2rem;
+}
+
+.ce-uploads__list-item-icon-youtube {
+  fill: var(--t3-ce-uploads-icon-color);
+}
+
+.ce-uploads__list-item-icon-vimeo {
+  fill: var(--t3-ce-uploads-icon-color);
+}
+
 .ce-uploads__list-item-icon .st0 {
   fill: var(--t3-ce-uploads-icon-color);
 }

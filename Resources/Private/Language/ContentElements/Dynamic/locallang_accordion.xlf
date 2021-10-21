@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file source-language="en" datatype="plaintext" original="EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf" date="2021-10-19UTC12:09:470" product-name="t3kit">
+		<header/>
+		<body>
+			<trans-unit id="accordion.title" resname="accordion.title">
+				<source>Accordion</source>
+			</trans-unit>
+			<trans-unit id="accordion.description" resname="accordion.description">
+				<source>Accordion element</source>
+			</trans-unit>
+			<trans-unit id="accordion.item" resname="accordion.item">
+				<source>Accordion item</source>
+			</trans-unit>
+			<trans-unit id="accordion.tab" resname="accordion.tab">
+				<source>Accordion items</source>
+			</trans-unit>
+			<trans-unit id="accordion.header" resname="accordion.header">
+				<source>Accordion header</source>
+			</trans-unit>
+			<trans-unit id="flexform.open_first" resname="flexform.open_first">
+				<source>Open first accordion item</source>
+			</trans-unit>
+			<trans-unit id="flexform.always_open" resname="flexform.alway_open">
+				<source>Accordion items stay open when another item is opened</source>
+			</trans-unit>
+
+			<trans-unit id="accordion.order_options" resname="accordion.order_options">
+				<source>Order options</source>
+			</trans-unit>
+			<trans-unit id="accordion.order_options_description" resname="accordion.order_options_description">
+				<source>Order options in frontend</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

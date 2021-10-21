@@ -1,0 +1,10 @@
+# ###########################
+# Accordion Content element
+# ===========================
+mod.wizards.newContentElement.wizardItems.dynamic.elements.accordion {
+  iconIdentifier = ce-accordion
+  title = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:accordion.title
+  description = LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Dynamic/locallang_accordion.xlf:accordion.description
+  tt_content_defValues.CType = accordion
+}
+mod.wizards.newContentElement.wizardItems.dynamic.show := addToList(accordion)
