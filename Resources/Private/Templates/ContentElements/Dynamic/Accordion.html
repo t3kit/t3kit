@@ -43,7 +43,7 @@
               arguments="{data: data, item: item, table: 'tx_t3kit_accordion_item', field: 'header', iteration: iteration, open: open }"
             />
           </div>
-          <div id="body-{data.uid}-{iteration.cycle}"class="accordion-collapse {f:if(condition: '{show} == "show"', then: 'show')} collapse " aria-labelledby="#header-{data.uid}-{iteration.cycle}" {f:if(condition: '{always-open} == "true" ', then: '', else: 'data-bs-parent="accordion-{data-uid}"')}">
+          <div id="body-{data.uid}-{iteration.cycle}"class="accordion-collapse {f:if(condition: '{show} == "show"', then: 'show')} collapse " aria-labelledby="#header-{data.uid}-{iteration.cycle}" {f:if(condition: '{always-open} == "true" ', then: '', else: 'data-bs-parent="#accordion-{data.uid}"')}">
 
             <div class="ce-accordion__body-wrp accordion-body flex-column d-flex">
               <f:if condition="{item.images}">
@@ -158,7 +158,7 @@
   <f:switch expression="{item.data.header_layout}">
     <f:case value="1">
       <h1 class="ce-accordion__header header">
-        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+        <button class="accordion-button {item.data.header_style} {f:if(condition: '{open} == "false"', then: 'collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
           <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h1>
@@ -172,28 +172,28 @@
     </f:case>
     <f:case value="3">
       <h3 class="ce-accordion__header header">
-        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+        <button class="accordion-button {item.data.header_style} {f:if(condition: '{open} == "false"', then: 'collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
           <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h3>
     </f:case>
     <f:case value="4">
       <h4 class="ce-accordion__header header">
-        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+        <button class="accordion-button {item.data.header_style} {f:if(condition: '{open} == "false"', then: 'collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
           <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h4>
     </f:case>
     <f:case value="5">
       <h5 class="ce-accordion__header header">
-        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+        <button class="accordion-button {item.data.header_style} {f:if(condition: '{open} == "false"', then: 'collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
           <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h5>
     </f:case>
     <f:case value="6">
       <h6 class="ce-accordion__header header">
-        <button class="accordion-button {item.data.header_style} collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
+        <button class="accordion-button {item.data.header_style} {f:if(condition: '{open} == "false"', then: 'collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#body-{data.uid}-{iteration.cycle}" aria-expanded="{open}" aria-controls="#body-{data.uid}-{iteration.cycle}">
           <t3kit:contentEditable table="{table}" field="{field}" uid="{item.data.uid}">{item.data.header}</t3kit:contentEditable>
         </button>
       </h6>
