@@ -88,10 +88,7 @@ class SvgViewHelper extends AbstractViewHelper
         // Try and remove script tags
         $svgContent = preg_replace('/<script[\s\S]*?>[\s\S]*?<\/script>/i', '', $svgContent);
 
-        // Disables the functionality to allow external entities to be loaded when parsing the XML, must be kept
-        $previousValueOfEntityLoader = libxml_disable_entity_loader(true);
         $svgElement = simplexml_load_string($svgContent);
-        libxml_disable_entity_loader($previousValueOfEntityLoader);
 
         // Remove xml version tag
         $domXml = dom_import_simplexml($svgElement);
