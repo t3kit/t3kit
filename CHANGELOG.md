@@ -1,4 +1,12 @@
 
+#### v10.1.0 `October 22, 2021`
+
+- **[BUGFIX]** fix illegal byte sequence error (#287) ([4def5a4d](https://github.com/t3kit/t3kit/commit/4def5a4d))
+- **[TASK]** Accordion template changes (#283) ([2c49ee40](https://github.com/t3kit/t3kit/commit/2c49ee40))
+- **[FEATURE]** add new accordion content element (#281) ([498bf250](https://github.com/t3kit/t3kit/commit/498bf250))
+
+***
+
 #### v10.0.0 `September 24, 2021`
 
 - **[TASK]** update favicons ([01103f69](https://github.com/t3kit/t3kit/commit/01103f69))
