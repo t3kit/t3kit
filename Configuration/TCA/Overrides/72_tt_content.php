@@ -798,7 +798,7 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                     ]
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['mediafile_ext'])
+        ], $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext'])
     ],
 ]);
 

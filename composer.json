@@ -24,27 +24,27 @@
     "docs": "https://github.com/t3kit/t3kit"
   },
   "require": {
-    "typo3/cms-backend": "^10.4.6",
-    "typo3/cms-core": "^10.4.6",
-    "typo3/cms-extbase": "^10.4.6",
-    "typo3/cms-extensionmanager": "^10.4.6",
-    "typo3/cms-filelist": "^10.4.6",
-    "typo3/cms-filemetadata": "^10.4.6",
-    "typo3/cms-fluid": "^10.4.6",
-    "typo3/cms-frontend": "^10.4.6",
-    "typo3/cms-install": "^10.4.6",
-    "typo3/cms-recordlist": "^10.4.6",
-    "typo3/cms-form": "^10.4.6",
-    "typo3/cms-rte-ckeditor": "^10.4.6",
-    "typo3/cms-seo": "^10.4.6",
-    "typo3/cms-tstemplate": "^10.4.6",
-    "typo3/cms-felogin": "^10.4.6",
-    "b13/container": "^1.3"
+    "typo3/cms-backend": "^11.5.0",
+    "typo3/cms-core": "^11.5.0",
+    "typo3/cms-extbase": "^11.5.0",
+    "typo3/cms-extensionmanager": "^11.5.0",
+    "typo3/cms-filelist": "^11.5.0",
+    "typo3/cms-filemetadata": "^11.5.0",
+    "typo3/cms-fluid": "^11.5.0",
+    "typo3/cms-frontend": "^11.5.0",
+    "typo3/cms-install": "^11.5.0",
+    "typo3/cms-recordlist": "^11.5.0",
+    "typo3/cms-form": "^11.5.0",
+    "typo3/cms-rte-ckeditor": "^11.5.0",
+    "typo3/cms-seo": "^11.5.0",
+    "typo3/cms-tstemplate": "^11.5.0",
+    "typo3/cms-felogin": "^11.5.0",
+    "b13/container": "dev-master"
   },
   "require-dev": {
     "editorconfig-checker/editorconfig-checker": "~10.2.3",
     "squizlabs/php_codesniffer": "~3.6.0",
-    "helmich/typo3-typoscript-lint": "~2.5.0",
+    "helmich/typo3-typoscript-lint": "~2.5.2",
     "sclable/xml-lint": "~0.4.0"
   },
   "suggest": {
@@ -76,7 +76,11 @@
       "@lint-editorconfig",
       "@lint-typoscript",
       "@lint-xml"
-    ]
+    ],
+    "ci": "./.localconf/composer/sshauth.sh composer i",
+    "cup": "./.localconf/composer/sshauth.sh composer up",
+    "cre": "./.localconf/composer/sshauth.sh composer require",
+    "ctest": "./.localconf/composer/sshauth.sh composer test"
   },
   "extra": {
     "typo3/cms": {
