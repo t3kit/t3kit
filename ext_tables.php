@@ -26,7 +26,7 @@ defined('TYPO3_MODE') || die();
  * Load additional t3kit stylesheets to skin the Backend
  * ===========================
  */
-$GLOBALS['TBE_STYLES']['skins'][$_EXTKEY]['stylesheetDirectories'][] = 'EXT:t3kit/Resources/Public/CSS/BE/';
+$GLOBALS['TBE_STYLES']['skins']['t3kit']['stylesheetDirectories'][] = 'EXT:t3kit/Resources/Public/CSS/BE/';
 
 /***************
 * Allow Custom Records on Standard Pages
