@@ -1,15 +1,13 @@
-const fsPromises = require('fs').promises
-const fse = require('fs-extra')
-const pEachSeries = require('p-each-series')
-const size = require('filesize')
-const postcss = require('postcss')
-const cssimport = require('postcss-import')
-const cssnano = require('cssnano')
-const utils = require('../utils')
+import fsPromises from 'fs/promises'
+import fse from 'fs-extra'
+import pEachSeries from 'p-each-series'
+import size from 'filesize'
+import postcss from 'postcss'
+import cssimport from 'postcss-import'
+import cssnano from 'cssnano'
+import * as utils from '../utils/index.js'
 
-const postcssPlugins = [
-  cssimport
-]
+const postcssPlugins = [cssimport]
 process.env.NODE_ENV === 'production' && postcssPlugins.push(cssnano({ preset: 'default' }))
 
 async function compileCss (localConf, options) {
@@ -44,4 +42,4 @@ async function compileCss (localConf, options) {
   }
 }
 
-exports.compileCss = compileCss
+export { compileCss }

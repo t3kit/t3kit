@@ -1,12 +1,12 @@
-const fsPromises = require('fs').promises
-const { promisify } = require('util')
-const size = require('filesize')
-const zlib = require('zlib')
-const { pipeline } = require('stream')
+import fsPromises from 'fs/promises'
+import { promisify } from 'util'
+import size from 'filesize'
+import zlib from 'zlib'
+import { pipeline } from 'stream'
+import { createReadStream, createWriteStream } from 'fs'
+import pEachSeries from 'p-each-series'
+import * as utils from '../utils/index.js'
 const pipe = promisify(pipeline)
-const { createReadStream, createWriteStream } = require('fs')
-const pEachSeries = require('p-each-series')
-const utils = require('../utils')
 
 async function compressCss (localConf) {
   try {
@@ -90,5 +90,4 @@ async function compressJs (localConf) {
   }
 }
 
-exports.compressCss = compressCss
-exports.compressJs = compressJs
+export { compressCss, compressJs }

@@ -1,8 +1,8 @@
-const fsPromises = require('fs').promises
-const pEachSeries = require('p-each-series')
-const hasha = require('hasha')
-const size = require('filesize')
-const utils = require('../utils')
+import fsPromises from 'fs/promises'
+import pEachSeries from 'p-each-series'
+import hasha from 'hasha'
+import size from 'filesize'
+import * as utils from '../utils/index.js'
 
 async function revCss (localConf) {
   try {
@@ -52,5 +52,4 @@ async function revJs (localConf) {
   }
 }
 
-exports.revCss = revCss
-exports.revJs = revJs
+export { revCss, revJs }

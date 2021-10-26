@@ -1,14 +1,14 @@
-const localConf = require('./localconf')
-require('./check/node').checkNode()
-
-const { clean } = require('./clean')
-const { compileCss } = require('./css')
-const { compileScss } = require('./sass')
-const { compileJs } = require('./rollup')
-const { addCssTemplate, addJsTemplate } = require('./template')
-const { compressCss, compressJs } = require('./compress')
-const { revCss, revJs } = require('./rev')
-const utils = require('./utils')
+import { localConf } from './localconf/index.js'
+import { checkNode } from './check/node.js'
+import { clean } from './clean/index.js'
+import { compileCss } from './css/index.js'
+import { compileScss } from './sass/index.js'
+import { compileJs } from './rollup/index.js'
+import { addCssTemplate, addJsTemplate } from './template/index.js'
+import { compressCss, compressJs } from './compress/index.js'
+import { revCss, revJs } from './rev/index.js'
+import * as utils from './utils/index.js'
+checkNode()
 
 async function build () {
   const timeStart = utils.mainTaskStart('Build task')

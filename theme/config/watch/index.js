@@ -1,10 +1,10 @@
-const chokidar = require('chokidar')
-const chalk = require('chalk')
-const { compileCss } = require('../css')
-const { compileScss } = require('../sass')
-const { compileJs } = require('../rollup')
-const { addCssTemplate, addJsTemplate } = require('../template')
-const utils = require('../utils')
+import chokidar from 'chokidar'
+import chalk from 'chalk'
+import { compileCss } from '../css/index.js'
+import { compileScss } from '../sass/index.js'
+import { compileJs } from '../rollup/index.js'
+import { addCssTemplate, addJsTemplate } from '../template/index.js'
+import * as utils from '../utils/index.js'
 
 async function watchAll (localConf) {
   try {
@@ -35,4 +35,4 @@ async function watchAll (localConf) {
   }
 }
 
-exports.watchAll = watchAll
+export { watchAll }

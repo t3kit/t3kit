@@ -1,9 +1,9 @@
-const localConf = require('./localconf')
-require('./check/node').checkNode()
-
-const utils = require('./utils')
-const { cleanFavicons } = require('./clean')
-const { generateFavicons } = require('./real-favicon')
+import { localConf } from './localconf/index.js'
+import { checkNode } from './check/node.js'
+import { cleanFavicons } from './clean/index.js'
+import { generateFavicons } from './real-favicon/index.js'
+import * as utils from './utils/index.js'
+checkNode()
 
 async function favicons () {
   const timeStart = utils.mainTaskStart('Add favicons task')

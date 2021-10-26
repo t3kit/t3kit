@@ -1,14 +1,16 @@
-const fsPromises = require('fs').promises
-const fse = require('fs-extra')
-const size = require('filesize')
-const pEachSeries = require('p-each-series')
-const rollup = require('rollup')
-const { nodeResolve } = require('@rollup/plugin-node-resolve')
-const replace = require('@rollup/plugin-replace')
-const { terser } = require('rollup-plugin-terser')
-const sizes = require('rollup-plugin-sizes')
-const { getBabelOutputPlugin } = require('@rollup/plugin-babel')
-const utils = require('../utils')
+import fsPromises from 'fs/promises'
+
+import fse from 'fs-extra'
+import size from 'filesize'
+import pEachSeries from 'p-each-series'
+import { rollup } from 'rollup'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
+import replace from '@rollup/plugin-replace'
+import { terser } from 'rollup-plugin-terser'
+import sizes from 'rollup-plugin-sizes'
+import { getBabelOutputPlugin } from '@rollup/plugin-babel'
+
+import * as utils from '../utils/index.js'
 
 async function compileJs (localConf, options) {
   try {
@@ -58,7 +60,7 @@ async function compileJs (localConf, options) {
         globals: {}
       }
       outputOptions.globals = { ...outputOptions.globals, ...localConf.globals }
-      const bundle = await rollup.rollup(inputOptions)
+      const bundle = await rollup(inputOptions)
       await bundle.write(outputOptions)
 
       const fileStats = await fsPromises.stat(`${localConf.JS_DIST}${file.name}`)
@@ -71,4 +73,4 @@ async function compileJs (localConf, options) {
   }
 }
 
-exports.compileJs = compileJs
+export { compileJs }

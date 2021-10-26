@@ -1,16 +1,23 @@
-const fsPromises = require('fs').promises
-const fse = require('fs-extra')
-const gitRev = require('git-rev-sync')
-const rfg = require('rfg-api').init()
-const utils = require('../utils')
+import fsPromises from 'fs/promises'
+import { exec } from 'child_process'
+import fse from 'fs-extra'
+import rfg from 'rfg-api'
+import { promisify } from 'util'
+import * as utils from '../utils/index.js'
+const exe = promisify(exec)
+
+async function gitRevHash () {
+  const { stdout } = await exe('git rev-parse --short HEAD')
+  const stdoutStr = stdout.replace(/\r?\n|\r/g, ' ')
+  return stdoutStr
+}
 
 const API_KEY = 'eabf77c98d6bd1eea81fb58be7895c42dafc2b21'
-
-function generateFaviconsPromise (localConf) {
-  localConf.FAVICON_OPTIONS.versioning.paramValue = gitRev.short()
+async function generateFaviconsPromise (localConf) {
+  localConf.FAVICON_OPTIONS.versioning.paramValue = await gitRevHash()
   const faviconOptions = localConf.FAVICON_OPTIONS
   return new Promise((resolve, reject) => {
-    const request = rfg.createRequest({
+    const request = rfg.init().createRequest({
       apiKey: API_KEY,
       masterPicture: `${localConf.FAVICONS_SRC}${localConf.FAVICON_MASTER_PICTURE}`,
       iconsPath: localConf.FAVICON_PATH,
@@ -19,7 +26,7 @@ function generateFaviconsPromise (localConf) {
       versioning: faviconOptions.versioning
     })
 
-    rfg.generateFavicon(request, localConf.FAVICONS_DIST, function (error, data) {
+    rfg.init().generateFavicon(request, localConf.FAVICONS_DIST, function (error, data) {
       if (error) {
         utils.errLogFn(error.message, { functionName: 'generateFaviconsPromise', newPromise: true })
         reject(error)
@@ -46,4 +53,4 @@ async function generateFavicons (localConf) {
   }
 }
 
-exports.generateFavicons = generateFavicons
+export { generateFavicons }

@@ -1,19 +1,16 @@
-const fsPromises = require('fs').promises
-const pEachSeries = require('p-each-series')
-const size = require('filesize')
-const fse = require('fs-extra')
-const sass = require('sass')
-const Fiber = require('fibers')
-const nodeModuleImport = require('@node-sass/node-module-importer')
-
-const utils = require('../utils')
+import fsPromises from 'fs/promises'
+import pEachSeries from 'p-each-series'
+import size from 'filesize'
+import fse from 'fs-extra'
+import sass from 'sass'
+import moduleImporter from 'sass-module-importer'
+import * as utils from '../utils/index.js'
 
 function sassPromise (fileName) {
   return new Promise((resolve, reject) => {
     sass.render({
       file: fileName,
-      importer: nodeModuleImport,
-      fiber: Fiber
+      importer: moduleImporter()
     },
     function (error, result) {
       if (error) {
@@ -51,4 +48,4 @@ async function compileScss (localConf, options) {
   }
 }
 
-exports.compileScss = compileScss
+export { compileScss }

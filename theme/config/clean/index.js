@@ -1,6 +1,6 @@
-const pEachSeries = require('p-each-series')
-const utils = require('../utils')
-const del = require('del')
+import pEachSeries from 'p-each-series'
+import del from 'del'
+import * as utils from '../utils/index.js'
 
 async function clean (localConf) {
   try {
@@ -52,7 +52,4 @@ async function cleanIcons (localConf) {
   }
 }
 
-exports.clean = clean
-exports.cleanIcons = cleanIcons
-exports.cleanFavicons = cleanFavicons
-exports.cleanFileTypeIcons = cleanFileTypeIcons
+export { clean, cleanIcons, cleanFavicons, cleanFileTypeIcons }

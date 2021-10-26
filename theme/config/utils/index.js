@@ -1,7 +1,7 @@
-const globby = require('globby')
-const chalk = require('chalk')
-const moment = require('moment')
-const boxen = require('boxen')
+import boxen from 'boxen'
+import { globby } from 'globby'
+import chalk from 'chalk'
+import moment from 'moment'
 
 let envContext
 if (process.env.NODE_ENV === 'production') {
@@ -131,10 +131,4 @@ function mainTaskEnd (options) {
   )
 }
 
-exports.start = start
-exports.boxEnd = boxEnd
-exports.mainTaskStart = mainTaskStart
-exports.mainTaskEnd = mainTaskEnd
-exports.errLogFn = errLogFn
-exports.filesStats = filesStats
-exports.getFileList = getFileList
+export { start, boxEnd, mainTaskStart, mainTaskEnd, errLogFn, filesStats, getFileList }

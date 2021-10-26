@@ -1,4 +1,4 @@
-const localConf = module.exports = {}
+const localConf = {}
 localConf.rootPath = process.cwd()
 localConf.dirName = localConf.rootPath.split('/').pop()
 
@@ -137,3 +137,5 @@ localConf.FAVICON_OPTIONS = {
     paramValue: 'test'
   }
 }
+
+export { localConf }

@@ -1,5 +1,7 @@
-const semver = require('semver')
-const boxen = require('boxen')
+import boxen from 'boxen'
+import { createRequire } from 'module'
+import semver from 'semver'
+const require = createRequire(import.meta.url)
 const nodeEngine = require('../../../package').engines.node
 
 function checkNode () {
@@ -9,4 +11,4 @@ function checkNode () {
   }
 }
 
-exports.checkNode = checkNode
+export { checkNode }

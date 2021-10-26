@@ -1,6 +1,6 @@
-const fsPromises = require('fs').promises
-const pEachSeries = require('p-each-series')
-const utils = require('../utils')
+import fsPromises from 'fs/promises'
+import pEachSeries from 'p-each-series'
+import * as utils from '../utils/index.js'
 
 function addLinkSettings (link, settings) {
   return link.replace('%_settings_%', settings)
@@ -97,5 +97,4 @@ async function addJsTemplate (localConf) {
   }
 }
 
-exports.addJsTemplate = addJsTemplate
-exports.addCssTemplate = addCssTemplate
+export { addJsTemplate, addCssTemplate }

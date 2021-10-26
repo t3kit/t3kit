@@ -1,6 +1,6 @@
-const pEachSeries = require('p-each-series')
-const utils = require('../utils')
-const cpy = require('cpy')
+import pEachSeries from 'p-each-series'
+import cpy from 'cpy'
+import * as utils from '../utils/index.js'
 
 async function copyIcons (localConf) {
   try {
@@ -28,5 +28,4 @@ async function copyFileTypeIcons (localConf) {
   }
 }
 
-exports.copyIcons = copyIcons
-exports.copyFileTypeIcons = copyFileTypeIcons
+export { copyIcons, copyFileTypeIcons }
