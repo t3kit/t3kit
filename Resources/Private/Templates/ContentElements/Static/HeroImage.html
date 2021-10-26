@@ -8,13 +8,8 @@
 <!-- t3kit: Resources/Private/Templates/ContentElements/Static/HeroImage.html [begin] -->
 
 
-  <f:if condition="{flexform.height} == 0">
-    <f:then>
-      <f:variable name="height">400</f:variable>
-    </f:then>
-    <f:else>
-      <f:variable name="height">{flexform.height}</f:variable>
-    </f:else>
+  <f:if condition="{flexform.height} != 0">
+    <f:variable name="height">{flexform.height}</f:variable>
   </f:if>
 
   <f:if condition="{data.section_container_width} == 'container'">
