@@ -2,7 +2,7 @@
   --t3-ce-header-nav-bg: var(--t3-body-color);
   --t3-ce-header-nav-color-hs: 0, 0%;
   --t3-ce-header-nav-color-l: 100%;
-  --t3-ce-header-nav-color: hsl(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l));
+  --t3-ce-header-nav-color: hsl(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l));
   --t3-ce-header-nav-padding-top: 0.5rem;
   --t3-ce-header-nav-padding-right: 0;
   --t3-ce-header-nav-padding-bottom: 0.5rem;
@@ -14,13 +14,13 @@
   --t3-ce-header-nav-link-padding-left: 1rem;
   --t3-ce-header-nav-link-padding-right: 1rem;
   --t3-ce-header-nav-link-text-transform: uppercase;
-  --t3-ce-header-nav-hover-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.7);
-  --t3-ce-header-nav-hover-bg: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.08);
-  --t3-ce-header-nav-active-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.7);
-  --t3-ce-header-nav-active-bg: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.05);
+  --t3-ce-header-nav-hover-color: hsla(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l) 0.7);
+  --t3-ce-header-nav-hover-bg: hsla(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l) 0.08);
+  --t3-ce-header-nav-active-color: hsla(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l) 0.7);
+  --t3-ce-header-nav-active-bg: hsla(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l) 0.05);
   --t3-ce-header-nav-font-size: 1rem;
-  --t3-ce-header-nav-toggler-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.55);
-  --t3-ce-header-nav-toggler-border-color: hsla(var(--t3-ce-header-nav-color-hs), var(--t3-ce-header-nav-color-l), 0.2);
+  --t3-ce-header-nav-toggler-color: hsla(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l) 0.55);
+  --t3-ce-header-nav-toggler-border-color: hsla(var(--t3-ce-header-nav-color-hs) var(--t3-ce-header-nav-color-l) 0.2);
   --t3-ce-header-nav-toggler-padding: 0.25rem 0.75rem;
   --t3-ce-header-nav-toggler-border: 1px;
   --t3-ce-header-nav-toggler-border-radius: 0.25rem;
@@ -30,20 +30,20 @@
   /* dropdown */
   --t3-ce-header-nav-dropdown-color-hs: var(--t3-ce-header-nav-color-hs);
   --t3-ce-header-nav-dropdown-color-l: var(--t3-ce-header-nav-color-l);
-  --t3-ce-header-nav-dropdown-color: hsl(var(--t3-ce-header-nav-dropdown-color-hs), var(--t3-ce-header-nav-dropdown-color-l));
+  --t3-ce-header-nav-dropdown-color: hsl(var(--t3-ce-header-nav-dropdown-color-hs) var(--t3-ce-header-nav-dropdown-color-l));
   --t3-ce-header-nav-dropdown-bg: var(--t3-ce-header-nav-bg);
   --t3-ce-header-nav-dropdown-min-width: 12rem;
   --t3-ce-header-nav-dropdown-padding-top: 0.5rem;
   --t3-ce-header-nav-dropdown-margin-top: 0;
-  --t3-ce-header-nav-dropdown-border-color: hsla(var(--t3-ce-header-nav-dropdown-color-hs), var(--t3-ce-header-nav-dropdown-color-l), 0.2);
+  --t3-ce-header-nav-dropdown-border-color: hsla(var(--t3-ce-header-nav-dropdown-color-hs) var(--t3-ce-header-nav-dropdown-color-l) 0.2);
   --t3-ce-header-nav-dropdown-border-width: 1px;
   --t3-ce-header-nav-dropdown-border-radius: 0;
   --t3-ce-header-nav-dropdown-item-padding-left: var(--t3-ce-header-nav-link-padding-left);
   --t3-ce-header-nav-dropdown-item-padding-top: 0.25rem;
-  --t3-ce-header-nav-dropdown-item-hover-color: hsla(var(--t3-ce-header-nav-dropdown-color-hs), var(--t3-ce-header-nav-dropdown-color-l), 0.7);
-  --t3-ce-header-nav-dropdown-item-hover-bg: hsla(var(--t3-ce-header-nav-dropdown-color-hs), var(--t3-ce-header-nav-dropdown-color-l), 0.1);
-  --t3-ce-header-nav-dropdown-item-active-bg: hsla(var(--t3-ce-header-nav-dropdown-color-hs), var(--t3-ce-header-nav-dropdown-color-l), 0.05);
-  --t3-ce-header-nav-dropdown-item-active-color: hsla(var(--t3-ce-header-nav-dropdown-color-hs), var(--t3-ce-header-nav-dropdown-color-l), 0.7);
+  --t3-ce-header-nav-dropdown-item-hover-color: hsla(var(--t3-ce-header-nav-dropdown-color-hs) var(--t3-ce-header-nav-dropdown-color-l) 0.7);
+  --t3-ce-header-nav-dropdown-item-hover-bg: hsla(var(--t3-ce-header-nav-dropdown-color-hs) var(--t3-ce-header-nav-dropdown-color-l) 0.1);
+  --t3-ce-header-nav-dropdown-item-active-bg: hsla(var(--t3-ce-header-nav-dropdown-color-hs) var(--t3-ce-header-nav-dropdown-color-l) 0.05);
+  --t3-ce-header-nav-dropdown-item-active-color: hsla(var(--t3-ce-header-nav-dropdown-color-hs) var(--t3-ce-header-nav-dropdown-color-l) 0.7);
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -57,7 +57,7 @@
   padding-top: var(--t3-ce-header-nav-padding-top);
   padding-right: var(--t3-ce-header-nav-padding-right);
   padding-bottom: var(--t3-ce-header-nav-padding-bottom);
-  padding-left: var(--t3-ce-header-nav-padding-left);
+  padding-left: var(--t3-ce-header-nav-padding-left); /* stylelint-disable-line */
   background-color: var(--t3-ce-header-nav-bg);
 }
 
@@ -66,7 +66,7 @@
   padding-top: var(--t3-ce-header-nav-link-padding-top);
   padding-bottom: var(--t3-ce-header-nav-link-padding-top);
   padding-right: var(--t3-ce-header-nav-link-padding-right);
-  padding-left: var(--t3-ce-header-nav-link-padding-left);
+  padding-left: var(--t3-ce-header-nav-link-padding-left); /* stylelint-disable-line */
   text-decoration: none;
   text-transform: var(--t3-ce-header-nav-link-text-transform);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -265,7 +265,7 @@
 }
 
 .header.site-header.sticky-header {
-  position: sticky; /* stylelint-disable-line */
+  position: sticky;
   top: 0;
   z-index: 999;
 }

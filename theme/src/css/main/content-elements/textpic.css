@@ -83,6 +83,14 @@
 /* @media (max-width: 991.98px) { ... } */
 /* Large devices (desktops, 992px and up) lg */
 @media (min-width: 992px) {
+  .text-img-left .ce-textpic__picture {
+    padding-right: 1rem;
+  }
+
+  .text-img-right .ce-textpic__picture {
+    padding-left: 1rem;
+  }
+
   .ce-textpic.textorient-auto .ce-textpic__picture {
     flex-grow: 0;
     flex-basis: auto;
@@ -94,14 +102,6 @@
 
   .text-img-right {
     flex-direction: row-reverse;
-  }
-
-  .text-img-left .ce-textpic__picture {
-    padding-right: 1rem;
-  }
-
-  .text-img-right .ce-textpic__picture {
-    padding-left: 1rem;
   }
 
   .text-img-left .ce-textpic__text {

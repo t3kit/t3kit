@@ -74,6 +74,14 @@
 /* @media (max-width: 991.98px) { ... } */
 /* Large devices (desktops, 992px and up) lg */
 @media (min-width: 992px) {
+  .text-media-right .ce-textmedia__media {
+    padding-left: 1rem;
+  }
+
+  .text-media-left .ce-textmedia__media {
+    padding-right: 1rem;
+  }
+
   .ce-textmedia.textorient-auto .ce-textmedia__media {
     flex-grow: 0;
     flex-basis: auto;
@@ -85,14 +93,6 @@
 
   .text-media-right {
     flex-direction: row-reverse;
-  }
-
-  .text-media-left .ce-textmedia__media {
-    padding-right: 1rem;
-  }
-
-  .text-media-right .ce-textmedia__media {
-    padding-left: 1rem;
   }
 
   .text-media-left .ce-textmedia__text {

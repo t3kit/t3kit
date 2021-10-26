@@ -6,9 +6,9 @@
   --t3-table-border-color: var(--t3-border-color);
   --t3-table-bg: transparent;
   --t3-table-striped-color: var(--t3-table-color);
-  --t3-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --t3-table-striped-bg: rgba(0 0 0 5%);
   --t3-table-hover-color: var(--t3-table-color);
-  --t3-table-hover-bg: rgba(0, 0, 0, 0.075);
+  --t3-table-hover-bg: rgba(0 0 0 7.5%);
 
   width: 100%;
   margin-bottom: 1rem;
@@ -18,7 +18,7 @@
 }
 
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
   background-color: var(--t3-table-bg);
   border-bottom-width: 1px;
 }
@@ -31,16 +31,8 @@
   vertical-align: bottom;
 }
 
-.table > :not(:last-child) > :last-child > * {
-  border-bottom-color: currentColor;
-}
-
-.caption-top {
-  caption-side: top;
-}
-
 .table-sm > :not(caption) > * > * {
-  padding: 0.25rem 0.25rem;
+  padding: 0.25rem;
 }
 
 .table-bordered > :not(caption) > * {
@@ -53,6 +45,14 @@
 
 .table-borderless > :not(caption) > * > * {
   border-bottom-width: 0;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: currentColor;
+}
+
+.caption-top {
+  caption-side: top;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {

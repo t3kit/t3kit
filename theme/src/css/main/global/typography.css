@@ -64,13 +64,14 @@ h4,
 .large-h4,
 .large-h5,
 .large-h6,
-.fluid-font-size {
+.fluid-font-size { /* stylelint-disable */
   --t3-fluid-font-size:
     calc(
       ((20 + ((var(--font-size) - 20) / 10)) / 16 * 1rem)
       +
       (((var(--font-size) - (20 + ((var(--font-size) - 20) / 10)) ) * 100 / 1200) * 1vw)
-    );
+    ); /* stylelint-enable */
+
   --t3-font-size-to-rem: calc(var(--font-size) / 16 * 1rem);
 
   font-size: var(--t3-fluid-font-size);

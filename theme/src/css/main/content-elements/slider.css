@@ -2,17 +2,17 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 .ce-slider__wrp {
   --t3-ce-slider-header-color: var(--t3-primary);
-  --t3-ce-slider-header-link-hover-color: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.8);
+  --t3-ce-slider-header-link-hover-color: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.8);
   --t3-ce-slider-subheader-color: var(--t3-white);
   --t3-ce-slider-bodytext-color: var(--t3-white);
   --t3-ce-slider-link-color: var(--t3-light);
-  --t3-ce-slider-link-hover-color: hsla(var(--t3-light-hs), var(--t3-light-l), 0.8);
+  --t3-ce-slider-link-hover-color: hsla(var(--t3-light-hs) var(--t3-light-l) 0.8);
   --t3-ce-slider-caption-width: 75%;
   --t3-ce-slider-min-height-on-mobile: 460px;
-  --t3-ce-slider-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
-  --t3-ce-slider-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
-  --t3-ce-slider-light-overlay: hsla(var(--t3-light-hs), var(--t3-light-l), 0.4);
-  --t3-ce-slider-dark-overlay: hsla(var(--t3-dark-hs), var(--t3-dark-l), 0.4);
+  --t3-ce-slider-primary-overlay: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.4);
+  --t3-ce-slider-secondary-overlay: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.4);
+  --t3-ce-slider-light-overlay: hsla(var(--t3-light-hs) var(--t3-light-l) 0.4);
+  --t3-ce-slider-dark-overlay: hsla(var(--t3-dark-hs) var(--t3-dark-l) 0.4);
   --t3-ce-slider-navigation-color: var(--t3-primary);
   --t3-ce-slider-pagination-color: var(--t3-primary);
 }
@@ -87,7 +87,7 @@
   font-weight: 500;
   color: var(--t3-ce-slider-bodytext-color);
   overflow: hidden;
-  display: -webkit-box;
+  display: -webkit-box; /* stylelint-disable-line */
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
@@ -98,7 +98,7 @@
 }
 
 .ce-slider--overlay-primary .picture-partial__item-img {
-  background-color: hsl(var(--t3-primary-hs), calc(var(--t3-primary-l) - 30%));
+  background-color: hsl(var(--t3-primary-hs) calc(var(--t3-primary-l) - 30%));
 }
 
 .ce-slider--overlay-secondary {
@@ -106,7 +106,7 @@
 }
 
 .ce-slider--overlay-secondary .picture-partial__item-img {
-  background-color: hsl(var(--t3-secondary-hs), calc(var(--t3-secondary-l) - 30%));
+  background-color: hsl(var(--t3-secondary-hs) calc(var(--t3-secondary-l) - 30%));
 }
 
 .ce-slider--overlay-dark {
@@ -114,7 +114,7 @@
 }
 
 .ce-slider--overlay-dark .picture-partial__item-img {
-  background-color: hsl(var(--t3-dark-hs), calc(var(--t3-dark-l) - 20%));
+  background-color: hsl(var(--t3-dark-hs) calc(var(--t3-dark-l) - 20%));
 }
 
 .ce-slider--overlay-light {
@@ -122,11 +122,11 @@
 }
 
 .ce-slider--overlay-light .picture-partial__item-img {
-  background-color: hsl(var(--t3-light-hs), calc(var(--t3-light-l) - 70%));
+  background-color: hsl(var(--t3-light-hs) calc(var(--t3-light-l) - 70%));
 }
 
 .ce-slider--overlay-disable .picture-partial__item-img {
-  background-color: hsl(var(--t3-dark-hs), calc(var(--t3-dark-l) - 20%));
+  background-color: hsl(var(--t3-dark-hs) calc(var(--t3-dark-l) - 20%));
 }
 
 /* -------------------------------------------------------- */

@@ -9,10 +9,10 @@
   --t3-sidenav-bg-l: 100%;
   --t3-sidenav-active-bg-hs: var(--t3-secondary-hs);
   --t3-sidenav-active-bg-l: var(--t3-secondary-l);
-  --t3-sidenav-active-bg: hsla(var(--t3-sidenav-active-bg-hs), var(--t3-sidenav-active-bg-l));
-  --t3-sidenav-active-bg-hover: hsla(var(--t3-sidenav-active-bg-hs), calc(var(--t3-sidenav-active-bg-l) - 3%));
+  --t3-sidenav-active-bg: hsla(var(--t3-sidenav-active-bg-hs) var(--t3-sidenav-active-bg-l));
+  --t3-sidenav-active-bg-hover: hsla(var(--t3-sidenav-active-bg-hs) calc(var(--t3-sidenav-active-bg-l) - 3%));
   --t3-sidenav-active-bg-color-hover: var(--t3-sidenav-active-color);
-  --t3-sidenav-active-border-color: hsla(var(--t3-sidenav-active-bg-hs), calc(var(--t3-sidenav-active-bg-l) + 7%));
+  --t3-sidenav-active-border-color: hsla(var(--t3-sidenav-active-bg-hs) calc(var(--t3-sidenav-active-bg-l) + 7%));
 }
 
 .sidenav__list {
@@ -30,7 +30,7 @@
   text-decoration: none;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  border-top: 1px solid hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 10%));
+  border-top: 1px solid hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 10%));
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -47,22 +47,22 @@
 
 .sidenav__list-item-link--level2 {
   padding-left: 1.5rem;
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 3%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 3%));
 }
 
 .sidenav__list-item-link--level3 {
   padding-left: 2rem;
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 6%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 6%));
 }
 
 .sidenav__list-item-link--level4 {
   padding-left: 2.5rem;
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 9%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 9%));
 }
 
 .sidenav__list-item-link--level5 {
   padding-left: 3rem;
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 12%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 12%));
 }
 
 .active > .sidenav__list-item-link {
@@ -84,23 +84,23 @@
 }
 
 .sidenav__list-item-link--level1:hover {
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 3%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 3%));
 }
 
 .sidenav__list-item-link--level2:hover {
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 7%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 7%));
 }
 
 .sidenav__list-item-link--level3:hover {
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 10%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 10%));
 }
 
 .sidenav__list-item-link--level4:hover {
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 14%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 14%));
 }
 
 .sidenav__list-item-link--level5:hover {
-  background-color: hsl(var(--t3-sidenav-bg-hs), calc(var(--t3-sidenav-bg-l) - 17%));
+  background-color: hsl(var(--t3-sidenav-bg-hs) calc(var(--t3-sidenav-bg-l) - 17%));
 }
 
 /* -------------------------------------------------------- */

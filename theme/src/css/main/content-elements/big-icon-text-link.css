@@ -20,10 +20,7 @@
 }
 
 .ce-big-icon-text-link__wrp.internal-margins {
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  padding: 1.6rem;
 }
 
 .ce-big-icon-text-link__icon-wrp {
@@ -64,7 +61,7 @@
 }
 
 .ce-big-icon-text-link__link .stretched-link:hover:after {
-  background-color: hsla(0, 0, 0%, 0.03);
+  background-color: hsla(0deg 0 0% 3%);
 }
 
 /* -------------------------------------------------------- */

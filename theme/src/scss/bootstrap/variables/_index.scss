@@ -32,6 +32,7 @@ $enable-negative-margins: true;
 
 // ==============================
 // Import Bootstrap default variables
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
+@import "bootstrap/scss/_functions.scss";
+@import "bootstrap/scss/_variables.scss";
+
 // ==============================

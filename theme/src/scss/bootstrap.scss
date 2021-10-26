@@ -1,27 +1,27 @@
 // ===== bootstrap reboot & grid =====
 
 // Import project variables on top of Bootstrap to override default theme
-@import 'bootstrap/variables';
+@import "bootstrap/variables";
 
 // Bootstrap Configuration
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/_mixins.scss";
+@import "bootstrap/scss/_utilities.scss";
 
 // // Bootstrap reboot
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/_root.scss";
+@import "bootstrap/scss/_reboot.scss";
 
 // // Bootstrap Grid
-@import "bootstrap/scss/containers";
-@import "bootstrap/scss/grid";
+@import "bootstrap/scss/_containers.scss";
+@import "bootstrap/scss/_grid.scss";
 
 // // Bootstrap Helpers
-@import "bootstrap/scss/helpers/clearfix";
-@import "bootstrap/scss/helpers/ratio";
-@import "bootstrap/scss/helpers/position";
-@import "bootstrap/scss/helpers/visually-hidden";
-@import "bootstrap/scss/helpers/stretched-link";
-@import "bootstrap/scss/helpers/text-truncation";
+@import "bootstrap/scss/helpers/_clearfix.scss";
+@import "bootstrap/scss/helpers/_ratio.scss";
+@import "bootstrap/scss/helpers/_position.scss";
+@import "bootstrap/scss/helpers/_visually-hidden.scss";
+@import "bootstrap/scss/helpers/_stretched-link.scss";
+@import "bootstrap/scss/helpers/_text-truncation.scss";
 
 // Bootstrap Utilities
 // Only use the utilities we need
@@ -60,7 +60,6 @@ $utilities: map-get-multiple(
     "padding-end",
     "padding-bottom",
     "padding-start",
-    //===================
     "align",
     "float",
     "overflow",
@@ -111,29 +110,29 @@ $utilities: map-get-multiple(
   )
 );
 
-@import "bootstrap/scss/utilities/api";
+@import "bootstrap/scss/utilities/_api.scss";
 
 // Bootstrap Components
-// @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/buttons";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar";
+// @import "bootstrap/scss/_dropdown.scss";
+// @import "bootstrap/scss/_buttons.scss";
+// @import "bootstrap/scss/_nav.scss";
+// @import "bootstrap/scss/_navbar.scss";
 
-// @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/card";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/close";
-// @import "bootstrap/scss/forms";
-// @import "bootstrap/scss/list-group";
-// @import "bootstrap/scss/modal";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/spinners";
-// @import "bootstrap/scss/toasts";
-// @import "bootstrap/scss/tooltip";
-@import "bootstrap/scss/accordion";
-@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/_alert.scss";
+// @import "bootstrap/scss/_badge.scss";
+// @import "bootstrap/scss/_breadcrumb.scss";
+// @import "bootstrap/scss/_button-group.scss";
+// @import "bootstrap/scss/_card.scss";
+// @import "bootstrap/scss/_carousel.scss";
+// @import "bootstrap/scss/_close.scss";
+// @import "bootstrap/scss/_forms.scss";
+// @import "bootstrap/scss/_list-group.scss";
+// @import "bootstrap/scss/_modal.scss";
+// @import "bootstrap/scss/_pagination.scss";
+// @import "bootstrap/scss/_popover.scss";
+// @import "bootstrap/scss/_progress.scss";
+// @import "bootstrap/scss/_spinners.scss";
+// @import "bootstrap/scss/_toasts.scss";
+// @import "bootstrap/scss/_tooltip.scss";
+@import "bootstrap/scss/_accordion.scss";
+@import "bootstrap/scss/_transitions.scss";

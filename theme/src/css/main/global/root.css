@@ -8,40 +8,40 @@
 
   /* primary color */
   --t3-primary: #59dbeb;
-  --t3-primary-hs: 187, 78%;
+  --t3-primary-hs: 187deg, 78%;
   --t3-primary-l: 64%;
-  --t3-primary-overlay: hsla(var(--t3-primary-hs), var(--t3-primary-l), 0.4);
+  --t3-primary-overlay: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.4);
 
   /* secondary color */
   --t3-secondary: #00626f;
-  --t3-secondary-hs: 187, 100%;
+  --t3-secondary-hs: 187deg, 100%;
   --t3-secondary-l: 22%;
-  --t3-secondary-overlay: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.4);
+  --t3-secondary-overlay: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.4);
 
   /* light color */
   --t3-light: #f8f9fa;
-  --t3-light-hs: 210, 17%;
+  --t3-light-hs: 210deg, 17%;
   --t3-light-l: 98%;
-  --t3-light-overlay: hsla(var(--t3-light-hs), var(--t3-light-l), 0.4);
+  --t3-light-overlay: hsla(var(--t3-light-hs) var(--t3-light-l) 0.4);
 
   /* dark color */
   --t3-dark: #343a40;
-  --t3-dark-hs: 210, 10%;
+  --t3-dark-hs: 210deg, 10%;
   --t3-dark-l: 23%;
-  --t3-dark-overlay: hsla(var(--t3-dark-hs), var(--t3-dark-l), 0.4);
+  --t3-dark-overlay: hsla(var(--t3-dark-hs) var(--t3-dark-l) 0.4);
 
   /* white/black color */
   --t3-white: #fff;
   --t3-black: #1d1d1d;
-  --t3-gray-90: hsl(0, 0%, 90%);
-  --t3-gray-80: hsl(0, 0%, 80%);
-  --t3-gray-70: hsl(0, 0%, 70%);
-  --t3-gray-60: hsl(0, 0%, 60%);
-  --t3-gray-50: hsl(0, 0%, 50%);
-  --t3-gray-40: hsl(0, 0%, 40%);
-  --t3-gray-30: hsl(0, 0%, 30%);
-  --t3-gray-20: hsl(0, 0%, 20%);
-  --t3-gray-10: hsl(0, 0%, 10%);
+  --t3-gray-90: hsl(0deg 0% 90%);
+  --t3-gray-80: hsl(0deg 0% 80%);
+  --t3-gray-70: hsl(0deg 0% 70%);
+  --t3-gray-60: hsl(0deg 0% 60%);
+  --t3-gray-50: hsl(0deg 0% 50%);
+  --t3-gray-40: hsl(0deg 0% 40%);
+  --t3-gray-30: hsl(0deg 0% 30%);
+  --t3-gray-20: hsl(0deg 0% 20%);
+  --t3-gray-10: hsl(0deg 0% 10%);
 
   /* main body variables */
   --t3-body-color: var(--t3-black);
@@ -54,12 +54,12 @@
   /* ----------------- */
   /* font */
   /* default */
-  /* --t3-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  --t3-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* stylelint-disable-line value-keyword-case */
+  /* --t3-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */ /* stylelint-disable-line */
+  --t3-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* stylelint-disable-line */
   --t3-font-family-base: var(--t3-font-sans-serif);
 
   /* t3kit */
-  --t3-font-sans-serif: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* stylelint-disable-line value-keyword-case */
+  --t3-font-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* stylelint-disable-line */
 
   /* headings */
   --t3-heading-color: var(--t3-body-color);
@@ -80,7 +80,7 @@
 
   /* link */
   --t3-link-color: var(--t3-secondary);
-  --t3-link-hover-color: hsla(var(--t3-secondary-hs), var(--t3-secondary-l), 0.8);
+  --t3-link-hover-color: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.8);
 
   /* font weight */
   --t3-p-font-weight: 300;

@@ -1,50 +1,50 @@
-@import 'main/global/root.css';
+@import "main/global/root.css";
 
 /* ===== bootstrap reboot & grid ===== */
-@import 'vendor/bootstrap.css';
+@import "vendor/bootstrap.css";
 
 /* ===== typography ===== */
-@import 'main/global/typography.css';
+@import "main/global/typography.css";
 
 /* ===== helpers ===== */
-@import 'main/global/helpers/grid.css';
-@import 'main/global/helpers/media.css';
-@import 'main/global/helpers/buttons.css';
-@import 'main/global/helpers/text.css';
-@import 'main/global/helpers/border-radius.css';
-@import 'main/global/helpers/print.css';
+@import "main/global/helpers/grid.css";
+@import "main/global/helpers/media.css";
+@import "main/global/helpers/buttons.css";
+@import "main/global/helpers/text.css";
+@import "main/global/helpers/border-radius.css";
+@import "main/global/helpers/print.css";
 
 /* ===== plugins ===== */
-@import 'main/plugins/swiperjs.css';
+@import "main/plugins/swiperjs.css";
 
 /* ===== nav ===== */
-@import 'main/global/nav/breadcrumb.css';
-@import 'main/global/nav/side-navigation.css';
-@import 'main/global/nav/skip-links.css';
-@import 'main/global/nav/target-blank.css';
-@import 'main/global/nav/scroll-to-top.css';
+@import "main/global/nav/breadcrumb.css";
+@import "main/global/nav/side-navigation.css";
+@import "main/global/nav/skip-links.css";
+@import "main/global/nav/target-blank.css";
+@import "main/global/nav/scroll-to-top.css";
 
 /* ===== content-elements ===== */
-@import 'main/content-elements/table.css';
-@import 'main/content-elements/textmedia.css';
-@import 'main/content-elements/textpic.css';
-@import 'main/content-elements/uploads.css';
-@import 'main/content-elements/simple-site-header.css';
-@import 'main/content-elements/site-header.css';
-@import 'main/content-elements/site-footer.css';
-@import 'main/content-elements/hero-image.css';
-@import 'main/content-elements/big-icon-text-link.css';
-@import 'main/content-elements/image-text-link.css';
-@import 'main/content-elements/icon-text-link.css';
-@import 'main/content-elements/contact-card.css';
-@import 'main/content-elements/quote.css';
-@import 'main/content-elements/divider-icon.css';
-@import 'main/content-elements/divider.css';
-@import 'main/content-elements/slider.css';
-@import 'main/content-elements/image-text-left-right.css';
-@import 'main/content-elements/accordion.css';
+@import "main/content-elements/table.css";
+@import "main/content-elements/textmedia.css";
+@import "main/content-elements/textpic.css";
+@import "main/content-elements/uploads.css";
+@import "main/content-elements/simple-site-header.css";
+@import "main/content-elements/site-header.css";
+@import "main/content-elements/site-footer.css";
+@import "main/content-elements/hero-image.css";
+@import "main/content-elements/big-icon-text-link.css";
+@import "main/content-elements/image-text-link.css";
+@import "main/content-elements/icon-text-link.css";
+@import "main/content-elements/contact-card.css";
+@import "main/content-elements/quote.css";
+@import "main/content-elements/divider-icon.css";
+@import "main/content-elements/divider.css";
+@import "main/content-elements/slider.css";
+@import "main/content-elements/image-text-left-right.css";
+@import "main/content-elements/accordion.css";
 
 /* ===== appearance ===== */
-@import 'main/appearance/color.css';
-@import 'main/appearance/background.css';
-@import 'main/appearance/content-margins.css';
+@import "main/appearance/color.css";
+@import "main/appearance/background.css";
+@import "main/appearance/content-margins.css";
