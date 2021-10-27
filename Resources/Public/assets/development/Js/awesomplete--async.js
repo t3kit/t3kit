@@ -226,7 +226,7 @@
         this.input.removeAttribute("autocomplete");
         this.input.removeAttribute("aria-autocomplete");
 
-        //remove this awesomeplete instance from the window array of instances
+        //remove this awesomeplete instance from the global array of instances
         var indexOfAwesomplete = _.all.indexOf(this);
 
         if (indexOfAwesomplete !== -1) {

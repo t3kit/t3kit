@@ -23,7 +23,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): util/index.js
+   * Bootstrap (v5.1.3): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -295,7 +295,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): dom/event-handler.js
+   * Bootstrap (v5.1.3): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -640,7 +640,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): dom/manipulator.js
+   * Bootstrap (v5.1.3): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -719,7 +719,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): dom/selector-engine.js
+   * Bootstrap (v5.1.3): dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -802,7 +802,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): dom/data.js
+   * Bootstrap (v5.1.3): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -860,7 +860,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): base-component.js
+   * Bootstrap (v5.1.3): base-component.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -871,7 +871,7 @@
    * ------------------------------------------------------------------------
    */
 
-  const VERSION = '5.1.1';
+  const VERSION = '5.1.3';
 
   class BaseComponent {
     constructor(element) {
@@ -927,7 +927,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): dropdown.js
+   * Bootstrap (v5.1.3): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1406,7 +1406,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.1.1): collapse.js
+   * Bootstrap (v5.1.3): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1442,6 +1442,7 @@
   const CLASS_NAME_COLLAPSE = 'collapse';
   const CLASS_NAME_COLLAPSING = 'collapsing';
   const CLASS_NAME_COLLAPSED = 'collapsed';
+  const CLASS_NAME_DEEPER_CHILDREN = `:scope .${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`;
   const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
 
   const WIDTH = 'width';
@@ -1518,7 +1519,7 @@
       let activesData;
 
       if (this._config.parent) {
-        const children = SelectorEngine.find(`.${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`, this._config.parent);
+        const children = SelectorEngine.find(CLASS_NAME_DEEPER_CHILDREN, this._config.parent);
         actives = SelectorEngine.find(SELECTOR_ACTIVES, this._config.parent).filter((elem) => !children.includes(elem)); // remove children if greater depth
       }
 
@@ -1645,7 +1646,7 @@
         return;
       }
 
-      const children = SelectorEngine.find(`.${CLASS_NAME_COLLAPSE} .${CLASS_NAME_COLLAPSE}`, this._config.parent);
+      const children = SelectorEngine.find(CLASS_NAME_DEEPER_CHILDREN, this._config.parent);
       SelectorEngine.find(SELECTOR_DATA_TOGGLE, this._config.parent).filter((elem) => !children.includes(elem)).
       forEach((element) => {
         const selected = getElementFromSelector(element);

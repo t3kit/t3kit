@@ -5,7 +5,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
   	By André Rinas, www.andrerinas.de
   	Documentation, www.simplelightbox.de
   	Available for use under the MIT License
-  	Version 2.8.1
+  	Version 2.9.0
   */
   class SimpleLightbox {
 
@@ -130,7 +130,9 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
 
 
-    constructor(elements, options) {_defineProperty(this, "defaultOptions", { sourceAttr: 'href', overlay: true, spinner: true, nav: true, navText: ['&lsaquo;', '&rsaquo;'], captions: true, captionDelay: 0, captionSelector: 'img', captionType: 'attr', captionsData: 'title', captionPosition: 'bottom', captionClass: '', close: true, closeText: '&times;', swipeClose: true, showCounter: true, fileExt: 'png|jpg|jpeg|gif|webp', animationSlide: true, animationSpeed: 250, preloading: true, enableKeyboard: true, loop: true, rel: false, docClose: true, swipeTolerance: 50, className: 'simple-lightbox', widthRatio: 0.8, heightRatio: 0.9, scaleImageToRatio: false, disableRightClick: false, disableScroll: true, alertError: true, alertErrorMessage: 'Image not found, next image will be loaded', additionalHtml: false, history: true, throttleInterval: 0, doubleTapZoom: 2, maxZoom: 10, htmlClass: 'has-lightbox', rtl: false, fixedClass: 'sl-fixed', fadeSpeed: 300, uniqueImages: true, focus: true });_defineProperty(this, "transitionPrefix", void 0);_defineProperty(this, "isPassiveEventsSupported", void 0);_defineProperty(this, "transitionCapable", false);_defineProperty(this, "isTouchDevice", 'ontouchstart' in window);_defineProperty(this, "isAppleDevice", /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform));_defineProperty(this, "initialLocationHash", void 0);_defineProperty(this, "pushStateSupport", 'pushState' in history);_defineProperty(this, "isOpen", false);_defineProperty(this, "isAnimating", false);_defineProperty(this, "isClosing", false);_defineProperty(this, "isFadeIn", false);_defineProperty(this, "urlChangedOnce", false);_defineProperty(this, "hashReseted", false);_defineProperty(this, "historyHasChanges", false);_defineProperty(this, "historyUpdateTimeout", null);_defineProperty(this, "currentImage", void 0);_defineProperty(this, "eventNamespace", 'simplelightbox');_defineProperty(this, "domNodes", {});_defineProperty(this, "loadedImages", []);_defineProperty(this, "initialImageIndex", 0);_defineProperty(this, "currentImageIndex", 0);_defineProperty(this, "initialSelector", null);_defineProperty(this, "globalScrollbarWidth", 0);_defineProperty(this, "controlCoordinates", { swipeDiff: 0, swipeYDiff: 0, swipeStart: 0, swipeEnd: 0, swipeYStart: 0, swipeYEnd: 0, mousedown: false, imageLeft: 0, zoomed: false, containerHeight: 0, containerWidth: 0, containerOffsetX: 0, containerOffsetY: 0, imgHeight: 0, imgWidth: 0, capture: false, initialOffsetX: 0, initialOffsetY: 0, initialPointerOffsetX: 0, initialPointerOffsetY: 0, initialPointerOffsetX2: 0, initialPointerOffsetY2: 0, initialScale: 1, initialPinchDistance: 0, pointerOffsetX: 0, pointerOffsetY: 0, pointerOffsetX2: 0, pointerOffsetY2: 0, targetOffsetX: 0, targetOffsetY: 0, targetScale: 0, pinchOffsetX: 0, pinchOffsetY: 0, limitOffsetX: 0, limitOffsetY: 0, scaleDifference: 0, targetPinchDistance: 0, touchCount: 0, doubleTapped: false, touchmoveCount: 0 });
+
+
+    constructor(elements, options) {_defineProperty(this, "defaultOptions", { sourceAttr: 'href', overlay: true, spinner: true, nav: true, navText: ['&lsaquo;', '&rsaquo;'], captions: true, captionDelay: 0, captionSelector: 'img', captionType: 'attr', captionsData: 'title', captionPosition: 'bottom', captionClass: '', close: true, closeText: '&times;', swipeClose: true, showCounter: true, fileExt: 'png|jpg|jpeg|gif|webp', animationSlide: true, animationSpeed: 250, preloading: true, enableKeyboard: true, loop: true, rel: false, docClose: true, swipeTolerance: 50, className: 'simple-lightbox', widthRatio: 0.8, heightRatio: 0.9, scaleImageToRatio: false, disableRightClick: false, disableScroll: true, alertError: true, alertErrorMessage: 'Image not found, next image will be loaded', additionalHtml: false, history: true, throttleInterval: 0, doubleTapZoom: 2, maxZoom: 10, htmlClass: 'has-lightbox', rtl: false, fixedClass: 'sl-fixed', fadeSpeed: 300, uniqueImages: true, focus: true, scrollZoom: true, scrollZoomFactor: 0.5 });_defineProperty(this, "transitionPrefix", void 0);_defineProperty(this, "isPassiveEventsSupported", void 0);_defineProperty(this, "transitionCapable", false);_defineProperty(this, "isTouchDevice", 'ontouchstart' in window);_defineProperty(this, "isAppleDevice", /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform));_defineProperty(this, "initialLocationHash", void 0);_defineProperty(this, "pushStateSupport", 'pushState' in history);_defineProperty(this, "isOpen", false);_defineProperty(this, "isAnimating", false);_defineProperty(this, "isClosing", false);_defineProperty(this, "isFadeIn", false);_defineProperty(this, "urlChangedOnce", false);_defineProperty(this, "hashReseted", false);_defineProperty(this, "historyHasChanges", false);_defineProperty(this, "historyUpdateTimeout", null);_defineProperty(this, "currentImage", void 0);_defineProperty(this, "eventNamespace", 'simplelightbox');_defineProperty(this, "domNodes", {});_defineProperty(this, "loadedImages", []);_defineProperty(this, "initialImageIndex", 0);_defineProperty(this, "currentImageIndex", 0);_defineProperty(this, "initialSelector", null);_defineProperty(this, "globalScrollbarWidth", 0);_defineProperty(this, "controlCoordinates", { swipeDiff: 0, swipeYDiff: 0, swipeStart: 0, swipeEnd: 0, swipeYStart: 0, swipeYEnd: 0, mousedown: false, imageLeft: 0, zoomed: false, containerHeight: 0, containerWidth: 0, containerOffsetX: 0, containerOffsetY: 0, imgHeight: 0, imgWidth: 0, capture: false, initialOffsetX: 0, initialOffsetY: 0, initialPointerOffsetX: 0, initialPointerOffsetY: 0, initialPointerOffsetX2: 0, initialPointerOffsetY2: 0, initialScale: 1, initialPinchDistance: 0, pointerOffsetX: 0, pointerOffsetY: 0, pointerOffsetX2: 0, pointerOffsetY2: 0, targetOffsetX: 0, targetOffsetY: 0, targetScale: 0, pinchOffsetX: 0, pinchOffsetY: 0, limitOffsetX: 0, limitOffsetY: 0, scaleDifference: 0, targetPinchDistance: 0, touchCount: 0, doubleTapped: false, touchmoveCount: 0 });
 
       this.options = Object.assign(this.defaultOptions, options);
       this.isPassiveEventsSupported = this.checkPassiveEventsSupport();
@@ -334,7 +336,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
           let documentElementRect = document.documentElement.getBoundingClientRect();
           fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left);
         }
-        if (document.body.clientWidth < fullWindowWidth) {
+        if (document.body.clientWidth < fullWindowWidth || this.isAppleDevice) {
           let scrollDiv = document.createElement('div'),
           paddingRight = parseInt(document.body.style.paddingRight || 0, 10);
 
@@ -702,6 +704,77 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
         this.loadImage(event.currentTarget.classList.contains('sl-next') ? 1 : -1);
       });
 
+      if (this.options.scrollZoom) {
+        let scale = 1;
+
+        this.addEventListener(this.domNodes.image, ['mousewheel', 'DOMMouseScroll'], (event) => {
+          if (this.controlCoordinates.mousedown || this.isAnimating || this.isClosing || !this.isOpen) {
+            return true;
+          }
+          if (this.controlCoordinates.containerHeight == 0) {
+            this.controlCoordinates.containerHeight = this.getDimensions(this.domNodes.image).height;
+            this.controlCoordinates.containerWidth = this.getDimensions(this.domNodes.image).width;
+            this.controlCoordinates.imgHeight = this.getDimensions(this.currentImage).height;
+            this.controlCoordinates.imgWidth = this.getDimensions(this.currentImage).width;
+            this.controlCoordinates.containerOffsetX = this.domNodes.image.offsetLeft;
+            this.controlCoordinates.containerOffsetY = this.domNodes.image.offsetTop;
+
+            this.controlCoordinates.initialOffsetX = parseFloat(this.currentImage.dataset.translateX);
+            this.controlCoordinates.initialOffsetY = parseFloat(this.currentImage.dataset.translateY);
+          }
+          event.preventDefault();
+
+          let delta = event.delta || event.wheelDelta;
+          if (delta === undefined) {
+            //we are on firefox
+            delta = event.detail;
+          }
+          delta = Math.max(-1, Math.min(1, delta)); // cap the delta to [-1,1] for cross browser consistency
+
+          // apply zoom
+          scale += delta * this.options.scrollZoomFactor * scale;
+          scale = Math.max(1, Math.min(this.options.maxZoom, scale));
+
+          this.controlCoordinates.targetScale = scale;
+
+          this.controlCoordinates.pinchOffsetX = event.pageX;
+          this.controlCoordinates.pinchOffsetY = event.pageY;
+
+          this.controlCoordinates.limitOffsetX = (this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale - this.controlCoordinates.containerWidth) / 2;
+          this.controlCoordinates.limitOffsetY = (this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale - this.controlCoordinates.containerHeight) / 2;
+          this.controlCoordinates.scaleDifference = this.controlCoordinates.targetScale - this.controlCoordinates.initialScale;
+          this.controlCoordinates.targetOffsetX = this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale <= this.controlCoordinates.containerWidth ? 0 : this.minMax(this.controlCoordinates.initialOffsetX - (this.controlCoordinates.pinchOffsetX - this.controlCoordinates.containerOffsetX - this.controlCoordinates.containerWidth / 2 - this.controlCoordinates.initialOffsetX) / (this.controlCoordinates.targetScale - this.controlCoordinates.scaleDifference) * this.controlCoordinates.scaleDifference, this.controlCoordinates.limitOffsetX * -1, this.controlCoordinates.limitOffsetX);
+          this.controlCoordinates.targetOffsetY = this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale <= this.controlCoordinates.containerHeight ? 0 : this.minMax(this.controlCoordinates.initialOffsetY - (this.controlCoordinates.pinchOffsetY - this.controlCoordinates.containerOffsetY - this.controlCoordinates.containerHeight / 2 - this.controlCoordinates.initialOffsetY) / (this.controlCoordinates.targetScale - this.controlCoordinates.scaleDifference) * this.controlCoordinates.scaleDifference, this.controlCoordinates.limitOffsetY * -1, this.controlCoordinates.limitOffsetY);
+
+          this.zoomPanElement(this.controlCoordinates.targetOffsetX + "px", this.controlCoordinates.targetOffsetY + "px", this.controlCoordinates.targetScale);
+
+          if (this.controlCoordinates.targetScale > 1) {
+            this.controlCoordinates.zoomed = true;
+            if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+              this.fadeOut(this.domNodes.caption, this.options.fadeSpeed);
+            }
+          } else {
+            if (this.controlCoordinates.initialScale === 1) {
+              this.controlCoordinates.zoomed = false;
+              if (this.domNodes.caption.style.display === 'none') {
+                this.fadeIn(this.domNodes.caption, this.options.fadeSpeed);
+              }
+            }
+            this.controlCoordinates.initialPinchDistance = null;
+            this.controlCoordinates.capture = false;
+          }
+
+          this.controlCoordinates.initialPinchDistance = this.controlCoordinates.targetPinchDistance;
+          this.controlCoordinates.initialScale = this.controlCoordinates.targetScale;
+          this.controlCoordinates.initialOffsetX = this.controlCoordinates.targetOffsetX;
+          this.controlCoordinates.initialOffsetY = this.controlCoordinates.targetOffsetY;
+
+          this.setZoomData(this.controlCoordinates.targetScale, this.controlCoordinates.targetOffsetX, this.controlCoordinates.targetOffsetY);
+          this.zoomPanElement(this.controlCoordinates.targetOffsetX + "px", this.controlCoordinates.targetOffsetY + "px", this.controlCoordinates.targetScale);
+
+        });
+      }
+
       this.addEventListener(this.domNodes.image, ['touchstart.' + this.eventNamespace, 'mousedown.' + this.eventNamespace], (event) => {
         if (event.target.tagName === 'A' && event.type === 'touchstart') {
           return true;
@@ -990,10 +1063,12 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
           if (this.domNodes.caption.style.display === 'none') {
             this.fadeIn(this.domNodes.caption, this.options.fadeSpeed);
           }
+
         }
         setTimeout(() => {
           if (this.currentImage) {
             this.currentImage.classList.remove('sl-transition');
+            this.currentImage.style[this.transitionPrefix + 'transform-origin'] = null;
           }
         }, 200);
 

@@ -1939,7 +1939,8 @@
     const params = swiper.params;
     const {
       slides,
-      rtlTranslate: rtl } =
+      rtlTranslate: rtl,
+      snapGrid } =
     swiper;
     if (slides.length === 0) return;
     if (typeof slides[0].swiperSlideOffset === 'undefined') swiper.updateSlidesOffset();
@@ -1959,6 +1960,7 @@
       }
 
       const slideProgress = (offsetCenter + (params.centeredSlides ? swiper.minTranslate() : 0) - slideOffset) / (slide.swiperSlideSize + params.spaceBetween);
+      const originalSlideProgress = (offsetCenter - snapGrid[0] + (params.centeredSlides ? swiper.minTranslate() : 0) - slideOffset) / (slide.swiperSlideSize + params.spaceBetween);
       const slideBefore = -(offsetCenter - slideOffset);
       const slideAfter = slideBefore + swiper.slidesSizesGrid[i];
       const isVisible = slideBefore >= 0 && slideBefore < swiper.size - 1 || slideAfter > 1 && slideAfter <= swiper.size || slideBefore <= 0 && slideAfter >= swiper.size;
@@ -1970,6 +1972,7 @@
       }
 
       slide.progress = rtl ? -slideProgress : slideProgress;
+      slide.originalProgress = rtl ? -originalSlideProgress : originalSlideProgress;
     }
 
     swiper.visibleSlides = $(swiper.visibleSlides);
@@ -2587,6 +2590,7 @@
 
         if (isVirtual) {
           swiper.wrapperEl.style.scrollSnapType = 'none';
+          swiper._immediateVirtual = true;
         }
 
         wrapperEl[isH ? 'scrollLeft' : 'scrollTop'] = t;
@@ -2594,6 +2598,7 @@
         if (isVirtual) {
           requestAnimationFrame(() => {
             swiper.wrapperEl.style.scrollSnapType = '';
+            swiper._swiperImmediateVirtual = false;
           });
         }
       } else {
@@ -2847,8 +2852,9 @@
       $wrapperEl } =
     swiper; // Remove duplicated slides
 
-    $wrapperEl.children(`.${params.slideClass}.${params.slideDuplicateClass}`).remove();
-    let slides = $wrapperEl.children(`.${params.slideClass}`);
+    const $selector = $($wrapperEl.children()[0].parentNode);
+    $selector.children(`.${params.slideClass}.${params.slideDuplicateClass}`).remove();
+    let slides = $selector.children(`.${params.slideClass}`);
 
     if (params.loopFillGroupWithBlank) {
       const blankSlidesNum = params.slidesPerGroup - slides.length % params.slidesPerGroup;
@@ -2856,10 +2862,10 @@
       if (blankSlidesNum !== params.slidesPerGroup) {
         for (let i = 0; i < blankSlidesNum; i += 1) {
           const blankNode = $(document.createElement('div')).addClass(`${params.slideClass} ${params.slideBlankClass}`);
-          $wrapperEl.append(blankNode);
+          $selector.append(blankNode);
         }
 
-        slides = $wrapperEl.children(`.${params.slideClass}`);
+        slides = $selector.children(`.${params.slideClass}`);
       }
     }
 
@@ -2888,11 +2894,11 @@
     });
 
     for (let i = 0; i < appendSlides.length; i += 1) {
-      $wrapperEl.append($(appendSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
+      $selector.append($(appendSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
     }
 
     for (let i = prependSlides.length - 1; i >= 0; i -= 1) {
-      $wrapperEl.prepend($(prependSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
+      $selector.prepend($(prependSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
     }
   }
 
