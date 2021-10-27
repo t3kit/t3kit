@@ -8,7 +8,6 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import { terser } from 'rollup-plugin-terser'
 import sizes from 'rollup-plugin-sizes'
-import { getBabelOutputPlugin } from '@rollup/plugin-babel'
 
 import * as utils from './utils.js'
 
@@ -35,13 +34,7 @@ async function compileJs (localConf, options) {
         external: [],
         plugins: [
           nodeResolve(),
-          replace(replaceVal),
-          getBabelOutputPlugin({
-            retainLines: true,
-            allowAllFormats: true,
-            presets: ['@babel/preset-env'],
-            plugins: [['@babel/plugin-proposal-class-properties']]
-          })
+          replace(replaceVal)
         ]
       }
       hideStatus || inputOptions.plugins.push(sizes())
