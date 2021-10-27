@@ -68,6 +68,9 @@
     "stylelint-config-standard-scss": "^2.0.0",
     "stylelint-no-unsupported-browser-features": "~5.0.2"
   },
+  "exports": {
+    "./module/*": "./theme/config/modules/*.js"
+  },
   "engines": {
     "node": ">=16.12.0",
     "npm": ">=8.0.0"
