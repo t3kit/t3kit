@@ -1,13 +1,13 @@
 
-import { localConf } from './localconf/index.js'
-import { checkNode } from './check/node.js'
-import { clean } from './clean/index.js'
-import { compileCss } from './css/index.js'
-import { compileScss } from './sass/index.js'
-import { compileJs } from './rollup/index.js'
-import { addCssTemplate, addJsTemplate } from './template/index.js'
-import { watchAll } from './watch/index.js'
-import * as utils from './utils/index.js'
+import { localConf } from './localconf.js'
+import { checkNode } from './modules/check.js'
+import { clean } from './modules/clean.js'
+import { compileCss } from './modules/css.js'
+import { compileScss } from './modules/sass.js'
+import { compileJs } from './modules/rollup.js'
+import { addCssTemplate, addJsTemplate } from './modules/template.js'
+import { watchAll } from './modules/watch.js'
+import * as utils from './modules/utils.js'
 checkNode()
 
 async function start () {

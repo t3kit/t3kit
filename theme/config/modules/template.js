@@ -1,6 +1,6 @@
 import fsPromises from 'fs/promises'
 import pEachSeries from 'p-each-series'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 function addLinkSettings (link, settings) {
   return link.replace('%_settings_%', settings)

@@ -10,7 +10,7 @@ import { terser } from 'rollup-plugin-terser'
 import sizes from 'rollup-plugin-sizes'
 import { getBabelOutputPlugin } from '@rollup/plugin-babel'
 
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 async function compileJs (localConf, options) {
   try {
@@ -21,7 +21,7 @@ async function compileJs (localConf, options) {
     const fileList = []
 
     let replaceVal = {
-      preventAssignment: true,
+      preventAssignment: false,
       'process.env.NODE_ENV': process.env.NODE_ENV
     }
     replaceVal = { ...replaceVal, ...localConf.replace }

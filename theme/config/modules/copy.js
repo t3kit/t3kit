@@ -1,6 +1,6 @@
 import pEachSeries from 'p-each-series'
 import cpy from 'cpy'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 async function copyIcons (localConf) {
   try {

@@ -47,7 +47,7 @@ localConf.external = [
 ]
 // replace (https://github.com/rollup/plugins/tree/master/packages/replace)
 localConf.replace = {
-  global: 'window'
+  'global.SimpleLightbox': 'window.SimpleLightbox'
 }
 // globals (https://rollupjs.org/guide/en/#outputglobals)
 localConf.globals = {

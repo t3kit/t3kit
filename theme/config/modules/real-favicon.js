@@ -3,7 +3,7 @@ import { exec } from 'child_process'
 import fse from 'fs-extra'
 import rfg from 'rfg-api'
 import { promisify } from 'util'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 const exe = promisify(exec)
 
 async function gitRevHash () {

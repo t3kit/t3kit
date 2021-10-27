@@ -1,8 +1,8 @@
-import { localConf } from './localconf/index.js'
-import { checkNode } from './check/node.js'
-import { cleanIcons } from './clean/index.js'
-import { copyIcons } from './copy/index.js'
-import * as utils from './utils/index.js'
+import { localConf } from './localconf.js'
+import { checkNode } from './modules/check.js'
+import { cleanIcons } from './modules/clean.js'
+import { copyIcons } from './modules/copy.js'
+import * as utils from './modules/utils.js'
 checkNode()
 
 async function icons () {

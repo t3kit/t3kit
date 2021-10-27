@@ -2,7 +2,7 @@ import fsPromises from 'fs/promises'
 import pEachSeries from 'p-each-series'
 import hasha from 'hasha'
 import size from 'filesize'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 async function revCss (localConf) {
   try {

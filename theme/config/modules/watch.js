@@ -1,10 +1,10 @@
 import chokidar from 'chokidar'
 import chalk from 'chalk'
-import { compileCss } from '../css/index.js'
-import { compileScss } from '../sass/index.js'
-import { compileJs } from '../rollup/index.js'
-import { addCssTemplate, addJsTemplate } from '../template/index.js'
-import * as utils from '../utils/index.js'
+import { compileCss } from './css.js'
+import { compileScss } from './sass.js'
+import { compileJs } from './rollup.js'
+import { addCssTemplate, addJsTemplate } from './template.js'
+import * as utils from './utils.js'
 
 async function watchAll (localConf) {
   try {

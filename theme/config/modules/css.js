@@ -5,7 +5,7 @@ import size from 'filesize'
 import postcss from 'postcss'
 import cssimport from 'postcss-import'
 import cssnano from 'cssnano'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 const postcssPlugins = [cssimport]
 process.env.NODE_ENV === 'production' && postcssPlugins.push(cssnano({ preset: 'default' }))

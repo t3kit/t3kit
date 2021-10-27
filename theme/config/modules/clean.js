@@ -1,6 +1,6 @@
 import pEachSeries from 'p-each-series'
 import del from 'del'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 async function clean (localConf) {
   try {

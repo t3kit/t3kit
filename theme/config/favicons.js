@@ -1,8 +1,8 @@
-import { localConf } from './localconf/index.js'
-import { checkNode } from './check/node.js'
-import { cleanFavicons } from './clean/index.js'
-import { generateFavicons } from './real-favicon/index.js'
-import * as utils from './utils/index.js'
+import { localConf } from './localconf.js'
+import { checkNode } from './modules/check.js'
+import { cleanFavicons } from './modules/clean.js'
+import { generateFavicons } from './modules/real-favicon.js'
+import * as utils from './modules/utils.js'
 checkNode()
 
 async function favicons () {

@@ -5,7 +5,7 @@ import zlib from 'zlib'
 import { pipeline } from 'stream'
 import { createReadStream, createWriteStream } from 'fs'
 import pEachSeries from 'p-each-series'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 const pipe = promisify(pipeline)
 
 async function compressCss (localConf) {

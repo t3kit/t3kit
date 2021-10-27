@@ -4,7 +4,7 @@ import size from 'filesize'
 import fse from 'fs-extra'
 import sass from 'sass'
 import moduleImporter from 'sass-module-importer'
-import * as utils from '../utils/index.js'
+import * as utils from './utils.js'
 
 function sassPromise (fileName) {
   return new Promise((resolve, reject) => {
