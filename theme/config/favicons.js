@@ -3,7 +3,7 @@ import { checkNode } from './modules/check.js'
 import { cleanFavicons } from './modules/clean.js'
 import { generateFavicons } from './modules/real-favicon.js'
 import * as utils from './modules/utils.js'
-checkNode()
+checkNode(localConf)
 
 async function favicons () {
   const timeStart = utils.mainTaskStart('Add favicons task')

@@ -3,7 +3,7 @@ import { checkNode } from './modules/check.js'
 import { cleanIcons } from './modules/clean.js'
 import { copyIcons } from './modules/copy.js'
 import * as utils from './modules/utils.js'
-checkNode()
+checkNode(localConf)
 
 async function icons () {
   const timeStart = utils.mainTaskStart('Add icons task')

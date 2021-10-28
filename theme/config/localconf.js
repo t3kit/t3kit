@@ -2,9 +2,6 @@ const localConf = {}
 localConf.rootPath = process.cwd()
 localConf.dirName = localConf.rootPath.split('/').pop()
 
-// parse project package.json
-// const PKG = require(`${localConf.rootPath}/package`)
-
 // SRC, DIST and temp dirs path
 localConf.THEME_FOLDER = 'theme/'
 localConf.SRC_FOLDER = 'src/'

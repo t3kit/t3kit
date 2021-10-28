@@ -8,7 +8,7 @@ import { addCssTemplate, addJsTemplate } from './modules/template.js'
 import { compressCss, compressJs } from './modules/compress.js'
 import { revCss, revJs } from './modules/rev.js'
 import * as utils from './modules/utils.js'
-checkNode()
+checkNode(localConf)
 
 async function build () {
   const timeStart = utils.mainTaskStart('Build task')

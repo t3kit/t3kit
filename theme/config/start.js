@@ -8,7 +8,7 @@ import { compileJs } from './modules/rollup.js'
 import { addCssTemplate, addJsTemplate } from './modules/template.js'
 import { watchAll } from './modules/watch.js'
 import * as utils from './modules/utils.js'
-checkNode()
+checkNode(localConf)
 
 async function start () {
   const timeStart = utils.mainTaskStart('Build task')

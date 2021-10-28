@@ -1,5 +1,4 @@
 import fsPromises from 'fs/promises'
-
 import fse from 'fs-extra'
 import size from 'filesize'
 import pEachSeries from 'p-each-series'
@@ -8,7 +7,6 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import { terser } from 'rollup-plugin-terser'
 import sizes from 'rollup-plugin-sizes'
-
 import * as utils from './utils.js'
 
 async function compileJs (localConf, options) {

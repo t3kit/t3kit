@@ -3,7 +3,7 @@ import { checkNode } from './modules/check.js'
 import { cleanFileTypeIcons } from './modules/clean.js'
 import { copyFileTypeIcons } from './modules/copy.js'
 import * as utils from './modules/utils.js'
-checkNode()
+checkNode(localConf)
 
 async function fileTypeIcons () {
   const timeStart = utils.mainTaskStart('Add filetype icons task')
