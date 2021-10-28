@@ -2,17 +2,17 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 .ce-hero-image {
   --t3-ce-hero-image-header-color: var(--t3-primary);
-  --t3-ce-hero-image-header-link-hover-color: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.8);
+  --t3-ce-hero-image-header-link-hover-color: hsl(var(--t3-primary-hs) var(--t3-primary-l) / 80%);
   --t3-ce-hero-image-subheader-color: var(--t3-white);
   --t3-ce-hero-image-bodytext-color: var(--t3-white);
   --t3-ce-hero-image-link-color: var(--t3-light);
-  --t3-ce-hero-image-link-hover-color: hsla(var(--t3-light-hs) var(--t3-light-l) 0.8);
+  --t3-ce-hero-image-link-hover-color: hsl(var(--t3-light-hs) var(--t3-light-l) / 80%);
   --t3-ce-hero-image-caption-width: 75%;
   --t3-ce-hero-image-min-height-on-mobile: 460px;
-  --t3-ce-hero-image-primary-overlay: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.4);
-  --t3-ce-hero-image-secondary-overlay: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.4);
-  --t3-ce-hero-image-light-overlay: hsla(var(--t3-light-hs) var(--t3-light-l) 0.4);
-  --t3-ce-hero-image-dark-overlay: hsla(var(--t3-dark-hs) var(--t3-dark-l) 0.4);
+  --t3-ce-hero-image-primary-overlay: hsl(var(--t3-primary-hs) var(--t3-primary-l) / 40%);
+  --t3-ce-hero-image-secondary-overlay: hsl(var(--t3-secondary-hs) var(--t3-secondary-l) / 40%);
+  --t3-ce-hero-image-light-overlay: hsl(var(--t3-light-hs) var(--t3-light-l) / 40%);
+  --t3-ce-hero-image-dark-overlay: hsl(var(--t3-dark-hs) var(--t3-dark-l) / 40%);
   --t3-ce-hero-image-primary-bg: var(--t3-primary);
   --t3-ce-hero-image-secondary-bg: var(--t3-secondary);
   --t3-ce-hero-image-dark-bg: var(--t3-dark);

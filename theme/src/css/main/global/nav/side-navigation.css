@@ -5,14 +5,14 @@
   --t3-sidenav-color: var(--t3-body-color);
   --t3-sidenav-hover-color: var(--t3-body-color);
   --t3-sidenav-active-color: var(--t3-body-bg);
-  --t3-sidenav-bg-hs: 0, 0%;
+  --t3-sidenav-bg-hs: 0deg 0%;
   --t3-sidenav-bg-l: 100%;
   --t3-sidenav-active-bg-hs: var(--t3-secondary-hs);
   --t3-sidenav-active-bg-l: var(--t3-secondary-l);
-  --t3-sidenav-active-bg: hsla(var(--t3-sidenav-active-bg-hs) var(--t3-sidenav-active-bg-l));
-  --t3-sidenav-active-bg-hover: hsla(var(--t3-sidenav-active-bg-hs) calc(var(--t3-sidenav-active-bg-l) - 3%));
+  --t3-sidenav-active-bg: hsl(var(--t3-sidenav-active-bg-hs) var(--t3-sidenav-active-bg-l));
+  --t3-sidenav-active-bg-hover: hsl(var(--t3-sidenav-active-bg-hs) calc(var(--t3-sidenav-active-bg-l) - 3%));
   --t3-sidenav-active-bg-color-hover: var(--t3-sidenav-active-color);
-  --t3-sidenav-active-border-color: hsla(var(--t3-sidenav-active-bg-hs) calc(var(--t3-sidenav-active-bg-l) + 7%));
+  --t3-sidenav-active-border-color: hsl(var(--t3-sidenav-active-bg-hs) calc(var(--t3-sidenav-active-bg-l) + 7%));
 }
 
 .sidenav__list {

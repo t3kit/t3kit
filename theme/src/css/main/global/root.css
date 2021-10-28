@@ -8,27 +8,27 @@
 
   /* primary color */
   --t3-primary: #59dbeb;
-  --t3-primary-hs: 187deg, 78%;
+  --t3-primary-hs: 187deg 78%;
   --t3-primary-l: 64%;
-  --t3-primary-overlay: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.4);
+  --t3-primary-overlay: hsl(var(--t3-primary-hs) var(--t3-primary-l) / 40%);
 
   /* secondary color */
   --t3-secondary: #00626f;
-  --t3-secondary-hs: 187deg, 100%;
+  --t3-secondary-hs: 187deg 100%;
   --t3-secondary-l: 22%;
-  --t3-secondary-overlay: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.4);
+  --t3-secondary-overlay: hsl(var(--t3-secondary-hs) var(--t3-secondary-l) / 40%);
 
   /* light color */
   --t3-light: #f8f9fa;
-  --t3-light-hs: 210deg, 17%;
+  --t3-light-hs: 210deg 17%;
   --t3-light-l: 98%;
-  --t3-light-overlay: hsla(var(--t3-light-hs) var(--t3-light-l) 0.4);
+  --t3-light-overlay: hsl(var(--t3-light-hs) var(--t3-light-l) / 40%);
 
   /* dark color */
   --t3-dark: #343a40;
-  --t3-dark-hs: 210deg, 10%;
+  --t3-dark-hs: 210deg 10%;
   --t3-dark-l: 23%;
-  --t3-dark-overlay: hsla(var(--t3-dark-hs) var(--t3-dark-l) 0.4);
+  --t3-dark-overlay: hsl(var(--t3-dark-hs) var(--t3-dark-l) / 40%);
 
   /* white/black color */
   --t3-white: #fff;
@@ -80,7 +80,7 @@
 
   /* link */
   --t3-link-color: var(--t3-secondary);
-  --t3-link-hover-color: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.8);
+  --t3-link-hover-color: hsl(var(--t3-secondary-hs) var(--t3-secondary-l) / 80%);
 
   /* font weight */
   --t3-p-font-weight: 300;

@@ -76,7 +76,7 @@
 .btn:focus,
 .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) 0.3);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) / 30%);
 }
 
 .btn:disabled,
@@ -132,7 +132,7 @@ fieldset:disabled .btn {
   color: var(--t3-btn-primary-hover-color);
   background-color: var(--t3-btn-primary-hover-bg);
   border-color: var(--t3-btn-primary-hover-border-color);
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) / 50%);
 }
 
 .btn-primary:active,
@@ -146,7 +146,7 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) / 50%);
 }
 
 /* light button style */
@@ -174,7 +174,7 @@ fieldset:disabled .btn {
   color: var(--t3-btn-light-hover-color);
   background-color: var(--t3-btn-light-hover-bg);
   border-color: var(--t3-btn-light-hover-border-color);
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) / 50%);
 }
 
 .btn-light:active,
@@ -188,7 +188,7 @@ fieldset:disabled .btn {
 .btn-light:active:focus,
 .btn-light.active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) / 50%);
 }
 
 /* dark button style */
@@ -216,7 +216,7 @@ fieldset:disabled .btn {
   color: var(--t3-btn-dark-hover-color);
   background-color: var(--t3-btn-dark-hover-bg);
   border-color: var(--t3-btn-dark-hover-border-color);
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) / 50%);
 }
 
 .btn-dark:active,
@@ -230,7 +230,7 @@ fieldset:disabled .btn {
 .btn-dark:active:focus,
 .btn-dark.active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) / 50%);
 }
 
 /* outline-primary */
@@ -253,7 +253,7 @@ fieldset:disabled .btn {
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) / 50%);
 }
 
 .btn-outline-primary:active,
@@ -267,7 +267,7 @@ fieldset:disabled .btn {
 .btn-outline-primary:active:focus,
 .btn-outline-primary.active:focus,
 .btn-outline-primary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-primary-bg-hs) var(--t3-btn-primary-bg-l) / 50%);
 }
 
 /* outline-light */
@@ -290,7 +290,7 @@ fieldset:disabled .btn {
 
 .btn-outline-light:focus,
 .btn-outline-light.focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) / 50%);
 }
 
 .btn-outline-light:active,
@@ -304,7 +304,7 @@ fieldset:disabled .btn {
 .btn-outline-light:active:focus,
 .btn-outline-light.active:focus,
 .btn-outline-light.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-light-bg-hs) var(--t3-btn-light-bg-l) / 50%);
 }
 
 /* outline-dark */
@@ -327,7 +327,7 @@ fieldset:disabled .btn {
 
 .btn-outline-dark:focus,
 .btn-outline-dark.focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) / 50%);
 }
 
 .btn-outline-dark:active,
@@ -341,5 +341,5 @@ fieldset:disabled .btn {
 .btn-outline-dark:active:focus,
 .btn-outline-dark.active:focus,
 .btn-outline-dark.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.2rem hsla(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) 0.5);
+  box-shadow: 0 0 0 0.2rem hsl(var(--t3-btn-dark-bg-hs) var(--t3-btn-dark-bg-l) / 50%);
 }

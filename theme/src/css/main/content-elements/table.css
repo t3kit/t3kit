@@ -6,9 +6,9 @@
   --t3-table-border-color: var(--t3-border-color);
   --t3-table-bg: transparent;
   --t3-table-striped-color: var(--t3-table-color);
-  --t3-table-striped-bg: rgba(0 0 0 5%);
+  --t3-table-striped-bg: rgb(0 0 0 / 5%);
   --t3-table-hover-color: var(--t3-table-color);
-  --t3-table-hover-bg: rgba(0 0 0 7.5%);
+  --t3-table-hover-bg: rgb(0 0 0 / 7.5%);
 
   width: 100%;
   margin-bottom: 1rem;

@@ -3,12 +3,12 @@
 
 .ce-site-footer {
   --t3-ce-footer-bg: var(--t3-body-color);
-  --t3-ce-footer-color-hs: 0, 0%;
+  --t3-ce-footer-color-hs: 0deg 0%;
   --t3-ce-footer-color-l: 100%;
   --t3-ce-footer-color: hsl(var(--t3-ce-footer-color-hs) var(--t3-ce-footer-color-l));
   --t3-ce-footer-font-size: 0.875rem;
   --t3-ce-footer-links-color: hsl(var(--t3-ce-footer-color-hs) var(--t3-ce-footer-color-l));
-  --t3-ce-footer-links-hover-color: hsla(var(--t3-ce-footer-color-hs) var(--t3-ce-footer-color-l) 0.7);
+  --t3-ce-footer-links-hover-color: hsl(var(--t3-ce-footer-color-hs) var(--t3-ce-footer-color-l) / 70%);
 
   background-color: var(--t3-ce-footer-bg);
   color: var(--t3-ce-footer-color);

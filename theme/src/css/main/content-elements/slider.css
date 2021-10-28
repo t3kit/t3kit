@@ -2,17 +2,17 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 .ce-slider__wrp {
   --t3-ce-slider-header-color: var(--t3-primary);
-  --t3-ce-slider-header-link-hover-color: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.8);
+  --t3-ce-slider-header-link-hover-color: hsl(var(--t3-primary-hs) var(--t3-primary-l) / 80%);
   --t3-ce-slider-subheader-color: var(--t3-white);
   --t3-ce-slider-bodytext-color: var(--t3-white);
   --t3-ce-slider-link-color: var(--t3-light);
-  --t3-ce-slider-link-hover-color: hsla(var(--t3-light-hs) var(--t3-light-l) 0.8);
+  --t3-ce-slider-link-hover-color: hsl(var(--t3-light-hs) var(--t3-light-l) / 80%);
   --t3-ce-slider-caption-width: 75%;
   --t3-ce-slider-min-height-on-mobile: 460px;
-  --t3-ce-slider-primary-overlay: hsla(var(--t3-primary-hs) var(--t3-primary-l) 0.4);
-  --t3-ce-slider-secondary-overlay: hsla(var(--t3-secondary-hs) var(--t3-secondary-l) 0.4);
-  --t3-ce-slider-light-overlay: hsla(var(--t3-light-hs) var(--t3-light-l) 0.4);
-  --t3-ce-slider-dark-overlay: hsla(var(--t3-dark-hs) var(--t3-dark-l) 0.4);
+  --t3-ce-slider-primary-overlay: hsl(var(--t3-primary-hs) var(--t3-primary-l) / 40%);
+  --t3-ce-slider-secondary-overlay: hsl(var(--t3-secondary-hs) var(--t3-secondary-l) / 40%);
+  --t3-ce-slider-light-overlay: hsl(var(--t3-light-hs) var(--t3-light-l) / 40%);
+  --t3-ce-slider-dark-overlay: hsl(var(--t3-dark-hs) var(--t3-dark-l) / 40%);
   --t3-ce-slider-navigation-color: var(--t3-primary);
   --t3-ce-slider-pagination-color: var(--t3-primary);
 }

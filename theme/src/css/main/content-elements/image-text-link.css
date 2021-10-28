@@ -93,7 +93,7 @@
 }
 
 .ce-img-text-link__link .stretched-link:hover:after {
-  background-color: hsla(0deg 0 0% 3%);
+  background-color: hsl(0deg 0 0% / 3%);
 }
 
 /* -------------------------------------------------------- */
