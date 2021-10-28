@@ -8,7 +8,7 @@
 <h3 align="center">TYPO3 website starter kit</h3>
 <p align="center"><a href="https://t3kit.gitbook.io/doc/"><strong>t3kit documentation</strong></a></p>
 
-![](https://github.com/t3kit/t3kit/workflows/Code%20Guidelines/badge.svg)
+[![Code Guidelines](https://github.com/t3kit/t3kit/actions/workflows/code-guidelines.yml/badge.svg)](https://github.com/t3kit/t3kit/actions/workflows/code-guidelines.yml)
 
 ## Table of contents
 
@@ -50,11 +50,11 @@
 ## Required dependencies
 
 - [Git](https://git-scm.com/)
-- [Composer](https://getcomposer.org/) >= v2.0.8
-- [Docker](https://docs.docker.com/install/) >= v20.10.2
-- [Docker Compose](https://docs.docker.com/compose/install/) >= v1.27.4
-- [Node.js](https://nodejs.org/en/download/) >= v14.15.1
-- [NPM](https://nodejs.org/en/download/) >= v7.9.0
+- [Composer](https://getcomposer.org/) >= v2.1.8
+- [Docker](https://docs.docker.com/install/) >= v20.10.8
+- [Docker Compose](https://docs.docker.com/compose/cli-command/#installing-compose-v2) >= v2.0.0
+- [Node.js](https://nodejs.org/en/download/) >= v16.12.0
+- [NPM](https://nodejs.org/en/download/) >= v8.0.0
 
 ## File structure
 
