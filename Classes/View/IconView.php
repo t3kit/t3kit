@@ -56,7 +56,7 @@ class IconView implements \TYPO3\CMS\Core\SingletonInterface
 
         $iconSource =
             is_array($parameters['row'][$iconSourceField]) ?
-            $parameters['row'][$iconSourceField][0] :
+            $parameters['row'][$iconSourceField][0] ?? null :
             $parameters['row'][$iconSourceField] ?? null;
 
         $icons = [];
