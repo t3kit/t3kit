@@ -9,7 +9,7 @@ tt_content.3columns {
   templateName = 3columns
 
   dataProcessing {
-    10 = T3k\t3kit\DataProcessing\FlexFormProcessor
+    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
     10 {
       fieldName = pi_flexform
       as = flexform
