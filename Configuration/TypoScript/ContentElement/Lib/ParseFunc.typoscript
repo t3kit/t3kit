@@ -45,7 +45,6 @@ lib.parseFunc {
   allowTags := addToList(table, thead, tbody, tfoot, td, th, tr, title, tt)
   allowTags := addToList(u, ul, var)
   denyTags = *
-  sword = <span class="ce-sword">|</span>
   constants = 1
   nonTypoTagStdWrap {
     HTMLparser = 1
