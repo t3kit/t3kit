@@ -62,6 +62,10 @@
 				<source>Dark background</source>
 			</trans-unit>
 
+			<trans-unit id="flexform.skip_lazy_load" resname="flexform.skip_lazy_load">
+				<source>Disable lazy-loading for HeroImage element.</source>
+			</trans-unit>
+
 
 		</body>
 	</file>

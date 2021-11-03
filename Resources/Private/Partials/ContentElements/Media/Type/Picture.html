@@ -4,7 +4,7 @@
   <f:if condition="{file.link}">
     <f:then>
       <f:link.typolink class="picture-partial__link" parameter="{file.link}" >
-        <f:render partial="Media/Render/Picture" arguments="{data:data, image:file, height:height, width:width, mobile_width:mobile_width}" />
+        <f:render partial="Media/Render/Picture" arguments="{data:data, image:file, height:height, width:width, mobile_width:mobile_width, lazy_load:lazy_load}" />
       </f:link.typolink>
     </f:then>
 
@@ -17,14 +17,14 @@
               data-caption="{file.properties.description}"
               rel="picture-partial__zoom-{data.uid}"
               class="picture-partial__zoom-link">
-              <f:render partial="Media/Render/Picture" arguments="{data:data, image:file, height:height, width:width, mobile_width:mobile_width}" />
+              <f:render partial="Media/Render/Picture" arguments="{data:data, image:file, height:height, width:width, mobile_width:mobile_width, lazy_load:lazy_load}" />
             </a>
           </div>
         </f:then>
 
         <f:else>
           <div class="picture-partial__simple">
-            <f:render partial="Media/Render/Picture" arguments="{data:data, image:file, height:height, width:width, mobile_width:mobile_width}" />
+            <f:render partial="Media/Render/Picture" arguments="{data:data, image:file, height:height, width:width, mobile_width:mobile_width, lazy_load:lazy_load}" />
           </div>
         </f:else>
 

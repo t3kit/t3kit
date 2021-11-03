@@ -8,8 +8,15 @@
 			<trans-unit id="height.description" resname="height.description">
 				<source>
 					The minimum width of the image should be not less than &lt;strong&gt;1920px&lt;/strong&gt;.&lt;br&gt;
-					Also, it is recommended to crop the image according to a defined height.&lt;br&gt;
-					Without the manual crop, the image will be cropped by a center.
+					If the image height is set, the image will be cropped to this height and have the same height on different screens.&lt;br&gt;
+					If the image height equals zero (default), the image will be scaled depending on screen size.
+				</source>
+			</trans-unit>
+
+			<trans-unit id="skip_lazy_load.description" resname="skip_lazy_load.description">
+				<source>
+					Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint.&lt;br&gt;
+					It is recommended to skip lazy-loading for the HeroImage element.
 				</source>
 			</trans-unit>
 

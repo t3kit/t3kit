@@ -61,6 +61,17 @@
 						</TCEforms>
 					</background>
 
+					<skip_lazy_load>
+						<TCEforms>
+							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_heroImage.xlf:flexform.skip_lazy_load</label>
+							<config>
+								<type>check</type>
+								<renderType>checkboxToggle</renderType>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</skip_lazy_load>
+
 				</el>
 			</ROOT>
 		</sDEF>

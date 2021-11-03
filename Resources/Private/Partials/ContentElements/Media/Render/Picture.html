@@ -190,6 +190,15 @@
   </f:asset.css>
 </f:if>
 
+<f:if condition="{lazy_load} == skip">
+  <f:then>
+    <f:variable name="image_lazy_load" value="" />
+  </f:then>
+  <f:else>
+    <f:variable name="image_lazy_load" value="{loading: 'lazy'}" />
+  </f:else>
+</f:if>
+
 <f:if condition="{height}">
 
   <f:then>
@@ -221,11 +230,11 @@
         sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
       <f:image
-        class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius} picture-width-{picture_width} picture-uid-{image.uid} picture-height-{height}"
+        class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius} picture-width-{picture_width} picture-uid-{image.uid} picture-height-crop picture-height-{height}"
         image="{image}"
         alt="{image.alternative}"
         cropVariant="default"
-        loading="lazy" />
+        additionalAttributes="{image_lazy_load}" />
     </picture>
   </f:then>
 
@@ -257,11 +266,11 @@
         sizes="(min-width: {container_width}px) {big_viewport_width}, {medium_viewport_width}">
 
       <f:image
-        class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius} picture-width-{picture_width} picture-uid-{image.uid}"
+        class="picture-partial__item-img img-fluid figure-img {image.referenceProperties.picture_border_radius} picture-width-{picture_width} picture-uid-{image.uid} picture-height-auto"
         image="{image}"
         alt="{image.alternative}"
         cropVariant="default"
-        loading="lazy" />
+        additionalAttributes="{image_lazy_load}" />
     </picture>
   </f:else>
 
