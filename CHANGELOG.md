@@ -1,4 +1,41 @@
 
+#### v11.0.0-beta `November 8, 2021`
+
+- **[TASK]** update bootstrap icons ([f51c1c9f](https://github.com/t3kit/t3kit/commit/f51c1c9f))
+- **[TASK]** reduce the amount of images for the browser to choose  in picture tag ([e955af76](https://github.com/t3kit/t3kit/commit/e955af76))
+- **[FEATURE]** add skip_lazy_load option, update styling for aouto and crop image height, heroImage CE ([fb262114](https://github.com/t3kit/t3kit/commit/fb262114))
+- **[TASK]** update npm deps, update bootstrap-icons to v1.7 ([a0aaabc1](https://github.com/t3kit/t3kit/commit/a0aaabc1))
+- **[TASK]** use TYPO3 FlexFormProcessor ([34e4ea57](https://github.com/t3kit/t3kit/commit/34e4ea57))
+- **[TASK]** quote field names in typoscript ([e61316a3](https://github.com/t3kit/t3kit/commit/e61316a3))
+- **[TASK]** remove deprecated parseFunc.sword functionality ([725e7e11](https://github.com/t3kit/t3kit/commit/725e7e11))
+- **[TASK]** declare strict types in ext_localconf.php file ([57def36a](https://github.com/t3kit/t3kit/commit/57def36a))
+- **[TASK]** update XLIFF version to 1.2 ([ceb18574](https://github.com/t3kit/t3kit/commit/ceb18574))
+- **[BUGFIX]** correctly create section menu for pages showing content of other pages ([75da14bf](https://github.com/t3kit/t3kit/commit/75da14bf))
+- **[TASK]** use constant TYPO3 in global script files ([d559a447](https://github.com/t3kit/t3kit/commit/d559a447))
+- **[BUGFIX]** Prevent "Undefined array key 0" error (#289) ([50a8e56e](https://github.com/t3kit/t3kit/commit/50a8e56e))
+- **[TEST]** update GA tests, use php^8 and node^16 ([2d2f97a5](https://github.com/t3kit/t3kit/commit/2d2f97a5))
+- **[DOC]** update readme, required dependencies ([f0f60b6c](https://github.com/t3kit/t3kit/commit/f0f60b6c))
+- **[TASK]** update TCA config , fix TCA Migrations TYPO3v11 ([128a81cb](https://github.com/t3kit/t3kit/commit/128a81cb))
+- **[TASK]** use modern notation for color-functions in css ([e6642c8e](https://github.com/t3kit/t3kit/commit/e6642c8e))
+- **[TASK]** update checkNodeEngine fn, use closest packeage.json to define support version of node ([da402803](https://github.com/t3kit/t3kit/commit/da402803))
+- **[TASK]** add exports to package.json to use t3kit theme scripts from subthemes in monorepo ([f4973aeb](https://github.com/t3kit/t3kit/commit/f4973aeb))
+- **[TASK]** disable babel compiler ([5ebbc5d1](https://github.com/t3kit/t3kit/commit/5ebbc5d1))
+- **[TASK]** restructure js file system for ES modules, update rollup config, update dep-s ([b242c986](https://github.com/t3kit/t3kit/commit/b242c986))
+- **[TASK]** fix stylelint warnings ([9691b224](https://github.com/t3kit/t3kit/commit/9691b224))
+- **[TASK]** use node 16+, use ECMAScript modules for theme scripts ([b01bf369](https://github.com/t3kit/t3kit/commit/b01bf369))
+- **[TASK]** update Slider and HeroImage to use height only if it is not equal to zero ([c8517e87](https://github.com/t3kit/t3kit/commit/c8517e87))
+- **[BUGFIX]** Don't install husky on Composer non-git install (#288) ([a57f0ee4](https://github.com/t3kit/t3kit/commit/a57f0ee4))
+- **[BUGFIX]** fix illegal byte sequence error (#286) ([295c5f1c](https://github.com/t3kit/t3kit/commit/295c5f1c))
+- **[TASK]** Accordion template changes (#284) ([9020624c](https://github.com/t3kit/t3kit/commit/9020624c))
+- **[FEATURE]** add new accordion content element  (#282) ([e7948497](https://github.com/t3kit/t3kit/commit/e7948497))
+- **[TASK]** use t3kit/11-php8-fpm-nginx-buster:1.0.0 to instal composer dep-s ([b3921568](https://github.com/t3kit/t3kit/commit/b3921568))
+- **[TASK]** use TYPO3 v11.5.0 LTS ([cfe6fee1](https://github.com/t3kit/t3kit/commit/cfe6fee1))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[TASK]** update TYPO3 to v11 ([5739e5ed](https://github.com/t3kit/t3kit/commit/5739e5ed))
+
+***
+
 #### v10.0.0 `September 24, 2021`
 
 - **[TASK]** update favicons ([01103f69](https://github.com/t3kit/t3kit/commit/01103f69))
