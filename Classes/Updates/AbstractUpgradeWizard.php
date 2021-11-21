@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-
 namespace T3k\t3kit\Updates;
-
 
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\Query\QueryBuilder;
