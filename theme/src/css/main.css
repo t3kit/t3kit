@@ -26,6 +26,7 @@
 
 /* ===== content-elements ===== */
 @import "main/content-elements/table.css";
+@import "main/content-elements/text.css";
 @import "main/content-elements/textmedia.css";
 @import "main/content-elements/textpic.css";
 @import "main/content-elements/uploads.css";
