@@ -1,0 +1,4 @@
+.ctype__text li,
+.ctype__text ol {
+  list-style-position: inside;
+}
