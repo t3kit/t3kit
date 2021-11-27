@@ -66,42 +66,42 @@ $GLOBALS['TCA']['sys_file_reference']['columns']['link']  = array_replace_recurs
             'items' => [
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.100',
-                    '100'
+                    100
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.90',
-                    '90'
+                    90
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.80',
-                    '80'
+                    80
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.70',
-                    '70'
+                    70
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.60',
-                    '60'
+                    60
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.50',
-                    '50'
+                    50
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.40',
-                    '40'
+                    40
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.30',
-                    '30'
+                    30
                 ],
                 [
                     'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture_width.20',
-                    '20'
+                    20
                 ]
             ],
-            'default' => '100',
+            'default' => 100,
         ]
     ],
 ]);

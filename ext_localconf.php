@@ -147,3 +147,8 @@ if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'])) {
 
 // Register report module additions
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['reports']['tx_reports']['status']['providers']['security'][] = \T3k\t3kit\Report\T3kitSecurityStatus::class;
+
+// Register upgrade wizards
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][
+    \T3k\t3kit\Updates\SysFileReferencePrepareStringToIntegerUpgradeWizard::IDENTIFIER
+] = \T3k\t3kit\Updates\SysFileReferencePrepareStringToIntegerUpgradeWizard::class;
