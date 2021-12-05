@@ -1,0 +1,14 @@
+lib.contentRenderCount < lib.contentRender
+lib.contentRenderCount {
+  30 {
+    select {
+      orderBy >
+      where = {#colPos} IN ({field:colPos})
+      max = 1
+    }
+
+    renderObj >
+    renderObj = TEXT
+    renderObj.value = 1
+  }
+}
