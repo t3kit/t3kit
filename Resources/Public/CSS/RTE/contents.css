@@ -4,3 +4,10 @@
 .text-end {
   text-align: right;
 }
+
+li.text-center,
+li.text-end,
+ol.text-center,
+ol.text-end {
+  list-style-position: inside;
+}

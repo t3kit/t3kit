@@ -1,4 +1,6 @@
-.ctype__text li,
-.ctype__text ol {
+.ce-bodytext li.text-center,
+.ce-bodytext li.text-end,
+.ce-bodytext ol.text-center,
+.ce-bodytext ol.text-end {
   list-style-position: inside;
 }
