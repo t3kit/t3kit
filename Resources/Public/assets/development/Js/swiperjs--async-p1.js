@@ -2168,7 +2168,7 @@
     function updateClickedSlide(e) {
       const swiper = this;
       const params = swiper.params;
-      const slide = $(e.target).closest(`.${params.slideClass}`)[0];
+      const slide = $(e).closest(`.${params.slideClass}`)[0];
       let slideFound = false;
       let slideIndex;
 
@@ -2852,7 +2852,7 @@
         $wrapperEl
       } = swiper; // Remove duplicated slides
 
-      const $selector = $($wrapperEl.children()[0].parentNode);
+      const $selector = $wrapperEl.children().length > 0 ? $($wrapperEl.children()[0].parentNode) : $wrapperEl;
       $selector.children(`.${params.slideClass}.${params.slideDuplicateClass}`).remove();
       let slides = $selector.children(`.${params.slideClass}`);
 
@@ -3357,7 +3357,8 @@
       const timeDiff = touchEndTime - data.touchStartTime; // Tap, doubleTap, Click
 
       if (swiper.allowClick) {
-        swiper.updateClickedSlide(e);
+        const pathTree = e.path || e.composedPath && e.composedPath();
+        swiper.updateClickedSlide(pathTree && pathTree[0] || e.target);
         swiper.emit('tap click', e);
 
         if (timeDiff < 300 && touchEndTime - data.lastClickTime < 300) {
