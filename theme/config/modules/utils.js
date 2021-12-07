@@ -1,13 +1,14 @@
 import boxen from 'boxen'
 import { globby } from 'globby'
 import chalk from 'chalk'
+import chalkTemplate from 'chalk-template'
 import moment from 'moment'
 
 let envContext
 if (process.env.NODE_ENV === 'production') {
-  envContext = chalk`[{blue.bold production} {white context}]`
+  envContext = chalkTemplate`[{blue.bold production} {white context}]`
 } else {
-  envContext = chalk`[{red.bold development} {white context}]`
+  envContext = chalkTemplate`[{red.bold development} {white context}]`
 }
 
 async function getFileList (glob, options) {
@@ -51,7 +52,7 @@ function filesStats (files) {
         infoBlock = infoBlock + '\n'
       }
     } else {
-      infoBlock = infoBlock + chalk`{green ${file.compress.initialFile}} ({yellow.bold ${file.compress.initialFileSize}})\n{green ${file.compress.gzFile}} ({yellow.bold ${file.compress.gzFileSize}})\n{green ${file.compress.brFile}} ({yellow.bold ${file.compress.brFileSize}})\n______________________\n`
+      infoBlock = infoBlock + chalkTemplate`{green ${file.compress.initialFile}} ({yellow.bold ${file.compress.initialFileSize}})\n{green ${file.compress.gzFile}} ({yellow.bold ${file.compress.gzFileSize}})\n{green ${file.compress.brFile}} ({yellow.bold ${file.compress.brFileSize}})\n______________________\n`
       if (index !== lastItem) {
         infoBlock = infoBlock + '\n'
       }
@@ -61,7 +62,7 @@ function filesStats (files) {
 }
 
 function start (functionName, color) {
-  console.log(chalk`[${moment().format('hh:mm:ss')}] {white.underline Starting} {${color} ${functionName}} ...`)
+  console.log(chalkTemplate`[${moment().format('hh:mm:ss')}] {white.underline Starting} {${color} ${functionName}} ...`)
   return moment()
 }
 
@@ -75,8 +76,8 @@ function boxEnd (options) {
 
   const timeEnd = moment()
   const timeDiff = timeEnd.diff(timeStart, 's', true)
-  const title = chalk`{${endColor} ${functionName}}\n`
-  const ending = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {${endColor} ${functionName}}`
+  const title = chalkTemplate`{${endColor} ${functionName}}\n`
+  const ending = chalkTemplate`[${moment().format('hh:mm:ss')}] {white Finished} {${endColor} ${functionName}}`
   if (files) {
     const filesInfo = filesStats(files)
     console.log(
@@ -92,7 +93,7 @@ function boxEnd (options) {
 }
 
 function mainTaskStart (taskName) {
-  const msg = chalk`[${moment().format('hh:mm:ss')}] {white.bold ${taskName}}`
+  const msg = chalkTemplate`[${moment().format('hh:mm:ss')}] {white.bold ${taskName}}`
   console.log(
     `${boxen(`${msg}`,
       {
@@ -119,7 +120,7 @@ function mainTaskEnd (options) {
   }
   const timeEnd = moment()
   const timeDiff = timeEnd.diff(timeStart, 's', true)
-  const msg = chalk`[${moment().format('hh:mm:ss')}] {white Finished} {white.bold ${taskName}}`
+  const msg = chalkTemplate`[${moment().format('hh:mm:ss')}] {white Finished} {white.bold ${taskName}}`
   console.log(
     `\n${boxen(`DONE${envContext}\n${msg} after ${chalk.redBright.underline(timeDiff)} s`,
       {

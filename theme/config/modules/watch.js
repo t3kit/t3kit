@@ -1,5 +1,5 @@
 import chokidar from 'chokidar'
-import chalk from 'chalk'
+import chalkTemplate from 'chalk-template'
 import { compileCss } from './css.js'
 import { compileScss } from './sass.js'
 import { compileJs } from './rollup.js'
@@ -17,17 +17,17 @@ async function watchAll (localConf) {
     })
 
     chokidar.watch([`${localConf.CSS_SRC}**/*.css`, `${localConf.CSS_SRC}${localConf.VENDOR_FOLDER}*.css`], { ignoreInitial: true, awaitWriteFinish: false }).on('all', (event, path) => {
-      console.log(chalk`{red ${event}} ${path}`)
+      console.log(chalkTemplate`{red ${event}} ${path}`)
       compileCss(localConf, { hideStatus: true })
     })
 
     chokidar.watch([`${localConf.JS_SRC}**/*.js`, `${localConf.JS_SRC}${localConf.VENDOR_FOLDER}*.js`], { ignoreInitial: true, awaitWriteFinish: false }).on('all', (event, path) => {
-      console.log(chalk`{red ${event}} ${path}`)
+      console.log(chalkTemplate`{red ${event}} ${path}`)
       compileJs(localConf, { hideStatus: true })
     })
 
     chokidar.watch(`${localConf.SCSS_SRC}**/*.scss`, { ignoreInitial: true }).on('all', (event, path) => {
-      console.log(chalk`{red ${event}} ${path}`)
+      console.log(chalkTemplate`{red ${event}} ${path}`)
       compileScss(localConf, { hideStatus: true })
     })
   } catch (error) {

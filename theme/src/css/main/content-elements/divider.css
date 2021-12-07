@@ -4,7 +4,7 @@
   --t3-ce-div-color: var(--t3-body-color);
 
   color: var(--t3-ce-div-color);
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 /* -------------------------------------------------------- */
