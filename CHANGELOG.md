@@ -1,4 +1,19 @@
 
+#### v11.0.0-beta.2 `December 8, 2021`
+
+- **[TASK]** update b13/container to v1.4 with PHP8 support ([361418ab](https://github.com/t3kit/t3kit/commit/361418ab))
+- **[TASK]** update npm deps, update chalk pkg, fix css linter warnings ([94174fae](https://github.com/t3kit/t3kit/commit/94174fae))
+- **[TASK]** update list-style-position styling for RTE content element (BE and FE) ([5d92e7ff](https://github.com/t3kit/t3kit/commit/5d92e7ff))
+- **[TASK]** reduce the amount of image crops for picture tag, less load for server during image processing ([8cdb7591](https://github.com/t3kit/t3kit/commit/8cdb7591))
+- **[BUGFIX]** allow empty menus in footer (#302) ([5ae809b3](https://github.com/t3kit/t3kit/commit/5ae809b3))
+- **[FEATURE]** Don't render unused sections in StartPage.html (#303) ([e808b4df](https://github.com/t3kit/t3kit/commit/e808b4df))
+- **[BUGFIX]** Add correct styling for lists with center/right alignment (#301) ([1de9027b](https://github.com/t3kit/t3kit/commit/1de9027b))
+
+:heavy_exclamation_mark:**Breaking Changes:**
+- **[!!!]** **[BUGFIX]** Change sys_file_reference.picture_width to tinyint (#299) ([501309d1](https://github.com/t3kit/t3kit/commit/501309d1))
+
+***
+
 #### v11.0.0-beta `November 8, 2021`
 
 - **[TASK]** update bootstrap icons ([f51c1c9f](https://github.com/t3kit/t3kit/commit/f51c1c9f))
