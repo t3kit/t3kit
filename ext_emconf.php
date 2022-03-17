@@ -3,7 +3,7 @@
 $EM_CONF['t3kit'] = [
     'title' => 't3kit',
     'description' => 't3kit project. A TYPO3 website starterkit.',
-    'version' => '11.0.0-beta.2',
+    'version' => '11.0.0',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
@@ -15,7 +15,7 @@ $EM_CONF['t3kit'] = [
             'fluid_styled_content' => '*',
         ],
     ],
-    'state' => 'beta',
+    'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,

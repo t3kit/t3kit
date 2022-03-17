@@ -1,4 +1,12 @@
 
+#### v11.0.0 `March 17, 2022`
+
+- **[TASK]** update Bootstrap icons lib ([e1c2193c](https://github.com/t3kit/t3kit/commit/e1c2193c))
+- **[TASK]** use new version of t3kit/11-php8-fpm-nginx-buster image ([b658a8c8](https://github.com/t3kit/t3kit/commit/b658a8c8))
+- **[TASK]** update composer (TYPO3, b13/container) and npm dependencies (swiper, simplelightbox, bootstrap-icons) ([7f7e189c](https://github.com/t3kit/t3kit/commit/7f7e189c))
+
+***
+
 #### v11.0.0-beta.2 `December 8, 2021`
 
 - **[TASK]** update b13/container to v1.4 with PHP8 support ([361418ab](https://github.com/t3kit/t3kit/commit/361418ab))
