@@ -5,13 +5,14 @@
     	By André Rinas, www.andrerinas.de
     	Documentation, www.simplelightbox.de
     	Available for use under the MIT License
-    	Version 2.10.1
+    	Version 2.10.2
     */
     class SimpleLightbox {
 
         defaultOptions = {
             sourceAttr: 'href',
             overlay: true,
+            overlayOpacity: 0.7,
             spinner: true,
             nav: true,
             navText: ['&lsaquo;', '&rsaquo;'],
@@ -260,7 +261,7 @@
         createDomNodes() {
             this.domNodes.overlay = document.createElement('div');
             this.domNodes.overlay.classList.add('sl-overlay');
-            this.domNodes.overlay.dataset.opacityTarget = ".7";
+            this.domNodes.overlay.dataset.opacityTarget = this.options.overlayOpacity;
 
             this.domNodes.closeButton = document.createElement('button');
             this.domNodes.closeButton.classList.add('sl-close');
@@ -392,8 +393,8 @@
 
             this.removeEventListener(document, 'focusin.' + this.eventNamespace);
 
-
-            this.fadeOut(document.querySelectorAll('.sl-image img, .sl-overlay, .sl-close, .sl-navigation, .sl-image .sl-caption, .sl-counter'), this.options.fadeSpeed, () => {
+            this.fadeOut(this.domNodes.overlay, this.options.fadeSpeed);
+            this.fadeOut(document.querySelectorAll('.sl-image img,  .sl-close, .sl-navigation, .sl-image .sl-caption, .sl-counter'), this.options.fadeSpeed, () => {
                 if (this.options.disableScroll) {
                     this.toggleScrollbar('show');
                 }
@@ -1298,7 +1299,7 @@
         fadeOut(elements, duration, callback) {
             elements = this.wrap(elements);
             for (let element of elements) {
-                element.style.opacity = 1;
+                element.style.opacity = parseFloat(element) || window.getComputedStyle(element).getPropertyValue("opacity");
             }
 
             this.isFadeIn = false;
@@ -1345,7 +1346,7 @@
                         requestAnimationFrame(fade);
                     } else {
                         for (let element of elements) {
-                            element.style.opacity = '';
+                            element.style.opacity = opacityTarget;
                         }
                         callback && callback.call(this, elements);
                     }

@@ -1,10 +1,8 @@
-version: "3.8"
-
 services:
 
   web:
     container_name: t3kitext_web
-    image: t3kit/11-php8-fpm-nginx-buster:1.0.0
+    image: t3kit/11-php8-fpm-nginx-buster:2.0.0
     env_file:
       - composer.env
     volumes:

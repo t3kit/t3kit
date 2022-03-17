@@ -25,6 +25,7 @@
 
 // Bootstrap Utilities
 // Only use the utilities we need
+/* stylelint-disable */
 $utilities: map-get-multiple(
   $utilities,
   (
@@ -109,6 +110,7 @@ $utilities: map-get-multiple(
     "visibility",
   )
 );
+/* stylelint-enable */
 
 @import "bootstrap/scss/utilities/_api.scss";
 

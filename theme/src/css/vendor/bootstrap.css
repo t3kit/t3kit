@@ -1924,6 +1924,8 @@ progress {
   white-space: nowrap;
 }
 
+/* stylelint-disable */
+/* stylelint-enable */
 .align-baseline {
   vertical-align: baseline !important;
 }
