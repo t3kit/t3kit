@@ -42,7 +42,6 @@ use TYPO3\CMS\Core\Utility\PathUtility;
  */
 class IconView implements \TYPO3\CMS\Core\SingletonInterface
 {
-
     /**
      * Gets Icons for selected icon source.
      *

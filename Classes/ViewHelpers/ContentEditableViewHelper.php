@@ -42,7 +42,6 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
  */
 class ContentEditableViewHelper extends AbstractTagBasedViewHelper
 {
-
     /**
      * Disable the escaping of children
      *

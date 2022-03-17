@@ -21,7 +21,6 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 class SvgViewHelper extends AbstractViewHelper
 {
-
     /**
      * @var boolean
      */
