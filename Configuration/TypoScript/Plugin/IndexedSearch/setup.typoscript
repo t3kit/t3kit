@@ -15,6 +15,14 @@ plugin.tx_indexedsearch {
       200 = EXT:t3kit/Resources/Private/Extensions/indexed_search/Layouts/
     }
   }
+
+  settings {
+    # show the rules
+    displayRules = 0
+
+    # show a link to the advanced search
+    displayAdvancedSearchLink = 0
+  }
 }
 
 lib {
