@@ -1,0 +1,35 @@
+.tx-indexedsearch-search-wrp {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tx-indexedsearch-form input {
+  height: 100%;
+}
+
+.tx-indexedsearch-browsebox p:first-child {
+  margin-bottom: 2rem;
+}
+
+ul.tx-indexedsearch-browsebox {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+ul.tx-indexedsearch-browsebox li {
+  margin-right: 2rem;
+}
+
+ul.tx-indexedsearch-browsebox li.tx-indexedsearch-browselist-currentPage a {
+  text-decoration: none;
+}
+
+.tx-indexedsearch-res {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=indexedsearch.css.map */
