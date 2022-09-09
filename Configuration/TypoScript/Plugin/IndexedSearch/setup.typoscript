@@ -16,6 +16,10 @@ plugin.tx_indexedsearch {
     }
   }
 
+  # remove text for page in pagination
+  _LOCAL_LANG.default.displayResults.page =
+  _LOCAL_LANG.sv.displayResults.page =
+
   settings {
     # show the rules
     displayRules = 0
