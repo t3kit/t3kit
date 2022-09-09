@@ -6,6 +6,8 @@
 
 .tx-indexedsearch-form input {
   height: 100%;
+  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .tx-indexedsearch-browsebox p:first-child {
