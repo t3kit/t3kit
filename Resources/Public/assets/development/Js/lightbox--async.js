@@ -5,7 +5,7 @@
     	By André Rinas, www.andrerinas.de
     	Documentation, www.simplelightbox.de
     	Available for use under the MIT License
-    	Version 2.10.3
+    	Version 2.10.4
     */
     class SimpleLightbox {
 
@@ -1271,7 +1271,7 @@
 
                 for (let event of events) {
                     let options = opts || false;
-                    let needsPassiveFix = ['touchstart', 'touchmove'].indexOf(event.split('.')[0]) >= 0;
+                    let needsPassiveFix = ['touchstart', 'touchmove','mousewheel','DOMMouseScroll'].indexOf(event.split('.')[0]) >= 0;
                     if (needsPassiveFix && this.isPassiveEventsSupported) {
                         if (typeof options === 'object') {
                             options.passive = true;
@@ -1279,6 +1279,7 @@
                             options = {passive: true};
                         }
                     }
+
                     element.namespaces[event] = callback;
                     element.addEventListener(event.split('.')[0], callback, options);
                 }
