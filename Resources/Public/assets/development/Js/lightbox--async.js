@@ -5,7 +5,7 @@
     	By André Rinas, www.andrerinas.de
     	Documentation, www.simplelightbox.de
     	Available for use under the MIT License
-    	Version 2.10.2
+    	Version 2.10.3
     */
     class SimpleLightbox {
 
@@ -738,8 +738,10 @@
 
                     this.controlCoordinates.targetScale = scale;
 
+                    let scrollTopPos = document.documentElement.scrollTop || document.body.scrollTop;
+
                     this.controlCoordinates.pinchOffsetX = event.pageX;
-                    this.controlCoordinates.pinchOffsetY = event.pageY;
+                    this.controlCoordinates.pinchOffsetY = event.pageY - scrollTopPos || 0; // need to substract the scroll position
 
                     this.controlCoordinates.limitOffsetX = ((this.controlCoordinates.imgWidth * this.controlCoordinates.targetScale) - this.controlCoordinates.containerWidth) / 2;
                     this.controlCoordinates.limitOffsetY = ((this.controlCoordinates.imgHeight * this.controlCoordinates.targetScale) - this.controlCoordinates.containerHeight) / 2;
@@ -751,7 +753,7 @@
 
                     if (this.controlCoordinates.targetScale > 1) {
                         this.controlCoordinates.zoomed = true;
-                        if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                        if ( (!this.domNodes.caption.style.opacity || this.domNodes.caption.style.opacity > 0) && this.domNodes.caption.style.display !== 'none') {
                             this.fadeOut(this.domNodes.caption, this.options.fadeSpeed);
                         }
                     } else {
@@ -821,7 +823,7 @@
                                 this.zoomPanElement(0 + "px", 0 + "px", this.controlCoordinates.initialScale);
 
 
-                                if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                                if ( (!this.domNodes.caption.style.opacity || this.domNodes.caption.style.opacity > 0) && this.domNodes.caption.style.display !== 'none') {
                                     this.fadeOut(this.domNodes.caption, this.options.fadeSpeed);
                                 }
 
@@ -906,7 +908,7 @@
 
                             if (this.controlCoordinates.targetScale > 1) {
                                 this.controlCoordinates.zoomed = true;
-                                if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                                if ((!this.domNodes.caption.style.opacity || this.domNodes.caption.style.opacity > 0) && this.domNodes.caption.style.display !== 'none') {
                                     this.fadeOut(this.domNodes.caption, this.options.fadeSpeed);
                                 }
                             }
@@ -1052,7 +1054,7 @@
                     this.controlCoordinates.initialScale = this.options.doubleTapZoom;
                     this.setZoomData(this.controlCoordinates.initialScale, 0, 0);
                     this.zoomPanElement(0 + "px", 0 + "px", this.controlCoordinates.initialScale);
-                    if (!this.domNodes.caption.style.opacity && this.domNodes.caption.style.display !== 'none') {
+                    if ((!this.domNodes.caption.style.opacity || this.domNodes.caption.style.opacity > 0) && this.domNodes.caption.style.display !== 'none') {
                         this.fadeOut(this.domNodes.caption, this.options.fadeSpeed);
                     }
                     this.controlCoordinates.zoomed = true;

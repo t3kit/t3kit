@@ -15,6 +15,18 @@ plugin.tx_indexedsearch {
       200 = EXT:t3kit/Resources/Private/Extensions/indexed_search/Layouts/
     }
   }
+
+  # remove text for page in pagination
+  _LOCAL_LANG.default.displayResults.page =
+  _LOCAL_LANG.sv.displayResults.page =
+
+  settings {
+    # show the rules
+    displayRules = 0
+
+    # show a link to the advanced search
+    displayAdvancedSearchLink = 0
+  }
 }
 
 lib {
