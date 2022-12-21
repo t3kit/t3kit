@@ -1,4 +1,12 @@
 
+#### v11.1.0 `December 21, 2022`
+
+- **[TASK]** update npm dep-s ([f3648542](https://github.com/t3kit/t3kit/commit/f3648542))
+- **[FEATURE]** search results styling for indexed search (#311) ([9523d1ef](https://github.com/t3kit/t3kit/commit/9523d1ef))
+- **[TASK]** Add typo3/* to allow-plugins in allow-plugins config (#313) ([73dcc5ad](https://github.com/t3kit/t3kit/commit/73dcc5ad))
+
+***
+
 #### v11.0.0 `March 17, 2022`
 
 - **[TASK]** update Bootstrap icons lib ([e1c2193c](https://github.com/t3kit/t3kit/commit/e1c2193c))
