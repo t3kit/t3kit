@@ -63,7 +63,7 @@
     "semver": "~7.3.5",
     "snazzy": "~9.0.0",
     "standard": "~16.0.3",
-    "stylelint": "~15.6.0",
+    "stylelint": "~15.10.1",
     "stylelint-config-standard": "~33.0.0",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-no-unsupported-browser-features": "~5.0.3"
