@@ -3,7 +3,7 @@
 $EM_CONF['t3kit'] = [
     'title' => 't3kit',
     'description' => 't3kit project. A TYPO3 website starterkit.',
-    'version' => '11.1.1',
+    'version' => '11.1.2',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
