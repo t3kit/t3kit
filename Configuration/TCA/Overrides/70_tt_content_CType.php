@@ -9,9 +9,10 @@ defined('TYPO3') || die();
  */
 
 $CTypeItems = $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'];
+
 // remove 'standard' CType divider
 foreach ($CTypeItems as $position => $item) {
-    switch ($item[0]) {
+    switch ($item['label'] ?? '') {
         case 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.standard':
             unset($GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][$position]);
             break;
@@ -19,7 +20,7 @@ foreach ($CTypeItems as $position => $item) {
 }
 // remove 'lists' CType divider and elements with 'lists' group
 foreach ($CTypeItems as $position => $item) {
-    switch ($item[3]) {
+    switch ($item['group'] ?? '') {
         case 'lists':
             unset($CTypeItems, $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][$position]);
             break;

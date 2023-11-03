@@ -39,7 +39,7 @@
     "typo3/cms-seo": "^12.4.0",
     "typo3/cms-tstemplate": "^12.4.0",
     "typo3/cms-felogin": "^12.4.0",
-    "b13/container": "^1.5.0"
+    "b13/container": "^2.3.0"
   },
   "require-dev": {
     "editorconfig-checker/editorconfig-checker": "^10.3",
