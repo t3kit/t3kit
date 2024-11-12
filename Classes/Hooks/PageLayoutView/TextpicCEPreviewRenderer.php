@@ -40,7 +40,7 @@ class TextpicCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
         &$headerContent,
         &$itemContent,
         array &$row
-    ) {
+    ): void {
         if ($row['CType'] === 'textpic') {
             if ($row['advanced_image']) {
                 $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'advanced_image'), $row);

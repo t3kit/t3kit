@@ -36,7 +36,7 @@ class SvgViewHelper extends AbstractViewHelper
      *
      * @return void
      */
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         parent::initializeArguments();
         $this->registerArgument('src', 'string', 'Specifies the source file', true);

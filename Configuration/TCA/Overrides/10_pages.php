@@ -145,7 +145,10 @@ defined('TYPO3') || die();
     'nav_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/Page/locallang.xlf:nav_image',
         'exclude' => true,
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('nav_image', [
+        'config' => [
+            ### !!! Watch out for fieldName different from columnName
+            'type' => 'file',
+            'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
             'appearance' => [
                 'createNewRelationLinkTitle' =>
                 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference',
@@ -193,7 +196,7 @@ defined('TYPO3') || die();
                     ]
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ]
     ],
 ]);
 
@@ -213,12 +216,12 @@ defined('TYPO3') || die();
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                [   'None',
-                    ''
+                [   'label' => 'None',
+                    'value' => ''
                 ],
                 [
-                    'Bootstrap',
-                    'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
+                    'label' => 'Bootstrap',
+                    'value' => 'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
                 ],
             ],
             'default' => '',
@@ -241,8 +244,8 @@ defined('TYPO3') || die();
             ],
             'itemsProcFunc' => 'T3k\t3kit\View\IconView->addIconsFromSource',
             'items' => [
-                [   'None',
-                    ''
+                [   'label' => 'None',
+                    'value' => ''
                 ]
             ],
             'maxitems' => '1',
@@ -259,12 +262,6 @@ defined('TYPO3') || die();
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
-            'items' => [
-                [
-                    0 => '',
-                    1 => '',
-                ]
-            ],
             'default' => 0,
         ]
     ],

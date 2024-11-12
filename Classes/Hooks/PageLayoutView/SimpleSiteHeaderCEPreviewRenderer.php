@@ -40,7 +40,7 @@ class SimpleSiteHeaderCEPreviewRenderer implements PageLayoutViewDrawItemHookInt
         &$headerContent,
         &$itemContent,
         array &$row
-    ) {
+    ): void {
         if ($row['CType'] === 'simpleSiteHeader') {
             if ($row['simple_image']) {
                 $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'simple_image'), $row);

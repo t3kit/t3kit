@@ -40,7 +40,7 @@ class VideoCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
         &$headerContent,
         &$itemContent,
         array &$row
-    ) {
+    ): void {
         if ($row['CType'] === 'video') {
             if ($row['advanced_media']) {
                 $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'advanced_media'), $row);

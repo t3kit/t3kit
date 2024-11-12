@@ -47,7 +47,7 @@ class IconView implements \TYPO3\CMS\Core\SingletonInterface
      *
      * @param array $parameters
      */
-    public function addIconsFromSource(array $parameters)
+    public function addIconsFromSource(array $parameters): void
     {
         $iconSourceField =
             $parameters['config']['fieldWizard']['selectIcons']['iconSourceField'] ??

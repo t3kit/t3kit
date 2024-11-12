@@ -42,7 +42,7 @@ class ContactCardCEPreviewRenderer implements PageLayoutViewDrawItemHookInterfac
         &$headerContent,
         &$itemContent,
         array &$row
-    ) {
+    ): void {
         if ($row['CType'] === 'contactCard') {
             if ($row['picture']) {
                 $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'picture'), $row);

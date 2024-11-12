@@ -40,7 +40,7 @@ class ImageTextLeftRightCEPreviewRenderer implements PageLayoutViewDrawItemHookI
         &$headerContent,
         &$itemContent,
         array &$row
-    ) {
+    ): void {
         if ($row['CType'] === 'imageTextLeftRight') {
             if ($row['picture']) {
                 $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($row, 'tt_content', 'picture'), $row);

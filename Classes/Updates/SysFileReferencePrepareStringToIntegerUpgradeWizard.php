@@ -26,9 +26,7 @@ class SysFileReferencePrepareStringToIntegerUpgradeWizard extends AbstractUpgrad
             ->update(self::TABLE_NAME)
             ->where(
                 $queryBuilder->expr()->eq('picture_width', $queryBuilder->createNamedParameter(''))
-            )
-            ->set('picture_width', '100', false, \PDO::PARAM_STR)
-            ->execute();
+            )->set('picture_width', '100', false, \PDO::PARAM_STR)->executeStatement();
     }
 
     /**
@@ -40,11 +38,7 @@ class SysFileReferencePrepareStringToIntegerUpgradeWizard extends AbstractUpgrad
 
         return (bool)$queryBuilder
             ->count('uid')
-            ->from(self::TABLE_NAME)
-            ->where(
-                $queryBuilder->expr()->eq('picture_width', $queryBuilder->createNamedParameter(''))
-            )
-            ->execute()
+            ->from(self::TABLE_NAME)->where($queryBuilder->expr()->eq('picture_width', $queryBuilder->createNamedParameter('')))->executeQuery()
             ->fetchOne();
     }
 

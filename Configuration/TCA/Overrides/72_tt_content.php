@@ -44,32 +44,32 @@ defined('TYPO3') || die();
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.1',
-                    '1'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.1',
+                    'value' => '1'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.2',
-                    '2'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.2',
+                    'value' => '2'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.3',
-                    '3'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.3',
+                    'value' => '3'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.4',
-                    '4'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.4',
+                    'value' => '4'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.5',
-                    '5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.5',
+                    'value' => '5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.6',
-                    '6'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_layout.6',
+                    'value' => '6'
                 ],
                 [
-                    'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout.I.6',
-                    '100'
+                    'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout.I.6',
+                    'value' => '100'
                 ]
             ],
             'default' => '2'
@@ -86,56 +86,56 @@ defined('TYPO3') || die();
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.default',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.default',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.1',
-                    'h1'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.1',
+                    'value' => 'h1'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.2',
-                    'h2'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.2',
+                    'value' => 'h2'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.3',
-                    'h3'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.3',
+                    'value' => 'h3'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.4',
-                    'h4'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.4',
+                    'value' => 'h4'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.5',
-                    'h5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.5',
+                    'value' => 'h5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.6',
-                    'h6'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.6',
+                    'value' => 'h6'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.1',
-                    'large-h1'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.1',
+                    'value' => 'large-h1'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.2',
-                    'large-h2'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.2',
+                    'value' => 'large-h2'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.3',
-                    'large-h3'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.3',
+                    'value' => 'large-h3'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.4',
-                    'large-h4'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.4',
+                    'value' => 'large-h4'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.5',
-                    'large-h5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.5',
+                    'value' => 'large-h5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
-                    'large-h6'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
+                    'value' => 'large-h6'
                 ]
             ],
             'default' => '0'
@@ -153,16 +153,16 @@ defined('TYPO3') || die();
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.left',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
-                    'center'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.center',
+                    'value' => 'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
-                    'end'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_position.right',
+                    'value' => 'end'
                 ]
             ],
             'default' => '0'
@@ -217,56 +217,56 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.default',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.default',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.1',
-                    'h1'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.1',
+                    'value' => 'h1'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.2',
-                    'h2'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.2',
+                    'value' => 'h2'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.3',
-                    'h3'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.3',
+                    'value' => 'h3'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.4',
-                    'h4'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.4',
+                    'value' => 'h4'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.5',
-                    'h5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.5',
+                    'value' => 'h5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.6',
-                    'h6'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.6',
+                    'value' => 'h6'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.1',
-                    'large-h1'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.1',
+                    'value' => 'large-h1'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.2',
-                    'large-h2'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.2',
+                    'value' => 'large-h2'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.3',
-                    'large-h3'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.3',
+                    'value' => 'large-h3'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.4',
-                    'large-h4'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.4',
+                    'value' => 'large-h4'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.5',
-                    'large-h5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.5',
+                    'value' => 'large-h5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
-                    'large-h6'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:header_style.large_heading.6',
+                    'value' => 'large-h6'
                 ]
             ],
             'default' => '0'
@@ -292,16 +292,16 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.left',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
-                    'center'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.center',
+                    'value' => 'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
-                    'end'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:content_position.right',
+                    'value' => 'end'
                 ]
             ],
             'default' => '0',
@@ -343,21 +343,10 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
         'exclude' => true,
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link',
         'config' => [
-            'type' => 'input',
-            'renderType' => 'inputLink',
+            'type' => 'link',
             'size' => 50,
-            'max' => 1024,
-            'eval' => 'trim',
-            'fieldControl' => [
-                'linkPopup' => [
-                    'options' => [
-                        'title' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link',
-                        'blindLinkFields' => 'params, target, class, title',
-                        'blindLinkOptions' => 'folder'
-                    ],
-                ],
-            ],
-            'softref' => 'typolink'
+            'allowedTypes' => ['page', 'file', 'url', 'email', 'record', 'telephone'],
+            'appearance' => ['browserTitle' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link', 'allowedOptions' => ['rel']]
         ]
     ],
 ]);
@@ -371,16 +360,16 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.left',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.left',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.center',
-                    'center'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.center',
+                    'value' => 'center'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.right',
-                    'end'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:link_position.right',
+                    'value' => 'end'
                 ]
             ],
             'default' => '0',
@@ -410,7 +399,7 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'checkboxLabeledToggle',
             'items' => [
                 [
-                    0 => '',
+                    'label' => '',
                     1 => '',
                     'labelChecked' => 'Enabled',
                     'labelUnchecked' => 'Disabled',
@@ -431,16 +420,16 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.default',
-                    0
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.default',
+                    'value' => 0
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.large',
-                    'btn-lg'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.large',
+                    'value' => 'btn-lg'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.small',
-                    'btn-sm'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_size.small',
+                    'value' => 'btn-sm'
                 ]
             ],
             'default' => 0,
@@ -457,16 +446,16 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.primary',
-                    'primary'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.primary',
+                    'value' => 'primary'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.dark',
-                    'dark'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.dark',
+                    'value' => 'dark'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.light',
-                    'light'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:button_style.light',
+                    'value' => 'light'
                 ]
             ],
             'default' => 'primary',
@@ -481,12 +470,6 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
-            'items' => [
-                [
-                    0 => '',
-                    1 => '',
-                ]
-            ],
             'default' => 0,
         ]
     ],
@@ -499,12 +482,6 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
-            'items' => [
-                [
-                    0 => '',
-                    1 => '',
-                ]
-            ],
             'default' => 0,
         ]
     ],
@@ -526,7 +503,10 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'simple_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:simple_image',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('simple_image', [
+        'config' => [
+            ### !!! Watch out for fieldName different from columnName
+            'type' => 'file',
+            'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
             ],
@@ -582,13 +562,16 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                     ],
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ]
     ],
 ]);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'svg_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:svg_image',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('svg_image', [
+        'config' => [
+            ### !!! Watch out for fieldName different from columnName
+            'type' => 'file',
+            'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
             ],
@@ -635,14 +618,17 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                     ]
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ]
     ],
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'picture' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:picture',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('picture', [
+        'config' => [
+            ### !!! Watch out for fieldName different from columnName
+            'type' => 'file',
+            'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
             ],
@@ -689,14 +675,17 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                     ]
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ]
     ],
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'advanced_image' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:advanced_image',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('advanced_image', [
+        'config' => [
+            ### !!! Watch out for fieldName different from columnName
+            'type' => 'file',
+            'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
             'appearance' => [
                 'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
             ],
@@ -743,14 +732,17 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                     ]
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'])
+        ]
     ],
 ]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
     'advanced_media' => [
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:advanced_media',
-        'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('advanced_media', [
+        'config' => [
+            ### !!! Watch out for fieldName different from columnName
+            'type' => 'file',
+            'allowed' => $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext'],
             'appearance' => [
                 'createNewRelationLinkTitle' =>
                 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.asset_references.addFileReference'
@@ -798,7 +790,7 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
                     ]
                 ]
             ],
-        ], $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext'])
+        ]
     ],
 ]);
 
@@ -823,12 +815,12 @@ $GLOBALS['TCA']['tt_content']['columns']['header_link']  = array_replace_recursi
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container',
-                    'container'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container',
+                    'value' => 'container'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container_fluid',
-                    'container-fluid'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:section_container_width.container_fluid',
+                    'value' => 'container-fluid'
                 ]
             ],
             'default' => 'container',
@@ -857,24 +849,24 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1920',
-                    '1920'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1920',
+                    'value' => '1920'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1440',
-                    '1440'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1440',
+                    'value' => '1440'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1200',
-                    '1200'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.1200',
+                    'value' => '1200'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.992',
-                    '992'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.992',
+                    'value' => '992'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.800',
-                    '800'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:image_zoom_width.800',
+                    'value' => '800'
                 ]
             ],
             'default' => '1920',
@@ -897,12 +889,12 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.default',
-                    0
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.default',
+                    'value' => 0
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.auto',
-                    'textorient-auto'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:textorient.auto',
+                    'value' => 'textorient-auto'
                 ],
             ],
             'default' => 0,
@@ -929,12 +921,12 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                [   'None',
-                    ''
+                [   'label' => 'None',
+                    'value' => ''
                 ],
                 [
-                    'Bootstrap',
-                    'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
+                    'label' => 'Bootstrap',
+                    'value' => 'EXT:t3kit/Resources/Public/assets/Icons/Bootstrap/'
                 ],
             ],
             'default' => '',
@@ -956,8 +948,8 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             ],
             'itemsProcFunc' => 'T3k\t3kit\View\IconView->addIconsFromSource',
             'items' => [
-                [   'None',
-                    ''
+                [   'label' => 'None',
+                    'value' => ''
                 ]
             ],
             'maxitems' => 1,
@@ -989,48 +981,48 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
-                    'margin-top-5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
+                    'value' => 'margin-top-5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
-                    'margin-top-10'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
+                    'value' => 'margin-top-10'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
-                    'margin-top-15'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
+                    'value' => 'margin-top-15'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
-                    'margin-top-20'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
+                    'value' => 'margin-top-20'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
-                    'margin-top-25'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
+                    'value' => 'margin-top-25'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
-                    'margin-top-30'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
+                    'value' => 'margin-top-30'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
-                    'margin-top-40'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
+                    'value' => 'margin-top-40'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
-                    'margin-top-50'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
+                    'value' => 'margin-top-50'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
-                    'margin-top-60'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
+                    'value' => 'margin-top-60'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
-                    'margin-top-70'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
+                    'value' => 'margin-top-70'
                 ]
             ],
             'default' => '0'
@@ -1048,48 +1040,48 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'renderType' => 'selectSingle',
             'items' => [
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
-                    '0'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_default',
+                    'value' => '0'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
-                    'margin-bottom-5'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_5',
+                    'value' => 'margin-bottom-5'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
-                    'margin-bottom-10'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_10',
+                    'value' => 'margin-bottom-10'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
-                    'margin-bottom-15'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_15',
+                    'value' => 'margin-bottom-15'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
-                    'margin-bottom-20'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_20',
+                    'value' => 'margin-bottom-20'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
-                    'margin-bottom-25'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_25',
+                    'value' => 'margin-bottom-25'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
-                    'margin-bottom-30'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_30',
+                    'value' => 'margin-bottom-30'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
-                    'margin-bottom-40'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_40',
+                    'value' => 'margin-bottom-40'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
-                    'margin-bottom-50'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_50',
+                    'value' => 'margin-bottom-50'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
-                    'margin-bottom-60'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_60',
+                    'value' => 'margin-bottom-60'
                 ],
                 [
-                    'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
-                    'margin-bottom-70'
+                    'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:margin_70',
+                    'value' => 'margin-bottom-70'
                 ]
             ],
             'default' => '0'
@@ -1105,12 +1097,12 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                ['none', '0'],
-                ['Primary', 'primary-color'],
-                ['Secondary', 'secondary-color'],
-                ['Dark', 'dark-color'],
-                ['Light', 'light-color'],
-                ['Inverted', 'inverted-color']
+                ['label' => 'none', 'value' => '0'],
+                ['label' => 'Primary', 'value' => 'primary-color'],
+                ['label' => 'Secondary', 'value' => 'secondary-color'],
+                ['label' => 'Dark', 'value' => 'dark-color'],
+                ['label' => 'Light', 'value' => 'light-color'],
+                ['label' => 'Inverted', 'value' => 'inverted-color']
             ],
             'default' => '0',
         ],
@@ -1125,22 +1117,22 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                ['none', '0'],
-                ['Primary', 'primary-bg-color'],
-                ['Secondary', 'secondary-bg-color'],
-                ['Dark', 'dark-bg-color'],
-                ['Light', 'light-bg-color'],
-                ['Default', 'default-bg-color'],
-                ['Inverted', 'inverted-bg-color'],
-                ['Gray 90', 'gray-90-bg-color'],
-                ['Gray 80', 'gray-80-bg-color'],
-                ['Gray 70', 'gray-70-bg-color'],
-                ['Gray 60', 'gray-60-bg-color'],
-                ['Gray 50', 'gray-50-bg-color'],
-                ['Gray 40', 'gray-40-bg-color'],
-                ['Gray 30', 'gray-30-bg-color'],
-                ['Gray 20', 'gray-20-bg-color'],
-                ['Gray 10', 'gray-10-bg-color']
+                ['label' => 'none', 'value' => '0'],
+                ['label' => 'Primary', 'value' => 'primary-bg-color'],
+                ['label' => 'Secondary', 'value' => 'secondary-bg-color'],
+                ['label' => 'Dark', 'value' => 'dark-bg-color'],
+                ['label' => 'Light', 'value' => 'light-bg-color'],
+                ['label' => 'Default', 'value' => 'default-bg-color'],
+                ['label' => 'Inverted', 'value' => 'inverted-bg-color'],
+                ['label' => 'Gray 90', 'value' => 'gray-90-bg-color'],
+                ['label' => 'Gray 80', 'value' => 'gray-80-bg-color'],
+                ['label' => 'Gray 70', 'value' => 'gray-70-bg-color'],
+                ['label' => 'Gray 60', 'value' => 'gray-60-bg-color'],
+                ['label' => 'Gray 50', 'value' => 'gray-50-bg-color'],
+                ['label' => 'Gray 40', 'value' => 'gray-40-bg-color'],
+                ['label' => 'Gray 30', 'value' => 'gray-30-bg-color'],
+                ['label' => 'Gray 20', 'value' => 'gray-20-bg-color'],
+                ['label' => 'Gray 10', 'value' => 'gray-10-bg-color']
             ],
             'default' => '0',
         ],
@@ -1164,7 +1156,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:page_links',
         'config' => [
             'type' => 'group',
-            'internal_type' => 'db',
             'allowed' => 'pages',
             'size' => 3,
             'maxitems' => 30,
@@ -1178,7 +1169,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:page_links',
         'config' => [
             'type' => 'group',
-            'internal_type' => 'db',
             'allowed' => 'pages',
             'size' => 3,
             'maxitems' => 30,
@@ -1192,7 +1182,6 @@ $GLOBALS['TCA']['tt_content']['columns']['image_zoom']  = array_replace_recursiv
         'label' => 'LLL:EXT:t3kit/Resources/Private/Language/ContentElements/locallang.xlf:page_links',
         'config' => [
             'type' => 'group',
-            'internal_type' => 'db',
             'allowed' => 'pages',
             'size' => 3,
             'maxitems' => 30,

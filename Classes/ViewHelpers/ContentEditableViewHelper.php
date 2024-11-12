@@ -61,7 +61,7 @@ class ContentEditableViewHelper extends AbstractTagBasedViewHelper
      *
      * @return void
      */
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         parent::initializeArguments();
 
