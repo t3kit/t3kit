@@ -50,9 +50,9 @@ class SliderCEPreviewRenderer implements PageLayoutViewDrawItemHookInterface
                 $queryBuilder->getRestrictions()->removeAll();
                 $slides = $queryBuilder->select('*')
                     ->from('tx_t3kit_slider_item')->where($queryBuilder->expr()->eq(
-                    'tt_content',
-                    $queryBuilder->createNamedParameter($row['uid'], \PDO::PARAM_INT)
-                ))->executeQuery()->fetchAllAssociative();
+                        'tt_content',
+                        $queryBuilder->createNamedParameter($row['uid'], \PDO::PARAM_INT)
+                    ))->executeQuery()->fetchAllAssociative();
 
                 foreach ($slides as $key => $slide) {
                     $itemContent .= $parentObject->linkEditContent($parentObject->getThumbCodeUnlinked($slide, 'tx_t3kit_slider_item', 'picture'), $row);

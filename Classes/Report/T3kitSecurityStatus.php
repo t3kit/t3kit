@@ -69,9 +69,9 @@ class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
         $row = $queryBuilder
             ->select('uid', 'username', 'password')
             ->from('be_users')->where($queryBuilder->expr()->eq(
-            'username',
-            $queryBuilder->createNamedParameter('admin', \PDO::PARAM_STR)
-        ))->executeQuery()->fetchAssociative();
+                'username',
+                $queryBuilder->createNamedParameter('admin', \PDO::PARAM_STR)
+            ))->executeQuery()->fetchAssociative();
 
         if (!empty($row)) {
             try {
