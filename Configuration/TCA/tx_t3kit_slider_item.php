@@ -343,7 +343,10 @@ return [
                 'type' => 'link',
                 'size' => 50,
                 'allowedTypes' => ['page', 'file', 'url', 'record'],
-                'appearance' => ['browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel', 'allowedOptions' => ['rel']]
+                'appearance' => [
+                    'browserTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
+                    'allowedOptions' => ['rel']
+                ]
             ]
         ],
         'subheader_text' => [
