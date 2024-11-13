@@ -7,8 +7,7 @@ lib.contentObject {
   empty {
     10 = TEXT
   }
+  headerMiddleSearch =< lib.contentObject.empty
+  headerTopSearch =< lib.contentObject.empty
+  mainNavigationSearch =< lib.contentObject.empty
 }
-
-lib.contentObject.headerMiddleSearch =< lib.contentObject.empty
-lib.contentObject.headerTopSearch =< lib.contentObject.empty
-lib.contentObject.mainNavigationSearch =< lib.contentObject.empty
