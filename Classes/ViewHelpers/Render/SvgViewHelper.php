@@ -16,6 +16,7 @@ namespace T3k\t3kit\ViewHelpers\Render;
  *                                                                        */
 
 use TYPO3\CMS\Core\Core\Environment;
+use TYPO3\CMS\Core\Resource\ResourceFactory;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
@@ -55,8 +56,15 @@ class SvgViewHelper extends AbstractViewHelper
      */
     public function render()
     {
-        $relativeSrc = $this->arguments['src'];
-        $absoluteSrc = Environment::getPublicPath() . $this->arguments['src'];
+        $relativeSrc = str_replace('/typo3conf/ext/', 'EXT:', $this->arguments['src']);
+        if (empty($relativeSrc)) {
+            return '';
+        }
+        $fileReference = $this->getResourceFactory()->retrieveFileOrFolderObject($relativeSrc);
+        if ($fileReference === null) {
+            return '';
+        }
+        $absoluteSrc = Environment::getPublicPath() . $fileReference->getPublicUrl();
 
         if (!GeneralUtility::isAllowedAbsPath($absoluteSrc)) {
             return '<!-- unable to open file: ' . $relativeSrc . ' (disallowed) -->';
@@ -117,5 +125,15 @@ class SvgViewHelper extends AbstractViewHelper
             $domXml->setAttribute('height', $this->arguments['height']);
         }
         return $domXml->ownerDocument->saveXML($domXml->ownerDocument->documentElement);
+    }
+
+    /**
+     * Get instance of FAL resource factory
+     *
+     * @return ResourceFactory
+     */
+    protected function getResourceFactory()
+    {
+        return GeneralUtility::makeInstance(ResourceFactory::class);
     }
 }
