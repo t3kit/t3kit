@@ -1,0 +1,12 @@
+{
+    "exclude": [
+        "build/",
+        "node_modules/",
+        ".cache/",
+        ".git/",
+        ".husky/",
+        ".tmp/",
+        ".idea",
+        ".DS_Store"
+    ]
+}
