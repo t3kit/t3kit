@@ -13,19 +13,9 @@ abstract class AbstractUpgradeWizard implements UpgradeWizardInterface
 {
     public const TABLE_NAME = '';
 
-    public const IDENTIFIER = 't3kit_';
-
     public const TITLE = '';
 
     public const DESCRIPTION = '';
-
-    /**
-     * @inheritDoc
-     */
-    final public function getIdentifier(): string
-    {
-        return static::IDENTIFIER;
-    }
 
     /**
      * @inheritDoc

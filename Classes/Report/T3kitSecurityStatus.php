@@ -22,27 +22,33 @@ use TYPO3\CMS\Core\Crypto\PasswordHashing\PasswordHashFactory;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
 use TYPO3\CMS\Core\Localization\LanguageService;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Reports\RequestAwareStatusProviderInterface;
+use TYPO3\CMS\Reports\Status;
 use TYPO3\CMS\Reports\Status as ReportStatus;
+use TYPO3\CMS\Reports\StatusProviderInterface;
 
 /**
  * Performs several checks about the system's health
  */
-class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
+class T3kitSecurityStatus implements StatusProviderInterface
 {
     /**
      * @var ServerRequestInterface
      */
     protected $request;
 
+    public function getLabel(): string
+    {
+        return 't3kit security status';
+    }
+
     /**
      * Determines the security of this TYPO3 installation
      *
-     * @param ServerRequestInterface|null $request
-     * @return ReportStatus[] List of statuses
+     * @return ContextualFeedbackSeverity[] List of statuses
      */
-    public function getStatus(ServerRequestInterface $request = null)
+    public function getStatus(): array
     {
         $statuses = [
             't3kitadminUserAccount' => $this->getT3kitAdminAccountStatus(),
@@ -54,13 +60,14 @@ class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
     /**
      * Checks whether a BE user account named admin with default t3kit password exists.
      *
-     * @return ReportStatus An object representing whether a t3kit default admin account exists
+     * @return \TYPO3\CMS\Reports\Status An object representing whether a t3kit default admin account exists
      */
-    protected function getT3kitAdminAccountStatus(): ReportStatus
+    protected function getT3kitAdminAccountStatus(): Status
     {
-        $value = $this->getLanguageService()->getLL('status_ok');
+        $label = $this->getLanguageService()->sL('LLL:EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf:status_ok');
+        $value = htmlspecialchars($label);
         $message = '';
-        $severity = ReportStatus::OK;
+        $severity = ContextualFeedbackSeverity::OK;
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('be_users');
         $queryBuilder->getRestrictions()
             ->removeAll()
@@ -78,8 +85,9 @@ class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
                 $hashInstance = GeneralUtility::makeInstance(PasswordHashFactory::class)->get($row['password'], 'BE');
                 if ($hashInstance->checkPassword('admin1234', $row['password'])) {
                     $uriBuilder = GeneralUtility::makeInstance(UriBuilder::class);
-                    $value = $this->getLanguageService()->getLL('status_insecure');
-                    $severity = ReportStatus::ERROR;
+                    $label = $this->getLanguageService()->sL('LLL:EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf:status_insecure');
+                    $value = htmlspecialchars($label);
+                    $severity = ContextualFeedbackSeverity::ERROR;
                     $editUserAccountUrl = (string)$uriBuilder->buildUriFromRoute(
                         'record_edit',
                         [
@@ -111,13 +119,14 @@ class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
     /**
      * Checks whether the Install Tool password in t3kit is set to its default value.
      *
-     * @return ReportStatus An object representing whether a t3kit default install tool password exists
+     * @return \TYPO3\CMS\Reports\Status An object representing whether a t3kit default install tool password exists
      */
-    protected function getT3kitInstallToolPasswordStatus(): ReportStatus
+    protected function getT3kitInstallToolPasswordStatus(): Status
     {
-        $value = $this->getLanguageService()->getLL('status_ok');
+        $label = $this->getLanguageService()->sL('LLL:EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf:status_ok');
+        $value = htmlspecialchars($label);
         $message = '';
-        $severity = ReportStatus::OK;
+        $severity = ContextualFeedbackSeverity::OK;
         $isDefaultPassword = false;
         $installToolPassword = $GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword'];
         $hashInstance = null;
@@ -126,16 +135,18 @@ class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
             $hashInstance = $hashFactory->get($installToolPassword, 'BE');
         } catch (InvalidPasswordHashException $e) {
             // $hashInstance stays null
-            $value = $this->getLanguageService()->getLL('status_wrongValue');
+            $label = $this->getLanguageService()->sL('LLL:EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf:status_wrongValue');
+            $value = htmlspecialchars($label);
             $message = $e->getMessage();
-            $severity = ReportStatus::ERROR;
+            $severity = ContextualFeedbackSeverity::ERROR;
         }
         if ($installToolPassword !== '' && $hashInstance !== null) {
             $isDefaultPassword = $hashInstance->checkPassword('admin1234', $installToolPassword);
         }
         if ($isDefaultPassword) {
-            $value = $this->getLanguageService()->getLL('status_insecure');
-            $severity = ReportStatus::ERROR;
+            $label = $this->getLanguageService()->sL('LLL:EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf:status_insecure');
+            $value = htmlspecialchars($label);
+            $severity = ContextualFeedbackSeverity::ERROR;
             $uriBuilder = GeneralUtility::makeInstance(UriBuilder::class);
             $changeInstallToolPasswordUrl = (string)$uriBuilder->buildUriFromRoute('tools_toolssettings');
             $message = sprintf(
@@ -145,7 +156,7 @@ class T3kitSecurityStatus implements RequestAwareStatusProviderInterface
             );
         }
         return GeneralUtility::makeInstance(
-            ReportStatus::class,
+            Status::class,
             $this->getLanguageService()->sL('LLL:EXT:t3kit/Resources/Private/Language/StatusReport/locallang.xlf:status_installtool_password'),
             $value,
             $message,

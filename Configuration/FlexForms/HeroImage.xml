@@ -31,8 +31,6 @@
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
-								<items>
-								</items>
 							</config>
 						</TCEforms>
 					</overlay>
@@ -43,8 +41,6 @@
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
-								<items>
-								</items>
 							</config>
 						</TCEforms>
 					</caption_alignment>
@@ -55,8 +51,6 @@
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
-								<items>
-								</items>
 							</config>
 						</TCEforms>
 					</background>

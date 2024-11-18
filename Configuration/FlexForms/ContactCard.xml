@@ -59,20 +59,10 @@
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_link_1</label>
 							<config>
-								<type>input</type>
-								<renderType>inputLink</renderType>
-								<fieldControl>
-									<linkPopup>
-										<options>
-											<blindLinkFields>params, target, class, title</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
-										</options>
-									</linkPopup>
-								</fieldControl>
+								<type>link</type>
 								<size>30</size>
 								<max>100</max>
-								<eval>trim</eval>
-								<softref>typolink</softref>
+								<allowedTypes>telephone</allowedTypes>
 							</config>
 						</TCEforms>
 					</contactPhone_link_1>
@@ -93,20 +83,10 @@
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.contactPhone_link_2</label>
 							<config>
-								<type>input</type>
-								<renderType>inputLink</renderType>
-								<fieldControl>
-									<linkPopup>
-										<options>
-											<blindLinkFields>params, target, class, title</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
-										</options>
-									</linkPopup>
-								</fieldControl>
+								<type>link</type>
 								<size>30</size>
 								<max>100</max>
-								<eval>trim</eval>
-								<softref>typolink</softref>
+								<allowedTypes>telephone</allowedTypes>
 							</config>
 						</TCEforms>
 					</contactPhone_link_2>
@@ -127,20 +107,10 @@
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.mobilePhone_link</label>
 							<config>
-								<type>input</type>
-								<renderType>inputLink</renderType>
-								<fieldControl>
-									<linkPopup>
-										<options>
-											<blindLinkFields>params, target, class, title</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, mail</blindLinkOptions>
-										</options>
-									</linkPopup>
-								</fieldControl>
+								<type>link</type>
 								<size>30</size>
 								<max>100</max>
-								<eval>trim</eval>
-								<softref>typolink</softref>
+								<allowedTypes>telephone</allowedTypes>
 							</config>
 						</TCEforms>
 					</mobilePhone_link>
@@ -149,20 +119,10 @@
 						<TCEforms>
 							<label>LLL:EXT:t3kit/Resources/Private/Language/ContentElements/Static/locallang_contactCard.xlf:flexform.email</label>
 							<config>
-								<type>input</type>
-								<renderType>inputLink</renderType>
-								<fieldControl>
-									<linkPopup>
-										<options>
-											<blindLinkFields>params, target, class, title</blindLinkFields>
-											<blindLinkOptions>page, file, folder, url, telephone</blindLinkOptions>
-										</options>
-									</linkPopup>
-								</fieldControl>
+								<type>link</type>
 								<size>30</size>
-								<max>255</max>
-								<eval>trim</eval>
-								<softref>typolink</softref>
+								<max>100</max>
+								<allowedTypes>email</allowedTypes>
 							</config>
 						</TCEforms>
 					</email>

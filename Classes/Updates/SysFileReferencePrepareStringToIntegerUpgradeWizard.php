@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace T3k\t3kit\Updates;
 
+use TYPO3\CMS\Install\Attribute\UpgradeWizard;
+
+#[UpgradeWizard('t3kit_sysFileReferencePrepareStringToInteger')]
 class SysFileReferencePrepareStringToIntegerUpgradeWizard extends AbstractUpgradeWizard
 {
     public const TABLE_NAME = 'sys_file_reference';
-
-    public const IDENTIFIER = 't3kit_sysFileReferencePrepareStringToInteger';
 
     public const TITLE = 'Remove empty picture_width strings';
 

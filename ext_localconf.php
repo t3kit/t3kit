@@ -108,47 +108,14 @@ foreach ($contentElementIcons as $icon) {
     );
 }
 
-/*
- * ###########################
- * Register for hooks to show preview of tt_content elements in page module
- * ===========================
- */
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['image'] =
-\T3k\t3kit\Hooks\PageLayoutView\ImageCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['textmedia'] =
-\T3k\t3kit\Hooks\PageLayoutView\TextmediaCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['textpic'] =
-\T3k\t3kit\Hooks\PageLayoutView\TextpicCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['video'] =
-\T3k\t3kit\Hooks\PageLayoutView\VideoCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['imageTextLink'] =
-\T3k\t3kit\Hooks\PageLayoutView\ImageTextLinkCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['audio'] =
-\T3k\t3kit\Hooks\PageLayoutView\AudioCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['heroImage'] =
-\T3k\t3kit\Hooks\PageLayoutView\HeroImageCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['slider'] =
-\T3k\t3kit\Hooks\PageLayoutView\SliderCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['contactCard'] =
-\T3k\t3kit\Hooks\PageLayoutView\ContactCardCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['simpleSiteHeader'] =
-\T3k\t3kit\Hooks\PageLayoutView\SimpleSiteHeaderCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['siteFooter'] =
-\T3k\t3kit\Hooks\PageLayoutView\SiteFooterCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['imageTextLeftRight'] =
-\T3k\t3kit\Hooks\PageLayoutView\ImageTextLeftRightCEPreviewRenderer::class;
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['siteHeader'] =
-\T3k\t3kit\Hooks\PageLayoutView\SiteHeaderCEPreviewRenderer::class;
-
 // Register RTE presets
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'])) {
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3kit_default'] = 'EXT:t3kit/Configuration/RTE/Default.yaml';
 }
 
-// Register report module additions
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['reports']['tx_reports']['status']['providers']['security'][] = \T3k\t3kit\Report\T3kitSecurityStatus::class;
-
-// Register upgrade wizards
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][
-    \T3k\t3kit\Updates\SysFileReferencePrepareStringToIntegerUpgradeWizard::IDENTIFIER
-] = \T3k\t3kit\Updates\SysFileReferencePrepareStringToIntegerUpgradeWizard::class;
+/*
+ * ###########################
+ * Load additional t3kit stylesheets to skin the Backend
+ * ===========================
+ */
+$GLOBALS['TYPO3_CONF_VARS']['BE']['stylesheets']['t3kit'] = 'EXT:t3kit/Resources/Public/CSS/BE/content-elements-preview.css';

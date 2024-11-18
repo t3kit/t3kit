@@ -1,0 +1,73 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  T3k\t3kit\:
+    resource: '../Classes/*'
+
+  T3k\t3kit\Backend\EventListener\AudioCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-audio-ctype'
+
+  T3k\t3kit\Backend\EventListener\ContactCardCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-contactCard-ctype'
+
+  T3k\t3kit\Backend\EventListener\HeroImageCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-heroImage-ctype'
+
+  T3k\t3kit\Backend\EventListener\ImageCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-image-ctype'
+
+  T3k\t3kit\Backend\EventListener\ImageTextLeftRightCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-imageTextLeftRight-ctype'
+
+  T3k\t3kit\Backend\EventListener\ImageTextLinkCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-imageTextLink-ctype'
+
+  T3k\t3kit\Backend\EventListener\SimpleSiteHeaderCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-simpleSiteHeader-ctype'
+
+  T3k\t3kit\Backend\EventListener\SiteFooterCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-siteFooter-ctype'
+
+  T3k\t3kit\Backend\EventListener\SiteHeaderCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-siteHeader-ctype'
+
+  T3k\t3kit\Backend\EventListener\SliderCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-slider-ctype'
+
+  T3k\t3kit\Backend\EventListener\TextmediaCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-textmedia-ctype'
+
+  T3k\t3kit\Backend\EventListener\TextpicCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-textpic-ctype'
+
+  T3k\t3kit\Backend\EventListener\VideoCEPreviewListener:
+    tags:
+      - name: event.listener
+        identifier: 't3kit/preview-rendering-video-ctype'

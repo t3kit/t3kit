@@ -48,8 +48,6 @@
 							<config>
 								<type>select</type>
 								<renderType>selectSingle</renderType>
-								<items>
-								</items>
 							</config>
 						</TCEforms>
 					</image_alignment>
